@@ -54,4 +54,4 @@ physical.world/src/main/java/org/universAAL/ontology/shape/Shape3D.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
-/pom.xml -text
+pom/pom.xml -text
