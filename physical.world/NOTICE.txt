@@ -1,7 +1,7 @@
-PERSONA CASF Ontology
+Physical World Upper Ontology
 
-Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
-Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
+Fraunhofer Gesellschaft - Institut fuer Graphische Datenverarbeitung
 
 Copyright 2008-2010 ITACA-TSB, http://www.tsb.upv.es
 Instituto Tecnologico de Aplicaciones de Comunicacion 
