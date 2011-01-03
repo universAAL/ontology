@@ -60,7 +60,7 @@
 						<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>
 						<Bundle-Description>${pom.description}</Bundle-Description>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.space.service,org.universAAL.ontology.phThing,
+						<Export-Package>org.universAAL.ontology.space,org.universAAL.ontology.phThing,
 							org.universAAL.ontology.location,org.universAAL.ontology.location.indoor,
 							org.universAAL.ontology.location.outdoor,org.universAAL.ontology.location.position,
 							org.universAAL.ontology.shape</Export-Package>
