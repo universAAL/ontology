@@ -1,4 +1,21 @@
 * text=auto !eol
+lighting/LICENSE.txt -text
+lighting/NOTICE.txt -text
+lighting/pom.xml -text
+lighting/src/main/java/org/universAAL/ontology/Activator.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/Beaming.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/BeamingSource.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/Blinkable.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeaming.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeamingSource.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableLightSource.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableLighting.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/ElectricLight.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/FlamingLight.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/LightSource.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/LightType.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/Lighting.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/pom.xml -text
@@ -55,3 +72,11 @@ physical.world/src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
 pom/pom.xml -text
+weather/LICENSE.txt -text
+weather/NOTICE.txt -text
+weather/pom.xml -text
+weather/src/main/java/org/universAAL/ontology/Activator.java -text
+weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
+weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
+weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
+weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
