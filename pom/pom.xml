@@ -265,7 +265,7 @@
 	</distributionManagement>
 
 	<modules>
-		<module>../../middleware/pom</module>
+		<module>../../../middleware/trunk/pom</module>
 		<module>../physical.world</module>
 		<module>../lighting</module>
 		<module>../weather</module>
