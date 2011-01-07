@@ -1,6 +1,11 @@
 /.classpath
 /.project
 /.settings
+lighting/.classpath
+lighting/.project
+lighting/.settings
+lighting/bin
+lighting/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
@@ -10,3 +15,8 @@ pom/.project
 pom/.settings
 pom/target
 /target
+weather/.classpath
+weather/.project
+weather/.settings
+weather/bin
+weather/target
