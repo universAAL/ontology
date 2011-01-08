@@ -1,4 +1,10 @@
 * text=auto !eol
+blind/LICENSE.txt -text
+blind/NOTICE.txt -text
+blind/pom.xml -text
+blind/src/main/java/org/universAAL/ontology/Activator.java -text
+blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
+blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
 lighting/LICENSE.txt -text
 lighting/NOTICE.txt -text
 lighting/pom.xml -text
