@@ -15,6 +15,10 @@ pom/.project
 pom/.settings
 pom/target
 /target
+user.profile/.classpath
+user.profile/.project
+user.profile/.settings
+user.profile/target
 weather/.classpath
 weather/.project
 weather/.settings
