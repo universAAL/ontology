@@ -72,7 +72,7 @@
 				<configuration>
 					<instructions>
 						<Bundle-Name>${pom.name}</Bundle-Name>
-						<Bundle-Activator>org.persona.platform.profiling.ontology.Activator</Bundle-Activator>
+						<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>
 						<Bundle-Description>${pom.description}</Bundle-Description>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
 						<Export-Package>org.universAAL.ontology.profile</Export-Package>
