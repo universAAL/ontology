@@ -5,6 +5,12 @@ blind/pom.xml -text
 blind/src/main/java/org/universAAL/ontology/Activator.java -text
 blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
 blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
+furniture/LICENSE.txt -text
+furniture/NOTICE.txt -text
+furniture/pom.xml -text
+furniture/src/main/java/org/universAAL/ontology/Activator.java -text
+furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
+furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 lighting/LICENSE.txt -text
 lighting/NOTICE.txt -text
 lighting/pom.xml -text
@@ -22,6 +28,13 @@ lighting/src/main/java/org/universAAL/ontology/lighting/LightSource.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/LightType.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/Lighting.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
+measurement/LICENSE.txt -text
+measurement/NOTICE.txt -text
+measurement/pom.xml -text
+measurement/src/main/java/org/universAAL/ontology/Activator.java -text
+measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
+measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
+measurement/src/main/resources/Measurement.jpg -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/pom.xml -text

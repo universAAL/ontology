@@ -18,12 +18,12 @@
 	limitations under the License.
 */
 
-package org.persona.platform.casf.ontology.device.lighting.blind;
+package org.universAAL.ontology.blind;
 
 import java.util.Hashtable;
 
-import org.persona.ontology.Service;
-import org.persona.ontology.expr.Restriction;
+import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.middleware.owl.Restriction;
 
 /**
  * 

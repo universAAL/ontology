@@ -26,8 +26,8 @@ import org.osgi.framework.BundleContext;
 public class Activator implements BundleActivator {
 	
 	public void start(BundleContext context) throws Exception {
-		Class.forName("org.universAAL.ontology.blind.Blind");
-		Class.forName("org.universAAL.ontology.blind.BlindController");
+		Class.forName("org.universAAL.ontology.furniture.Furniture");
+		Class.forName("org.universAAL.ontology.furniture.FurnitureType");
 	}
 	
 	public void stop(BundleContext arg0) throws Exception {
