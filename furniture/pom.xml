@@ -9,10 +9,10 @@
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
 	<packaging>bundle</packaging>
-	<artifactId>ont.blind</artifactId>
+	<artifactId>ont.furniture</artifactId>
 	<version>0.2.0-SNAPSHOT</version>
-	<name>The Window Blind Ontology</name>
-	<description>Blinds make windows into controllable light sources during daylight.</description>
+	<name>The Furniture Ontology</name>
+	<description>An ontology for describing furnitures in a home envinment.</description>
 	<url />
 
 	<dependencies>
@@ -50,7 +50,7 @@
 						<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>
 						<Bundle-Description>${pom.description}</Bundle-Description>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.blind</Export-Package>
+						<Export-Package>org.universAAL.ontology.furniture</Export-Package>
 						<Private-Package>org.universAAL.ontology</Private-Package>
 					</instructions>
 				</configuration>

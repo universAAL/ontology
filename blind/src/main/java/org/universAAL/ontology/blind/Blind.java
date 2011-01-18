@@ -18,15 +18,13 @@
 	limitations under the License.
 */
 
-package org.persona.platform.casf.ontology.device.lighting.blind;
+package org.universAAL.ontology.blind;
 
-import org.persona.middleware.TypeMapper;
-import org.persona.ontology.Location;
-import org.persona.ontology.ManagedIndividual;
-import org.persona.ontology.expr.OrderingRestriction;
-import org.persona.ontology.expr.Restriction;
-import org.persona.platform.casf.ontology.device.Device;
-import org.persona.platform.casf.ontology.location.PLocation;
+import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.ontology.location.Location;
+import org.universAAL.middleware.owl.OrderingRestriction;
+import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.phThing.Device;
 
 /**
  * 
@@ -54,13 +52,13 @@ public class Blind extends Device {
 //					NaturalLight.sunShine.MY_URI, 1, 1);
 		if (PROP_BLIND_LOCATION.equals(propURI))
 			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					PLocation.MY_URI, 1, 1);
+					Location.MY_URI, 1, 1);
 		if (PROP_BLIND_STATUS.equals(propURI))
 			return OrderingRestriction.newOrderingRestriction(new Integer(100),
 					new Integer(0), true, true,
 					Restriction.getAllValuesRestrictionWithCardinality(propURI,
 							TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+		return Device.getClassRestrictionsOnProperty(propURI);
 	}
 	
 	public static String[] getStandardPropertyURIs() {
