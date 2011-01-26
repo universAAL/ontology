@@ -22,6 +22,10 @@ measurement/.classpath
 measurement/.project
 measurement/.settings
 measurement/target
+medication/.classpath
+medication/.project
+medication/.settings
+medication/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
