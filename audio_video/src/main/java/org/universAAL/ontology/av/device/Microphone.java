@@ -18,7 +18,7 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.device;
+package org.universAAL.ontology.av.device;
 
 import org.universAAL.middleware.util.Constants;
 import org.universAAL.middleware.rdf.TypeMapper;
@@ -27,7 +27,7 @@ import org.universAAL.middleware.owl.OrderingRestriction;
 import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.position.Point;
 import org.universAAL.ontology.location.Location;
-import org.universAAL.ontology.media.streaming.AudioCompression;
+import org.universAAL.ontology.av.streaming.AudioCompression;
 import org.universAAL.ontology.phThing.Device;
 
 

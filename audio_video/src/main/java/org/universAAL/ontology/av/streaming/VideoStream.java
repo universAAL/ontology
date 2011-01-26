@@ -18,9 +18,8 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.streaming;
+package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 
@@ -29,68 +28,50 @@ import org.universAAL.middleware.owl.Restriction;
  * @author climberg
  *
  */
-public class EndPoint extends ManagedIndividual{
-	
+public class VideoStream extends Stream{
+
 	public static final String MY_URI;
-	public static final String PROP_IP;
-	public static final String PROP_TCP_PORT;
 	
 	static{
-		MY_URI = Stream.STREAM_NAMESPACE + "EndPoint";
-		PROP_IP = Stream.STREAM_NAMESPACE + "ip";
-	    PROP_TCP_PORT = Stream.STREAM_NAMESPACE + "tcpPort";
-	    register(EndPoint.class);
+		MY_URI = Stream.STREAM_NAMESPACE + "VideoStream";
+		register(VideoStream.class);
 	}
 	
 	public static Restriction getClassRestrictionsOnProperty(String propURI){
-		if (PROP_IP.equals(propURI))
+		if (PROP_HAS_FORMAT.equals(propURI))
 			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-							TypeMapper.getDatatypeURI(String.class), 1, 1);
-		if (PROP_TCP_PORT.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+							VideoFormat.MY_URI, 1, 1);
+		return Stream.getClassRestrictionsOnProperty(propURI);
 	}
 	
 	public static String[] getStandardPropertyURIs() {
 		String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+2];
+		String[] toReturn = new String[inherited.length];
 		int i = 0;
 		while (i < inherited.length) {
 			toReturn[i] = inherited[i];
 			i++;
 		}
-	
-		toReturn[i++] = PROP_IP;
-		toReturn[i]   = PROP_TCP_PORT;
 		return toReturn;
 	}
 	
 	public static String getRDFSComment() {
-		return "The class of EndPoints.";
+		return "The class of VideoStreams.";
 	}
 	
 	public static String getRDFSLabel() {
-		return "EndPoint";
+		return "VideoStream";
 	}
 	
 	/**
 	 * default constructor
 	 */
-	public EndPoint() {
+	public VideoStream() {
 		super();
 	}
 	
-	/**
-	 * this is a constructor to build an EndPoint with a special IP and TCP port
-	 * 
-	 * @param ip
-	 * @param port
-	 */
-	public EndPoint(String ip, int port){
-		super();
-		setProperty(EndPoint.PROP_IP, ip);
-		setProperty(EndPoint.PROP_TCP_PORT, new Integer(port));
+	public VideoStream(String uri) {
+		super(uri);
 	}
 	
 	public int getPropSerializationType(String propURI){
@@ -101,13 +82,5 @@ public class EndPoint extends ManagedIndividual{
 	public boolean isWellFormed() {
 		return true;
 	}
-	
-	public String getIP(){
-		return (String)getProperty(PROP_IP);
-	}
-	
-	public int getPort(){
-		return ((Integer)getProperty(PROP_TCP_PORT)).intValue();
-	}
-	
+
 }

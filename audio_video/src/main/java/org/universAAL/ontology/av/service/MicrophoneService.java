@@ -18,14 +18,14 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.service;
+package org.universAAL.ontology.av.service;
 
 import java.util.Hashtable;
 
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.media.device.Microphone;
-import org.universAAL.ontology.media.streaming.AudioStream;
+import org.universAAL.ontology.av.device.Microphone;
+import org.universAAL.ontology.av.streaming.AudioStream;
 
 /**
  * 
