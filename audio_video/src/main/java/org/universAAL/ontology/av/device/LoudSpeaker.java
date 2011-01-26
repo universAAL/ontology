@@ -18,7 +18,7 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.device;
+package org.universAAL.ontology.av.device;
 
 import org.universAAL.middleware.util.Constants;
 import org.universAAL.middleware.rdf.TypeMapper;

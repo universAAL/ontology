@@ -18,35 +18,33 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.streaming;
+package org.universAAL.ontology.av.streaming;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.phThing.Device;
 
 /**
  * 
  * @author climberg
  *
  */
-public class VideoStream extends Stream{
-
-	public static final String MY_URI;
+public abstract class Compression extends ManagedIndividual{
+	
+    public static final String MY_URI;
 	
 	static{
-		MY_URI = Stream.STREAM_NAMESPACE + "VideoStream";
-		register(VideoStream.class);
+		MY_URI = Stream.STREAM_NAMESPACE + "compression";
+		register(Compression.class);
 	}
 	
-	public static Restriction getClassRestrictionsOnProperty(String propURI){
-		if (PROP_HAS_FORMAT.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-							VideoFormat.MY_URI, 1, 1);
-		return Stream.getClassRestrictionsOnProperty(propURI);
+	public static Restriction getClassRestrictionsOnProperty(String propURI) {
+		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
 	}
 	
 	public static String[] getStandardPropertyURIs() {
-		String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length];
+		String[] inherited = Device.getStandardPropertyURIs();
+		String[] toReturn = new String[inherited.length + 0];
 		int i = 0;
 		while (i < inherited.length) {
 			toReturn[i] = inherited[i];
@@ -55,30 +53,33 @@ public class VideoStream extends Stream{
 		return toReturn;
 	}
 	
-	public static String getRDFSComment() {
-		return "The class of VideoStreams.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "VideoStream";
-	}
-	
 	/**
-	 * default constructor
+	 * the default constructor
 	 */
-	public VideoStream() {
+	public Compression(){
 		super();
 	}
 	
-	public VideoStream(String uri) {
+	/**
+	 *
+	 */
+	public Compression(String uri) {
 		super(uri);
 	}
 	
-	public int getPropSerializationType(String propURI){
-			return PROP_SERIALIZATION_FULL;
+	public static String getRDFSComment() {
+		return "The abstract class of compressions.";
+	}
+
+	public static String getRDFSLabel() {
+		return "Compression";
+	}
+
+	
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
 	}
 	
-	//removed soon
 	public boolean isWellFormed() {
 		return true;
 	}

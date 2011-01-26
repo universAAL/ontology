@@ -18,8 +18,10 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.streaming;
+package org.universAAL.ontology.av.streaming;
 
+
+import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 
@@ -28,59 +30,76 @@ import org.universAAL.middleware.owl.Restriction;
  * @author climberg
  *
  */
-public abstract class Stream extends ManagedIndividual{
+public class AudioFile extends ManagedIndividual{
 	
-	public static final String STREAM_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Stream.owl#";
 	public static final String MY_URI;
+	public static final String PROP_HAS_URL;
+	// content type should be replaced by format
+	public static final String PROP_HAS_CONTENT_TYPE;
 	public static final String PROP_HAS_FORMAT;
-	public static final String PROP_HAS_ENDPOINT;
 	
 	static{
-		MY_URI = Stream.STREAM_NAMESPACE + "Stream";
+		MY_URI = Stream.STREAM_NAMESPACE + "AudioFile";
+		PROP_HAS_URL = Stream.STREAM_NAMESPACE + "hasURL";
+		PROP_HAS_CONTENT_TYPE = Stream.STREAM_NAMESPACE + "hasContentType";
 		PROP_HAS_FORMAT = Stream.STREAM_NAMESPACE + "hasFormat";
-		PROP_HAS_ENDPOINT = Stream.STREAM_NAMESPACE + "hasEndPoint";
-		register(Stream.class);
+	    register(AudioFile.class);
 	}
 	
 	public static Restriction getClassRestrictionsOnProperty(String propURI){
 		if (PROP_HAS_FORMAT.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI, Format.MY_URI, 1, 1);
-		if (PROP_HAS_ENDPOINT.equals(propURI))
+			return Restriction.getAllValuesRestrictionWithCardinality(propURI, AudioFormat.MY_URI, 1, 1);
+		if (PROP_HAS_URL.equals(propURI))
+			return Restriction.getAllValuesRestrictionWithCardinality(propURI, TypeMapper.getDatatypeURI(String.class), 1, 1);
+		if (PROP_HAS_CONTENT_TYPE.equals(propURI))
 			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-							EndPoint.MY_URI, 1, 1);
+							TypeMapper.getDatatypeURI(String.class), 1, 1);
 		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
 	}
 	
 	public static String[] getStandardPropertyURIs() {
 		String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+2];
+		String[] toReturn = new String[inherited.length + 3];
 		int i = 0;
 		while (i < inherited.length) {
 			toReturn[i] = inherited[i];
 			i++;
 		}
 	
+		toReturn[i++] = PROP_HAS_URL;
 		toReturn[i++] = PROP_HAS_FORMAT;
-		toReturn[i]   = PROP_HAS_ENDPOINT;
+		toReturn[i]   = PROP_HAS_CONTENT_TYPE;
 		return toReturn;
 	}
 	
 	public static String getRDFSComment() {
-		return "The class of Streams.";
+		return "The class of AudioFiles.";
 	}
 	
 	public static String getRDFSLabel() {
-		return "Stream";
+		return "AudioFile";
+	}
+	
+	public String getURL(){
+		Object obj = getProperty(PROP_HAS_URL);
+		if(obj instanceof String)
+			return (String)obj;
+		return null;
+	}
+	
+	//TODO: perhaps it is better, if the parameter is checked for URL conventions
+	public void setURL(String URL){
+		setProperty(PROP_HAS_URL, URL);
 	}
 	
 	/**
-	 * default constructor
+	 * the default constructor
 	 */
-	public Stream() {
+	public AudioFile() {
 		super();
 	}
 	
-	public Stream(String uri) {
+	public AudioFile(String uri) {
 		super(uri);
 	}
 	
@@ -92,5 +111,5 @@ public abstract class Stream extends ManagedIndividual{
 	public boolean isWellFormed() {
 		return true;
 	}
-	
+
 }

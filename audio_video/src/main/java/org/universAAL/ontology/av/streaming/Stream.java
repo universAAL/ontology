@@ -18,83 +18,79 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.streaming;
+package org.universAAL.ontology.av.streaming;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.phThing.Device;
 
 /**
- * this class should be the representation of a media format and is used for streaming processes
- * 
  * 
  * @author climberg
  *
  */
-public abstract class Format extends ManagedIndividual{
+public abstract class Stream extends ManagedIndividual{
 	
+	public static final String STREAM_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Stream.owl#";
 	public static final String MY_URI;
-	
-	public static final String PROP_ENCODING;
+	public static final String PROP_HAS_FORMAT;
+	public static final String PROP_HAS_ENDPOINT;
 	
 	static{
-		MY_URI = Stream.STREAM_NAMESPACE + "format";
-		PROP_ENCODING = Stream.STREAM_NAMESPACE + "encoding";
-		register(Format.class);
+		MY_URI = Stream.STREAM_NAMESPACE + "Stream";
+		PROP_HAS_FORMAT = Stream.STREAM_NAMESPACE + "hasFormat";
+		PROP_HAS_ENDPOINT = Stream.STREAM_NAMESPACE + "hasEndPoint";
+		register(Stream.class);
 	}
 	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_ENCODING.equals(propURI))
+	public static Restriction getClassRestrictionsOnProperty(String propURI){
+		if (PROP_HAS_FORMAT.equals(propURI))
+			return Restriction.getAllValuesRestrictionWithCardinality(propURI, Format.MY_URI, 1, 1);
+		if (PROP_HAS_ENDPOINT.equals(propURI))
 			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					Compression.MY_URI, 1, 1);
+							EndPoint.MY_URI, 1, 1);
 		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
 	}
 	
 	public static String[] getStandardPropertyURIs() {
-		String[] inherited = Device.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length + 1];
+		String[] inherited = ManagedIndividual.getStandardPropertyURIs();
+		String[] toReturn = new String[inherited.length+2];
 		int i = 0;
 		while (i < inherited.length) {
 			toReturn[i] = inherited[i];
 			i++;
 		}
-		toReturn[i] = PROP_ENCODING;
+	
+		toReturn[i++] = PROP_HAS_FORMAT;
+		toReturn[i]   = PROP_HAS_ENDPOINT;
 		return toReturn;
 	}
 	
+	public static String getRDFSComment() {
+		return "The class of Streams.";
+	}
+	
+	public static String getRDFSLabel() {
+		return "Stream";
+	}
+	
 	/**
-	 * the default constructor
+	 * default constructor
 	 */
-	public Format(){
+	public Stream() {
 		super();
 	}
 	
-	/**
-	 *
-	 */
-	public Format(String uri) {
+	public Stream(String uri) {
 		super(uri);
 	}
 	
-	public Compression getCompression(){
-		return (Compression)getProperty(PROP_ENCODING);
+	public int getPropSerializationType(String propURI){
+			return PROP_SERIALIZATION_FULL;
 	}
 	
-	public static String getRDFSComment() {
-		return "The class of all Formats.";
-	}
-
-	public static String getRDFSLabel() {
-		return "Format";
-	}
-
-	
-	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
-	}
-	
+	//removed soon
 	public boolean isWellFormed() {
 		return true;
 	}
-
+	
 }

@@ -18,61 +18,45 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.service;
+package org.universAAL.ontology.av.service;
 
 import java.util.Hashtable;
 
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.media.device.LoudSpeaker;
-import org.universAAL.ontology.media.streaming.AudioFile;
-import org.universAAL.ontology.media.streaming.AudioStream;
+import org.universAAL.ontology.av.device.VideoCamera;
+import org.universAAL.ontology.av.streaming.VideoStream;
 
 /**
  * 
  * @author climberg
  *
  */
-public class LoudSpeakerService extends Service {
+public class CameraService extends Service {
 
-	
-	//customizing necessary!!!!
 	public static final String MY_URI;
 	public static final String PROP_CONTROLS;
-	public static final String PROP_HAS_TO_BROADCAST_AUDIO_FILE;
-	public static final String PROP_HAS_TO_BROADCAST_AUDIO_STREAM;
-	
-	private static Hashtable loudSpeakerServiceRestrictions = new Hashtable(2);
-	
+	public static final String PROP_DELIVERS;
+	private static Hashtable cameraServiceRestrictions = new Hashtable(2);
 	static {
-		MY_URI = LoudSpeaker.LOUD_SPEAKER_NAMESPACE + "LoudSpeakerService";
-		PROP_CONTROLS = LoudSpeaker.LOUD_SPEAKER_NAMESPACE + "controls";
-		PROP_HAS_TO_BROADCAST_AUDIO_FILE = LoudSpeaker.LOUD_SPEAKER_NAMESPACE + "broadcastsAudioFile";
-		PROP_HAS_TO_BROADCAST_AUDIO_STREAM = LoudSpeaker.LOUD_SPEAKER_NAMESPACE + "broadcastsAudioStream";
-		
-		register(LoudSpeakerService.class);
-		
+		MY_URI = VideoCamera.VIDEO_CAMERA_NAMESPACE + "CameraService";
+		PROP_CONTROLS = VideoCamera.VIDEO_CAMERA_NAMESPACE + "controls";
+		PROP_DELIVERS = VideoCamera.VIDEO_CAMERA_NAMESPACE + "delivers";
+		register(CameraService.class);
 		addRestriction(
-				Restriction.getAllValuesRestriction(PROP_CONTROLS, LoudSpeaker.MY_URI),
+				Restriction.getAllValuesRestriction(PROP_CONTROLS, VideoCamera.MY_URI),
 				new String[] {PROP_CONTROLS},
-				loudSpeakerServiceRestrictions);
-		
+				cameraServiceRestrictions);
 		addRestriction(
-				Restriction.getAllValuesRestriction(PROP_HAS_TO_BROADCAST_AUDIO_FILE, AudioFile.MY_URI),
-				new String[] {PROP_HAS_TO_BROADCAST_AUDIO_FILE},
-				loudSpeakerServiceRestrictions);
-		
-		addRestriction(
-				Restriction.getAllValuesRestriction(PROP_HAS_TO_BROADCAST_AUDIO_STREAM, AudioStream.MY_URI),
-				new String[] {PROP_HAS_TO_BROADCAST_AUDIO_STREAM},
-				loudSpeakerServiceRestrictions);
-		
+				Restriction.getAllValuesRestriction(PROP_DELIVERS, VideoStream.MY_URI),
+				new String[] {PROP_DELIVERS},
+				cameraServiceRestrictions);
 	}
 	
 	public static Restriction getClassRestrictionsOnProperty(String propURI) {
 		if (propURI == null)
 			return null;
-		Object r = loudSpeakerServiceRestrictions.get(propURI);
+		Object r = cameraServiceRestrictions.get(propURI);
 		if (r instanceof Restriction)
 			return (Restriction) r;
 		return Service.getClassRestrictionsOnProperty(propURI);
@@ -80,7 +64,7 @@ public class LoudSpeakerService extends Service {
 	
 	public static String[] getStandardPropertyURIs() {
 		String[] inherited = Service.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+3];
+		String[] toReturn = new String[inherited.length+2];
 		int i = 0;
 		
 		while (i < inherited.length) {
@@ -88,32 +72,31 @@ public class LoudSpeakerService extends Service {
 			i++;
 		}
 		toReturn[i++] = PROP_CONTROLS;
-		toReturn[i++] = PROP_HAS_TO_BROADCAST_AUDIO_FILE;
-		toReturn[i]   = PROP_HAS_TO_BROADCAST_AUDIO_STREAM;
+		toReturn[i]   = PROP_DELIVERS;
 		return toReturn;
 	}
 	
 	public static String getRDFSComment() {
-		return "The class of services controling LoudSpeakers.";
+		return "The class of services controling cameras.";
 	}
 	
 	public static String getRDFSLabel() {
-		return "LoudSpeakerService";
+		return "CameraService";
 	}
 	
 	/**
 	 * default constructor
 	 */
-	public LoudSpeakerService(){
+	public CameraService() {
 		super();
 	}
 	
-	public LoudSpeakerService(String uri) {
+	public CameraService(String uri){
 		super(uri);
 	}
 
 	protected Hashtable getClassLevelRestrictions() {
-		return loudSpeakerServiceRestrictions;
+		return cameraServiceRestrictions;
 	}
 
 	//perhaps other settings

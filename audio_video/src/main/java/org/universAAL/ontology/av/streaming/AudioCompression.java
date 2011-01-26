@@ -18,7 +18,7 @@
 	limitations under the License.
 */
 
-package org.universAAL.ontology.media.streaming;
+package org.universAAL.ontology.av.streaming;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
