@@ -56,6 +56,12 @@ measurement/src/main/java/org/universAAL/ontology/Activator.java -text
 measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
 measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
 measurement/src/main/resources/Measurement.jpg -text
+medication/LICENSE.txt -text
+medication/NOTICE.txt -text
+medication/pom.xml -text
+medication/src/main/java/org/universAAL/ontology/Activator.java -text
+medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
+medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/pom.xml -text
