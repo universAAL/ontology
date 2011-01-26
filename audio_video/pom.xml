@@ -9,10 +9,10 @@
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
 	<packaging>bundle</packaging>
-	<artifactId>ont.media</artifactId>
+	<artifactId>ont.av</artifactId>
 	<version>0.2.0-SNAPSHOT</version>
-	<name>The Media Ontology</name>
-	<description>The upper ontology defining the most general concepts from the media world.</description>
+	<name>The AV Ontology</name>
+	<description>The upper ontology defining the most general concepts from the audio and video world.</description>
 	<url />
 
 	<dependencies>
