@@ -26,20 +26,20 @@ import org.osgi.framework.BundleContext;
 public class Activator implements BundleActivator {
 	
 	public void start(BundleContext context) throws Exception {
-		Class.forName("org.universAAL.ontology.media.device.LoudSpeaker");
-		Class.forName("org.universAAL.ontology.media.device.Microphone");
-		Class.forName("org.universAAL.ontology.media.device.VideoCamera");
-		Class.forName("org.universAAL.ontology.media.service.CameraService");
-		Class.forName("org.universAAL.ontology.media.service.LoudSpeakerService");
-		Class.forName("org.universAAL.ontology.media.service.MicrophoneService");
-		Class.forName("org.universAAL.ontology.media.streaming.AudioCompression");
-		Class.forName("org.universAAL.ontology.media.streaming.AudioFile");
-		Class.forName("org.universAAL.ontology.media.streaming.AudioFormat");
-		Class.forName("org.universAAL.ontology.media.streaming.AudioStream");
-		Class.forName("org.universAAL.ontology.media.streaming.EndPoint");
-		Class.forName("org.universAAL.ontology.media.streaming.VideoCompression");
-		Class.forName("org.universAAL.ontology.media.streaming.VideoFormat");
-		Class.forName("org.universAAL.ontology.media.streaming.VideoStream");
+		Class.forName("org.universAAL.ontology.av.device.LoudSpeaker");
+		Class.forName("org.universAAL.ontology.av.device.Microphone");
+		Class.forName("org.universAAL.ontology.av.device.VideoCamera");
+		Class.forName("org.universAAL.ontology.av.service.CameraService");
+		Class.forName("org.universAAL.ontology.av.service.LoudSpeakerService");
+		Class.forName("org.universAAL.ontology.av.service.MicrophoneService");
+		Class.forName("org.universAAL.ontology.av.streaming.AudioCompression");
+		Class.forName("org.universAAL.ontology.av.streaming.AudioFile");
+		Class.forName("org.universAAL.ontology.av.streaming.AudioFormat");
+		Class.forName("org.universAAL.ontology.av.streaming.AudioStream");
+		Class.forName("org.universAAL.ontology.av.streaming.EndPoint");
+		Class.forName("org.universAAL.ontology.av.streaming.VideoCompression");
+		Class.forName("org.universAAL.ontology.av.streaming.VideoFormat");
+		Class.forName("org.universAAL.ontology.av.streaming.VideoStream");
 	}
 	
 	public void stop(BundleContext arg0) throws Exception {
