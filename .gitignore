@@ -1,6 +1,10 @@
 /.classpath
 /.project
 /.settings
+audio_video/.classpath
+audio_video/.project
+audio_video/.settings
+audio_video/target
 blind/.classpath
 blind/.project
 blind/.settings
@@ -18,10 +22,6 @@ measurement/.classpath
 measurement/.project
 measurement/.settings
 measurement/target
-mediaservice/.classpath
-mediaservice/.project
-mediaservice/.settings
-mediaservice/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
