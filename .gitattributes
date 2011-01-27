@@ -118,6 +118,14 @@ physical.world/src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
 pom/pom.xml -text
+powersocket/LICENSE.txt -text
+powersocket/NOTICE.txt -text
+powersocket/pom.xml -text
+powersocket/src/main/java/org/universAAL/ontology/Activator.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/Powersocket.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/PowersocketController.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/dimmableSocket.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/switchableSocket.java -text
 user.profile/LICENSE-CPL-JUnit.txt -text
 user.profile/LICENSE-JGCL.txt -text
 user.profile/LICENSE-MIT11-Bouncycastle.txt -text
