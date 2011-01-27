@@ -178,3 +178,10 @@ weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
 weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
+window/LICENSE.txt -text
+window/NOTICE.txt -text
+window/pom.xml -text
+window/src/main/java/org/universAAL/ontology/Activator.java -text
+window/src/main/java/org/universAAL/ontology/window/Window.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowController.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowType.java -text
