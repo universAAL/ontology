@@ -42,6 +42,11 @@
 			<version>0.3.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.service</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.phWorld</artifactId>
 			<version>0.2.0-SNAPSHOT</version>
