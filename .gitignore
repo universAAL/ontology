@@ -26,6 +26,14 @@ medication/.classpath
 medication/.project
 medication/.settings
 medication/target
+ont.device.extra/.classpath
+ont.device.extra/.project
+ont.device.extra/.settings
+ont.device.extra/target
+ont.location.extra/.classpath
+ont.location.extra/.project
+ont.location.extra/.settings
+ont.location.extra/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
