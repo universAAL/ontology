@@ -111,7 +111,7 @@ public class PlaceType extends ManagedIndividual {
 	 * returns <I>null
 	 */
     public static ManagedIndividual getIndividualByURI(String instanceURI) {
-		if (instanceURI==null || !(instanceURI.startsWith(uAAL_SERVICE_NAMESPACE)))
+		if (instanceURI==null || !(instanceURI.startsWith(uAAL_VOCABULARY_NAMESPACE)))
 			return null;
 		
 		return valueOf(instanceURI);
