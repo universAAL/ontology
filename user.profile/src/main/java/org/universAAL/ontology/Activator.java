@@ -21,21 +21,6 @@ package org.universAAL.ontology;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import org.universAAL.ontology.Activator;
-import org.universAAL.ontology.profile.Astigmatism;
-import org.universAAL.ontology.profile.ColorBlindness;
-import org.universAAL.ontology.profile.ElderlyProfile;
-import org.universAAL.ontology.profile.ElderlyUser;
-import org.universAAL.ontology.profile.FarSightedness;
-import org.universAAL.ontology.profile.HealthProfile;
-import org.universAAL.ontology.profile.HearingImpairment;
-import org.universAAL.ontology.profile.LightSensitivity;
-import org.universAAL.ontology.profile.NearSightedness;
-import org.universAAL.ontology.profile.PersonalPreferenceProfile;
-import org.universAAL.ontology.profile.PhysicalImpairment;
-import org.universAAL.ontology.profile.SightImpairment;
-import org.universAAL.ontology.profile.SpeakingImpairment;
-import org.universAAL.ontology.profile.UserIdentificationProfile;
 
 public class Activator implements BundleActivator {
 
@@ -43,22 +28,36 @@ public class Activator implements BundleActivator {
 	
 	public void start(BundleContext context) throws Exception {
 		Activator.context = context;
-		Class.forName(ElderlyUser.class.getName());
-		Class.forName(HealthProfile.class.getName());
-		Class.forName(ElderlyProfile.class.getName());
-		Class.forName(UserIdentificationProfile.class.getName());
-		Class.forName(PersonalPreferenceProfile.class.getName());
-		
-		// Impairments
-		Class.forName(Astigmatism.class.getName());
-		Class.forName(ColorBlindness.class.getName());
-		Class.forName(FarSightedness.class.getName());
-		Class.forName(LightSensitivity.class.getName());
-		Class.forName(NearSightedness.class.getName());
-		Class.forName(HearingImpairment.class.getName());
-		Class.forName(PhysicalImpairment.class.getName());
-		Class.forName(SpeakingImpairment.class.getName());
-		Class.forName(SightImpairment.class.getName());
+		Class.forName("org.universAAL.ontology.profile.Address");
+		Class.forName("org.universAAL.ontology.profile.Astigmatism");
+		Class.forName("org.universAAL.ontology.profile.ColorBlindness");
+		Class.forName("org.universAAL.ontology.profile.ContactType");
+		Class.forName("org.universAAL.ontology.profile.DiaryActivityProfile");
+		Class.forName("org.universAAL.ontology.profile.DiaryNutritionalProfile");
+		Class.forName("org.universAAL.ontology.profile.ElderlyUser");
+		Class.forName("org.universAAL.ontology.profile.ElderlyProfile");
+		Class.forName("org.universAAL.ontology.profile.ExerciseType");
+		Class.forName("org.universAAL.ontology.profile.FarSightedness");
+		Class.forName("org.universAAL.ontology.profile.HealthProfile");
+		Class.forName("org.universAAL.ontology.profile.HearingImpairment");
+		Class.forName("org.universAAL.ontology.profile.Illness");
+		Class.forName("org.universAAL.ontology.profile.LightSensitivity");
+		Class.forName("org.universAAL.ontology.profile.Medicine");
+		Class.forName("org.universAAL.ontology.profile.NearSightedness");
+		Class.forName("org.universAAL.ontology.profile.PersonalPreferenceProfile");
+		Class.forName("org.universAAL.ontology.profile.PhysicalImpairment");
+		Class.forName("org.universAAL.ontology.profile.ProfileProperty");
+		Class.forName("org.universAAL.ontology.profile.PropertyBag");
+		Class.forName("org.universAAL.ontology.profile.PropertyEntry");
+		Class.forName("org.universAAL.ontology.profile.Sex");
+		Class.forName("org.universAAL.ontology.profile.SleepingState");
+		Class.forName("org.universAAL.ontology.profile.SocialProfile");
+		Class.forName("org.universAAL.ontology.profile.SpeakingImpairment");
+		Class.forName("org.universAAL.ontology.profile.UserIdentificationProfile");
+		Class.forName("org.universAAL.ontology.profile.UserPosture");
+		Class.forName("org.universAAL.ontology.profile.UserRole");
+		Class.forName("org.universAAL.ontology.profile.service.ProfilingEditorService");
+		Class.forName("org.universAAL.ontology.profile.service.ProfilingService");
 	}
 	
 	public void stop(BundleContext arg0) throws Exception {
