@@ -18,7 +18,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.device.home;
 
 import org.universAAL.middleware.owl.OrderingRestriction;
@@ -29,42 +29,43 @@ import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
 public class CurtainActuator extends DimmerActuator {
-public static final String MY_URI;
-	
-	static{
-		MY_URI=Device.uAAL_DEVICE_NAMESPACE+"CurtainActuator";
-		register(CurtainActuator.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_DIMMABLE_STATUS.equals(propURI))
-			return OrderingRestriction.newOrderingRestriction(new Integer(100),
-					new Integer(0), true, true,
-					Restriction.getAllValuesRestrictionWithCardinality(propURI,
-							TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		return Sensor.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public CurtainActuator(){
-	}
-	
-	public CurtainActuator(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "A Curtain Dimmable Actuator";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Curtain Actuator";
-	}
+    public static final String MY_URI;
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    static {
+	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "CurtainActuator";
+	register(CurtainActuator.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_DIMMABLE_STATUS.equals(propURI))
+	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
+		    new Integer(0), true, true, Restriction
+			    .getAllValuesRestrictionWithCardinality(propURI,
+				    TypeMapper.getDatatypeURI(Integer.class),
+				    1, 1));
+	return Sensor.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public CurtainActuator() {
+    }
+
+    public CurtainActuator(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "A Curtain Dimmable Actuator";
+    }
+
+    public static String getRDFSLabel() {
+	return "Curtain Actuator";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }
