@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.blind;
 
@@ -29,69 +29,74 @@ import org.universAAL.middleware.owl.Restriction;
  * 
  * @author Steeven Zeiss
  * @since 26.11.2009
- *
+ * 
  */
 public class BlindController extends Service {// Lighting {
-	public static final String MY_URI;
-	public static final String PROP_CONTROLS;
+    public static final String MY_URI;
+    public static final String PROP_CONTROLS;
 
-	private static Hashtable blindServicesRestrictions = new Hashtable(1);
-	static {
-		MY_URI = Blind.BLIND_NAMESPACE + "BlindController";
-		PROP_CONTROLS = Blind.BLIND_NAMESPACE + "controls";
-		//PROP_STATUS = Blind.BLIND_NAMESPACE+ "status";
-		register(BlindController.class);
-		addRestriction(
-				Restriction.getAllValuesRestriction(PROP_CONTROLS, Blind.MY_URI),
-				new String[] {PROP_CONTROLS},
-				blindServicesRestrictions);
-//		addRestriction(
-//				Restriction.getAllValuesRestriction(PROP_STATUS, Blind.MY_URI),
-//				new String[]{PROP_STATUS},
-//				blindServicesRestrictions);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (propURI == null)
-			return null;
-		Object r = blindServicesRestrictions.get(propURI);
-		if (r instanceof Restriction)
-			return (Restriction) r;
-		return Service.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String getRDFSComment() {
-		return "The class of services controling blinds.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "BlindsServices";
-	}
-	
-	public BlindController() {
-		super();
-	}
-	
-	public BlindController(String uri) {
-		super(uri);
-	}
+    private static Hashtable blindServicesRestrictions = new Hashtable(1);
+    static {
+	MY_URI = Blind.BLIND_NAMESPACE + "BlindController";
+	PROP_CONTROLS = Blind.BLIND_NAMESPACE + "controls";
+	// PROP_STATUS = Blind.BLIND_NAMESPACE+ "status";
+	register(BlindController.class);
+	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
+		Blind.MY_URI), new String[] { PROP_CONTROLS },
+		blindServicesRestrictions);
+	// addRestriction(
+	// Restriction.getAllValuesRestriction(PROP_STATUS, Blind.MY_URI),
+	// new String[]{PROP_STATUS},
+	// blindServicesRestrictions);
+    }
 
-	/* (non-Javadoc)
-	 * @see org.persona.ontology.Service#getClassLevelRestrictions()
-	 */
-	protected Hashtable getClassLevelRestrictions() {
-		return blindServicesRestrictions;
-	}
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (propURI == null)
+	    return null;
+	Object r = blindServicesRestrictions.get(propURI);
+	if (r instanceof Restriction)
+	    return (Restriction) r;
+	return Service.getClassRestrictionsOnProperty(propURI);
+    }
 
-	/* (non-Javadoc)
-	 * @see org.persona.ontology.ManagedIndividual#getPropSerializationType(java.lang.String)
-	 */
-	public int getPropSerializationType(String propURI) {
-		return PROP_CONTROLS.equals(propURI)? PROP_SERIALIZATION_FULL
-				: PROP_SERIALIZATION_OPTIONAL;
-	}
+    public static String getRDFSComment() {
+	return "The class of services controling blinds.";
+    }
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    public static String getRDFSLabel() {
+	return "BlindsServices";
+    }
+
+    public BlindController() {
+	super();
+    }
+
+    public BlindController(String uri) {
+	super(uri);
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.persona.ontology.Service#getClassLevelRestrictions()
+     */
+    protected Hashtable getClassLevelRestrictions() {
+	return blindServicesRestrictions;
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
+     * lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: PROP_SERIALIZATION_OPTIONAL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }
