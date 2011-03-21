@@ -18,7 +18,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.weather;
 
 import org.universAAL.middleware.rdf.TypeMapper;
@@ -27,48 +27,48 @@ import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
-public class TempSensor extends Sensor{
-	public static final String MY_URI;
-	
-	static{
-		MY_URI=uAAL_DEVICE_NAMESPACE+"TemperatureSensor";
-		register(TempSensor.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_MEASURED_VALUE.equals(propURI))
-			return Restriction.getAllValuesRestriction(propURI,
-					TypeMapper.getDatatypeURI(Float.class));
-		return Sensor.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public TempSensor(){
-	}
-	
-	public TempSensor(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "A Temperature Sensor Device";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Temperature Sensor";
-	}
+public class TempSensor extends Sensor {
+    public static final String MY_URI;
 
-	public boolean isWellFormed() {
-		return true;
-	}
-	
-	public float getMeasuredvalue(){
-		return ((Float)props.get(PROP_MEASURED_VALUE)).floatValue();
-	}
-	
-	public void setMeasuredValue(float value){
-		props.put(PROP_MEASURED_VALUE, new Float(value));
-	}
+    static {
+	MY_URI = uAAL_DEVICE_NAMESPACE + "TemperatureSensor";
+	register(TempSensor.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_MEASURED_VALUE.equals(propURI))
+	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
+		    .getDatatypeURI(Float.class));
+	return Sensor.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public TempSensor() {
+    }
+
+    public TempSensor(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "A Temperature Sensor Device";
+    }
+
+    public static String getRDFSLabel() {
+	return "Temperature Sensor";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
+
+    public float getMeasuredvalue() {
+	return ((Float) props.get(PROP_MEASURED_VALUE)).floatValue();
+    }
+
+    public void setMeasuredValue(float value) {
+	props.put(PROP_MEASURED_VALUE, new Float(value));
+    }
 
 }
