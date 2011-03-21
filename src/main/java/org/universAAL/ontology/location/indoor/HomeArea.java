@@ -16,63 +16,70 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.location.indoor;
 
 import org.universAAL.ontology.shape.Shape;
 
 public class HomeArea extends IndoorPlace {
 
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_LOCATION_NAMESPACE + "HomeArea";
-		register(HomeArea.class);
-	}
-		
-	/**
-	 * Creates a HomeArea object
-	 * @param uri the object URI
-	 */
-	public HomeArea(String uri) {
-		super(uri);
-	}
-	
-	/**
-	 * Creates a HomeArea object
-	 */
-	public HomeArea() {
-		super();
-	}
-	
-	/**
-	 * Creates a HomeArea object
-	 * @param uri this value can also be a null object
-	 * @param name The place name. A null object is not allowed
-	 */
-	public HomeArea(String uri, String name) {
-		super(uri,name);
-	}
-	
-	public HomeArea(String uri,String name,Shape shape) {
-		super(uri,name,shape);
-	}
-	
-	public HomeArea(String uri,Shape shape) {
-		super(uri,shape);
-	}
-	
-	/**
-	 * Returns a human readable description on the essence of this ontology class.
-	 */
-	public static String getRDFSComment() {
-		return "A indoor place.";
-	}
-	
-	/**
-	 * Returns a label with which this ontology class can be introduced to human users.
-	 */
-	public static String getRDFSLabel() {
-		return "HomeArea";
-	}
+    public static final String MY_URI;
+
+    static {
+	MY_URI = uAAL_LOCATION_NAMESPACE + "HomeArea";
+	register(HomeArea.class);
+    }
+
+    /**
+     * Creates a HomeArea object
+     * 
+     * @param uri
+     *            the object URI
+     */
+    public HomeArea(String uri) {
+	super(uri);
+    }
+
+    /**
+     * Creates a HomeArea object
+     */
+    public HomeArea() {
+	super();
+    }
+
+    /**
+     * Creates a HomeArea object
+     * 
+     * @param uri
+     *            this value can also be a null object
+     * @param name
+     *            The place name. A null object is not allowed
+     */
+    public HomeArea(String uri, String name) {
+	super(uri, name);
+    }
+
+    public HomeArea(String uri, String name, Shape shape) {
+	super(uri, name, shape);
+    }
+
+    public HomeArea(String uri, Shape shape) {
+	super(uri, shape);
+    }
+
+    /**
+     * Returns a human readable description on the essence of this ontology
+     * class.
+     */
+    public static String getRDFSComment() {
+	return "A indoor place.";
+    }
+
+    /**
+     * Returns a label with which this ontology class can be introduced to human
+     * users.
+     */
+    public static String getRDFSLabel() {
+	return "HomeArea";
+    }
 }

@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.shape;
 
 import org.universAAL.middleware.owl.Restriction;
@@ -27,189 +27,232 @@ import org.universAAL.ontology.location.position.Point;
 /**
  * 
  * @author chwirth
- *
+ * 
  */
 
 public class QuasiCylinder extends Shape3D {
 
-	public static final String MY_URI;
+    public static final String MY_URI;
 
-	public static final String PROP_HEAD;
-	public static final String PROP_FOOT;
+    public static final String PROP_HEAD;
+    public static final String PROP_FOOT;
 
-	static {
-		MY_URI = uAAL_SHAPE_NAMESPACE + "QuasiCylinder";
-		PROP_HEAD = uAAL_SHAPE_NAMESPACE + "Head";
-		PROP_FOOT = uAAL_SHAPE_NAMESPACE + "Foot";
-		register(QuasiCylinder.class);
+    static {
+	MY_URI = uAAL_SHAPE_NAMESPACE + "QuasiCylinder";
+	PROP_HEAD = uAAL_SHAPE_NAMESPACE + "Head";
+	PROP_FOOT = uAAL_SHAPE_NAMESPACE + "Foot";
+	register(QuasiCylinder.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_HEAD.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    Ellipse.MY_URI, 1, 1);
+	if (PROP_FOOT.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    Ellipse.MY_URI, 1, 1);
+	return Shape3D.getClassRestrictionsOnProperty(propURI);
+    }
+
+    /**
+     * Creates a Shape object
+     * 
+     * @param uri
+     *            the object URI
+     */
+    public QuasiCylinder(String uri) {
+	super(uri);
+    }
+
+    /**
+     * Creates a Shape object
+     */
+    public QuasiCylinder() {
+	super();
+    }
+
+    /**
+     * Creates a new QuasiCylinder. Head and foot have to have the same parent
+     * coordinate system. This means
+     * head/foot.getLocalCoordinateSystem().getOrigin().getCoordinateSystem()
+     * have to return the same object
+     * 
+     * @param uri
+     * @param head
+     * @param foot
+     */
+    public QuasiCylinder(String uri, Ellipse head, Ellipse foot) {
+	super(uri);
+	props.put(PROP_HEAD, head);
+	props.put(PROP_FOOT, foot);
+	checkValid();
+	setLocalCoordinateSystem(((OriginedMetric) head
+		.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem());
+    }
+
+    /**
+     * Creates a new QuasiCylinder. Head and foot have to have the same parent
+     * coordinate system. This means
+     * head/foot.getLocalCoordinateSystem().getOrigin().getCoordinateSystem()
+     * have to return the same object
+     * 
+     * @param head
+     * @param foot
+     */
+    public QuasiCylinder(Ellipse head, Ellipse foot) {
+	super();
+	props.put(PROP_HEAD, head);
+	props.put(PROP_FOOT, foot);
+	checkValid();
+	setLocalCoordinateSystem(((OriginedMetric) head
+		.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem());
+    }
+
+    private void checkValid() {
+	Ellipse head = (Ellipse) props.get(PROP_HEAD);
+	Ellipse foot = (Ellipse) props.get(PROP_FOOT);
+	if (head.getLocalCoordinateSystem().getClass() != OriginedMetric.class
+		|| foot.getLocalCoordinateSystem().getClass() != OriginedMetric.class
+		|| ((OriginedMetric) head.getLocalCoordinateSystem())
+			.getOrigin().getCoordinateSystem() != ((OriginedMetric) foot
+			.getLocalCoordinateSystem()).getOrigin()
+			.getCoordinateSystem())
+	    throw new IllegalArgumentException(
+		    "head and foot does not have the same parent coordinate system");
+    }
+
+    /**
+     * Returns a human readable description on the essence of this ontology
+     * class.
+     */
+    public static String getRDFSComment() {
+	return "A quasi cylinder.";
+    }
+
+    /**
+     * Returns a label with which this ontology class can be introduced to human
+     * users.
+     */
+    public static String getRDFSLabel() {
+	return "QuasiCylinder";
+    }
+
+    public Ellipse getHead() {
+	return (Ellipse) props.get(PROP_HEAD);
+    }
+
+    public void setHead(Ellipse head) {
+	props.put(PROP_HEAD, head);
+	checkValid();
+    }
+
+    public Ellipse getFoot() {
+	return (Ellipse) props.get(PROP_FOOT);
+    }
+
+    public void setFoot(Ellipse foot) {
+	props.put(PROP_FOOT, foot);
+	checkValid();
+    }
+
+    /**
+     * returns the midpoint of the object
+     * 
+     * @return the midpoint
+     */
+    public Point getMidpoint() {
+	double[] headcenter = getHead().getCenter().get3DCoordinates();
+	double[] footcenter = getFoot().getCenter().get3DCoordinates();
+	Point center = new Point((headcenter[0] - footcenter[0]) / 2d
+		+ footcenter[0], (headcenter[1] - footcenter[1]) / 2d
+		+ footcenter[1], (headcenter[2] - footcenter[2]) / 2d
+		+ footcenter[2], getHead().getCenter().getCoordinateSystem());
+	return center;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+	    return super.getPropSerializationType(propURI);
+	if (PROP_HEAD.equals(propURI))
+	    return PROP_SERIALIZATION_REDUCED;
+	if (PROP_FOOT.equals(propURI))
+	    return PROP_SERIALIZATION_REDUCED;
+
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
+
+    public static String[] getStandardPropertyURIs() {
+	String[] inherited = Shape3D.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length + 2];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
 	}
+	toReturn[i++] = PROP_HEAD;
+	toReturn[i] = PROP_FOOT;
+	return toReturn;
+    }
 
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_HEAD.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					Ellipse.MY_URI,1, 1);
-		if (PROP_FOOT.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					Ellipse.MY_URI,1, 1);
-		return Shape3D.getClassRestrictionsOnProperty(propURI);
-	}
+    /**
+     * NOT IMPLEMENTED
+     */
+    public float getDistanceTo(Point point) {
+	// TODO
+	return Point.NOT_COMPUTABLE_DISTANCE;
+    }
 
-	/**
-	 * Creates a Shape object
-	 * @param uri the object URI
-	 */
-	public QuasiCylinder(String uri) {
-		super(uri);
-	}
+    protected Shape computeBoundingVolume() {
+	Ellipse head = getHead();
+	Ellipse foot = getFoot();
+	double axis1 = head.getMajorAxisLength();
+	double axis2 = head.getMinorAxisLength();
+	double axis3 = foot.getMajorAxisLength();
+	double axis4 = foot.getMinorAxisLength();
+	Point[] pts = {
+		new Point(axis1 / 2d, axis2 / 2d, 0, head
+			.getLocalCoordinateSystem())
+			.getInHigherCoordinateSystem(),
+		new Point(-axis1 / 2d, -axis2 / 2d, 0, head
+			.getLocalCoordinateSystem())
+			.getInHigherCoordinateSystem(),
+		new Point(axis3 / 2d, axis4 / 2d, 0, foot
+			.getLocalCoordinateSystem())
+			.getInHigherCoordinateSystem(),
+		new Point(-axis3 / 2d, -axis4 / 2d, 0, foot
+			.getLocalCoordinateSystem())
+			.getInHigherCoordinateSystem() };
+	Point[] bnds = {
+		new Point(Math.max(Math.max(Math.max(pts[0].getX(), pts[1]
+			.getX()), pts[2].getX()), pts[3].getX()), Math.max(Math
+			.max(Math.max(pts[0].getY(), pts[1].getY()), pts[2]
+				.getY()), pts[3].getY()), Math.max(Math.max(
+			Math.max(pts[0].getZ(), pts[1].getZ()), pts[2].getZ()),
+			pts[3].getZ()), getLocalCoordinateSystem()),
+		new Point(Math.min(Math.min(Math.min(pts[0].getX(), pts[1]
+			.getX()), pts[2].getX()), pts[3].getX()), Math.min(Math
+			.min(Math.min(pts[0].getY(), pts[1].getY()), pts[2]
+				.getY()), pts[3].getY()), Math.min(Math.min(
+			Math.min(pts[0].getZ(), pts[1].getZ()), pts[2].getZ()),
+			pts[3].getZ()), getLocalCoordinateSystem()) };
+	return new Box(bnds[0].getX() - bnds[1].getX(), bnds[0].getY()
+		- bnds[1].getY(), bnds[0].getZ() - bnds[1].getZ(),
+		new OriginedMetric(
+			(float) (bnds[0].getX() + (bnds[1].getX() - bnds[0]
+				.getX()) / 2d),
+			(float) (bnds[0].getY() + (bnds[1].getY() - bnds[0]
+				.getY()) / 2d),
+			(float) (bnds[0].getZ() + (bnds[1].getZ() - bnds[0]
+				.getZ()) / 2d), (Place) getCenter()
+				.getContainingLocation()));
+    }
 
-	/**
-	 * Creates a Shape object
-	 */
-	public QuasiCylinder() {
-		super();
-	}
-
-	/**
-	 * Creates a new QuasiCylinder. Head and foot have to have the same parent coordinate system.
-	 * This means head/foot.getLocalCoordinateSystem().getOrigin().getCoordinateSystem() have to return the same object
-	 * @param uri
-	 * @param head
-	 * @param foot
-	 */
-	public QuasiCylinder(String uri, Ellipse head,Ellipse foot) {
-		super(uri);
-		props.put(PROP_HEAD, head);
-		props.put(PROP_FOOT, foot);
-		checkValid();
-		setLocalCoordinateSystem(((OriginedMetric)head.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem());
-	}
-
-	/**
-	 * Creates a new QuasiCylinder. Head and foot have to have the same parent coordinate system.
-	 * This means head/foot.getLocalCoordinateSystem().getOrigin().getCoordinateSystem() have to return the same object
-	 * @param head
-	 * @param foot
-	 */
-	public QuasiCylinder(Ellipse head,Ellipse foot) {
-		super();
-		props.put(PROP_HEAD, head);
-		props.put(PROP_FOOT, foot);
-		checkValid();
-		setLocalCoordinateSystem(((OriginedMetric)head.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem());
-	}
-
-	private void checkValid() {
-		Ellipse head = (Ellipse) props.get(PROP_HEAD);
-		Ellipse foot = (Ellipse) props.get(PROP_FOOT);
-		if(head.getLocalCoordinateSystem().getClass() != OriginedMetric.class
-				|| foot.getLocalCoordinateSystem().getClass() != OriginedMetric.class
-				|| ((OriginedMetric)head.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem() !=
-					((OriginedMetric)foot.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem())
-			throw new IllegalArgumentException("head and foot does not have the same parent coordinate system");
-	}
-
-	/**
-	 * Returns a human readable description on the essence of this ontology class.
-	 */
-	public static String getRDFSComment() {
-		return "A quasi cylinder.";
-	}
-
-	/**
-	 * Returns a label with which this ontology class can be introduced to human users.
-	 */
-	public static String getRDFSLabel() {
-		return "QuasiCylinder";
-	}
-
-	public Ellipse getHead() {
-		return (Ellipse) props.get(PROP_HEAD);
-	}
-
-	public void setHead(Ellipse head) {
-		props.put(PROP_HEAD, head);
-		checkValid();
-	}
-
-	public Ellipse getFoot() {
-		return (Ellipse) props.get(PROP_FOOT);
-	}
-
-	public void setFoot(Ellipse foot) {
-		props.put(PROP_FOOT, foot);
-		checkValid();
-	}
-
-	/**
-	 * returns the midpoint of the object
-	 * @return the midpoint
-	 */
-	public Point getMidpoint() {
-		double[] headcenter = getHead().getCenter().get3DCoordinates();
-		double[] footcenter = getFoot().getCenter().get3DCoordinates();
-		Point center = new Point((headcenter[0]-footcenter[0])/2d+footcenter[0],(headcenter[1]-footcenter[1])/2d+footcenter[1],(headcenter[2]-footcenter[2])/2d+footcenter[2],getHead().getCenter().getCoordinateSystem());
-		return center;
-	}
-
-	public int getPropSerializationType(String propURI) {
-		if(super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL) return super.getPropSerializationType(propURI);
-		if (PROP_HEAD.equals(propURI))
-			return PROP_SERIALIZATION_REDUCED;
-		if (PROP_FOOT.equals(propURI))
-			return PROP_SERIALIZATION_REDUCED;
-
-		return PROP_SERIALIZATION_OPTIONAL;
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		String[] inherited = Shape3D.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+2];
-		int i = 0;
-		while (i < inherited.length) {
-			toReturn[i] = inherited[i];
-			i++;
-		}
-		toReturn[i++] = PROP_HEAD;
-		toReturn[i] = PROP_FOOT;
-		return toReturn;
-	}
-
-	/**
-	 *  NOT IMPLEMENTED
-	 */
-	public float getDistanceTo(Point point) {
-		//TODO
-		return Point.NOT_COMPUTABLE_DISTANCE;
-	}
-
-	protected Shape computeBoundingVolume() {
-		Ellipse head = getHead();
-		Ellipse foot = getFoot();
-		double axis1 = head.getMajorAxisLength();
-		double axis2 = head.getMinorAxisLength();
-		double axis3 = foot.getMajorAxisLength();
-		double axis4 = foot.getMinorAxisLength();
-		Point[] pts = {new Point(axis1/2d,axis2/2d,0,head.getLocalCoordinateSystem()).getInHigherCoordinateSystem(),
-				new Point(-axis1/2d,-axis2/2d,0,head.getLocalCoordinateSystem()).getInHigherCoordinateSystem(),
-				new Point(axis3/2d,axis4/2d,0,foot.getLocalCoordinateSystem()).getInHigherCoordinateSystem(),
-				new Point(-axis3/2d,-axis4/2d,0,foot.getLocalCoordinateSystem()).getInHigherCoordinateSystem()
-		};
-		Point[] bnds = {new Point(Math.max(Math.max(Math.max(pts[0].getX(), pts[1].getX()),pts[2].getX()),pts[3].getX()),
-				Math.max(Math.max(Math.max(pts[0].getY(), pts[1].getY()),pts[2].getY()),pts[3].getY()),
-				Math.max(Math.max(Math.max(pts[0].getZ(), pts[1].getZ()),pts[2].getZ()),pts[3].getZ()),getLocalCoordinateSystem()),
-				new Point(Math.min(Math.min(Math.min(pts[0].getX(), pts[1].getX()),pts[2].getX()),pts[3].getX()),
-						Math.min(Math.min(Math.min(pts[0].getY(), pts[1].getY()),pts[2].getY()),pts[3].getY()),
-						Math.min(Math.min(Math.min(pts[0].getZ(), pts[1].getZ()),pts[2].getZ()),pts[3].getZ()),getLocalCoordinateSystem())
-		};
-		return new Box(bnds[0].getX()-bnds[1].getX(),bnds[0].getY()-bnds[1].getY(),bnds[0].getZ()-bnds[1].getZ(),new OriginedMetric((float)(bnds[0].getX()+(bnds[1].getX()-bnds[0].getX())/2d),(float)(bnds[0].getY()+(bnds[1].getY()-bnds[0].getY())/2d),(float)(bnds[0].getZ()+(bnds[1].getZ()-bnds[0].getZ())/2d),(Place)getCenter().getContainingLocation()));
-	}
-
-	/**
-	 * NOT IMPLEMENTED
-	 */
-	public boolean contains(Point p) {
-		// TODO
-		return false;
-	}
+    /**
+     * NOT IMPLEMENTED
+     */
+    public boolean contains(Point p) {
+	// TODO
+	return false;
+    }
 
 }
