@@ -16,19 +16,20 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.profile;
 
 public class ProfileProperty {
-	public final Object propertyType;
-	public final String propertyURI;
-	public final String propertyLabel;
-	public final boolean propertyStatic;
-	
-	public ProfileProperty(Object obj, String URI, String label, boolean isStatic) {
-		propertyURI = URI;
-		propertyType = obj;
-		propertyLabel = label;
-		propertyStatic = isStatic;
-	}
+    public final Object propertyType;
+    public final String propertyURI;
+    public final String propertyLabel;
+    public final boolean propertyStatic;
+
+    public ProfileProperty(Object obj, String URI, String label,
+	    boolean isStatic) {
+	propertyURI = URI;
+	propertyType = obj;
+	propertyLabel = label;
+	propertyStatic = isStatic;
+    }
 }

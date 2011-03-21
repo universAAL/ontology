@@ -16,15 +16,14 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.profile;
 
 import java.util.List;
 
-
 public interface EnumProperty extends PropertyPublisher {
-	//a list of String[2]: 
-	//	String[0]-> Name, String[1] -> Value
-	//String[] getAllValues();
-	List getAllValues();
+    // a list of String[2]:
+    // String[0]-> Name, String[1] -> Value
+    // String[] getAllValues();
+    List getAllValues();
 }
