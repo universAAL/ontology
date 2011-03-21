@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.lighting;
 
@@ -24,24 +24,24 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * @author mtazari
- *
+ * 
  */
 public abstract class LightType extends ManagedIndividual {
-	public static final String MY_URI;
-	static {
-		MY_URI = LightSource.LIGHTING_NAMESPACE + "LightType";
-		register(LightType.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "The type of a light source";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Light Type";
-	}
-	
-	protected LightType(String uri) {
-		super(uri);
-	}
+    public static final String MY_URI;
+    static {
+	MY_URI = LightSource.LIGHTING_NAMESPACE + "LightType";
+	register(LightType.class);
+    }
+
+    public static String getRDFSComment() {
+	return "The type of a light source";
+    }
+
+    public static String getRDFSLabel() {
+	return "Light Type";
+    }
+
+    protected LightType(String uri) {
+	super(uri);
+    }
 }
