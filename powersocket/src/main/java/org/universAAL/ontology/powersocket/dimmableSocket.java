@@ -16,55 +16,51 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.powersocket;
 
 import org.universAAL.ontology.location.Location;
 
 public class dimmableSocket extends Powersocket {
-	
-	public static final String POWERSOCKET_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Powersocket.owl#";
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = POWERSOCKET_NAMESPACE + "dimmableSocket";
-		register(Powersocket.class);
-	}
-	
-	
-	public static String[] getStandardPropertyURIs() {
-		return new String[] {
-				PROP_SOCKET_VALUE,
-				PROP_SOCKET_LOCATION
-		};
-	}
-	
-	public static String getRDFSComment() {
-		return "The class of all dimmable powersockets.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "dimmablePowersocket";
-	}
-	
-	public dimmableSocket() {
-		super();
-	}
-	
-	public dimmableSocket(String uri) {
-		super(uri);
-	}
-	
-	public dimmableSocket(String uri, Location loc) {
-		super(uri);
-		if (loc == null)
-			throw new IllegalArgumentException();
-		
-		//TODO
-		setLocation(loc);
-		
-		props.put(PROP_SOCKET_VALUE, new Integer(0));
-		props.put(PROP_SOCKET_LOCATION, loc);
-	}
+
+    public static final String POWERSOCKET_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Powersocket.owl#";
+    public static final String MY_URI;
+
+    static {
+	MY_URI = POWERSOCKET_NAMESPACE + "dimmableSocket";
+	register(Powersocket.class);
+    }
+
+    public static String[] getStandardPropertyURIs() {
+	return new String[] { PROP_SOCKET_VALUE, PROP_SOCKET_LOCATION };
+    }
+
+    public static String getRDFSComment() {
+	return "The class of all dimmable powersockets.";
+    }
+
+    public static String getRDFSLabel() {
+	return "dimmablePowersocket";
+    }
+
+    public dimmableSocket() {
+	super();
+    }
+
+    public dimmableSocket(String uri) {
+	super(uri);
+    }
+
+    public dimmableSocket(String uri, Location loc) {
+	super(uri);
+	if (loc == null)
+	    throw new IllegalArgumentException();
+
+	// TODO
+	setLocation(loc);
+
+	props.put(PROP_SOCKET_VALUE, new Integer(0));
+	props.put(PROP_SOCKET_LOCATION, loc);
+    }
 
 }
