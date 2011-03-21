@@ -16,34 +16,33 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.phThing;
 
-
 public class PhysicalContainer extends PhysicalThing {
-public static final String MY_URI;
-	
-	static{
-		MY_URI=uAAL_VOCABULARY_NAMESPACE + "PhysicalContainer";
-		register(PhysicalContainer.class);
-	}
-	
-	public PhysicalContainer(){
-	}
-	
-	public PhysicalContainer(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "A Physical thing that contains other Physical things";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Physical Container";
-	}
+    public static final String MY_URI;
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalContainer";
+	register(PhysicalContainer.class);
+    }
+
+    public PhysicalContainer() {
+    }
+
+    public PhysicalContainer(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "A Physical thing that contains other Physical things";
+    }
+
+    public static String getRDFSLabel() {
+	return "Physical Container";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

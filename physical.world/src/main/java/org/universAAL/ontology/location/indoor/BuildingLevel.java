@@ -16,63 +16,70 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.location.indoor;
 
 import org.universAAL.ontology.shape.Shape;
 
 public class BuildingLevel extends IndoorPlace {
 
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_LOCATION_NAMESPACE + "BuildingLevel";
-		register(BuildingLevel.class);
-	}
-		
-	/**
-	 * Creates a BuildingLevel object
-	 * @param uri the object URI
-	 */
-	public BuildingLevel(String uri) {
-		super(uri);
-	}
-	
-	/**
-	 * Creates a BuildingLevel object
-	 */
-	public BuildingLevel() {
-		super();
-	}
-	
-	/**
-	 * Creates a BuildingLevel object
-	 * @param uri this value can also be a null object
-	 * @param name The place name. A null object is not allowed
-	 */
-	public BuildingLevel(String uri, String name) {
-		super(uri,name);
-	}
-	
-	public BuildingLevel(String uri,String name,Shape shape) {
-		super(uri,name,shape);
-	}
-	
-	public BuildingLevel(String uri,Shape shape) {
-		super(uri,shape);
-	}
-	
-	/**
-	 * Returns a human readable description on the essence of this ontology class.
-	 */
-	public static String getRDFSComment() {
-		return "A level of a building.";
-	}
-	
-	/**
-	 * Returns a label with which this ontology class can be introduced to human users.
-	 */
-	public static String getRDFSLabel() {
-		return "BuildingLevel";
-	}
+    public static final String MY_URI;
+
+    static {
+	MY_URI = uAAL_LOCATION_NAMESPACE + "BuildingLevel";
+	register(BuildingLevel.class);
+    }
+
+    /**
+     * Creates a BuildingLevel object
+     * 
+     * @param uri
+     *            the object URI
+     */
+    public BuildingLevel(String uri) {
+	super(uri);
+    }
+
+    /**
+     * Creates a BuildingLevel object
+     */
+    public BuildingLevel() {
+	super();
+    }
+
+    /**
+     * Creates a BuildingLevel object
+     * 
+     * @param uri
+     *            this value can also be a null object
+     * @param name
+     *            The place name. A null object is not allowed
+     */
+    public BuildingLevel(String uri, String name) {
+	super(uri, name);
+    }
+
+    public BuildingLevel(String uri, String name, Shape shape) {
+	super(uri, name, shape);
+    }
+
+    public BuildingLevel(String uri, Shape shape) {
+	super(uri, shape);
+    }
+
+    /**
+     * Returns a human readable description on the essence of this ontology
+     * class.
+     */
+    public static String getRDFSComment() {
+	return "A level of a building.";
+    }
+
+    /**
+     * Returns a label with which this ontology class can be introduced to human
+     * users.
+     */
+    public static String getRDFSLabel() {
+	return "BuildingLevel";
+    }
 }

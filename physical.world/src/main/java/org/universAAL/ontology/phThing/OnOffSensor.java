@@ -18,7 +18,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.phThing;
 
 import org.universAAL.middleware.rdf.TypeMapper;
@@ -26,48 +26,48 @@ import org.universAAL.middleware.owl.Restriction;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
 public class OnOffSensor extends Sensor {
-	public static final String MY_URI;
-	
-	static{
-		MY_URI=Device.uAAL_DEVICE_NAMESPACE+"OnOffSensor";
-		register(OnOffSensor.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_MEASURED_VALUE.equals(propURI))
-			return Restriction.getAllValuesRestriction(propURI,
-					TypeMapper.getDatatypeURI(Boolean.class));
-		return Sensor.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public OnOffSensor(){
-	}
-	
-	public OnOffSensor(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "A Home Appliance On/Off Sensor Device";
-	}
-	
-	public static String getRDFSLabel() {
-		return "On/Off Sensor";
-	}
+    public static final String MY_URI;
 
-	public boolean isWellFormed() {
-		return true;
-	}
-	
-	public boolean getMeasuredvalue(){
-		return ((Boolean)props.get(PROP_MEASURED_VALUE)).booleanValue();
-	}
-	
-	public void setMeasuredValue(boolean value){
-		props.put(PROP_MEASURED_VALUE, new Boolean(value));
-	}
+    static {
+	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "OnOffSensor";
+	register(OnOffSensor.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_MEASURED_VALUE.equals(propURI))
+	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
+		    .getDatatypeURI(Boolean.class));
+	return Sensor.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public OnOffSensor() {
+    }
+
+    public OnOffSensor(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "A Home Appliance On/Off Sensor Device";
+    }
+
+    public static String getRDFSLabel() {
+	return "On/Off Sensor";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
+
+    public boolean getMeasuredvalue() {
+	return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
+    }
+
+    public void setMeasuredValue(boolean value) {
+	props.put(PROP_MEASURED_VALUE, new Boolean(value));
+    }
 
 }

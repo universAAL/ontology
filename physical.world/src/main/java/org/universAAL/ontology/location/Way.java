@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.location;
 
 import org.universAAL.middleware.owl.Restriction;
@@ -27,69 +27,76 @@ import org.universAAL.ontology.shape.Shape;
 /**
  * 
  * @author chwirth
- *
+ * 
  */
 
 public class Way extends Place {
 
-	public static final String MY_URI;
+    public static final String MY_URI;
 
-	static {
-		MY_URI = uAAL_LOCATION_NAMESPACE + "Way";
-		register(Way.class);
-	}
+    static {
+	MY_URI = uAAL_LOCATION_NAMESPACE + "Way";
+	register(Way.class);
+    }
 
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_HAS_SHAPE.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					Path.MY_URI,1, 0);
-		return Location.getClassRestrictionsOnProperty(propURI);
-	}
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_HAS_SHAPE.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    Path.MY_URI, 1, 0);
+	return Location.getClassRestrictionsOnProperty(propURI);
+    }
 
-	/**
-	 * Creates a Wayobject
-	 * @param uri the object URI
-	 */
-	public Way(String uri) {
-		super(uri);
-	}
+    /**
+     * Creates a Wayobject
+     * 
+     * @param uri
+     *            the object URI
+     */
+    public Way(String uri) {
+	super(uri);
+    }
 
-	/**
-	 * Creates a Way object
-	 */
-	public Way() {
-		super();
-	}
+    /**
+     * Creates a Way object
+     */
+    public Way() {
+	super();
+    }
 
-	/**
-	 * Creates a Way object
-	 * @param uri this value can also be a null object
-	 * @param name The way name. A null object is not allowed
-	 */
-	public Way(String uri, String name) {
-		super(uri,name);
-	}
-	
-	public Way(String uri,String name,Shape shape) {
-		super(uri,name,shape);
-	}
-	
-	public Way(String uri,Shape shape) {
-		super(uri,shape);
-	}
+    /**
+     * Creates a Way object
+     * 
+     * @param uri
+     *            this value can also be a null object
+     * @param name
+     *            The way name. A null object is not allowed
+     */
+    public Way(String uri, String name) {
+	super(uri, name);
+    }
 
-	/**
-	 * Returns a human readable description on the essence of this ontology class.
-	 */
-	public static String getRDFSComment() {
-		return "A way.";
-	}
+    public Way(String uri, String name, Shape shape) {
+	super(uri, name, shape);
+    }
 
-	/**
-	 * Returns a label with which this ontology class can be introduced to human users.
-	 */
-	public static String getRDFSLabel() {
-		return "Way";
-	}
+    public Way(String uri, Shape shape) {
+	super(uri, shape);
+    }
+
+    /**
+     * Returns a human readable description on the essence of this ontology
+     * class.
+     */
+    public static String getRDFSComment() {
+	return "A way.";
+    }
+
+    /**
+     * Returns a label with which this ontology class can be introduced to human
+     * users.
+     */
+    public static String getRDFSLabel() {
+	return "Way";
+    }
 
 }
