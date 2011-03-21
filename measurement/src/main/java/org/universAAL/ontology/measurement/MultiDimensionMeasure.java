@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.measurement;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -24,25 +24,32 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 /**
  * See "Measurement.jpg" under src/main/resources.
  * 
- * @author mtazari - <a href="mailto:Saied.Tazari@igd.fraunhofer.de">Saied Tazari</a>
- *
+ * @author mtazari - <a href="mailto:Saied.Tazari@igd.fraunhofer.de">Saied
+ *         Tazari</a>
+ * 
  */
 public class MultiDimensionMeasure extends ManagedIndividual {
 
-	/* (non-Javadoc)
-	 * @see org.universAAL.middleware.context.owl.ManagedIndividual#getPropSerializationType(java.lang.String)
-	 */
-	public int getPropSerializationType(String propURI) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @seeorg.universAAL.middleware.context.owl.ManagedIndividual#
+     * getPropSerializationType(java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	// TODO Auto-generated method stub
+	return 0;
+    }
 
-	/* (non-Javadoc)
-	 * @see org.universAAL.middleware.context.owl.ManagedIndividual#isWellFormed()
-	 */
-	public boolean isWellFormed() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.universAAL.middleware.context.owl.ManagedIndividual#isWellFormed()
+     */
+    public boolean isWellFormed() {
+	// TODO Auto-generated method stub
+	return false;
+    }
 
 }
