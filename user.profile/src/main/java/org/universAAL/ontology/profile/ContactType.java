@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.profile;
 
 import java.util.ArrayList;
@@ -24,99 +24,104 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
+public class ContactType extends ManagedIndividual implements EnumProperty {
+    public static final String MY_URI;
+    static {
+	MY_URI = Profile.PROFILING_NAMESPACE + "ContactType";
+	register(ContactType.class);
+    }
+    // for example ... are these roles enumeration defined?
 
-public class ContactType extends ManagedIndividual implements EnumProperty
-{
-	public static final String MY_URI;
-	static {
-		MY_URI = Profile.PROFILING_NAMESPACE + "ContactType";
-		register(ContactType.class);
-	}
-	//for example ... are these roles enumeration defined?
-	
-	private static final String[] names = {
-        
+    private static final String[] names = {
+
     };
-	
-	public static ManagedIndividual[] getEnumerationMembers() {
-		return new ManagedIndividual[] {};
-	}
-	public static ManagedIndividual getIndividualByURI(String instanceURI) {
-		return (instanceURI != null
-				&&  instanceURI.startsWith(Profile.PROFILING_NAMESPACE))?
-						valueOf(instanceURI.substring(Profile.PROFILING_NAMESPACE.length()))
-						: null;
-	}
-	public static ContactType getContactTypeByOrder(int order) {
-        switch (order) {
-        default: return null;
-        }
-	}
-	public static String getRDFSComment() {
-		return "The enum of contact type.";
-	}
 
-	public static String getRDFSLabel() {
-		return "Contact Type";
+    public static ManagedIndividual[] getEnumerationMembers() {
+	return new ManagedIndividual[] {};
+    }
+
+    public static ManagedIndividual getIndividualByURI(String instanceURI) {
+	return (instanceURI != null && instanceURI
+		.startsWith(Profile.PROFILING_NAMESPACE)) ? valueOf(instanceURI
+		.substring(Profile.PROFILING_NAMESPACE.length())) : null;
+    }
+
+    public static ContactType getContactTypeByOrder(int order) {
+	switch (order) {
+	default:
+	    return null;
 	}
-	 public static final ContactType valueOf(String name) {
-	    	if (name == null)
-	    		return null;
-	    	
-	    	if (name.startsWith(Profile.PROFILING_NAMESPACE))
-	    		name = name.substring(Profile.PROFILING_NAMESPACE.length());
-	    	
-//	        for (int i=ELDERLYUSER;  i<=ELDERLYUSER; i++)
-//	            if (names[i].equals(name))
-//	                return getContactTypeByOrder(i);
-	        
-	        return null;
-	    }
-	    
-	    private int order;
-	    private ContactType(int order) {
-	    	super(Profile.PROFILING_NAMESPACE + names[order]);
-	        this.order = order;
-	    }
+    }
 
-		public int getPropSerializationType(String propURI) {
-			return PROP_SERIALIZATION_OPTIONAL;
-		}
-		
-		public boolean isWellFormed() {
-			return true;
-		}
-	    
-	    public String name() {
-	        return names[order];
-	    }
-	    
-	    public int ord() {
-	        return order;
-	    }
+    public static String getRDFSComment() {
+	return "The enum of contact type.";
+    }
 
-		public void setProperty(String propURI, Object o) {
-			// do nothing
-		}
-	
-		public List getAllValues() {
-			List l = new ArrayList();
-			for (int i = 0; i < names.length; ++i) {
-				l.add(new Object[]{names[i], ContactType.getContactTypeByOrder(i)});
-			}
-			return l;
-			//return this.names;
-		}
-		
-		public ProfileProperty[] getAllProperties() {
-			return new ProfileProperty[0];
-		}
+    public static String getRDFSLabel() {
+	return "Contact Type";
+    }
 
-		public ProfileProperty[] getDynamicProperties() {
-			return new ProfileProperty[0];
-		}
+    public static final ContactType valueOf(String name) {
+	if (name == null)
+	    return null;
 
-		public ProfileProperty[] getStaticProperties() {
-			return new ProfileProperty[0];
-		}
+	if (name.startsWith(Profile.PROFILING_NAMESPACE))
+	    name = name.substring(Profile.PROFILING_NAMESPACE.length());
+
+	// for (int i=ELDERLYUSER; i<=ELDERLYUSER; i++)
+	// if (names[i].equals(name))
+	// return getContactTypeByOrder(i);
+
+	return null;
+    }
+
+    private int order;
+
+    private ContactType(int order) {
+	super(Profile.PROFILING_NAMESPACE + names[order]);
+	this.order = order;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
+
+    public String name() {
+	return names[order];
+    }
+
+    public int ord() {
+	return order;
+    }
+
+    public void setProperty(String propURI, Object o) {
+	// do nothing
+    }
+
+    public List getAllValues() {
+	List l = new ArrayList();
+	for (int i = 0; i < names.length; ++i) {
+	    l
+		    .add(new Object[] { names[i],
+			    ContactType.getContactTypeByOrder(i) });
+	}
+	return l;
+	// return this.names;
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return new ProfileProperty[0];
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return new ProfileProperty[0];
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	return new ProfileProperty[0];
+    }
 }

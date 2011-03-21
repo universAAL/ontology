@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 /**
  * 
  */
@@ -25,64 +25,62 @@ package org.universAAL.ontology.profile;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
-
 /**
  * @author mtazari
- *
+ * 
  */
 public class Astigmatism extends SightImpairment implements PropertyPublisher {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "Astigmatism";
-		register(Astigmatism.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "Represents the level of the user's astigmatism.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Astigmatism";
-	}
-	
-	/**
-	 * The constructor for (de-)serializers.
-	 */
-	public Astigmatism() {
-		super();
-	}
-	
-	/**
-	 * The constructor for use by applications.
-	 */
-	public Astigmatism(LevelRating impairmentLevel) {
-		super(impairmentLevel);
-	}
+    public static final String MY_URI;
 
-	public static ManagedIndividual getIndividualByURI(String instanceURI) {
-		return new Astigmatism();
-	}
-	
-	public ProfileProperty[] getAllProperties() {
-		return super.getAllProperties();
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "Astigmatism";
+	register(Astigmatism.class);
+    }
 
-	public ProfileProperty[] getDynamicProperties() {
-		return super.getDynamicProperties();
-	}
+    public static String getRDFSComment() {
+	return "Represents the level of the user's astigmatism.";
+    }
 
-	public ProfileProperty[] getStaticProperties() {
-		return super.getDynamicProperties();
-	}
-	
-	public static SightImpairment loadInstance() {
-		return new Astigmatism(LevelRating.none);
-	}
-	
-	public String toString() {
-		return "Astigmatism: " + this.getImpaimentLevel().name();
-	}
-	
-	
+    public static String getRDFSLabel() {
+	return "Astigmatism";
+    }
+
+    /**
+     * The constructor for (de-)serializers.
+     */
+    public Astigmatism() {
+	super();
+    }
+
+    /**
+     * The constructor for use by applications.
+     */
+    public Astigmatism(LevelRating impairmentLevel) {
+	super(impairmentLevel);
+    }
+
+    public static ManagedIndividual getIndividualByURI(String instanceURI) {
+	return new Astigmatism();
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return super.getAllProperties();
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return super.getDynamicProperties();
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	return super.getDynamicProperties();
+    }
+
+    public static SightImpairment loadInstance() {
+	return new Astigmatism(LevelRating.none);
+    }
+
+    public String toString() {
+	return "Astigmatism: " + this.getImpaimentLevel().name();
+    }
+
 }

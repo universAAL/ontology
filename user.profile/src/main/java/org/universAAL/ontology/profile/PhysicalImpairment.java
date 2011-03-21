@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 /**
  * 
  */
@@ -25,69 +25,70 @@ package org.universAAL.ontology.profile;
 import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
-
 /**
  * @author mtazari
- *
+ * 
  */
-public class PhysicalImpairment extends AccessImpairment implements PropertyPublisher {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalImpairment";
-		register(PhysicalImpairment.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Physical Impairment";
-	}
-	
-	/**
-	 * The constructor for (de-)serializers.
-	 */
-	public PhysicalImpairment() {
-		super();
-	}
-	
-	/**
-	 * The constructor for use by applications.
-	 */
-	public PhysicalImpairment(LevelRating impairmentLevel) {
-		super(impairmentLevel);
-	}
-	
-	public ProfileProperty[] getAllProperties() {
-		return getStaticProperties();
-	}
+public class PhysicalImpairment extends AccessImpairment implements
+	PropertyPublisher {
+    public static final String MY_URI;
 
-	public ProfileProperty[] getDynamicProperties() {
-		return new ProfileProperty[0];
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalImpairment";
+	register(PhysicalImpairment.class);
+    }
 
-	public ProfileProperty[] getStaticProperties() {
-		ProfileProperty[] propArray = new ProfileProperty[1];
-		LevelRating lr = this.getImpaimentLevel();
-		if (lr == null) 
-			lr = LevelRating.none;
-		
-		propArray[0] = new ProfileProperty(lr, PROP_IMPAIRMENT_LEVEL, "Level", true);
-		
-		return propArray;
-	}
-	
-	public static PhysicalImpairment loadInstance() {
-		return new PhysicalImpairment(LevelRating.none);
-	}
-	
-	public void setImpairment(LevelRating rating) {
-		props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
-	}
-	
-	public String toString() {
-		return "Physical Impairment: " + this.getImpaimentLevel().name();
-	}
+    public static String getRDFSComment() {
+	return "Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.";
+    }
+
+    public static String getRDFSLabel() {
+	return "Physical Impairment";
+    }
+
+    /**
+     * The constructor for (de-)serializers.
+     */
+    public PhysicalImpairment() {
+	super();
+    }
+
+    /**
+     * The constructor for use by applications.
+     */
+    public PhysicalImpairment(LevelRating impairmentLevel) {
+	super(impairmentLevel);
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return getStaticProperties();
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return new ProfileProperty[0];
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	ProfileProperty[] propArray = new ProfileProperty[1];
+	LevelRating lr = this.getImpaimentLevel();
+	if (lr == null)
+	    lr = LevelRating.none;
+
+	propArray[0] = new ProfileProperty(lr, PROP_IMPAIRMENT_LEVEL, "Level",
+		true);
+
+	return propArray;
+    }
+
+    public static PhysicalImpairment loadInstance() {
+	return new PhysicalImpairment(LevelRating.none);
+    }
+
+    public void setImpairment(LevelRating rating) {
+	props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
+    }
+
+    public String toString() {
+	return "Physical Impairment: " + this.getImpaimentLevel().name();
+    }
 }

@@ -16,153 +16,147 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 
+public class DiaryNutritionalProfile extends ManagedIndividual implements
+	PropertyPublisher {
 
-public class DiaryNutritionalProfile extends ManagedIndividual implements PropertyPublisher {
+    public static final String PROFILING_NAMESPACE = "http://ontology.persona.ratio.it/DiaryNutritionalProfile.owl#";
+    public static final String MY_URI;
+    public static final String PROP_D_CALORIES;
+    public static final String PROP_D_MEAL;
 
-	public static final String PROFILING_NAMESPACE = "http://ontology.persona.ratio.it/DiaryNutritionalProfile.owl#";
-	public static final String MY_URI;
-	public static final String PROP_D_CALORIES;
-	public static final String PROP_D_MEAL;
-	
-	static {
-		MY_URI = PROFILING_NAMESPACE + "DiaryNutritionalProfile";
-		PROP_D_CALORIES = PROFILING_NAMESPACE + "dCalories";
-		PROP_D_MEAL = PROFILING_NAMESPACE + "dMeat";
-		register(DiaryNutritionalProfile.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_D_CALORIES.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-		if (PROP_D_MEAL.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public void setProperty(String propURI, Object o) {
-		if (PROP_D_CALORIES.equals(propURI)  &&  o instanceof Integer)
-			setCalories((Integer)o);
-		else if (PROP_D_MEAL.equals(propURI) && o instanceof Integer)
-			setMeal((Integer)o);
-		else
-			super.setProperty(propURI, o);
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		return new String[] {
-				PROP_D_CALORIES,
-				PROP_D_MEAL,
-		};
-	}
-	
-	public static String getRDFSComment() {
-		return "The value of diary nutritional profile.";
-	}
+    static {
+	MY_URI = PROFILING_NAMESPACE + "DiaryNutritionalProfile";
+	PROP_D_CALORIES = PROFILING_NAMESPACE + "dCalories";
+	PROP_D_MEAL = PROFILING_NAMESPACE + "dMeat";
+	register(DiaryNutritionalProfile.class);
+    }
 
-	public static String getRDFSLabel() {
-		return "Diary Nutritional Profile";
-	}
-	
-	public DiaryNutritionalProfile(){
-		super();
-	}
-	
-	public DiaryNutritionalProfile(String uri){
-		super(uri);
-	}
-	
-	public DiaryNutritionalProfile(String uri, Integer dCalories,
-			Integer dMeal) {
-		super(uri);
-		if ((dCalories == null) || (dMeal == null))				
-			throw new IllegalArgumentException();
-		
-		props.put(PROP_D_CALORIES, dCalories);
-		props.put(PROP_D_MEAL, dMeal);
-		
-	}
-	
-	public Integer getCalories() {
-		Integer i = (Integer) props.get(PROP_D_CALORIES);
-		if (i == null) 
-			return new Integer(-1);
-		return i;
-	}
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_D_CALORIES.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
+	if (PROP_D_MEAL.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
+	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+    }
 
-	public void setCalories(Integer dCalories) {
-			props.put(PROP_D_CALORIES, dCalories);
-	}
-	
+    public void setProperty(String propURI, Object o) {
+	if (PROP_D_CALORIES.equals(propURI) && o instanceof Integer)
+	    setCalories((Integer) o);
+	else if (PROP_D_MEAL.equals(propURI) && o instanceof Integer)
+	    setMeal((Integer) o);
+	else
+	    super.setProperty(propURI, o);
+    }
 
-	
-	public Integer getMeat() {
-		Integer i = (Integer) props.get(PROP_D_MEAL);
-		if (i == null)
-			return new Integer(-1);
-		return i;
-	}
+    public static String[] getStandardPropertyURIs() {
+	return new String[] { PROP_D_CALORIES, PROP_D_MEAL, };
+    }
 
-	public void setMeal(Integer dMeat) {
-			props.put(PROP_D_MEAL, dMeat);
-	}
-	
-	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
-	}
-	
-	public boolean isWellFormed() {
-		return props.containsKey(PROP_D_CALORIES)
+    public static String getRDFSComment() {
+	return "The value of diary nutritional profile.";
+    }
+
+    public static String getRDFSLabel() {
+	return "Diary Nutritional Profile";
+    }
+
+    public DiaryNutritionalProfile() {
+	super();
+    }
+
+    public DiaryNutritionalProfile(String uri) {
+	super(uri);
+    }
+
+    public DiaryNutritionalProfile(String uri, Integer dCalories, Integer dMeal) {
+	super(uri);
+	if ((dCalories == null) || (dMeal == null))
+	    throw new IllegalArgumentException();
+
+	props.put(PROP_D_CALORIES, dCalories);
+	props.put(PROP_D_MEAL, dMeal);
+
+    }
+
+    public Integer getCalories() {
+	Integer i = (Integer) props.get(PROP_D_CALORIES);
+	if (i == null)
+	    return new Integer(-1);
+	return i;
+    }
+
+    public void setCalories(Integer dCalories) {
+	props.put(PROP_D_CALORIES, dCalories);
+    }
+
+    public Integer getMeat() {
+	Integer i = (Integer) props.get(PROP_D_MEAL);
+	if (i == null)
+	    return new Integer(-1);
+	return i;
+    }
+
+    public void setMeal(Integer dMeat) {
+	props.put(PROP_D_MEAL, dMeat);
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return props.containsKey(PROP_D_CALORIES)
 		&& props.containsKey(PROP_D_MEAL);
-	}
-	
-	public ProfileProperty[] getAllProperties() {
-		ProfileProperty[] staticProperties = getStaticProperties();
-		ProfileProperty[] dynamicProperties = getDynamicProperties();
+    }
 
-		int staticLength = staticProperties.length;
-		int dynamicLength = dynamicProperties.length;
-		int allLength = staticLength + dynamicLength; 
-		
-		ProfileProperty[] allProperties = 
-			new ProfileProperty[allLength];
-		
-		
-		for (int i = 0; i < staticLength; ++i) {
-			allProperties[i] = staticProperties[i];			
-		}
-		for (int i = staticLength; i < allLength; ++i) {
-			allProperties[i] = dynamicProperties[staticLength - i];
-		}
-		
-		return allProperties;
+    public ProfileProperty[] getAllProperties() {
+	ProfileProperty[] staticProperties = getStaticProperties();
+	ProfileProperty[] dynamicProperties = getDynamicProperties();
+
+	int staticLength = staticProperties.length;
+	int dynamicLength = dynamicProperties.length;
+	int allLength = staticLength + dynamicLength;
+
+	ProfileProperty[] allProperties = new ProfileProperty[allLength];
+
+	for (int i = 0; i < staticLength; ++i) {
+	    allProperties[i] = staticProperties[i];
 	}
-	
-	public ProfileProperty[] getDynamicProperties() {
-		ProfileProperty[] pp = new ProfileProperty[2];
-		
-		pp[0] = new ProfileProperty(getCalories(), PROP_D_CALORIES, "Calories", false);
-		pp[1] = new ProfileProperty(getMeat(), PROP_D_MEAL, "Number of meals", false);
-		
-		return pp;
+	for (int i = staticLength; i < allLength; ++i) {
+	    allProperties[i] = dynamicProperties[staticLength - i];
 	}
 
-	public ProfileProperty[] getStaticProperties() {
-		return new ProfileProperty[0];
-	}
+	return allProperties;
+    }
 
-	/**
-	 * @return
-	 */
-	public static DiaryNutritionalProfile loadInstance() {
-		return new DiaryNutritionalProfile();
-	}
+    public ProfileProperty[] getDynamicProperties() {
+	ProfileProperty[] pp = new ProfileProperty[2];
+
+	pp[0] = new ProfileProperty(getCalories(), PROP_D_CALORIES, "Calories",
+		false);
+	pp[1] = new ProfileProperty(getMeat(), PROP_D_MEAL, "Number of meals",
+		false);
+
+	return pp;
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	return new ProfileProperty[0];
+    }
+
+    /**
+     * @return
+     */
+    public static DiaryNutritionalProfile loadInstance() {
+	return new DiaryNutritionalProfile();
+    }
 }

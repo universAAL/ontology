@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 /**
  * 
  */
@@ -24,58 +24,58 @@ package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
 
-
 /**
  * @author mtazari
- *
+ * 
  */
-public class FarSightedness extends SightImpairment implements PropertyPublisher {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "FarSightedness";
-		register(FarSightedness.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "Represents the level of the user's farsightedness.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Farsightedness";
-	}
-	
-	/**
-	 * The constructor for (de-)serializers.
-	 */
-	public FarSightedness() {
-		super();
-	}
-	
-	/**
-	 * The constructor for use by applications.
-	 */
-	public FarSightedness(LevelRating impairmentLevel) {
-		super(impairmentLevel);
-	}
-	
-	public ProfileProperty[] getAllProperties() {
-		return super.getAllProperties();
-	}
+public class FarSightedness extends SightImpairment implements
+	PropertyPublisher {
+    public static final String MY_URI;
 
-	public ProfileProperty[] getDynamicProperties() {
-		return super.getDynamicProperties();
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "FarSightedness";
+	register(FarSightedness.class);
+    }
 
-	public ProfileProperty[] getStaticProperties() {
-		return super.getStaticProperties();
-	}
-	
-	public static SightImpairment loadInstance() {
-		return new FarSightedness(LevelRating.none);
-	}
-	
-	public String toString() {
-		return "Farsightedness: " + this.getImpaimentLevel().name();
-	}
+    public static String getRDFSComment() {
+	return "Represents the level of the user's farsightedness.";
+    }
+
+    public static String getRDFSLabel() {
+	return "Farsightedness";
+    }
+
+    /**
+     * The constructor for (de-)serializers.
+     */
+    public FarSightedness() {
+	super();
+    }
+
+    /**
+     * The constructor for use by applications.
+     */
+    public FarSightedness(LevelRating impairmentLevel) {
+	super(impairmentLevel);
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return super.getAllProperties();
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return super.getDynamicProperties();
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	return super.getStaticProperties();
+    }
+
+    public static SightImpairment loadInstance() {
+	return new FarSightedness(LevelRating.none);
+    }
+
+    public String toString() {
+	return "Farsightedness: " + this.getImpaimentLevel().name();
+    }
 }

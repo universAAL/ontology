@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*//**
+ *//**
  * 
  */
 package org.universAAL.ontology.profile;
@@ -24,62 +24,62 @@ package org.universAAL.ontology.profile;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
-
 /**
  * @author mtazari
- *
+ * 
  */
-public class ColorBlindness extends SightImpairment implements PropertyPublisher {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "ColorBlindness";
-		register(ColorBlindness.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "Represents the level of the user's color-blindness.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "ColorBlindness";
-	}
-	
-	/**
-	 * The constructor for (de-)serializers.
-	 */
-	public ColorBlindness() {
-		super();
-	}
-	
-	/**
-	 * The constructor for use by applications.
-	 */
-	public ColorBlindness(LevelRating impairmentLevel) {
-		super(impairmentLevel);
-	}
+public class ColorBlindness extends SightImpairment implements
+	PropertyPublisher {
+    public static final String MY_URI;
 
-	public static ManagedIndividual getIndividualByURI(String instanceURI) {
-		return new ColorBlindness();
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "ColorBlindness";
+	register(ColorBlindness.class);
+    }
 
-	public ProfileProperty[] getAllProperties() {
-		return super.getAllProperties();
-	}
+    public static String getRDFSComment() {
+	return "Represents the level of the user's color-blindness.";
+    }
 
-	public ProfileProperty[] getDynamicProperties() {
-		return super.getDynamicProperties();
-	}
+    public static String getRDFSLabel() {
+	return "ColorBlindness";
+    }
 
-	public ProfileProperty[] getStaticProperties() {
-		return super.getStaticProperties();
-	}
-	
-	public static SightImpairment loadInstance() {
-		return new ColorBlindness(LevelRating.none);
-	}
+    /**
+     * The constructor for (de-)serializers.
+     */
+    public ColorBlindness() {
+	super();
+    }
 
-	public String toString() {
-		return "Colorblindness: " + this.getImpaimentLevel().name();
-	}
+    /**
+     * The constructor for use by applications.
+     */
+    public ColorBlindness(LevelRating impairmentLevel) {
+	super(impairmentLevel);
+    }
+
+    public static ManagedIndividual getIndividualByURI(String instanceURI) {
+	return new ColorBlindness();
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return super.getAllProperties();
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return super.getDynamicProperties();
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	return super.getStaticProperties();
+    }
+
+    public static SightImpairment loadInstance() {
+	return new ColorBlindness(LevelRating.none);
+    }
+
+    public String toString() {
+	return "Colorblindness: " + this.getImpaimentLevel().name();
+    }
 }

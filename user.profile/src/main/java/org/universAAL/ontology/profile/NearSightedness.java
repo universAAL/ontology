@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 /**
  * 
  */
@@ -24,58 +24,58 @@ package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
 
-
 /**
  * @author mtazari
- *
+ * 
  */
-public class NearSightedness extends SightImpairment implements PropertyPublisher {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "NearSightedness";
-		register(NearSightedness.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "Represents the level of the user's nearsightedness.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Nearsightedness";
-	}
-	
-	/**
-	 * The constructor for (de-)serializers.
-	 */
-	public NearSightedness() {
-		super();
-	}
-	
-	/**
-	 * The constructor for use by applications.
-	 */
-	public NearSightedness(LevelRating impairmentLevel) {
-		super(impairmentLevel);
-	}
-	
-	public ProfileProperty[] getAllProperties() {
-		return super.getAllProperties();
-	}
+public class NearSightedness extends SightImpairment implements
+	PropertyPublisher {
+    public static final String MY_URI;
 
-	public ProfileProperty[] getDynamicProperties() {
-		return super.getDynamicProperties();
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "NearSightedness";
+	register(NearSightedness.class);
+    }
 
-	public ProfileProperty[] getStaticProperties() {
-		return super.getStaticProperties();
-	}
-	
-	public static SightImpairment loadInstance() {
-		return new NearSightedness(LevelRating.none);
-	}	
-	
-	public String toString() {
-		return "Nearsightedness: " + this.getImpaimentLevel().name();
-	}
+    public static String getRDFSComment() {
+	return "Represents the level of the user's nearsightedness.";
+    }
+
+    public static String getRDFSLabel() {
+	return "Nearsightedness";
+    }
+
+    /**
+     * The constructor for (de-)serializers.
+     */
+    public NearSightedness() {
+	super();
+    }
+
+    /**
+     * The constructor for use by applications.
+     */
+    public NearSightedness(LevelRating impairmentLevel) {
+	super(impairmentLevel);
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return super.getAllProperties();
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return super.getDynamicProperties();
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	return super.getStaticProperties();
+    }
+
+    public static SightImpairment loadInstance() {
+	return new NearSightedness(LevelRating.none);
+    }
+
+    public String toString() {
+	return "Nearsightedness: " + this.getImpaimentLevel().name();
+    }
 }

@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 /**
  * 
  */
@@ -25,69 +25,70 @@ package org.universAAL.ontology.profile;
 import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
-
 /**
  * @author mtazari
- *
+ * 
  */
-public class SightImpairment extends AccessImpairment implements PropertyPublisher {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "SightImpairment";
-		register(SightImpairment.class);
-	}
-	
-	public static String getRDFSComment() {
-		return "Represents the level of the user's difficulty in seeing GUI-based system output.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Sight Impairment";
-	}
-	
-	/**
-	 * The constructor for (de-)serializers.
-	 */
-	public SightImpairment() {
-		super();
-	}
-	
-	/**
-	 * The constructor for use by applications.
-	 */
-	public SightImpairment(LevelRating impairmentLevel) {
-		super(impairmentLevel);
-	}
+public class SightImpairment extends AccessImpairment implements
+	PropertyPublisher {
+    public static final String MY_URI;
 
-	public ProfileProperty[] getAllProperties() {
-		return getStaticProperties();
-	}
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "SightImpairment";
+	register(SightImpairment.class);
+    }
 
-	public ProfileProperty[] getDynamicProperties() {
-		return new ProfileProperty[0];
-	}
+    public static String getRDFSComment() {
+	return "Represents the level of the user's difficulty in seeing GUI-based system output.";
+    }
 
-	public ProfileProperty[] getStaticProperties() {
-		ProfileProperty[] propArray = new ProfileProperty[1];
-		LevelRating lr = this.getImpaimentLevel();
-		if (lr == null) 
-			lr = LevelRating.none;
-		
-		propArray[0] = new ProfileProperty(lr, PROP_IMPAIRMENT_LEVEL, "Level", true);
-		
-		return propArray;
-	}
-	
-	public void setImpairment(LevelRating rating) {
-		props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
-	}
-	
-	public static SightImpairment loadInstance() {
-		return new SightImpairment(LevelRating.none);
-	}
-	
-	public String toString() {
-		return "Sight Imapirment: " + this.getImpaimentLevel().name();
-	}
+    public static String getRDFSLabel() {
+	return "Sight Impairment";
+    }
+
+    /**
+     * The constructor for (de-)serializers.
+     */
+    public SightImpairment() {
+	super();
+    }
+
+    /**
+     * The constructor for use by applications.
+     */
+    public SightImpairment(LevelRating impairmentLevel) {
+	super(impairmentLevel);
+    }
+
+    public ProfileProperty[] getAllProperties() {
+	return getStaticProperties();
+    }
+
+    public ProfileProperty[] getDynamicProperties() {
+	return new ProfileProperty[0];
+    }
+
+    public ProfileProperty[] getStaticProperties() {
+	ProfileProperty[] propArray = new ProfileProperty[1];
+	LevelRating lr = this.getImpaimentLevel();
+	if (lr == null)
+	    lr = LevelRating.none;
+
+	propArray[0] = new ProfileProperty(lr, PROP_IMPAIRMENT_LEVEL, "Level",
+		true);
+
+	return propArray;
+    }
+
+    public void setImpairment(LevelRating rating) {
+	props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
+    }
+
+    public static SightImpairment loadInstance() {
+	return new SightImpairment(LevelRating.none);
+    }
+
+    public String toString() {
+	return "Sight Imapirment: " + this.getImpaimentLevel().name();
+    }
 }
