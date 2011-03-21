@@ -18,7 +18,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.medication;
 
 import org.universAAL.middleware.owl.Restriction;
@@ -26,38 +26,39 @@ import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
 public class DrugPackage extends PhysicalThing {
-	public static final String MY_URI;
-	public static final String uAAL_MEDICATION_NAMESPACE = uAAL_NAMESPACE_PREFIX + "Medication.owl#";
-	
-	static{
-		MY_URI=uAAL_MEDICATION_NAMESPACE+"DrugPackage";
-		register(DrugPackage.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		return Restriction.getPropertyBanningRestriction(propURI);
-	}
-	
-	public DrugPackage(){
-	}
-	
-	public DrugPackage(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "The package of a medication drug";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Drug Package";
-	}
+    public static final String MY_URI;
+    public static final String uAAL_MEDICATION_NAMESPACE = uAAL_NAMESPACE_PREFIX
+	    + "Medication.owl#";
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    static {
+	MY_URI = uAAL_MEDICATION_NAMESPACE + "DrugPackage";
+	register(DrugPackage.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	return Restriction.getPropertyBanningRestriction(propURI);
+    }
+
+    public DrugPackage() {
+    }
+
+    public DrugPackage(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "The package of a medication drug";
+    }
+
+    public static String getRDFSLabel() {
+	return "Drug Package";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }
