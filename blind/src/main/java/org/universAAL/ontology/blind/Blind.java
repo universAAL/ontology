@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.blind;
 
@@ -30,101 +30,106 @@ import org.universAAL.ontology.phThing.Device;
  * 
  * @author Steeven Zeiss
  * @since 26.11.2009
- *
+ * 
  */
 public class Blind extends Device {
-	public static final String BLIND_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Blind.owl#";
-	public static final String MY_URI;
-//	public static final String PROP_HAS_TYPE;
-	public static final String PROP_BLIND_LOCATION;
-	public static final String PROP_BLIND_STATUS;
-	static {
-		MY_URI = BLIND_NAMESPACE + "Blind";
-//		PROP_HAS_TYPE = BLIND_NAMESPACE + "hasType";
-		PROP_BLIND_LOCATION = BLIND_NAMESPACE + "blindLocation";
-		PROP_BLIND_STATUS = BLIND_NAMESPACE + "blindStatus";
-		register(Blind.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-//		if (PROP_HAS_TYPE.equals(propURI))
-//			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-//					NaturalLight.sunShine.MY_URI, 1, 1);
-		if (PROP_BLIND_LOCATION.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					Location.MY_URI, 1, 1);
-		if (PROP_BLIND_STATUS.equals(propURI))
-			return OrderingRestriction.newOrderingRestriction(new Integer(100),
-					new Integer(0), true, true,
-					Restriction.getAllValuesRestrictionWithCardinality(propURI,
-							TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		return Device.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		return new String[] {
-//				PROP_HAS_TYPE,
-				PROP_BLIND_LOCATION,
-				PROP_BLIND_STATUS
-		};
-	}
-	
-	public static String getRDFSComment() {
-		return "The class of all blinds.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Blind";
-	}
-	
-	public Blind() {
-		super();
-	}
-	
-	public Blind(String uri) {
-		super(uri);
-	}
-	
-	public Blind(String uri, Location loc) {
-		super(uri);
-		if ( loc == null)
-			throw new IllegalArgumentException();
+    public static final String BLIND_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Blind.owl#";
+    public static final String MY_URI;
+    // public static final String PROP_HAS_TYPE;
+    public static final String PROP_BLIND_LOCATION;
+    public static final String PROP_BLIND_STATUS;
+    static {
+	MY_URI = BLIND_NAMESPACE + "Blind";
+	// PROP_HAS_TYPE = BLIND_NAMESPACE + "hasType";
+	PROP_BLIND_LOCATION = BLIND_NAMESPACE + "blindLocation";
+	PROP_BLIND_STATUS = BLIND_NAMESPACE + "blindStatus";
+	register(Blind.class);
+    }
 
-		//TODO: richtig?
-		//setLocation(loc);
-		
-//		props.put(PROP_HAS_TYPE, NaturalLight.sunShine.getType());
-		props.put(PROP_BLIND_LOCATION, loc);
-		props.put(PROP_BLIND_STATUS, new Integer(0));
-	}
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	// if (PROP_HAS_TYPE.equals(propURI))
+	// return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+	// NaturalLight.sunShine.MY_URI, 1, 1);
+	if (PROP_BLIND_LOCATION.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    Location.MY_URI, 1, 1);
+	if (PROP_BLIND_STATUS.equals(propURI))
+	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
+		    new Integer(0), true, true, Restriction
+			    .getAllValuesRestrictionWithCardinality(propURI,
+				    TypeMapper.getDatatypeURI(Integer.class),
+				    1, 1));
+	return Device.getClassRestrictionsOnProperty(propURI);
+    }
 
-	
-//	public String getBlindType() {
-//		return (String) props.get(PROP_HAS_TYPE);
-//	}
-	
-	public Location getBlindLocation() {
-		return (Location) props.get(PROP_BLIND_LOCATION);
-	}
-	
-	public void setBlindLocation(Location l) {
-		if (l != null)
-			props.put(PROP_BLIND_LOCATION, l);
-	}
+    public static String[] getStandardPropertyURIs() {
+	return new String[] {
+	// PROP_HAS_TYPE,
+		PROP_BLIND_LOCATION, PROP_BLIND_STATUS };
+    }
 
-	/* (non-Javadoc)
-	 * @see org.persona.ontology.ManagedIndividual#getPropSerializationType(java.lang.String)
-	 */
-	public int getPropSerializationType(String propURI) {
-		return  PROP_BLIND_LOCATION.equals(propURI)?
-						PROP_SERIALIZATION_REDUCED : PROP_SERIALIZATION_FULL;
-	}
+    public static String getRDFSComment() {
+	return "The class of all blinds.";
+    }
 
-	/* (non-Javadoc)
-	 * @see org.persona.ontology.ManagedIndividual#isWellFormed()
-	 */
-	public boolean isWellFormed() {
-		return props.containsKey(PROP_BLIND_LOCATION)&& props.containsKey(PROP_BLIND_STATUS);
-	}
+    public static String getRDFSLabel() {
+	return "Blind";
+    }
+
+    public Blind() {
+	super();
+    }
+
+    public Blind(String uri) {
+	super(uri);
+    }
+
+    public Blind(String uri, Location loc) {
+	super(uri);
+	if (loc == null)
+	    throw new IllegalArgumentException();
+
+	// TODO: richtig?
+	// setLocation(loc);
+
+	// props.put(PROP_HAS_TYPE, NaturalLight.sunShine.getType());
+	props.put(PROP_BLIND_LOCATION, loc);
+	props.put(PROP_BLIND_STATUS, new Integer(0));
+    }
+
+    // public String getBlindType() {
+    // return (String) props.get(PROP_HAS_TYPE);
+    // }
+
+    public Location getBlindLocation() {
+	return (Location) props.get(PROP_BLIND_LOCATION);
+    }
+
+    public void setBlindLocation(Location l) {
+	if (l != null)
+	    props.put(PROP_BLIND_LOCATION, l);
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
+     * lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_BLIND_LOCATION.equals(propURI) ? PROP_SERIALIZATION_REDUCED
+		: PROP_SERIALIZATION_FULL;
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
+     */
+    public boolean isWellFormed() {
+	return props.containsKey(PROP_BLIND_LOCATION)
+		&& props.containsKey(PROP_BLIND_STATUS);
+    }
 
 }
