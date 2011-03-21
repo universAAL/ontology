@@ -16,46 +16,50 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.location.extra;
-
 
 /**
  * A BuildingPlace it a Place with building place type
+ * 
  * @author smazzei
- *
+ * 
  */
 public class BuildingPlace extends Place {
-	public static final String MY_URI;
-	
-	static {
-		MY_URI = uAAL_VOCABULARY_NAMESPACE + "BuildingPlace";
-		register(BuildingPlace.class);
-	}
-	
-	/**
-	* Creates a BuildingPlace object
-	* @param uri the object URI
-	*/
-	public BuildingPlace(String uri) {
-		super(uri, PlaceType.buildingPlaceType);
-	}
-	
-	/**
-	* Creates a BuildingPlace object
-	*/
-	public BuildingPlace() {
-		super(PlaceType.buildingPlaceType);
-	}
-	
-	/**
-	* Creates a BuildingPlace object
-	* @param uri this value can also be a null object
-	* @param name The place name. A null object is not allowed
-	*/
-	public BuildingPlace(String uri, String name) {
-		super(uri,PlaceType.buildingPlaceType,name);
-	}
-	
+    public static final String MY_URI;
+
+    static {
+	MY_URI = uAAL_VOCABULARY_NAMESPACE + "BuildingPlace";
+	register(BuildingPlace.class);
+    }
+
+    /**
+     * Creates a BuildingPlace object
+     * 
+     * @param uri
+     *            the object URI
+     */
+    public BuildingPlace(String uri) {
+	super(uri, PlaceType.buildingPlaceType);
+    }
+
+    /**
+     * Creates a BuildingPlace object
+     */
+    public BuildingPlace() {
+	super(PlaceType.buildingPlaceType);
+    }
+
+    /**
+     * Creates a BuildingPlace object
+     * 
+     * @param uri
+     *            this value can also be a null object
+     * @param name
+     *            The place name. A null object is not allowed
+     */
+    public BuildingPlace(String uri, String name) {
+	super(uri, PlaceType.buildingPlaceType, name);
+    }
 
 }
