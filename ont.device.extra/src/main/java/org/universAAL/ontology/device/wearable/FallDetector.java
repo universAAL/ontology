@@ -29,73 +29,73 @@ import org.universAAL.ontology.profile.User;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
 public class FallDetector extends Sensor {
-	public static final String MY_URI;
-	public static final String PROP_WORN_BY;
-	
-	static{
-		MY_URI=Device.uAAL_DEVICE_NAMESPACE+"FallDetector";
-		PROP_WORN_BY=Device.uAAL_DEVICE_NAMESPACE+"wornBy";
-		register(FallDetector.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_MEASURED_VALUE.equals(propURI))
-			return Restriction.getAllValuesRestriction(propURI,
-					TypeMapper.getDatatypeURI(Boolean.class));
-		if (PROP_WORN_BY.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					User.MY_URI, 1, 1);
-		return Sensor.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		String[] inherited = Device.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+1];
-		int i = 0;
-		while (i < inherited.length) {
-			toReturn[i] = inherited[i];
-			i++;
-		}
-		toReturn[i] = PROP_WORN_BY;
-		return toReturn;
-	}
-	
-	public FallDetector(){
-	}
-	
-	public FallDetector(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "A Fall Detector Device";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Fall Detector";
-	}
+    public static final String MY_URI;
+    public static final String PROP_WORN_BY;
 
-	public boolean isWellFormed() {
-		return true;
+    static {
+	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "FallDetector";
+	PROP_WORN_BY = Device.uAAL_DEVICE_NAMESPACE + "wornBy";
+	register(FallDetector.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_MEASURED_VALUE.equals(propURI))
+	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
+		    .getDatatypeURI(Boolean.class));
+	if (PROP_WORN_BY.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    User.MY_URI, 1, 1);
+	return Sensor.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public static String[] getStandardPropertyURIs() {
+	String[] inherited = Device.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length + 1];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
 	}
-	
-	public User getWornBy(){
-		return (User)props.get(PROP_WORN_BY);
-	}
-	
-	public void setWorndBy(User value){
-		props.put(PROP_WORN_BY, value);
-	}
-	
-	public boolean getMeasuredvalue(){
-		return ((Boolean)props.get(PROP_MEASURED_VALUE)).booleanValue();
-	}
-	
-	public void setMeasuredValue(boolean value){
-		props.put(PROP_MEASURED_VALUE, new Boolean(value));
-	}
+	toReturn[i] = PROP_WORN_BY;
+	return toReturn;
+    }
+
+    public FallDetector() {
+    }
+
+    public FallDetector(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "A Fall Detector Device";
+    }
+
+    public static String getRDFSLabel() {
+	return "Fall Detector";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
+
+    public User getWornBy() {
+	return (User) props.get(PROP_WORN_BY);
+    }
+
+    public void setWorndBy(User value) {
+	props.put(PROP_WORN_BY, value);
+    }
+
+    public boolean getMeasuredvalue() {
+	return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
+    }
+
+    public void setMeasuredValue(boolean value) {
+	props.put(PROP_MEASURED_VALUE, new Boolean(value));
+    }
 
 }

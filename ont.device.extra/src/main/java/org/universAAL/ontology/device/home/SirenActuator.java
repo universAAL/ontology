@@ -18,7 +18,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.device.home;
 
 import org.universAAL.middleware.owl.Restriction;
@@ -28,40 +28,40 @@ import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
 public class SirenActuator extends OnOffActuator {
-public static final String MY_URI;
-	
-	static{
-		MY_URI=Device.uAAL_DEVICE_NAMESPACE+"SirenActuator";
-		register(SirenActuator.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_STATUS.equals(propURI))
-			return Restriction.getAllValuesRestriction(propURI,
-					TypeMapper.getDatatypeURI(Boolean.class));
-		return OnOffActuator.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public SirenActuator(){
-	}
-	
-	public SirenActuator(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "An Acoustic Siren Actuator";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Siren Actuator";
-	}
+    public static final String MY_URI;
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    static {
+	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "SirenActuator";
+	register(SirenActuator.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_STATUS.equals(propURI))
+	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
+		    .getDatatypeURI(Boolean.class));
+	return OnOffActuator.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public SirenActuator() {
+    }
+
+    public SirenActuator(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "An Acoustic Siren Actuator";
+    }
+
+    public static String getRDFSLabel() {
+	return "Siren Actuator";
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }
