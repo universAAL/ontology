@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.lighting;
 
@@ -26,72 +26,77 @@ import org.universAAL.middleware.owl.Restriction;
 
 /**
  * @author mtazari
- *
+ * 
  */
 public class BlinkableBeamingSource extends BeamingSource implements Blinkable {
-	public static final String MY_URI;
-	static {
-		MY_URI = LightSource.LIGHTING_NAMESPACE + "BlinkableBeamingSource";
-		register(BlinkableBeamingSource.class);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (Blinkable.PROP_BLINKING_STATE.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-		return BeamingSource.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		String[] inherited = BeamingSource.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+1];
-		int i = 0;
-		while (i < inherited.length) {
-			toReturn[i] = inherited[i];
-			i++;
-		}
-		toReturn[i] = PROP_BLINKING_STATE;
-		return toReturn;
-	}
-	
-	public static String getRDFSComment() {
-		return "The class of blinkable beaming sources.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Blinkable Beaming Source";
-	}
-	
-	public BlinkableBeamingSource() {
-		super();
-	}
-	
-	public BlinkableBeamingSource(String uri) {
-		super(uri);
-	}
-	
-	public BlinkableBeamingSource(String uri, LightType type,
-			Location loc, Location directedTo, Location targetSurface) {
-		super(uri, type, loc, directedTo, targetSurface);
-		props.put(Blinkable.PROP_BLINKING_STATE, new Boolean(false));
-	}
+    public static final String MY_URI;
+    static {
+	MY_URI = LightSource.LIGHTING_NAMESPACE + "BlinkableBeamingSource";
+	register(BlinkableBeamingSource.class);
+    }
 
-	/* (non-Javadoc)
-	 * @see Blinkable#isBlinking()
-	 */
-	public boolean isBlinking() {
-		return ((Boolean) props.get(Blinkable.PROP_BLINKING_STATE)).booleanValue();
-	}
-	
-	public boolean isWellFormed() {
-		return props.containsKey(Blinkable.PROP_BLINKING_STATE)
-			&& super.isWellFormed();
-	}
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (Blinkable.PROP_BLINKING_STATE.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
+	return BeamingSource.getClassRestrictionsOnProperty(propURI);
+    }
 
-	/* (non-Javadoc)
-	 * @see Blinkable#setBlinkingState(boolean)
-	 */
-	public void setBlinkingState(boolean state) {
-		props.put(Blinkable.PROP_BLINKING_STATE, new Boolean(state));
+    public static String[] getStandardPropertyURIs() {
+	String[] inherited = BeamingSource.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length + 1];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
 	}
+	toReturn[i] = PROP_BLINKING_STATE;
+	return toReturn;
+    }
+
+    public static String getRDFSComment() {
+	return "The class of blinkable beaming sources.";
+    }
+
+    public static String getRDFSLabel() {
+	return "Blinkable Beaming Source";
+    }
+
+    public BlinkableBeamingSource() {
+	super();
+    }
+
+    public BlinkableBeamingSource(String uri) {
+	super(uri);
+    }
+
+    public BlinkableBeamingSource(String uri, LightType type, Location loc,
+	    Location directedTo, Location targetSurface) {
+	super(uri, type, loc, directedTo, targetSurface);
+	props.put(Blinkable.PROP_BLINKING_STATE, new Boolean(false));
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see Blinkable#isBlinking()
+     */
+    public boolean isBlinking() {
+	return ((Boolean) props.get(Blinkable.PROP_BLINKING_STATE))
+		.booleanValue();
+    }
+
+    public boolean isWellFormed() {
+	return props.containsKey(Blinkable.PROP_BLINKING_STATE)
+		&& super.isWellFormed();
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see Blinkable#setBlinkingState(boolean)
+     */
+    public void setBlinkingState(boolean state) {
+	props.put(Blinkable.PROP_BLINKING_STATE, new Boolean(state));
+    }
 }

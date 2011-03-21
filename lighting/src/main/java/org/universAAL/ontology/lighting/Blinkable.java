@@ -16,20 +16,21 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.lighting;
 
 /**
  * @author mtazari
- *
+ * 
  */
 public interface Blinkable {
-	public static final String MY_URI = LightSource.LIGHTING_NAMESPACE + "Blinkable";
-	public static final String PROP_BLINKING_STATE = 
-		LightSource.LIGHTING_NAMESPACE + "blinkingState";
+    public static final String MY_URI = LightSource.LIGHTING_NAMESPACE
+	    + "Blinkable";
+    public static final String PROP_BLINKING_STATE = LightSource.LIGHTING_NAMESPACE
+	    + "blinkingState";
 
-	public boolean isBlinking();
-	
-	public void setBlinkingState(boolean state);
+    public boolean isBlinking();
+
+    public void setBlinkingState(boolean state);
 }
