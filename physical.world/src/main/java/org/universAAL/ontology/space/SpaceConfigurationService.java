@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.space;
 
 import java.util.Hashtable;
@@ -28,67 +28,75 @@ import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.location.Location;
 
 public class SpaceConfigurationService extends Service {
-	public static final String MY_URI;
-	public static final String PROP_MANAGED_LOCATIONS;
-	public static final String PROP_MANAGED_PHYSICAL_THINGS;
-	
-	private static Hashtable locationRestrictions = new Hashtable(1);
-	static {
-		MY_URI = Location.uAAL_LOCATION_NAMESPACE + "locationConfigurationService";
-		PROP_MANAGED_LOCATIONS = Location.uAAL_LOCATION_NAMESPACE + "managedLocations";
-		PROP_MANAGED_PHYSICAL_THINGS = Location.uAAL_LOCATION_NAMESPACE + "managedPhysicalThings";
-		register(SpaceConfigurationService.class);
-		addRestriction(
-				Restriction.getAllValuesRestriction(PROP_MANAGED_LOCATIONS, Location.MY_URI),
-				new String[] {PROP_MANAGED_LOCATIONS},
-				locationRestrictions);
-		addRestriction(
-				Restriction.getAllValuesRestriction(PROP_MANAGED_PHYSICAL_THINGS, PhysicalThing.MY_URI),
-				new String[] {PROP_MANAGED_PHYSICAL_THINGS},
-				locationRestrictions);
-	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (propURI == null)
-			return null;
-		Object r = locationRestrictions.get(propURI);
-		if (r instanceof Restriction)
-			return (Restriction) r;
-		return Service.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String getRDFSComment() {
-		return "The class of services controlling locations.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "LocationService";
-	}
-	
-	public SpaceConfigurationService() {
-		super();
-	}
-	
-	public SpaceConfigurationService(String uri) {
-		super(uri);
-	}
+    public static final String MY_URI;
+    public static final String PROP_MANAGED_LOCATIONS;
+    public static final String PROP_MANAGED_PHYSICAL_THINGS;
 
-	/* (non-Javadoc)
-	 * @see org.universAAL.ontology.Service#getClassLevelRestrictions()
-	 */
-	protected Hashtable getClassLevelRestrictions() {
-		return locationRestrictions;
-	}
+    private static Hashtable locationRestrictions = new Hashtable(1);
+    static {
+	MY_URI = Location.uAAL_LOCATION_NAMESPACE
+		+ "locationConfigurationService";
+	PROP_MANAGED_LOCATIONS = Location.uAAL_LOCATION_NAMESPACE
+		+ "managedLocations";
+	PROP_MANAGED_PHYSICAL_THINGS = Location.uAAL_LOCATION_NAMESPACE
+		+ "managedPhysicalThings";
+	register(SpaceConfigurationService.class);
+	addRestriction(Restriction.getAllValuesRestriction(
+		PROP_MANAGED_LOCATIONS, Location.MY_URI),
+		new String[] { PROP_MANAGED_LOCATIONS }, locationRestrictions);
+	addRestriction(Restriction.getAllValuesRestriction(
+		PROP_MANAGED_PHYSICAL_THINGS, PhysicalThing.MY_URI),
+		new String[] { PROP_MANAGED_PHYSICAL_THINGS },
+		locationRestrictions);
+    }
 
-	/* (non-Javadoc)
-	 * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType(java.lang.String)
-	 */
-	public int getPropSerializationType(String propURI) {
-		return (PROP_MANAGED_LOCATIONS.equals(propURI)) ? PROP_SERIALIZATION_FULL
-				: PROP_SERIALIZATION_REDUCED;
-	}
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (propURI == null)
+	    return null;
+	Object r = locationRestrictions.get(propURI);
+	if (r instanceof Restriction)
+	    return (Restriction) r;
+	return Service.getClassRestrictionsOnProperty(propURI);
+    }
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    public static String getRDFSComment() {
+	return "The class of services controlling locations.";
+    }
+
+    public static String getRDFSLabel() {
+	return "LocationService";
+    }
+
+    public SpaceConfigurationService() {
+	super();
+    }
+
+    public SpaceConfigurationService(String uri) {
+	super(uri);
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.ontology.Service#getClassLevelRestrictions()
+     */
+    protected Hashtable getClassLevelRestrictions() {
+	return locationRestrictions;
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     * (java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return (PROP_MANAGED_LOCATIONS.equals(propURI)) ? PROP_SERIALIZATION_FULL
+		: PROP_SERIALIZATION_REDUCED;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

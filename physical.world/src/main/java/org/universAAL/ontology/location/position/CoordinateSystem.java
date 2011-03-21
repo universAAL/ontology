@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.location.position;
 
 import java.util.Vector;
@@ -27,84 +27,95 @@ import org.universAAL.ontology.location.Location;
 
 public class CoordinateSystem extends ManagedIndividual {
 
-	public static final String MY_URI;
+    public static final String MY_URI;
 
-//	private static final String[] names = {
-//		"WGS84","Metric","Pixel"
-//	};
+    // private static final String[] names = {
+    // "WGS84","Metric","Pixel"
+    // };
 
-	static {
-		MY_URI = Location.uAAL_LOCATION_NAMESPACE + "CoordinateSystem";
-		register(CoordinateSystem.class);
+    static {
+	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "CoordinateSystem";
+	register(CoordinateSystem.class);
+    }
+
+    public static final CoordinateSystem WGS84 = new CoordinateSystem(
+	    Location.uAAL_LOCATION_NAMESPACE + "WGS84");
+
+    /**
+     * Creates a CoordinateSystem object
+     * 
+     * @param uri
+     *            the object URI
+     */
+    public CoordinateSystem(String uri) {
+	super(uri);
+    }
+
+    /**
+     * Creates a CoordinateSystem object
+     */
+    public CoordinateSystem() {
+	super();
+    }
+
+    /**
+     * Returns a human readable description on the essence of this ontology
+     * class.
+     */
+    public static String getRDFSComment() {
+	return "Rootclass for all coordinate systems.";
+    }
+
+    /**
+     * Returns a label with which this ontology class can be introduced to human
+     * users.
+     */
+    public static String getRDFSLabel() {
+	return "CoordinateSystem";
+    }
+
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
+
+    /**
+     * returns the common parent system, if possible
+     * 
+     * @param s1
+     * @param s2
+     * @return the common parent system or null
+     */
+    public static CoordinateSystem findCommonParentSystem(CoordinateSystem a,
+	    CoordinateSystem b) {
+	CoordinateSystem s1 = a, s2 = b;
+	if (s1 == s2)
+	    return s1;
+	Vector seen = new Vector();
+	seen.add(s1);
+	seen.add(s2);
+	boolean breaker = false;
+	while (!breaker) {
+	    breaker = true;
+	    if (s1.getClass() == OriginedMetric.class
+		    && ((OriginedMetric) s1).getOrigin() != null) {
+		breaker = false;
+		s1 = ((OriginedMetric) s1).getOrigin().getCoordinateSystem();
+		if (seen.contains(s1))
+		    return s1;
+		else
+		    seen.add(s1);
+	    }
+	    if (s2.getClass() == OriginedMetric.class
+		    && ((OriginedMetric) s2).getOrigin() != null) {
+		breaker = false;
+		s2 = ((OriginedMetric) s2).getOrigin().getCoordinateSystem();
+		if (seen.contains(s2))
+		    return s2;
+		else
+		    seen.add(s2);
+	    }
 	}
-
-	public static final CoordinateSystem WGS84 = new CoordinateSystem(
-			Location.uAAL_LOCATION_NAMESPACE + "WGS84");
-
-	/**
-	 * Creates a CoordinateSystem object
-	 * @param uri the object URI
-	 */
-	public CoordinateSystem(String uri) {
-		super(uri);
-	}
-
-	/**
-	 * Creates a CoordinateSystem object
-	 */
-	public CoordinateSystem() {
-		super();
-	}
-
-	/**
-	 * Returns a human readable description on the essence of this ontology class.
-	 */
-	public static String getRDFSComment() {
-		return "Rootclass for all coordinate systems.";
-	}
-
-	/**
-	 * Returns a label with which this ontology class can be introduced to human users.
-	 */
-	public static String getRDFSLabel() {
-		return "CoordinateSystem";
-	}
-
-	public int getPropSerializationType(String arg0) {
-		return PROP_SERIALIZATION_OPTIONAL;
-	}
-
-	/**
-	 * returns the common parent system, if possible
-	 * @param s1
-	 * @param s2
-	 * @return the common parent system or null
-	 */
-	public static CoordinateSystem findCommonParentSystem(CoordinateSystem a,CoordinateSystem b) {
-		CoordinateSystem s1 = a,s2 = b;
-		if(s1 == s2) return s1;
-		Vector seen = new Vector();
-		seen.add(s1);
-		seen.add(s2);
-		boolean breaker = false;
-		while(!breaker) {
-			breaker = true;
-			if(s1.getClass() == OriginedMetric.class && ((OriginedMetric)s1).getOrigin() != null) {
-				breaker = false;
-				s1 = ((OriginedMetric)s1).getOrigin().getCoordinateSystem();
-				if(seen.contains(s1)) 
-					return s1;
-				else seen.add(s1);
-			}
-			if(s2.getClass() == OriginedMetric.class && ((OriginedMetric)s2).getOrigin() != null) {
-				breaker = false;
-				s2 = ((OriginedMetric)s2).getOrigin().getCoordinateSystem();
-				if(seen.contains(s2)) 
-					return s2;
-				else seen.add(s2);
-			}
-		}
-		return null;
-	}
+	return null;
+    }
 
 }

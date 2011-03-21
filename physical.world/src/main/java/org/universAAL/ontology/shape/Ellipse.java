@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.shape;
 
 import jp.go.ipa.jgcl.JgclAxis2Placement3D;
@@ -33,198 +33,229 @@ import org.universAAL.ontology.location.position.Point;
 /**
  * 
  * @author chwirth
- *
+ * 
  */
 
 public class Ellipse extends Shape2D {
 
-	public static final String MY_URI;
+    public static final String MY_URI;
 
-	public static final String PROP_MAJOR_AXIS_LENGTH;
-	public static final String PROP_MINOR_AXIS_LENGTH;
+    public static final String PROP_MAJOR_AXIS_LENGTH;
+    public static final String PROP_MINOR_AXIS_LENGTH;
 
-	static {
-		MY_URI = uAAL_SHAPE_NAMESPACE + "Ellipse";
-		PROP_MINOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MinorAxisLength";
-		PROP_MAJOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MajorAxisLength";
-		register(Ellipse.class);
+    static {
+	MY_URI = uAAL_SHAPE_NAMESPACE + "Ellipse";
+	PROP_MINOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MinorAxisLength";
+	PROP_MAJOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MajorAxisLength";
+	register(Ellipse.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_MINOR_AXIS_LENGTH.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
+	if (PROP_MAJOR_AXIS_LENGTH.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
+	return Shape2D.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public Ellipse(String uri) {
+	super(uri);
+    }
+
+    public Ellipse() {
+	super();
+    }
+
+    /**
+     * Creates a new ellipse
+     * 
+     * @param uri
+     * @param minorAxisLength
+     *            the "small" side of the ellipse
+     * @param majorAxisLength
+     *            the "long" side of the ellipse
+     * @param system
+     *            the local coordinate system
+     */
+    public Ellipse(String uri, double minorAxisLength, double majorAxisLength,
+	    CoordinateSystem system) {
+	super(uri, system);
+	props.put(PROP_MINOR_AXIS_LENGTH, new Double(minorAxisLength));
+	props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
+    }
+
+    /**
+     * Creates a new ellipse
+     * 
+     * @param minorAxisLength
+     *            the "small" side of the ellipse
+     * @param majorAxisLength
+     *            the "long" side of the ellipse
+     * @param system
+     *            the local coordinate system
+     */
+    public Ellipse(double minorAxisLength, double majorAxisLength,
+	    CoordinateSystem system) {
+	super(system);
+	props.put(PROP_MINOR_AXIS_LENGTH, new Double(minorAxisLength));
+	props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
+    }
+
+    /**
+     * Returns a human readable description on the essence of this ontology
+     * class.
+     */
+    public static String getRDFSComment() {
+	return "An ellpise.";
+    }
+
+    /**
+     * Returns a label with which this ontology class can be introduced to human
+     * users.
+     */
+    public static String getRDFSLabel() {
+	return "Ellipse";
+    }
+
+    public void setMajorAxisLength(double majorAxisLength) {
+	props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
+    }
+
+    public double getMajorAxisLength() {
+	return ((Double) props.get(PROP_MAJOR_AXIS_LENGTH)).doubleValue();
+    }
+
+    public void setMinorAxisLength(double minorAxisLength) {
+	props.put(PROP_MINOR_AXIS_LENGTH, new Double(minorAxisLength));
+    }
+
+    public double getMinorAxisLength() {
+	return ((Double) props.get(PROP_MINOR_AXIS_LENGTH)).doubleValue();
+    }
+
+    public int getPropSerializationType(String propURI) {
+	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+	    return super.getPropSerializationType(propURI);
+	if (PROP_MINOR_AXIS_LENGTH.equals(propURI)
+		|| PROP_MAJOR_AXIS_LENGTH.equals(propURI))
+	    return PROP_SERIALIZATION_REDUCED;
+
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
+
+    public static String[] getStandardPropertyURIs() {
+	String[] inherited = Shape2D.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length + 2];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
 	}
+	toReturn[i++] = PROP_MINOR_AXIS_LENGTH;
+	toReturn[i] = PROP_MAJOR_AXIS_LENGTH;
+	return toReturn;
+    }
 
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		if (PROP_MINOR_AXIS_LENGTH.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					TypeMapper.getDatatypeURI(Double.class),1, 1);
-		if (PROP_MAJOR_AXIS_LENGTH.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-					TypeMapper.getDatatypeURI(Double.class),1, 1);
-		return Shape2D.getClassRestrictionsOnProperty(propURI);
+    public float getDistanceTo(Point point) {
+	CoordinateSystem cs = CoordinateSystem.findCommonParentSystem(
+		getCenter().getCoordinateSystem(), point.getCoordinateSystem());
+	Point p = point.getInHigherCoordinateSystem(cs);
+	JgclCartesianPoint3D jgclpoint = new JgclCartesianPoint3D(p.getX(), p
+		.getY(), p.getZ());
+	// float dist = Float.MAX_VALUE;
+	try {
+	    JgclPoint3D[] intersect = getProjectedPoints(point);
+	    return (float) intersect[0].distance(jgclpoint);
+	} catch (JgclIndefiniteSolution e) {
+	    return Point.NOT_COMPUTABLE_DISTANCE;
 	}
+    }
 
-	public Ellipse(String uri) {
-		super(uri);
+    /**
+     * Returns all possible projection points, sorted by distance to the point
+     * 
+     * @param point
+     * @return all projected points, with ascending distance
+     * @throws JgclIndefiniteSolution
+     */
+    public JgclPoint3D[] getProjectedPoints(Point point)
+	    throws JgclIndefiniteSolution {
+	CoordinateSystem cs = CoordinateSystem.findCommonParentSystem(
+		getCenter().getCoordinateSystem(), point.getCoordinateSystem());
+	Point p = point.getInHigherCoordinateSystem(cs);
+	Point c = getCenter().getInHigherCoordinateSystem(cs);
+	JgclEllipse3D ellipse = new JgclEllipse3D(new JgclAxis2Placement3D(
+		new JgclCartesianPoint3D(c.getX(), c.getY(), c.getZ()), null,
+		null), getMinorAxisLength() / 2d, getMajorAxisLength() / 2d);
+	JgclCartesianPoint3D jgclpoint = new JgclCartesianPoint3D(p.getX(), p
+		.getY(), p.getZ());
+	JgclPoint3D[] intersect = {};
+	intersect = ellipse.projectFrom(jgclpoint);
+	return sortByDistance(intersect, jgclpoint);
+    }
+
+    private JgclPoint3D[] sortByDistance(JgclPoint3D[] intersect, JgclPoint3D p) {
+	JgclPoint3D[] sol = new JgclPoint3D[intersect.length];
+	for (int i = 0; i < intersect.length; i++) {
+	    float dist = (float) intersect[i].distance(p);
+	    int j = 0;
+	    while (sol[j] != null && sol[j].distance(p) < dist)
+		j++;
+	    int k = sol.length - 1;
+	    while (k > j) {
+		sol[k] = sol[k - 1];
+		k--;
+	    }
+	    sol[j] = intersect[i];
 	}
+	return sol;
+    }
 
-	public Ellipse() {
-		super();
+    public float getDistanceTo(Shape shape) {
+	if (shape == null)
+	    throw new IllegalArgumentException();
+	// The distance is calculated by
+	// "shape distance to center"-"distance center to intersect point"
+	// TODO: This is only correct if the closest point is on one line from
+	// center to center. Only guaranteed for circle/ellipse
+	CoordinateSystem cs = CoordinateSystem.findCommonParentSystem(
+		getCenter().getCoordinateSystem(), shape
+			.getLocalCoordinateSystem());
+	float dist = shape.getDistanceTo(getCenter());
+	Point p = shape.getCenter().getInHigherCoordinateSystem(cs);
+	Point c = getCenter().getInHigherCoordinateSystem(cs);
+	JgclEllipse3D ellipse = new JgclEllipse3D(new JgclAxis2Placement3D(
+		new JgclCartesianPoint3D(c.getX(), c.getY(), c.getZ()), null,
+		null), getMinorAxisLength() / 2d, getMajorAxisLength() / 2d);
+	JgclCartesianPoint3D jgclpoint = new JgclCartesianPoint3D(p.getX(), p
+		.getY(), p.getZ());
+	JgclPoint3D[] intersect = {};
+	try {
+	    intersect = ellipse.projectFrom(jgclpoint);
+	} catch (JgclIndefiniteSolution e) {
+	    e.printStackTrace();
 	}
-
-	/**
-	 * Creates a new ellipse
-	 * @param uri
-	 * @param minorAxisLength the "small" side of the ellipse
-	 * @param majorAxisLength the "long" side of the ellipse
-	 * @param system the local coordinate system
-	 */
-	public Ellipse(String uri, double minorAxisLength,double majorAxisLength,CoordinateSystem system) {
-		super(uri,system);
-		props.put(PROP_MINOR_AXIS_LENGTH, new Double(minorAxisLength));
-		props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
+	float disttest = Float.MAX_VALUE;
+	int iValue = -1;
+	for (int i = 0; i < intersect.length; i++) {
+	    if (intersect[i].distance(jgclpoint) < disttest) {
+		disttest = (float) intersect[i].distance(jgclpoint);
+		iValue = i;
+	    }
 	}
+	return (float) (dist - intersect[iValue]
+		.distance(new JgclCartesianPoint3D(c.getX(), c.getY(), c.getZ())));
+    }
 
-	/**
-	 * Creates a new ellipse
-	 * @param minorAxisLength the "small" side of the ellipse
-	 * @param majorAxisLength the "long" side of the ellipse
-	 * @param system the local coordinate system
-	 */
-	public Ellipse(double minorAxisLength,double majorAxisLength,CoordinateSystem system) {
-		super(system);
-		props.put(PROP_MINOR_AXIS_LENGTH, new Double(minorAxisLength));
-		props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
-	}
+    public boolean contains(Point p) {
+	return getDistanceTo(p) <= 0;
+    }
 
-
-	/**
-	 * Returns a human readable description on the essence of this ontology class.
-	 */
-	public static String getRDFSComment() {
-		return "An ellpise.";
-	}
-
-	/**
-	 * Returns a label with which this ontology class can be introduced to human users.
-	 */
-	public static String getRDFSLabel() {
-		return "Ellipse";
-	}
-
-	public void setMajorAxisLength(double majorAxisLength) {
-		props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
-	}
-
-	public double getMajorAxisLength() {
-		return ((Double)props.get(PROP_MAJOR_AXIS_LENGTH)).doubleValue();
-	}
-
-	public void setMinorAxisLength(double minorAxisLength) {
-		props.put(PROP_MINOR_AXIS_LENGTH, new Double(minorAxisLength));
-	}
-
-	public double getMinorAxisLength() {
-		return ((Double)props.get(PROP_MINOR_AXIS_LENGTH)).doubleValue();
-	}
-
-	public int getPropSerializationType(String propURI) {
-		if(super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL) return super.getPropSerializationType(propURI);
-		if (PROP_MINOR_AXIS_LENGTH.equals(propURI) ||
-				PROP_MAJOR_AXIS_LENGTH.equals(propURI))
-			return PROP_SERIALIZATION_REDUCED;
-
-		return PROP_SERIALIZATION_OPTIONAL;
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		String[] inherited = Shape2D.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length+2];
-		int i = 0;
-		while (i < inherited.length) {
-			toReturn[i] = inherited[i];
-			i++;
-		}
-		toReturn[i++] = PROP_MINOR_AXIS_LENGTH;
-		toReturn[i] = PROP_MAJOR_AXIS_LENGTH;
-		return toReturn;
-	}
-
-	public float getDistanceTo(Point point) {
-		CoordinateSystem cs = CoordinateSystem.findCommonParentSystem(getCenter().getCoordinateSystem(), point.getCoordinateSystem());
-		Point p = point.getInHigherCoordinateSystem(cs);
-		JgclCartesianPoint3D jgclpoint = new JgclCartesianPoint3D(p.getX(),p.getY(),p.getZ());
-		// float dist = Float.MAX_VALUE;
-		try {
-			JgclPoint3D[] intersect = getProjectedPoints(point);
-			return (float) intersect[0].distance(jgclpoint);
-		} catch (JgclIndefiniteSolution e) {
-			return Point.NOT_COMPUTABLE_DISTANCE;
-		}
-	}
-
-	/** Returns all possible projection points, sorted by distance to the point
-	 * 
-	 * @param point
-	 * @return all projected points, with ascending distance
-	 * @throws JgclIndefiniteSolution
-	 */
-	public JgclPoint3D[] getProjectedPoints(Point point) throws JgclIndefiniteSolution {
-		CoordinateSystem cs = CoordinateSystem.findCommonParentSystem(getCenter().getCoordinateSystem(), point.getCoordinateSystem());
-		Point p = point.getInHigherCoordinateSystem(cs);
-		Point c = getCenter().getInHigherCoordinateSystem(cs);
-		JgclEllipse3D ellipse = new JgclEllipse3D(new JgclAxis2Placement3D(new JgclCartesianPoint3D(c.getX(),c.getY(),c.getZ()),null,null),getMinorAxisLength()/2d,getMajorAxisLength()/2d);
-		JgclCartesianPoint3D jgclpoint = new JgclCartesianPoint3D(p.getX(),p.getY(),p.getZ());
-		JgclPoint3D[] intersect = {};
-		intersect = ellipse.projectFrom(jgclpoint);
-		return sortByDistance(intersect,jgclpoint);
-	}
-
-	private JgclPoint3D[] sortByDistance(JgclPoint3D[] intersect,JgclPoint3D p) {
-		JgclPoint3D[] sol = new JgclPoint3D[intersect.length];
-		for(int i=0;i<intersect.length;i++) {
-			float dist = (float) intersect[i].distance(p);
-			int j = 0;
-			while(sol[j] != null && sol[j].distance(p) < dist) j++;
-			int k = sol.length-1;
-			while(k>j) {
-				sol[k] = sol[k-1];
-				k--;
-			}
-			sol[j] = intersect[i];
-		}
-		return sol;
-	}
-
-	public float getDistanceTo(Shape shape) {
-		if(shape == null) throw new IllegalArgumentException();
-		//The distance is calculated by "shape distance to center"-"distance center to intersect point"
-		//TODO: This is only correct if the closest point is on one line from center to center. Only guaranteed for circle/ellipse
-		CoordinateSystem cs = CoordinateSystem.findCommonParentSystem(getCenter().getCoordinateSystem(), shape.getLocalCoordinateSystem());
-		float dist = shape.getDistanceTo(getCenter());
-		Point p = shape.getCenter().getInHigherCoordinateSystem(cs);
-		Point c = getCenter().getInHigherCoordinateSystem(cs);	
-		JgclEllipse3D ellipse = new JgclEllipse3D(new JgclAxis2Placement3D(new JgclCartesianPoint3D(c.getX(),c.getY(),c.getZ()),null,null),getMinorAxisLength()/2d,getMajorAxisLength()/2d);
-		JgclCartesianPoint3D jgclpoint = new JgclCartesianPoint3D(p.getX(),p.getY(),p.getZ());
-		JgclPoint3D[] intersect = {};
-		try {
-			intersect = ellipse.projectFrom(jgclpoint);
-		} catch (JgclIndefiniteSolution e) {
-			e.printStackTrace();
-		}
-		float disttest = Float.MAX_VALUE;
-		int iValue = -1;
-		for(int i=0;i<intersect.length;i++) {
-			if(intersect[i].distance(jgclpoint) < disttest) {
-				disttest = (float) intersect[i].distance(jgclpoint);
-				iValue = i;
-			}
-		}
-		return (float) (dist-intersect[iValue].distance(new JgclCartesianPoint3D(c.getX(),c.getY(),c.getZ())));
-	}
-
-	public boolean contains(Point p) {
-		return getDistanceTo(p) <= 0;
-	}
-
-	protected Shape computeBoundingVolume() {
-		return new Box(getMinorAxisLength(),getMajorAxisLength(),1f,getLocalCoordinateSystem());
-	}
+    protected Shape computeBoundingVolume() {
+	return new Box(getMinorAxisLength(), getMajorAxisLength(), 1f,
+		getLocalCoordinateSystem());
+    }
 
 }

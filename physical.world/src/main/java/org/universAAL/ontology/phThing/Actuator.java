@@ -18,43 +18,43 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 package org.universAAL.ontology.phThing;
 
 /**
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- *
+ * 
  */
 public class Actuator extends Device {
 
-	public static final String MY_URI;
-	
-	static{
-		MY_URI=Device.uAAL_DEVICE_NAMESPACE+"Actuator";
-		register(Actuator.class);
-	}
-	
-	public Actuator(){
-	}
-	
-	public Actuator(String uri){
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "A Generic Actuator Device";
-	}
-	
-	public static String getRDFSLabel() {
-		return "Actuator";
-	}
-	
-	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
-	}
-	
-	public boolean isWellFormed() {
-		return true;
-	}
+    public static final String MY_URI;
+
+    static {
+	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Actuator";
+	register(Actuator.class);
+    }
+
+    public Actuator() {
+    }
+
+    public Actuator(String uri) {
+	super(uri);
+    }
+
+    public static String getRDFSComment() {
+	return "A Generic Actuator Device";
+    }
+
+    public static String getRDFSLabel() {
+	return "Actuator";
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }
