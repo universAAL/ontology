@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.av.streaming;
 
@@ -26,58 +26,59 @@ import org.universAAL.middleware.owl.Restriction;
 /**
  * 
  * @author climberg
- *
+ * 
  */
-public class AudioStream extends Stream{
-	
-	public static final String MY_URI;
-	
-	static{
-		MY_URI = Stream.STREAM_NAMESPACE + "AudioStream";
-		register(AudioStream.class);
+public class AudioStream extends Stream {
+
+    public static final String MY_URI;
+
+    static {
+	MY_URI = Stream.STREAM_NAMESPACE + "AudioStream";
+	register(AudioStream.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	if (PROP_HAS_FORMAT.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    AudioFormat.MY_URI, 1, 1);
+	return Stream.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public static String[] getStandardPropertyURIs() {
+	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
 	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI){
-		if (PROP_HAS_FORMAT.equals(propURI))
-			return Restriction.getAllValuesRestrictionWithCardinality(propURI, AudioFormat.MY_URI, 1, 1);
-		return Stream.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length];
-		int i = 0;
-		while (i < inherited.length) {
-			toReturn[i] = inherited[i];
-			i++;
-		}
-	
-		return toReturn;
-	}
-	
-	public static String getRDFSComment() {
-		return "The class of AudioStreams.";
-	}
-	
-	public static String getRDFSLabel() {
-		return "AudioStream";
-	}
-	
-	public AudioStream() {
-		super();
-	}
-	
-	public AudioStream(String uri) {
-		super(uri);
-	}
-	
-	public int getPropSerializationType(String propURI){
-			return PROP_SERIALIZATION_FULL;
-	}
-	
-	//removed soon
-	public boolean isWellFormed() {
-		return true;
-	}
+
+	return toReturn;
+    }
+
+    public static String getRDFSComment() {
+	return "The class of AudioStreams.";
+    }
+
+    public static String getRDFSLabel() {
+	return "AudioStream";
+    }
+
+    public AudioStream() {
+	super();
+    }
+
+    public AudioStream(String uri) {
+	super(uri);
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    // removed soon
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }

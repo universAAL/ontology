@@ -16,7 +16,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-*/
+ */
 
 package org.universAAL.ontology.av.streaming;
 
@@ -27,61 +27,60 @@ import org.universAAL.ontology.phThing.Device;
 /**
  * 
  * @author climberg
- *
+ * 
  */
-public abstract class Compression extends ManagedIndividual{
-	
+public abstract class Compression extends ManagedIndividual {
+
     public static final String MY_URI;
-	
-	static{
-		MY_URI = Stream.STREAM_NAMESPACE + "compression";
-		register(Compression.class);
+
+    static {
+	MY_URI = Stream.STREAM_NAMESPACE + "compression";
+	register(Compression.class);
+    }
+
+    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+    }
+
+    public static String[] getStandardPropertyURIs() {
+	String[] inherited = Device.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length + 0];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
 	}
-	
-	public static Restriction getClassRestrictionsOnProperty(String propURI) {
-		return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-	}
-	
-	public static String[] getStandardPropertyURIs() {
-		String[] inherited = Device.getStandardPropertyURIs();
-		String[] toReturn = new String[inherited.length + 0];
-		int i = 0;
-		while (i < inherited.length) {
-			toReturn[i] = inherited[i];
-			i++;
-		}
-		return toReturn;
-	}
-	
-	/**
-	 * the default constructor
-	 */
-	public Compression(){
-		super();
-	}
-	
-	/**
+	return toReturn;
+    }
+
+    /**
+     * the default constructor
+     */
+    public Compression() {
+	super();
+    }
+
+    /**
 	 *
 	 */
-	public Compression(String uri) {
-		super(uri);
-	}
-	
-	public static String getRDFSComment() {
-		return "The abstract class of compressions.";
-	}
+    public Compression(String uri) {
+	super(uri);
+    }
 
-	public static String getRDFSLabel() {
-		return "Compression";
-	}
+    public static String getRDFSComment() {
+	return "The abstract class of compressions.";
+    }
 
-	
-	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
-	}
-	
-	public boolean isWellFormed() {
-		return true;
-	}
+    public static String getRDFSLabel() {
+	return "Compression";
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }
