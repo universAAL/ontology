@@ -77,22 +77,6 @@
 			<url>http://www.flowsgi.inf.ethz.ch/repository/maven2</url>
 		</repository>
 		<repository>
-			<id>persona</id>
-			<name>PERSONA Repositories</name>
-			<url>http://gforge.aal-persona.org/nexus/content/groups/public</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>persona-snapshots</id>
-			<name>PERSONA Snapshot Repositories</name>
-			<url>http://gforge.aal-persona.org/nexus/content/groups/public-snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-		<repository>
 			<id>uaal</id>
 			<name>universAAL Repositories</name>
 			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/releases/</url>
@@ -107,6 +91,11 @@
 			<releases>
 				<enabled>false</enabled>
 			</releases>
+		</repository>
+		<repository>
+			<id>uaal-thirdparty</id>
+			<name>universAAL ThirdParty Repositories</name>
+			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/thirdparty/</url>
 		</repository>
 	</repositories>
 
