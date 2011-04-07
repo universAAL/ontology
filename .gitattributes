@@ -99,6 +99,10 @@ ont.location.extra/src/main/java/org/universAAL/ontology/location/extra/Point.ja
 ont.location.extra/src/main/java/org/universAAL/ontology/location/extra/Position.java -text
 ont.location.extra/src/main/java/org/universAAL/ontology/location/extra/RelativePosition.java -text
 ont.location.extra/src/main/java/org/universAAL/ontology/location/extra/RoomPlace.java -text
+ont.tutorial/pom.xml -text
+ont.tutorial/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
+ont.tutorial/src/main/java/org/universAAL/ontology/tutorial/MyEnumeration.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/pom.xml -text
