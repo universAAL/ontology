@@ -34,6 +34,10 @@ ont.location.extra/.classpath
 ont.location.extra/.project
 ont.location.extra/.settings
 ont.location.extra/target
+ont.tutorial/.classpath
+ont.tutorial/.project
+ont.tutorial/.settings
+ont.tutorial/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
