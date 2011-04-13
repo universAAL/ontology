@@ -30,8 +30,7 @@ public class Activator implements BundleActivator {
 	Activator.context = context;
 	Class.forName("org.universAAL.ontology.lighting.Blinkable");
 	Class.forName("org.universAAL.ontology.lighting.BlinkableBeaming");
-	Class
-		.forName("org.universAAL.ontology.lighting.BlinkableBeamingSource");
+	Class.forName("org.universAAL.ontology.lighting.BlinkableBeamingSource");
 	Class.forName("org.universAAL.ontology.lighting.BlinkableLighting");
 	Class.forName("org.universAAL.ontology.lighting.BlinkableLightSource");
 	Class.forName("org.universAAL.ontology.lighting.ElectricLight");

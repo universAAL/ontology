@@ -32,25 +32,14 @@ import org.universAAL.middleware.service.owl.Service;
 public class Lighting extends Service {
     public static final String MY_URI;
     public static final String PROP_CONTROLS;
-    public static final String PROP_PHYSICAL_LOCATION;
-    public static final String PROP_BRIGHTNESS;
 
     private static Hashtable lightingRestrictions = new Hashtable(2);
     static {
 	MY_URI = LightSource.LIGHTING_NAMESPACE + "Lighting";
 	PROP_CONTROLS = LightSource.LIGHTING_NAMESPACE + "controls";
-	PROP_PHYSICAL_LOCATION = LightSource.LIGHTING_NAMESPACE
-		+ "physicalLocation";
-	PROP_BRIGHTNESS = LightSource.LIGHTING_NAMESPACE + "brightness";
 	register(Lighting.class);
 	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
 		LightSource.MY_URI), new String[] { PROP_CONTROLS },
-		lightingRestrictions);
-	addRestriction(Restriction.getAllValuesRestriction(
-		PROP_PHYSICAL_LOCATION, LightSource.MY_URI),
-		new String[] { PROP_PHYSICAL_LOCATION }, lightingRestrictions);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_BRIGHTNESS,
-		LightSource.MY_URI), new String[] { PROP_BRIGHTNESS },
 		lightingRestrictions);
     }
 
