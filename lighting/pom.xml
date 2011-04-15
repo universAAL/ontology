@@ -11,7 +11,7 @@
 	<packaging>bundle</packaging>
 	<artifactId>ont.lighting</artifactId>
 	<version>0.2.0-SNAPSHOT</version>
-	<name>The Ligting Ontology</name>
+	<name>The Lighting Ontology</name>
 	<description>The ontology defining the most general concepts dealing with light sources and their control.</description>
 	<url />
 
