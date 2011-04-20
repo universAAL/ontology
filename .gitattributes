@@ -34,6 +34,7 @@ furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 lighting/LICENSE.txt -text
 lighting/NOTICE.txt -text
+lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 lighting/pom.xml -text
 lighting/src/main/java/org/universAAL/ontology/Activator.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/Beaming.java -text
