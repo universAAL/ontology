@@ -106,6 +106,9 @@ ont.tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
 ont.tutorial/src/main/java/org/universAAL/ontology/tutorial/MyEnumeration.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
+physical.world/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
+physical.world/documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
+physical.world/documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 physical.world/pom.xml -text
 physical.world/src/main/java/org/universAAL/ontology/Activator.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Location.java -text
