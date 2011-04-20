@@ -172,6 +172,7 @@ user.profile/LICENSE-JGCL.txt -text
 user.profile/LICENSE-MIT11-Bouncycastle.txt -text
 user.profile/LICENSE.txt -text
 user.profile/NOTICE.txt -text
+user.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 user.profile/documentation/ont.profile[!!-~]dependencies[!!-~]19.4.2011.png -text
 user.profile/pom.xml -text
 user.profile/src/main/java/org/universAAL/ontology/Activator.java -text
