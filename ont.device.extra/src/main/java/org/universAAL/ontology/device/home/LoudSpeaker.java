@@ -33,6 +33,9 @@ import org.universAAL.ontology.phThing.Device;
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
  * 
+ * Warning!: This class is duplicated in ont.av. It will have to be
+ * removed from here, but is currently kept due to bugs on ont.av
+ * 
  * @author climberg
  * 
  */
