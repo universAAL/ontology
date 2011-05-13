@@ -25,6 +25,13 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 import org.universAAL.ontology.location.Location;
 
+/**
+ * Ontological representation of a geometric location coordinates system.
+ * Methods included in this class are the mandatory ones for representing an
+ * ontological concept in Java classes for uAAL. Usually it includes getters and
+ * setters for most of its properties.
+ * 
+ */
 public class CoordinateSystem extends ManagedIndividual {
 
     public static final String MY_URI;

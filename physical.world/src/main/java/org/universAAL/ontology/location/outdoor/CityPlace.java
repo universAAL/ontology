@@ -21,6 +21,13 @@ package org.universAAL.ontology.location.outdoor;
 
 import org.universAAL.ontology.shape.Shape;
 
+/**
+ * Ontological representation of an outdoor place in a city. Methods included in
+ * this class are the mandatory ones for representing an ontological concept in
+ * Java classes for uAAL. Usually it includes getters and setters for most of
+ * its properties.
+ * 
+ */
 public class CityPlace extends OutdoorPlace {
 
     public static final String MY_URI;

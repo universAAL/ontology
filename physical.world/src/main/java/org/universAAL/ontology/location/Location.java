@@ -34,6 +34,11 @@ import org.universAAL.middleware.owl.supply.AbsLocation;
 import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
+ * Ontological representation of the location of a physical thing. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * most of its properties.
+ * 
  * @author chwirth
  */
 public class Location extends AbsLocation {

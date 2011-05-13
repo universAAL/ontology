@@ -25,6 +25,10 @@ import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.position.Point;
 
 /**
+ * Ontological representation of a triangle in a tri-dimensional space. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * most of its properties.
  * 
  * @author chwirth
  * 

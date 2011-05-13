@@ -21,6 +21,13 @@ package org.universAAL.ontology.location.outdoor;
 
 import org.universAAL.ontology.shape.Shape;
 
+/**
+ * Ontological representation of any building. Methods included in this class
+ * are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
+ * 
+ */
 public class Building extends CityPlace {
 
     public static final String MY_URI;
