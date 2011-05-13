@@ -23,6 +23,9 @@ package org.universAAL.ontology.window;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Ontological enumeration of possible window types. Currently empty. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * enumeration in Java classes for uAAL.
  * 
  * @author Steeven Zeiss
  * @since 26.11.2009

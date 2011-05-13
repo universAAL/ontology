@@ -26,6 +26,9 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.owl.Restriction;
 
 /**
+ * Ontological service that controls a window. Methods included in this class
+ * are the mandatory ones for representing an ontological service in Java
+ * classes for uAAL.
  * 
  * @author Steeven Zeiss
  * @since 26.11.2009
