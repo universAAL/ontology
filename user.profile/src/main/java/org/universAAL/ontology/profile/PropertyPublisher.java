@@ -19,6 +19,12 @@
  */
 package org.universAAL.ontology.profile;
 
+/**
+ * helper class for properties (to be removed)
+ * 
+ * @author alfiva
+ * 
+ */
 public interface PropertyPublisher {
     ProfileProperty[] getAllProperties();
 

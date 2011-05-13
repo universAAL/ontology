@@ -21,6 +21,13 @@ package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
+/**
+ * Ontological enumeration of the possible roles of a person using the system.
+ * (currently only one: elderly user). Methods included in this class are the
+ * mandatory ones for representing an ontological enumeration in Java classes
+ * for uAAL.
+ * 
+ */
 public class UserRole extends ManagedIndividual implements PropertyPublisher {
     public static final String MY_URI;
     static {

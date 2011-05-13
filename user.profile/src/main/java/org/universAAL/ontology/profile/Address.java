@@ -23,6 +23,13 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 
+/**
+ * Ontological representation of an address in the physical world. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * most of its properties.
+ * 
+ */
 public class Address extends ManagedIndividual implements PropertyPublisher {
 
     public static final String PROFILING_NAMESPACE = "http://ontology.anco.gr/Address.owl#";

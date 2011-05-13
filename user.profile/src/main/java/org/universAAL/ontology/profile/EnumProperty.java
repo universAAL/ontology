@@ -21,6 +21,10 @@ package org.universAAL.ontology.profile;
 
 import java.util.List;
 
+/**
+ * Helper interface for enumerations
+ *
+ */
 public interface EnumProperty extends PropertyPublisher {
     // a list of String[2]:
     // String[0]-> Name, String[1] -> Value

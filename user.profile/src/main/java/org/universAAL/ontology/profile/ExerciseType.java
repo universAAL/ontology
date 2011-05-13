@@ -18,16 +18,19 @@
 	limitations under the License.
  */package org.universAAL.ontology.profile;
 
-/**
-
- * @author KAgnantis
- *
- */
 import java.util.ArrayList;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
+/**
+ * Ontological enumeration of possible physical exercise types. Methods included
+ * in this class are the mandatory ones for representing an ontological
+ * enumeration in Java classes for uAAL.
+ * 
+ * @author KAgnantis
+ * 
+ */
 public class ExerciseType extends ManagedIndividual implements EnumProperty {
     public static final String MY_URI;
     static {

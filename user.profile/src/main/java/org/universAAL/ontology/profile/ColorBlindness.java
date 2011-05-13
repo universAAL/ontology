@@ -25,6 +25,11 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
 /**
+ * Ontological representation of the color blindness impairment. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * most of its properties.
+ * 
  * @author mtazari
  * 
  */

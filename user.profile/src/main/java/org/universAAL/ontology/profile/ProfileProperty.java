@@ -19,6 +19,10 @@
  */
 package org.universAAL.ontology.profile;
 
+/**
+ * helper class for properties of enumerations (to be removed)
+ * 
+ */
 public class ProfileProperty {
     public final Object propertyType;
     public final String propertyURI;
