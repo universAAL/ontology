@@ -28,6 +28,10 @@ import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.phThing.Device;
 
 /**
+ * Ontological representation of a power socket. Methods included in this class
+ * are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
  * 
  * @author Steeven Zeiss
  * @since 26.11.2009
