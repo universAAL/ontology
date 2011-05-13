@@ -25,6 +25,10 @@ import java.util.Hashtable;
 import org.universAAL.middleware.owl.Restriction;
 
 /**
+ * Ontological service that handles blinkable and beaming light sources. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * service in Java classes for uAAL.
+ * 
  * @author mtazari
  * 
  */

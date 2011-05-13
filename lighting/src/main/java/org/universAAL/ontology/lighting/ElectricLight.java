@@ -23,6 +23,10 @@ package org.universAAL.ontology.lighting;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Ontological enumeration of possible electric light types. Methods included in
+ * this class are the mandatory ones for representing an ontological enumeration
+ * in Java classes for uAAL.
+ * 
  * @author mtazari
  * 
  */
