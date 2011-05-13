@@ -27,6 +27,11 @@ import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**
+ * Ontological representation of an actuator that can open and/or close the flow
+ * of water through a pipe. Methods included in this class are the mandatory
+ * ones for representing an ontological concept in Java classes for uAAL.
+ * Usually it includes getters and setters for most of its properties.
+ * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */

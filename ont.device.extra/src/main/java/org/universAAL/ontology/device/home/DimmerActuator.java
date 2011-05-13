@@ -28,6 +28,11 @@ import org.universAAL.ontology.phThing.Actuator;
 import org.universAAL.ontology.phThing.Device;
 
 /**
+ * Ontological representation of any actuator that has a range of values from 0
+ * to 100%. Methods included in this class are the mandatory ones for
+ * representing an ontological concept in Java classes for uAAL. Usually it
+ * includes getters and setters for most of its properties.
+ * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
