@@ -27,6 +27,11 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 
 /**
+ * Ontological representation of the concept of tempreature. Currently without
+ * unit. Methods included in this class are the mandatory ones for representing
+ * an ontological concept in Java classes for uAAL. Usually it includes getters
+ * and setters for most of its properties.
+ * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
