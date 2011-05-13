@@ -23,6 +23,11 @@ package org.universAAL.ontology.lighting;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Ontological representation of a the light type concept, to be extended by
+ * different enumerations of types. Methods included in this class are the
+ * mandatory ones for representing an ontological concept in Java classes for
+ * uAAL.
+ * 
  * @author mtazari
  * 
  */

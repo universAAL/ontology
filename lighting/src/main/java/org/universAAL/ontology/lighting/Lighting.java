@@ -26,6 +26,10 @@ import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
+ * Ontological service that handles light sources. Methods included in this
+ * class are the mandatory ones for representing an ontological service in Java
+ * classes for uAAL.
+ * 
  * @author mtazari
  * 
  */

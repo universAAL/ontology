@@ -21,6 +21,9 @@
 package org.universAAL.ontology.lighting;
 
 /**
+ * Ontological representation of a "blinkable" concept to be used for multiple
+ * inheritance.
+ * 
  * @author mtazari
  * 
  */
