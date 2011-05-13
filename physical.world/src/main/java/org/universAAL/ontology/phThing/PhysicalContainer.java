@@ -19,6 +19,13 @@
  */
 package org.universAAL.ontology.phThing;
 
+/**
+ * Ontological representation of a container: a physical thing that can contain
+ * another physical thing. Methods included in this class are the mandatory ones
+ * for representing an ontological concept in Java classes for uAAL. Usually it
+ * includes getters and setters for most of its properties.
+ * 
+ */
 public class PhysicalContainer extends PhysicalThing {
     public static final String MY_URI;
 
