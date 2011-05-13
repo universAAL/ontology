@@ -28,6 +28,9 @@ import org.universAAL.ontology.av.device.VideoCamera;
 import org.universAAL.ontology.av.streaming.VideoStream;
 
 /**
+ * Ontological service that controls a video camera. Methods included in this
+ * class are the mandatory ones for representing an ontological service in Java
+ * classes for uAAL.
  * 
  * @author climberg
  * 

@@ -30,6 +30,11 @@ import org.universAAL.ontology.av.streaming.VideoCompression;
 import org.universAAL.ontology.phThing.Device;
 
 /**
+ * Ontological representation of a video camera. Methods included in this class
+ * are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
+ * 
  * @author climberg
  * 
  */

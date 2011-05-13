@@ -28,6 +28,9 @@ import org.universAAL.ontology.av.device.Microphone;
 import org.universAAL.ontology.av.streaming.AudioStream;
 
 /**
+ * Ontological service that handles microphones. Methods included in this class
+ * are the mandatory ones for representing an ontological service in Java
+ * classes for uAAL.
  * 
  * @author climberg
  * 
