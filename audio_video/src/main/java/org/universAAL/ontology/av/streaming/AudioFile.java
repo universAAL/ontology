@@ -25,6 +25,10 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 
 /**
+ * Ontological representation of an audio software file. Methods included in
+ * this class are the mandatory ones for representing an ontological concept in
+ * Java classes for uAAL. Usually it includes getters and setters for most of
+ * its properties.
  * 
  * @author climberg
  * 

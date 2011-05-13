@@ -23,6 +23,9 @@ package org.universAAL.ontology.av.streaming;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Ontological enumeration of different audio compression algorithms. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * enumeration in Java classes for uAAL.
  * 
  * @author climberg
  * 
