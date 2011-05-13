@@ -27,6 +27,11 @@ import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
+ * Ontological representation of a glass break sensor, usually placed on windows
+ * or glass doors. Methods included in this class are the mandatory ones for
+ * representing an ontological concept in Java classes for uAAL. Usually it
+ * includes getters and setters for most of its properties.
+ * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
