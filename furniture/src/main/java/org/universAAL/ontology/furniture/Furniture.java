@@ -24,6 +24,13 @@ import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.shape.Shape;
 
+/**
+ * Ontological representation of any furniture. Methods included in this class
+ * are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
+ * 
+ */
 public class Furniture extends PhysicalThing {
     public static final String MY_URI;
     public static final String PERSONA_FURNITURE_NAMESPACE = uAAL_NAMESPACE_PREFIX
