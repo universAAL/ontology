@@ -21,6 +21,13 @@ package org.universAAL.ontology.powersocket;
 
 import org.universAAL.ontology.location.Location;
 
+/**
+ * Ontological representation of a dimmable power socket (do not mistake with a
+ * dimmer actuator) . Methods included in this class are the mandatory ones for
+ * representing an ontological concept in Java classes for uAAL. Usually it
+ * includes getters and setters for most of its properties.
+ * 
+ */
 public class dimmableSocket extends Powersocket {
 
     public static final String POWERSOCKET_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Powersocket.owl#";
