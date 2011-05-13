@@ -24,6 +24,12 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
+/**
+ * Ontological enumeration of possible contact types. Methods included in this
+ * class are the mandatory ones for representing an ontological enumeration in
+ * Java classes for uAAL.
+ *
+ */
 public class ContactType extends ManagedIndividual implements EnumProperty {
     public static final String MY_URI;
     static {

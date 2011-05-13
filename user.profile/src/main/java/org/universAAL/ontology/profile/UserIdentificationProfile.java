@@ -23,6 +23,15 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 
+/**
+ * Ontological representation of the profile containing all the identification
+ * information of a person. Methods included in this class are the mandatory
+ * ones for representing an ontological concept in Java classes for uAAL.
+ * Usually it includes getters and setters for most of its properties.
+ * 
+ * @author alfiva
+ * 
+ */
 public class UserIdentificationProfile extends ManagedIndividual implements
 	PropertyPublisher {
     public static final String PROFILING_NAMESPACE = "http://ontology.persona.anco.gr/UserIdentificationProfile.owl#";

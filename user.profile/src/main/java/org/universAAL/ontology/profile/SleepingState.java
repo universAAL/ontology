@@ -28,6 +28,10 @@ import java.util.List;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Ontological enumeration of the possible sleeping states of a person. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * enumeration in Java classes for uAAL.
+ * 
  * @author Folker
  * 
  */

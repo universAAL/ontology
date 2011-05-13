@@ -23,6 +23,14 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 
+/**
+ * Ontological representation of the daily nutritional profile of a person,
+ * describing the nutritional values of every day. Methods included in this
+ * class are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
+ * 
+ */
 public class DiaryNutritionalProfile extends ManagedIndividual implements
 	PropertyPublisher {
 

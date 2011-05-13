@@ -24,6 +24,13 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
+/**
+ * Ontological representation of the Gender of a person. Methods included in
+ * this class are the mandatory ones for representing an ontological concept in
+ * Java classes for uAAL. Usually it includes getters and setters for most of
+ * its properties.
+ * 
+ */
 public class Sex extends ManagedIndividual implements EnumProperty {
     public static final String MY_URI;
     static {

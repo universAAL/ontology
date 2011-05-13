@@ -27,6 +27,10 @@ import org.universAAL.ontology.profile.Profile;
 import org.universAAL.ontology.profile.User;
 
 /**
+ * Ontological service that handles and edits profile-related information.
+ * Methods included in this class are the mandatory ones for representing an
+ * ontological service in Java classes for uAAL.
+ * 
  * @author kagnantis
  * 
  */

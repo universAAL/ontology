@@ -25,6 +25,13 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 
+/**
+ * Ontological representation of the daily activity profile of a person,
+ * describing the activities of daily life. Methods included in this class are
+ * the mandatory ones for representing an ontological concept in Java classes
+ * for uAAL. Usually it includes getters and setters for most of its properties.
+ * 
+ */
 public class DiaryActivityProfile extends ManagedIndividual implements
 	PropertyPublisher {
 

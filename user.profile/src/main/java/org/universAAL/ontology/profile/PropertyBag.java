@@ -28,6 +28,13 @@ import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
+ * 
+ * Ontological representation of a Property Bag (an ontological concept for a
+ * collection of properties). Methods included in this class are the mandatory
+ * ones for representing an ontological concept in Java classes for uAAL.
+ * Usually it includes getters and setters for most of its properties. (to be
+ * removed)
+ * 
  * @author KAgnantis
  * 
  */

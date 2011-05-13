@@ -21,6 +21,13 @@ package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.Restriction;
 
+/**
+ * Ontological representation of the specific profile of an elderly person.
+ * Methods included in this class are the mandatory ones for representing an
+ * ontological concept in Java classes for uAAL. Usually it includes getters and
+ * setters for most of its properties.
+ * 
+ */
 public class ElderlyProfile extends UserProfile {
 
     public static final String PROFILING_NAMESPACE = "http://ontology.persona.ratio.it/ElderlyProfiling.owl#";
