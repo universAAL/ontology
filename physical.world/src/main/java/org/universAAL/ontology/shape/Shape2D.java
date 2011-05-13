@@ -22,6 +22,10 @@ package org.universAAL.ontology.shape;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 
 /**
+ * Ontological representation of a bi-dimensional shape. Methods included in
+ * this class are the mandatory ones for representing an ontological concept in
+ * Java classes for uAAL. Usually it includes getters and setters for most of
+ * its properties.
  * 
  * @author chwirth
  * 

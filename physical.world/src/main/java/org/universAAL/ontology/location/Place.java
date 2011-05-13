@@ -28,6 +28,11 @@ import org.universAAL.ontology.shape.Box;
 import org.universAAL.ontology.shape.Shape;
 
 /**
+ * Ontological representation of a place (which is not only a location but also
+ * has some more properties. It is more concrete). Methods included in this
+ * class are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
  * 
  * @author chwirth
  * 

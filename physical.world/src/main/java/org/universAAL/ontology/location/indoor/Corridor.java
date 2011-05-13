@@ -21,6 +21,13 @@ package org.universAAL.ontology.location.indoor;
 
 import org.universAAL.ontology.shape.Shape;
 
+/**
+ * Ontological representation of corridor in a house. Methods included in this
+ * class are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
+ * 
+ */
 public class Corridor extends HomeArea {
 
     public static final String MY_URI;
