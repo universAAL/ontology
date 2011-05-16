@@ -10,7 +10,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 // to declare properties into enumerations, by merging them with the required 
 // code of normal concepts (see MyConcept). However I have not checked it.
 // All enumerations extend ManagedIndividual (I have not checked if it is 
-// possible to extend other concepts or enumerations)
+// possible to extend other concepts or enumerations, but it seems possible)
 public class MyEnumeration extends ManagedIndividual {
     // MY URI is the URI of this concept. It is mandatory for all.
     public static final String MY_URI;
@@ -36,7 +36,7 @@ public class MyEnumeration extends ManagedIndividual {
     // You have to give a name to each possible value. These names are used in
     // the URI of each individual (the possible values of the enumeration), so
     // they must follow the format for individual names: initial lower case,
-    // without spaces
+    // without spaces (probably all in lower case, but must be confirmed)
     private static final String[] names = { "option_1", "option_2", "option_3",
 	    "option_4", "option_5" };
 
