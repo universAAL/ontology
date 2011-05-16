@@ -28,7 +28,8 @@ public class MyConcept extends ManagedIndividual {
 	MY_NAMESPACE = "http://ontology.universAAL.org/MyDomain.owl#";
 	// The URI of your concept, which is the same name than the class
 	MY_URI = MyConcept.MY_NAMESPACE + "MyConcept";
-	// Now declare the URIs of the properties
+	// Now declare the URIs of the properties. They must start with lower
+	// case.
 	PROP_X_CONCEPT_ONLY_ONE = MyConcept.MY_NAMESPACE + "hasSingleDeviceX";
 	PROP_Y_CONCEPT_LIST = MyConcept.MY_NAMESPACE + "hasListOfSensorsY";
 	PROP_Z_LITERAL_OPTIONAL = MyConcept.MY_NAMESPACE
