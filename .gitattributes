@@ -1,4 +1,10 @@
 * text=auto !eol
+blind/LICENSE.txt -text
+blind/NOTICE.txt -text
+blind/pom.xml -text
+blind/src/main/java/org/universAAL/ontology/Activator.java -text
+blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
+blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
