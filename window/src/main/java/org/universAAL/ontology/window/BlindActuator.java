@@ -37,14 +37,14 @@ import org.universAAL.ontology.phThing.Sensor;
  * @since 26.11.2009
  * 
  */
-public class Blind extends DimmerActuator {
+public class BlindActuator extends DimmerActuator {
     public static final String MY_URI;
     public static final String PROP_IN_WINDOW;
 
     static {
 	MY_URI = WindowActuator.WINDOW_NAMESPACE + "BlindActuator";
 	PROP_IN_WINDOW = WindowActuator.WINDOW_NAMESPACE + "inWindow";
-	register(Blind.class);
+	register(BlindActuator.class);
     }
 
     public static Restriction getClassRestrictionsOnProperty(String propURI) {
@@ -72,10 +72,10 @@ public class Blind extends DimmerActuator {
 	return toReturn;
     }
 
-    public Blind() {
+    public BlindActuator() {
     }
 
-    public Blind(String uri) {
+    public BlindActuator(String uri) {
 	super(uri);
     }
 
