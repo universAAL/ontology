@@ -34,7 +34,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 public abstract class WindowType extends ManagedIndividual {
     public static final String MY_URI;
     static {
-	MY_URI = Window.WINDOW_NAMESPACE + "windowType";
+	MY_URI = WindowActuator.WINDOW_NAMESPACE + "windowType";
 	register(WindowType.class);
     }
 
