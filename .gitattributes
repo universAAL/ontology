@@ -31,6 +31,8 @@ src/main/java/org/universAAL/ontology/location/position/OriginedMetric.java -tex
 src/main/java/org/universAAL/ontology/location/position/Point.java -text
 src/main/java/org/universAAL/ontology/phThing/Actuator.java -text
 src/main/java/org/universAAL/ontology/phThing/Device.java -text
+src/main/java/org/universAAL/ontology/phThing/DeviceService.java -text
+src/main/java/org/universAAL/ontology/phThing/DimmerActuator.java -text
 src/main/java/org/universAAL/ontology/phThing/OnOffActuator.java -text
 src/main/java/org/universAAL/ontology/phThing/OnOffSensor.java -text
 src/main/java/org/universAAL/ontology/phThing/PhysicalContainer.java -text
