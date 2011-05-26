@@ -63,3 +63,10 @@ physical.world/src/main/java/org/universAAL/ontology/shape/Shape3D.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
+window/LICENSE.txt -text
+window/NOTICE.txt -text
+window/pom.xml -text
+window/src/main/java/org/universAAL/ontology/Activator.java -text
+window/src/main/java/org/universAAL/ontology/window/Window.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowController.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowType.java -text
