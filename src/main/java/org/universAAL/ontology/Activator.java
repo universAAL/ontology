@@ -51,6 +51,8 @@ public class Activator implements BundleActivator {
 	Class.forName("org.universAAL.ontology.phThing.OnOffActuator");
 	Class.forName("org.universAAL.ontology.phThing.OnOffSensor");
 	Class.forName("org.universAAL.ontology.phThing.PhysicalContainer");
+	Class.forName("org.universAAL.ontology.phThing.DimmerActuator");
+	Class.forName("org.universAAL.ontology.phThing.DeviceService");
 	Class.forName("org.universAAL.ontology.shape.Box");
 	Class.forName("org.universAAL.ontology.shape.Circle");
 	Class.forName("org.universAAL.ontology.shape.ConeSegment");
