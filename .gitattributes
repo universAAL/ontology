@@ -67,7 +67,6 @@ ont.device.extra/pom.xml -text
 ont.device.extra/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/CarpetSensor.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/ContactSensor.java -text
-ont.device.extra/src/main/java/org/universAAL/ontology/device/home/LoudSpeaker.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Oven.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/PresenceDetector.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator.java -text
