@@ -12,7 +12,6 @@ public class Activator implements BundleActivator {
 	Activator.context = context;
 	Class.forName(CarpetSensor.class.getName());
 	Class.forName(ContactSensor.class.getName());
-	Class.forName(LoudSpeaker.class.getName());
 	Class.forName(Oven.class.getName());
 	Class.forName(PresenceDetector.class.getName());
 	Class.forName(SirenActuator.class.getName());
