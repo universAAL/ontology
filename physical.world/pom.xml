@@ -10,7 +10,7 @@
 	</parent>
 	<packaging>bundle</packaging>
 	<artifactId>ont.phWorld</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>0.2.1-SNAPSHOT</version>
 	<name>The Physical World Ontology</name>
 	<description>The upper ontology defining the most general concepts from the physical world as opposed to the virtual realm.</description>
 	<url />

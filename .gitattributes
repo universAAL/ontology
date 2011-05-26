@@ -139,6 +139,8 @@ physical.world/src/main/java/org/universAAL/ontology/location/position/OriginedM
 physical.world/src/main/java/org/universAAL/ontology/location/position/Point.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/Actuator.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/Device.java -text
+physical.world/src/main/java/org/universAAL/ontology/phThing/DeviceService.java -text
+physical.world/src/main/java/org/universAAL/ontology/phThing/DimmerActuator.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/OnOffActuator.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/OnOffSensor.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/PhysicalContainer.java -text
