@@ -37,27 +37,22 @@ import org.universAAL.ontology.phThing.Device;
  * 
  * 
  */
-public class Window extends Device {
+public class WindowActuator extends Device {
     public static final String WINDOW_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Window.owl#";
     public static final String MY_URI;
     public static final String PROP_HAS_TYPE;
-    public static final String PROP_WINDOW_LOCATION;
     public static final String PROP_WINDOW_STATUS;
     static {
 	MY_URI = WINDOW_NAMESPACE + "Window";
 	PROP_HAS_TYPE = WINDOW_NAMESPACE + "hasType";
-	PROP_WINDOW_LOCATION = WINDOW_NAMESPACE + "windowLocation";
 	PROP_WINDOW_STATUS = WINDOW_NAMESPACE + "windowStatus";
-	register(Window.class);
+	register(WindowActuator.class);
     }
 
     public static Restriction getClassRestrictionsOnProperty(String propURI) {
 	if (PROP_HAS_TYPE.equals(propURI))
 	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
 		    WindowType.MY_URI, 1, 1);
-	if (PROP_WINDOW_LOCATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    AbsLocation.MY_URI, 1, 1);
 	if (PROP_WINDOW_STATUS.equals(propURI))
 	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
 		    new Integer(0), true, true, Restriction
@@ -68,8 +63,16 @@ public class Window extends Device {
     }
 
     public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_HAS_TYPE, PROP_WINDOW_LOCATION,
-		PROP_WINDOW_STATUS };
+	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
+	String[] toReturn = new String[inherited.length + 2];
+	int i = 0;
+	while (i < inherited.length) {
+	    toReturn[i] = inherited[i];
+	    i++;
+	}
+	toReturn[i++] = PROP_HAS_TYPE;
+	toReturn[i] = PROP_WINDOW_STATUS;
+	return toReturn;
     }
 
     public static String getRDFSComment() {
@@ -80,29 +83,29 @@ public class Window extends Device {
 	return "Window";
     }
 
-    public Window() {
+    public WindowActuator() {
 	super();
     }
 
-    public Window(String uri) {
+    public WindowActuator(String uri) {
 	super(uri);
     }
 
-    public Window(String uri, AbsLocation loc) {
+    public WindowActuator(String uri, AbsLocation loc) {
 	super(uri);
 	if (loc == null)
 	    throw new IllegalArgumentException();
-	props.put(PROP_WINDOW_LOCATION, loc);
+	props.put(PROP_PHYSICAL_LOCATION, loc);
 	props.put(PROP_WINDOW_STATUS, new Integer(0));
     }
 
-    public Window(String uri, WindowType type, AbsLocation loc) {
+    public WindowActuator(String uri, WindowType type, AbsLocation loc) {
 	super(uri);
 	if (type == null || loc == null)
 	    throw new IllegalArgumentException();
 
 	props.put(PROP_HAS_TYPE, type);
-	props.put(PROP_WINDOW_LOCATION, loc);
+	props.put(PROP_PHYSICAL_LOCATION, loc);
     }
 
     // public Location getAmbientCoverage() {
@@ -119,7 +122,7 @@ public class Window extends Device {
     }
 
     public AbsLocation getWindowLocation() {
-	return (AbsLocation) props.get(PROP_WINDOW_LOCATION);
+	return (AbsLocation) props.get(PROP_PHYSICAL_LOCATION);
     }
 
     // public void setAmbientCoverage(Location l) {
@@ -134,7 +137,7 @@ public class Window extends Device {
 
     public void setWindowLocation(AbsLocation l) {
 	if (l != null)
-	    props.put(PROP_WINDOW_LOCATION, l);
+	    props.put(PROP_PHYSICAL_LOCATION, l);
     }
 
     /*
@@ -145,7 +148,7 @@ public class Window extends Device {
      * (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
-	return PROP_WINDOW_LOCATION.equals(propURI) ? PROP_SERIALIZATION_REDUCED
+	return PROP_PHYSICAL_LOCATION.equals(propURI) ? PROP_SERIALIZATION_REDUCED
 		: PROP_SERIALIZATION_FULL;
 
 	// return (PROP_AMBIENT_COVERAGE.equals(propURI)
@@ -160,7 +163,7 @@ public class Window extends Device {
      */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_HAS_TYPE)
-		&& props.containsKey(PROP_WINDOW_LOCATION)
+		&& props.containsKey(PROP_PHYSICAL_LOCATION)
 		&& props.contains(PROP_WINDOW_STATUS);
     }
 

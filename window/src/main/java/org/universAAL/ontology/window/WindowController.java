@@ -24,6 +24,7 @@ import java.util.Hashtable;
 
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.phThing.DeviceService;
 
 /**
  * Ontological service that controls a window. Methods included in this class
@@ -34,16 +35,16 @@ import org.universAAL.middleware.owl.Restriction;
  * @since 26.11.2009
  * 
  */
-public class WindowController extends Service {
+public class WindowController extends DeviceService {
     public static final String MY_URI;
     public static final String PROP_CONTROLS;
     private static Hashtable windowServicesRestrictions = new Hashtable(1);
     static {
-	MY_URI = Window.WINDOW_NAMESPACE + "WindowServices";
-	PROP_CONTROLS = Window.WINDOW_NAMESPACE + "controls";
+	MY_URI = WindowActuator.WINDOW_NAMESPACE + "WindowServices";
+	PROP_CONTROLS = WindowActuator.WINDOW_NAMESPACE + "controls";
 	register(WindowController.class);
 	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		Window.MY_URI), new String[] { PROP_CONTROLS },
+		WindowActuator.MY_URI), new String[] { PROP_CONTROLS },
 		windowServicesRestrictions);
     }
 

@@ -230,6 +230,10 @@ window/LICENSE.txt -text
 window/NOTICE.txt -text
 window/pom.xml -text
 window/src/main/java/org/universAAL/ontology/Activator.java -text
-window/src/main/java/org/universAAL/ontology/window/Window.java -text
+window/src/main/java/org/universAAL/ontology/window/Blind.java -text
+window/src/main/java/org/universAAL/ontology/window/BlindController.java -text
+window/src/main/java/org/universAAL/ontology/window/CurtainActuator.java -text
+window/src/main/java/org/universAAL/ontology/window/CurtainController.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowActuator.java -text
 window/src/main/java/org/universAAL/ontology/window/WindowController.java -text
 window/src/main/java/org/universAAL/ontology/window/WindowType.java -text

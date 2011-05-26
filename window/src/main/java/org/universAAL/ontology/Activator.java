@@ -25,8 +25,12 @@ import org.osgi.framework.BundleContext;
 public class Activator implements BundleActivator {
 
     public void start(BundleContext context) throws Exception {
-	Class.forName("org.universAAL.ontology.window.Window");
+	Class.forName("org.universAAL.ontology.window.WindowActuator");
 	Class.forName("org.universAAL.ontology.window.WindowController");
+	Class.forName("org.universAAL.ontology.window.BlindActuator");
+	Class.forName("org.universAAL.ontology.window.BlindController");
+	Class.forName("org.universAAL.ontology.window.CurtainActuator");
+	Class.forName("org.universAAL.ontology.window.CurtainController");
     }
 
     public void stop(BundleContext arg0) throws Exception {
