@@ -46,7 +46,7 @@ public class BlindController extends DeviceService {
 	// PROP_STATUS = Blind.BLIND_NAMESPACE+ "status";
 	register(BlindController.class);
 	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		Blind.MY_URI), new String[] { PROP_CONTROLS },
+		BlindActuator.MY_URI), new String[] { PROP_CONTROLS },
 		blindServicesRestrictions);
 	// addRestriction(
 	// Restriction.getAllValuesRestriction(PROP_STATUS, Blind.MY_URI),
