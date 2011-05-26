@@ -69,6 +69,10 @@ public class DeviceService extends Service {
 	super(uri);
     }
 
+    public DeviceService() {
+	super();
+    }
+
     protected Hashtable getClassLevelRestrictions() {
 	return serviceRestrictions;
     }
