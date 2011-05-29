@@ -10,22 +10,22 @@
 	<name>universAAL Ontology Suite</name>
 	<description>The set of artefacts defining the universAAL ontology based on the PERSONA codebase.</description>
 	<url>
-		<![CDATA[http://a1gforge.igd.fraunhofer.de/gf/project/ontologies/]]>
+		<![CDATA[http://forge.universaal.org/gf/project/ontologies/]]>
 	</url>
 
 	<issueManagement>
 		<system>GForge - Tracker</system>
 		<url>
-			<![CDATA[http://a1gforge.igd.fraunhofer.de/gf/project/ontologies/tracker/]]>
+			<![CDATA[http://forge.universaal.org/gf/project/ontologies/tracker/]]>
 		</url>
 	</issueManagement>
 
 	<mailingLists />
 
 	<scm>
-		<connection>scm:svn:http://a1gforge.igd.fraunhofer.de/svn/ontologies/trunk</connection> 
-		<developerConnection>scm:svn:http://a1gforge.igd.fraunhofer.de/svn/ontologies/trunk</developerConnection>
-		<url>http://a1gforge.igd.fraunhofer.de/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk</connection> 
+		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk</developerConnection>
+		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
 	</scm>
 
 	<dependencyManagement>
@@ -79,7 +79,7 @@
 		<repository>
 			<id>uaal</id>
 			<name>universAAL Repositories</name>
-			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/releases/</url>
+			<url>http://depot.universaal.org/maven-repo/releases/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -87,7 +87,7 @@
 		<repository>
 			<id>uaal-snapshots</id>
 			<name>universAAL Snapshot Repositories</name>
-			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/snapshots/</url>
+			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -95,7 +95,7 @@
 		<repository>
 			<id>uaal-thirdparty</id>
 			<name>universAAL ThirdParty Repositories</name>
-			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/thirdparty/</url>
+			<url>http://depot.universaal.org/maven-repo/thirdparty/</url>
 		</repository>
 	</repositories>
 
@@ -244,12 +244,12 @@
 		<repository>
 			<id>releases</id>
 			<name>universAAL Releases</name>
-			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/releases/</url>
+			<url>http://depot.universaal.org/maven-repo/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>universAAL Snapshots</name>
-			<url>http://a1gforge.igd.fraunhofer.de/nexus/content/repositories/snapshots/</url>
+			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
