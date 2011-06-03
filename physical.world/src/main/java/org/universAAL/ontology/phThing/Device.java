@@ -32,7 +32,7 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * @author mtazari
  * 
  */
-public abstract class Device extends PhysicalThing {
+public class Device extends PhysicalThing {
     public static final String uAAL_DEVICE_NAMESPACE = uAAL_NAMESPACE_PREFIX
 	    + "Device.owl#";
     public static final String MY_URI;
