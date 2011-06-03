@@ -66,15 +66,15 @@ public class Device extends PhysicalThing {
 	return "Device";
     }
 
-    protected Device() {
+    public Device() {
 	super();
     }
 
-    protected Device(String uri) {
+    public Device(String uri) {
 	super(uri);
     }
 
-    protected Device(String uriPrefix, int numProps) {
+    public Device(String uriPrefix, int numProps) {
 	super(uriPrefix, numProps);
     }
 
