@@ -104,10 +104,6 @@ ont.tutorial/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
 ont.tutorial/src/main/java/org/universAAL/ontology/tutorial/MyEnumeration.java -text
 ont.water/pom.xml -text
-ont.water/src/main/java/ont/universAAL/ontology/Activator.java -text
-ont.water/src/main/java/ont/universAAL/ontology/water/FaucetSensor.java -text
-ont.water/src/main/java/ont/universAAL/ontology/water/WaterActuator.java -text
-ont.water/src/main/java/ont/universAAL/ontology/water/WaterFloodDetector.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
