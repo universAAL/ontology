@@ -32,6 +32,10 @@ furniture/pom.xml -text
 furniture/src/main/java/org/universAAL/ontology/Activator.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
+gesture.pointing/pom.xml -text
+gesture.pointing/src/main/java/org/universAAL/ontology/Activator.java -text
+gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
+gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
 lighting/LICENSE.txt -text
 lighting/NOTICE.txt -text
 lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
