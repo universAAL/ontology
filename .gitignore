@@ -13,6 +13,10 @@ furniture/.classpath
 furniture/.project
 furniture/.settings
 furniture/target
+gesture.pointing/.classpath
+gesture.pointing/.project
+gesture.pointing/.settings
+gesture.pointing/target
 lighting/.classpath
 lighting/.project
 lighting/.settings
