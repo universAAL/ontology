@@ -6,6 +6,9 @@ src/main/java/org/universAAL/ontology/Activator.java -text
 src/main/java/org/universAAL/ontology/location/Location.java -text
 src/main/java/org/universAAL/ontology/location/Place.java -text
 src/main/java/org/universAAL/ontology/location/Way.java -text
+src/main/java/org/universAAL/ontology/location/address/Address.java -text
+src/main/java/org/universAAL/ontology/location/address/MailBox.java -text
+src/main/java/org/universAAL/ontology/location/address/PhysicalAddress.java -text
 src/main/java/org/universAAL/ontology/location/indoor/BuildingLevel.java -text
 src/main/java/org/universAAL/ontology/location/indoor/Corridor.java -text
 src/main/java/org/universAAL/ontology/location/indoor/EntranceHall.java -text
