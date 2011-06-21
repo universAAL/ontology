@@ -63,6 +63,9 @@ public class Activator implements BundleActivator {
 	Class.forName("org.universAAL.ontology.shape.Triangle");
 	Class
 		.forName("org.universAAL.ontology.space.SpaceConfigurationService");
+	Class.forName("org.universAAL.ontology.location.address.Address");
+	Class.forName("org.universAAL.ontology.location.address.MailBox");
+	Class.forName("org.universAAL.ontology.location.address.PhysicalAddress");
     }
 
     public void stop(BundleContext arg0) throws Exception {
