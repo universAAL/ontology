@@ -122,6 +122,9 @@ physical.world/src/main/java/org/universAAL/ontology/Activator.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Location.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Place.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Way.java -text
+physical.world/src/main/java/org/universAAL/ontology/location/address/Address.java -text
+physical.world/src/main/java/org/universAAL/ontology/location/address/MailBox.java -text
+physical.world/src/main/java/org/universAAL/ontology/location/address/PhysicalAddress.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/indoor/BuildingLevel.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/indoor/Corridor.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/indoor/EntranceHall.java -text
