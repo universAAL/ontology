@@ -20,15 +20,15 @@ import org.universAAL.ontology.location.Location;
 public class PhysicalAddress extends Address {
 
     public static final String MY_URI;
-    private static String PROP_HAS_BUILDING_ID;
-    private static String PROP_HAS_HALL_ID;
-    private static String PROP_HAS_FLOOR_ID;
-    private static String PROP_HAS_DOOR_ID;
-    private static String PROP_HAS_DESK_ID;
-    private static String PROP_HAS_OFFICE_ID;
-    private static String PROP_HAS_ADDITIONAL_ID;
-    // private static String PROP_HAS_STREET;
-    // private static String PROP_HAS_NUMBER;
+    public static final String PROP_HAS_BUILDING_ID;
+    public static final String PROP_HAS_HALL_ID;
+    public static final String PROP_HAS_FLOOR_ID;
+    public static final String PROP_HAS_DOOR_ID;
+    public static final String PROP_HAS_DESK_ID;
+    public static final String PROP_HAS_OFFICE_ID;
+    public static final String PROP_HAS_ADDITIONAL_ID;
+    // public static final String PROP_HAS_STREET;
+    // public static final String PROP_HAS_NUMBER;
 
     static {
 	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "PhysicalAddress";
