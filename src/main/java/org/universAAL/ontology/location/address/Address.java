@@ -18,15 +18,15 @@ import org.universAAL.ontology.location.outdoor.*;
 public class Address extends ManagedIndividual {
 
     public static final String MY_URI;
-    private static String PROP_HAS_REGION;
-    private static String PROP_HAS_COUNTRY;
-    private static String PROP_HAS_STATE;
-    private static String PROP_HAS_CITY;
-    private static String PROP_HAS_CITYQUARTER;
-    private static String PROP_HAS_CITYREGION;
-    private static String PROP_HAS_CITYPLACE;
-    private static String PROP_HAS_POSTALCODE;
-    private static String PROP_HAS_EXTENDEDADDRESS;
+    public static final String PROP_HAS_REGION;
+    public static final String PROP_HAS_COUNTRY;
+    public static final String PROP_HAS_STATE;
+    public static final String PROP_HAS_CITY;
+    public static final String PROP_HAS_CITYQUARTER;
+    public static final String PROP_HAS_CITYREGION;
+    public static final String PROP_HAS_CITYPLACE;
+    public static final String PROP_HAS_POSTALCODE;
+    public static final String PROP_HAS_EXTENDEDADDRESS;
 
     static {
 	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "Address";

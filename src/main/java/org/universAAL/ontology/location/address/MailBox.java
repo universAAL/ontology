@@ -17,7 +17,7 @@ import org.universAAL.ontology.location.Location;
  */
 public class MailBox extends Address {
     public static final String MY_URI;
-    private static String PROP_POST_OFFICE_BOX;
+    public static final String PROP_POST_OFFICE_BOX;
 
     static {
 	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "MailBox";
