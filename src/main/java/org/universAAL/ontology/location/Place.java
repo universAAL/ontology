@@ -21,6 +21,7 @@ package org.universAAL.ontology.location;
 
 import org.universAAL.middleware.owl.Restriction;
 
+import org.universAAL.ontology.location.address.Address;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
 import org.universAAL.ontology.phThing.PhysicalThing;
@@ -39,12 +40,14 @@ public class Place extends Location {
 
     public static final String PROP_HAS_SHAPE;
     public static final String PROP_LOCATION_OF_PHYSICAL_THING;
+    public static final String PROP_HAS_ADDRESS;
 
     static {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "Place";
 	PROP_HAS_SHAPE = uAAL_LOCATION_NAMESPACE + "hasShape";
 	PROP_LOCATION_OF_PHYSICAL_THING = uAAL_LOCATION_NAMESPACE
 		+ "locationOf";
+	PROP_HAS_ADDRESS = uAAL_LOCATION_NAMESPACE + "hasAddress";
 	register(Place.class);
     }
 
@@ -55,19 +58,23 @@ public class Place extends Location {
 	if (PROP_LOCATION_OF_PHYSICAL_THING.equals(propURI))
 	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
 		    PhysicalThing.MY_URI, 1, 0);
+	if (PROP_HAS_ADDRESS.equals(propURI))
+	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+		    Address.MY_URI, 1, 0);
 	return Location.getClassRestrictionsOnProperty(propURI);
     }
 
     public static String[] getStandardPropertyURIs() {
 	String[] inherited = Location.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
+	String[] toReturn = new String[inherited.length + 3];
 	int i = 0;
 	while (i < inherited.length) {
 	    toReturn[i] = inherited[i];
 	    i++;
 	}
 	toReturn[i++] = PROP_HAS_SHAPE;
-	toReturn[i] = PROP_LOCATION_OF_PHYSICAL_THING;
+	toReturn[i++] = PROP_LOCATION_OF_PHYSICAL_THING;
+	toReturn[i] = PROP_HAS_ADDRESS;
 	return toReturn;
     }
 
@@ -332,5 +339,24 @@ public class Place extends Location {
 		(float) (y + box.getDepth() / 2f),
 		(float) (z + box.getHeight() / 2f));
 
+    }
+    
+    /**
+     * Gets the Address value
+     * 
+     * @return The Address value
+     */
+    public Address getAddress() {
+	return (Address) props.get(PROP_HAS_ADDRESS);
+    }
+
+    /**
+     * Sets the Address value
+     * 
+     * @param reg
+     *            The value to set
+     */
+    public void setAddress(Address val) {
+	props.put(PROP_HAS_ADDRESS, val);
     }
 }
