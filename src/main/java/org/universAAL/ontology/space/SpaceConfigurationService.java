@@ -27,6 +27,12 @@ import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.location.Location;
 
+/**
+ * Ontological service that handles the arrangement of locations and physical
+ * things in a specific space. Methods included in this class are the mandatory
+ * ones for representing an ontological service in Java classes for uAAL.
+ * 
+ */
 public class SpaceConfigurationService extends Service {
     public static final String MY_URI;
     public static final String PROP_MANAGED_LOCATIONS;

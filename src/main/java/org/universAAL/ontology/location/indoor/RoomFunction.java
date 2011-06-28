@@ -23,6 +23,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 import org.universAAL.ontology.location.Location;
 
+/**
+ * Ontological enumeration of possible functions of a room in a house. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * enumeration in Java classes for uAAL.
+ * 
+ */
 public class RoomFunction extends ManagedIndividual {
 
     public static final String MY_URI;

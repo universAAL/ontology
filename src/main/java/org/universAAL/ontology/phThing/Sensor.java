@@ -24,6 +24,11 @@ package org.universAAL.ontology.phThing;
 import org.universAAL.middleware.owl.Restriction;
 
 /**
+ * Ontological representation of a sensor: a device that can measure values from
+ * the physical world. Methods included in this class are the mandatory ones for
+ * representing an ontological concept in Java classes for uAAL. Usually it
+ * includes getters and setters for most of its properties.
+ * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */

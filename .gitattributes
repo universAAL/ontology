@@ -1,6 +1,9 @@
 * text=auto !eol
 /LICENSE.txt -text
 /NOTICE.txt -text
+documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
+documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
+documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 /pom.xml -text
 src/main/java/org/universAAL/ontology/Activator.java -text
 src/main/java/org/universAAL/ontology/location/Location.java -text

@@ -37,6 +37,10 @@ import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
 
 /**
+ * Ontological representation of any geometric shape. Methods included in this
+ * class are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
  * 
  * @author chwirth
  * 
