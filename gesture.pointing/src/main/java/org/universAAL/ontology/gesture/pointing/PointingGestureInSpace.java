@@ -28,22 +28,47 @@ import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class PointingGestureInSpace extends GestureRecognition {
 
     public static final String MY_URI;
     public static final String PROP_ADDRESSED_THINGS;
     public static final String PROP_TIMESTAMP;
+    public static final String PROP_INTERACTING_ARM;
+
+    public static final int INTERACTING_ARM_UNKNOWN = 0;
+    public static final int INTERACTING_ARM_LEFT = 1;
+    public static final int INTERACTING_ARM_RIGHT = 2;
 
     static {
 	MY_URI = GESTURE_RECOGNITION_NAMESPACE + "PointingGestureInSpace";
 	PROP_ADDRESSED_THINGS = GESTURE_RECOGNITION_NAMESPACE
 		+ "addressedThings";
 	PROP_TIMESTAMP = GESTURE_RECOGNITION_NAMESPACE + "timeStamp";
+	PROP_INTERACTING_ARM = GESTURE_RECOGNITION_NAMESPACE + "interactingArm";
 	register(PointingGestureInSpace.class);
     }
 
+    public PointingGestureInSpace() {
+	super(GESTURE_TYPE_POINTING);
+    }
+
+    public PointingGestureInSpace(PhysicalThing[] addressedThings) {
+	super(GESTURE_TYPE_POINTING);
+	if (!setAddressedThings(addressedThings))
+	    throw new IllegalArgumentException("No addressed things specified!");
+    }
+
+    public PointingGestureInSpace(PhysicalThing[] addressedThings,
+	    long timestamp) {
+	super(GESTURE_TYPE_POINTING);
+	if (!setAddressedThings(addressedThings))
+	    throw new IllegalArgumentException("No addressed things specified!");
+	setTimeStamp(timestamp);
+    }
+
+    
     public static Restriction getClassRestrictionsOnProperty(String propURI) {
 	if (propURI == null)
 	    return null;
@@ -68,30 +93,27 @@ public class PointingGestureInSpace extends GestureRecognition {
 
     public static String[] getStandardPropertyURIs() {
 	String[] inherited = GestureRecognition.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
+	String[] toReturn = new String[inherited.length + 3];
 	for (int i = 0; i < inherited.length; i++)
 	    toReturn[i] = inherited[i];
 	toReturn[inherited.length] = PROP_ADDRESSED_THINGS;
 	toReturn[inherited.length + 1] = PROP_TIMESTAMP;
+	toReturn[inherited.length + 2] = PROP_INTERACTING_ARM;
 	return toReturn;
     }
 
-    public PointingGestureInSpace() {
-	super(GESTURE_TYPE_POINTING);
-    }
-
-    public PointingGestureInSpace(PhysicalThing[] addressedThings) {
-	super(GESTURE_TYPE_POINTING);
-	if (!setAddressedThings(addressedThings))
-	    throw new IllegalArgumentException("No addressed things specified!");
-    }
-
-    public PointingGestureInSpace(PhysicalThing[] addressedThings,
-	    long timestamp) {
-	super(GESTURE_TYPE_POINTING);
-	if (!setAddressedThings(addressedThings))
-	    throw new IllegalArgumentException("No addressed things specified!");
-	setTimeStamp(timestamp);
+    public boolean setAddressedThings(PhysicalThing[] addressedThings) {
+	if (addressedThings == null || addressedThings.length == 0
+		|| props.containsKey(PROP_ADDRESSED_THINGS))
+	    return false;
+	ArrayList al = new ArrayList(addressedThings.length);
+	for (int i = 0; i < addressedThings.length; i++)
+	    if (addressedThings[i] != null && !al.contains(addressedThings[i]))
+		al.add(addressedThings[i]);
+	if (al.isEmpty())
+	    return false;
+	props.put(PROP_ADDRESSED_THINGS, al);
+	return true;
     }
 
     public PhysicalThing[] getAddressedThings() {
@@ -112,20 +134,6 @@ public class PointingGestureInSpace extends GestureRecognition {
 		: super.getPropSerializationType(propURI);
     }
 
-    public boolean setAddressedThings(PhysicalThing[] addressedThings) {
-	if (addressedThings == null || addressedThings.length == 0
-		|| props.containsKey(PROP_ADDRESSED_THINGS))
-	    return false;
-	ArrayList al = new ArrayList(addressedThings.length);
-	for (int i = 0; i < addressedThings.length; i++)
-	    if (addressedThings[i] != null && !al.contains(addressedThings[i]))
-		al.add(addressedThings[i]);
-	if (al.isEmpty())
-	    return false;
-	props.put(PROP_ADDRESSED_THINGS, al);
-	return true;
-    }
-
     private void setTimeStamp(long timestamp) {
 	setProperty(PROP_TIMESTAMP, new Long(timestamp));
     }
@@ -137,4 +145,14 @@ public class PointingGestureInSpace extends GestureRecognition {
 	return timestamp.longValue();
     }
 
+    public void setInteractingArm(int interactingArm) {
+	setProperty(PROP_INTERACTING_ARM, new Integer(interactingArm));
+    }
+
+    public int getInteractingArm() {
+	Integer interactingArm = (Integer) getProperty(PROP_INTERACTING_ARM);
+	if (interactingArm == null)
+	    return INTERACTING_ARM_UNKNOWN;
+	return interactingArm.intValue();
+    }
 }
