@@ -163,7 +163,7 @@ public class Address extends ManagedIndividual implements PropertyPublisher {
 
     public void setStreet(String street) {
 	if (street != null)
-	    props.put(PROP_S_STREET, new Boolean(street));
+	    props.put(PROP_S_STREET, street);
     }
 
     /*
