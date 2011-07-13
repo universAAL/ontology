@@ -73,7 +73,7 @@ public class LightSource extends Device {
 	if (PROP_SOURCE_LOCATION.equals(propURI))
 	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
 		    Location.MY_URI, 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+	return Device.getClassRestrictionsOnProperty(propURI);
     }
 
     public static String[] getStandardPropertyURIs() {
