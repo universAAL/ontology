@@ -43,7 +43,6 @@ public class LightSource extends Device {
     public static final String PROP_HAS_TYPE;
     public static final String PROP_SOURCE_BRIGHTNESS;
     public static final String PROP_SOURCE_COLOR;
-    public static final String PROP_SOURCE_LOCATION;
 
     static {
 	MY_URI = LIGHTING_NAMESPACE + "LightSource";
@@ -51,7 +50,6 @@ public class LightSource extends Device {
 	PROP_HAS_TYPE = LIGHTING_NAMESPACE + "hasType";
 	PROP_SOURCE_BRIGHTNESS = LIGHTING_NAMESPACE + "srcBrightness";
 	PROP_SOURCE_COLOR = LIGHTING_NAMESPACE + "srcColor";
-	PROP_SOURCE_LOCATION = LIGHTING_NAMESPACE + "srcLocation";
 	register(LightSource.class);
     }
 
@@ -70,15 +68,12 @@ public class LightSource extends Device {
 				    1, 1));
 	if (PROP_SOURCE_COLOR.equals(propURI))
 	    return Restriction.getCardinalityRestriction(propURI, 1, 0);
-	if (PROP_SOURCE_LOCATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Location.MY_URI, 1, 1);
 	return Device.getClassRestrictionsOnProperty(propURI);
     }
 
     public static String[] getStandardPropertyURIs() {
 	return new String[] { PROP_AMBIENT_COVERAGE, PROP_HAS_TYPE,
-		PROP_SOURCE_BRIGHTNESS, PROP_SOURCE_COLOR, PROP_SOURCE_LOCATION };
+		PROP_SOURCE_BRIGHTNESS, PROP_SOURCE_COLOR };
     }
 
     public static String getRDFSComment() {
@@ -104,7 +99,7 @@ public class LightSource extends Device {
 
 	props.put(PROP_HAS_TYPE, type);
 	props.put(PROP_SOURCE_BRIGHTNESS, new Integer(0));
-	props.put(PROP_SOURCE_LOCATION, loc);
+	setLocation(loc);
     }
 
     // hier stand nur Location
@@ -121,11 +116,6 @@ public class LightSource extends Device {
 	return (LightType) props.get(PROP_HAS_TYPE);
     }
 
-    // hier stand nur Location
-    public Location getSourceLocation() {
-	return (Location) props.get(PROP_SOURCE_LOCATION);
-    }
-
     public void setAmbientCoverage(Location l) {
 	if (l != null)
 	    props.put(PROP_AMBIENT_COVERAGE, l);
@@ -136,11 +126,6 @@ public class LightSource extends Device {
 	    props.put(PROP_SOURCE_BRIGHTNESS, new Integer(percentage));
     }
 
-    public void setSourceLocation(Location l) {
-	if (l != null)
-	    props.put(PROP_SOURCE_LOCATION, l);
-    }
-
     /*
      * (non-Javadoc)
      * 
@@ -149,8 +134,7 @@ public class LightSource extends Device {
      * (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
-	return (PROP_AMBIENT_COVERAGE.equals(propURI) || PROP_SOURCE_LOCATION
-		.equals(propURI)) ? PROP_SERIALIZATION_REDUCED
+	return (PROP_AMBIENT_COVERAGE.equals(propURI)) ? PROP_SERIALIZATION_REDUCED
 		: PROP_SERIALIZATION_FULL;
     }
 
@@ -161,8 +145,7 @@ public class LightSource extends Device {
      */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_HAS_TYPE)
-		&& props.containsKey(PROP_SOURCE_BRIGHTNESS)
-		&& props.containsKey(PROP_SOURCE_LOCATION);
+		&& props.containsKey(PROP_SOURCE_BRIGHTNESS);
     }
 
 }
