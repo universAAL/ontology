@@ -46,7 +46,7 @@ public class FlamingLight extends LightType {
 
     public static final FlamingLight candleLight = new FlamingLight(
 	    CANDLE_LIGHT);
-    public static final FlamingLight gasamp = new FlamingLight(GAS_LAMP);
+    public static final FlamingLight gasLamp = new FlamingLight(GAS_LAMP);
     public static final FlamingLight oilLamp = new FlamingLight(OIL_LAMP);
 
     /**
@@ -54,7 +54,7 @@ public class FlamingLight extends LightType {
      * will be created after a call to this method.
      */
     public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { candleLight, gasamp, oilLamp };
+	return new ManagedIndividual[] { candleLight, gasLamp, oilLamp };
     }
 
     /**
@@ -72,7 +72,7 @@ public class FlamingLight extends LightType {
 	case CANDLE_LIGHT:
 	    return candleLight;
 	case GAS_LAMP:
-	    return gasamp;
+	    return gasLamp;
 	case OIL_LAMP:
 	    return oilLamp;
 	default:
