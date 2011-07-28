@@ -45,7 +45,7 @@ public class FurnitureType extends ManagedIndividual {
 	    "Locker", "Sofa", "Bed", "Other" };
 
     static {
-	MY_URI = Furniture.PERSONA_FURNITURE_NAMESPACE + "FurnitureType";
+	MY_URI = Furniture.FURNITURE_NAMESPACE + "FurnitureType";
 	register(FurnitureType.class);
     }
 
@@ -71,8 +71,8 @@ public class FurnitureType extends ManagedIndividual {
      */
     public static ManagedIndividual getIndividualByURI(String instanceURI) {
 	return (instanceURI != null && instanceURI
-		.startsWith(Furniture.PERSONA_FURNITURE_NAMESPACE)) ? valueOf(instanceURI
-		.substring(Furniture.PERSONA_FURNITURE_NAMESPACE.length()))
+		.startsWith(Furniture.FURNITURE_NAMESPACE)) ? valueOf(instanceURI
+		.substring(Furniture.FURNITURE_NAMESPACE.length()))
 		: null;
     }
 
@@ -128,7 +128,7 @@ public class FurnitureType extends ManagedIndividual {
      * users.
      */
     public static String getRDFSLabel() {
-	return "FurnitureType";
+	return "Furniture Type";
     }
 
     public int getPropSerializationType(String arg0) {

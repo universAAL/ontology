@@ -33,13 +33,13 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Furniture extends PhysicalThing {
     public static final String MY_URI;
-    public static final String PERSONA_FURNITURE_NAMESPACE = uAAL_NAMESPACE_PREFIX
+    public static final String FURNITURE_NAMESPACE = uAAL_NAMESPACE_PREFIX
 	    + "Furniture.owl#";
     public static final String PROP_FURNITURE_TYPE;
 
     static {
-	MY_URI = PERSONA_FURNITURE_NAMESPACE + "Table";
-	PROP_FURNITURE_TYPE = PERSONA_FURNITURE_NAMESPACE + "FurnitureType";
+	MY_URI = FURNITURE_NAMESPACE + "Furniture";
+	PROP_FURNITURE_TYPE = FURNITURE_NAMESPACE + "FurnitureType";
 	register(Furniture.class);
     }
 
@@ -85,7 +85,7 @@ public class Furniture extends PhysicalThing {
     }
 
     public static String getRDFSLabel() {
-	return "Table";
+	return "Furniture";
     }
 
     public boolean isWellFormed() {
