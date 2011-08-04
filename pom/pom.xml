@@ -254,7 +254,7 @@
 	</distributionManagement>
 
 	<modules>
-		<module>../../../../middleware/sandboxes/saied/pom</module>
+		<module>../../../middleware/trunk/pom</module>
 		<module>../physical.world</module>
 		<module>../lighting</module>
 		<!-- module>../weather</module -->
