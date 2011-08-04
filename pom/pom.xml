@@ -4,7 +4,7 @@
 
 	<groupId>org.universAAL.ontology</groupId>
 	<artifactId>ont.pom</artifactId>  
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<packaging>pom</packaging>
 	<name>universAAL Ontology Suite</name>
@@ -254,10 +254,10 @@
 	</distributionManagement>
 
 	<modules>
-		<module>../../../middleware/trunk/pom</module>
+		<module>../../../../middleware/sandboxes/saied/pom</module>
 		<module>../physical.world</module>
 		<module>../lighting</module>
-		<module>../weather</module>
+		<!-- module>../weather</module -->
 	</modules>
 
 </project>
