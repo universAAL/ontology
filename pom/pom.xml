@@ -254,10 +254,28 @@
 	</distributionManagement>
 
 	<modules>
-		<module>../../../middleware/trunk/pom</module>
+<!-- 		<module>../../../middleware/trunk/pom</module> -->
 		<module>../physical.world</module>
 		<module>../lighting</module>
-		<!-- module>../weather</module -->
+		<!-- added -->
+		<module>../audio_video</module>
+		<module>../blind</module>
+		<module>../furniture</module>
+		<module>../gesture.pointing</module>
+<!-- 		<module>../lighting</module> -->
+		<module>../measurement</module>
+		<module>../medication</module>
+		<module>../ont.device.extra</module>
+		<module>../ont.hazard</module>
+		<module>../ont.location.extra</module>
+		<module>../ont.multimedia</module>
+		<module>../ont.risk</module>
+		<module>../ont.water</module>
+<!-- 		<module>../physical.world</module> -->
+		<module>../powersocket</module>
+		<module>../user.profile</module>
+		<module>../weather</module>
+		<module>../window</module>
 	</modules>
 
 </project>
