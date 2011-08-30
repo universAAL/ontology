@@ -19,8 +19,6 @@
  */
 package org.universAAL.ontology.location.indoor;
 
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -40,30 +38,6 @@ public class StairWay extends IndoorPlace {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "StairWay";
 	PROP_FROM_LEVEL = uAAL_LOCATION_NAMESPACE + "toLevel";
 	PROP_TO_LEVEL = uAAL_LOCATION_NAMESPACE + "fromLevel";
-	register(StairWay.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_TO_LEVEL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    BuildingLevel.MY_URI, 1, 1);
-	if (PROP_FROM_LEVEL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    BuildingLevel.MY_URI, 1, 1);
-	return IndoorPlace.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = IndoorPlace.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_TO_LEVEL;
-	toReturn[i] = PROP_FROM_LEVEL;
-	return toReturn;
     }
 
     /**
@@ -116,22 +90,10 @@ public class StairWay extends IndoorPlace {
 	props.put(PROP_TO_LEVEL, to);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "Connects to BuildingLevels.";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "StairWay";
-    }
-
+    
     public BuildingLevel getFromLevel() {
 	return (BuildingLevel) props.get(PROP_FROM_LEVEL);
     }

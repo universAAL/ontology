@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Ontological enumeration of possible electric light types. Methods included in
@@ -31,11 +30,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  */
 public class ElectricLight extends LightType {
-    public static final String MY_URI;
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "ElectricLight";
-	register(ElectricLight.class);
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "ElectricLight";
 
     public static final int CARBON_ARC_LAMP = 0;
     public static final int DISCHARGE_LAMP = 1;
@@ -59,25 +55,10 @@ public class ElectricLight extends LightType {
     public static final ElectricLight ledLamp = new ElectricLight(LED_LAMP);
     public static final ElectricLight lightBulb = new ElectricLight(LIGHT_BULB);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { carbonArcLamp, dischargeLamp,
-		fluorescentLamp, halogenLamp, ledLamp, lightBulb };
+    
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns the rating with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(LightSource.LIGHTING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(LightSource.LIGHTING_NAMESPACE.length()))
-		: null;
-    }
-
     public static ElectricLight getElectricLightByOrder(int order) {
 	switch (order) {
 	case CARBON_ARC_LAMP:
@@ -97,20 +78,12 @@ public class ElectricLight extends LightType {
 	}
     }
 
-    public static String getRDFSComment() {
-	return "The type of electric light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Electric Light";
-    }
-
     public static final ElectricLight valueOf(String name) {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(LightSource.LIGHTING_NAMESPACE))
-	    name = name.substring(LightSource.LIGHTING_NAMESPACE.length());
+	if (name.startsWith(LightingOntology.MY_URI))
+	    name = name.substring(LightingOntology.MY_URI.length());
 
 	for (int i = CARBON_ARC_LAMP; i <= LIGHT_BULB; i++)
 	    if (names[i].equals(name))
@@ -122,7 +95,7 @@ public class ElectricLight extends LightType {
     private int order;
 
     private ElectricLight(int order) {
-	super(LightSource.LIGHTING_NAMESPACE + names[order]);
+	super(LightingOntology.MY_URI + names[order]);
 	this.order = order;
     }
 
@@ -140,9 +113,5 @@ public class ElectricLight extends LightType {
 
     public int ord() {
 	return order;
-    }
-
-    public void setProperty(String propURI, Object o) {
-	// do nothing
     }
 }

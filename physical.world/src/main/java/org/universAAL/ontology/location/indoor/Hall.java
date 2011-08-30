@@ -34,7 +34,6 @@ public class Hall extends HomeArea {
 
     static {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "Hall";
-	register(Hall.class);
     }
 
     /**
@@ -73,20 +72,8 @@ public class Hall extends HomeArea {
     public Hall(String uri, Shape shape) {
 	super(uri, shape);
     }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "Any hall, except an entrance hall.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Hall";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 }

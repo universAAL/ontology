@@ -25,8 +25,6 @@ import jp.go.ipa.jgcl.JgclPoint3D;
 import jp.go.ipa.jgcl.JgclPointOnCurve3D;
 
 import org.universAAL.middleware.util.Constants;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.Point;
 
@@ -50,29 +48,8 @@ public class ConeSegment extends LineSegment {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "ConeSegment";
 	PROP_RADIUS_START = uAAL_SHAPE_NAMESPACE + "RadiusStart";
 	PROP_RADIUS_END = uAAL_SHAPE_NAMESPACE + "RadiusEnd";
-	register(ConeSegment.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_RADIUS_END.equals(propURI)
-		|| PROP_RADIUS_START.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Float.class), 1, 1);
-	return LineSegment.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = LineSegment.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_RADIUS_START;
-	toReturn[i] = PROP_RADIUS_END;
-	return toReturn;
-    }
 
     public int getPropSerializationType(String propURI) {
 	if (PROP_RADIUS_START.equals(propURI)
@@ -114,6 +91,10 @@ public class ConeSegment extends LineSegment {
 	setRadiusEnd(radius_end);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public float getRadiusStart() {
 	return ((Float) props.get(PROP_RADIUS_START)).floatValue();
     }
@@ -128,22 +109,6 @@ public class ConeSegment extends LineSegment {
 
     public void setRadiusEnd(float radius) {
 	props.put(PROP_RADIUS_END, new Float(radius));
-    }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A segment of a line defined by a start and a endpoint.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "LineSegment";
     }
 
     public Point getStart() {
@@ -284,5 +249,4 @@ public class ConeSegment extends LineSegment {
 	    return Point.INTERSECTING;
 	return dist;
     }
-
 }

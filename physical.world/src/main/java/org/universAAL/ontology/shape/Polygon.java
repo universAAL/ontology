@@ -22,7 +22,6 @@ package org.universAAL.ontology.shape;
 import java.util.Iterator;
 import java.util.Vector;
 
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
@@ -48,16 +47,9 @@ public class Polygon extends Shape3D {
     static {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "Polygon";
 	PROP_VERTICES = uAAL_SHAPE_NAMESPACE + "Vertices";
-	register(Polygon.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_VERTICES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 0, 3);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
-    }
-
+    
     /**
      * Creates a Polygon object
      * 
@@ -98,20 +90,8 @@ public class Polygon extends Shape3D {
 	setLocalCoordinateSystem(verts[0].getCoordinateSystem());
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A polgyon.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Polygon";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Point[] getVertices() {
@@ -141,18 +121,6 @@ public class Polygon extends Shape3D {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape3D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_VERTICES;
-	return toReturn;
     }
 
     public float getDistanceTo(Point other) {
@@ -253,5 +221,4 @@ public class Polygon extends Shape3D {
 	p = p.getInHigherCoordinateSystem(cs);
 	return poly.contains(p.getX() * 1000, p.getY() * 1000);
     }
-
 }

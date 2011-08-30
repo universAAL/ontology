@@ -21,9 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
-
 /**
  * Ontological representation of a binary actuator that can be turned on or off.
  * Methods included in this class are the mandatory ones for representing an
@@ -40,26 +37,6 @@ public class OnOffActuator extends Actuator {
     static {
 	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "OnOffActuator";
 	PROP_STATUS = Device.uAAL_DEVICE_NAMESPACE + "Status";
-	register(OnOffActuator.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_STATUS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	return Device.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Actuator.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_STATUS;
-	return toReturn;
     }
 
     public OnOffActuator() {
@@ -69,12 +46,8 @@ public class OnOffActuator extends Actuator {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "An On/Off kind of Actuator";
-    }
-
-    public static String getRDFSLabel() {
-	return "On/Off Actuator";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
@@ -92,5 +65,4 @@ public class OnOffActuator extends Actuator {
     public void setStatus(boolean value) {
 	props.put(PROP_STATUS, new Boolean(value));
     }
-
 }

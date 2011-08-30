@@ -19,7 +19,6 @@
  */
 package org.universAAL.ontology.shape;
 
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
@@ -45,18 +44,8 @@ public class QuasiCylinder extends Shape3D {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "QuasiCylinder";
 	PROP_HEAD = uAAL_SHAPE_NAMESPACE + "Head";
 	PROP_FOOT = uAAL_SHAPE_NAMESPACE + "Foot";
-	register(QuasiCylinder.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HEAD.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Ellipse.MY_URI, 1, 1);
-	if (PROP_FOOT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Ellipse.MY_URI, 1, 1);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a Shape object
@@ -112,6 +101,10 @@ public class QuasiCylinder extends Shape3D {
 		.getLocalCoordinateSystem()).getOrigin().getCoordinateSystem());
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     private void checkValid() {
 	Ellipse head = (Ellipse) props.get(PROP_HEAD);
 	Ellipse foot = (Ellipse) props.get(PROP_FOOT);
@@ -123,22 +116,6 @@ public class QuasiCylinder extends Shape3D {
 			.getCoordinateSystem())
 	    throw new IllegalArgumentException(
 		    "head and foot does not have the same parent coordinate system");
-    }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A quasi cylinder.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "QuasiCylinder";
     }
 
     public Ellipse getHead() {
@@ -183,19 +160,6 @@ public class QuasiCylinder extends Shape3D {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape3D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HEAD;
-	toReturn[i] = PROP_FOOT;
-	return toReturn;
     }
 
     /**
@@ -258,5 +222,4 @@ public class QuasiCylinder extends Shape3D {
 	// TODO
 	return false;
     }
-
 }

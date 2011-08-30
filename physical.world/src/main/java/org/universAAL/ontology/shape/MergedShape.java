@@ -34,13 +34,13 @@ import org.universAAL.ontology.shape.Shape;
 
 public class MergedShape extends BooleanShape {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "MergedShape";
 
-    static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "MergedShape";
-	register(MergedShape.class);
+
+    public MergedShape(String uri) {
+	super(uri);
     }
-
+    
     public MergedShape(Shape[] shapes) {
 	super();
 	setShapes(shapes);
@@ -51,20 +51,8 @@ public class MergedShape extends BooleanShape {
 	setShapes(shapes);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A merged boolean shape.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "MergedShape";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public float getDistanceTo(Point other) {
@@ -126,5 +114,4 @@ public class MergedShape extends BooleanShape {
 	}
 	return false;
     }
-
 }

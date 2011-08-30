@@ -19,9 +19,6 @@
  */
 package org.universAAL.ontology.location.outdoor;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -36,22 +33,10 @@ import org.universAAL.ontology.shape.Shape;
 
 public class CityRegion extends OutdoorPlace {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "CityRegion";
 
-    public static final String PROP_HAS_ZIP_CODE;
+    public static final String PROP_HAS_ZIP_CODE = uAAL_LOCATION_NAMESPACE + "hasZIPCode";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "CityRegion";
-	PROP_HAS_ZIP_CODE = uAAL_LOCATION_NAMESPACE + "hasZIPCode";
-	register(CityRegion.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_ZIP_CODE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	return OutdoorPlace.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a CityRegion object
@@ -90,20 +75,8 @@ public class CityRegion extends OutdoorPlace {
 	super(uri, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A class for a city region that can be described by a ZIP code.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "CityRegion";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public String getZIPCode() {
@@ -128,17 +101,4 @@ public class CityRegion extends OutdoorPlace {
 
 	return PROP_SERIALIZATION_OPTIONAL;
     }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = OutdoorPlace.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_HAS_ZIP_CODE;
-	return toReturn;
-    }
-
 }

@@ -19,9 +19,6 @@
  */
 package org.universAAL.ontology.location.position;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.shape.Shape;
@@ -51,23 +48,6 @@ public class OriginedMetric extends CoordinateSystem {
 	PROP_ROTATE_X = Location.uAAL_LOCATION_NAMESPACE + "rotateX";
 	PROP_ROTATE_Y = Location.uAAL_LOCATION_NAMESPACE + "rotateY";
 	PROP_ROTATE_Z = Location.uAAL_LOCATION_NAMESPACE + "rotateZ";
-	register(OriginedMetric.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_ORIGIN.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 1, 1);
-	if (PROP_ROTATE_X.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Float.class), 1, 0);
-	if (PROP_ROTATE_Y.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Float.class), 1, 0);
-	if (PROP_ROTATE_Z.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Float.class), 1, 0);
-	return CoordinateSystem.getClassRestrictionsOnProperty(propURI);
     }
 
     /**
@@ -142,20 +122,8 @@ public class OriginedMetric extends CoordinateSystem {
 	props.put(PROP_ROTATE_Z, new Float(0));
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "a coordinate system with an origin point.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "OriginedMetric";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Point getOrigin() {
@@ -226,20 +194,4 @@ public class OriginedMetric extends CoordinateSystem {
 
 	return PROP_SERIALIZATION_OPTIONAL;
     }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = CoordinateSystem.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 4];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_ROTATE_X;
-	toReturn[i++] = PROP_ROTATE_Y;
-	toReturn[i++] = PROP_ROTATE_Z;
-	toReturn[i] = PROP_ORIGIN;
-	return toReturn;
-    }
-
 }

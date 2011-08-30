@@ -33,12 +33,8 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Line extends Path {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Line";
 
-    static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Line";
-	register(Line.class);
-    }
 
     /**
      * Creates a Line object
@@ -74,20 +70,8 @@ public class Line extends Path {
 	super(points);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A path woth linear connections of the points.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Line";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public float getDistanceTo(Point other) {
@@ -128,5 +112,4 @@ public class Line extends Path {
 
 	return mindist;
     }
-
 }

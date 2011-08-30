@@ -32,12 +32,8 @@ package org.universAAL.ontology.phThing;
  */
 public class Actuator extends Device {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Actuator";
-	register(Actuator.class);
-    }
+    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+	    + "Actuator";
 
     public Actuator() {
     }
@@ -46,12 +42,8 @@ public class Actuator extends Device {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Generic Actuator Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Actuator";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {

@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Ontological enumeration of possible flaming light types. Methods included in
@@ -31,11 +30,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  */
 public class FlamingLight extends LightType {
-    public static final String MY_URI;
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "FlamingLight";
-	register(FlamingLight.class);
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "FlamingLight";
 
     public static final int CANDLE_LIGHT = 0;
     public static final int GAS_LAMP = 1;
@@ -49,24 +45,11 @@ public class FlamingLight extends LightType {
     public static final FlamingLight gasLamp = new FlamingLight(GAS_LAMP);
     public static final FlamingLight oilLamp = new FlamingLight(OIL_LAMP);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { candleLight, gasLamp, oilLamp };
+    
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns the rating with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(LightSource.LIGHTING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(LightSource.LIGHTING_NAMESPACE.length()))
-		: null;
-    }
-
+    
     public static FlamingLight getFlamingLightByOrder(int order) {
 	switch (order) {
 	case CANDLE_LIGHT:
@@ -80,20 +63,12 @@ public class FlamingLight extends LightType {
 	}
     }
 
-    public static String getRDFSComment() {
-	return "The type of flaming light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Flaming Light";
-    }
-
     public static final FlamingLight valueOf(String name) {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(LightSource.LIGHTING_NAMESPACE))
-	    name = name.substring(LightSource.LIGHTING_NAMESPACE.length());
+	if (name.startsWith(LightingOntology.MY_URI))
+	    name = name.substring(LightingOntology.MY_URI.length());
 
 	for (int i = CANDLE_LIGHT; i <= OIL_LAMP; i++)
 	    if (names[i].equals(name))
@@ -105,7 +80,7 @@ public class FlamingLight extends LightType {
     private int order;
 
     private FlamingLight(int order) {
-	super(LightSource.LIGHTING_NAMESPACE + names[order]);
+	super(LightingOntology.MY_URI + names[order]);
 	this.order = order;
     }
 
@@ -123,9 +98,5 @@ public class FlamingLight extends LightType {
 
     public int ord() {
 	return order;
-    }
-
-    public void setProperty(String propURI, Object o) {
-	// do nothing
     }
 }

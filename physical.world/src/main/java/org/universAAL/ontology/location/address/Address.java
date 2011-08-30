@@ -1,8 +1,6 @@
 package org.universAAL.ontology.location.address;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.location.outdoor.*;
 
@@ -46,69 +44,13 @@ public class Address extends ManagedIndividual {
 		+ "hasAddressPostalCode";
 	PROP_HAS_EXTENDEDADDRESS = Location.uAAL_LOCATION_NAMESPACE
 		+ "hasExtendedAddressDescription";
-
-	register(Address.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-
-	if (PROP_HAS_REGION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Region.MY_URI, 1, 0);
-	if (PROP_HAS_COUNTRY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Country.MY_URI, 1, 0);
-	if (PROP_HAS_STATE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    State.MY_URI, 1, 0);
-	if (PROP_HAS_CITY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    City.MY_URI, 1, 0);
-	if (PROP_HAS_CITYQUARTER.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    CityQuarter.MY_URI, 1, 0);
-	if (PROP_HAS_CITYREGION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    CityRegion.MY_URI, 1, 0);
-	if (PROP_HAS_CITYPLACE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    CityPlace.MY_URI, 1, 0);
-	if (PROP_HAS_POSTALCODE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	if (PROP_HAS_EXTENDEDADDRESS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 9];
-
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_REGION;
-	toReturn[i++] = PROP_HAS_COUNTRY;
-	toReturn[i++] = PROP_HAS_STATE;
-	toReturn[i++] = PROP_HAS_CITY;
-	toReturn[i++] = PROP_HAS_CITYQUARTER;
-	toReturn[i++] = PROP_HAS_CITYREGION;
-	toReturn[i++] = PROP_HAS_CITYPLACE;
-	toReturn[i++] = PROP_HAS_POSTALCODE;
-	toReturn[i] = PROP_HAS_EXTENDEDADDRESS;
-	return toReturn;
-    }
 
     /**
      * Creates a Address object
      */
     public Address() {
-
     }
 
     /**
@@ -121,20 +63,8 @@ public class Address extends ManagedIndividual {
 	super(uri);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A basic address for a place or entity";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Address";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {

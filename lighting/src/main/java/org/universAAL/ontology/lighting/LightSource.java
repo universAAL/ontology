@@ -20,11 +20,7 @@
 
 package org.universAAL.ontology.lighting;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.location.Location;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.phThing.Device;
 
 /**
@@ -37,52 +33,16 @@ import org.universAAL.ontology.phThing.Device;
  * 
  */
 public class LightSource extends Device {
-    public static final String LIGHTING_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Lighting.owl#";
-    public static final String MY_URI;
-    public static final String PROP_AMBIENT_COVERAGE;
-    public static final String PROP_HAS_TYPE;
-    public static final String PROP_SOURCE_BRIGHTNESS;
-    public static final String PROP_SOURCE_COLOR;
-
-    static {
-	MY_URI = LIGHTING_NAMESPACE + "LightSource";
-	PROP_AMBIENT_COVERAGE = LIGHTING_NAMESPACE + "ambientCoveage";
-	PROP_HAS_TYPE = LIGHTING_NAMESPACE + "hasType";
-	PROP_SOURCE_BRIGHTNESS = LIGHTING_NAMESPACE + "srcBrightness";
-	PROP_SOURCE_COLOR = LIGHTING_NAMESPACE + "srcColor";
-	register(LightSource.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_AMBIENT_COVERAGE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Location.MY_URI, 1, 0);
-	if (PROP_HAS_TYPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    LightType.MY_URI, 1, 1);
-	if (PROP_SOURCE_BRIGHTNESS.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	if (PROP_SOURCE_COLOR.equals(propURI))
-	    return Restriction.getCardinalityRestriction(propURI, 1, 0);
-	return Device.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_AMBIENT_COVERAGE, PROP_HAS_TYPE,
-		PROP_SOURCE_BRIGHTNESS, PROP_SOURCE_COLOR };
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Light Source";
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "LightSource";
+    public static final String PROP_AMBIENT_COVERAGE = LightingOntology.MY_URI
+	    + "ambientCoveage";
+    public static final String PROP_HAS_TYPE = LightingOntology.MY_URI
+	    + "hasType";
+    public static final String PROP_SOURCE_BRIGHTNESS = LightingOntology.MY_URI
+	    + "srcBrightness";
+    public static final String PROP_SOURCE_COLOR = LightingOntology.MY_URI
+	    + "srcColor";
 
     public LightSource() {
 	super();
@@ -90,6 +50,10 @@ public class LightSource extends Device {
 
     public LightSource(String uri) {
 	super(uri);
+    }
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public LightSource(String uri, LightType type, Location loc) {
@@ -99,10 +63,9 @@ public class LightSource extends Device {
 
 	props.put(PROP_HAS_TYPE, type);
 	props.put(PROP_SOURCE_BRIGHTNESS, new Integer(0));
-	setLocation(loc);
+	props.put(PROP_PHYSICAL_LOCATION, loc);
     }
 
-    // hier stand nur Location
     public Location getAmbientCoverage() {
 	return (Location) props.get(PROP_AMBIENT_COVERAGE);
     }
@@ -134,7 +97,8 @@ public class LightSource extends Device {
      * (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
-	return (PROP_AMBIENT_COVERAGE.equals(propURI)) ? PROP_SERIALIZATION_REDUCED
+	return (PROP_AMBIENT_COVERAGE.equals(propURI) || PROP_PHYSICAL_LOCATION // PROP_SOURCE_LOCATION
+		.equals(propURI)) ? PROP_SERIALIZATION_REDUCED
 		: PROP_SERIALIZATION_FULL;
     }
 
@@ -145,7 +109,7 @@ public class LightSource extends Device {
      */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_HAS_TYPE)
-		&& props.containsKey(PROP_SOURCE_BRIGHTNESS);
+		&& props.containsKey(PROP_SOURCE_BRIGHTNESS)
+		&& props.containsKey(PROP_PHYSICAL_LOCATION);
     }
-
 }

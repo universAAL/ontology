@@ -21,7 +21,6 @@
 package org.universAAL.ontology.lighting;
 
 import org.universAAL.ontology.location.Location;
-import org.universAAL.middleware.owl.Restriction;
 
 /**
  * Ontological representation of a beaming light source. Methods included in
@@ -33,47 +32,12 @@ import org.universAAL.middleware.owl.Restriction;
  * 
  */
 public class BeamingSource extends LightSource {
-    public static final String MY_URI;
-    public static final String PROP_BEAMING_DIRECTION;
-    public static final String PROP_TARGET_SURFACE;
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "BeamingSource";
-	PROP_BEAMING_DIRECTION = LightSource.LIGHTING_NAMESPACE
-		+ "beamingDirection";
-	PROP_TARGET_SURFACE = LightSource.LIGHTING_NAMESPACE + "targetSurface";
-	register(BeamingSource.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_BEAMING_DIRECTION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Location.MY_URI, 1, 0);
-	if (PROP_TARGET_SURFACE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Location.MY_URI, 1, 0);
-	return LightSource.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = LightSource.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_BEAMING_DIRECTION;
-	toReturn[i] = PROP_TARGET_SURFACE;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of beaming light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Beaming Source";
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "BeamingSource";
+    public static final String PROP_BEAMING_DIRECTION = LightingOntology.MY_URI
+	    + "beamingDirection";
+    public static final String PROP_TARGET_SURFACE = LightingOntology.MY_URI
+	    + "targetSurface";
 
     public BeamingSource() {
 	super();
@@ -81,6 +45,10 @@ public class BeamingSource extends LightSource {
 
     public BeamingSource(String uri) {
 	super(uri);
+    }
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public BeamingSource(String uri, LightType type, Location loc,
@@ -98,14 +66,14 @@ public class BeamingSource extends LightSource {
 	return (Location) props.get(PROP_BEAMING_DIRECTION);
     }
 
-    public Location getTargetSurface() {
-	return (Location) props.get(PROP_BEAMING_DIRECTION);
-    }
-
     public int getPropSerializationType(String propURI) {
 	return (PROP_BEAMING_DIRECTION.equals(propURI) || PROP_TARGET_SURFACE
 		.equals(propURI)) ? PROP_SERIALIZATION_REDUCED : super
 		.getPropSerializationType(propURI);
+    }
+
+    public Location getTargetSurface() {
+	return (Location) props.get(PROP_BEAMING_DIRECTION);
     }
 
     public boolean isWellFormed() {

@@ -19,9 +19,6 @@
  */
 package org.universAAL.ontology.shape;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
@@ -50,20 +47,6 @@ public class Box extends Shape3D {
 	PROP_WIDTH = uAAL_SHAPE_NAMESPACE + "Width";
 	PROP_HEIGHT = uAAL_SHAPE_NAMESPACE + "Height";
 	PROP_DEPTH = uAAL_SHAPE_NAMESPACE + "Depth";
-	register(Box.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_WIDTH.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	if (PROP_HEIGHT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	if (PROP_DEPTH.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	return Shape2D.getClassRestrictionsOnProperty(propURI);
     }
 
     /**
@@ -147,20 +130,8 @@ public class Box extends Shape3D {
 	props.put(PROP_DEPTH, new Double(height));
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A box.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Box";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public void setWidth(double width) {
@@ -195,20 +166,6 @@ public class Box extends Shape3D {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape3D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 3];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HEIGHT;
-	toReturn[i++] = PROP_WIDTH;
-	toReturn[i] = PROP_DEPTH;
-	return toReturn;
     }
 
     /**
@@ -321,5 +278,4 @@ public class Box extends Shape3D {
 	}
 	return false;
     }
-
 }

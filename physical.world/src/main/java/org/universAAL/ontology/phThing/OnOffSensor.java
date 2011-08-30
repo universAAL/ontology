@@ -21,8 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
 
 /**
  * Ontological representation of a binary sensor that can be on or off (detects
@@ -34,19 +32,10 @@ import org.universAAL.middleware.owl.Restriction;
  * 
  */
 public class OnOffSensor extends Sensor {
-    public static final String MY_URI;
+    
+    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+	    + "OnOffSensor";
 
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "OnOffSensor";
-	register(OnOffSensor.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Boolean.class));
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
 
     public OnOffSensor() {
     }
@@ -55,12 +44,8 @@ public class OnOffSensor extends Sensor {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Home Appliance On/Off Sensor Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "On/Off Sensor";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {
@@ -74,5 +59,4 @@ public class OnOffSensor extends Sensor {
     public void setMeasuredValue(boolean value) {
 	props.put(PROP_MEASURED_VALUE, new Boolean(value));
     }
-
 }

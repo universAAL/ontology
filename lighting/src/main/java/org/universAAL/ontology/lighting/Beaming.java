@@ -20,9 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.owl.Restriction;
 
 /**
  * Ontological service that handles beaming light sources. Methods included in
@@ -33,43 +30,14 @@ import org.universAAL.middleware.owl.Restriction;
  * 
  */
 public class Beaming extends Lighting {
-    public static final String MY_URI;
-    private static Hashtable beamingRestrictions = new Hashtable(1);
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "Beaming";
-	register(Beaming.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		BeamingSource.MY_URI), new String[] { PROP_CONTROLS },
-		beamingRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = beamingRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Lighting.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling beaming sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Beaming";
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "Beaming";
 
     public Beaming(String uri) {
 	super(uri);
     }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return beamingRestrictions;
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 }

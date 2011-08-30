@@ -34,12 +34,8 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Circle extends Ellipse {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Circle";
 
-    static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Circle";
-	register(Circle.class);
-    }
 
     /**
      * Creates a Circle object
@@ -72,20 +68,8 @@ public class Circle extends Ellipse {
 	super(radius * 2, radius * 2, system);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A circle.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Circle";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public double getRadius() {
@@ -100,5 +84,4 @@ public class Circle extends Ellipse {
     public float getDistanceTo(Point point) {
 	return (float) (point.getDistanceTo(getCenter()) - getRadius());
     }
-
 }

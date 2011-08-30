@@ -20,53 +20,22 @@
 
 package org.universAAL.ontology.lighting;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.location.Location;
-import org.universAAL.middleware.owl.Restriction;
 
 /**
  * Ontological representation of a blinkable light source. Methods included in
  * this class are the mandatory ones for representing an ontological concept in
  * Java classes for uAAL. Usually it includes getters and setters for most of
- * its properties. Implements interface Blinkable for multiple inheritance.
+ * its properties.
  * 
  * @author mtazari
  * 
  */
-public class BlinkableLightSource extends LightSource implements Blinkable {
-    public static final String MY_URI;
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "BlinkableLightSource";
-	register(Blinkable.class);
-	register(BlinkableLightSource.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (Blinkable.PROP_BLINKING_STATE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	return LightSource.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = LightSource.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_BLINKING_STATE;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of blinkable light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Blinkable Light Source";
-    }
+public class BlinkableLightSource extends LightSource {
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "BlinkableLightSource";
+    public static final String PROP_BLINKING_STATE = LightingOntology.MY_URI
+	    + "blinkingState";
 
     public BlinkableLightSource() {
 	super();
@@ -75,33 +44,25 @@ public class BlinkableLightSource extends LightSource implements Blinkable {
     public BlinkableLightSource(String uri) {
 	super(uri);
     }
+    
+    public String getClassURI() {
+	return MY_URI;
+    }
 
     public BlinkableLightSource(String uri, LightType type, Location loc) {
 	super(uri, type, loc);
-	props.put(Blinkable.PROP_BLINKING_STATE, new Boolean(false));
+	props.put(PROP_BLINKING_STATE, new Boolean(false));
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see Blinkable#isBlinking()
-     */
     public boolean isBlinking() {
-	return ((Boolean) props.get(Blinkable.PROP_BLINKING_STATE))
-		.booleanValue();
+	return ((Boolean) props.get(PROP_BLINKING_STATE)).booleanValue();
     }
 
     public boolean isWellFormed() {
-	return props.containsKey(Blinkable.PROP_BLINKING_STATE)
-		&& super.isWellFormed();
+	return props.containsKey(PROP_BLINKING_STATE) && super.isWellFormed();
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see Blinkable#setBlinkingState(boolean)
-     */
     public void setBlinkingState(boolean state) {
-	props.put(Blinkable.PROP_BLINKING_STATE, new Boolean(state));
+	props.put(PROP_BLINKING_STATE, new Boolean(state));
     }
 }

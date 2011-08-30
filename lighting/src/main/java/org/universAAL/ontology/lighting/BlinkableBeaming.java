@@ -20,9 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.owl.Restriction;
 
 /**
  * Ontological service that handles blinkable and beaming light sources. Methods
@@ -33,43 +30,14 @@ import org.universAAL.middleware.owl.Restriction;
  * 
  */
 public class BlinkableBeaming extends Beaming {
-    public static final String MY_URI;
-    private static Hashtable blinkableBeamingRestrictions = new Hashtable(1);
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "BlinkableBeaming";
-	register(BlinkableBeaming.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		BlinkableBeamingSource.MY_URI), new String[] { PROP_CONTROLS },
-		blinkableBeamingRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = blinkableBeamingRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Beaming.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling blinkable beaming sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Blinkable Beaming";
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "BlinkableBeaming";
 
     public BlinkableBeaming(String uri) {
 	super(uri);
     }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return blinkableBeamingRestrictions;
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 }

@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Ontological enumeration of possible natural light types. Methods included in
@@ -31,11 +30,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  */
 public class NaturalLight extends LightType {
-    public static final String MY_URI;
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "NaturalLight";
-	register(NaturalLight.class);
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "NaturalLight";
 
     public static final int MOON_SHINE = 0;
     public static final int SUN_SHINE = 1;
@@ -45,24 +41,19 @@ public class NaturalLight extends LightType {
     public static final NaturalLight moonShine = new NaturalLight(MOON_SHINE);
     public static final NaturalLight sunShine = new NaturalLight(SUN_SHINE);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { moonShine, sunShine };
+    
+//    public static void init() throws UnsupportedOperationException {
+//	if (moonShine != null  ||  sunShine != null)
+//	    throw new UnsupportedOperationException("NaturalLight has already been initialised.");
+//	moonShine = new NaturalLight(MOON_SHINE);
+//	sunShine = new NaturalLight(SUN_SHINE);
+//    }
+    
+    
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns the rating with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(LightSource.LIGHTING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(LightSource.LIGHTING_NAMESPACE.length()))
-		: null;
-    }
-
+    
     public static NaturalLight getNaturalLightByOrder(int order) {
 	switch (order) {
 	case MOON_SHINE:
@@ -74,20 +65,12 @@ public class NaturalLight extends LightType {
 	}
     }
 
-    public static String getRDFSComment() {
-	return "The type of natural light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Natural Light";
-    }
-
     public static final NaturalLight valueOf(String name) {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(LightSource.LIGHTING_NAMESPACE))
-	    name = name.substring(LightSource.LIGHTING_NAMESPACE.length());
+	if (name.startsWith(LightingOntology.MY_URI))
+	    name = name.substring(LightingOntology.MY_URI.length());
 
 	for (int i = MOON_SHINE; i <= SUN_SHINE; i++)
 	    if (names[i].equals(name))
@@ -96,13 +79,13 @@ public class NaturalLight extends LightType {
 	return null;
     }
 
-    private int order;
+    private int order = 0;
 
     private NaturalLight(int order) {
-	super(LightSource.LIGHTING_NAMESPACE + names[order]);
+	super(LightingOntology.MY_URI + names[order]);
 	this.order = order;
     }
-
+        
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_OPTIONAL;
     }
@@ -117,9 +100,5 @@ public class NaturalLight extends LightType {
 
     public int ord() {
 	return order;
-    }
-
-    public void setProperty(String propURI, Object o) {
-	// do nothing
     }
 }
