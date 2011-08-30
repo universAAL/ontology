@@ -25,8 +25,6 @@ import jp.go.ipa.jgcl.JgclEllipse3D;
 import jp.go.ipa.jgcl.JgclIndefiniteSolution;
 import jp.go.ipa.jgcl.JgclPoint3D;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.Point;
 
@@ -51,18 +49,8 @@ public class Ellipse extends Shape2D {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "Ellipse";
 	PROP_MINOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MinorAxisLength";
 	PROP_MAJOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MajorAxisLength";
-	register(Ellipse.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MINOR_AXIS_LENGTH.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	if (PROP_MAJOR_AXIS_LENGTH.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	return Shape2D.getClassRestrictionsOnProperty(propURI);
-    }
 
     public Ellipse(String uri) {
 	super(uri);
@@ -107,20 +95,8 @@ public class Ellipse extends Shape2D {
 	props.put(PROP_MAJOR_AXIS_LENGTH, new Double(majorAxisLength));
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "An ellpise.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Ellipse";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public void setMajorAxisLength(double majorAxisLength) {
@@ -147,19 +123,6 @@ public class Ellipse extends Shape2D {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape2D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_MINOR_AXIS_LENGTH;
-	toReturn[i] = PROP_MAJOR_AXIS_LENGTH;
-	return toReturn;
     }
 
     public float getDistanceTo(Point point) {
@@ -261,5 +224,4 @@ public class Ellipse extends Shape2D {
 	return new Box(getMinorAxisLength(), getMajorAxisLength(), 1f,
 		getLocalCoordinateSystem());
     }
-
 }

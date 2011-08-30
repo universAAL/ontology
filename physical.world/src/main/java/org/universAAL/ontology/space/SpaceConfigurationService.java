@@ -19,12 +19,7 @@
  */
 package org.universAAL.ontology.space;
 
-import java.util.Hashtable;
-
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.middleware.owl.Restriction;
-
-import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.location.Location;
 
 /**
@@ -38,7 +33,6 @@ public class SpaceConfigurationService extends Service {
     public static final String PROP_MANAGED_LOCATIONS;
     public static final String PROP_MANAGED_PHYSICAL_THINGS;
 
-    private static Hashtable locationRestrictions = new Hashtable(1);
     static {
 	MY_URI = Location.uAAL_LOCATION_NAMESPACE
 		+ "locationConfigurationService";
@@ -46,31 +40,6 @@ public class SpaceConfigurationService extends Service {
 		+ "managedLocations";
 	PROP_MANAGED_PHYSICAL_THINGS = Location.uAAL_LOCATION_NAMESPACE
 		+ "managedPhysicalThings";
-	register(SpaceConfigurationService.class);
-	addRestriction(Restriction.getAllValuesRestriction(
-		PROP_MANAGED_LOCATIONS, Location.MY_URI),
-		new String[] { PROP_MANAGED_LOCATIONS }, locationRestrictions);
-	addRestriction(Restriction.getAllValuesRestriction(
-		PROP_MANAGED_PHYSICAL_THINGS, PhysicalThing.MY_URI),
-		new String[] { PROP_MANAGED_PHYSICAL_THINGS },
-		locationRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = locationRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controlling locations.";
-    }
-
-    public static String getRDFSLabel() {
-	return "LocationService";
     }
 
     public SpaceConfigurationService() {
@@ -81,13 +50,8 @@ public class SpaceConfigurationService extends Service {
 	super(uri);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return locationRestrictions;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     /*

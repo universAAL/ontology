@@ -47,13 +47,9 @@ import org.universAAL.ontology.location.position.Point;
 
 public class LineSegment extends Line {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "LineSegment";
 
-    static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "LineSegment";
-	register(LineSegment.class);
-    }
-
+    
     /**
      * Creates a LineSegment object
      * 
@@ -79,20 +75,8 @@ public class LineSegment extends Line {
 	super(new Point[] { start, end });
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A segment of a line defined by a start and a endpoint.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "LineSegment";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Point getStart() {
@@ -233,5 +217,4 @@ public class LineSegment extends Line {
 
 	return dist;
     }
-
 }

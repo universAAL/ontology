@@ -29,9 +29,7 @@ import javax.media.j3d.Bounds;
 import javax.vecmath.Point3d;
 import javax.vecmath.Vector3d;
 
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
-
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
@@ -61,21 +59,8 @@ public abstract class Shape extends ManagedIndividual {
 		+ "PointReperesentation";
 	PROP_LOCAL_COORDINATE_SYSTEM = uAAL_SHAPE_NAMESPACE + "localCoordSys";
 	PROP_BOUNDING_VOLUME = uAAL_SHAPE_NAMESPACE + "boundingVolume";
-	register(Shape.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_POINT_REPRESENTATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 1, 0);
-	if (PROP_LOCAL_COORDINATE_SYSTEM.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    CoordinateSystem.MY_URI, 1, 1);
-	if (PROP_BOUNDING_VOLUME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Shape.MY_URI, 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a Shape object
@@ -148,20 +133,8 @@ public abstract class Shape extends ManagedIndividual {
 	props.put(PROP_LOCAL_COORDINATE_SYSTEM, system);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all shapes.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Shape";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     /**
@@ -239,19 +212,6 @@ public abstract class Shape extends ManagedIndividual {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_POINT_REPRESENTATION;
-	toReturn[i] = PROP_LOCAL_COORDINATE_SYSTEM;
-	return toReturn;
     }
 
     public void setLocalCoordinateSystem(CoordinateSystem system) {

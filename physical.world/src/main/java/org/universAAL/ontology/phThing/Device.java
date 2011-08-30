@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.owl.supply.LevelRating;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
@@ -33,38 +32,15 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * 
  */
 public class Device extends PhysicalThing {
+    
     public static final String uAAL_DEVICE_NAMESPACE = uAAL_NAMESPACE_PREFIX
 	    + "Device.owl#";
-    public static final String MY_URI;
-    public static final String PROP_BATTERY_LEVEL;
-    static {
-	MY_URI = uAAL_DEVICE_NAMESPACE + "Device";
-	PROP_BATTERY_LEVEL = Device.uAAL_DEVICE_NAMESPACE + "batteryLevel";
-	register(Device.class);
-    }
+    
+    public static final String MY_URI = uAAL_DEVICE_NAMESPACE + "Device";
+    
+    public static final String PROP_BATTERY_LEVEL = Device.uAAL_DEVICE_NAMESPACE
+	    + "batteryLevel";
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_BATTERY_LEVEL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    LevelRating.MY_URI, 1, 0);
-	return PhysicalThing.getClassRestrictionsOnProperty(propURI);
-    }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all devices in the uAAL ontology.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Device";
-    }
 
     public Device() {
 	super();
@@ -76,6 +52,10 @@ public class Device extends PhysicalThing {
 
     public Device(String uriPrefix, int numProps) {
 	super(uriPrefix, numProps);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {

@@ -19,9 +19,6 @@
  */
 package org.universAAL.ontology.location;
 
-import org.universAAL.middleware.owl.Restriction;
-
-import org.universAAL.ontology.shape.Path;
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -36,22 +33,12 @@ import org.universAAL.ontology.shape.Shape;
 
 public class Way extends Place {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Way";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Way";
-	register(Way.class);
-    }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_SHAPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Path.MY_URI, 1, 0);
-	return Location.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
-     * Creates a Wayobject
+     * Creates a Way object
      * 
      * @param uri
      *            the object URI
@@ -87,20 +74,7 @@ public class Way extends Place {
 	super(uri, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A way.";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Way";
-    }
-
 }

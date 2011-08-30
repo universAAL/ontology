@@ -21,26 +21,21 @@ package org.universAAL.ontology;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.ontology.lighting.LightingOntology;
+
 
 public class Activator implements BundleActivator {
 
     static BundleContext context = null;
+    LightingOntology lightingOntology = new LightingOntology();
 
     public void start(BundleContext context) throws Exception {
 	Activator.context = context;
-	Class.forName("org.universAAL.ontology.lighting.Blinkable");
-	Class.forName("org.universAAL.ontology.lighting.BlinkableBeaming");
-	Class.forName("org.universAAL.ontology.lighting.BlinkableBeamingSource");
-	Class.forName("org.universAAL.ontology.lighting.BlinkableLighting");
-	Class.forName("org.universAAL.ontology.lighting.BlinkableLightSource");
-	Class.forName("org.universAAL.ontology.lighting.ElectricLight");
-	Class.forName("org.universAAL.ontology.lighting.FlamingLight");
-	Class.forName("org.universAAL.ontology.lighting.NaturalLight");
+	OntologyManagement.getInstance().register(lightingOntology);
     }
 
     public void stop(BundleContext arg0) throws Exception {
-	// TODO Auto-generated method stub
-
+	OntologyManagement.getInstance().unregister(lightingOntology);
     }
-
 }

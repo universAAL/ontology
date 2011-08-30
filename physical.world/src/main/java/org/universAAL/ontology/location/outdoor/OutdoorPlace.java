@@ -37,7 +37,6 @@ public class OutdoorPlace extends Place {
 
     static {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "OutdoorPlace";
-	register(OutdoorPlace.class);
     }
 
     /**
@@ -77,20 +76,7 @@ public class OutdoorPlace extends Place {
 	super(uri, name);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all outdoor places.";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "OutdoorPlace";
-    }
-
 }

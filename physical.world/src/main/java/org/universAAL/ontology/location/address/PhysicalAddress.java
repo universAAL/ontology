@@ -2,9 +2,6 @@ package org.universAAL.ontology.location.address;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.location.Location;
 
 /**
@@ -46,65 +43,8 @@ public class PhysicalAddress extends Address {
 	// "hasAddressStreet";
 	// PROP_HAS_STREET = Location.uAAL_LOCATION_NAMESPACE +
 	// "hasAddressNumber";
-
-	register(PhysicalAddress.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-
-	if (PROP_HAS_BUILDING_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);// Building
-	if (PROP_HAS_HALL_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);// Hall
-	if (PROP_HAS_FLOOR_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);// BuildingLevel
-	if (PROP_HAS_DOOR_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);// Home
-	if (PROP_HAS_DESK_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	if (PROP_HAS_OFFICE_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	if (PROP_HAS_ADDITIONAL_ID.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(String.class));// IndoorPlace
-	// if (PROP_HAS_STREET.equals(propURI))
-	// return
-	// Restriction.getAllValuesRestrictionWithCardinality(propURI,
-	// Street.MY_URI, 1, 1);
-	// if (PROP_HAS_NUMBER.equals(propURI))
-	// return
-	// Restriction.getAllValuesRestrictionWithCardinality(propURI,
-	// TypeMapper.getDatatypeURI(Integer.class), 1, 0);
-
-	return Address.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Address.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 7];
-
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_BUILDING_ID;
-	toReturn[i++] = PROP_HAS_HALL_ID;
-	toReturn[i++] = PROP_HAS_FLOOR_ID;
-	toReturn[i++] = PROP_HAS_DOOR_ID;
-	toReturn[i++] = PROP_HAS_DESK_ID;
-	toReturn[i++] = PROP_HAS_OFFICE_ID;
-	toReturn[i] = PROP_HAS_ADDITIONAL_ID;
-	// toReturn[i++] = PROP_HAS_STREET;
-	// toReturn[i] = PROP_HAS_NUMBER;
-	return toReturn;
-    }
 
     /**
      * Creates a PhysicalAddress object
@@ -122,24 +62,14 @@ public class PhysicalAddress extends Address {
 	super(uri);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     // public PhysicalAddress(String uri, Street street) {
     // super(uri);
     // props.put(PROP_HAS_STREET, street);
     // }
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "An extended address for a physical place";
-    }
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Physical Address";
-    }
 
     public int getPropSerializationType(String propURI) {
 	// if (PROP_HAS_STREET.equals(propURI))

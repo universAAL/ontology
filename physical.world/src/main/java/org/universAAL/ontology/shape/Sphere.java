@@ -19,8 +19,6 @@
  */
 package org.universAAL.ontology.shape;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.Point;
 
@@ -42,15 +40,8 @@ public class Sphere extends Shape3D {
     static {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "FHSphere";
 	PROP_RADIUS = uAAL_SHAPE_NAMESPACE + "Radius";
-	register(Sphere.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_RADIUS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a Shape object
@@ -89,20 +80,8 @@ public class Sphere extends Shape3D {
 	props.put(PROP_RADIUS, new Double(radius));
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A sphere.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Sphere";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public double getRadius() {
@@ -121,18 +100,6 @@ public class Sphere extends Shape3D {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape3D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_RADIUS;
-	return toReturn;
     }
 
     /**
@@ -222,5 +189,4 @@ public class Sphere extends Shape3D {
 	}
 	return false;
     }
-
 }

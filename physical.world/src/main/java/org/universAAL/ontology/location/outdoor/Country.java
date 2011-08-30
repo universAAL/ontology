@@ -22,7 +22,7 @@ package org.universAAL.ontology.location.outdoor;
 import org.universAAL.ontology.shape.Shape;
 
 /**
- * Ontological representation of a conutry as a generic outdoor place. Methods
+ * Ontological representation of a country as a generic outdoor place. Methods
  * included in this class are the mandatory ones for representing an ontological
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
@@ -30,13 +30,9 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Country extends OutdoorPlace {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Country";
-	register(Country.class);
-    }
-
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Country";
+    
+    
     /**
      * Creates a Country object
      * 
@@ -74,19 +70,7 @@ public class Country extends OutdoorPlace {
 	super(uri, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A country.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Country";
+    public String getClassURI() {
+	return MY_URI;
     }
 }

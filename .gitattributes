@@ -53,9 +53,9 @@ lighting/NOTICE.txt -text
 lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 lighting/pom.xml -text
 lighting/src/main/java/org/universAAL/ontology/Activator.java -text
+lighting/src/main/java/org/universAAL/ontology/LightingFactory.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/Beaming.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/BeamingSource.java -text
-lighting/src/main/java/org/universAAL/ontology/lighting/Blinkable.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeaming.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeamingSource.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableLightSource.java -text
@@ -65,6 +65,7 @@ lighting/src/main/java/org/universAAL/ontology/lighting/FlamingLight.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/LightSource.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/LightType.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/Lighting.java -text
+lighting/src/main/java/org/universAAL/ontology/lighting/LightingOntology.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
 location.extra/pom.xml -text
 location.extra/src/main/java/org/universAAL/ontology/Activator.java -text
@@ -106,7 +107,12 @@ physical.world/documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20
 physical.world/documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 physical.world/pom.xml -text
 physical.world/src/main/java/org/universAAL/ontology/Activator.java -text
+physical.world/src/main/java/org/universAAL/ontology/LocationFactory.java -text
+physical.world/src/main/java/org/universAAL/ontology/PhThingFactory.java -text
+physical.world/src/main/java/org/universAAL/ontology/ShapeFactory.java -text
+physical.world/src/main/java/org/universAAL/ontology/SpaceFactory.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Location.java -text
+physical.world/src/main/java/org/universAAL/ontology/location/LocationOntology.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Place.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/Way.java -text
 physical.world/src/main/java/org/universAAL/ontology/location/address/Address.java -text
@@ -141,6 +147,7 @@ physical.world/src/main/java/org/universAAL/ontology/phThing/DeviceService.java 
 physical.world/src/main/java/org/universAAL/ontology/phThing/DimmerActuator.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/OnOffActuator.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/OnOffSensor.java -text
+physical.world/src/main/java/org/universAAL/ontology/phThing/PhThingOntology.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/PhysicalContainer.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/PhysicalThing.java -text
 physical.world/src/main/java/org/universAAL/ontology/phThing/Sensor.java -text
@@ -159,9 +166,11 @@ physical.world/src/main/java/org/universAAL/ontology/shape/QuasiCylinder.java -t
 physical.world/src/main/java/org/universAAL/ontology/shape/Shape.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Shape2D.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Shape3D.java -text
+physical.world/src/main/java/org/universAAL/ontology/shape/ShapeOntology.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
+physical.world/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
 pom/pom.xml -text
 powersocket/LICENSE.txt -text
 powersocket/NOTICE.txt -text

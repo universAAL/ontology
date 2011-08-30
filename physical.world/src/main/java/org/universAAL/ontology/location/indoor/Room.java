@@ -19,8 +19,6 @@
  */
 package org.universAAL.ontology.location.indoor;
 
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -38,27 +36,8 @@ public class Room extends HomeArea {
     static {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "Room";
 	PROP_ROOM_FUNCTION = uAAL_LOCATION_NAMESPACE + "roomFunction";
-	register(Room.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_ROOM_FUNCTION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    RoomFunction.MY_URI, 1, 0);
-	return HomeArea.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = HomeArea.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_ROOM_FUNCTION;
-	return toReturn;
-    }
 
     /**
      * Creates a Room object
@@ -105,20 +84,8 @@ public class Room extends HomeArea {
 	props.put(PROP_ROOM_FUNCTION, func);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A room with a specialized function.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Room";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public RoomFunction getRoomFunction() {

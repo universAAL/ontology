@@ -30,13 +30,9 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Home extends IndoorPlace {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Home";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Home";
-	register(Home.class);
-    }
-
+    
     /**
      * Creates a Home object
      * 
@@ -73,20 +69,8 @@ public class Home extends IndoorPlace {
     public Home(String uri, Shape shape) {
 	super(uri, shape);
     }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A home of some sorts.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Home";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 }

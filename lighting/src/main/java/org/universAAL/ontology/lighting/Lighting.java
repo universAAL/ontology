@@ -20,9 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
@@ -34,35 +31,10 @@ import org.universAAL.middleware.service.owl.Service;
  * 
  */
 public class Lighting extends Service {
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-
-    private static Hashtable lightingRestrictions = new Hashtable(2);
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "Lighting";
-	PROP_CONTROLS = LightSource.LIGHTING_NAMESPACE + "controls";
-	register(Lighting.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		LightSource.MY_URI), new String[] { PROP_CONTROLS },
-		lightingRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = lightingRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling light sources.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Lighting";
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "Lighting";
+    public static final String PROP_CONTROLS = LightingOntology.MY_URI
+	    + "controls";
 
     public Lighting() {
 	super();
@@ -71,14 +43,9 @@ public class Lighting extends Service {
     public Lighting(String uri) {
 	super(uri);
     }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return lightingRestrictions;
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 
     /*

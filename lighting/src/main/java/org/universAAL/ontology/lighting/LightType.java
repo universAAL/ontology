@@ -32,21 +32,14 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  */
 public abstract class LightType extends ManagedIndividual {
-    public static final String MY_URI;
-    static {
-	MY_URI = LightSource.LIGHTING_NAMESPACE + "LightType";
-	register(LightType.class);
-    }
-
-    public static String getRDFSComment() {
-	return "The type of a light source";
-    }
-
-    public static String getRDFSLabel() {
-	return "Light Type";
-    }
+    public static final String MY_URI = LightingOntology.MY_URI
+	    + "LightType";
 
     protected LightType(String uri) {
 	super(uri);
+    }
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 }

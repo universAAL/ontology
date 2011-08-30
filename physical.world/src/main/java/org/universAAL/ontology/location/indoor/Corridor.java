@@ -34,7 +34,6 @@ public class Corridor extends HomeArea {
 
     static {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "Corridor";
-	register(Corridor.class);
     }
 
     /**
@@ -73,20 +72,8 @@ public class Corridor extends HomeArea {
     public Corridor(String uri, Shape shape) {
 	super(uri, shape);
     }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A corridor.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Corridor";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 }

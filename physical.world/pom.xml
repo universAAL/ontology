@@ -10,7 +10,7 @@
 	</parent>
 	<packaging>bundle</packaging>
 	<artifactId>ont.phWorld</artifactId>
-	<version>0.2.3-SNAPSHOT</version>
+	<version>0.2.4-SNAPSHOT</version>
 	<name>The Physical World Ontology</name>
 	<description>The upper ontology defining the most general concepts from the physical world as opposed to the virtual realm.</description>
 	<url />
@@ -39,12 +39,12 @@
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation</artifactId>
-			<version>0.3.1-SNAPSHOT</version>
+			<version>0.3.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.bus.service</artifactId>
-			<version>0.3.1-SNAPSHOT</version>
+			<version>0.3.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>

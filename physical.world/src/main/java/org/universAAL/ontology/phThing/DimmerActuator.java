@@ -21,9 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.phThing.Actuator;
 import org.universAAL.ontology.phThing.Device;
 
@@ -37,37 +34,14 @@ import org.universAAL.ontology.phThing.Device;
  * 
  */
 public class DimmerActuator extends Actuator {
-    public static final String MY_URI;
-    public static final String PROP_DIMMABLE_STATUS;
+    
+    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+	    + "DimmerActuator";
+    
+    public static final String PROP_DIMMABLE_STATUS = Device.uAAL_DEVICE_NAMESPACE
+	    + "DimmableStatus";
 
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "DimmerActuator";
-	PROP_DIMMABLE_STATUS = Device.uAAL_DEVICE_NAMESPACE + "DimmableStatus";
-	register(DimmerActuator.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_DIMMABLE_STATUS.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	return Device.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Actuator.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_DIMMABLE_STATUS;
-	return toReturn;
-    }
-
+    
     public DimmerActuator() {
     }
 
@@ -75,12 +49,8 @@ public class DimmerActuator extends Actuator {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Dimmer kind of Actuator";
-    }
-
-    public static String getRDFSLabel() {
-	return "Dimmer Actuator";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
@@ -100,5 +70,4 @@ public class DimmerActuator extends Actuator {
 	if (percentage > -1 && percentage < 101)
 	    props.put(PROP_DIMMABLE_STATUS, new Integer(percentage));
     }
-
 }

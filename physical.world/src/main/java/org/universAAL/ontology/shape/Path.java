@@ -22,8 +22,6 @@ package org.universAAL.ontology.shape;
 import java.util.Iterator;
 import java.util.Vector;
 
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
@@ -49,15 +47,8 @@ public abstract class Path extends Shape3D {
     static {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "Path";
 	PROP_POINTS = uAAL_SHAPE_NAMESPACE + "Points";
-	register(Path.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_POINTS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 0, 2);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a Path object
@@ -99,20 +90,8 @@ public abstract class Path extends Shape3D {
 	setLocalCoordinateSystem(points[0].getCoordinateSystem());
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A path.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Path";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     /**
@@ -161,18 +140,6 @@ public abstract class Path extends Shape3D {
 	return PROP_SERIALIZATION_OPTIONAL;
     }
 
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape3D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_POINTS;
-	return toReturn;
-    }
-
     protected void checkValid() {
 	Iterator verts = ((Vector) props.get(PROP_POINTS)).iterator();
 	CoordinateSystem system = ((Point) verts.next()).getCoordinateSystem();
@@ -211,5 +178,4 @@ public abstract class Path extends Shape3D {
     public boolean contains(Point p) {
 	return false;
     }
-
 }

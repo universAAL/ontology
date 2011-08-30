@@ -30,13 +30,9 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Region extends OutdoorPlace {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Region";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Region";
-	register(Region.class);
-    }
-
+    
     /**
      * Creates a Region object
      * 
@@ -74,19 +70,7 @@ public class Region extends OutdoorPlace {
 	super(uri, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A region.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Region";
+    public String getClassURI() {
+	return MY_URI;
     }
 }

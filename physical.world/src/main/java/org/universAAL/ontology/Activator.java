@@ -21,56 +21,37 @@ package org.universAAL.ontology;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.ontology.location.LocationOntology;
+import org.universAAL.ontology.phThing.PhThingOntology;
+import org.universAAL.ontology.shape.ShapeOntology;
+import org.universAAL.ontology.space.SpaceOntology;
 
 public class Activator implements BundleActivator {
 
     static BundleContext context = null;
+    LocationOntology locationOntology = new LocationOntology();
+    PhThingOntology phThingOntology = new PhThingOntology();
+    ShapeOntology shapeOntology = new ShapeOntology();
+    SpaceOntology spaceOntology = new SpaceOntology();
 
     public void start(BundleContext context) throws Exception {
 	Activator.context = context;
-	Class.forName("org.universAAL.ontology.location.indoor.BuildingLevel");
-	Class.forName("org.universAAL.ontology.location.indoor.Home");
-	Class.forName("org.universAAL.ontology.location.indoor.Corridor");
-	Class.forName("org.universAAL.ontology.location.indoor.EntranceHall");
-	Class.forName("org.universAAL.ontology.location.indoor.Hall");
-	Class.forName("org.universAAL.ontology.location.indoor.Room");
-	Class.forName("org.universAAL.ontology.location.indoor.RoomFunction");
-	Class.forName("org.universAAL.ontology.location.indoor.StairCase");
-	Class.forName("org.universAAL.ontology.location.indoor.StairWay");
-	Class.forName("org.universAAL.ontology.location.outdoor.Building");
-	Class.forName("org.universAAL.ontology.location.outdoor.City");
-	Class.forName("org.universAAL.ontology.location.outdoor.CityQuarter");
-	Class.forName("org.universAAL.ontology.location.outdoor.CityRegion");
-	Class.forName("org.universAAL.ontology.location.outdoor.Country");
-	Class.forName("org.universAAL.ontology.location.outdoor.Region");
-	Class.forName("org.universAAL.ontology.location.outdoor.State");
-	Class
-		.forName("org.universAAL.ontology.location.position.OriginedMetric");
-	Class.forName("org.universAAL.ontology.location.position.Point");
-	Class.forName("org.universAAL.ontology.location.Way");
-	Class.forName("org.universAAL.ontology.phThing.OnOffActuator");
-	Class.forName("org.universAAL.ontology.phThing.OnOffSensor");
-	Class.forName("org.universAAL.ontology.phThing.PhysicalContainer");
-	Class.forName("org.universAAL.ontology.phThing.DimmerActuator");
-	Class.forName("org.universAAL.ontology.phThing.DeviceService");
-	Class.forName("org.universAAL.ontology.shape.Box");
-	Class.forName("org.universAAL.ontology.shape.Circle");
-	Class.forName("org.universAAL.ontology.shape.ConeSegment");
-	Class.forName("org.universAAL.ontology.shape.MergedShape");
-	Class.forName("org.universAAL.ontology.shape.Polyhedron");
-	Class.forName("org.universAAL.ontology.shape.QuasiCylinder");
-	Class.forName("org.universAAL.ontology.shape.Sphere");
-	Class.forName("org.universAAL.ontology.shape.Triangle");
-	Class
-		.forName("org.universAAL.ontology.space.SpaceConfigurationService");
-	Class.forName("org.universAAL.ontology.location.address.Address");
-	Class.forName("org.universAAL.ontology.location.address.MailBox");
-	Class.forName("org.universAAL.ontology.location.address.PhysicalAddress");
+	
+	// register all ontologies
+	OntologyManagement om = OntologyManagement.getInstance();
+	om.register(locationOntology);
+	om.register(shapeOntology);
+	om.register(phThingOntology);
+	om.register(spaceOntology);
     }
 
     public void stop(BundleContext arg0) throws Exception {
-	// TODO Auto-generated method stub
-
+	// unregister all ontologies
+	OntologyManagement om = OntologyManagement.getInstance();
+	om.unregister(locationOntology);
+	om.unregister(spaceOntology);
+	om.unregister(phThingOntology);
+	om.unregister(shapeOntology);
     }
-
 }

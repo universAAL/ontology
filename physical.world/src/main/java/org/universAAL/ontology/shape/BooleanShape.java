@@ -21,12 +21,10 @@ package org.universAAL.ontology.shape;
 
 import java.util.Vector;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.location.position.Point;
 import org.universAAL.ontology.shape.Shape;
 
 /**
- * Ontological representation of an merge, intersection or substraction shape.
+ * Ontological representation of an merge, intersection or subtraction shape.
  * Methods included in this class are the mandatory ones for representing an
  * ontological concept in Java classes for uAAL. Usually it includes getters and
  * setters for most of its properties.
@@ -44,14 +42,6 @@ public abstract class BooleanShape extends Shape {
     static {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "BooleanShape";
 	PROP_SHAPES = uAAL_SHAPE_NAMESPACE + "Shapes";
-	register(BooleanShape.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_SHAPES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 0, 2);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
     }
 
     /**
@@ -84,20 +74,8 @@ public abstract class BooleanShape extends Shape {
 	setShapes(shapes);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A boolean shape: Merge, Intersect or Substract.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "BooleanShape";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Shape[] getShapes() {
@@ -125,17 +103,4 @@ public abstract class BooleanShape extends Shape {
 
 	return PROP_SERIALIZATION_OPTIONAL;
     }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_SHAPES;
-	return toReturn;
-    }
-
 }

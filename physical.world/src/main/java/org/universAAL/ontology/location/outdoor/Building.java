@@ -30,12 +30,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Building extends CityPlace {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Building";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Building";
-	register(Building.class);
-    }
 
     /**
      * Creates a Building object
@@ -74,20 +70,7 @@ public class Building extends CityPlace {
 	super(uri, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The class for all buildings.";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Building";
-    }
-
 }

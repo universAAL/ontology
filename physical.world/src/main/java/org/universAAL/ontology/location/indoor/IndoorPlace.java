@@ -33,12 +33,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public abstract class IndoorPlace extends Place {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "IndoorPlace";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "IndoorPlace";
-	register(IndoorPlace.class);
-    }
 
     /**
      * Creates a IndoorPlace object
@@ -76,21 +72,8 @@ public abstract class IndoorPlace extends Place {
     public IndoorPlace(String uri, Shape shape) {
 	super(uri, shape);
     }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all indoor places.";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "IndoorPlace";
-    }
-
 }

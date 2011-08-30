@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.owl.Restriction;
 
 /**
  * Ontological representation of a sensor: a device that can measure values from
@@ -40,26 +39,8 @@ public class Sensor extends Device {
     static {
 	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Sensor";
 	PROP_MEASURED_VALUE = Device.uAAL_DEVICE_NAMESPACE + "measuredValue";
-	register(Sensor.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getCardinalityRestriction(propURI, 1, 1);
-	return Device.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Device.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_MEASURED_VALUE;
-	return toReturn;
-    }
 
     public Sensor() {
     }
@@ -68,12 +49,8 @@ public class Sensor extends Device {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Sensor Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Sensor";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
@@ -83,5 +60,4 @@ public class Sensor extends Device {
     public boolean isWellFormed() {
 	return true;
     }
-
 }

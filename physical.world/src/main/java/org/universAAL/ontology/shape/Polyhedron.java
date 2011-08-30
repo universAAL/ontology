@@ -21,7 +21,6 @@ package org.universAAL.ontology.shape;
 
 import java.util.Vector;
 
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
@@ -46,15 +45,8 @@ public class Polyhedron extends Shape3D {
     static {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "Polyhedron";
 	PROP_FACES = uAAL_SHAPE_NAMESPACE + "Faces";
-	register(Polyhedron.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_FACES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 0, 4);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a Polygon object
@@ -91,20 +83,8 @@ public class Polyhedron extends Shape3D {
 	setFaces(faces);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A polgyhedron.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Polyhedron";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Polygon[] getFaces() {
@@ -135,18 +115,6 @@ public class Polyhedron extends Shape3D {
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape3D.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_FACES;
-	return toReturn;
     }
 
     public float getDistanceTo(Point other) {
@@ -193,5 +161,4 @@ public class Polyhedron extends Shape3D {
 	// TODO
 	return false;
     }
-
 }
