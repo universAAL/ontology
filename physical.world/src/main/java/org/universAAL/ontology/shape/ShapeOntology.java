@@ -36,12 +36,12 @@ import org.universAAL.ontology.location.position.Point;
  */
 public class ShapeOntology extends Ontology {
 
-    public static final String MY_URI = Shape.uAAL_SHAPE_NAMESPACE;
+    public static final String NAMESPACE = Shape.uAAL_SHAPE_NAMESPACE;
 
     private static ShapeFactory factory = new ShapeFactory();
 
     public ShapeOntology() {
-	super(MY_URI);
+	super(NAMESPACE);
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for shapes. "
 		+ "It is part of the Physical World upper ontology concept, "

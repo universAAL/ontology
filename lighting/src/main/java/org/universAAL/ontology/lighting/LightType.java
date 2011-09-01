@@ -32,7 +32,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  */
 public abstract class LightType extends ManagedIndividual {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "LightType";
 
     protected LightType(String uri) {

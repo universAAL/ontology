@@ -32,9 +32,9 @@ import org.universAAL.ontology.location.Location;
  * 
  */
 public class BlinkableLightSource extends LightSource {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "BlinkableLightSource";
-    public static final String PROP_BLINKING_STATE = LightingOntology.MY_URI
+    public static final String PROP_BLINKING_STATE = LightingOntology.NAMESPACE
 	    + "blinkingState";
 
     public BlinkableLightSource() {

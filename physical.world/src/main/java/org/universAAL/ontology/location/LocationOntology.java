@@ -64,12 +64,12 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class LocationOntology extends Ontology {
 
-    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE;
+    public static final String NAMESPACE = Location.uAAL_LOCATION_NAMESPACE;
 
     private static LocationFactory factory = new LocationFactory();
 
     public LocationOntology() {
-	super(MY_URI);
+	super(NAMESPACE);
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for locations. "
 		+ "It is part of the Physical World upper ontology concept, "

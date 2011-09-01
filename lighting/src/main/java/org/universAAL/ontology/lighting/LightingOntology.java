@@ -43,17 +43,17 @@ public final class LightingOntology extends Ontology {
 
     private static LightingFactory factory = new LightingFactory();;
 
-    public static final String MY_URI = "http://ontology.universaal.org/Lighting.owl#";
+    public static final String NAMESPACE = "http://ontology.universaal.org/Lighting.owl#";
 
     public LightingOntology() {
-	super(MY_URI);
+	super(NAMESPACE);
 	Resource r = getInfo();
 	r
 		.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
 	r.setResourceLabel("Lighting");
-	addImport(DataRepOntology.MY_URI);
-	addImport(ServiceBusOntology.MY_URI);
-	addImport(LocationOntology.MY_URI);
+	addImport(DataRepOntology.NAMESPACE);
+	addImport(ServiceBusOntology.NAMESPACE);
+	addImport(LocationOntology.NAMESPACE);
     }
 
     public void create() {

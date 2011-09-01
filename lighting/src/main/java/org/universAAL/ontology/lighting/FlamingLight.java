@@ -30,7 +30,7 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class FlamingLight extends LightType {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "FlamingLight";
 
     public static final int CANDLE_LIGHT = 0;
@@ -67,8 +67,8 @@ public class FlamingLight extends LightType {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(LightingOntology.MY_URI))
-	    name = name.substring(LightingOntology.MY_URI.length());
+	if (name.startsWith(LightingOntology.NAMESPACE))
+	    name = name.substring(LightingOntology.NAMESPACE.length());
 
 	for (int i = CANDLE_LIGHT; i <= OIL_LAMP; i++)
 	    if (names[i].equals(name))
@@ -80,7 +80,7 @@ public class FlamingLight extends LightType {
     private int order;
 
     private FlamingLight(int order) {
-	super(LightingOntology.MY_URI + names[order]);
+	super(LightingOntology.NAMESPACE + names[order]);
 	this.order = order;
     }
 

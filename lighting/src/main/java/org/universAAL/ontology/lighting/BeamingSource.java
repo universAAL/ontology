@@ -32,11 +32,11 @@ import org.universAAL.ontology.location.Location;
  * 
  */
 public class BeamingSource extends LightSource {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "BeamingSource";
-    public static final String PROP_BEAMING_DIRECTION = LightingOntology.MY_URI
+    public static final String PROP_BEAMING_DIRECTION = LightingOntology.NAMESPACE
 	    + "beamingDirection";
-    public static final String PROP_TARGET_SURFACE = LightingOntology.MY_URI
+    public static final String PROP_TARGET_SURFACE = LightingOntology.NAMESPACE
 	    + "targetSurface";
 
     public BeamingSource() {
