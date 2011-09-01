@@ -32,7 +32,7 @@ import org.universAAL.ontology.location.Location;
  * 
  */
 public class BlinkableBeamingSource extends BeamingSource {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "BlinkableBeamingSource";
 
     public BlinkableBeamingSource() {

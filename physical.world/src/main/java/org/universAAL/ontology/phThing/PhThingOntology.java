@@ -39,12 +39,12 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class PhThingOntology extends Ontology {
 
-    public static final String MY_URI = Resource.uAAL_VOCABULARY_NAMESPACE;
+    public static final String NAMESPACE = Resource.uAAL_VOCABULARY_NAMESPACE;
 
     private static PhThingFactory factory = new PhThingFactory();
 
     public PhThingOntology() {
-	super(MY_URI);
+	super(NAMESPACE);
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for physical things. "
 		+ "It is part of the Physical World upper ontology concept, "

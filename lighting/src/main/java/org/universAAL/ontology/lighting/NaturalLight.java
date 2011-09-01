@@ -30,7 +30,7 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class NaturalLight extends LightType {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "NaturalLight";
 
     public static final int MOON_SHINE = 0;
@@ -69,8 +69,8 @@ public class NaturalLight extends LightType {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(LightingOntology.MY_URI))
-	    name = name.substring(LightingOntology.MY_URI.length());
+	if (name.startsWith(LightingOntology.NAMESPACE))
+	    name = name.substring(LightingOntology.NAMESPACE.length());
 
 	for (int i = MOON_SHINE; i <= SUN_SHINE; i++)
 	    if (names[i].equals(name))
@@ -82,7 +82,7 @@ public class NaturalLight extends LightType {
     private int order = 0;
 
     private NaturalLight(int order) {
-	super(LightingOntology.MY_URI + names[order]);
+	super(LightingOntology.NAMESPACE + names[order]);
 	this.order = order;
     }
         

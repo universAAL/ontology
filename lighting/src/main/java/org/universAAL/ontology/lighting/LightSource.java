@@ -33,15 +33,15 @@ import org.universAAL.ontology.phThing.Device;
  * 
  */
 public class LightSource extends Device {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "LightSource";
-    public static final String PROP_AMBIENT_COVERAGE = LightingOntology.MY_URI
+    public static final String PROP_AMBIENT_COVERAGE = LightingOntology.NAMESPACE
 	    + "ambientCoveage";
-    public static final String PROP_HAS_TYPE = LightingOntology.MY_URI
+    public static final String PROP_HAS_TYPE = LightingOntology.NAMESPACE
 	    + "hasType";
-    public static final String PROP_SOURCE_BRIGHTNESS = LightingOntology.MY_URI
+    public static final String PROP_SOURCE_BRIGHTNESS = LightingOntology.NAMESPACE
 	    + "srcBrightness";
-    public static final String PROP_SOURCE_COLOR = LightingOntology.MY_URI
+    public static final String PROP_SOURCE_COLOR = LightingOntology.NAMESPACE
 	    + "srcColor";
 
     public LightSource() {

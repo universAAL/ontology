@@ -35,12 +35,12 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  */
 public class SpaceOntology extends Ontology {
 
-    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE;
+    public static final String NAMESPACE = Location.uAAL_LOCATION_NAMESPACE;
 
     private static SpaceFactory factory = new SpaceFactory();
 
     public SpaceOntology() {
-	super(MY_URI);
+	super(NAMESPACE);
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for AAL Space Configuration. "
 		+ "It is part of the Physical World upper ontology concept, "

@@ -30,7 +30,7 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class BlinkableBeaming extends Beaming {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "BlinkableBeaming";
 
     public BlinkableBeaming(String uri) {

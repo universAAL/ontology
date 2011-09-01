@@ -30,7 +30,7 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class BlinkableLighting extends Lighting {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "BlinkableLighting";
 
     public BlinkableLighting(String uri) {

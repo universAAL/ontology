@@ -30,7 +30,7 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class ElectricLight extends LightType {
-    public static final String MY_URI = LightingOntology.MY_URI
+    public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "ElectricLight";
 
     public static final int CARBON_ARC_LAMP = 0;
@@ -82,8 +82,8 @@ public class ElectricLight extends LightType {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(LightingOntology.MY_URI))
-	    name = name.substring(LightingOntology.MY_URI.length());
+	if (name.startsWith(LightingOntology.NAMESPACE))
+	    name = name.substring(LightingOntology.NAMESPACE.length());
 
 	for (int i = CARBON_ARC_LAMP; i <= LIGHT_BULB; i++)
 	    if (names[i].equals(name))
@@ -95,7 +95,7 @@ public class ElectricLight extends LightType {
     private int order;
 
     private ElectricLight(int order) {
-	super(LightingOntology.MY_URI + names[order]);
+	super(LightingOntology.NAMESPACE + names[order]);
 	this.order = order;
     }
 
