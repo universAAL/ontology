@@ -37,7 +37,7 @@ import org.universAAL.ontology.phThing.Device;
 /**
  * 
  * @author Carsten Stockloew
- *
+ * 
  */
 public final class LightingOntology extends Ontology {
 
@@ -47,6 +47,9 @@ public final class LightingOntology extends Ontology {
 
     public LightingOntology() {
 	super(NAMESPACE);
+    }
+
+    public void create() {
 	Resource r = getInfo();
 	r
 		.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
@@ -54,9 +57,7 @@ public final class LightingOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
-    }
 
-    public void create() {
 	OntClassInfoSetup oci;
 
 	// load LightType
@@ -96,13 +97,12 @@ public final class LightingOntology extends Ontology {
 	oci.setResourceComment("The class of all light sources");
 	oci.setResourceLabel("Light Source");
 	oci.addSuperClass(Device.MY_URI);
-	oci.addObjectProperty(LightSource.PROP_AMBIENT_COVERAGE, true, false,
-		false, false);
-	oci.addObjectProperty(LightSource.PROP_HAS_TYPE, true, false, false,
-		false);
-	oci.addDatatypeProperty(LightSource.PROP_SOURCE_BRIGHTNESS, true);
-	oci.addObjectProperty(LightSource.PROP_SOURCE_COLOR, true, false,
-		false, false);
+	oci.addObjectProperty(LightSource.PROP_AMBIENT_COVERAGE)
+		.setFunctional();
+	oci.addObjectProperty(LightSource.PROP_HAS_TYPE).setFunctional();
+	oci.addDatatypeProperty(LightSource.PROP_SOURCE_BRIGHTNESS)
+		.setFunctional();
+	oci.addObjectProperty(LightSource.PROP_SOURCE_COLOR).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			LightSource.PROP_AMBIENT_COVERAGE, Location.MY_URI, 0,
@@ -126,10 +126,10 @@ public final class LightingOntology extends Ontology {
 	oci.setResourceComment("The class of beaming light sources");
 	oci.setResourceLabel("Beaming Source");
 	oci.addSuperClass(LightSource.MY_URI);
-	oci.addObjectProperty(BeamingSource.PROP_BEAMING_DIRECTION, true,
-		false, false, false);
-	oci.addObjectProperty(BeamingSource.PROP_TARGET_SURFACE, true, false,
-		false, false);
+	oci.addObjectProperty(BeamingSource.PROP_BEAMING_DIRECTION)
+		.setFunctional();
+	oci.addObjectProperty(BeamingSource.PROP_TARGET_SURFACE)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			BeamingSource.PROP_BEAMING_DIRECTION, Location.MY_URI,
@@ -144,7 +144,8 @@ public final class LightingOntology extends Ontology {
 	oci.setResourceComment("The class of blinkable light sources");
 	oci.setResourceLabel("Blinkable Light Source");
 	oci.addSuperClass(LightSource.MY_URI);
-	oci.addDatatypeProperty(BlinkableLightSource.PROP_BLINKING_STATE, true);
+	oci.addDatatypeProperty(BlinkableLightSource.PROP_BLINKING_STATE)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			BlinkableLightSource.PROP_BLINKING_STATE, TypeMapper
@@ -163,8 +164,7 @@ public final class LightingOntology extends Ontology {
 		.setResourceComment("The class of services controling light sources");
 	oci.setResourceLabel("Lighting");
 	oci.addSuperClass(Service.MY_URI);
-	oci.addObjectProperty(Lighting.PROP_CONTROLS, false, false, false,
-		false);
+	oci.addObjectProperty(Lighting.PROP_CONTROLS);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Lighting.PROP_CONTROLS, LightSource.MY_URI));
 
