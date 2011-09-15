@@ -35,7 +35,7 @@ import org.universAAL.ontology.shape.Shape;
 /**
  * 
  * @author Carsten Stockloew
- *
+ * 
  */
 public class PhThingOntology extends Ontology {
 
@@ -45,15 +45,16 @@ public class PhThingOntology extends Ontology {
 
     public PhThingOntology() {
 	super(NAMESPACE);
+    }
+
+    public void create() {
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for physical things. "
 		+ "It is part of the Physical World upper ontology concept, "
 		+ "which defines the most general concepts from the physical "
 		+ "world as opposed to the virtual realm.");
 	r.setResourceLabel("Physical Things");
-    }
 
-    public void create() {
 	OntClassInfoSetup oci;
 
 	// load Actuator
@@ -75,42 +76,39 @@ public class PhThingOntology extends Ontology {
 		.setResourceComment("The root class for all physical things in the uAAL ontology. Physical things have a location");
 	oci.setResourceLabel("Physical Thing");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addObjectProperty(PhysicalThing.PROP_CARRIED_BY, true, false,
-		false, false);
+	oci.addObjectProperty(PhysicalThing.PROP_CARRIED_BY).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_CARRIED_BY, PhysicalThing.MY_URI, 0,
 			1));
-	oci.addObjectProperty(PhysicalThing.PROP_PART_OF, true, false, false,
-		false);
+	oci.addObjectProperty(PhysicalThing.PROP_PART_OF).setFunctional();
 	oci
 		.addRestriction(MergedRestriction
 			.getAllValuesRestrictionWithCardinality(
 				PhysicalThing.PROP_PART_OF,
 				PhysicalThing.MY_URI, 0, 1));
-	oci.addObjectProperty(PhysicalThing.PROP_IS_IN, true, false, false,
-		false);
+	oci.addObjectProperty(PhysicalThing.PROP_IS_IN).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_IS_IN, PhysicalContainer.MY_URI, 0,
 			1));
-	oci.addObjectProperty(PhysicalThing.PROP_PHYSICAL_LOCATION, true,
-		false, false, false);
+	oci.addObjectProperty(PhysicalThing.PROP_PHYSICAL_LOCATION)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_PHYSICAL_LOCATION, Location.MY_URI,
 			0, 1));
-	oci.addObjectProperty(PhysicalThing.PROP_HAS_SHAPE, true, false, false,
-		false);
+	oci.addObjectProperty(PhysicalThing.PROP_HAS_SHAPE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_HAS_SHAPE, Shape.MY_URI, 0, 1));
-	oci.addDatatypeProperty(PhysicalThing.PROP_IS_PORTABLE, true);
+	oci.addDatatypeProperty(PhysicalThing.PROP_IS_PORTABLE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_IS_PORTABLE, TypeMapper
 				.getDatatypeURI(Boolean.class), 1, 1));
-	oci.addDatatypeProperty(PhysicalThing.PROP_IS_STATIONARY, true);
+	oci.addDatatypeProperty(PhysicalThing.PROP_IS_STATIONARY)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_IS_STATIONARY, TypeMapper
@@ -122,8 +120,7 @@ public class PhThingOntology extends Ontology {
 		.setResourceComment("The root class for all devices in the uAAL ontology.");
 	oci.setResourceLabel("Device");
 	oci.addSuperClass(PhysicalThing.MY_URI);
-	oci.addObjectProperty(Device.PROP_BATTERY_LEVEL, true, false, false,
-		false);
+	oci.addObjectProperty(Device.PROP_BATTERY_LEVEL).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Device.PROP_BATTERY_LEVEL, LevelRating.MY_URI, 0, 1));
@@ -133,8 +130,7 @@ public class PhThingOntology extends Ontology {
 	oci.setResourceComment("The class of services controling devices.");
 	oci.setResourceLabel("DeviceService");
 	oci.addSuperClass(Service.MY_URI);
-	oci.addObjectProperty(DeviceService.PROP_CONTROLS, false, false, false,
-		false);
+	oci.addObjectProperty(DeviceService.PROP_CONTROLS);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		DeviceService.PROP_CONTROLS, Device.MY_URI));
 
@@ -143,7 +139,8 @@ public class PhThingOntology extends Ontology {
 	oci.setResourceComment("A Dimmer kind of Actuator");
 	oci.setResourceLabel("Dimmer Actuator");
 	oci.addSuperClass(Actuator.MY_URI);
-	oci.addDatatypeProperty(DimmerActuator.PROP_DIMMABLE_STATUS, true);
+	oci.addDatatypeProperty(DimmerActuator.PROP_DIMMABLE_STATUS)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			DimmerActuator.PROP_DIMMABLE_STATUS,
@@ -158,7 +155,7 @@ public class PhThingOntology extends Ontology {
 	oci.setResourceComment("An On/Off kind of Actuator");
 	oci.setResourceLabel("On/Off Actuator");
 	oci.addSuperClass(Actuator.MY_URI);
-	oci.addDatatypeProperty(OnOffActuator.PROP_STATUS, true);
+	oci.addDatatypeProperty(OnOffActuator.PROP_STATUS).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			OnOffActuator.PROP_STATUS, TypeMapper
@@ -169,9 +166,8 @@ public class PhThingOntology extends Ontology {
 	oci.setResourceComment("A Sensor Device");
 	oci.setResourceLabel("Sensor");
 	oci.addSuperClass(Device.MY_URI);
-	oci.addDatatypeProperty(Sensor.PROP_MEASURED_VALUE, true);
-	oci.addObjectProperty(Sensor.PROP_MEASURED_VALUE, true, false, false,
-		false);
+	oci.addDatatypeProperty(Sensor.PROP_MEASURED_VALUE).setFunctional();
+	oci.addObjectProperty(Sensor.PROP_MEASURED_VALUE).setFunctional();
 	oci.addRestriction(MergedRestriction.getCardinalityRestriction(
 		Sensor.PROP_MEASURED_VALUE, 1, 1));
 

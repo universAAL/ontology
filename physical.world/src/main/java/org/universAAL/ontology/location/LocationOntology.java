@@ -60,7 +60,7 @@ import org.universAAL.ontology.shape.Shape;
 /**
  * 
  * @author Carsten Stockloew
- *
+ * 
  */
 public class LocationOntology extends Ontology {
 
@@ -70,15 +70,16 @@ public class LocationOntology extends Ontology {
 
     public LocationOntology() {
 	super(NAMESPACE);
+    }
+
+    public void create() {
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for locations. "
 		+ "It is part of the Physical World upper ontology concept, "
 		+ "which defines the most general concepts from the physical "
 		+ "world as opposed to the virtual realm.");
 	r.setResourceLabel("Location");
-    }
 
-    public void create() {
 	OntClassInfoSetup oci;
 
 	// -----------------------------------
@@ -102,24 +103,20 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("The root class for all locations.");
 	oci.setResourceLabel("Location");
 	oci.addSuperClass(AbsLocation.MY_URI);
-	oci.addDatatypeProperty(Location.PROP_HAS_NAME, true);
+	oci.addDatatypeProperty(Location.PROP_HAS_NAME).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Location.PROP_HAS_NAME,
 			TypeMapper.getDatatypeURI(String.class), 0, 1));
-	oci.addObjectProperty(Location.PROP_IS_ADJACENT_TO, false, false,
-		false, false);
+	oci.addObjectProperty(Location.PROP_IS_ADJACENT_TO);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Location.PROP_IS_ADJACENT_TO, Location.MY_URI));
-	oci.addObjectProperty(Location.PROP_IS_CONNECTED_TO, false, false,
-		false, false);
+	oci.addObjectProperty(Location.PROP_IS_CONNECTED_TO);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Location.PROP_IS_CONNECTED_TO, Location.MY_URI));
-	oci.addObjectProperty(Location.PROP_IS_CONTAINED_IN, false, false,
-		false, false);
+	oci.addObjectProperty(Location.PROP_IS_CONTAINED_IN);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Location.PROP_IS_CONTAINED_IN, Location.MY_URI));
-	oci.addObjectProperty(Location.PROP_CONTAINS, false, false, false,
-		false);
+	oci.addObjectProperty(Location.PROP_CONTAINS);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Location.PROP_CONTAINS, Location.MY_URI));
 
@@ -128,19 +125,17 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("The root class for all places.");
 	oci.setResourceLabel("Place");
 	oci.addSuperClass(Location.MY_URI);
-	oci.addObjectProperty(Place.PROP_HAS_SHAPE, true, false, false, false);
+	oci.addObjectProperty(Place.PROP_HAS_SHAPE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Place.PROP_HAS_SHAPE,
 			Shape.MY_URI, 1, 1));
-	oci.addObjectProperty(Place.PROP_LOCATION_OF_PHYSICAL_THING, true,
-		false, false, false);
+	oci.addObjectProperty(Place.PROP_LOCATION_OF_PHYSICAL_THING)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Place.PROP_LOCATION_OF_PHYSICAL_THING,
 			PhysicalThing.MY_URI, 0, 1));
-	oci
-		.addObjectProperty(Place.PROP_HAS_ADDRESS, true, false, false,
-			false);
+	oci.addObjectProperty(Place.PROP_HAS_ADDRESS).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Place.PROP_HAS_ADDRESS,
 			Address.MY_URI, 0, 1));
@@ -211,7 +206,7 @@ public class LocationOntology extends Ontology {
 		.setResourceComment("A class for a city region that can be described by a ZIP code.");
 	oci.setResourceLabel("CityRegion");
 	oci.addSuperClass(OutdoorPlace.MY_URI);
-	oci.addDatatypeProperty(CityRegion.PROP_HAS_ZIP_CODE, true);
+	oci.addDatatypeProperty(CityRegion.PROP_HAS_ZIP_CODE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			CityRegion.PROP_HAS_ZIP_CODE, TypeMapper
@@ -225,51 +220,42 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("A basic address for a place or entity");
 	oci.setResourceLabel("Address");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addObjectProperty(Address.PROP_HAS_REGION, true, false, false,
-		false);
+	oci.addObjectProperty(Address.PROP_HAS_REGION).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_REGION, Region.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_COUNTRY, true, false, false,
-		false);
+	oci.addObjectProperty(Address.PROP_HAS_COUNTRY).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_COUNTRY, Country.MY_URI, 0, 1));
-	oci
-		.addObjectProperty(Address.PROP_HAS_STATE, true, false, false,
-			false);
+	oci.addObjectProperty(Address.PROP_HAS_STATE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Address.PROP_HAS_STATE,
 			State.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_CITY, true, false, false, false);
+	oci.addObjectProperty(Address.PROP_HAS_CITY).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Address.PROP_HAS_CITY,
 			City.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_CITYQUARTER, true, false, false,
-		false);
+	oci.addObjectProperty(Address.PROP_HAS_CITYQUARTER).setFunctional();
 	oci
 		.addRestriction(MergedRestriction
 			.getAllValuesRestrictionWithCardinality(
 				Address.PROP_HAS_CITYQUARTER,
 				CityQuarter.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_CITYREGION, true, false, false,
-		false);
+	oci.addObjectProperty(Address.PROP_HAS_CITYREGION).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_CITYREGION, CityRegion.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_CITYPLACE, true, false, false,
-		false);
+	oci.addObjectProperty(Address.PROP_HAS_CITYPLACE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_CITYPLACE, CityPlace.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_POSTALCODE, true, false, false,
-		false);
+	oci.addObjectProperty(Address.PROP_HAS_POSTALCODE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_POSTALCODE, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_EXTENDEDADDRESS, true, false,
-		false, false);
+	oci.addObjectProperty(Address.PROP_HAS_EXTENDEDADDRESS).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_EXTENDEDADDRESS, TypeMapper
@@ -280,7 +266,7 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("A mail box in a post office");
 	oci.setResourceLabel("Mail Box");
 	oci.addSuperClass(Address.MY_URI);
-	oci.addDatatypeProperty(MailBox.PROP_POST_OFFICE_BOX, true);
+	oci.addDatatypeProperty(MailBox.PROP_POST_OFFICE_BOX).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			MailBox.PROP_POST_OFFICE_BOX, TypeMapper
@@ -291,37 +277,44 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("An extended address for a physical place");
 	oci.setResourceLabel("Physical Address");
 	oci.addSuperClass(Address.MY_URI);
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_BUILDING_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_BUILDING_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalAddress.PROP_HAS_BUILDING_ID, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));// Building
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_HALL_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_HALL_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalAddress.PROP_HAS_HALL_ID, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));// Hall
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_FLOOR_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_FLOOR_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalAddress.PROP_HAS_FLOOR_ID, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));// BuildingLevel
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_DOOR_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_DOOR_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalAddress.PROP_HAS_DOOR_ID, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));// Home
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_DESK_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_DESK_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalAddress.PROP_HAS_DESK_ID, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_OFFICE_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_OFFICE_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalAddress.PROP_HAS_OFFICE_ID, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));
-	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_ADDITIONAL_ID, true);
+	oci.addDatatypeProperty(PhysicalAddress.PROP_HAS_ADDITIONAL_ID)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		PhysicalAddress.PROP_HAS_ADDITIONAL_ID, TypeMapper
 			.getDatatypeURI(String.class)));// IndoorPlace
@@ -403,8 +396,7 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("A room with a specialized function.");
 	oci.setResourceLabel("Room");
 	oci.addSuperClass(HomeArea.MY_URI);
-	oci.addObjectProperty(Room.PROP_ROOM_FUNCTION, true, false, false,
-		false);
+	oci.addObjectProperty(Room.PROP_ROOM_FUNCTION).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Room.PROP_ROOM_FUNCTION, RoomFunction.MY_URI, 0, 1));
@@ -414,14 +406,11 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("Connects to BuildingLevels.");
 	oci.setResourceLabel("StairWay");
 	oci.addSuperClass(IndoorPlace.MY_URI);
-	oci
-		.addObjectProperty(StairWay.PROP_TO_LEVEL, true, false, false,
-			false);
+	oci.addObjectProperty(StairWay.PROP_TO_LEVEL).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(StairWay.PROP_TO_LEVEL,
 			BuildingLevel.MY_URI, 1, 1));
-	oci.addObjectProperty(StairWay.PROP_FROM_LEVEL, true, false, false,
-		false);
+	oci.addObjectProperty(StairWay.PROP_FROM_LEVEL).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			StairWay.PROP_FROM_LEVEL, BuildingLevel.MY_URI, 1, 1));
@@ -441,21 +430,20 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("The class of all points");
 	oci.setResourceLabel("Point");
 	oci.addSuperClass(Location.MY_URI);
-	oci.addObjectProperty(Point.PROP_COORDINATE_SYSTEM, true, false, false,
-		false);
+	oci.addObjectProperty(Point.PROP_COORDINATE_SYSTEM).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Point.PROP_COORDINATE_SYSTEM, CoordinateSystem.MY_URI,
 			1, 1));
-	oci.addDatatypeProperty(Point.PROP_X, true);
+	oci.addDatatypeProperty(Point.PROP_X).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Point.PROP_X,
 			TypeMapper.getDatatypeURI(Double.class), 1, 1));
-	oci.addDatatypeProperty(Point.PROP_Y, true);
+	oci.addDatatypeProperty(Point.PROP_Y).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Point.PROP_Y,
 			TypeMapper.getDatatypeURI(Double.class), 1, 1));
-	oci.addDatatypeProperty(Point.PROP_Z, true);
+	oci.addDatatypeProperty(Point.PROP_Z).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Point.PROP_Z,
 			TypeMapper.getDatatypeURI(Double.class), 0, 1));
@@ -465,22 +453,21 @@ public class LocationOntology extends Ontology {
 	oci.setResourceComment("A coordinate system with an origin point.");
 	oci.setResourceLabel("OriginedMetric");
 	oci.addSuperClass(CoordinateSystem.MY_URI);
-	oci.addObjectProperty(OriginedMetric.PROP_ORIGIN, true, false, false,
-		false);
+	oci.addObjectProperty(OriginedMetric.PROP_ORIGIN).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			OriginedMetric.PROP_ORIGIN, Point.MY_URI, 1, 1));
-	oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_X, true);
+	oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_X).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			OriginedMetric.PROP_ROTATE_X, TypeMapper
 				.getDatatypeURI(Float.class), 0, 1));
-	oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_Y, true);
+	oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_Y).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			OriginedMetric.PROP_ROTATE_Y, TypeMapper
 				.getDatatypeURI(Float.class), 0, 1));
-	oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_Z, true);
+	oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_Z).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			OriginedMetric.PROP_ROTATE_Z, TypeMapper

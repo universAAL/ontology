@@ -32,7 +32,7 @@ import org.universAAL.ontology.location.position.Point;
 /**
  * 
  * @author Carsten Stockloew
- *
+ * 
  */
 public class ShapeOntology extends Ontology {
 
@@ -42,15 +42,16 @@ public class ShapeOntology extends Ontology {
 
     public ShapeOntology() {
 	super(NAMESPACE);
+    }
+
+    public void create() {
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for shapes. "
 		+ "It is part of the Physical World upper ontology concept, "
 		+ "which defines the most general concepts from the physical "
 		+ "world as opposed to the virtual realm.");
 	r.setResourceLabel("Shapes");
-    }
 
-    public void create() {
 	OntClassInfoSetup oci;
 
 	// load Shape
@@ -58,19 +59,17 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("The root class for all shapes.");
 	oci.setResourceLabel("Shape");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addObjectProperty(Shape.PROP_POINT_REPRESENTATION, true, false,
-		false, false);
+	oci.addObjectProperty(Shape.PROP_POINT_REPRESENTATION).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Shape.PROP_POINT_REPRESENTATION, Point.MY_URI, 0, 1));
-	oci.addObjectProperty(Shape.PROP_LOCAL_COORDINATE_SYSTEM, true, false,
-		false, false);
+	oci.addObjectProperty(Shape.PROP_LOCAL_COORDINATE_SYSTEM)
+		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Shape.PROP_LOCAL_COORDINATE_SYSTEM,
 			CoordinateSystem.MY_URI, 1, 1));
-	oci.addObjectProperty(Shape.PROP_BOUNDING_VOLUME, true, false, false,
-		false);
+	oci.addObjectProperty(Shape.PROP_BOUNDING_VOLUME).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Shape.PROP_BOUNDING_VOLUME, Shape.MY_URI, 1, 1));
@@ -86,8 +85,7 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("The root class for all 3d shapes.");
 	oci.setResourceLabel("Shape3D");
 	oci.addSuperClass(Shape.MY_URI);
-	oci.addObjectProperty(Shape3D.PROP_2D_REPRESENTATION, true, false,
-		false, false);
+	oci.addObjectProperty(Shape3D.PROP_2D_REPRESENTATION).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Shape3D.PROP_2D_REPRESENTATION, Shape2D.MY_URI, 0, 1));
@@ -98,8 +96,7 @@ public class ShapeOntology extends Ontology {
 		.setResourceComment("A boolean shape: Merge, Intersect or Substract.");
 	oci.setResourceLabel("BooleanShape");
 	oci.addSuperClass(Shape.MY_URI);
-	oci.addObjectProperty(BooleanShape.PROP_SHAPES, false, false, false,
-		false);
+	oci.addObjectProperty(BooleanShape.PROP_SHAPES);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			BooleanShape.PROP_SHAPES, Point.MY_URI, 2, -1));
@@ -109,15 +106,15 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("A box.");
 	oci.setResourceLabel("Box");
 	oci.addSuperClass(Shape3D.MY_URI);
-	oci.addDatatypeProperty(Box.PROP_WIDTH, true);
+	oci.addDatatypeProperty(Box.PROP_WIDTH).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Box.PROP_WIDTH,
 			TypeMapper.getDatatypeURI(Double.class), 1, 1));
-	oci.addDatatypeProperty(Box.PROP_HEIGHT, true);
+	oci.addDatatypeProperty(Box.PROP_HEIGHT).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Box.PROP_HEIGHT,
 			TypeMapper.getDatatypeURI(Double.class), 1, 1));
-	oci.addDatatypeProperty(Box.PROP_DEPTH, true);
+	oci.addDatatypeProperty(Box.PROP_DEPTH).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Box.PROP_DEPTH,
 			TypeMapper.getDatatypeURI(Double.class), 1, 1));
@@ -127,12 +124,12 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("An ellipse.");
 	oci.setResourceLabel("Ellipse");
 	oci.addSuperClass(Shape2D.MY_URI);
-	oci.addDatatypeProperty(Ellipse.PROP_MINOR_AXIS_LENGTH, true);
+	oci.addDatatypeProperty(Ellipse.PROP_MINOR_AXIS_LENGTH).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Ellipse.PROP_MINOR_AXIS_LENGTH, TypeMapper
 				.getDatatypeURI(Double.class), 1, 1));
-	oci.addDatatypeProperty(Ellipse.PROP_MAJOR_AXIS_LENGTH, true);
+	oci.addDatatypeProperty(Ellipse.PROP_MAJOR_AXIS_LENGTH).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Ellipse.PROP_MAJOR_AXIS_LENGTH, TypeMapper
@@ -149,7 +146,7 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("A path.");
 	oci.setResourceLabel("Path");
 	oci.addSuperClass(Shape3D.MY_URI);
-	oci.addObjectProperty(Path.PROP_POINTS, false, false, false, false);
+	oci.addObjectProperty(Path.PROP_POINTS);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Path.PROP_POINTS,
 			Point.MY_URI, 2, -1));
@@ -173,12 +170,12 @@ public class ShapeOntology extends Ontology {
 		.setResourceComment("A segment of a cone defined by a start and a endpoint.");
 	oci.setResourceLabel("ConeSegment");
 	oci.addSuperClass(LineSegment.MY_URI);
-	oci.addDatatypeProperty(ConeSegment.PROP_RADIUS_END, true);
+	oci.addDatatypeProperty(ConeSegment.PROP_RADIUS_END).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			ConeSegment.PROP_RADIUS_END, TypeMapper
 				.getDatatypeURI(Float.class), 1, 1));
-	oci.addDatatypeProperty(ConeSegment.PROP_RADIUS_START, true);
+	oci.addDatatypeProperty(ConeSegment.PROP_RADIUS_START).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			ConeSegment.PROP_RADIUS_START, TypeMapper
@@ -189,9 +186,7 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("A polgyon.");
 	oci.setResourceLabel("Polygon");
 	oci.addSuperClass(Shape3D.MY_URI);
-	oci
-		.addObjectProperty(Polygon.PROP_VERTICES, false, false, false,
-			false);
+	oci.addObjectProperty(Polygon.PROP_VERTICES);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Polygon.PROP_VERTICES,
 			Point.MY_URI, 3, -1));
@@ -210,7 +205,7 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("A sphere.");
 	oci.setResourceLabel("Sphere");
 	oci.addSuperClass(Shape3D.MY_URI);
-	oci.addDatatypeProperty(Sphere.PROP_RADIUS, true);
+	oci.addDatatypeProperty(Sphere.PROP_RADIUS).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Sphere.PROP_RADIUS,
 			TypeMapper.getDatatypeURI(Double.class), 1, 1));
@@ -220,13 +215,11 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("A quasi cylinder.");
 	oci.setResourceLabel("QuasiCylinder");
 	oci.addSuperClass(Shape3D.MY_URI);
-	oci.addObjectProperty(QuasiCylinder.PROP_HEAD, true, false, false,
-		false);
+	oci.addObjectProperty(QuasiCylinder.PROP_HEAD).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			QuasiCylinder.PROP_HEAD, Ellipse.MY_URI, 1, 1));
-	oci.addObjectProperty(QuasiCylinder.PROP_FOOT, true, false, false,
-		false);
+	oci.addObjectProperty(QuasiCylinder.PROP_FOOT).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			QuasiCylinder.PROP_FOOT, Ellipse.MY_URI, 1, 1));
@@ -236,9 +229,7 @@ public class ShapeOntology extends Ontology {
 	oci.setResourceComment("A polgyhedron.");
 	oci.setResourceLabel("Polyhedron");
 	oci.addSuperClass(Shape3D.MY_URI);
-	oci
-		.addObjectProperty(Polyhedron.PROP_FACES, false, false, false,
-			false);
+	oci.addObjectProperty(Polyhedron.PROP_FACES);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Polyhedron.PROP_FACES,
 			Point.MY_URI, 4, -1));
