@@ -2,18 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<version>1.0.1</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
-	<packaging>bundle</packaging>
 	<artifactId>ont.gesture.pointing</artifactId>
 	<version>1.0.0</version>
+	<packaging>bundle</packaging>
+	
+	<!-- ______________________________________________________ -->
+
 	<name>Gesture Pointing Ontology</name>
 	<description>The ontology for gesture pointing.</description>
-	<url />
+	
+	<!-- ______________________________________________________ -->
 
 	<dependencies>
 		<dependency>
@@ -43,12 +48,13 @@
 		</dependency>
 	</dependencies>
 
+	<!-- ______________________________________________________ -->
+	
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
-				<version>2.3.4</version>
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
@@ -61,4 +67,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/gesture.pointing</connection>
+		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/gesture.pointing</developerConnection>
+		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+	</scm>
+	
 </project>

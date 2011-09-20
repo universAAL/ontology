@@ -1,21 +1,30 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<version>1.0.1</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
-  <artifactId>ont.multimedia</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-  <name>Multimedia Devices Ontology</name>
-  <description>Ontology for multimedia devices, displays and equipment</description>
-  <packaging>bundle</packaging>
-    <dependencies>
+	<artifactId>ont.multimedia</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	
+	<!-- ______________________________________________________ -->
+	
+	<name>Multimedia Devices Ontology</name>
+	<description>Ontology for multimedia devices, displays and equipment</description>
+	
+	<!-- ______________________________________________________ -->
+	
+	<dependencies>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
-			<version>1.0.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
@@ -28,7 +37,10 @@
 			<version>0.2.2-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-    <build>
+	
+	<!-- ______________________________________________________ -->
+	
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.felix</groupId>
@@ -47,41 +59,13 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
-		<repository>
-			<id>central</id>
-			<name>Central Maven Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>apache-snapshots</id>
-			<name>Apache Snapshots</name>
-			<url>http://people.apache.org/repo/m2-snapshot-repository</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>uaal</id>
-			<name>universAAL Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>uaal-snapshots</id>
-			<name>universAAL Snapshot Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
+	
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/multimedia</connection>
+		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/multimedia</developerConnection>
+		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+	</scm>
+	
 </project>

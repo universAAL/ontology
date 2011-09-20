@@ -1,17 +1,24 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<version>1.0.1</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
+	<artifactId>ont.device.extra</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
-  <artifactId>ont.device.extra</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-  <name>Ontology for Additional Device Concepts</name>
-  
-  <dependencies>
+	
+	<!-- ______________________________________________________ -->
+	
+	<name>Ontology for Additional Device Concepts</name>
+
+	<!-- ______________________________________________________ -->
+
+	<dependencies>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
@@ -39,6 +46,8 @@
 		</dependency>
 	</dependencies>
 
+	<!-- ______________________________________________________ -->
+
 	<build>
 		<plugins>
 			<plugin>
@@ -58,4 +67,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/device.extra</connection>
+		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/device.extra</developerConnection>
+		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+	</scm>
+	
 </project>
