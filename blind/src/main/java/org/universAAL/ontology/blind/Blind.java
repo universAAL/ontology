@@ -33,6 +33,7 @@ import org.universAAL.ontology.phThing.Device;
  * properties.
  * 
  * @author Steeven Zeiss
+ * @author Carsten Stockloew
  * @since 26.11.2009
  * 
  */
@@ -40,12 +41,11 @@ public class Blind extends Device {
     public static final String BLIND_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Blind.owl#";
     public static final String MY_URI;
     // public static final String PROP_HAS_TYPE;
-    public static final String PROP_BLIND_LOCATION;
     public static final String PROP_BLIND_STATUS;
+
     static {
 	MY_URI = BLIND_NAMESPACE + "Blind";
 	// PROP_HAS_TYPE = BLIND_NAMESPACE + "hasType";
-	PROP_BLIND_LOCATION = BLIND_NAMESPACE + "blindLocation";
 	PROP_BLIND_STATUS = BLIND_NAMESPACE + "blindStatus";
 	register(Blind.class);
     }
@@ -54,7 +54,7 @@ public class Blind extends Device {
 	// if (PROP_HAS_TYPE.equals(propURI))
 	// return Restriction.getAllValuesRestrictionWithCardinality(propURI,
 	// NaturalLight.sunShine.MY_URI, 1, 1);
-	if (PROP_BLIND_LOCATION.equals(propURI))
+	if (PROP_PHYSICAL_LOCATION.equals(propURI))
 	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
 		    Location.MY_URI, 1, 1);
 	if (PROP_BLIND_STATUS.equals(propURI))
@@ -69,7 +69,7 @@ public class Blind extends Device {
     public static String[] getStandardPropertyURIs() {
 	return new String[] {
 	// PROP_HAS_TYPE,
-		PROP_BLIND_LOCATION, PROP_BLIND_STATUS };
+	PROP_BLIND_STATUS };
     }
 
     public static String getRDFSComment() {
@@ -91,13 +91,10 @@ public class Blind extends Device {
     public Blind(String uri, Location loc) {
 	super(uri);
 	if (loc == null)
-	    throw new IllegalArgumentException();
+	    throw new NullPointerException("Location must be not null");
 
-	// TODO: richtig?
-	// setLocation(loc);
-
+	setLocation(loc);
 	// props.put(PROP_HAS_TYPE, NaturalLight.sunShine.getType());
-	props.put(PROP_BLIND_LOCATION, loc);
 	props.put(PROP_BLIND_STATUS, new Integer(0));
     }
 
@@ -105,35 +102,33 @@ public class Blind extends Device {
     // return (String) props.get(PROP_HAS_TYPE);
     // }
 
-    public Location getBlindLocation() {
-	return (Location) props.get(PROP_BLIND_LOCATION);
-    }
-
-    public void setBlindLocation(Location l) {
-	if (l != null)
-	    props.put(PROP_BLIND_LOCATION, l);
-    }
-
-    /*
-     * (non-Javadoc)
+    /**
+     * Set the status.
      * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
+     * @param status
+     *            The status as integer between 0 an 100 (incl.).
      */
-    public int getPropSerializationType(String propURI) {
-	return PROP_BLIND_LOCATION.equals(propURI) ? PROP_SERIALIZATION_REDUCED
-		: PROP_SERIALIZATION_FULL;
+    public void setStatus(int status) {
+	if (status < 0 || status > 100)
+	    throw new IllegalArgumentException(
+		    "The status must be between 0 and 100");
+	props.put(PROP_BLIND_STATUS, new Integer(status));
     }
 
-    /*
-     * (non-Javadoc)
+    /**
+     * Get the current status.
      * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
+     * @return The status, or null if status is not set.
+     */
+    public Integer getStatus() {
+	return (Integer) props.get(PROP_BLIND_STATUS);
+    }
+
+    /**
+     * @see org.universAAL.middleware.rdf.Resource#isWellFormed()
      */
     public boolean isWellFormed() {
-	return props.containsKey(PROP_BLIND_LOCATION)
+	return props.containsKey(PROP_PHYSICAL_LOCATION)
 		&& props.containsKey(PROP_BLIND_STATUS);
     }
-
 }
