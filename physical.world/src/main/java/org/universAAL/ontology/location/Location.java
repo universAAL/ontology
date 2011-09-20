@@ -239,7 +239,8 @@ public class Location extends AbsLocation {
      * removes all connected locations from this location.
      */
     public void clearConnectedLocations() {
-	props.put(PROP_IS_CONNECTED_TO, new Vector());
+	//props.put(PROP_IS_CONNECTED_TO, new Vector());
+	props.remove(PROP_IS_CONNECTED_TO);
     }
 
     /**
@@ -281,7 +282,8 @@ public class Location extends AbsLocation {
      * removes all contained locations from this location.
      */
     public void clearContainedLocations() {
-	props.put(PROP_CONTAINS, new Vector());
+	//props.put(PROP_CONTAINS, new Vector());
+	props.remove(PROP_CONTAINS);
     }
 
     /**
@@ -309,7 +311,8 @@ public class Location extends AbsLocation {
      * removes all containing locations from this location.
      */
     public void clearContainingLocations() {
-	props.put(PROP_IS_CONTAINED_IN, null);
+	//props.put(PROP_IS_CONTAINED_IN, null);
+	props.remove(PROP_IS_CONTAINED_IN);
     }
 
     public int getPropSerializationType(String propURI) {
