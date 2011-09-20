@@ -2,18 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<version>1.0.0</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
-	<packaging>bundle</packaging>
 	<artifactId>ont.phWorld</artifactId>
 	<version>0.2.2-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	
+	<!-- ______________________________________________________ -->
+	
 	<name>The Physical World Ontology</name>
 	<description>The upper ontology defining the most general concepts from the physical world as opposed to the virtual realm.</description>
-	<url />
+
+	<!-- ______________________________________________________ -->
 
 	<dependencies>
 		<dependency>
@@ -48,6 +53,8 @@
 		</dependency>
 	</dependencies>
 
+	<!-- ______________________________________________________ -->
+
 	<build>
 		<plugins>
 			<plugin>
@@ -71,4 +78,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/branches/physical.world</connection>
+		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/branches/physical.world</developerConnection>
+		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+	</scm>
+	
 </project>
