@@ -36,7 +36,7 @@ public class LightSource extends Device {
     public static final String MY_URI = LightingOntology.NAMESPACE
 	    + "LightSource";
     public static final String PROP_AMBIENT_COVERAGE = LightingOntology.NAMESPACE
-	    + "ambientCoveage";
+	    + "ambientCoverage";
     public static final String PROP_HAS_TYPE = LightingOntology.NAMESPACE
 	    + "hasType";
     public static final String PROP_SOURCE_BRIGHTNESS = LightingOntology.NAMESPACE
