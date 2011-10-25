@@ -21,10 +21,7 @@
 package org.universAAL.ontology.av.device;
 
 import org.universAAL.middleware.util.Constants;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.AVOntology;
 import org.universAAL.ontology.phThing.Device;
 
 /**
@@ -37,11 +34,10 @@ import org.universAAL.ontology.phThing.Device;
  * removed from there, but is currently kept due to bugs on ont.av
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class LoudSpeaker extends Device {
 
-    public static final String LOUD_SPEAKER_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/LoudSpeaker.owl#";
     public static final String MY_URI;
     public static final String PROP_VOLUME;
     public static final String PROP_EFFECTIVE_POWER_IN_WATT;
@@ -51,70 +47,17 @@ public class LoudSpeaker extends Device {
     public static final String PROP_IS_MUTED;
 
     static {
-	MY_URI = LOUD_SPEAKER_NAMESPACE + "LoudSpeaker";
-	PROP_VOLUME = LOUD_SPEAKER_NAMESPACE + "volume";
-	PROP_EFFECTIVE_POWER_IN_WATT = LOUD_SPEAKER_NAMESPACE
+	MY_URI = AVOntology.NAMESPACE + "LoudSpeaker";
+	PROP_VOLUME = AVOntology.NAMESPACE + "volume";
+	PROP_EFFECTIVE_POWER_IN_WATT = AVOntology.NAMESPACE
 		+ "effectivePowerInWatt";
-	PROP_BANDWIDTH_IN_HZ = LOUD_SPEAKER_NAMESPACE + "bandWidthInHz";
-	PROP_IS_MUSIC_COMPATIBLE = LOUD_SPEAKER_NAMESPACE + "isMusicCompatible";
-	PROP_UPPER_BOUND = LOUD_SPEAKER_NAMESPACE + "upperBound";
-	PROP_IS_MUTED = LOUD_SPEAKER_NAMESPACE + "isMuted";
-	register(LoudSpeaker.class);
+	PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandWidthInHz";
+	PROP_IS_MUSIC_COMPATIBLE = AVOntology.NAMESPACE + "isMusicCompatible";
+	PROP_UPPER_BOUND = AVOntology.NAMESPACE + "upperBound";
+	PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_VOLUME.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	if (PROP_EFFECTIVE_POWER_IN_WATT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 0);
-	if (PROP_BANDWIDTH_IN_HZ.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 0);
-	if (PROP_IS_MUSIC_COMPATIBLE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_UPPER_BOUND.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 0);
-	if (PROP_IS_MUTED.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Device.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 6];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_VOLUME;
-	toReturn[i++] = PROP_EFFECTIVE_POWER_IN_WATT;
-	toReturn[i++] = PROP_BANDWIDTH_IN_HZ;
-	toReturn[i++] = PROP_IS_MUSIC_COMPATIBLE;
-	toReturn[i++] = PROP_UPPER_BOUND;
-	toReturn[i] = PROP_IS_MUTED;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all LoudSpeakers.";
-    }
-
-    public static String getRDFSLabel() {
-	return "LoudSpeaker";
-    }
-
-    /**
-     * the default constructor
-     */
+    /** The default constructor */
     public LoudSpeaker() {
 	super();
     }
@@ -134,7 +77,11 @@ public class LoudSpeaker extends Device {
      * microphones with an unique URI
      */
     public LoudSpeaker(int numProps) {
-	super(LoudSpeaker.LOUD_SPEAKER_NAMESPACE, 6);
+	super(AVOntology.NAMESPACE, 6);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     // TODO: uncompleted!!!
@@ -148,10 +95,4 @@ public class LoudSpeaker extends Device {
 	    return PROP_SERIALIZATION_FULL;
 	return super.getPropSerializationType(propURI);
     }
-
-    // bald entfernt
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

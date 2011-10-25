@@ -20,16 +20,19 @@
 package org.universAAL.ontology.furniture;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.FurnitureOntology;
 
 /**
  * Ontological enumeration of possible furniture types. Methods included in this
  * class are the mandatory ones for representing an ontological enumeration in
  * Java classes for uAAL.
  * 
+ * @author Carsten Stockloew
  */
 public class FurnitureType extends ManagedIndividual {
 
-    public static final String MY_URI;
+    public static final String MY_URI = FurnitureOntology.NAMESPACE
+	    + "FurnitureType";
 
     public static final int CHAIR = 0;
     public static final int TABLE = 1;
@@ -44,11 +47,6 @@ public class FurnitureType extends ManagedIndividual {
     private static final String[] names = { "Chair", "Table", "Shelf",
 	    "Locker", "Sofa", "Bed", "Other" };
 
-    static {
-	MY_URI = Furniture.FURNITURE_NAMESPACE + "FurnitureType";
-	register(FurnitureType.class);
-    }
-
     public static final FurnitureType Chair = new FurnitureType(CHAIR);
     public static final FurnitureType Table = new FurnitureType(TABLE);
     public static final FurnitureType Shelf = new FurnitureType(SHELF);
@@ -57,24 +55,8 @@ public class FurnitureType extends ManagedIndividual {
     public static final FurnitureType Bed = new FurnitureType(BED);
     public static final FurnitureType Other = new FurnitureType(OTHER);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { Chair, Table, Shelf, Locker, Sofa,
-		Bed, Other };
-    }
-
-    /**
-     * Returns the modality with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(Furniture.FURNITURE_NAMESPACE)) ? valueOf(instanceURI
-		.substring(Furniture.FURNITURE_NAMESPACE.length()))
-		: null;
-    }
+    private static FurnitureType[] members = new FurnitureType[] { Chair,
+	    Table, Shelf, Locker, Sofa, Bed, Other };
 
     public static final FurnitureType valueOf(String name) {
 	for (int i = 0; i <= 10; i++)
@@ -84,27 +66,22 @@ public class FurnitureType extends ManagedIndividual {
     }
 
     public static FurnitureType getLevelByOrder(int order) {
-	return (FurnitureType) getEnumerationMembers()[order];
+	return members[order];
     }
 
-    /**
-     * Creates a RoomFunction object
-     */
+    /** Creates a FurnitureType object. */
     public FurnitureType() {
 	super();
     }
 
-    /**
-     * Creates a RoomFunction object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The function number. A null object is not allowed
-     */
+    /** Creates a FurnitureType object. */
     public FurnitureType(int Function) {
 	super();
 	this.order = Function;
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public String name() {
@@ -113,22 +90,6 @@ public class FurnitureType extends ManagedIndividual {
 
     public int ord() {
 	return order;
-    }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "Describes the type of a furniture.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Furniture Type";
     }
 
     public int getPropSerializationType(String arg0) {

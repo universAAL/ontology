@@ -19,8 +19,7 @@
  */
 package org.universAAL.ontology.furniture;
 
-import org.universAAL.middleware.owl.Restriction;
-
+import org.universAAL.ontology.FurnitureOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.shape.Shape;
 
@@ -30,37 +29,13 @@ import org.universAAL.ontology.shape.Shape;
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
  * 
+ * @author Carsten Stockloew
  */
 public class Furniture extends PhysicalThing {
-    public static final String MY_URI;
-    public static final String FURNITURE_NAMESPACE = uAAL_NAMESPACE_PREFIX
-	    + "Furniture.owl#";
-    public static final String PROP_FURNITURE_TYPE;
-
-    static {
-	MY_URI = FURNITURE_NAMESPACE + "Furniture";
-	PROP_FURNITURE_TYPE = FURNITURE_NAMESPACE + "FurnitureType";
-	register(Furniture.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_FURNITURE_TYPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    FurnitureType.MY_URI, 1, 0);
-	return PhysicalThing.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = PhysicalThing.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_FURNITURE_TYPE;
-	return toReturn;
-    }
+    public static final String MY_URI = FurnitureOntology.NAMESPACE
+	    + "Furniture";
+    public static final String PROP_FURNITURE_TYPE = FurnitureOntology.NAMESPACE
+	    + "FurnitureType";
 
     public Furniture() {
     }
@@ -80,12 +55,8 @@ public class Furniture extends PhysicalThing {
 	setFurnitureType(type);
     }
 
-    public static String getRDFSComment() {
-	return "A furniture";
-    }
-
-    public static String getRDFSLabel() {
-	return "Furniture";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {
@@ -114,5 +85,4 @@ public class Furniture extends PhysicalThing {
 
 	return PROP_SERIALIZATION_OPTIONAL;
     }
-
 }

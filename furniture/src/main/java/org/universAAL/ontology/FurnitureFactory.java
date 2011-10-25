@@ -1,6 +1,6 @@
 /*
-	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer Gesellschaft - Institut fuer Graphische Datenverarbeitung 
+	Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -19,19 +19,25 @@
  */
 package org.universAAL.ontology;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.ontology.furniture.Furniture;
 
-public class Activator implements BundleActivator {
+/**
+ * 
+ * @author Carsten Stockloew
+ * 
+ */
+public class FurnitureFactory extends ResourceFactoryImpl {
 
-    AVOntology ont = new AVOntology();
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
-    public void start(BundleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ont);
-    }
+	switch (factoryIndex) {
+	case 0:
+	    return new Furniture(instanceURI);
+	}
 
-    public void stop(BundleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+	return null;
     }
 }
