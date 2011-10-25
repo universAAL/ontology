@@ -21,8 +21,7 @@
 package org.universAAL.ontology.av.streaming;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological representation of a software compression algorithm. Methods
@@ -31,60 +30,26 @@ import org.universAAL.ontology.phThing.Device;
  * most of its properties.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public abstract class Compression extends ManagedIndividual {
 
-    public static final String MY_URI;
+    public static final String MY_URI = AVOntology.NAMESPACE + "compression";
 
-    static {
-	MY_URI = Stream.STREAM_NAMESPACE + "compression";
-	register(Compression.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Device.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 0];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	return toReturn;
-    }
-
-    /**
-     * the default constructor
-     */
+    /** The default constructor */
     public Compression() {
 	super();
     }
 
-    /**
-	 *
-	 */
     public Compression(String uri) {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "The abstract class of compressions.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Compression";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

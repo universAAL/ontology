@@ -21,17 +21,17 @@ package org.universAAL.ontology;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.universAAL.middleware.owl.OntologyManagement;
 
 public class Activator implements BundleActivator {
 
+    FurnitureOntology furnitureOntology = new FurnitureOntology();
+
     public void start(BundleContext context) throws Exception {
-	Class.forName("org.universAAL.ontology.furniture.Furniture");
-	Class.forName("org.universAAL.ontology.furniture.FurnitureType");
+	OntologyManagement.getInstance().register(furnitureOntology);
     }
 
     public void stop(BundleContext arg0) throws Exception {
-	// TODO Auto-generated method stub
-
+	OntologyManagement.getInstance().unregister(furnitureOntology);
     }
-
 }

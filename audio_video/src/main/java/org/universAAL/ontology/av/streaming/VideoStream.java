@@ -20,8 +20,7 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological representation of a software video stream. Methods included in
@@ -30,46 +29,13 @@ import org.universAAL.middleware.owl.Restriction;
  * its properties.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class VideoStream extends Stream {
 
-    public static final String MY_URI;
+    public static final String MY_URI = AVOntology.NAMESPACE + "VideoStream";
 
-    static {
-	MY_URI = Stream.STREAM_NAMESPACE + "VideoStream";
-	register(VideoStream.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_FORMAT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    VideoFormat.MY_URI, 1, 1);
-	return Stream.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of VideoStreams.";
-    }
-
-    public static String getRDFSLabel() {
-	return "VideoStream";
-    }
-
-    /**
-     * default constructor
-     */
+    /** default constructor */
     public VideoStream() {
 	super();
     }
@@ -78,13 +44,11 @@ public class VideoStream extends Stream {
 	super(uri);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
-
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

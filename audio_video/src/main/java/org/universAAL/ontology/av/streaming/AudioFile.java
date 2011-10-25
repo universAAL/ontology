@@ -20,9 +20,8 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological representation of an audio software file. Methods included in
@@ -31,7 +30,7 @@ import org.universAAL.middleware.owl.Restriction;
  * its properties.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class AudioFile extends ManagedIndividual {
 
@@ -42,47 +41,27 @@ public class AudioFile extends ManagedIndividual {
     public static final String PROP_HAS_FORMAT;
 
     static {
-	MY_URI = Stream.STREAM_NAMESPACE + "AudioFile";
-	PROP_HAS_URL = Stream.STREAM_NAMESPACE + "hasURL";
-	PROP_HAS_CONTENT_TYPE = Stream.STREAM_NAMESPACE + "hasContentType";
-	PROP_HAS_FORMAT = Stream.STREAM_NAMESPACE + "hasFormat";
-	register(AudioFile.class);
+	MY_URI = AVOntology.NAMESPACE + "AudioFile";
+	PROP_HAS_URL = AVOntology.NAMESPACE + "hasURL";
+	PROP_HAS_CONTENT_TYPE = AVOntology.NAMESPACE + "hasContentType";
+	PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_FORMAT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    AudioFormat.MY_URI, 1, 1);
-	if (PROP_HAS_URL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_HAS_CONTENT_TYPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+    /** The default constructor */
+    public AudioFile() {
+	super();
     }
 
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 3];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-
-	toReturn[i++] = PROP_HAS_URL;
-	toReturn[i++] = PROP_HAS_FORMAT;
-	toReturn[i] = PROP_HAS_CONTENT_TYPE;
-	return toReturn;
+    public AudioFile(String uri) {
+	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "The class of AudioFiles.";
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    public static String getRDFSLabel() {
-	return "AudioFile";
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
     public String getURL() {
@@ -97,25 +76,4 @@ public class AudioFile extends ManagedIndividual {
     public void setURL(String URL) {
 	setProperty(PROP_HAS_URL, URL);
     }
-
-    /**
-     * the default constructor
-     */
-    public AudioFile() {
-	super();
-    }
-
-    public AudioFile(String uri) {
-	super(uri);
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
-
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

@@ -20,9 +20,8 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological representation of a software endpoint in a transmission of TCP/IP
@@ -31,7 +30,7 @@ import org.universAAL.middleware.owl.Restriction;
  * and setters for most of its properties.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class EndPoint extends ManagedIndividual {
 
@@ -40,70 +39,32 @@ public class EndPoint extends ManagedIndividual {
     public static final String PROP_TCP_PORT;
 
     static {
-	MY_URI = Stream.STREAM_NAMESPACE + "EndPoint";
-	PROP_IP = Stream.STREAM_NAMESPACE + "ip";
-	PROP_TCP_PORT = Stream.STREAM_NAMESPACE + "tcpPort";
-	register(EndPoint.class);
+	MY_URI = AVOntology.NAMESPACE + "EndPoint";
+	PROP_IP = AVOntology.NAMESPACE + "ip";
+	PROP_TCP_PORT = AVOntology.NAMESPACE + "tcpPort";
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_IP.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_TCP_PORT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-
-	toReturn[i++] = PROP_IP;
-	toReturn[i] = PROP_TCP_PORT;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of EndPoints.";
-    }
-
-    public static String getRDFSLabel() {
-	return "EndPoint";
-    }
-
-    /**
-     * default constructor
-     */
+    /** Default constructor */
     public EndPoint() {
-	super();
     }
 
     /**
-     * this is a constructor to build an EndPoint with a special IP and TCP port
+     * This is a constructor to build an EndPoint with a special IP and TCP port
      * 
      * @param ip
      * @param port
      */
     public EndPoint(String ip, int port) {
-	super();
 	setProperty(EndPoint.PROP_IP, ip);
 	setProperty(EndPoint.PROP_TCP_PORT, new Integer(port));
     }
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
     public String getIP() {
@@ -113,5 +74,4 @@ public class EndPoint extends ManagedIndividual {
     public int getPort() {
 	return ((Integer) getProperty(PROP_TCP_PORT)).intValue();
     }
-
 }

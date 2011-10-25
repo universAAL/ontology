@@ -2,6 +2,8 @@
 audio_video/LICENSE.txt -text
 audio_video/NOTICE.txt -text
 audio_video/pom.xml -text
+audio_video/src/main/java/org/universAAL/ontology/AVFactory.java -text
+audio_video/src/main/java/org/universAAL/ontology/AVOntology.java -text
 audio_video/src/main/java/org/universAAL/ontology/Activator.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/device/LoudSpeaker.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/device/Microphone.java -text
@@ -38,6 +40,8 @@ furniture/LICENSE.txt -text
 furniture/NOTICE.txt -text
 furniture/pom.xml -text
 furniture/src/main/java/org/universAAL/ontology/Activator.java -text
+furniture/src/main/java/org/universAAL/ontology/FurnitureFactory.java -text
+furniture/src/main/java/org/universAAL/ontology/FurnitureOntology.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 gesture.pointing/pom.xml -text

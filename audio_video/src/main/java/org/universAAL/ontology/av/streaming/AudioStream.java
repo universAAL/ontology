@@ -20,8 +20,7 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological representation of a software audio stream. Methods included in
@@ -30,43 +29,11 @@ import org.universAAL.middleware.owl.Restriction;
  * its properties.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class AudioStream extends Stream {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = Stream.STREAM_NAMESPACE + "AudioStream";
-	register(AudioStream.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_FORMAT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    AudioFormat.MY_URI, 1, 1);
-	return Stream.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of AudioStreams.";
-    }
-
-    public static String getRDFSLabel() {
-	return "AudioStream";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "AudioStream";
 
     public AudioStream() {
 	super();
@@ -76,13 +43,11 @@ public class AudioStream extends Stream {
 	super(uri);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
-
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

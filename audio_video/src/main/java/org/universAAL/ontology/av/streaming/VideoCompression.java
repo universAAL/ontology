@@ -20,7 +20,7 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological enumeration of different video compression algorithms. Methods
@@ -28,16 +28,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * enumeration in Java classes for uAAL.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class VideoCompression extends Compression {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = Stream.STREAM_NAMESPACE + "VideoCompression";
-	register(VideoCompression.class);
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE
+	    + "VideoCompression";
 
     public static final int RGB = 0;
     public static final int BGR = 1;
@@ -55,25 +51,6 @@ public class VideoCompression extends Compression {
     public static final VideoCompression yuv = new VideoCompression(YUV);
     public static final VideoCompression jpeg = new VideoCompression(JPEG);
     public static final VideoCompression mpeg1 = new VideoCompression(MPEG_1);
-
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] {};
-    }
-
-    /**
-     * 
-     * @param instanceURI
-     * @return a video compression concerning to the URI
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(Stream.STREAM_NAMESPACE)) ? valueOf(instanceURI
-		.substring(Stream.STREAM_NAMESPACE.length())) : null;
-    }
 
     /**
      * 
@@ -98,8 +75,6 @@ public class VideoCompression extends Compression {
     }
 
     /**
-     * 
-     * 
      * @param name
      * @return a video compression concerning to the name
      */
@@ -107,8 +82,8 @@ public class VideoCompression extends Compression {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(Stream.STREAM_NAMESPACE))
-	    name = name.substring(Stream.STREAM_NAMESPACE.length());
+	if (name.startsWith(AVOntology.NAMESPACE))
+	    name = name.substring(AVOntology.NAMESPACE.length());
 
 	for (int i = JPEG; i <= names.length; i++)
 	    if (names[i].equals(name))
@@ -117,28 +92,19 @@ public class VideoCompression extends Compression {
 	return null;
     }
 
-    public static String getRDFSComment() {
-	return "The type of video compressions.";
-    }
-
-    public static String getRDFSLabel() {
-	return "VideoCompression";
-    }
-
     private int order;
 
     private VideoCompression(int order) {
-	super(Stream.STREAM_NAMESPACE + names[order]);
+	super(AVOntology.NAMESPACE + names[order]);
 	this.order = order;
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
     }
 
     public String name() {

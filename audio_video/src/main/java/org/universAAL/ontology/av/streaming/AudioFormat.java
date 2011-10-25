@@ -20,10 +20,7 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological representation describing an audio format. Methods included in
@@ -32,12 +29,11 @@ import org.universAAL.ontology.phThing.Device;
  * its properties.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class AudioFormat extends Format {
 
     public static final String MY_URI;
-
     public static final String PROP_CHANNELS;
     public static final String PROP_SAMPLES_PER_SECOND;
     public static final String PROP_BITS_PER_SAMPLE;
@@ -45,57 +41,12 @@ public class AudioFormat extends Format {
     public static final String PROP_SIGNED;
 
     static {
-	MY_URI = Stream.STREAM_NAMESPACE + "audioFormat";
-
-	PROP_CHANNELS = Stream.STREAM_NAMESPACE + "channels";
-	PROP_SAMPLES_PER_SECOND = Stream.STREAM_NAMESPACE + "samplesPerSecond";
-	PROP_BITS_PER_SAMPLE = Stream.STREAM_NAMESPACE + "bitsPerSample";
-	PROP_BIG_ENDIAN = Stream.STREAM_NAMESPACE + "bigEndian";
-	PROP_SIGNED = Stream.STREAM_NAMESPACE + "signed";
-
-	register(AudioFormat.class);
-    }
-
-    // TODO: better restrictions, perhaps definition of permitted sets
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_ENCODING.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    AudioCompression.MY_URI, 1, 1);
-	if (PROP_CHANNELS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_SAMPLES_PER_SECOND.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_BITS_PER_SAMPLE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_BIG_ENDIAN.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_SIGNED.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Device.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 5];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-
-	toReturn[i++] = PROP_CHANNELS;
-	toReturn[i++] = PROP_SAMPLES_PER_SECOND;
-	toReturn[i++] = PROP_BITS_PER_SAMPLE;
-	toReturn[i++] = PROP_BIG_ENDIAN;
-	toReturn[i] = PROP_SIGNED;
-
-	return toReturn;
+	MY_URI = AVOntology.NAMESPACE + "audioFormat";
+	PROP_CHANNELS = AVOntology.NAMESPACE + "channels";
+	PROP_SAMPLES_PER_SECOND = AVOntology.NAMESPACE + "samplesPerSecond";
+	PROP_BITS_PER_SAMPLE = AVOntology.NAMESPACE + "bitsPerSample";
+	PROP_BIG_ENDIAN = AVOntology.NAMESPACE + "bigEndian";
+	PROP_SIGNED = AVOntology.NAMESPACE + "signed";
     }
 
     /**
@@ -113,15 +64,16 @@ public class AudioFormat extends Format {
 	setProperty(PROP_SIGNED, new Boolean(signed));
     }
 
-    /**
-	 *
-	 */
     public AudioFormat(String uri) {
 	super(uri);
     }
 
     public AudioFormat() {
 	super();
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getChannels() {
@@ -136,7 +88,7 @@ public class AudioFormat extends Format {
 	return ((Integer) getProperty(PROP_BITS_PER_SAMPLE)).intValue();
     }
 
-    public boolean isBidEndian() {
+    public boolean isBigEndian() {
 	return ((Boolean) getProperty(PROP_BIG_ENDIAN)).booleanValue();
     }
 
@@ -144,19 +96,7 @@ public class AudioFormat extends Format {
 	return ((Boolean) getProperty(PROP_SIGNED)).booleanValue();
     }
 
-    public static String getRDFSComment() {
-	return "The class of all AudioFormats.";
-    }
-
-    public static String getRDFSLabel() {
-	return "AudioFormat";
-    }
-
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
     }
 }

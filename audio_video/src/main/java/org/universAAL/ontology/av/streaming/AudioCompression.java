@@ -20,7 +20,7 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological enumeration of different audio compression algorithms. Methods
@@ -28,16 +28,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * enumeration in Java classes for uAAL.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class AudioCompression extends Compression {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = Stream.STREAM_NAMESPACE + "AudioCompression";
-	register(AudioCompression.class);
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE
+	    + "AudioCompression";
 
     /*
      * to add a type, following actions are necessary: add the order as public
@@ -60,30 +56,9 @@ public class AudioCompression extends Compression {
 	    OGG_Vorbis);
 
     /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] {};
-    }
-
-    /**
-     * 
-     * @param instanceURI
-     * @return an audio compression concerning to the URI
-     * 
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(Stream.STREAM_NAMESPACE)) ? valueOf(instanceURI
-		.substring(Stream.STREAM_NAMESPACE.length())) : null;
-    }
-
-    /**
      * 
      * @param order
      * @return an audio compression concerning to th order
-     * 
      */
     public static AudioCompression getCompressionByOrder(int order) {
 	switch (order) {
@@ -108,8 +83,8 @@ public class AudioCompression extends Compression {
 	if (name == null)
 	    return null;
 
-	if (name.startsWith(Stream.STREAM_NAMESPACE))
-	    name = name.substring(Stream.STREAM_NAMESPACE.length());
+	if (name.startsWith(AVOntology.NAMESPACE))
+	    name = name.substring(AVOntology.NAMESPACE.length());
 
 	for (int i = MPEG_1_AUDIO_LAYER_3; i <= names.length; i++)
 	    if (names[i].equals(name))
@@ -117,28 +92,19 @@ public class AudioCompression extends Compression {
 	return null;
     }
 
-    public static String getRDFSComment() {
-	return "The type of audio compressions.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Audio Compression";
-    }
-
     private int order;
 
     private AudioCompression(int order) {
-	super(Stream.STREAM_NAMESPACE + names[order]);
+	super(AVOntology.NAMESPACE + names[order]);
 	this.order = order;
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
     }
 
     public String name() {
@@ -152,5 +118,4 @@ public class AudioCompression extends Compression {
     public void setProperty(String propURI, Object o) {
 	// do nothing
     }
-
 }

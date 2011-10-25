@@ -20,13 +20,8 @@
 
 package org.universAAL.ontology.av.service;
 
-import java.util.Hashtable;
-
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.av.device.LoudSpeaker;
-import org.universAAL.ontology.av.streaming.AudioFile;
-import org.universAAL.ontology.av.streaming.AudioStream;
+import org.universAAL.ontology.AVOntology;
 
 /**
  * Ontological service that handles loudspeakers. Methods included in this class
@@ -34,7 +29,7 @@ import org.universAAL.ontology.av.streaming.AudioStream;
  * classes for uAAL.
  * 
  * @author climberg
- * 
+ * @author Carsten Stockloew
  */
 public class LoudSpeakerService extends Service {
 
@@ -44,69 +39,16 @@ public class LoudSpeakerService extends Service {
     public static final String PROP_HAS_TO_BROADCAST_AUDIO_FILE;
     public static final String PROP_HAS_TO_BROADCAST_AUDIO_STREAM;
 
-    private static Hashtable loudSpeakerServiceRestrictions = new Hashtable(2);
-
     static {
-	MY_URI = LoudSpeaker.LOUD_SPEAKER_NAMESPACE + "LoudSpeakerService";
-	PROP_CONTROLS = LoudSpeaker.LOUD_SPEAKER_NAMESPACE + "controls";
-	PROP_HAS_TO_BROADCAST_AUDIO_FILE = LoudSpeaker.LOUD_SPEAKER_NAMESPACE
+	MY_URI = AVOntology.NAMESPACE + "LoudSpeakerService";
+	PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
+	PROP_HAS_TO_BROADCAST_AUDIO_FILE = AVOntology.NAMESPACE
 		+ "broadcastsAudioFile";
-	PROP_HAS_TO_BROADCAST_AUDIO_STREAM = LoudSpeaker.LOUD_SPEAKER_NAMESPACE
+	PROP_HAS_TO_BROADCAST_AUDIO_STREAM = AVOntology.NAMESPACE
 		+ "broadcastsAudioStream";
-
-	register(LoudSpeakerService.class);
-
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		LoudSpeaker.MY_URI), new String[] { PROP_CONTROLS },
-		loudSpeakerServiceRestrictions);
-
-	addRestriction(Restriction.getAllValuesRestriction(
-		PROP_HAS_TO_BROADCAST_AUDIO_FILE, AudioFile.MY_URI),
-		new String[] { PROP_HAS_TO_BROADCAST_AUDIO_FILE },
-		loudSpeakerServiceRestrictions);
-
-	addRestriction(Restriction.getAllValuesRestriction(
-		PROP_HAS_TO_BROADCAST_AUDIO_STREAM, AudioStream.MY_URI),
-		new String[] { PROP_HAS_TO_BROADCAST_AUDIO_STREAM },
-		loudSpeakerServiceRestrictions);
-
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = loudSpeakerServiceRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Service.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 3];
-	int i = 0;
-
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_CONTROLS;
-	toReturn[i++] = PROP_HAS_TO_BROADCAST_AUDIO_FILE;
-	toReturn[i] = PROP_HAS_TO_BROADCAST_AUDIO_STREAM;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling LoudSpeakers.";
-    }
-
-    public static String getRDFSLabel() {
-	return "LoudSpeakerService";
-    }
-
-    /**
-     * default constructor
-     */
+    /** default constructor */
     public LoudSpeakerService() {
 	super();
     }
@@ -115,17 +57,12 @@ public class LoudSpeakerService extends Service {
 	super(uri);
     }
 
-    protected Hashtable getClassLevelRestrictions() {
-	return loudSpeakerServiceRestrictions;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     // perhaps other settings
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
-    }
-
-    // removed soon
-    public boolean isWellFormed() {
-	return true;
     }
 }
