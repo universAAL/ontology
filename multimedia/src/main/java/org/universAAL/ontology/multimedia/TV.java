@@ -22,9 +22,7 @@
  */
 package org.universAAL.ontology.multimedia;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.ontology.MultimediaOntology;
 import org.universAAL.ontology.phThing.Device;
 
 /**
@@ -34,35 +32,18 @@ import org.universAAL.ontology.phThing.Device;
  * properties.
  * 
  * @author amoretti, chwirth
- * 
+ * @author Carsten Stockloew
  */
 public class TV extends Device {
+
     public static final String MY_URI;
     public static final String PROP_IS_ON_PROG;
     public static final String PROP_IS_ON_COMM;
+
     static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "TV";
-	PROP_IS_ON_PROG = Device.uAAL_DEVICE_NAMESPACE + "isOnProg";
-	PROP_IS_ON_COMM = Device.uAAL_DEVICE_NAMESPACE + "isOnComm";
-	register(TV.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_IS_ON_PROG.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_IS_ON_COMM.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all TVs.";
-    }
-
-    public static String getRDFSLabel() {
-	return "TV";
+	MY_URI = MultimediaOntology.NAMESPACE + "TV";
+	PROP_IS_ON_PROG = MultimediaOntology.NAMESPACE + "isOnProg";
+	PROP_IS_ON_COMM = MultimediaOntology.NAMESPACE + "isOnComm";
     }
 
     public TV() {
@@ -81,6 +62,10 @@ public class TV extends Device {
 
 	props.put(PROP_IS_ON_PROG, isOnProg);
 	props.put(PROP_IS_ON_COMM, isOnComm);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Boolean isOnComm() {

@@ -26,6 +26,8 @@ blind/LICENSE.txt -text
 blind/NOTICE.txt -text
 blind/pom.xml -text
 blind/src/main/java/org/universAAL/ontology/Activator.java -text
+blind/src/main/java/org/universAAL/ontology/BlindFactory.java -text
+blind/src/main/java/org/universAAL/ontology/BlindOntology.java -text
 blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
 blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
 device.extra/pom.xml -text
@@ -50,6 +52,8 @@ gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/GestureR
 gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
 hazard/pom.xml -text
 hazard/src/main/java/org/universAAL/ontology/Activator.java -text
+hazard/src/main/java/org/universAAL/ontology/HazardFactory.java -text
+hazard/src/main/java/org/universAAL/ontology/HazardOntology.java -text
 hazard/src/main/java/org/universAAL/ontology/hazard/FireDetector.java -text
 hazard/src/main/java/org/universAAL/ontology/hazard/GasDetector.java -text
 lighting/LICENSE.txt -text
@@ -98,10 +102,14 @@ medication/LICENSE.txt -text
 medication/NOTICE.txt -text
 medication/pom.xml -text
 medication/src/main/java/org/universAAL/ontology/Activator.java -text
+medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
+medication/src/main/java/org/universAAL/ontology/MedicationOntology.java -text
 medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
 medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
 multimedia/pom.xml -text
 multimedia/src/main/java/org/universAAL/ontology/Activator.java -text
+multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
+multimedia/src/main/java/org/universAAL/ontology/MultimediaOntology.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 physical.world/LICENSE.txt -text

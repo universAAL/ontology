@@ -20,10 +20,8 @@
 
 package org.universAAL.ontology.blind;
 
-import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.ontology.BlindOntology;
 import org.universAAL.ontology.location.Location;
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.phThing.Device;
 
 /**
@@ -38,47 +36,18 @@ import org.universAAL.ontology.phThing.Device;
  * 
  */
 public class Blind extends Device {
-    public static final String BLIND_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Blind.owl#";
+
     public static final String MY_URI;
-    // public static final String PROP_HAS_TYPE;
     public static final String PROP_BLIND_STATUS;
 
     static {
-	MY_URI = BLIND_NAMESPACE + "Blind";
-	// PROP_HAS_TYPE = BLIND_NAMESPACE + "hasType";
-	PROP_BLIND_STATUS = BLIND_NAMESPACE + "blindStatus";
-	register(Blind.class);
+	MY_URI = BlindOntology.NAMESPACE + "Blind";
+	PROP_BLIND_STATUS = BlindOntology.NAMESPACE + "blindStatus";
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	// if (PROP_HAS_TYPE.equals(propURI))
-	// return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-	// NaturalLight.sunShine.MY_URI, 1, 1);
-	if (PROP_PHYSICAL_LOCATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Location.MY_URI, 1, 1);
-	if (PROP_BLIND_STATUS.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	return Device.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] {
-	// PROP_HAS_TYPE,
-	PROP_BLIND_STATUS };
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all blinds.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Blind";
-    }
+    // if (PROP_HAS_TYPE.equals(propURI))
+    // return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+    // NaturalLight.sunShine.MY_URI, 1, 1);
 
     public Blind() {
 	super();
@@ -96,6 +65,10 @@ public class Blind extends Device {
 	setLocation(loc);
 	// props.put(PROP_HAS_TYPE, NaturalLight.sunShine.getType());
 	props.put(PROP_BLIND_STATUS, new Integer(0));
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     // public String getBlindType() {

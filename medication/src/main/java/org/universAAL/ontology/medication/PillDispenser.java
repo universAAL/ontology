@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.medication;
 
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.MedicationOntology;
 import org.universAAL.ontology.phThing.PhysicalContainer;
 
 /**
@@ -31,19 +31,12 @@ import org.universAAL.ontology.phThing.PhysicalContainer;
  * its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class PillDispenser extends PhysicalContainer {
-    public static final String MY_URI;
 
-    static {
-	MY_URI = DrugPackage.uAAL_MEDICATION_NAMESPACE + "PillDispenser";
-	register(DrugPackage.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	return Restriction.getPropertyBanningRestriction(propURI);
-    }
+    public static final String MY_URI = MedicationOntology.NAMESPACE
+	    + "PillDispenser";
 
     public PillDispenser() {
     }
@@ -52,16 +45,7 @@ public class PillDispenser extends PhysicalContainer {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "An automatic pill dispenser, container of drug packages";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    public static String getRDFSLabel() {
-	return "Pill Dispenser";
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

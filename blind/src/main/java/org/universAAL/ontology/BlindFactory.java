@@ -18,19 +18,29 @@
  */
 package org.universAAL.ontology;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.ontology.blind.Blind;
+import org.universAAL.ontology.blind.BlindController;
 
-public class Activator implements BundleActivator {
-    
-    MedicationOntology ont = new MedicationOntology();
-    
-    public void start(BundleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ont);
-    }
-    
-    public void stop(BundleContext context) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+/**
+ * The factory for instantiating objects of the ontology classes.
+ * 
+ * @author Carsten Stockloew
+ */
+
+public class BlindFactory extends ResourceFactoryImpl {
+
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
+
+	switch (factoryIndex) {
+	case 0:
+	    return new Blind(instanceURI);
+	case 1:
+	    return new BlindController(instanceURI);
+	}
+
+	return null;
     }
 }
