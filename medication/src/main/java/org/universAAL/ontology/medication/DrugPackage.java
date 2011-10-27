@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.medication;
 
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.MedicationOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
@@ -31,21 +31,12 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class DrugPackage extends PhysicalThing {
-    public static final String MY_URI;
-    public static final String uAAL_MEDICATION_NAMESPACE = uAAL_NAMESPACE_PREFIX
-	    + "Medication.owl#";
 
-    static {
-	MY_URI = uAAL_MEDICATION_NAMESPACE + "DrugPackage";
-	register(DrugPackage.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	return Restriction.getPropertyBanningRestriction(propURI);
-    }
+    public static final String MY_URI = MedicationOntology.NAMESPACE
+	    + "DrugPackage";
 
     public DrugPackage() {
     }
@@ -54,16 +45,7 @@ public class DrugPackage extends PhysicalThing {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "The package of a medication drug";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    public static String getRDFSLabel() {
-	return "Drug Package";
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

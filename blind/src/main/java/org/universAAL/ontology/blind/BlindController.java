@@ -20,10 +20,8 @@
 
 package org.universAAL.ontology.blind;
 
-import java.util.Hashtable;
-
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.BlindOntology;
 
 /**
  * Ontological service that controls a blind. Methods included in this class are
@@ -31,43 +29,16 @@ import org.universAAL.middleware.owl.Restriction;
  * for uAAL.
  * 
  * @author Steeven Zeiss
+ * @author Carsten Stockloew
  * @since 26.11.2009
- * 
  */
 public class BlindController extends Service {// Lighting {
     public static final String MY_URI;
     public static final String PROP_CONTROLS;
 
-    private static Hashtable blindServicesRestrictions = new Hashtable(1);
     static {
-	MY_URI = Blind.BLIND_NAMESPACE + "BlindController";
-	PROP_CONTROLS = Blind.BLIND_NAMESPACE + "controls";
-	// PROP_STATUS = Blind.BLIND_NAMESPACE+ "status";
-	register(BlindController.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		Blind.MY_URI), new String[] { PROP_CONTROLS },
-		blindServicesRestrictions);
-	// addRestriction(
-	// Restriction.getAllValuesRestriction(PROP_STATUS, Blind.MY_URI),
-	// new String[]{PROP_STATUS},
-	// blindServicesRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = blindServicesRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling blinds.";
-    }
-
-    public static String getRDFSLabel() {
-	return "BlindsServices";
+	MY_URI = BlindOntology.NAMESPACE + "BlindController";
+	PROP_CONTROLS = BlindOntology.NAMESPACE + "controls";
     }
 
     public BlindController() {
@@ -78,28 +49,16 @@ public class BlindController extends Service {// Lighting {
 	super(uri);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return blindServicesRestrictions;
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
+    /**
+     * @see org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
+     *      lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
     }
 }
