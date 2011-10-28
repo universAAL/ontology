@@ -194,11 +194,11 @@ powersocket/src/main/java/org/universAAL/ontology/powersocket/dimmableSocket.jav
 powersocket/src/main/java/org/universAAL/ontology/powersocket/switchableSocket.java -text
 powersocketswitch/LICENSE.txt -text
 powersocketswitch/NOTICE.txt -text
-powersocketswitch/org/universAAL/ontology/Activator.java -text
-powersocketswitch/org/universAAL/ontology/powersocketadapter/PowersocketAdapterActuator.java -text
-powersocketswitch/org/universAAL/ontology/powersocketadapter/PowersocketAdapterController.java -text
-powersocketswitch/org/universAAL/ontology/powersocketadapter/PowersocketAdapterType.java -text
 powersocketswitch/pom.xml -text
+powersocketswitch/src/main/java/org/universAAL/ontology/Activator.java -text
+powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterActuator.java -text
+powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterController.java -text
+powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterType.java -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text
 risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
