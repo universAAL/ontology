@@ -21,8 +21,7 @@
  */
 package org.universAAL.ontology.weather;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.WeatherOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
@@ -32,22 +31,12 @@ import org.universAAL.ontology.phThing.Sensor;
  * its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class TempSensor extends Sensor {
-    public static final String MY_URI;
 
-    static {
-	MY_URI = uAAL_DEVICE_NAMESPACE + "TemperatureSensor";
-	register(TempSensor.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Float.class));
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
+    public static final String MY_URI = WeatherOntology.NAMESPACE
+	    + "TemperatureSensor";
 
     public TempSensor() {
     }
@@ -56,16 +45,8 @@ public class TempSensor extends Sensor {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Temperature Sensor Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Temperature Sensor";
-    }
-
-    public boolean isWellFormed() {
-	return true;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public float getMeasuredvalue() {
@@ -75,5 +56,4 @@ public class TempSensor extends Sensor {
     public void setMeasuredValue(float value) {
 	props.put(PROP_MEASURED_VALUE, new Float(value));
     }
-
 }

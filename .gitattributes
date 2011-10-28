@@ -188,10 +188,12 @@ powersocket/LICENSE.txt -text
 powersocket/NOTICE.txt -text
 powersocket/pom.xml -text
 powersocket/src/main/java/org/universAAL/ontology/Activator.java -text
+powersocket/src/main/java/org/universAAL/ontology/PowersocketFactory.java -text
+powersocket/src/main/java/org/universAAL/ontology/PowersocketOntology.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/DimmableSocket.java -text
 powersocket/src/main/java/org/universAAL/ontology/powersocket/Powersocket.java -text
 powersocket/src/main/java/org/universAAL/ontology/powersocket/PowersocketController.java -text
-powersocket/src/main/java/org/universAAL/ontology/powersocket/dimmableSocket.java -text
-powersocket/src/main/java/org/universAAL/ontology/powersocket/switchableSocket.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/SwitchableSocket.java -text
 powersocketswitch/LICENSE.txt -text
 powersocketswitch/NOTICE.txt -text
 powersocketswitch/pom.xml -text
@@ -254,6 +256,8 @@ user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingEdit
 user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingService.java -text
 water/pom.xml -text
 water/src/main/java/org/universAAL/ontology/Activator.java -text
+water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
+water/src/main/java/org/universAAL/ontology/WaterOntology.java -text
 water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
@@ -261,6 +265,8 @@ weather/LICENSE.txt -text
 weather/NOTICE.txt -text
 weather/pom.xml -text
 weather/src/main/java/org/universAAL/ontology/Activator.java -text
+weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
+weather/src/main/java/org/universAAL/ontology/WeatherOntology.java -text
 weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
 weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
@@ -269,6 +275,8 @@ window/LICENSE.txt -text
 window/NOTICE.txt -text
 window/pom.xml -text
 window/src/main/java/org/universAAL/ontology/Activator.java -text
+window/src/main/java/org/universAAL/ontology/WindowFactory.java -text
+window/src/main/java/org/universAAL/ontology/WindowOntology.java -text
 window/src/main/java/org/universAAL/ontology/window/BlindActuator.java -text
 window/src/main/java/org/universAAL/ontology/window/BlindController.java -text
 window/src/main/java/org/universAAL/ontology/window/CurtainActuator.java -text

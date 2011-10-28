@@ -21,33 +21,22 @@
  */
 package org.universAAL.ontology.weather;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.WeatherOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
- * Ontological representation of a relative humidity sensor device.
- * Methods included in this class are the mandatory ones for representing an
- * ontological concept in Java classes for uAAL. Usually it includes getters and
- * setters for most of its properties.
+ * Ontological representation of a relative humidity sensor device. Methods
+ * included in this class are the mandatory ones for representing an ontological
+ * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * most of its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class RelHumiditySensor extends Sensor {
-    public static final String MY_URI;
 
-    static {
-	MY_URI = uAAL_DEVICE_NAMESPACE + "RelHumiditySensor";
-	register(RelHumiditySensor.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Integer.class));
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
+    public static final String MY_URI = WeatherOntology.NAMESPACE
+	    + "RelHumiditySensor";
 
     public RelHumiditySensor() {
     }
@@ -56,16 +45,8 @@ public class RelHumiditySensor extends Sensor {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Relative Humidity Sensor Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Relative Humidity Sensor";
-    }
-
-    public boolean isWellFormed() {
-	return true;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getMeasuredvalue() {
@@ -75,5 +56,4 @@ public class RelHumiditySensor extends Sensor {
     public void setMeasuredValue(int value) {
 	props.put(PROP_MEASURED_VALUE, new Integer(value));
     }
-
 }

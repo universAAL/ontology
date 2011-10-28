@@ -20,11 +20,8 @@
 
 package org.universAAL.ontology.powersocket;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.supply.AbsLocation;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.PowersocketOntology;
+import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.phThing.Device;
 
 /**
@@ -34,44 +31,17 @@ import org.universAAL.ontology.phThing.Device;
  * properties.
  * 
  * @author Steeven Zeiss
+ * @author Carsten Stockloew
  * @since 26.11.2009
- * 
  */
 public class Powersocket extends Device {
-    public static final String POWERSOCKET_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Powersocket.owl#";
+
     public static final String MY_URI;
     public static final String PROP_SOCKET_VALUE;
-    public static final String PROP_SOCKET_LOCATION;
+
     static {
-	MY_URI = POWERSOCKET_NAMESPACE + "Powersocket";
-	PROP_SOCKET_VALUE = POWERSOCKET_NAMESPACE + "socketValue";
-	PROP_SOCKET_LOCATION = POWERSOCKET_NAMESPACE + "socketLocation";
-	register(Powersocket.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_SOCKET_VALUE.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	if (PROP_SOCKET_LOCATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    AbsLocation.MY_URI, 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_SOCKET_VALUE, PROP_SOCKET_LOCATION };
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all powersockets.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Powersocket";
+	MY_URI = PowersocketOntology.NAMESPACE + "Powersocket";
+	PROP_SOCKET_VALUE = PowersocketOntology.NAMESPACE + "socketValue";
     }
 
     public Powersocket() {
@@ -82,13 +52,17 @@ public class Powersocket extends Device {
 	super(uri);
     }
 
-    public Powersocket(String uri, AbsLocation loc) {
+    public Powersocket(String uri, Location loc) {
 	super(uri);
 	if (loc == null)
 	    throw new IllegalArgumentException();
 
 	props.put(PROP_SOCKET_VALUE, new Integer(0));
-	props.put(PROP_SOCKET_LOCATION, loc);
+	setLocation(loc);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getValue() {
@@ -96,42 +70,21 @@ public class Powersocket extends Device {
 	return (i == null) ? -1 : i.intValue();
     }
 
-    public AbsLocation getPowersocketLocation() {
-	return (AbsLocation) props.get(PROP_SOCKET_LOCATION);
-    }
-
     public void setValue(int percentage) {
 	if (percentage > -1 && percentage < 101)
 	    props.put(PROP_SOCKET_VALUE, new Integer(percentage));
     }
 
-    public void setPowersocketLocation(AbsLocation l) {
-	// TODO: kann man das so machen?
-	// setLocation(l);
-	if (l != null)
-	    props.put(PROP_SOCKET_LOCATION, l);
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
-	return PROP_SOCKET_LOCATION.equals(propURI) ? PROP_SERIALIZATION_REDUCED
-		: PROP_SERIALIZATION_FULL;
+	return PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed() */
     public boolean isWellFormed() {
-	return props.containsKey(PROP_SOCKET_VALUE)
-		&& props.containsKey(PROP_SOCKET_LOCATION);
+	return props.containsKey(PROP_SOCKET_VALUE);
     }
-
 }

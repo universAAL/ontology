@@ -21,9 +21,7 @@
  */
 package org.universAAL.ontology.water;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.WaterOntology;
 import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**
@@ -33,22 +31,12 @@ import org.universAAL.ontology.phThing.OnOffActuator;
  * Usually it includes getters and setters for most of its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class WaterActuator extends OnOffActuator {
-    public static final String MY_URI;
 
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "WaterActuator";
-	register(WaterActuator.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_STATUS.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Boolean.class));
-	return OnOffActuator.getClassRestrictionsOnProperty(propURI);
-    }
+    public static final String MY_URI = WaterOntology.NAMESPACE
+	    + "WaterActuator";
 
     public WaterActuator() {
     }
@@ -57,16 +45,7 @@ public class WaterActuator extends OnOffActuator {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Water Flow Actuator";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    public static String getRDFSLabel() {
-	return "Water Actuator";
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

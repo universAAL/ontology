@@ -21,6 +21,7 @@
 package org.universAAL.ontology.window;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.WindowOntology;
 
 /**
  * Ontological enumeration of possible window types. Currently empty. Methods
@@ -28,25 +29,18 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * enumeration in Java classes for uAAL.
  * 
  * @author Steeven Zeiss
+ * @author Carsten Stockloew
  * @since 26.11.2009
- * 
  */
 public abstract class WindowType extends ManagedIndividual {
-    public static final String MY_URI;
-    static {
-	MY_URI = WindowActuator.WINDOW_NAMESPACE + "windowType";
-	register(WindowType.class);
-    }
 
-    public static String getRDFSComment() {
-	return "The type of a window";
-    }
-
-    public static String getRDFSLabel() {
-	return "Window Type";
-    }
+    public static final String MY_URI = WindowOntology.NAMESPACE + "windowType";
 
     protected WindowType(String uri) {
 	super(uri);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 }

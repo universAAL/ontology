@@ -21,9 +21,7 @@
  */
 package org.universAAL.ontology.water;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.WaterOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
@@ -33,22 +31,12 @@ import org.universAAL.ontology.phThing.Sensor;
  * its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class WaterFloodDetector extends Sensor {
-    public static final String MY_URI;
 
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "WaterFloodDetector";
-	register(WaterFloodDetector.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Boolean.class));
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
+    public static final String MY_URI = WaterOntology.NAMESPACE
+	    + "WaterFloodDetector";
 
     public WaterFloodDetector() {
     }
@@ -57,16 +45,8 @@ public class WaterFloodDetector extends Sensor {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Water Flood Detector Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Water Flood Detector";
-    }
-
-    public boolean isWellFormed() {
-	return true;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean getMeasuredvalue() {
@@ -76,5 +56,4 @@ public class WaterFloodDetector extends Sensor {
     public void setMeasuredValue(boolean value) {
 	props.put(PROP_MEASURED_VALUE, new Boolean(value));
     }
-
 }
