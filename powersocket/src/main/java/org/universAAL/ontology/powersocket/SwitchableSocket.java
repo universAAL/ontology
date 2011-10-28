@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.powersocket;
 
+import org.universAAL.ontology.PowersocketOntology;
 import org.universAAL.ontology.location.Location;
 
 /**
@@ -27,46 +28,28 @@ import org.universAAL.ontology.location.Location;
  * mandatory ones for representing an ontological concept in Java classes for
  * uAAL. Usually it includes getters and setters for most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
-public class switchableSocket extends Powersocket {
+public class SwitchableSocket extends Powersocket {
 
-    public static final String POWERSOCKET_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Powersocket.owl#";
-    public static final String MY_URI;
+    public static final String MY_URI = PowersocketOntology.NAMESPACE
+	    + "dimmableSocket";
 
-    static {
-	MY_URI = POWERSOCKET_NAMESPACE + "dimmableSocket";
-	register(Powersocket.class);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_SOCKET_VALUE, PROP_SOCKET_LOCATION };
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all dimmable powersockets.";
-    }
-
-    public static String getRDFSLabel() {
-	return "dimmablePowersocket";
-    }
-
-    public switchableSocket() {
+    public SwitchableSocket() {
 	super();
     }
 
-    public switchableSocket(String uri) {
+    public SwitchableSocket(String uri) {
 	super(uri);
     }
 
-    public switchableSocket(String uri, Location loc) {
-	super(uri);
-	if (loc == null)
-	    throw new IllegalArgumentException();
+    public SwitchableSocket(String uri, Location loc) {
+	super(uri, loc);
+	setValue(0);
+    }
 
-	// TODO
-	setLocation(loc);
-
-	props.put(PROP_SOCKET_VALUE, new Integer(0));
-	props.put(PROP_SOCKET_LOCATION, loc);
+    public String getClassURI() {
+	return MY_URI;
     }
 }

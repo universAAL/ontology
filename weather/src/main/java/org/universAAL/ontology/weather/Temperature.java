@@ -22,9 +22,8 @@
 
 package org.universAAL.ontology.weather;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.WeatherOntology;
 
 /**
  * Ontological representation of the concept of tempreature. Currently without
@@ -33,39 +32,16 @@ import org.universAAL.middleware.owl.Restriction;
  * and setters for most of its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class Temperature extends ManagedIndividual {
-    public static final String WEATHER_NAMESPACE = "http://ontology.persona.ratio.it/action.owl#";
+
     public static final String MY_URI;
     public static final String PROP_VALUE;
 
     static {
-	MY_URI = WEATHER_NAMESPACE + "Temperature";
-	PROP_VALUE = WEATHER_NAMESPACE + "value";
-	register(Temperature.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] toReturn = new String[1];
-	int i = 0;
-	toReturn[i++] = PROP_VALUE;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all temperatures.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Temperature";
+	MY_URI = WeatherOntology.NAMESPACE + "Temperature";
+	PROP_VALUE = WeatherOntology.NAMESPACE + "value";
     }
 
     public Temperature() {
@@ -84,6 +60,10 @@ public class Temperature extends ManagedIndividual {
 	props.put(PROP_VALUE, value);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public String getValue() {
 	return (String) props.get(PROP_VALUE);
     }
@@ -93,22 +73,13 @@ public class Temperature extends ManagedIndividual {
 	    props.put(PROP_VALUE, value);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
-     */
+    /** @see org.universAAL.middleware.owl.Resource#getPropSerializationType(java.lang.String) */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
+
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
-     */
+    /** @org.universAAL.middleware.owl.Resource#isWellFormed() */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_VALUE);
     }

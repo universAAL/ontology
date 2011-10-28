@@ -20,54 +20,25 @@
 
 package org.universAAL.ontology.powersocket;
 
-import java.util.Hashtable;
-
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.PowersocketOntology;
 
 /**
- * Ontological service that controls power sockets. Methods included in
- * this class are the mandatory ones for representing an ontological service in
- * Java classes for uAAL.
+ * Ontological service that controls power sockets. Methods included in this
+ * class are the mandatory ones for representing an ontological service in Java
+ * classes for uAAL.
+ * 
  * @author Steeven Zeiss
  * @since 26.11.2009
- * 
  */
 public class PowersocketController extends Service {
+
     public static final String MY_URI;
     public static final String PROP_CONTROLS;
-    public static final String PROP_PHYSICAL_LOCATION;
-    private static Hashtable powersocketServicesRestrictions = new Hashtable(1);
+
     static {
-	MY_URI = Powersocket.POWERSOCKET_NAMESPACE + "PowersocketServices";
-	PROP_CONTROLS = Powersocket.POWERSOCKET_NAMESPACE + "controls";
-	PROP_PHYSICAL_LOCATION = Powersocket.POWERSOCKET_NAMESPACE
-		+ "physicalLocation";
-	register(PowersocketController.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		Powersocket.MY_URI), new String[] { PROP_CONTROLS },
-		powersocketServicesRestrictions);
-	addRestriction(Restriction.getAllValuesRestriction(
-		PROP_PHYSICAL_LOCATION, Powersocket.MY_URI),
-		new String[] { PROP_PHYSICAL_LOCATION },
-		powersocketServicesRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = powersocketServicesRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling powersockets.";
-    }
-
-    public static String getRDFSLabel() {
-	return "PowersocketServices";
+	MY_URI = PowersocketOntology.NAMESPACE + "PowersocketServices";
+	PROP_CONTROLS = PowersocketOntology.NAMESPACE + "controls";
     }
 
     public PowersocketController() {
@@ -78,28 +49,16 @@ public class PowersocketController extends Service {
 	super(uri);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return powersocketServicesRestrictions;
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
     }
 }

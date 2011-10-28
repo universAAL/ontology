@@ -18,19 +18,32 @@
  */
 package org.universAAL.ontology;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.ontology.water.WaterFloodDetector;
+import org.universAAL.ontology.water.FaucetSensor;
+import org.universAAL.ontology.water.WaterActuator;
 
-public class Activator implements BundleActivator {
+/**
+ * The factory for instantiating objects of the ontology classes.
+ * 
+ * @author Carsten Stockloew
+ */
 
-    WeatherOntology ont = new WeatherOntology();
+public class WaterFactory extends ResourceFactoryImpl {
 
-    public void start(BundleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ont);
-    }
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
-    public void stop(BundleContext context) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+	switch (factoryIndex) {
+	case 0:
+	    return new WaterFloodDetector(instanceURI);
+	case 1:
+	    return new FaucetSensor(instanceURI);
+	case 2:
+	    return new WaterActuator(instanceURI);
+	}
+
+	return null;
     }
 }

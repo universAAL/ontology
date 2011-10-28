@@ -19,55 +19,37 @@
  */
 package org.universAAL.ontology.powersocket;
 
+import org.universAAL.ontology.PowersocketOntology;
 import org.universAAL.ontology.location.Location;
 
 /**
  * Ontological representation of a dimmable power socket (do not mistake with a
- * dimmer actuator) . Methods included in this class are the mandatory ones for
+ * dimmer actuator). Methods included in this class are the mandatory ones for
  * representing an ontological concept in Java classes for uAAL. Usually it
  * includes getters and setters for most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
-public class dimmableSocket extends Powersocket {
+public class DimmableSocket extends Powersocket {
 
-    public static final String POWERSOCKET_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Powersocket.owl#";
-    public static final String MY_URI;
+    public static final String MY_URI = PowersocketOntology.NAMESPACE
+	    + "dimmableSocket";
 
-    static {
-	MY_URI = POWERSOCKET_NAMESPACE + "dimmableSocket";
-	register(Powersocket.class);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_SOCKET_VALUE, PROP_SOCKET_LOCATION };
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all dimmable powersockets.";
-    }
-
-    public static String getRDFSLabel() {
-	return "dimmablePowersocket";
-    }
-
-    public dimmableSocket() {
+    public DimmableSocket() {
 	super();
     }
 
-    public dimmableSocket(String uri) {
+    public DimmableSocket(String uri) {
 	super(uri);
     }
 
-    public dimmableSocket(String uri, Location loc) {
-	super(uri);
-	if (loc == null)
-	    throw new IllegalArgumentException();
-
-	// TODO
-	setLocation(loc);
-
-	props.put(PROP_SOCKET_VALUE, new Integer(0));
-	props.put(PROP_SOCKET_LOCATION, loc);
+    public DimmableSocket(String uri, Location loc) {
+	super(uri, loc);
+	setValue(0);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
 }

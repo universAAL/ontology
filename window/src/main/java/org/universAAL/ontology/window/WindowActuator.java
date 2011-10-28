@@ -20,11 +20,8 @@
 
 package org.universAAL.ontology.window;
 
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.supply.AbsLocation;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.WindowOntology;
+import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.phThing.Device;
 
 /**
@@ -34,53 +31,18 @@ import org.universAAL.ontology.phThing.Device;
  * properties.
  * 
  * @author Steeven Zeiss
- * 
- * 
+ * @author Carsten Stockloew
  */
 public class WindowActuator extends Device {
-    public static final String WINDOW_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Window.owl#";
+
     public static final String MY_URI;
     public static final String PROP_HAS_TYPE;
     public static final String PROP_WINDOW_STATUS;
+
     static {
-	MY_URI = WINDOW_NAMESPACE + "Window";
-	PROP_HAS_TYPE = WINDOW_NAMESPACE + "hasType";
-	PROP_WINDOW_STATUS = WINDOW_NAMESPACE + "windowStatus";
-	register(WindowActuator.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_TYPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    WindowType.MY_URI, 1, 1);
-	if (PROP_WINDOW_STATUS.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_TYPE;
-	toReturn[i] = PROP_WINDOW_STATUS;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all windows.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Window";
+	MY_URI = WindowOntology.NAMESPACE + "Window";
+	PROP_HAS_TYPE = WindowOntology.NAMESPACE + "hasType";
+	PROP_WINDOW_STATUS = WindowOntology.NAMESPACE + "windowStatus";
     }
 
     public WindowActuator() {
@@ -91,21 +53,22 @@ public class WindowActuator extends Device {
 	super(uri);
     }
 
-    public WindowActuator(String uri, AbsLocation loc) {
+    public WindowActuator(String uri, Location loc) {
 	super(uri);
-	if (loc == null)
-	    throw new IllegalArgumentException();
-	props.put(PROP_PHYSICAL_LOCATION, loc);
+	setLocation(loc);
 	props.put(PROP_WINDOW_STATUS, new Integer(0));
     }
 
-    public WindowActuator(String uri, WindowType type, AbsLocation loc) {
+    public WindowActuator(String uri, WindowType type, Location loc) {
 	super(uri);
-	if (type == null || loc == null)
+	if (type == null)
 	    throw new IllegalArgumentException();
-
 	props.put(PROP_HAS_TYPE, type);
-	props.put(PROP_PHYSICAL_LOCATION, loc);
+	setLocation(loc);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     // public Location getAmbientCoverage() {
@@ -121,10 +84,6 @@ public class WindowActuator extends Device {
 	return (WindowType) props.get(PROP_HAS_TYPE);
     }
 
-    public AbsLocation getWindowLocation() {
-	return (AbsLocation) props.get(PROP_PHYSICAL_LOCATION);
-    }
-
     // public void setAmbientCoverage(Location l) {
     // if (l != null)
     // props.put(PROP_AMBIENT_COVERAGE, l);
@@ -135,17 +94,9 @@ public class WindowActuator extends Device {
     // props.put(PROP_SOCKET_VALUE, new Integer(percentage));
     // }
 
-    public void setWindowLocation(AbsLocation l) {
-	if (l != null)
-	    props.put(PROP_PHYSICAL_LOCATION, l);
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_PHYSICAL_LOCATION.equals(propURI) ? PROP_SERIALIZATION_REDUCED
@@ -156,15 +107,10 @@ public class WindowActuator extends Device {
 	// PROP_SERIALIZATION_REDUCED : PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed() */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_HAS_TYPE)
 		&& props.containsKey(PROP_PHYSICAL_LOCATION)
 		&& props.contains(PROP_WINDOW_STATUS);
     }
-
 }

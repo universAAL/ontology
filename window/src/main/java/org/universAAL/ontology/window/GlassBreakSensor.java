@@ -21,10 +21,7 @@
  */
 package org.universAAL.ontology.window;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.WindowOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
@@ -34,38 +31,16 @@ import org.universAAL.ontology.phThing.Sensor;
  * includes getters and setters for most of its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class GlassBreakSensor extends Sensor {
+
     public static final String MY_URI;
     public static final String PROP_IN_WINDOW;
 
     static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "GlassBreakSensor";
-	PROP_IN_WINDOW = WindowActuator.WINDOW_NAMESPACE + "inWindow";
-	register(GlassBreakSensor.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Boolean.class));
-	if (PROP_IN_WINDOW.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    WindowActuator.MY_URI, 1, 0);
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
-    
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_IN_WINDOW;
-	return toReturn;
+	MY_URI = WindowOntology.NAMESPACE + "GlassBreakSensor";
+	PROP_IN_WINDOW = WindowOntology.NAMESPACE + "inWindow";
     }
 
     public GlassBreakSensor() {
@@ -75,16 +50,8 @@ public class GlassBreakSensor extends Sensor {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Glass Break Sensor Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Glass Break Sensor";
-    }
-
-    public boolean isWellFormed() {
-	return true;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean getMeasuredvalue() {
@@ -94,5 +61,4 @@ public class GlassBreakSensor extends Sensor {
     public void setMeasuredValue(boolean value) {
 	props.put(PROP_MEASURED_VALUE, new Boolean(value));
     }
-
 }

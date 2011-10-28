@@ -21,12 +21,8 @@
  */
 package org.universAAL.ontology.window;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.OrderingRestriction;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.ontology.WindowOntology;
 import org.universAAL.ontology.phThing.DimmerActuator;
-import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * Ontological representation of an actuator that can open and close a curtain.
@@ -35,41 +31,16 @@ import org.universAAL.ontology.phThing.Sensor;
  * setters for most of its properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
- * 
+ * @author Carsten Stockloew
  */
 public class CurtainActuator extends DimmerActuator {
+
     public static final String MY_URI;
     public static final String PROP_IN_WINDOW;
 
     static {
-	MY_URI = WindowActuator.WINDOW_NAMESPACE + "CurtainActuator";
-	PROP_IN_WINDOW = WindowActuator.WINDOW_NAMESPACE + "inWindow";
-	register(CurtainActuator.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_DIMMABLE_STATUS.equals(propURI))
-	    return OrderingRestriction.newOrderingRestriction(new Integer(100),
-		    new Integer(0), true, true, Restriction
-			    .getAllValuesRestrictionWithCardinality(propURI,
-				    TypeMapper.getDatatypeURI(Integer.class),
-				    1, 1));
-	if (PROP_IN_WINDOW.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    WindowActuator.MY_URI, 1, 0);
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_IN_WINDOW;
-	return toReturn;
+	MY_URI = WindowOntology.NAMESPACE + "CurtainActuator";
+	PROP_IN_WINDOW = WindowOntology.NAMESPACE + "inWindow";
     }
 
     public CurtainActuator() {
@@ -79,16 +50,7 @@ public class CurtainActuator extends DimmerActuator {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Curtain Dimmable Actuator";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    public static String getRDFSLabel() {
-	return "Curtain Actuator";
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
 }

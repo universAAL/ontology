@@ -20,10 +20,7 @@
 
 package org.universAAL.ontology.window;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.ontology.WindowOntology;
 import org.universAAL.ontology.phThing.DeviceService;
 
 /**
@@ -32,38 +29,13 @@ import org.universAAL.ontology.phThing.DeviceService;
  * classes for uAAL.
  * 
  * @author Steeven Zeiss
+ * @author Carsten Stockloew
  * @since 26.11.2009
- * 
  */
 public class WindowController extends DeviceService {
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-    private static Hashtable windowServicesRestrictions = new Hashtable(1);
-    static {
-	MY_URI = WindowActuator.WINDOW_NAMESPACE + "WindowServices";
-	PROP_CONTROLS = WindowActuator.WINDOW_NAMESPACE + "controls";
-	register(WindowController.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		WindowActuator.MY_URI), new String[] { PROP_CONTROLS },
-		windowServicesRestrictions);
-    }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = windowServicesRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling windows.";
-    }
-
-    public static String getRDFSLabel() {
-	return "WindowServices";
-    }
+    public static final String MY_URI = WindowOntology.NAMESPACE
+	    + "WindowServices";
 
     public WindowController() {
 	super();
@@ -73,28 +45,16 @@ public class WindowController extends DeviceService {
 	super(uri);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return windowServicesRestrictions;
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
     }
 }
