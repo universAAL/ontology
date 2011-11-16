@@ -285,11 +285,6 @@
 				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</repository>
-		<repository>
-			<id>iks-repository</id>
-			<name>ETH Zurich IKS Repository</name>
-			<url>http://www.flowsgi.inf.ethz.ch/repository/maven2</url>
-		</repository>
 	</repositories>
 
 	<pluginRepositories>
