@@ -23,6 +23,7 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of light sensitivity impairment. Methods included
@@ -31,24 +32,12 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * its properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class LightSensitivity extends SightImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "LightSensitivity";
-	register(LightSensitivity.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's light-sensitivity.";
-    }
-
-    public static String getRDFSLabel() {
-	return "LightSensitivity";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "LightSensitivity";
 
     /**
      * The constructor for (de-)serializers.
@@ -74,10 +63,6 @@ public class LightSensitivity extends SightImpairment implements
 
     public ProfileProperty[] getStaticProperties() {
 	return super.getStaticProperties();
-    }
-
-    public static SightImpairment loadInstance() {
-	return new LightSensitivity(LevelRating.none);
     }
 
     public String toString() {

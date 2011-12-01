@@ -22,8 +22,8 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of astigmatism impairment. Methods included in
@@ -32,23 +32,11 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * its properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class Astigmatism extends SightImpairment implements PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "Astigmatism";
-	register(Astigmatism.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's astigmatism.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Astigmatism";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "Astigmatism";
 
     /**
      * The constructor for (de-)serializers.
@@ -64,10 +52,6 @@ public class Astigmatism extends SightImpairment implements PropertyPublisher {
 	super(impairmentLevel);
     }
 
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return new Astigmatism();
-    }
-
     public ProfileProperty[] getAllProperties() {
 	return super.getAllProperties();
     }
@@ -80,12 +64,7 @@ public class Astigmatism extends SightImpairment implements PropertyPublisher {
 	return super.getDynamicProperties();
     }
 
-    public static SightImpairment loadInstance() {
-	return new Astigmatism(LevelRating.none);
-    }
-
     public String toString() {
 	return "Astigmatism: " + this.getImpaimentLevel().name();
     }
-
 }

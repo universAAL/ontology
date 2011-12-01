@@ -19,12 +19,8 @@
  */
 package org.universAAL.ontology.profile.service;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.profile.Profile;
-import org.universAAL.ontology.profile.User;
 
 /**
  * Ontological service that handles and edits profile-related information.
@@ -32,60 +28,21 @@ import org.universAAL.ontology.profile.User;
  * ontological service in Java classes for uAAL.
  * 
  * @author kagnantis
- * 
+ * @author Carsten Stockloew
  */
 public class ProfilingEditorService extends Service {
     public static final String MY_URI;
     public static final String PROP_CONTROLS;
 
-    private static Hashtable profilingRestrictions = new Hashtable(1);
     static {
 	MY_URI = Profile.PROFILING_NAMESPACE + "ProfilingEditorService";
 	PROP_CONTROLS = Profile.PROFILING_NAMESPACE + "editorControls";
-	register(ProfilingEditorService.class);
-
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		User.MY_URI), new String[] { PROP_CONTROLS },
-		profilingRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = profilingRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling Profile Editor.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Profile Editor Service Controller";
     }
 
     public ProfilingEditorService(String uri) {
 	super(uri);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return profilingRestrictions;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
-     */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

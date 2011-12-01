@@ -22,8 +22,9 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.middleware.ui.owl.AccessImpairment;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * 
@@ -33,24 +34,12 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class SightImpairment extends AccessImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "SightImpairment";
-	register(SightImpairment.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's difficulty in seeing GUI-based system output.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Sight Impairment";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "SightImpairment";
 
     /**
      * The constructor for (de-)serializers.

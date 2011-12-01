@@ -29,14 +29,11 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * enumeration in Java classes for uAAL.
  * 
  * @author KAgnantis
- * 
+ * @author Carsten Stockloew
  */
 public class ExerciseType extends ManagedIndividual implements EnumProperty {
-    public static final String MY_URI;
-    static {
-	MY_URI = UserIdentificationProfile.PROFILING_NAMESPACE + "ExerciseType";
-	register(ExerciseType.class);
-    }
+    public static final String MY_URI = UserIdentificationProfile.PROFILING_NAMESPACE
+	    + "ExerciseType";
 
     public static final int SEDENTARY = 0;
     public static final int MODERATE = 1;
@@ -46,18 +43,6 @@ public class ExerciseType extends ManagedIndividual implements EnumProperty {
     public static final ExerciseType sedentary = new ExerciseType(SEDENTARY);
     public static final ExerciseType moderate = new ExerciseType(MODERATE);
     public static final ExerciseType active = new ExerciseType(ACTIVE);
-
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { sedentary, moderate, active };
-    }
-
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(UserIdentificationProfile.PROFILING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(UserIdentificationProfile.PROFILING_NAMESPACE
-			.length()))
-		: null;
-    }
 
     public static ExerciseType getExerciseTypeByOrder(int order) {
 	switch (order) {
@@ -70,14 +55,6 @@ public class ExerciseType extends ManagedIndividual implements EnumProperty {
 	default:
 	    return null;
 	}
-    }
-
-    public static String getRDFSComment() {
-	return "The enum of Exercise type.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Exercise Type";
     }
 
     public static final ExerciseType valueOf(String name) {

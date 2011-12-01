@@ -27,30 +27,18 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * mandatory ones for representing an ontological enumeration in Java classes
  * for uAAL.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class UserRole extends ManagedIndividual implements PropertyPublisher {
-    public static final String MY_URI;
-    static {
-	MY_URI = UserIdentificationProfile.PROFILING_NAMESPACE + "UserRole";
-	register(UserRole.class);
-    }
+    public static final String MY_URI = UserIdentificationProfile.PROFILING_NAMESPACE
+	    + "UserRole";
+
     // for example ... are these roles enumeration defined?
     public static final int ELDERLYUSER = 0;
 
     private static final String[] names = { "elderlyuser" };
     public static final UserRole elderlyuser = new UserRole(ELDERLYUSER);
-
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { elderlyuser };
-    }
-
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(UserIdentificationProfile.PROFILING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(UserIdentificationProfile.PROFILING_NAMESPACE
-			.length()))
-		: null;
-    }
 
     public static UserRole getUserRoleByOrder(int order) {
 	switch (order) {
@@ -59,14 +47,6 @@ public class UserRole extends ManagedIndividual implements PropertyPublisher {
 	default:
 	    return null;
 	}
-    }
-
-    public static String getRDFSComment() {
-	return "The enum of user roles.";
-    }
-
-    public static String getRDFSLabel() {
-	return "User Roles";
     }
 
     public static final UserRole valueOf(String name) {

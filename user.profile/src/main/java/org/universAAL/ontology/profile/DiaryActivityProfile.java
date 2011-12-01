@@ -22,7 +22,6 @@ package org.universAAL.ontology.profile;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
@@ -31,6 +30,8 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * the mandatory ones for representing an ontological concept in Java classes
  * for uAAL. Usually it includes getters and setters for most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class DiaryActivityProfile extends ManagedIndividual implements
 	PropertyPublisher {
@@ -62,43 +63,6 @@ public class DiaryActivityProfile extends ManagedIndividual implements
 	PROP_D_BED_TIME = PROFILING_NAMESPACE + "dBedTime";
 	PROP_D_DIARY_ACTIVITIES = PROFILING_NAMESPACE + "dDiaryActivities";
 	PROP_D_GET_UP = PROFILING_NAMESPACE + "dGetUp";
-
-	register(DiaryActivityProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_S_EXERCISE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    ExerciseType.MY_URI, 1, 1);
-	if (PROP_S_BREAKFAST_TIME.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestrictionWithCardinality(propURI, TypeMapper
-			    .getDatatypeURI(XMLGregorianCalendar.class), 1, 1);
-	if (PROP_S_LAUNCH_TIME.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestrictionWithCardinality(propURI, TypeMapper
-			    .getDatatypeURI(XMLGregorianCalendar.class), 1, 1);
-	if (PROP_S_DINNER_TIME.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestrictionWithCardinality(propURI, TypeMapper
-			    .getDatatypeURI(XMLGregorianCalendar.class), 1, 1);
-	if (PROP_S_RECOM_ACTIVITY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-
-	if (PROP_D_BED_TIME.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestrictionWithCardinality(propURI, TypeMapper
-			    .getDatatypeURI(XMLGregorianCalendar.class), 1, 1);
-	if (PROP_D_DIARY_ACTIVITIES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_D_GET_UP.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestrictionWithCardinality(propURI, TypeMapper
-			    .getDatatypeURI(XMLGregorianCalendar.class), 1, 1);
-
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -125,20 +89,6 @@ public class DiaryActivityProfile extends ManagedIndividual implements
 	    setGetUp((XMLGregorianCalendar) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_EXERCISE, PROP_S_BREAKFAST_TIME,
-		PROP_S_LAUNCH_TIME, PROP_S_DINNER_TIME, PROP_S_RECOM_ACTIVITY,
-		PROP_D_BED_TIME, PROP_D_DIARY_ACTIVITIES, PROP_D_GET_UP, };
-    }
-
-    public static String getRDFSComment() {
-	return "The list of activity profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Diary Activity Profile";
     }
 
     public DiaryActivityProfile() {
@@ -310,12 +260,5 @@ public class DiaryActivityProfile extends ManagedIndividual implements
 		"Recommended Activity", true);
 
 	return propArray;
-    }
-
-    /**
-     * @return
-     */
-    public static DiaryActivityProfile loadInstance() {
-	return new DiaryActivityProfile();
     }
 }

@@ -22,11 +22,9 @@ package org.universAAL.ontology.profile;
 import java.util.Arrays;
 import java.util.List;
 
-import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.middleware.ui.owl.AccessImpairment;
 
 /**
  * Ontological representation of the health profile of a person. Methods
@@ -34,6 +32,8 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class HealthProfile extends ManagedIndividual implements
 	PropertyPublisher {
@@ -71,50 +71,6 @@ public class HealthProfile extends ManagedIndividual implements
 		+ "sNutrionalReference";
 	PROP_S_SOCIAL_CARE_CENTER = PROFILING_NAMESPACE + "sSocialCareCenter";
 	PROP_S_TOBACCO = PROFILING_NAMESPACE + "sTobacco";
-	register(HealthProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_MEDICINE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Medicine.MY_URI, -1, 0);
-	if (PROP_HAS_DISABILITY.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI,
-		    AccessImpairment.MY_URI);
-	if (PROP_HAS_ILLNESS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Illness.MY_URI, 1, 1);
-	if (PROP_S_RECOMMENDED_WEIGHT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_AGE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_ALCOHOL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_DOCTOR_REFERENCE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_DRUGS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_HEIGHT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_HOSPITAL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_NUTRITIONAL_REFERENCE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_SOCIAL_CARE_CENTER.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_TOBACCO.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -151,23 +107,6 @@ public class HealthProfile extends ManagedIndividual implements
 	    setTobacco((Integer) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_AGE, PROP_S_ALCOHOL,
-		PROP_S_DOCTOR_REFERENCE, PROP_S_DRUGS, PROP_HAS_DISABILITY,
-		PROP_HAS_ILLNESS, PROP_HAS_MEDICINE, PROP_S_HEIGHT,
-		PROP_S_HOSPITAL, PROP_S_NUTRITIONAL_REFERENCE,
-		PROP_S_SOCIAL_CARE_CENTER, PROP_S_TOBACCO,
-		PROP_S_RECOMMENDED_WEIGHT };
-    }
-
-    public static String getRDFSComment() {
-	return "The value of health profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Health Profile";
     }
 
     public HealthProfile() {
@@ -415,15 +354,4 @@ public class HealthProfile extends ManagedIndividual implements
 
 	return propArray;
     }
-
-    /**
-     * @return
-     */
-    public static HealthProfile loadInstance() {
-	HealthProfile hp = new HealthProfile();
-	hp.setIllness(Illness.loadInstance());
-	hp.setMedicine(Medicine.loadInstance());
-	return hp;
-    }
-
 }

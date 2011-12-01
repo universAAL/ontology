@@ -20,8 +20,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of an address in the physical world. Methods
@@ -29,6 +27,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
  * 
+ * @author Carsten Stockloew
  */
 public class Address extends ManagedIndividual implements PropertyPublisher {
 
@@ -47,7 +46,6 @@ public class Address extends ManagedIndividual implements PropertyPublisher {
 	PROP_S_CITY = PROFILING_NAMESPACE + "sCity";
 	PROP_S_PROVINCE = PROFILING_NAMESPACE + "sProvince";
 	PROP_S_STREET = PROFILING_NAMESPACE + "sStreet";
-	register(Address.class);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -63,38 +61,6 @@ public class Address extends ManagedIndividual implements PropertyPublisher {
 	    setStreet((String) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_S_COUNTRY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_STATE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_CITY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_PROVINCE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_STREET.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_COUNTRY, PROP_S_STATE, PROP_S_CITY,
-		PROP_S_PROVINCE, PROP_S_STREET };
-    }
-
-    public static String getRDFSComment() {
-	return "The value of Address profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Personal AddressProfile";
     }
 
     public Address() {
@@ -227,12 +193,5 @@ public class Address extends ManagedIndividual implements PropertyPublisher {
 		PROP_S_STREET, "Street", true);
 
 	return pp;
-    }
-
-    /**
-     * @return
-     */
-    public static Address loadInstance() {
-	return new Address();
     }
 }

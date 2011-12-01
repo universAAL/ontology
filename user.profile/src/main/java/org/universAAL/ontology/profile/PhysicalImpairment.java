@@ -22,32 +22,23 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.middleware.ui.owl.AccessImpairment;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
- * Ontological representation of any physical impairment. Methods included in this class are the
- * mandatory ones for representing an ontological concept in Java classes for
- * uAAL. Usually it includes getters and setters for most of its properties.
- * @author mtazari
+ * Ontological representation of any physical impairment. Methods included in
+ * this class are the mandatory ones for representing an ontological concept in
+ * Java classes for uAAL. Usually it includes getters and setters for most of
+ * its properties.
  * 
+ * @author mtazari
+ * @author Carsten Stockloew
  */
 public class PhysicalImpairment extends AccessImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalImpairment";
-	register(PhysicalImpairment.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Physical Impairment";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "PhysicalImpairment";
 
     /**
      * The constructor for (de-)serializers.
@@ -81,10 +72,6 @@ public class PhysicalImpairment extends AccessImpairment implements
 		true);
 
 	return propArray;
-    }
-
-    public static PhysicalImpairment loadInstance() {
-	return new PhysicalImpairment(LevelRating.none);
     }
 
     public void setImpairment(LevelRating rating) {

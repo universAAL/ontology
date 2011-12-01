@@ -23,6 +23,7 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of near-sightedness impairment. Methods included
@@ -31,24 +32,12 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * its properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class NearSightedness extends SightImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "NearSightedness";
-	register(NearSightedness.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's nearsightedness.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Nearsightedness";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "NearSightedness";
 
     /**
      * The constructor for (de-)serializers.
@@ -74,10 +63,6 @@ public class NearSightedness extends SightImpairment implements
 
     public ProfileProperty[] getStaticProperties() {
 	return super.getStaticProperties();
-    }
-
-    public static SightImpairment loadInstance() {
-	return new NearSightedness(LevelRating.none);
     }
 
     public String toString() {

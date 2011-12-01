@@ -23,6 +23,7 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of far-sightedness impairment. Methods included in
@@ -31,24 +32,12 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * its properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class FarSightedness extends SightImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "FarSightedness";
-	register(FarSightedness.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's farsightedness.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Farsightedness";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "FarSightedness";
 
     /**
      * The constructor for (de-)serializers.

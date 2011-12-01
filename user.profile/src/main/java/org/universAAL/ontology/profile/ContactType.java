@@ -28,43 +28,22 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * Ontological enumeration of possible contact types. Methods included in this
  * class are the mandatory ones for representing an ontological enumeration in
  * Java classes for uAAL.
- *
+ * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class ContactType extends ManagedIndividual implements EnumProperty {
-    public static final String MY_URI;
-    static {
-	MY_URI = Profile.PROFILING_NAMESPACE + "ContactType";
-	register(ContactType.class);
-    }
+    public static final String MY_URI = Profile.PROFILING_NAMESPACE
+	    + "ContactType";
     // for example ... are these roles enumeration defined?
 
-    private static final String[] names = {
-
-    };
-
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] {};
-    }
-
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(Profile.PROFILING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(Profile.PROFILING_NAMESPACE.length())) : null;
-    }
+    private static final String[] names = {};
 
     public static ContactType getContactTypeByOrder(int order) {
 	switch (order) {
 	default:
 	    return null;
 	}
-    }
-
-    public static String getRDFSComment() {
-	return "The enum of contact type.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Contact Type";
     }
 
     public static final ContactType valueOf(String name) {

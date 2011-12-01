@@ -21,8 +21,8 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of the color blindness impairment. Methods
@@ -31,24 +31,12 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * most of its properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class ColorBlindness extends SightImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "ColorBlindness";
-	register(ColorBlindness.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's color-blindness.";
-    }
-
-    public static String getRDFSLabel() {
-	return "ColorBlindness";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "ColorBlindness";
 
     /**
      * The constructor for (de-)serializers.
@@ -64,10 +52,6 @@ public class ColorBlindness extends SightImpairment implements
 	super(impairmentLevel);
     }
 
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return new ColorBlindness();
-    }
-
     public ProfileProperty[] getAllProperties() {
 	return super.getAllProperties();
     }
@@ -78,10 +62,6 @@ public class ColorBlindness extends SightImpairment implements
 
     public ProfileProperty[] getStaticProperties() {
 	return super.getStaticProperties();
-    }
-
-    public static SightImpairment loadInstance() {
-	return new ColorBlindness(LevelRating.none);
     }
 
     public String toString() {

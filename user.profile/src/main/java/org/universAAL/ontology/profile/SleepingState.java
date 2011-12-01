@@ -33,18 +33,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * enumeration in Java classes for uAAL.
  * 
  * @author Folker
- * 
+ * @author Carsten Stockloew
  */
 public class SleepingState extends ManagedIndividual implements EnumProperty {
     public static final String USER_STATE_NAMESPACE = "http://ontology.igd.fraunhofer.de/UserState.owl#";
 
-    public static final String MY_URI;
-    public static final String PROP_SLEEPING_STATE;
-    static {
-	MY_URI = USER_STATE_NAMESPACE + "SleepingState";
-	PROP_SLEEPING_STATE = USER_STATE_NAMESPACE + "hasSleepintState";
-	register(SleepingState.class);
-    }
+    public static final String MY_URI = USER_STATE_NAMESPACE + "SleepingState";
 
     public static final int UNKNOWN = 0;
     public static final int ASLEEP = 1;
@@ -62,24 +56,6 @@ public class SleepingState extends ManagedIndividual implements EnumProperty {
 	    PREPARED_TO_SLEEP);
     public static final SleepingState sleepy = new SleepingState(SLEEPY);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { unknown, asleep, awake,
-		preparedToSleep, sleepy };
-    }
-
-    /**
-     * Returns the rating with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(USER_STATE_NAMESPACE)) ? valueOf(instanceURI
-		.substring(USER_STATE_NAMESPACE.length())) : null;
-    }
-
     public static SleepingState getSleepingStateByOrder(int order) {
 	switch (order) {
 	case UNKNOWN:
@@ -95,14 +71,6 @@ public class SleepingState extends ManagedIndividual implements EnumProperty {
 	default:
 	    return null;
 	}
-    }
-
-    public static String getRDFSComment() {
-	return "The class of possible states of the user in regard to sleeping.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Sleeping State";
     }
 
     public static final SleepingState valueOf(String name) {
@@ -156,10 +124,6 @@ public class SleepingState extends ManagedIndividual implements EnumProperty {
 
     public ProfileProperty[] getStaticProperties() {
 	return new ProfileProperty[0];
-    }
-
-    public static SleepingState loadInstance() {
-	return SleepingState.unknown;
     }
 
     public List getAllValues() {

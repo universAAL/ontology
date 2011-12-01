@@ -20,14 +20,14 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of any illness. Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
  * for uAAL. Usually it includes getters and setters for most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class Illness extends ManagedIndividual implements PropertyPublisher {
 
@@ -61,64 +61,12 @@ public class Illness extends ManagedIndividual implements PropertyPublisher {
 	PROP_S_DIABETES = PROFILING_NAMESPACE + "diabetes";
 	PROP_S_DIGESTION_PROB = PROFILING_NAMESPACE + "digestionProb";
 	PROP_S_HYPERTENSION = PROFILING_NAMESPACE + "hypertension";
-	PROP_S_ISCHEMIC_CARDIOPATHY = PROFILING_NAMESPACE
-		+ "ischemicCardiopathy";
 	PROP_S_MALNUTRITION = PROFILING_NAMESPACE + "malnutrition";
 	PROP_S_OSTEOPOROSIS = PROFILING_NAMESPACE + "osteoporosis";
 	PROP_S_OVERWEIGHT = PROFILING_NAMESPACE + "overweight";
 	PROP_S_METABOLIC_SYNDROME = PROFILING_NAMESPACE + "metabolicSyndrome";
-
-	register(Illness.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_S_ALLERGY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_ANEMIA.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_ARTERIOPATHY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_ASTHMA.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_CANCER.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_CHOLESTEROL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_DEMENTIA.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_DIABETES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_DIGESTION_PROB.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_HYPERTENSION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_ISCHEMIC_CARDIOPATHY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-
-	if (PROP_S_MALNUTRITION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_OSTEOPOROSIS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_OVERWEIGHT.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_METABOLIC_SYNDROME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+	PROP_S_ISCHEMIC_CARDIOPATHY = PROFILING_NAMESPACE
+		+ "ischemicCardiopathy";
     }
 
     public void setProperty(String propURI, Object o) {
@@ -156,24 +104,6 @@ public class Illness extends ManagedIndividual implements PropertyPublisher {
 	    setMetabolicSyndrome((Boolean) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_ALLERGY, PROP_S_ANEMIA,
-		PROP_S_ARTERIOPATHY, PROP_S_ASTHMA, PROP_S_CANCER,
-		PROP_S_CHOLESTEROL, PROP_S_DEMENTIA, PROP_S_DIABETES,
-		PROP_S_DIGESTION_PROB, PROP_S_HYPERTENSION,
-		PROP_S_ISCHEMIC_CARDIOPATHY, PROP_S_MALNUTRITION,
-		PROP_S_OSTEOPOROSIS, PROP_S_OVERWEIGHT,
-		PROP_S_METABOLIC_SYNDROME };
-    }
-
-    public static String getRDFSComment() {
-	return "The type of illness.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Illness";
     }
 
     public Illness() {
@@ -397,12 +327,4 @@ public class Illness extends ManagedIndividual implements PropertyPublisher {
 		PROP_S_METABOLIC_SYNDROME, "Metabolic syndrome", true);
 	return propArray;
     }
-
-    /**
-     * @return
-     */
-    public static Illness loadInstance() {
-	return new Illness();
-    }
-
 }

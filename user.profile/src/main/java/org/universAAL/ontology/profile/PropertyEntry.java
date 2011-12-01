@@ -20,9 +20,7 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.rdf.PropertyPath;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * 
@@ -32,7 +30,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * its properties. (to be removed)
  * 
  * @author KAgnantis
- * 
+ * @author Carsten Stockloew
  */
 public class PropertyEntry extends ManagedIndividual {
     public static final String MY_URI;
@@ -45,38 +43,6 @@ public class PropertyEntry extends ManagedIndividual {
 	PROP_PATH = Profile.PROFILING_NAMESPACE + "PropertyEntryPath";
 	PROP_IS_LITERAL = Profile.PROFILING_NAMESPACE + "PropertyIsLiteral";
 	// PROP_VALUE = Profile.PROFILING_NAMESPACE + "PropertyEntryValue";
-	register(PropertyEntry.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_PATH.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), -1, 0);
-	if (PROP_IS_LITERAL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	// if(PROP_VALUE.equals(propURI))
-	// return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-	// TypeMapper.getDatatypeURI(String.class), 1, 0);
-
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] toReturn = new String[2];
-	toReturn[0] = PROP_PATH;
-	// toReturn[1] = PROP_VALUE;
-	toReturn[1] = PROP_IS_LITERAL;
-
-	return toReturn;
-    }
-
-    public static String RDFSComment() {
-	return "The class of a OldPropertyEntry";
-    }
-
-    public static String getRDFSLabel() {
-	return "Property Definition";
     }
 
     public PropertyEntry() {

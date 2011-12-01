@@ -30,18 +30,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * representing an ontological enumeration in Java classes for uAAL.
  * 
  * @author Folker
- * 
+ * @author Carsten Stockloew
  */
 public class UserPosture extends ManagedIndividual {
     public static final String POSTURE_NAMESPACE = "http://ontology.igd.fraunhofer.de/UserPosture.owl#";
 
-    public static final String MY_URI;
-    public static final String PROP_USER_POSTURE;
-    static {
-	MY_URI = POSTURE_NAMESPACE + "UserPosture";
-	PROP_USER_POSTURE = POSTURE_NAMESPACE + "hasPosture";
-	register(UserPosture.class);
-    }
+    public static final String MY_URI = POSTURE_NAMESPACE + "UserPosture";
 
     public static final int UNKNOWN = 0;
     public static final int LYING = 1;
@@ -56,23 +50,6 @@ public class UserPosture extends ManagedIndividual {
     public static final UserPosture sitting = new UserPosture(SITTING);
     public static final UserPosture standing = new UserPosture(STANDING);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { unknown, lying, sitting, standing };
-    }
-
-    /**
-     * Returns the rating with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(POSTURE_NAMESPACE)) ? valueOf(instanceURI
-		.substring(POSTURE_NAMESPACE.length())) : null;
-    }
-
     public static UserPosture getUserPostureByOrder(int order) {
 	switch (order) {
 	case UNKNOWN:
@@ -86,14 +63,6 @@ public class UserPosture extends ManagedIndividual {
 	default:
 	    return null;
 	}
-    }
-
-    public static String getRDFSComment() {
-	return "The class of possible user postures.";
-    }
-
-    public static String getRDFSLabel() {
-	return "User Posture";
     }
 
     public static final UserPosture valueOf(String name) {

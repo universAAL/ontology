@@ -20,8 +20,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of the profile containing all the identification
@@ -30,7 +28,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * Usually it includes getters and setters for most of its properties.
  * 
  * @author alfiva
- * 
+ * @author Carsten Stockloew
  */
 public class UserIdentificationProfile extends ManagedIndividual implements
 	PropertyPublisher {
@@ -51,7 +49,6 @@ public class UserIdentificationProfile extends ManagedIndividual implements
     public static final String PROP_S_USER_ROLE_ID;
     public static final String PROP_S_USER_ROLE;
     public static final String PROP_S_ADDRESS;
-
     public static final String PROP_D_USER_IP;
 
     static {
@@ -72,64 +69,6 @@ public class UserIdentificationProfile extends ManagedIndividual implements
 	PROP_S_USER_ROLE_ID = PROFILING_NAMESPACE + "userRoleID";
 	PROP_S_USER_ROLE = PROFILING_NAMESPACE + "userRole";
 	PROP_S_ADDRESS = PROFILING_NAMESPACE + "address";
-
-	register(UserIdentificationProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	// Should we use Cardinality(MAX,MIN)= (1,1) for the required
-	// single-value properties such as a compulsory field in a XFORM and
-	// (1,0) for optional?
-	// or Semantically the property must exist so Cardinality(MAX,MIN) =
-	// (1,1) and the property may be just null value in reality
-	if (PROP_S_EMAIL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_HOME_TELEPHONE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_MOBILE_TELEPHONE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_NAME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_NATIONALITY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_D_USER_IP.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_OFFICE_TELEPHONE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_SURNAME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_PREFERRED_LANGUAGE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_AGE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_USER_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_USER_ROLE_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_USER_ROLE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(UserRole.class), 1, 1);
-	if (PROP_S_GENDER.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Sex.class), 1, 1);
-	if (PROP_S_ADDRESS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Address.MY_URI, 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -163,23 +102,6 @@ public class UserIdentificationProfile extends ManagedIndividual implements
 	else if (PROP_S_GENDER.equals(propURI) && o instanceof Sex)
 	    setGender((Sex) o);
 
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_AGE, PROP_S_EMAIL, PROP_S_HOME_TELEPHONE,
-		PROP_S_MOBILE_TELEPHONE, PROP_S_NAME, PROP_S_NATIONALITY,
-		PROP_D_USER_IP, PROP_S_OFFICE_TELEPHONE,
-		PROP_S_PREFERRED_LANGUAGE, PROP_S_GENDER, PROP_S_SURNAME,
-		PROP_S_USER_ID, PROP_S_USER_ROLE_ID, PROP_S_USER_ROLE,
-		PROP_S_ADDRESS };
-    }
-
-    public static String RDFSComment() {
-	return "The class of the User Identification Profile";
-    }
-
-    public static String getRDFSLabel() {
-	return "User Identification Profile";
     }
 
     public UserIdentificationProfile() {
@@ -423,14 +345,5 @@ public class UserIdentificationProfile extends ManagedIndividual implements
 		"User role", true);
 
 	return propArray;
-    }
-
-    /**
-     * @return
-     */
-    public static UserIdentificationProfile loadInstance() {
-	UserIdentificationProfile uiProfile = new UserIdentificationProfile();
-	uiProfile.setAddress(Address.loadInstance());
-	return uiProfile;
     }
 }

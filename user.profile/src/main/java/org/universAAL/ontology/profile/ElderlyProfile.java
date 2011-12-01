@@ -19,14 +19,14 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.Restriction;
-
 /**
  * Ontological representation of the specific profile of an elderly person.
  * Methods included in this class are the mandatory ones for representing an
  * ontological concept in Java classes for uAAL. Usually it includes getters and
  * setters for most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class ElderlyProfile extends UserProfile {
 
@@ -46,40 +46,6 @@ public class ElderlyProfile extends UserProfile {
 		+ "diaryActionProfile";
 	PROP_DIARY_NUTR_PROFILE = PROFILING_NAMESPACE + "diaryNutrProfile";
 	PROP_PERS_PREF_PROFILE = PROFILING_NAMESPACE + "personalPrefPrfile";
-	register(ElderlyProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_SOCIAL_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    SocialProfile.MY_URI, 1, 1);
-	if (PROP_HEALTH_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    HealthProfile.MY_URI, 1, 1);
-	if (PROP_DIARY_ACTIVITY_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    DiaryActivityProfile.MY_URI, 1, 1);
-	if (PROP_DIARY_NUTR_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    DiaryNutritionalProfile.MY_URI, 1, 1);
-	if (PROP_PERS_PREF_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PersonalPreferenceProfile.MY_URI, 1, 1);
-	return UserProfile.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static ElderlyProfile loadInstance() {
-	UserProfile.loadInstace();
-	ElderlyProfile eProfile = new ElderlyProfile();
-	eProfile.setDiaryNutritionalProfile(DiaryNutritionalProfile
-		.loadInstance());
-	eProfile.setDiaryActivityProfile(DiaryActivityProfile.loadInstance());
-	eProfile.setPersonalPreferenceProfile(PersonalPreferenceProfile
-		.loadInstance());
-	eProfile.setSocialProfile(SocialProfile.loadInstance());
-	eProfile.setHealthProfile(HealthProfile.loadInstance());
-
-	return eProfile;
     }
 
     public void setProperty(String propURI, Object o) {
@@ -99,29 +65,6 @@ public class ElderlyProfile extends UserProfile {
 	    setPersonalPreferenceProfile((PersonalPreferenceProfile) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = UserProfile.getStandardPropertyURIs();
-	String[] allProperties = new String[inherited.length + 0];
-	int i = 0;
-	for (; i < inherited.length; ++i) {
-	    allProperties[i] = inherited[i];
-	}
-	allProperties[i++] = PROP_DIARY_NUTR_PROFILE;
-	allProperties[i++] = PROP_DIARY_ACTIVITY_PROFILE;
-	allProperties[i++] = PROP_HEALTH_PROFILE;
-	allProperties[i++] = PROP_SOCIAL_PROFILE;
-	allProperties[i++] = PROP_PERS_PREF_PROFILE;
-	return allProperties;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of Elderly Profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Elderly Profiles";
     }
 
     public ElderlyProfile() {
@@ -199,22 +142,10 @@ public class ElderlyProfile extends UserProfile {
 	return (o == null) ? null : (PersonalPreferenceProfile) o;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
-     */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
-     */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_SOCIAL_PROFILE)
 		&& props.containsKey(PROP_HEALTH_PROFILE)

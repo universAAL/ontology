@@ -19,9 +19,6 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-
 /**
  * Ontological representation of the system user profile of a person. Methods
  * included in this class are the mandatory ones for representing an ontological
@@ -29,45 +26,18 @@ import org.universAAL.middleware.owl.Restriction;
  * most of its properties.
  * 
  * @author mfernandez
- * 
+ * @author Carsten Stockloew
  */
 public class ElderlyUser extends User {
 
     public static final String PROFILING_NAMESPACE = "http://ontology.persona.upm.es/ElderlyUser.owl#";
-    public static final String MY_URI;
-
-    static {
-	MY_URI = PROFILING_NAMESPACE + "ElderlyUser";
-	register(ElderlyUser.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    ElderlyProfile.MY_URI, 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static ElderlyUser loadInstance() {
-	ElderlyUser eu = new ElderlyUser();
-	eu.setProfile(ElderlyProfile.loadInstance());
-	return eu;
-    }
+    public static final String MY_URI = PROFILING_NAMESPACE + "ElderlyUser";
 
     public void setProperty(String propURI, Object o) {
 	if (PROP_HAS_PROFILE.equals(propURI) && o instanceof ElderlyProfile)
 	    setProfile((ElderlyProfile) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String RDFSComment() {
-
-	return "The class of a ElderlyUser";
-    }
-
-    public static String getRDFSLabel() {
-	return "ElderlyUser";
     }
 
     public ElderlyUser() {
@@ -80,11 +50,9 @@ public class ElderlyUser extends User {
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
-
     }
 
     public boolean isWellFormed() {
 	return props.containsKey(PROP_HAS_PROFILE);
     }
-
 }

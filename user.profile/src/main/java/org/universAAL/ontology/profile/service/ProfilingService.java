@@ -22,12 +22,8 @@
  */
 package org.universAAL.ontology.profile.service;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.profile.Profile;
-import org.universAAL.ontology.profile.User;
 
 /**
  * Ontological generic service that handles profile-related information. Methods
@@ -35,61 +31,21 @@ import org.universAAL.ontology.profile.User;
  * service in Java classes for uAAL.
  * 
  * @author kagnantis
- * 
+ * @author Carsten Stockloew
  */
 public class ProfilingService extends Service {
     public static final String MY_URI;
     public static final String PROP_CONTROLS;
 
-    private static Hashtable profilingRestrictions = new Hashtable(1);
     static {
 	MY_URI = Profile.PROFILING_NAMESPACE + "ProfilingService";
 	PROP_CONTROLS = Profile.PROFILING_NAMESPACE + "controls";
-
-	register(ProfilingService.class);
-
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		User.MY_URI), new String[] { PROP_CONTROLS },
-		profilingRestrictions);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = profilingRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling Profiling.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Profiling Service Controller";
     }
 
     public ProfilingService(String uri) {
 	super(uri);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.Service#getClassLevelRestrictions()
-     */
-    protected Hashtable getClassLevelRestrictions() {
-	return profilingRestrictions;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
-     */
     public int getPropSerializationType(String propURI) {
 	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: PROP_SERIALIZATION_OPTIONAL;

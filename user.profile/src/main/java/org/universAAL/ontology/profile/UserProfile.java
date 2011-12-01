@@ -20,8 +20,6 @@
 
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.Restriction;
-
 /**
  * Ontological representation of the specific profile of an any person. Methods
  * included in this class are the mandatory ones for representing an ontological
@@ -29,7 +27,7 @@ import org.universAAL.middleware.owl.Restriction;
  * most of its properties.
  * 
  * @author mfernandez
- * 
+ * @author Carsten Stockloew
  */
 // This class is empty; properties must be defined
 public class UserProfile extends Profile {
@@ -41,16 +39,6 @@ public class UserProfile extends Profile {
     static {
 	MY_URI = PROFILING_NAMESPACE + "UserProfile";
 	PROP_USER_ID_PROFILE = PROFILING_NAMESPACE + "userIdProfile";
-	register(UserProfile.class);
-    }
-
-    // Set restrictions due to its properties
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_USER_ID_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    UserIdentificationProfile.MY_URI, 1, 1);
-
-	return Profile.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -59,26 +47,6 @@ public class UserProfile extends Profile {
 	    setUserIdentificationProfile((UserIdentificationProfile) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Profile.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_USER_ID_PROFILE;
-	return toReturn;
-    }
-
-    public static String getRDFSComment() {
-	return "The class of a UserProfile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "UserProfile";
     }
 
     public UserProfile() {
@@ -108,7 +76,6 @@ public class UserProfile extends Profile {
 	    UserIdentificationProfile userIdProfile) {
 	if (userIdProfile != null)
 	    props.put(PROP_USER_ID_PROFILE, userIdProfile);
-
     }
 
     public int getPropSerializationType(String propURI) {
@@ -154,15 +121,5 @@ public class UserProfile extends Profile {
 			: getUserIdentificationProfile()),
 		PROP_USER_ID_PROFILE, "User Identification Profile", true);
 	return propArray;
-    }
-
-    /**
-     * @return
-     */
-    public static UserProfile loadInstace() {
-	UserProfile up = new UserProfile();
-	up.setUserIdentificationProfile(UserIdentificationProfile
-		.loadInstance());
-	return up;
     }
 }
