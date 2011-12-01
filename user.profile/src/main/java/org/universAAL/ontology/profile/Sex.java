@@ -30,15 +30,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * Java classes for uAAL. Usually it includes getters and setters for most of
  * its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class Sex extends ManagedIndividual implements EnumProperty {
-    public static final String MY_URI;
-    static {
-	// H inner class exei to #Sex as URI
-	// enw to property to #s_sex
-	MY_URI = UserIdentificationProfile.PROFILING_NAMESPACE + "Sex";
-	register(Sex.class);
-    }
+    public static final String MY_URI = UserIdentificationProfile.PROFILING_NAMESPACE
+	    + "Sex";
 
     public static final int MALE = 0;
     public static final int FEMALE = 1;
@@ -46,24 +43,6 @@ public class Sex extends ManagedIndividual implements EnumProperty {
     private static final String[] names = { "male", "female" };
     public static final Sex male = new Sex(MALE);
     public static final Sex female = new Sex(FEMALE);
-
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { male, female };
-    }
-
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(UserIdentificationProfile.PROFILING_NAMESPACE)) ? valueOf(instanceURI
-		.substring(UserIdentificationProfile.PROFILING_NAMESPACE
-			.length()))
-		: null;
-    }
-
-    // public static Restriction getClassRestrictionsOnProperty(String propURI)
-    // {
-    // System.out.println("!!!!!!!YOU CANT GO THERE!!!!!");
-    // return null;
-    // }
 
     public static Sex getGenderByOrder(int order) {
 	switch (order) {
@@ -74,14 +53,6 @@ public class Sex extends ManagedIndividual implements EnumProperty {
 	default:
 	    return null;
 	}
-    }
-
-    public static String getRDFSComment() {
-	return "The enum of sex.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Sex";
     }
 
     public static final Sex valueOf(String name) {

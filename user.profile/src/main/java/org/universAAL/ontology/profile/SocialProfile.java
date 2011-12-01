@@ -20,8 +20,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of the social profile of a person. Methods
@@ -29,6 +27,8 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class SocialProfile extends ManagedIndividual implements
 	PropertyPublisher {
@@ -46,23 +46,6 @@ public class SocialProfile extends ManagedIndividual implements
 	PROP_S_LIVE_ALONE = PROFILING_NAMESPACE + "sLiveAlone";
 	PROP_S_MAIN_CONTACT_ID = PROFILING_NAMESPACE + "sMainContactId";
 	PROP_S_PHYCHO_STATE = PROFILING_NAMESPACE + "sPhychoState";
-	register(SocialProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_S_HOUSE_WORKER_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_LIVE_ALONE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_S_MAIN_CONTACT_ID.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_S_PHYCHO_STATE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -76,19 +59,6 @@ public class SocialProfile extends ManagedIndividual implements
 	    setPhychoState((String) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_HOUSE_WORKER_ID, PROP_S_LIVE_ALONE,
-		PROP_S_MAIN_CONTACT_ID, PROP_S_PHYCHO_STATE };
-    }
-
-    public static String getRDFSComment() {
-	return "The value of social profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Social Profile";
     }
 
     public SocialProfile() {
@@ -200,12 +170,4 @@ public class SocialProfile extends ManagedIndividual implements
 
 	return ppArray;
     }
-
-    /**
-     * @return
-     */
-    public static SocialProfile loadInstance() {
-	return new SocialProfile();
-    }
-
 }

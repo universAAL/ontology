@@ -24,8 +24,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
  * 
@@ -36,7 +34,7 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * removed)
  * 
  * @author KAgnantis
- * 
+ * @author Carsten Stockloew
  */
 public class PropertyBag extends ManagedIndividual {
     public static final String MY_URI;
@@ -46,35 +44,6 @@ public class PropertyBag extends ManagedIndividual {
 	MY_URI = Profile.PROFILING_NAMESPACE + "PropertyBag";
 	PROP_HAS_PROPERTY_ENTRY = Profile.PROFILING_NAMESPACE
 		+ "hasPropertyEntry";
-
-	register(PropertyBag.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_PROPERTY_ENTRY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PropertyEntry.MY_URI, -1, 0);
-	return PhysicalThing.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = ManagedIndividual.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_PROPERTY_ENTRY;
-	return toReturn;
-    }
-
-    public static String RDFSComment() {
-	return "The class of a PropertyMap";
-    }
-
-    public static String getRDFSLabel() {
-	return "PropertyMap";
     }
 
     public PropertyBag() {
@@ -178,5 +147,4 @@ public class PropertyBag extends ManagedIndividual {
     public boolean isWellFormed() {
 	return true;
     }
-
 }

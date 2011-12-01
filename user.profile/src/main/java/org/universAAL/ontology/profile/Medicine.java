@@ -20,14 +20,14 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of a medicine. Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
  * for uAAL. Usually it includes getters and setters for most of its properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class Medicine extends ManagedIndividual implements PropertyPublisher {
 
@@ -40,17 +40,6 @@ public class Medicine extends ManagedIndividual implements PropertyPublisher {
 	MY_URI = PROFILING_NAMESPACE + "sMedicine";
 	PROP_S_NAME = PROFILING_NAMESPACE + "mName";
 	PROP_S_QUANTITY = PROFILING_NAMESPACE + "mQuantity";
-	register(Medicine.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_S_NAME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-	if (PROP_S_QUANTITY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -59,18 +48,6 @@ public class Medicine extends ManagedIndividual implements PropertyPublisher {
 	else if (PROP_S_QUANTITY.equals(propURI) && o instanceof Integer)
 	    setQuantity((Integer) o);
 	super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_S_NAME, PROP_S_QUANTITY };
-    }
-
-    public static String getRDFSComment() {
-	return "The value of Medicine.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Medicine";
     }
 
     public Medicine() {
@@ -166,12 +143,4 @@ public class Medicine extends ManagedIndividual implements PropertyPublisher {
 
 	return ppArray;
     }
-
-    /**
-     * @return
-     */
-    public static Medicine loadInstance() {
-	return new Medicine();
-    }
-
 }

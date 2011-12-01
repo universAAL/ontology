@@ -25,12 +25,10 @@ package org.universAAL.ontology.profile;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.universAAL.middleware.io.owl.Gender;
-import org.universAAL.middleware.io.owl.Modality;
-import org.universAAL.middleware.io.owl.PrivacyLevel;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.middleware.ui.owl.Gender;
+import org.universAAL.middleware.ui.owl.Modality;
+import org.universAAL.middleware.ui.owl.PrivacyLevel;
 
 /**
  * Ontological representation of the system preferences for a user. Methods
@@ -39,7 +37,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * most of its properties.
  * 
  * @author KAgnantis
- * 
+ * @author Carsten Stockloew
  */
 public class PersonalPreferenceProfile extends ManagedIndividual implements
 	PropertyPublisher {
@@ -78,41 +76,6 @@ public class PersonalPreferenceProfile extends ManagedIndividual implements
 		+ "dPersonalMinResolutionX";
 	PROP_D_PERSONAL_MIN_RESOLUTION_Y = PROFILING_NAMESPACE
 		+ "dPersonalMaxResolutionX";
-	register(PersonalPreferenceProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_D_VOICE_GENDER.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Gender.MY_URI, 1, 1);
-	if (PROP_D_PRIVACY_LEVELS_MAPPED_TO_INSENSIBLE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PrivacyLevel.MY_URI, 0, 1);
-	if (PROP_D_PRIVACY_LEVELS_MAPPED_TO_PERSONAL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PrivacyLevel.MY_URI, 0, 1);
-	if (PROP_D_INTERACTION_MODALITY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Modality.MY_URI, 1, 1);
-	if (PROP_D_INSENSIBLE_VOLUME_LEVEL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_D_PERSONAL_VOLUME_LEVEL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_D_INSENSIBLE_MAX_RESOLUTION_X.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_D_INSENSIBLE_MAX_RESOLUTION_Y.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_D_PERSONAL_MIN_RESOLUTION_X.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_D_PERSONAL_MIN_RESOLUTION_Y.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -147,25 +110,6 @@ public class PersonalPreferenceProfile extends ManagedIndividual implements
 	    setPersonalMinY((Integer) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_D_PRIVACY_LEVELS_MAPPED_TO_INSENSIBLE,
-		PROP_D_PRIVACY_LEVELS_MAPPED_TO_PERSONAL,
-		PROP_D_INTERACTION_MODALITY, PROP_D_VOICE_GENDER,
-		PROP_D_INSENSIBLE_VOLUME_LEVEL, PROP_D_PERSONAL_VOLUME_LEVEL,
-		PROP_D_INSENSIBLE_MAX_RESOLUTION_X,
-		PROP_D_INSENSIBLE_MAX_RESOLUTION_Y,
-		PROP_D_PERSONAL_MIN_RESOLUTION_X,
-		PROP_D_PERSONAL_MIN_RESOLUTION_Y };
-    }
-
-    public static String getRDFSComment() {
-	return "The value of personal preferences profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Personal Preferences Profile";
     }
 
     public PersonalPreferenceProfile() {
@@ -316,22 +260,10 @@ public class PersonalPreferenceProfile extends ManagedIndividual implements
 	props.put(PROP_D_PERSONAL_MIN_RESOLUTION_Y, level);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
-     */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
-     */
     public boolean isWellFormed() {
 	return true;
     }
@@ -394,12 +326,5 @@ public class PersonalPreferenceProfile extends ManagedIndividual implements
 
     public ProfileProperty[] getStaticProperties() {
 	return new ProfileProperty[0];
-    }
-
-    /**
-     * @return
-     */
-    public static PersonalPreferenceProfile loadInstance() {
-	return new PersonalPreferenceProfile();
     }
 }

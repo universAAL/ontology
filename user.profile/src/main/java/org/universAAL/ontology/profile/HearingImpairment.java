@@ -22,8 +22,9 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.middleware.ui.owl.AccessImpairment;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of a hearing impairment. Methods included in this
@@ -32,23 +33,11 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class HearingImpairment extends AccessImpairment {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "HearingImpairment";
-	register(HearingImpairment.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's difficulty in hearing voice-based system output.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Hearing Impairment";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "HearingImpairment";
 
     /**
      * The constructor for (de-)serializers.

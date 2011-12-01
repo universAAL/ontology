@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * Helper interface for enumerations
- *
+ * 
  */
 public interface EnumProperty extends PropertyPublisher {
     // a list of String[2]:

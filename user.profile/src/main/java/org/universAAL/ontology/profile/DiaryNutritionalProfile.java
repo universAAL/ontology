@@ -20,8 +20,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of the daily nutritional profile of a person,
@@ -30,6 +28,8 @@ import org.universAAL.middleware.rdf.TypeMapper;
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
  * 
+ * @author
+ * @author Carsten Stockloew
  */
 public class DiaryNutritionalProfile extends ManagedIndividual implements
 	PropertyPublisher {
@@ -43,17 +43,6 @@ public class DiaryNutritionalProfile extends ManagedIndividual implements
 	MY_URI = PROFILING_NAMESPACE + "DiaryNutritionalProfile";
 	PROP_D_CALORIES = PROFILING_NAMESPACE + "dCalories";
 	PROP_D_MEAL = PROFILING_NAMESPACE + "dMeat";
-	register(DiaryNutritionalProfile.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_D_CALORIES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	if (PROP_D_MEAL.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Integer.class), 1, 1);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public void setProperty(String propURI, Object o) {
@@ -63,18 +52,6 @@ public class DiaryNutritionalProfile extends ManagedIndividual implements
 	    setMeal((Integer) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_D_CALORIES, PROP_D_MEAL, };
-    }
-
-    public static String getRDFSComment() {
-	return "The value of diary nutritional profile.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Diary Nutritional Profile";
     }
 
     public DiaryNutritionalProfile() {
@@ -106,15 +83,15 @@ public class DiaryNutritionalProfile extends ManagedIndividual implements
 	props.put(PROP_D_CALORIES, dCalories);
     }
 
-    public Integer getMeat() {
+    public Integer getMeal() {
 	Integer i = (Integer) props.get(PROP_D_MEAL);
 	if (i == null)
 	    return new Integer(-1);
 	return i;
     }
 
-    public void setMeal(Integer dMeat) {
-	props.put(PROP_D_MEAL, dMeat);
+    public void setMeal(Integer dMeal) {
+	props.put(PROP_D_MEAL, dMeal);
     }
 
     public int getPropSerializationType(String propURI) {
@@ -151,7 +128,7 @@ public class DiaryNutritionalProfile extends ManagedIndividual implements
 
 	pp[0] = new ProfileProperty(getCalories(), PROP_D_CALORIES, "Calories",
 		false);
-	pp[1] = new ProfileProperty(getMeat(), PROP_D_MEAL, "Number of meals",
+	pp[1] = new ProfileProperty(getMeal(), PROP_D_MEAL, "Number of meals",
 		false);
 
 	return pp;
@@ -159,12 +136,5 @@ public class DiaryNutritionalProfile extends ManagedIndividual implements
 
     public ProfileProperty[] getStaticProperties() {
 	return new ProfileProperty[0];
-    }
-
-    /**
-     * @return
-     */
-    public static DiaryNutritionalProfile loadInstance() {
-	return new DiaryNutritionalProfile();
     }
 }

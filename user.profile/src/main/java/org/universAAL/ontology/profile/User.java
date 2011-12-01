@@ -19,8 +19,6 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
@@ -30,7 +28,7 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * most of its properties.
  * 
  * @author mfernandez
- * 
+ * @author Carsten Stockloew
  */
 public class User extends PhysicalThing {
     public static final String PROFILING_NAMESPACE = "http://ontology.persona.upm.es/User.owl#";
@@ -39,6 +37,8 @@ public class User extends PhysicalThing {
     public static final String PROP_HAS_PROPERTY_BAG;
     public static final String PROP_USERNAME;
     public static final String PROP_PASSWORD;
+    public static final String PROP_USER_POSTURE;
+    public static final String PROP_SLEEPING_STATE;
 
     static {
 	MY_URI = PROFILING_NAMESPACE + "User";
@@ -46,37 +46,15 @@ public class User extends PhysicalThing {
 	PROP_HAS_PROPERTY_BAG = PROFILING_NAMESPACE + "hasPropertyMap";
 	PROP_USERNAME = PROFILING_NAMESPACE + "username";
 	PROP_PASSWORD = PROFILING_NAMESPACE + "password";
-
-	register(User.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_PROFILE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    UserProfile.MY_URI, 1, 1);
-	if (UserPosture.PROP_USER_POSTURE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    UserPosture.MY_URI, 1, 0);
-	if (PROP_HAS_PROPERTY_BAG.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PropertyBag.MY_URI, 1, 0);
-	if (SleepingState.PROP_SLEEPING_STATE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    SleepingState.MY_URI, 1, 0);
-	if (PROP_USERNAME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	if (PROP_PASSWORD.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	return PhysicalThing.getClassRestrictionsOnProperty(propURI);
+	PROP_USER_POSTURE = UserPosture.POSTURE_NAMESPACE + "hasPosture";
+	PROP_SLEEPING_STATE = SleepingState.USER_STATE_NAMESPACE
+		+ "hasSleepintState";
     }
 
     public void setProperty(String propURI, Object o) {
 	if (PROP_HAS_PROFILE.equals(propURI) && o instanceof UserProfile)
 	    setProfile((UserProfile) o);
-	else if (UserPosture.PROP_USER_POSTURE.equals(propURI)
-		&& o instanceof UserPosture)
+	else if (PROP_USER_POSTURE.equals(propURI) && o instanceof UserPosture)
 	    setPosture((UserPosture) o);
 	else if (PROP_HAS_PROPERTY_BAG.equals(propURI)
 		&& o instanceof PropertyBag)
@@ -87,31 +65,6 @@ public class User extends PhysicalThing {
 	    setPassword((String) o);
 	else
 	    super.setProperty(propURI, o);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = PhysicalThing.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 5];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_PROFILE;
-	toReturn[i++] = PROP_HAS_PROPERTY_BAG;
-	toReturn[i++] = PROP_USERNAME;
-	toReturn[i++] = PROP_PASSWORD;
-	toReturn[i++] = UserPosture.PROP_USER_POSTURE;
-	toReturn[i++] = SleepingState.PROP_SLEEPING_STATE;
-	return toReturn;
-    }
-
-    public static String RDFSComment() {
-	return "The class of a User";
-    }
-
-    public static String getRDFSLabel() {
-	return "User";
     }
 
     public User() {
@@ -131,12 +84,12 @@ public class User extends PhysicalThing {
     }
 
     public UserPosture getPosture() {
-	return (UserPosture) props.get(UserPosture.PROP_USER_POSTURE);
+	return (UserPosture) props.get(PROP_USER_POSTURE);
     }
 
     public void setPosture(UserPosture p) {
 	if (p != null)
-	    props.put(UserPosture.PROP_USER_POSTURE, p);
+	    props.put(PROP_USER_POSTURE, p);
     }
 
     public UserProfile getProfile() {
@@ -149,12 +102,12 @@ public class User extends PhysicalThing {
     }
 
     public SleepingState getSleepingState() {
-	return (SleepingState) props.get(SleepingState.PROP_SLEEPING_STATE);
+	return (SleepingState) props.get(PROP_SLEEPING_STATE);
     }
 
     public void setSleepingState(SleepingState ss) {
 	if (ss != null)
-	    props.put(SleepingState.PROP_SLEEPING_STATE, ss);
+	    props.put(PROP_SLEEPING_STATE, ss);
     }
 
     public PropertyBag getPropertyBag() {
@@ -191,22 +144,14 @@ public class User extends PhysicalThing {
 
     public String getPassword() {
 	Object o = props.get(PROP_PASSWORD);
-
 	return (o instanceof String) ? (String) o : null;
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
-
     }
 
     public boolean isWellFormed() {
 	return props.containsKey(PROP_HAS_PROFILE);
-    }
-
-    public static User loadEmptyInstance() {
-	User u = new User();
-	u.setProfile(UserProfile.loadInstace());
-	return u;
     }
 }

@@ -22,8 +22,9 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.io.owl.AccessImpairment;
 import org.universAAL.middleware.owl.supply.LevelRating;
+import org.universAAL.middleware.ui.owl.AccessImpairment;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of a speaking impairment. Methods included in this
@@ -32,24 +33,12 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * properties.
  * 
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
 public class SpeakingImpairment extends AccessImpairment implements
 	PropertyPublisher {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "SpeakingImpairment";
-	register(SpeakingImpairment.class);
-    }
-
-    public static String getRDFSComment() {
-	return "Represents the level of the user's difficulty in speaking.";
-    }
-
-    public static String getRDFSLabel() {
-	return "Speaking Impairment";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "SpeakingImpairment";
 
     /**
      * The constructor for (de-)serializers.
@@ -83,10 +72,6 @@ public class SpeakingImpairment extends AccessImpairment implements
 		true);
 
 	return propArray;
-    }
-
-    public static SpeakingImpairment loadInstance() {
-	return new SpeakingImpairment(LevelRating.none);
     }
 
     public void setImpairment(LevelRating rating) {
