@@ -293,7 +293,6 @@ weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
 weather/src/test/java/org/universAAL/ontology/weather/test/ArtifactIntegrationTest.java -text
 weather/src/test/resources/log4j.properties -text
-weather/uAAL.log -text
 window/LICENSE.txt -text
 window/NOTICE.txt -text
 window/pom.xml -text
