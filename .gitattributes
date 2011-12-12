@@ -30,6 +30,7 @@ blind/src/main/java/org/universAAL/ontology/BlindFactory.java -text
 blind/src/main/java/org/universAAL/ontology/BlindOntology.java -text
 blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
 blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
+device.extra/artifact.composite -text
 device.extra/pom.xml -text
 device.extra/src/main/java/org/universAAL/ontology/Activator.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/CarpetSensor.java -text
@@ -38,6 +39,8 @@ device.extra/src/main/java/org/universAAL/ontology/device/home/Oven.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/PresenceDetector.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
+device.extra/src/test/java/org/universAAL/ontology/device/home/test/ArtifactIntegrationTest.java -text
+device.extra/src/test/resources/log4j.properties -text
 furniture/LICENSE.txt -text
 furniture/NOTICE.txt -text
 furniture/pom.xml -text
@@ -93,11 +96,14 @@ location.extra/src/main/java/org/universAAL/ontology/location/extra/RelativePosi
 location.extra/src/main/java/org/universAAL/ontology/location/extra/RoomPlace.java -text
 measurement/LICENSE.txt -text
 measurement/NOTICE.txt -text
+measurement/artifact.composite -text
 measurement/pom.xml -text
 measurement/src/main/java/org/universAAL/ontology/Activator.java -text
 measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
 measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
 measurement/src/main/resources/Measurement.jpg -text
+measurement/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
+measurement/src/test/resources/log4j.properties -text
 medication/LICENSE.txt -text
 medication/NOTICE.txt -text
 medication/pom.xml -text
@@ -114,6 +120,10 @@ multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
+physical.world/artifact-0.2.3.composite -text
+physical.world/artifact.composite -text
+physical.world/composite-0.2.3/ont.phWorld-0.2.3-SNAPSHOT.jar -text
+physical.world/composite-0.2.3/ont.phWorld-0.2.3-SNAPSHOT.pom -text
 physical.world/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 physical.world/documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 physical.world/documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
@@ -183,6 +193,8 @@ physical.world/src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 physical.world/src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
+physical.world/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+physical.world/src/test/resources/log4j.properties -text
 pom/pom.xml -text
 powersocket/LICENSE.txt -text
 powersocket/NOTICE.txt -text
@@ -201,10 +213,13 @@ powersocketswitch/src/main/java/org/universAAL/ontology/Activator.java -text
 powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterActuator.java -text
 powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterController.java -text
 powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterType.java -text
+risk/artifact.composite -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text
 risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
 risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
+risk/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
+risk/src/test/resources/log4j.properties -text
 tutorial/pom.xml -text
 tutorial/src/main/java/org/universAAL/ontology/Activator.java -text
 tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
@@ -265,6 +280,7 @@ water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
 weather/LICENSE.txt -text
 weather/NOTICE.txt -text
+weather/artifact.composite -text
 weather/pom.xml -text
 weather/src/main/java/org/universAAL/ontology/Activator.java -text
 weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
@@ -273,6 +289,8 @@ weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
 weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
+weather/src/test/java/org/universAAL/ontology/weather/test/ArtifactIntegrationTest.java -text
+weather/src/test/resources/log4j.properties -text
 window/LICENSE.txt -text
 window/NOTICE.txt -text
 window/pom.xml -text

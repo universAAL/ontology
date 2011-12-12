@@ -21,6 +21,18 @@
 	<!-- ______________________________________________________ -->
 
 	<dependencies>
+		<!--
+			The dependency to itests has always come before the dependency to
+			org.osgi.core (groupId:org.apache.felix). The easiest approach is to
+			just put the dependency to itests as the first one.
+		-->	
+		<dependency>
+			<groupId>org.universAAL.support</groupId>
+			<artifactId>itests</artifactId>
+			<version>0.1.1-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+			
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
@@ -71,6 +83,15 @@
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
 				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>bundle-manifest</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+					</execution>
+				</executions>				
 				<configuration>
 					<instructions>
 						<Bundle-Name>${project.name}</Bundle-Name>
@@ -86,8 +107,97 @@
 					</instructions>
 				</configuration>
 			</plugin>
+			<plugin>
+				<!-- Plugin for *installing* and *deploying* composite of the current version -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<!-- Plugin for *installing* composite of 0.2.3-SNAPSHOT -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>artifact-composite-0.2.3-install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<file>${basedir}/artifact-0.2.3.composite</file>
+							<groupId>${groupId}</groupId>
+							<artifactId>${artifactId}</artifactId>
+							<version>0.2.3-SNAPSHOT</version>
+							<packaging>composite</packaging>
+						</configuration>
+					</execution>				
+				</executions>
+			</plugin>			
 		</plugins>
 	</build>
+	
+	<profiles>
+		<profile>
+			<id>composite-0.2.3-deploy</id>
+			<build>
+				<plugins>
+					<plugin>
+						<!-- Deploying of the current version is skipped in this profile -->
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>build-helper-maven-plugin</artifactId>
+						<version>1.7</version>
+						<configuration>
+							<skipAttach>true</skipAttach>
+						</configuration>
+					</plugin>				
+					<plugin>
+						<!--
+							Plugin for *deploying* composite of 0.2.3-SNAPSHOT
+							It is turned off by default. If there a need for *deploying* it
+							the following command has to be invoked:
+							"mvn deploy -Pcomposite-0.2.3-deploy"
+						 -->
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-deploy-plugin</artifactId>
+						<version>2.7</version>
+						<configuration>
+							<!-- Deployment of the current version is skipped -->
+							<skip>true</skip>
+						</configuration>
+						<executions>
+							<execution>
+								<id>composite-0.2.3-deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy-file</goal>
+								</goals>
+								<!-- Config is complex because composite needs to be deployed together
+									 with JAR and POM. Otherwise Pax Runner and Integration Tests will
+									 not be able to download artifact from nexus snapshot repository!!
+								 -->
+								<configuration>
+									<repositoryId>uaal-snapshots</repositoryId>
+									<url>http://depot.universaal.org/maven-repo/snapshots/</url>
+									<file>${basedir}/composite-0.2.3/ont.phWorld-0.2.3-SNAPSHOT.jar</file>
+									<pomFile>${basedir}/composite-0.2.3/ont.phWorld-0.2.3-SNAPSHOT.pom</pomFile>
+									<groupId>${groupId}</groupId>
+									<artifactId>${artifactId}</artifactId>
+									<version>0.2.3-SNAPSHOT</version>
+									<packaging>jar</packaging>
+									<!-- The second file and type are just dummies because when having only one classifer
+										 empty classifier was not accepted.
+									-->
+									<files>${basedir}/artifact-0.2.3.composite,${basedir}/artifact-0.2.3.composite</files>
+									<types>composite,composite_copy</types>
+									<classifiers>,</classifiers>											
+								</configuration>											
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>		
 
 	<!-- ______________________________________________________ -->
 
