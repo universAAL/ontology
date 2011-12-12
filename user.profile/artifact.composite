@@ -1,0 +1,4 @@
+scan-composite:mvn:org.universAAL.ontology/ont.phWorld/0.2.4-SNAPSHOT/composite
+scan-composite:mvn:org.universAAL.middleware/mw.bus.service/0.3.2-SNAPSHOT/composite
+scan-bundle:mvn:org.universAAL.middleware/mw.bus.ui/0.3.3-SNAPSHOT
+scan-bundle:mvn:org.universAAL.ontology/ont.profile/0.3.2-SNAPSHOT
