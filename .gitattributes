@@ -222,7 +222,6 @@ risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
 risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 risk/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
 risk/src/test/resources/log4j.properties -text
-risk/uAAL.log -text
 tutorial/pom.xml -text
 tutorial/src/main/java/org/universAAL/ontology/Activator.java -text
 tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
