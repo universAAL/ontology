@@ -13,6 +13,7 @@ device.extra/.classpath
 device.extra/.project
 device.extra/.settings
 device.extra/target
+device.extra/uAAL.log
 furniture/.classpath
 furniture/.project
 furniture/.settings
@@ -38,6 +39,7 @@ measurement/.classpath
 measurement/.project
 measurement/.settings
 measurement/target
+measurement/uAAL.log
 medication/.classpath
 medication/.project
 medication/.settings
@@ -50,6 +52,7 @@ physical.world/.classpath
 physical.world/.project
 physical.world/.settings
 physical.world/target
+physical.world/uAAL.log
 pom/.classpath
 pom/.project
 pom/.settings
@@ -66,6 +69,7 @@ risk/.classpath
 risk/.project
 risk/.settings
 risk/target
+risk/uAAL.log
 /target
 tutorial/.classpath
 tutorial/.project
@@ -84,6 +88,7 @@ weather/.project
 weather/.settings
 weather/bin
 weather/target
+weather/uAAL.log
 window/.classpath
 window/.project
 window/.settings
