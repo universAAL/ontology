@@ -41,6 +41,7 @@ device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator.jav
 device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 device.extra/src/test/java/org/universAAL/ontology/device/home/test/ArtifactIntegrationTest.java -text
 device.extra/src/test/resources/log4j.properties -text
+device.extra/uAAL.log -text
 furniture/LICENSE.txt -text
 furniture/NOTICE.txt -text
 furniture/pom.xml -text
@@ -104,6 +105,7 @@ measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeas
 measurement/src/main/resources/Measurement.jpg -text
 measurement/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
 measurement/src/test/resources/log4j.properties -text
+measurement/uAAL.log -text
 medication/LICENSE.txt -text
 medication/NOTICE.txt -text
 medication/pom.xml -text
@@ -195,6 +197,7 @@ physical.world/src/main/java/org/universAAL/ontology/space/SpaceConfigurationSer
 physical.world/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
 physical.world/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 physical.world/src/test/resources/log4j.properties -text
+physical.world/uAAL.log -text
 pom/pom.xml -text
 powersocket/LICENSE.txt -text
 powersocket/NOTICE.txt -text
@@ -220,6 +223,7 @@ risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
 risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 risk/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
 risk/src/test/resources/log4j.properties -text
+risk/uAAL.log -text
 tutorial/pom.xml -text
 tutorial/src/main/java/org/universAAL/ontology/Activator.java -text
 tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
@@ -291,6 +295,7 @@ weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
 weather/src/test/java/org/universAAL/ontology/weather/test/ArtifactIntegrationTest.java -text
 weather/src/test/resources/log4j.properties -text
+weather/uAAL.log -text
 window/LICENSE.txt -text
 window/NOTICE.txt -text
 window/pom.xml -text
