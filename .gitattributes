@@ -229,6 +229,7 @@ user.profile/LICENSE-JGCL.txt -text
 user.profile/LICENSE-MIT11-Bouncycastle.txt -text
 user.profile/LICENSE.txt -text
 user.profile/NOTICE.txt -text
+user.profile/artifact.composite -text
 user.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 user.profile/documentation/ont.profile[!!-~]dependencies[!!-~]19.4.2011.png -text
 user.profile/pom.xml -text
@@ -271,6 +272,8 @@ user.profile/src/main/java/org/universAAL/ontology/profile/UserProfile.java -tex
 user.profile/src/main/java/org/universAAL/ontology/profile/UserRole.java -text
 user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingEditorService.java -text
 user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingService.java -text
+user.profile/src/test/java/org/universAAL/ontology/profile/ArtifactIntegrationTest.java -text
+user.profile/src/test/resources/log4j.properties -text
 water/pom.xml -text
 water/src/main/java/org/universAAL/ontology/Activator.java -text
 water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
