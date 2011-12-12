@@ -1,0 +1,39 @@
+main       [2011-12-01 11:37:13,857] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-01 11:37:13,858] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '133f9331217@rivia+eabb5c78' started! 
+main       [2011-12-01 11:37:14,050] INFO  - Loading context for locations:  
+main       [2011-12-02 11:18:05,632] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-02 11:18:05,635] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '133fe47e892@rivia+e5138d62' started! 
+main       [2011-12-02 11:18:05,830] INFO  - Loading context for locations:  
+main       [2011-12-09 23:53:15,701] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-09 23:53:15,791] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '1342507ccf2@rivia+6b79b7ff' started! 
+main       [2011-12-09 23:53:15,952] INFO  - Loading context for locations:  
+main       [2011-12-09 23:53:44,498] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-09 23:53:44,508] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '13425083d2e@rivia+60051933' started! 
+main       [2011-12-09 23:53:44,677] INFO  - Loading context for locations:  
+main       [2011-12-12 15:32:18,016] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/DataRepresentation.owl 
+main       [2011-12-12 15:32:18,713] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-12 15:32:18,733] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '13432b03eaf@rivia+1f71d1e' started! 
+main       [2011-12-12 15:32:18,793] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/ServiceBus.owl 
+main       [2011-12-12 15:32:18,844] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/PhysicalWorld.owl 
+main       [2011-12-12 15:32:18,854] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.persona.ima.igd.fhg.de/Shape.owl 
+main       [2011-12-12 15:32:18,857] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/uAAL.owl 
+main       [2011-12-12 15:32:18,899] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/Weather.owl 
+main       [2011-12-12 15:32:18,949] INFO  - Loading context for locations:  
+main       [2011-12-12 15:38:06,625] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/DataRepresentation.owl 
+main       [2011-12-12 15:38:07,320] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-12 15:38:07,340] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '13432b59047@rivia+225d5cf9' started! 
+main       [2011-12-12 15:38:07,370] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/ServiceBus.owl 
+main       [2011-12-12 15:38:07,420] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/PhysicalWorld.owl 
+main       [2011-12-12 15:38:07,430] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.persona.ima.igd.fhg.de/Shape.owl 
+main       [2011-12-12 15:38:07,430] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/uAAL.owl 
+main       [2011-12-12 15:38:07,615] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/Weather.owl 
+main       [2011-12-12 15:38:07,652] INFO  - Loading context for locations:  
+main       [2011-12-12 15:39:45,257] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/DataRepresentation.owl 
+main       [2011-12-12 15:39:45,997] INFO  - Cryptography utils initialized successfully! 
+main       [2011-12-12 15:39:46,007] INFO  - SodaPopImpl->init(): SodaPopPeer with ID '13432b711c7@rivia+d87c0063' started! 
+main       [2011-12-12 15:39:46,047] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/ServiceBus.owl 
+main       [2011-12-12 15:39:46,097] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/PhysicalWorld.owl 
+main       [2011-12-12 15:39:46,107] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.persona.ima.igd.fhg.de/Shape.owl 
+main       [2011-12-12 15:39:46,111] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/uAAL.owl 
+main       [2011-12-12 15:39:46,152] DEBUG - OntologyManagement->register(): Registering ontology: http://ontology.universAAL.org/Weather.owl 
+main       [2011-12-12 15:39:46,204] INFO  - Loading context for locations:  
