@@ -245,3 +245,11 @@ water/src/main/java/org/universAAL/ontology/Activator.java -text
 water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
+weather/LICENSE.txt -text
+weather/NOTICE.txt -text
+weather/pom.xml -text
+weather/src/main/java/org/universAAL/ontology/Activator.java -text
+weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
+weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
+weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
+weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
