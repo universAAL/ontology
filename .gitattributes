@@ -101,3 +101,7 @@ medication/pom.xml -text
 medication/src/main/java/org/universAAL/ontology/Activator.java -text
 medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
 medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
+multimedia/pom.xml -text
+multimedia/src/main/java/org/universAAL/ontology/Activator.java -text
+multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
+multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
