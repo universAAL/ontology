@@ -240,3 +240,8 @@ user.profile/src/main/java/org/universAAL/ontology/profile/UserProfile.java -tex
 user.profile/src/main/java/org/universAAL/ontology/profile/UserRole.java -text
 user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingEditorService.java -text
 user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingService.java -text
+water/pom.xml -text
+water/src/main/java/org/universAAL/ontology/Activator.java -text
+water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
+water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
+water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
