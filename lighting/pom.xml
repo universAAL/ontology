@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.0</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
 	<packaging>bundle</packaging>
 	<artifactId>ont.lighting</artifactId>
-	<version>0.2.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>The Lighting Ontology</name>
 	<description>The ontology defining the most general concepts dealing with light sources and their control.</description>
 	<url />
@@ -19,37 +19,26 @@
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation</artifactId>
-			<version>0.3.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.bus.service</artifactId>
-			<version>0.3.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.phWorld</artifactId>
-			<version>0.2.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.container.xfaces</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.container.osgi</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -72,4 +61,10 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<scm>
+		<connection>${svn.base}/lighting</connection>
+		<developerConnection>${svn.base}/lighting</developerConnection>
+		<url>${svn.base.url}</url>
+	</scm>
 </project>

@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.0</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
 	<artifactId>ont.gesture.pointing</artifactId>
@@ -22,29 +22,16 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.phWorld</artifactId>
-			<version>0.2.2-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.profile</artifactId>
-			<version>0.3.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation</artifactId>
-			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.profile</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -73,9 +60,9 @@
 	<!-- ______________________________________________________ -->
 
 	<scm>
-		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/gesture.pointing</connection>
-		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/gesture.pointing</developerConnection>
-		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+		<connection>${svn.base}/gesture.pointing</connection>
+		<developerConnection>${svn.base}/gesture.pointing</developerConnection>
+		<url>${svn.base.url}</url>
 	</scm>
 	
 </project>
