@@ -105,6 +105,7 @@ multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
+physical.world/artifact.composite -text
 physical.world/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 physical.world/documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 physical.world/documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
@@ -197,6 +198,7 @@ user.profile/LICENSE-JGCL.txt -text
 user.profile/LICENSE-MIT11-Bouncycastle.txt -text
 user.profile/LICENSE.txt -text
 user.profile/NOTICE.txt -text
+user.profile/artifact.composite -text
 user.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 user.profile/documentation/ont.profile[!!-~]dependencies[!!-~]19.4.2011.png -text
 user.profile/pom.xml -text
@@ -244,6 +246,7 @@ water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
 weather/LICENSE.txt -text
 weather/NOTICE.txt -text
+weather/artifact.composite -text
 weather/pom.xml -text
 weather/src/main/java/org/universAAL/ontology/Activator.java -text
 weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
