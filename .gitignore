@@ -83,3 +83,7 @@ weather/.project
 weather/.settings
 weather/bin
 weather/target
+window/.classpath
+window/.project
+window/.settings
+window/target
