@@ -37,3 +37,9 @@ device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator.jav
 device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 device.extra/src/test/java/org/universAAL/ontology/device/home/test/ArtifactIntegrationTest.java -text
 device.extra/src/test/resources/log4j.properties -text
+furniture/LICENSE.txt -text
+furniture/NOTICE.txt -text
+furniture/pom.xml -text
+furniture/src/main/java/org/universAAL/ontology/Activator.java -text
+furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
+furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
