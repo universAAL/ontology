@@ -92,8 +92,6 @@
 		<!-- Default configuration for compiler source and target JVM -->
 		<maven.compile.source>1.4</maven.compile.source>
 		<maven.compile.target>1.4</maven.compile.target>
-		<!-- Skip testing by Default, to enable tests run maven with "-DskipTests=false" option -->
-		<skipTests>true</skipTests>
 	</properties>
 
 	<!-- ______________________________________________________ -->
