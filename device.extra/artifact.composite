@@ -1,0 +1,3 @@
+scan-composite:mvn:org.universAAL.ontology/ont.profile/0.3.1-SNAPSHOT/composite
+scan-composite:mvn:org.universAAL.ontology/ont.weather/0.2.1-SNAPSHOT/composite
+scan-bundle:mvn:org.universAAL.ontology/ont.device.extra/0.1.0-SNAPSHOT

@@ -6,3 +6,8 @@ blind/.classpath
 blind/.project
 blind/.settings
 blind/target
+device.extra/.classpath
+device.extra/.project
+device.extra/.settings
+device.extra/target
+device.extra/uAAL.log

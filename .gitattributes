@@ -26,3 +26,14 @@ blind/pom.xml -text
 blind/src/main/java/org/universAAL/ontology/Activator.java -text
 blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
 blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
+device.extra/artifact.composite -text
+device.extra/pom.xml -text
+device.extra/src/main/java/org/universAAL/ontology/Activator.java -text
+device.extra/src/main/java/org/universAAL/ontology/device/home/CarpetSensor.java -text
+device.extra/src/main/java/org/universAAL/ontology/device/home/ContactSensor.java -text
+device.extra/src/main/java/org/universAAL/ontology/device/home/Oven.java -text
+device.extra/src/main/java/org/universAAL/ontology/device/home/PresenceDetector.java -text
+device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator.java -text
+device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
+device.extra/src/test/java/org/universAAL/ontology/device/home/test/ArtifactIntegrationTest.java -text
+device.extra/src/test/resources/log4j.properties -text
