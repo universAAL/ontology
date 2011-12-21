@@ -184,3 +184,10 @@ powersocketswitch/src/main/java/org/universAAL/ontology/Activator.java -text
 powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterActuator.java -text
 powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterController.java -text
 powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterType.java -text
+risk/artifact.composite -text
+risk/pom.xml -text
+risk/src/main/java/org/universAAL/ontology/Activator.java -text
+risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
+risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
+risk/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
+risk/src/test/resources/log4j.properties -text
