@@ -70,3 +70,7 @@ tutorial/.classpath
 tutorial/.project
 tutorial/.settings
 tutorial/target
+user.profile/.classpath
+user.profile/.project
+user.profile/.settings
+user.profile/target
