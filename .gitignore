@@ -49,3 +49,7 @@ physical.world/.classpath
 physical.world/.project
 physical.world/.settings
 physical.world/target
+pom/.classpath
+pom/.project
+pom/.settings
+pom/target
