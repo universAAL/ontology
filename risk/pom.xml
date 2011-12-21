@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.pom</artifactId>
+		<version>1.0.1</version>
+		<relativePath>../pom/pom.xml</relativePath>
+	</parent>
+	<artifactId>ont.risk</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	
+	<!-- ______________________________________________________ -->
+	
+	<name>Risk Situations and Detection Devices Ontology</name>
+	<description>The ontology defining weareable devices related to detection of physical risk for the user wearing them.</description>
+	
+	<!-- ______________________________________________________ -->
+	
+	<dependencies>
+		<!--
+			The dependency to itests has always come before the dependency to
+			org.osgi.core (groupId:org.apache.felix). The easiest approach is to
+			just put the dependency to itests as the first one.
+		-->	
+		<dependency>
+			<groupId>org.universAAL.support</groupId>
+			<artifactId>itests</artifactId>
+			<version>0.1.1-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+			
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.data.representation</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.phWorld</artifactId>
+			<version>0.2.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.profile</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+	<!-- ______________________________________________________ -->
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>bundle-manifest</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+					</execution>
+				</executions>				
+				<configuration>
+					<instructions>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>
+						<Bundle-Description>${project.description}</Bundle-Description>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>org.universAAL.ontology.risk</Export-Package>
+						<Private-Package>org.universAAL.ontology</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+			</plugin>			
+		</plugins>
+	</build>
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/risk</connection>
+		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/risk</developerConnection>
+		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+	</scm>
+	
+</project>
