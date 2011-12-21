@@ -20,3 +20,9 @@ audio_video/src/main/java/org/universAAL/ontology/av/streaming/Stream.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoCompression.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
+blind/LICENSE.txt -text
+blind/NOTICE.txt -text
+blind/pom.xml -text
+blind/src/main/java/org/universAAL/ontology/Activator.java -text
+blind/src/main/java/org/universAAL/ontology/blind/Blind.java -text
+blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
