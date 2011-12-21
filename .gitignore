@@ -23,3 +23,8 @@ hazard/.classpath
 hazard/.project
 hazard/.settings
 hazard/target
+lighting/.classpath
+lighting/.project
+lighting/.settings
+lighting/bin
+lighting/target
