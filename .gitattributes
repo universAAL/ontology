@@ -85,3 +85,13 @@ location.extra/src/main/java/org/universAAL/ontology/location/extra/Point.java -
 location.extra/src/main/java/org/universAAL/ontology/location/extra/Position.java -text
 location.extra/src/main/java/org/universAAL/ontology/location/extra/RelativePosition.java -text
 location.extra/src/main/java/org/universAAL/ontology/location/extra/RoomPlace.java -text
+measurement/LICENSE.txt -text
+measurement/NOTICE.txt -text
+measurement/artifact.composite -text
+measurement/pom.xml -text
+measurement/src/main/java/org/universAAL/ontology/Activator.java -text
+measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
+measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
+measurement/src/main/resources/Measurement.jpg -text
+measurement/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
+measurement/src/test/resources/log4j.properties -text
