@@ -159,6 +159,7 @@
 					<version>2.3.2</version>
 					<inherited>true</inherited>
 					<configuration>
+						<showWarnings>true</showWarnings>
 						<source>${maven.compile.source}</source>
 						<target>${maven.compile.target}</target>
 					</configuration>
