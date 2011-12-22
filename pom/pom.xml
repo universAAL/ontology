@@ -102,13 +102,16 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-release-plugin</artifactId>
+					<version>2.2.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.0.2</version>
+					<version>2.3.2</version>
 					<inherited>true</inherited>
 					<configuration>
+						<testSource>1.5</testSource>
+						<testTarget>1.5</testTarget>
 						<source>${maven.compile.source}</source>
 						<target>${maven.compile.target}</target>
 					</configuration>
@@ -116,6 +119,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.11</version>
 					<configuration>
 						<skip>${maven.test.skip}</skip>
 					</configuration>
@@ -123,12 +127,12 @@
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
-					<version>1.4.3</version>
+					<version>2.3.6</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>2.4</version>
+					<version>2.8</version>
 					<inherited>true</inherited>
 					<configuration>
 						<downloadSources>true</downloadSources>
@@ -161,10 +165,11 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>				
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
+
 
 	<reporting>
 		<plugins>
@@ -177,31 +182,30 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>2.7</version>
-				<!-- Default Checkstyle configuration is the Sun Microsystems Definition. As defined in D2.3 -->
-				<!--
-				<configuration>
- 					<configLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven_checks.xml</configLocation> 
-					<headerLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven-header.txt</headerLocation>
-				</configuration> 
-				-->
+				<!-- Default Checkstyle configuration is the Sun Microsystems Definition. 
+					As defined in D2.3 -->
+				<!-- <configuration> 
+						<configLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven_checks.xml</configLocation> 
+						<headerLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven-header.txt</headerLocation> 
+					</configuration> -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
 				<version>2.5</version>
 			</plugin>
-			<!--  
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.5.1</version>
-			</plugin>
-			-->
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>cobertura-maven-plugin</artifactId> 
+				<version>2.5.1</version> </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
 				<version>2.3</version>
 			</plugin>
+			<plugin>
+  				<groupId>org.codehaus.mojo</groupId> 
+  				<artifactId>javancss-maven-plugin</artifactId> 
+  				<version>2.0-beta-2</version> 
+  			</plugin>			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
