@@ -198,7 +198,7 @@
 					<version>1.7</version>
 					<executions>
 						<execution>
-							<id>attach-artifacts</id>
+							<id>attach-composite</id>
 							<phase>package</phase>
 							<goals>
 								<goal>attach-artifact</goal>
