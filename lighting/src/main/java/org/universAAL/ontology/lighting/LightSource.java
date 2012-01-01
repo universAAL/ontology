@@ -51,7 +51,7 @@ public class LightSource extends Device {
     public LightSource(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }
@@ -87,6 +87,11 @@ public class LightSource extends Device {
     public void setBrightness(int percentage) {
 	if (percentage > -1 && percentage < 101)
 	    props.put(PROP_SOURCE_BRIGHTNESS, new Integer(percentage));
+    }
+
+    public void setLightType(LightType lt) {
+	if (!props.containsKey(PROP_HAS_TYPE) && lt != null)
+	    props.put(PROP_HAS_TYPE, lt);
     }
 
     /*
