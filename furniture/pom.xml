@@ -7,7 +7,6 @@
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<version>1.0.1</version>
-		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
 	<artifactId>ont.furniture</artifactId>
 	<version>0.2.1-SNAPSHOT</version>
