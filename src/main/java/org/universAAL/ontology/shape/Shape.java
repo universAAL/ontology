@@ -314,23 +314,28 @@ public abstract class Shape extends ManagedIndividual {
      * @return true, if the ray intersects the shape
      */
     public boolean intersects(Point base, Point dir) {
-	/*
-	 * Shape bound = getBoundingVolume(); Bounds bounds = null;
-	 * CoordinateSystem cs = CoordinateSystem
-	 * .findCommonParentSystem(base.getCoordinateSystem(), bound
-	 * .getCenter().getCoordinateSystem()); double[] center =
-	 * bound.getCenter().getInHigherCoordinateSystem(cs)
-	 * .get3DCoordinates(); if (bound.getClass() == Box.class) { bounds =
-	 * new BoundingBox(new Point3d(center[0] - ((Box) bound).getWidth() /
-	 * 2d, center[1] - ((Box) bound).getDepth() / 2d, center[2] - ((Box)
-	 * bound).getHeight() / 2d), new Point3d(center[0] + ((Box)
-	 * bound).getWidth() / 2d, center[1] + ((Box) bound).getDepth() / 2d,
-	 * center[2] + ((Box) bound).getHeight() / 2d)); } if (bound.getClass()
-	 * == Sphere.class) { bounds = new BoundingSphere(new Point3d(center[0],
-	 * center[1], center[2]), ((Sphere) bound).getRadius()); } return
-	 * bounds.intersect(new Point3d(base.getX(), base.getY(), base .getZ()),
-	 * new Vector3d(dir.getX(), dir.getY(), dir.getZ()));
-	 */
+//	Shape bound = getBoundingVolume();
+//	Bounds bounds = null;
+//	CoordinateSystem cs = CoordinateSystem
+//		.findCommonParentSystem(base.getCoordinateSystem(), bound
+//			.getCenter().getCoordinateSystem());
+//	double[] center = bound.getCenter().getInHigherCoordinateSystem(cs)
+//		.get3DCoordinates();
+//	if (bound.getClass() == Box.class) {
+//	    bounds = new BoundingBox(new Point3d(center[0]
+//		    - ((Box) bound).getWidth() / 2d, center[1]
+//		    - ((Box) bound).getDepth() / 2d, center[2]
+//		    - ((Box) bound).getHeight() / 2d), new Point3d(center[0]
+//		    + ((Box) bound).getWidth() / 2d, center[1]
+//		    + ((Box) bound).getDepth() / 2d, center[2]
+//		    + ((Box) bound).getHeight() / 2d));
+//	}
+//	if (bound.getClass() == Sphere.class) {
+//	    bounds = new BoundingSphere(new Point3d(center[0], center[1],
+//		    center[2]), ((Sphere) bound).getRadius());
+//	}
+//	return bounds.intersect(new Point3d(base.getX(), base.getY(), base
+//		.getZ()), new Vector3d(dir.getX(), dir.getY(), dir.getZ()));
 	try {
 	    throw new Exception(
 		    "The method 'intersects' is disabled in this version of casf.ont to "

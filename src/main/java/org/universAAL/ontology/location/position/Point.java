@@ -334,26 +334,30 @@ public class Point extends Location {
      * @return the point
      */
     public Point getInHigherCoordinateSystem() {
-	/*
-	 * CoordinateSystem Sys = getCoordinateSystem(); if(!(Sys instanceof
-	 * OriginedMetric)) throw new
-	 * IllegalArgumentException("Point is not in an OriginedMetric"); Point
-	 * origin = ((OriginedMetric)Sys).getOrigin(); if(Sys.getClass() !=
-	 * origin.getCoordinateSystem().getClass()) throw new
-	 * IllegalArgumentException("Higher system is of an other type");
-	 * double[] p = get3DCoordinates(); double[] o =
-	 * origin.get3DCoordinates(); if(Double.isNaN(p[2])) p[2] = 0; Point3d
-	 * point = new Point3d(p[0],p[1],p[2]); Transform3D map = new
-	 * Transform3D(), rmap = new Transform3D();
-	 * rmap.rotX(Math.toRadians(((OriginedMetric)Sys).getRotateX()));
-	 * map.mul(rmap);
-	 * rmap.rotY(Math.toRadians(((OriginedMetric)Sys).getRotateY()));
-	 * map.mul(rmap);
-	 * rmap.rotY(Math.toRadians(((OriginedMetric)Sys).getRotateZ()));
-	 * map.mul(rmap); map.setTranslation(new Vector3d(o[0],o[1],o[2]));
-	 * map.transform(point); return new
-	 * Point(point.x,point.y,point.z,origin.getCoordinateSystem());
-	 */
+//	CoordinateSystem Sys = getCoordinateSystem();
+//	if (!(Sys instanceof OriginedMetric))
+//	    throw new IllegalArgumentException(
+//		    "Point is not in an OriginedMetric");
+//	Point origin = ((OriginedMetric) Sys).getOrigin();
+//	if (Sys.getClass() != origin.getCoordinateSystem().getClass())
+//	    throw new IllegalArgumentException(
+//		    "Higher system is of an other type");
+//	double[] p = get3DCoordinates();
+//	double[] o = origin.get3DCoordinates();
+//	if (Double.isNaN(p[2]))
+//	    p[2] = 0;
+//	Point3d point = new Point3d(p[0], p[1], p[2]);
+//	Transform3D map = new Transform3D(), rmap = new Transform3D();
+//	rmap.rotX(Math.toRadians(((OriginedMetric) Sys).getRotateX()));
+//	map.mul(rmap);
+//	rmap.rotY(Math.toRadians(((OriginedMetric) Sys).getRotateY()));
+//	map.mul(rmap);
+//	rmap.rotY(Math.toRadians(((OriginedMetric) Sys).getRotateZ()));
+//	map.mul(rmap);
+//	map.setTranslation(new Vector3d(o[0], o[1], o[2]));
+//	map.transform(point);
+//	return new Point(point.x, point.y, point.z, origin
+//		.getCoordinateSystem());
 	try {
 	    throw new Exception(
 		    "The method 'getInHigherCoordinateSystem' is disabled in this version of casf.ont to "

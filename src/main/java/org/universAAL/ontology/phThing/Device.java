@@ -47,7 +47,7 @@ public class Device extends PhysicalThing {
 	if (PROP_BATTERY_LEVEL.equals(propURI))
 	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
 		    LevelRating.MY_URI, 1, 0);
-	return Device.getClassRestrictionsOnProperty(propURI);
+	return PhysicalThing.getClassRestrictionsOnProperty(propURI);
     }
 
     /**

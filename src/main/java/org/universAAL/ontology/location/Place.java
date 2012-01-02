@@ -196,7 +196,8 @@ public class Place extends Location {
 	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
 	    return super.getPropSerializationType(propURI);
 	if (PROP_HAS_SHAPE.equals(propURI)
-		|| PROP_LOCATION_OF_PHYSICAL_THING.equals(propURI))
+		|| PROP_LOCATION_OF_PHYSICAL_THING.equals(propURI)
+		|| PROP_HAS_ADDRESS.equals(propURI))
 	    return PROP_SERIALIZATION_REDUCED;
 
 	return PROP_SERIALIZATION_OPTIONAL;
@@ -345,7 +346,7 @@ public class Place extends Location {
 		(float) (z + box.getHeight() / 2f));
 
     }
-    
+
     /**
      * Gets the Address value
      * 
