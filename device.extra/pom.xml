@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.1-SNAPSHOT</version>
 		<relativePath>../pom/pom.xml</relativePath>
 	</parent>
 	<artifactId>ont.device.extra</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 	
 	<!-- ______________________________________________________ -->
@@ -19,18 +19,10 @@
 	<!-- ______________________________________________________ -->
 
 	<dependencies>
-		<!--
-			The dependency to itests has always come before the dependency to
-			org.osgi.core (groupId:org.apache.felix). The easiest approach is to
-			just put the dependency to itests as the first one.
-		-->	
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
 			<artifactId>itests</artifactId>
-			<version>0.1.1-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>	
-	
+		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
@@ -39,22 +31,12 @@
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation</artifactId>
-			<version>0.3.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.phWorld</artifactId>
-			<version>0.2.2-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.weather</artifactId>
-			<version>0.2.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.profile</artifactId>
-			<version>0.3.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
@@ -74,7 +56,7 @@
 							<goal>manifest</goal>
 						</goals>
 					</execution>
-				</executions>				
+				</executions>
 				<configuration>
 					<instructions>
 						<Bundle-Name>${project.name}</Bundle-Name>
@@ -89,16 +71,16 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-			</plugin>			
+			</plugin>	
 		</plugins>
 	</build>
 	
 	<!-- ______________________________________________________ -->
 
 	<scm>
-		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/device.extra</connection>
-		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/device.extra</developerConnection>
-		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+		<connection>${svn.base}/device.extra</connection>
+		<developerConnection>${svn.base}/device.extra</developerConnection>
+		<url>${svn.base.url}</url>
 	</scm>
 	
 </project>
