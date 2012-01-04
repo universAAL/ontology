@@ -6,10 +6,10 @@
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>ont.profile</artifactId>
-	<version>0.3.2-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 	
 	<!-- ______________________________________________________ -->
@@ -34,47 +34,30 @@
 	<!-- ______________________________________________________ -->
 
 	<dependencies>
-		<!--
-			The dependency to itests has always come before the dependency to
-			org.osgi.core (groupId:org.apache.felix). The easiest approach is to
-			just put the dependency to itests as the first one.
-		-->	
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
 			<artifactId>itests</artifactId>
-			<version>0.1.1-SNAPSHOT</version>
-			<scope>test</scope>
 		</dependency>
-			
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.osgi.core</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation</artifactId>
-			<version>0.3.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.bus.service</artifactId>
-			<version>0.3.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.bus.ui</artifactId>
-			<version>0.3.3-SNAPSHOT</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.phWorld</artifactId>
-			<version>0.2.4-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -94,7 +77,7 @@
 							<goal>manifest</goal>
 						</goals>
 					</execution>
-				</executions>				
+				</executions>
 				<configuration>
 					<instructions>
 						<Bundle-Name>${project.name}</Bundle-Name>
@@ -109,16 +92,16 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-			</plugin>			
+			</plugin>            
 		</plugins>
 	</build>
 	
 	<!-- ______________________________________________________ -->
 
 	<scm>
-		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/user.profile</connection>
-		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk/user.profile</developerConnection>
-		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
+		<connection>${svn.base}/user.profile</connection>
+		<developerConnection>${svn.base}/user.profile</developerConnection>
+		<url>${svn.base.url}</url>
 	</scm>
 	
 </project>

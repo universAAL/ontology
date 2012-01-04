@@ -5,7 +5,7 @@
 
 	<groupId>org.universAAL.ontology</groupId>
 	<artifactId>ont.pom</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<!-- ______________________________________________________ -->
@@ -42,31 +42,24 @@
 
 	<!-- ______________________________________________________ -->
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.10</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>org.osgi.core</artifactId>
-				<version>1.0.1</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>org.osgi.compendium</artifactId>
-				<version>1.0.1</version>
-				<scope>provided</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<scm>
+		<connection>${svn.base}/pom</connection>
+		<developerConnection>${svn.base}/pom</developerConnection>
+		<url>${svn.base.url}pom</url>
+	</scm>
+
+	<properties>
+		<remoteOBR />
+		<!-- Default configuration for compiler source and target JVM -->
+		<maven.compile.source>1.4</maven.compile.source>
+		<maven.compile.target>1.4</maven.compile.target>
+	<!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
+	 	<gforge.project.name>ontologies</gforge.project.name>
+		<svn.base>scm:svn:http://forge.universaal.org/svn/${gforge.project.name}/trunk</svn.base>
+		<svn.base.url>http://forge.universaal.org/gf/project/${gforge.project.name}/scmsvn/?path=%2Ftrunk%2F</svn.base.url>
+	</properties>
 
 	<modules>
-		<!-- <module>../../../middleware/trunk/pom</module> -->
 		<module>../audio_video</module>
 		<module>../blind</module>
 		<module>../device.extra</module>
@@ -87,12 +80,74 @@
 		<module>../window</module>
 	</modules>
 
-	<properties>
-		<remoteOBR />
-		<!-- Default configuration for compiler source and target JVM -->
-		<maven.compile.source>1.4</maven.compile.source>
-		<maven.compile.target>1.4</maven.compile.target>
-	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.10</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.core</artifactId>
+				<version>1.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
+				<version>1.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.data.representation</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.bus.service</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.bus.context</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.container.xfaces</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.container.osgi</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.phWorld</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.weather</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.support</groupId>
+				<artifactId>itests</artifactId>
+				<version>0.1.1-SNAPSHOT</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<!-- ______________________________________________________ -->
 
@@ -110,6 +165,7 @@
 					<version>2.3.2</version>
 					<inherited>true</inherited>
 					<configuration>
+						<showWarnings>true</showWarnings>
 						<testSource>1.5</testSource>
 						<testTarget>1.5</testTarget>
 						<source>${maven.compile.source}</source>
@@ -150,7 +206,7 @@
 					<version>1.7</version>
 					<executions>
 						<execution>
-							<id>attach-artifacts</id>
+							<id>attach-composite</id>
 							<phase>package</phase>
 							<goals>
 								<goal>attach-artifact</goal>
@@ -165,11 +221,10 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>
+				</plugin>				
 			</plugins>
 		</pluginManagement>
 	</build>
-
 
 	<reporting>
 		<plugins>
@@ -182,30 +237,36 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>2.7</version>
-				<!-- Default Checkstyle configuration is the Sun Microsystems Definition. 
-					As defined in D2.3 -->
-				<!-- <configuration> 
-						<configLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven_checks.xml</configLocation> 
-						<headerLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven-header.txt</headerLocation> 
-					</configuration> -->
+				<!-- Default Checkstyle configuration is the Sun Microsystems Definition. As defined in D2.3 -->
+				<!--
+				<configuration>
+ 					<configLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven_checks.xml</configLocation> 
+					<headerLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven-header.txt</headerLocation>
+				</configuration> 
+				-->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
 				<version>2.5</version>
 			</plugin>
-			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>cobertura-maven-plugin</artifactId> 
-				<version>2.5.1</version> </plugin> -->
+			<!--  
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.5.1</version>
+			</plugin>
+			-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
 				<version>2.3</version>
 			</plugin>
 			<plugin>
-  				<groupId>org.codehaus.mojo</groupId> 
-  				<artifactId>javancss-maven-plugin</artifactId> 
-  				<version>2.0-beta-2</version> 
-  			</plugin>			
+	        	<groupId>org.codehaus.mojo</groupId>
+		        <artifactId>javancss-maven-plugin</artifactId>
+		        <version>2.0-beta-2</version>
+		      </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -261,12 +322,6 @@
 	<ciManagement />
 
 	<mailingLists />
-
-	<scm>
-		<connection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk</connection>
-		<developerConnection>scm:svn:http://forge.universaal.org/svn/ontologies/trunk</developerConnection>
-		<url>http://forge.universaal.org/gf/project/ontologies/scmsvn/?path=%2Ftrunk%2F</url>
-	</scm>
 
 	<prerequisites />
 
@@ -338,7 +393,5 @@
 			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
-
-	<profiles />
 
 </project>
