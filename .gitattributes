@@ -222,6 +222,8 @@ risk/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.jav
 risk/src/test/resources/log4j.properties -text
 tutorial/pom.xml -text
 tutorial/src/main/java/org/universAAL/ontology/Activator.java -text
+tutorial/src/main/java/org/universAAL/ontology/TutorialFactory.java -text
+tutorial/src/main/java/org/universAAL/ontology/TutorialOntology.java -text
 tutorial/src/main/java/org/universAAL/ontology/tutorial/MyConcept.java -text
 tutorial/src/main/java/org/universAAL/ontology/tutorial/MyEnumeration.java -text
 user.profile/LICENSE-CPL-JUnit.txt -text
