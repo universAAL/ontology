@@ -1,6 +1,7 @@
 package org.universAAL.ontology.tutorial;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.TutorialOntology;
 
 // Enumerations can be used for giving value to a property that must have one 
 // of a specific set of individual values.
@@ -9,18 +10,14 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 // They don´t have properties. Nevertheless, in theory it should be possible 
 // to declare properties into enumerations, by merging them with the required 
 // code of normal concepts (see MyConcept). However I have not checked it.
-// All enumerations extend ManagedIndividual (I have not checked if it is 
-// possible to extend other concepts or enumerations, but it seems possible)
 public class MyEnumeration extends ManagedIndividual {
-    // MY URI is the URI of this concept. It is mandatory for all.
-    public static final String MY_URI;
-    // In this static block you set the URIs of your enumeration. Since we have
-    // already defined a namespace in MyConcept for our domain, we reuse it.
-    static {
-	// The URI of your enumeration, which is the same name than the class
-	MY_URI = MyConcept.MY_NAMESPACE + "MyEnumeration";
-	register(MyEnumeration.class);
-    }
+    // Make sure you use the same namespace in all your domain ontology
+    // You can declare the namespace in your main Ontology class and later reuse
+    // it in the rest of classes
+
+    // MY URI is the URI of this concept. It is mandatory for all. Must have the
+    // same name than the class
+    public static final String MY_URI = TutorialOntology.NAMESPACE;
 
     // These constants identify the possible values in your enumeration
     public static final int OPTION1 = 0;
@@ -28,7 +25,7 @@ public class MyEnumeration extends ManagedIndividual {
     public static final int OPTION3 = 2;
     public static final int OPTION4 = 3;
     public static final int OPTION5 = 4;
-    
+
     // In instances (individuals) this has the value of one of the numeric
     // constants above
     private int order;
@@ -54,21 +51,38 @@ public class MyEnumeration extends ManagedIndividual {
 		option4 };
     }
 
-    // This method returns the individual of this enumeration that has the the
-    // given URI.
-    // DO NOT CHANGE THIS. Just copy it. It works like this for all
-    // enumerations. (you have to change the namespace to your domain, though)
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(MyConcept.MY_NAMESPACE)) ? valueOf(instanceURI
-		.substring(MyConcept.MY_NAMESPACE.length())) : null;
+    // This is used privately. Constructs an individual based on the given
+    // numeric constant.
+    private MyEnumeration(int order) {
+	super(TutorialOntology.NAMESPACE + names[order]);
+	this.order = order;
     }
+
+    public MyEnumeration() {
+	// Enumerations cannot be instantiated by other than themselves. This
+	// constructor must be empty to prevent this.
+    }
+
+    // See MyConcept for an explanation of this method. In Enumerations it is
+    // not relevant, although it must be present. (have to check if it works if
+    // we include properties in enumerations)
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
+
+    // You don´t really need this for enumerations, but it won´t hurt if it
+    // always returns true...
+    public boolean isWellFormed() {
+	return true;
+    }
+
+    // --------------------------------------------------------------------
 
     // This is a helper method. You may choose not to include it, because it is
     // not used by the system. However it will surely be used by developers, so
     // its inclusion is recommended. It returns the matching individual of the
     // enumeration given its order (in the numeric constants)
-    public static MyEnumeration getMealByOrder(int order) {
+    public static MyEnumeration getByOrder(int order) {
 	switch (order) {
 	case OPTION1:
 	    return option1;
@@ -91,8 +105,8 @@ public class MyEnumeration extends ManagedIndividual {
 	    return null;
 
 	// Remember to change the namespace to your domain...
-	if (name.startsWith(MyConcept.MY_NAMESPACE))
-	    name = name.substring(MyConcept.MY_NAMESPACE.length());
+	if (name.startsWith(TutorialOntology.NAMESPACE))
+	    name = name.substring(TutorialOntology.NAMESPACE.length());
 
 	// Here you must use the first and last numeric constants you declared
 	// at the beginning (lowest and highest numbers). Watch out! It is a
@@ -100,47 +114,9 @@ public class MyEnumeration extends ManagedIndividual {
 	// instance if you add or reduce the amount of options...
 	for (int i = OPTION1; i <= OPTION5; i++)
 	    if (names[i].equals(name))
-		return getMealByOrder(i);
+		return getByOrder(i);
 
 	return null;
-    }
-
-    // This is used privately. Constructs an individual based on the given
-    // numeric constant.
-    private MyEnumeration(int order) {
-	super(MyConcept.MY_NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public MyEnumeration() {
-	// Basic constructor. In general it is empty.
-    }
-
-    public MyEnumeration(String uri) {
-	super(uri);
-	// This is the commonly used constructor. In general it is like this,
-	// just a call to super. It should not be used by external developers...
-    }
-
-    public static String getRDFSComment() {
-	return "A comment describing what this enumeration is used for";
-    }
-
-    public static String getRDFSLabel() {
-	return "Human readable ID for the enumeration. e.g: 'My Enumeration'"; //$NON-NLS-1$
-    }
-
-    // See MyConcept for an explanation of this method. In Enumerations it is
-    // not relevant, although it must be present. (have to check if it works if
-    // we include properties in enumerations)
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    // You don´t really need this for enumerations, but it won´t hurt if it
-    // always returns true...
-    public boolean isWellFormed() {
-	return true;
     }
 
     // This is used in instances (individuals) to get their name
