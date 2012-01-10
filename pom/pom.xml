@@ -83,11 +83,47 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.10</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.core</artifactId>
+				<version>1.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
+				<version>1.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
-				<artifactId>mw.pom</artifactId>
+				<artifactId>mw.data.representation</artifactId>
 				<version>1.0.0</version>
-				<type>pom</type>
-				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.bus.service</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.bus.context</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.container.xfaces</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.container.osgi</artifactId>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
@@ -100,8 +136,8 @@
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.weather</artifactId>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.weather</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		</dependencies>
@@ -350,43 +386,4 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-	<profiles>
-        <profile>
-            <id>release</id>
-            <activation>
-            <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.3.2</version>
-                    <inherited>true</inherited>
-                    <configuration>
-                        <showWarnings>true</showWarnings>
-                        <testSource>1.5</testSource>
-                        <testTarget>1.5</testTarget>
-                        <source>${maven.compile.source}</source>
-                        <target>${maven.compile.target}</target>
-                        <optimize>true</optimize>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.8</version>
-                    <executions>
-                        <execution>
-                            <id>attach-javadocs</id>
-                            <goals>
-                                <goal>jar</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
