@@ -107,7 +107,7 @@
 			<dependency>
 				<groupId>org.universAAL.support</groupId>
 				<artifactId>itests</artifactId>
-				<version>0.1.1-SNAPSHOT</version>
+				<version>1.0.1-SNAPSHOT</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
