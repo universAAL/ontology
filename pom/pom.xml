@@ -81,6 +81,7 @@
 	</modules>
 
 	<dependencyManagement>
+		
 		<dependencies>
 			<dependency>
 				<groupId>junit</groupId>
@@ -102,12 +103,22 @@
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
-				<artifactId>mw.data.representation</artifactId>
+				<artifactId>mw.acl.bridge</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
-				<artifactId>mw.bus.service</artifactId>
+				<artifactId>mw.acl.interfaces</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.acl.rosgi</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.acl.upnp</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
@@ -117,12 +128,37 @@
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
-				<artifactId>mw.container.xfaces</artifactId>
+				<artifactId>mw.bus.io</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.bus.model</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.bus.service</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
 				<artifactId>mw.container.osgi</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.container.xfaces</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.data.representation</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.data.serialization</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
@@ -136,10 +172,10 @@
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.weather</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.weather</artifactId>
+				<version>1.0.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -385,5 +421,45 @@
 			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>2.3.2</version>
+						<inherited>true</inherited>
+						<configuration>
+							<showWarnings>true</showWarnings>
+							<testSource>1.5</testSource>
+							<testTarget>1.5</testTarget>
+							<source>${maven.compile.source}</source>
+							<target>${maven.compile.target}</target>
+							<optimize>true</optimize>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.8</version>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
