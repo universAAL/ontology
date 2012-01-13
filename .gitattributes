@@ -1,1 +1,26 @@
 * text=auto !eol
+user.profile-0.4.0-beta-SNAPSHOT/LICENSE-JGCL.txt -text
+user.profile-0.4.0-beta-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
+user.profile-0.4.0-beta-SNAPSHOT/LICENSE.txt -text
+user.profile-0.4.0-beta-SNAPSHOT/NOTICE.txt -text
+user.profile-0.4.0-beta-SNAPSHOT/pom.xml -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profilable/AALSpace.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profilable/AssistedPerson.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profilable/ProfilableEntity.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profilable/User.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/AALSpaceProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/AssistedPersonProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/DeviceProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/Profile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/UserProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/Gender.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/HealthProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/Language.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/MedicationProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/NutritionalProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/PersonalPreferenceProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/SocialProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/SubProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/UserIdentificationProfile.java -text
+user.profile-0.4.0-beta-SNAPSHOT/src/main/java/org/universAAL/ontology/subprofile/uStoreProfile.java -text
