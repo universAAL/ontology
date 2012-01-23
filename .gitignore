@@ -1,6 +1,10 @@
 /.classpath
 /.project
 /.settings
+activityhub/.classpath
+activityhub/.project
+activityhub/.settings
+activityhub/target
 audio_video/.classpath
 audio_video/.project
 audio_video/.settings
