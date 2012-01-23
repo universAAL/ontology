@@ -3,29 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>org.universAAL</groupId>
+		<artifactId>uAAL.pom</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
 	<groupId>org.universAAL.ontology</groupId>
 	<artifactId>ont.pom</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<!-- ______________________________________________________ -->
-
-	<name>universAAL Ontology Suite</name>
-	<description>The set of artefacts defining the universAAL ontology based on the PERSONA codebase.</description>
-	<url>
-		<![CDATA[http://forge.universaal.org/gf/project/ontologies/]]>
-	</url>
-	<inceptionYear>2010</inceptionYear>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
-	<organization>
-		<name>universAAL Consortium</name>
-		<url>http://www.universAAL.org/</url>
-	</organization>
 	<developers>
 		<developer>
 			<id>saied</id>
@@ -53,10 +41,9 @@
 		<!-- Default configuration for compiler source and target JVM -->
 		<maven.compile.source>1.4</maven.compile.source>
 		<maven.compile.target>1.4</maven.compile.target>
-	<!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
-	 	<gforge.project.name>ontologies</gforge.project.name>
-		<svn.base>scm:svn:http://forge.universaal.org/svn/${gforge.project.name}/trunk</svn.base>
-		<svn.base.url>http://forge.universaal.org/gf/project/${gforge.project.name}/scmsvn/?path=%2Ftrunk%2F</svn.base.url>
+		<gforge.project.name>ontologies</gforge.project.name>
+		<release.previous>1.0.0</release.previous>
+		<release.next>1.1.0</release.next>
 	</properties>
 
 	<modules>
@@ -85,209 +72,34 @@
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
 				<artifactId>mw.pom</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+<!-- 				<version>(${release.previous} , ${release.next}]</version> -->
+				<version>1.0.2-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.phWorld</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>(${release.previous} , ${release.next}]</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.profile</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>(${release.previous} , ${release.next}]</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.weather</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>(${release.previous} , ${release.next}]</version>
 			</dependency>
-			<dependency>
-				<groupId>org.universAAL.support</groupId>
-				<artifactId>itests</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-				<scope>test</scope>
-			</dependency>
+<!-- 			use the following to add all ontologies -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.universAAL.ontology</groupId> -->
+<!-- 				<artifactId>ont.</artifactId> -->
+<!-- 				<version>(${release.previous}, ${release.next}]</version> -->
+<!-- 			</dependency> -->
 		</dependencies>
 	</dependencyManagement>
-
-	<!-- ______________________________________________________ -->
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.2.2</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.2</version>
-					<inherited>true</inherited>
-					<configuration>
-						<showWarnings>true</showWarnings>
-						<testSource>1.5</testSource>
-						<testTarget>1.5</testTarget>
-						<source>${maven.compile.source}</source>
-						<target>${maven.compile.target}</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.11</version>
-					<configuration>
-						<skip>${maven.test.skip}</skip>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.felix</groupId>
-					<artifactId>maven-bundle-plugin</artifactId>
-					<version>2.3.6</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>2.8</version>
-					<inherited>true</inherited>
-					<configuration>
-						<downloadSources>true</downloadSources>
-						<downloadJavadocs>true</downloadJavadocs>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>3.0</version>
-				</plugin>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.7</version>
-					<executions>
-						<execution>
-							<id>attach-composite</id>
-							<phase>package</phase>
-							<goals>
-								<goal>attach-artifact</goal>
-							</goals>
-							<configuration>
-								<artifacts>
-									<artifact>
-										<file>artifact.composite</file>
-										<type>composite</type>
-									</artifact>
-								</artifacts>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>				
-			</plugins>
-		</pluginManagement>
-	</build>
-
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>2.10</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>2.7</version>
-				<!-- Default Checkstyle configuration is the Sun Microsystems Definition. As defined in D2.3 -->
-				<!--
-				<configuration>
- 					<configLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven_checks.xml</configLocation> 
-					<headerLocation>http://svn.apache.org/repos/asf/maven/plugins/trunk/maven-checkstyle-plugin/src/main/resources/config/maven-header.txt</headerLocation>
-				</configuration> 
-				-->
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>2.5</version>
-			</plugin>
-			<!--  
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.5.1</version>
-			</plugin>
-			-->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jxr-plugin</artifactId>
-				<version>2.3</version>
-			</plugin>
-			<plugin>
-	        	<groupId>org.codehaus.mojo</groupId>
-		        <artifactId>javancss-maven-plugin</artifactId>
-		        <version>2.0-beta-2</version>
-		      </plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.8</version>
-				<configuration>
-					<links>
-						<link>http://download.oracle.com/javase/1.5.0/docs/api</link>
-						<link>http://jakarta.apache.org/commons/collections/apidocs-COLLECTIONS_3_0/</link>
-						<link>http://jakarta.apache.org/commons/dbcp/apidocs/</link>
-						<link>http://jakarta.apache.org/commons/fileupload/apidocs/</link>
-						<link>http://jakarta.apache.org/commons/httpclient/apidocs/</link>
-						<link>http://jakarta.apache.org/commons/logging/apidocs/</link>
-						<link>http://jakarta.apache.org/commons/pool/apidocs/</link>
-						<link>http://www.junit.org/junit/javadoc/</link>
-						<link>http://logging.apache.org/log4j/docs/api/</link>
-						<link>http://jakarta.apache.org/regexp/apidocs/</link>
-						<link>http://jakarta.apache.org/velocity/api/</link>
-					</links>
-					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
-
-					<!-- <docletPath>/path/to/UmlGraph.jar</docletPath> -->
-					<docletArtifact>
-						<groupId>org.umlgraph</groupId>
-						<artifactId>doclet</artifactId>
-						<version>5.1</version>
-					</docletArtifact>
-					<additionalparam>-views</additionalparam>
-					<useStandardDocletOptions>true</useStandardDocletOptions>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>taglist-maven-plugin</artifactId>
-				<version>2.4</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-plugin-plugin</artifactId>
-				<version>2.9</version>
-			</plugin>
-		</plugins>
-	</reporting>
-
-	<!-- ______________________________________________________ -->
-
-	<issueManagement>
-		<system>GForge - Tracker</system>
-		<url>
-			<![CDATA[http://forge.universaal.org/gf/project/ontologies/tracker/]]>
-		</url>
-	</issueManagement>
-
-	<ciManagement />
-
-	<mailingLists />
-
-	<prerequisites />
 
 	<repositories>
 		<repository>
@@ -297,65 +109,6 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
-		</repository><repository>
-			<id>uaal-snapshots</id>
-			<name>universAAL Snapshot Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository><repository>
-			<id>uaal-thirdparty</id>
-			<name>universAAL ThirdParty Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/thirdparty/</url>
-		</repository>
-		<repository>
-			<id>central</id>
-			<name>Central Maven Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>apache-snapshots</id>
-			<name>Apache Snapshots</name>
-			<url>http://people.apache.org/repo/m2-snapshot-repository</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
 		</repository>
 	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>central</id>
-			<name>Central Maven Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<layout>default</layout>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
-
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>universAAL Releases</name>
-			<url>http://depot.universaal.org/maven-repo/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>universAAL Snapshots</name>
-			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 </project>
