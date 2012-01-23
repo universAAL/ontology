@@ -1,4 +1,5 @@
 * text=auto !eol
+pom-1.0.1-SNAPSHOT/pom.xml -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-JGCL.txt -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE.txt -text

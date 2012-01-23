@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.universAAL</groupId>
+		<artifactId>uAAL.pom</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<groupId>org.universAAL.ontology</groupId>
+	<artifactId>ont.pom</artifactId>
+	<version>1.0.2-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<developers>
+		<developer>
+			<id>saied</id>
+			<email>saied.tazari@igd.fraunhofer.de</email>
+			<name>Saied Tazari</name>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>CEST/CET</timezone>
+		</developer>
+	</developers>
+	<contributors />
+
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>${svn.base}/pom</connection>
+		<developerConnection>${svn.base}/pom</developerConnection>
+		<url>${svn.base.url}pom</url>
+	</scm>
+
+	<properties>
+		<remoteOBR />
+		<!-- Default configuration for compiler source and target JVM -->
+		<maven.compile.source>1.4</maven.compile.source>
+		<maven.compile.target>1.4</maven.compile.target>
+		<gforge.project.name>ontologies</gforge.project.name>
+		<release.previous>1.0.0</release.previous>
+		<release.next>1.1.0</release.next>
+	</properties>
+
+	<modules>
+		<module>../audio_video</module>
+		<module>../blind</module>
+		<module>../device.extra</module>
+		<module>../furniture</module>
+		<module>../gesture.pointing</module>
+		<module>../hazard</module>
+		<module>../lighting</module>
+		<module>../location.extra</module>
+		<module>../measurement</module>
+		<module>../medication</module>
+		<module>../multimedia</module>
+		<module>../physical.world</module>
+		<module>../powersocket</module>
+		<module>../risk</module>
+		<module>../user.profile</module>
+		<module>../water</module>
+		<module>../weather</module>
+		<module>../window</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.pom</artifactId>
+<!-- 				<version>(${release.previous} , ${release.next}]</version> -->
+				<version>1.0.2-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.phWorld</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.weather</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+<!-- 			use the following to add all ontologies -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.universAAL.ontology</groupId> -->
+<!-- 				<artifactId>ont.</artifactId> -->
+<!-- 				<version>(${release.previous}, ${release.next}]</version> -->
+<!-- 			</dependency> -->
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>uaal</id>
+			<name>universAAL Repositories</name>
+			<url>http://depot.universaal.org/maven-repo/releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
