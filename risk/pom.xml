@@ -7,7 +7,7 @@
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<version>1.0.2-SNAPSHOT</version>
-		<relativePath>../pom/pom.xml</relativePath>
+		<relativePath>../pom/</relativePath>
 	</parent>
 	<artifactId>ont.risk</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
@@ -20,10 +20,31 @@
 	
 	<!-- ______________________________________________________ -->
 	
+	<!-- Remove the following section when the ontology is adapted to 1.0.2-SNAPSHOT -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.pom</artifactId>
+				<version>1.0.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.pom</artifactId>
+				<version>1.0.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
 			<artifactId>itests</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
@@ -32,17 +53,14 @@
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.phWorld</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.profile</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 	
