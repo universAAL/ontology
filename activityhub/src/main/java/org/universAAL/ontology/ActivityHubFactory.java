@@ -4,6 +4,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator;
+import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
 
 /**
  * Factory for the ActivityHub ontology according to ISO 11073 - 
@@ -17,40 +18,40 @@ public class ActivityHubFactory extends ResourceFactoryImpl {
 	    int factoryIndex) {
 	
     	switch (factoryIndex) {
-//    	case 0:
-//    		return new ActivityHub(instanceURI);
-    	case 1:
-    		return new FallSensor(instanceURI);
-    	case 2:
-    		return new PersSensor(instanceURI);
-    	case 3:
-    		return new SmokeSensor(instanceURI);
-    	case 4:
-    		return new CoSensor(instanceURI);
-    	case 5:
-    		return new WaterSensor(instanceURI);
-    	case 6:
-    		return new GasSensor(instanceURI);
-    	case 7:
-    		return new MotionSensor(instanceURI);
-    	case 8:
-    		return new PropertyExitSensor(instanceURI);
-    	case 9:
-    		return new EnuresisSensor(instanceURI);
-    	case 10:
-    		return new ContactClosureSensor(instanceURI);
-    	case 11:
-    		return new UsageSensor(instanceURI);
-    	case 12:
-    		return new SwitchSensor(instanceURI);
-    	case 13:
-    		return new MedicationDosageSensor(instanceURI);
-    	case 14:
-    		return new TemperatureSensor(instanceURI);
-    	case 15:
-    		return new AdaptorPlugActuator(instanceURI);
-    	case 16:
-    		return new ActivityHub(instanceURI);
+    	case ActivityHubSensorType.ActivityHubSensor:
+    					return new ActivityHubSensor(instanceURI);
+    	case ActivityHubSensorType.FallSensor:
+    					return new FallSensor(instanceURI);
+    	case ActivityHubSensorType.PersSensor:
+    					return new PersSensor(instanceURI);
+    	case ActivityHubSensorType.SmokeSensor:
+    					return new SmokeSensor(instanceURI);
+    	case ActivityHubSensorType.CoSensor:
+    					return new CoSensor(instanceURI);
+    	case ActivityHubSensorType.WaterSensor:
+    					return new WaterSensor(instanceURI);
+    	case ActivityHubSensorType.GasSensor:
+    					return new GasSensor(instanceURI);
+    	case ActivityHubSensorType.MotionSensor:
+    					return new MotionSensor(instanceURI);
+    	case ActivityHubSensorType.PropertyExitSensor:
+    					return new PropertyExitSensor(instanceURI);
+    	case ActivityHubSensorType.EnuresisSensor:
+    					return new EnuresisSensor(instanceURI);
+    	case ActivityHubSensorType.ContactClosureSensor:
+    					return new ContactClosureSensor(instanceURI);
+    	case ActivityHubSensorType.UsageSensor:
+    					return new UsageSensor(instanceURI);
+    	case ActivityHubSensorType.SwitchSensor:
+    					return new SwitchSensor(instanceURI);
+    	case ActivityHubSensorType.MedicationDosageSensor:
+    					return new MedicationDosageSensor(instanceURI);
+    	case ActivityHubSensorType.TemperatureSensor:
+    					return new TemperatureSensor(instanceURI);
+    	case ActivityHubSensorType.AdaptorPlugActuator:
+    					return new AdaptorPlugActuator(instanceURI);
+    	case ActivityHubSensorType.ActivityHub:
+    					return new ActivityHub(instanceURI);
     	}
 
     	return null;

@@ -10,7 +10,7 @@
 	</parent>
 	<packaging>bundle</packaging>
 	<artifactId>ont.activityhub</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<name>Ontology for ISO 11073-10471 Sensors</name>
 	<description>The ontology represents the sensors specified in ISO 11073 - Part 10471 (Indepentend living activity hub)</description>
 	<url />

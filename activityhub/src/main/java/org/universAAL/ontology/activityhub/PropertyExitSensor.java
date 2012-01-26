@@ -4,7 +4,6 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.ontology.ActivityHubOntology;
-import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * Ontological representation of a property exit sensor according to
@@ -22,7 +21,7 @@ import org.universAAL.ontology.phThing.Sensor;
  * 
  * @author Thomas Fuxreiter
  */
-public class PropertyExitSensor extends Sensor {
+public class PropertyExitSensor extends ActivityHubSensor {
 
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE
     + "PropertyExitSensor";

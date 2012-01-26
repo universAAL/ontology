@@ -1,6 +1,5 @@
 package org.universAAL.ontology;
 
-import org.universAAL.middleware.owl.Intersection;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -33,7 +32,7 @@ public class ActivityHubOntology extends Ontology{
 		Resource r = getInfo();
 		r.setResourceComment("Ontology for sensors specified in " +
 			"ISO 11073 - Part 10471 (Indepentend living activity hub)");
-		r.setResourceLabel("ActivityHubSensor");
+		r.setResourceLabel("ActivityHub");
 		r.serializesAsXMLLiteral();
 
 		OntClassInfoSetup oci;
@@ -56,7 +55,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(FallSensor.MY_URI,factory, 1);
 		oci.setResourceLabel("FallSensor");
 		oci.setResourceComment("ISO 11073-10471 fall sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type FallSensorEvent */
 		oci.addObjectProperty(FallSensor.PROP_MEASURED_VALUE);
@@ -79,7 +78,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(PersSensor.MY_URI,factory, 2);
 		oci.setResourceLabel("PersSensor");
 		oci.setResourceComment("ISO 11073-10471 PERS sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type PersSensorEvent */
 		oci.addObjectProperty(PersSensor.PROP_MEASURED_VALUE);
@@ -102,7 +101,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(SmokeSensor.MY_URI,factory, 3);
 		oci.setResourceLabel("SmokeSensor");
 		oci.setResourceComment("ISO 11073-10471 smoke sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type SmokeSensorEvent */
 		oci.addObjectProperty(SmokeSensor.PROP_MEASURED_VALUE);
@@ -125,7 +124,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(CoSensor.MY_URI,factory, 4);
 		oci.setResourceLabel("CoSensor");
 		oci.setResourceComment("ISO 11073-10471 CO sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type CoSensorEvent */
 		oci.addObjectProperty(CoSensor.PROP_MEASURED_VALUE);
@@ -148,7 +147,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(WaterSensor.MY_URI,factory, 5);
 		oci.setResourceLabel("WaterSensor");
 		oci.setResourceComment("ISO 11073-10471 smoke sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type WaterSensorEvent */
 		oci.addObjectProperty(WaterSensor.PROP_MEASURED_VALUE);
@@ -171,7 +170,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(GasSensor.MY_URI,factory, 6);
 		oci.setResourceLabel("GasSensor");
 		oci.setResourceComment("ISO 11073-10471 smoke sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type GasSensorEvent */
 		oci.addObjectProperty(GasSensor.PROP_MEASURED_VALUE);
@@ -196,7 +195,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(MotionSensor.MY_URI,factory, 7);
 		oci.setResourceLabel("MotionSensor");
 		oci.setResourceComment("ISO 11073-10471 motion sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type MotionSensorEvent */
 		oci.addObjectProperty(MotionSensor.PROP_MEASURED_VALUE);
@@ -220,7 +219,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(PropertyExitSensor.MY_URI,factory, 8);
 		oci.setResourceLabel("PropertyExitSensor");
 		oci.setResourceComment("ISO 11073-10471 property exit sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type PropertyExitSensorEvent */
 		oci.addObjectProperty(PropertyExitSensor.PROP_MEASURED_VALUE);
@@ -243,7 +242,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(EnuresisSensor.MY_URI,factory, 9);
 		oci.setResourceLabel("EnuresisSensor");
 		oci.setResourceComment("ISO 11073-10471 enuresis sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type EnuresisSensorEvent */
 		oci.addObjectProperty(EnuresisSensor.PROP_MEASURED_VALUE);
@@ -267,7 +266,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(ContactClosureSensor.MY_URI,factory, 10);
 		oci.setResourceLabel("ContactClosureSensor");
 		oci.setResourceComment("ISO 11073-10471 contact closure sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type ContactClosureSensorEvent */
 		oci.addObjectProperty(ContactClosureSensor.PROP_MEASURED_VALUE);
@@ -294,7 +293,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(UsageSensor.MY_URI,factory, 11);
 		oci.setResourceLabel("UsageSensor");
 		oci.setResourceComment("ISO 11073-10471 usage sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type UsageSensorEvent */
 		oci.addObjectProperty(UsageSensor.PROP_MEASURED_VALUE);
@@ -318,7 +317,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(SwitchSensor.MY_URI,factory, 12);
 		oci.setResourceLabel("SwitchSensor");
 		oci.setResourceComment("ISO 11073-10471 switch sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type SwitchSensorEvent */
 		oci.addObjectProperty(SwitchSensor.PROP_MEASURED_VALUE);
@@ -342,7 +341,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(MedicationDosageSensor.MY_URI,factory, 13);
 		oci.setResourceLabel("MedicationDosageSensor");
 		oci.setResourceComment("ISO 11073-10471 medication dosage sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type MedicationDosageSensorEvent */
 		oci.addObjectProperty(MedicationDosageSensor.PROP_MEASURED_VALUE);
@@ -367,7 +366,7 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewOntClassInfo(TemperatureSensor.MY_URI,factory, 14);
 		oci.setResourceLabel("TemperatureSensor");
 		oci.setResourceComment("ISO 11073-10471 temperature sensor");
-		oci.addSuperClass(Sensor.MY_URI);
+		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type TemperatureSensorEvent */
 		oci.addObjectProperty(TemperatureSensor.PROP_MEASURED_VALUE);
@@ -400,6 +399,15 @@ public class ActivityHubOntology extends Ontology{
 				AdaptorPlugActuator.PROP_STATUS, AdaptorPlugActuatorEvent.MY_URI));
 
 
+	/*** Sensors Base Class ***/
+		
+		/* create ontology resource for ActivityHubSensor */
+		oci = createNewOntClassInfo(ActivityHubSensor.MY_URI,factory, 0);
+		oci.setResourceLabel("ActivityHubSensor");
+		oci.setResourceComment("ISO 11073-10471 activity hub base sensor");
+		oci.addSuperClass(Sensor.MY_URI);
+		
+		
 	/*** Services ***/
 
 		/* create ontology resource for ActivityHub Service */
@@ -409,8 +417,8 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(Service.MY_URI);
 
 		oci.addObjectProperty(ActivityHub.PROP_CONTROLS);
-//		oci.addRestriction( ActivityHub.PROP_CONTROLS -> [alle meine activity hub devices] );
-//		wie mach ich das?
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ActivityHub.PROP_CONTROLS, ActivityHubSensor.MY_URI));
 
 	}
 

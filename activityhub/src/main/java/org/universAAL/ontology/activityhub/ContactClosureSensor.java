@@ -4,7 +4,6 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.ontology.ActivityHubOntology;
-import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * Ontological representation of a contact closure sensor according to
@@ -22,7 +21,7 @@ import org.universAAL.ontology.phThing.Sensor;
  * 
  * @author Thomas Fuxreiter 
  */
-public class ContactClosureSensor extends Sensor {
+public class ContactClosureSensor extends ActivityHubSensor {
 
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE
     + "ContactClosureSensor";

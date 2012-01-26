@@ -4,7 +4,6 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.ontology.ActivityHubOntology;
-import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * Ontological representation of a motion sensor according to ISO 11073 - 
@@ -23,7 +22,7 @@ import org.universAAL.ontology.phThing.Sensor;
  * 
  * @author Thomas Fuxreiter
  */
-public class MotionSensor extends Sensor {
+public class MotionSensor extends ActivityHubSensor {
 
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE
     + "MotionSensor";

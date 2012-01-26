@@ -1,9 +1,10 @@
 /**
  * 
  */
-package org.universAAL.ontology;
+package org.universAAL.ontology.activityhub;
 
 import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.ontology.ActivityHubOntology;
 
 /**
  * Ontological SERVICE that handles activity hub devices. Methods included in this
