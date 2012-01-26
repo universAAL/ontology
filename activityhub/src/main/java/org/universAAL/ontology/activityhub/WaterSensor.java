@@ -4,7 +4,6 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.ontology.ActivityHubOntology;
-import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * Ontological representation of a water sensor according to ISO 11073 - 
@@ -24,7 +23,7 @@ import org.universAAL.ontology.phThing.Sensor;
  * 
  * @author Thomas Fuxreiter
  */
-public class WaterSensor extends Sensor {
+public class WaterSensor extends ActivityHubSensor {
 
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE
     + "WaterSensor";

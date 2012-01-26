@@ -2,9 +2,10 @@
 activityhub/documentation/Development_notes.txt -text
 activityhub/pom.xml -text
 activityhub/src/main/java/org/universAAL/ontology/Activator.java -text
-activityhub/src/main/java/org/universAAL/ontology/ActivityHub.java -text
 activityhub/src/main/java/org/universAAL/ontology/ActivityHubFactory.java -text
 activityhub/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
+activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHub.java -text
+activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHubSensor.java -text
 activityhub/src/main/java/org/universAAL/ontology/activityhub/CoSensor.java -text
 activityhub/src/main/java/org/universAAL/ontology/activityhub/ContactClosureSensor.java -text
 activityhub/src/main/java/org/universAAL/ontology/activityhub/ContactClosureSensorEvent.java -text
@@ -32,6 +33,7 @@ activityhub/src/main/java/org/universAAL/ontology/activityhub/UsageSensorEvent.j
 activityhub/src/main/java/org/universAAL/ontology/activityhub/WaterSensor.java -text
 activityhub/src/main/java/org/universAAL/ontology/activityhub/ext/AdaptorPlugActuator.java -text
 activityhub/src/main/java/org/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent.java -text
+activityhub/src/main/java/org/universAAL/ontology/activityhub/util/ActivityHubSensorType.java -text
 audio_video/LICENSE.txt -text
 audio_video/NOTICE.txt -text
 audio_video/pom.xml -text
