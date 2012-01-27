@@ -68,6 +68,8 @@ blind/src/main/java/org/universAAL/ontology/blind/BlindController.java -text
 device.extra/artifact.composite -text
 device.extra/pom.xml -text
 device.extra/src/main/java/org/universAAL/ontology/Activator.java -text
+device.extra/src/main/java/org/universAAL/ontology/DeviceFactory.java -text
+device.extra/src/main/java/org/universAAL/ontology/DeviceOntology.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/CarpetSensor.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/ContactSensor.java -text
 device.extra/src/main/java/org/universAAL/ontology/device/home/Oven.java -text

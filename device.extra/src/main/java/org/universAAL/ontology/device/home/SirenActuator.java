@@ -21,8 +21,6 @@
  */
 package org.universAAL.ontology.device.home;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.OnOffActuator;
 
@@ -36,19 +34,8 @@ import org.universAAL.ontology.phThing.OnOffActuator;
  * 
  */
 public class SirenActuator extends OnOffActuator {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "SirenActuator";
-	register(SirenActuator.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_STATUS.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Boolean.class));
-	return OnOffActuator.getClassRestrictionsOnProperty(propURI);
-    }
+    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+	    + "SirenActuator";
 
     public SirenActuator() {
     }
@@ -57,16 +44,16 @@ public class SirenActuator extends OnOffActuator {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "An Acoustic Siren Actuator";
-    }
-
-    public static String getRDFSLabel() {
-	return "Siren Actuator";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {
 	return true;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
 }
