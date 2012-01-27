@@ -23,7 +23,7 @@ package org.universAAL.ontology.risk;
 
 import org.universAAL.ontology.RiskOntology;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.profilable.User;
+import org.universAAL.ontology.profile.User;
 
 /**
  * Ontological representation of a panic button device. Methods included in this

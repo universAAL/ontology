@@ -7,7 +7,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.Sensor;
-import org.universAAL.ontology.profilable.User;
+import org.universAAL.ontology.profile.User;
 import org.universAAL.ontology.risk.FallDetector;
 import org.universAAL.ontology.risk.PanicButton;
 
@@ -29,6 +29,7 @@ public class RiskOntology extends Ontology {
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for Risk detection devices");
 	r.setResourceLabel("Risk");
+	addImport(ProfileOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 

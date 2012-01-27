@@ -23,7 +23,7 @@ package org.universAAL.ontology.risk;
 
 import org.universAAL.ontology.RiskOntology;
 import org.universAAL.ontology.phThing.Sensor;
-import org.universAAL.ontology.profilable.User;
+import org.universAAL.ontology.profile.User;
 
 /**
  * Ontological representation of a wearable fall detector. Methods included in
