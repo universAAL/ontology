@@ -1,6 +1,12 @@
 /*
-	Copyright 2008-2010 SPIRIT, http://www.spirit-intl.com/
-	SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
+	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
+	Instituto Tecnologico de Aplicaciones de Comunicacion 
+	Avanzadas - Grupo Tecnologias para la Salud y el 
+	Bienestar (TSB)
+	Copyright 2008-2014 Forschungszentrum Informatik FZI, http://www.fzi.de
+	Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+	
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -20,36 +26,25 @@
 
 package org.universAAL.ontology.profile;
 
+import org.universAAL.ontology.ProfileOntology;
+
 /**
  * Ontological representation of the specific profile of an any person. Methods
  * included in this class are the mandatory ones for representing an ontological
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
  * 
- * @author mfernandez
  * @author Carsten Stockloew
+ * @author Alvaro Fides
+ * @author Peter Wolf
  */
-// This class is empty; properties must be defined
 public class UserProfile extends Profile {
-    public static final String PROFILING_NAMESPACE = "http://ontology.persona.upm.es/UserProfile.owl#";
-    public static final String MY_URI;
 
-    public static final String PROP_USER_ID_PROFILE;
+    /** Class URI */
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "UserProfile";
 
-    static {
-	MY_URI = PROFILING_NAMESPACE + "UserProfile";
-	PROP_USER_ID_PROFILE = PROFILING_NAMESPACE + "userIdProfile";
-    }
-
-    public void setProperty(String propURI, Object o) {
-	if (PROP_USER_ID_PROFILE.equals(propURI)
-		&& o instanceof UserIdentificationProfile)
-	    setUserIdentificationProfile((UserIdentificationProfile) o);
-	else
-	    super.setProperty(propURI, o);
-    }
-
-    public UserProfile() {
+    protected UserProfile() {
 	super();
     }
 
@@ -57,69 +52,16 @@ public class UserProfile extends Profile {
 	super(uri);
     }
 
-    public UserProfile(String uri, UserIdentificationProfile userIdProfile) {
-
-	super(uri);
-	if (userIdProfile == null)
-	    throw new IllegalArgumentException();
-
-	props.put(PROP_USER_ID_PROFILE, userIdProfile);
-
+    public boolean isWellFormed() {
+	return true;
     }
 
-    public UserIdentificationProfile getUserIdentificationProfile() {
-	Object o = props.get(PROP_USER_ID_PROFILE);
-	return (o == null) ? null : (UserIdentificationProfile) o;
-    }
-
-    public void setUserIdentificationProfile(
-	    UserIdentificationProfile userIdProfile) {
-	if (userIdProfile != null)
-	    props.put(PROP_USER_ID_PROFILE, userIdProfile);
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    // Later must be modified; properties (contained key) must be returned
-    public boolean isWellFormed() {
-	return props.containsKey(PROP_USER_ID_PROFILE);
-    }
-
-    public ProfileProperty[] getAllProperties() {
-	return getStaticProperties();
-    }
-
-    public ProfileProperty[] getDynamicProperties() {
-	ProfileProperty[] inherited = super.getDynamicProperties();
-	ProfileProperty[] propArray = new ProfileProperty[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    propArray[i] = inherited[i++];
-	}
-
-	// propArray[i++] = new ProfileProperty("", PROP_THE_USER, "User");
-	propArray[i++] = new ProfileProperty(
-		((getUserIdentificationProfile() == null) ? new UserIdentificationProfile()
-			: getUserIdentificationProfile()),
-		PROP_USER_ID_PROFILE, "User Identification Profile", true);
-
-	return propArray;
-    }
-
-    public ProfileProperty[] getStaticProperties() {
-	ProfileProperty[] inherited = super.getStaticProperties();
-	ProfileProperty[] propArray = new ProfileProperty[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    propArray[i] = inherited[i++];
-	}
-
-	propArray[i++] = new ProfileProperty(
-		((getUserIdentificationProfile() == null) ? new UserIdentificationProfile()
-			: getUserIdentificationProfile()),
-		PROP_USER_ID_PROFILE, "User Identification Profile", true);
-	return propArray;
-    }
 }

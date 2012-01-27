@@ -23,31 +23,30 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
+
 package org.universAAL.ontology.profile;
 
 import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
- * Ontological representation of a person that is a user of the system. Methods
- * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
- * most of its properties.
+ * Ontology class representing an AAL Service
  * 
- * @author Carsten Stockloew
- * @author Alvaro Fides
  * @author Peter Wolf
+ * @author Alvaro Fides
  */
-public class User extends PhysicalThing {
+
+public class AssistedPerson extends PhysicalThing {
 
     /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE + "User";
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "AssistedPerson";
 
-    protected User() {
+    protected AssistedPerson() {
 	super();
     }
 
-    public User(String uri) {
+    public AssistedPerson(String uri) {
 	super(uri);
     }
 
@@ -57,7 +56,7 @@ public class User extends PhysicalThing {
 
     public boolean isWellFormed() {
 	if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof UserProfile);
+	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AssistedPersonProfile);
 	}
 	return false;
     }
@@ -67,21 +66,22 @@ public class User extends PhysicalThing {
     }
 
     /**
-     * Sets the value for the User Profile of this User
+     * Sets the value for the Assisted Person Profile of this Assisted Person
      * 
      * @param value
      *            The Profile to set
      */
-    public void setProfile(UserProfile value) {
+    public void setProfile(AssistedPersonProfile value) {
 	setProperty(Profilable.PROP_HAS_PROFILE, value);
     }
 
     /**
-     * Gets the value of the User Profile of this User
+     * Gets the value of the Assisted Person Profile of this Assisted Person
      * 
-     * @return The Profile of the User
+     * @return The Profile of the Assisted Person
      */
-    public UserProfile getProfile() {
-	return (UserProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+    public AssistedPersonProfile getProfile() {
+	return (AssistedPersonProfile) getProperty(Profilable.PROP_HAS_PROFILE);
     }
+
 }

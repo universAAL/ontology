@@ -23,31 +23,29 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
+
 package org.universAAL.ontology.profile;
 
 import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
- * Ontological representation of a person that is a user of the system. Methods
- * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
- * most of its properties.
+ * Ontology class representing an AAL Service
  * 
- * @author Carsten Stockloew
- * @author Alvaro Fides
  * @author Peter Wolf
+ * @author Alvaro Fides
  */
-public class User extends PhysicalThing {
+
+public class Caregiver extends PhysicalThing {
 
     /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE + "User";
+    public static final String MY_URI = ProfileOntology.NAMESPACE + "Caregiver";
 
-    protected User() {
+    protected Caregiver() {
 	super();
     }
 
-    public User(String uri) {
+    public Caregiver(String uri) {
 	super(uri);
     }
 
@@ -57,7 +55,7 @@ public class User extends PhysicalThing {
 
     public boolean isWellFormed() {
 	if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof UserProfile);
+	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof CaregiverProfile);
 	}
 	return false;
     }
@@ -67,21 +65,22 @@ public class User extends PhysicalThing {
     }
 
     /**
-     * Sets the value for the User Profile of this User
+     * Sets the value for the Caregiver Profile of this Caregiver
      * 
      * @param value
      *            The Profile to set
      */
-    public void setProfile(UserProfile value) {
+    public void setProfile(CaregiverProfile value) {
 	setProperty(Profilable.PROP_HAS_PROFILE, value);
     }
 
     /**
-     * Gets the value of the User Profile of this User
+     * Gets the value of the Caregiver Profile of this Caregiver
      * 
-     * @return The Profile of the User
+     * @return The Profile of the Caregiver
      */
-    public UserProfile getProfile() {
-	return (UserProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+    public CaregiverProfile getProfile() {
+	return (CaregiverProfile) getProperty(Profilable.PROP_HAS_PROFILE);
     }
+
 }

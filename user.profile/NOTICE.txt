@@ -1,13 +1,11 @@
-PERSONA Profiling Ontology
+universAAL Profiling Ontology
 
 Copyright 2008-2010 SPIRIT, http://www.spirit-intl.com/
 SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
 
 I. Included Software
 
-Software developed by SPIRIT within the PERSONA project is 
-used as the initial version for further developments within 
-the universAAL project.
+This does not include any software developed by 3rd parties
 
 
 II. Used Software
@@ -29,20 +27,7 @@ This product uses software developed at
 Junit (http://www.junit.org/).
 Licensed under Common Public License 1.0.
 
-This product uses software developed at
-Information-technology Promotion Agency, (http://www.ipa.go.jp/)
-& Precision Modeling Laboratory, Inc., (http://www.pml.co.jp/)
-Copyright 2000 Software Research Associates, Inc., Tokyo, Japan.
-Licensed under specific License.
-
-This product uses software developed at
-The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-Copyright (c) 2000 - 2009 The Legion Of The Bouncy Castle
-Licensed under modified MIT X11 License.
-
 
 III. License Summary
 - Apache License 2.0
 - Common Public License 1.0
-- Modified MIT X11 License
-- JGCL - Java Geometry Class Library
