@@ -54,7 +54,6 @@
 		<module>../gesture.pointing</module>
 		<module>../hazard</module>
 		<module>../lighting</module>
-		<module>../location.extra</module>
 		<module>../measurement</module>
 		<module>../medication</module>
 		<module>../multimedia</module>
@@ -92,6 +91,67 @@
 				<artifactId>ont.weather</artifactId>
 				<version>(${release.previous} , ${release.next}]</version>
 			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.lighting</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.av</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.blind</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.device.extra</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.furniture</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.hazard</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.medication</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.multimedia</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.powersocket</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.risk</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.water</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.window</artifactId>
+				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			
 <!-- 			use the following to add all ontologies -->
 <!-- 			<dependency> -->
 <!-- 				<groupId>org.universAAL.ontology</groupId> -->
