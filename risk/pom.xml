@@ -62,6 +62,9 @@
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.profile</artifactId>
+			<version>1.0.2-SNAPSHOT</version>
+			<!-- Must use this version because in 1.0.1-S the User Ontology is not properly registered -->
+			<!--  remove it when 1.0.2-S is deployed -->
 		</dependency>
 	</dependencies>
 	
