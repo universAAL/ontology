@@ -251,6 +251,8 @@ powersocketswitch/src/main/java/org/universAAL/ontology/powersocketadapter/Power
 risk/artifact.composite -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text
+risk/src/main/java/org/universAAL/ontology/RiskFactory.java -text
+risk/src/main/java/org/universAAL/ontology/RiskOntology.java -text
 risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
 risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 risk/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text

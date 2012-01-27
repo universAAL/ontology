@@ -21,10 +21,9 @@
  */
 package org.universAAL.ontology.risk;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.ontology.RiskOntology;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.profile.User;
+import org.universAAL.ontology.profilable.User;
 
 /**
  * Ontological representation of a panic button device. Methods included in this
@@ -36,39 +35,9 @@ import org.universAAL.ontology.profile.User;
  * 
  */
 public class PanicButton extends Device {
-    public static final String MY_URI;
-    public static final String PROP_ACTIVATED;
-    public static final String PROP_PRESSED_BY;
-
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "PanicButton";
-	PROP_ACTIVATED = Device.uAAL_DEVICE_NAMESPACE + "activated";
-	PROP_PRESSED_BY = Device.uAAL_DEVICE_NAMESPACE + "pressedBy";
-	register(PanicButton.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_ACTIVATED.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_PRESSED_BY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    User.MY_URI, 1, 1);
-	return Device.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Device.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 2];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_ACTIVATED;
-	toReturn[i] = PROP_PRESSED_BY;
-	return toReturn;
-    }
+    public static final String MY_URI=RiskOntology.NAMESPACE + "PanicButton";
+    public static final String PROP_ACTIVATED=RiskOntology.NAMESPACE + "activated";
+    public static final String PROP_PRESSED_BY=RiskOntology.NAMESPACE + "pressedBy";
 
     public PanicButton() {
     }
@@ -76,22 +45,17 @@ public class PanicButton extends Device {
     public PanicButton(String uri) {
 	super(uri);
     }
-
-    public static String getRDFSComment() {
-	return "A Panic Button Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Panic Button";
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_PRESSED_BY.equals(propURI) ? PROP_SERIALIZATION_REDUCED
-		: PROP_SERIALIZATION_FULL;
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {
 	return true;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
     public boolean getActivated() {
