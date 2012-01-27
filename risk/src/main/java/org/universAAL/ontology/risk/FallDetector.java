@@ -21,11 +21,9 @@
  */
 package org.universAAL.ontology.risk;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.RiskOntology;
 import org.universAAL.ontology.phThing.Sensor;
-import org.universAAL.ontology.profile.User;
+import org.universAAL.ontology.profilable.User;
 
 /**
  * Ontological representation of a wearable fall detector. Methods included in
@@ -37,36 +35,8 @@ import org.universAAL.ontology.profile.User;
  * 
  */
 public class FallDetector extends Sensor {
-    public static final String MY_URI;
-    public static final String PROP_WORN_BY;
-
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "FallDetector";
-	PROP_WORN_BY = Device.uAAL_DEVICE_NAMESPACE + "wornBy";
-	register(FallDetector.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_MEASURED_VALUE.equals(propURI))
-	    return Restriction.getAllValuesRestriction(propURI, TypeMapper
-		    .getDatatypeURI(Boolean.class));
-	if (PROP_WORN_BY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    User.MY_URI, 1, 1);
-	return Sensor.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Device.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_WORN_BY;
-	return toReturn;
-    }
+    public static final String MY_URI=RiskOntology.NAMESPACE + "FallDetector";
+    public static final String PROP_WORN_BY=RiskOntology.NAMESPACE + "wornBy";
 
     public FallDetector() {
     }
@@ -74,17 +44,17 @@ public class FallDetector extends Sensor {
     public FallDetector(String uri) {
 	super(uri);
     }
-
-    public static String getRDFSComment() {
-	return "A Fall Detector Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Fall Detector";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {
 	return true;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
     public User getWornBy() {
