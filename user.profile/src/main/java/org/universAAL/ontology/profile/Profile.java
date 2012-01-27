@@ -1,6 +1,12 @@
 /*
-	Copyright 2008-2010 SPIRIT, http://www.spirit-intl.com/
-	SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
+	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
+	Instituto Tecnologico de Aplicaciones de Comunicacion 
+	Avanzadas - Grupo Tecnologias para la Salud y el 
+	Bienestar (TSB)
+	Copyright 2008-2014 Forschungszentrum Informatik FZI, http://www.fzi.de
+	Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+	
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -20,6 +26,7 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of a user root profile. Methods included in this
@@ -27,18 +34,20 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
  * 
- * @author mfernandez
  * @author Carsten Stockloew
+ * @author Alvaro Fides
+ * @author Peter Wolf
  */
+public class Profile extends ManagedIndividual {
 
-// This class is empty; properties must be defined
-public class Profile extends ManagedIndividual implements PropertyPublisher {
-    public static final String PROFILING_NAMESPACE = "http://ontology.persona.upm.es/Profile.owl#";
-    public static final String MY_URI = PROFILING_NAMESPACE + "Profile";
+    /** Class URI */
+    public static final String MY_URI = ProfileOntology.NAMESPACE + "Profile";
 
-    // Define more parameters for userProfile
+    /** http://ontology.universAAL.org/Profile.owl#has-sub-profile */
+    public static final String PROP_HAS_SUB_PROFILE = ProfileOntology.NAMESPACE
+	    + "hasSubProfile";
 
-    public Profile() {
+    protected Profile() {
 	super();
     }
 
@@ -46,23 +55,24 @@ public class Profile extends ManagedIndividual implements PropertyPublisher {
 	super(uri);
     }
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
-
     public boolean isWellFormed() {
 	return true;
     }
 
-    public ProfileProperty[] getAllProperties() {
-	return new ProfileProperty[0];
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    public ProfileProperty[] getDynamicProperties() {
-	return new ProfileProperty[0];
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
-    public ProfileProperty[] getStaticProperties() {
-	return new ProfileProperty[0];
+    public void setSubProfile(SubProfile value) {
+	super.setProperty(PROP_HAS_SUB_PROFILE, value);
     }
+
+    public SubProfile getSubProfile() {
+	return (SubProfile) props.get(PROP_HAS_SUB_PROFILE);
+    }
+
 }

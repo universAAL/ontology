@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
@@ -10,11 +10,11 @@
 		<relativePath>../pom/</relativePath>
 	</parent>
 	<artifactId>ont.profile</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>bundle</packaging>
-	
+
 	<!-- ______________________________________________________ -->
-	
+
 	<name>The Profiling Ontology</name>
 	<licenses>
 		<license>
@@ -25,10 +25,14 @@
 	</licenses>
 	<organization>
 		<name><![CDATA[
-	SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
+	Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)
+	Forschungszentrum Informatik FZI
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research
     ]]></name>
 		<url><![CDATA[
-	http://www.spirit-intl.com/
+	http://www.itaca.upv.es/
+	http://www.fzi.de
+	http://www.igd.fraunhofer.de/
     ]]></url>
 	</organization>
 
@@ -50,11 +54,6 @@
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.bus.service</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.middleware</groupId>
-			<artifactId>mw.bus.ui</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
@@ -93,10 +92,10 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-			</plugin>            
+			</plugin>
 		</plugins>
 	</build>
-	
+
 	<!-- ______________________________________________________ -->
 
 	<scm>
@@ -104,5 +103,5 @@
 		<developerConnection>${svn.base}/user.profile</developerConnection>
 		<url>${svn.base.url}</url>
 	</scm>
-	
+
 </project>

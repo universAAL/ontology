@@ -23,38 +23,43 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.ontology.profile.service;
+package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.ProfileOntology;
 
 /**
- * Ontological generic service that handles profile-related information. Methods
- * included in this class are the mandatory ones for representing an ontological
- * service in Java classes for uAAL.
+ * Ontology class representing an AAL Service
  * 
- * @author Kostas Aagnantis
- * @author Carsten Stockloew
+ * @author Alvaro Fides
  */
-public class ProfilingService extends Service {
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
+public class Profilable extends ManagedIndividual {
 
-    static {
-	MY_URI = ProfileOntology.NAMESPACE + "ProfilingService";
-	PROP_CONTROLS = ProfileOntology.NAMESPACE + "controls";
+    /** Class URI */
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "Profilable";
+
+    public static final String PROP_HAS_PROFILE = ProfileOntology.NAMESPACE
+	    + "hasProfile";
+
+    protected Profilable() {
+	super();
     }
 
-    public ProfilingService(String uri) {
+    public Profilable(String uri) {
 	super(uri);
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: PROP_SERIALIZATION_OPTIONAL;
     }
 
     public boolean isWellFormed() {
 	return true;
     }
+
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
 }

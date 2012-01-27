@@ -1,6 +1,12 @@
 /*
-	Copyright 2008-2010 SPIRIT, http://www.spirit-intl.com/
-	SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
+	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
+	Instituto Tecnologico de Aplicaciones de Comunicacion 
+	Avanzadas - Grupo Tecnologias para la Salud y el 
+	Bienestar (TSB)
+	Copyright 2008-2014 Forschungszentrum Informatik FZI, http://www.fzi.de
+	Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+	
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -20,14 +26,14 @@
 package org.universAAL.ontology.profile.service;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.profile.Profile;
+import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological service that handles and edits profile-related information.
  * Methods included in this class are the mandatory ones for representing an
  * ontological service in Java classes for uAAL.
  * 
- * @author kagnantis
+ * @author Kostast Agnantis
  * @author Carsten Stockloew
  */
 public class ProfilingEditorService extends Service {
@@ -35,8 +41,8 @@ public class ProfilingEditorService extends Service {
     public static final String PROP_CONTROLS;
 
     static {
-	MY_URI = Profile.PROFILING_NAMESPACE + "ProfilingEditorService";
-	PROP_CONTROLS = Profile.PROFILING_NAMESPACE + "editorControls";
+	MY_URI = ProfileOntology.NAMESPACE + "ProfilingEditorService";
+	PROP_CONTROLS = ProfileOntology.NAMESPACE + "editorControls";
     }
 
     public ProfilingEditorService(String uri) {
