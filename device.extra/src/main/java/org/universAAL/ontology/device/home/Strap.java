@@ -33,12 +33,7 @@ import org.universAAL.ontology.phThing.Device;
  * 
  */
 public class Strap extends Device {
-    public static final String MY_URI;
-
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Strap";
-	register(Strap.class);
-    }
+    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Strap";
 
     public Strap() {
     }
@@ -47,16 +42,16 @@ public class Strap extends Device {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Strap Device";
-    }
-
-    public static String getRDFSLabel() {
-	return "Strap";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {
 	return true;
+    }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
     }
 
 }
