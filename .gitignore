@@ -35,10 +35,6 @@ lighting/.project
 lighting/.settings
 lighting/bin
 lighting/target
-location.extra/.classpath
-location.extra/.project
-location.extra/.settings
-location.extra/target
 measurement/.classpath
 measurement/.project
 measurement/.settings
