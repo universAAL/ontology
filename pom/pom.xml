@@ -53,6 +53,7 @@
 		<module>../furniture</module>
 		<module>../gesture.pointing</module>
 		<module>../hazard</module>
+		<module>../impairment</module>
 		<module>../lighting</module>
 		<module>../measurement</module>
 		<module>../medication</module>
@@ -120,6 +121,11 @@
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.hazard</artifactId>
 				<version>(${release.previous} , ${release.next}]</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.impairment</artifactId>
+				<version>(${release.previous}, ${release.next}]</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
