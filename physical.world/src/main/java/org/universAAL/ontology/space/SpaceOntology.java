@@ -35,7 +35,7 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  */
 public class SpaceOntology extends Ontology {
 
-    public static final String NAMESPACE = Location.uAAL_LOCATION_NAMESPACE;
+    public static final String NAMESPACE = "http://ontology.universAAL.org/SpaceConfiguration.owl#";;
 
     private static SpaceFactory factory = new SpaceFactory();
 
