@@ -46,7 +46,6 @@
 
 	<modules>
 		<module>../audio_video</module>
-		<module>../blind</module>
 		<module>../device.extra</module>
 		<module>../furniture</module>
 		<module>../gesture.pointing</module>
@@ -97,11 +96,6 @@
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.av</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.blind</artifactId>
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
