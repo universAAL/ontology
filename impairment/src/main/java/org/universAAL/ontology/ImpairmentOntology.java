@@ -40,14 +40,14 @@ import org.universAAL.ontology.impairment.SpeakingImpairment;
  * @author Carsten Stockloew
  */
 
-public final class ProfileOntology extends Ontology {
+public final class ImpairmentOntology extends Ontology {
 
-    private static ProfileFactory factory = new ProfileFactory();
+    private static ImpairmentFactory factory = new ImpairmentFactory();
 
     public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
 	    + "Impairment.owl#";
 
-    public ProfileOntology() {
+    public ImpairmentOntology() {
 	super(NAMESPACE);
     }
 
@@ -57,7 +57,7 @@ public final class ProfileOntology extends Ontology {
 		.setResourceComment("The ontology describing Impairment a user may have.");
 	r.setResourceLabel("Impairment");
 	addImport(DataRepOntology.NAMESPACE);
-	addImport(ProfileOntology.NAMESPACE);
+	addImport(ImpairmentOntology.NAMESPACE);
 	addImport(UIBusOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;

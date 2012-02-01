@@ -22,7 +22,7 @@
 package org.universAAL.ontology.impairment;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.ontology.ProfileOntology;
+import org.universAAL.ontology.ImpairmentOntology;
 
 /**
  * Ontological representation of the color blindness impairment. Methods
@@ -34,7 +34,7 @@ import org.universAAL.ontology.ProfileOntology;
  * @author Carsten Stockloew
  */
 public class ColorBlindness extends SightImpairment  {
-    public static final String MY_URI = ProfileOntology.NAMESPACE
+    public static final String MY_URI = ImpairmentOntology.NAMESPACE
 	    + "ColorBlindness";
 
     /**

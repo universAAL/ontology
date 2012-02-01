@@ -29,7 +29,7 @@ import org.universAAL.middleware.owl.OntologyManagement;
 public class Activator implements BundleActivator {
 
     static BundleContext context = null;
-    ProfileOntology ont = new ProfileOntology();
+    ImpairmentOntology ont = new ImpairmentOntology();
 
     public void start(BundleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);
