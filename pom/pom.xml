@@ -42,8 +42,6 @@
 		<maven.compile.source>1.4</maven.compile.source>
 		<maven.compile.target>1.4</maven.compile.target>
 		<gforge.project.name>ontologies</gforge.project.name>
-		<release.previous>1.0.0</release.previous>
-		<release.next>1.1.0</release.next>
 	</properties>
 
 	<modules>
@@ -72,7 +70,6 @@
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
 				<artifactId>mw.pom</artifactId>
-<!-- 				<version>(${release.previous} , ${release.next}]</version> -->
 				<version>1.0.2-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
@@ -80,83 +77,89 @@
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.phWorld</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.profile</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.weather</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.lighting</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.av</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.blind</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.device.extra</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.furniture</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.hazard</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.impairment</artifactId>
-				<version>(${release.previous}, ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.medication</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.multimedia</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.powersocket</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.risk</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.water</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.window</artifactId>
-				<version>(${release.previous} , ${release.next}]</version>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
+			<dependency>
+				<groupId>org.universAAL.support</groupId>
+				<artifactId>itests</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+				<scope>test</scope>
+			</dependency>            
 			
 <!-- 			use the following to add all ontologies -->
 <!-- 			<dependency> -->
