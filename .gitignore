@@ -66,6 +66,11 @@ powersocketswitch/.classpath
 powersocketswitch/.project
 powersocketswitch/.settings
 powersocketswitch/target
+profile.health/.classpath
+profile.health/.project
+profile.health/.settings
+profile.health/target
+profile.health/uAAL.log
 risk/.classpath
 risk/.project
 risk/.settings

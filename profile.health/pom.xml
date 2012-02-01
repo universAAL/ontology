@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.pom</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom/</relativePath>
+	</parent>
+	<artifactId>ont.profile.health</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	
+	<!-- ______________________________________________________ -->
+	
+	<name>The Health Profiling Ontology</name>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<organization>
+		<name><![CDATA[
+	SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
+    ]]></name>
+		<url><![CDATA[
+	http://www.spirit-intl.com/
+    ]]></url>
+	</organization>
+
+	<!-- ______________________________________________________ -->
+
+	<dependencies>
+		<dependency>
+			<groupId>org.universAAL.support</groupId>
+			<artifactId>itests</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.osgi.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.data.representation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.phWorld</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.profile</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.ui</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!-- ______________________________________________________ -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>bundle-manifest</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<instructions>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>
+						<Bundle-Description>${project.description}</Bundle-Description>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>org.universAAL.ontology.profile.health</Export-Package>
+						<Private-Package>org.universAAL.ontology</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+			</plugin>            
+		</plugins>
+	</build>
+	
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>${svn.base}/user.profile</connection>
+		<developerConnection>${svn.base}/user.profile</developerConnection>
+		<url>${svn.base.url}</url>
+	</scm>
+	
+</project>
