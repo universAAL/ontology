@@ -104,8 +104,8 @@ impairment/NOTICE.txt -text
 impairment/artifact.composite -text
 impairment/pom.xml -text
 impairment/src/main/java/org/universAAL/ontology/Activator.java -text
-impairment/src/main/java/org/universAAL/ontology/ProfileFactory.java -text
-impairment/src/main/java/org/universAAL/ontology/ProfileOntology.java -text
+impairment/src/main/java/org/universAAL/ontology/ImpairmentFactory.java -text
+impairment/src/main/java/org/universAAL/ontology/ImpairmentOntology.java -text
 impairment/src/main/java/org/universAAL/ontology/impairment/Astigmatism.java -text
 impairment/src/main/java/org/universAAL/ontology/impairment/ColorBlindness.java -text
 impairment/src/main/java/org/universAAL/ontology/impairment/FarSightedness.java -text

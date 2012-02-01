@@ -24,7 +24,7 @@ package org.universAAL.ontology.impairment;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
 import org.universAAL.middleware.ui.owl.AccessImpairment;
-import org.universAAL.ontology.ProfileOntology;
+import org.universAAL.ontology.ImpairmentOntology;
 
 /**
  * 
@@ -37,7 +37,7 @@ import org.universAAL.ontology.ProfileOntology;
  * @author Carsten Stockloew
  */
 public class SightImpairment extends AccessImpairment {
-    public static final String MY_URI = ProfileOntology.NAMESPACE
+    public static final String MY_URI = ImpairmentOntology.NAMESPACE
 	    + "SightImpairment";
 
     /**

@@ -35,7 +35,7 @@ import org.universAAL.ontology.impairment.SpeakingImpairment;
  * @author Carsten Stockloew
  */
 
-public class ProfileFactory extends ResourceFactoryImpl {
+public class ImpairmentFactory extends ResourceFactoryImpl {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
