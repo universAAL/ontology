@@ -1,4 +1,4 @@
-package src.test.java.org.universAAL.ontology.profile.health;
+package org.universAAL.ontology.profile.health;
 
 import org.universAAL.itests.IntegrationTest;
 
