@@ -179,7 +179,7 @@ public final class ProfileOntology extends Ontology {
 			0, 1));
 
 	// load ProfilingService
-	oci = createNewOntClassInfo(ProfilingService.MY_URI, factory, 25);
+	oci = createNewOntClassInfo(ProfilingService.MY_URI, factory, 10);
 	oci.setResourceComment("The class of services controling Profiling.");
 	oci.setResourceLabel("Profiling Service Controller");
 	oci.addSuperClass(Service.MY_URI);
@@ -188,7 +188,7 @@ public final class ProfileOntology extends Ontology {
 		ProfilingService.PROP_CONTROLS, Profilable.MY_URI));
 
 	// load ProfilingEditorService
-	oci = createNewOntClassInfo(ProfilingEditorService.MY_URI, factory, 26);
+	oci = createNewOntClassInfo(ProfilingEditorService.MY_URI, factory, 11);
 	oci.setResourceComment("The class of services controling Profile Editor.");
 	oci.setResourceLabel("Profile Editor Service Controller");
 	oci.addSuperClass(Service.MY_URI);

@@ -28,6 +28,8 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 import org.universAAL.ontology.profile.*;
+import org.universAAL.ontology.profile.service.ProfilingEditorService;
+import org.universAAL.ontology.profile.service.ProfilingService;
 
 /**
  * The factory for instantiating objects of the ontology classes.
@@ -60,6 +62,10 @@ public class ProfileFactory extends ResourceFactoryImpl {
 	    return new AssistedPersonProfile(instanceURI);
 	case 9:
 	    return new CaregiverProfile(instanceURI);
+	case 10:
+	    return new ProfilingEditorService(instanceURI);
+	case 11:
+	    return new ProfilingService(instanceURI);
 	}
 	return null;
     }
