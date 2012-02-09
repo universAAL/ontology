@@ -37,21 +37,21 @@ import org.universAAL.ontology.ProfileOntology;
  * @author Carsten Stockloew
  */
 public class ProfilingService extends Service {
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-
-    static {
-	MY_URI = ProfileOntology.NAMESPACE + "ProfilingService";
-	PROP_CONTROLS = ProfileOntology.NAMESPACE + "controls";
-    }
+    public static final String MY_URI = ProfileOntology.NAMESPACE
+	    + "ProfilingService";
+    public static final String PROP_CONTROLS = ProfileOntology.NAMESPACE
+	    + "controls";
 
     public ProfilingService(String uri) {
 	super(uri);
     }
 
+    public ProfilingService() {
+	super();
+    }
+
     public int getPropSerializationType(String propURI) {
-	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: PROP_SERIALIZATION_OPTIONAL;
+	return PROP_SERIALIZATION_FULL;
     }
 
     public boolean isWellFormed() {
