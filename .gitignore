@@ -71,6 +71,13 @@ profile.health/.project
 profile.health/.settings
 profile.health/target
 profile.health/uAAL.log
+profile.userid/.classpath
+profile.userid/.project
+profile.userid/.settings
+profile.userid/UserIDProfileOntology.di
+profile.userid/UserIDProfileOntology.notation
+profile.userid/UserIDProfileOntology.uml
+profile.userid/target
 risk/.classpath
 risk/.project
 risk/.settings
