@@ -57,6 +57,9 @@ audio_video/src/main/java/org/universAAL/ontology/av/streaming/Stream.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoCompression.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
 audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
+device.extra/LICENSE-CPL-JUnit.txt -text
+device.extra/LICENSE.txt -text
+device.extra/NOTICE.txt -text
 device.extra/artifact.composite -text
 device.extra/pom.xml -text
 device.extra/src/main/java/org/universAAL/ontology/Activator.java -text
