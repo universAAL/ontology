@@ -20,6 +20,7 @@
 package org.universAAL.ontology.device.home;
 
 import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**
  * Ontological representation of an oven appliance. Methods included in this
@@ -30,10 +31,10 @@ import org.universAAL.ontology.phThing.Device;
  * @author amoretti
  * 
  */
-public class Oven extends Device {
+public class Oven extends OnOffActuator {
+    
+    /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Oven";
-    public static final String PROP_IS_ON = Device.uAAL_DEVICE_NAMESPACE
-	    + "isOn";
 
     public Oven() {
 	super();
@@ -49,7 +50,7 @@ public class Oven extends Device {
 	if (isOn == null)
 	    throw new IllegalArgumentException();
 
-	props.put(PROP_IS_ON, isOn);
+	props.put(PROP_STATUS, isOn);
     }
 
     public String getClassURI() {
@@ -62,10 +63,6 @@ public class Oven extends Device {
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
-    }
-
-    public Boolean isOn() {
-	return (Boolean) props.get(PROP_IS_ON);
     }
 
 }

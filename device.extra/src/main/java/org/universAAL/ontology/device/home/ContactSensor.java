@@ -22,7 +22,7 @@
 package org.universAAL.ontology.device.home;
 
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.Sensor;
+import org.universAAL.ontology.phThing.OnOffSensor;
 
 /**
  * Ontological representation of a contact sensor (that detects when its 2
@@ -33,7 +33,9 @@ import org.universAAL.ontology.phThing.Sensor;
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
-public class ContactSensor extends Sensor {
+public class ContactSensor extends OnOffSensor {
+
+    /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
 	    + "ContactSensor";
 
@@ -54,14 +56,6 @@ public class ContactSensor extends Sensor {
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean getMeasuredvalue() {
-	return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
-    }
-
-    public void setMeasuredValue(boolean value) {
-	props.put(PROP_MEASURED_VALUE, new Boolean(value));
     }
 
 }

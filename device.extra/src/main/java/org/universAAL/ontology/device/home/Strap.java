@@ -26,13 +26,16 @@ import org.universAAL.ontology.phThing.Device;
 /**
  * Ontological representation of any device that can be attached to a person by
  * a strap. Methods included in this class are the mandatory ones for
- * representing an ontological concept in Java classes for uAAL. Usually it
- * includes getters and setters for most of its properties.
+ * representing an ontological concept in Java classes for uAAL. Currently this
+ * concept is just a placehodler and does not contain getters nor setters of its
+ * own, as it has no specific properties.
  * 
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
 public class Strap extends Device {
+
+    /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Strap";
 
     public Strap() {

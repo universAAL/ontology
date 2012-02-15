@@ -25,17 +25,27 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
 
+/**
+ * @author alfiva
+ *
+ */
 public class Activator implements BundleActivator {
 
     static BundleContext context = null;
     DeviceOntology deviceOntology = new DeviceOntology();
 
+    /* (non-Javadoc)
+     * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
+     */
     public void start(BundleContext context) throws Exception {
 	Activator.context = context;
 	OntologyManagement om = OntologyManagement.getInstance();
 	om.register(deviceOntology);
     }
 
+    /* (non-Javadoc)
+     * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+     */
     public void stop(BundleContext arg0) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();
 	om.unregister(deviceOntology);
