@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
@@ -47,7 +47,6 @@ public class PointingGestureInSpace extends GestureRecognition {
 		+ "addressedThings";
 	PROP_TIMESTAMP = GESTURE_RECOGNITION_NAMESPACE + "timeStamp";
 	PROP_INTERACTING_ARM = GESTURE_RECOGNITION_NAMESPACE + "interactingArm";
-	register(PointingGestureInSpace.class);
     }
 
     public PointingGestureInSpace() {
@@ -69,14 +68,14 @@ public class PointingGestureInSpace extends GestureRecognition {
     }
 
     
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+    public static MergedRestriction getClassRestrictionsOnProperty(String propURI) {
 	if (propURI == null)
 	    return null;
 	if (propURI.equals(PROP_ADDRESSED_THINGS))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
 		    PhysicalThing.MY_URI, 1, 0);
 	if (propURI.equals(PROP_TIMESTAMP))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
 		    TypeMapper.getDatatypeURI(Long.class), 1, 0);
 
 	return GestureRecognition.getClassRestrictionsOnProperty(propURI);

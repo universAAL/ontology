@@ -21,7 +21,7 @@ package org.universAAL.ontology.gesture.pointing;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.Enumeration;
-import org.universAAL.middleware.owl.Restriction;
+import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.ontology.profile.User;
 
 /**
@@ -42,23 +42,22 @@ public abstract class GestureRecognition extends ManagedIndividual {
 	MY_URI = GESTURE_RECOGNITION_NAMESPACE + "GestureRecognition";
 	PROP_SUBJECT_USER = GESTURE_RECOGNITION_NAMESPACE + "subjectUser";
 	PROP_GESTURE_TYPE = GESTURE_RECOGNITION_NAMESPACE + "gestureType";
-	register(GestureRecognition.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
+    public static MergedRestriction getClassRestrictionsOnProperty(String propURI) {
 	if (propURI == null)
 	    return null;
 
 	if (propURI.equals(PROP_GESTURE_TYPE))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
 		    new Enumeration(new Integer[] { new Integer(0),
 			    new Integer(1) }), 1, 1);
 
 	if (propURI.equals(PROP_SUBJECT_USER))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
 		    User.MY_URI, 1, 0);
 
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+	return null;//ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public static String getRDFSComment() {
