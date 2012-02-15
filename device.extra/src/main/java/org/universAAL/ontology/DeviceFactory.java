@@ -25,6 +25,11 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 import org.universAAL.ontology.device.home.*;
 
+/**
+ * The factory for instantiating objects of the ontology classes.
+ * @author alfiva
+ *
+ */
 public class DeviceFactory extends ResourceFactoryImpl{
 
     public Resource createInstance(String classURI, String instanceURI,
