@@ -56,8 +56,9 @@
 		<module>../medication</module>
 		<module>../multimedia</module>
 		<module>../physical.world</module>
-		<module>../profile.health</module>
 		<module>../powersocket</module>
+		<module>../profile.health</module>
+		<module>../profile.userid</module>
 		<module>../risk</module>
 		<module>../user.profile</module>
 		<module>../water</module>
@@ -74,31 +75,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.phWorld</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.profile</artifactId>
-				<version>1.0.2-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.profile.health</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.weather</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.lighting</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
+			
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.av</artifactId>
@@ -107,11 +84,16 @@
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.device.extra</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>1.0.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.furniture</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.gesture.pointing</artifactId>
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -126,6 +108,16 @@
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.lighting</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.measurement</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.medication</artifactId>
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
@@ -136,9 +128,29 @@
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.phWorld</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.powersocket</artifactId>
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile</artifactId>
+				<version>1.0.2-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile.health</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile.userid</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>	
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.risk</artifactId>
@@ -151,9 +163,15 @@
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.weather</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.window</artifactId>
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
+			
 			<dependency>
 				<groupId>org.universAAL.support</groupId>
 				<artifactId>itests</artifactId>
