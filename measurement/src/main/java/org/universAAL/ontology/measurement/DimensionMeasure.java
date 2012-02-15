@@ -41,7 +41,6 @@ public class DimensionMeasure extends ManagedIndividual {
 	PROP_MEASURE_UNIT = ContextEvent.uAAL_CONTEXT_NAMESPACE + "measureUnit";
 	PROP_ABSOLUTE_ERROR_DISTANCE = ContextEvent.uAAL_CONTEXT_NAMESPACE
 		+ "absoluteErrorDistance";
-	register(DimensionMeasure.class);
     }
 
     public static String getRDFSComment() {
