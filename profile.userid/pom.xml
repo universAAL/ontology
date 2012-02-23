@@ -12,6 +12,9 @@
 	<name>UserIDProfileOntology</name>
 	<description>User ID profile ontology containing username and password.</description>
 	<packaging>bundle</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-16</project.build.sourceEncoding>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
