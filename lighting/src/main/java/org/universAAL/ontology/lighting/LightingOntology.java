@@ -19,8 +19,8 @@
  */
 package org.universAAL.ontology.lighting;
 
-import org.universAAL.middleware.owl.BoundingValueRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -112,12 +112,9 @@ public final class LightingOntology extends Ontology {
 			LightSource.PROP_HAS_TYPE, LightType.MY_URI, 1, 1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			LightSource.PROP_SOURCE_BRIGHTNESS,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				LightSource.PROP_SOURCE_BRIGHTNESS,
-				new Integer(0), true, new Integer(100), true)));
+			LightSource.PROP_SOURCE_BRIGHTNESS, new IntRestriction(
+				new Integer(0), true, new Integer(100), true),
+			1, 1));
 	oci.addRestriction(MergedRestriction.getCardinalityRestriction(
 		LightSource.PROP_SOURCE_COLOR, 0, 1));
 

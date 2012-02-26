@@ -22,11 +22,10 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
-import org.universAAL.middleware.owl.BoundingValueRestriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.PhThingOntology;
@@ -71,12 +70,9 @@ public final class PowersocketOntology extends Ontology {
 	oci.addDatatypeProperty(Powersocket.PROP_SOCKET_VALUE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			Powersocket.PROP_SOCKET_VALUE,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				Powersocket.PROP_SOCKET_VALUE, new Integer(0),
-				true, new Integer(100), true)));
+			Powersocket.PROP_SOCKET_VALUE, new IntRestriction(
+				new Integer(0), true, new Integer(100), true),
+			1, 1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PhysicalThing.PROP_PHYSICAL_LOCATION, Location.MY_URI,

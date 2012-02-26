@@ -21,11 +21,11 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
-import org.universAAL.middleware.owl.BoundingValueRestriction;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.DeviceService;
@@ -74,7 +74,7 @@ public final class WindowOntology extends Ontology {
 	oci.setResourceComment("The type of a window");
 	oci.setResourceLabel("Window Type");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
-	
+
 	// load WindowActuator
 	oci = createNewOntClassInfo(WindowActuator.MY_URI, factory, 1);
 	oci.setResourceComment("The class of all windows.");
@@ -88,12 +88,9 @@ public final class WindowOntology extends Ontology {
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			WindowActuator.PROP_WINDOW_STATUS,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				WindowActuator.PROP_WINDOW_STATUS, new Integer(
-					0), true, new Integer(100), true)));
+			WindowActuator.PROP_WINDOW_STATUS, new IntRestriction(
+				new Integer(0), true, new Integer(100), true),
+			1, 1));
 
 	// load CurtainActuator
 	oci = createNewOntClassInfo(CurtainActuator.MY_URI, factory, 5);
@@ -108,11 +105,8 @@ public final class WindowOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			DimmerActuator.PROP_DIMMABLE_STATUS,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				DimmerActuator.PROP_DIMMABLE_STATUS,
-				new Integer(0), true, new Integer(100), true)));
+			new IntRestriction(new Integer(0), true, new Integer(
+				100), true), 1, 1));
 
 	// load BlindActuator
 	oci = createNewOntClassInfo(BlindActuator.MY_URI, factory, 4);
@@ -127,11 +121,8 @@ public final class WindowOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			DimmerActuator.PROP_DIMMABLE_STATUS,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				DimmerActuator.PROP_DIMMABLE_STATUS,
-				new Integer(0), true, new Integer(100), true)));
+			new IntRestriction(new Integer(0), true, new Integer(
+				100), true), 1, 1));
 
 	// load BlindController
 	oci = createNewOntClassInfo(BlindController.MY_URI, factory, 0);

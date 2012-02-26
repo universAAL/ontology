@@ -19,7 +19,7 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.owl.BoundingValueRestriction;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
@@ -144,11 +144,8 @@ public class PhThingOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			DimmerActuator.PROP_DIMMABLE_STATUS,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				DimmerActuator.PROP_DIMMABLE_STATUS,
-				new Integer(0), true, new Integer(100), true)));
+			new IntRestriction(new Integer(0), true, new Integer(
+				100), true), 1, 1));
 
 	// load OnOffActuator
 	oci = createNewOntClassInfo(OnOffActuator.MY_URI, factory, 6);
