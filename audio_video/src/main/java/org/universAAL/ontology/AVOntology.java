@@ -19,8 +19,9 @@
  */
 package org.universAAL.ontology;
 
-import org.universAAL.middleware.owl.BoundingValueRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.FloatRestriction;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -270,13 +271,9 @@ public class AVOntology extends Ontology {
 	oci.addDatatypeProperty(LoudSpeaker.PROP_IS_MUTED).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			LoudSpeaker.PROP_VOLUME,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(LoudSpeaker.PROP_VOLUME,
-				new Integer(0), true, new Integer(100), true)
-
-		));
+			LoudSpeaker.PROP_VOLUME, new IntRestriction(
+				new Integer(0), true, new Integer(100), true),
+			1, 1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			LoudSpeaker.PROP_EFFECTIVE_POWER_IN_WATT, TypeMapper
@@ -306,19 +303,14 @@ public class AVOntology extends Ontology {
 	oci.addDatatypeProperty(Microphone.PROP_VOLUME).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Microphone.PROP_VOLUME,
-			TypeMapper.getDatatypeURI(Integer.class), 1, 1)
-		.addRestriction(
-			new BoundingValueRestriction(Microphone.PROP_VOLUME,
-				new Integer(0), true, new Integer(100), true)));
+			new IntRestriction(new Integer(0), true, new Integer(
+				100), true), 1, 1));
 	oci.addDatatypeProperty(Microphone.PROP_AMPLIFICATION);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			Microphone.PROP_AMPLIFICATION,
-			TypeMapper.getDatatypeURI(Integer.class), 0, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				Microphone.PROP_AMPLIFICATION, new Integer(0),
-				true, new Integer(100), true)));
+			Microphone.PROP_AMPLIFICATION, new IntRestriction(
+				new Integer(0), true, new Integer(100), true),
+			0, 1));
 	oci.addDatatypeProperty(Microphone.PROP_BANDWIDTH_IN_HZ)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
@@ -422,37 +414,24 @@ public class AVOntology extends Ontology {
 	oci.addDatatypeProperty(VideoCamera.PROP_ZOOM);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(VideoCamera.PROP_ZOOM,
-			TypeMapper.getDatatypeURI(Float.class), 0, 1)
-		.addRestriction(
-			new BoundingValueRestriction(VideoCamera.PROP_ZOOM,
-				new Float(0), true, new Float(1), true)));
+			new FloatRestriction(new Float(0), true, new Float(1),
+				true), 0, 1));
 	oci.addDatatypeProperty(VideoCamera.PROP_BACKLIGHTCOMPENSATION);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			VideoCamera.PROP_BACKLIGHTCOMPENSATION,
-			TypeMapper.getDatatypeURI(Float.class), 0, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				VideoCamera.PROP_BACKLIGHTCOMPENSATION,
-				new Float(0), true, new Float(1), true)));
+			new FloatRestriction(new Float(0), true, new Float(1),
+				true), 0, 1));
 	oci.addDatatypeProperty(VideoCamera.PROP_BRIGHTNESS);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			VideoCamera.PROP_BRIGHTNESS,
-			TypeMapper.getDatatypeURI(Float.class), 0, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				VideoCamera.PROP_BRIGHTNESS, new Float(0),
-				true, new Float(1), true)));
+			VideoCamera.PROP_BRIGHTNESS, new FloatRestriction(
+				new Float(0), true, new Float(1), true), 0, 1));
 	oci.addDatatypeProperty(VideoCamera.PROP_COLORENABLE);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			VideoCamera.PROP_COLORENABLE,
-			TypeMapper.getDatatypeURI(Float.class), 0, 1)
-		.addRestriction(
-			new BoundingValueRestriction(
-				VideoCamera.PROP_COLORENABLE, new Float(0),
-				true, new Float(1), true)));
+			VideoCamera.PROP_COLORENABLE, new FloatRestriction(
+				new Float(0), true, new Float(1), true), 0, 1));
 	// TODO: implementation for the other props
 
 	// -----------------------------------
