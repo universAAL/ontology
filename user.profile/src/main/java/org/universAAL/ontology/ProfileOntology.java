@@ -121,10 +121,10 @@ public final class ProfileOntology extends Ontology {
 	oci.setResourceComment("Identifies concepts that can have profiles");
 	oci.setResourceLabel("Profilable");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addObjectProperty(Profilable.PROP_HAS_PROFILE).setFunctional();
+	oci.addObjectProperty(Profilable.PROP_HAS_PROFILE);
 	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Profilable.PROP_HAS_PROFILE, Profile.MY_URI, 0, 1));
+		.getAllValuesRestriction(
+			Profilable.PROP_HAS_PROFILE, Profile.MY_URI));
 
 	// AALService
 	oci = createNewOntClassInfo(AALService.MY_URI, factory, 0);
