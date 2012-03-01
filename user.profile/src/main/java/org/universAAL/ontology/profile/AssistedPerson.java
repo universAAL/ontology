@@ -30,7 +30,7 @@ import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
- * Ontology class representing an AAL Service
+ * Ontology class representing an Assisted Person
  * 
  * @author Peter Wolf
  * @author Alvaro Fides

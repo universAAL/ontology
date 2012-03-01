@@ -29,7 +29,7 @@ package org.universAAL.ontology.profile;
 import org.universAAL.ontology.ProfileOntology;
 
 /**
- * Ontology class representing an AAL Service
+ * Ontology class representing a Care giver profile
  * 
  * @author Peter Wolf
  * @author Alvaro Fides

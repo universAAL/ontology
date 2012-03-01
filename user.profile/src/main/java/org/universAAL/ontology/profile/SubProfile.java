@@ -30,7 +30,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.ProfileOntology;
 
 /**
- * Ontology class representing an AAL Service
+ * Ontology class representing a subprofile concept
  * 
  * @author Peter Wolf
  * @author Alvaro Fides
