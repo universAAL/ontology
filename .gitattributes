@@ -267,10 +267,10 @@ profile.health/src/test/java/org/universAAL/ontology/profile/health/ArtifactInte
 profile.health/src/test/resources/log4j.properties -text
 profile.userid/LICENSE.txt -text
 profile.userid/pom.xml -text
-profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text
-profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text
-profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text
-profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
 risk/artifact.composite -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text
