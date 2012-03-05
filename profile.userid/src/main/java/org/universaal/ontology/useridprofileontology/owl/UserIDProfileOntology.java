@@ -25,6 +25,7 @@ import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.UserProfile;
 import org.universaal.ontology.useridprofileontology.UserIDProfileOntologyFactory;
 
 /**
@@ -35,6 +36,8 @@ public final class UserIDProfileOntology extends Ontology {
 
 	private static UserIDProfileOntologyFactory factory = new UserIDProfileOntologyFactory();
 	public static final String NAMESPACE = "http://ontology.universaal.org/UserIDProfileOntology#";
+	public static final String PROP_ID_PROFILE = UserProfile.PROP_HAS_SUB_PROFILE
+		    + "ID";
 
 	public UserIDProfileOntology() {
 		super(NAMESPACE);
@@ -50,7 +53,6 @@ public final class UserIDProfileOntology extends Ontology {
 		addImport(ProfileOntology.NAMESPACE);
 
 		OntClassInfoSetup oci;
-		oci = extendExistingOntClassInfo(SubProfile.MY_URI);
 
 		// load UserIDProfile
 		oci = createNewOntClassInfo(UserIDProfile.MY_URI, factory, 0);
@@ -68,6 +70,13 @@ public final class UserIDProfileOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						UserIDProfile.PROP_PASSWORD,
 						TypeMapper.getDatatypeURI(String.class), 1, 1));
+		
+	oci = extendExistingOntClassInfo(UserProfile.MY_URI);
+	oci.addObjectProperty(PROP_ID_PROFILE).addSuperProperty(
+		UserProfile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(PROP_ID_PROFILE,
+			UserIDProfile.MY_URI, 0, 1));
 
 	}
 }
