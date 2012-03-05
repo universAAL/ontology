@@ -29,6 +29,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.ui.owl.AccessImpairment;
 import org.universAAL.middleware.ui.owl.UIBusOntology;
 import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.UserProfile;
 import org.universAAL.ontology.profile.health.HealthProfile;
 import org.universAAL.ontology.profile.health.Illness;
 import org.universAAL.ontology.profile.health.Medicine;
@@ -45,6 +46,8 @@ public final class HealthProfileOntology extends Ontology {
 
     public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
 	    + "Profile.owl#";
+    
+    public static final String PROP_HEALTH_PROFILE = UserProfile.PROP_HAS_SUB_PROFILE+"Health";
 
     public HealthProfileOntology() {
 	super(NAMESPACE);
@@ -229,5 +232,12 @@ public final class HealthProfileOntology extends Ontology {
 			.getAllValuesRestrictionWithCardinality(
 				HealthProfile.PROP_HAS_MEDICINE,
 				Medicine.MY_URI, 1, 1));
+	
+	//Extend UserProfile
+	oci = extendExistingOntClassInfo(SubProfile.MY_URI);
+	oci.addObjectProperty(PROP_HEALTH_PROFILE).addSuperProperty(UserProfile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			PROP_HEALTH_PROFILE, HealthProfile.MY_URI, 0, 1));
     }
 }
