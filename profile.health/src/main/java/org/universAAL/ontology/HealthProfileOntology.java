@@ -234,7 +234,7 @@ public final class HealthProfileOntology extends Ontology {
 				Medicine.MY_URI, 1, 1));
 	
 	//Extend UserProfile
-	oci = extendExistingOntClassInfo(SubProfile.MY_URI);
+	oci = extendExistingOntClassInfo(UserProfile.MY_URI);
 	oci.addObjectProperty(PROP_HEALTH_PROFILE).addSuperProperty(UserProfile.PROP_HAS_SUB_PROFILE);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
