@@ -102,6 +102,14 @@ public final class UIPreferencesProfileOntology extends Ontology {
     oci_InteractionPreferencesProfile.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(InteractionPreferencesProfile.PROP__I_N_S_E_N_S_I_B_L_E__M_A_X__R_E_S_O_L_U_T_I_O_N__Y, 
       TypeMapper.getDatatypeURI(String.class), 1, 1));
-    
+
+	// Extend UserProfile
+	OntClassInfoSetup oci = extendExistingOntClassInfo(AssistedPersonProfile.MY_URI);
+	oci.addObjectProperty(PROP_INTERACTION_PREF_PROFILE).addSuperProperty(
+		AssistedPersonProfile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			PROP_INTERACTION_PREF_PROFILE,
+			InteractionPreferencesProfile.MY_URI, 0, 1));
   }
 }
