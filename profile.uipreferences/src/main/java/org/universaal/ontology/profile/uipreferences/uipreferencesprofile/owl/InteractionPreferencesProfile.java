@@ -66,8 +66,8 @@ public class InteractionPreferencesProfile extends SubProfile {
 		return (i == null) ? new Integer(-1) : i;
 	}
 
-	public void setInsensibleVolumeLevel(int newPropValue) {
-		setProperty(PROP_INSENSIBLE_VOLUME_LEVEL, new Integer(newPropValue));
+	public void setInsensibleVolumeLevel(Integer newPropValue) {
+		setProperty(PROP_INSENSIBLE_VOLUME_LEVEL, newPropValue);
 	}
 
 	public Integer getPersonalVolumeLevel() {
@@ -75,8 +75,8 @@ public class InteractionPreferencesProfile extends SubProfile {
 		return (i == null) ?new Integer(-1) : i;
 	}
 
-	public void setPersonalVolumeLevel(int newPropValue) {
-		setProperty(PROP_PERSONAL_VOLUME_LEVEL, new Integer(newPropValue));
+	public void setPersonalVolumeLevel(Integer newPropValue) {
+		setProperty(PROP_PERSONAL_VOLUME_LEVEL, newPropValue);
 	}
 
 	public Integer getInsensibleMaxResolutionX() {
@@ -84,8 +84,8 @@ public class InteractionPreferencesProfile extends SubProfile {
 		return (i == null) ? new Integer(-1) : i;
 	}
 
-	public void setInsensibleMaxResolutionX(int newPropValue) {
-		setProperty(PROP_INSENSIBLE_MAX_RESOLUTION_X, new Integer(newPropValue));
+	public void setInsensibleMaxResolutionX(Integer newPropValue) {
+		setProperty(PROP_INSENSIBLE_MAX_RESOLUTION_X, newPropValue);
 	}
 
 	public Integer getInsensibleMaxResolutionY() {
@@ -93,8 +93,8 @@ public class InteractionPreferencesProfile extends SubProfile {
 		return (i == null) ? new Integer(-1) : i;
 	}
 
-	public void setInsensibleMaxResolutionY(int newPropValue) {
-		setProperty(PROP_INSENSIBLE_MAX_RESOLUTION_Y, new Integer(newPropValue));
+	public void setInsensibleMaxResolutionY(Integer newPropValue) {
+		setProperty(PROP_INSENSIBLE_MAX_RESOLUTION_Y, newPropValue);
 	}
 
 	public Integer getPersonalMinResolutionX() {
@@ -102,8 +102,8 @@ public class InteractionPreferencesProfile extends SubProfile {
 		return (i == null) ? new Integer(-1) : i;
 	}
 
-	public void setPersonalMinResolutionX(int newPropValue) {
-		setProperty(PROP_PERSONAL_MIN_RESOLUTION_X, new Integer(newPropValue));
+	public void setPersonalMinResolutionX(Integer newPropValue) {
+		setProperty(PROP_PERSONAL_MIN_RESOLUTION_X, newPropValue);
 	}
 
 	public Integer getPersonalMinResolutionY() {
@@ -111,8 +111,8 @@ public class InteractionPreferencesProfile extends SubProfile {
 		return (i == null) ? new Integer(-1) : i;
 	}
 
-	public void setPersonalMinResolutionY(int newPropValue) {
-		setProperty(PROP_PERSONAL_MIN_RESOLUTION_Y, new Integer(newPropValue));
+	public void setPersonalMinResolutionY(Integer newPropValue) {
+		setProperty(PROP_PERSONAL_MIN_RESOLUTION_Y, newPropValue);
 	}
 
 	public Gender getVoiceGender() {
