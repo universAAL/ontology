@@ -265,9 +265,6 @@ profile.health/src/main/java/org/universAAL/ontology/profile/health/Illness.java
 profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 profile.health/src/test/java/org/universAAL/ontology/profile/health/ArtifactIntegrationTest.java -text
 profile.health/src/test/resources/log4j.properties -text
-profile.uipreferences/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
-profile.uipreferences/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
-profile.uipreferences/.settings/org.eclipse.m2e.core.prefs -text svneol=unset#text/plain
 profile.uipreferences/UIPreferencesProfile.di -text
 profile.uipreferences/UIPreferencesProfile.notation -text
 profile.uipreferences/UIPreferencesProfile.uml -text svneol=unset#text/plain
