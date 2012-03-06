@@ -133,9 +133,11 @@ public class InteractionPreferencesProfile extends SubProfile {
 				if (l.get(i) instanceof PrivacyLevel)
 					pls[i] = (PrivacyLevel) l.get(i);
 			}
+			return pls;
 		} else if (o instanceof PrivacyLevel) {
 			PrivacyLevel[] pls = new PrivacyLevel[1];
 			pls[0] = (PrivacyLevel) o;
+			return pls;
 		}
 
 		return null;
@@ -146,7 +148,7 @@ public class InteractionPreferencesProfile extends SubProfile {
 			setProperty(PROP_PRIVACY_LEVELS_MAPPED_TO_PERSONAL, newPropValue);
 	}
 
-	public String getPrivacyLevelsMappedToInsensible() {
+	public PrivacyLevel[] getPrivacyLevelsMappedToInsensible() {
 		Object o = getProperty(PROP_PRIVACY_LEVELS_MAPPED_TO_INSENSIBLE);
 		if (o instanceof List) {
 			List l = (List) o;
@@ -155,9 +157,11 @@ public class InteractionPreferencesProfile extends SubProfile {
 				if (l.get(i) instanceof PrivacyLevel)
 					pls[i] = (PrivacyLevel) l.get(i);
 			}
+			return pls;
 		} else if (o instanceof PrivacyLevel) {
 			PrivacyLevel[] pls = new PrivacyLevel[1];
 			pls[0] = (PrivacyLevel) o;
+			return pls;
 		}
 
 		return null;
