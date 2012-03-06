@@ -7,6 +7,10 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
+import org.universAAL.middleware.ui.owl.Gender;
+import org.universAAL.middleware.ui.owl.Modality;
+import org.universAAL.middleware.ui.owl.PrivacyLevel;
+import org.universAAL.middleware.ui.owl.UIBusOntology;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.SubProfile;
@@ -35,6 +39,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		r.setResourceLabel("UIPreferencesProfile");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
+		addImport(UIBusOntology.NAMESPACE);
 		addImport(LocationOntology.NAMESPACE);
 
 		// ******* Declaration of regular classes of the ontology ******* //
@@ -89,9 +94,9 @@ public final class UIPreferencesProfileOntology extends Ontology {
 				.setFunctional();
 		oci_InteractionPreferencesProfile
 				.addRestriction(MergedRestriction
-						.getCardinalityRestriction(
+						.getAllValuesRestrictionWithCardinality(
 								InteractionPreferencesProfile.PROP_PRIVACY_LEVELS_MAPPED_TO_INSENSIBLE,
-								1, 1));
+								PrivacyLevel.MY_URI,1, 1));
 
 		oci_InteractionPreferencesProfile
 				.addObjectProperty(
@@ -99,9 +104,9 @@ public final class UIPreferencesProfileOntology extends Ontology {
 				.setFunctional();
 		oci_InteractionPreferencesProfile
 				.addRestriction(MergedRestriction
-						.getCardinalityRestriction(
+						.getAllValuesRestrictionWithCardinality(
 								InteractionPreferencesProfile.PROP_PRIVACY_LEVELS_MAPPED_TO_PERSONAL,
-								1, 1));
+								PrivacyLevel.MY_URI,1, 1));
 
 		oci_InteractionPreferencesProfile.addDatatypeProperty(
 				InteractionPreferencesProfile.PROP_PERSONAL_MIN_RESOLUTION_Y)
@@ -126,16 +131,16 @@ public final class UIPreferencesProfileOntology extends Ontology {
 				.setFunctional();
 		oci_InteractionPreferencesProfile
 				.addRestriction(MergedRestriction
-						.getCardinalityRestriction(
+						.getAllValuesRestrictionWithCardinality(
 								InteractionPreferencesProfile.PROP_INTERACTION_MODALITY,
-								1, 1));
+								Modality.MY_URI,1, 1));
 
 		oci_InteractionPreferencesProfile.addObjectProperty(
 				InteractionPreferencesProfile.PROP_VOICE_GENDER)
 				.setFunctional();
 		oci_InteractionPreferencesProfile.addRestriction(MergedRestriction
-				.getCardinalityRestriction(
-						InteractionPreferencesProfile.PROP_VOICE_GENDER, 1, 1));
+				.getAllValuesRestrictionWithCardinality(
+						InteractionPreferencesProfile.PROP_VOICE_GENDER, Gender.MY_URI,1, 1));
 
 		// Extend UserProfile
 		OntClassInfoSetup oci = extendExistingOntClassInfo(AssistedPersonProfile.MY_URI);
