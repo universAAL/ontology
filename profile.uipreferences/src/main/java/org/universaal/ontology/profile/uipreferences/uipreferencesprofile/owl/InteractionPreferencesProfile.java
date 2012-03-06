@@ -61,54 +61,54 @@ public class InteractionPreferencesProfile extends SubProfile {
 				&& hasProperty(PROP_VOICE_GENDER);
 	}
 
-	public int getInsensibleVolumeLevel() {
+	public Integer getInsensibleVolumeLevel() {
 		Integer i = (Integer) getProperty(PROP_INSENSIBLE_VOLUME_LEVEL);
-		return (i == null) ? 0 : i.intValue();
+		return (i == null) ? new Integer(-1) : i;
 	}
 
 	public void setInsensibleVolumeLevel(int newPropValue) {
 		setProperty(PROP_INSENSIBLE_VOLUME_LEVEL, new Integer(newPropValue));
 	}
 
-	public int getPersonalVolumeLevel() {
+	public Integer getPersonalVolumeLevel() {
 		Integer i = (Integer) getProperty(PROP_PERSONAL_VOLUME_LEVEL);
-		return (i == null) ? 0 : i.intValue();
+		return (i == null) ?new Integer(-1) : i;
 	}
 
 	public void setPersonalVolumeLevel(int newPropValue) {
 		setProperty(PROP_PERSONAL_VOLUME_LEVEL, new Integer(newPropValue));
 	}
 
-	public int getInsensibleMaxResolutionX() {
+	public Integer getInsensibleMaxResolutionX() {
 		Integer i = (Integer) getProperty(PROP_INSENSIBLE_MAX_RESOLUTION_X);
-		return (i == null) ? 0 : i.intValue();
+		return (i == null) ? new Integer(-1) : i;
 	}
 
 	public void setInsensibleMaxResolutionX(int newPropValue) {
 		setProperty(PROP_INSENSIBLE_MAX_RESOLUTION_X, new Integer(newPropValue));
 	}
 
-	public int getInsensibleMaxResolutionY() {
+	public Integer getInsensibleMaxResolutionY() {
 		Integer i = (Integer) getProperty(PROP_INSENSIBLE_MAX_RESOLUTION_Y);
-		return (i == null) ? 0 : i.intValue();
+		return (i == null) ? new Integer(-1) : i;
 	}
 
 	public void setInsensibleMaxResolutionY(int newPropValue) {
 		setProperty(PROP_INSENSIBLE_MAX_RESOLUTION_Y, new Integer(newPropValue));
 	}
 
-	public int getPersonalMinResolutionX() {
+	public Integer getPersonalMinResolutionX() {
 		Integer i = (Integer) getProperty(PROP_PERSONAL_MIN_RESOLUTION_X);
-		return (i == null) ? 0 : i.intValue();
+		return (i == null) ? new Integer(-1) : i;
 	}
 
 	public void setPersonalMinResolutionX(int newPropValue) {
 		setProperty(PROP_PERSONAL_MIN_RESOLUTION_X, new Integer(newPropValue));
 	}
 
-	public int getPersonalMinResolutionY() {
+	public Integer getPersonalMinResolutionY() {
 		Integer i = (Integer) getProperty(PROP_PERSONAL_MIN_RESOLUTION_Y);
-		return (i == null) ? 0 : i.intValue();
+		return (i == null) ? new Integer(-1) : i;
 	}
 
 	public void setPersonalMinResolutionY(int newPropValue) {
