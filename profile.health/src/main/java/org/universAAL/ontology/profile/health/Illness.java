@@ -116,7 +116,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getAllergy() {
 	Object o = props.get(PROP_S_ALLERGY);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setAllergy(Boolean allergy) {
@@ -125,7 +125,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getAnemia() {
 	Object o = props.get(PROP_S_ANEMIA);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setAnemia(Boolean anemia) {
@@ -134,7 +134,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getArteriopathy() {
 	Object o = props.get(PROP_S_ARTERIOPATHY);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setArteriopathy(Boolean arteriopathy) {
@@ -143,7 +143,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getAsthma() {
 	Object o = props.get(PROP_S_ASTHMA);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setAsthma(Boolean asthma) {
@@ -152,7 +152,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getCancer() {
 	Object o = props.get(PROP_S_CANCER);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setCancer(Boolean cancer) {
@@ -161,7 +161,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getCholesterol() {
 	Object o = props.get(PROP_S_CHOLESTEROL);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setCholesterol(Boolean cholesterol) {
@@ -170,7 +170,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getDementia() {
 	Object o = props.get(PROP_S_DEMENTIA);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setDementia(Boolean dementia) {
@@ -179,7 +179,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getDiabetes() {
 	Object o = props.get(PROP_S_DIABETES);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setDiabetes(Boolean diabetes) {
@@ -188,7 +188,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getDigestionProb() {
 	Object o = props.get(PROP_S_DIGESTION_PROB);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setDigestionProb(Boolean digestionProb) {
@@ -197,7 +197,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getHypertension() {
 	Object o = props.get(PROP_S_HYPERTENSION);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setHypertension(Boolean hypertension) {
@@ -206,7 +206,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getIschemicCardiopathy() {
 	Object o = props.get(PROP_S_ISCHEMIC_CARDIOPATHY);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setIschemicCardiopathy(Boolean ischemicCardiopathy) {
@@ -215,7 +215,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getMalnutrition() {
 	Object o = props.get(PROP_S_MALNUTRITION);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setMalnutrition(Boolean isMalnutrition) {
@@ -224,7 +224,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getOsteoporosis() {
 	Object o = props.get(PROP_S_OSTEOPOROSIS);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setOsteoporosis(Boolean hasOsteoporosis) {
@@ -233,7 +233,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getOverweiht() {
 	Object o = props.get(PROP_S_OVERWEIGHT);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setOverweight(Boolean isOverWeight) {
@@ -242,7 +242,7 @@ public class Illness extends ManagedIndividual {
 
     public Boolean getMetabolicSyndrome() {
 	Object o = props.get(PROP_S_METABOLIC_SYNDROME);
-	return (o == null) ? new Boolean(false) : (Boolean) o;
+	return (o == null) ? Boolean.FALSE : (Boolean) o;
     }
 
     public void setMetabolicSyndrome(Boolean isMetabolicSyndrome) {
