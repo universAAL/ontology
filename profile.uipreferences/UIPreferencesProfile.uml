@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_HiHFkGLoEeGZC80id-zXWA" name="UIPreferencesProfile">
+    <ownedComment xmi:id="_HiHFkWLoEeGZC80id-zXWA" annotatedElement="_HiHFlmLoEeGZC80id-zXWA">
+      <body>User preferences related to user interaction</body>
+    </ownedComment>
+    <packageImport xmi:id="_HiHFkmLoEeGZC80id-zXWA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_HiHFk2LoEeGZC80id-zXWA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_HiHFlGLoEeGZC80id-zXWA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_HiHFlWLoEeGZC80id-zXWA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HiHFlmLoEeGZC80id-zXWA" name="org.universaal.ontology.profile.uipreferences.uipreferencesprofile">
+      <packagedElement xmi:type="uml:Class" xmi:id="_HiHFm2LoEeGZC80id-zXWA" name="InteractionPreferencesProfile">
+        <generalization xmi:id="_HiHFnGLoEeGZC80id-zXWA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_B2MvsGbaEeGEfeeUT7PnZw" name="insensibleVolumeLevel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_FCr50GbaEeGEfeeUT7PnZw" name="personalVolumeLevel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OfoVYGbaEeGEfeeUT7PnZw" name="insensibleMaxResolutionX">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_PAb8YGbaEeGEfeeUT7PnZw" name="insensibleMaxResolutionY">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_pFCtwGbaEeGEfeeUT7PnZw" name="personalMinResolutionX">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_rWtOYGbaEeGEfeeUT7PnZw" name="personalMinResolutionY">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_9-SD4GeSEeG32vXagzPoaQ" name="voiceGender"/>
+        <ownedAttribute xmi:id="_qLCGYGeTEeG32vXagzPoaQ" name="privacyLevelsMappedToPersonal"/>
+        <ownedAttribute xmi:id="_sxaSwGeTEeG32vXagzPoaQ" name="privacyLevelsMappedToInsensible"/>
+        <ownedAttribute xmi:id="_umHxoGeTEeG32vXagzPoaQ" name="interactionModality"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_HiHFnWLoEeGZC80id-zXWA">
+      <eAnnotations xmi:id="_HiHFnmLoEeGZC80id-zXWA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_HiHFn2LoEeGZC80id-zXWA">
+      <eAnnotations xmi:id="_HiHFoGLoEeGZC80id-zXWA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_HiHFoWLoEeGZC80id-zXWA" defaultNamespace="http://uipreferences.profile.ontology.universaal.org/UIPreferencesProfile" base_Package="_HiHFkGLoEeGZC80id-zXWA" versionInfo="1.0.1-SNAPSHOT"/>
+  <OWL:datatypeProperty xmi:id="_B2RBIGbaEeGEfeeUT7PnZw" base_Property="_B2MvsGbaEeGEfeeUT7PnZw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_FCvkMGbaEeGEfeeUT7PnZw" base_Property="_FCr50GbaEeGEfeeUT7PnZw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_Ofsm0GbaEeGEfeeUT7PnZw" base_Property="_OfoVYGbaEeGEfeeUT7PnZw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_PAfmwGbaEeGEfeeUT7PnZw" base_Property="_PAb8YGbaEeGEfeeUT7PnZw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_pFGYIGbaEeGEfeeUT7PnZw" base_Property="_pFCtwGbaEeGEfeeUT7PnZw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_rWxf0GbaEeGEfeeUT7PnZw" base_Property="_rWtOYGbaEeGEfeeUT7PnZw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_9-dqEGeSEeG32vXagzPoaQ" base_Property="_9-SD4GeSEeG32vXagzPoaQ" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_qLO6sGeTEeG32vXagzPoaQ" base_Property="_qLCGYGeTEeG32vXagzPoaQ" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_sxnuIGeTEeG32vXagzPoaQ" base_Property="_sxaSwGeTEeG32vXagzPoaQ" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_umSJsGeTEeG32vXagzPoaQ" base_Property="_umHxoGeTEeG32vXagzPoaQ" isFunctional="true"/>
+</xmi:XMI>

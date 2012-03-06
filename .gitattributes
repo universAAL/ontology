@@ -265,6 +265,14 @@ profile.health/src/main/java/org/universAAL/ontology/profile/health/Illness.java
 profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 profile.health/src/test/java/org/universAAL/ontology/profile/health/ArtifactIntegrationTest.java -text
 profile.health/src/test/resources/log4j.properties -text
+profile.uipreferences/UIPreferencesProfile.di -text
+profile.uipreferences/UIPreferencesProfile.notation -text
+profile.uipreferences/UIPreferencesProfile.uml -text
+profile.uipreferences/pom.xml -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
 profile.userid/LICENSE.txt -text
 profile.userid/pom.xml -text
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream
