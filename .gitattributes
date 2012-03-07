@@ -60,7 +60,7 @@ audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java 
 device.extra/LICENSE-CPL-JUnit.txt -text
 device.extra/LICENSE.txt -text
 device.extra/NOTICE.txt -text
-device.extra/artifact.composite -text
+device.extra/artifact_manual.composite -text
 device.extra/pom.xml -text
 device.extra/src/main/java/org/universAAL/ontology/Activator.java -text
 device.extra/src/main/java/org/universAAL/ontology/DeviceFactory.java -text
@@ -96,7 +96,7 @@ impairment/LICENSE-JGCL.txt -text
 impairment/LICENSE-MIT11-Bouncycastle.txt -text
 impairment/LICENSE.txt -text
 impairment/NOTICE.txt -text
-impairment/artifact.composite -text
+impairment/artifact_manual.composite -text
 impairment/pom.xml -text
 impairment/src/main/java/org/universAAL/ontology/Activator.java -text
 impairment/src/main/java/org/universAAL/ontology/ImpairmentFactory.java -text
@@ -133,7 +133,7 @@ lighting/src/main/java/org/universAAL/ontology/lighting/LightingOntology.java -t
 lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
 measurement/LICENSE.txt -text
 measurement/NOTICE.txt -text
-measurement/artifact.composite -text
+measurement/artifact_manual.composite -text
 measurement/pom.xml -text
 measurement/src/main/java/org/universAAL/ontology/Activator.java -text
 measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
@@ -158,7 +158,7 @@ multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
-physical.world/artifact.composite -text
+physical.world/artifact_manual.composite -text
 physical.world/composite-0.2.3/ont.phWorld-0.2.3-SNAPSHOT.jar -text
 physical.world/composite-0.2.3/ont.phWorld-0.2.3-SNAPSHOT.pom -text
 physical.world/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
@@ -255,7 +255,7 @@ profile.health/LICENSE-JGCL.txt -text
 profile.health/LICENSE-MIT11-Bouncycastle.txt -text
 profile.health/LICENSE.txt -text
 profile.health/NOTICE.txt -text
-profile.health/artifact.composite -text
+profile.health/artifact_manual.composite -text
 profile.health/pom.xml -text
 profile.health/src/main/java/org/universAAL/ontology/Activator.java -text
 profile.health/src/main/java/org/universAAL/ontology/HealthProfileFactory.java -text
@@ -279,7 +279,7 @@ profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activ
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
-risk/artifact.composite -text
+risk/artifact_manual.composite -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text
 risk/src/main/java/org/universAAL/ontology/RiskFactory.java -text
@@ -291,7 +291,7 @@ risk/src/test/resources/log4j.properties -text
 user.profile/LICENSE-CPL-JUnit.txt -text
 user.profile/LICENSE.txt -text
 user.profile/NOTICE.txt -text
-user.profile/artifact.composite -text
+user.profile/artifact_manual.composite -text
 user.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 user.profile/documentation/ont.profile[!!-~]dependencies[!!-~]19.4.2011.png -text
 user.profile/pom.xml -text
@@ -324,7 +324,7 @@ water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
 water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
 weather/LICENSE.txt -text
 weather/NOTICE.txt -text
-weather/artifact.composite -text
+weather/artifact_manual.composite -text
 weather/pom.xml -text
 weather/src/main/java/org/universAAL/ontology/Activator.java -text
 weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
