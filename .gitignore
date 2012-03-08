@@ -58,6 +58,11 @@ powersocket/.classpath
 powersocket/.project
 powersocket/.settings
 powersocket/target
+profile.health/.classpath
+profile.health/.project
+profile.health/.settings
+profile.health/target
+profile.health/uAAL.log
 user.profile/.classpath
 user.profile/.project
 user.profile/.settings
