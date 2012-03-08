@@ -57,6 +57,8 @@ physical.world/uAAL.log
 pom/.classpath
 pom/.project
 pom/.settings
+pom/composite/.project
+pom/composite/.settings
 pom/target
 powersocket/.classpath
 powersocket/.project
