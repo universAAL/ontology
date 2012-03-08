@@ -106,6 +106,14 @@ ont.measurement-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement
 ont.measurement-1.0.1-SNAPSHOT/src/main/resources/Measurement.jpg -text
 ont.measurement-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
 ont.measurement-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.medication-1.0.1-SNAPSHOT/LICENSE.txt -text
+ont.medication-1.0.1-SNAPSHOT/NOTICE.txt -text
+ont.medication-1.0.1-SNAPSHOT/pom.xml -text
+ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
+ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MedicationOntology.java -text
+ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
+ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text
