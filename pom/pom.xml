@@ -64,6 +64,7 @@
 		<module>../water</module>
 		<module>../weather</module>
 		<module>../window</module>
+		<module>composite</module>
 	</modules>
 
 	<dependencyManagement>
@@ -208,6 +209,9 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
+				<configuration>
+					<skipAttach>true</skipAttach>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
