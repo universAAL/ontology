@@ -46,6 +46,10 @@ ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/FurnitureFact
 ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/FurnitureOntology.java -text
 ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
 ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
+ont.gesture.pointing-1.0.1-SNAPSHOT/pom.xml -text
+ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
+ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text
