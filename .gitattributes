@@ -212,6 +212,7 @@ physical.world/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -t
 physical.world/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 physical.world/src/test/resources/log4j.properties -text
 pom/composite/pom.xml -text
+pom/ont.composite/pom.xml -text
 pom/pom.xml -text
 powersocket/LICENSE.txt -text
 powersocket/NOTICE.txt -text
