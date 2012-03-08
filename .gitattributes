@@ -294,3 +294,17 @@ weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
 weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
 weather/src/test/java/org/universAAL/ontology/weather/test/ArtifactIntegrationTest.java -text
 weather/src/test/resources/log4j.properties -text
+window/LICENSE.txt -text
+window/NOTICE.txt -text
+window/pom.xml -text
+window/src/main/java/org/universAAL/ontology/Activator.java -text
+window/src/main/java/org/universAAL/ontology/WindowFactory.java -text
+window/src/main/java/org/universAAL/ontology/WindowOntology.java -text
+window/src/main/java/org/universAAL/ontology/window/BlindActuator.java -text
+window/src/main/java/org/universAAL/ontology/window/BlindController.java -text
+window/src/main/java/org/universAAL/ontology/window/CurtainActuator.java -text
+window/src/main/java/org/universAAL/ontology/window/CurtainController.java -text
+window/src/main/java/org/universAAL/ontology/window/GlassBreakSensor.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowActuator.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowController.java -text
+window/src/main/java/org/universAAL/ontology/window/WindowType.java -text

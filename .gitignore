@@ -94,3 +94,7 @@ weather/.settings
 weather/bin
 weather/target
 weather/uAAL.log
+window/.classpath
+window/.project
+window/.settings
+window/target
