@@ -7,6 +7,10 @@ device.extra/.project
 device.extra/.settings
 device.extra/target
 device.extra/uAAL.log
+furniture/.classpath
+furniture/.project
+furniture/.settings
+furniture/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
