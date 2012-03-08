@@ -199,6 +199,16 @@ ont.phWorld-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIn
 ont.phWorld-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.pom-1.0.2-SNAPSHOT/composite/pom.xml -text
 ont.pom-1.0.2-SNAPSHOT/pom.xml -text
+ont.powersocket-1.0.1-SNAPSHOT/LICENSE.txt -text
+ont.powersocket-1.0.1-SNAPSHOT/NOTICE.txt -text
+ont.powersocket-1.0.1-SNAPSHOT/pom.xml -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/PowersocketFactory.java -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/PowersocketOntology.java -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/DimmableSocket.java -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/Powersocket.java -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/PowersocketController.java -text
+ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/SwitchableSocket.java -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
