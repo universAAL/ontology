@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.universAAL</groupId>
+		<artifactId>uAAL.pom</artifactId>
+		<version>1.1.0</version>
+	</parent>
+
+	<groupId>org.universAAL.ontology</groupId>
+	<artifactId>ont.pom</artifactId>
+	<version>1.0.2-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<developers>
+		<developer>
+			<id>saied</id>
+			<email>saied.tazari@igd.fraunhofer.de</email>
+			<name>Saied Tazari</name>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>CEST/CET</timezone>
+		</developer>
+	</developers>
+	<contributors />
+
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>${svn.base}/pom</connection>
+		<developerConnection>${svn.base}/pom</developerConnection>
+		<url>${svn.base.url}pom</url>
+	</scm>
+
+	<properties>
+		<remoteOBR />
+		<!-- Default configuration for compiler source and target JVM -->
+		<maven.compile.source>1.4</maven.compile.source>
+		<maven.compile.target>1.4</maven.compile.target>
+		<gforge.project.name>ontologies</gforge.project.name>
+	</properties>
+
+	<modules>
+		<module>../audio_video</module>
+		<module>../device.extra</module>
+		<module>../furniture</module>
+		<module>../gesture.pointing</module>
+		<module>../hazard</module>
+		<module>../impairment</module>
+		<module>../lighting</module>
+		<module>../measurement</module>
+		<module>../medication</module>
+		<module>../multimedia</module>
+		<module>../physical.world</module>
+		<module>../powersocket</module>
+		<module>../profile.health</module>
+		<module>../profile.userid</module>
+		<module>../profile.uipreferences</module>
+		<module>../risk</module>
+		<module>../user.profile</module>
+		<module>../water</module>
+		<module>../weather</module>
+		<module>../window</module>
+		<module>composite</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.universAAL.middleware</groupId>
+				<artifactId>mw.pom</artifactId>
+				<version>1.0.2-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.av</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.device.extra</artifactId>
+				<version>1.0.2-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.furniture</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.gesture.pointing</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.hazard</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.impairment</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.lighting</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.measurement</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.medication</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.multimedia</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.phWorld</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.powersocket</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile</artifactId>
+				<version>1.0.2-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile.uipreferences</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>			
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile.health</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile.userid</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>	
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.risk</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.water</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.weather</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.window</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.universAAL.support</groupId>
+				<artifactId>itests</artifactId>
+				<version>1.1.0</version>
+				<scope>test</scope>
+			</dependency>            
+			
+<!-- 			use the following to add all ontologies -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.universAAL.ontology</groupId> -->
+<!-- 				<artifactId>ont.</artifactId> -->
+<!-- 				<version>(${release.previous}, ${release.next}]</version> -->
+<!-- 			</dependency> -->
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>uaal</id>
+			<name>universAAL Repositories</name>
+			<url>http://depot.universaal.org/maven-repo/releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.universAAL.support</groupId>
+				<artifactId>uaal-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<configuration>
+					<skipAttach>true</skipAttach>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+		
+</project>

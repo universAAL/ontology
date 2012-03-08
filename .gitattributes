@@ -1,4 +1,6 @@
 * text=auto !eol
+ont.pom-1.0.2-SNAPSHOT/composite/pom.xml -text
+ont.pom-1.0.2-SNAPSHOT/pom.xml -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
