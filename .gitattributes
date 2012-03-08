@@ -46,6 +46,10 @@ furniture/src/main/java/org/universAAL/ontology/FurnitureFactory.java -text
 furniture/src/main/java/org/universAAL/ontology/FurnitureOntology.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
 furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
+gesture.pointing/pom.xml -text
+gesture.pointing/src/main/java/org/universAAL/ontology/Activator.java -text
+gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
+gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text

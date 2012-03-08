@@ -11,6 +11,10 @@ furniture/.classpath
 furniture/.project
 furniture/.settings
 furniture/target
+gesture.pointing/.classpath
+gesture.pointing/.project
+gesture.pointing/.settings
+gesture.pointing/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
