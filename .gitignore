@@ -54,6 +54,10 @@ pom/composite/.project
 pom/composite/.settings
 pom/composite/target
 pom/target
+powersocket/.classpath
+powersocket/.project
+powersocket/.settings
+powersocket/target
 user.profile/.classpath
 user.profile/.project
 user.profile/.settings

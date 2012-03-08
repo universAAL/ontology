@@ -199,6 +199,16 @@ physical.world/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTes
 physical.world/src/test/resources/log4j.properties -text
 pom/composite/pom.xml -text
 pom/pom.xml -text
+powersocket/LICENSE.txt -text
+powersocket/NOTICE.txt -text
+powersocket/pom.xml -text
+powersocket/src/main/java/org/universAAL/ontology/Activator.java -text
+powersocket/src/main/java/org/universAAL/ontology/PowersocketFactory.java -text
+powersocket/src/main/java/org/universAAL/ontology/PowersocketOntology.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/DimmableSocket.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/Powersocket.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/PowersocketController.java -text
+powersocket/src/main/java/org/universAAL/ontology/powersocket/SwitchableSocket.java -text
 user.profile/LICENSE-CPL-JUnit.txt -text
 user.profile/LICENSE.txt -text
 user.profile/NOTICE.txt -text
