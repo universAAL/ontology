@@ -74,6 +74,11 @@ profile.health/.project
 profile.health/.settings
 profile.health/target
 profile.health/uAAL.log
+risk/.classpath
+risk/.project
+risk/.settings
+risk/target
+risk/uAAL.log
 user.profile/.classpath
 user.profile/.project
 user.profile/.settings
