@@ -301,6 +301,12 @@ ont.profile.health-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/
 ont.profile.health-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 ont.profile.health-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/profile/health/ArtifactIntegrationTest.java -text
 ont.profile.health-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.profile.userid-1.0.1-SNAPSHOT/LICENSE.txt -text
+ont.profile.userid-1.0.1-SNAPSHOT/pom.xml -text
+ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream
+ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
+ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
+ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
 pom-1.0.1-SNAPSHOT/pom.xml -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-JGCL.txt -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
