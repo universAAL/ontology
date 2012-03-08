@@ -59,6 +59,7 @@
 		<module>../powersocket</module>
 		<module>../profile.health</module>
 		<module>../profile.userid</module>
+		<module>../profile.uipreferences</module>
 		<module>../risk</module>
 		<module>../user.profile</module>
 		<module>../water</module>
