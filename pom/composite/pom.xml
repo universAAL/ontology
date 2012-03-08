@@ -74,7 +74,7 @@
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.profile.userid</artifactId>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.profile.uipreferences</artifactId>
 		</dependency>
