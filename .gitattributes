@@ -324,6 +324,13 @@ ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/FallDetector.
 ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 ont.risk-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
 ont.risk-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.water-1.0.1-SNAPSHOT/pom.xml -text
+ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/WaterFactory.java -text
+ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/WaterOntology.java -text
+ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
+ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
+ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
 pom-1.0.1-SNAPSHOT/pom.xml -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-JGCL.txt -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
