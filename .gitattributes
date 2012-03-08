@@ -106,6 +106,14 @@ measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeas
 measurement/src/main/resources/Measurement.jpg -text
 measurement/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
 measurement/src/test/resources/log4j.properties -text
+medication/LICENSE.txt -text
+medication/NOTICE.txt -text
+medication/pom.xml -text
+medication/src/main/java/org/universAAL/ontology/Activator.java -text
+medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
+medication/src/main/java/org/universAAL/ontology/MedicationOntology.java -text
+medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
+medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
