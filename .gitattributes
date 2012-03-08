@@ -96,6 +96,16 @@ ont.lighting-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/lighting/Light
 ont.lighting-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/lighting/Lighting.java -text
 ont.lighting-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/lighting/LightingOntology.java -text
 ont.lighting-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
+ont.measurement-1.0.1-SNAPSHOT/LICENSE.txt -text
+ont.measurement-1.0.1-SNAPSHOT/NOTICE.txt -text
+ont.measurement-1.0.1-SNAPSHOT/artifact_manual.composite -text
+ont.measurement-1.0.1-SNAPSHOT/pom.xml -text
+ont.measurement-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.measurement-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
+ont.measurement-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
+ont.measurement-1.0.1-SNAPSHOT/src/main/resources/Measurement.jpg -text
+ont.measurement-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
+ont.measurement-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text

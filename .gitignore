@@ -29,6 +29,11 @@ ont.lighting-1.0.1-SNAPSHOT/.project
 ont.lighting-1.0.1-SNAPSHOT/.settings
 ont.lighting-1.0.1-SNAPSHOT/bin
 ont.lighting-1.0.1-SNAPSHOT/target
+ont.measurement-1.0.1-SNAPSHOT/.classpath
+ont.measurement-1.0.1-SNAPSHOT/.project
+ont.measurement-1.0.1-SNAPSHOT/.settings
+ont.measurement-1.0.1-SNAPSHOT/target
+ont.measurement-1.0.1-SNAPSHOT/uAAL.log
 ont.phWorld-1.0.1-SNAPSHOT/.classpath
 ont.phWorld-1.0.1-SNAPSHOT/.project
 ont.phWorld-1.0.1-SNAPSHOT/.settings
