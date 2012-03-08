@@ -42,6 +42,13 @@ multimedia/.classpath
 multimedia/.project
 multimedia/.settings
 multimedia/target
+ont.profile.userid/.classpath
+ont.profile.userid/.project
+ont.profile.userid/.settings
+ont.profile.userid/UserIDProfileOntology.di
+ont.profile.userid/UserIDProfileOntology.notation
+ont.profile.userid/UserIDProfileOntology.uml
+ont.profile.userid/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
