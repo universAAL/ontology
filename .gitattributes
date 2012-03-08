@@ -1,4 +1,27 @@
 * text=auto !eol
+ont.av-1.0.1-SNAPSHOT/LICENSE.txt -text
+ont.av-1.0.1-SNAPSHOT/NOTICE.txt -text
+ont.av-1.0.1-SNAPSHOT/pom.xml -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/AVFactory.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/AVOntology.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/device/LoudSpeaker.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/device/Microphone.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/device/VideoCamera.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/service/CameraService.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/service/LoudSpeakerService.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/service/MicrophoneService.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/AudioCompression.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/AudioFile.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/AudioFormat.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/AudioStream.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/Compression.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/EndPoint.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/Format.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/Stream.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/VideoCompression.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
+ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text
