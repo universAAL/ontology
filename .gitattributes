@@ -1,4 +1,27 @@
 * text=auto !eol
+audio_video/LICENSE.txt -text
+audio_video/NOTICE.txt -text
+audio_video/pom.xml -text
+audio_video/src/main/java/org/universAAL/ontology/AVFactory.java -text
+audio_video/src/main/java/org/universAAL/ontology/AVOntology.java -text
+audio_video/src/main/java/org/universAAL/ontology/Activator.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/device/LoudSpeaker.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/device/Microphone.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/device/VideoCamera.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/service/CameraService.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/service/LoudSpeakerService.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/service/MicrophoneService.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/AudioCompression.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/AudioFile.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/AudioFormat.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/AudioStream.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/Compression.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/EndPoint.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/Format.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/Stream.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoCompression.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
+audio_video/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
