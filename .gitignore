@@ -2,6 +2,11 @@ audio_video/.classpath
 audio_video/.project
 audio_video/.settings
 audio_video/target
+device.extra/.classpath
+device.extra/.project
+device.extra/.settings
+device.extra/target
+device.extra/uAAL.log
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
