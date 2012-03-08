@@ -29,6 +29,11 @@ lighting/.project
 lighting/.settings
 lighting/bin
 lighting/target
+measurement/.classpath
+measurement/.project
+measurement/.settings
+measurement/target
+measurement/uAAL.log
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings

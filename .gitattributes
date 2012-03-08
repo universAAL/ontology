@@ -96,6 +96,16 @@ lighting/src/main/java/org/universAAL/ontology/lighting/LightType.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/Lighting.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/LightingOntology.java -text
 lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
+measurement/LICENSE.txt -text
+measurement/NOTICE.txt -text
+measurement/artifact_manual.composite -text
+measurement/pom.xml -text
+measurement/src/main/java/org/universAAL/ontology/Activator.java -text
+measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
+measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
+measurement/src/main/resources/Measurement.jpg -text
+measurement/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
+measurement/src/test/resources/log4j.properties -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
