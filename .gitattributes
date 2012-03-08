@@ -22,6 +22,7 @@ ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/Stream.
 ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/VideoCompression.java -text
 ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
 ont.av-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
+ont.composite-1.0.1-SNAPSHOT/pom.xml -text
 ont.device.extra-1.0.2-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.device.extra-1.0.2-SNAPSHOT/LICENSE.txt -text
 ont.device.extra-1.0.2-SNAPSHOT/NOTICE.txt -text
