@@ -88,3 +88,9 @@ water/.classpath
 water/.project
 water/.settings
 water/target
+weather/.classpath
+weather/.project
+weather/.settings
+weather/bin
+weather/target
+weather/uAAL.log
