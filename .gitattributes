@@ -114,6 +114,12 @@ medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
 medication/src/main/java/org/universAAL/ontology/MedicationOntology.java -text
 medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
 medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
+multimedia/pom.xml -text
+multimedia/src/main/java/org/universAAL/ontology/Activator.java -text
+multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
+multimedia/src/main/java/org/universAAL/ontology/MultimediaOntology.java -text
+multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
+multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
