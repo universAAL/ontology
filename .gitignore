@@ -93,6 +93,12 @@ ont.water-1.0.1-SNAPSHOT/.classpath
 ont.water-1.0.1-SNAPSHOT/.project
 ont.water-1.0.1-SNAPSHOT/.settings
 ont.water-1.0.1-SNAPSHOT/target
+ont.weather-1.0.1-SNAPSHOT/.classpath
+ont.weather-1.0.1-SNAPSHOT/.project
+ont.weather-1.0.1-SNAPSHOT/.settings
+ont.weather-1.0.1-SNAPSHOT/bin
+ont.weather-1.0.1-SNAPSHOT/target
+ont.weather-1.0.1-SNAPSHOT/uAAL.log
 pom-1.0.1-SNAPSHOT/.classpath
 pom-1.0.1-SNAPSHOT/.project
 pom-1.0.1-SNAPSHOT/.settings
