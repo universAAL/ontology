@@ -84,6 +84,11 @@ ont.profile.userid-1.0.1-SNAPSHOT/UserIDProfileOntology.di
 ont.profile.userid-1.0.1-SNAPSHOT/UserIDProfileOntology.notation
 ont.profile.userid-1.0.1-SNAPSHOT/UserIDProfileOntology.uml
 ont.profile.userid-1.0.1-SNAPSHOT/target
+ont.risk-1.0.1-SNAPSHOT/.classpath
+ont.risk-1.0.1-SNAPSHOT/.project
+ont.risk-1.0.1-SNAPSHOT/.settings
+ont.risk-1.0.1-SNAPSHOT/target
+ont.risk-1.0.1-SNAPSHOT/uAAL.log
 pom-1.0.1-SNAPSHOT/.classpath
 pom-1.0.1-SNAPSHOT/.project
 pom-1.0.1-SNAPSHOT/.settings

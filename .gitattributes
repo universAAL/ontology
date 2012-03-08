@@ -315,6 +315,15 @@ ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridpr
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
+ont.risk-1.0.1-SNAPSHOT/artifact_manual.composite -text
+ont.risk-1.0.1-SNAPSHOT/pom.xml -text
+ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/RiskFactory.java -text
+ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/RiskOntology.java -text
+ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
+ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
+ont.risk-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
+ont.risk-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
 pom-1.0.1-SNAPSHOT/pom.xml -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-JGCL.txt -text
 user.profile-0.4.0-beta-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.pom</artifactId>
+		<version>1.0.2-SNAPSHOT</version>
+		<relativePath>../pom/</relativePath>
+	</parent>
+	<artifactId>ont.risk</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	
+	<!-- ______________________________________________________ -->
+	
+	<name>Risk Situations and Detection Devices Ontology</name>
+	<description>The ontology defining weareable devices related to detection of physical risk for the user wearing them.</description>
+	
+	<!-- ______________________________________________________ -->
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.universAAL.support</groupId>
+			<artifactId>itests</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.osgi.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.data.representation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.phWorld</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.profile</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<!-- ______________________________________________________ -->
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>
+						<Bundle-Description>${project.description}</Bundle-Description>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>org.universAAL.ontology.risk</Export-Package>
+						<Private-Package>org.universAAL.ontology</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<!-- ______________________________________________________ -->
+
+	<scm>
+		<connection>${svn.base}/risk</connection>
+		<developerConnection>${svn.base}/risk</developerConnection>
+		<url>${svn.base.url}</url>
+	</scm>
+	
+</project>
