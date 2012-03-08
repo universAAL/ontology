@@ -38,6 +38,14 @@ ont.device.extra-1.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/device/hom
 ont.device.extra-1.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 ont.device.extra-1.0.2-SNAPSHOT/src/test/java/org/universAAL/ontology/device/home/test/ArtifactIntegrationTest.java -text
 ont.device.extra-1.0.2-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.furniture-1.0.1-SNAPSHOT/LICENSE.txt -text
+ont.furniture-1.0.1-SNAPSHOT/NOTICE.txt -text
+ont.furniture-1.0.1-SNAPSHOT/pom.xml -text
+ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/FurnitureFactory.java -text
+ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/FurnitureOntology.java -text
+ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
+ont.furniture-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text
