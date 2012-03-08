@@ -50,6 +50,12 @@ gesture.pointing/pom.xml -text
 gesture.pointing/src/main/java/org/universAAL/ontology/Activator.java -text
 gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
 gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
+hazard/pom.xml -text
+hazard/src/main/java/org/universAAL/ontology/Activator.java -text
+hazard/src/main/java/org/universAAL/ontology/HazardFactory.java -text
+hazard/src/main/java/org/universAAL/ontology/HazardOntology.java -text
+hazard/src/main/java/org/universAAL/ontology/hazard/FireDetector.java -text
+hazard/src/main/java/org/universAAL/ontology/hazard/GasDetector.java -text
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
