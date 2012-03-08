@@ -19,6 +19,11 @@ hazard/.classpath
 hazard/.project
 hazard/.settings
 hazard/target
+impairment/.classpath
+impairment/.project
+impairment/.settings
+impairment/target
+impairment/uAAL.log
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
