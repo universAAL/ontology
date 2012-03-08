@@ -24,6 +24,11 @@ impairment/.project
 impairment/.settings
 impairment/target
 impairment/uAAL.log
+lighting/.classpath
+lighting/.project
+lighting/.settings
+lighting/bin
+lighting/target
 physical.world/.classpath
 physical.world/.project
 physical.world/.settings
