@@ -120,6 +120,14 @@ multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
 multimedia/src/main/java/org/universAAL/ontology/MultimediaOntology.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
+ont.profile.uipreferences/UIPreferencesProfile.di -text
+ont.profile.uipreferences/UIPreferencesProfile.notation -text
+ont.profile.uipreferences/UIPreferencesProfile.uml -text
+ont.profile.uipreferences/pom.xml -text
+ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
+ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
+ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
+ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
 ont.profile.userid/LICENSE.txt -text
 ont.profile.userid/pom.xml -text
 ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream

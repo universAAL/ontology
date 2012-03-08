@@ -42,6 +42,10 @@ multimedia/.classpath
 multimedia/.project
 multimedia/.settings
 multimedia/target
+ont.profile.uipreferences/.classpath
+ont.profile.uipreferences/.project
+ont.profile.uipreferences/.settings
+ont.profile.uipreferences/target
 ont.profile.userid/.classpath
 ont.profile.userid/.project
 ont.profile.userid/.settings
