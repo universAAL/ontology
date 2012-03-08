@@ -274,3 +274,10 @@ user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingEdit
 user.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingService.java -text
 user.profile/src/test/java/org/universAAL/ontology/profile/ArtifactIntegrationTest.java -text
 user.profile/src/test/resources/log4j.properties -text
+water/pom.xml -text
+water/src/main/java/org/universAAL/ontology/Activator.java -text
+water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
+water/src/main/java/org/universAAL/ontology/WaterOntology.java -text
+water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
+water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
+water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
