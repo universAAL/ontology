@@ -194,7 +194,7 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
         <configuration>
-          <skipAttach>true</skipAttach>
+          <skipAttach>false</skipAttach>
         </configuration>
       </plugin>
     </plugins>
