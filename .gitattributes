@@ -120,20 +120,6 @@ multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
 multimedia/src/main/java/org/universAAL/ontology/MultimediaOntology.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
-ont.profile.uipreferences/UIPreferencesProfile.di -text
-ont.profile.uipreferences/UIPreferencesProfile.notation -text
-ont.profile.uipreferences/UIPreferencesProfile.uml -text
-ont.profile.uipreferences/pom.xml -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
-ont.profile.userid/LICENSE.txt -text
-ont.profile.userid/pom.xml -text
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
 physical.world/LICENSE.txt -text
 physical.world/NOTICE.txt -text
 physical.world/artifact-0.2.3.composite -text
@@ -239,6 +225,20 @@ profile.health/src/main/java/org/universAAL/ontology/profile/health/Illness.java
 profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 profile.health/src/test/java/org/universAAL/ontology/profile/health/ArtifactIntegrationTest.java -text
 profile.health/src/test/resources/log4j.properties -text
+profile.uipreferences/UIPreferencesProfile.di -text
+profile.uipreferences/UIPreferencesProfile.notation -text
+profile.uipreferences/UIPreferencesProfile.uml -text
+profile.uipreferences/pom.xml -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
+profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
+profile.userid/LICENSE.txt -text
+profile.userid/pom.xml -text
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
+profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
 risk/artifact_manual.composite -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text
