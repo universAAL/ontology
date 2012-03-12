@@ -280,6 +280,34 @@ profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activ
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
 profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
+questionnaire/LICENSE-2.0.txt -text
+questionnaire/ont.questionnaire.di -text
+questionnaire/ont.questionnaire.notation -text
+questionnaire/ont.questionnaire.uml -text
+questionnaire/pom.xml -text
+questionnaire/src/main/java/org/universaal/ontology/Activator.java -text
+questionnaire/src/main/java/org/universaal/ontology/QuestionnaireOntologyFactory.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/Answer.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/AnsweredQuestionnaire.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/ChoiceLabel.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/ConditionalQuestion.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/MultiChoiceQuestion.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/Question.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/QuestionWithMedia.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/Questionnaire.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireOntology.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireService.java -text
+questionnaire/src/main/java/org/universaal/ontology/owl/SingleChoiceQuestion.java -text
+questionnaire/src/test/java/org/universaal/ennumerations/ontology/QuestionnaireEnummerationsOntologyFactory.java -text
+questionnaire/src/test/java/org/universaal/ennumerations/ontology/owl/PartsOfDay.java -text
+questionnaire/src/test/java/org/universaal/ennumerations/ontology/owl/QuestionnaireEnnumerationsOntology.java -text
+questionnaire/src/test/java/tests/SuperTestQuestionnaire.java -text
+questionnaire/src/test/java/tests/TestQuestionnaireAnswers.java -text
+questionnaire/src/test/java/tests/TestQuestionnaireCompleteness.java -text
+questionnaire/src/test/java/tests/TestQuestionnaireGeneralWorking.java -text
+questionnaire/src/test/java/tests/TestQuestionnaireMultiTrigger.java -text
+questionnaire/src/test/java/tests/TestQuestionnaireNextQuestion.java -text
+questionnaire/src/test/java/tests/TestQuestionnaireQuestions.java -text
 risk/artifact_manual.composite -text
 risk/pom.xml -text
 risk/src/main/java/org/universAAL/ontology/Activator.java -text

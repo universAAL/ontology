@@ -85,6 +85,10 @@ profile.userid/UserIDProfileOntology.di
 profile.userid/UserIDProfileOntology.notation
 profile.userid/UserIDProfileOntology.uml
 profile.userid/target
+questionnaire/.classpath
+questionnaire/.project
+questionnaire/.settings
+questionnaire/target
 risk/.classpath
 risk/.project
 risk/.settings

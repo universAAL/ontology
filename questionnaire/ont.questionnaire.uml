@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_nnIKYFYoEeGTLbrLJIuTyg" name="ont.questionnaire">
+    <ownedComment xmi:id="_nnIKYVYoEeGTLbrLJIuTyg" annotatedElement="_nnIKZlYoEeGTLbrLJIuTyg">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_nnIKYlYoEeGTLbrLJIuTyg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_nnIKY1YoEeGTLbrLJIuTyg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_nnIKZFYoEeGTLbrLJIuTyg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_nnIKZVYoEeGTLbrLJIuTyg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_nnIKZlYoEeGTLbrLJIuTyg" name="org.universaal.ontology">
+      <ownedComment xmi:id="_9eTxsFYrEeGTLbrLJIuTyg" annotatedElement="_3JQmEFYpEeGTLbrLJIuTyg">
+        <body> SingleChoiceQuestion is the kind of question that only has one choice as an answer&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:id="_QzTQcFYsEeGTLbrLJIuTyg" annotatedElement="_1wv7AFYpEeGTLbrLJIuTyg">
+        <body>MultiChoiceQuestion enables to select several choices within a question&#xD;
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TLeJEFYpEeGTLbrLJIuTyg" name="User"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UKZPcFYpEeGTLbrLJIuTyg" name="AnsweredQuestionnaire">
+        <generalization xmi:id="_0Bb8sFYtEeGTLbrLJIuTyg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="__-VJUFYpEeGTLbrLJIuTyg" name="isAnsweredBy" type="_TLeJEFYpEeGTLbrLJIuTyg" association="__-W-gFYpEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__-VJUVYpEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__-VJUlYpEeGTLbrLJIuTyg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SOBM4FYqEeGTLbrLJIuTyg" name="isComposedBy" type="_6CuGgFYpEeGTLbrLJIuTyg" association="_SODpIFYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SOBM4VYqEeGTLbrLJIuTyg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SOBM4lYqEeGTLbrLJIuTyg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Z2lgwFYqEeGTLbrLJIuTyg" name="isAssociatedTo" type="_W4ud8FYpEeGTLbrLJIuTyg" association="_Z2n9AFYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z2lgwVYqEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z2lgwlYqEeGTLbrLJIuTyg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W4ud8FYpEeGTLbrLJIuTyg" name="Questionnaire">
+        <generalization xmi:id="_y1hjMFYtEeGTLbrLJIuTyg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_lVvEoFYqEeGTLbrLJIuTyg" name="hasQuestion" type="_nJqV0FYpEeGTLbrLJIuTyg" association="_lVw50FYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lVvEoVYqEeGTLbrLJIuTyg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lVvEolYqEeGTLbrLJIuTyg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0AjTQFYqEeGTLbrLJIuTyg" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_31-FoFYqEeGTLbrLJIuTyg" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nJqV0FYpEeGTLbrLJIuTyg" name="Question">
+        <generalization xmi:id="_2EINMFYtEeGTLbrLJIuTyg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_EIiDcFYrEeGTLbrLJIuTyg" name="questionWording">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HE5G4FYrEeGTLbrLJIuTyg" name="hasCorrectAnswer">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MLvE4FYrEeGTLbrLJIuTyg" name="correcAnswer">
+          <type xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_Xh6tEKFMEeCPiYRKlVcMuQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_QWIowFYrEeGTLbrLJIuTyg" name="answerTypeURI">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_pCaVQFYrEeGTLbrLJIuTyg" name="hasChoiceLabel" type="_o2mYwFYpEeGTLbrLJIuTyg" association="_pCa8UFYrEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pCaVQVYrEeGTLbrLJIuTyg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pCaVQlYrEeGTLbrLJIuTyg"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o2mYwFYpEeGTLbrLJIuTyg" name="ChoiceLabel">
+        <generalization xmi:id="_29Q0oFYtEeGTLbrLJIuTyg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_1R4i0FYrEeGTLbrLJIuTyg" name="choice">
+          <type xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_Xh6tEKFMEeCPiYRKlVcMuQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_407LwFYrEeGTLbrLJIuTyg" name="label">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qWZ-oFYpEeGTLbrLJIuTyg" name="ConditionalQuestion">
+        <generalization xmi:id="_gWg8IFYrEeGTLbrLJIuTyg" general="_nJqV0FYpEeGTLbrLJIuTyg"/>
+        <ownedAttribute xmi:id="_i-OlQFYrEeGTLbrLJIuTyg" name="dependsOn" type="_nJqV0FYpEeGTLbrLJIuTyg" association="_i-QacFYrEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i-OlQVYrEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i-OlQlYrEeGTLbrLJIuTyg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_w6uVUFYrEeGTLbrLJIuTyg" name="triggerAnswer">
+          <type xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_Xh6tEKFMEeCPiYRKlVcMuQ"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1wv7AFYpEeGTLbrLJIuTyg" name="MultiChoiceQuestion">
+        <generalization xmi:id="_fWRnIFYrEeGTLbrLJIuTyg" general="_nJqV0FYpEeGTLbrLJIuTyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3JQmEFYpEeGTLbrLJIuTyg" name="SingleChoiceQuestion">
+        <generalization xmi:id="_f28EMFYrEeGTLbrLJIuTyg" general="_nJqV0FYpEeGTLbrLJIuTyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6CuGgFYpEeGTLbrLJIuTyg" name="Answer">
+        <generalization xmi:id="_1UECMFYtEeGTLbrLJIuTyg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_rejdAFYqEeGTLbrLJIuTyg" name="isAssociatedToAQuestion" type="_nJqV0FYpEeGTLbrLJIuTyg" association="_rekrIFYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rejdAVYqEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rejdAlYqEeGTLbrLJIuTyg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7XQbEFYqEeGTLbrLJIuTyg" name="answerContent">
+          <type xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_Xh6tEKFMEeCPiYRKlVcMuQ"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__-W-gFYpEeGTLbrLJIuTyg" name="isAnsweredBy" memberEnd="__-XlkFYpEeGTLbrLJIuTyg __-VJUFYpEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="__-XlkFYpEeGTLbrLJIuTyg" name="answeredQuestionnaire" type="_UKZPcFYpEeGTLbrLJIuTyg" association="__-W-gFYpEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__-XlkVYpEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__-XlklYpEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SODpIFYqEeGTLbrLJIuTyg" name="isComposedBy" memberEnd="_SODpIVYqEeGTLbrLJIuTyg _SOBM4FYqEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="_SODpIVYqEeGTLbrLJIuTyg" name="answeredQuestionnaire" type="_UKZPcFYpEeGTLbrLJIuTyg" association="_SODpIFYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SODpIlYqEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SODpI1YqEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Z2n9AFYqEeGTLbrLJIuTyg" name="isAssociatedTo" memberEnd="_Z2n9AVYqEeGTLbrLJIuTyg _Z2lgwFYqEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="_Z2n9AVYqEeGTLbrLJIuTyg" name="answeredQuestionnaire" type="_UKZPcFYpEeGTLbrLJIuTyg" association="_Z2n9AFYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z2n9AlYqEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z2n9A1YqEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lVw50FYqEeGTLbrLJIuTyg" name="hasQuestion" memberEnd="_lVw50VYqEeGTLbrLJIuTyg _lVvEoFYqEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="_lVw50VYqEeGTLbrLJIuTyg" name="questionnaire" type="_W4ud8FYpEeGTLbrLJIuTyg" association="_lVw50FYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lVw50lYqEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lVw501YqEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_rekrIFYqEeGTLbrLJIuTyg" name="isAssociatedToAQuestion" memberEnd="_rekrIVYqEeGTLbrLJIuTyg _rejdAFYqEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="_rekrIVYqEeGTLbrLJIuTyg" name="answer" type="_6CuGgFYpEeGTLbrLJIuTyg" association="_rekrIFYqEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rekrIlYqEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_relSMFYqEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_i-QacFYrEeGTLbrLJIuTyg" name="dependsOn" memberEnd="_i-QacVYrEeGTLbrLJIuTyg _i-OlQFYrEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="_i-QacVYrEeGTLbrLJIuTyg" name="conditionalQuestion" type="_qWZ-oFYpEeGTLbrLJIuTyg" association="_i-QacFYrEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i-QaclYrEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i-Qac1YrEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pCa8UFYrEeGTLbrLJIuTyg" name="hasChoiceLabel" memberEnd="_pCbjYFYrEeGTLbrLJIuTyg _pCaVQFYrEeGTLbrLJIuTyg">
+        <ownedEnd xmi:id="_pCbjYFYrEeGTLbrLJIuTyg" name="question" type="_nJqV0FYpEeGTLbrLJIuTyg" association="_pCa8UFYrEeGTLbrLJIuTyg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pCbjYVYrEeGTLbrLJIuTyg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pCbjYlYrEeGTLbrLJIuTyg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_nnIKb1YoEeGTLbrLJIuTyg">
+      <eAnnotations xmi:id="_nnIKcFYoEeGTLbrLJIuTyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_nnIKcVYoEeGTLbrLJIuTyg">
+      <eAnnotations xmi:id="_nnIKclYoEeGTLbrLJIuTyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_nnIKc1YoEeGTLbrLJIuTyg" defaultNamespace="http://ontology.universaal.org/ont.questionnaire" base_Package="_nnIKYFYoEeGTLbrLJIuTyg" versionInfo="0.1"/>
+  <OWL:datatypeProperty xmi:id="_0BGF0FYqEeGTLbrLJIuTyg" base_Property="_0AjTQFYqEeGTLbrLJIuTyg"/>
+  <OWL:datatypeProperty xmi:id="_32S1wFYqEeGTLbrLJIuTyg" base_Property="_31-FoFYqEeGTLbrLJIuTyg"/>
+  <OWL:objectProperty xmi:id="_7Xhg0FYqEeGTLbrLJIuTyg" base_Property="_7XQbEFYqEeGTLbrLJIuTyg"/>
+  <OWL:datatypeProperty xmi:id="_EIzwQFYrEeGTLbrLJIuTyg" base_Property="_EIiDcFYrEeGTLbrLJIuTyg"/>
+  <OWL:datatypeProperty xmi:id="_HFKMoFYrEeGTLbrLJIuTyg" base_Property="_HE5G4FYrEeGTLbrLJIuTyg"/>
+  <OWL:objectProperty xmi:id="_MMAKoFYrEeGTLbrLJIuTyg" base_Property="_MLvE4FYrEeGTLbrLJIuTyg"/>
+  <OWL:datatypeProperty xmi:id="_QWaVkFYrEeGTLbrLJIuTyg" base_Property="_QWIowFYrEeGTLbrLJIuTyg"/>
+  <OWL:objectProperty xmi:id="_w7ApMFYrEeGTLbrLJIuTyg" base_Property="_w6uVUFYrEeGTLbrLJIuTyg"/>
+  <OWL:objectProperty xmi:id="_1SK2sFYrEeGTLbrLJIuTyg" base_Property="_1R4i0FYrEeGTLbrLJIuTyg"/>
+  <OWL:datatypeProperty xmi:id="_41OGsFYrEeGTLbrLJIuTyg" base_Property="_407LwFYrEeGTLbrLJIuTyg"/>
+</xmi:XMI>

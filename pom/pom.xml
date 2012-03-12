@@ -39,6 +39,7 @@
     <module>../profile.health</module>
     <module>../profile.userid</module>
     <module>../profile.uipreferences</module>
+	<module>../questionnaire</module>
     <module>../risk</module>
     <module>../user.profile</module>
     <module>../water</module>
@@ -140,6 +141,11 @@
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.profile.health</artifactId>
         <version>1.1.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      	<artifactId>ont.questionnaire</artifactId>
+  		<version>1.1.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
