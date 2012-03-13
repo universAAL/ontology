@@ -60,7 +60,7 @@ public final class  QuestionnaireOntology extends Ontology {
   
     //load ChoiceLabel 
     oci = createNewOntClassInfo(ChoiceLabel.MY_URI, factory, 5);
-    oci.setResourceComment("");
+    oci.setResourceComment("A 'choice-label' is the composition of a label associated to a choice");
     oci.setResourceLabel("ChoiceLabel");
     oci.addSuperClass(ManagedIndividual.MY_URI); 
     
@@ -78,7 +78,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
   //load Question 
     oci = createNewAbstractOntClassInfo(Question.MY_URI);
-    oci.setResourceComment("");
+    oci.setResourceComment("This concept describes a question which is the main unit of a questionnaire");
     oci.setResourceLabel("Question");
     oci.addSuperClass(ManagedIndividual.MY_URI); 
     
@@ -107,19 +107,19 @@ public final class  QuestionnaireOntology extends Ontology {
     
     //load MultiChoiceQuestion 
     oci = createNewOntClassInfo(MultiChoiceQuestion.MY_URI, factory, 2);
-    oci.setResourceComment("");
+    oci.setResourceComment("A multi-choice question is a question that enables to select several choices as an answer.");
     oci.setResourceLabel("MultiChoiceQuestion");
     oci.addSuperClass(Question.MY_URI); 
 
     //load SingleChoiceQuestion 
     oci = createNewOntClassInfo(SingleChoiceQuestion.MY_URI, factory, 3);
-    oci.setResourceComment("");
+    oci.setResourceComment("A single-choice question is the kind of question that only has one choice as an answer.");
     oci.setResourceLabel("SingleChoiceQuestion");
     oci.addSuperClass(Question.MY_URI); 
     
     //load QuestionWithMedia 
     oci = createNewOntClassInfo(QuestionWithMedia.MY_URI, factory, 3);
-    oci.setResourceComment("");
+    oci.setResourceComment("A question with media is a question that has some media associated to it (video, images...).");
     oci.setResourceLabel("QuestionWithMedia");
     oci.addSuperClass(Question.MY_URI); 
     
@@ -130,7 +130,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
     //load ConditionalQuestion 
     oci = createNewOntClassInfo(ConditionalQuestion.MY_URI, factory, 5);
-    oci.setResourceComment("");
+    oci.setResourceComment("A conditional question is a question that only is shown to the user when he/she has given a specific answer (trigger answer) to a specific  previous question.");
     oci.setResourceLabel("ConditionalQuestion");
     oci.addSuperClass(Question.MY_URI); 
     
@@ -146,7 +146,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
     //load Questionnaire 
     oci = createNewOntClassInfo(Questionnaire.MY_URI, factory, 4);
-    oci.setResourceComment("");
+    oci.setResourceComment("A questionnaire is a composition of questions and answers, given by an examined user");
     oci.setResourceLabel("Questionnaire");
     oci.addSuperClass(ManagedIndividual.MY_URI); 
     oci.addDatatypeProperty(Questionnaire.PROP_NAME);
@@ -175,7 +175,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
     //load Answer 
     oci = createNewOntClassInfo(Answer.MY_URI, factory, 8);
-    oci.setResourceComment("");
+    oci.setResourceComment("An answer is the response to a question.");
     oci.setResourceLabel("Answer");
     oci.addSuperClass(ManagedIndividual.MY_URI); 
     
@@ -191,7 +191,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
     //load AnsweredQuestionnaire 
     oci = createNewOntClassInfo(AnsweredQuestionnaire.MY_URI, factory, 0);
-    oci.setResourceComment("");
+    oci.setResourceComment("An answered questionnaire contains the answers given by the examined user.");
     oci.setResourceLabel("AnsweredQuestionnaire");
     oci.addSuperClass(ManagedIndividual.MY_URI); 
     
@@ -219,7 +219,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
     /**/
     oci = createNewOntClassInfo(QuestionnaireService.MY_URI, factory, 9);
-    oci.setResourceComment("");
+    oci.setResourceComment("Description of the questionnaire service.");
     oci.setResourceLabel("QuestionnaireService");
     oci.addSuperClass(Service.MY_URI); 
 

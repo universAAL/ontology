@@ -22,7 +22,7 @@ import org.universAAL.middleware.rdf.Resource;
 /**
  * This class describes the concept of ChoiceLabel, its properties 
  * and its associated methods.
- * A "choice-label" is a composition of a label associated to a choice.
+ * A "choice-label" is the composition of a label associated to a choice.
  * @author mdelafuente
  *
  */
