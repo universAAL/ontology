@@ -26,7 +26,7 @@ import org.universAAL.middleware.ui.rdf.MediaObject;
  * This class describes the concept of Questionnaire, its properties 
  * and its associated methods.
  * A questionnaire is a composition of questions and answers, given
- * by a examined user.
+ * by an examined user.
  * @author mdelafuente
  *
  */
