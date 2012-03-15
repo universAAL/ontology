@@ -22,25 +22,18 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import junit.framework.TestCase;
-
 import org.junit.Before;
 import org.junit.Test;
-import org.universAAL.middleware.owl.DataRepOntology;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.itests.IntegrationTest;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.ui.owl.UIBusOntology;
-import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.profile.User;
 import org.universaal.ennumerations.ontology.owl.PartsOfDay;
-import org.universaal.ennumerations.ontology.owl.QuestionnaireEnnumerationsOntology;
 import org.universaal.ontology.owl.AnsweredQuestionnaire;
 import org.universaal.ontology.owl.ChoiceLabel;
 import org.universaal.ontology.owl.ConditionalQuestion;
 import org.universaal.ontology.owl.MultiChoiceQuestion;
 import org.universaal.ontology.owl.Question;
 import org.universaal.ontology.owl.Questionnaire;
-import org.universaal.ontology.owl.QuestionnaireOntology;
 import org.universaal.ontology.owl.SingleChoiceQuestion;
 
 /**
@@ -50,7 +43,7 @@ import org.universaal.ontology.owl.SingleChoiceQuestion;
  *
  */
 
-public class TestQuestionnaireNextQuestion extends SuperTestQuestionnaire{
+public class TestQuestionnaireNextQuestion extends IntegrationTest{
 	Questionnaire questionnaire; 
 	User peter;
 	
@@ -69,9 +62,7 @@ public class TestQuestionnaireNextQuestion extends SuperTestQuestionnaire{
 	ConditionalQuestion q13;
 	
 	@Before
-	public void setUp(){
-		
-		super.registerAllOntologies();
+	public void onSetUp(){
 
 		questionnaire = new Questionnaire("First questionnaire", "Test questionnaire");
 		peter = new User("Pepe");
