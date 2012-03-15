@@ -115,8 +115,7 @@ public abstract class Question extends ManagedIndividual {
 		return MY_URI;
 	}
 	public int getPropSerializationType(String arg0) {
-		// TODO Implement or if for Device subclasses: remove 
-		return 0;
+		return PROP_SERIALIZATION_FULL;
 	}
 
 	public boolean isWellFormed() {
