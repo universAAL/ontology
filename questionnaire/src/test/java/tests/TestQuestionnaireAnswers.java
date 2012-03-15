@@ -19,31 +19,20 @@ package tests;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.universAAL.middleware.owl.DataRepOntology;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.itests.IntegrationTest;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.service.owl.ServiceBusOntology;
-import org.universAAL.middleware.ui.owl.UIBusOntology;
-import org.universAAL.ontology.ProfileOntology;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.User;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.space.SpaceOntology;
 import org.universaal.ennumerations.ontology.owl.PartsOfDay;
-import org.universaal.ennumerations.ontology.owl.QuestionnaireEnnumerationsOntology;
 import org.universaal.ontology.owl.AnsweredQuestionnaire;
 import org.universaal.ontology.owl.ChoiceLabel;
 import org.universaal.ontology.owl.ConditionalQuestion;
 import org.universaal.ontology.owl.MultiChoiceQuestion;
 import org.universaal.ontology.owl.Question;
 import org.universaal.ontology.owl.Questionnaire;
-import org.universaal.ontology.owl.QuestionnaireOntology;
 import org.universaal.ontology.owl.SingleChoiceQuestion;
-
-import junit.framework.TestCase;
 
 /**
  * The following test class will check that the methods
@@ -51,7 +40,7 @@ import junit.framework.TestCase;
  * @author mdelafuente
  *
  */
-public class TestQuestionnaireAnswers extends SuperTestQuestionnaire{
+public class TestQuestionnaireAnswers extends IntegrationTest{
 
 	Questionnaire questionnaire; 
 	User peter;
@@ -65,9 +54,8 @@ public class TestQuestionnaireAnswers extends SuperTestQuestionnaire{
 	SingleChoiceQuestion q7;
 	
 	@Before
-	public void setUp(){
+	public void onSetUp(){
 		
-		super.registerAllOntologies();
 
 		questionnaire = new Questionnaire("First questionnaire", "Test questionnaire");
 		peter = new User("Pepe");

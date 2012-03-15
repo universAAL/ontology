@@ -301,7 +301,6 @@ questionnaire/src/main/java/org/universaal/ontology/owl/SingleChoiceQuestion.jav
 questionnaire/src/test/java/org/universaal/ennumerations/ontology/QuestionnaireEnummerationsOntologyFactory.java -text
 questionnaire/src/test/java/org/universaal/ennumerations/ontology/owl/PartsOfDay.java -text
 questionnaire/src/test/java/org/universaal/ennumerations/ontology/owl/QuestionnaireEnnumerationsOntology.java -text
-questionnaire/src/test/java/tests/SuperTestQuestionnaire.java -text
 questionnaire/src/test/java/tests/TestQuestionnaireAnswers.java -text
 questionnaire/src/test/java/tests/TestQuestionnaireCompleteness.java -text
 questionnaire/src/test/java/tests/TestQuestionnaireGeneralWorking.java -text

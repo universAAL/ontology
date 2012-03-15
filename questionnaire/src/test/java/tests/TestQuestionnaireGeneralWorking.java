@@ -26,31 +26,23 @@ package tests;
  * @author mdelafuente
  *
  */
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
-import org.universAAL.middleware.owl.DataRepOntology;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.itests.IntegrationTest;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.ui.owl.UIBusOntology;
-import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.profile.User;
 import org.universaal.ennumerations.ontology.owl.PartsOfDay;
-import org.universaal.ennumerations.ontology.owl.QuestionnaireEnnumerationsOntology;
 import org.universaal.ontology.owl.ChoiceLabel;
 import org.universaal.ontology.owl.Question;
 import org.universaal.ontology.owl.Questionnaire;
-import org.universaal.ontology.owl.QuestionnaireOntology;
 
-public class TestQuestionnaireGeneralWorking extends SuperTestQuestionnaire{
+public class TestQuestionnaireGeneralWorking extends IntegrationTest{
 	
 	Questionnaire questionnaire; 
 	User peter;
 	
 	@Before
-	public void setUp(){
-		
-		super.registerAllOntologies();
+	public void onSetUp(){
 
 		questionnaire = new Questionnaire("First questionnaire", "Test questionnaire");
 		peter = new User("Pepe");
