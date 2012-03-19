@@ -18,8 +18,9 @@ public class ActivityHubFactory extends ResourceFactoryImpl {
 	    int factoryIndex) {
 	
     	switch (factoryIndex) {
-    	case ActivityHubSensorType.ActivityHubSensor:
-    					return new ActivityHubSensor(instanceURI);
+//		changed to abstract class
+//    	case ActivityHubSensorType.ActivityHubSensor:
+//    					return new ActivityHubSensor(instanceURI);
     	case ActivityHubSensorType.FallSensor:
     					return new FallSensor(instanceURI);
     	case ActivityHubSensorType.PersSensor:

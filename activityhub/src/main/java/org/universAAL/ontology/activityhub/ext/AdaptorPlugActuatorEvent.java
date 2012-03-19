@@ -79,7 +79,6 @@ public class AdaptorPlugActuatorEvent extends ManagedIndividual {
 	}
 
 	public boolean isWellFormed() {
-		/*TODO call base method from ManagedIndividual?*/
 		return true;
 	}
 

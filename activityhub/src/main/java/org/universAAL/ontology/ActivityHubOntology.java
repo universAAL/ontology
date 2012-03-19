@@ -9,6 +9,7 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.*;
 import org.universAAL.ontology.phThing.Actuator;
+import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
@@ -35,6 +36,9 @@ public class ActivityHubOntology extends Ontology{
 		r.setResourceLabel("ActivityHub");
 		r.serializesAsXMLLiteral();
 
+		/* is planned to be mandatory for OWL import/export */
+		addImport(PhThingOntology.NAMESPACE);
+		
 		OntClassInfoSetup oci;
 
 
@@ -58,7 +62,9 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type FallSensorEvent */
-		oci.addObjectProperty(FallSensor.PROP_MEASURED_VALUE);
+		/* setFunctional() sets the cardinality to 0...1 
+		 * will be used later in the ontology engine */
+		oci.addObjectProperty(FallSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				Sensor.PROP_MEASURED_VALUE, FallSensorEvent.MY_URI));
 
@@ -81,7 +87,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type PersSensorEvent */
-		oci.addObjectProperty(PersSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(PersSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				PersSensor.PROP_MEASURED_VALUE, PersSensorEvent.MY_URI));
 		
@@ -104,7 +110,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type SmokeSensorEvent */
-		oci.addObjectProperty(SmokeSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(SmokeSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				SmokeSensor.PROP_MEASURED_VALUE, EnvironmentalSensorEvent.MY_URI));
 		
@@ -127,7 +133,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type CoSensorEvent */
-		oci.addObjectProperty(CoSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(CoSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				CoSensor.PROP_MEASURED_VALUE, EnvironmentalSensorEvent.MY_URI));
 		
@@ -150,7 +156,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type WaterSensorEvent */
-		oci.addObjectProperty(WaterSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(WaterSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				WaterSensor.PROP_MEASURED_VALUE, EnvironmentalSensorEvent.MY_URI));
 		
@@ -173,7 +179,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type GasSensorEvent */
-		oci.addObjectProperty(GasSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(GasSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				GasSensor.PROP_MEASURED_VALUE, EnvironmentalSensorEvent.MY_URI));
 		
@@ -198,7 +204,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type MotionSensorEvent */
-		oci.addObjectProperty(MotionSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(MotionSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				MotionSensor.PROP_MEASURED_VALUE, MotionSensorEvent.MY_URI));
 		
@@ -222,7 +228,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type PropertyExitSensorEvent */
-		oci.addObjectProperty(PropertyExitSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(PropertyExitSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				PropertyExitSensor.PROP_MEASURED_VALUE, PropertyExitSensorEvent.MY_URI));
 		
@@ -245,7 +251,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type EnuresisSensorEvent */
-		oci.addObjectProperty(EnuresisSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(EnuresisSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				EnuresisSensor.PROP_MEASURED_VALUE, EnuresisSensorEvent.MY_URI));
 		
@@ -269,7 +275,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type ContactClosureSensorEvent */
-		oci.addObjectProperty(ContactClosureSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(ContactClosureSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				ContactClosureSensor.PROP_MEASURED_VALUE, ContactClosureSensorEvent.MY_URI));
 		
@@ -296,7 +302,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type UsageSensorEvent */
-		oci.addObjectProperty(UsageSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(UsageSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				UsageSensor.PROP_MEASURED_VALUE, UsageSensorEvent.MY_URI));
 		
@@ -320,7 +326,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type SwitchSensorEvent */
-		oci.addObjectProperty(SwitchSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(SwitchSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				SwitchSensor.PROP_MEASURED_VALUE, SwitchSensorEvent.MY_URI));
 		
@@ -344,7 +350,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type MedicationDosageSensorEvent */
-		oci.addObjectProperty(MedicationDosageSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(MedicationDosageSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				MedicationDosageSensor.PROP_MEASURED_VALUE, MedicationDosageSensorEvent.MY_URI));
 		
@@ -369,7 +375,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(ActivityHubSensor.MY_URI);
 
 		/* measured value property from motion sensor must be of type TemperatureSensorEvent */
-		oci.addObjectProperty(TemperatureSensor.PROP_MEASURED_VALUE);
+		oci.addObjectProperty(TemperatureSensor.PROP_MEASURED_VALUE).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				TemperatureSensor.PROP_MEASURED_VALUE, TemperatureSensorEvent.MY_URI));
 
@@ -394,15 +400,15 @@ public class ActivityHubOntology extends Ontology{
 		oci.addSuperClass(Actuator.MY_URI);
 
 		/* status property from adaptor plug actuator must be of type AdaptorPlugActuatorEvent */
-		oci.addObjectProperty(AdaptorPlugActuator.PROP_STATUS);
+		oci.addObjectProperty(AdaptorPlugActuator.PROP_STATUS).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				AdaptorPlugActuator.PROP_STATUS, AdaptorPlugActuatorEvent.MY_URI));
 
 
 	/*** Sensors Base Class ***/
 		
-		/* create ontology resource for ActivityHubSensor */
-		oci = createNewOntClassInfo(ActivityHubSensor.MY_URI,factory, 0);
+		/* create ontology resource for ActivityHubSensor (abstract class) */
+		oci = createNewAbstractOntClassInfo(ActivityHubSensor.MY_URI);
 		oci.setResourceLabel("ActivityHubSensor");
 		oci.setResourceComment("ISO 11073-10471 activity hub base sensor");
 		oci.addSuperClass(Sensor.MY_URI);
@@ -416,6 +422,7 @@ public class ActivityHubOntology extends Ontology{
 		oci.setResourceComment("The class of services controling activity hub sensors and actuators");
 		oci.addSuperClass(Service.MY_URI);
 
+		/* TODO setFunctional()?? 1 ActivityHub service controls at most 1 sensor ? */
 		oci.addObjectProperty(ActivityHub.PROP_CONTROLS);
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 				ActivityHub.PROP_CONTROLS, ActivityHubSensor.MY_URI));
