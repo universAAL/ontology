@@ -84,7 +84,6 @@ public class MedicationDosageSensorEvent extends ManagedIndividual {
 	}
 
 	public boolean isWellFormed() {
-		/*TODO call base method from ManagedIndividual?*/
 		return true;
 	}
 

@@ -61,5 +61,13 @@ public class TemperatureSensor extends ActivityHubSensor {
 	public String getClassURI() {
 		return MY_URI;
 	}
+	
+	public int getPropSerializationType(String propURI) {
+		return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL : 
+			super.getPropSerializationType(propURI);	
+	}
 
+	public boolean isWellFormed() {
+		return true;
+	}
 }

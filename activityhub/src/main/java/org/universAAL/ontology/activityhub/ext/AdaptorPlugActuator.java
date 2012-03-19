@@ -57,4 +57,13 @@ public class AdaptorPlugActuator extends Actuator {
 	public String getClassURI() {
 		return MY_URI;
 	}
+	
+	public int getPropSerializationType(String propURI) {
+		/* no actuator properties?? */
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isWellFormed() {
+		return true;
+	}	
 }

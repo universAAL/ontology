@@ -56,12 +56,16 @@ public class ContactClosureSensor extends ActivityHubSensor {
     	return ((ContactClosureSensorEvent) props.get(PROP_MEASURED_VALUE));
     }
     	
-	/** 
-	 * @see org.universAAL.ontology.phThing.Sensor#getClassURI()
-	 * @return Ontology namespace for this class
-	 */
 	public String getClassURI() {
 		return MY_URI;
 	}
+	
+	public int getPropSerializationType(String propURI) {
+		return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL : 
+			super.getPropSerializationType(propURI);	
+	}
 
+	public boolean isWellFormed() {
+		return true;
+	}
 }
