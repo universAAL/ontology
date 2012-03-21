@@ -19,8 +19,6 @@
  */
 package org.universAAL.ontology.shape;
 
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.Point;
 
@@ -43,16 +41,9 @@ public abstract class Shape3D extends Shape {
     static {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "Shape3D";
 	PROP_2D_REPRESENTATION = uAAL_SHAPE_NAMESPACE + "2DReperesentation";
-	register(Shape3D.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_2D_REPRESENTATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Shape2D.MY_URI, 1, 0);
-	return Shape.getClassRestrictionsOnProperty(propURI);
-    }
-
+    
     /**
      * Creates a Shape object
      * 
@@ -118,20 +109,8 @@ public abstract class Shape3D extends Shape {
 	super(uri, system);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all 3d shapes.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Shape3D";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     /**
@@ -161,17 +140,4 @@ public abstract class Shape3D extends Shape {
 
 	return PROP_SERIALIZATION_OPTIONAL;
     }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Shape.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_2D_REPRESENTATION;
-	return toReturn;
-    }
-
 }

@@ -26,12 +26,8 @@ package org.universAAL.ontology.location;
 
 import java.util.List;
 import java.util.Vector;
-
 import org.universAAL.middleware.owl.ComparableIndividual;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.owl.supply.AbsLocation;
-import org.universAAL.middleware.rdf.TypeMapper;
 
 /**
  * Ontological representation of the location of a physical thing. Methods
@@ -59,44 +55,8 @@ public class Location extends AbsLocation {
 	PROP_IS_CONNECTED_TO = uAAL_LOCATION_NAMESPACE + "isConnectedTo";
 	PROP_IS_CONTAINED_IN = uAAL_LOCATION_NAMESPACE + "isContainedIn";
 	PROP_CONTAINS = uAAL_LOCATION_NAMESPACE + "contains";
-	register(Location.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-
-	if (PROP_HAS_NAME.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 0);
-	if (PROP_IS_ADJACENT_TO.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestriction(propURI, Location.MY_URI);
-	if (PROP_IS_CONNECTED_TO.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestriction(propURI, Location.MY_URI);
-	if (PROP_IS_CONTAINED_IN.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestriction(propURI, Location.MY_URI);
-	if (PROP_CONTAINS.equals(propURI))
-	    return Restriction
-		    .getAllValuesRestriction(propURI, Location.MY_URI);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = AbsLocation.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 5];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_NAME;
-	toReturn[i++] = PROP_IS_ADJACENT_TO;
-	toReturn[i++] = PROP_IS_CONNECTED_TO;
-	toReturn[i++] = PROP_IS_CONTAINED_IN;
-	toReturn[i] = PROP_CONTAINS;
-	return toReturn;
-    }
 
     /**
      * Constructor just for usage by de-serializers. Do not use this constructor
@@ -132,21 +92,11 @@ public class Location extends AbsLocation {
 	props.put(PROP_HAS_NAME, name);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all locations.";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Location";
-    }
+    
 
     /**
      * Add a new Location in the given property list
@@ -289,7 +239,8 @@ public class Location extends AbsLocation {
      * removes all connected locations from this location.
      */
     public void clearConnectedLocations() {
-	props.put(PROP_IS_CONNECTED_TO, new Vector());
+	//props.put(PROP_IS_CONNECTED_TO, new Vector());
+	props.remove(PROP_IS_CONNECTED_TO);
     }
 
     /**
@@ -331,7 +282,8 @@ public class Location extends AbsLocation {
      * removes all contained locations from this location.
      */
     public void clearContainedLocations() {
-	props.put(PROP_CONTAINS, new Vector());
+	//props.put(PROP_CONTAINS, new Vector());
+	props.remove(PROP_CONTAINS);
     }
 
     /**
@@ -359,7 +311,8 @@ public class Location extends AbsLocation {
      * removes all containing locations from this location.
      */
     public void clearContainingLocations() {
-	props.put(PROP_IS_CONTAINED_IN, null);
+	//props.put(PROP_IS_CONTAINED_IN, null);
+	props.remove(PROP_IS_CONTAINED_IN);
     }
 
     public int getPropSerializationType(String propURI) {

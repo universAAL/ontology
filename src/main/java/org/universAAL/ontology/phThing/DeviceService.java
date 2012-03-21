@@ -22,9 +22,6 @@
 
 package org.universAAL.ontology.phThing;
 
-import java.util.Hashtable;
-
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.phThing.Device;
 
@@ -36,34 +33,11 @@ import org.universAAL.ontology.phThing.Device;
  * @author alfiva
  */
 public class DeviceService extends Service {
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-    private static Hashtable serviceRestrictions = new Hashtable(1);
-    static {
-	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "DeviceService";
-	PROP_CONTROLS = Device.uAAL_DEVICE_NAMESPACE + "controls";
-	register(DeviceService.class);
-	addRestriction(Restriction.getAllValuesRestriction(PROP_CONTROLS,
-		Device.MY_URI), new String[] { PROP_CONTROLS },
-		serviceRestrictions);
-    }
+    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+	    + "DeviceService";
+    public static final String PROP_CONTROLS = Device.uAAL_DEVICE_NAMESPACE
+	    + "controls";
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (propURI == null)
-	    return null;
-	Object r = serviceRestrictions.get(propURI);
-	if (r instanceof Restriction)
-	    return (Restriction) r;
-	return Service.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of services controling devices.";
-    }
-
-    public static String getRDFSLabel() {
-	return "DeviceService";
-    }
 
     public DeviceService(String uri) {
 	super(uri);
@@ -73,8 +47,8 @@ public class DeviceService extends Service {
 	super();
     }
 
-    protected Hashtable getClassLevelRestrictions() {
-	return serviceRestrictions;
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {

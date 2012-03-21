@@ -19,8 +19,6 @@
  */
 package org.universAAL.ontology.location;
 
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.location.address.Address;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
@@ -53,35 +51,8 @@ public class Place extends Location {
 	PROP_LOCATION_OF_PHYSICAL_THING = uAAL_LOCATION_NAMESPACE
 		+ "locationOf";
 	PROP_HAS_ADDRESS = uAAL_LOCATION_NAMESPACE + "hasAddress";
-	register(Place.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_HAS_SHAPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Shape.MY_URI, 1, 1);
-	if (PROP_LOCATION_OF_PHYSICAL_THING.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PhysicalThing.MY_URI, 1, 0);
-	if (PROP_HAS_ADDRESS.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Address.MY_URI, 1, 0);
-	return Location.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Location.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 3];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_HAS_SHAPE;
-	toReturn[i++] = PROP_LOCATION_OF_PHYSICAL_THING;
-	toReturn[i] = PROP_HAS_ADDRESS;
-	return toReturn;
-    }
 
     /**
      * Creates a Place object
@@ -158,20 +129,8 @@ public class Place extends Location {
 	props.put(PROP_HAS_SHAPE, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all places.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Place";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Shape getShape() {

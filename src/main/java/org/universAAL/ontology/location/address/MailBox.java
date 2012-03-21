@@ -1,7 +1,5 @@
 package org.universAAL.ontology.location.address;
 
-import org.universAAL.middleware.owl.Restriction;
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.location.Location;
 
 /**
@@ -24,30 +22,8 @@ public class MailBox extends Address {
 
 	PROP_POST_OFFICE_BOX = Location.uAAL_LOCATION_NAMESPACE
 		+ "postOfficeBox";
-
-	register(MailBox.class);
     }
 
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_POST_OFFICE_BOX.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(String.class), 1, 1);
-
-	return Address.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Address.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 1];
-
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i] = PROP_POST_OFFICE_BOX;
-	return toReturn;
-    }
 
     /**
      * Creates a MailBox object
@@ -70,22 +46,11 @@ public class MailBox extends Address {
 	super(uri);
 	props.put(PROP_POST_OFFICE_BOX, postOffciceBox);
     }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A mail box in a post office";
+    
+    public String getClassURI() {
+	return MY_URI;
     }
 
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Mail Box";
-    }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;

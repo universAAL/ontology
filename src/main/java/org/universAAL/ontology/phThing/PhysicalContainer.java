@@ -27,12 +27,8 @@ package org.universAAL.ontology.phThing;
  * 
  */
 public class PhysicalContainer extends PhysicalThing {
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalContainer";
 
-    static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalContainer";
-	register(PhysicalContainer.class);
-    }
 
     public PhysicalContainer() {
     }
@@ -41,12 +37,8 @@ public class PhysicalContainer extends PhysicalThing {
 	super(uri);
     }
 
-    public static String getRDFSComment() {
-	return "A Physical thing that contains other Physical things";
-    }
-
-    public static String getRDFSLabel() {
-	return "Physical Container";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public boolean isWellFormed() {

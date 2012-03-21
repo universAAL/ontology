@@ -34,16 +34,12 @@ import org.universAAL.ontology.location.Location;
  */
 public class CoordinateSystem extends ManagedIndividual {
 
-    public static final String MY_URI;
+    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE + "CoordinateSystem";
 
     // private static final String[] names = {
     // "WGS84","Metric","Pixel"
     // };
 
-    static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "CoordinateSystem";
-	register(CoordinateSystem.class);
-    }
 
     public static final CoordinateSystem WGS84 = new CoordinateSystem(
 	    Location.uAAL_LOCATION_NAMESPACE + "WGS84");
@@ -65,22 +61,10 @@ public class CoordinateSystem extends ManagedIndividual {
 	super();
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "Rootclass for all coordinate systems.";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "CoordinateSystem";
-    }
-
+    
     public int getPropSerializationType(String arg0) {
 	return PROP_SERIALIZATION_OPTIONAL;
     }
@@ -124,5 +108,4 @@ public class CoordinateSystem extends ManagedIndividual {
 	}
 	return null;
     }
-
 }

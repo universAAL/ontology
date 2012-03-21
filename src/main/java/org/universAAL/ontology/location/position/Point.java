@@ -22,9 +22,6 @@ package org.universAAL.ontology.location.position;
 //import javax.media.j3d.Transform3D;
 //import javax.vecmath.Point3d;
 //import javax.vecmath.Vector3d;
-
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.Location;
 
 /**
@@ -55,39 +52,6 @@ public class Point extends Location {
 	PROP_Y = uAAL_LOCATION_NAMESPACE + "yPosition";
 	PROP_Z = uAAL_LOCATION_NAMESPACE + "zPosition";
 	PROP_COORDINATE_SYSTEM = uAAL_LOCATION_NAMESPACE + "coordianteSystem";
-	register(Point.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_X.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	if (PROP_Y.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 1);
-	if (PROP_Z.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Double.class), 1, 0);
-	if (PROP_COORDINATE_SYSTEM.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    CoordinateSystem.MY_URI, 1, 1);
-	return Location.getClassRestrictionsOnProperty(propURI);
-
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = Location.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 4];
-	int i = 0;
-	while (i < inherited.length) {
-	    toReturn[i] = inherited[i];
-	    i++;
-	}
-	toReturn[i++] = PROP_X;
-	toReturn[i++] = PROP_Y;
-	toReturn[i++] = PROP_Z;
-	toReturn[i] = PROP_COORDINATE_SYSTEM;
-	return toReturn;
     }
 
     /**
@@ -160,6 +124,10 @@ public class Point extends Location {
 	props.put(PROP_X, new Double(x));
 	props.put(PROP_Z, new Double(Double.NaN));
 	props.put(PROP_COORDINATE_SYSTEM, system);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public int getPropSerializationType(String propURI) {
@@ -237,14 +205,6 @@ public class Point extends Location {
 
     public CoordinateSystem getCoordinateSystem() {
 	return (CoordinateSystem) props.get(PROP_COORDINATE_SYSTEM);
-    }
-
-    public static String getRDFSComment() {
-	return "The class of all points";
-    }
-
-    public static String getRDFSLabel() {
-	return "Point";
     }
 
     public boolean isWellFormed() {
@@ -415,5 +375,4 @@ public class Point extends Location {
 	if (is2D())
 	    props.put(PROP_Z, new Double(0));
     }
-
 }

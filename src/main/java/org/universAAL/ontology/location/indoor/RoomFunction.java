@@ -20,6 +20,8 @@
 package org.universAAL.ontology.location.indoor;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.owl.OntClassInfo;
+import org.universAAL.middleware.owl.OntologyManagement;
 
 import org.universAAL.ontology.location.Location;
 
@@ -31,7 +33,7 @@ import org.universAAL.ontology.location.Location;
  */
 public class RoomFunction extends ManagedIndividual {
 
-    public static final String MY_URI;
+    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE + "RoomFunction";
 
     public static final int BATHROOM = 0;
     public static final int CELLAR = 1;
@@ -52,11 +54,6 @@ public class RoomFunction extends ManagedIndividual {
 	    "GuestWC", "HobbyRoom", "Kitchen", "LivingRoom", "SleepingRoom",
 	    "StorageRoom", "Studio", "WorkRoom", "Wardrobe" };
 
-    static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "RoomFunction";
-	register(RoomFunction.class);
-    }
-
     public static final RoomFunction BathRoom = new RoomFunction(BATHROOM);
     public static final RoomFunction Cellar = new RoomFunction(CELLAR);
     public static final RoomFunction GuestRoom = new RoomFunction(GUESTROOM);
@@ -71,25 +68,6 @@ public class RoomFunction extends ManagedIndividual {
     public static final RoomFunction WorkRoom = new RoomFunction(WORKROOM);
     public static final RoomFunction Wardrobe = new RoomFunction(WARDROBE);
 
-    /**
-     * Returns the list of all class members guaranteeing that no other members
-     * will be created after a call to this method.
-     */
-    public static ManagedIndividual[] getEnumerationMembers() {
-	return new ManagedIndividual[] { BathRoom, Cellar, GuestRoom, GuestWC,
-		HobbyRoom, Kitchen, LivingRoom, SleepingRoom, StorageRoom,
-		Studio, WorkRoom, Wardrobe };
-    }
-
-    /**
-     * Returns the modality with the given URI.
-     */
-    public static ManagedIndividual getIndividualByURI(String instanceURI) {
-	return (instanceURI != null && instanceURI
-		.startsWith(Location.uAAL_LOCATION_NAMESPACE)) ? valueOf(instanceURI
-		.substring(Location.uAAL_LOCATION_NAMESPACE.length()))
-		: null;
-    }
 
     public static final RoomFunction valueOf(String name) {
 	for (int i = 0; i <= 10; i++)
@@ -99,7 +77,8 @@ public class RoomFunction extends ManagedIndividual {
     }
 
     public static RoomFunction getLevelByOrder(int order) {
-	return (RoomFunction) getEnumerationMembers()[order];
+	OntClassInfo info = OntologyManagement.getInstance().getOntClassInfo(MY_URI);
+	return info==null ? null : (RoomFunction) info.getInstances()[order];
     }
 
     /**
@@ -122,28 +101,16 @@ public class RoomFunction extends ManagedIndividual {
 	this.order = Function;
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+    
     public String name() {
 	return names[order];
     }
 
     public int ord() {
 	return order;
-    }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "Describes the function of a room.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "RoomFunction";
     }
 
     public int getPropSerializationType(String arg0) {

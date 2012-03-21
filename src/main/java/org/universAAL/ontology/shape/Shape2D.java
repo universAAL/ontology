@@ -33,13 +33,9 @@ import org.universAAL.ontology.location.position.CoordinateSystem;
 
 public abstract class Shape2D extends Shape {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Shape2D";
 
-    static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Shape2D";
-	register(Shape2D.class);
-    }
-
+    
     /**
      * Creates a Shape object
      * 
@@ -65,20 +61,7 @@ public abstract class Shape2D extends Shape {
 	super(uri);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all 2d shapes.";
+    public String getClassURI() {
+	return MY_URI;
     }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Shape2D";
-    }
-
 }

@@ -30,12 +30,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class State extends OutdoorPlace {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "State";
 
-    static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "State";
-	register(State.class);
-    }
 
     /**
      * Creates a State object
@@ -74,19 +70,7 @@ public class State extends OutdoorPlace {
 	super(uri, shape);
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A state in the meaning of an sovereign area.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "State";
+    public String getClassURI() {
+	return MY_URI;
     }
 }

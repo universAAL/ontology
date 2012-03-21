@@ -1,12 +1,18 @@
 * text=auto !eol
 /LICENSE.txt -text
 /NOTICE.txt -text
+/artifact_manual.composite -text
 documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 /pom.xml -text
 src/main/java/org/universAAL/ontology/Activator.java -text
+src/main/java/org/universAAL/ontology/LocationFactory.java -text
+src/main/java/org/universAAL/ontology/PhThingFactory.java -text
+src/main/java/org/universAAL/ontology/ShapeFactory.java -text
+src/main/java/org/universAAL/ontology/SpaceFactory.java -text
 src/main/java/org/universAAL/ontology/location/Location.java -text
+src/main/java/org/universAAL/ontology/location/LocationOntology.java -text
 src/main/java/org/universAAL/ontology/location/Place.java -text
 src/main/java/org/universAAL/ontology/location/Way.java -text
 src/main/java/org/universAAL/ontology/location/address/Address.java -text
@@ -41,6 +47,7 @@ src/main/java/org/universAAL/ontology/phThing/DeviceService.java -text
 src/main/java/org/universAAL/ontology/phThing/DimmerActuator.java -text
 src/main/java/org/universAAL/ontology/phThing/OnOffActuator.java -text
 src/main/java/org/universAAL/ontology/phThing/OnOffSensor.java -text
+src/main/java/org/universAAL/ontology/phThing/PhThingOntology.java -text
 src/main/java/org/universAAL/ontology/phThing/PhysicalContainer.java -text
 src/main/java/org/universAAL/ontology/phThing/PhysicalThing.java -text
 src/main/java/org/universAAL/ontology/phThing/Sensor.java -text
@@ -59,6 +66,10 @@ src/main/java/org/universAAL/ontology/shape/QuasiCylinder.java -text
 src/main/java/org/universAAL/ontology/shape/Shape.java -text
 src/main/java/org/universAAL/ontology/shape/Shape2D.java -text
 src/main/java/org/universAAL/ontology/shape/Shape3D.java -text
+src/main/java/org/universAAL/ontology/shape/ShapeOntology.java -text
 src/main/java/org/universAAL/ontology/shape/Sphere.java -text
 src/main/java/org/universAAL/ontology/shape/Triangle.java -text
 src/main/java/org/universAAL/ontology/space/SpaceConfigurationService.java -text
+src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
+src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+src/test/resources/log4j.properties -text

@@ -21,7 +21,6 @@ package org.universAAL.ontology.shape;
 
 import java.util.Vector;
 
-import org.universAAL.middleware.owl.Restriction;
 import org.universAAL.ontology.location.position.Point;
 
 /**
@@ -36,19 +35,8 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Triangle extends Polygon {
 
-    public static final String MY_URI;
+    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Triangle";
 
-    static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Triangle";
-	register(Triangle.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_VERTICES.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Point.MY_URI, 3, 3);
-	return Shape3D.getClassRestrictionsOnProperty(propURI);
-    }
 
     /**
      * Creates a Triangle object
@@ -90,20 +78,8 @@ public class Triangle extends Polygon {
 	setLocalCoordinateSystem(verts[0].getCoordinateSystem());
     }
 
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A triangle.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Triangle";
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public void setVertices(Point[] verts) {
@@ -117,5 +93,4 @@ public class Triangle extends Polygon {
 	props.put(PROP_VERTICES, vmapper);
 	checkValid();
     }
-
 }

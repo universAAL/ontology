@@ -17,18 +17,12 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-/**
- * 
- */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.util.Constants;
 import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.Restriction;
-
 import org.universAAL.ontology.shape.Box;
 import org.universAAL.ontology.shape.Shape;
 
@@ -57,49 +51,6 @@ public class PhysicalThing extends ManagedIndividual {
 	PROP_PART_OF = uAAL_VOCABULARY_NAMESPACE + "partOf";
 	PROP_PHYSICAL_LOCATION = uAAL_VOCABULARY_NAMESPACE + "hasLocation";
 	PROP_HAS_SHAPE = uAAL_VOCABULARY_NAMESPACE + "hasShape";
-	register(PhysicalThing.class);
-    }
-
-    public static Restriction getClassRestrictionsOnProperty(String propURI) {
-	if (PROP_CARRIED_BY.equals(propURI) || PROP_PART_OF.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    MY_URI, 1, 0);
-	if (PROP_IS_IN.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PhysicalContainer.MY_URI, 1, 0);
-	if (PROP_IS_PORTABLE.equals(propURI)
-		|| PROP_IS_STATIONARY.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Boolean.class), 1, 1);
-	if (PROP_PHYSICAL_LOCATION.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Location.MY_URI, 1, 0);
-	if (PROP_HAS_SHAPE.equals(propURI))
-	    return Restriction.getAllValuesRestrictionWithCardinality(propURI,
-		    Shape.MY_URI, 1, 0);
-	return ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
-
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_CARRIED_BY, PROP_IS_IN, PROP_IS_PORTABLE,
-		PROP_IS_STATIONARY, PROP_PART_OF, PROP_PHYSICAL_LOCATION,
-		PROP_HAS_SHAPE };
-    }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "The root class for all physical things in the uAAL ontology. Physical things have a location";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "Physical Thing";
     }
 
     protected PhysicalThing() {
@@ -112,6 +63,10 @@ public class PhysicalThing extends ManagedIndividual {
 
     protected PhysicalThing(String uriPrefix, int numProps) {
 	super(uriPrefix, numProps);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Location getLocation() {

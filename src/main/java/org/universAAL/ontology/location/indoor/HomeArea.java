@@ -34,7 +34,6 @@ public class HomeArea extends IndoorPlace {
 
     static {
 	MY_URI = uAAL_LOCATION_NAMESPACE + "HomeArea";
-	register(HomeArea.class);
     }
 
     /**
@@ -73,20 +72,8 @@ public class HomeArea extends IndoorPlace {
     public HomeArea(String uri, Shape shape) {
 	super(uri, shape);
     }
-
-    /**
-     * Returns a human readable description on the essence of this ontology
-     * class.
-     */
-    public static String getRDFSComment() {
-	return "A indoor place.";
-    }
-
-    /**
-     * Returns a label with which this ontology class can be introduced to human
-     * users.
-     */
-    public static String getRDFSLabel() {
-	return "HomeArea";
+   
+    public String getClassURI() {
+	return MY_URI;
     }
 }
