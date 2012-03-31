@@ -31,16 +31,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.middleware</groupId>
-				<artifactId>mw.bus.context</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.middleware</groupId>
 				<artifactId>mw.bus.ui</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.middleware</groupId>
-				<artifactId>mw.bus.service</artifactId>
 			</dependency>
 			<dependency>
            		<groupId>org.universAAL.ontology</groupId>
@@ -49,10 +40,6 @@
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.profile</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
 			</dependency>
     	</dependencies>
   	  <build>
