@@ -42,7 +42,12 @@ public class Answer extends ManagedIndividual {
     + "isAssociatedToAQuestion";
 
 
- //CONSTRUCTORS
+  public static final int CORRECT_ANSWER = 0;
+  public static final int INCORRECT_ANSWER = 1;
+  public static final int NO_CORRECT_ANSWER = 2;
+ 
+  
+  //CONSTRUCTORS
   public Answer () {
     super();
   }
@@ -156,6 +161,7 @@ public Object[] getAnswerContent() {
    * @return null if the question is has not correct-answer associated
    */
   
+  /*
   public Boolean isCorrectAnswer(){
 	  
 	  Question associatedQuestion = getAssociatedQuestion();
@@ -173,5 +179,26 @@ public Object[] getAnswerContent() {
 	  		&& correctAnswersSet.containsAll(answerContentSet);
 		  return condition;
   }
+	*/
+  
+public int isCorrectAnswer(){
+	  
+	  Question associatedQuestion = getAssociatedQuestion();
+	  
+	  if(!associatedQuestion.isHasCorrectAnswer()) //if the question has no correct answer
+		  return NO_CORRECT_ANSWER;
+	
+		  Object[] correctAnswers = associatedQuestion.getCorrectAnswers();
+		  Object[] answerContent = getAnswerContent();
+		  Set <Object> correctAnswersSet = new HashSet <Object> (Arrays.asList(correctAnswers));
+		  Set <Object> answerContentSet = new HashSet <Object> (Arrays.asList(answerContent));
 		  
+		 
+		 boolean condition = answerContentSet.containsAll(correctAnswersSet)
+	  		&& correctAnswersSet.containsAll(answerContentSet);
+		 if (condition==true)
+			 return CORRECT_ANSWER;
+		 else 
+			 return INCORRECT_ANSWER;
+  }
 }
