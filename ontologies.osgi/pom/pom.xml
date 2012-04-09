@@ -155,4 +155,19 @@
 	  <module>../ont.window.osgi</module>
 	</modules>
 
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.universAAL.support</groupId>
+	      <artifactId>uaal-maven-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.codehaus.mojo</groupId>
+	      <artifactId>build-helper-maven-plugin</artifactId>
+	      <configuration>
+		<skipAttach>false</skipAttach>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	</build>
 </project>

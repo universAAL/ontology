@@ -37,9 +37,12 @@ bundle
   </scm>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.device.extra.core</artifactId>
-      <version>1.1.2-SNAPSHOT</version>
+      <groupId>
+org.universAAL.support
+</groupId>
+      <artifactId>
+itests
+</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
