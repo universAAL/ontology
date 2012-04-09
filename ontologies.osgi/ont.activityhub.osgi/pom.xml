@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>
+ont.pom.osgi
+</artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <relativePath>
+../pom
+</relativePath>
+  </parent>
+  <packaging>
+bundle
+</packaging>
+  <artifactId>ont.activityhub.osgi</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+  <name>Ontology for ISO 11073-10471 Sensors (OSGi)</name>
+  <description>The ontology represents the sensors specified in ISO 11073 - Part 10471 (Indepentend living activity hub) (OSGi)</description>
+  <url/>
+  <developers>
+    <developer>
+      <id>foex</id>
+      <email>thomas.fuxreiter@ait.ac.at</email>
+      <name>Thomas Fuxreiter</name>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.activityhub.core</artifactId>
+      <version>1.1.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Activator>org.universAAL.ontology.activityhub.osgi.Activator</Bundle-Activator>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.activityhub,org.universAAL.ontology.activityhub.ext</Export-Package>
+            <Private-Package>org.universAAL.ontology,org.universAAL.ontology.activityhub.osgi</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

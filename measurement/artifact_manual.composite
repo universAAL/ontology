@@ -1,2 +1,0 @@
-scan-composite:mvn:org.universAAL.middleware/mw.bus.context/1.0.0/composite
-scan-bundle:mvn:org.universAAL.ontology/ont.measurement/1.0.1-SNAPSHOT

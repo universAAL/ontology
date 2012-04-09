@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>
+      ont.pom.core
+    </artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <relativePath>
+      ../pom
+    </relativePath>
+  </parent>
+  <packaging>
+jar
+</packaging>
+  <artifactId>ont.activityhub.core</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+  <name>Ontology for ISO 11073-10471 Sensors (Core)</name>
+  <description>The ontology represents the sensors specified in ISO 11073 - Part 10471 (Indepentend living activity hub) (Core)</description>
+  <url/>
+  <developers>
+    <developer>
+      <id>foex</id>
+      <email>thomas.fuxreiter@ait.ac.at</email>
+      <name>Thomas Fuxreiter</name>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <!--<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.service</artifactId>
+			<version>0.3.2-SNAPSHOT</version>
+		</dependency> -->
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.phWorld.core</artifactId>
+    </dependency>
+    <!--<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.container.xfaces</artifactId>
+			<version>0.1.0-SNAPSHOT</version>
+		</dependency> -->
+    <!--<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.container.osgi</artifactId>
+			<version>0.1.0-SNAPSHOT</version>
+		</dependency> -->
+  </dependencies>
+  <build>
+    <plugins>
+			
+		</plugins>
+  </build>
+</project>
