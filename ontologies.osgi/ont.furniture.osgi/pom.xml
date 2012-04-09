@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>
+ont.pom.osgi
+</artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <relativePath>
+../pom
+</relativePath>
+  </parent>
+  <artifactId>ont.furniture.osgi</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+  <packaging>
+bundle
+</packaging>
+  <name>The Furniture Ontology (OSGi)</name>
+  <description>An ontology for describing furnitures in a home envinment. (OSGi)</description>
+  <scm>
+    <connection>${svn.base}/furniture.osgi</connection>
+    <developerConnection>${svn.base}/furniture.osgi</developerConnection>
+    <url>${svn.base.url}.osgi</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.furniture.core</artifactId>
+      <version>1.1.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Activator>org.universAAL.ontology.furniture.osgi.Activator</Bundle-Activator>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.furniture</Export-Package>
+            <Private-Package>org.universAAL.ontology,org.universAAL.ontology.furniture.osgi</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
