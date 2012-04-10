@@ -1,0 +1,5 @@
+scan-bundle:wrap:mvn:java3d/j3d-core/1.3.1
+scan-bundle:wrap:mvn:java3d/vecmath/1.3.1
+scan-bundle:wrap:mvn:jp.go.ipa/jgcl/1.0
+scan-composite:mvn:org.universAAL.middleware/mw.bus.service.osgi/1.1.2-SNAPHSOT/composite
+scan-bundle:mvn:org.universAAL.ontology/ont.phWorld.osgi/1.1.2-SNAPHSOT

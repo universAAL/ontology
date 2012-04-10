@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>
+      ont.pom.core
+    </artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <relativePath>
+      ../pom
+    </relativePath>
+  </parent>
+  <artifactId>ont.profile.health.core</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+  <packaging>
+jar
+</packaging>
+  <name>The Health Profiling Ontology (Core)</name>
+  <organization>
+    <name>SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING</name>
+    <url>http://www.spirit-intl.com/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>${svn.base}/profile.health.core</connection>
+    <developerConnection>${svn.base}/profile.health.core</developerConnection>
+    <url>${svn.base.url}.core</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.phWorld.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.ui.core</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      
+    </plugins>
+  </build>
+</project>

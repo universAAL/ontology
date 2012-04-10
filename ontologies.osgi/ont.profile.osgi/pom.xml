@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>
+ont.pom.osgi
+</artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <relativePath>
+../pom
+</relativePath>
+  </parent>
+  <artifactId>ont.profile.osgi</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+  <packaging>
+bundle
+</packaging>
+  <name>The Profiling Ontology (OSGi)</name>
+  <organization>
+    <name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)
+	Forschungszentrum Informatik FZI
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research</name>
+    <url>http://www.itaca.upv.es/
+	http://www.fzi.de
+	http://www.igd.fraunhofer.de/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>${svn.base}/user.profile.osgi</connection>
+    <developerConnection>${svn.base}/user.profile.osgi</developerConnection>
+    <url>${svn.base.url}.osgi</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.core</artifactId>
+      <version>1.1.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>
+org.universAAL.support
+</groupId>
+      <artifactId>
+itests
+</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Activator>org.universAAL.ontology.profile.osgi.Activator</Bundle-Activator>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.profile,org.universAAL.ontology.profile.service</Export-Package>
+            <Private-Package>org.universAAL.ontology,org.universAAL.ontology.profile.osgi</Private-Package>
+          </instructions>
+        </configuration>
+        <extensions>
+      true
+    </extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

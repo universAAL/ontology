@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>
+ont.pom.osgi
+</artifactId>
+    <version>1.1.2-SNAPSHOT</version>
+    <relativePath>
+../pom
+</relativePath>
+  </parent>
+  <artifactId>ont.profile.uipreferences.osgi</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+  <packaging>
+bundle
+</packaging>
+  <name>User Interaction Preferences Profile (OSGi)</name>
+  <description>User preferences related to user interaction (OSGi)</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.uipreferences.core</artifactId>
+      <version>1.1.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Activator>org.universAAL.ontology.profile.uipreferences.osgi.Activator</Bundle-Activator>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universaal.ontology.profile.uipreferences.uipreferencesprofile.owl.*</Export-Package>
+            <Private-Package>org.universaal.ontology.profile.uipreferences.uipreferencesprofile.*,org.universAAL.ontology.profile.uipreferences.osgi</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
