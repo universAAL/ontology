@@ -37,6 +37,11 @@ bundle
   </scm>
   <dependencies>
     <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.device.extra.core</artifactId>
+      <version>1.1.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>
 org.universAAL.support
 </groupId>
