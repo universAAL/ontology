@@ -1,0 +1,2 @@
+scan-composite:mvn:org.universAAL.ontology/ont.phWorld.osgi/1.1.2-SNAPHSOT/composite
+scan-bundle:mvn:org.universAAL.ontology/ont.weather.osgi/1.1.2-SNAPHSOT

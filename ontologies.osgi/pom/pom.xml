@@ -155,4 +155,34 @@
 	  <module>../ont.window.osgi</module>
 	</modules>
 
+	<!-- temporarily skip tests-->
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-surefire-plugin</artifactId>
+	      <configuration>
+		<skipTests>true</skipTests>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	</build>
+
+<!--
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.universAAL.support</groupId>
+	      <artifactId>uaal-maven-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.codehaus.mojo</groupId>
+	      <artifactId>build-helper-maven-plugin</artifactId>
+	      <configuration>
+		<skipAttach>false</skipAttach>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	</build>
+-->
 </project>
