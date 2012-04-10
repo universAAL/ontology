@@ -1504,6 +1504,11 @@ ontologies.osgi/ont.av.osgi/src/target
 ontologies.osgi/ont.av.osgi/src/uAAL.log
 ontologies.osgi/ont.av.osgi/target
 ontologies.osgi/ont.av.osgi/uAAL.log
+ontologies.osgi/ont.che/.classpath
+ontologies.osgi/ont.che/.project
+ontologies.osgi/ont.che/.settings
+ontologies.osgi/ont.che/artifact_manual.composite
+ontologies.osgi/ont.che/target
 ontologies.osgi/ont.device.extra.osgi/.classpath
 ontologies.osgi/ont.device.extra.osgi/.project
 ontologies.osgi/ont.device.extra.osgi/.settings
