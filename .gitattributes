@@ -55,6 +55,14 @@ ontologies.core/ont.av.core/src/main/java/org/universAAL/ontology/av/streaming/S
 ontologies.core/ont.av.core/src/main/java/org/universAAL/ontology/av/streaming/VideoCompression.java -text
 ontologies.core/ont.av.core/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
 ontologies.core/ont.av.core/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
+ontologies.core/ont.che.core/LICENSE-CPL-JUnit.txt -text
+ontologies.core/ont.che.core/LICENSE.txt -text
+ontologies.core/ont.che.core/NOTICE.txt -text
+ontologies.core/ont.che.core/pom.xml -text
+ontologies.core/ont.che.core/src/main/java/org/universAAL/context/che/ontology/ContextEvent.java -text
+ontologies.core/ont.che.core/src/main/java/org/universAAL/context/che/ontology/ContextHistoryFactory.java -text
+ontologies.core/ont.che.core/src/main/java/org/universAAL/context/che/ontology/ContextHistoryOntology.java -text
+ontologies.core/ont.che.core/src/main/java/org/universAAL/context/che/ontology/ContextHistoryService.java -text
 ontologies.core/ont.device.extra.core/LICENSE.txt -text
 ontologies.core/ont.device.extra.core/NOTICE.txt -text
 ontologies.core/ont.device.extra.core/pom.xml -text
@@ -295,6 +303,11 @@ ontologies.osgi/ont.av.osgi/LICENSE.txt -text
 ontologies.osgi/ont.av.osgi/NOTICE.txt -text
 ontologies.osgi/ont.av.osgi/pom.xml -text
 ontologies.osgi/ont.av.osgi/src/main/java/org/universAAL/ontology/av/osgi/Activator.java -text
+ontologies.osgi/ont.che.osgi/LICENSE-CPL-JUnit.txt -text
+ontologies.osgi/ont.che.osgi/LICENSE.txt -text
+ontologies.osgi/ont.che.osgi/NOTICE.txt -text
+ontologies.osgi/ont.che.osgi/pom.xml -text
+ontologies.osgi/ont.che.osgi/src/main/java/org/universAAL/ontology/Activator.java -text
 ontologies.osgi/ont.device.extra.osgi/LICENSE.txt -text
 ontologies.osgi/ont.device.extra.osgi/NOTICE.txt -text
 ontologies.osgi/ont.device.extra.osgi/pom.xml -text

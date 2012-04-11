@@ -144,6 +144,10 @@ ontologies.core/ont.av.core/src/test/uAAL.log
 ontologies.core/ont.av.core/src/uAAL.log
 ontologies.core/ont.av.core/target
 ontologies.core/ont.av.core/uAAL.log
+ontologies.core/ont.che.core/.classpath
+ontologies.core/ont.che.core/.project
+ontologies.core/ont.che.core/.settings
+ontologies.core/ont.che.core/target
 ontologies.core/ont.device.extra.core/.classpath
 ontologies.core/ont.device.extra.core/.project
 ontologies.core/ont.device.extra.core/.settings
@@ -1504,6 +1508,10 @@ ontologies.osgi/ont.av.osgi/src/target
 ontologies.osgi/ont.av.osgi/src/uAAL.log
 ontologies.osgi/ont.av.osgi/target
 ontologies.osgi/ont.av.osgi/uAAL.log
+ontologies.osgi/ont.che.osgi/.classpath
+ontologies.osgi/ont.che.osgi/.project
+ontologies.osgi/ont.che.osgi/.settings
+ontologies.osgi/ont.che.osgi/target
 ontologies.osgi/ont.device.extra.osgi/.classpath
 ontologies.osgi/ont.device.extra.osgi/.project
 ontologies.osgi/ont.device.extra.osgi/.settings
