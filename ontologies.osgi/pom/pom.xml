@@ -155,9 +155,11 @@
 	  <module>../ont.window.osgi</module>
 	</modules>
 
-	<!-- temporarily skip tests-->
+
 	<build>
 	  <plugins>
+	    
+	    <!-- temporarily skip tests-->
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-surefire-plugin</artifactId>
@@ -165,12 +167,7 @@
 		<skipTests>true</skipTests>
 	      </configuration>
 	    </plugin>
-	  </plugins>
-	</build>
 
-<!--
-	<build>
-	  <plugins>
 	    <plugin>
 	      <groupId>org.universAAL.support</groupId>
 	      <artifactId>uaal-maven-plugin</artifactId>
@@ -184,5 +181,5 @@
 	    </plugin>
 	  </plugins>
 	</build>
--->
+
 </project>
