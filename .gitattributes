@@ -297,7 +297,6 @@ ontologies.osgi/ont.av.osgi/pom.xml -text
 ontologies.osgi/ont.av.osgi/src/main/java/org/universAAL/ontology/av/osgi/Activator.java -text
 ontologies.osgi/ont.device.extra.osgi/LICENSE.txt -text
 ontologies.osgi/ont.device.extra.osgi/NOTICE.txt -text
-ontologies.osgi/ont.device.extra.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.device.extra.osgi/pom.xml -text
 ontologies.osgi/ont.device.extra.osgi/src/main/java/org/universAAL/ontology/device/extra/osgi/Activator.java -text
 ontologies.osgi/ont.device.extra.osgi/src/test/java/org/universAAL/ontology/device/home/test/ArtifactIntegrationTest.java -text
@@ -312,7 +311,6 @@ ontologies.osgi/ont.hazard.osgi/pom.xml -text
 ontologies.osgi/ont.hazard.osgi/src/main/java/org/universAAL/ontology/hazard/osgi/Activator.java -text
 ontologies.osgi/ont.impairment.osgi/LICENSE.txt -text
 ontologies.osgi/ont.impairment.osgi/NOTICE.txt -text
-ontologies.osgi/ont.impairment.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.impairment.osgi/pom.xml -text
 ontologies.osgi/ont.impairment.osgi/src/main/java/org/universAAL/ontology/impairment/osgi/Activator.java -text
 ontologies.osgi/ont.impairment.osgi/src/test/java/org/universAAL/ontology/impairment/ArtifactIntegrationTest.java -text
@@ -323,7 +321,6 @@ ontologies.osgi/ont.lighting.osgi/pom.xml -text
 ontologies.osgi/ont.lighting.osgi/src/main/java/org/universAAL/ontology/lighting/osgi/Activator.java -text
 ontologies.osgi/ont.measurement.osgi/LICENSE.txt -text
 ontologies.osgi/ont.measurement.osgi/NOTICE.txt -text
-ontologies.osgi/ont.measurement.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.measurement.osgi/pom.xml -text
 ontologies.osgi/ont.measurement.osgi/src/main/java/org/universAAL/ontology/measurement/osgi/Activator.java -text
 ontologies.osgi/ont.measurement.osgi/src/test/java/org/universAAL/ontology/measurement/ArtifactIntegrationTest.java -text
@@ -336,8 +333,6 @@ ontologies.osgi/ont.multimedia.osgi/pom.xml -text
 ontologies.osgi/ont.multimedia.osgi/src/main/java/org/universAAL/ontology/multimedia/osgi/Activator.java -text
 ontologies.osgi/ont.phWorld.osgi/LICENSE.txt -text
 ontologies.osgi/ont.phWorld.osgi/NOTICE.txt -text
-ontologies.osgi/ont.phWorld.osgi/artifact-0.2.3.composite -text
-ontologies.osgi/ont.phWorld.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.phWorld.osgi/pom.xml -text
 ontologies.osgi/ont.phWorld.osgi/src/main/java/org/universAAL/ontology/phWorld/osgi/Activator.java -text
 ontologies.osgi/ont.phWorld.osgi/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
@@ -352,14 +347,12 @@ ontologies.osgi/ont.powersocketadapter.osgi/pom.xml -text
 ontologies.osgi/ont.powersocketadapter.osgi/src/main/java/org/universAAL/ontology/powersocketadapter/osgi/Activator.java -text
 ontologies.osgi/ont.profile.health.osgi/LICENSE.txt -text
 ontologies.osgi/ont.profile.health.osgi/NOTICE.txt -text
-ontologies.osgi/ont.profile.health.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.profile.health.osgi/pom.xml -text
 ontologies.osgi/ont.profile.health.osgi/src/main/java/org/universAAL/ontology/profile/health/osgi/Activator.java -text
 ontologies.osgi/ont.profile.health.osgi/src/test/java/org/universAAL/ontology/profile/health/ArtifactIntegrationTest.java -text
 ontologies.osgi/ont.profile.health.osgi/src/test/resources/log4j.properties -text
 ontologies.osgi/ont.profile.osgi/LICENSE.txt -text
 ontologies.osgi/ont.profile.osgi/NOTICE.txt -text
-ontologies.osgi/ont.profile.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.profile.osgi/pom.xml -text
 ontologies.osgi/ont.profile.osgi/src/main/java/org/universAAL/ontology/profile/osgi/Activator.java -text
 ontologies.osgi/ont.profile.osgi/src/test/java/org/universAAL/ontology/profile/ArtifactIntegrationTest.java -text
@@ -369,7 +362,6 @@ ontologies.osgi/ont.profile.uipreferences.osgi/src/main/java/org/universAAL/onto
 ontologies.osgi/ont.profile.userid.osgi/LICENSE.txt -text
 ontologies.osgi/ont.profile.userid.osgi/pom.xml -text
 ontologies.osgi/ont.profile.userid.osgi/src/main/java/org/universAAL/ontology/profile/userid/osgi/Activator.java -text svneol=unset#application/octet-stream
-ontologies.osgi/ont.risk.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.risk.osgi/pom.xml -text
 ontologies.osgi/ont.risk.osgi/src/main/java/org/universAAL/ontology/risk/osgi/Activator.java -text
 ontologies.osgi/ont.risk.osgi/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
@@ -378,7 +370,6 @@ ontologies.osgi/ont.water.osgi/pom.xml -text
 ontologies.osgi/ont.water.osgi/src/main/java/org/universAAL/ontology/water/osgi/Activator.java -text
 ontologies.osgi/ont.weather.osgi/LICENSE.txt -text
 ontologies.osgi/ont.weather.osgi/NOTICE.txt -text
-ontologies.osgi/ont.weather.osgi/artifact_manual.composite -text
 ontologies.osgi/ont.weather.osgi/pom.xml -text
 ontologies.osgi/ont.weather.osgi/src/main/java/org/universAAL/ontology/weather/osgi/Activator.java -text
 ontologies.osgi/ont.weather.osgi/src/test/java/org/universAAL/ontology/weather/test/ArtifactIntegrationTest.java -text
