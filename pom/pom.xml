@@ -149,6 +149,11 @@
 		    <artifactId>ont.window.core</artifactId>
 		    <version>1.1.2-SNAPSHOT</version>
 		  </dependency>
+		  <dependency>
+		    <groupId>org.universAAL.ontology</groupId>
+		    <artifactId>ont.che.core</artifactId>
+		    <version>1.1.2-SNAPSHOT</version>
+		  </dependency>
 		  
 		  
 		  <!-- 			use the following to add all ontologies -->

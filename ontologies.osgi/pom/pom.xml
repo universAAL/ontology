@@ -120,6 +120,11 @@
 	      <artifactId>ont.window.osgi</artifactId>
 	      <version>1.1.2-SNAPSHOT</version>
 	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.che.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
 	    
 	    
 	    <!-- 			use the following to add all ontologies -->
@@ -153,6 +158,7 @@
 	  <module>../ont.water.osgi</module>
 	  <module>../ont.weather.osgi</module>
 	  <module>../ont.window.osgi</module>
+	  <module>../ont.che.osgi</module>
 	</modules>
 
 
