@@ -71,6 +71,10 @@ public class HealthProfile extends SubProfile {
 	PROP_S_SOCIAL_CARE_CENTER = PROFILING_NAMESPACE + "sSocialCareCenter";
 	PROP_S_TOBACCO = PROFILING_NAMESPACE + "sTobacco";
     }
+    
+    public String getClassURI() {
+	return MY_URI;
+    }
 
     public void setProperty(String propURI, Object o) {
 	if (PROP_HAS_MEDICINE.equals(propURI) && o instanceof Medicine)

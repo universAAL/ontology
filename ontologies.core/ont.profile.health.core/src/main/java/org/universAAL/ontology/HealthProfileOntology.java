@@ -44,7 +44,7 @@ public final class HealthProfileOntology extends Ontology {
     private static HealthProfileFactory factory = new HealthProfileFactory();
 
     public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-	    + "Profile.owl#";
+	    + "HealthProfile.owl#";
 
     public static final String PROP_HEALTH_PROFILE = AssistedPersonProfile.PROP_HAS_SUB_PROFILE
 	    + "Health";
