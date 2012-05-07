@@ -24,6 +24,11 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	<scm>
+		<connection>${svn.base}/ont.che.osgi</connection>
+		<developerConnection>${svn.base}/ont.che.osgi</developerConnection>
+		<url>${svn.base.url}.osgi</url>
+	</scm>
 	<packaging>bundle</packaging>
 	<dependencies>
 		<dependency>
