@@ -85,8 +85,6 @@ public class MailBox extends Address {
      * @see org.universAAL.ontology.location.address.Address#toReadableString()
      */
     public String toReadableString() {
-	String parent = super.toReadableString();
-	return parent + (parent.isEmpty() ? "\n" : "")
-		+ this.getPostOfficeBox();
+	return super.toReadableString() + this.getPostOfficeBox();
     }
 }
