@@ -3,16 +3,16 @@
 	Instituto Tecnologico de Aplicaciones de Comunicacion 
 	Avanzadas - Grupo Tecnologias para la Salud y el 
 	Bienestar (TSB) 
-	
+
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,6 +23,7 @@ package org.universAAL.ontology.risk;
 
 import org.universAAL.ontology.RiskOntology;
 import org.universAAL.ontology.phThing.Sensor;
+import org.universAAL.ontology.profile.AssistedPerson;
 import org.universAAL.ontology.profile.User;
 
 /**
@@ -35,42 +36,42 @@ import org.universAAL.ontology.profile.User;
  * 
  */
 public class FallDetector extends Sensor {
-    public static final String MY_URI=RiskOntology.NAMESPACE + "FallDetector";
-    public static final String PROP_WORN_BY=RiskOntology.NAMESPACE + "wornBy";
+	public static final String MY_URI=RiskOntology.NAMESPACE + "FallDetector";
+	public static final String PROP_WORN_BY=RiskOntology.NAMESPACE + "wornBy";
 
-    public FallDetector() {
-    }
+	public FallDetector() {
+	}
 
-    public FallDetector(String uri) {
-	super(uri);
-    }
-    
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public FallDetector(String uri) {
+		super(uri);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public User getWornBy() {
-	return (User) props.get(PROP_WORN_BY);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public void setWorndBy(User value) {
-	props.put(PROP_WORN_BY, value);
-    }
+	public AssistedPerson getWornBy() {
+		return (AssistedPerson) props.get(PROP_WORN_BY);
+	}
 
-    public boolean getMeasuredvalue() {
-	return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
-    }
+	public void setWorndBy(User value) {
+		props.put(PROP_WORN_BY, value);
+	}
 
-    public void setMeasuredValue(boolean value) {
-	props.put(PROP_MEASURED_VALUE, new Boolean(value));
-    }
+	public boolean getMeasuredvalue() {
+		return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
+	}
+
+	public void setMeasuredValue(boolean value) {
+		props.put(PROP_MEASURED_VALUE, new Boolean(value));
+	}
 
 }
