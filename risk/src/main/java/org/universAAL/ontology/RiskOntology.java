@@ -7,7 +7,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.Sensor;
-import org.universAAL.ontology.profile.User;
+import org.universAAL.ontology.profile.AssistedPerson;
 import org.universAAL.ontology.risk.FallDetector;
 import org.universAAL.ontology.risk.PanicButton;
 
@@ -44,7 +44,7 @@ public class RiskOntology extends Ontology {
 	oci.addObjectProperty(FallDetector.PROP_WORN_BY).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			FallDetector.PROP_WORN_BY, User.MY_URI, 0, 1));
+			FallDetector.PROP_WORN_BY, AssistedPerson.MY_URI, 0, 1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Sensor.PROP_MEASURED_VALUE,
@@ -59,7 +59,7 @@ public class RiskOntology extends Ontology {
 	oci.addObjectProperty(PanicButton.PROP_PRESSED_BY).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			PanicButton.PROP_PRESSED_BY, User.MY_URI, 0, 1));
+			PanicButton.PROP_PRESSED_BY, AssistedPerson.MY_URI, 0, 1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PanicButton.PROP_ACTIVATED,
