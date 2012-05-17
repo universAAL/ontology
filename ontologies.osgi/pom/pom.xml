@@ -161,6 +161,11 @@
 	  <module>../ont.che.osgi</module>
 	</modules>
 
+	<scm>
+		<connection>${svn.base}/ontologies.osgi/${project.artifactId}</connection>
+		<developerConnection>${svn.base}/ontologies.osgi/${project.artifactId}</developerConnection>
+		<url>${svn.base.url}</url>
+	</scm>
 
 	<build>
 	  <plugins>
