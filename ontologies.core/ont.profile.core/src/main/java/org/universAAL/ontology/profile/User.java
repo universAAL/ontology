@@ -42,6 +42,13 @@ public class User extends PhysicalThing {
 
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE + "User";
+    
+    /**
+     * Because there is no multiple inhertiance in Java, we copy this property
+     * from Profilable (although the methods here still use
+     * Profilable.PROP_HAS_PROFILE).
+     */
+    public static final String PROP_HAS_PROFILE = Profilable.PROP_HAS_PROFILE;
 
     protected User() {
 	super();
@@ -81,7 +88,7 @@ public class User extends PhysicalThing {
      * 
      * @return The Profile of the User
      */
-    public UserProfile getProfile() {
+    public UserProfile getUserProfile() {
 	return (UserProfile) getProperty(Profilable.PROP_HAS_PROFILE);
     }
 }
