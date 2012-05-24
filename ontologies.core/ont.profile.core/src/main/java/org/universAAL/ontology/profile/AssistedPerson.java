@@ -27,7 +27,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.ontology.ProfileOntology;
-import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
  * Ontology class representing an Assisted Person
@@ -36,11 +35,18 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * @author Alvaro Fides
  */
 
-public class AssistedPerson extends PhysicalThing {
+public class AssistedPerson extends User {
 
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE
 	    + "AssistedPerson";
+    
+    /**
+     * Because there is no multiple inhertiance in Java, we copy this property
+     * from Profilable (although the methods here still use
+     * Profilable.PROP_HAS_PROFILE).
+     */
+    public static final String PROP_HAS_PROFILE = Profilable.PROP_HAS_PROFILE;
 
     protected AssistedPerson() {
 	super();
@@ -80,7 +86,7 @@ public class AssistedPerson extends PhysicalThing {
      * 
      * @return The Profile of the Assisted Person
      */
-    public AssistedPersonProfile getProfile() {
+    public AssistedPersonProfile getAPProfile() {
 	return (AssistedPersonProfile) getProperty(Profilable.PROP_HAS_PROFILE);
     }
 
