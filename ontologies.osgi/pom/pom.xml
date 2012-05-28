@@ -16,6 +16,10 @@
 
 	<packaging>pom</packaging>
 	<name>universAAL Ontologies Suite (OSGi)</name>
+    
+	<properties>
+		<separatedGroupIds>org.universAAL.middleware, org.universAAL.ontology</separatedGroupIds>
+	</properties>
 
 	<dependencyManagement>
 	  <dependencies>
@@ -182,6 +186,7 @@
 	    <plugin>
 	      <groupId>org.universAAL.support</groupId>
 	      <artifactId>uaal-maven-plugin</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
 	    </plugin>
 	    <plugin>
 	      <groupId>org.codehaus.mojo</groupId>
