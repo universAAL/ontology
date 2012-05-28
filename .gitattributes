@@ -391,5 +391,6 @@ ontologies.osgi/ont.window.osgi/LICENSE.txt -text
 ontologies.osgi/ont.window.osgi/NOTICE.txt -text
 ontologies.osgi/ont.window.osgi/pom.xml -text
 ontologies.osgi/ont.window.osgi/src/main/java/org/universAAL/ontology/window/osgi/Activator.java -text
+ontologies.osgi/pom/composite/pom.xml -text
 ontologies.osgi/pom/pom.xml -text
 pom/pom.xml -text
