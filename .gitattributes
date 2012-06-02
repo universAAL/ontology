@@ -263,6 +263,19 @@ ontologies.core/ont.profile.userid.core/pom.xml -text
 ontologies.core/ont.profile.userid.core/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
 ontologies.core/ont.profile.userid.core/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
 ontologies.core/ont.profile.userid.core/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
+ontologies.core/ont.questionnaire.core/pom.xml -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/QuestionnaireOntologyFactory.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/Answer.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/AnsweredQuestionnaire.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/ChoiceLabel.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/ConditionalQuestion.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/MultiChoiceQuestion.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/Question.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/QuestionWithMedia.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/Questionnaire.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/QuestionnaireOntology.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/QuestionnaireService.java -text
+ontologies.core/ont.questionnaire.core/src/main/java/org/universaal/ontology/owl/SingleChoiceQuestion.java -text
 ontologies.core/ont.risk.core/pom.xml -text
 ontologies.core/ont.risk.core/src/main/java/org/universAAL/ontology/RiskFactory.java -text
 ontologies.core/ont.risk.core/src/main/java/org/universAAL/ontology/RiskOntology.java -text
