@@ -169,6 +169,7 @@
 	  <module>../ont.weather.osgi</module>
 	  <module>../ont.window.osgi</module>
 	  <module>../ont.che.osgi</module>
+	  <module>../ont.questionnaire.osgi</module>
 	</modules>
 
 	<scm>

@@ -50,6 +50,7 @@
 	  <module>../ont.weather.core</module>
 	  <module>../ont.window.core</module>
 	  <module>../ont.che.core</module>
+	  <module>../ont.questionnaire.core</module>
 	</modules>
 
 	<scm>
