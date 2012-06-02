@@ -388,6 +388,8 @@ ontologies.osgi/ont.profile.uipreferences.osgi/src/main/java/org/universAAL/onto
 ontologies.osgi/ont.profile.userid.osgi/LICENSE.txt -text
 ontologies.osgi/ont.profile.userid.osgi/pom.xml -text
 ontologies.osgi/ont.profile.userid.osgi/src/main/java/org/universAAL/ontology/profile/userid/osgi/Activator.java -text svneol=unset#application/octet-stream
+ontologies.osgi/ont.questionnaire.osgi/pom.xml -text
+ontologies.osgi/ont.questionnaire.osgi/src/main/java/org/universAAL/ontology/questionnaire/osgi/Activator.java -text
 ontologies.osgi/ont.risk.osgi/pom.xml -text
 ontologies.osgi/ont.risk.osgi/src/main/java/org/universAAL/ontology/risk/osgi/Activator.java -text
 ontologies.osgi/ont.risk.osgi/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
