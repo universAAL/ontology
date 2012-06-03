@@ -24,12 +24,6 @@
 	<dependencyManagement>
 	  <dependencies>
 	    <dependency>
-	      <groupId>org.apache.felix</groupId>
-	      <artifactId>org.osgi.core</artifactId>
-	      <version>1.0.1</version>
-	      <scope>provided</scope>
-	    </dependency>
-	    <dependency>
 	      <groupId>org.universAAL.ontology</groupId>
 	      <artifactId>ont.av.osgi</artifactId>
 	      <version>1.1.2-SNAPSHOT</version>
@@ -129,13 +123,13 @@
 	      <artifactId>ont.che.osgi</artifactId>
 	      <version>1.1.2-SNAPSHOT</version>
 	    </dependency>
-	  <dependency>
-        <groupId>org.universAAL.middleware</groupId>
-        <artifactId>mw.pom.osgi</artifactId>
-        <version>1.1.2-SNAPSHOT</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>	    
+	  	<dependency>
+       	  <groupId>org.universAAL.middleware</groupId>
+          <artifactId>mw.pom.osgi</artifactId>
+          <version>1.1.2-SNAPSHOT</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>	    
 	    
 	    <!-- 			use the following to add all ontologies -->
 	    <!-- 			<dependency> -->
@@ -180,27 +174,13 @@
 
 	<build>
 	  <plugins>
-	    
-	    <!-- temporarily skip tests-->
-	    <plugin>
-	      <groupId>org.apache.maven.plugins</groupId>
-	      <artifactId>maven-surefire-plugin</artifactId>
-	      <configuration>
-		<skipTests>true</skipTests>
-	      </configuration>
-	    </plugin>
-
 	    <plugin>
 	      <groupId>org.universAAL.support</groupId>
 	      <artifactId>uaal-maven-plugin</artifactId>
-	      <version>1.1.2-SNAPSHOT</version>
 	    </plugin>
 	    <plugin>
 	      <groupId>org.codehaus.mojo</groupId>
 	      <artifactId>build-helper-maven-plugin</artifactId>
-	      <configuration>
-		<skipAttach>false</skipAttach>
-	      </configuration>
 	    </plugin>
 	  </plugins>
 	</build>

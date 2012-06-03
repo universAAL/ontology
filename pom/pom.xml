@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.universAAL</groupId>
 		<artifactId>uAAL.pom</artifactId>
-		<version>1.1.0</version>
+		<version>1.1.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>org.universAAL.ontology</groupId>
@@ -155,7 +155,6 @@
 		    <version>1.1.2-SNAPSHOT</version>
 		  </dependency>
 		  
-		  
 		  <!-- 			use the following to add all ontologies -->
 		  <!-- 			<dependency> -->
 		  <!-- 				<groupId>org.universAAL.ontology</groupId> -->
@@ -163,52 +162,14 @@
 		  <!-- 				<version>(${release.previous}, ${release.next}]</version> -->
 		  <!-- 			</dependency> -->
 		
-	  <dependency>
-        <groupId>org.universAAL.middleware</groupId>
-        <artifactId>mw.pom</artifactId>
-        <version>1.1.2-SNAPSHOT</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-	
-	<!-- 	
-		<dependency>
-		  <groupId>org.universAAL.middleware</groupId>
-		  <artifactId>mw.data.representation.core</artifactId>
-		  <version>1.1.2-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-		  <groupId>org.universAAL.middleware</groupId>
-		  <artifactId>mw.bus.service.core</artifactId>
-		  <version>1.1.2-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-		  <groupId>org.universAAL.middleware</groupId>
-		  <artifactId>mw.bus.context.core</artifactId>
-		  <version>1.1.2-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-		  <groupId>org.universAAL.middleware</groupId>
-		  <artifactId>mw.bus.ui.core</artifactId>
-		  <version>1.1.2-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-		  <groupId>org.universAAL.middleware</groupId>
-		  <artifactId>mw.container.xfaces.core</artifactId>
-		  <version>1.1.2-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-		  <groupId>org.universAAL.support</groupId>
-		  <artifactId>itests</artifactId>
-		  <version>1.1.2-SNAPSHOT</version>
-		  <scope>test</scope>
-		</dependency>
-		 -->
-	      </dependencies>
+		  <dependency>
+	        <groupId>org.universAAL.middleware</groupId>
+	        <artifactId>mw.pom</artifactId>
+	        <version>1.1.2-SNAPSHOT</version>
+	        <type>pom</type>
+	        <scope>import</scope>
+	      </dependency>
+	   </dependencies>
 		
 	</dependencyManagement>
 
