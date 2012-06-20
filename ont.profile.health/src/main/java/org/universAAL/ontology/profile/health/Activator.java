@@ -19,7 +19,6 @@
  */
 package org.universAAL.ontology.profile.health;
 
-import org.osgi.framework.BundleContext;
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
@@ -30,7 +29,6 @@ import org.universAAL.ontology.HealthProfileOntology;
  */
 public class Activator implements uAALModuleActivator {
 
-    static BundleContext context = null;
     HealthProfileOntology ont = new HealthProfileOntology();
 
     public void start(ModuleContext context) throws Exception {
