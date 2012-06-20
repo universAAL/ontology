@@ -19,13 +19,10 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.ontology.*;
-
-import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.container.ModuleContext;
+import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.shape.ShapeOntology;
 import org.universAAL.ontology.space.SpaceOntology;
 
@@ -37,7 +34,6 @@ public class Activator implements uAALModuleActivator {
     SpaceOntology spaceOntology = new SpaceOntology();
 
     public void start(ModuleContext context) throws Exception {
-	
 	// register all ontologies
 	OntologyManagement om = OntologyManagement.getInstance();
 	om.register(locationOntology);
