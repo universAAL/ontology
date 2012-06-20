@@ -1,6 +1,6 @@
 /*
-	Copyright 2008-20144 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer Gesellschaft - Institut für Graphische Datenverarbeitung 
+	Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -17,37 +17,22 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.ontology.phThing;
+package org.universAAL.ontology.furniture;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.space.SpaceOntology;
+import org.universAAL.ontology.FurnitureOntology;
 
 public class Activator implements uAALModuleActivator {
 
-    LocationOntology locationOntology = new LocationOntology();
-    PhThingOntology phThingOntology = new PhThingOntology();
-    ShapeOntology shapeOntology = new ShapeOntology();
-    SpaceOntology spaceOntology = new SpaceOntology();
+    FurnitureOntology furnitureOntology = new FurnitureOntology();
 
     public void start(ModuleContext context) throws Exception {
-	// register all ontologies
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(locationOntology);
-	om.register(shapeOntology);
-	om.register(phThingOntology);
-	om.register(spaceOntology);
+	OntologyManagement.getInstance().register(furnitureOntology);
     }
 
     public void stop(ModuleContext arg0) throws Exception {
-	// unregister all ontologies
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(locationOntology);
-	om.unregister(spaceOntology);
-	om.unregister(phThingOntology);
-	om.unregister(shapeOntology);
+	OntologyManagement.getInstance().unregister(furnitureOntology);
     }
 }

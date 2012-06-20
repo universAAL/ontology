@@ -41,6 +41,7 @@ ont.av/NOTICE.txt -text
 ont.av/pom.xml -text
 ont.av/src/main/java/org/universAAL/ontology/AVFactory.java -text
 ont.av/src/main/java/org/universAAL/ontology/AVOntology.java -text
+ont.av/src/main/java/org/universAAL/ontology/av/Activator.java -text
 ont.av/src/main/java/org/universAAL/ontology/av/device/LoudSpeaker.java -text
 ont.av/src/main/java/org/universAAL/ontology/av/device/Microphone.java -text
 ont.av/src/main/java/org/universAAL/ontology/av/device/VideoCamera.java -text
@@ -64,6 +65,7 @@ ont.che/LICENSE-CPL-JUnit.txt -text
 ont.che/LICENSE.txt -text
 ont.che/NOTICE.txt -text
 ont.che/pom.xml -text
+ont.che/src/main/java/org/universAAL/context/che/Activator.java -text
 ont.che/src/main/java/org/universAAL/context/che/ontology/ContextEvent.java -text
 ont.che/src/main/java/org/universAAL/context/che/ontology/ContextHistoryFactory.java -text
 ont.che/src/main/java/org/universAAL/context/che/ontology/ContextHistoryOntology.java -text
@@ -75,6 +77,7 @@ ont.device.extra/NOTICE.txt -text
 ont.device.extra/pom.xml -text
 ont.device.extra/src/main/java/org/universAAL/ontology/DeviceFactory.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/DeviceOntology.java -text
+ont.device.extra/src/main/java/org/universAAL/ontology/device/extra/Activator.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/CarpetSensor.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/ContactSensor.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Oven.java -text
@@ -88,11 +91,13 @@ ont.furniture/NOTICE.txt -text
 ont.furniture/pom.xml -text
 ont.furniture/src/main/java/org/universAAL/ontology/FurnitureFactory.java -text
 ont.furniture/src/main/java/org/universAAL/ontology/FurnitureOntology.java -text
+ont.furniture/src/main/java/org/universAAL/ontology/furniture/Activator.java -text
 ont.furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
 ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 ont.furniture/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.furniture/src/test/resources/log4j.properties -text
 ont.gesture.pointing/pom.xml -text
+ont.gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/Activator.java -text
 ont.gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
 ont.gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
 ont.gesture.pointing/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
@@ -100,6 +105,7 @@ ont.gesture.pointing/src/test/resources/log4j.properties -text
 ont.hazard/pom.xml -text
 ont.hazard/src/main/java/org/universAAL/ontology/HazardFactory.java -text
 ont.hazard/src/main/java/org/universAAL/ontology/HazardOntology.java -text
+ont.hazard/src/main/java/org/universAAL/ontology/hazard/Activator.java -text
 ont.hazard/src/main/java/org/universAAL/ontology/hazard/FireDetector.java -text
 ont.hazard/src/main/java/org/universAAL/ontology/hazard/GasDetector.java -text
 ont.hazard/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
@@ -109,6 +115,7 @@ ont.impairment/NOTICE.txt -text
 ont.impairment/pom.xml -text
 ont.impairment/src/main/java/org/universAAL/ontology/ImpairmentFactory.java -text
 ont.impairment/src/main/java/org/universAAL/ontology/ImpairmentOntology.java -text
+ont.impairment/src/main/java/org/universAAL/ontology/impairment/Activator.java -text
 ont.impairment/src/main/java/org/universAAL/ontology/impairment/Astigmatism.java -text
 ont.impairment/src/main/java/org/universAAL/ontology/impairment/ColorBlindness.java -text
 ont.impairment/src/main/java/org/universAAL/ontology/impairment/FarSightedness.java -text
@@ -125,6 +132,7 @@ ont.lighting/NOTICE.txt -text
 ont.lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 ont.lighting/pom.xml -text
 ont.lighting/src/main/java/org/universAAL/ontology/LightingFactory.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/Activator.java -text
 ont.lighting/src/main/java/org/universAAL/ontology/lighting/Beaming.java -text
 ont.lighting/src/main/java/org/universAAL/ontology/lighting/BeamingSource.java -text
 ont.lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeaming.java -text
@@ -143,6 +151,7 @@ ont.lighting/src/test/resources/log4j.properties -text
 ont.measurement/LICENSE.txt -text
 ont.measurement/NOTICE.txt -text
 ont.measurement/pom.xml -text
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/Activator.java -text
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
 ont.measurement/src/main/resources/Measurement.jpg -text
@@ -153,6 +162,7 @@ ont.medication/NOTICE.txt -text
 ont.medication/pom.xml -text
 ont.medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
 ont.medication/src/main/java/org/universAAL/ontology/MedicationOntology.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/Activator.java -text
 ont.medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
 ont.medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
 ont.medication/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
@@ -160,6 +170,7 @@ ont.medication/src/test/resources/log4j.properties -text
 ont.multimedia/pom.xml -text
 ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
 ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaOntology.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/Activator.java -text
 ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 ont.multimedia/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
@@ -242,6 +253,7 @@ ont.powersocket/NOTICE.txt -text
 ont.powersocket/pom.xml -text
 ont.powersocket/src/main/java/org/universAAL/ontology/PowersocketFactory.java -text
 ont.powersocket/src/main/java/org/universAAL/ontology/PowersocketOntology.java -text
+ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/Activator.java -text
 ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/DimmableSocket.java -text
 ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/Powersocket.java -text
 ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/PowersocketController.java -text
@@ -259,12 +271,14 @@ ont.profile.health/NOTICE.txt -text
 ont.profile.health/pom.xml -text
 ont.profile.health/src/main/java/org/universAAL/ontology/HealthProfileFactory.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/HealthProfileOntology.java -text
+ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Activator.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/HealthProfile.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Illness.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 ont.profile.health/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.health/src/test/resources/log4j.properties -text
 ont.profile.uipreferences/pom.xml -text
+ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
 ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
 ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
 ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
@@ -272,6 +286,7 @@ ont.profile.uipreferences/src/test/java/org/universAAL/ontology/test/ArtifactInt
 ont.profile.uipreferences/src/test/resources/log4j.properties -text
 ont.profile.userid/LICENSE.txt -text
 ont.profile.userid/pom.xml -text
+ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text
 ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text
 ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text
 ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text
@@ -315,11 +330,13 @@ ont.questionnaire/src/main/java/org/universaal/ontology/owl/Questionnaire.java -
 ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireOntology.java -text
 ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireService.java -text
 ont.questionnaire/src/main/java/org/universaal/ontology/owl/SingleChoiceQuestion.java -text
+ont.questionnaire/src/main/java/org/universaal/ontology/questionnaire/Activator.java -text
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.questionnaire/src/test/resources/log4j.properties -text
 ont.risk/pom.xml -text
 ont.risk/src/main/java/org/universAAL/ontology/RiskFactory.java -text
 ont.risk/src/main/java/org/universAAL/ontology/RiskOntology.java -text
+ont.risk/src/main/java/org/universAAL/ontology/risk/Activator.java -text
 ont.risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
 ont.risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 ont.risk/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
@@ -327,6 +344,7 @@ ont.risk/src/test/resources/log4j.properties -text
 ont.water/pom.xml -text
 ont.water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
 ont.water/src/main/java/org/universAAL/ontology/WaterOntology.java -text
+ont.water/src/main/java/org/universAAL/ontology/water/Activator.java -text
 ont.water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
 ont.water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
 ont.water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
@@ -337,6 +355,7 @@ ont.weather/NOTICE.txt -text
 ont.weather/pom.xml -text
 ont.weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
 ont.weather/src/main/java/org/universAAL/ontology/WeatherOntology.java -text
+ont.weather/src/main/java/org/universAAL/ontology/weather/Activator.java -text
 ont.weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
 ont.weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
 ont.weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
@@ -348,6 +367,7 @@ ont.window/NOTICE.txt -text
 ont.window/pom.xml -text
 ont.window/src/main/java/org/universAAL/ontology/WindowFactory.java -text
 ont.window/src/main/java/org/universAAL/ontology/WindowOntology.java -text
+ont.window/src/main/java/org/universAAL/ontology/window/Activator.java -text
 ont.window/src/main/java/org/universAAL/ontology/window/BlindActuator.java -text
 ont.window/src/main/java/org/universAAL/ontology/window/BlindController.java -text
 ont.window/src/main/java/org/universAAL/ontology/window/CurtainActuator.java -text
