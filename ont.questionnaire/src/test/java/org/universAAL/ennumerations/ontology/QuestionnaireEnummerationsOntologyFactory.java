@@ -14,22 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.questionnaire;
 
-import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
-import org.universAAL.middleware.owl.OntologyManagement;
-import org.universaal.ontology.owl.QuestionnaireOntology;
 
-public class Activator implements uAALModuleActivator {
+package org.universAAL.ennumerations.ontology;
 
-  QuestionnaireOntology ontology = new QuestionnaireOntology();
+import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 
-  public void start(ModuleContext context) throws Exception {
-    OntologyManagement.getInstance().register(ontology);
-  }
+public class QuestionnaireEnummerationsOntologyFactory extends ResourceFactoryImpl{
 
-  public void stop(ModuleContext arg0) throws Exception {
-    OntologyManagement.getInstance().unregister(ontology);
-  }
-}	
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+
+		return null;
+	  }
+	
+}

@@ -333,7 +333,16 @@ ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireOntolog
 ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireService.java -text
 ont.questionnaire/src/main/java/org/universaal/ontology/owl/SingleChoiceQuestion.java -text
 ont.questionnaire/src/main/java/org/universaal/ontology/questionnaire/Activator.java -text
+ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/QuestionnaireEnummerationsOntologyFactory.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/owl/PartsOfDay.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/owl/QuestionnaireEnnumerationsOntology.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireAnswers.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireCompleteness.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireGeneralWorking.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireMultiTrigger.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireNextQuestion.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireQuestions.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/resources/log4j.properties -text
 ont.risk/pom.xml -text
 ont.risk/src/main/java/org/universAAL/ontology/RiskFactory.java -text
