@@ -4,26 +4,30 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.weather.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.weather</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Weather Ontology (Core)</name>
-  <description>The ontology defining the most general concepts dealing with weather. (Core)</description>
+  <name>The Weather Ontology</name>
+  <description>The ontology defining the most general concepts dealing with weather.</description>
   <scm>
-    <connection>${svn.base}/weather.core</connection>
-    <developerConnection>${svn.base}/weather.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/weather</connection>
+    <developerConnection>${svn.base}/weather</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
+      <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
@@ -34,12 +38,27 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.weather</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+        <extensions>
+      true
+    </extensions>
+      </plugin>
     </plugins>
   </build>
 </project>

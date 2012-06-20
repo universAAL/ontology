@@ -4,24 +4,24 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.gesture.pointing.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.gesture.pointing</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>Gesture Pointing Ontology (Core)</name>
-  <description>The ontology for gesture pointing. (Core)</description>
+  <name>Gesture Pointing Ontology</name>
+  <description>The ontology for gesture pointing.</description>
   <scm>
-    <connection>${svn.base}/gesture.pointing.core</connection>
-    <developerConnection>${svn.base}/gesture.pointing.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/gesture.pointing</connection>
+    <developerConnection>${svn.base}/gesture.pointing</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
     <dependency>
@@ -30,12 +30,26 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.core</artifactId>
+      <artifactId>ont.profile</artifactId>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.gesture.pointing</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
+

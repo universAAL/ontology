@@ -4,19 +4,19 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.device.extra.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.device.extra</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Ontology for Additional Device Concepts (Core)</name>
+  <name>The Ontology for Additional Device Concepts</name>
   <organization>
     <name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)
 	R&amp;S INFO s.r.l.</name>
@@ -31,23 +31,47 @@ jar
     </license>
   </licenses>
   <scm>
-    <connection>${svn.base}/device.extra.core</connection>
-    <developerConnection>${svn.base}/device.extra.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/device.extra</connection>
+    <developerConnection>${svn.base}/device.extra</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
+    <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>  
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.device.home,org.universAAL.ontology.device.wearable,org.universAAL.ontology.device.extra</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+        <extensions>
+      true
+    </extensions>
+      </plugin>
     </plugins>
   </build>
 </project>
+

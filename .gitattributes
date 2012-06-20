@@ -212,7 +212,6 @@ ont.phWorld/src/main/java/org/universAAL/ontology/space/SpaceConfigurationServic
 ont.phWorld/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
 ont.phWorld/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.phWorld/src/test/resources/log4j.properties -text
-ont.phWorld/uAAL.log -text
 ont.powersocket/LICENSE.txt -text
 ont.powersocket/NOTICE.txt -text
 ont.powersocket/pom.xml -text

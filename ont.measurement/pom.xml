@@ -4,27 +4,31 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.measurement.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.measurement</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Measurement Ontology (Core)</name>
-  <description>The ontology defining the most general concepts dealing with measurement. (Core)</description>
+  <name>The Measurement Ontology</name>
+  <description>The ontology defining the most general concepts dealing with measurement.</description>
   <scm>
-    <connection>${svn.base}/measurement.core</connection>
-    <developerConnection>${svn.base}/measurement.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/measurement</connection>
+    <developerConnection>${svn.base}/measurement</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
     <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
+  <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
@@ -35,7 +39,22 @@ jar
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.measurement</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+        <extensions>
+      true
+    </extensions>
+      </plugin>
     </plugins>
   </build>
 </project>
