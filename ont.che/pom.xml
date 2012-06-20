@@ -28,9 +28,13 @@
 		<connection>${svn.base}/ont.che</connection>
 		<developerConnection>${svn.base}/ont.che</developerConnection>
 		<url>${svn.base.url}</url>
-	</scm>    
+	</scm>
 	<packaging>bundle</packaging>
 	<dependencies>
+		<dependency>
+			<groupId>org.universAAL.support</groupId>
+			<artifactId>itests</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.data.representation.core</artifactId>
