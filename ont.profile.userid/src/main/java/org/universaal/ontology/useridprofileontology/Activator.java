@@ -15,7 +15,6 @@
  ******************************************************************************/
 package org.universaal.ontology.useridprofileontology;
 
-import org.osgi.framework.BundleContext;
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;

@@ -248,6 +248,8 @@ ont.phWorld/src/main/java/org/universAAL/ontology/space/SpaceConfigurationServic
 ont.phWorld/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
 ont.phWorld/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.phWorld/src/test/resources/log4j.properties -text
+ont.pom/composite/pom.xml -text
+ont.pom/pom.xml -text
 ont.powersocket/LICENSE.txt -text
 ont.powersocket/NOTICE.txt -text
 ont.powersocket/pom.xml -text
@@ -378,5 +380,3 @@ ont.window/src/main/java/org/universAAL/ontology/window/WindowController.java -t
 ont.window/src/main/java/org/universAAL/ontology/window/WindowType.java -text
 ont.window/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.window/src/test/resources/log4j.properties -text
-pom/composite/pom.xml -text
-pom/pom.xml -text
