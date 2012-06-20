@@ -57,7 +57,7 @@
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.profile.uipreferences,org.universaal.ontology.profile.uipreferences.uipreferencesprofile.owl.*</Export-Package>
+						<Export-Package>org.universAAL.ontology.profile.uipreferences.uipreferencesprofile,org.universaal.ontology.profile.uipreferences.uipreferencesprofile.owl.*</Export-Package>
 						<Private-Package>org.universaal.ontology.profile.uipreferences.uipreferencesprofile.*</Private-Package>
 					</instructions>
 				</configuration>

@@ -1,6 +1,6 @@
 /*
-	Copyright 2008-20144 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer Gesellschaft - Institut für Graphische Datenverarbeitung 
+	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer Gesellschaft - Institut fuer Graphische Datenverarbeitung 
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -17,37 +17,22 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.ontology.phThing;
+package org.universAAL.ontology.av;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.space.SpaceOntology;
+import org.universAAL.ontology.AVOntology;
 
 public class Activator implements uAALModuleActivator {
 
-    LocationOntology locationOntology = new LocationOntology();
-    PhThingOntology phThingOntology = new PhThingOntology();
-    ShapeOntology shapeOntology = new ShapeOntology();
-    SpaceOntology spaceOntology = new SpaceOntology();
+    AVOntology ont = new AVOntology();
 
     public void start(ModuleContext context) throws Exception {
-	// register all ontologies
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(locationOntology);
-	om.register(shapeOntology);
-	om.register(phThingOntology);
-	om.register(spaceOntology);
+	OntologyManagement.getInstance().register(ont);
     }
 
     public void stop(ModuleContext arg0) throws Exception {
-	// unregister all ontologies
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(locationOntology);
-	om.unregister(spaceOntology);
-	om.unregister(phThingOntology);
-	om.unregister(shapeOntology);
+	OntologyManagement.getInstance().unregister(ont);
     }
 }

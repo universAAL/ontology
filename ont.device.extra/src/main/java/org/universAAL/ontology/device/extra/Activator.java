@@ -1,6 +1,8 @@
 /*
-	Copyright 2008-20144 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer Gesellschaft - Institut für Graphische Datenverarbeitung 
+	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
+	Instituto Tecnologico de Aplicaciones de Comunicacion 
+	Avanzadas - Grupo Tecnologias para la Salud y el 
+	Bienestar (TSB)
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -17,37 +19,34 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.ontology.phThing;
+package org.universAAL.ontology.device.extra;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.space.SpaceOntology;
+import org.universAAL.ontology.DeviceOntology;
 
+/**
+ * @author alfiva
+ *
+ */
 public class Activator implements uAALModuleActivator {
 
-    LocationOntology locationOntology = new LocationOntology();
-    PhThingOntology phThingOntology = new PhThingOntology();
-    ShapeOntology shapeOntology = new ShapeOntology();
-    SpaceOntology spaceOntology = new SpaceOntology();
+    DeviceOntology deviceOntology = new DeviceOntology();
 
+    /* (non-Javadoc)
+     * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
+     */
     public void start(ModuleContext context) throws Exception {
-	// register all ontologies
 	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(locationOntology);
-	om.register(shapeOntology);
-	om.register(phThingOntology);
-	om.register(spaceOntology);
+	om.register(deviceOntology);
     }
 
+    /* (non-Javadoc)
+     * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+     */
     public void stop(ModuleContext arg0) throws Exception {
-	// unregister all ontologies
 	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(locationOntology);
-	om.unregister(spaceOntology);
-	om.unregister(phThingOntology);
-	om.unregister(shapeOntology);
+	om.unregister(deviceOntology);
     }
 }
