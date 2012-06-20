@@ -110,6 +110,11 @@ ont.risk/.project
 ont.risk/.settings
 ont.risk/target
 ont.risk/uAAL.log
+ont.unit/*.log
+ont.unit/.classpath
+ont.unit/.project
+ont.unit/.settings
+ont.unit/target
 ont.water/.classpath
 ont.water/.project
 ont.water/.settings

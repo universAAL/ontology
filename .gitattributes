@@ -352,6 +352,26 @@ ont.risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
 ont.risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 ont.risk/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.risk/src/test/resources/log4j.properties -text
+ont.unit/LICENSE.txt -text svneol=unset#text/plain
+ont.unit/NOTICE.txt -text
+ont.unit/Unit.di -text
+ont.unit/Unit.notation -text
+ont.unit/Unit.uml -text svneol=unset#text/plain
+ont.unit/pom.xml -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/Activator.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/UnitFactory.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/UnitOntology.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/DerivedUnit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/DividedUnit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/MeasurableDimension.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/MultipliedUnit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/Prefix.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/Unit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/owl/UnitSystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/unitsystem/BinarySystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/unitsystem/InternationalSystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universaal/ontology/unitsystem/Util.java -text svneol=unset#text/plain
+ont.unit/src/test/java/test/integration/OntTest.java -text svneol=unset#text/plain
 ont.water/pom.xml -text
 ont.water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
 ont.water/src/main/java/org/universAAL/ontology/WaterOntology.java -text
