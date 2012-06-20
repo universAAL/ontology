@@ -5,6 +5,7 @@ ont.activityhub/.classpath
 ont.activityhub/.project
 ont.activityhub/.settings
 ont.activityhub/target
+ont.activityhub/uAAL.log
 ont.av/.classpath
 ont.av/.project
 ont.av/.settings
@@ -53,6 +54,7 @@ ont.phWorld/.classpath
 ont.phWorld/.project
 ont.phWorld/.settings
 ont.phWorld/target
+ont.phWorld/uAAL.log
 ont.powersocket/.classpath
 ont.powersocket/.project
 ont.powersocket/.settings
@@ -73,6 +75,7 @@ ont.profile/.classpath
 ont.profile/.project
 ont.profile/.settings
 ont.profile/target
+ont.profile/uAAL.log
 ont.questionnaire/.classpath
 ont.questionnaire/.project
 ont.questionnaire/.settings

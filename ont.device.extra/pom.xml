@@ -3,19 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.universAAL.ontology</groupId>
-    <artifactId>
-      ont.pom
-    </artifactId>
+    <artifactId>ont.pom</artifactId>
     <version>1.1.4-SNAPSHOT</version>
-    <relativePath>
-      ../pom
-    </relativePath>
+    <relativePath>../pom</relativePath>
   </parent>
   <artifactId>ont.device.extra</artifactId>
   <version>1.1.4-SNAPSHOT</version>
-  <packaging>
-bundle
-</packaging>
+  <packaging>bundle</packaging>
   <name>The Ontology for Additional Device Concepts</name>
   <organization>
     <name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)

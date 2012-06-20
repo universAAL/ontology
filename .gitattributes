@@ -3,6 +3,7 @@ ont.activityhub/documentation/Development_notes.txt -text
 ont.activityhub/pom.xml -text
 ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubFactory.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
+ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/Activator.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHub.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHubSensor.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/CoSensor.java -text
@@ -33,6 +34,8 @@ ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/WaterSensor.ja
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ext/AdaptorPlugActuator.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/util/ActivityHubSensorType.java -text
+ont.activityhub/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.activityhub/src/test/resources/log4j.properties -text
 ont.av/LICENSE.txt -text
 ont.av/NOTICE.txt -text
 ont.av/pom.xml -text
@@ -255,6 +258,7 @@ ont.profile/src/main/java/org/universAAL/ontology/profile/AALService.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/AALServiceProfile.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/AALSpace.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/AALSpaceProfile.java -text
+ont.profile/src/main/java/org/universAAL/ontology/profile/Activator.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/AssistedPerson.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/AssistedPersonProfile.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/Caregiver.java -text
@@ -266,6 +270,8 @@ ont.profile/src/main/java/org/universAAL/ontology/profile/User.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/UserProfile.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingEditorService.java -text
 ont.profile/src/main/java/org/universAAL/ontology/profile/service/ProfilingService.java -text
+ont.profile/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile/src/test/resources/log4j.properties -text
 ont.questionnaire/pom.xml -text
 ont.questionnaire/src/main/java/org/universaal/ontology/QuestionnaireOntologyFactory.java -text
 ont.questionnaire/src/main/java/org/universaal/ontology/owl/Answer.java -text
