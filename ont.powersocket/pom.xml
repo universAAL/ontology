@@ -4,24 +4,24 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.powersocket.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.powersocket</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Power Socket Ontology (Core)</name>
-  <description>The upper ontology defining a first set of concepts from the power socket domain. (Core)</description>
+  <name>The Power Socket Ontology</name>
+  <description>The upper ontology defining a first set of concepts from the power socket domain.</description>
   <scm>
-    <connection>${svn.base}/powersocket.core</connection>
-    <developerConnection>${svn.base}/powersocket.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/powersocket</connection>
+    <developerConnection>${svn.base}/powersocket</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
     <dependency>
@@ -30,7 +30,7 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
@@ -39,7 +39,21 @@ jar
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.powersocket</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
+

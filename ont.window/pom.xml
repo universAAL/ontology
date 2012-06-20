@@ -4,24 +4,24 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.window.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.window</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Window Ontology (Core)</name>
-  <description>A simple ontology for a window actuator. (Core)</description>
+  <name>The Window Ontology</name>
+  <description>A simple ontology for a window actuator.</description>
   <scm>
-    <connection>${svn.base}/window.core</connection>
-    <developerConnection>${svn.base}/window.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/window</connection>
+    <developerConnection>${svn.base}/window</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
     <dependency>
@@ -30,12 +30,26 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.window</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
+

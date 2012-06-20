@@ -4,24 +4,24 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.furniture.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.furniture</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Furniture Ontology (Core)</name>
-  <description>An ontology for describing furnitures in a home envinment. (Core)</description>
+  <name>The Furniture Ontology</name>
+  <description>An ontology for describing furnitures in a home envinment.</description>
   <scm>
-    <connection>${svn.base}/furniture.core</connection>
-    <developerConnection>${svn.base}/furniture.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/furniture</connection>
+    <developerConnection>${svn.base}/furniture</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
     <dependency>
@@ -30,12 +30,26 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.furniture</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>

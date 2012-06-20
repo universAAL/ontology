@@ -4,42 +4,59 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.risk.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
-  <packaging>
-jar
-</packaging>
-  <name>Risk Situations and Detection Devices Ontology (Core)</name>
-  <description>The ontology defining weareable devices related to detection of physical risk for the user wearing them. (Core)</description>
+  <artifactId>ont.risk</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>Risk Situations and Detection Devices Ontology</name>
+  <description>The ontology defining weareable devices related to detection of physical risk for the user wearing them.</description>
   <scm>
-    <connection>${svn.base}/risk.core</connection>
-    <developerConnection>${svn.base}/risk.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/risk</connection>
+    <developerConnection>${svn.base}/risk</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
+    <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>  
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.core</artifactId>
+      <artifactId>ont.profile</artifactId>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.risk</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+        <extensions>
+      true
+    </extensions>
+      </plugin>
     </plugins>
   </build>
 </project>

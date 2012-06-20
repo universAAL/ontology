@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.universAAL.ontology</groupId>
-    <artifactId>
-      ont.pom.core
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
-    <relativePath>
+		<version>1.1.4-SNAPSHOT</version>
+		<relativePath>
       ../pom
     </relativePath>
-  </parent>
-  <artifactId>ont.questionnaire.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
-  <name>QuestionnaireOntology (Core)</name>
-  <description>No further description provided (Core)</description>
-  <packaging>
-jar
-</packaging>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compile.source>1.5</maven.compile.source>
-    <maven.compile.target>1.5</maven.compile.target>
-  </properties>
-  <dependencies>
-    <dependency>
-      <groupId>org.universAAL.middleware</groupId>
-      <artifactId>mw.data.representation.core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.middleware</groupId>
-      <artifactId>mw.bus.ui.core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-    </dependency>
-  </dependencies>
-  <build>
-    <plugins>
-				
-			</plugins>
-  </build>
+	</parent>
+	<artifactId>ont.questionnaire</artifactId>
+	<version>1.1.4-SNAPSHOT</version>
+	<name>QuestionnaireOntology</name>
+	<description>No further description provided</description>
+	<packaging>bundle</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compile.source>1.5</maven.compile.source>
+		<maven.compile.target>1.5</maven.compile.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.data.representation.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.ui.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.phWorld</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.profile</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Description>${project.description}</Bundle-Description>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>org.universaal.ontology.owl.*,org.universAAL.ontology.questionnaire</Export-Package>
+						<Private-Package>org.universaal.ontology.*</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
+

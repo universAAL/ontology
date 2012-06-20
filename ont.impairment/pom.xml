@@ -4,19 +4,19 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.impairment.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.impairment</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The User Impairment Ontology (Core)</name>
+  <name>The User Impairment Ontology</name>
   <organization>
     <name>SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING</name>
     <url>http://www.spirit-intl.com/</url>
@@ -29,11 +29,15 @@ jar
     </license>
   </licenses>
   <scm>
-    <connection>${svn.base}/impairment.core</connection>
-    <developerConnection>${svn.base}/impairment.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/impairment</connection>
+    <developerConnection>${svn.base}/impairment</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
+      <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
@@ -48,16 +52,32 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.core</artifactId>
+      <artifactId>ont.profile</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.impairment</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+        <extensions>
+      true
+    </extensions>
+      </plugin>
     </plugins>
   </build>
 </project>
+

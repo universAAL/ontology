@@ -4,25 +4,25 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>
-      ont.pom.core
+      ont.pom
     </artifactId>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.4-SNAPSHOT</version>
     <relativePath>
       ../pom
     </relativePath>
   </parent>
-  <artifactId>ont.lighting.core</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <artifactId>ont.lighting</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
   <packaging>
-jar
+bundle
 </packaging>
-  <name>The Lighting Ontology (Core)</name>
-  <description>The ontology defining the most general concepts dealing with light sources and their control. (Core)</description>
+  <name>The Lighting Ontology</name>
+  <description>The ontology defining the most general concepts dealing with light sources and their control.</description>
   <url/>
   <scm>
-    <connection>${svn.base}/lighting.core</connection>
-    <developerConnection>${svn.base}/lighting.core</developerConnection>
-    <url>${svn.base.url}.core</url>
+    <connection>${svn.base}/lighting</connection>
+    <developerConnection>${svn.base}/lighting</developerConnection>
+    <url>${svn.base.url}</url>
   </scm>
   <dependencies>
     <dependency>
@@ -35,7 +35,7 @@ jar
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld.core</artifactId>
+      <artifactId>ont.phWorld</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
@@ -44,7 +44,20 @@ jar
   </dependencies>
   <build>
     <plugins>
-      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.lighting</Export-Package>
+            <Private-Package>org.universAAL.ontology</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
