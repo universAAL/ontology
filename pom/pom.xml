@@ -11,7 +11,7 @@
 
 	<groupId>org.universAAL.ontology</groupId>
 	<artifactId>ont.pom</artifactId>
-	<version>1.1.2-SNAPSHOT</version>
+	<version>1.1.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>universAAL Ontologies Suite</name>
 
@@ -43,8 +43,35 @@
 		<maven.compile.source>1.4</maven.compile.source>
 		<maven.compile.target>1.4</maven.compile.target>
 		<gforge.project.name>ontologies</gforge.project.name>
+        <separatedGroupIds>org.universAAL.middleware</separatedGroupIds>
 	</properties>
 
+    	<modules>
+	  <module>../ont.profile</module>
+	  <module>../ont.phWorld</module>
+	  <module>../ont.activityhub</module>
+	  <module>../ont.av</module>
+	  <module>../ont.device.extra</module>
+	  <module>../ont.furniture</module>
+	  <module>../ont.hazard</module>
+	  <module>../ont.impairment</module>
+	  <module>../ont.lighting</module>
+	  <module>../ont.measurement</module>
+	  <module>../ont.medication</module>
+	  <module>../ont.multimedia</module>
+	  <module>../ont.powersocket</module>
+	  <module>../ont.profile.health</module>
+	  <module>../ont.profile.uipreferences</module>
+	  <module>../ont.profile.userid</module>
+	  <module>../ont.gesture.pointing</module>
+	  <module>../ont.risk</module>
+	  <module>../ont.water</module>
+	  <module>../ont.weather</module>
+	  <module>../ont.window</module>
+	  <module>../ont.che</module>
+	  <module>../ont.questionnaire</module>
+      <module>composite</module>
+	</modules>
 
 	<dependencyManagement>
 		<dependencies>
@@ -56,103 +83,103 @@
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.av.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.av</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.device.extra.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.device.extra</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.furniture.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.furniture</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.gesture.pointing.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.gesture.pointing</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.hazard.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.hazard</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.impairment.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.impairment</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.lighting.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.lighting</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
 		    <artifactId>ont.measurement</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
 		    <artifactId>ont.medication</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
 		    <artifactId>ont.multimedia</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.phWorld.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.phWorld</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.powersocket.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.powersocket</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.profile.core</artifactId>
+		    <artifactId>ont.profile</artifactId>
 		    <version>1.1.3-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.profile.health.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.profile.health</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.profile.userid.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.profile.userid</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>	
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.risk.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.risk</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.water.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.water</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.weather.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.weather</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.window.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.window</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  <dependency>
 		    <groupId>org.universAAL.ontology</groupId>
-		    <artifactId>ont.che.core</artifactId>
-		    <version>1.1.2-SNAPSHOT</version>
+		    <artifactId>ont.che</artifactId>
+		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
 		  
 		  <!-- 			use the following to add all ontologies -->
@@ -169,6 +196,13 @@
 	        <type>pom</type>
 	        <scope>import</scope>
 	      </dependency>
+	  	<dependency>
+       	  <groupId>org.universAAL.middleware</groupId>
+          <artifactId>mw.pom.osgi</artifactId>
+          <version>1.1.2-SNAPSHOT</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>          
 	   </dependencies>
 		
 	</dependencyManagement>
@@ -183,9 +217,18 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-	<modules>
-	  <module>../ontologies.core/pom</module>
-	  <module>../ontologies.osgi/pom</module>
-	</modules>
+    
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.universAAL.support</groupId>
+	      <artifactId>uaal-maven-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.codehaus.mojo</groupId>
+	      <artifactId>build-helper-maven-plugin</artifactId>
+	    </plugin>
+	  </plugins>
+	</build>
+    
 </project>
