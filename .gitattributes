@@ -210,6 +210,12 @@ ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket
 ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/Powersocket.java -text
 ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/PowersocketController.java -text
 ont.powersocket-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocket/SwitchableSocket.java -text
+ont.powersocketadapter-1.1.4-SNAPSHOT/LICENSE.txt -text
+ont.powersocketadapter-1.1.4-SNAPSHOT/NOTICE.txt -text
+ont.powersocketadapter-1.1.4-SNAPSHOT/pom.xml -text
+ont.powersocketadapter-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterActuator.java -text
+ont.powersocketadapter-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterController.java -text
+ont.powersocketadapter-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterType.java -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.profile-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
