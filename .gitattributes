@@ -268,12 +268,6 @@ ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/PowersocketCon
 ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/SwitchableSocket.java -text
 ont.powersocket/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.powersocket/src/test/resources/log4j.properties -text
-ont.powersocketadapter/LICENSE.txt -text
-ont.powersocketadapter/NOTICE.txt -text
-ont.powersocketadapter/pom.xml -text
-ont.powersocketadapter/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterActuator.java -text
-ont.powersocketadapter/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterController.java -text
-ont.powersocketadapter/src/main/java/org/universAAL/ontology/powersocketadapter/PowersocketAdapterType.java -text
 ont.profile.health/LICENSE.txt -text
 ont.profile.health/NOTICE.txt -text
 ont.profile.health/pom.xml -text
