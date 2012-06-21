@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology;
+package org.universAAL.ontology;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -22,16 +22,16 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universaal.ontology.owl.DerivedUnit;
-import org.universaal.ontology.owl.DividedUnit;
-import org.universaal.ontology.owl.MeasurableDimension;
-import org.universaal.ontology.owl.MultipliedUnit;
-import org.universaal.ontology.owl.Prefix;
-import org.universaal.ontology.owl.Unit;
-import org.universaal.ontology.owl.UnitSystem;
-import org.universaal.ontology.unitsystem.BinarySystem;
-import org.universaal.ontology.unitsystem.InternationalSystem;
-import org.universaal.ontology.unitsystem.Util;
+import org.universAAL.ontology.owl.DerivedUnit;
+import org.universAAL.ontology.owl.DividedUnit;
+import org.universAAL.ontology.owl.MeasurableDimension;
+import org.universAAL.ontology.owl.MultipliedUnit;
+import org.universAAL.ontology.owl.Prefix;
+import org.universAAL.ontology.owl.Unit;
+import org.universAAL.ontology.owl.UnitSystem;
+import org.universAAL.ontology.unitsystem.BinarySystem;
+import org.universAAL.ontology.unitsystem.InternationalSystem;
+import org.universAAL.ontology.unitsystem.Util;
 
 
 /**
