@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The Measurement Ontology</name>
 	<description>The ontology defining the most general concepts dealing with measurement.</description>
-	<scm>
-		<connection>${svn.base}/measurement</connection>
-		<developerConnection>${svn.base}/measurement</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
@@ -41,6 +37,7 @@
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
 				<configuration>
 					<instructions>
 						<Bundle-Name>${project.name}</Bundle-Name>
@@ -50,7 +47,6 @@
 						<Private-Package>org.universAAL.ontology.measurement</Private-Package>
 					</instructions>
 				</configuration>
-				<extensions>true</extensions>
 			</plugin>
 		</plugins>
 	</build>

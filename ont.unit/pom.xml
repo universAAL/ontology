@@ -29,8 +29,6 @@
 	<description>The Unit Ontology</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compile.source>1.5</maven.compile.source>
-		<maven.compile.target>1.5</maven.compile.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -65,17 +63,6 @@
 							org.universAAL.ontology.unitsystem.*,
 							org.universAAL.ontology.*</Export-Package>
 					</instructions>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.universAAL.support</groupId>
-				<artifactId>uaal-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<configuration>
-					<skipAttach>false</skipAttach>
 				</configuration>
 			</plugin>
 		</plugins>
