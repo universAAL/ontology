@@ -149,11 +149,17 @@ ont.lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -t
 ont.lighting/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.lighting/src/test/resources/log4j.properties -text
 ont.measurement/LICENSE.txt -text
-ont.measurement/NOTICE.txt -text
+ont.measurement/Measurement.di -text
+ont.measurement/Measurement.notation -text
+ont.measurement/Measurement.uml -text
+ont.measurement/NOTICE.txt -text svneol=unset#text/plain
 ont.measurement/pom.xml -text
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/Activator.java -text
-ont.measurement/src/main/java/org/universAAL/ontology/measurement/DimensionMeasure.java -text
-ont.measurement/src/main/java/org/universAAL/ontology/measurement/MultiDimensionMeasure.java -text
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/OwlFactory.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/owl/MeanSquareError.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/owl/Measurement.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/owl/MeasurementError.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/owl/OwlOntology.java -text svneol=unset#text/plain
 ont.measurement/src/main/resources/Measurement.jpg -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement/src/test/resources/log4j.properties -text

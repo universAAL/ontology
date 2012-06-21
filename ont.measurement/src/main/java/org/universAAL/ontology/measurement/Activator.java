@@ -21,18 +21,28 @@ package org.universAAL.ontology.measurement;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.ontology.measurement.owl.OwlOntology;
 
 public class Activator implements uAALModuleActivator {
 
+    static ModuleContext context = null;
+    
+    OwlOntology _owlontology = new OwlOntology();
+    
+    
+
     public void start(ModuleContext context) throws Exception {
-	Class.forName("org.universAAL.ontology.measurement.DimensionMeasure");
-	Class
-		.forName("org.universAAL.ontology.measurement.MultiDimensionMeasure");
+      Activator.context = context;
+      
+      OntologyManagement.getInstance().register(_owlontology);
+      
     }
 
     public void stop(ModuleContext arg0) throws Exception {
-	// TODO Auto-generated method stub
-
+      
+      OntologyManagement.getInstance().unregister(_owlontology);
+      
     }
 
 }

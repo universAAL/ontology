@@ -31,6 +31,10 @@
 			<groupId>org.universAAL.middleware</groupId>
 			<artifactId>mw.bus.context.core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.unit</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -42,8 +46,8 @@
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.measurement</Export-Package>
-						<Private-Package>org.universAAL.ontology</Private-Package>
+						<Export-Package>org.universAAL.ontology.measurement.owl</Export-Package>
+						<Private-Package>org.universAAL.ontology.measurement</Private-Package>
 					</instructions>
 				</configuration>
 				<extensions>true</extensions>
