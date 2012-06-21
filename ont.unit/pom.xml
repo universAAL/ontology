@@ -61,10 +61,9 @@
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universaal.ontology.owl.*,
-							org.universaal.ontology.unitsystem.*,
-							org.universaal.ontology.*</Export-Package>
-						<Private-Package>org.universaal.ontology.osgi.*</Private-Package>
+						<Export-Package>org.universAAL.ontology.owl.*,
+							org.universAAL.ontology.unitsystem.*,
+							org.universAAL.ontology.*</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>
