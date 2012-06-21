@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.unitsystem;
+package org.universAAL.ontology.unitsystem;
 
-import org.universaal.ontology.UnitOntology;
-import org.universaal.ontology.owl.DividedUnit;
-import org.universaal.ontology.owl.MeasurableDimension;
-import org.universaal.ontology.owl.MultipliedUnit;
-import org.universaal.ontology.owl.Unit;
+import org.universAAL.ontology.UnitOntology;
+import org.universAAL.ontology.owl.DividedUnit;
+import org.universAAL.ontology.owl.MeasurableDimension;
+import org.universAAL.ontology.owl.MultipliedUnit;
+import org.universAAL.ontology.owl.Unit;
 
 public class Util {
   

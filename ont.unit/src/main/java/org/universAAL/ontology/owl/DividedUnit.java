@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.owl;
+package org.universAAL.ontology.owl;
 
-import org.universaal.ontology.UnitOntology;
+import org.universAAL.ontology.UnitOntology;
 
 
 public class DividedUnit extends DerivedUnit {
