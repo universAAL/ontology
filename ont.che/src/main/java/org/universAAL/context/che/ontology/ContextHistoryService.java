@@ -22,6 +22,7 @@
 package org.universAAL.context.che.ontology;
 
 import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.ontology.ContextHistoryOntology;
 
 /**
  * The ontological description of the Context History related services. This

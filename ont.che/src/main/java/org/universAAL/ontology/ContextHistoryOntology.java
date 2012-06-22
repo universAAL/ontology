@@ -19,10 +19,12 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.context.che.ontology;
+package org.universAAL.ontology;
 
 import javax.xml.datatype.Duration;
 
+import org.universAAL.context.che.ontology.ContextEvent;
+import org.universAAL.context.che.ontology.ContextHistoryService;
 import org.universAAL.middleware.context.owl.ContextProvider;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.LongRestriction;

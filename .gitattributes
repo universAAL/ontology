@@ -65,11 +65,11 @@ ont.che/LICENSE-CPL-JUnit.txt -text
 ont.che/LICENSE.txt -text
 ont.che/NOTICE.txt -text
 ont.che/pom.xml -text
-ont.che/src/main/java/org/universAAL/context/che/Activator.java -text
+ont.che/src/main/java/org/universAAL/context/che/ontology/Activator.java -text
 ont.che/src/main/java/org/universAAL/context/che/ontology/ContextEvent.java -text
-ont.che/src/main/java/org/universAAL/context/che/ontology/ContextHistoryFactory.java -text
-ont.che/src/main/java/org/universAAL/context/che/ontology/ContextHistoryOntology.java -text
 ont.che/src/main/java/org/universAAL/context/che/ontology/ContextHistoryService.java -text
+ont.che/src/main/java/org/universAAL/ontology/ContextHistoryFactory.java -text
+ont.che/src/main/java/org/universAAL/ontology/ContextHistoryOntology.java -text
 ont.che/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.che/src/test/resources/log4j.properties -text
 ont.device.extra/LICENSE.txt -text
