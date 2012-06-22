@@ -42,30 +42,46 @@ public class ProfileFactory extends ResourceFactoryImpl {
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
 	switch (factoryIndex) {
-	case 0:
+	case ProfileOntology.AALSERV:
 	    return new AALService(instanceURI);
-	case 1:
+	case ProfileOntology.AALSPACE:
 	    return new AALSpace(instanceURI);
-	case 2:
+	case ProfileOntology.USER:
 	    return new User(instanceURI);
-	case 3:
+	case ProfileOntology.AP:
 	    return new AssistedPerson(instanceURI);
-	case 4:
+	case ProfileOntology.CARE:
 	    return new Caregiver(instanceURI);
-	case 5:
+	case ProfileOntology.AALSPACEPROF:
 	    return new AALSpaceProfile(instanceURI);
-	case 6:
+	case ProfileOntology.AALSERVPROF:
 	    return new AALServiceProfile(instanceURI);
-	case 7:
+	case ProfileOntology.USERPROF:
 	    return new UserProfile(instanceURI);
-	case 8:
+	case ProfileOntology.APPROF:
 	    return new AssistedPersonProfile(instanceURI);
-	case 9:
+	case ProfileOntology.CAREPROF:
 	    return new CaregiverProfile(instanceURI);
-	case 10:
-	    return new ProfilingEditorService(instanceURI);
-	case 11:
+	case ProfileOntology.AALAPPSUBPROF:
+	    return new AALAppSubProfile(instanceURI);
+	case ProfileOntology.CONNDETAILS:
+	    return new ConnectionDetails(instanceURI);
+	case ProfileOntology.HRSUBPROF:
+	    return new HRSubProfile(instanceURI);
+	case ProfileOntology.HWSUBPROF:
+	    return new HWSubProfile(instanceURI);
+	case ProfileOntology.PROP:
+	    return new Property(instanceURI);
+	case ProfileOntology.REQ:
+	    return new Requirement(instanceURI);
+	case ProfileOntology.PERSONINFOSUBPROF:
+	    return new PersonalInformationSubprofile(instanceURI);
+	case ProfileOntology.ONTENTRY:
+	    return new OntologyEntry(instanceURI);
+	case ProfileOntology.PROFSERV:
 	    return new ProfilingService(instanceURI);
+	case ProfileOntology.PROFEDITSERV:
+	    return new ProfilingEditorService(instanceURI);
 	}
 	return null;
     }

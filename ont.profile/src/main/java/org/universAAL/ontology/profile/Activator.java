@@ -29,19 +29,23 @@ import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.ProfileOntology;
+import org.universAAL.ontology.VCardOntology;
 
 /**
  * @author Carsten Stockloew
  */
 public class Activator implements uAALModuleActivator {
 
-    ProfileOntology ont = new ProfileOntology();
+    VCardOntology ontV = new VCardOntology();
+    ProfileOntology ontP = new ProfileOntology();
 
     public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ont);
+	OntologyManagement.getInstance().register(ontV);
+	OntologyManagement.getInstance().register(ontP);
     }
 
     public void stop(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+	OntologyManagement.getInstance().unregister(ontP);
+	OntologyManagement.getInstance().unregister(ontV);
     }
 }
