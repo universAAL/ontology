@@ -192,175 +192,6 @@ public final class ProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		HWSubProfile.PROP_HW_RELATED_DEVICES, Device.MY_URI));
 
-	// User
-	oci = createNewOntClassInfo(User.MY_URI, factory, USER);
-	oci.setResourceComment("A human user");
-	oci.setResourceLabel("User");
-	oci.addSuperClass(PhysicalThing.MY_URI);
-	oci.addSuperClass(Profilable.MY_URI);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Profilable.PROP_HAS_PROFILE, UserProfile.MY_URI, 0, 1));
-
-	// HRSubProfile
-	oci = createNewOntClassInfo(HRSubProfile.MY_URI, factory, HRSUBPROF);
-	oci.setResourceComment("Profile representing any Human Resource");
-	oci.setResourceLabel("Human Resource Profile");
-	oci.addSuperClass(SubProfile.MY_URI);
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_CONTACT).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_CONTACT,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_DESCRIPTION)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_DESCRIPTION,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_EXPERIENCE)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_EXPERIENCE,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_INVOLVEMENT)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_INVOLVEMENT,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_QUALIFICATION)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_QUALIFICATION,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_TYPE).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_TYPE,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_CERTIFICATES);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_CERTIFICATES,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_PAYMENT_INFO);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_PAYMENT_INFO,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_PROVIDER_USER_ID);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_PROVIDER_USER_ID,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(HRSubProfile.PROP_HR_SLA);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_SLA,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addObjectProperty(HRSubProfile.PROP_HR_PROPERTIES);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_PROPERTIES, Property.MY_URI));
-	oci.addObjectProperty(HRSubProfile.PROP_HR_RELATED_USERS);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		HRSubProfile.PROP_HR_RELATED_USERS, User.MY_URI));
-
-	// ConnectionDetails
-	oci = createNewOntClassInfo(ConnectionDetails.MY_URI, factory, CONNDETAILS);
-	oci.setResourceComment("Network connection details");
-	oci.setResourceLabel("Connection Details");
-	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addDatatypeProperty(ConnectionDetails.PROP_HOST).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ConnectionDetails.PROP_HOST,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(ConnectionDetails.PROP_PORT).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ConnectionDetails.PROP_PORT,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(ConnectionDetails.PROP_URL).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ConnectionDetails.PROP_URL,
-		TypeMapper.getDatatypeURI(String.class)));
-
-	// OntologyEntry
-	oci = createNewOntClassInfo(OntologyEntry.MY_URI, factory, ONTENTRY);
-	oci.setResourceComment("Ontology entry available in the space provided by an app");
-	oci.setResourceLabel("Ontology Entry");
-	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addDatatypeProperty(OntologyEntry.PROP_NAMESPACE).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		OntologyEntry.PROP_NAMESPACE,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(OntologyEntry.PROP_ONTOLOGY_URI)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		OntologyEntry.PROP_ONTOLOGY_URI,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(OntologyEntry.PROP_VERSION).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		OntologyEntry.PROP_VERSION,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-
-	// AALAppSubProfile
-	oci = createNewOntClassInfo(AALAppSubProfile.MY_URI, factory, AALAPPSUBPROF);
-	oci.setResourceComment("Profile of an AAL Application part of an AAL Service");
-	oci.setResourceLabel("AAL Application Profile");
-	oci.addSuperClass(SubProfile.MY_URI);
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_DESCRIPTION)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		AALAppSubProfile.PROP_ARTIFACT_DESCRIPTION,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_FILE_URL)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALAppSubProfile.PROP_ARTIFACT_FILE_URL,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_GROUP_ID)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		AALAppSubProfile.PROP_ARTIFACT_GROUP_ID,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_ID)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		AALAppSubProfile.PROP_ARTIFACT_ID,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_VERSION)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		AALAppSubProfile.PROP_ARTIFACT_VERSION,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_DEVELOPER_USER_ID)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALAppSubProfile.PROP_DEVELOPER_USER_ID,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addObjectProperty(AALAppSubProfile.PROP_HARDWARE_REQUIREMENTS);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestriction(
-			AALAppSubProfile.PROP_HARDWARE_REQUIREMENTS,
-			Requirement.MY_URI));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_IS_FREE).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALAppSubProfile.PROP_IS_FREE,
-		TypeMapper.getDatatypeURI(Boolean.class)));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_MAVEN_DESCRIPTOR)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-		AALAppSubProfile.PROP_MAVEN_DESCRIPTOR,
-		TypeMapper.getDatatypeURI(String.class),1,1));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_SOFTWARE_LICENSE);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALAppSubProfile.PROP_SOFTWARE_LICENSE,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(AALAppSubProfile.PROP_SOFTWARE_REQUIREMENTS);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALAppSubProfile.PROP_SOFTWARE_REQUIREMENTS,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addObjectProperty(AALAppSubProfile.PROP_APP_PROPERTIES);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALAppSubProfile.PROP_APP_PROPERTIES, Property.MY_URI));
-	oci.addObjectProperty(AALAppSubProfile.PROP_REALIZED_ONTOLOGIES);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestriction(
-			AALAppSubProfile.PROP_REALIZED_ONTOLOGIES,
-			OntologyEntry.MY_URI));
-
 	// Profile
 	oci = createNewAbstractOntClassInfo(Profile.MY_URI);
 	oci.setResourceComment("A Profile, for setting characteristics");
@@ -369,60 +200,6 @@ public final class ProfileOntology extends Ontology {
 	oci.addObjectProperty(Profile.PROP_HAS_SUB_PROFILE).setFunctional();
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Profile.PROP_HAS_SUB_PROFILE, SubProfile.MY_URI));
-
-	// AALServiceProfile
-	oci = createNewOntClassInfo(AALServiceProfile.MY_URI, factory, AALSERVPROF);
-	oci.setResourceComment("Profile of a AAL service");
-	oci.setResourceLabel("AAL Service Profile");
-	oci.addSuperClass(Profile.MY_URI);
-	oci.addObjectProperty(AALServiceProfile.PROP_APPLICATION_SUBPROFILE)
-		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_APPLICATION_SUBPROFILE,
-		AALAppSubProfile.MY_URI));
-	oci.addObjectProperty(AALServiceProfile.PROP_HARDWARE_SUBPROFILE)
-		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestriction(
-			AALServiceProfile.PROP_HARDWARE_SUBPROFILE,
-			HWSubProfile.MY_URI));
-	oci.addObjectProperty(AALServiceProfile.PROP_HUMAN_RESOURCE_SUBPROFILE)
-		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_HUMAN_RESOURCE_SUBPROFILE,
-		HRSubProfile.MY_URI));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_CERTIFICATE);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_CERTIFICATE,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_CHARGING_MODEL)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_CHARGING_MODEL,
-		TypeMapper.getDatatypeURI(Integer.class)));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_DESCRIPTION)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_DESCRIPTION,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_PAYMENT_MODEL)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_PAYMENT_MODEL,
-		TypeMapper.getDatatypeURI(Integer.class)));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_PRICE).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_PRICE,
-		TypeMapper.getDatatypeURI(Float.class)));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_SERVICE_PROVIDER_ID)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_SERVICE_PROVIDER_ID,
-		TypeMapper.getDatatypeURI(String.class)));
-	oci.addDatatypeProperty(AALServiceProfile.PROP_SLA).setFunctional();
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		AALServiceProfile.PROP_SLA,
-		TypeMapper.getDatatypeURI(String.class)));
 
 	// Gender
 	oci = createNewAbstractOntClassInfo(Gender.MY_URI);
@@ -512,6 +289,18 @@ public final class ProfileOntology extends Ontology {
 		VCard.PROP_TEL, Tel.MY_URI));
 	oci.addObjectProperty(VCard.PROP_URL);
 
+	// UserProfile
+	oci = createNewOntClassInfo(UserProfile.MY_URI, factory, USERPROF);
+	oci.setResourceComment("Profile of a user");
+	oci.setResourceLabel("User Profile");
+	oci.addSuperClass(Profile.MY_URI);
+	oci.addObjectProperty(UserProfile.PROP_HAS_PERSONAL_INFO_SUBPROFILE)
+		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			UserProfile.PROP_HAS_PERSONAL_INFO_SUBPROFILE,
+			PersonalInformationSubprofile.MY_URI, 0, 1));
+
 	// Profilable
 	oci = createNewAbstractOntClassInfo(Profilable.MY_URI);
 	oci.setResourceComment("Identifies concepts that can have profiles");
@@ -520,6 +309,240 @@ public final class ProfileOntology extends Ontology {
 	oci.addObjectProperty(Profilable.PROP_HAS_PROFILE);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Profilable.PROP_HAS_PROFILE, Profile.MY_URI));
+
+	// User
+	oci = createNewOntClassInfo(User.MY_URI, factory, USER);
+	oci.setResourceComment("A human user");
+	oci.setResourceLabel("User");
+	oci.addSuperClass(PhysicalThing.MY_URI);
+	oci.addSuperClass(Profilable.MY_URI);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			Profilable.PROP_HAS_PROFILE, UserProfile.MY_URI, 0, 1));
+
+	// HRSubProfile
+	oci = createNewOntClassInfo(HRSubProfile.MY_URI, factory, HRSUBPROF);
+	oci.setResourceComment("Profile representing any Human Resource");
+	oci.setResourceLabel("Human Resource Profile");
+	oci.addSuperClass(SubProfile.MY_URI);
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_CONTACT).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_CONTACT,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_DESCRIPTION)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_DESCRIPTION,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_EXPERIENCE)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_EXPERIENCE,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_INVOLVEMENT)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_INVOLVEMENT,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_QUALIFICATION)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_QUALIFICATION,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_TYPE).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_TYPE,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_CERTIFICATES);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_CERTIFICATES,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_PAYMENT_INFO);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_PAYMENT_INFO,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_PROVIDER_USER_ID);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_PROVIDER_USER_ID,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(HRSubProfile.PROP_HR_SLA);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_SLA,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addObjectProperty(HRSubProfile.PROP_HR_PROPERTIES);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_PROPERTIES, Property.MY_URI));
+	oci.addObjectProperty(HRSubProfile.PROP_HR_RELATED_USERS);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		HRSubProfile.PROP_HR_RELATED_USERS, User.MY_URI));
+
+	// ConnectionDetails
+	oci = createNewOntClassInfo(ConnectionDetails.MY_URI, factory,
+		CONNDETAILS);
+	oci.setResourceComment("Network connection details");
+	oci.setResourceLabel("Connection Details");
+	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addDatatypeProperty(ConnectionDetails.PROP_HOST).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		ConnectionDetails.PROP_HOST,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(ConnectionDetails.PROP_PORT).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		ConnectionDetails.PROP_PORT,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(ConnectionDetails.PROP_URL).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		ConnectionDetails.PROP_URL,
+		TypeMapper.getDatatypeURI(String.class)));
+
+	// OntologyEntry
+	oci = createNewOntClassInfo(OntologyEntry.MY_URI, factory, ONTENTRY);
+	oci.setResourceComment("Ontology entry available in the space provided by an app");
+	oci.setResourceLabel("Ontology Entry");
+	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addDatatypeProperty(OntologyEntry.PROP_NAMESPACE).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			OntologyEntry.PROP_NAMESPACE,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(OntologyEntry.PROP_ONTOLOGY_URI)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			OntologyEntry.PROP_ONTOLOGY_URI,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(OntologyEntry.PROP_VERSION).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			OntologyEntry.PROP_VERSION,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+
+	// AALAppSubProfile
+	oci = createNewOntClassInfo(AALAppSubProfile.MY_URI, factory,
+		AALAPPSUBPROF);
+	oci.setResourceComment("Profile of an AAL Application part of an AAL Service");
+	oci.setResourceLabel("AAL Application Profile");
+	oci.addSuperClass(SubProfile.MY_URI);
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_DESCRIPTION)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			AALAppSubProfile.PROP_ARTIFACT_DESCRIPTION,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_FILE_URL)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALAppSubProfile.PROP_ARTIFACT_FILE_URL,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_GROUP_ID)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			AALAppSubProfile.PROP_ARTIFACT_GROUP_ID,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_ID)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			AALAppSubProfile.PROP_ARTIFACT_ID,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_ARTIFACT_VERSION)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			AALAppSubProfile.PROP_ARTIFACT_VERSION,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_DEVELOPER_USER_ID)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALAppSubProfile.PROP_DEVELOPER_USER_ID,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addObjectProperty(AALAppSubProfile.PROP_HARDWARE_REQUIREMENTS);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestriction(
+			AALAppSubProfile.PROP_HARDWARE_REQUIREMENTS,
+			Requirement.MY_URI));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_IS_FREE).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALAppSubProfile.PROP_IS_FREE,
+		TypeMapper.getDatatypeURI(Boolean.class)));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_MAVEN_DESCRIPTOR)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			AALAppSubProfile.PROP_MAVEN_DESCRIPTOR,
+			TypeMapper.getDatatypeURI(String.class), 1, 1));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_SOFTWARE_LICENSE);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALAppSubProfile.PROP_SOFTWARE_LICENSE,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(AALAppSubProfile.PROP_SOFTWARE_REQUIREMENTS);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALAppSubProfile.PROP_SOFTWARE_REQUIREMENTS,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addObjectProperty(AALAppSubProfile.PROP_APP_PROPERTIES);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALAppSubProfile.PROP_APP_PROPERTIES, Property.MY_URI));
+	oci.addObjectProperty(AALAppSubProfile.PROP_REALIZED_ONTOLOGIES);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestriction(
+			AALAppSubProfile.PROP_REALIZED_ONTOLOGIES,
+			OntologyEntry.MY_URI));
+
+	// AALServiceProfile
+	oci = createNewOntClassInfo(AALServiceProfile.MY_URI, factory,
+		AALSERVPROF);
+	oci.setResourceComment("Profile of a AAL service");
+	oci.setResourceLabel("AAL Service Profile");
+	oci.addSuperClass(Profile.MY_URI);
+	oci.addObjectProperty(AALServiceProfile.PROP_APPLICATION_SUBPROFILE)
+		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_APPLICATION_SUBPROFILE,
+		AALAppSubProfile.MY_URI));
+	oci.addObjectProperty(AALServiceProfile.PROP_HARDWARE_SUBPROFILE)
+		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestriction(
+			AALServiceProfile.PROP_HARDWARE_SUBPROFILE,
+			HWSubProfile.MY_URI));
+	oci.addObjectProperty(AALServiceProfile.PROP_HUMAN_RESOURCE_SUBPROFILE)
+		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_HUMAN_RESOURCE_SUBPROFILE,
+		HRSubProfile.MY_URI));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_CERTIFICATE);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_CERTIFICATE,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_CHARGING_MODEL)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_CHARGING_MODEL,
+		TypeMapper.getDatatypeURI(Integer.class)));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_DESCRIPTION)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_DESCRIPTION,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_PAYMENT_MODEL)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_PAYMENT_MODEL,
+		TypeMapper.getDatatypeURI(Integer.class)));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_PRICE).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_PRICE,
+		TypeMapper.getDatatypeURI(Float.class)));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_SERVICE_PROVIDER_ID)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_SERVICE_PROVIDER_ID,
+		TypeMapper.getDatatypeURI(String.class)));
+	oci.addDatatypeProperty(AALServiceProfile.PROP_SLA).setFunctional();
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_SLA,
+		TypeMapper.getDatatypeURI(String.class)));
 
 	// AALService
 	oci = createNewOntClassInfo(AALService.MY_URI, factory, AALSERV);
@@ -533,7 +556,8 @@ public final class ProfileOntology extends Ontology {
 			0, 1));
 
 	// AALSpaceProfile
-	oci = createNewOntClassInfo(AALSpaceProfile.MY_URI, factory, AALSPACEPROF);
+	oci = createNewOntClassInfo(AALSpaceProfile.MY_URI, factory,
+		AALSPACEPROF);
 	oci.setResourceComment("Profile of a AAL space");
 	oci.setResourceLabel("AAL Space Profile");
 	oci.addSuperClass(Profile.MY_URI);
@@ -560,20 +584,9 @@ public final class ProfileOntology extends Ontology {
 			AALSpaceProfile.PROP_INSTALLED_ONTOLOGIES,
 			OntologyEntry.MY_URI));
 
-	// UserProfile
-	oci = createNewOntClassInfo(UserProfile.MY_URI, factory, USERPROF);
-	oci.setResourceComment("Profile of a user");
-	oci.setResourceLabel("User Profile");
-	oci.addSuperClass(Profile.MY_URI);
-	oci.addObjectProperty(UserProfile.PROP_HAS_PERSONAL_INFO_SUBPROFILE)
-		.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			UserProfile.PROP_HAS_PERSONAL_INFO_SUBPROFILE,
-			PersonalInformationSubprofile.MY_URI, 0, 1));
-
 	// APProfile
-	oci = createNewOntClassInfo(AssistedPersonProfile.MY_URI, factory, APPROF);
+	oci = createNewOntClassInfo(AssistedPersonProfile.MY_URI, factory,
+		APPROF);
 	oci.setResourceComment("Profile of an assisted person");
 	oci.setResourceLabel("Assisted Person Profile");
 	oci.addSuperClass(UserProfile.MY_URI);
@@ -625,7 +638,8 @@ public final class ProfileOntology extends Ontology {
 		ProfilingService.PROP_CONTROLS, Profilable.MY_URI));
 
 	// load ProfilingEditorService
-	oci = createNewOntClassInfo(ProfilingEditorService.MY_URI, factory, PROFEDITSERV);
+	oci = createNewOntClassInfo(ProfilingEditorService.MY_URI, factory,
+		PROFEDITSERV);
 	oci.setResourceComment("The class of services controling Profile Editor.");
 	oci.setResourceLabel("Profile Editor Service Controller");
 	oci.addSuperClass(Service.MY_URI);
