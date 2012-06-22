@@ -1,9 +1,9 @@
-package org.universAAL.context.che;
+package org.universAAL.context.che.ontology;
 
-import org.universAAL.context.che.ontology.ContextHistoryOntology;
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.ontology.ContextHistoryOntology;
 
 public class Activator implements uAALModuleActivator {
     private ContextHistoryOntology ont=new ContextHistoryOntology();
