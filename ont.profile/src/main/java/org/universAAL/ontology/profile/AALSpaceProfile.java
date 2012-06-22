@@ -40,6 +40,16 @@ public class AALSpaceProfile extends Profile {
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE
 	    + "AALSpaceProfile";
+    public static final String PROP_INSTALLED_HARDWARE = ProfileOntology.NAMESPACE
+	    + "hasInstalledHardware";
+    public static final String PROP_INSTALLED_SERVICES = ProfileOntology.NAMESPACE
+	    + "hasInstalledServices";
+    public static final String PROP_SPACE_CONNECTION_DETAILS = ProfileOntology.NAMESPACE
+	    + "hasSpaceConnectionDetails";
+    public static final String PROP_USTORE_CONNECTION_DETAILS = ProfileOntology.NAMESPACE
+	    + "hasUStoreConnectionDetails";
+    public static final String PROP_INSTALLED_ONTOLOGIES = ProfileOntology.NAMESPACE
+	    + "hasInstalledOntologies";
 
     protected AALSpaceProfile() {
 	super();

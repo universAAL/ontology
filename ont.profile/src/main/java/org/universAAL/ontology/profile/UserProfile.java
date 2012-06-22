@@ -43,6 +43,8 @@ public class UserProfile extends Profile {
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE
 	    + "UserProfile";
+    public static final String PROP_HAS_PERSONAL_INFO_SUBPROFILE = ProfileOntology.NAMESPACE
+	    + "hasPersonalInfoSubprofile";
 
     protected UserProfile() {
 	super();

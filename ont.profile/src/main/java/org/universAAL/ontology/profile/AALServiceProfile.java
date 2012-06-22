@@ -40,6 +40,28 @@ public class AALServiceProfile extends Profile {
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE
 	    + "AALServiceProfile";
+    public static final String PROP_APPLICATION_SUBPROFILE = ProfileOntology.NAMESPACE
+	    + "hasApplicationSubprofile";
+    public static final String PROP_CERTIFICATE = ProfileOntology.NAMESPACE
+	    + "hasCertificate";
+    public static final String PROP_CHARGING_MODEL = ProfileOntology.NAMESPACE
+	    + "hasChargingModel";
+    public static final String PROP_HARDWARE_SUBPROFILE = ProfileOntology.NAMESPACE
+	    + "hasHarwareSubprofile";
+    public static final String PROP_DESCRIPTION = ProfileOntology.NAMESPACE
+	    + "hasServiceDescription";
+    public static final String PROP_HUMAN_RESOURCE_SUBPROFILE = ProfileOntology.NAMESPACE
+	    + "hasHumanResourceSubprofile";
+    public static final String PROP_PAYMENT_MODEL = ProfileOntology.NAMESPACE
+	    + "hasPaymentModel";
+    public static final String PROP_HOST = ProfileOntology.NAMESPACE
+	    + "HasHost";
+    public static final String PROP_PRICE = ProfileOntology.NAMESPACE
+	    + "hasPrice";
+    public static final String PROP_SERVICE_PROVIDER_ID = ProfileOntology.NAMESPACE
+	    + "hasServiceProviderID";
+    public static final String PROP_SLA = ProfileOntology.NAMESPACE
+	    + "hasServiceLevelAgreement";
 
     protected AALServiceProfile() {
 	super();
