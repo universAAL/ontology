@@ -10,22 +10,21 @@ import org.universAAL.ontology.owl.UnitSystem;
 
 public class UnitFactory extends ResourceFactoryImpl {
 
-	@Override
-	public Resource createInstance(String classURI, String instanceURI,
-			int factoryIndex) {
-		switch (factoryIndex) {
-		case 1:
-			return new Unit(instanceURI);
-		case 2:
-			return new UnitSystem(instanceURI);
-		case 3:
-			return new Prefix(instanceURI);
-		case 4:
-			return new MultipliedUnit(instanceURI);
-		case 5:
-			return new DividedUnit(instanceURI);
-		}
-		return null;
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
+	switch (factoryIndex) {
+	case 1:
+	    return new Unit(instanceURI);
+	case 2:
+	    return new UnitSystem(instanceURI);
+	case 3:
+	    return new Prefix(instanceURI);
+	case 4:
+	    return new MultipliedUnit(instanceURI);
+	case 5:
+	    return new DividedUnit(instanceURI);
 	}
+	return null;
+    }
 
 }
