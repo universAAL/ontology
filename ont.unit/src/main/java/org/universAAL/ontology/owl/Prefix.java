@@ -43,8 +43,8 @@ public class Prefix extends ManagedIndividual {
 	super(uri);
 	setName(name);
 	setSymbol(symbol);
-	setBase(base);
-	setPower(power);
+	setBase(Integer.valueOf(base));
+	setPower(Integer.valueOf(power));
 }
 
   public String getClassURI() {
