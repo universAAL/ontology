@@ -200,7 +200,7 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
    * @return completeness ({@link Double})
    */
   public double getCompleteness() {
-	  return (Double)props.get(PROP_COMPLETENESS);
+	  return ((Double)props.get(PROP_COMPLETENESS)).doubleValue();
   }
 
   /**
@@ -209,7 +209,7 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
    * @param completeness ({@link Double})
    */
   public void setCompleteness(double completeness) {
-	  props.put(PROP_COMPLETENESS, completeness);
+	  props.put(PROP_COMPLETENESS, Double.valueOf(completeness));
   }
 
 //OTHER METHODS
@@ -283,7 +283,7 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
    *INCORRECT_ANSWERS or NO_CORRECT_ANSWERS. 
    * 
    */
-  private Integer checkResults(int correctResults){
+  private int checkResults(int correctResults){
 	  Answer[] answers = getAnswers();
 	  int correctAnswers=0;
 	  int incorrectAnswers=0;
@@ -310,7 +310,7 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
 	  case NO_CORRECT_ANSWERS:
 		  return noCorrectAnswers;
 	  default:
-		  return null;  
+		  return -1;  
 	  }
   }
 
@@ -415,7 +415,7 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
    */
 
   private Map generateAnswerMap(){
-	  Map <Question, Answer> map = new HashMap();
+	  Map map = new HashMap();
 	  Answer[] answers = getAnswers();
 	  for (int i=0; i < answers.length;i++){
 		  map.put(answers[i].getAssociatedQuestion(), answers[i]);
@@ -430,11 +430,11 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
    * @see Question
    */
 
-  private ArrayList<Question> getCandidates(){
+  private ArrayList getCandidates(){
 	  Question[] allQuestions = getAssociatedQuestionnaire().getQuestions();
-	  ArrayList<Question> candidates = new ArrayList<Question>(Arrays.asList(allQuestions));
+	  ArrayList candidates = new ArrayList(Arrays.asList(allQuestions));
 
-	  Map <Question,Answer> answerMap = generateAnswerMap();
+	  Map answerMap = generateAnswerMap();
 
 	  for(int i=0;i<allQuestions.length;i++){
 
@@ -448,7 +448,7 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
 				  Question depends = cq.getDependsOn();
 				  if(  !(answerMap.containsKey(depends) ) ||  // the cq is not a candidate if the question
 						  // to which is related to, haven't appeared
-						  ( cq.getTriggerAnswer()!= answerMap.get(depends).getAnswerContent())  ) //or the depending question has appeared
+						  ( cq.getTriggerAnswer()!= ((Answer) answerMap.get(depends)).getAnswerContent())  ) //or the depending question has appeared
 					  //but the answer doesn't match with the expected trigger
 					  candidates.remove(allQuestions[i]);
 			  }
@@ -468,15 +468,15 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
 
   public Question nextQuestion(){
 
-	  ArrayList<Question> possibleQuestions = getCandidates();
+	  ArrayList possibleQuestions = getCandidates();
 	  if(possibleQuestions.size()!=0){
 		  if(getAssociatedQuestionnaire().isOrderedQuestions())
-			  return possibleQuestions.get(0);
+			  return (Question) possibleQuestions.get(0);
 
 		  else{
 			  Random rndm = new Random();
 			  int number = rndm.nextInt(possibleQuestions.size()); 
-			  return possibleQuestions.get(number);
+			  return (Question) possibleQuestions.get(number);
 		  }
 	  }
 	  else

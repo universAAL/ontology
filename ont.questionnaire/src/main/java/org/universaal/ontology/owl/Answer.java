@@ -190,8 +190,8 @@ public int isCorrectAnswer(){
 	
 		  Object[] correctAnswers = associatedQuestion.getCorrectAnswers();
 		  Object[] answerContent = getAnswerContent();
-		  Set <Object> correctAnswersSet = new HashSet <Object> (Arrays.asList(correctAnswers));
-		  Set <Object> answerContentSet = new HashSet <Object> (Arrays.asList(answerContent));
+		  Set correctAnswersSet = new HashSet  (Arrays.asList(correctAnswers));
+		  Set answerContentSet = new HashSet  (Arrays.asList(answerContent));
 		  
 		 
 		 boolean condition = answerContentSet.containsAll(correctAnswersSet)
