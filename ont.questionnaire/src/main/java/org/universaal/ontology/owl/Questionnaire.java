@@ -397,7 +397,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * @return the number of that type of question within the questionnaire.
 	 * @return null if the uri is not a specified one.
 	 */
-	public Integer getNumberOfXQuestion(String uri){
+	public int getNumberOfXQuestion(String uri){
 
 		Question[] questions = getQuestions();
 
@@ -432,7 +432,7 @@ public class Questionnaire extends ManagedIndividual {
 		else  if(uri.equals(QuestionWithMedia.MY_URI))
 			return qwm;
 		else
-			return null; 
+			return -1; 
 	}
 
 	public Question writeASingleChoiceQuestion(String qWording, String answerType){
