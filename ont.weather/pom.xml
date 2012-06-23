@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The Weather Ontology</name>
 	<description>The ontology defining the most general concepts dealing with weather.</description>
-	<scm>
-		<connection>${svn.base}/weather</connection>
-		<developerConnection>${svn.base}/weather</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

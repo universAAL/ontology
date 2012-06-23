@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>Multimedia Devices Ontology</name>
 	<description>Ontology for multimedia devices, displays and equipment</description>
-	<scm>
-		<connection>${svn.base}/multimedia</connection>
-		<developerConnection>${svn.base}/multimedia</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

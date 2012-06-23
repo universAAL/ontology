@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The Window Ontology</name>
 	<description>A simple ontology for a window actuator.</description>
-	<scm>
-		<connection>${svn.base}/window</connection>
-		<developerConnection>${svn.base}/window</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

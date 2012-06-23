@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The Power Socket Ontology</name>
 	<description>The upper ontology defining a first set of concepts from the power socket domain.</description>
-	<scm>
-		<connection>${svn.base}/powersocket</connection>
-		<developerConnection>${svn.base}/powersocket</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

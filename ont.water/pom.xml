@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>Water management devices ontology</name>
 	<description>The ontology defining devices that control water management and situations.</description>
-	<scm>
-		<connection>${svn.base}/water</connection>
-		<developerConnection>${svn.base}/water</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

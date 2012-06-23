@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The AV Ontology</name>
 	<description>The upper ontology defining the most general concepts from the audio and video world.</description>
-	<scm>
-		<connection>${svn.base}/audio_video</connection>
-		<developerConnection>${svn.base}/audio_video</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

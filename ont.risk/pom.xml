@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>Risk Situations and Detection Devices Ontology</name>
 	<description>The ontology defining weareable devices related to detection of physical risk for the user wearing them.</description>
-	<scm>
-		<connection>${svn.base}/risk</connection>
-		<developerConnection>${svn.base}/risk</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

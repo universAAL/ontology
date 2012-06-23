@@ -9,7 +9,7 @@
 		<relativePath>../ont.pom</relativePath>
 	</parent>
 	<artifactId>ont.measurement</artifactId>
-	<version>1.1.4-SNAPSHOT</version>
+	<version>1.1.5-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 	<name>The Measurement Ontology</name>
 	<description>The ontology defining the most general concepts dealing with measurement.</description>

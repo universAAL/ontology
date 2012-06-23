@@ -14,11 +14,7 @@
 	<name>The Physical World Ontology</name>
 	<description>The upper ontology defining the most general concepts from the physical world as opposed to the virtual realm.</description>
 	<url />
-	<scm>
-		<connection>${svn.base}/physical.world</connection>
-		<developerConnection>${svn.base}/physical.world</developerConnection>
-		<url>${svn.base.url}.core</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

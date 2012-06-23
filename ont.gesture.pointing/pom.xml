@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>Gesture Pointing Ontology</name>
 	<description>The ontology for gesture pointing.</description>
-	<scm>
-		<connection>${svn.base}/gesture.pointing</connection>
-		<developerConnection>${svn.base}/gesture.pointing</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
