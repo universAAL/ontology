@@ -27,11 +27,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	<scm>
-		<connection>${svn.base}/ont.profile</connection>
-		<developerConnection>${svn.base}/ont.profile</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

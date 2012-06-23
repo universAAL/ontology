@@ -23,11 +23,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	<scm>
-		<connection>${svn.base}/profile.health</connection>
-		<developerConnection>${svn.base}/profile.health</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

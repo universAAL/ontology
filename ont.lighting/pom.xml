@@ -14,11 +14,7 @@
 	<name>The Lighting Ontology</name>
 	<description>The ontology defining the most general concepts dealing with light sources and their control.</description>
 	<url />
-	<scm>
-		<connection>${svn.base}/lighting</connection>
-		<developerConnection>${svn.base}/lighting</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

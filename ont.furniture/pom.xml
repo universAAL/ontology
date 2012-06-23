@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The Furniture Ontology</name>
 	<description>An ontology for describing furnitures in a home envinment.</description>
-	<scm>
-		<connection>${svn.base}/furniture</connection>
-		<developerConnection>${svn.base}/furniture</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

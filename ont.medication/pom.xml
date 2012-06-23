@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>The Medication Ontology</name>
 	<description>The upper ontology defining the most general concepts from the medication realm.</description>
-	<scm>
-		<connection>${svn.base}/medication</connection>
-		<developerConnection>${svn.base}/medication</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>

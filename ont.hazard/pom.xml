@@ -13,11 +13,7 @@
 	<packaging>bundle</packaging>
 	<name>Environmental Hazard Alarm Ontology</name>
 	<description>The ontology defining concepts for all kinds of environment hazard detectors (gas, fire...)</description>
-	<scm>
-		<connection>${svn.base}/hazard</connection>
-		<developerConnection>${svn.base}/hazard</developerConnection>
-		<url>${svn.base.url}</url>
-	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
