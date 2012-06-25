@@ -1,7 +1,7 @@
 package org.universAAL.ennumerations.ontology.owl;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universaal.ontology.owl.QuestionnaireOntology;
+import org.universAAL.ontology.owl.QuestionnaireOntology;
 
 
 public class PartsOfDay extends ManagedIndividual{

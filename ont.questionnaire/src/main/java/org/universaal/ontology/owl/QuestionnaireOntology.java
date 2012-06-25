@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.owl;
+package org.universAAL.ontology.owl;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -26,9 +26,9 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.ProfileOntology;
+import org.universAAL.ontology.QuestionnaireOntologyFactory;
 import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.User;
-import org.universaal.ontology.QuestionnaireOntologyFactory;
 
 /**
  * This class describes the questionnaire ontology itself.

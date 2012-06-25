@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.questionnaire;
+package org.universAAL.ontology.questionnaire;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universaal.ontology.owl.QuestionnaireOntology;
+import org.universAAL.ontology.owl.QuestionnaireOntology;
 
 public class Activator implements uAALModuleActivator {
 

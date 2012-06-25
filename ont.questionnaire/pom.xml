@@ -54,8 +54,8 @@
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universaal.ontology.owl.*,org.universAAL.ontology.questionnaire</Export-Package>
-						<Private-Package>org.universaal.ontology.*</Private-Package>
+						<Export-Package>org.universAAL.ontology.owl.*,org.universAAL.ontology.questionnaire</Export-Package>
+						<Private-Package>org.universAAL.ontology.*</Private-Package>
 					</instructions>
 				</configuration>
 			</plugin>
