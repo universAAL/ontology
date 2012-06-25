@@ -349,19 +349,19 @@ ont.profile/src/main/java/org/universAAL/ontology/vcard/X400.java -text
 ont.profile/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile/src/test/resources/log4j.properties -text
 ont.questionnaire/pom.xml -text
-ont.questionnaire/src/main/java/org/universaal/ontology/QuestionnaireOntologyFactory.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/Answer.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/AnsweredQuestionnaire.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/ChoiceLabel.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/ConditionalQuestion.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/MultiChoiceQuestion.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/Question.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionWithMedia.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/Questionnaire.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireOntology.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/QuestionnaireService.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/owl/SingleChoiceQuestion.java -text
-ont.questionnaire/src/main/java/org/universaal/ontology/questionnaire/Activator.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/QuestionnaireOntologyFactory.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/Answer.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/AnsweredQuestionnaire.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/ChoiceLabel.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/ConditionalQuestion.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/MultiChoiceQuestion.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/Question.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/QuestionWithMedia.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/Questionnaire.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/QuestionnaireOntology.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/QuestionnaireService.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/owl/SingleChoiceQuestion.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/Activator.java -text
 ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/QuestionnaireEnummerationsOntologyFactory.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/owl/PartsOfDay.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/owl/QuestionnaireEnnumerationsOntology.java -text svneol=unset#text/plain
