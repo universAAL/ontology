@@ -22,14 +22,14 @@ import org.junit.Test;
 import org.universAAL.ennumerations.ontology.owl.PartsOfDay;
 import org.universAAL.itests.IntegrationTest;
 import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.ontology.owl.AnsweredQuestionnaire;
+import org.universAAL.ontology.owl.ChoiceLabel;
+import org.universAAL.ontology.owl.ConditionalQuestion;
+import org.universAAL.ontology.owl.MultiChoiceQuestion;
+import org.universAAL.ontology.owl.Question;
+import org.universAAL.ontology.owl.Questionnaire;
+import org.universAAL.ontology.owl.SingleChoiceQuestion;
 import org.universAAL.ontology.profile.User;
-import org.universaal.ontology.owl.AnsweredQuestionnaire;
-import org.universaal.ontology.owl.ChoiceLabel;
-import org.universaal.ontology.owl.ConditionalQuestion;
-import org.universaal.ontology.owl.MultiChoiceQuestion;
-import org.universaal.ontology.owl.Question;
-import org.universaal.ontology.owl.Questionnaire;
-import org.universaal.ontology.owl.SingleChoiceQuestion;
 /**
  * The following test class will check the methods related to
  * the completeness of the questionnaire.

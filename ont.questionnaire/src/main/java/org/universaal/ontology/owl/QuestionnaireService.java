@@ -15,7 +15,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package org.universaal.ontology.owl;
+package org.universAAL.ontology.owl;
 
 import org.universAAL.middleware.service.owl.Service;
 

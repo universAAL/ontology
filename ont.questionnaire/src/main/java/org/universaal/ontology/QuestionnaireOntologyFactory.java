@@ -14,11 +14,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology;
+package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universaal.ontology.owl.*;
+import org.universAAL.ontology.owl.Answer;
+import org.universAAL.ontology.owl.AnsweredQuestionnaire;
+import org.universAAL.ontology.owl.ChoiceLabel;
+import org.universAAL.ontology.owl.ConditionalQuestion;
+import org.universAAL.ontology.owl.MultiChoiceQuestion;
+import org.universAAL.ontology.owl.QuestionWithMedia;
+import org.universAAL.ontology.owl.Questionnaire;
+import org.universAAL.ontology.owl.QuestionnaireService;
+import org.universAAL.ontology.owl.SingleChoiceQuestion;
 
 public class QuestionnaireOntologyFactory extends ResourceFactoryImpl {
 
