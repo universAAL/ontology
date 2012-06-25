@@ -40,7 +40,6 @@ public class Activator implements uAALModuleActivator {
 	om.register(shapeOntology);
 	om.register(phThingOntology);
 	om.register(spaceOntology);
-	throw new RuntimeException("runtime ex");
     }
 
     public void stop(ModuleContext arg0) throws Exception {
