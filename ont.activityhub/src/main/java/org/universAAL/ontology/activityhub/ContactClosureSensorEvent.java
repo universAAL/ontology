@@ -18,7 +18,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  * @author Thomas Fuxreiter
  *
  */
-public class ContactClosureSensorEvent extends ManagedIndividual {
+public class ContactClosureSensorEvent extends ActivityHubSensorEvent {
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE + 
 	"ContactClosureSensorEvent";
 

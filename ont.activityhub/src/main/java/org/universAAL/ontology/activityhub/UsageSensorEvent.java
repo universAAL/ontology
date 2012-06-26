@@ -1,11 +1,10 @@
 package org.universAAL.ontology.activityhub;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.ActivityHubOntology;
 
 /**
  * Ontological enumeration of usage sensor events according to ISO 11073 - 
- * Part 10471 (Indepentend living activity hub), edition 2010-05-01
+ * Part 10471 (Independent living activity hub), edition 2010-05-01
  * Methods included in this class are the mandatory ones for representing
  * an ontological enumeration in Java classes for uAAL.
  * 
@@ -19,7 +18,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  * 
  * @author Thomas Fuxreiter
  */
-public class UsageSensorEvent extends ManagedIndividual {
+public class UsageSensorEvent extends ActivityHubSensorEvent {
 
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE + 
 		"UsageSensorEvent";

@@ -1,12 +1,12 @@
 package org.universAAL.ontology.activityhub.ext;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.ActivityHubOntology;
+import org.universAAL.ontology.activityhub.ActivityHubSensorEvent;
 
 /**
  * Ontological enumeration of adaptor plug actuator events.
  * This device is currently not covered by the ISO 11073 standard
- * in part 10471 (Indepentend living activity hub).
+ * in part 10471 (Independent living activity hub).
  * This class is an independent extension to the standard.
  * 
  * Methods included in this class are the mandatory ones for
@@ -19,7 +19,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  * 
  * @author Thomas Fuxreiter
  */
-public class AdaptorPlugActuatorEvent extends ManagedIndividual {
+public class AdaptorPlugActuatorEvent extends ActivityHubSensorEvent {
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE + 
 	"AdaptorPlugActuatorEvent";
 

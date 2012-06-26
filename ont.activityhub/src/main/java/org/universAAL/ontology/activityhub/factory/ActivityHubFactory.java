@@ -1,4 +1,4 @@
-package org.universAAL.ontology;
+package org.universAAL.ontology.activityhub.factory;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
@@ -8,16 +8,22 @@ import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
 
 /**
  * Factory for the ActivityHub ontology according to ISO 11073 - 
- * Part 10471 (Indepentend living activity hub), edition 2010-05-01
+ * Part 10471 (Independent living activity hub), edition 2010-05-01
  * 
  * @author Thomas Fuxreiter
  */
 public class ActivityHubFactory extends ResourceFactoryImpl {
 
+	/**
+	 * @param classURI could be null
+	 */
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
 	
     	switch (factoryIndex) {
+    	case ActivityHubSensorType.ActivityHub:
+			return new ActivityHub(instanceURI);
+			
 //		changed to abstract class
 //    	case ActivityHubSensorType.ActivityHubSensor:
 //    					return new ActivityHubSensor(instanceURI);
@@ -51,8 +57,6 @@ public class ActivityHubFactory extends ResourceFactoryImpl {
     					return new TemperatureSensor(instanceURI);
     	case ActivityHubSensorType.AdaptorPlugActuator:
     					return new AdaptorPlugActuator(instanceURI);
-    	case ActivityHubSensorType.ActivityHub:
-    					return new ActivityHub(instanceURI);
     	}
 
     	return null;

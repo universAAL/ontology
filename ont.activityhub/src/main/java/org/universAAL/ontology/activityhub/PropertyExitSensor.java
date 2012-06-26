@@ -4,10 +4,11 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.ontology.ActivityHubOntology;
+import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
 
 /**
  * Ontological representation of a property exit sensor according to
- * ISO 11073 - Part 10471 (Indepentend living activity hub).
+ * ISO 11073 - Part 10471 (Independent living activity hub).
  * Methods included in this class are the mandatory ones for
  * representing an ontological concept in Java classes for uAAL. Usually it
  * includes getters and setters for most of its properties.
@@ -25,6 +26,8 @@ public class PropertyExitSensor extends ActivityHubSensor {
 
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE
     + "PropertyExitSensor";
+
+	public static final int MY_SENSOR_TYPE = ActivityHubSensorType.PropertyExitSensor; 
 
 	/**
 	 * 
@@ -71,5 +74,12 @@ public class PropertyExitSensor extends ActivityHubSensor {
 
 	public boolean isWellFormed() {
 		return true;
+	}
+	
+	/* (non-Javadoc)
+	 * @see org.universAAL.ontology.activityhub.ActivityHubSensor#getSensorType()
+	 */
+	public int getSensorType() {
+		return MY_SENSOR_TYPE;
 	}
 }
