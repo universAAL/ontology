@@ -10,7 +10,7 @@ import org.universAAL.ontology.phThing.Device;
 /**
  * Ontological representation of an adaptor plug actuator.
  * This device is currently not covered by the ISO 11073 standard
- * in part 10471 (Indepentend living activity hub).
+ * in part 10471 (Independent living activity hub).
  * This class is an independent extension to the standard.
  * 
  * Specific actuator actions:

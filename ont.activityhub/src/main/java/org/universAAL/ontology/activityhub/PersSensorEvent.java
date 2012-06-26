@@ -1,11 +1,10 @@
 package org.universAAL.ontology.activityhub;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.ActivityHubOntology;
 
 /**
  * Ontological enumeration of PERS (personal emergency) sensor events according
- * to ISO 11073 - Part 10471 (Indepentend living activity hub).
+ * to ISO 11073 - Part 10471 (Independent living activity hub).
  * Methods included in this class are the mandatory ones for
  * representing an ontological concept in Java classes for uAAL. Usually it
  * includes getters and setters for most of its properties.
@@ -17,7 +16,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  * @author Thomas Fuxreiter
  *
  */
-public class PersSensorEvent extends ManagedIndividual {
+public class PersSensorEvent extends ActivityHubSensorEvent {
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE + 
 	"PersSensorEvent";
 

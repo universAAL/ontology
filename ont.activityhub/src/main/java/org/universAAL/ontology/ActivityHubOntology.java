@@ -8,20 +8,23 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.*;
+import org.universAAL.ontology.activityhub.factory.ActivityHubFactory;
 import org.universAAL.ontology.phThing.Actuator;
 import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
  * The ontology represents the sensors specified in ISO 11073 - Part 10471
- * (Indepentend living activity hub)
+ * (Independent living activity hub)
  * 
  * @author Thomas Fuxreiter
  */
 public class ActivityHubOntology extends Ontology{
 
-    public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-    + "ActivityHub.owl#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/ActivityHub.owl#";
+    
+    	//Resource.uAAL_VOCABULARY_NAMESPACE;
+    	//Resource.uAAL_NAMESPACE_PREFIX + "ActivityHub.owl#";
 
 	private static ActivityHubFactory factory = new ActivityHubFactory();
     
@@ -32,12 +35,12 @@ public class ActivityHubOntology extends Ontology{
 	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("Ontology for sensors specified in " +
-			"ISO 11073 - Part 10471 (Indepentend living activity hub)");
+			"ISO 11073 - Part 10471 (Independent living activity hub)");
 		r.setResourceLabel("ActivityHub");
-		r.serializesAsXMLLiteral();
+//		r.serializesAsXMLLiteral();
 
 		/* is planned to be mandatory for OWL import/export */
-		addImport(PhThingOntology.NAMESPACE);
+//		addImport(PhThingOntology.NAMESPACE);
 		
 		OntClassInfoSetup oci;
 
@@ -190,8 +193,8 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewAbstractOntClassInfo(MotionSensorEvent.MY_URI);
 		oci.setResourceLabel("MotionSensorEvent");
 		oci.setResourceComment("Event for ISO 11073-10471 motion sensor");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.toEnumeration(new ManagedIndividual[] {
+		oci.addSuperClass(ActivityHubSensorEvent.MY_URI);
+		oci.toEnumeration(new ActivityHubSensorEvent[] {
 				MotionSensorEvent.motion_detected, 
 				MotionSensorEvent.motion_detected_delayed,
 				MotionSensorEvent.tamper_detected,
@@ -262,8 +265,8 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewAbstractOntClassInfo(ContactClosureSensorEvent.MY_URI);
 		oci.setResourceLabel("ContactClosureSensorEvent");
 		oci.setResourceComment("Event for ISO 11073-10471 contact closure sensor");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.toEnumeration(new ManagedIndividual[] {
+		oci.addSuperClass(ActivityHubSensorEvent.MY_URI);
+		oci.toEnumeration(new ActivityHubSensorEvent[] {
 				ContactClosureSensorEvent.contact_opened,
 				ContactClosureSensorEvent.contact_closed,
 				ContactClosureSensorEvent.no_condition_detected } );
@@ -313,8 +316,8 @@ public class ActivityHubOntology extends Ontology{
 		oci = createNewAbstractOntClassInfo(SwitchSensorEvent.MY_URI);
 		oci.setResourceLabel("SwitchSensorEvent");
 		oci.setResourceComment("Event for ISO 11073-10471 switch sensor");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.toEnumeration(new ManagedIndividual[] {
+		oci.addSuperClass(ActivityHubSensorEvent.MY_URI);
+		oci.toEnumeration(new ActivityHubSensorEvent[] {
 				SwitchSensorEvent.switch_on,
 				SwitchSensorEvent.switch_off,
 				SwitchSensorEvent.no_condition_detected } );
@@ -407,17 +410,29 @@ public class ActivityHubOntology extends Ontology{
 
 	/*** Sensors Base Class ***/
 		
+		/* create ontology resource for ActivityHubSensorEvent (abstract class) */
+		oci = createNewAbstractOntClassInfo(ActivityHubSensorEvent.MY_URI);
+		oci.setResourceLabel("ActivityHubSensorEvent");
+		oci.setResourceComment("ISO 11073-10471 activity hub; base concept for all sensor events");
+		oci.addSuperClass(ManagedIndividual.MY_URI);
+		
+		
 		/* create ontology resource for ActivityHubSensor (abstract class) */
 		oci = createNewAbstractOntClassInfo(ActivityHubSensor.MY_URI);
 		oci.setResourceLabel("ActivityHubSensor");
 		oci.setResourceComment("ISO 11073-10471 activity hub base sensor");
 		oci.addSuperClass(Sensor.MY_URI);
-		
+
+		/* last event property is of type ActivityHubSensorEvent (abstract class) */
+		oci.addObjectProperty(ActivityHubSensor.PROP_LASTEVENT);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ActivityHubSensor.PROP_LASTEVENT, ActivityHubSensorEvent.MY_URI));
+
 		
 	/*** Services ***/
 
 		/* create ontology resource for ActivityHub Service */
-		oci = createNewOntClassInfo(ActivityHub.MY_URI, factory, 16);
+		oci = createNewOntClassInfo(ActivityHub.MY_URI, factory, 0);
 		oci.setResourceLabel("ActivityHub");
 		oci.setResourceComment("The class of services controling activity hub sensors and actuators");
 		oci.addSuperClass(Service.MY_URI);

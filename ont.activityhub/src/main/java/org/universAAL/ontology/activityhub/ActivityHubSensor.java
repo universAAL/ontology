@@ -15,6 +15,17 @@ import org.universAAL.ontology.phThing.Sensor;
  */
 public abstract class ActivityHubSensor extends Sensor {
 
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "ActivityHubSensor";
+
+	public static final String PROP_LASTEVENT = ActivityHubOntology.NAMESPACE + "lastEvent";
+	
+	// doesn't work here!
+//	private int MY_SENSOR_TYPE; //ActivityHubSensorType.ActivityHubSensor; 
+	/** 
+	 * must be implemented in the child classes { return MY_SENSOR_TYPE; }
+	*/
+	public abstract int getSensorType();
+	
 	/* MUST be defined! otherwise the URI of the parent class is returned */
 	public String getClassURI() {
 		return MY_URI;
@@ -31,15 +42,23 @@ public abstract class ActivityHubSensor extends Sensor {
 		return PROP_SERIALIZATION_FULL;
 	}
 
+    /**
+     * From Resource class:
+     * The properties denote the RDF triples of this resource, realized as
+     * Hashtable. The RDF subject is this Resource itself, the key of the
+     * Hashtable is the RDF predicate and the value of the Hashtable is the RDF
+     * object, which can be a literal or another resource. See
+     * {@link #setProperty(String propURI, Object value)} for more information.
+     */	
+	public void setMeasuredValue(ActivityHubSensorEvent event) {
+		props.put(PROP_MEASURED_VALUE, event);
+	}
+	
 	/* for testing return true */
 	/* variables could be checked here */
 	public boolean isWellFormed() {
 		return true;
 	}
-
-	
-	public static final String MY_URI = ActivityHubOntology.NAMESPACE
-    + "ActivityHubSensor";
 
 	public ActivityHubSensor() {
 		super();

@@ -1,11 +1,11 @@
 * text=auto !eol
 ont.activityhub/documentation/Development_notes.txt -text
 ont.activityhub/pom.xml -text
-ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubFactory.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/Activator.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHub.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHubSensor.java -text
+ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ActivityHubSensorEvent.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/CoSensor.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ContactClosureSensor.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ContactClosureSensorEvent.java -text
@@ -33,6 +33,8 @@ ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/UsageSensorEve
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/WaterSensor.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ext/AdaptorPlugActuator.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent.java -text
+ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/factory/ActivityHubEventFactory.java -text
+ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/factory/ActivityHubFactory.java -text
 ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/util/ActivityHubSensorType.java -text
 ont.activityhub/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.activityhub/src/test/resources/log4j.properties -text

@@ -11,7 +11,12 @@ package org.universAAL.ontology.activityhub.util;
  */
 public class ActivityHubSensorType {
 
-	public static final int ActivityHubSensor = 0;
+	// service
+	public static final int ActivityHub = 0;
+
+//	changed to abstract class
+//	public static final int ActivityHubSensor = 0;
+
 	public static final int FallSensor = 1;
 	public static final int PersSensor = 2;
 	public static final int SmokeSensor = 3;
@@ -27,6 +32,7 @@ public class ActivityHubSensorType {
 	public static final int MedicationDosageSensor = 13;
 	public static final int TemperatureSensor = 14;
 	public static final int AdaptorPlugActuator = 15;
-	public static final int ActivityHub = 16;
 	
+	// to be extended by new sensor types...
+
 }
