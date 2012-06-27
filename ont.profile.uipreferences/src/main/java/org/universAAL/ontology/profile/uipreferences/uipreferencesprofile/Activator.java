@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.profile.uipreferences.uipreferencesprofile;
+package org.universAAL.ontology.profile.uipreferences.uipreferencesprofile;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universaal.ontology.profile.uipreferences.uipreferencesprofile.owl.UIPreferencesProfileOntology;
+import org.universAAL.ontology.profile.uipreferences.uipreferencesprofile.owl.UIPreferencesProfileOntology;
 
 /**
  * @author eandgrg

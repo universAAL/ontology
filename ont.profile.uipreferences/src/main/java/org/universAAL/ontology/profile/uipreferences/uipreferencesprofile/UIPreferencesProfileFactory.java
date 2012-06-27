@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.profile.uipreferences.uipreferencesprofile;
+package org.universAAL.ontology.profile.uipreferences.uipreferencesprofile;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universaal.ontology.profile.uipreferences.uipreferencesprofile.owl.InteractionPreferencesProfile;
+import org.universAAL.ontology.profile.uipreferences.uipreferencesprofile.owl.InteractionPreferencesProfile;
 
 public class UIPreferencesProfileFactory extends ResourceFactoryImpl {
 
