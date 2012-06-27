@@ -282,10 +282,10 @@ ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine
 ont.profile.health/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.health/src/test/resources/log4j.properties -text
 ont.profile.uipreferences/pom.xml -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
-ont.profile.uipreferences/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/uipreferencesprofile/Activator.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
 ont.profile.uipreferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.uipreferences/src/test/resources/log4j.properties -text
 ont.profile.userid/LICENSE.txt -text
