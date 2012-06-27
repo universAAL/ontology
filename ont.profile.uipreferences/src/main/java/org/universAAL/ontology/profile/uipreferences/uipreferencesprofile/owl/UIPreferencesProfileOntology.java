@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.profile.uipreferences.uipreferencesprofile.owl;
+package org.universAAL.ontology.profile.uipreferences.uipreferencesprofile.owl;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -29,7 +29,7 @@ import org.universAAL.middleware.ui.owl.UIBusOntology;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.SubProfile;
-import org.universaal.ontology.profile.uipreferences.uipreferencesprofile.UIPreferencesProfileFactory;
+import org.universAAL.ontology.profile.uipreferences.uipreferencesprofile.UIPreferencesProfileFactory;
 
 
 /**
