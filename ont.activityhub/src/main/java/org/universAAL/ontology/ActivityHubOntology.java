@@ -10,7 +10,6 @@ import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.*;
 import org.universAAL.ontology.activityhub.factory.ActivityHubFactory;
 import org.universAAL.ontology.phThing.Actuator;
-import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**
