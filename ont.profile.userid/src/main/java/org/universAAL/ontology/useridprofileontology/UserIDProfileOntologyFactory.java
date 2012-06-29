@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.useridprofileontology;
+package org.universAAL.ontology.useridprofileontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universaal.ontology.useridprofileontology.owl.UserIDProfile;
+import org.universAAL.ontology.useridprofileontology.owl.UserIDProfile;
 
 /**
  * @author eandgrg

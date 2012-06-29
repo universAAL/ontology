@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.useridprofileontology.owl;
+package org.universAAL.ontology.useridprofileontology.owl;
 
 import org.universAAL.ontology.profile.SubProfile;
 

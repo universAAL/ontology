@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universaal.ontology.useridprofileontology;
+package org.universAAL.ontology.useridprofileontology;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universaal.ontology.useridprofileontology.owl.UserIDProfileOntology;
+import org.universAAL.ontology.useridprofileontology.owl.UserIDProfileOntology;
 
 /**
  * @author eandgrg
