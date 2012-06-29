@@ -290,10 +290,10 @@ ont.profile.uipreferences/src/test/java/org/universAAL/ontology/test/ArtifactInt
 ont.profile.uipreferences/src/test/resources/log4j.properties -text
 ont.profile.userid/LICENSE.txt -text
 ont.profile.userid/pom.xml -text
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text
-ont.profile.userid/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/useridprofileontology/Activator.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/useridprofileontology/owl/UserIDProfile.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text
 ont.profile.userid/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.userid/src/test/resources/log4j.properties -text
 ont.profile/LICENSE.txt -text
