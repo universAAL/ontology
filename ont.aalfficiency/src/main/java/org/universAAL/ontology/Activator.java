@@ -1,21 +1,21 @@
 package org.universAAL.ontology;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
+import org.universAAL.middleware.container.ModuleContext;
+import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 
-public class Activator implements BundleActivator{
-	static BundleContext context = null;
+public class Activator implements uAALModuleActivator{
+	static ModuleContext context = null;
 	AalfficiencyOntology aalfficiency = new AalfficiencyOntology();
 	
-	public void start(BundleContext arg0) throws Exception {
+	public void start(ModuleContext arg0) throws Exception {
 		Activator.context = arg0;
 		OntologyManagement.getInstance().register(aalfficiency);
+		
 	}
 
-	public void stop(BundleContext arg0) throws Exception {
+	public void stop(ModuleContext arg0) throws Exception {
 		OntologyManagement.getInstance().unregister(aalfficiency);
-		
 	}
 
 }
