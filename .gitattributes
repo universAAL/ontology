@@ -1,9 +1,4 @@
 * text=auto !eol
-ont.aalfficiency/.classpath -text svneol=unset#text/plain
-ont.aalfficiency/.project -text svneol=unset#text/plain
-ont.aalfficiency/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
-ont.aalfficiency/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
-ont.aalfficiency/.settings/org.eclipse.m2e.core.prefs -text svneol=unset#text/plain
 ont.aalfficiency/AalfficiencyOntology.di -text
 ont.aalfficiency/AalfficiencyOntology.notation -text
 ont.aalfficiency/AalfficiencyOntology.uml -text svneol=unset#text/plain
