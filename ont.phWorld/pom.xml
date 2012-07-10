@@ -58,7 +58,7 @@
 							org.universAAL.ontology.location.outdoor,org.universAAL.ontology.location.position,
 							org.universAAL.ontology.location.address,
 							org.universAAL.ontology.shape</Export-Package>
-						<Private-Package>org.universAAL.ontology</Private-Package>
+						<Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
 					</instructions>
 				</configuration>
 				<extensions>true</extensions>

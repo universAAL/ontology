@@ -61,7 +61,7 @@
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Export-Package>org.universAAL.ontology.owl.*,
 							org.universAAL.ontology.unitsystem.*,
-							org.universAAL.ontology.*</Export-Package>
+							org.universAAL.ontology.*;-split-package:=first</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>
