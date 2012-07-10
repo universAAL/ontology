@@ -68,7 +68,7 @@
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Export-Package>org.universAAL.ontology.activityhub,org.universAAL.ontology.activityhub.ext,org.universAAL.ontology.activityhub.factory</Export-Package>
-						<Private-Package>org.universAAL.ontology</Private-Package>
+						<Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
 					</instructions>
 				</configuration>
 			</plugin>
