@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.risk;
 
-import org.universAAL.ontology.RiskOntology;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.AssistedPerson;
 

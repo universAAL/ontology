@@ -21,7 +21,6 @@
 package org.universAAL.ontology.window;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.WindowOntology;
 
 /**
  * Ontological enumeration of possible window types. Currently empty. Methods

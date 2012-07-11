@@ -29,7 +29,6 @@ package org.universAAL.ontology.profile;
 import org.universAAL.middleware.owl.ManagedIndividual;
 //import org.universAAL.ontology.profile.AALSpaceProfile;
 //import org.universAAL.ontology.profile.Profile;
-import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontology class representing an AAL Space

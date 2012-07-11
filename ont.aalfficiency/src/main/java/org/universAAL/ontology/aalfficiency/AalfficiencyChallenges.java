@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.AalfficiencyOntology;
 
 public class AalfficiencyChallenges extends ManagedIndividual {
 

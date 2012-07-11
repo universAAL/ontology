@@ -59,9 +59,9 @@
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.owl.*,
-							org.universAAL.ontology.unitsystem.*,
-							org.universAAL.ontology.*;-split-package:=first</Export-Package>
+						<Export-Package>org.universAAL.ontology.unit,
+							org.universAAL.ontology.unit.system</Export-Package>
+						<Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
 					</instructions>
 				</configuration>
 			</plugin>

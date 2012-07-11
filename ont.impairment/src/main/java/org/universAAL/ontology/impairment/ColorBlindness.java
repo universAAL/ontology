@@ -22,7 +22,6 @@
 package org.universAAL.ontology.impairment;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.ontology.ImpairmentOntology;
 
 /**
  * Ontological representation of the color blindness impairment. Methods

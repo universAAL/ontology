@@ -25,7 +25,6 @@
  */
 package org.universAAL.ontology.profile;
 
-import org.universAAL.ontology.ProfileOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**

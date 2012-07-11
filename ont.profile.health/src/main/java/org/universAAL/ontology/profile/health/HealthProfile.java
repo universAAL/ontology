@@ -23,7 +23,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.universAAL.middleware.ui.owl.AccessImpairment;
-import org.universAAL.ontology.HealthProfileOntology;
 import org.universAAL.ontology.profile.SubProfile;
 
 /**

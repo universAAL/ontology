@@ -1,7 +1,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.ProfileOntology;
 
 public class Property extends ManagedIndividual {
     public static final String MY_URI = ProfileOntology.NAMESPACE

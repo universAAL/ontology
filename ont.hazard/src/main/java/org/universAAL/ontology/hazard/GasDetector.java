@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.hazard;
 
-import org.universAAL.ontology.HazardOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**

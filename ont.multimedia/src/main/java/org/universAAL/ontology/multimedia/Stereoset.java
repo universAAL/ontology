@@ -19,7 +19,6 @@
  */
 package org.universAAL.ontology.multimedia;
 
-import org.universAAL.ontology.MultimediaOntology;
 import org.universAAL.ontology.phThing.Device;
 
 /**

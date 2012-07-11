@@ -21,7 +21,7 @@
 package org.universAAL.ontology.av.device;
 
 import org.universAAL.middleware.util.Constants;
-import org.universAAL.ontology.AVOntology;
+import org.universAAL.ontology.av.AVOntology;
 import org.universAAL.ontology.phThing.Device;
 
 /**

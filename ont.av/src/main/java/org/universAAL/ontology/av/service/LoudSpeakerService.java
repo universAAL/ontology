@@ -21,7 +21,7 @@
 package org.universAAL.ontology.av.service;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.AVOntology;
+import org.universAAL.ontology.av.AVOntology;
 
 /**
  * Ontological service that handles loudspeakers. Methods included in this class

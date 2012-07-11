@@ -26,7 +26,6 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of a root profile. Methods included in this

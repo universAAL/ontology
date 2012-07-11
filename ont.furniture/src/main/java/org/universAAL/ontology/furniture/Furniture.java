@@ -19,7 +19,6 @@
  */
 package org.universAAL.ontology.furniture;
 
-import org.universAAL.ontology.FurnitureOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.shape.Shape;
 

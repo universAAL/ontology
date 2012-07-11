@@ -20,7 +20,6 @@
 package org.universAAL.ontology.furniture;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.FurnitureOntology;
 
 /**
  * Ontological enumeration of possible furniture types. Methods included in this

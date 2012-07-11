@@ -72,6 +72,7 @@
 	  <module>../ont.window</module>
 	  <module>../ont.che</module>
 	  <module>../ont.questionnaire</module>
+	  <module>../ont.aalfficiency</module>
       <module>composite</module>
 	</modules>
 
@@ -203,6 +204,12 @@
 		    <artifactId>ont.window</artifactId>
 		    <version>1.1.4-SNAPSHOT</version>
 		  </dependency>
+		  <dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.aalfficiency</artifactId>
+			<version>0.1.0-SNAPSHOT</version>
+		  </dependency>
+		  
 		  
 		  <!-- 			use the following to add all ontologies -->
 		  <!-- 			<dependency> -->

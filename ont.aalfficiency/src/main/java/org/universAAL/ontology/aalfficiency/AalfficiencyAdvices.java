@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.AalfficiencyOntology;
 
 public class AalfficiencyAdvices extends ManagedIndividual {
 

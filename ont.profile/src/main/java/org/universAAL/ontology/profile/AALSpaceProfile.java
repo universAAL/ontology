@@ -26,7 +26,6 @@
 
 package org.universAAL.ontology.profile;
 
-import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontology class representing an AAL Space Profile

@@ -21,10 +21,10 @@
  */
 package org.universAAL.ontology;
 
-import org.universAAL.context.che.ontology.ContextEvent;
-import org.universAAL.context.che.ontology.ContextHistoryService;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.ontology.che.ContextEvent;
+import org.universAAL.ontology.che.ContextHistoryService;
 
 /**
  * Ontology factory for serialization.

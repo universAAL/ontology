@@ -24,7 +24,6 @@ package org.universAAL.ontology.impairment;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
 import org.universAAL.middleware.ui.owl.AccessImpairment;
-import org.universAAL.ontology.ImpairmentOntology;
 
 /**
  * Ontological representation of a hearing impairment. Methods included in this

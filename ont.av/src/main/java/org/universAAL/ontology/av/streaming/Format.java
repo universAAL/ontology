@@ -21,7 +21,7 @@
 package org.universAAL.ontology.av.streaming;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.AVOntology;
+import org.universAAL.ontology.av.AVOntology;
 
 /**
  * this class should be the representation of a media format and is used for

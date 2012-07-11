@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.window;
 
-import org.universAAL.ontology.WindowOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**

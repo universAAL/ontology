@@ -24,7 +24,6 @@ package org.universAAL.ontology.vcard;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.ontology.VCardOntology;
 
 public class Tel extends ManagedIndividual{
     public static final String MY_URI = VCardOntology.NAMESPACE + "Tel";

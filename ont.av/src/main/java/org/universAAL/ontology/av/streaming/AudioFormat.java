@@ -20,7 +20,7 @@
 
 package org.universAAL.ontology.av.streaming;
 
-import org.universAAL.ontology.AVOntology;
+import org.universAAL.ontology.av.AVOntology;
 
 /**
  * Ontological representation describing an audio format. Methods included in

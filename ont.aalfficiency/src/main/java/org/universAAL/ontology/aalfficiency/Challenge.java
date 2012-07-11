@@ -1,7 +1,6 @@
 package org.universAAL.ontology.aalfficiency;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.AalfficiencyOntology;
 
 public class Challenge extends ManagedIndividual {
 	  // Make sure you use the same namespace in all your domain ontology

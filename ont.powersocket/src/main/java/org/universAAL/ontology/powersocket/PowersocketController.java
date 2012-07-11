@@ -21,7 +21,6 @@
 package org.universAAL.ontology.powersocket;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.PowersocketOntology;
 
 /**
  * Ontological service that controls power sockets. Methods included in this

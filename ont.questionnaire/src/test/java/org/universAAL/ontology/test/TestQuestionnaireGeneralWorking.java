@@ -31,10 +31,10 @@ import org.junit.Test;
 import org.universAAL.ennumerations.ontology.owl.PartsOfDay;
 import org.universAAL.itests.IntegrationTest;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.owl.ChoiceLabel;
-import org.universAAL.ontology.owl.Question;
-import org.universAAL.ontology.owl.Questionnaire;
 import org.universAAL.ontology.profile.User;
+import org.universAAL.ontology.questionnaire.ChoiceLabel;
+import org.universAAL.ontology.questionnaire.Question;
+import org.universAAL.ontology.questionnaire.Questionnaire;
 
 public class TestQuestionnaireGeneralWorking extends IntegrationTest{
 	

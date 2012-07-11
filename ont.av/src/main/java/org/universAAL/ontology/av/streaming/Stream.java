@@ -21,7 +21,7 @@
 package org.universAAL.ontology.av.streaming;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.AVOntology;
+import org.universAAL.ontology.av.AVOntology;
 
 /**
  * Ontological representation of a software data stream. Methods included in
