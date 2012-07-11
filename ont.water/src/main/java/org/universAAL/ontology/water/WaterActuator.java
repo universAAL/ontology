@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.water;
 
-import org.universAAL.ontology.WaterOntology;
 import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**

@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.weather;
 
-import org.universAAL.ontology.WeatherOntology;
 import org.universAAL.ontology.phThing.Sensor;
 
 /**

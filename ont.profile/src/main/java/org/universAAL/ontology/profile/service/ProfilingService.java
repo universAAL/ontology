@@ -26,7 +26,7 @@
 package org.universAAL.ontology.profile.service;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.ProfileOntology;
+import org.universAAL.ontology.profile.ProfileOntology;
 
 /**
  * Ontological generic service that handles profile-related information. Methods

@@ -19,7 +19,6 @@
  */
 package org.universAAL.ontology.powersocket;
 
-import org.universAAL.ontology.PowersocketOntology;
 import org.universAAL.ontology.location.Location;
 
 /**

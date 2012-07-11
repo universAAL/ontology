@@ -2,11 +2,11 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universAAL.ontology.owl.DividedUnit;
-import org.universAAL.ontology.owl.MultipliedUnit;
-import org.universAAL.ontology.owl.Prefix;
-import org.universAAL.ontology.owl.Unit;
-import org.universAAL.ontology.owl.UnitSystem;
+import org.universAAL.ontology.unit.DividedUnit;
+import org.universAAL.ontology.unit.MultipliedUnit;
+import org.universAAL.ontology.unit.Prefix;
+import org.universAAL.ontology.unit.Unit;
+import org.universAAL.ontology.unit.UnitSystem;
 
 public class UnitFactory extends ResourceFactoryImpl {
 

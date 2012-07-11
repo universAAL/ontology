@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.medication;
 
-import org.universAAL.ontology.MedicationOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**

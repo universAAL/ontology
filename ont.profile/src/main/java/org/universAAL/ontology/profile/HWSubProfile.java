@@ -1,6 +1,5 @@
 package org.universAAL.ontology.profile;
 
-import org.universAAL.ontology.ProfileOntology;
 
 public class HWSubProfile extends SubProfile {
 

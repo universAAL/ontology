@@ -26,7 +26,6 @@
 
 package org.universAAL.ontology.profile;
 
-import org.universAAL.ontology.ProfileOntology;
 
 /**
  * Ontological representation of the specific profile of an any person. Methods

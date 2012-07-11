@@ -22,7 +22,6 @@
  */
 package org.universAAL.ontology.vcard;
 
-import org.universAAL.ontology.VCardOntology;
 
 public class Video extends Tel {
     public static final String MY_URI = VCardOntology.NAMESPACE + "Video";

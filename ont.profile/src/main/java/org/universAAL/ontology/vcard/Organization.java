@@ -23,7 +23,6 @@
 package org.universAAL.ontology.vcard;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.VCardOntology;
 
 public class Organization extends ManagedIndividual{
     public static final String MY_URI = VCardOntology.NAMESPACE + "Organization";

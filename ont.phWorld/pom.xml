@@ -53,9 +53,12 @@
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Description>${project.description}</Bundle-Description>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.space,org.universAAL.ontology.phThing,
-							org.universAAL.ontology.location,org.universAAL.ontology.location.indoor,
-							org.universAAL.ontology.location.outdoor,org.universAAL.ontology.location.position,
+						<Export-Package>org.universAAL.ontology.space,
+							org.universAAL.ontology.phThing,
+							org.universAAL.ontology.location,
+							org.universAAL.ontology.location.indoor,
+							org.universAAL.ontology.location.outdoor,
+							org.universAAL.ontology.location.position,
 							org.universAAL.ontology.location.address,
 							org.universAAL.ontology.shape</Export-Package>
 						<Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>

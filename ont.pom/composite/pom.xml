@@ -80,12 +80,6 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.profile.userid</artifactId>
     </dependency>
-    <!--
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.uipreferences</artifactId>
-    </dependency>
-    -->
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.risk</artifactId>
@@ -105,6 +99,32 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.che</artifactId>
-    </dependency>    
+    </dependency>
+    <!--
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.uipreferences</artifactId>
+    </dependency>
+    -->
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.activityhub</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.uipreferences</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.unit</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.questionnaire</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.aalfficiency</artifactId>
+    </dependency>
   </dependencies>
 </project>

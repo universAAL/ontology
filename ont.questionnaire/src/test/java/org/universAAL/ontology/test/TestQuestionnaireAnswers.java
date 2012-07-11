@@ -25,14 +25,14 @@ import org.junit.Test;
 import org.universAAL.ennumerations.ontology.owl.PartsOfDay;
 import org.universAAL.itests.IntegrationTest;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.owl.AnsweredQuestionnaire;
-import org.universAAL.ontology.owl.ChoiceLabel;
-import org.universAAL.ontology.owl.ConditionalQuestion;
-import org.universAAL.ontology.owl.MultiChoiceQuestion;
-import org.universAAL.ontology.owl.Question;
-import org.universAAL.ontology.owl.Questionnaire;
-import org.universAAL.ontology.owl.SingleChoiceQuestion;
 import org.universAAL.ontology.profile.User;
+import org.universAAL.ontology.questionnaire.AnsweredQuestionnaire;
+import org.universAAL.ontology.questionnaire.ChoiceLabel;
+import org.universAAL.ontology.questionnaire.ConditionalQuestion;
+import org.universAAL.ontology.questionnaire.MultiChoiceQuestion;
+import org.universAAL.ontology.questionnaire.Question;
+import org.universAAL.ontology.questionnaire.Questionnaire;
+import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
 
 /**
  * The following test class will check that the methods

@@ -1,7 +1,6 @@
 package org.universAAL.ontology.aalfficiency;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.AalfficiencyOntology;
 
 public class Aalfficiency extends Service{
 	

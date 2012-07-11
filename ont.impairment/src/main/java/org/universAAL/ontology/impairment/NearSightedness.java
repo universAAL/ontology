@@ -23,7 +23,6 @@
 package org.universAAL.ontology.impairment;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.ontology.ImpairmentOntology;
 
 /**
  * Ontological representation of near-sightedness impairment. Methods included

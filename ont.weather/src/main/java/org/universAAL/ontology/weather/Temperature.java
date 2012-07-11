@@ -23,7 +23,6 @@
 package org.universAAL.ontology.weather;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.WeatherOntology;
 
 /**
  * Ontological representation of the concept of tempreature. Currently without

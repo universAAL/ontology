@@ -23,7 +23,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.ontology.ProfileOntology;
+import org.universAAL.ontology.profile.ProfileOntology;
 
 
 public class QuestionnaireEnnumerationsOntology extends Ontology{
