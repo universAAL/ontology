@@ -17,16 +17,17 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.ontology.phThing;
+package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.location.LocationOntology;
+import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.shape.ShapeOntology;
 import org.universAAL.ontology.space.SpaceOntology;
 
-public class Activator implements uAALModuleActivator {
+public class PhWorldActivator implements uAALModuleActivator {
 
     LocationOntology locationOntology = new LocationOntology();
     PhThingOntology phThingOntology = new PhThingOntology();
