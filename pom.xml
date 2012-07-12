@@ -43,6 +43,7 @@
 			<artifactId>mw.container.xfaces.core</artifactId>
 		</dependency>
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
