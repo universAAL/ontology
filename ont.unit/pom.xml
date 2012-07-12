@@ -27,17 +27,15 @@
 	<packaging>bundle</packaging>
 	<name>Unit</name>
 	<description>The Unit Ontology</description>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.universAAL.support</groupId>
 			<artifactId>itests</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.felix</groupId>
-			<artifactId>org.osgi.core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.universAAL.middleware</groupId>
@@ -48,6 +46,7 @@
 			<artifactId>ont.phWorld</artifactId>
 		</dependency>
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
