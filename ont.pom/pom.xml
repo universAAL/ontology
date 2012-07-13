@@ -209,6 +209,11 @@
 			<artifactId>ont.aalfficiency</artifactId>
 			<version>0.1.0-SNAPSHOT</version>
 		  </dependency>
+		  <dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.composite</artifactId>
+			<version>1.1.4-SNAPSHOT</version>
+		  </dependency>
 		  
 		  
 		  <!-- 			use the following to add all ontologies -->
