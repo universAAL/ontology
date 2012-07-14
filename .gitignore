@@ -62,6 +62,11 @@ ont.pom/composite/.settings
 ont.pom/composite/target
 ont.pom/target
 ont.pom/uAAL.log
+ont.powersocket/.classpath
+ont.powersocket/.project
+ont.powersocket/.settings
+ont.powersocket/target
+ont.powersocket/uAAL.log
 ont.profile/.classpath
 ont.profile/.project
 ont.profile/.settings
