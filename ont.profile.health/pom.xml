@@ -1,68 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.universAAL.ontology</groupId>
-		<artifactId>ont.pom</artifactId>
-		<version>1.1.4-SNAPSHOT</version>
-		<relativePath>../ont.pom</relativePath>
-	</parent>
-	<artifactId>ont.profile.health</artifactId>
-	<version>1.1.4-SNAPSHOT</version>
-	<packaging>bundle</packaging>
-	<name>The Health Profiling Ontology</name>
-	<organization>
-		<name>SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING</name>
-		<url>http://www.spirit-intl.com/</url>
-	</organization>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.universAAL.support</groupId>
-			<artifactId>itests</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.middleware</groupId>
-			<artifactId>mw.data.representation.core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.phWorld</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.ontology</groupId>
-			<artifactId>ont.profile</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.universAAL.middleware</groupId>
-			<artifactId>mw.bus.ui.core</artifactId>
-		</dependency>
-	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<configuration>
-					<instructions>
-						<Bundle-Name>${project.name}</Bundle-Name>
-						<Bundle-Description>${project.description}</Bundle-Description>
-						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>org.universAAL.ontology.profile.health</Export-Package>
-						<Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
-					</instructions>
-				</configuration>
-				<extensions>true</extensions>
-			</plugin>
-		</plugins>
-	</build>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>ont.pom</artifactId>
+    <groupId>org.universAAL.ontology</groupId>
+    <version>1.2.1-SNAPSHOT</version>
+    <relativePath>../ont.pom</relativePath>
+  </parent>
+  <artifactId>ont.profile.health</artifactId>
+  <version>1.2.1-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>The Health Profiling Ontology</name>
+  <organization>
+    <name>SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING</name>
+    <url>http://www.spirit-intl.com/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.profile.health</Export-Package>
+            <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.phWorld</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.ui.core</artifactId>
+    </dependency>
+  </dependencies>
 </project>
-

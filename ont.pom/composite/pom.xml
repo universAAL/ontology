@@ -3,22 +3,20 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>1.1.4-SNAPSHOT</version>
+    <groupId>org.universAAL.ontology</groupId>
+    <version>1.2.1-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
   <artifactId>ont.composite</artifactId>
-  <version>1.1.4-SNAPSHOT</version>
+  <version>1.2.1-SNAPSHOT</version>
   <name>universAAL Ontologies Composite</name>
   <url></url>
-  
-	<scm>
-		<connection>${svn.base}/ont.pom/composite</connection>
-		<developerConnection>${svn.base}/ont.pom/composite</developerConnection>
-		<url>${svn.base.url}ont.pom%2Fcomposite</url>
-	</scm>
-  
+  <scm>
+    <connection>${svn.base}/ont.pom/composite</connection>
+    <developerConnection>${svn.base}/ont.pom/composite</developerConnection>
+    <url>${svn.base.url}ont.pom%2Fcomposite</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -100,12 +98,6 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.che</artifactId>
     </dependency>
-    <!--
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.uipreferences</artifactId>
-    </dependency>
-    -->
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.activityhub</artifactId>
