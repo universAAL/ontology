@@ -148,6 +148,16 @@ ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOnt
 ont.measurement/src/main/resources/Measurement.jpg -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement/src/test/resources/log4j.properties -text
+ont.medication/LICENSE.txt -text
+ont.medication/NOTICE.txt -text
+ont.medication/pom.xml -text
+ont.medication/src/main/java/org/universAAL/ontology/MedicationActivator.java -text
+ont.medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/MedicationOntology.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
+ont.medication/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.medication/src/test/resources/log4j.properties -text
 ont.phWorld/LICENSE.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
