@@ -271,6 +271,14 @@ ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uiprefer
 ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/UIPreferencesProfileOntology.java -text
 ont.profile.uipreferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.uipreferences/src/test/resources/log4j.properties -text
+ont.profile.userid/LICENSE.txt -text
+ont.profile.userid/pom.xml -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/UserIDProfileActivator.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/UserIDProfileFactory.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfile.java -text
+ont.profile.userid/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfileOntology.java -text
+ont.profile.userid/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.userid/src/test/resources/log4j.properties -text
 ont.profile/LICENSE.txt -text
 ont.profile/NOTICE.txt -text
 ont.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
