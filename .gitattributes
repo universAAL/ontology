@@ -280,6 +280,14 @@ ont.multimedia-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaFa
 ont.multimedia-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaOntology.java -text
 ont.multimedia-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
 ont.multimedia-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
+ont.multimedia-1.1.4-SNAPSHOT/pom.xml -text
+ont.multimedia-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaActivator.java -text
+ont.multimedia-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
+ont.multimedia-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/MultimediaOntology.java -text
+ont.multimedia-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
+ont.multimedia-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
+ont.multimedia-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.multimedia-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text
