@@ -1,4 +1,18 @@
 * text=auto !eol
+ont.aalfficiency-0.1.0-SNAPSHOT/AalfficiencyOntology.di -text
+ont.aalfficiency-0.1.0-SNAPSHOT/AalfficiencyOntology.notation -text
+ont.aalfficiency-0.1.0-SNAPSHOT/AalfficiencyOntology.uml -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/aalapp.xml -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/pom.xml -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/AalfficiencyActivator.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/AalfficiencyFactory.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/Aalfficiency.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyAdvices.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyChallenges.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyOntology.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyScore.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/Advice.java -text svneol=unset#text/plain
+ont.aalfficiency-0.1.0-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/Challenge.java -text svneol=unset#text/plain
 ont.activityhub-1.1.5-SNAPSHOT/documentation/Development_notes.txt -text
 ont.activityhub-1.1.5-SNAPSHOT/pom.xml -text
 ont.activityhub-1.1.5-SNAPSHOT/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
