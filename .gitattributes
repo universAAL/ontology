@@ -376,3 +376,15 @@ ont.water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -t
 ont.water/src/main/java/org/universAAL/ontology/water/WaterOntology.java -text
 ont.water/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.water/src/test/resources/log4j.properties -text
+ont.weather/LICENSE.txt -text
+ont.weather/NOTICE.txt -text
+ont.weather/pom.xml -text
+ont.weather/src/main/java/org/universAAL/ontology/WeatherActivator.java -text
+ont.weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
+ont.weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
+ont.weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
+ont.weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
+ont.weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
+ont.weather/src/main/java/org/universAAL/ontology/weather/WeatherOntology.java -text
+ont.weather/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.weather/src/test/resources/log4j.properties -text
