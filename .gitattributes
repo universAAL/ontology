@@ -339,6 +339,14 @@ ont.profile/src/main/java/org/universAAL/ontology/vcard/Voice.java -text
 ont.profile/src/main/java/org/universAAL/ontology/vcard/X400.java -text
 ont.profile/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile/src/test/resources/log4j.properties -text
+ont.risk/pom.xml -text
+ont.risk/src/main/java/org/universAAL/ontology/RiskActivator.java -text
+ont.risk/src/main/java/org/universAAL/ontology/RiskFactory.java -text
+ont.risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
+ont.risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
+ont.risk/src/main/java/org/universAAL/ontology/risk/RiskOntology.java -text
+ont.risk/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.risk/src/test/resources/log4j.properties -text
 ont.unit/LICENSE.txt -text svneol=unset#text/plain
 ont.unit/NOTICE.txt -text
 ont.unit/Unit.di -text
