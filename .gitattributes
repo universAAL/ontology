@@ -648,6 +648,14 @@ ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridpr
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/UserIDProfileOntologyFactory.java -text svneol=unset#application/octet-stream
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfile.java -text svneol=unset#application/octet-stream
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/owl/UserIDProfileOntology.java -text svneol=unset#application/octet-stream
+ont.profile.userid-1.1.4-SNAPSHOT/LICENSE.txt -text
+ont.profile.userid-1.1.4-SNAPSHOT/pom.xml -text
+ont.profile.userid-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/UserIDProfileActivator.java -text
+ont.profile.userid-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/UserIDProfileFactory.java -text
+ont.profile.userid-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfile.java -text
+ont.profile.userid-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfileOntology.java -text
+ont.profile.userid-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.userid-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.risk-1.0.1-SNAPSHOT/artifact_manual.composite -text
 ont.risk-1.0.1-SNAPSHOT/pom.xml -text
 ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
