@@ -671,6 +671,14 @@ ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/FallDetector.
 ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 ont.risk-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
 ont.risk-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.risk-1.1.4-SNAPSHOT/pom.xml -text
+ont.risk-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/RiskActivator.java -text
+ont.risk-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/RiskFactory.java -text
+ont.risk-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
+ont.risk-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
+ont.risk-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/RiskOntology.java -text
+ont.risk-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.risk-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.unit-1.1.4-SNAPSHOT/LICENSE.txt -text svneol=unset#text/plain
 ont.unit-1.1.4-SNAPSHOT/NOTICE.txt -text
 ont.unit-1.1.4-SNAPSHOT/Unit.di -text
