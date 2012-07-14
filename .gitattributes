@@ -367,3 +367,12 @@ ont.unit/src/main/java/org/universAAL/ontology/unit/system/BinarySystem.java -te
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/InternationalSystem.java -text svneol=unset#text/plain
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
 ont.unit/src/test/java/test/integration/OntTest.java -text svneol=unset#text/plain
+ont.water/pom.xml -text
+ont.water/src/main/java/org/universAAL/ontology/WaterActivator.java -text
+ont.water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
+ont.water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
+ont.water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
+ont.water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
+ont.water/src/main/java/org/universAAL/ontology/water/WaterOntology.java -text
+ont.water/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.water/src/test/resources/log4j.properties -text
