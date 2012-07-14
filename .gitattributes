@@ -139,6 +139,12 @@ ont.gesture.pointing-1.0.1-SNAPSHOT/pom.xml -text
 ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
 ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
+ont.gesture.pointing-1.1.4-SNAPSHOT/pom.xml -text
+ont.gesture.pointing-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/GesturePointingActivator.java -text
+ont.gesture.pointing-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
+ont.gesture.pointing-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
+ont.gesture.pointing-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.gesture.pointing-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.hazard-1.0.1-SNAPSHOT/pom.xml -text
 ont.hazard-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.hazard-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/HazardFactory.java -text
