@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.pom</artifactId>
+		<version>1.1.4-SNAPSHOT</version>
+		<relativePath>../ont.pom</relativePath>
+	</parent>
+	
+	<artifactId>ont.profile.uipreferences</artifactId>
+	<version>1.1.4-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	<name>User Interaction Preferences Profile</name>
+	<description>User preferences related to user interaction</description>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.universAAL.support</groupId>
+			<artifactId>itests</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.data.representation.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.context.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.ui.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.middleware</groupId>
+			<artifactId>mw.bus.service.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.phWorld</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.profile</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Description>${project.description}</Bundle-Description>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>org.universAAL.ontology.profile.uipreferences</Export-Package>
+						<Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+

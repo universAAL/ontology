@@ -635,6 +635,13 @@ ont.profile.uipreferences-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/p
 ont.profile.uipreferences-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/UIPreferencesProfileFactory.java -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/InteractionPreferencesProfile.java -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/profile/uipreferences/uipreferencesprofile/owl/UIPreferencesProfileOntology.java -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/pom.xml -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/UIPreferencesProfileActivator.java -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/UIPreferencesProfileFactory.java -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/uipreferences/InteractionPreferencesProfile.java -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/uipreferences/UIPreferencesProfileOntology.java -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.uipreferences-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.profile.userid-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.profile.userid-1.0.1-SNAPSHOT/pom.xml -text
 ont.profile.userid-1.0.1-SNAPSHOT/src/main/java/org/universaal/ontology/useridprofileontology/Activator.java -text svneol=unset#application/octet-stream
