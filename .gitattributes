@@ -264,6 +264,16 @@ ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MedicationFa
 ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MedicationOntology.java -text
 ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
 ont.medication-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
+ont.medication-1.1.4-SNAPSHOT/LICENSE.txt -text
+ont.medication-1.1.4-SNAPSHOT/NOTICE.txt -text
+ont.medication-1.1.4-SNAPSHOT/pom.xml -text
+ont.medication-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/MedicationActivator.java -text
+ont.medication-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
+ont.medication-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
+ont.medication-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/MedicationOntology.java -text
+ont.medication-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
+ont.medication-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.medication-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.multimedia-1.0.1-SNAPSHOT/pom.xml -text
 ont.multimedia-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.multimedia-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
