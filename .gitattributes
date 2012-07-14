@@ -594,6 +594,26 @@ ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/FallDetector.
 ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
 ont.risk-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/risk/test/ArtifactIntegrationTest.java -text
 ont.risk-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.unit-1.1.4-SNAPSHOT/LICENSE.txt -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/NOTICE.txt -text
+ont.unit-1.1.4-SNAPSHOT/Unit.di -text
+ont.unit-1.1.4-SNAPSHOT/Unit.notation -text
+ont.unit-1.1.4-SNAPSHOT/Unit.uml -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/pom.xml -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/UnitActivator.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/UnitFactory.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/DerivedUnit.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/DividedUnit.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/MeasurableDimension.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/MultipliedUnit.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/Prefix.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/Unit.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/UnitOntology.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/UnitSystem.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/BinarySystem.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/InternationalSystem.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
+ont.unit-1.1.4-SNAPSHOT/src/test/java/test/integration/OntTest.java -text svneol=unset#text/plain
 ont.water-1.0.1-SNAPSHOT/pom.xml -text
 ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/WaterFactory.java -text
