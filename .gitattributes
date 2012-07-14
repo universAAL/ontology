@@ -87,6 +87,14 @@ ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureOntology.
 ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 ont.furniture/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.furniture/src/test/resources/log4j.properties -text
+ont.hazard/pom.xml -text
+ont.hazard/src/main/java/org/universAAL/ontology/HazardActivator.java -text
+ont.hazard/src/main/java/org/universAAL/ontology/HazardFactory.java -text
+ont.hazard/src/main/java/org/universAAL/ontology/hazard/FireDetector.java -text
+ont.hazard/src/main/java/org/universAAL/ontology/hazard/GasDetector.java -text
+ont.hazard/src/main/java/org/universAAL/ontology/hazard/HazardOntology.java -text
+ont.hazard/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.hazard/src/test/resources/log4j.properties -text
 ont.phWorld/LICENSE.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
