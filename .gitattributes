@@ -616,6 +616,17 @@ ont.profile.health-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/
 ont.profile.health-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 ont.profile.health-1.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/profile/health/ArtifactIntegrationTest.java -text
 ont.profile.health-1.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.profile.health-1.1.4-SNAPSHOT/LICENSE.txt -text
+ont.profile.health-1.1.4-SNAPSHOT/NOTICE.txt -text
+ont.profile.health-1.1.4-SNAPSHOT/pom.xml -text
+ont.profile.health-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/HealthProfileActivator.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/HealthProfileFactory.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/health/HealthProfile.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/health/HealthProfileOntology.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/health/Illness.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.health-1.1.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/UIPreferencesProfile.di -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/UIPreferencesProfile.notation -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/UIPreferencesProfile.uml -text
