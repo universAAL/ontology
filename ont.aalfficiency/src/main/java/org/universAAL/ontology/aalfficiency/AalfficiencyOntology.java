@@ -8,6 +8,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.AalfficiencyFactory;
+import org.universAAL.ontology.aalfficiency.*;
 
 public class AalfficiencyOntology extends Ontology{
 	 
