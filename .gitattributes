@@ -6,7 +6,6 @@ ont.aalfficiency/aalapp.xml -text svneol=unset#text/plain
 ont.aalfficiency/pom.xml -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/AalfficiencyActivator.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/AalfficiencyFactory.java -text svneol=unset#text/plain
-ont.aalfficiency/src/main/java/org/universAAL/ontology/Activator.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Aalfficiency.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyAdvices.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyChallenges.java -text svneol=unset#text/plain
