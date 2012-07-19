@@ -22,6 +22,7 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.UnitFactory;
 import org.universAAL.ontology.unit.system.BinarySystem;
 import org.universAAL.ontology.unit.system.InternationalSystem;
@@ -45,6 +46,7 @@ public final class UnitOntology extends Ontology {
     r.setResourceComment("The Unit Ontology");
     r.setResourceLabel("Unit");
     addImport(DataRepOntology.NAMESPACE);
+    addImport(ServiceBusOntology.NAMESPACE);
 		
    
 
@@ -61,6 +63,7 @@ public final class UnitOntology extends Ontology {
     OntClassInfoSetup oci_DerivedUnit = createNewAbstractOntClassInfo(DerivedUnit.MY_URI);
     OntClassInfoSetup oci_Prefix = createNewOntClassInfo(Prefix.MY_URI,factory,3);
     OntClassInfoSetup oci_MultipliedUnit = createNewOntClassInfo(MultipliedUnit.MY_URI,factory,4);
+    OntClassInfoSetup oci_UnitService = createNewOntClassInfo(UnitService.MY_URI,factory,6);
 
 
     // ******* Add content to enumeration classes of the ontology ******* //
@@ -178,6 +181,13 @@ public final class UnitOntology extends Ontology {
     oci_MultipliedUnit.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(MultipliedUnit.PROP_MULTIPLIED_BY_PREFIX, 
       Prefix.MY_URI, 0, 1));
+    
+    oci_UnitService.setResourceComment("Root service concept that allows providing services that handle Unit operations");
+    oci_UnitService.setResourceLabel("UnitService");
+    oci_UnitService.addSuperClass(UnitService.MY_URI); 
+    oci_UnitService.addObjectProperty(UnitService.PROP_CONTROLS);
+    oci_UnitService.addRestriction(MergedRestriction
+      .getAllValuesRestriction(UnitService.PROP_CONTROLS, Unit.MY_URI));
     
     /*
      * INDIVIDUAL CONCEPTS
