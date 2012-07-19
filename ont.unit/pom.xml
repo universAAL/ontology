@@ -41,6 +41,10 @@
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.service.core</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.phWorld</artifactId>
     </dependency>

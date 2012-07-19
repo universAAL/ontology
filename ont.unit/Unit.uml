@@ -161,6 +161,21 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G0W9w3mcEeGmLv6vqFuaWw" value="1"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MP-qMNGGEeGIv9jGW0PF_g" name="UnitService">
+        <generalization xmi:id="_4TqQQNGGEeGIv9jGW0PF_g">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_6lAn0NGGEeGIv9jGW0PF_g" name="unit" type="_PBCrYEzmEeGZvOsaZD0CBw" association="_6lAn09GGEeGIv9jGW0PF_g">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6lAn0dGGEeGIv9jGW0PF_g" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lAn0tGGEeGIv9jGW0PF_g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6lAn09GGEeGIv9jGW0PF_g" name="controls" memberEnd="_6lAn1NGGEeGIv9jGW0PF_g _6lAn0NGGEeGIv9jGW0PF_g">
+        <ownedEnd xmi:id="_6lAn1NGGEeGIv9jGW0PF_g" name="unitService" type="_MP-qMNGGEeGIv9jGW0PF_g" association="_6lAn09GGEeGIv9jGW0PF_g">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6lAn1dGGEeGIv9jGW0PF_g" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lAn1tGGEeGIv9jGW0PF_g" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zMShEE2gEeGcRe-XRoPstQ" name="org.universaal.ontology.si">
       <packagedElement xmi:type="uml:Class" xmi:id="_5VL8gE2hEeGcRe-XRoPstQ" name="Meter" isLeaf="true">

@@ -6,6 +6,7 @@ import org.universAAL.ontology.unit.DividedUnit;
 import org.universAAL.ontology.unit.MultipliedUnit;
 import org.universAAL.ontology.unit.Prefix;
 import org.universAAL.ontology.unit.Unit;
+import org.universAAL.ontology.unit.UnitService;
 import org.universAAL.ontology.unit.UnitSystem;
 
 public class UnitFactory extends ResourceFactoryImpl {
@@ -23,6 +24,8 @@ public class UnitFactory extends ResourceFactoryImpl {
 	    return new MultipliedUnit(instanceURI);
 	case 5:
 	    return new DividedUnit(instanceURI);
+	case 6:
+	    return new UnitService(instanceURI);
 	}
 	return null;
     }
