@@ -9,7 +9,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.universAAL.ontology</groupId>
 	<artifactId>ont.aalfficiency</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<description>AALfficiency ontology</description>
 	<packaging>bundle</packaging>
 	<dependencies>
@@ -48,41 +48,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
-		<repository>
-			<id>central</id>
-			<name>Central Maven Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>apache-snapshots</id>
-			<name>Apache Snapshots</name>
-			<url>http://people.apache.org/repo/m2-snapshot-repository</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>uaal</id>
-			<name>universAAL Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>uaal-snapshots</id>
-			<name>universAAL Snapshot Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
 </project>
