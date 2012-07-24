@@ -61,6 +61,8 @@ public class AalfficiencyOntology extends Ontology{
 			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_DESCRIPTION, TypeMapper.getDatatypeURI(String.class), 1, 1));
 			oci.addDatatypeProperty(Challenge.PROP_HAS_GOAL).setFunctional();
 			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_GOAL, TypeMapper.getDatatypeURI(String.class), 1, 1));
+			oci.addDatatypeProperty(Challenge.PROP_IS_ACTIVE).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_IS_ACTIVE, TypeMapper.getDatatypeURI(String.class), 1, 1));
 			//AalfficiencyChallenges
 			oci = createNewOntClassInfo(AalfficiencyChallenges.MY_URI,factory,factory.AalfficiencyChallenges);
 			oci.setResourceComment("All user's challenges in the Aalfficiency world");
