@@ -12,6 +12,7 @@ public class Challenge extends ManagedIndividual {
 	  public static final String PROP_HAS_TYPE;
 	  public static final String PROP_HAS_GOAL;
 	  public static final String PROP_HAS_DESCRIPTION;
+	  public static final String PROP_IS_ACTIVE;
 	  
 	  // In this static block you set the URIs of your concept and its properties
 	  static {
@@ -23,6 +24,7 @@ public class Challenge extends ManagedIndividual {
 		PROP_HAS_TYPE = AalfficiencyOntology.NAMESPACE +"challengeType";
 		PROP_HAS_GOAL = AalfficiencyOntology.NAMESPACE+"challengeGoal";
 		PROP_HAS_DESCRIPTION = AalfficiencyOntology.NAMESPACE+"challengeDescription";
+		PROP_IS_ACTIVE = AalfficiencyOntology.NAMESPACE+"challengeActive";
 	  }
 
 	  public Challenge() {
@@ -33,11 +35,12 @@ public class Challenge extends ManagedIndividual {
 		super(uri);
 	  }
 	  
-	  public Challenge(String uri, String type, String goal, String desctiption) {
+	  public Challenge(String uri, String type, String goal, String desctiption, String active) {
 		super(uri);
 		props.put(PROP_HAS_TYPE, type);
 		props.put(PROP_HAS_GOAL, goal);
 		props.put(PROP_HAS_DESCRIPTION, desctiption);
+		props.put(PROP_IS_ACTIVE, active);
 		
 	  }
 
@@ -75,4 +78,11 @@ public class Challenge extends ManagedIndividual {
 		  props.put(PROP_HAS_DESCRIPTION, text);
 	  }
 	  
+	  public void setChallengeActive(String active){
+		  props.put(PROP_IS_ACTIVE, active);
+	  }
+	  
+	  public String getChallengeActive(){
+		  return (String) props.get(PROP_IS_ACTIVE);
+	  }
 }

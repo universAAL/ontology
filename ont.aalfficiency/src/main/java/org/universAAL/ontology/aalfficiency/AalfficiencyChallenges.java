@@ -60,18 +60,18 @@ public class AalfficiencyChallenges extends ManagedIndividual {
 			}
 		}
 		
-		public void addProperty(String uri, String type, String goal, String description){
+		public void addProperty(String uri, String type, String goal, String description, String active){
 			Object propList = props.get(PROP_HAS_CHALLENGES);
 			if (propList instanceof List){
 				List auxList = (List)propList;
-				auxList.add(new Challenge(uri, type,goal,description));
+				auxList.add(new Challenge(uri, type,goal,description, active));
 				props.put(PROP_HAS_CHALLENGES, auxList);
 			}else if (propList == null){
-				props.put(PROP_HAS_CHALLENGES, new Challenge(uri,type,goal,description));
+				props.put(PROP_HAS_CHALLENGES, new Challenge(uri,type,goal,description,active));
 			}else{		
 				List auxList = new ArrayList();
 				auxList.add((Challenge)propList);
-				auxList.add(new Challenge(uri,type,goal,description));
+				auxList.add(new Challenge(uri,type,goal,description,active));
 				props.put(PROP_HAS_CHALLENGES, auxList);		
 			}
 		}
