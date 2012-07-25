@@ -46,7 +46,7 @@ import org.universAAL.ontology.location.position.Point;
 
 public abstract class Shape extends ManagedIndividual {
 
-    public static final String uAAL_SHAPE_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/Shape.owl#";
+    public static final String uAAL_SHAPE_NAMESPACE = "http://ontology.universaal.org/Shape.owl#";
     public static final String MY_URI;
 
     public static final String PROP_POINT_REPRESENTATION;
