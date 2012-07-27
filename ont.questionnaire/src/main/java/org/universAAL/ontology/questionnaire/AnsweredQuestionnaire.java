@@ -73,6 +73,14 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
   
   }
   
+  public AnsweredQuestionnaire (Questionnaire questionnaire, Answer answer, User examinedUser) {
+	  this.addAnswer(answer);
+	  this.setIsAnsweredBy(examinedUser);
+	  this.setAssociatedQuestionnaire(questionnaire);
+	  this.setCompleteness(calculateCompleteness());
+  
+  }
+  
   public AnsweredQuestionnaire(Questionnaire q, User examinedUser){
 	  this.setIsAnsweredBy(examinedUser);
 	  this.setAssociatedQuestionnaire(q);
