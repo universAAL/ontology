@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_54f6ULxBEeGDXfk0GKRq0A" name="x73">
+    <ownedComment xmi:id="_54f6UbxBEeGDXfk0GKRq0A" annotatedElement="_54f6VrxBEeGDXfk0GKRq0A">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_54f6UrxBEeGDXfk0GKRq0A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_54f6U7xBEeGDXfk0GKRq0A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_54f6VLxBEeGDXfk0GKRq0A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_54f6VbxBEeGDXfk0GKRq0A">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_54f6VrxBEeGDXfk0GKRq0A" name="org.universAAL.ontology.x73">
+      <packagedElement xmi:type="uml:Class" xmi:id="_54f6V7xBEeGDXfk0GKRq0A" name="x73">
+        <generalization xmi:id="_54f6WLxBEeGDXfk0GKRq0A">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_EHAVsLxCEeGDXfk0GKRq0A" name="mDS" type="_54f6WbxBEeGDXfk0GKRq0A" association="_EHCK4LxCEeGDXfk0GKRq0A">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHAVsbxCEeGDXfk0GKRq0A" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EHAVsrxCEeGDXfk0GKRq0A" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_54f6WbxBEeGDXfk0GKRq0A" name="MDS">
+        <generalization xmi:id="_54f6WrxBEeGDXfk0GKRq0A">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_OaqW0LxCEeGDXfk0GKRq0A" name="systemId" isDerived="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_54f6W7xBEeGDXfk0GKRq0A" name="MDSAttribute">
+        <generalization xmi:id="_54f6XLxBEeGDXfk0GKRq0A">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EHCK4LxCEeGDXfk0GKRq0A" name="controls" memberEnd="_EHCK4bxCEeGDXfk0GKRq0A _EHAVsLxCEeGDXfk0GKRq0A">
+        <ownedEnd xmi:id="_EHCK4bxCEeGDXfk0GKRq0A" name="x73" type="_54f6V7xBEeGDXfk0GKRq0A" association="_EHCK4LxCEeGDXfk0GKRq0A">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHCK4rxCEeGDXfk0GKRq0A" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EHCK47xCEeGDXfk0GKRq0A" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_54f6XbxBEeGDXfk0GKRq0A">
+      <eAnnotations xmi:id="_54f6XrxBEeGDXfk0GKRq0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_54f6X7xBEeGDXfk0GKRq0A">
+      <eAnnotations xmi:id="_54f6YLxBEeGDXfk0GKRq0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_54f6YbxBEeGDXfk0GKRq0A" defaultNamespace="http://ontology.universAAL.org/x73" base_Package="_54f6VrxBEeGDXfk0GKRq0A" versionInfo="0.1"/>
+  <OWL:datatypeProperty xmi:id="_Oa1V8LxCEeGDXfk0GKRq0A" base_Property="_OaqW0LxCEeGDXfk0GKRq0A" isFunctional="true"/>
+</xmi:XMI>
