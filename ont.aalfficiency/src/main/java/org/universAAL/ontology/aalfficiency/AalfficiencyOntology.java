@@ -50,6 +50,7 @@ public class AalfficiencyOntology extends Ontology{
 			oci.addSuperClass(ManagedIndividual.MY_URI);
 			oci.addObjectProperty(AalfficiencyAdvices.PROP_HAS_ADVICES);
 			oci.addRestriction(MergedRestriction.getAllValuesRestriction(AalfficiencyAdvices.PROP_HAS_ADVICES,Advice.MY_URI));
+			
 			//Challenge
 			oci = createNewOntClassInfo(Challenge.MY_URI,factory,factory.Challenge);
 			oci.setResourceComment("A challenge in the Aalfficiency world");
@@ -61,32 +62,39 @@ public class AalfficiencyOntology extends Ontology{
 			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_DESCRIPTION, TypeMapper.getDatatypeURI(String.class), 1, 1));
 			oci.addDatatypeProperty(Challenge.PROP_HAS_GOAL).setFunctional();
 			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_GOAL, TypeMapper.getDatatypeURI(String.class), 1, 1));
-			oci.addDatatypeProperty(Challenge.PROP_IS_ACTIVE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_IS_ACTIVE, TypeMapper.getDatatypeURI(String.class), 1, 1));
-			//AalfficiencyChallenges
-			oci = createNewOntClassInfo(AalfficiencyChallenges.MY_URI,factory,factory.AalfficiencyChallenges);
-			oci.setResourceComment("All user's challenges in the Aalfficiency world");
-			oci.setResourceLabel("AalfficiencyChallenges");
+			
+
+			//ActivityData
+			oci = createNewOntClassInfo(ActivityData.MY_URI,factory,factory.ActivityData);
+			oci.setResourceComment("The data of the activity part of the service");
+			oci.setResourceLabel("ActivityData");
 			oci.addSuperClass(ManagedIndividual.MY_URI);
-			oci.addObjectProperty(AalfficiencyChallenges.PROP_HAS_CHALLENGES);
-			oci.addRestriction(MergedRestriction.getAllValuesRestriction(AalfficiencyChallenges.PROP_HAS_CHALLENGES,Challenge.MY_URI));
-			//AalfficiencyScore
-			oci = createNewOntClassInfo(AalfficiencyScore.MY_URI,factory,factory.AalfficiencyScore);
-			oci.setResourceComment("The user's scores in the Aalfficiency game");
-			oci.setResourceLabel("AalfficiencyScore");
+			oci.addDatatypeProperty(ActivityData.PROP_HAS_TOTAL_SCORE).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityData.PROP_HAS_TOTAL_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addDatatypeProperty(ActivityData.PROP_HAS_TODAY_SCORE).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityData.PROP_HAS_TODAY_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addDatatypeProperty(ActivityData.PROP_HAS_STEPS).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityData.PROP_HAS_STEPS, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addDatatypeProperty(ActivityData.PROP_HAS_KCAL).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityData.PROP_HAS_KCAL, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addObjectProperty(ActivityData.PROP_HAS_CHALLENGE);
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityData.PROP_HAS_CHALLENGE,Challenge.MY_URI,1,1));
+			
+			//ElectricityData
+			oci = createNewOntClassInfo(ElectricityData.MY_URI,factory,factory.ElectricityData);
+			oci.setResourceComment("The data of the electricity part of the service");
+			oci.setResourceLabel("ElectricityData");
 			oci.addSuperClass(ManagedIndividual.MY_URI);
-			oci.addDatatypeProperty(AalfficiencyScore.PROP_HAS_TODAYACTIVITYSCORE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AalfficiencyScore.PROP_HAS_TODAYACTIVITYSCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-			oci.addDatatypeProperty(AalfficiencyScore.PROP_HAS_TODAYELECTRICITYSCORE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AalfficiencyScore.PROP_HAS_TODAYELECTRICITYSCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-			oci.addDatatypeProperty(AalfficiencyScore.PROP_HAS_TODAYSCORE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AalfficiencyScore.PROP_HAS_TODAYSCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-			oci.addDatatypeProperty(AalfficiencyScore.PROP_HAS_TOTALACTIVITYSCORE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AalfficiencyScore.PROP_HAS_TOTALACTIVITYSCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-			oci.addDatatypeProperty(AalfficiencyScore.PROP_HAS_TOTALELECTRICITYSCORE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AalfficiencyScore.PROP_HAS_TOTALELECTRICITYSCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-			oci.addDatatypeProperty(AalfficiencyScore.PROP_HAS_TOTALSCORE).setFunctional();
-			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AalfficiencyScore.PROP_HAS_TOTALSCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addDatatypeProperty(ElectricityData.PROP_HAS_TOTAL_SCORE).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityData.PROP_HAS_TOTAL_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addDatatypeProperty(ElectricityData.PROP_HAS_TODAY_SCORE).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityData.PROP_HAS_TODAY_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addDatatypeProperty(ElectricityData.PROP_HAS_SAVING).setFunctional();
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityData.PROP_HAS_SAVING, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+			oci.addObjectProperty(ElectricityData.PROP_HAS_CHALLENGE);
+			oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityData.PROP_HAS_CHALLENGE,Challenge.MY_URI,1,1));
+			
+			
 			//AalfficiencyService
 			oci = createNewOntClassInfo(Aalfficiency.MY_URI, factory, factory.AalfficiencyService);
 			oci.setResourceComment("The main service trelated to the Aalfficiency Service game");
@@ -94,9 +102,10 @@ public class AalfficiencyOntology extends Ontology{
 			oci.addSuperClass(Service.MY_URI);
 			oci.addObjectProperty(Aalfficiency.PROP_HAS_ADVICES);
 			oci.addRestriction(MergedRestriction.getAllValuesRestriction(Aalfficiency.PROP_HAS_ADVICES,AalfficiencyAdvices.MY_URI));
-			oci.addObjectProperty(Aalfficiency.PROP_HAS_CHALLENGES);
-			oci.addRestriction(MergedRestriction.getAllValuesRestriction(Aalfficiency.PROP_HAS_CHALLENGES,AalfficiencyChallenges.MY_URI));
-			oci.addObjectProperty(Aalfficiency.PROP_HAS_SCORE);
-			oci.addRestriction(MergedRestriction.getAllValuesRestriction(Aalfficiency.PROP_HAS_SCORE,AalfficiencyScore.MY_URI));
+			oci.addObjectProperty(Aalfficiency.PROP_HAS_ELECTRICITY_DATA);
+			oci.addRestriction(MergedRestriction.getAllValuesRestriction(Aalfficiency.PROP_HAS_ELECTRICITY_DATA,ElectricityData.MY_URI));
+			oci.addObjectProperty(Aalfficiency.PROP_HAS_ACTIVITY_DATA);
+			oci.addRestriction(MergedRestriction.getAllValuesRestriction(Aalfficiency.PROP_HAS_ACTIVITY_DATA,ActivityData.MY_URI));
+			
 		}
 }
