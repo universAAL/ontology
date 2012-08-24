@@ -6,8 +6,8 @@ public class Aalfficiency extends Service{
 	
 	public static final String MY_URI = AalfficiencyOntology.NAMESPACE + "Aalfficiency";
 
-	public static final String PROP_HAS_SCORE = AalfficiencyOntology.NAMESPACE+"hasScore";
-	public static final String PROP_HAS_CHALLENGES = AalfficiencyOntology.NAMESPACE+"hasChallenges";
+	public static final String PROP_HAS_ELECTRICITY_DATA = AalfficiencyOntology.NAMESPACE+"hasElectricity";
+	public static final String PROP_HAS_ACTIVITY_DATA = AalfficiencyOntology.NAMESPACE+"hasActivity";
 	public static final String PROP_HAS_ADVICES = AalfficiencyOntology.NAMESPACE+"hasAdvices";
 	
 	public Aalfficiency(String instanceURI) {
