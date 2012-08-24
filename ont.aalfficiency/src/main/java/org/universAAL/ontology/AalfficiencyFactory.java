@@ -9,12 +9,11 @@ public class AalfficiencyFactory extends ResourceFactoryImpl {
 	public final int Advice = 0;
 	public final int AalfficienyAdvices = 1;
 	public final int Challenge = 2;
-	public final int AalfficiencyChallenges = 3;
-	public final int AalfficiencyScore=4;
+	public final int ActivityData = 3;
+	public final int ElectricityData=4;
 	public final int AalfficiencyService = 5;
 	
-	public Resource createInstance(String classURI, String instanceURI,
-			int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 		switch (factoryIndex) {
 		case Advice:
 			return new Advice(instanceURI);
@@ -22,10 +21,10 @@ public class AalfficiencyFactory extends ResourceFactoryImpl {
 			return new AalfficiencyAdvices(instanceURI);
 		case Challenge:
 			return new Challenge(instanceURI);
-		case AalfficiencyChallenges:
-			return new AalfficiencyChallenges(instanceURI);
-		case AalfficiencyScore:
-			return new AalfficiencyScore(instanceURI);
+		case ActivityData:
+			return new ActivityData(instanceURI);
+		case ElectricityData:
+			return new ElectricityData(instanceURI);
 		case AalfficiencyService:
 			return new Aalfficiency(instanceURI);
 		}
