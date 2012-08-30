@@ -23,7 +23,6 @@ public class AalfficiencyScoresOntology extends Ontology{
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public void create() {
 		
 		Resource r = getInfo();
