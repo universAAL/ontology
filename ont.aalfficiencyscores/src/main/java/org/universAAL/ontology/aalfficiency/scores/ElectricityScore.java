@@ -19,7 +19,6 @@ public class ElectricityScore extends ManagedIndividual{
 		super(uri);
 	}
 
-	@Override
 	public int getPropSerializationType(String propURI) {
 		// TODO Auto-generated method stub
 		return 0;

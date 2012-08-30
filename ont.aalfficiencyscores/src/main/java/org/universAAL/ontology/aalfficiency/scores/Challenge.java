@@ -24,7 +24,6 @@ public class Challenge extends ManagedIndividual{
 		 props.put(PROP_HAS_GOAL, goal);
 	}
 	
-	@Override
 	public int getPropSerializationType(String propURI) {
 		// TODO Auto-generated method stub
 		return 0;

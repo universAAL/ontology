@@ -8,7 +8,6 @@ public class Advice extends ManagedIndividual{
 	public static final String PROP_HAS_TYPE = AalfficiencyScoresOntology.NAMESPACE+"AdviceType";
 	public static final String PROP_HAS_TEXT = AalfficiencyScoresOntology.NAMESPACE+"AdviceText"; 
 	
-	@Override
 	public int getPropSerializationType(String propURI) {
 		// TODO Auto-generated method stub
 		return 0;
