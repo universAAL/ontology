@@ -45,7 +45,7 @@ public class AalfficiencyScores extends Service{
 		return (AalfficiencyAdvices)props.get(PROP_HAS_ADVICES);
 	}
 
-	@Override
+
 	public int getPropSerializationType(String propURI) {
 		// TODO Auto-generated method stub
 		return 0;

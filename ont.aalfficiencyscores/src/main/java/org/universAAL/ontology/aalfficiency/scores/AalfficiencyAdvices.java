@@ -10,7 +10,6 @@ public class AalfficiencyAdvices extends ManagedIndividual{
 	public static final String MY_URI = AalfficiencyScoresOntology.NAMESPACE+"AalfficiencyAdvicesURI";
 	public static final String PROP_HAS_ADVICES = AalfficiencyScoresOntology.NAMESPACE+"Advices";
 	
-	@Override
 	public int getPropSerializationType(String propURI) {
 		// TODO Auto-generated method stub
 		return 0;
@@ -41,8 +40,8 @@ public class AalfficiencyAdvices extends ManagedIndividual{
 	} 
 	
 	public void addAdvices(Advice[] advices){
-		for (Advice a : advices){
-			addProperty(a.getClassURI(), a.getAdviceType(), a.getAdviceText());
+		for (int i=0;i<advices.length;i++){
+			addProperty(advices[i].getClassURI(), advices[i].getAdviceType(), advices[i].getAdviceText());
 		}
 	}
 	
