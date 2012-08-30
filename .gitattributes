@@ -13,6 +13,16 @@ ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/ActivityData
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Advice.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Challenge.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/ElectricityData.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/pom.xml -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/AalfficiencyScoresActivator.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/AalfficiencyScoresFactory.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyAdvices.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyScores.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyScoresOntology.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/ActivityScore.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Advice.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Challenge.java -text svneol=unset#text/plain
+ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/ElectricityScore.java -text svneol=unset#text/plain
 ont.activityhub/documentation/Development_notes.txt -text
 ont.activityhub/pom.xml -text
 ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
