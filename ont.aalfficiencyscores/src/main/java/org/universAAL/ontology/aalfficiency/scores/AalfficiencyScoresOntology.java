@@ -29,6 +29,7 @@ public class AalfficiencyScoresOntology extends Ontology{
 		//This ontology
 		r.setResourceComment("Ontology for Aalfficiency Service and related concepts.");
 		r.setResourceLabel("AAL Energy Efficiency Service");
+		
 		addImport(AalfficiencyScoresOntology.NAMESPACE);
 		
 		OntClassInfoSetup oci;
