@@ -1,5 +1,6 @@
 package org.universAAL.ontology.aalfficiency.scores;
 
+import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -30,85 +31,120 @@ public class AalfficiencyScoresOntology extends Ontology{
 		r.setResourceComment("Ontology for Aalfficiency Service and related concepts.");
 		r.setResourceLabel("AAL Energy Efficiency Service");
 		
-		addImport(AalfficiencyScoresOntology.NAMESPACE);
+		addImport(DataRepOntology.NAMESPACE);
 		
-		OntClassInfoSetup oci;
-		
-		//Advice
-		oci = createNewOntClassInfo(Advice.MY_URI,factory,factory.Advice);
-		oci.setResourceComment("An Advice in the Aalfficiency world");
-		oci.setResourceLabel("Advice");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.addDatatypeProperty(Advice.PROP_HAS_TYPE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Advice.PROP_HAS_TYPE, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		oci.addDatatypeProperty(Advice.PROP_HAS_TEXT).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Advice.PROP_HAS_TEXT, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		//AalfficiencyAdvices
-		oci = createNewOntClassInfo(AalfficiencyAdvices.MY_URI,factory,factory.AalfficiencyAdvices);
-		oci.setResourceComment("All user's Advices in the Aalfficiency world");
-		oci.setResourceLabel("AalfficiencyAdvices");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.addObjectProperty(AalfficiencyAdvices.PROP_HAS_ADVICES);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(AalfficiencyAdvices.PROP_HAS_ADVICES,Advice.MY_URI));
-		
-		//Challenge
-		oci = createNewOntClassInfo(Challenge.MY_URI, factory, factory.Challenge);
-		oci.setResourceComment("A Challenge to accomplish in AAlfficiency");
-		oci.setResourceLabel("Challenge");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.addDatatypeProperty(Challenge.PROP_HAS_DESCRIPTION).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_DESCRIPTION, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		oci.addDatatypeProperty(Challenge.PROP_HAS_GOAL).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_GOAL, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		oci.addDatatypeProperty(Challenge.PROP_HAS_NAME).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Challenge.PROP_HAS_NAME, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		
-		//ElectricityScore
-		oci = createNewOntClassInfo(ElectricityScore.MY_URI, factory, factory.ElectricityData);
-		oci.setResourceComment("The electricity saving part of AAlfficiency");
-		oci.setResourceLabel("ElectricityScore");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.addDatatypeProperty(ElectricityScore.PROP_HAS_TOTAL_SCORE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_HAS_TOTAL_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ElectricityScore.PROP_HAS_TODAY_SCORE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_HAS_TODAY_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ElectricityScore.PROP_HAS_SAVING).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_HAS_SAVING, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ElectricityScore.PROP_HAS_SENT_BY_PUBLISHER).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_HAS_SENT_BY_PUBLISHER, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		oci.addDatatypeProperty(ElectricityScore.PROP_HAS_CHALLENGE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ElectricityScore.PROP_HAS_CHALLENGE, Challenge.MY_URI));
-		
-		//ActivityScore
-		oci = createNewOntClassInfo(ActivityScore.MY_URI, factory, factory.ActivityData);
-		oci.setResourceComment("The Activity saving part of AAlfficiency");
-		oci.setResourceLabel("ActivityScore");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.addDatatypeProperty(ActivityScore.PROP_HAS_TOTAL_SCORE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityScore.PROP_HAS_TOTAL_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ActivityScore.PROP_HAS_TODAY_SCORE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityScore.PROP_HAS_TODAY_SCORE, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ActivityScore.PROP_HAS_STEPS).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityScore.PROP_HAS_STEPS, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ActivityScore.PROP_HAS_KCAL).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityScore.PROP_HAS_KCAL, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci.addDatatypeProperty(ActivityScore.PROP_HAS_SENT_BY_PUBLISHER).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ActivityScore.PROP_HAS_SENT_BY_PUBLISHER, TypeMapper.getDatatypeURI(String.class)));
-		oci.addDatatypeProperty(ActivityScore.PROP_HAS_CHALLENGE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ActivityScore.PROP_HAS_CHALLENGE, Challenge.MY_URI, 1, 1));
-			
-		//AalfficiencyScores
-		oci = createNewOntClassInfo(AalfficiencyScores.MY_URI, factory, factory.AalfficiencyScoresService);
-		oci.setResourceComment("The main service trelated to the Aalfficiency Service game");
-		oci.setResourceLabel("Aalfficiency Service");
-		oci.addSuperClass(Service.MY_URI);
-		oci.addObjectProperty(AalfficiencyScores.PROP_HAS_ADVICES);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(AalfficiencyScores.PROP_HAS_ADVICES,AalfficiencyAdvices.MY_URI));
-		oci.addObjectProperty(AalfficiencyScores.PROP_HAS_ELECTRICITY_SCORE);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(AalfficiencyScores.PROP_HAS_ELECTRICITY_SCORE,ElectricityScore.MY_URI));
-		oci.addObjectProperty(AalfficiencyScores.PROP_HAS_ACTIVITY_SCORE);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(AalfficiencyScores.PROP_HAS_ACTIVITY_SCORE,ActivityScore.MY_URI));
-		
+	    // ******* Declaration of regular classes of the ontology ******* //
+	    OntClassInfoSetup oci_Advice = createNewOntClassInfo(Advice.MY_URI, factory, factory.Advice);
+	    OntClassInfoSetup oci_ElectricityScore = createNewOntClassInfo(ElectricityScore.MY_URI, factory, factory.ElectricityData);
+	    OntClassInfoSetup oci_ActivityScore = createNewOntClassInfo(ActivityScore.MY_URI, factory, factory.ActivityData);
+	    OntClassInfoSetup oci_Challenge = createNewOntClassInfo(Challenge.MY_URI, factory, factory.Challenge);
+	    OntClassInfoSetup oci_AalfficiencyAdvices = createNewOntClassInfo(AalfficiencyAdvices.MY_URI, factory, factory.AalfficiencyAdvices);
+	    OntClassInfoSetup oci_AalfficiencyScores = createNewOntClassInfo(AalfficiencyScores.MY_URI, factory, factory.AalfficiencyScoresService);
+
+
+	    // ******* Add content to regular classes of the ontology ******* //
+	    oci_Advice.setResourceComment("");
+	    oci_Advice.setResourceLabel("Advice");
+	    oci_Advice.addSuperClass(ManagedIndividual.MY_URI); 
+	    oci_Advice.addDatatypeProperty(Advice.PROP_TYPE).setFunctional();
+	    oci_Advice.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(Advice.PROP_TYPE, 
+	      TypeMapper.getDatatypeURI(String.class), 1, 1));
+	    
+	    oci_Advice.addDatatypeProperty(Advice.PROP_TEXT).setFunctional();
+	    oci_Advice.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(Advice.PROP_TEXT, 
+	      TypeMapper.getDatatypeURI(String.class), 1, 1));
+	    
+	    oci_ElectricityScore.setResourceComment("");
+	    oci_ElectricityScore.setResourceLabel("ElectricityScore");
+	    oci_ElectricityScore.addSuperClass(ManagedIndividual.MY_URI); 
+	    oci_ElectricityScore.addObjectProperty(ElectricityScore.PROP_CHALLENGE).setFunctional();
+	    oci_ElectricityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_CHALLENGE, 
+	      Challenge.MY_URI, 1, 1));
+	    
+	    oci_ElectricityScore.addDatatypeProperty(ElectricityScore.PROP_TOTAL_ELECTRICITY_SCORE).setFunctional();
+	    oci_ElectricityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_TOTAL_ELECTRICITY_SCORE, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_ElectricityScore.addDatatypeProperty(ElectricityScore.PROP_TODAY_ELECTRICITY_SCORE).setFunctional();
+	    oci_ElectricityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_TODAY_ELECTRICITY_SCORE, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_ElectricityScore.addDatatypeProperty(ElectricityScore.PROP_SAVING).setFunctional();
+	    oci_ElectricityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ElectricityScore.PROP_SAVING, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_ActivityScore.setResourceComment("");
+	    oci_ActivityScore.setResourceLabel("ActivityScore");
+	    oci_ActivityScore.addSuperClass(ManagedIndividual.MY_URI); 
+	    oci_ActivityScore.addDatatypeProperty(ActivityScore.PROP_STEPS).setFunctional();
+	    oci_ActivityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ActivityScore.PROP_STEPS, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_ActivityScore.addObjectProperty(ActivityScore.PROP_CHALLENGE).setFunctional();
+	    oci_ActivityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ActivityScore.PROP_CHALLENGE, 
+	      Challenge.MY_URI, 1, 1));
+	    
+	    oci_ActivityScore.addDatatypeProperty(ActivityScore.PROP_TOTAL_ACTIVITY_SCORE).setFunctional();
+	    oci_ActivityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ActivityScore.PROP_TOTAL_ACTIVITY_SCORE, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_ActivityScore.addDatatypeProperty(ActivityScore.PROP_KCAL).setFunctional();
+	    oci_ActivityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ActivityScore.PROP_KCAL, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_ActivityScore.addDatatypeProperty(ActivityScore.PROP_TODAY_ACTIVITY_SCORE).setFunctional();
+	    oci_ActivityScore.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(ActivityScore.PROP_TODAY_ACTIVITY_SCORE, 
+	      TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+	    
+	    oci_Challenge.setResourceComment("");
+	    oci_Challenge.setResourceLabel("Challenge");
+	    oci_Challenge.addSuperClass(ManagedIndividual.MY_URI); 
+	    oci_Challenge.addDatatypeProperty(Challenge.PROP_GOAL).setFunctional();
+	    oci_Challenge.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(Challenge.PROP_GOAL, 
+	      TypeMapper.getDatatypeURI(String.class), 1, 1));
+	    
+	    oci_Challenge.addDatatypeProperty(Challenge.PROP_DESCRIPTION).setFunctional();
+	    oci_Challenge.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(Challenge.PROP_DESCRIPTION, 
+	      TypeMapper.getDatatypeURI(String.class), 1, 1));
+	    
+	    oci_AalfficiencyAdvices.setResourceComment("");
+	    oci_AalfficiencyAdvices.setResourceLabel("AalfficiencyAdvices");
+	    oci_AalfficiencyAdvices.addSuperClass(ManagedIndividual.MY_URI); 
+	    oci_AalfficiencyAdvices.addObjectProperty(AalfficiencyAdvices.PROP_ADVICE).setFunctional();
+	    oci_AalfficiencyAdvices.addRestriction(MergedRestriction
+	      .getAllValuesRestriction(AalfficiencyAdvices.PROP_ADVICE, 
+	      Advice.MY_URI));
+	    
+	    oci_AalfficiencyScores.setResourceComment("");
+	    oci_AalfficiencyScores.setResourceLabel("AalfficiencyScores");
+	    oci_AalfficiencyScores.addSuperClass(Service.MY_URI); 
+	    oci_AalfficiencyScores.addObjectProperty(AalfficiencyScores.PROP_AALFFICIENCY_ADVICES).setFunctional();
+	    oci_AalfficiencyScores.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(AalfficiencyScores.PROP_AALFFICIENCY_ADVICES, 
+	      AalfficiencyAdvices.MY_URI, 1, 1));
+	    
+	    oci_AalfficiencyScores.addObjectProperty(AalfficiencyScores.PROP_ELECTRICITY_SCORE).setFunctional();
+	    oci_AalfficiencyScores.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(AalfficiencyScores.PROP_ELECTRICITY_SCORE, 
+	      ElectricityScore.MY_URI, 1, 1));
+	    
+	    oci_AalfficiencyScores.addObjectProperty(AalfficiencyScores.PROP_ACTIVITY_SCORE).setFunctional();
+	    oci_AalfficiencyScores.addRestriction(MergedRestriction
+	      .getAllValuesRestrictionWithCardinality(AalfficiencyScores.PROP_ACTIVITY_SCORE, 
+	      ActivityScore.MY_URI, 1, 1));
 		
 	}
 
