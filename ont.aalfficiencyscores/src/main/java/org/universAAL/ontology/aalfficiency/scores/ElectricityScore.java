@@ -1,59 +1,82 @@
 package org.universAAL.ontology.aalfficiency.scores;
 
+import java.util.Hashtable;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-public class ElectricityScore extends ManagedIndividual{
-	
-	public static final String MY_URI = AalfficiencyScoresOntology.NAMESPACE+"ElectricityScoreURI";
-	public static final String PROP_HAS_TODAY_SCORE = AalfficiencyScoresOntology.NAMESPACE+"ElectricityTodayScore";
-	public static final String PROP_HAS_TOTAL_SCORE= AalfficiencyScoresOntology.NAMESPACE+"ElectricityTotalScore"; 
-	public static final String PROP_HAS_SAVING = AalfficiencyScoresOntology.NAMESPACE+"ElectricitySaving";
-	public static final String PROP_HAS_SENT_BY_PUBLISHER = AalfficiencyScoresOntology.NAMESPACE+"ElectricitySentByPublisher";
-	public static final String PROP_HAS_CHALLENGE= AalfficiencyScoresOntology.NAMESPACE+"ElectricityChallenge";
-	
-	public ElectricityScore() {
-		  super();
-	  }
 
-	public ElectricityScore(String uri) {
-		super(uri);
-	}
+public class ElectricityScore extends ManagedIndividual {
+  public static final String MY_URI = AalfficiencyScoresOntology.NAMESPACE
+    + "ElectricityScore";
+  public static final String PROP_CHALLENGE = AalfficiencyScoresOntology.NAMESPACE
+    + "challenge";
+  public static final String PROP_TOTAL_ELECTRICITY_SCORE = AalfficiencyScoresOntology.NAMESPACE
+    + "totalElectricityScore";
+  public static final String PROP_TODAY_ELECTRICITY_SCORE = AalfficiencyScoresOntology.NAMESPACE
+    + "todayElectricityScore";
+  public static final String PROP_SAVING = AalfficiencyScoresOntology.NAMESPACE
+    + "saving";
 
-	public int getPropSerializationType(String propURI) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	public void setElectricityTodayScore(Integer score){
-		props.put(PROP_HAS_TODAY_SCORE, score);
-	}
-	public void setElectricityTotalScore(Integer score){
-		props.put(PROP_HAS_TOTAL_SCORE, score);
-	}
-	public void setElectricitySaving(Integer saving){
-		props.put(PROP_HAS_SAVING, saving);
-	}
-	public void setElectricitySentByPublisher(String sent){
-		props.put(PROP_HAS_SENT_BY_PUBLISHER, sent);
-	}
-	public void setElectricityChallenge(Challenge c){
-		props.put(PROP_HAS_CHALLENGE, c);
-	}
-	
-	public Integer getElectricityTodayScore(){
-		return (Integer)props.get(PROP_HAS_TODAY_SCORE);
-	}
-	public Integer getElectricityTotalScore(){
-		return (Integer)props.get(PROP_HAS_TOTAL_SCORE);
-	}
-	public Integer getElectricitySaving(){
-		return (Integer)props.get(PROP_HAS_SAVING);
-	}
-	public String getSentByPublisher(){
-		return (String)props.get(PROP_HAS_SENT_BY_PUBLISHER);
-	}
-	public Challenge getElectricityChallenge(){
-		return (Challenge)props.get(PROP_HAS_CHALLENGE);
-	}
-	
+  public ElectricityScore () {
+    super();
+  }
+  
+  public ElectricityScore (String uri) {
+    super(uri);
+  }
+
+  public String getClassURI() {
+    return MY_URI;
+  }
+  public int getPropSerializationType(String arg0) {
+	// TODO Implement or if for Device subclasses: remove 
+	return 0;
+  }
+
+  public boolean isWellFormed() {
+	return true 
+      && hasProperty(PROP_CHALLENGE)
+      && hasProperty(PROP_TOTAL_ELECTRICITY_SCORE)
+      && hasProperty(PROP_TODAY_ELECTRICITY_SCORE)
+      && hasProperty(PROP_SAVING);
+  }
+
+  public int getTodayElectricityScore() {
+	Integer i = (Integer) getProperty(PROP_TODAY_ELECTRICITY_SCORE);
+	return (i == null) ? 0 : i.intValue();
+  }		
+
+  public void setTodayElectricityScore(int newPropValue) {
+      changeProperty(PROP_TODAY_ELECTRICITY_SCORE, new Integer(newPropValue));
+  }		
+
+  public int getTotalElectricityScore() {
+	Integer i = (Integer) getProperty(PROP_TOTAL_ELECTRICITY_SCORE);
+	return (i == null) ? 0 : i.intValue();
+  }		
+
+  public void setTotalElectricityScore(int newPropValue) {
+      changeProperty(PROP_TOTAL_ELECTRICITY_SCORE, new Integer(newPropValue));
+  }		
+
+  public int getSaving() {
+	Integer i = (Integer) getProperty(PROP_SAVING);
+	return (i == null) ? 0 : i.intValue();
+  }		
+
+  public void setSaving(int newPropValue) {
+      changeProperty(PROP_SAVING, new Integer(newPropValue));
+  }		
+
+  public Challenge getChallenge() {
+    return (Challenge)getProperty(PROP_CHALLENGE);
+  }		
+
+  public void setChallenge(Challenge newPropValue) {
+    if (newPropValue != null)
+      changeProperty(PROP_CHALLENGE, newPropValue);
+  }		
 }
