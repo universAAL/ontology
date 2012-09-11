@@ -233,7 +233,7 @@ ont.nutrition/Nutrition.di -text
 ont.nutrition/Nutrition.notation -text
 ont.nutrition/Nutrition.uml -text
 ont.nutrition/pom.xml -text
-ont.nutrition/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.nutrition/src/main/java/org/universAAL/ontology/NutritionActivator.java -text
 ont.nutrition/src/main/java/org/universAAL/ontology/NutritionFactory.java -text
 ont.nutrition/src/main/java/org/universAAL/ontology/nutrition/DayOfWeek.java -text
 ont.nutrition/src/main/java/org/universAAL/ontology/nutrition/Dish.java -text
