@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
-		<version>1.2.0</version>
+		<version>1.2.1-SNAPSHOT</version>
 		<relativePath>../ont.pom</relativePath>
 	</parent>
 	<artifactId>ont.nutrition</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 	<name>Nutrition Ontology</name>
 	<description>Ontology for the services that manage Context History</description>
