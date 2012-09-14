@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>uAAL.pom</artifactId>
     <groupId>org.universAAL</groupId>
+    <artifactId>uAAL.pom</artifactId>
     <version>1.2.1-SNAPSHOT</version>
   </parent>
   <groupId>org.universAAL.ontology</groupId>
@@ -25,23 +25,6 @@
       <timezone>CEST/CET</timezone>
     </developer>
   </developers>
-  <scm>
-    <connection>${svn.base}/${project.artifactId}</connection>
-    <developerConnection>${svn.base}/${project.artifactId}</developerConnection>
-    <url>${svn.base.url}${project.artifactId}</url>
-  </scm>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.universAAL.support</groupId>
-        <artifactId>uaal-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
   <modules>
     <module>../ont.profile</module>
     <module>../ont.phWorld</module>
@@ -69,17 +52,23 @@
     <module>../ont.questionnaire</module>
     <module>../ont.aalfficiency</module>
     <module>composite</module>
+    <module>../ont.aalfficiencyscores</module>
+    <module>../ont.iso11073</module>
+    <module>../ont.nutrition</module>
+    <module>../ont.readenergy</module>
   </modules>
-  <repositories>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>uaal</id>
-      <name>universAAL Repositories</name>
-      <url>http://depot.universaal.org/maven-repo/releases/</url>
-    </repository>
-  </repositories>
+  <scm>
+    <connection>${svn.base}/${project.artifactId}</connection>
+    <developerConnection>${svn.base}/${project.artifactId}</developerConnection>
+    <url>${svn.base.url}${project.artifactId}</url>
+  </scm>
+  <properties>
+    <remoteOBR></remoteOBR>
+    <gforge.project.name>ontologies</gforge.project.name>
+    <separatedGroupIds>org.universAAL.middleware</separatedGroupIds>
+    <maven.compile.source>1.4</maven.compile.source>
+    <maven.compile.target>1.4</maven.compile.target>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -232,13 +221,48 @@
         <artifactId>ont.composite</artifactId>
         <version>1.2.1-SNAPSHOT</version>
       </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.readenergy</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.nutrition</artifactId>
+        <version>1.2.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.iso11073</artifactId>
+        <version>1.2.2-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.aalfficiencyscores</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
-  <properties>
-    <remoteOBR></remoteOBR>
-    <gforge.project.name>ontologies</gforge.project.name>
-    <separatedGroupIds>org.universAAL.middleware</separatedGroupIds>
-    <maven.compile.source>1.4</maven.compile.source>
-    <maven.compile.target>1.4</maven.compile.target>
-  </properties>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>uaal</id>
+      <name>universAAL Repositories</name>
+      <url>http://depot.universaal.org/maven-repo/releases/</url>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.universAAL.support</groupId>
+        <artifactId>uaal-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
