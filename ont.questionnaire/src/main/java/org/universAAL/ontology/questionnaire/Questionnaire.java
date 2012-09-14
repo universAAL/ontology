@@ -199,7 +199,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * @param  isOrdered (true if the questions are ordered, false if not)
 	 */
 	public void setOrderedQuestions(boolean isOrdered){
-		props.put(PROP_ORDERED_QUESTIONS, new Boolean(isOrdered) );
+		props.put(PROP_ORDERED_QUESTIONS, Boolean.valueOf(isOrdered));
 	} 
 
 

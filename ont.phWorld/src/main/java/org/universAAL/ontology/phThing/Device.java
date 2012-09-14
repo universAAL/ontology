@@ -21,7 +21,6 @@
 package org.universAAL.ontology.phThing;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
  * Represents the class of physical manufactured things that have some

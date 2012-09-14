@@ -21,9 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.ontology.phThing.Actuator;
-import org.universAAL.ontology.phThing.Device;
-
 /**
  * Ontological representation of any actuator that has a range of values from 0
  * to 100%. Methods included in this class are the mandatory ones for

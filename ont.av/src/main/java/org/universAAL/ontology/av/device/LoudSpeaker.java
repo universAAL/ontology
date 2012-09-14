@@ -77,7 +77,7 @@ public class LoudSpeaker extends Device {
      * microphones with an unique URI
      */
     public LoudSpeaker(int numProps) {
-	super(AVOntology.NAMESPACE, 6);
+	super(AVOntology.NAMESPACE, numProps);
     }
 
     public String getClassURI() {

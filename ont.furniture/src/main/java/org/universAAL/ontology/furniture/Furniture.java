@@ -73,7 +73,7 @@ public class Furniture extends PhysicalThing {
     }
 
     public void clearFurnitureType() {
-	props.put(PROP_FURNITURE_TYPE, null);
+	props.remove(PROP_FURNITURE_TYPE);
     }
 
     public int getPropSerializationType(String propURI) {

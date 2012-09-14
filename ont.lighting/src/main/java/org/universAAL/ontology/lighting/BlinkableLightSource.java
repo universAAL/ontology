@@ -44,14 +44,14 @@ public class BlinkableLightSource extends LightSource {
     public BlinkableLightSource(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }
 
     public BlinkableLightSource(String uri, LightType type, Location loc) {
 	super(uri, type, loc);
-	props.put(PROP_BLINKING_STATE, new Boolean(false));
+	props.put(PROP_BLINKING_STATE, Boolean.FALSE);
     }
 
     public boolean isBlinking() {
@@ -63,6 +63,6 @@ public class BlinkableLightSource extends LightSource {
     }
 
     public void setBlinkingState(boolean state) {
-	props.put(PROP_BLINKING_STATE, new Boolean(state));
+	props.put(PROP_BLINKING_STATE, Boolean.valueOf(state));
     }
 }

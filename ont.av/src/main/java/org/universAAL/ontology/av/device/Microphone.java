@@ -78,7 +78,7 @@ public class Microphone extends Device {
     public Microphone(int numProps) {
 	// TODO: two different constructors are necessary. one for using unique
 	// URIs and one for using a special URI as parameter
-	super(AVOntology.NAMESPACE, 10);
+	super(AVOntology.NAMESPACE, numProps);
     }
 
     public String getClassURI() {

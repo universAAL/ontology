@@ -60,8 +60,8 @@ public class AudioFormat extends Format {
 	setProperty(PROP_CHANNELS, new Integer(channels));
 	setProperty(PROP_SAMPLES_PER_SECOND, new Integer(samplesPerSecond));
 	setProperty(PROP_BITS_PER_SAMPLE, new Integer(bitsPerSample));
-	setProperty(PROP_BIG_ENDIAN, new Boolean(bigEndian));
-	setProperty(PROP_SIGNED, new Boolean(signed));
+	setProperty(PROP_BIG_ENDIAN, Boolean.valueOf(bigEndian));
+	setProperty(PROP_SIGNED, Boolean.valueOf(signed));
     }
 
     public AudioFormat(String uri) {

@@ -33,7 +33,7 @@ public class MeasurementActivator implements uAALModuleActivator {
     
 
     public void start(ModuleContext context) throws Exception {
-      this.context = context;
+      MeasurementActivator.context = context;
       
       OntologyManagement.getInstance().register(_owlontology);
       

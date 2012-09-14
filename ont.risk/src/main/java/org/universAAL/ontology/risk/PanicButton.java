@@ -62,7 +62,7 @@ public class PanicButton extends Device {
 	}
 
 	public void setActivated(boolean value) {
-		props.put(PROP_ACTIVATED, new Boolean(value));
+		props.put(PROP_ACTIVATED, Boolean.valueOf(value));
 	}
 
 	public AssistedPerson getPressedBy() {
@@ -72,5 +72,4 @@ public class PanicButton extends Device {
 	public void setPressedBy(AssistedPerson value) {
 		props.put(PROP_PRESSED_BY, value);
 	}
-
 }
