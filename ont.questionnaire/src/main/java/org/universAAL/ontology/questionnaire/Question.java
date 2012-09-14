@@ -163,7 +163,7 @@ public abstract class Question extends ManagedIndividual {
 	 * true if the question has a correct answer, false if not.
 	 */
 	public void setHasCorrectAnswer(boolean correctAnswer) {
-		props.put(PROP_HAS_CORRECT_ANSWER, new Boolean(correctAnswer));
+		props.put(PROP_HAS_CORRECT_ANSWER, Boolean.valueOf(correctAnswer));
 	}		
 
 	/**

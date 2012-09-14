@@ -124,7 +124,7 @@ public class VideoCamera extends Device {
      * video cameras with an unique URI
      */
     public VideoCamera(int numProps) {
-	super(Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + "camera", 8);
+	super(Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + "camera", numProps);
     }
 
     public String getClassURI() {

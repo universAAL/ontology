@@ -40,7 +40,6 @@ import org.universAAL.ontology.ProfileFactory;
 import org.universAAL.ontology.location.outdoor.City;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.PhysicalThing;
-import org.universAAL.ontology.profile.*;
 import org.universAAL.ontology.profile.service.ProfilingEditorService;
 import org.universAAL.ontology.profile.service.ProfilingService;
 import org.universAAL.ontology.vcard.*;

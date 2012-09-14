@@ -24,7 +24,6 @@ import java.util.Vector;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
-import org.universAAL.ontology.shape.Shape;
 
 /**
  * Ontological representation of a tri-dimensional polyhedron. Methods included

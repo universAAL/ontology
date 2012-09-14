@@ -190,7 +190,7 @@ public abstract class Shape extends ManagedIndividual {
      * coordinate system via CoordinateSystem.findCommonCoordinateSystem and
      * getInHigherCoordinateSystem(commonSystem)
      * 
-     * @param point
+     * @param p
      * @return the distance as positiv value or Point.NO_COMPUTABLE_DISTANCE or
      *         Point.INTERSECTING
      */
@@ -203,7 +203,7 @@ public abstract class Shape extends ManagedIndividual {
     }
 
     public void removePointRepresentation() {
-	props.put(PROP_POINT_REPRESENTATION, null);
+	props.remove(PROP_POINT_REPRESENTATION);
     }
 
     public int getPropSerializationType(String propURI) {
@@ -250,7 +250,7 @@ public abstract class Shape extends ManagedIndividual {
      * calculation If an other Shape than a Sphere or Box should be used, the
      * ray intersection method in Shape has to be extended
      * 
-     * @param a
+     * @param shape
      *            FHSphere or a Box
      */
     public void setBoundingVolume(Shape shape) {
@@ -260,7 +260,7 @@ public abstract class Shape extends ManagedIndividual {
     }
 
     public void removeBoundingVolume() {
-	props.put(PROP_BOUNDING_VOLUME, null);
+	props.remove(PROP_BOUNDING_VOLUME);
     }
 
     /**

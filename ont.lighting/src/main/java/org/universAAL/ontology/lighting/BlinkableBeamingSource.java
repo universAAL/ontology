@@ -42,7 +42,7 @@ public class BlinkableBeamingSource extends BeamingSource {
     public BlinkableBeamingSource(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }
@@ -50,7 +50,7 @@ public class BlinkableBeamingSource extends BeamingSource {
     public BlinkableBeamingSource(String uri, LightType type, Location loc,
 	    Location directedTo, Location targetSurface) {
 	super(uri, type, loc, directedTo, targetSurface);
-	props.put(BlinkableLightSource.PROP_BLINKING_STATE, new Boolean(false));
+	props.put(BlinkableLightSource.PROP_BLINKING_STATE, Boolean.FALSE);
     }
 
     public boolean isBlinking() {
@@ -64,6 +64,7 @@ public class BlinkableBeamingSource extends BeamingSource {
     }
 
     public void setBlinkingState(boolean state) {
-	props.put(BlinkableLightSource.PROP_BLINKING_STATE, new Boolean(state));
+	props.put(BlinkableLightSource.PROP_BLINKING_STATE, Boolean
+		.valueOf(state));
     }
 }

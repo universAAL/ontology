@@ -10,7 +10,6 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.VCardFactory;
-import org.universAAL.ontology.vcard.*;
 
 public class VCardOntology extends Ontology {
 

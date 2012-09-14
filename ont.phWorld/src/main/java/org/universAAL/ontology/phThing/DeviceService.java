@@ -23,7 +23,6 @@
 package org.universAAL.ontology.phThing;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.phThing.Device;
 
 /**
  * Ontological service that controls any HW device. Methods

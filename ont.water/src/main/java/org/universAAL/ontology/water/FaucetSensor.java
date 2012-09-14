@@ -53,6 +53,6 @@ public class FaucetSensor extends Sensor {
     }
 
     public void setMeasuredValue(boolean value) {
-	props.put(PROP_MEASURED_VALUE, new Boolean(value));
+	props.put(PROP_MEASURED_VALUE, Boolean.valueOf(value));
     }
 }
