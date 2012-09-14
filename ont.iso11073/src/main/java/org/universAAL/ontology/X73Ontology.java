@@ -1,7 +1,6 @@
 
 package org.universAAL.ontology;
 
-import org.universAAL.middleware.owl.BoundingValueRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
