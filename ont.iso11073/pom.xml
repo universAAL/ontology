@@ -80,7 +80,7 @@
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Export-Package>org.universAAL.ontology.x73</Export-Package>
-            <Private-Package>org.universAAL.ontology</Private-Package>
+            <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
           </instructions>
         </configuration>
       </plugin>
