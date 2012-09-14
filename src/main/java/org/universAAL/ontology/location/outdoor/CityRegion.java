@@ -90,7 +90,7 @@ public class CityRegion extends OutdoorPlace {
     }
 
     public void removeShape() {
-	props.put(PROP_HAS_ZIP_CODE, null);
+	props.remove(PROP_HAS_ZIP_CODE);
     }
 
     public int getPropSerializationType(String propURI) {

@@ -63,6 +63,6 @@ public class OnOffActuator extends Actuator {
     }
 
     public void setStatus(boolean value) {
-	props.put(PROP_STATUS, new Boolean(value));
+	props.put(PROP_STATUS, Boolean.valueOf(value));
     }
 }

@@ -26,7 +26,6 @@ import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
-import org.universAAL.ontology.shape.Shape;
 
 /**
  * Ontological representation of a polygon in a tri-dimensional space. Methods

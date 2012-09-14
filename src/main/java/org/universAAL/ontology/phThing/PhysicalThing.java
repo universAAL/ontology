@@ -122,7 +122,7 @@ public class PhysicalThing extends ManagedIndividual {
 	    place.setPhysicalThingofLocation(this);
 	    props.put(PROP_PHYSICAL_LOCATION, place);
 	} else
-	    props.put(PROP_PHYSICAL_LOCATION, null);
+	    props.remove(PROP_PHYSICAL_LOCATION);
     }
 
     /**
@@ -160,7 +160,7 @@ public class PhysicalThing extends ManagedIndividual {
 	    place.setPhysicalThingofLocation(this);
 	    props.put(PROP_PHYSICAL_LOCATION, place);
 	} else
-	    props.put(PROP_PHYSICAL_LOCATION, null);
+	    props.remove(PROP_PHYSICAL_LOCATION);
     }
 
     /**
@@ -196,7 +196,7 @@ public class PhysicalThing extends ManagedIndividual {
 	    place.setPhysicalThingofLocation(this);
 	    props.put(PROP_PHYSICAL_LOCATION, place);
 	} else
-	    props.put(PROP_PHYSICAL_LOCATION, null);
+	    props.remove(PROP_PHYSICAL_LOCATION);
     }
 
     public void setShape(Shape o) {

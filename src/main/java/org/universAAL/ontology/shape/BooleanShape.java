@@ -21,8 +21,6 @@ package org.universAAL.ontology.shape;
 
 import java.util.Vector;
 
-import org.universAAL.ontology.shape.Shape;
-
 /**
  * Ontological representation of an merge, intersection or subtraction shape.
  * Methods included in this class are the mandatory ones for representing an

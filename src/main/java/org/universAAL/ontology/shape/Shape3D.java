@@ -66,7 +66,7 @@ public abstract class Shape3D extends Shape {
      * 
      * @param uri
      *            this value can also be a null object
-     * @param name
+     * @param pointRep
      *            The place name. A null object is not allowed
      * @param system
      *            the local coordinate system
@@ -78,7 +78,7 @@ public abstract class Shape3D extends Shape {
     /**
      * Creates a Shape object
      * 
-     * @param name
+     * @param pointRep
      *            a single point representing the shape
      * @param system
      *            the local coordinate system
@@ -100,7 +100,7 @@ public abstract class Shape3D extends Shape {
     /**
      * Creates a Shape object
      * 
-     * @param the
+     * @param uri
      *            identifier for the shape
      * @param system
      *            the local coordinate system
@@ -129,7 +129,7 @@ public abstract class Shape3D extends Shape {
     }
 
     public void remove2DRepresentation() {
-	props.put(PROP_2D_REPRESENTATION, null);
+	props.remove(PROP_2D_REPRESENTATION);
     }
 
     public int getPropSerializationType(String propURI) {

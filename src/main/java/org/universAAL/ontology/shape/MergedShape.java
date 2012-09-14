@@ -20,7 +20,6 @@
 package org.universAAL.ontology.shape;
 
 import org.universAAL.ontology.location.position.Point;
-import org.universAAL.ontology.shape.Shape;
 
 /**
  * Ontological representation of a merged boolean shape. Methods included in

@@ -99,7 +99,7 @@ public class Room extends HomeArea {
     }
 
     public void clearRoomFunction() {
-	props.put(PROP_ROOM_FUNCTION, null);
+	props.remove(PROP_ROOM_FUNCTION);
     }
 
     public int getPropSerializationType(String propURI) {
