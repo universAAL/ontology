@@ -22,10 +22,10 @@ package org.universAAL.ontology.location.indoor;
 import org.universAAL.ontology.shape.Shape;
 
 /**
- * Ontological representation of the hall of a house. Methods included
- * in this class are the mandatory ones for representing an ontological concept
- * in Java classes for uAAL. Usually it includes getters and setters for most of
- * its properties.
+ * Ontological representation of the hall of a house. Methods included in this
+ * class are the mandatory ones for representing an ontological concept in Java
+ * classes for uAAL. Usually it includes getters and setters for most of its
+ * properties.
  * 
  */
 public class Hall extends HomeArea {
@@ -72,7 +72,7 @@ public class Hall extends HomeArea {
     public Hall(String uri, Shape shape) {
 	super(uri, shape);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

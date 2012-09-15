@@ -93,7 +93,7 @@ public class StairWay extends IndoorPlace {
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public BuildingLevel getFromLevel() {
 	return (BuildingLevel) props.get(PROP_FROM_LEVEL);
     }

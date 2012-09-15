@@ -35,7 +35,6 @@ public abstract class Shape2D extends Shape {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Shape2D";
 
-    
     /**
      * Creates a Shape object
      * 

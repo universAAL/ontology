@@ -45,13 +45,13 @@ public class PhysicalAddress extends Address {
 	// "hasAddressNumber";
     }
 
-
     /**
      * Creates a PhysicalAddress object
      */
     public PhysicalAddress() {
 
     }
+
     /**
      * Creates a PhysicalAddress object
      * 
@@ -81,6 +81,7 @@ public class PhysicalAddress extends Address {
 	// return props.contains(PROP_HAS_STREET);
 	return true;
     }
+
     /**
      * Gets the Building value of the Address
      * 
@@ -89,6 +90,7 @@ public class PhysicalAddress extends Address {
     public String getBuildingID() {
 	return (String) props.get(PROP_HAS_BUILDING_ID);
     }
+
     /**
      * Sets the Building value of the Address
      * 
@@ -98,6 +100,7 @@ public class PhysicalAddress extends Address {
     public void setBuildingID(String val) {
 	props.put(PROP_HAS_BUILDING_ID, val);
     }
+
     /**
      * Gets the Hall value of the Address
      * 
@@ -106,6 +109,7 @@ public class PhysicalAddress extends Address {
     public String getHallID() {
 	return (String) props.get(PROP_HAS_HALL_ID);
     }
+
     /**
      * Sets the Hall value of the Address
      * 
@@ -115,6 +119,7 @@ public class PhysicalAddress extends Address {
     public void setHallID(String val) {
 	props.put(PROP_HAS_HALL_ID, val);
     }
+
     /**
      * Gets the Floor value of the Address
      * 
@@ -123,6 +128,7 @@ public class PhysicalAddress extends Address {
     public String getFloorID() {
 	return (String) props.get(PROP_HAS_FLOOR_ID);
     }
+
     /**
      * Sets the Floor value of the Address
      * 
@@ -132,6 +138,7 @@ public class PhysicalAddress extends Address {
     public void setFloorID(String val) {
 	props.put(PROP_HAS_FLOOR_ID, val);
     }
+
     /**
      * Gets the Door value of the Address
      * 
@@ -140,6 +147,7 @@ public class PhysicalAddress extends Address {
     public String getDoorID() {
 	return (String) props.get(PROP_HAS_DOOR_ID);
     }
+
     /**
      * Sets the Door value of the Address
      * 
@@ -149,6 +157,7 @@ public class PhysicalAddress extends Address {
     public void setDoorID(String val) {
 	props.put(PROP_HAS_DOOR_ID, val);
     }
+
     /**
      * Gets the Desk value of the Address
      * 
@@ -157,6 +166,7 @@ public class PhysicalAddress extends Address {
     public String getDeskID() {
 	return (String) props.get(PROP_HAS_DESK_ID);
     }
+
     /**
      * Sets the Desk value of the Address
      * 
@@ -166,6 +176,7 @@ public class PhysicalAddress extends Address {
     public void setDeskID(String val) {
 	props.put(PROP_HAS_DESK_ID, val);
     }
+
     /**
      * Gets the Office value of the Address
      * 
@@ -174,6 +185,7 @@ public class PhysicalAddress extends Address {
     public String getOfficeID() {
 	return (String) props.get(PROP_HAS_OFFICE_ID);
     }
+
     /**
      * Sets the Office value of the Address
      * 

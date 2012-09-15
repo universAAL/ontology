@@ -72,7 +72,7 @@ public class EntranceHall extends HomeArea {
     public EntranceHall(String uri, String name) {
 	super(uri, name);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

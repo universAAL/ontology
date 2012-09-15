@@ -51,7 +51,6 @@ public class Ellipse extends Shape2D {
 	PROP_MAJOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MajorAxisLength";
     }
 
-
     public Ellipse(String uri) {
 	super(uri);
     }

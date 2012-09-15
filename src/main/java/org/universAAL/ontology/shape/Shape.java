@@ -61,7 +61,6 @@ public abstract class Shape extends ManagedIndividual {
 	PROP_BOUNDING_VOLUME = uAAL_SHAPE_NAMESPACE + "boundingVolume";
     }
 
-
     /**
      * Creates a Shape object
      * 

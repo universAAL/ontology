@@ -46,7 +46,6 @@ public class QuasiCylinder extends Shape3D {
 	PROP_FOOT = uAAL_SHAPE_NAMESPACE + "Foot";
     }
 
-
     /**
      * Creates a Shape object
      * 

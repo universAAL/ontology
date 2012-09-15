@@ -36,7 +36,6 @@ public class Circle extends Ellipse {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Circle";
 
-
     /**
      * Creates a Circle object
      * 

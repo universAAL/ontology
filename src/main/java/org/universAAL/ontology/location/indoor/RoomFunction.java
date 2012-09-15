@@ -33,7 +33,8 @@ import org.universAAL.ontology.location.Location;
  */
 public class RoomFunction extends ManagedIndividual {
 
-    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE + "RoomFunction";
+    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE
+	    + "RoomFunction";
 
     public static final int BATHROOM = 0;
     public static final int CELLAR = 1;
@@ -68,7 +69,6 @@ public class RoomFunction extends ManagedIndividual {
     public static final RoomFunction WorkRoom = new RoomFunction(WORKROOM);
     public static final RoomFunction Wardrobe = new RoomFunction(WARDROBE);
 
-
     public static final RoomFunction valueOf(String name) {
 	for (int i = 0; i <= 10; i++)
 	    if (names[i].equals(name))
@@ -77,8 +77,9 @@ public class RoomFunction extends ManagedIndividual {
     }
 
     public static RoomFunction getLevelByOrder(int order) {
-	OntClassInfo info = OntologyManagement.getInstance().getOntClassInfo(MY_URI);
-	return info==null ? null : (RoomFunction) info.getInstances()[order];
+	OntClassInfo info = OntologyManagement.getInstance().getOntClassInfo(
+		MY_URI);
+	return info == null ? null : (RoomFunction) info.getInstances()[order];
     }
 
     /**
@@ -104,7 +105,7 @@ public class RoomFunction extends ManagedIndividual {
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public String name() {
 	return names[order];
     }

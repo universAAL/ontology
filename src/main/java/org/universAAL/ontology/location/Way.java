@@ -35,8 +35,6 @@ public class Way extends Place {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Way";
 
-
-
     /**
      * Creates a Way object
      * 

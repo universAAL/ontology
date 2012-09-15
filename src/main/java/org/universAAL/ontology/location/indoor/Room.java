@@ -38,7 +38,6 @@ public class Room extends HomeArea {
 	PROP_ROOM_FUNCTION = uAAL_LOCATION_NAMESPACE + "roomFunction";
     }
 
-
     /**
      * Creates a Room object
      * 

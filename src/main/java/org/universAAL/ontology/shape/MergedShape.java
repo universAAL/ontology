@@ -35,11 +35,10 @@ public class MergedShape extends BooleanShape {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "MergedShape";
 
-
     public MergedShape(String uri) {
 	super(uri);
     }
-    
+
     public MergedShape(Shape[] shapes) {
 	super();
 	setShapes(shapes);
