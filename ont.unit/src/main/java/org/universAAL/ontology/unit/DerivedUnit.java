@@ -15,69 +15,64 @@
  ******************************************************************************/
 package org.universAAL.ontology.unit;
 
-
-
 public abstract class DerivedUnit extends Unit {
-  public static final String MY_URI = UnitOntology.NAMESPACE
-    + "DerivedUnit";
-  public static final String PROP_BASE_UNIT = UnitOntology.NAMESPACE
-    + "baseUnit";
-  public static final String PROP_BASE_PREFIX = UnitOntology.NAMESPACE
-		    + "basePrefix";
+    public static final String MY_URI = UnitOntology.NAMESPACE + "DerivedUnit";
+    public static final String PROP_BASE_UNIT = UnitOntology.NAMESPACE
+	    + "baseUnit";
+    public static final String PROP_BASE_PREFIX = UnitOntology.NAMESPACE
+	    + "basePrefix";
 
+    public DerivedUnit() {
+	super();
+    }
 
-  public DerivedUnit () {
-    super();
-  }
-  
-  public DerivedUnit (String uri) {
-    super(uri);
-  }
-  
-  public DerivedUnit(Unit baseUnit){
-	  super();
-	  setBaseUnit(baseUnit);
-  }
-  
-  public DerivedUnit(String uri, Unit baseUnit){
-	  super(uri);
-	  setBaseUnit(baseUnit);
-  }
-  
-  public DerivedUnit(String uri, Unit baseUnit, Prefix basePrefix){
-	  super(uri);
-	  setBaseUnit(baseUnit);
-	  setBasePrefix(basePrefix);
-  }
+    public DerivedUnit(String uri) {
+	super(uri);
+    }
 
- public String getClassURI() {
-    return MY_URI;
-  }
- 
-  public int getPropSerializationType(String arg0) {
+    public DerivedUnit(Unit baseUnit) {
+	super();
+	setBaseUnit(baseUnit);
+    }
+
+    public DerivedUnit(String uri, Unit baseUnit) {
+	super(uri);
+	setBaseUnit(baseUnit);
+    }
+
+    public DerivedUnit(String uri, Unit baseUnit, Prefix basePrefix) {
+	super(uri);
+	setBaseUnit(baseUnit);
+	setBasePrefix(basePrefix);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
 	return PROP_SERIALIZATION_FULL;
-  }
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_BASE_UNIT);
-  }
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_BASE_UNIT);
+    }
 
-  public Unit getBaseUnit() {
-    return (Unit)getProperty(PROP_BASE_UNIT);
-  }		
+    public Unit getBaseUnit() {
+	return (Unit) getProperty(PROP_BASE_UNIT);
+    }
 
-  private void setBaseUnit(Unit newPropValue) {
-    if (newPropValue != null)
-      setProperty(PROP_BASE_UNIT, newPropValue);
-  }	
-  
-  public Prefix getBasePrefix() {
-	  return (Prefix)getProperty(PROP_BASE_PREFIX);
-  }		
+    private void setBaseUnit(Unit newPropValue) {
+	if (newPropValue != null)
+	    setProperty(PROP_BASE_UNIT, newPropValue);
+    }
 
-  private void setBasePrefix(Prefix newPropValue) {
-	  if (newPropValue != null)
-		  setProperty(PROP_BASE_PREFIX, newPropValue);
-  }	
+    public Prefix getBasePrefix() {
+	return (Prefix) getProperty(PROP_BASE_PREFIX);
+    }
+
+    private void setBasePrefix(Prefix newPropValue) {
+	if (newPropValue != null)
+	    setProperty(PROP_BASE_PREFIX, newPropValue);
+    }
 }

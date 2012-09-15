@@ -22,26 +22,35 @@ import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
 
 public class Util {
-  
-	public static final String MY_URI = UnitOntology.NAMESPACE
-    + "UtilUnits";
-  
-  public static Unit IND_UNIT_UNITY;
-  public static Unit IND_UNIT_HERTZ;
-  public static Unit IND_UNIT_VOLT;
-  
 
-  {
-	  
-	  IND_UNIT_UNITY = new Unit("unity", "Unity", "1", MeasurableDimension.Adiemnsional);
-	  IND_UNIT_HERTZ = new DividedUnit("hertz", IND_UNIT_UNITY, InternationalSystem.IND_UNIT_SI_SECOND);
-	  IND_UNIT_VOLT = new DividedUnit("volt",
-			  new MultipliedUnit("kg*m2", 
-					  InternationalSystem.IND_UNIT_SI_GRAM, InternationalSystem.IND_PREFIX_SI_KILO,
-					  new MultipliedUnit("m2", InternationalSystem.IND_UNIT_SI_METER, InternationalSystem.IND_UNIT_SI_METER))
-	  , new MultipliedUnit("A*S3", InternationalSystem.IND_UNIT_SI_AMPERE, 
-			  new MultipliedUnit("S3", InternationalSystem.IND_UNIT_SI_SECOND, 
-					  new MultipliedUnit("s2", InternationalSystem.IND_UNIT_SI_SECOND, InternationalSystem.IND_UNIT_SI_SECOND))));
-	  IND_UNIT_VOLT.setProperty(Unit.PROP_SYMBOL, "V");
-  }
+    public static final String MY_URI = UnitOntology.NAMESPACE + "UtilUnits";
+
+    public static Unit IND_UNIT_UNITY;
+    public static Unit IND_UNIT_HERTZ;
+    public static Unit IND_UNIT_VOLT;
+
+    {
+
+	IND_UNIT_UNITY = new Unit("unity", "Unity", "1",
+		MeasurableDimension.Adiemnsional);
+	IND_UNIT_HERTZ = new DividedUnit("hertz", IND_UNIT_UNITY,
+		InternationalSystem.IND_UNIT_SI_SECOND);
+	IND_UNIT_VOLT = new DividedUnit(
+		"volt",
+		new MultipliedUnit("kg*m2",
+			InternationalSystem.IND_UNIT_SI_GRAM,
+			InternationalSystem.IND_PREFIX_SI_KILO,
+			new MultipliedUnit("m2",
+				InternationalSystem.IND_UNIT_SI_METER,
+				InternationalSystem.IND_UNIT_SI_METER)),
+		new MultipliedUnit(
+			"A*S3",
+			InternationalSystem.IND_UNIT_SI_AMPERE,
+			new MultipliedUnit("S3",
+				InternationalSystem.IND_UNIT_SI_SECOND,
+				new MultipliedUnit("s2",
+					InternationalSystem.IND_UNIT_SI_SECOND,
+					InternationalSystem.IND_UNIT_SI_SECOND))));
+	IND_UNIT_VOLT.setProperty(Unit.PROP_SYMBOL, "V");
+    }
 }
