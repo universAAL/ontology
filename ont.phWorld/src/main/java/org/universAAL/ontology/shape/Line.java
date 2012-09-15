@@ -35,7 +35,6 @@ public class Line extends Path {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Line";
 
-
     /**
      * Creates a Line object
      * 

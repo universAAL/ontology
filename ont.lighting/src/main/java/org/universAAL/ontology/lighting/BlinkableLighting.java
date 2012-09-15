@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-
 /**
  * Ontological service that handles blinkable light sources. Methods included in
  * this class are the mandatory ones for representing an ontological service in
@@ -36,7 +35,7 @@ public class BlinkableLighting extends Lighting {
     public BlinkableLighting(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

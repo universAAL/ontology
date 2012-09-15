@@ -134,7 +134,7 @@ public class Recipe extends ManagedIndividual {
 		}
 		
 		public void setFavourite(boolean value) {
-			this.props.put(PROP_IS_FAVOURITE, new Boolean(value));
+			this.props.put(PROP_IS_FAVOURITE, Boolean.valueOf(value));
 		}
 		
 		// DISH CATEGORY

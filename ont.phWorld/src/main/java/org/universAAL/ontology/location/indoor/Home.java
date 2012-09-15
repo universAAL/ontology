@@ -32,7 +32,6 @@ public class Home extends IndoorPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Home";
 
-    
     /**
      * Creates a Home object
      * 
@@ -69,7 +68,7 @@ public class Home extends IndoorPlace {
     public Home(String uri, Shape shape) {
 	super(uri, shape);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

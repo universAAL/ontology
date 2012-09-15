@@ -42,7 +42,6 @@ public class Sphere extends Shape3D {
 	PROP_RADIUS = uAAL_SHAPE_NAMESPACE + "Radius";
     }
 
-
     /**
      * Creates a Shape object
      * 

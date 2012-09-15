@@ -31,14 +31,13 @@ package org.universAAL.ontology.phThing;
  * 
  */
 public class DimmerActuator extends Actuator {
-    
+
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
 	    + "DimmerActuator";
-    
+
     public static final String PROP_DIMMABLE_STATUS = Device.uAAL_DEVICE_NAMESPACE
 	    + "DimmableStatus";
 
-    
     public DimmerActuator() {
     }
 

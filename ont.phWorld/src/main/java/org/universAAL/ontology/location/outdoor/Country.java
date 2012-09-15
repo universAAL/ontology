@@ -31,8 +31,7 @@ import org.universAAL.ontology.shape.Shape;
 public class Country extends OutdoorPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Country";
-    
-    
+
     /**
      * Creates a Country object
      * 

@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-
 /**
  * Ontological representation of a binary sensor that can be on or off (detects
  * or does not detect). Methods included in this class are the mandatory ones
@@ -32,10 +31,9 @@ package org.universAAL.ontology.phThing;
  * 
  */
 public class OnOffSensor extends Sensor {
-    
+
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
 	    + "OnOffSensor";
-
 
     public OnOffSensor() {
     }

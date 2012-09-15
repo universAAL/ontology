@@ -46,7 +46,6 @@ public class Polyhedron extends Shape3D {
 	PROP_FACES = uAAL_SHAPE_NAMESPACE + "Faces";
     }
 
-
     /**
      * Creates a Polygon object
      * 

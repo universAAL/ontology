@@ -29,7 +29,7 @@ import org.universAAL.ontology.profile.health.HealthProfileOntology;
  */
 public class HealthProfileActivator implements uAALModuleActivator {
 
-    HealthProfileOntology ont = new HealthProfileOntology();
+    private HealthProfileOntology ont = new HealthProfileOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

@@ -32,7 +32,6 @@ public class Building extends CityPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Building";
 
-
     /**
      * Creates a Building object
      * 

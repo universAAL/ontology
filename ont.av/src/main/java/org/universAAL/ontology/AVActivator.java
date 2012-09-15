@@ -26,7 +26,7 @@ import org.universAAL.ontology.av.AVOntology;
 
 public class AVActivator implements uAALModuleActivator {
 
-    AVOntology ont = new AVOntology();
+    private AVOntology ont = new AVOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

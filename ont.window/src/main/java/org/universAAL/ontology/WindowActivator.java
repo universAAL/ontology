@@ -25,7 +25,7 @@ import org.universAAL.ontology.window.WindowOntology;
 
 public class WindowActivator implements uAALModuleActivator {
 
-    WindowOntology ont = new WindowOntology();
+    private WindowOntology ont = new WindowOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

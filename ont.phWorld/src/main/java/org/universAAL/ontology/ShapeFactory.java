@@ -23,12 +23,11 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 import org.universAAL.ontology.shape.*;
 
-
 public class ShapeFactory extends ResourceFactoryImpl {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
-	
+
 	switch (factoryIndex) {
 	case 0:
 	    return new Box(instanceURI);
@@ -55,7 +54,7 @@ public class ShapeFactory extends ResourceFactoryImpl {
 	case 11:
 	    return new MergedShape(instanceURI);
 	}
-	
+
 	return null;
     }
 }

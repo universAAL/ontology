@@ -6,11 +6,9 @@ import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.energy.reader.ReadEnergyOntology;
 
 public class ReadEnergyActivator implements uAALModuleActivator{
-	static ModuleContext context = null;
-	ReadEnergyOntology energyreader = new ReadEnergyOntology();
+    private ReadEnergyOntology energyreader = new ReadEnergyOntology();
 	
 	public void start(ModuleContext arg0) throws Exception {
-		context = arg0;
 		OntologyManagement.getInstance().register(energyreader);
 	}
 

@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-
 /**
  * Ontological enumeration of possible flaming light types. Methods included in
  * this class are the mandatory ones for representing an ontological enumeration
@@ -45,11 +44,10 @@ public class FlamingLight extends LightType {
     public static final FlamingLight gasLamp = new FlamingLight(GAS_LAMP);
     public static final FlamingLight oilLamp = new FlamingLight(OIL_LAMP);
 
-    
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public static FlamingLight getFlamingLightByOrder(int order) {
 	switch (order) {
 	case CANDLE_LIGHT:

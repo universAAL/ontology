@@ -46,7 +46,7 @@ public class BeamingSource extends LightSource {
     public BeamingSource(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

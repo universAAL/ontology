@@ -20,10 +20,6 @@ public class BodyWeight extends MDSAttribute {
     return MY_URI;
   }
 
-  public int getPropSerializationType(String propURI) {
-	return super.getPropSerializationType(propURI);
-  }
-
   public boolean isWellFormed() {
 	return true ;
   }

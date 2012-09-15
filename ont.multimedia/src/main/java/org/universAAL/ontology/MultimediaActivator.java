@@ -25,7 +25,7 @@ import org.universAAL.ontology.multimedia.MultimediaOntology;
 
 public class MultimediaActivator implements uAALModuleActivator {
 
-    MultimediaOntology ont = new MultimediaOntology();
+    private MultimediaOntology ont = new MultimediaOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

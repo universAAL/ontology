@@ -72,7 +72,7 @@ public class Corridor extends HomeArea {
     public Corridor(String uri, Shape shape) {
 	super(uri, shape);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

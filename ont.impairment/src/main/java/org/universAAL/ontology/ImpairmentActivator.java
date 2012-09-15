@@ -29,7 +29,7 @@ import org.universAAL.ontology.impairment.ImpairmentOntology;
  */
 public class ImpairmentActivator implements uAALModuleActivator {
 
-    ImpairmentOntology ont = new ImpairmentOntology();
+    private ImpairmentOntology ont = new ImpairmentOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

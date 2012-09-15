@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-
 /**
  * Ontological representation of a sensor: a device that can measure values from
  * the physical world. Methods included in this class are the mandatory ones for
@@ -40,7 +39,6 @@ public class Sensor extends Device {
 	MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Sensor";
 	PROP_MEASURED_VALUE = Device.uAAL_DEVICE_NAMESPACE + "measuredValue";
     }
-
 
     public Sensor() {
     }

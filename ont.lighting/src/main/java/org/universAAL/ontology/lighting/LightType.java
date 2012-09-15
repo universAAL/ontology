@@ -38,7 +38,7 @@ public abstract class LightType extends ManagedIndividual {
     protected LightType(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

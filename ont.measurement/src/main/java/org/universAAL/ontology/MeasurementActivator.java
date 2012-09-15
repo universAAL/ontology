@@ -26,23 +26,13 @@ import org.universAAL.ontology.measurement.MeasurementOntology;
 
 public class MeasurementActivator implements uAALModuleActivator {
 
-    static ModuleContext context = null;
+    private MeasurementOntology _owlontology = new MeasurementOntology();
     
-    MeasurementOntology _owlontology = new MeasurementOntology();
-    
-    
-
     public void start(ModuleContext context) throws Exception {
-      MeasurementActivator.context = context;
-      
       OntologyManagement.getInstance().register(_owlontology);
-      
     }
 
     public void stop(ModuleContext arg0) throws Exception {
-      
       OntologyManagement.getInstance().unregister(_owlontology);
-      
-    }
-
+     }
 }

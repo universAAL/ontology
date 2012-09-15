@@ -46,12 +46,13 @@ public class DividedUnit extends DerivedUnit {
 	setDividedBy(dividend);
     }
 
-    public DividedUnit(String uri, Unit base, Prefix basePrefix, Unit dividend,
-	    Prefix dividendPrefix) {
-	super(uri, base, basePrefix);
-	setDividedBy(dividend);
-	setDividedByPrefix(basePrefix);
-    }
+    // public DividedUnit(String uri, Unit base, Prefix basePrefix, Unit
+    // dividend,
+    // Prefix dividendPrefix) {
+    // super(uri, base, basePrefix);
+    // setDividedBy(dividend);
+    // setDividedByPrefix(basePrefix);
+    // }
 
     public String getClassURI() {
 	return MY_URI;
