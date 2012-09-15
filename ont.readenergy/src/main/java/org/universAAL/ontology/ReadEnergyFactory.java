@@ -6,10 +6,9 @@ import org.universAAL.ontology.energy.reader.*;
 
 public class ReadEnergyFactory extends ResourceFactoryImpl{
 	
-	
-	public final int EnergyReader = 0;
-	public final int EnergyReaderDevice = 1;
-	public final int EnergyReaderMeassurement = 2;
+	public static final int EnergyReader = 0;
+	public static final int EnergyReaderDevice = 1;
+	public static final int EnergyReaderMeassurement = 2;
 
 	public Resource createInstance(String classURI, String instanceURI,
 			int factoryIndex) {
@@ -24,5 +23,4 @@ public class ReadEnergyFactory extends ResourceFactoryImpl{
 		}
 		return null;
 	}
-	
 }

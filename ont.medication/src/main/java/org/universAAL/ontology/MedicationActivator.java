@@ -25,7 +25,7 @@ import org.universAAL.ontology.medication.MedicationOntology;
 
 public class MedicationActivator implements uAALModuleActivator {
     
-    MedicationOntology ont = new MedicationOntology();
+    private MedicationOntology ont = new MedicationOntology();
     
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

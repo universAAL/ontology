@@ -1,6 +1,5 @@
 package org.universAAL.ontology.activityhub;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.ActivityHubOntology;
 
 /**

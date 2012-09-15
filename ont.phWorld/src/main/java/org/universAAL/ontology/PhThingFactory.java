@@ -27,7 +27,7 @@ public class PhThingFactory extends ResourceFactoryImpl {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
-	
+
 	switch (factoryIndex) {
 	case 0:
 	    return new PhysicalThing(instanceURI);

@@ -546,7 +546,6 @@ public class Questionnaire extends ManagedIndividual {
 						if(!(k==(ta.length-1))){
 							writtenQuestionnaire = writtenQuestionnaire + " and ";
 						}
-						else{}
 					}
 					writtenQuestionnaire = writtenQuestionnaire +  " to question " + "\"" + cq.getDependsOn().getQuestionWording()+ 
 					"\"" + "\n";

@@ -43,7 +43,6 @@ public abstract class Shape3D extends Shape {
 	PROP_2D_REPRESENTATION = uAAL_SHAPE_NAMESPACE + "2DReperesentation";
     }
 
-    
     /**
      * Creates a Shape object
      * 

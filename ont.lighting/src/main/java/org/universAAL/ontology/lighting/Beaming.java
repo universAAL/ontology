@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-
 /**
  * Ontological service that handles beaming light sources. Methods included in
  * this class are the mandatory ones for representing an ontological service in
@@ -30,13 +29,12 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class Beaming extends Lighting {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "Beaming";
+    public static final String MY_URI = LightingOntology.NAMESPACE + "Beaming";
 
     public Beaming(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

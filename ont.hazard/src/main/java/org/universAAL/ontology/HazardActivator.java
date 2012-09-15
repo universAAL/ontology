@@ -25,7 +25,7 @@ import org.universAAL.ontology.hazard.HazardOntology;
 
 public class HazardActivator implements uAALModuleActivator {
 
-    HazardOntology ont = new HazardOntology();
+    private HazardOntology ont = new HazardOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

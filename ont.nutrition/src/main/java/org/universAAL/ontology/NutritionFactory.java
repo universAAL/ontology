@@ -145,7 +145,7 @@ public class NutritionFactory extends ResourceFactoryImpl {
 				|| !classURI.startsWith(NutritionOntology.NAMESPACE))
 			return null;
 
-		String target = classURI;
+		//String target = classURI;
 		// Object orig =
 		// r.getProperty(PROP_ORIG_INDIVIDUAL);
 

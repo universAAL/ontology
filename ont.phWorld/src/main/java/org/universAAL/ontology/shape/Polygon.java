@@ -48,7 +48,6 @@ public class Polygon extends Shape3D {
 	PROP_VERTICES = uAAL_SHAPE_NAMESPACE + "Vertices";
     }
 
-    
     /**
      * Creates a Polygon object
      * 

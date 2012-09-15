@@ -20,7 +20,6 @@
 
 package org.universAAL.ontology.lighting;
 
-
 /**
  * Ontological enumeration of possible natural light types. Methods included in
  * this class are the mandatory ones for representing an ontological enumeration
@@ -41,19 +40,18 @@ public class NaturalLight extends LightType {
     public static final NaturalLight moonShine = new NaturalLight(MOON_SHINE);
     public static final NaturalLight sunShine = new NaturalLight(SUN_SHINE);
 
-    
-//    public static void init() throws UnsupportedOperationException {
-//	if (moonShine != null  ||  sunShine != null)
-//	    throw new UnsupportedOperationException("NaturalLight has already been initialised.");
-//	moonShine = new NaturalLight(MOON_SHINE);
-//	sunShine = new NaturalLight(SUN_SHINE);
-//    }
-    
-    
+    // public static void init() throws UnsupportedOperationException {
+    // if (moonShine != null || sunShine != null)
+    // throw new
+    // UnsupportedOperationException("NaturalLight has already been initialised.");
+    // moonShine = new NaturalLight(MOON_SHINE);
+    // sunShine = new NaturalLight(SUN_SHINE);
+    // }
+
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public static NaturalLight getNaturalLightByOrder(int order) {
 	switch (order) {
 	case MOON_SHINE:
@@ -85,7 +83,7 @@ public class NaturalLight extends LightType {
 	super(LightingOntology.NAMESPACE + names[order]);
 	this.order = order;
     }
-        
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_OPTIONAL;
     }

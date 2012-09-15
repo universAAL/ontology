@@ -32,7 +32,7 @@ import org.universAAL.ontology.device.home.DeviceOntology;
  */
 public class DeviceActivator implements uAALModuleActivator {
 
-    DeviceOntology deviceOntology = new DeviceOntology();
+    private DeviceOntology deviceOntology = new DeviceOntology();
 
     /* (non-Javadoc)
      * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)

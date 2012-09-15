@@ -36,8 +36,8 @@ import org.universAAL.ontology.vcard.VCardOntology;
  */
 public class ProfileActivator implements uAALModuleActivator {
 
-    VCardOntology ontV = new VCardOntology();
-    ProfileOntology ontP = new ProfileOntology();
+    private VCardOntology ontV = new VCardOntology();
+    private ProfileOntology ontP = new ProfileOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ontV);

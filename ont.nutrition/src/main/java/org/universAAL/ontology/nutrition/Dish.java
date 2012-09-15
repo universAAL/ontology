@@ -85,7 +85,7 @@ public class Dish extends ManagedIndividual {
 
 	public void setProcedure(boolean contains_procedure) {
 		this.props
-				.put(PROP_CONTAINS_PROCEDURE, new Boolean(contains_procedure));
+				.put(PROP_CONTAINS_PROCEDURE, Boolean.valueOf(contains_procedure));
 	}
 
 	// ID
@@ -105,7 +105,7 @@ public class Dish extends ManagedIndividual {
 	}
 
 	public void setContainsRecipe(boolean value) {
-		this.props.put(PROP_CONTAINS_RECIPE, new Boolean(value));
+		this.props.put(PROP_CONTAINS_RECIPE, Boolean.valueOf(value));
 	}
 
 	// DISH CATEGORY

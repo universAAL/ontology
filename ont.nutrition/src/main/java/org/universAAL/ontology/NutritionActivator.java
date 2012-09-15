@@ -27,7 +27,7 @@ import org.universAAL.ontology.nutrition.NutritionOntology;
 //You need an NutritionActivator in your ontology bundle because it must be started...
 public class NutritionActivator implements uAALModuleActivator {
 
-    NutritionOntology nutritionOntology = new NutritionOntology();
+    private NutritionOntology nutritionOntology = new NutritionOntology();
 
     public void start(ModuleContext context) throws Exception {
 	System.out.println("Nutrition ontology starting");

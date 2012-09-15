@@ -26,7 +26,7 @@ import org.universAAL.ontology.furniture.FurnitureOntology;
 
 public class FurnitureActivator implements uAALModuleActivator {
 
-    FurnitureOntology furnitureOntology = new FurnitureOntology();
+    private FurnitureOntology furnitureOntology = new FurnitureOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(furnitureOntology);

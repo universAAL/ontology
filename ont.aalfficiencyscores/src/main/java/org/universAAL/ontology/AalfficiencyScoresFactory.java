@@ -6,12 +6,12 @@ import org.universAAL.ontology.aalfficiency.scores.*;
 
 public class AalfficiencyScoresFactory extends ResourceFactoryImpl {
 	
-	public final int Advice = 0;
-	public final int AalfficiencyAdvices = 1;
-	public final int Challenge = 2;
-	public final int ActivityData = 3;
-	public final int ElectricityData=4;
-	public final int AalfficiencyScoresService = 5;
+	public static final int Advice = 0;
+	public static final int AalfficiencyAdvices = 1;
+	public static final int Challenge = 2;
+	public static final int ActivityData = 3;
+	public static final int ElectricityData=4;
+	public static final int AalfficiencyScoresService = 5;
 	
 	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 		switch (factoryIndex) {

@@ -25,7 +25,7 @@ import org.universAAL.ontology.weather.WeatherOntology;
 
 public class WeatherActivator implements uAALModuleActivator {
 
-    WeatherOntology ont = new WeatherOntology();
+    private WeatherOntology ont = new WeatherOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

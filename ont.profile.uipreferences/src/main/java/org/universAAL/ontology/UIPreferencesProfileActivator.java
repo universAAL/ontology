@@ -26,7 +26,7 @@ import org.universAAL.ontology.profile.uipreferences.UIPreferencesProfileOntolog
  */
 public class UIPreferencesProfileActivator implements uAALModuleActivator {
 
-  UIPreferencesProfileOntology ontology = new UIPreferencesProfileOntology();
+    private UIPreferencesProfileOntology ontology = new UIPreferencesProfileOntology();
 
   /* (non-Javadoc)
  * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)

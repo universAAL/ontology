@@ -35,8 +35,8 @@ public class CityRegion extends OutdoorPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "CityRegion";
 
-    public static final String PROP_HAS_ZIP_CODE = uAAL_LOCATION_NAMESPACE + "hasZIPCode";
-
+    public static final String PROP_HAS_ZIP_CODE = uAAL_LOCATION_NAMESPACE
+	    + "hasZIPCode";
 
     /**
      * Creates a CityRegion object

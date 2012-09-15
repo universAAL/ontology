@@ -58,8 +58,6 @@
     </dependency>
   </dependencies>
   <properties>
-    <maven.compile.source>1.5</maven.compile.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compile.target>1.5</maven.compile.target>
   </properties>
 </project>

@@ -25,7 +25,7 @@ import org.universAAL.ontology.powersocket.PowersocketOntology;
 
 public class PowersocketActivator implements uAALModuleActivator {
 
-    PowersocketOntology ont = new PowersocketOntology();
+    private PowersocketOntology ont = new PowersocketOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

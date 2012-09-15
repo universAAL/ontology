@@ -48,7 +48,6 @@ public abstract class Path extends Shape3D {
 	PROP_POINTS = uAAL_SHAPE_NAMESPACE + "Points";
     }
 
-
     /**
      * Creates a Path object
      * 

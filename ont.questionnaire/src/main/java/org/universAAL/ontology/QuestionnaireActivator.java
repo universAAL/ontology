@@ -23,7 +23,7 @@ import org.universAAL.ontology.questionnaire.QuestionnaireOntology;
 
 public class QuestionnaireActivator implements uAALModuleActivator {
 
-  QuestionnaireOntology ontology = new QuestionnaireOntology();
+    private QuestionnaireOntology ontology = new QuestionnaireOntology();
 
   public void start(ModuleContext context) throws Exception {
     OntologyManagement.getInstance().register(ontology);

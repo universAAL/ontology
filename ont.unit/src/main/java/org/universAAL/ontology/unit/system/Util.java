@@ -52,4 +52,7 @@ public class Util {
 					InternationalSystem.IND_UNIT_SI_SECOND,
 					InternationalSystem.IND_UNIT_SI_SECOND))));
     }
+
+    private Util() {
+    }
 }

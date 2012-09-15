@@ -6,7 +6,7 @@ import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.risk.RiskOntology;
 
 public class RiskActivator implements uAALModuleActivator {
-    RiskOntology riskOntology = new RiskOntology();
+    private RiskOntology riskOntology = new RiskOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();

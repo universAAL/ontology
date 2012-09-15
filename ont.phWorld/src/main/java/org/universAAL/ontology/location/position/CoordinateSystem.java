@@ -34,12 +34,12 @@ import org.universAAL.ontology.location.Location;
  */
 public class CoordinateSystem extends ManagedIndividual {
 
-    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE + "CoordinateSystem";
+    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE
+	    + "CoordinateSystem";
 
     // private static final String[] names = {
     // "WGS84","Metric","Pixel"
     // };
-
 
     public static final CoordinateSystem WGS84 = new CoordinateSystem(
 	    Location.uAAL_LOCATION_NAMESPACE + "WGS84");
@@ -64,7 +64,7 @@ public class CoordinateSystem extends ManagedIndividual {
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String arg0) {
 	return PROP_SERIALIZATION_OPTIONAL;
     }

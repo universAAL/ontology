@@ -24,7 +24,6 @@ public class MailBox extends Address {
 		+ "postOfficeBox";
     }
 
-
     /**
      * Creates a MailBox object
      */
@@ -46,11 +45,10 @@ public class MailBox extends Address {
 	super(uri);
 	props.put(PROP_POST_OFFICE_BOX, postOffciceBox);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }
-
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;

@@ -25,7 +25,7 @@ import org.universAAL.ontology.water.WaterOntology;
 
 public class WaterActivator implements uAALModuleActivator {
 
-    WaterOntology ont = new WaterOntology();
+    private WaterOntology ont = new WaterOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ont);

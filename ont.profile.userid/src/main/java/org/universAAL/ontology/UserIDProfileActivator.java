@@ -26,7 +26,7 @@ import org.universAAL.ontology.profile.userid.UserIDProfileOntology;
  */
 public class UserIDProfileActivator implements uAALModuleActivator {
 
-  UserIDProfileOntology ontology = new UserIDProfileOntology();
+    private UserIDProfileOntology ontology = new UserIDProfileOntology();
 
   public void start(ModuleContext context) throws Exception {
     OntologyManagement.getInstance().register(ontology);

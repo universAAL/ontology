@@ -25,7 +25,6 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.DeviceFactory;
-import org.universAAL.ontology.device.home.*;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.OnOffActuator;
 import org.universAAL.ontology.phThing.OnOffSensor;

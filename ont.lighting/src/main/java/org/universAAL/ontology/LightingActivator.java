@@ -24,10 +24,9 @@ import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.lighting.LightingOntology;
 
-
 public class LightingActivator implements uAALModuleActivator {
 
-    LightingOntology lightingOntology = new LightingOntology();
+    private LightingOntology lightingOntology = new LightingOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(lightingOntology);

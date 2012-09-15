@@ -31,8 +31,7 @@ import org.universAAL.middleware.service.owl.Service;
  * 
  */
 public class Lighting extends Service {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "Lighting";
+    public static final String MY_URI = LightingOntology.NAMESPACE + "Lighting";
     public static final String PROP_CONTROLS = LightingOntology.NAMESPACE
 	    + "controls";
 
@@ -43,7 +42,7 @@ public class Lighting extends Service {
     public Lighting(String uri) {
 	super(uri);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }
