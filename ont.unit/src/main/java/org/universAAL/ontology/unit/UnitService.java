@@ -17,33 +17,29 @@ package org.universAAL.ontology.unit;
 
 import org.universAAL.middleware.service.owl.Service;
 
-
-
 public class UnitService extends Service {
-  public static final String MY_URI = UnitOntology.NAMESPACE
-    + "UnitService";
-  public static final String PROP_CONTROLS = UnitOntology.NAMESPACE
-    + "controls";
+    public static final String MY_URI = UnitOntology.NAMESPACE + "UnitService";
+    public static final String PROP_CONTROLS = UnitOntology.NAMESPACE
+	    + "controls";
 
+    public UnitService() {
+	super();
+    }
 
-  public UnitService () {
-    super();
-  }
-  
-  public UnitService (String uri) {
-    super(uri);
-  }
+    public UnitService(String uri) {
+	super(uri);
+    }
 
- public String getClassURI() {
-    return MY_URI;
-  }
- 
-  public int getPropSerializationType(String arg0) {
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
 	return PROP_SERIALIZATION_FULL;
-  }
+    }
 
-  public boolean isWellFormed() {
-	return true ;
-  }
-	
+    public boolean isWellFormed() {
+	return true;
+    }
+
 }
