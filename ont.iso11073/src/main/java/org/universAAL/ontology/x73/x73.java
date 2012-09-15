@@ -1,9 +1,5 @@
 package org.universAAL.ontology.x73;
 
-import java.util.Hashtable;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.X73Ontology;
 
