@@ -45,7 +45,6 @@ public class Prefix extends ManagedIndividual {
     }
 
     public int getPropSerializationType(String arg0) {
-
 	return PROP_SERIALIZATION_FULL;
     }
 
@@ -60,7 +59,7 @@ public class Prefix extends ManagedIndividual {
 
     private void setName(String newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_NAME, newPropValue);
+	    props.put(PROP_NAME, newPropValue);
     }
 
     public Integer getPower() {
@@ -69,7 +68,7 @@ public class Prefix extends ManagedIndividual {
 
     private void setPower(Integer newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_POWER, newPropValue);
+	    props.put(PROP_POWER, newPropValue);
     }
 
     public String getSymbol() {
@@ -78,7 +77,7 @@ public class Prefix extends ManagedIndividual {
 
     private void setSymbol(String newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_SYMBOL, newPropValue);
+	    props.put(PROP_SYMBOL, newPropValue);
     }
 
     public Integer getBase() {
@@ -87,6 +86,6 @@ public class Prefix extends ManagedIndividual {
 
     private void setBase(Integer newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_BASE, newPropValue);
+	    props.put(PROP_BASE, newPropValue);
     }
 }

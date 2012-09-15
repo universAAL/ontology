@@ -25,18 +25,18 @@ public class Util {
 
     public static final String MY_URI = UnitOntology.NAMESPACE + "UtilUnits";
 
-    public static Unit IND_UNIT_UNITY;
-    public static Unit IND_UNIT_HERTZ;
-    public static Unit IND_UNIT_VOLT;
+    public static final Unit IND_UNIT_UNITY;
+    public static final Unit IND_UNIT_HERTZ;
+    public static final Unit IND_UNIT_VOLT;
 
-    {
-
+    static {
 	IND_UNIT_UNITY = new Unit("unity", "Unity", "1",
 		MeasurableDimension.Adiemnsional);
 	IND_UNIT_HERTZ = new DividedUnit("hertz", IND_UNIT_UNITY,
 		InternationalSystem.IND_UNIT_SI_SECOND);
 	IND_UNIT_VOLT = new DividedUnit(
 		"volt",
+		"V",
 		new MultipliedUnit("kg*m2",
 			InternationalSystem.IND_UNIT_SI_GRAM,
 			InternationalSystem.IND_PREFIX_SI_KILO,
@@ -51,6 +51,5 @@ public class Util {
 				new MultipliedUnit("s2",
 					InternationalSystem.IND_UNIT_SI_SECOND,
 					InternationalSystem.IND_UNIT_SI_SECOND))));
-	IND_UNIT_VOLT.setProperty(Unit.PROP_SYMBOL, "V");
     }
 }

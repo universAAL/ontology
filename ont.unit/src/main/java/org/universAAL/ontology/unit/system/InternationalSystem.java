@@ -22,44 +22,45 @@ import org.universAAL.ontology.unit.UnitOntology;
 import org.universAAL.ontology.unit.UnitSystem;
 
 public class InternationalSystem extends UnitSystem {
+
     public static final String MY_URI = UnitOntology.NAMESPACE
 	    + "InternationalSystem";
 
     /*
      * STATIC resources
      */
-    public static InternationalSystem IND_SI;
+    public static final InternationalSystem IND_SI;
     // Units
-    public static Unit IND_UNIT_SI_METER;
-    public static Unit IND_UNIT_SI_GRAM;
-    public static Unit IND_UNIT_SI_SECOND;
-    public static Unit IND_UNIT_SI_AMPERE;
-    public static Unit IND_UNIT_SI_KELVIN;
-    public static Unit IND_UNIT_SI_CANDELA;
-    public static Unit IND_UNIT_SI_MOLE;
+    public static final Unit IND_UNIT_SI_METER;
+    public static final Unit IND_UNIT_SI_GRAM;
+    public static final Unit IND_UNIT_SI_SECOND;
+    public static final Unit IND_UNIT_SI_AMPERE;
+    public static final Unit IND_UNIT_SI_KELVIN;
+    public static final Unit IND_UNIT_SI_CANDELA;
+    public static final Unit IND_UNIT_SI_MOLE;
     // Prefixes
-    public static Prefix IND_PREFIX_SI_YOTTA;
-    public static Prefix IND_PREFIX_SI_ZETTA;
-    public static Prefix IND_PREFIX_SI_EXA;
-    public static Prefix IND_PREFIX_SI_PETA;
-    public static Prefix IND_PREFIX_SI_TERA;
-    public static Prefix IND_PREFIX_SI_GIGA;
-    public static Prefix IND_PREFIX_SI_MEGA;
-    public static Prefix IND_PREFIX_SI_KILO;
-    public static Prefix IND_PREFIX_SI_HECTO;
-    public static Prefix IND_PREFIX_SI_DECA;
-    public static Prefix IND_PREFIX_SI_DECI;
-    public static Prefix IND_PREFIX_SI_CENTI;
-    public static Prefix IND_PREFIX_SI_MILI;
-    public static Prefix IND_PREFIX_SI_MICRO;
-    public static Prefix IND_PREFIX_SI_NANO;
-    public static Prefix IND_PREFIX_SI_PICO;
-    public static Prefix IND_PREFIX_SI_FEMTO;
-    public static Prefix IND_PREFIX_SI_ATTO;
-    public static Prefix IND_PREFIX_SI_ZEPTO;
-    public static Prefix IND_PREFIX_SI_YOCTO;
+    public static final Prefix IND_PREFIX_SI_YOTTA;
+    public static final Prefix IND_PREFIX_SI_ZETTA;
+    public static final Prefix IND_PREFIX_SI_EXA;
+    public static final Prefix IND_PREFIX_SI_PETA;
+    public static final Prefix IND_PREFIX_SI_TERA;
+    public static final Prefix IND_PREFIX_SI_GIGA;
+    public static final Prefix IND_PREFIX_SI_MEGA;
+    public static final Prefix IND_PREFIX_SI_KILO;
+    public static final Prefix IND_PREFIX_SI_HECTO;
+    public static final Prefix IND_PREFIX_SI_DECA;
+    public static final Prefix IND_PREFIX_SI_DECI;
+    public static final Prefix IND_PREFIX_SI_CENTI;
+    public static final Prefix IND_PREFIX_SI_MILI;
+    public static final Prefix IND_PREFIX_SI_MICRO;
+    public static final Prefix IND_PREFIX_SI_NANO;
+    public static final Prefix IND_PREFIX_SI_PICO;
+    public static final Prefix IND_PREFIX_SI_FEMTO;
+    public static final Prefix IND_PREFIX_SI_ATTO;
+    public static final Prefix IND_PREFIX_SI_ZEPTO;
+    public static final Prefix IND_PREFIX_SI_YOCTO;
 
-    {
+    static {
 	IND_SI = new InternationalSystem("internationalSystemOfUnits");
 
 	IND_UNIT_SI_METER = new Unit("meter", "Meter", "m",
@@ -107,16 +108,6 @@ public class InternationalSystem extends UnitSystem {
 	IND_PREFIX_SI_YOCTO = newDecimalPrefix("Yocto", "y", -24);
     }
 
-    public InternationalSystem() {
-	super();
-    }
-
-    private Prefix newDecimalPrefix(String name, String symb, int power) {
-	Prefix p = new Prefix(name.toLowerCase(), name, symb, 10, power);
-	IND_SI.addPrefixes(p);
-	return p;
-    }
-
     protected InternationalSystem(String uri) {
 	super(uri, "International Sistem of Units");
     }
@@ -126,11 +117,16 @@ public class InternationalSystem extends UnitSystem {
     }
 
     public int getPropSerializationType(String arg0) {
-
 	return PROP_SERIALIZATION_FULL;
     }
 
     public boolean isWellFormed() {
 	return true && hasProperty(PROP_NAME);
+    }
+
+    private static Prefix newDecimalPrefix(String name, String symb, int power) {
+	Prefix p = new Prefix(name.toLowerCase(), name, symb, 10, power);
+	IND_SI.addPrefixes(p);
+	return p;
     }
 }

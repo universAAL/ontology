@@ -48,7 +48,7 @@ public class Unit extends ManagedIndividual {
 	setName(name);
 	setSymbol(symbol);
 	setDimension(dimension);
-	setUnitSustem(us);
+	setUnitSystem(us);
     }
 
     public String getClassURI() {
@@ -56,7 +56,6 @@ public class Unit extends ManagedIndividual {
     }
 
     public int getPropSerializationType(String arg0) {
-
 	return PROP_SERIALIZATION_FULL;
     }
 
@@ -71,16 +70,16 @@ public class Unit extends ManagedIndividual {
 
     private void setName(String newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_NAME, newPropValue);
+	    props.put(PROP_NAME, newPropValue);
     }
 
     public String getSymbol() {
 	return (String) getProperty(PROP_SYMBOL);
     }
 
-    private void setSymbol(String newPropValue) {
+    protected void setSymbol(String newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_SYMBOL, newPropValue);
+	    props.put(PROP_SYMBOL, newPropValue);
     }
 
     public MeasurableDimension getDimension() {
@@ -89,15 +88,15 @@ public class Unit extends ManagedIndividual {
 
     private void setDimension(MeasurableDimension newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_DIMENSION, newPropValue);
+	    props.put(PROP_DIMENSION, newPropValue);
     }
 
     public UnitSystem getUnitSystem() {
 	return (UnitSystem) getProperty(PROP_UNIT_SYSTEM);
     }
 
-    private void setUnitSustem(UnitSystem newPropValue) {
+    private void setUnitSystem(UnitSystem newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_DIMENSION, newPropValue);
+	    props.put(PROP_DIMENSION, newPropValue);
     }
 }

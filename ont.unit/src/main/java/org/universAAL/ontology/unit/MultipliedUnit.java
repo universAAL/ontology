@@ -58,7 +58,6 @@ public class MultipliedUnit extends DerivedUnit {
     }
 
     public int getPropSerializationType(String arg0) {
-
 	return PROP_SERIALIZATION_FULL;
     }
 
@@ -72,7 +71,7 @@ public class MultipliedUnit extends DerivedUnit {
 
     private void setMultipliedBy(Unit newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_MULTIPLIED_BY, newPropValue);
+	    props.put(PROP_MULTIPLIED_BY, newPropValue);
     }
 
     public Prefix getMultipliedByPrefix() {
@@ -81,7 +80,7 @@ public class MultipliedUnit extends DerivedUnit {
 
     private void setMultipliedByPrefix(Prefix newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_MULTIPLIED_BY_PREFIX, newPropValue);
+	    props.put(PROP_MULTIPLIED_BY_PREFIX, newPropValue);
     }
 
     public String getSymbol() {

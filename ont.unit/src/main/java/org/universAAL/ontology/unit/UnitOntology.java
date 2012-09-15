@@ -66,6 +66,9 @@ public final class UnitOntology extends Ontology {
 	OntClassInfoSetup oci_UnitService = createNewOntClassInfo(
 		UnitService.MY_URI, factory, 6);
 
+	OntClassInfoSetup oci_BinarySystem = createNewAbstractOntClassInfo(BinarySystem.MY_URI);
+	OntClassInfoSetup oci_InternationalSystem = createNewAbstractOntClassInfo(InternationalSystem.MY_URI);
+
 	// ******* Add content to enumeration classes of the ontology ******* //
 
 	oci_measurableDimension
@@ -204,11 +207,14 @@ public final class UnitOntology extends Ontology {
 		.addRestriction(MergedRestriction.getAllValuesRestriction(
 			UnitService.PROP_CONTROLS, Unit.MY_URI));
 
+	oci_BinarySystem.addSuperClass(UnitSystem.MY_URI);
+	oci_InternationalSystem.addSuperClass(UnitSystem.MY_URI);
+
 	/*
 	 * INDIVIDUAL CONCEPTS
 	 */
 
-	oci_UnitSystem.addInstance(InternationalSystem.IND_SI);
+	oci_InternationalSystem.addInstance(InternationalSystem.IND_SI);
 
 	oci_Unit.addInstance(InternationalSystem.IND_UNIT_SI_METER);
 	oci_Unit.addInstance(InternationalSystem.IND_UNIT_SI_GRAM);
@@ -239,7 +245,7 @@ public final class UnitOntology extends Ontology {
 	oci_Prefix.addInstance(InternationalSystem.IND_PREFIX_SI_ZEPTO);
 	oci_Prefix.addInstance(InternationalSystem.IND_PREFIX_SI_YOCTO);
 
-	oci_UnitSystem.addInstance(BinarySystem.IND_BS);
+	oci_BinarySystem.addInstance(BinarySystem.IND_BS);
 
 	oci_Unit.addInstance(BinarySystem.IND_UNIT_BS_BIT);
 	oci_Unit.addInstance(BinarySystem.IND_UNIT_BS_BYTE);
@@ -254,7 +260,7 @@ public final class UnitOntology extends Ontology {
 	oci_Prefix.addInstance(BinarySystem.IND_PREFIX_BS_YOBI);
 
 	oci_Unit.addInstance(Util.IND_UNIT_UNITY);
-	oci_Unit.addInstance(Util.IND_UNIT_HERTZ);
-	oci_Unit.addInstance(Util.IND_UNIT_VOLT);
+	oci_DividedUnit.addInstance(Util.IND_UNIT_HERTZ);
+	oci_DividedUnit.addInstance(Util.IND_UNIT_VOLT);
     }
 }

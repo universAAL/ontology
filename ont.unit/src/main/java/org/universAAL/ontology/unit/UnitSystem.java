@@ -45,7 +45,6 @@ public class UnitSystem extends ManagedIndividual {
     }
 
     public int getPropSerializationType(String arg0) {
-
 	return PROP_SERIALIZATION_FULL;
     }
 
@@ -60,7 +59,7 @@ public class UnitSystem extends ManagedIndividual {
 
     private void setName(String newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_NAME, newPropValue);
+	    props.put(PROP_NAME, newPropValue);
     }
 
     public Unit[] getUnits() {
@@ -68,9 +67,8 @@ public class UnitSystem extends ManagedIndividual {
 	if (propList instanceof List)
 	    return (Unit[]) ((List) propList).toArray(new Unit[0]);
 	else if (propList != null)
-	    return new Unit[] { (Unit) propList }; // Handle special case of a
-	// single item not contained
-	// in a list
+	    // Handle special case of a single item not contained in a list
+	    return new Unit[] { (Unit) propList };
 	return new Unit[0];
     }
 
@@ -82,11 +80,11 @@ public class UnitSystem extends ManagedIndividual {
 	else {
 	    newList = new ArrayList();
 	    if (propList != null)
-		newList.add(propList); // Handle special case of a single
-	    // previous item not contained in a list
+		// Handle special case of a single item not contained in a list
+		newList.add(propList);
 	}
 	newList.add(newValue);
-	setProperty(PROP_UNITS, newList);
+	props.put(PROP_UNITS, newList);
     }
 
     protected void setUnits(Unit[] propertyValue) {
@@ -94,7 +92,7 @@ public class UnitSystem extends ManagedIndividual {
 	for (int i = 0; i < propertyValue.length; i++) {
 	    propList.add(propertyValue[i]);
 	}
-	setProperty(PROP_UNITS, propList);
+	props.put(PROP_UNITS, propList);
     }
 
     public Prefix[] getPrefixes() {
@@ -102,9 +100,8 @@ public class UnitSystem extends ManagedIndividual {
 	if (propList instanceof List)
 	    return (Prefix[]) ((List) propList).toArray(new Prefix[0]);
 	else if (propList != null)
-	    return new Prefix[] { (Prefix) propList }; // Handle special case of
-	// a single item not
-	// contained in a list
+	    // Handle special case of a single item not contained in a list
+	    return new Prefix[] { (Prefix) propList };
 	return new Prefix[0];
     }
 
@@ -116,11 +113,11 @@ public class UnitSystem extends ManagedIndividual {
 	else {
 	    newList = new ArrayList();
 	    if (propList != null)
-		newList.add(propList); // Handle special case of a single
-	    // previous item not contained in a list
+		// Handle special case of a single item not contained in a list
+		newList.add(propList);
 	}
 	newList.add(newValue);
-	setProperty(PROP_PREFIXES, newList);
+	props.put(PROP_PREFIXES, newList);
     }
 
     protected void setPrefixes(Prefix[] propertyValue) {
@@ -128,11 +125,11 @@ public class UnitSystem extends ManagedIndividual {
 	for (int i = 0; i < propertyValue.length; i++) {
 	    propList.add(propertyValue[i]);
 	}
-	setProperty(PROP_PREFIXES, propList);
+	props.put(PROP_PREFIXES, propList);
     }
 
     protected void setPrefixes(ArrayList propList) {
 	// propList must contain only instances of Prefix
-	setProperty(PROP_PREFIXES, propList);
+	props.put(PROP_PREFIXES, propList);
     }
 }
