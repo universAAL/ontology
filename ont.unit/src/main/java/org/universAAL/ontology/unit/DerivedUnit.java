@@ -64,7 +64,7 @@ public abstract class DerivedUnit extends Unit {
 
     private void setBaseUnit(Unit newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_BASE_UNIT, newPropValue);
+	    props.put(PROP_BASE_UNIT, newPropValue);
     }
 
     public Prefix getBasePrefix() {
@@ -73,6 +73,6 @@ public abstract class DerivedUnit extends Unit {
 
     private void setBasePrefix(Prefix newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_BASE_PREFIX, newPropValue);
+	    props.put(PROP_BASE_PREFIX, newPropValue);
     }
 }

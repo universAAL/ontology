@@ -35,6 +35,12 @@ public class DividedUnit extends DerivedUnit {
 	setDividedBy(dividend);
     }
 
+    public DividedUnit(String uri, String symbol, Unit base, Unit dividend) {
+	super(uri, base);
+	setDividedBy(dividend);
+	setSymbol(symbol);
+    }
+
     public DividedUnit(String uri, Unit base, Prefix basePrefix, Unit dividend) {
 	super(uri, base, basePrefix);
 	setDividedBy(dividend);
@@ -65,7 +71,7 @@ public class DividedUnit extends DerivedUnit {
 
     private void setDividedBy(Unit newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_DIVIDED_BY, newPropValue);
+	    props.put(PROP_DIVIDED_BY, newPropValue);
     }
 
     public Prefix getDividedByPrefix() {
@@ -74,7 +80,7 @@ public class DividedUnit extends DerivedUnit {
 
     private void setDividedByPrefix(Prefix newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_DIVIDED_BY_PREFIX, newPropValue);
+	    props.put(PROP_DIVIDED_BY_PREFIX, newPropValue);
     }
 
     public String getSymbol() {

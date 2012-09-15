@@ -25,19 +25,19 @@ public class BinarySystem extends UnitSystem {
 
     public static final String MY_URI = UnitOntology.NAMESPACE + "BinarySystem";
 
-    public static UnitSystem IND_BS;
-    public static Unit IND_UNIT_BS_BIT;
-    public static Unit IND_UNIT_BS_BYTE;
-    public static Prefix IND_PREFIX_BS_KIBI;
-    public static Prefix IND_PREFIX_BS_MEBI;
-    public static Prefix IND_PREFIX_BS_GIBI;
-    public static Prefix IND_PREFIX_BS_TEBI;
-    public static Prefix IND_PREFIX_BS_PEBI;
-    public static Prefix IND_PREFIX_BS_EXBI;
-    public static Prefix IND_PREFIX_BS_ZEBI;
-    public static Prefix IND_PREFIX_BS_YOBI;
+    public static final BinarySystem IND_BS;
+    public static final Unit IND_UNIT_BS_BIT;
+    public static final Unit IND_UNIT_BS_BYTE;
+    public static final Prefix IND_PREFIX_BS_KIBI;
+    public static final Prefix IND_PREFIX_BS_MEBI;
+    public static final Prefix IND_PREFIX_BS_GIBI;
+    public static final Prefix IND_PREFIX_BS_TEBI;
+    public static final Prefix IND_PREFIX_BS_PEBI;
+    public static final Prefix IND_PREFIX_BS_EXBI;
+    public static final Prefix IND_PREFIX_BS_ZEBI;
+    public static final Prefix IND_PREFIX_BS_YOBI;
 
-    {
+    static {
 	IND_BS = new BinarySystem("binarySytem");
 
 	IND_UNIT_BS_BIT = new Unit("bit", "Bit", "b",
@@ -45,8 +45,8 @@ public class BinarySystem extends UnitSystem {
 	IND_UNIT_BS_BYTE = new Unit("byte", "Byte", "B",
 		MeasurableDimension.ComputerStorage, IND_BS);
 
-	addUnits(IND_UNIT_BS_BIT);
-	addUnits(IND_UNIT_BS_BYTE);
+	IND_BS.addUnits(IND_UNIT_BS_BIT);
+	IND_BS.addUnits(IND_UNIT_BS_BYTE);
 
 	IND_PREFIX_BS_KIBI = newBinaryPrefix("Kibi", "ki", 10);
 	IND_PREFIX_BS_MEBI = newBinaryPrefix("Mebi", "Mi", 20);
@@ -58,11 +58,7 @@ public class BinarySystem extends UnitSystem {
 	IND_PREFIX_BS_YOBI = newBinaryPrefix("Yobi", "Yi", 80);
     }
 
-    public BinarySystem() {
-	super();
-    }
-
-    public BinarySystem(String uri) {
+    protected BinarySystem(String uri) {
 	super(uri, "Binary System");
     }
 
@@ -71,7 +67,6 @@ public class BinarySystem extends UnitSystem {
     }
 
     public int getPropSerializationType(String arg0) {
-
 	return PROP_SERIALIZATION_FULL;
     }
 
@@ -79,9 +74,9 @@ public class BinarySystem extends UnitSystem {
 	return true;
     }
 
-    private Prefix newBinaryPrefix(String name, String symb, int power) {
+    private static Prefix newBinaryPrefix(String name, String symb, int power) {
 	Prefix p = new Prefix(name.toLowerCase(), name, symb, 2, power);
-	addPrefixes(p);
+	IND_BS.addPrefixes(p);
 	return p;
     }
 }
