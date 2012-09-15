@@ -242,7 +242,5 @@ public final class UnitOntology extends Ontology {
     oci_Unit.addInstance(Util.IND_UNIT_UNITY);
     oci_Unit.addInstance(Util.IND_UNIT_HERTZ);
     oci_Unit.addInstance(Util.IND_UNIT_VOLT);
-    
-    
   }
 }

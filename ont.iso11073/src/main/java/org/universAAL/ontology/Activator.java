@@ -4,7 +4,6 @@ package org.universAAL.ontology;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.x73.*;
 
 
 public class Activator implements BundleActivator {
