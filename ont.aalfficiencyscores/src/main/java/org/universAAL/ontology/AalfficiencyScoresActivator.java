@@ -6,10 +6,11 @@ import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.aalfficiency.scores.AalfficiencyScoresOntology;
 
 public class AalfficiencyScoresActivator implements uAALModuleActivator{
-	
+	static ModuleContext context = null;
     private AalfficiencyScoresOntology aalfficiency = new AalfficiencyScoresOntology();
 	
 	public void start(ModuleContext arg0) throws Exception {
+		context = arg0;
 		OntologyManagement.getInstance().register(aalfficiency);
 	}
 
