@@ -9,7 +9,7 @@ public class ActivityScore extends ManagedIndividual {
   public static final String PROP_STEPS = AalfficiencyScoresOntology.NAMESPACE
     + "steps";
   public static final String PROP_CHALLENGE = AalfficiencyScoresOntology.NAMESPACE
-    + "challenge";
+    + "activityChallenge";
   public static final String PROP_TOTAL_ACTIVITY_SCORE = AalfficiencyScoresOntology.NAMESPACE
     + "totalActivityScore";
   public static final String PROP_KCAL = AalfficiencyScoresOntology.NAMESPACE
