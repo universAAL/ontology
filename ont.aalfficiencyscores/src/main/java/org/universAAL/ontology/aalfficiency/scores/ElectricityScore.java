@@ -7,7 +7,7 @@ public class ElectricityScore extends ManagedIndividual {
   public static final String MY_URI = AalfficiencyScoresOntology.NAMESPACE
     + "ElectricityScore";
   public static final String PROP_CHALLENGE = AalfficiencyScoresOntology.NAMESPACE
-    + "challenge";
+    + "electricityChallenge";
   public static final String PROP_TOTAL_ELECTRICITY_SCORE = AalfficiencyScoresOntology.NAMESPACE
     + "totalElectricityScore";
   public static final String PROP_TODAY_ELECTRICITY_SCORE = AalfficiencyScoresOntology.NAMESPACE
