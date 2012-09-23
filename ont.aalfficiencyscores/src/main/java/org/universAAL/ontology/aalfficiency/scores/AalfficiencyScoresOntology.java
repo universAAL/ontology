@@ -13,7 +13,7 @@ import org.universAAL.ontology.AalfficiencyScoresFactory;
 public class AalfficiencyScoresOntology extends Ontology{
 	
 	private static AalfficiencyScoresFactory factory = new AalfficiencyScoresFactory();
-	public static final String NAMESPACE = "http://ontology.universAAL.org/Aalfficiency.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/AalfficiencyScores.owl#";
 	
 	public AalfficiencyScoresOntology() {
 		super(NAMESPACE);	
