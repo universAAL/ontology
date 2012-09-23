@@ -51,11 +51,11 @@
     <module>../ont.che</module>
     <module>../ont.questionnaire</module>
     <module>../ont.aalfficiency</module>
-    <module>composite</module>
     <module>../ont.aalfficiencyscores</module>
     <module>../ont.iso11073</module>
     <module>../ont.nutrition</module>
     <module>../ont.readenergy</module>
+    <module>composite</module>
   </modules>
   <scm>
     <connection>${svn.base}/${project.artifactId}</connection>
@@ -218,18 +218,13 @@
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
-        <artifactId>ont.composite</artifactId>
-        <version>1.2.1-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.readenergy</artifactId>
         <version>1.2.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.nutrition</artifactId>
-        <version>1.2.0</version>
+        <version>1.2.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
@@ -239,6 +234,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.aalfficiencyscores</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.composite</artifactId>
         <version>1.2.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
