@@ -25,10 +25,13 @@ public class AalfficiencyScores extends Service {
   public String getClassURI() {
     return MY_URI;
   }
-  public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove 
-	return 0;
-  }
+
+    public int getPropSerializationType(String propURI) {
+	return PROP_AALFFICIENCY_ADVICES.equals(propURI)
+		|| PROP_ELECTRICITY_SCORE.equals(propURI)
+		|| PROP_ACTIVITY_SCORE.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
 
   public boolean isWellFormed() {
 	return true 
