@@ -247,7 +247,7 @@ public class AVOntology extends Ontology {
 			AudioFormat.MY_URI, 1, 1));
 
 	// load VideoStream
-	oci = createNewOntClassInfo(VideoStream.MY_URI, factory, 6);
+	oci = createNewOntClassInfo(VideoStream.MY_URI, factory, 7);
 	oci.setResourceComment("The class of VideoStreams.");
 	oci.setResourceLabel("VideoStream");
 	oci.addSuperClass(Stream.MY_URI);
