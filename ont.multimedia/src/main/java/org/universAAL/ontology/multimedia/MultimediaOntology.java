@@ -40,7 +40,7 @@ public final class MultimediaOntology extends Ontology {
     private static MultimediaFactory factory = new MultimediaFactory();
 
     public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-	    + "Multimedia.owl";
+	    + "Multimedia.owl#";
 
     public MultimediaOntology() {
 	super(NAMESPACE);
