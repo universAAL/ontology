@@ -38,6 +38,10 @@ public class BBS extends Tel {
 	return PROP_SERIALIZATION_FULL;
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+    
     public boolean isWellFormed() {
 	return true;
     }

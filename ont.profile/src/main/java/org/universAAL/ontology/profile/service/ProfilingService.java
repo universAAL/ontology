@@ -50,6 +50,10 @@ public class ProfilingService extends Service {
 	super();
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+    
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

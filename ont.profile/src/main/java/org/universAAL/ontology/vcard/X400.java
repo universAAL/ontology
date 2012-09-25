@@ -34,6 +34,10 @@ public class X400 extends Email{
 	super(uri);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+    
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

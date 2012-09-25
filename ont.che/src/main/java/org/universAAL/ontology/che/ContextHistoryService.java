@@ -60,6 +60,10 @@ public class ContextHistoryService extends Service {
 	super(uri);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+    
     /*
      * (non-Javadoc)
      * 
