@@ -49,6 +49,7 @@
     <module>../ont.weather</module>
     <module>../ont.window</module>
     <module>../ont.che</module>
+    <module>../ont.situation.reasoner</module>
     <module>../ont.questionnaire</module>
     <module>../ont.aalfficiency</module>
     <module>../ont.aalfficiencyscores</module>
