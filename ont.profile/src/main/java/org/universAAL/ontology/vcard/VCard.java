@@ -43,6 +43,10 @@ public class VCard extends ManagedIndividual{
 	super(uri);
     }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
+    
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

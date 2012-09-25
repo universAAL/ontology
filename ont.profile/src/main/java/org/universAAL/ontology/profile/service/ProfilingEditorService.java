@@ -49,6 +49,10 @@ public class ProfilingEditorService extends Service {
     public ProfilingEditorService() {
 	super();
     }
+    
+    public String getClassURI() {
+	return MY_URI;
+    }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
