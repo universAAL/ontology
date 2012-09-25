@@ -59,7 +59,7 @@ public final class  QuestionnaireOntology extends Ontology {
     
   
     //load ChoiceLabel 
-    oci = createNewOntClassInfo(ChoiceLabel.MY_URI, factory, 5);
+    oci = createNewOntClassInfo(ChoiceLabel.MY_URI, factory, 6);
     oci.setResourceComment("A 'choice-label' is the composition of a label associated to a choice");
     oci.setResourceLabel("ChoiceLabel");
     oci.addSuperClass(ManagedIndividual.MY_URI); 
@@ -118,7 +118,7 @@ public final class  QuestionnaireOntology extends Ontology {
     oci.addSuperClass(Question.MY_URI); 
     
     //load QuestionWithMedia 
-    oci = createNewOntClassInfo(QuestionWithMedia.MY_URI, factory, 3);
+    oci = createNewOntClassInfo(QuestionWithMedia.MY_URI, factory, 1);
     oci.setResourceComment("A question with media is a question that has some media associated to it (video, images...).");
     oci.setResourceLabel("QuestionWithMedia");
     oci.addSuperClass(Question.MY_URI); 
