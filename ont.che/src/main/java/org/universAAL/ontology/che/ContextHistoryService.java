@@ -59,6 +59,10 @@ public class ContextHistoryService extends Service {
     public ContextHistoryService(String uri) {
 	super(uri);
     }
+    
+    public ContextHistoryService() {
+	super();
+    }
 
     public String getClassURI() {
 	return MY_URI;
