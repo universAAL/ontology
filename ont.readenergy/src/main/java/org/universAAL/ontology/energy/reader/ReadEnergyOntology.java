@@ -6,6 +6,7 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.ReadEnergyFactory;
 
 public class ReadEnergyOntology extends Ontology{
@@ -24,7 +25,7 @@ public class ReadEnergyOntology extends Ontology{
 	public void create() {
 		
 		Resource r = getInfo();
-		//This ontology
+
 		r.setResourceComment("Ontology for Aalfficiency Service and related concepts.");
 		r.setResourceLabel("AAL Energy Efficiency Service");
 		addImport(NAMESPACE);
