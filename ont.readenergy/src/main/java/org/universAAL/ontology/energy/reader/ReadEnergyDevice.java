@@ -20,7 +20,9 @@ public class ReadEnergyDevice extends ManagedIndividual{
 		super(uri);
 		// TODO Auto-generated constructor stub
 	}
-	
+	public String getClassURI(){
+		return MY_URI;  
+	}
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	    }
