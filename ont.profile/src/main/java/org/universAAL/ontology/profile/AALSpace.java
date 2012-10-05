@@ -26,7 +26,7 @@
 
 package org.universAAL.ontology.profile;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.location.Place;
 //import org.universAAL.ontology.profile.AALSpaceProfile;
 //import org.universAAL.ontology.profile.Profile;
 
@@ -37,7 +37,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * @author Alvaro Fides
  */
 
-public class AALSpace extends ManagedIndividual {
+public class AALSpace extends Place {
 
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE + "AALSpace";
