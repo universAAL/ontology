@@ -37,6 +37,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.ProfileFactory;
+import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.outdoor.City;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.PhysicalThing;
@@ -95,6 +96,7 @@ public final class ProfileOntology extends Ontology {
 	OntClassInfoSetup oci;
 
 	oci = extendExistingOntClassInfo(PhysicalThing.MY_URI);
+	oci = extendExistingOntClassInfo(Place.MY_URI);
 	oci = extendExistingOntClassInfo(ManagedIndividual.MY_URI);
 
 	// Property
@@ -601,7 +603,7 @@ public final class ProfileOntology extends Ontology {
 	oci = createNewOntClassInfo(AALSpace.MY_URI, factory, AALSPACE);
 	oci.setResourceComment("An AAL Space");
 	oci.setResourceLabel("AAL Space");
-	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(Place.MY_URI);
 	oci.addSuperClass(Profilable.MY_URI);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
