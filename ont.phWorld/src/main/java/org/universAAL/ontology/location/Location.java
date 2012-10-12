@@ -130,7 +130,7 @@ public class Location extends AbsLocation {
      */
     private Location[] getMultipleValueLocationProperty(String propURI) {
 	if (!props.containsKey(propURI))
-	    return null;
+	    return new Location[0];
 	List conn = (List) props.get(propURI);
 	return (Location[]) conn.toArray(new Location[0]);
     }
@@ -377,11 +377,15 @@ public class Location extends AbsLocation {
 
     public boolean hasConnectionTo(AbsLocation arg0) {
 	List connected = (List) props.get(PROP_IS_CONNECTED_TO);
+	if (connected == null)
+	    return false;
 	return connected.contains(arg0);
     }
 
     public boolean isAdjacentTo(AbsLocation arg0) {
 	List connected = (List) props.get(PROP_IS_ADJACENT_TO);
+	if (connected == null)
+	    return false;
 	return connected.contains(arg0);
     }
 
