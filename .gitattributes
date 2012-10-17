@@ -115,6 +115,21 @@ ont.device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 ont.device.extra/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.device.extra/src/test/resources/log4j.properties -text
+ont.fitbitdata/.classpath -text svneol=unset#text/plain
+ont.fitbitdata/.project -text svneol=unset#text/plain
+ont.fitbitdata/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+ont.fitbitdata/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
+ont.fitbitdata/.settings/org.eclipse.m2e.core.prefs -text svneol=unset#text/plain
+ont.fitbitdata/fitbitdata.di -text
+ont.fitbitdata/fitbitdata.notation -text
+ont.fitbitdata/fitbitdata.uml -text svneol=unset#text/plain
+ont.fitbitdata/pom.xml -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/FitbitDataActivator.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/FitbitdataFactory.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/Activity.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/FitbitData.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/FitbitdataOntology.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/Sleep.java -text svneol=unset#text/plain
 ont.furniture/LICENSE.txt -text
 ont.furniture/NOTICE.txt -text
 ont.furniture/pom.xml -text

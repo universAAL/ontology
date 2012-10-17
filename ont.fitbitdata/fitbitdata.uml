@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_jcGnYAxyEeKHiKKIy3DfPQ" name="fitbitdata">
+    <ownedComment xmi:id="_jcGnYQxyEeKHiKKIy3DfPQ" annotatedElement="_jcGnZgxyEeKHiKKIy3DfPQ">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_jcGnYgxyEeKHiKKIy3DfPQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_jcGnYwxyEeKHiKKIy3DfPQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_jcGnZAxyEeKHiKKIy3DfPQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_jcGnZQxyEeKHiKKIy3DfPQ">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jcGnZgxyEeKHiKKIy3DfPQ" name="org.universAAL.ontology.fitbitdata">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZT-rYAxzEeKHiKKIy3DfPQ" name="FitbitData">
+        <generalization xmi:id="_bKKw8AxzEeKHiKKIy3DfPQ">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_92Q8kAxzEeKHiKKIy3DfPQ" name="sleep" type="_chNcYAxzEeKHiKKIy3DfPQ" association="_92RjoAxzEeKHiKKIy3DfPQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_92Q8kQxzEeKHiKKIy3DfPQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_92Q8kgxzEeKHiKKIy3DfPQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_-KUhAAxzEeKHiKKIy3DfPQ" name="activity" type="_dY55YAxzEeKHiKKIy3DfPQ" association="_-KVIEAxzEeKHiKKIy3DfPQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KUhAQxzEeKHiKKIy3DfPQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KUhAgxzEeKHiKKIy3DfPQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_dawJEA1bEeKzFvFOwGG9lA" name="date"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_chNcYAxzEeKHiKKIy3DfPQ" name="Sleep">
+        <ownedAttribute xmi:id="_hESmAAxzEeKHiKKIy3DfPQ" name="isMainSleep"/>
+        <ownedAttribute xmi:id="_lK-HgAxzEeKHiKKIy3DfPQ" name="minutesAsleep"/>
+        <ownedAttribute xmi:id="_qd9rIAxzEeKHiKKIy3DfPQ" name="timeInBed"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dY55YAxzEeKHiKKIy3DfPQ" name="Activity">
+        <ownedAttribute xmi:id="_uZg6sAxzEeKHiKKIy3DfPQ" name="calories"/>
+        <ownedAttribute xmi:id="_ziu3QAxzEeKHiKKIy3DfPQ" name="steps"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_92RjoAxzEeKHiKKIy3DfPQ" name="fitbitData_sleep_1" memberEnd="_92RjoQxzEeKHiKKIy3DfPQ _92Q8kAxzEeKHiKKIy3DfPQ">
+        <ownedEnd xmi:id="_92RjoQxzEeKHiKKIy3DfPQ" name="fitbitData" type="_ZT-rYAxzEeKHiKKIy3DfPQ" association="_92RjoAxzEeKHiKKIy3DfPQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_92RjogxzEeKHiKKIy3DfPQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_92RjowxzEeKHiKKIy3DfPQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-KVIEAxzEeKHiKKIy3DfPQ" name="fitbitData_activity_1" memberEnd="_-KVIEQxzEeKHiKKIy3DfPQ _-KUhAAxzEeKHiKKIy3DfPQ">
+        <ownedEnd xmi:id="_-KVIEQxzEeKHiKKIy3DfPQ" name="fitbitData" type="_ZT-rYAxzEeKHiKKIy3DfPQ" association="_-KVIEAxzEeKHiKKIy3DfPQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-KVIEgxzEeKHiKKIy3DfPQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KVIEwxzEeKHiKKIy3DfPQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_jcGnbQxyEeKHiKKIy3DfPQ">
+      <eAnnotations xmi:id="_jcGnbgxyEeKHiKKIy3DfPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_jcGnbwxyEeKHiKKIy3DfPQ">
+      <eAnnotations xmi:id="_jcGncAxyEeKHiKKIy3DfPQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_jcGncQxyEeKHiKKIy3DfPQ" defaultNamespace="http://ontology.universAAL.org/fitbitdata" base_Package="_jcGnZgxyEeKHiKKIy3DfPQ" versionInfo="1.2.1-SNAPSHOT"/>
+</xmi:XMI>
