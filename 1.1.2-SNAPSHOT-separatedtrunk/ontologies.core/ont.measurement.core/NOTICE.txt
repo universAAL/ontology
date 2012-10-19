@@ -1,0 +1,80 @@
+PERSONA CASF Ontology
+
+Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+
+Copyright 2008-2010 ITACA-TSB, http://www.tsb.upv.es
+Instituto Tecnologico de Aplicaciones de Comunicacion 
+Avanzadas - Grupo Tecnologias para la Salud y el 
+Bienestar (TSB)
+
+Copyright 2008-2010 Vodafone Italy, http://www.vodafone.it
+Vodafone Omnitel N.V.
+
+Copyright 2008-2010 R&S Info, http://www.rsinfo.eu
+R&S INFO s.r.l. 
+
+I. Included Software
+
+This does not include any software developed by 3rd parties
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+The OSGi Alliance (http://www.osgi.org/).
+Copyright 2006-2008 The OSGi Alliance.
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+The OPS4J (http://www.ops4j.org)
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+This product uses software developed at
+Information-technology Promotion Agency, (http://www.ipa.go.jp/)
+& Precision Modeling Laboratory, Inc., (http://www.pml.co.jp/)
+Copyright 2000 Software Research Associates, Inc., Tokyo, Japan.
+Licensed under specific License.
+
+This product uses software developed at
+Java3D (https://java3d.dev.java.net/).
+Licensed under the GNU General Public License (GPL),
+version 2, with the CLASSPATH exception.
+
+This product uses software developed at
+The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
+Copyright (c) 2000 - 2009 The Legion Of The Bouncy Castle
+Licensed under modified MIT X11 License.
+
+
+III. License Summary
+- Apache License 2.0
+- Common Public License 1.0
+- Modified MIT X11 License
+- GNU GPL 2 CLASSPATH Exception
+- JGCL - Java Geometry Class Library:
+
+ Copyright 2000 by Information-technology Promotion Agency, Japan
+ Copyright 2000 by Precision Modeling Laboratory, Inc., Tokyo, Japan
+ Copyright 2000 by Software Research Associates, Inc., Tokyo, Japan
+
+ Permission to use, copy, modify, and distribute this software
+ and its documentation for any purpose and without fee is hereby
+ granted, provided that the above copyright notice appear in all
+ copies and that both that copyright notice and this permission
+ notice appear in supporting documentation, and that the name of
+ Software Research Associates and Information-technology
+ Promotion Agency not be used in advertising or publicity
+ pertaining to distribution of the software without specific,
+ written prior permission. Information-technology Promotion 
+ Agency make no representations about the suitability of this software
+ for any purpose. It is provided "as is" without express or implied warranty.
+

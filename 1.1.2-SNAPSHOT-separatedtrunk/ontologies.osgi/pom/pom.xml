@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.pom</artifactId>
+		<version>1.1.2-SNAPSHOT</version>
+		<relativePath>../../pom</relativePath>
+	</parent>
+
+	<groupId>org.universAAL.ontology</groupId>
+	<artifactId>ont.pom.osgi</artifactId>
+	<version>1.1.2-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+	<name>universAAL Ontologies Suite (OSGi)</name>
+    
+	<properties>
+		<separatedGroupIds>org.universAAL.middleware, org.universAAL.ontology</separatedGroupIds>
+	</properties>
+
+	<dependencyManagement>
+	  <dependencies>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.av.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.device.extra.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.furniture.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.gesture.pointing.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.hazard.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.impairment.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.lighting.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.measurement.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.medication.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.multimedia.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.phWorld.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.powersocket.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.profile.osgi</artifactId>
+	      <version>1.1.3-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.profile.health.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.profile.userid.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>	
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.risk.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.water.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.weather.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.window.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.universAAL.ontology</groupId>
+	      <artifactId>ont.che.osgi</artifactId>
+	      <version>1.1.2-SNAPSHOT</version>
+	    </dependency>
+	  	<dependency>
+       	  <groupId>org.universAAL.middleware</groupId>
+          <artifactId>mw.pom.osgi</artifactId>
+          <version>1.1.2-SNAPSHOT</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>	    
+	    
+	    <!-- 			use the following to add all ontologies -->
+	    <!-- 			<dependency> -->
+	    <!-- 				<groupId>org.universAAL.ontology</groupId> -->
+	    <!-- 				<artifactId>ont.</artifactId> -->
+	    <!-- 				<version>(${release.previous}, ${release.next}]</version> -->
+	    <!-- 			</dependency> -->
+	  </dependencies>
+	</dependencyManagement>
+	
+	<modules>
+	  <module>../ont.phWorld.osgi</module>
+	  <module>../ont.profile.osgi</module>
+	  <module>../ont.activityhub.osgi</module>
+	  <module>../ont.av.osgi</module>
+	  <module>../ont.device.extra.osgi</module>
+	  <module>../ont.furniture.osgi</module>
+	  <module>../ont.gesture.pointing.osgi</module>
+	  <module>../ont.hazard.osgi</module>
+	  <module>../ont.impairment.osgi</module>
+	  <module>../ont.lighting.osgi</module>
+	  <module>../ont.measurement.osgi</module>
+	  <module>../ont.medication.osgi</module>
+	  <module>../ont.multimedia.osgi</module>
+	  <module>../ont.powersocket.osgi</module>
+	  <module>../ont.profile.health.osgi</module>
+	  <module>../ont.profile.uipreferences.osgi</module>
+	  <module>../ont.profile.userid.osgi</module>
+	  <module>../ont.risk.osgi</module>
+	  <module>../ont.water.osgi</module>
+	  <module>../ont.weather.osgi</module>
+	  <module>../ont.window.osgi</module>
+	  <module>../ont.che.osgi</module>
+	  <module>../ont.questionnaire.osgi</module>
+	</modules>
+
+	<scm>
+		<connection>${svn.base}/ontologies.osgi/${project.artifactId}</connection>
+		<developerConnection>${svn.base}/ontologies.osgi/${project.artifactId}</developerConnection>
+		<url>${svn.base.url}</url>
+	</scm>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.universAAL.support</groupId>
+	      <artifactId>uaal-maven-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.codehaus.mojo</groupId>
+	      <artifactId>build-helper-maven-plugin</artifactId>
+	    </plugin>
+	  </plugins>
+	</build>
+
+</project>

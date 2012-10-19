@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.pom</artifactId>
+		<version>1.1.2-SNAPSHOT</version>
+		<relativePath>../../pom</relativePath>
+	</parent>
+
+	<groupId>org.universAAL.ontology</groupId>
+	<artifactId>ont.pom.core</artifactId>
+	<version>1.1.2-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+	<name>universAAL Ontologies Suite (Core)</name>
+
+	<dependencyManagement>
+	  <dependencies>
+	    <dependency>
+	      <groupId>org.universAAL.middleware</groupId>
+	      <artifactId>data.representation.core</artifactId>
+	      <version>1.0.1-SNAPSHOT</version>
+	    </dependency>
+	  </dependencies>
+	</dependencyManagement>
+
+	<modules>
+	  <module>../ont.profile.core</module>
+	  <module>../ont.phWorld.core</module>
+	  <module>../ont.activityhub.core</module>
+	  <module>../ont.av.core</module>
+	  <module>../ont.device.extra.core</module>
+	  <module>../ont.furniture.core</module>
+	  <module>../ont.hazard.core</module>
+	  <module>../ont.impairment.core</module>
+	  <module>../ont.lighting.core</module>
+	  <module>../ont.measurement.core</module>
+	  <module>../ont.medication.core</module>
+	  <module>../ont.multimedia.core</module>
+	  <module>../ont.powersocket.core</module>
+	  <module>../ont.profile.health.core</module>
+	  <module>../ont.profile.uipreferences.core</module>
+	  <module>../ont.profile.userid.core</module>
+	  <module>../ont.gesture.pointing.core</module>
+	  <module>../ont.risk.core</module>
+	  <module>../ont.water.core</module>
+	  <module>../ont.weather.core</module>
+	  <module>../ont.window.core</module>
+	  <module>../ont.che.core</module>
+	  <module>../ont.questionnaire.core</module>
+	</modules>
+
+	<scm>
+		<connection>${svn.base}/ontologies.core/${project.artifactId}</connection>
+		<developerConnection>${svn.base}/ontologies.core/${project.artifactId}</developerConnection>
+		<url>${svn.base.url}</url>
+	</scm>
+
+</project>
