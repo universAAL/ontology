@@ -54,7 +54,6 @@
     <module>../ont.questionnaire</module>
     <module>../ont.aalfficiency</module>
     <module>../ont.aalfficiencyscores</module>
-    <module>../ont.iso11073</module>
     <module>../ont.nutrition</module>
     <module>../ont.readenergy</module>
     <module>composite</module>
