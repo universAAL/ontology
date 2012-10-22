@@ -48,6 +48,7 @@
     <module>../ont.water</module>
     <module>../ont.weather</module>
     <module>../ont.window</module>
+    <module>../ont.X73</module>
     <module>../ont.che</module>
     <module>../ont.situation.reasoner</module>
     <module>../ont.questionnaire</module>
