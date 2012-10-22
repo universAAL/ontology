@@ -87,8 +87,8 @@ ont.av/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
 ont.av/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
 ont.av/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.av/src/test/resources/log4j.properties -text
+ont.che/ASL2.0.txt -text
 ont.che/LICENSE-CPL-JUnit.txt -text
-ont.che/LICENSE.txt -text
 ont.che/NOTICE.txt -text
 ont.che/pom.xml -text
 ont.che/src/main/java/org/universAAL/ontology/ContextHistoryActivator.java -text
@@ -98,7 +98,7 @@ ont.che/src/main/java/org/universAAL/ontology/che/ContextHistoryOntology.java -t
 ont.che/src/main/java/org/universAAL/ontology/che/ContextHistoryService.java -text
 ont.che/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.che/src/test/resources/log4j.properties -text
-ont.device.extra/LICENSE.txt -text
+ont.device.extra/ASL2.0.txt -text
 ont.device.extra/NOTICE.txt -text
 ont.device.extra/pom.xml -text
 ont.device.extra/src/main/java/org/universAAL/ontology/DeviceActivator.java -text
@@ -254,7 +254,7 @@ ont.nutrition/src/main/java/org/universAAL/ontology/nutrition/NutritionOntology.
 ont.nutrition/src/main/java/org/universAAL/ontology/nutrition/NutritionService.java -text
 ont.nutrition/src/main/java/org/universAAL/ontology/nutrition/Recipe.java -text
 ont.nutrition/src/main/java/org/universAAL/ontology/nutrition/ShoppingList.java -text
-ont.phWorld/LICENSE.txt -text
+ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 ont.phWorld/documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
@@ -368,7 +368,7 @@ ont.profile.userid/src/main/java/org/universAAL/ontology/profile/userid/UserIDPr
 ont.profile.userid/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfileOntology.java -text
 ont.profile.userid/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.userid/src/test/resources/log4j.properties -text
-ont.profile/LICENSE.txt -text
+ont.profile/ASL2.0.txt -text
 ont.profile/NOTICE.txt -text
 ont.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 ont.profile/documentation/ont.profile[!!-~]dependencies[!!-~]19.4.2011.png -text
@@ -502,8 +502,8 @@ ont.water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -t
 ont.water/src/main/java/org/universAAL/ontology/water/WaterOntology.java -text
 ont.water/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.water/src/test/resources/log4j.properties -text
+ont.weather/ASL2.0.txt -text
 ont.weather/LICENSE.txt -text
-ont.weather/NOTICE.txt -text
 ont.weather/pom.xml -text
 ont.weather/src/main/java/org/universAAL/ontology/WeatherActivator.java -text
 ont.weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
