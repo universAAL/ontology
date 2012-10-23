@@ -1,4 +1,5 @@
 * text=auto !eol
+ont.X73/MIT.txt -text
 ont.X73/pom.xml -text
 ont.X73/src/main/java/org/universAAL/ontology/X73/AbsoluteTimeStamp.java -text
 ont.X73/src/main/java/org/universAAL/ontology/X73/BloodPressureDia.java -text
