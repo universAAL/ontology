@@ -1,5 +1,5 @@
 * text=auto !eol
-ont.X73/MIT.txt -text
+ont.X73/MITX.txt -text
 ont.X73/pom.xml -text
 ont.X73/src/main/java/org/universAAL/ontology/X73/AbsoluteTimeStamp.java -text
 ont.X73/src/main/java/org/universAAL/ontology/X73/BloodPressureDia.java -text
@@ -44,7 +44,7 @@ ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores
 ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Advice.java -text svneol=unset#text/plain
 ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Challenge.java -text svneol=unset#text/plain
 ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/ElectricityScore.java -text svneol=unset#text/plain
-ont.activityhub/MIT.txt -text
+ont.activityhub/MITX.txt -text
 ont.activityhub/documentation/Development_notes.txt -text
 ont.activityhub/pom.xml -text
 ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
