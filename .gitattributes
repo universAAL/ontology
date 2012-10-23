@@ -361,6 +361,12 @@ ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Illness.
 ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 ont.profile.health/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.health/src/test/resources/log4j.properties -text
+ont.profile.ui.mainmenu/pom.xml -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileActivator.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileFactory.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/UIMainMenuProfile.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/UIMainMenuProfileOntology.java -text
+ont.profile.ui.mainmenu/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.uipreferences/pom.xml -text
 ont.profile.uipreferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileActivator.java -text
 ont.profile.uipreferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileFactory.java -text
