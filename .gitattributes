@@ -44,6 +44,7 @@ ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores
 ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Advice.java -text svneol=unset#text/plain
 ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Challenge.java -text svneol=unset#text/plain
 ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/ElectricityScore.java -text svneol=unset#text/plain
+ont.activityhub/MIT.txt -text
 ont.activityhub/documentation/Development_notes.txt -text
 ont.activityhub/pom.xml -text
 ont.activityhub/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
