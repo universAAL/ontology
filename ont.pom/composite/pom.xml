@@ -128,7 +128,7 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.iso11073</artifactId>
+      <artifactId>ont.X73</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>

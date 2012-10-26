@@ -229,8 +229,8 @@
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
-        <artifactId>ont.iso11073</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <artifactId>ont.X73</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
