@@ -26,6 +26,9 @@ public class UIMainMenuProfile extends SubProfile {
     public static final String MY_URI = UIMainMenuProfileOntology.NAMESPACE
 	    + "UIMainMenuProfile";
 
+    public static final String PROP_ENTRY = UIMainMenuProfileOntology.NAMESPACE
+	    + "hasEntry";
+
     public UIMainMenuProfile(String uri) {
 	super(uri);
     }

@@ -21,6 +21,7 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.ontology.profile.ui.mainmenu.UIMainMenuEntry;
 import org.universAAL.ontology.profile.ui.mainmenu.UIMainMenuProfile;
 
 public class UIMainMenuProfileFactory extends ResourceFactoryImpl {
@@ -31,6 +32,8 @@ public class UIMainMenuProfileFactory extends ResourceFactoryImpl {
 	switch (factoryIndex) {
 	case 0:
 	    return new UIMainMenuProfile(instanceURI);
+	case 1:
+	    return new UIMainMenuEntry(instanceURI);
 	}
 	return null;
     }

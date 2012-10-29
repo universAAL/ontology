@@ -105,6 +105,10 @@ ont.profile.health/.project
 ont.profile.health/.settings
 ont.profile.health/target
 ont.profile.health/uAAL.log
+ont.profile.ui.mainmenu/.classpath
+ont.profile.ui.mainmenu/.project
+ont.profile.ui.mainmenu/.settings
+ont.profile.ui.mainmenu/target
 ont.profile.uipreferences/.classpath
 ont.profile.uipreferences/.project
 ont.profile.uipreferences/.settings
