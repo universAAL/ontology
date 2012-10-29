@@ -20,6 +20,7 @@
 package org.universAAL.ontology.profile.ui.mainmenu;
 
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
@@ -27,6 +28,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.UIMainMenuProfileFactory;
 import org.universAAL.ontology.profile.Profile;
 import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.User;
 import org.universAAL.ontology.profile.UserProfile;
 
 public final class UIMainMenuProfileOntology extends Ontology {
@@ -36,6 +38,8 @@ public final class UIMainMenuProfileOntology extends Ontology {
 
     public static final String PROP_UI_MAINMENU_PROFILE = Profile.PROP_HAS_SUB_PROFILE
 	    + "hasUIMainMenu";
+
+    public static final User defaultUser = new User(NAMESPACE + "defaultUser");
 
     public UIMainMenuProfileOntology() {
 	super(NAMESPACE);
@@ -49,11 +53,28 @@ public final class UIMainMenuProfileOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 
 	// ******* Declaration of regular classes of the ontology ******* //
-	OntClassInfoSetup oci = createNewOntClassInfo(UIMainMenuProfile.MY_URI,
-		factory, 0);
+	OntClassInfoSetup oci;
+
+	oci = createNewOntClassInfo(UIMainMenuEntry.MY_URI, factory, 1);
+	oci.setResourceComment("");
+	oci.setResourceLabel("Menu Entry");
+	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addObjectProperty(UIMainMenuEntry.PROP_VENDOR).setFunctional();
+	oci.addObjectProperty(UIMainMenuEntry.PROP_SERVICE_CLASS)
+		.setFunctional();
+	oci.addObjectProperty(UIMainMenuEntry.PROP_PATH);
+	oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+		UIMainMenuEntry.PROP_VENDOR, 1, 1));
+	oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+		UIMainMenuEntry.PROP_SERVICE_CLASS, 1, 1));
+
+	oci = createNewOntClassInfo(UIMainMenuProfile.MY_URI, factory, 0);
 	oci.setResourceComment("");
 	oci.setResourceLabel("Main Menu");
 	oci.addSuperClass(SubProfile.MY_URI);
+	oci.addObjectProperty(UIMainMenuProfile.PROP_ENTRY);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		UIMainMenuProfile.PROP_ENTRY, UIMainMenuEntry.MY_URI));
 
 	// Extend UserProfile
 	oci = extendExistingOntClassInfo(UserProfile.MY_URI);
@@ -63,5 +84,9 @@ public final class UIMainMenuProfileOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			PROP_UI_MAINMENU_PROFILE, UIMainMenuProfile.MY_URI, 0,
 			1));
+
+	// extend User
+	oci = extendExistingOntClassInfo(User.MY_URI);
+	oci.addInstance(defaultUser);
     }
 }
