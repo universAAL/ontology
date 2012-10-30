@@ -134,5 +134,17 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.aalfficiencyscores</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.fitbitdata</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.ui.mainmenu</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.situation.reasoner</artifactId>
+    </dependency>
   </dependencies>
 </project>

@@ -40,6 +40,7 @@
     <module>../ont.multimedia</module>
     <module>../ont.powersocket</module>
     <module>../ont.profile.health</module>
+    <module>../ont.profile.ui.mainmenu</module>
     <module>../ont.profile.uipreferences</module>
     <module>../ont.profile.userid</module>
     <module>../ont.gesture.pointing</module>
@@ -57,6 +58,7 @@
     <module>../ont.nutrition</module>
     <module>../ont.readenergy</module>
     <module>composite</module>
+    <module>../ont.fitbitdata</module>
   </modules>
   <scm>
     <connection>${svn.base}/${project.artifactId}</connection>
@@ -240,6 +242,21 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.composite</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.fitbitdata</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.profile.ui.mainmenu</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.situation.reasoner</artifactId>
         <version>1.2.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
