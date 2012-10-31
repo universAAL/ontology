@@ -19,6 +19,9 @@
  */
 package org.universAAL.ontology.profile.ui.mainmenu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.profile.SubProfile;
 
@@ -39,5 +42,36 @@ public class UIMainMenuProfile extends SubProfile {
 
     public int getPropSerializationType(String arg0) {
 	return Resource.PROP_SERIALIZATION_FULL;
+    }
+
+    public void addMenuEntry(UIMainMenuEntry entry) {
+	if (entry == null)
+	    return;
+
+	Object o = getProperty(PROP_ENTRY);
+	if (o == null)
+	    setProperty(PROP_ENTRY, entry);
+	else if (!(o instanceof List)) {
+	    List a = new ArrayList();
+	    a.add(o);
+	    a.add(entry);
+	    setProperty(PROP_ENTRY, entry);
+	} else {
+	    List a = (List) o;
+	    a.add(entry);
+	    setProperty(PROP_ENTRY, entry);
+	}
+    }
+
+    public UIMainMenuEntry[] getMenuEntries() {
+	Object o = getProperty(PROP_ENTRY);
+	if (o == null)
+	    return new UIMainMenuEntry[0];
+	else if (!(o instanceof List)) {
+	    return new UIMainMenuEntry[] { (UIMainMenuEntry) o };
+	} else {
+	    List a = (List) o;
+	    return (UIMainMenuEntry[]) a.toArray(new UIMainMenuEntry[0]);
+	}
     }
 }
