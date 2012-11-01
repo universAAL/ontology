@@ -25,14 +25,14 @@ import java.util.List;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.profile.SubProfile;
 
-public class UIMainMenuProfile extends SubProfile {
-    public static final String MY_URI = UIMainMenuProfileOntology.NAMESPACE
-	    + "UIMainMenuProfile";
+public class MenuProfile extends SubProfile {
+    public static final String MY_URI = MenuProfileOntology.NAMESPACE
+	    + "MenuProfile";
 
-    public static final String PROP_ENTRY = UIMainMenuProfileOntology.NAMESPACE
+    public static final String PROP_ENTRY = MenuProfileOntology.NAMESPACE
 	    + "hasEntry";
 
-    public UIMainMenuProfile(String uri) {
+    public MenuProfile(String uri) {
 	super(uri);
     }
 
@@ -44,7 +44,7 @@ public class UIMainMenuProfile extends SubProfile {
 	return Resource.PROP_SERIALIZATION_FULL;
     }
 
-    public void addMenuEntry(UIMainMenuEntry entry) {
+    public void addMenuEntry(MenuEntry entry) {
 	if (entry == null)
 	    return;
 
@@ -55,23 +55,23 @@ public class UIMainMenuProfile extends SubProfile {
 	    List a = new ArrayList();
 	    a.add(o);
 	    a.add(entry);
-	    setProperty(PROP_ENTRY, entry);
+	    props.put(PROP_ENTRY, a);
 	} else {
 	    List a = (List) o;
 	    a.add(entry);
-	    setProperty(PROP_ENTRY, entry);
+	    props.put(PROP_ENTRY, a);
 	}
     }
 
-    public UIMainMenuEntry[] getMenuEntries() {
+    public MenuEntry[] getMenuEntries() {
 	Object o = getProperty(PROP_ENTRY);
 	if (o == null)
-	    return new UIMainMenuEntry[0];
+	    return new MenuEntry[0];
 	else if (!(o instanceof List)) {
-	    return new UIMainMenuEntry[] { (UIMainMenuEntry) o };
+	    return new MenuEntry[] { (MenuEntry) o };
 	} else {
 	    List a = (List) o;
-	    return (UIMainMenuEntry[]) a.toArray(new UIMainMenuEntry[0]);
+	    return (MenuEntry[]) a.toArray(new MenuEntry[0]);
 	}
     }
 }

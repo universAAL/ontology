@@ -22,11 +22,11 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.uAALModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.profile.ui.mainmenu.UIMainMenuProfileOntology;
+import org.universAAL.ontology.profile.ui.mainmenu.MenuProfileOntology;
 
 public class UIMainMenuProfileActivator implements uAALModuleActivator {
 
-    private UIMainMenuProfileOntology ontology = new UIMainMenuProfileOntology();
+    private MenuProfileOntology ontology = new MenuProfileOntology();
 
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().register(ontology);

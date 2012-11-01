@@ -27,18 +27,18 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.UnmodifiableResourceList;
 
-public class UIMainMenuEntry extends ManagedIndividual {
+public class MenuEntry extends ManagedIndividual {
 
-    public static final String MY_URI = UIMainMenuProfileOntology.NAMESPACE
-	    + "UIMainMenuEntry";
-    public static final String PROP_VENDOR = UIMainMenuProfileOntology.NAMESPACE
+    public static final String MY_URI = MenuProfileOntology.NAMESPACE
+	    + "MenuEntry";
+    public static final String PROP_VENDOR = MenuProfileOntology.NAMESPACE
 	    + "hasVendor";
-    public static final String PROP_SERVICE_CLASS = UIMainMenuProfileOntology.NAMESPACE
+    public static final String PROP_SERVICE_CLASS = MenuProfileOntology.NAMESPACE
 	    + "hasServiceClass";
-    public static final String PROP_PATH = UIMainMenuProfileOntology.NAMESPACE
+    public static final String PROP_PATH = MenuProfileOntology.NAMESPACE
 	    + "hasPath";
 
-    public UIMainMenuEntry(String uri) {
+    public MenuEntry(String uri) {
 	super(uri);
     }
 
