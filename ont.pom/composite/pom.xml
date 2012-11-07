@@ -10,7 +10,7 @@
   </parent>
   <artifactId>ont.composite</artifactId>
   <version>1.2.1-SNAPSHOT</version>
-  <name>universAAL Ontologies Composite</name>
+  <name>universAAL ontology Composite</name>
   <url></url>
   <scm>
     <connection>${svn.base}/ont.pom/composite</connection>

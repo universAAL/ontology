@@ -11,7 +11,7 @@
   <artifactId>ont.che</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>Context History Entrepot ontology</name>
+  <name>universAAL ontology Context History Entrepot</name>
   <description>Ontology for the services that manage Context History</description>
   <organization>
     <name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)

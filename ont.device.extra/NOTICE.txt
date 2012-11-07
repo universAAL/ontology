@@ -1,4 +1,4 @@
-universAAL Additional Devices
+universAAL ontology Additional Device Concepts
 
 Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
 Instituto Tecnologico de Aplicaciones de Comunicacion 
@@ -37,4 +37,5 @@ Licensed under Common Public License 1.0.
 
 III. License Summary
 - Apache License 2.0
+- MIT License
 - Common Public License 1.0

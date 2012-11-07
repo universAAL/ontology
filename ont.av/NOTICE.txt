@@ -59,6 +59,7 @@ III. License Summary
 - Apache License 2.0
 - Common Public License 1.0
 - Modified MIT X11 License
+- MIT License
 - GNU GPL 2 CLASSPATH Exception
 - JGCL - Java Geometry Class Library:
 

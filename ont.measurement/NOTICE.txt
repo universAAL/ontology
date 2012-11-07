@@ -1,4 +1,4 @@
-UNIVERSAAL Measurement Ontology
+universAAL ontology Measurement
 
 Copyright 2010-2014 UPM http://www.upm.es
 	Universidad Politécnica de Madrdid
@@ -28,4 +28,5 @@ Licensed under the Apache License 2.0.
 
 III. License Summary
 - Apache License 2.0
+- MIT License
 - Common Public License 1.0
