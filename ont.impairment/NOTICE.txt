@@ -1,4 +1,4 @@
-PERSONA Profiling Ontology
+universAAL ontology User Impairment
 
 Copyright 2008-2010 SPIRIT, http://www.spirit-intl.com/
 SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
@@ -45,4 +45,5 @@ III. License Summary
 - Apache License 2.0
 - Common Public License 1.0
 - Modified MIT X11 License
+- MIT License
 - JGCL - Java Geometry Class Library

@@ -11,7 +11,7 @@
   <artifactId>ont.measurement</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>The Measurement Ontology</name>
+  <name>universAAL ontology Measurement</name>
   <description>The ontology defining the most general concepts dealing with measurement.</description>
   <build>
     <plugins>

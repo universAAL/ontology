@@ -10,7 +10,7 @@
   <artifactId>ont.X73</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>x73 - Ontology for x73 devices</name>
+  <name>universAAL ontology x73 devices</name>
   <description>Ontology for devices based on ISO 11073 devices/model (health device communication) for the universAAL middleware</description>
   <inceptionYear>2012</inceptionYear>
   <organization>
