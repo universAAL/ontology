@@ -1,6 +1,7 @@
 universAAL ontology Questionnaire
 
-Copyright by XXXXXXX
+Copyright 2012 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
 
 
 I. Included Software
