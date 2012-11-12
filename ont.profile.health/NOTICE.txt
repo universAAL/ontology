@@ -3,6 +3,9 @@ universAAL ontology Health Profiling
 Copyright 2008-2010 SPIRIT, http://www.spirit-intl.com/
 SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING 
 
+Copyright 2012 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
+
 I. Included Software
 
 Software developed by SPIRIT within the PERSONA project is 
