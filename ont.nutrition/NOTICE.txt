@@ -1,9 +1,14 @@
 Nutrition Ontology
 
-Copyright by XXXXXXX
+Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
+Instituto Tecnologico de Aplicaciones de Comunicacion 
+Avanzadas - Grupo Tecnologias para la Salud y el 
+Bienestar (TSB)
 
 
 I. Included Software
+
+Nutrition Ontology
 
 
 II. Used Software
