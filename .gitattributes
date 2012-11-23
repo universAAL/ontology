@@ -248,7 +248,6 @@ ont.dependability/doc/overview-tree.html -text
 ont.dependability/doc/package-list -text
 ont.dependability/doc/resources/inherit.gif -text
 ont.dependability/doc/stylesheet.css -text
-ont.dependability/javadoc.xml -text
 ont.dependability/ont.dependability.PDF -text svneol=unset#unset
 ont.dependability/pom.xml -text
 ont.dependability/src/main/java/org/universAAL/ontology/DependabilityFactory.java -text
