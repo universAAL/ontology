@@ -59,6 +59,7 @@
     <module>../ont.readenergy</module>
     <module>composite</module>
     <module>../ont.fitbitdata</module>
+    <module>../ont.profile.contact</module>
   </modules>
   <scm>
     <connection>${svn.base}/${project.artifactId}</connection>
@@ -257,6 +258,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.situation.reasoner</artifactId>
+        <version>1.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.profile.contact</artifactId>
         <version>1.2.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
