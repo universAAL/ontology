@@ -96,4 +96,28 @@ public class MenuEntry extends ManagedIndividual {
 	Collections.addAll(l, path);
 	setProperty(PROP_PATH, l);
     }
+
+    public boolean isEquivalent(MenuEntry e) {
+	if (e == null)
+	    return false;
+
+	if (!testEquivalent(getVendor(), e.getVendor()))
+	    return false;
+	if (!testEquivalent(getServiceClass(), e.getServiceClass()))
+	    return false;
+	return true;
+    }
+
+    private boolean testEquivalent(Object o1, Object o2) {
+	if (o1 == null) {
+	    if (o2 != null)
+		return false;
+	} else {
+	    if (o2 == null)
+		return false;
+	    else if (!o1.equals(o2))
+		return false;
+	}
+	return true;
+    }
 }
