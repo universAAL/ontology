@@ -146,5 +146,13 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.situation.reasoner</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.contact</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.dependability</artifactId>
+    </dependency>
   </dependencies>
 </project>
