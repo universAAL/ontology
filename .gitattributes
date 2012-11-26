@@ -140,6 +140,7 @@ ont.dependability/MITX.txt -text
 ont.dependability/NOTICE.txt -text
 ont.dependability/ont.dependability.PDF -text svneol=unset#unset
 ont.dependability/pom.xml -text
+ont.dependability/src/main/java/org/universAAL/ontology/DependabilityActivator.java -text
 ont.dependability/src/main/java/org/universAAL/ontology/DependabilityFactory.java -text
 ont.dependability/src/main/java/org/universAAL/ontology/dependability/ContinuedFault.java -text
 ont.dependability/src/main/java/org/universAAL/ontology/dependability/DependabilityOntology.java -text
@@ -171,7 +172,6 @@ ont.dependability/src/main/java/org/universAAL/ontology/dependability/Symptom.ja
 ont.dependability/src/main/java/org/universAAL/ontology/dependability/TimingFault.java -text
 ont.dependability/src/main/java/org/universAAL/ontology/dependability/TransientFault.java -text
 ont.dependability/src/main/java/org/universAAL/ontology/dependability/ValueFault.java -text
-ont.dependability/src/main/java/org/universAAL/ontology/osgi/Activator.java -text
 ont.dependability/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.dependability/src/test/resources/log4j.properties -text
 ont.device.extra/ASL2.0.txt -text
