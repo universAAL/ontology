@@ -27,8 +27,10 @@ import org.universAAL.ontology.profile.ui.mainmenu.MenuProfileOntology;
 public class UIMainMenuProfileActivator implements uAALModuleActivator {
 
     private MenuProfileOntology ontology = new MenuProfileOntology();
+    public static ModuleContext context;
 
     public void start(ModuleContext context) throws Exception {
+	UIMainMenuProfileActivator.context = context;
 	OntologyManagement.getInstance().register(ontology);
     }
 
