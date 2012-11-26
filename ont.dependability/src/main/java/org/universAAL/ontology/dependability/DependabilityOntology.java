@@ -17,7 +17,6 @@ limitations under the License.
 * @author <a href="mailto:abu.sadat@uni-siegen.de">Rubaiyat Sadat</a>
 *	       ©2012
 */
-import org.universAAL.middleware.owl.BoundingValueRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -27,9 +26,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.location.LocationOntology;
-
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 
 //import the factory for this ontology
