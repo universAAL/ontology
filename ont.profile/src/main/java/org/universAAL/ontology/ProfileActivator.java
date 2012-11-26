@@ -26,7 +26,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.vcard.VCardOntology;
@@ -34,7 +34,7 @@ import org.universAAL.ontology.vcard.VCardOntology;
 /**
  * @author Carsten Stockloew
  */
-public class ProfileActivator implements uAALModuleActivator {
+public class ProfileActivator implements ModuleActivator {
 
     private VCardOntology ontV = new VCardOntology();
     private ProfileOntology ontP = new ProfileOntology();

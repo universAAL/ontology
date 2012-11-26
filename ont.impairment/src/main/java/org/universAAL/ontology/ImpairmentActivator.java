@@ -20,14 +20,14 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.impairment.ImpairmentOntology;
 
 /**
  * @author Carsten Stockloew
  */
-public class ImpairmentActivator implements uAALModuleActivator {
+public class ImpairmentActivator implements ModuleActivator {
 
     private ImpairmentOntology ont = new ImpairmentOntology();
 

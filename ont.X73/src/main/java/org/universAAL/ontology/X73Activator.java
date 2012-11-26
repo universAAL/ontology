@@ -2,13 +2,13 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.container.utils.LogUtils;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.X73.X73Ontology;
 
 
-public class X73Activator implements uAALModuleActivator {
+public class X73Activator implements ModuleActivator {
 
   X73Ontology x73ontology = new X73Ontology();
   

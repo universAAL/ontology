@@ -16,7 +16,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.profile.userid.UserIDProfileOntology;
 
@@ -24,7 +24,7 @@ import org.universAAL.ontology.profile.userid.UserIDProfileOntology;
  * @author eandgrg
  *
  */
-public class UserIDProfileActivator implements uAALModuleActivator {
+public class UserIDProfileActivator implements ModuleActivator {
 
     private UserIDProfileOntology ontology = new UserIDProfileOntology();
 

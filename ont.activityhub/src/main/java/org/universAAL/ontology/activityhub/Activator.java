@@ -1,7 +1,7 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.ActivityHubOntology;
 
@@ -11,7 +11,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  *
  * @author Thomas Fuxreiter
  */
-public class Activator implements uAALModuleActivator {
+public class Activator implements ModuleActivator {
 
 	ActivityHubOntology activityHubOntology = new ActivityHubOntology();
 	

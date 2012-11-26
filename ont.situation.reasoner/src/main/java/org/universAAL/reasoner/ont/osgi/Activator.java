@@ -20,7 +20,7 @@
 package org.universAAL.reasoner.ont.osgi;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.reasoner.ont.*;
 
@@ -38,7 +38,7 @@ import org.universAAL.reasoner.ont.*;
  * @author amarinc
  * 
  */
-public class Activator implements uAALModuleActivator {
+public class Activator implements ModuleActivator {
 	
 	ReasoningOntology _ontontology = new ReasoningOntology();
 

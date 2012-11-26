@@ -22,7 +22,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.device.home.DeviceOntology;
 
@@ -30,7 +30,7 @@ import org.universAAL.ontology.device.home.DeviceOntology;
  * @author alfiva
  *
  */
-public class DeviceActivator implements uAALModuleActivator {
+public class DeviceActivator implements ModuleActivator {
 
     private DeviceOntology deviceOntology = new DeviceOntology();
 

@@ -20,11 +20,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.measurement.MeasurementOntology;
 
-public class MeasurementActivator implements uAALModuleActivator {
+public class MeasurementActivator implements ModuleActivator {
 
     private MeasurementOntology _owlontology = new MeasurementOntology();
     

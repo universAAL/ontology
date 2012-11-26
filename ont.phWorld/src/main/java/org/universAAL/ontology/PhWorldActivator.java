@@ -20,14 +20,14 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.shape.ShapeOntology;
 import org.universAAL.ontology.space.SpaceOntology;
 
-public class PhWorldActivator implements uAALModuleActivator {
+public class PhWorldActivator implements ModuleActivator {
 
     private LocationOntology locationOntology = new LocationOntology();
     private PhThingOntology phThingOntology = new PhThingOntology();
