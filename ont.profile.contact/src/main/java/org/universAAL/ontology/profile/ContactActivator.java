@@ -16,11 +16,11 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.profile.contact.ContactOntology;
 
-public class ContactActivator implements uAALModuleActivator {
+public class ContactActivator implements ModuleActivator {
 
 	private ContactOntology ont = new ContactOntology();
 

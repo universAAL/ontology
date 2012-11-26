@@ -19,11 +19,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.window.WindowOntology;
 
-public class WindowActivator implements uAALModuleActivator {
+public class WindowActivator implements ModuleActivator {
 
     private WindowOntology ont = new WindowOntology();
 

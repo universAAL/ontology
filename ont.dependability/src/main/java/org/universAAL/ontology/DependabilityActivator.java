@@ -22,11 +22,11 @@ package org.universAAL.ontology;
  * The activator class for Dependability Ontology
  */
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.dependability.*;
 
-public class DependabilityActivator implements uAALModuleActivator {
+public class DependabilityActivator implements ModuleActivator {
 
     static ModuleContext context = null;
 

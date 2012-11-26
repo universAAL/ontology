@@ -20,11 +20,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.av.AVOntology;
 
-public class AVActivator implements uAALModuleActivator {
+public class AVActivator implements ModuleActivator {
 
     private AVOntology ont = new AVOntology();
 

@@ -20,11 +20,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.lighting.LightingOntology;
 
-public class LightingActivator implements uAALModuleActivator {
+public class LightingActivator implements ModuleActivator {
 
     private LightingOntology lightingOntology = new LightingOntology();
 

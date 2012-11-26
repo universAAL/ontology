@@ -20,11 +20,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.aalfficiency.scores.AalfficiencyScoresOntology;
 
-public class AalfficiencyScoresActivator implements uAALModuleActivator{
+public class AalfficiencyScoresActivator implements ModuleActivator{
 	static ModuleContext context = null;
     private AalfficiencyScoresOntology aalfficiency = new AalfficiencyScoresOntology();
 	

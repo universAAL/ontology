@@ -16,7 +16,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.profile.uipreferences.UIPreferencesProfileOntology;
 
@@ -24,7 +24,7 @@ import org.universAAL.ontology.profile.uipreferences.UIPreferencesProfileOntolog
  * @author eandgrg
  *
  */
-public class UIPreferencesProfileActivator implements uAALModuleActivator {
+public class UIPreferencesProfileActivator implements ModuleActivator {
 
     private UIPreferencesProfileOntology ontology = new UIPreferencesProfileOntology();
 

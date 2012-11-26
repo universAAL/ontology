@@ -17,11 +17,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.questionnaire.QuestionnaireOntology;
 
-public class QuestionnaireActivator implements uAALModuleActivator {
+public class QuestionnaireActivator implements ModuleActivator {
 
     private QuestionnaireOntology ontology = new QuestionnaireOntology();
 
