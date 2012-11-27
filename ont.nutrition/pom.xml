@@ -12,7 +12,7 @@
 	<artifactId>ont.nutrition</artifactId>
 	<version>1.2.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
-	<name>universAAL ontology Nutrition</name>
+	<name>universAAL Ontology Nutrition</name>
 	<description>Ontology for the services that manage Context History</description>
 	<organization>
 		<name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)

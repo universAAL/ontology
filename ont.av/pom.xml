@@ -11,7 +11,7 @@
   <artifactId>ont.av</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL ontology Audio - Video</name>
+  <name>universAAL Ontology Audio - Video</name>
   <description>The upper ontology defining the most general concepts from the audio and video world.</description>
   <build>
     <plugins>

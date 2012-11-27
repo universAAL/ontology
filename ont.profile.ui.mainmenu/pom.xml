@@ -11,7 +11,7 @@
   <artifactId>ont.profile.ui.mainmenu</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL ontology User Interaction Main Menu Profile</name>
+  <name>universAAL Ontology User Interaction Main Menu Profile</name>
   <build>
     <plugins>
       <plugin>

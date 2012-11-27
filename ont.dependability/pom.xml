@@ -9,7 +9,7 @@
   <artifactId>ont.dependability</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL ontology Dependability</name>
+  <name>universAAL Ontology Dependability</name>
   <description>The dependability ontology defining the concepts for realibility and fault tolerance.</description>
   <url></url>  
   
