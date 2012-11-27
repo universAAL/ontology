@@ -11,7 +11,7 @@
   <artifactId>ont.impairment</artifactId>
   <version>1.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL ontology User Impairment</name>
+  <name>universAAL Ontology User Impairment</name>
   <organization>
     <name>SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING</name>
     <url>http://www.spirit-intl.com/</url>

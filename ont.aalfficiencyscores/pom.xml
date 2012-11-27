@@ -8,7 +8,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ont.aalfficiencyscores</artifactId>
-	<name>universAAL ontology AALfficiency Scores</name>
+	<name>universAAL Ontology AALfficiency Scores</name>
 	<description>AALfficiency scores ontology</description>
 	<packaging>bundle</packaging>
 	<dependencies>
