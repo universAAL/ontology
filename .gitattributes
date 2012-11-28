@@ -143,6 +143,22 @@ ont.lighting/src/main/java/org/universAAL/ontology/lighting/LightingOntology.jav
 ont.lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
 ont.lighting/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.lighting/src/test/resources/log4j.properties -text
+ont.measurement/ASL2.0.txt -text
+ont.measurement/MITX.txt -text
+ont.measurement/Measurement.di -text
+ont.measurement/Measurement.notation -text
+ont.measurement/Measurement.uml -text
+ont.measurement/NOTICE.txt -text svneol=unset#text/plain
+ont.measurement/pom.xml -text
+ont.measurement/src/main/java/org/universAAL/ontology/MeasurementActivator.java -text
+ont.measurement/src/main/java/org/universAAL/ontology/MeasurementFactory.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeanSquareError.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/Measurement.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementError.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOntology.java -text svneol=unset#text/plain
+ont.measurement/src/main/resources/Measurement.jpg -text
+ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.measurement/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/MITX.txt -text
 ont.phWorld/NOTICE.txt -text
