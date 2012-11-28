@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_UfDEQNoUEeGYq4-l3MFk9A" name="ont.energy.reader">
+    <ownedComment xmi:id="_UfDEQdoUEeGYq4-l3MFk9A" annotatedElement="_UfDERtoUEeGYq4-l3MFk9A">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_UfDEQtoUEeGYq4-l3MFk9A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_UfDEQ9oUEeGYq4-l3MFk9A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_UfDERNoUEeGYq4-l3MFk9A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_UfDERdoUEeGYq4-l3MFk9A">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UfDERtoUEeGYq4-l3MFk9A" name="org.universaal.ontology.ont.energy.reader">
+      <packagedElement xmi:type="uml:Class" xmi:id="_3DoRUP2wEeGeAdyiwHDyFg" name="EnergyMeasurement">
+        <ownedAttribute xmi:id="__uw1cP2wEeGeAdyiwHDyFg" name="hasValue" isStatic="true">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_CxjRAP2xEeGeAdyiwHDyFg" name="hasMeasure">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_37EPoP2wEeGeAdyiwHDyFg" name="ReadEnergy">
+        <ownedAttribute xmi:id="_Rnp8kAF1EeKSlql-HkGT4w" name="readEnergyDevice" type="_5ScSQP2wEeGeAdyiwHDyFg" association="_RnqjoAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rnp8kQF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rnp8kgF1EeKSlql-HkGT4w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_R_2aIAF1EeKSlql-HkGT4w" name="energyMeasurement" type="_3DoRUP2wEeGeAdyiwHDyFg" association="_R_3BMAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R_2aIQF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R_2aIgF1EeKSlql-HkGT4w" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5ScSQP2wEeGeAdyiwHDyFg" name="ReadEnergyDevice" clientDependency="_KNsscAF1EeKSlql-HkGT4w">
+        <ownedAttribute xmi:id="_HvUykP2xEeGeAdyiwHDyFg" name="hasType">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_IuHWEP2xEeGeAdyiwHDyFg" name="hasName">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_JbNFkP2xEeGeAdyiwHDyFg" name="hasLocation">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_GCoaMAF1EeKSlql-HkGT4w" name=""/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_KNsscAF1EeKSlql-HkGT4w" name="Abstraction1" supplier="_37EPoP2wEeGeAdyiwHDyFg" client="_5ScSQP2wEeGeAdyiwHDyFg"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_L5bOcAF1EeKSlql-HkGT4w" name="readEnergyDevice_readEnergy_1" memberEnd="_L5bOcQF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_L5bOcQF1EeKSlql-HkGT4w" name="readEnergyDevice" type="_5ScSQP2wEeGeAdyiwHDyFg" association="_L5bOcAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L5bOcgF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L5bOcwF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NyXtEAF1EeKSlql-HkGT4w" name="energyMeasurement_readEnergy_1" memberEnd="_NyXtEQF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_NyXtEQF1EeKSlql-HkGT4w" name="energyMeasurement" type="_3DoRUP2wEeGeAdyiwHDyFg" association="_NyXtEAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NyXtEgF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NyXtEwF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RnqjoAF1EeKSlql-HkGT4w" name="readEnergy_readEnergyDevice_1" memberEnd="_RnqjoQF1EeKSlql-HkGT4w _Rnp8kAF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_RnqjoQF1EeKSlql-HkGT4w" name="readEnergy" type="_37EPoP2wEeGeAdyiwHDyFg" association="_RnqjoAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnqjogF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RnqjowF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R_3BMAF1EeKSlql-HkGT4w" name="readEnergy_energyMeasurement_1" memberEnd="_R_3BMQF1EeKSlql-HkGT4w _R_2aIAF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_R_3BMQF1EeKSlql-HkGT4w" name="readEnergy" type="_37EPoP2wEeGeAdyiwHDyFg" association="_R_3BMAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R_3BMgF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R_3BMwF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ruzroAF1EeKSlql-HkGT4w" name="readEnergy_readEnergyDevice_2" memberEnd="_ruzroQF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_ruzroQF1EeKSlql-HkGT4w" name="readEnergy" type="_37EPoP2wEeGeAdyiwHDyFg" association="_ruzroAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ruzrogF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ruzrowF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_sPYpIAF1EeKSlql-HkGT4w" name="readEnergy_energyMeasurement_2" memberEnd="_sPYpIQF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_sPYpIQF1EeKSlql-HkGT4w" name="readEnergy" type="_37EPoP2wEeGeAdyiwHDyFg" association="_sPYpIAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sPYpIgF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sPYpIwF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_vnEWoAF1EeKSlql-HkGT4w" name="readEnergyDevice_readEnergy_2" memberEnd="_vnEWoQF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_vnEWoQF1EeKSlql-HkGT4w" name="readEnergyDevice" type="_5ScSQP2wEeGeAdyiwHDyFg" association="_vnEWoAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vnEWogF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vnEWowF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_v-RVsAF1EeKSlql-HkGT4w" name="energyMeasurement_readEnergy_2" memberEnd="_v-RVsQF1EeKSlql-HkGT4w">
+        <ownedEnd xmi:id="_v-RVsQF1EeKSlql-HkGT4w" name="energyMeasurement" type="_3DoRUP2wEeGeAdyiwHDyFg" association="_v-RVsAF1EeKSlql-HkGT4w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v-RVsgF1EeKSlql-HkGT4w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v-RVswF1EeKSlql-HkGT4w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_UfDETdoUEeGYq4-l3MFk9A">
+      <eAnnotations xmi:id="_UfDETtoUEeGYq4-l3MFk9A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_UfDET9oUEeGYq4-l3MFk9A">
+      <eAnnotations xmi:id="_UfDEUNoUEeGYq4-l3MFk9A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_UfDEUdoUEeGYq4-l3MFk9A" defaultNamespace="http://ontology.universaal.org/ont.energy.reader" base_Package="_UfDERtoUEeGYq4-l3MFk9A" versionInfo="1.2.1-SNAPSHOT"/>
+</xmi:XMI>
