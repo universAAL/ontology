@@ -170,6 +170,17 @@ ont.medication/src/main/java/org/universAAL/ontology/medication/MedicationOntolo
 ont.medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
 ont.medication/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.medication/src/test/resources/log4j.properties -text
+ont.multimedia/ASL2.0.txt -text
+ont.multimedia/MITX.txt -text
+ont.multimedia/NOTICE.txt -text
+ont.multimedia/pom.xml -text
+ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaActivator.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/MultimediaOntology.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
+ont.multimedia/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.multimedia/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/MITX.txt -text
 ont.phWorld/NOTICE.txt -text
