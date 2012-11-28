@@ -110,6 +110,10 @@ ont.risk/.project
 ont.risk/.settings
 ont.risk/target
 ont.risk/uAAL.log
+ont.situation.reasoner/.classpath
+ont.situation.reasoner/.project
+ont.situation.reasoner/.settings
+ont.situation.reasoner/target
 ont.unit/*.log
 ont.unit/.classpath
 ont.unit/.project
