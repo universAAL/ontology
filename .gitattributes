@@ -22,6 +22,23 @@ ont.X73/x73-ontology_diagram.pdf -text
 ont.X73/x73.di -text
 ont.X73/x73.notation -text
 ont.X73/x73.uml -text
+ont.aalfficiency/ASL2.0.txt -text
+ont.aalfficiency/AalfficiencyOntology.di -text
+ont.aalfficiency/AalfficiencyOntology.notation -text
+ont.aalfficiency/AalfficiencyOntology.uml -text svneol=unset#text/plain
+ont.aalfficiency/MITX.txt -text
+ont.aalfficiency/NOTICE.txt -text
+ont.aalfficiency/aalapp.xml -text svneol=unset#text/plain
+ont.aalfficiency/pom.xml -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/AalfficiencyActivator.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/AalfficiencyFactory.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Aalfficiency.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyAdvices.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/AalfficiencyOntology.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/ActivityData.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Advice.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Challenge.java -text svneol=unset#text/plain
+ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/ElectricityData.java -text svneol=unset#text/plain
 ont.activityhub/ASL2.0.txt -text
 ont.activityhub/MITX.txt -text
 ont.activityhub/NOTICE.txt -text
