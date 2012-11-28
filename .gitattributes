@@ -1,0 +1,4 @@
+* text=auto !eol
+ont.pom/composite/pom.xml -text
+ont.pom/pom.xml -text
+ont.pom/update.bat -text
