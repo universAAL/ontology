@@ -283,6 +283,16 @@ ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Illness.
 ont.profile.health/src/main/java/org/universAAL/ontology/profile/health/Medicine.java -text
 ont.profile.health/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.health/src/test/resources/log4j.properties -text
+ont.profile.ui.mainmenu/ASL2.0.txt -text
+ont.profile.ui.mainmenu/MITX.txt -text
+ont.profile.ui.mainmenu/NOTICE.txt -text
+ont.profile.ui.mainmenu/pom.xml -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileActivator.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileFactory.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuEntry.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java -text
+ont.profile.ui.mainmenu/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile/ASL2.0.txt -text
 ont.profile/MITX.txt -text
 ont.profile/NOTICE.txt -text
