@@ -494,6 +494,19 @@ ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireMu
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireNextQuestion.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireQuestions.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/resources/log4j.properties -text
+ont.readenergy/ASL2.0.txt -text
+ont.readenergy/MITX.txt -text
+ont.readenergy/NOTICE -text
+ont.readenergy/ont.energy.reader.di -text
+ont.readenergy/ont.energy.reader.notation -text
+ont.readenergy/ont.energy.reader.uml -text svneol=unset#text/plain
+ont.readenergy/pom.xml -text svneol=unset#text/plain
+ont.readenergy/src/main/java/org/universAAL/ontology/ReadEnergyActivator.java -text svneol=unset#text/plain
+ont.readenergy/src/main/java/org/universAAL/ontology/ReadEnergyFactory.java -text svneol=unset#text/plain
+ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/EnergyMeasurement.java -text svneol=unset#text/plain
+ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergy.java -text svneol=unset#text/plain
+ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergyDevice.java -text svneol=unset#text/plain
+ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergyOntology.java -text svneol=unset#text/plain
 ont.risk/ASL2.0.txt -text
 ont.risk/MITX.txt -text
 ont.risk/NOTICE.txt -text
