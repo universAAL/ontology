@@ -20,12 +20,8 @@
 
 package org.universAAL.ontology;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-
-
 import org.universAAL.ontology.fitbitdata.Sleep;
 import org.universAAL.ontology.fitbitdata.FitbitData;
 import org.universAAL.ontology.fitbitdata.Activity;
