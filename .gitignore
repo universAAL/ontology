@@ -76,6 +76,11 @@ ont.profile.ui.mainmenu/.classpath
 ont.profile.ui.mainmenu/.project
 ont.profile.ui.mainmenu/.settings
 ont.profile.ui.mainmenu/target
+ont.profile.uipreferences/.classpath
+ont.profile.uipreferences/.project
+ont.profile.uipreferences/.settings
+ont.profile.uipreferences/target
+ont.profile.uipreferences/uAAL.log
 ont.profile/.classpath
 ont.profile/.project
 ont.profile/.settings

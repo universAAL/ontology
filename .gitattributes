@@ -293,6 +293,16 @@ ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmen
 ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java -text
 ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java -text
 ont.profile.ui.mainmenu/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.uipreferences/ASL2.0.txt -text
+ont.profile.uipreferences/MITX.txt -text
+ont.profile.uipreferences/NOTICE.txt -text
+ont.profile.uipreferences/pom.xml -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileActivator.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileFactory.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/InteractionPreferencesProfile.java -text
+ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/UIPreferencesProfileOntology.java -text
+ont.profile.uipreferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.uipreferences/src/test/resources/log4j.properties -text
 ont.profile/ASL2.0.txt -text
 ont.profile/MITX.txt -text
 ont.profile/NOTICE.txt -text
