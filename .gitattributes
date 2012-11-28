@@ -840,6 +840,19 @@ ont.aalfficiency-1.2.2-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficien
 ont.aalfficiency-1.2.2-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/Advice.java -text svneol=unset#text/plain
 ont.aalfficiency-1.2.2-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/Challenge.java -text svneol=unset#text/plain
 ont.aalfficiency-1.2.2-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/ElectricityData.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/ASL2.0.txt -text
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/MITX.txt -text
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/NOTICE -text
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/pom.xml -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/AalfficiencyScoresActivator.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/AalfficiencyScoresFactory.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyAdvices.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyScores.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyScoresOntology.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/ActivityScore.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/Advice.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/Challenge.java -text svneol=unset#text/plain
+ont.aalfficiencyscores-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/aalfficiency/scores/ElectricityScore.java -text svneol=unset#text/plain
 ont.activityhub-1.1.5-SNAPSHOT/documentation/Development_notes.txt -text
 ont.activityhub-1.1.5-SNAPSHOT/pom.xml -text
 ont.activityhub-1.1.5-SNAPSHOT/src/main/java/org/universAAL/ontology/ActivityHubOntology.java -text
