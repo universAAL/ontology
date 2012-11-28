@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram type="PapyrusUMLClassDiagram" name="Ontology root diagram" measurementUnit="Pixel">
+    <eAnnotations source="Stereotype_Annotation">
+      <details key="StereotypeWithQualifiedNameList" value=""/>
+      <details key="StereotypeList" value=""/>
+      <details key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details key="PropStereoDisplay" value=""/>
+      <details key="StereotypePropertyLocation" value="Comment"/>
+    </eAnnotations>
+    <children xsi:type="notation:Shape" type="2007" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5026"/>
+      <children xsi:type="notation:DecorationNode" type="7016">
+        <styles xsi:type="notation:TitleStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="AalfficiencyOntology.uml#_EGQY9rusEeGcXaCH8IWivQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="36" y="72"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2012" fontName="Times New Roman" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <eAnnotations source="Stereotype_Annotation">
+        <details key="StereotypeWithQualifiedNameList" value=""/>
+        <details key="StereotypeList" value=""/>
+        <details key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details key="PropStereoDisplay" value=""/>
+        <details key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5038">
+        <eAnnotations source="Stereotype_Annotation">
+          <details key="StereotypeWithQualifiedNameList" value=""/>
+          <details key="StereotypeList" value=""/>
+          <details key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details key="PropStereoDisplay" value=""/>
+          <details key="StereotypePropertyLocation" value="With brace"/>
+        </eAnnotations>
+      </children>
+      <element href="AalfficiencyOntology.uml#_EGQY8busEeGcXaCH8IWivQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="17" y="220" width="310" height="115"/>
+    </children>
+    <children xsi:type="notation:Shape" type="Note" fontName="Lucida Grande" fontHeight="14" description="This diagram shows the packages you have in your ontology model. Usually  a single package is used, and you will not need to update this diagram. Use the ontology overview diagram to edit the content of your ontology - this can be opened from the tab below or by double-clicking on the package symbol in this diagram. If you use multiple root packages to model closely related ontologies, each of these should be stereotyped with owlOntology, and properties such as default namespace must be defined. See the tools wiki for further documentation, at:&#xA;&#xA;http://forge.universaal.org/wiki/uaaltools:Ontology_modelling" fillColor="8905185" transparency="0" lineColor="0" lineWidth="1">
+      <children xsi:type="notation:BasicDecorationNode" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xsi:type="notation:BasicDecorationNode" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xsi:type="notation:TextStyle"/>
+      <styles xsi:type="notation:LineTypeStyle"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="351" y="108" width="469" height="199"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <element href="AalfficiencyOntology.uml#_EGQY8LusEeGcXaCH8IWivQ"/>
+    <edges xsi:type="notation:Connector" type="4013" source="/0/@children.1" target="/0/@children.0" lineColor="0">
+      <styles xsi:type="notation:FontStyle" fontName="Lucida Grande" fontHeight="11"/>
+      <element xsi:nil="true"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-15, -60, 25, 137]$[-44, -147, -4, 50]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.36451612903225805,0.017391304347826087)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram type="PapyrusUMLClassDiagram" name="Ontology overview" measurementUnit="Pixel">
+    <eAnnotations source="Stereotype_Annotation">
+      <details key="StereotypeWithQualifiedNameList" value=""/>
+      <details key="StereotypeList" value="OWL::owlOntology"/>
+      <details key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details key="PropStereoDisplay" value=""/>
+      <details key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xsi:type="notation:Shape" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5029"/>
+      <children xsi:type="notation:BasicCompartment" type="7017">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7018">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7019">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="AalfficiencyOntology.uml#_EGQY97usEeGcXaCH8IWivQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="522" y="252"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5029"/>
+      <children xsi:type="notation:BasicCompartment" type="7017">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7018">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7019">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="AalfficiencyOntology.uml#_EGQY-busEeGcXaCH8IWivQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="306" y="252"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5029"/>
+      <children xsi:type="notation:BasicCompartment" type="7017">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7018">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7019">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="63" y="117" width="123"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5029"/>
+      <children xsi:type="notation:BasicCompartment" type="7017">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7018">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7019">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="306" y="117"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5029"/>
+      <children xsi:type="notation:BasicCompartment" type="7017">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7018">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7019">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="522" y="117"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations source="ShadowFigure">
+        <details key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="displayNameLabelIcon">
+        <details key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations source="QualifiedName">
+        <details key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xsi:type="notation:DecorationNode" type="5029"/>
+      <children xsi:type="notation:BasicCompartment" type="7017">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7018">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <children xsi:type="notation:BasicCompartment" type="7019">
+        <styles xsi:type="notation:TitleStyle"/>
+        <styles xsi:type="notation:SortingStyle"/>
+        <styles xsi:type="notation:FilteringStyle"/>
+        <layoutConstraint xsi:type="notation:Bounds"/>
+      </children>
+      <element href="AalfficiencyOntology.uml#_EGQY-7usEeGcXaCH8IWivQ"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="72" y="252"/>
+    </children>
+    <children xsi:type="notation:Shape" type="Note" fontName="Lucida Grande" fontHeight="14" description="The classes at the top of this diagram are base classes taken from the imported packages shown in the Model Explorer view (select Papyrus from the Window/Open Perspective menu). Typically, you will subclass these classes by adding a generalization relation to your own ontology classes. &#xA;To apply other imported classes, just drag them into the diagram from the Model Explorer." fillColor="8905185" transparency="0" lineColor="0" lineWidth="1">
+      <children xsi:type="notation:BasicDecorationNode" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xsi:type="notation:BasicDecorationNode" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xsi:type="notation:TextStyle"/>
+      <styles xsi:type="notation:LineTypeStyle"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="18" y="18" width="730" height="82"/>
+    </children>
+    <children xsi:type="notation:Shape" type="Note" fontName="Lucida Grande" fontHeight="14" description="The classes in the lower part of the diagram are just example classes that can be renamed or deleted. To create your own classes, select Class from the Ontology palette (to the right). You can also add associations and generalizations from this palette.&#xA;To add properties to the classes, select datatypeProperty (for primitive types) or objectProperty from the Ontology palette and click on the class to add it to. For further instructions, visit the wiki at:&#xA;http://forge.universaal.org/wiki/uaaltools:Ontology_modelling&#xA;You can delete these instruction notes from the model when you do not need them any more." fillColor="8905185" transparency="0" lineColor="0" lineWidth="1">
+      <children xsi:type="notation:BasicDecorationNode" type="DiagramName">
+        <element xsi:nil="true"/>
+      </children>
+      <children xsi:type="notation:BasicDecorationNode" type="Description">
+        <element xsi:nil="true"/>
+      </children>
+      <styles xsi:type="notation:TextStyle"/>
+      <styles xsi:type="notation:LineTypeStyle"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="18" y="378" width="730" height="136"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <element href="AalfficiencyOntology.uml#_EGQY9rusEeGcXaCH8IWivQ"/>
+    <edges xsi:type="notation:Connector" type="4002" source="/1/@children.1" target="/1/@children.3" lineColor="0">
+      <children xsi:type="notation:DecorationNode" type="6007">
+        <layoutConstraint xsi:type="notation:Location" y="40"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Lucida Grande" fontHeight="11"/>
+      <element href="AalfficiencyOntology.uml#_EGQY-rusEeGcXaCH8IWivQ"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-3, -50, 0, 100]$[-2, -139, 1, 11]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.56,0.89)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4002" source="/1/@children.0" target="/1/@children.4" lineColor="0">
+      <children xsi:type="notation:DecorationNode" type="6007">
+        <layoutConstraint xsi:type="notation:Location" y="40"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Lucida Grande" fontHeight="11"/>
+      <element href="AalfficiencyOntology.uml#_EGQY-LusEeGcXaCH8IWivQ"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-3, -50, 0, 84]$[-3, -113, 0, 21]$[-3, -121, 0, 13]"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4002" source="/1/@children.5" target="/1/@children.2" lineColor="0">
+      <children xsi:type="notation:DecorationNode" type="6007">
+        <layoutConstraint xsi:type="notation:Location" y="40"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Lucida Grande" fontHeight="11"/>
+      <element href="AalfficiencyOntology.uml#_EGQY_LusEeGcXaCH8IWivQ"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[4, -13, 0, 94]$[2, -91, -2, 16]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.45,0.13)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.4715447154471545,0.84)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
