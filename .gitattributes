@@ -159,6 +159,17 @@ ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOnt
 ont.measurement/src/main/resources/Measurement.jpg -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement/src/test/resources/log4j.properties -text
+ont.medication/ASL2.0.txt -text
+ont.medication/MITX.txt -text
+ont.medication/NOTICE.txt -text
+ont.medication/pom.xml -text
+ont.medication/src/main/java/org/universAAL/ontology/MedicationActivator.java -text
+ont.medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/MedicationOntology.java -text
+ont.medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
+ont.medication/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.medication/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/MITX.txt -text
 ont.phWorld/NOTICE.txt -text
