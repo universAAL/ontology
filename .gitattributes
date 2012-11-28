@@ -147,6 +147,16 @@ ont.device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 ont.device.extra/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.device.extra/src/test/resources/log4j.properties -text
+ont.fitbitdata/ASL2.0.txt -text
+ont.fitbitdata/MITX.txt -text
+ont.fitbitdata/NOTICE -text
+ont.fitbitdata/pom.xml -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/FitbitDataActivator.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/FitbitdataFactory.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/Activity.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/FitbitData.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/FitbitdataOntology.java -text svneol=unset#text/plain
+ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/Sleep.java -text svneol=unset#text/plain
 ont.furniture/ASL2.0.txt -text
 ont.furniture/MITX.txt -text
 ont.furniture/NOTICE.txt -text
