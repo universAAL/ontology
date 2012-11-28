@@ -1995,6 +1995,19 @@ ont.questionnaire-1.2.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/Test
 ont.questionnaire-1.2.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/TestQuestionnaireNextQuestion.java -text svneol=unset#text/plain
 ont.questionnaire-1.2.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/TestQuestionnaireQuestions.java -text svneol=unset#text/plain
 ont.questionnaire-1.2.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.readenergy-1.2.1-SNAPSHOT/ASL2.0.txt -text
+ont.readenergy-1.2.1-SNAPSHOT/MITX.txt -text
+ont.readenergy-1.2.1-SNAPSHOT/NOTICE -text
+ont.readenergy-1.2.1-SNAPSHOT/ont.energy.reader.di -text
+ont.readenergy-1.2.1-SNAPSHOT/ont.energy.reader.notation -text
+ont.readenergy-1.2.1-SNAPSHOT/ont.energy.reader.uml -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/pom.xml -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/ReadEnergyActivator.java -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/ReadEnergyFactory.java -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/energy/reader/EnergyMeasurement.java -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergy.java -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergyDevice.java -text svneol=unset#text/plain
+ont.readenergy-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergyOntology.java -text svneol=unset#text/plain
 ont.risk-1.0.1-SNAPSHOT/artifact_manual.composite -text
 ont.risk-1.0.1-SNAPSHOT/pom.xml -text
 ont.risk-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
