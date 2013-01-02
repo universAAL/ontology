@@ -53,7 +53,6 @@ public class Place extends Location {
 	PROP_HAS_ADDRESS = uAAL_LOCATION_NAMESPACE + "hasAddress";
     }
 
-
     /**
      * Creates a Place object
      * 

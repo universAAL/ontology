@@ -37,7 +37,6 @@ public class Triangle extends Polygon {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Triangle";
 
-
     /**
      * Creates a Triangle object
      * 

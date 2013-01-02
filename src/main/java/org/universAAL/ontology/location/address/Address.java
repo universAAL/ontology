@@ -46,7 +46,6 @@ public class Address extends ManagedIndividual {
 		+ "hasExtendedAddressDescription";
     }
 
-
     /**
      * Creates a Address object
      */

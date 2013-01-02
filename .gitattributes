@@ -1,12 +1,12 @@
 * text=auto !eol
-/LICENSE.txt -text
+/ASL2.0.txt -text
+/MITX.txt -text
 /NOTICE.txt -text
 /artifact_manual.composite -text
 documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 documentation/ont.phWorld.phThing[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 documentation/ont.phWorld.shape[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 /pom.xml -text
-src/main/java/org/universAAL/ontology/Activator.java -text
 src/main/java/org/universAAL/ontology/LocationFactory.java -text
 src/main/java/org/universAAL/ontology/PhThingFactory.java -text
 src/main/java/org/universAAL/ontology/PhWorldActivator.java -text

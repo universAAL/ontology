@@ -32,7 +32,6 @@ public class Region extends OutdoorPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Region";
 
-    
     /**
      * Creates a Region object
      * 

@@ -35,7 +35,6 @@ public abstract class IndoorPlace extends Place {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "IndoorPlace";
 
-
     /**
      * Creates a IndoorPlace object
      * 
@@ -72,7 +71,7 @@ public abstract class IndoorPlace extends Place {
     public IndoorPlace(String uri, Shape shape) {
 	super(uri, shape);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

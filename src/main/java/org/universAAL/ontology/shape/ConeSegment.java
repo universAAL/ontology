@@ -50,7 +50,6 @@ public class ConeSegment extends LineSegment {
 	PROP_RADIUS_END = uAAL_SHAPE_NAMESPACE + "RadiusEnd";
     }
 
-
     public int getPropSerializationType(String propURI) {
 	if (PROP_RADIUS_START.equals(propURI)
 		|| PROP_RADIUS_END.equals(propURI))

@@ -1,4 +1,4 @@
-Physical World Upper Ontology
+universAAL ontology Physical World
 
 Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 Fraunhofer Gesellschaft - Institut fuer Graphische Datenverarbeitung
@@ -35,4 +35,5 @@ Licensed under Common Public License 1.0.
 
 III. License Summary
 - Apache License 2.0
+- MIT License
 - Common Public License 1.0

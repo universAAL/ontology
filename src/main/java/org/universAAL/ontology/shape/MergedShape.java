@@ -20,7 +20,6 @@
 package org.universAAL.ontology.shape;
 
 import org.universAAL.ontology.location.position.Point;
-import org.universAAL.ontology.shape.Shape;
 
 /**
  * Ontological representation of a merged boolean shape. Methods included in
@@ -36,11 +35,10 @@ public class MergedShape extends BooleanShape {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "MergedShape";
 
-
     public MergedShape(String uri) {
 	super(uri);
     }
-    
+
     public MergedShape(Shape[] shapes) {
 	super();
 	setShapes(shapes);

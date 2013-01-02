@@ -21,9 +21,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.ontology.phThing.Actuator;
-import org.universAAL.ontology.phThing.Device;
-
 /**
  * Ontological representation of any actuator that has a range of values from 0
  * to 100%. Methods included in this class are the mandatory ones for
@@ -34,14 +31,13 @@ import org.universAAL.ontology.phThing.Device;
  * 
  */
 public class DimmerActuator extends Actuator {
-    
+
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
 	    + "DimmerActuator";
-    
+
     public static final String PROP_DIMMABLE_STATUS = Device.uAAL_DEVICE_NAMESPACE
 	    + "DimmableStatus";
 
-    
     public DimmerActuator() {
     }
 

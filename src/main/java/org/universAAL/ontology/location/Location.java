@@ -57,7 +57,6 @@ public class Location extends AbsLocation {
 	PROP_CONTAINS = uAAL_LOCATION_NAMESPACE + "contains";
     }
 
-
     /**
      * Constructor just for usage by de-serializers. Do not use this constructor
      * within applications as it may lead to incomplete instances that cause
@@ -92,11 +91,9 @@ public class Location extends AbsLocation {
 	props.put(PROP_HAS_NAME, name);
     }
 
-    
     public String getClassURI() {
 	return MY_URI;
     }
-    
 
     /**
      * Add a new Location in the given property list
@@ -133,7 +130,7 @@ public class Location extends AbsLocation {
      */
     private Location[] getMultipleValueLocationProperty(String propURI) {
 	if (!props.containsKey(propURI))
-	    return null;
+	    return new Location[0];
 	List conn = (List) props.get(propURI);
 	return (Location[]) conn.toArray(new Location[0]);
     }
@@ -239,7 +236,7 @@ public class Location extends AbsLocation {
      * removes all connected locations from this location.
      */
     public void clearConnectedLocations() {
-	//props.put(PROP_IS_CONNECTED_TO, new Vector());
+	// props.put(PROP_IS_CONNECTED_TO, new Vector());
 	props.remove(PROP_IS_CONNECTED_TO);
     }
 
@@ -282,7 +279,7 @@ public class Location extends AbsLocation {
      * removes all contained locations from this location.
      */
     public void clearContainedLocations() {
-	//props.put(PROP_CONTAINS, new Vector());
+	// props.put(PROP_CONTAINS, new Vector());
 	props.remove(PROP_CONTAINS);
     }
 
@@ -311,7 +308,7 @@ public class Location extends AbsLocation {
      * removes all containing locations from this location.
      */
     public void clearContainingLocations() {
-	//props.put(PROP_IS_CONTAINED_IN, null);
+	// props.put(PROP_IS_CONTAINED_IN, null);
 	props.remove(PROP_IS_CONTAINED_IN);
     }
 
@@ -380,11 +377,15 @@ public class Location extends AbsLocation {
 
     public boolean hasConnectionTo(AbsLocation arg0) {
 	List connected = (List) props.get(PROP_IS_CONNECTED_TO);
+	if (connected == null)
+	    return false;
 	return connected.contains(arg0);
     }
 
     public boolean isAdjacentTo(AbsLocation arg0) {
 	List connected = (List) props.get(PROP_IS_ADJACENT_TO);
+	if (connected == null)
+	    return false;
 	return connected.contains(arg0);
     }
 
@@ -404,13 +405,10 @@ public class Location extends AbsLocation {
     }
 
     public int ord() {
-	// TODO Auto-generated method stub
 	return Integer.MIN_VALUE;
     }
 
     public float getDistanceTo(AbsLocation other) {
-	// TODO Auto-generated method stub
 	return 0;
     }
-
 }

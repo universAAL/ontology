@@ -32,7 +32,6 @@ public class CityPlace extends OutdoorPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "CityPlace";
 
-    
     /**
      * Creates a CityPlace object
      * 

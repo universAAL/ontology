@@ -49,7 +49,6 @@ public class LineSegment extends Line {
 
     public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "LineSegment";
 
-    
     /**
      * Creates a LineSegment object
      * 

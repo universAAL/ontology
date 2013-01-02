@@ -32,7 +32,6 @@ public class State extends OutdoorPlace {
 
     public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "State";
 
-
     /**
      * Creates a State object
      * 

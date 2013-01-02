@@ -72,7 +72,7 @@ public class BuildingLevel extends IndoorPlace {
     public BuildingLevel(String uri, Shape shape) {
 	super(uri, shape);
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

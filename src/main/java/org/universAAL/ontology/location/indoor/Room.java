@@ -38,7 +38,6 @@ public class Room extends HomeArea {
 	PROP_ROOM_FUNCTION = uAAL_LOCATION_NAMESPACE + "roomFunction";
     }
 
-
     /**
      * Creates a Room object
      * 
@@ -99,7 +98,7 @@ public class Room extends HomeArea {
     }
 
     public void clearRoomFunction() {
-	props.put(PROP_ROOM_FUNCTION, null);
+	props.remove(PROP_ROOM_FUNCTION);
     }
 
     public int getPropSerializationType(String propURI) {

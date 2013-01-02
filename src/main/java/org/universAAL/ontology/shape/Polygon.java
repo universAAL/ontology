@@ -26,7 +26,6 @@ import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
-import org.universAAL.ontology.shape.Shape;
 
 /**
  * Ontological representation of a polygon in a tri-dimensional space. Methods
@@ -49,7 +48,6 @@ public class Polygon extends Shape3D {
 	PROP_VERTICES = uAAL_SHAPE_NAMESPACE + "Vertices";
     }
 
-    
     /**
      * Creates a Polygon object
      * 

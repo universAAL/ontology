@@ -21,7 +21,6 @@
 package org.universAAL.ontology.phThing;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
  * Represents the class of physical manufactured things that have some
@@ -32,15 +31,14 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  * 
  */
 public class Device extends PhysicalThing {
-    
+
     public static final String uAAL_DEVICE_NAMESPACE = uAAL_NAMESPACE_PREFIX
 	    + "Device.owl#";
-    
+
     public static final String MY_URI = uAAL_DEVICE_NAMESPACE + "Device";
-    
+
     public static final String PROP_BATTERY_LEVEL = Device.uAAL_DEVICE_NAMESPACE
 	    + "batteryLevel";
-
 
     public Device() {
 	super();

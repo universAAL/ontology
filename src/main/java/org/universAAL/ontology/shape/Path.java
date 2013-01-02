@@ -26,7 +26,6 @@ import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.OriginedMetric;
 import org.universAAL.ontology.location.position.Point;
-import org.universAAL.ontology.shape.Shape;
 
 /**
  * Ontological representation of a tri-dimensional path. Methods included in
@@ -48,7 +47,6 @@ public abstract class Path extends Shape3D {
 	MY_URI = uAAL_SHAPE_NAMESPACE + "Path";
 	PROP_POINTS = uAAL_SHAPE_NAMESPACE + "Points";
     }
-
 
     /**
      * Creates a Path object
