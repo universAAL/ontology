@@ -10,7 +10,7 @@
 	<artifactId>ont.profile.ui.preferences</artifactId>
 	<version>1.3.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
-	<name>InteractionPreferences</name>
+	<name>universAAL Ontology User Interaction Preferences Profile </name>
 	<description>User Interaction preferences of a User inspired by ETSI ES 746 standard (Personalization and user profile management - User Profile Preferences and Information), ISO IEC 24751-2 (Information technology — Individualized
 adaptability and accessibility in e-learning, education and training —“Access for all” personal needs and preferences for digital delivery)</description>
 	<dependencies>
