@@ -1,12 +1,11 @@
 /*******************************************************************************
- * Copyright 2012 Ericsson Nikola Tesla d.d.
+ * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * Licensed under both Apache License, Version 2.0 and MIT License .
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * See the NOTICE file distributed with this work for additional 
+ * information regarding copyright ownership
+ *	
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -20,7 +19,6 @@ import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.handgestures.HandgesturesOntology;
 
-
 /**
  * 
  * @author eandgrg
@@ -29,16 +27,16 @@ import org.universAAL.ontology.handgestures.HandgesturesOntology;
 
 public class HandGesturesActivator implements ModuleActivator {
 
-	HandgesturesOntology _handgesturesontology = new HandgesturesOntology();
+    HandgesturesOntology _handgesturesontology = new HandgesturesOntology();
 
-	public void start(ModuleContext context) throws Exception {
-		OntologyManagement.getInstance().register(_handgesturesontology);
+    public void start(ModuleContext context) throws Exception {
+	OntologyManagement.getInstance().register(_handgesturesontology);
 
-	}
+    }
 
-	public void stop(ModuleContext arg0) throws Exception {
+    public void stop(ModuleContext arg0) throws Exception {
 
-		OntologyManagement.getInstance().unregister(_handgesturesontology);
+	OntologyManagement.getInstance().unregister(_handgesturesontology);
 
-	}
+    }
 }
