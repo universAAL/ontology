@@ -1,7 +1,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.uAALModuleActivator;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology;
 
@@ -11,7 +11,7 @@ import org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology
  *
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
-public class PersonalHealthDeviceActivator implements uAALModuleActivator{
+public class PersonalHealthDeviceActivator implements ModuleActivator{
 
 	PersonalHealthDeviceOntology personalHealthDeviceOntology = new PersonalHealthDeviceOntology();
 
