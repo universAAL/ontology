@@ -22,7 +22,6 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.ui.owl.Modality;
-import org.universAAL.middleware.ui.owl.PrivacyLevel;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.UIPreferencesProfileFactory;
 import org.universAAL.ontology.location.LocationOntology;
@@ -61,10 +60,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	OntClassInfoSetup oci_Language = createNewAbstractOntClassInfo(Language.MY_URI);
 	OntClassInfoSetup oci_ContentDensityType = createNewAbstractOntClassInfo(ContentDensityType.MY_URI);
 	OntClassInfoSetup oci_Size = createNewAbstractOntClassInfo(Size.MY_URI);
-	OntClassInfoSetup oci_PrivacyLevel = createNewAbstractOntClassInfo(PrivacyLevel.MY_URI);
 	OntClassInfoSetup oci_Intensity = createNewAbstractOntClassInfo(Intensity.MY_URI);
 	OntClassInfoSetup oci_AlertType = createNewAbstractOntClassInfo(AlertType.MY_URI);
-	OntClassInfoSetup oci_Modality = createNewAbstractOntClassInfo(Modality.MY_URI);
 	OntClassInfoSetup oci_GenericFontFamily = createNewAbstractOntClassInfo(GenericFontFamily.MY_URI);
 	OntClassInfoSetup oci_WindowLayoutType = createNewAbstractOntClassInfo(WindowLayoutType.MY_URI);
 	OntClassInfoSetup oci_Status = createNewAbstractOntClassInfo(Status.MY_URI);
@@ -123,13 +120,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_Size.toEnumeration(new ManagedIndividual[] { Size.small,
 		Size.medium, Size.large });
 
-	oci_PrivacyLevel.setResourceComment("");
-	oci_PrivacyLevel.setResourceLabel("PrivacyLevel");
-	oci_PrivacyLevel.toEnumeration(new ManagedIndividual[] {
-		PrivacyLevel.insensible, PrivacyLevel.knownPeopleOnly,
-		PrivacyLevel.intimatesOnly, PrivacyLevel.homeMatesOnly,
-		PrivacyLevel.personal });
-
 	oci_Intensity.setResourceComment("");
 	oci_Intensity.setResourceLabel("Intensity");
 	oci_Intensity.toEnumeration(new ManagedIndividual[] { Intensity.low,
@@ -140,12 +130,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_AlertType.toEnumeration(new ManagedIndividual[] {
 		AlertType.visualOnly, AlertType.audioOnly,
 		AlertType.visualAndAudio });
-
-	oci_Modality.setResourceComment("");
-	oci_Modality.setResourceLabel("Modality");
-	oci_Modality.toEnumeration(new ManagedIndividual[] { Modality.gui,
-		Modality.voice, Modality.gesture, Modality.sms,
-		Modality.mobile, Modality.web });
 
 	oci_GenericFontFamily.setResourceComment("");
 	oci_GenericFontFamily.setResourceLabel("GenericFontFamily");
