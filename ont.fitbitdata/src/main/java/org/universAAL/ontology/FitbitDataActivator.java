@@ -19,22 +19,19 @@
  */
 package org.universAAL.ontology;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
 import org.universAAL.middleware.container.ModuleContext;
+import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.fitbitdata.FitbitdataOntology;
 
-public class FitbitDataActivator implements BundleActivator{
+public class FitbitDataActivator implements ModuleActivator{
     private FitbitdataOntology fitbit = new FitbitdataOntology();
 	
-	public void start(BundleContext arg0) throws Exception {
+	public void start(ModuleContext arg0) throws Exception {
 		OntologyManagement.getInstance().register(fitbit);
-		
 	}
 
-	public void stop(BundleContext arg0) throws Exception {
+	public void stop(ModuleContext arg0) throws Exception {
 		OntologyManagement.getInstance().unregister(fitbit);
-		
 	}
 }
