@@ -36,6 +36,10 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.handgestures</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.hazard</artifactId>
     </dependency>
     <dependency>
@@ -57,6 +61,10 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.multimedia</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.personalhealthdevice</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -104,7 +112,7 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.uipreferences</artifactId>
+      <artifactId>ont.profile.ui.preferences</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -121,10 +129,6 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.readenergy</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.nutrition</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
