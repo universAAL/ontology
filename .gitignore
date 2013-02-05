@@ -37,6 +37,10 @@ ont.device.extra/.project
 ont.device.extra/.settings
 ont.device.extra/target
 ont.device.extra/uAAL.log
+ont.device/.classpath
+ont.device/.project
+ont.device/.settings
+ont.device/target
 ont.fitbitdata/.classpath
 ont.fitbitdata/.project
 ont.fitbitdata/.settings
