@@ -62,6 +62,7 @@
     <module>../ont.handgestures</module>
     <module>../ont.profile.ui.preferences</module>
     <module>../ont.personalhealthdevice</module>
+    <module>../ont.continuahealthmanager</module>
     <module>composite</module>
   </modules>
   <scm>
