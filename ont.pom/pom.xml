@@ -102,7 +102,7 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.activityhub</artifactId>
-        <version>1.3.1-SNAPSHOT</version>
+        <version>1.3.2-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
