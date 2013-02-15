@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.universAAL</groupId>
     <artifactId>uAAL.pom</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.1-SNAPSHOT</version>
   </parent>
   <groupId>org.universAAL.ontology</groupId>
   <artifactId>ont.pom</artifactId>
@@ -72,6 +72,9 @@
   </scm>
   <properties>
     <remoteOBR></remoteOBR>
+    <groupIdMatchString>^org\.universAAL\.ontology</groupIdMatchString>
+   	<artifactIdMatchString>^ont\..*</artifactIdMatchString>
+    <nameMatchString>^universAAL Ontology .*</nameMatchString>
     <gforge.project.name>ontologies</gforge.project.name>
     <separatedGroupIds>org.universAAL.middleware</separatedGroupIds>
     <maven.compile.source>1.4</maven.compile.source>
