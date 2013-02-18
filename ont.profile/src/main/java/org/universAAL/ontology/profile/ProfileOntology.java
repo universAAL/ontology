@@ -545,6 +545,9 @@ public final class ProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		AALServiceProfile.PROP_SLA,
 		TypeMapper.getDatatypeURI(String.class)));
+	oci.addObjectProperty(AALServiceProfile.PROP_SERVICE_OWNER);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALServiceProfile.PROP_SERVICE_OWNER, User.MY_URI));
 
 	// AALService
 	oci = createNewOntClassInfo(AALService.MY_URI, factory, AALSERV);
@@ -579,12 +582,14 @@ public final class ProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		AALSpaceProfile.PROP_USTORE_CONNECTION_DETAILS,
 		ConnectionDetails.MY_URI));
-	oci.addObjectProperty(AALSpaceProfile.PROP_INSTALLED_ONTOLOGIES)
-		.setFunctional();
+	oci.addObjectProperty(AALSpaceProfile.PROP_INSTALLED_ONTOLOGIES);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestriction(
 			AALSpaceProfile.PROP_INSTALLED_ONTOLOGIES,
 			OntologyEntry.MY_URI));
+	oci.addObjectProperty(AALSpaceProfile.PROP_SPACE_OWNER);
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		AALSpaceProfile.PROP_SPACE_OWNER, User.MY_URI));
 
 	// APProfile
 	oci = createNewOntClassInfo(AssistedPersonProfile.MY_URI, factory,

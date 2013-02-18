@@ -49,6 +49,8 @@ public class AALSpaceProfile extends Profile {
 	    + "hasUStoreConnectionDetails";
     public static final String PROP_INSTALLED_ONTOLOGIES = ProfileOntology.NAMESPACE
 	    + "hasInstalledOntologies";
+    public static final String PROP_SPACE_OWNER = ProfileOntology.NAMESPACE
+	    + "spaceOwnedBy";
 
     protected AALSpaceProfile() {
 	super();

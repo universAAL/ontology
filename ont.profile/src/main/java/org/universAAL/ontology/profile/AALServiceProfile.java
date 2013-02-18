@@ -61,6 +61,8 @@ public class AALServiceProfile extends Profile {
 	    + "hasServiceProviderID";
     public static final String PROP_SLA = ProfileOntology.NAMESPACE
 	    + "hasServiceLevelAgreement";
+    public static final String PROP_SERVICE_OWNER = ProfileOntology.NAMESPACE
+	    + "serviceOwnedBy";
 
     protected AALServiceProfile() {
 	super();
