@@ -195,9 +195,12 @@ ont.device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 ont.device.extra/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.device.extra/src/test/resources/log4j.properties -text
+ont.device/ASL2.0.txt -text
 ont.device/Device.di -text
 ont.device/Device.notation -text
 ont.device/Device.uml -text
+ont.device/MITX.txt -text
+ont.device/NOTICE.txt -text
 ont.device/pom.xml -text
 ont.device/src/main/java/org/universAAL/ontology/DeviceActivator.java -text
 ont.device/src/main/java/org/universAAL/ontology/DeviceFactory.java -text
@@ -327,7 +330,8 @@ ont.impairment/src/main/java/org/universAAL/ontology/impairment/SightImpairment.
 ont.impairment/src/main/java/org/universAAL/ontology/impairment/SpeakingImpairment.java -text
 ont.impairment/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.impairment/src/test/resources/log4j.properties -text
-ont.lighting/LICENSE.txt -text
+ont.lighting/ASL2.0.txt -text
+ont.lighting/MITX.txt -text
 ont.lighting/NOTICE.txt -text
 ont.lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 ont.lighting/pom.xml -text
