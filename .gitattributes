@@ -480,6 +480,7 @@ ont.profile/MITX.txt -text
 ont.profile/NOTICE.txt -text
 ont.profile/documentation/ont.profile[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 ont.profile/documentation/ont.profile[!!-~]dependencies[!!-~]19.4.2011.png -text
+ont.profile/ont.profile[!!-~](1).iml -text
 ont.profile/pom.xml -text
 ont.profile/src/main/java/org/universAAL/ontology/ProfileActivator.java -text
 ont.profile/src/main/java/org/universAAL/ontology/ProfileFactory.java -text
