@@ -15,6 +15,7 @@
 package org.universAAL.ontology.ui.preferences;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.rdf.Resource;
 
 
 public class UIPreferencesProfile extends ManagedIndividual {
@@ -48,8 +49,7 @@ public class UIPreferencesProfile extends ManagedIndividual {
     return MY_URI;
   }
   public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove 
-	return 0;
+      return Resource.PROP_SERIALIZATION_FULL;
   }
 
   public boolean isWellFormed() {
