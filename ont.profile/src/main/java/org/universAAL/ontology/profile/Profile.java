@@ -42,7 +42,7 @@ public class Profile extends ManagedIndividual {
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE + "Profile";
 
-    /** http://ontology.universAAL.org/Profile.owl#has-sub-profile */
+    /** http://ontology.universAAL.org/Profile.owl#hasSubProfile */
     public static final String PROP_HAS_SUB_PROFILE = ProfileOntology.NAMESPACE
 	    + "hasSubProfile";
 
