@@ -462,13 +462,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			UIPreferencesProfile.PROP_ALERT_PREFERENCES,
 			AlertPreferences.MY_URI, 0, 1));
 
-	oci_UIPreferences.addDatatypeProperty(
-		UIPreferencesProfile.PROP_ADAPTATION_PREFERENCES)
-		.setFunctional();
-	oci_UIPreferences
-		.addRestriction(MergedRestriction.getCardinalityRestriction(
-			UIPreferencesProfile.PROP_ADAPTATION_PREFERENCES, 1, 1));
-
 	oci_UIPreferences.addObjectProperty(
 		UIPreferencesProfile.PROP_ACCESS_MODE).setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
