@@ -14,10 +14,10 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.ontology.profile.SubProfile;
 
-public class UIPreferencesProfile extends ManagedIndividual {
+public class UIPreferencesProfile extends SubProfile {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
 	    + "UIPreferencesProfile";
     public static final String PROP_INTERACTION_PREFERENCES = UIPreferencesProfileOntology.NAMESPACE
