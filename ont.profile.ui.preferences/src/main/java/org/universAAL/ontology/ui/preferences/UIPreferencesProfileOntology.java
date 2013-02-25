@@ -25,7 +25,10 @@ import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.UIPreferencesProfileFactory;
 import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.profile.UserProfile;;
+import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.UserProfile;
+
+;
 
 /**
  * @author eandgrg
@@ -95,6 +98,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_MainMenuConfigurationType.setResourceComment("");
 	oci_MainMenuConfigurationType
 		.setResourceLabel("MainMenuConfigurationType");
+	oci_MainMenuConfigurationType.addSuperClass(ManagedIndividual.MY_URI);
 	oci_MainMenuConfigurationType.toEnumeration(new ManagedIndividual[] {
 		MainMenuConfigurationType.classic,
 		MainMenuConfigurationType.smart,
@@ -103,6 +107,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_Language.setResourceComment("");
 	oci_Language.setResourceLabel("Language");
+	oci_Language.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Language.toEnumeration(new ManagedIndividual[] { Language.german,
 		Language.italian, Language.greek, Language.spanish,
 		Language.english, Language.polish, Language.croatian,
@@ -112,27 +117,32 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_ContentDensityType.setResourceComment("");
 	oci_ContentDensityType.setResourceLabel("ContentDensityType");
+	oci_ContentDensityType.addSuperClass(ManagedIndividual.MY_URI);
 	oci_ContentDensityType.toEnumeration(new ManagedIndividual[] {
 		ContentDensityType.overview, ContentDensityType.detailed });
 
 	oci_Size.setResourceComment("");
 	oci_Size.setResourceLabel("Size");
+	oci_Size.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Size.toEnumeration(new ManagedIndividual[] { Size.small,
 		Size.medium, Size.large });
 
 	oci_Intensity.setResourceComment("");
 	oci_Intensity.setResourceLabel("Intensity");
+	oci_Intensity.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Intensity.toEnumeration(new ManagedIndividual[] { Intensity.low,
 		Intensity.medium, Intensity.high });
 
 	oci_AlertType.setResourceComment("");
 	oci_AlertType.setResourceLabel("AlertType");
+	oci_AlertType.addSuperClass(ManagedIndividual.MY_URI);
 	oci_AlertType.toEnumeration(new ManagedIndividual[] {
 		AlertType.visualOnly, AlertType.audioOnly,
 		AlertType.visualAndAudio });
 
 	oci_GenericFontFamily.setResourceComment("");
 	oci_GenericFontFamily.setResourceLabel("GenericFontFamily");
+	oci_GenericFontFamily.addSuperClass(ManagedIndividual.MY_URI);
 	oci_GenericFontFamily.toEnumeration(new ManagedIndividual[] {
 		GenericFontFamily.serif, GenericFontFamily.sans_serif,
 		GenericFontFamily.cursive, GenericFontFamily.fantasy,
@@ -140,11 +150,13 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_WindowLayoutType.setResourceComment("");
 	oci_WindowLayoutType.setResourceLabel("WindowLayoutType");
+	oci_WindowLayoutType.addSuperClass(ManagedIndividual.MY_URI);
 	oci_WindowLayoutType.toEnumeration(new ManagedIndividual[] {
 		WindowLayoutType.tiled, WindowLayoutType.overlap });
 
 	oci_Status.setResourceComment("");
 	oci_Status.setResourceLabel("Status");
+	oci_Status.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Status.toEnumeration(new ManagedIndividual[] { Status.on,
 		Status.off });
 
@@ -157,12 +169,14 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_Gender.setResourceComment("");
 	oci_Gender.setResourceLabel("VoiceGender");
+	oci_Gender.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Gender.toEnumeration(new ManagedIndividual[] { VoiceGender.male,
 		VoiceGender.female });
 
 	// ******* Add content to regular classes of the ontology ******* //
 	oci_VisualPreferences.setResourceComment("");
 	oci_VisualPreferences.setResourceLabel("VisualPreferences");
+	oci_VisualPreferences.addSuperClass(ManagedIndividual.MY_URI);
 	oci_VisualPreferences.addDatatypeProperty(
 		VisualPreferences.PROP_BACKGROUND_COLOR_HEX).setFunctional();
 	oci_VisualPreferences.addRestriction(MergedRestriction
@@ -254,6 +268,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_SystemMenuPreferences.setResourceComment("");
 	oci_SystemMenuPreferences.setResourceLabel("SystemMenuPreferences");
+	oci_SystemMenuPreferences.addSuperClass(ManagedIndividual.MY_URI);
 	oci_SystemMenuPreferences.addObjectProperty(
 		SystemMenuPreferences.PROP_MAIN_MENU_CONFIGURATION)
 		.setFunctional();
@@ -295,6 +310,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_AccessMode.setResourceComment("");
 	oci_AccessMode.setResourceLabel("AccessMode");
+	oci_AccessMode.addSuperClass(ManagedIndividual.MY_URI);
 	oci_AccessMode.addObjectProperty(AccessMode.PROP_OLFACTORY_MODE_STATUS)
 		.setFunctional();
 	oci_AccessMode.addRestriction(MergedRestriction
@@ -332,6 +348,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_AlertPreferences.setResourceComment("");
 	oci_AlertPreferences.setResourceLabel("AlertPreferences");
+	oci_AlertPreferences.addSuperClass(ManagedIndividual.MY_URI);
 	oci_AlertPreferences.addObjectProperty(
 		AlertPreferences.PROP_ALERT_OPTION).setFunctional();
 	oci_AlertPreferences.addRestriction(MergedRestriction
@@ -342,6 +359,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_GeneralInteractionPreferences.setResourceComment("");
 	oci_GeneralInteractionPreferences
 		.setResourceLabel("GeneralInteractionPreferences");
+	oci_GeneralInteractionPreferences
+		.addSuperClass(ManagedIndividual.MY_URI);
 	oci_GeneralInteractionPreferences.addObjectProperty(
 		GeneralInteractionPreferences.PROP_SECONDARY_LANGUAGE)
 		.setFunctional();
@@ -384,6 +403,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_AuditoryPreferences.setResourceComment("");
 	oci_AuditoryPreferences.setResourceLabel("AuditoryPreferences");
+	oci_AuditoryPreferences.addSuperClass(ManagedIndividual.MY_URI);
 	oci_AuditoryPreferences.addObjectProperty(
 		AuditoryPreferences.PROP_SPEECH_RATE).setFunctional();
 	oci_AuditoryPreferences.addRestriction(MergedRestriction
@@ -395,8 +415,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		AuditoryPreferences.PROP_VOICE_GENDER).setFunctional();
 	oci_AuditoryPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			AuditoryPreferences.PROP_VOICE_GENDER, VoiceGender.MY_URI,
-			1, 1));
+			AuditoryPreferences.PROP_VOICE_GENDER,
+			VoiceGender.MY_URI, 1, 1));
 
 	oci_AuditoryPreferences.addObjectProperty(
 		AuditoryPreferences.PROP_SYSTEM_SOUNDS).setFunctional();
@@ -431,7 +451,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	oci_UIPreferences.setResourceComment("");
 	oci_UIPreferences.setResourceLabel("UIPreferencesProfile");
-	oci_UIPreferences.addSuperClass(ManagedIndividual.MY_URI);
+	// UIPreferencesProfile is SubProfile
+	oci_UIPreferences.addSuperClass(SubProfile.MY_URI);
 	oci_UIPreferences.addObjectProperty(
 		UIPreferencesProfile.PROP_INTERACTION_PREFERENCES)
 		.setFunctional();
