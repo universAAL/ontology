@@ -15,6 +15,7 @@
 package org.universAAL.ontology.ui.preferences;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.rdf.Resource;
 
 public class SystemMenuPreferences extends ManagedIndividual {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
@@ -43,8 +44,7 @@ public class SystemMenuPreferences extends ManagedIndividual {
     }
 
     public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
+	return Resource.PROP_SERIALIZATION_FULL;
     }
 
     public boolean isWellFormed() {
