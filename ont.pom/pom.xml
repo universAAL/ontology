@@ -190,8 +190,9 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.profile.ui.preferences</artifactId>
-        <version>1.3.1-SNAPSHOT</version>
+        <version>1.3.2-SNAPSHOT</version>
       </dependency>
+<!--    ont.profile.uipreferences  to be removed when new above subProfile is applied fully-->
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.profile.uipreferences</artifactId>
