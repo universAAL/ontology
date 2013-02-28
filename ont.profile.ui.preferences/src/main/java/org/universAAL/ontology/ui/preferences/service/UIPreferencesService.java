@@ -32,11 +32,11 @@ public class UIPreferencesService extends Service {
     public static final String PROP_CONTROLS = UIPreferencesProfileOntology.NAMESPACE
 	    + "controls";
 
-    private UIPreferencesService(String uri) {
+    public UIPreferencesService(String uri) {
 	super(uri);
     }
 
-    private UIPreferencesService() {
+    public UIPreferencesService() {
 	super();
     }
 
