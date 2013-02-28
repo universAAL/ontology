@@ -553,6 +553,7 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/VisualPreferences.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/VoiceGender.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/WindowLayoutType.java -text
+ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/service/UIPreferencesService.java -text
 ont.profile.ui.preferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.uipreferences/ASL2.0.txt -text
 ont.profile.uipreferences/MITX.txt -text
