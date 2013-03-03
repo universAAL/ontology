@@ -555,16 +555,6 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/WindowLayoutType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/service/UIPreferencesService.java -text
 ont.profile.ui.preferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.profile.uipreferences/ASL2.0.txt -text
-ont.profile.uipreferences/MITX.txt -text
-ont.profile.uipreferences/NOTICE.txt -text
-ont.profile.uipreferences/pom.xml -text
-ont.profile.uipreferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileActivator.java -text
-ont.profile.uipreferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileFactory.java -text
-ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/InteractionPreferencesProfile.java -text
-ont.profile.uipreferences/src/main/java/org/universAAL/ontology/profile/uipreferences/UIPreferencesProfileOntology.java -text
-ont.profile.uipreferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.profile.uipreferences/src/test/resources/log4j.properties -text
 ont.profile.userid/ASL2.0.txt -text
 ont.profile.userid/MITX.txt -text
 ont.profile.userid/NOTICE.txt -text
