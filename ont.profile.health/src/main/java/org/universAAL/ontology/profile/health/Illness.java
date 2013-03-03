@@ -31,7 +31,6 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  */
 public class Illness extends ManagedIndividual {
 
-    public static final String PROFILING_NAMESPACE = "http://ontology.persona.ratio.it/Illness.owl#";
     public static final String MY_URI;
     public static final String PROP_S_ANEMIA;
     public static final String PROP_S_ASTHMA;
@@ -50,22 +49,24 @@ public class Illness extends ManagedIndividual {
     public static final String PROP_S_METABOLIC_SYNDROME;
 
     static {
-	MY_URI = PROFILING_NAMESPACE + "sIllness";
-	PROP_S_ALLERGY = PROFILING_NAMESPACE + "allergy";
-	PROP_S_ANEMIA = PROFILING_NAMESPACE + "anemia";
-	PROP_S_ARTERIOPATHY = PROFILING_NAMESPACE + "arteriopathy";
-	PROP_S_ASTHMA = PROFILING_NAMESPACE + "asthma";
-	PROP_S_CANCER = PROFILING_NAMESPACE + "cancer";
-	PROP_S_CHOLESTEROL = PROFILING_NAMESPACE + "cholesterol";
-	PROP_S_DEMENTIA = PROFILING_NAMESPACE + "dementia";
-	PROP_S_DIABETES = PROFILING_NAMESPACE + "diabetes";
-	PROP_S_DIGESTION_PROB = PROFILING_NAMESPACE + "digestionProb";
-	PROP_S_HYPERTENSION = PROFILING_NAMESPACE + "hypertension";
-	PROP_S_MALNUTRITION = PROFILING_NAMESPACE + "malnutrition";
-	PROP_S_OSTEOPOROSIS = PROFILING_NAMESPACE + "osteoporosis";
-	PROP_S_OVERWEIGHT = PROFILING_NAMESPACE + "overweight";
-	PROP_S_METABOLIC_SYNDROME = PROFILING_NAMESPACE + "metabolicSyndrome";
-	PROP_S_ISCHEMIC_CARDIOPATHY = PROFILING_NAMESPACE
+	MY_URI = HealthProfileOntology.NAMESPACE + "sIllness";
+	PROP_S_ALLERGY = HealthProfileOntology.NAMESPACE + "allergy";
+	PROP_S_ANEMIA = HealthProfileOntology.NAMESPACE + "anemia";
+	PROP_S_ARTERIOPATHY = HealthProfileOntology.NAMESPACE + "arteriopathy";
+	PROP_S_ASTHMA = HealthProfileOntology.NAMESPACE + "asthma";
+	PROP_S_CANCER = HealthProfileOntology.NAMESPACE + "cancer";
+	PROP_S_CHOLESTEROL = HealthProfileOntology.NAMESPACE + "cholesterol";
+	PROP_S_DEMENTIA = HealthProfileOntology.NAMESPACE + "dementia";
+	PROP_S_DIABETES = HealthProfileOntology.NAMESPACE + "diabetes";
+	PROP_S_DIGESTION_PROB = HealthProfileOntology.NAMESPACE
+		+ "digestionProb";
+	PROP_S_HYPERTENSION = HealthProfileOntology.NAMESPACE + "hypertension";
+	PROP_S_MALNUTRITION = HealthProfileOntology.NAMESPACE + "malnutrition";
+	PROP_S_OSTEOPOROSIS = HealthProfileOntology.NAMESPACE + "osteoporosis";
+	PROP_S_OVERWEIGHT = HealthProfileOntology.NAMESPACE + "overweight";
+	PROP_S_METABOLIC_SYNDROME = HealthProfileOntology.NAMESPACE
+		+ "metabolicSyndrome";
+	PROP_S_ISCHEMIC_CARDIOPATHY = HealthProfileOntology.NAMESPACE
 		+ "ischemicCardiopathy";
     }
 
@@ -112,6 +113,11 @@ public class Illness extends ManagedIndividual {
 
     public Illness(String uri) {
 	super(uri);
+    }
+
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
     }
 
     public Boolean getAllergy() {
@@ -249,24 +255,18 @@ public class Illness extends ManagedIndividual {
 	props.put(PROP_S_METABOLIC_SYNDROME, isMetabolicSyndrome);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType(java.
+     *      lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
      */
     public boolean isWellFormed() {
 	return true;
     }
-
 }

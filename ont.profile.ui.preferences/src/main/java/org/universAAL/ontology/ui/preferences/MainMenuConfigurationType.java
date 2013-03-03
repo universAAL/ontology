@@ -40,6 +40,11 @@ public class MainMenuConfigurationType extends ManagedIndividual {
     this.order = order;
   }
 
+  
+  /**
+   * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+   *      (java.lang.String)
+   */
   public int getPropSerializationType(String propURI) {
     return PROP_SERIALIZATION_OPTIONAL;
   }
@@ -56,6 +61,7 @@ public class MainMenuConfigurationType extends ManagedIndividual {
     return order;
   }
 
+  /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
   public String getClassURI() {
     return MY_URI;
   }

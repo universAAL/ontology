@@ -52,6 +52,7 @@ public class LightSource extends Device {
 	super(uri);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }
@@ -94,9 +95,7 @@ public class LightSource extends Device {
 	    props.put(PROP_HAS_TYPE, lt);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
+    /**
      * @see
      * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
      * (java.lang.String)
@@ -107,9 +106,7 @@ public class LightSource extends Device {
 		: PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
+    /**
      * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
      */
     public boolean isWellFormed() {

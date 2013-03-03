@@ -39,6 +39,7 @@ public class MenuProfile extends SubProfile {
 	super(uri);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }

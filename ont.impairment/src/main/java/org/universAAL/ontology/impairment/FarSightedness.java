@@ -51,6 +51,11 @@ public class FarSightedness extends SightImpairment {
 		super(impairmentLevel);
 	}
 
+	    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	    public String getClassURI() {
+		return MY_URI;
+	    }
+
 	public static SightImpairment loadInstance() {
 		return new FarSightedness(LevelRating.none);
 	}

@@ -15,6 +15,7 @@
  ******************************************************************************/
 package org.universAAL.ontology.profile.userid;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.profile.SubProfile;
 
 /**
@@ -37,13 +38,13 @@ public class UserIDProfile extends SubProfile {
 		super(uri);
 	}
 
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
 	public int getPropSerializationType(String arg0) {
-		// TODO Implement or if for Device subclasses: remove
-		return 0;
+		return Resource.PROP_SERIALIZATION_FULL;
 	}
 
 	public boolean isWellFormed() {

@@ -53,6 +53,11 @@ public class SightImpairment extends AccessImpairment {
 	super(impairmentLevel);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public void setImpairment(LevelRating rating) {
 	props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
     }

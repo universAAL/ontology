@@ -54,6 +54,7 @@ public class ElectricLight extends LightType {
     public static final ElectricLight ledLamp = new ElectricLight(LED_LAMP);
     public static final ElectricLight lightBulb = new ElectricLight(LIGHT_BULB);
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }

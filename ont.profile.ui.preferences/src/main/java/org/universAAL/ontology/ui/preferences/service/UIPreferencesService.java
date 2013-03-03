@@ -49,9 +49,7 @@ public class UIPreferencesService extends Service {
 	return MY_URI;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
+    /**
      * @see
      * org.universAAL.middleware.service.owl.Service#getPropSerializationType
      * (java.lang.String)
@@ -60,9 +58,7 @@ public class UIPreferencesService extends Service {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
+    /**
      * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
      */
     public boolean isWellFormed() {

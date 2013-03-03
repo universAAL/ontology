@@ -33,9 +33,15 @@ public class AlertPreferences extends ManagedIndividual {
     super(uri);
   }
 
+  /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
   public String getClassURI() {
     return MY_URI;
   }
+  
+  /**
+   * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+   *      (java.lang.String)
+   */
   public int getPropSerializationType(String arg0) {
       return Resource.PROP_SERIALIZATION_FULL;
   }

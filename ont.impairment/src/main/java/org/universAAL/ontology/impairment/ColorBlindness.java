@@ -50,6 +50,11 @@ public class ColorBlindness extends SightImpairment  {
 	super(impairmentLevel);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
+
      public String toString() {
 	return "Colorblindness: " + this.getImpaimentLevel().name();
     }

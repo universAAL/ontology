@@ -44,6 +44,7 @@ public class FlamingLight extends LightType {
     public static final FlamingLight gasLamp = new FlamingLight(GAS_LAMP);
     public static final FlamingLight oilLamp = new FlamingLight(OIL_LAMP);
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }

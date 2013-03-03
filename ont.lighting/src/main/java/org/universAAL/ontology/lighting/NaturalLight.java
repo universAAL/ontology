@@ -48,6 +48,7 @@ public class NaturalLight extends LightType {
     // sunShine = new NaturalLight(SUN_SHINE);
     // }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }
