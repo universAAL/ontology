@@ -36,6 +36,7 @@ public class BlinkableLighting extends Lighting {
 	super(uri);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }

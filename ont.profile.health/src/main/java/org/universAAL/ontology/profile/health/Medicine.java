@@ -31,15 +31,14 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  */
 public class Medicine extends ManagedIndividual {
 
-    public static final String PROFILING_NAMESPACE = "http://ontology.persona.ratio.it/Medicine.owl#";
     public static final String MY_URI;
     public static final String PROP_S_NAME;
     public static final String PROP_S_QUANTITY;
 
     static {
-	MY_URI = PROFILING_NAMESPACE + "sMedicine";
-	PROP_S_NAME = PROFILING_NAMESPACE + "mName";
-	PROP_S_QUANTITY = PROFILING_NAMESPACE + "mQuantity";
+	MY_URI = HealthProfileOntology.NAMESPACE + "sMedicine";
+	PROP_S_NAME = HealthProfileOntology.NAMESPACE + "mName";
+	PROP_S_QUANTITY = HealthProfileOntology.NAMESPACE + "mQuantity";
     }
 
     public void setProperty(String propURI, Object o) {
@@ -67,6 +66,11 @@ public class Medicine extends ManagedIndividual {
 	props.put(PROP_S_QUANTITY, mQuantity);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public String getName() {
 	Object o = props.get(PROP_S_NAME);
 	return (o == null) ? "" : (String) o;
@@ -87,21 +91,16 @@ public class Medicine extends ManagedIndividual {
 	props.put(PROP_S_QUANTITY, mQuantity);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType(java.
+     *      lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
      */
     public boolean isWellFormed() {
 	return props.containsKey(PROP_S_NAME)

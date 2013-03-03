@@ -51,6 +51,11 @@ public class Astigmatism extends SightImpairment {
 	super(impairmentLevel);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
+
     public String toString() {
 	return "Astigmatism: " + this.getImpaimentLevel().name();
     }

@@ -35,6 +35,7 @@ public class Beaming extends Lighting {
 	super(uri);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }

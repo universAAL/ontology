@@ -43,6 +43,7 @@ public class BlinkableBeamingSource extends BeamingSource {
 	super(uri);
     }
 
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;
     }
