@@ -17,101 +17,102 @@ package org.universAAL.ontology.ui.preferences;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
 
-
 public class AuditoryPreferences extends ManagedIndividual {
-  public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-    + "AuditoryPreferences";
-  public static final String PROP_SPEECH_RATE = UIPreferencesProfileOntology.NAMESPACE
-    + "speechRate";
-  public static final String PROP_VOICE_GENDER = UIPreferencesProfileOntology.NAMESPACE
-    + "voiceGender";
-  public static final String PROP_SYSTEM_SOUNDS = UIPreferencesProfileOntology.NAMESPACE
-    + "systemSounds";
-  public static final String PROP_VOLUME = UIPreferencesProfileOntology.NAMESPACE
-    + "volume";
-  public static final String PROP_PITCH = UIPreferencesProfileOntology.NAMESPACE
-    + "pitch";
-  public static final String PROP_KEY_SOUND = UIPreferencesProfileOntology.NAMESPACE
-    + "keySound";
+    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
+	    + "AuditoryPreferences";
+    public static final String PROP_SPEECH_RATE = UIPreferencesProfileOntology.NAMESPACE
+	    + "speechRate";
+    public static final String PROP_VOICE_GENDER = UIPreferencesProfileOntology.NAMESPACE
+	    + "voiceGender";
+    public static final String PROP_SYSTEM_SOUNDS = UIPreferencesProfileOntology.NAMESPACE
+	    + "systemSounds";
+    public static final String PROP_VOLUME = UIPreferencesProfileOntology.NAMESPACE
+	    + "volume";
+    public static final String PROP_PITCH = UIPreferencesProfileOntology.NAMESPACE
+	    + "pitch";
+    public static final String PROP_KEY_SOUND = UIPreferencesProfileOntology.NAMESPACE
+	    + "keySound";
 
+    public AuditoryPreferences() {
+	super();
+    }
 
-  public AuditoryPreferences () {
-    super();
-  }
-  
-  public AuditoryPreferences (String uri) {
-    super(uri);
-  }
+    public AuditoryPreferences(String uri) {
+	super(uri);
+    }
 
-  /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-      return Resource.PROP_SERIALIZATION_FULL;
-  }
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_SPEECH_RATE)
-      && hasProperty(PROP_VOICE_GENDER)
-      && hasProperty(PROP_SYSTEM_SOUNDS)
-      && hasProperty(PROP_VOLUME)
-      && hasProperty(PROP_PITCH)
-      && hasProperty(PROP_KEY_SOUND);
-  }
+    public int getPropSerializationType(String arg0) {
+	return Resource.PROP_SERIALIZATION_FULL;
+    }
 
-  public Intensity getVolume() {
-    return (Intensity)getProperty(PROP_VOLUME);
-  }		
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+     */
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_SPEECH_RATE)
+		&& hasProperty(PROP_VOICE_GENDER)
+		&& hasProperty(PROP_SYSTEM_SOUNDS) && hasProperty(PROP_VOLUME)
+		&& hasProperty(PROP_PITCH) && hasProperty(PROP_KEY_SOUND);
+    }
 
-  public void setVolume(Intensity newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_VOLUME, newPropValue);
-  }		
+    public Intensity getVolume() {
+	return (Intensity) getProperty(PROP_VOLUME);
+    }
 
-  public Intensity getPitch() {
-    return (Intensity)getProperty(PROP_PITCH);
-  }		
+    public void setVolume(Intensity newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_VOLUME, newPropValue);
+    }
 
-  public void setPitch(Intensity newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_PITCH, newPropValue);
-  }		
+    public Intensity getPitch() {
+	return (Intensity) getProperty(PROP_PITCH);
+    }
 
-  public Status getKeySound() {
-    return (Status)getProperty(PROP_KEY_SOUND);
-  }		
+    public void setPitch(Intensity newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_PITCH, newPropValue);
+    }
 
-  public void setKeySound(Status newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_KEY_SOUND, newPropValue);
-  }		
+    public Status getKeySound() {
+	return (Status) getProperty(PROP_KEY_SOUND);
+    }
 
-  public VoiceGender getVoiceGender() {
-    return (VoiceGender)getProperty(PROP_VOICE_GENDER);
-  }		
+    public void setKeySound(Status newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_KEY_SOUND, newPropValue);
+    }
 
-  public void setVoiceGender(VoiceGender newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_VOICE_GENDER, newPropValue);
-  }		
+    public VoiceGender getVoiceGender() {
+	return (VoiceGender) getProperty(PROP_VOICE_GENDER);
+    }
 
-  public Intensity getSpeechRate() {
-    return (Intensity)getProperty(PROP_SPEECH_RATE);
-  }		
+    public void setVoiceGender(VoiceGender newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_VOICE_GENDER, newPropValue);
+    }
 
-  public void setSpeechRate(Intensity newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_SPEECH_RATE, newPropValue);
-  }		
+    public Intensity getSpeechRate() {
+	return (Intensity) getProperty(PROP_SPEECH_RATE);
+    }
 
-  public Status getSystemSounds() {
-    return (Status)getProperty(PROP_SYSTEM_SOUNDS);
-  }		
+    public void setSpeechRate(Intensity newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_SPEECH_RATE, newPropValue);
+    }
 
-  public void setSystemSounds(Status newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_SYSTEM_SOUNDS, newPropValue);
-  }		
+    public Status getSystemSounds() {
+	return (Status) getProperty(PROP_SYSTEM_SOUNDS);
+    }
+
+    public void setSystemSounds(Status newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_SYSTEM_SOUNDS, newPropValue);
+    }
 }

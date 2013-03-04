@@ -44,7 +44,6 @@ public class SystemMenuPreferences extends ManagedIndividual {
 	return MY_URI;
     }
 
-    
     /**
      * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
      *      (java.lang.String)
@@ -53,6 +52,11 @@ public class SystemMenuPreferences extends ManagedIndividual {
 	return Resource.PROP_SERIALIZATION_FULL;
     }
 
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+     */
     public boolean isWellFormed() {
 	return true && hasProperty(PROP_MAIN_MENU_CONFIGURATION)
 		&& hasProperty(PROP_MESSAGE_PERSISTANCE)

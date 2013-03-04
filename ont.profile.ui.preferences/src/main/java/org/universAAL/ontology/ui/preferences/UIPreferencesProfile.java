@@ -46,7 +46,6 @@ public class UIPreferencesProfile extends SubProfile {
 	return MY_URI;
     }
 
-    
     /**
      * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
      *      (java.lang.String)
@@ -55,6 +54,11 @@ public class UIPreferencesProfile extends SubProfile {
 	return Resource.PROP_SERIALIZATION_FULL;
     }
 
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.ontology.profile.SubProfile#isWellFormed()
+     */
     public boolean isWellFormed() {
 	return true && hasProperty(PROP_INTERACTION_PREFERENCES)
 		&& hasProperty(PROP_VISUAL_PREFERENCES)

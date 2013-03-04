@@ -17,68 +17,75 @@ package org.universAAL.ontology.ui.preferences;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class PendingMessageBuilderType extends ManagedIndividual {
-  public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-    + "PendingMessageBuilderType";
+    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
+	    + "PendingMessageBuilderType";
 
-  public static final int SIMPLE_TABLE = 0;
+    public static final int SIMPLE_TABLE = 0;
 
-  private static final String[] names = {
-    "simpleTable" };
+    private static final String[] names = { "simpleTable" };
 
-  public static final PendingMessageBuilderType simpleTable = new PendingMessageBuilderType(SIMPLE_TABLE);
+    public static final PendingMessageBuilderType simpleTable = new PendingMessageBuilderType(
+	    SIMPLE_TABLE);
 
-  private int order;
+    private int order;
 
-  private PendingMessageBuilderType(int order) {
-    super(UIPreferencesProfileOntology.NAMESPACE + names[order]);
-    this.order = order;
-  }
+    private PendingMessageBuilderType(int order) {
+	super(UIPreferencesProfileOntology.NAMESPACE + names[order]);
+	this.order = order;
+    }
 
-  
-  /**
-   * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-   *      (java.lang.String)
-   */
-  public int getPropSerializationType(String propURI) {
-    return PROP_SERIALIZATION_OPTIONAL;
-  }
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
 
-  public boolean isWellFormed() {
-    return true;
-  }
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+     */
+    public boolean isWellFormed() {
+	return true;
+    }
 
-  public String name() {
-    return names[order];
-  }
+    public String name() {
+	return names[order];
+    }
 
-  public int ord() {
-    return order;
-  }
+    public int ord() {
+	return order;
+    }
 
-  /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-  public String getClassURI() {
-    return MY_URI;
-  }
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public static PendingMessageBuilderType getPendingMessageBuilderTypeByOrder(int order) {
-    switch (order) {
-      case SIMPLE_TABLE:
-        return simpleTable;
-    default:
-      return null;    }
-  }
+    public static PendingMessageBuilderType getPendingMessageBuilderTypeByOrder(
+	    int order) {
+	switch (order) {
+	case SIMPLE_TABLE:
+	    return simpleTable;
+	default:
+	    return null;
+	}
+    }
 
-  public static final PendingMessageBuilderType valueOf(String name) {
+    public static final PendingMessageBuilderType valueOf(String name) {
 	if (name == null)
 	    return null;
 
 	if (name.startsWith(UIPreferencesProfileOntology.NAMESPACE))
-	    name = name.substring(UIPreferencesProfileOntology.NAMESPACE.length());
+	    name = name.substring(UIPreferencesProfileOntology.NAMESPACE
+		    .length());
 
 	for (int i = SIMPLE_TABLE; i <= SIMPLE_TABLE; i++)
 	    if (names[i].equals(name))
 		return getPendingMessageBuilderTypeByOrder(i);
 
 	return null;
-  }
+    }
 }

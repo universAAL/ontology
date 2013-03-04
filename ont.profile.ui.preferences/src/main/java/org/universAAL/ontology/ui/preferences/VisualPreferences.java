@@ -60,7 +60,6 @@ public class VisualPreferences extends ManagedIndividual {
 	return MY_URI;
     }
 
-    
     /**
      * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
      *      (java.lang.String)
@@ -69,6 +68,11 @@ public class VisualPreferences extends ManagedIndividual {
 	return Resource.PROP_SERIALIZATION_FULL;
     }
 
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+     */
     public boolean isWellFormed() {
 	return true && hasProperty(PROP_BACKGROUND_COLOR_HEX)
 		&& hasProperty(PROP_FLASHING_RESOURCES)
@@ -86,10 +90,10 @@ public class VisualPreferences extends ManagedIndividual {
     }
 
     public Intensity getBrightness() {
-	return (Intensity)getProperty(PROP_BRIGHTNESS);
+	return (Intensity) getProperty(PROP_BRIGHTNESS);
 
     }
-    
+
     public void setBrightness(Intensity newPropValue) {
 	if (newPropValue != null)
 	    changeProperty(PROP_BRIGHTNESS, newPropValue);

@@ -17,72 +17,80 @@ package org.universAAL.ontology.ui.preferences;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class PendingDialogsBuilderType extends ManagedIndividual {
-  public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-    + "PendingDialogsBuilderType";
+    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
+	    + "PendingDialogsBuilderType";
 
-  public static final int TABLE = 0;
-  public static final int BUTTONS = 1;
+    public static final int TABLE = 0;
+    public static final int BUTTONS = 1;
 
-  private static final String[] names = {
-    "table","buttons" };
+    private static final String[] names = { "table", "buttons" };
 
-  public static final PendingDialogsBuilderType table = new PendingDialogsBuilderType(TABLE);
-  public static final PendingDialogsBuilderType buttons = new PendingDialogsBuilderType(BUTTONS);
+    public static final PendingDialogsBuilderType table = new PendingDialogsBuilderType(
+	    TABLE);
+    public static final PendingDialogsBuilderType buttons = new PendingDialogsBuilderType(
+	    BUTTONS);
 
-  private int order;
+    private int order;
 
-  private PendingDialogsBuilderType(int order) {
-    super(UIPreferencesProfileOntology.NAMESPACE + names[order]);
-    this.order = order;
-  }
+    private PendingDialogsBuilderType(int order) {
+	super(UIPreferencesProfileOntology.NAMESPACE + names[order]);
+	this.order = order;
+    }
 
-  
-  /**
-   * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-   *      (java.lang.String)
-   */
-  public int getPropSerializationType(String propURI) {
-    return PROP_SERIALIZATION_OPTIONAL;
-  }
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
 
-  public boolean isWellFormed() {
-    return true;
-  }
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+     */
+    public boolean isWellFormed() {
+	return true;
+    }
 
-  public String name() {
-    return names[order];
-  }
+    public String name() {
+	return names[order];
+    }
 
-  public int ord() {
-    return order;
-  }
+    public int ord() {
+	return order;
+    }
 
-  /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-  public String getClassURI() {
-    return MY_URI;
-  }
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public static PendingDialogsBuilderType getPendingDialogsBuilderTypeByOrder(int order) {
-    switch (order) {
-      case TABLE:
-        return table;
-      case BUTTONS:
-        return buttons;
-    default:
-      return null;    }
-  }
+    public static PendingDialogsBuilderType getPendingDialogsBuilderTypeByOrder(
+	    int order) {
+	switch (order) {
+	case TABLE:
+	    return table;
+	case BUTTONS:
+	    return buttons;
+	default:
+	    return null;
+	}
+    }
 
-  public static final PendingDialogsBuilderType valueOf(String name) {
+    public static final PendingDialogsBuilderType valueOf(String name) {
 	if (name == null)
 	    return null;
 
 	if (name.startsWith(UIPreferencesProfileOntology.NAMESPACE))
-	    name = name.substring(UIPreferencesProfileOntology.NAMESPACE.length());
+	    name = name.substring(UIPreferencesProfileOntology.NAMESPACE
+		    .length());
 
 	for (int i = TABLE; i <= BUTTONS; i++)
 	    if (names[i].equals(name))
 		return getPendingDialogsBuilderTypeByOrder(i);
 
 	return null;
-  }
+    }
 }
