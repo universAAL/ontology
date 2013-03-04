@@ -50,9 +50,8 @@ public class UIPreferencesService extends Service {
     }
 
     /**
-     * @see
-     * org.universAAL.middleware.service.owl.Service#getPropSerializationType
-     * (java.lang.String)
+     * @see org.universAAL.middleware.service.owl.Service#getPropSerializationType
+     *      (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;

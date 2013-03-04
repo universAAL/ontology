@@ -17,80 +17,91 @@ package org.universAAL.ontology.ui.preferences;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class MainMenuConfigurationType extends ManagedIndividual {
-  public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-    + "MainMenuConfigurationType";
+    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
+	    + "MainMenuConfigurationType";
 
-  public static final int CLASSIC = 0;
-  public static final int SMART = 1;
-  public static final int CLASSIC_WITH_SUBMIT = 2;
-  public static final int TASK_BAR = 3;
+    public static final int CLASSIC = 0;
+    public static final int SMART = 1;
+    public static final int CLASSIC_WITH_SUBMIT = 2;
+    public static final int TASK_BAR = 3;
 
-  private static final String[] names = {
-    "classic","smart","classicWithSubmit","taskBar" };
+    private static final String[] names = { "classic", "smart",
+	    "classicWithSubmit", "taskBar" };
 
-  public static final MainMenuConfigurationType classic = new MainMenuConfigurationType(CLASSIC);
-  public static final MainMenuConfigurationType smart = new MainMenuConfigurationType(SMART);
-  public static final MainMenuConfigurationType classicWithSubmit = new MainMenuConfigurationType(CLASSIC_WITH_SUBMIT);
-  public static final MainMenuConfigurationType taskBar = new MainMenuConfigurationType(TASK_BAR);
+    public static final MainMenuConfigurationType classic = new MainMenuConfigurationType(
+	    CLASSIC);
+    public static final MainMenuConfigurationType smart = new MainMenuConfigurationType(
+	    SMART);
+    public static final MainMenuConfigurationType classicWithSubmit = new MainMenuConfigurationType(
+	    CLASSIC_WITH_SUBMIT);
+    public static final MainMenuConfigurationType taskBar = new MainMenuConfigurationType(
+	    TASK_BAR);
 
-  private int order;
+    private int order;
 
-  private MainMenuConfigurationType(int order) {
-    super(UIPreferencesProfileOntology.NAMESPACE + names[order]);
-    this.order = order;
-  }
+    private MainMenuConfigurationType(int order) {
+	super(UIPreferencesProfileOntology.NAMESPACE + names[order]);
+	this.order = order;
+    }
 
-  
-  /**
-   * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-   *      (java.lang.String)
-   */
-  public int getPropSerializationType(String propURI) {
-    return PROP_SERIALIZATION_OPTIONAL;
-  }
+    /**
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_OPTIONAL;
+    }
 
-  public boolean isWellFormed() {
-    return true;
-  }
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+     */
+    public boolean isWellFormed() {
+	return true;
+    }
 
-  public String name() {
-    return names[order];
-  }
+    public String name() {
+	return names[order];
+    }
 
-  public int ord() {
-    return order;
-  }
+    public int ord() {
+	return order;
+    }
 
-  /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-  public String getClassURI() {
-    return MY_URI;
-  }
+    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public static MainMenuConfigurationType getMainMenuConfigurationTypeByOrder(int order) {
-    switch (order) {
-      case CLASSIC:
-        return classic;
-      case SMART:
-        return smart;
-      case CLASSIC_WITH_SUBMIT:
-        return classicWithSubmit;
-      case TASK_BAR:
-        return taskBar;
-    default:
-      return null;    }
-  }
+    public static MainMenuConfigurationType getMainMenuConfigurationTypeByOrder(
+	    int order) {
+	switch (order) {
+	case CLASSIC:
+	    return classic;
+	case SMART:
+	    return smart;
+	case CLASSIC_WITH_SUBMIT:
+	    return classicWithSubmit;
+	case TASK_BAR:
+	    return taskBar;
+	default:
+	    return null;
+	}
+    }
 
-  public static final MainMenuConfigurationType valueOf(String name) {
+    public static final MainMenuConfigurationType valueOf(String name) {
 	if (name == null)
 	    return null;
 
 	if (name.startsWith(UIPreferencesProfileOntology.NAMESPACE))
-	    name = name.substring(UIPreferencesProfileOntology.NAMESPACE.length());
+	    name = name.substring(UIPreferencesProfileOntology.NAMESPACE
+		    .length());
 
 	for (int i = CLASSIC; i <= TASK_BAR; i++)
 	    if (names[i].equals(name))
 		return getMainMenuConfigurationTypeByOrder(i);
 
 	return null;
-  }
+    }
 }
