@@ -41,7 +41,6 @@
 		<module>../ont.medication</module>
 		<module>../ont.multimedia</module>
 		<module>../ont.powersocket</module>
-		<module>../ont.profile.health</module>
 		<module>../ont.profile.ui.mainmenu</module>
 		<module>../ont.profile.userid</module>
 		<module>../ont.gesture.pointing</module>
@@ -182,11 +181,6 @@
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.profile</artifactId>
 				<version>1.3.2-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.universAAL.ontology</groupId>
-				<artifactId>ont.profile.health</artifactId>
-				<version>1.3.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.universAAL.ontology</groupId>
