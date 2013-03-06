@@ -154,5 +154,17 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.dependability</artifactId>
     </dependency>
+	<dependency>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.health.disease</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.health.measurement</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.universAAL.ontology</groupId>
+		<artifactId>ont.profile.health</artifactId>
+	</dependency>
   </dependencies>
 </project>

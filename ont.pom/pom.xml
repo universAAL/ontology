@@ -63,6 +63,9 @@
 		<module>../ont.profile.ui.preferences</module>
 		<module>../ont.personalhealthdevice</module>
 		<module>../ont.continuahealthmanager</module>
+		<module>../ont.health.disease</module>
+		<module>../ont.health.measurement</module>
+		<module>../ont.profile.health</module>
 		<module>composite</module>
 	</modules>
 	<scm>
@@ -300,6 +303,21 @@
 				<groupId>org.universAAL.ontology</groupId>
 				<artifactId>ont.continuahealthmanager</artifactId>
 				<version>1.3.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.health.disease</artifactId>
+				<version>1.3.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.health.measurement</artifactId>
+				<version>1.3.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.universAAL.ontology</groupId>
+				<artifactId>ont.profile.health</artifactId>
+				<version>1.3.2-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
