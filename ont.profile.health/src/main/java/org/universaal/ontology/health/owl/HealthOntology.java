@@ -83,7 +83,7 @@ private static final String DISEASE_PROP_DISCHARGE_DATE = HealthOntology.NAMESPA
     addImport(ProfileOntology.NAMESPACE);
     addImport(HealthMeasurementOntology.NAMESPACE);
     addImport(DiseaseOntology.NAMESPACE);
-    addImport(UIBusOntology.NAMESPACE);
+//    addImport(UIBusOntology.NAMESPACE);
    
 	OntClassInfoSetup oci;
 	OntClassInfoSetup oci_treatment;
@@ -617,8 +617,8 @@ private static final String DISEASE_PROP_DISCHARGE_DATE = HealthOntology.NAMESPA
     oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
     		DisplayTreatmentService.PROP_TREATMENT, Treatment.MY_URI, 1, 1));
     
-    oci.addObjectProperty(DisplayTreatmentService.PROP_FORM_FOR_TREATMENT);
-    oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-    		DisplayTreatmentService.PROP_FORM_FOR_TREATMENT, Form.MY_URI, 1, 1));
+//    oci.addObjectProperty(DisplayTreatmentService.PROP_FORM_FOR_TREATMENT);
+//    oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+//    		DisplayTreatmentService.PROP_FORM_FOR_TREATMENT, Form.MY_URI, 1, 1));
   }
 }
