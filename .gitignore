@@ -9,10 +9,6 @@ ont.aalfficiency/.classpath
 ont.aalfficiency/.project
 ont.aalfficiency/.settings
 ont.aalfficiency/target
-ont.aalfficiencyscores/.classpath
-ont.aalfficiencyscores/.project
-ont.aalfficiencyscores/.settings
-ont.aalfficiencyscores/target
 ont.activityhub/.classpath
 ont.activityhub/.project
 ont.activityhub/.settings
@@ -45,10 +41,6 @@ ont.device/.classpath
 ont.device/.project
 ont.device/.settings
 ont.device/target
-ont.fitbitdata/.classpath
-ont.fitbitdata/.project
-ont.fitbitdata/.settings
-ont.fitbitdata/target
 ont.furniture/.classpath
 ont.furniture/.project
 ont.furniture/.settings
@@ -91,11 +83,6 @@ ont.measurement/.project
 ont.measurement/.settings
 ont.measurement/target
 ont.measurement/uAAL.log
-ont.medication/.classpath
-ont.medication/.project
-ont.medication/.settings
-ont.medication/target
-ont.medication/uAAL.log
 ont.multimedia/.classpath
 ont.multimedia/.project
 ont.multimedia/.settings
@@ -155,10 +142,6 @@ ont.questionnaire/.project
 ont.questionnaire/.settings
 ont.questionnaire/target
 ont.questionnaire/uAAL.log
-ont.readenergy/.classpath
-ont.readenergy/.project
-ont.readenergy/.settings
-ont.readenergy/target
 ont.risk/.classpath
 ont.risk/.project
 ont.risk/.settings

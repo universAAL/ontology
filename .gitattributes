@@ -39,19 +39,6 @@ ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/ActivityData
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Advice.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/Challenge.java -text svneol=unset#text/plain
 ont.aalfficiency/src/main/java/org/universAAL/ontology/aalfficiency/ElectricityData.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/ASL2.0.txt -text
-ont.aalfficiencyscores/MITX.txt -text
-ont.aalfficiencyscores/NOTICE -text
-ont.aalfficiencyscores/pom.xml -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/AalfficiencyScoresActivator.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/AalfficiencyScoresFactory.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyAdvices.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyScores.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/AalfficiencyScoresOntology.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/ActivityScore.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Advice.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/Challenge.java -text svneol=unset#text/plain
-ont.aalfficiencyscores/src/main/java/org/universAAL/ontology/aalfficiency/scores/ElectricityScore.java -text svneol=unset#text/plain
 ont.activityhub/ASL2.0.txt -text
 ont.activityhub/MITX.txt -text
 ont.activityhub/NOTICE.txt -text
@@ -256,16 +243,6 @@ ont.device/src/main/java/org/universAAL/ontology/device/WindowActuator.java -tex
 ont.device/src/main/java/org/universAAL/ontology/device/WindowController.java -text
 ont.device/src/main/java/org/universAAL/ontology/device/WindowSensor.java -text
 ont.device/src/main/resources/ArtifactIntegrationTest.java -text
-ont.fitbitdata/ASL2.0.txt -text
-ont.fitbitdata/MITX.txt -text
-ont.fitbitdata/NOTICE -text
-ont.fitbitdata/pom.xml -text svneol=unset#text/plain
-ont.fitbitdata/src/main/java/org/universAAL/ontology/FitbitDataActivator.java -text svneol=unset#text/plain
-ont.fitbitdata/src/main/java/org/universAAL/ontology/FitbitdataFactory.java -text svneol=unset#text/plain
-ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/Activity.java -text svneol=unset#text/plain
-ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/FitbitData.java -text svneol=unset#text/plain
-ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/FitbitdataOntology.java -text svneol=unset#text/plain
-ont.fitbitdata/src/main/java/org/universAAL/ontology/fitbitdata/Sleep.java -text svneol=unset#text/plain
 ont.furniture/ASL2.0.txt -text
 ont.furniture/MITX.txt -text
 ont.furniture/NOTICE.txt -text
@@ -421,17 +398,6 @@ ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOnt
 ont.measurement/src/main/resources/Measurement.jpg -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement/src/test/resources/log4j.properties -text
-ont.medication/ASL2.0.txt -text
-ont.medication/MITX.txt -text
-ont.medication/NOTICE.txt -text
-ont.medication/pom.xml -text
-ont.medication/src/main/java/org/universAAL/ontology/MedicationActivator.java -text
-ont.medication/src/main/java/org/universAAL/ontology/MedicationFactory.java -text
-ont.medication/src/main/java/org/universAAL/ontology/medication/DrugPackage.java -text
-ont.medication/src/main/java/org/universAAL/ontology/medication/MedicationOntology.java -text
-ont.medication/src/main/java/org/universAAL/ontology/medication/PillDispenser.java -text
-ont.medication/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.medication/src/test/resources/log4j.properties -text
 ont.multimedia/ASL2.0.txt -text
 ont.multimedia/MITX.txt -text
 ont.multimedia/NOTICE.txt -text
@@ -726,19 +692,6 @@ ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireMu
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireNextQuestion.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireQuestions.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/resources/log4j.properties -text
-ont.readenergy/ASL2.0.txt -text
-ont.readenergy/MITX.txt -text
-ont.readenergy/NOTICE -text
-ont.readenergy/ont.energy.reader.di -text
-ont.readenergy/ont.energy.reader.notation -text
-ont.readenergy/ont.energy.reader.uml -text svneol=unset#text/plain
-ont.readenergy/pom.xml -text svneol=unset#text/plain
-ont.readenergy/src/main/java/org/universAAL/ontology/ReadEnergyActivator.java -text svneol=unset#text/plain
-ont.readenergy/src/main/java/org/universAAL/ontology/ReadEnergyFactory.java -text svneol=unset#text/plain
-ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/EnergyMeasurement.java -text svneol=unset#text/plain
-ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergy.java -text svneol=unset#text/plain
-ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergyDevice.java -text svneol=unset#text/plain
-ont.readenergy/src/main/java/org/universAAL/ontology/energy/reader/ReadEnergyOntology.java -text svneol=unset#text/plain
 ont.risk/ASL2.0.txt -text
 ont.risk/MITX.txt -text
 ont.risk/NOTICE.txt -text
