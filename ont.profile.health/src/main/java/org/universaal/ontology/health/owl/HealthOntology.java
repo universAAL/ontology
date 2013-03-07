@@ -445,7 +445,7 @@ private static final String DISEASE_PROP_DISCHARGE_DATE = HealthOntology.NAMESPA
     OntClassInfoSetup ocid = extendExistingOntClassInfo(Disease.MY_URI);
     ocid.addDatatypeProperty(DISEASE_PROP_DIAGNOSE_DATE);
     ocid.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-    		DISEASE_PROP_DISCHARGE_DATE, TypeMapper.getDatatypeURI(XMLGregorianCalendar.class), 0, 1));
+    		DISEASE_PROP_DIAGNOSE_DATE, TypeMapper.getDatatypeURI(XMLGregorianCalendar.class), 0, 1));
     ocid.addDatatypeProperty(DISEASE_PROP_DISCHARGE_DATE);
     ocid.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
     		DISEASE_PROP_DISCHARGE_DATE, TypeMapper.getDatatypeURI(XMLGregorianCalendar.class), 0, 1));
