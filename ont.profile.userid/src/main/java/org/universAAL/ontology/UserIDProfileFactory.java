@@ -21,18 +21,18 @@ import org.universAAL.ontology.profile.userid.UserIDProfile;
 
 /**
  * @author eandgrg
- *
+ * 
  */
 public class UserIDProfileFactory extends ResourceFactoryImpl {
 
-
-  public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
 	switch (factoryIndex) {
-     case 0:
+	case 0:
 	    return new UserIDProfile(instanceURI);
 
 	}
 	return null;
-  }
+    }
 }

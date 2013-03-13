@@ -22,17 +22,17 @@ import org.universAAL.ontology.profile.userid.UserIDProfileOntology;
 
 /**
  * @author eandgrg
- *
+ * 
  */
 public class UserIDProfileActivator implements ModuleActivator {
 
     private UserIDProfileOntology ontology = new UserIDProfileOntology();
 
-  public void start(ModuleContext context) throws Exception {
-    OntologyManagement.getInstance().register(ontology);
-  }
+    public void start(ModuleContext context) throws Exception {
+	OntologyManagement.getInstance().register(ontology);
+    }
 
-public void stop(ModuleContext arg0) throws Exception {
-    OntologyManagement.getInstance().unregister(ontology);
-  }
-}	
+    public void stop(ModuleContext arg0) throws Exception {
+	OntologyManagement.getInstance().unregister(ontology);
+    }
+}
