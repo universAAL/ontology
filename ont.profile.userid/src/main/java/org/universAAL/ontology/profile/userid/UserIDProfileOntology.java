@@ -34,43 +34,44 @@ import org.universAAL.ontology.profile.UserProfile;
  */
 public final class UserIDProfileOntology extends Ontology {
 
-	private static UserIDProfileFactory factory = new UserIDProfileFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/UserIDProfile.owl#";
-	public static final String PROP_ID_PROFILE = UserProfile.PROP_HAS_SUB_PROFILE
-		    + "ID";
+    private static UserIDProfileFactory factory = new UserIDProfileFactory();
+    public static final String NAMESPACE = "http://ontology.universaal.org/UserIDProfile.owl#";
+    public static final String PROP_ID_PROFILE = UserProfile.PROP_HAS_SUB_PROFILE
+	    + "ID";
 
-	public UserIDProfileOntology() {
-		super(NAMESPACE);
-	}
+    public UserIDProfileOntology() {
+	super(NAMESPACE);
+    }
 
-	public void create() {
-		Resource r = getInfo();
-		r.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
-		r.setResourceLabel("Lighting");
-		addImport(DataRepOntology.NAMESPACE);
-		addImport(ServiceBusOntology.NAMESPACE);
-		addImport(LocationOntology.NAMESPACE);
-		addImport(ProfileOntology.NAMESPACE);
+    public void create() {
+	Resource r = getInfo();
+	r
+		.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
+	r.setResourceLabel("Lighting");
+	addImport(DataRepOntology.NAMESPACE);
+	addImport(ServiceBusOntology.NAMESPACE);
+	addImport(LocationOntology.NAMESPACE);
+	addImport(ProfileOntology.NAMESPACE);
 
-		OntClassInfoSetup oci;
+	OntClassInfoSetup oci;
 
-		// load UserIDProfile
-		oci = createNewOntClassInfo(UserIDProfile.MY_URI, factory, 0);
-		oci.setResourceComment("Login ID of a user.");
-		oci.setResourceLabel("UserIDProfile");
-		oci.addSuperClass(SubProfile.MY_URI);
-		oci.addDatatypeProperty(UserIDProfile.PROP_USERNAME).setFunctional();
-		oci.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(
-						UserIDProfile.PROP_USERNAME,
-						TypeMapper.getDatatypeURI(String.class), 1, 1));
+	// load UserIDProfile
+	oci = createNewOntClassInfo(UserIDProfile.MY_URI, factory, 0);
+	oci.setResourceComment("Login ID of a user.");
+	oci.setResourceLabel("UserIDProfile");
+	oci.addSuperClass(SubProfile.MY_URI);
+	oci.addDatatypeProperty(UserIDProfile.PROP_USERNAME).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			UserIDProfile.PROP_USERNAME, TypeMapper
+				.getDatatypeURI(String.class), 1, 1));
 
-		oci.addDatatypeProperty(UserIDProfile.PROP_PASSWORD).setFunctional();
-		oci.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(
-						UserIDProfile.PROP_PASSWORD,
-						TypeMapper.getDatatypeURI(String.class), 1, 1));
-		
+	oci.addDatatypeProperty(UserIDProfile.PROP_PASSWORD).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			UserIDProfile.PROP_PASSWORD, TypeMapper
+				.getDatatypeURI(String.class), 1, 1));
+
 	oci = extendExistingOntClassInfo(UserProfile.MY_URI);
 	oci.addObjectProperty(PROP_ID_PROFILE).addSuperProperty(
 		UserProfile.PROP_HAS_SUB_PROFILE);
@@ -78,5 +79,5 @@ public final class UserIDProfileOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(PROP_ID_PROFILE,
 			UserIDProfile.MY_URI, 0, 1));
 
-	}
+    }
 }
