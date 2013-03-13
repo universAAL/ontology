@@ -61,6 +61,13 @@ public class PendingDialogsBuilderType extends ManagedIndividual {
     public int ord() {
 	return order;
     }
+    
+    /**
+     * @return number of defined types
+     */
+    public static int getSize() {
+	return names.length;
+    }
 
     /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {

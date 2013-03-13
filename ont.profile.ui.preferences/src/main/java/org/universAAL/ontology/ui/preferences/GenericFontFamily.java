@@ -71,6 +71,13 @@ public class GenericFontFamily extends ManagedIndividual {
 	return order;
     }
 
+    /**
+     * @return number of defined types
+     */
+    public static int getSize() {
+	return names.length;
+    }
+
     /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {
 	return MY_URI;

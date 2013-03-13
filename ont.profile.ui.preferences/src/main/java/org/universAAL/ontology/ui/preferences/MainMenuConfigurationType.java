@@ -68,6 +68,13 @@ public class MainMenuConfigurationType extends ManagedIndividual {
     public int ord() {
 	return order;
     }
+    
+    /**
+     * @return number of defined configuration types
+     */
+    public static int getSize() {
+	return names.length;
+    }
 
     /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
     public String getClassURI() {

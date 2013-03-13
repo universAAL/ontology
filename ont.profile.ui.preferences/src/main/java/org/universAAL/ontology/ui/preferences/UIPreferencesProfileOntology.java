@@ -28,8 +28,6 @@ import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.UserProfile;
 
-;
-
 /**
  * @author eandgrg
  * 
