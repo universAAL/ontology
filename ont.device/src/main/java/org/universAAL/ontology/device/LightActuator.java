@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class LightActuator extends Sensor {
+public class LightActuator extends Actuator {
   public static final String MY_URI = DeviceOntology.NAMESPACE
     + "LightActuator";
   public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
