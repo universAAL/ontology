@@ -479,7 +479,6 @@ public final class DeviceOntology extends Ontology {
     
     oci_LightSensor.setResourceComment("");
     oci_LightSensor.setResourceLabel("LightSensor");
-    oci_LightSensor.addSuperClass(Actuator.MY_URI); 
     oci_LightSensor.addSuperClass(Sensor.MY_URI); 
     oci_LightSensor.addDatatypeProperty(LightSensor.PROP_HAS_VALUE).setFunctional();
     oci_LightSensor.addRestriction(MergedRestriction
@@ -504,7 +503,6 @@ public final class DeviceOntology extends Ontology {
     
     oci_LightActuator.setResourceComment("");
     oci_LightActuator.setResourceLabel("LightActuator");
-    oci_LightActuator.addSuperClass(Sensor.MY_URI); 
     oci_LightActuator.addSuperClass(Actuator.MY_URI); 
     oci_LightActuator.addDatatypeProperty(LightActuator.PROP_HAS_VALUE).setFunctional();
     oci_LightActuator.addRestriction(MergedRestriction
