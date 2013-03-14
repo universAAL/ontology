@@ -80,11 +80,11 @@ public class AuditoryPreferences extends ManagedIndividual {
 	    changeProperty(PROP_PITCH, newPropValue);
     }
 
-    public Status getKeySound() {
+    public Status getKeySoundStatus() {
 	return (Status) getProperty(PROP_KEY_SOUND);
     }
 
-    public void setKeySound(Status newPropValue) {
+    public void setKeySoundStatus(Status newPropValue) {
 	if (newPropValue != null)
 	    changeProperty(PROP_KEY_SOUND, newPropValue);
     }
