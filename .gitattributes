@@ -583,6 +583,7 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/AlertPreferences.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/AlertType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/AuditoryPreferences.java -text
+ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/ColorType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/ContentDensityType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/GeneralInteractionPreferences.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/GenericFontFamily.java -text
