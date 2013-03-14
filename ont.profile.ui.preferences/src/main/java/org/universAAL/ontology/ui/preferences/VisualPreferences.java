@@ -193,7 +193,7 @@ public class VisualPreferences extends ManagedIndividual {
 	return (ColorType) getProperty(PROP_HIGHLIGHT_COLOR);
     }
 
-    public void setHighlightColorHex(ColorType newPropValue) {
+    public void setHighlightColor(ColorType newPropValue) {
 	if (newPropValue != null)
 	    changeProperty(PROP_HIGHLIGHT_COLOR, newPropValue);
     }
