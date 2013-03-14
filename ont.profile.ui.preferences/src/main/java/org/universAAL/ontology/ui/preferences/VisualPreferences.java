@@ -20,14 +20,14 @@ import org.universAAL.middleware.rdf.Resource;
 public class VisualPreferences extends ManagedIndividual {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
 	    + "VisualPreferences";
-    public static final String PROP_BACKGROUND_COLOR_HEX = UIPreferencesProfileOntology.NAMESPACE
-	    + "backgroundColorHex";
+    public static final String PROP_BACKGROUND_COLOR = UIPreferencesProfileOntology.NAMESPACE
+	    + "backgroundColor";
     public static final String PROP_FLASHING_RESOURCES = UIPreferencesProfileOntology.NAMESPACE
 	    + "flashingResources";
     public static final String PROP_DAY_NIGHT_MODE = UIPreferencesProfileOntology.NAMESPACE
 	    + "dayNightMode";
-    public static final String PROP_HIGHLIGHT_COLOR_HEX = UIPreferencesProfileOntology.NAMESPACE
-	    + "highlightColorHex";
+    public static final String PROP_HIGHLIGHT_COLOR = UIPreferencesProfileOntology.NAMESPACE
+	    + "highlightColor";
     public static final String PROP_WINDOW_LAYOUT = UIPreferencesProfileOntology.NAMESPACE
 	    + "windowLayout";
     public static final String PROP_FONT_FAMILY = UIPreferencesProfileOntology.NAMESPACE
@@ -42,8 +42,8 @@ public class VisualPreferences extends ManagedIndividual {
 	    + "cursorSize";
     public static final String PROP_SCREEN_SAVER_USAGE = UIPreferencesProfileOntology.NAMESPACE
 	    + "screenSaverUsage";
-    public static final String PROP_FONT_COLOR_HEX = UIPreferencesProfileOntology.NAMESPACE
-	    + "fontColorHex";
+    public static final String PROP_FONT_COLOR = UIPreferencesProfileOntology.NAMESPACE
+	    + "fontColor";
     public static final String PROP_FONT_SIZE = UIPreferencesProfileOntology.NAMESPACE
 	    + "fontSize";
 
@@ -74,10 +74,10 @@ public class VisualPreferences extends ManagedIndividual {
      * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
      */
     public boolean isWellFormed() {
-	return true && hasProperty(PROP_BACKGROUND_COLOR_HEX)
+	return true && hasProperty(PROP_BACKGROUND_COLOR)
 		&& hasProperty(PROP_FLASHING_RESOURCES)
 		&& hasProperty(PROP_DAY_NIGHT_MODE)
-		&& hasProperty(PROP_HIGHLIGHT_COLOR_HEX)
+		&& hasProperty(PROP_HIGHLIGHT_COLOR)
 		&& hasProperty(PROP_WINDOW_LAYOUT)
 		&& hasProperty(PROP_FONT_FAMILY)
 		&& hasProperty(PROP_BRIGHTNESS)
@@ -85,7 +85,7 @@ public class VisualPreferences extends ManagedIndividual {
 		&& hasProperty(PROP_SCREEN_RESOLUTION)
 		&& hasProperty(PROP_CURSOR_SIZE)
 		&& hasProperty(PROP_SCREEN_SAVER_USAGE)
-		&& hasProperty(PROP_FONT_COLOR_HEX)
+		&& hasProperty(PROP_FONT_COLOR)
 		&& hasProperty(PROP_FONT_SIZE);
     }
 
@@ -117,22 +117,22 @@ public class VisualPreferences extends ManagedIndividual {
 	    changeProperty(PROP_SCREEN_SAVER_USAGE, newPropValue);
     }
 
-    public String getBackgroundColorHex() {
-	return (String) getProperty(PROP_BACKGROUND_COLOR_HEX);
+    public ColorType getBackgroundColor() {
+	return (ColorType) getProperty(PROP_BACKGROUND_COLOR);
     }
 
-    public void setBackgroundColorHex(String newPropValue) {
+    public void setBackgroundColor(ColorType newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_BACKGROUND_COLOR_HEX, newPropValue);
+	    changeProperty(PROP_BACKGROUND_COLOR, newPropValue);
     }
 
-    public String getFontColorHex() {
-	return (String) getProperty(PROP_FONT_COLOR_HEX);
+    public ColorType getFontColor() {
+	return (ColorType) getProperty(PROP_FONT_COLOR);
     }
 
-    public void setFontColorHex(String newPropValue) {
+    public void setFontColor(ColorType newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_FONT_COLOR_HEX, newPropValue);
+	    changeProperty(PROP_FONT_COLOR, newPropValue);
     }
 
     public Size getFontSize() {
@@ -189,13 +189,13 @@ public class VisualPreferences extends ManagedIndividual {
 	    changeProperty(PROP_FLASHING_RESOURCES, newPropValue);
     }
 
-    public String getHighlightColorHex() {
-	return (String) getProperty(PROP_HIGHLIGHT_COLOR_HEX);
+    public ColorType getHighlightColor() {
+	return (ColorType) getProperty(PROP_HIGHLIGHT_COLOR);
     }
 
-    public void setHighlightColorHex(String newPropValue) {
+    public void setHighlightColorHex(ColorType newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_HIGHLIGHT_COLOR_HEX, newPropValue);
+	    changeProperty(PROP_HIGHLIGHT_COLOR, newPropValue);
     }
 
     public Size getCursorSize() {

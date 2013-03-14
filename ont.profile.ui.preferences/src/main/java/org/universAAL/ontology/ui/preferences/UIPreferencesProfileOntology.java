@@ -63,6 +63,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	OntClassInfoSetup oci_Size = createNewAbstractOntClassInfo(Size.MY_URI);
 	OntClassInfoSetup oci_Intensity = createNewAbstractOntClassInfo(Intensity.MY_URI);
 	OntClassInfoSetup oci_AlertType = createNewAbstractOntClassInfo(AlertType.MY_URI);
+	OntClassInfoSetup oci_ColorType = createNewAbstractOntClassInfo(ColorType.MY_URI);
 	OntClassInfoSetup oci_GenericFontFamily = createNewAbstractOntClassInfo(GenericFontFamily.MY_URI);
 	OntClassInfoSetup oci_WindowLayoutType = createNewAbstractOntClassInfo(WindowLayoutType.MY_URI);
 	OntClassInfoSetup oci_Status = createNewAbstractOntClassInfo(Status.MY_URI);
@@ -138,6 +139,16 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		AlertType.visualOnly, AlertType.audioOnly,
 		AlertType.visualAndAudio });
 
+	oci_ColorType.setResourceComment("");
+	oci_ColorType.setResourceLabel("ColorType");
+	oci_ColorType.addSuperClass(ManagedIndividual.MY_URI);
+	oci_ColorType.toEnumeration(new ManagedIndividual[] { ColorType.white,
+		ColorType.black, ColorType.lightGray, ColorType.darkGrey,
+		ColorType.lightBlue, ColorType.darkBlue, ColorType.lightGreen,
+		ColorType.darkGreen, ColorType.lightRed, ColorType.darkRed,
+		ColorType.orange, ColorType.yellow, ColorType.cyan,
+		ColorType.purple, ColorType.magenta, ColorType.pink });
+
 	oci_GenericFontFamily.setResourceComment("");
 	oci_GenericFontFamily.setResourceLabel("GenericFontFamily");
 	oci_GenericFontFamily.addSuperClass(ManagedIndividual.MY_URI);
@@ -175,12 +186,13 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_VisualPreferences.setResourceComment("");
 	oci_VisualPreferences.setResourceLabel("VisualPreferences");
 	oci_VisualPreferences.addSuperClass(ManagedIndividual.MY_URI);
-	oci_VisualPreferences.addDatatypeProperty(
-		VisualPreferences.PROP_BACKGROUND_COLOR_HEX).setFunctional();
+
+	oci_VisualPreferences.addObjectProperty(
+		VisualPreferences.PROP_BACKGROUND_COLOR).setFunctional();
 	oci_VisualPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			VisualPreferences.PROP_BACKGROUND_COLOR_HEX, TypeMapper
-				.getDatatypeURI(String.class), 1, 1));
+			VisualPreferences.PROP_BACKGROUND_COLOR,
+			ColorType.MY_URI, 1, 1));
 
 	oci_VisualPreferences.addObjectProperty(
 		VisualPreferences.PROP_FLASHING_RESOURCES).setFunctional();
@@ -196,12 +208,12 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			VisualPreferences.PROP_DAY_NIGHT_MODE, Status.MY_URI,
 			1, 1));
 
-	oci_VisualPreferences.addDatatypeProperty(
-		VisualPreferences.PROP_HIGHLIGHT_COLOR_HEX).setFunctional();
+	oci_VisualPreferences.addObjectProperty(
+		VisualPreferences.PROP_HIGHLIGHT_COLOR).setFunctional();
 	oci_VisualPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			VisualPreferences.PROP_HIGHLIGHT_COLOR_HEX, TypeMapper
-				.getDatatypeURI(String.class), 1, 1));
+			VisualPreferences.PROP_HIGHLIGHT_COLOR,
+			ColorType.MY_URI, 1, 1));
 
 	oci_VisualPreferences.addObjectProperty(
 		VisualPreferences.PROP_WINDOW_LAYOUT).setFunctional();
@@ -251,12 +263,12 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			VisualPreferences.PROP_SCREEN_SAVER_USAGE,
 			Status.MY_URI, 1, 1));
 
-	oci_VisualPreferences.addDatatypeProperty(
-		VisualPreferences.PROP_FONT_COLOR_HEX).setFunctional();
+	oci_VisualPreferences.addObjectProperty(
+		VisualPreferences.PROP_FONT_COLOR).setFunctional();
 	oci_VisualPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			VisualPreferences.PROP_FONT_COLOR_HEX, TypeMapper
-				.getDatatypeURI(String.class), 1, 1));
+			VisualPreferences.PROP_FONT_COLOR, ColorType.MY_URI, 1,
+			1));
 
 	oci_VisualPreferences.addObjectProperty(
 		VisualPreferences.PROP_FONT_SIZE).setFunctional();
