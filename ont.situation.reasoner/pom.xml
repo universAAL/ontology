@@ -15,8 +15,8 @@
   <description>Ontology for the generic situation reasoner</description>
   <properties>
     <remoteOBR></remoteOBR>
-    <maven.compile.source>1.6</maven.compile.source>
-    <maven.compile.target>1.6</maven.compile.target>
+    <maven.compile.source>1.5</maven.compile.source>
+    <maven.compile.target>1.5</maven.compile.target>
   </properties>
   <dependencies>
     <dependency>
