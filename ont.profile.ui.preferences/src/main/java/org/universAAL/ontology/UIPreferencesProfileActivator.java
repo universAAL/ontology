@@ -29,15 +29,15 @@ public class UIPreferencesProfileActivator implements ModuleActivator {
 
     UIPreferencesProfileOntology uipreferencesontology = new UIPreferencesProfileOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	UIPreferencesProfileActivator.context = context;
-	OntologyManagement.getInstance().register(uipreferencesontology);
+    public void start(ModuleContext mc) throws Exception {
+	UIPreferencesProfileActivator.context = mc;
+	OntologyManagement.getInstance().register(mc, uipreferencesontology);
 
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
+    public void stop(ModuleContext mc) throws Exception {
 
-	OntologyManagement.getInstance().unregister(uipreferencesontology);
+	OntologyManagement.getInstance().unregister(mc, uipreferencesontology);
 
     }
 

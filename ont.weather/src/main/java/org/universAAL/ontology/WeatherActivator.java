@@ -27,11 +27,11 @@ public class WeatherActivator implements ModuleActivator {
 
     private WeatherOntology ont = new WeatherOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ont);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, ont);
     }
 
-    public void stop(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ont);
     }
 }

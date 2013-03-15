@@ -25,14 +25,12 @@ public class DeseaseActivator implements ModuleActivator {
     static ModuleContext context = null;
     DiseaseOntology ontology = new DiseaseOntology();
 
-    public void start(ModuleContext arg0) throws Exception {
-	context = arg0;
-	OntologyManagement.getInstance().register(ontology);
-
+    public void start(ModuleContext mc) throws Exception {
+	context = mc;
+	OntologyManagement.getInstance().register(mc, ontology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(ontology);
-
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ontology);
     }
 }

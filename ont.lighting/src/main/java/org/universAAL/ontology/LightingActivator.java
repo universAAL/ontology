@@ -28,11 +28,11 @@ public class LightingActivator implements ModuleActivator {
 
     private LightingOntology lightingOntology = new LightingOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(lightingOntology);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, lightingOntology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(lightingOntology);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, lightingOntology);
     }
 }

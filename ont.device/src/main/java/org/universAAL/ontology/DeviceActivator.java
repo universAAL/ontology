@@ -30,11 +30,11 @@ public class DeviceActivator implements ModuleActivator {
 
     private DeviceOntology ontD = new DeviceOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ontD);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, ontD);
     }
 
-    public void stop(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().unregister(ontD);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ontD);
     }
 }

@@ -25,13 +25,13 @@ public class HealthActivator implements ModuleActivator {
     static ModuleContext context = null;
     HealthOntology ontology = new HealthOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	HealthActivator.context = context;
-	OntologyManagement.getInstance().register(ontology);
+    public void start(ModuleContext mc) throws Exception {
+	HealthActivator.context = mc;
+	OntologyManagement.getInstance().register(mc, ontology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(ontology);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ontology);
     }
 
 }

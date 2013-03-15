@@ -29,12 +29,12 @@ import org.universAAL.ontology.che.ContextHistoryOntology;
 public class ContextHistoryActivator implements ModuleActivator {
     private ContextHistoryOntology ont = new ContextHistoryOntology();
 
-    public void start(ModuleContext bcontext) throws Exception {
-	OntologyManagement.getInstance().register(ont);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, ont);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ont);
     }
 
 }

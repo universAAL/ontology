@@ -10,7 +10,7 @@ public class X73Activator implements ModuleActivator {
 
     X73Ontology x73ontology = new X73Ontology();
 
-    public void start(ModuleContext context) throws Exception {
+    public void start(ModuleContext mc) throws Exception {
 
 	// LogUtils.logError(context, X73Activator.class, "start",
 	// new Object[] {"***FUXI***: Ontologies before X73.ont registering"},
@@ -22,7 +22,7 @@ public class X73Activator implements ModuleActivator {
 	// ontsa
 	// , null);
 
-	OntologyManagement.getInstance().register(x73ontology);
+	OntologyManagement.getInstance().register(mc, x73ontology);
 
 	// LogUtils.logError(context, X73Activator.class, "start",
 	// new Object[] {"***FUXI***: Ontologies after X73.ont registering"}
@@ -33,10 +33,10 @@ public class X73Activator implements ModuleActivator {
 	// , null);
     }
 
-    public void stop(ModuleContext context) throws Exception {
+    public void stop(ModuleContext mc) throws Exception {
 	// LogUtils.logError(context, X73Activator.class, "start",
 	// new Object[] {"***FUXI***: X73.ont stopping..."}
 	// , null);
-	OntologyManagement.getInstance().unregister(x73ontology);
+	OntologyManagement.getInstance().unregister(mc, x73ontology);
     }
 }

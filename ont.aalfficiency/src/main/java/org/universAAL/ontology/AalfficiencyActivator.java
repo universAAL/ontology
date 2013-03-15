@@ -8,11 +8,11 @@ import org.universAAL.ontology.aalfficiency.AalfficiencyOntology;
 public class AalfficiencyActivator implements ModuleActivator {
     private AalfficiencyOntology aalfficiency = new AalfficiencyOntology();
 
-    public void start(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().register(aalfficiency);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, aalfficiency);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(aalfficiency);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, aalfficiency);
     }
 }

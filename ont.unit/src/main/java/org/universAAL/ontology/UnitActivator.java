@@ -24,11 +24,11 @@ public class UnitActivator implements ModuleActivator {
 
     private UnitOntology ontology = new UnitOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ontology);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, ontology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(ontology);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ontology);
     }
 }

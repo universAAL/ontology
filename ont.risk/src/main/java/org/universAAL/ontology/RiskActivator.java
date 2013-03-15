@@ -8,14 +8,14 @@ import org.universAAL.ontology.risk.RiskOntology;
 public class RiskActivator implements ModuleActivator {
     private RiskOntology riskOntology = new RiskOntology();
 
-    public void start(ModuleContext context) throws Exception {
+    public void start(ModuleContext mc) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(riskOntology);
+	om.register(mc, riskOntology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
+    public void stop(ModuleContext mc) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(riskOntology);
+	om.unregister(mc, riskOntology);
     }
 
 }
