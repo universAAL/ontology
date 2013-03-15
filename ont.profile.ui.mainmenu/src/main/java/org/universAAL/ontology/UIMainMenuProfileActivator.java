@@ -29,12 +29,12 @@ public class UIMainMenuProfileActivator implements ModuleActivator {
     private MenuProfileOntology ontology = new MenuProfileOntology();
     public static ModuleContext context;
 
-    public void start(ModuleContext context) throws Exception {
-	UIMainMenuProfileActivator.context = context;
-	OntologyManagement.getInstance().register(ontology);
+    public void start(ModuleContext mc) throws Exception {
+	UIMainMenuProfileActivator.context = mc;
+	OntologyManagement.getInstance().register(mc, ontology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(ontology);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ontology);
     }
 }

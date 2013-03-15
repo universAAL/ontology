@@ -16,11 +16,12 @@ public class PersonalHealthDeviceActivator implements ModuleActivator {
     PersonalHealthDeviceOntology personalHealthDeviceOntology = new PersonalHealthDeviceOntology();
 
     public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(personalHealthDeviceOntology);
+	OntologyManagement.getInstance().register(mc,
+		personalHealthDeviceOntology);
     }
 
     public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(
+	OntologyManagement.getInstance().unregister(mc,
 		personalHealthDeviceOntology);
     }
 }

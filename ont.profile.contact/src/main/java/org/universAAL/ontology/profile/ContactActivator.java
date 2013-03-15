@@ -25,11 +25,11 @@ public class ContactActivator implements ModuleActivator {
     private ContactOntology ont = new ContactOntology();
 
     public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(ont);
+	OntologyManagement.getInstance().register(mc, ont);
     }
 
     public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(ont);
+	OntologyManagement.getInstance().unregister(mc, ont);
     }
 
 }

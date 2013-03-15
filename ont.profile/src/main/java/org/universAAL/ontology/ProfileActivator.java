@@ -39,13 +39,13 @@ public class ProfileActivator implements ModuleActivator {
     private VCardOntology ontV = new VCardOntology();
     private ProfileOntology ontP = new ProfileOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(ontV);
-	OntologyManagement.getInstance().register(ontP);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, ontV);
+	OntologyManagement.getInstance().register(mc, ontP);
     }
 
-    public void stop(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().unregister(ontP);
-	OntologyManagement.getInstance().unregister(ontV);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, ontP);
+	OntologyManagement.getInstance().unregister(mc, ontV);
     }
 }

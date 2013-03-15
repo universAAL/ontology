@@ -24,19 +24,15 @@ import org.universAAL.ontology.handgestures.HandgesturesOntology;
  * @author eandgrg
  * 
  */
-
 public class HandGesturesActivator implements ModuleActivator {
 
     HandgesturesOntology _handgesturesontology = new HandgesturesOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(_handgesturesontology);
-
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, _handgesturesontology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-
-	OntologyManagement.getInstance().unregister(_handgesturesontology);
-
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, _handgesturesontology);
     }
 }

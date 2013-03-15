@@ -9,12 +9,12 @@
 package org.universAAL.ontology;
 
 // Imports
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
+import org.universAAL.middleware.container.ModuleActivator;
+import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
 
 // Main class
-public class Activator implements BundleActivator {
+public class Activator implements ModuleActivator {
 
     // Attributes
     ContinuaHealthManagerOntology cho = new ContinuaHealthManagerOntology();
@@ -22,12 +22,12 @@ public class Activator implements BundleActivator {
     // Methods
 
     /** Start */
-    public void start(BundleContext arg0) throws Exception {
-	OntologyManagement.getInstance().register(cho);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, cho);
     }
 
     /** Stop */
-    public void stop(BundleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(cho);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, cho);
     }
 }

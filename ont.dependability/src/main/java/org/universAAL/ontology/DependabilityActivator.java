@@ -34,10 +34,10 @@ public class DependabilityActivator implements ModuleActivator {
 
     public void start(ModuleContext mc) throws Exception {
 	DependabilityActivator.context = mc;
-	OntologyManagement.getInstance().register(_dependabilityontology);
+	OntologyManagement.getInstance().register(mc, _dependabilityontology);
     }
 
     public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(_dependabilityontology);
+	OntologyManagement.getInstance().unregister(mc, _dependabilityontology);
     }
 }

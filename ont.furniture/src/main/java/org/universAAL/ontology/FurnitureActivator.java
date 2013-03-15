@@ -28,11 +28,11 @@ public class FurnitureActivator implements ModuleActivator {
 
     private FurnitureOntology furnitureOntology = new FurnitureOntology();
 
-    public void start(ModuleContext context) throws Exception {
-	OntologyManagement.getInstance().register(furnitureOntology);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, furnitureOntology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(furnitureOntology);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, furnitureOntology);
     }
 }

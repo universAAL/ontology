@@ -41,9 +41,9 @@ public class DeviceActivator implements ModuleActivator {
      * org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext
      * )
      */
-    public void start(ModuleContext context) throws Exception {
+    public void start(ModuleContext mc) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(deviceOntology);
+	om.register(mc, deviceOntology);
     }
 
     /*
@@ -52,8 +52,8 @@ public class DeviceActivator implements ModuleActivator {
      * @see
      * org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
      */
-    public void stop(ModuleContext arg0) throws Exception {
+    public void stop(ModuleContext mc) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(deviceOntology);
+	om.unregister(mc, deviceOntology);
     }
 }

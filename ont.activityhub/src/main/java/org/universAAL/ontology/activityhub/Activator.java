@@ -15,12 +15,12 @@ public class Activator implements ModuleActivator {
 
     ActivityHubOntology activityHubOntology = new ActivityHubOntology();
 
-    public void start(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().register(activityHubOntology);
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, activityHubOntology);
     }
 
-    public void stop(ModuleContext arg0) throws Exception {
-	OntologyManagement.getInstance().unregister(activityHubOntology);
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(mc, activityHubOntology);
     }
 
 }
