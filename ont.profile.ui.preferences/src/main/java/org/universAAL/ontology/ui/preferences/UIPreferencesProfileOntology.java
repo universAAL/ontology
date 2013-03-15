@@ -21,11 +21,13 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Modality;
+import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.UIPreferencesProfileFactory;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.UserProfile;
+import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
 
 /**
  * @author eandgrg
@@ -84,6 +86,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		AuditoryPreferences.MY_URI, factory, 5);
 	OntClassInfoSetup oci_UIPreferences = createNewOntClassInfo(
 		UIPreferencesProfile.MY_URI, factory, 6);
+	OntClassInfoSetup oci_UIPreferencesService = createNewOntClassInfo(
+		UIPreferencesProfile.MY_URI, factory, 7);
 
 	// ******* Add content to enumeration classes of the ontology ******* //
 
@@ -505,6 +509,14 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			UIPreferencesProfile.PROP_AUDIO_PREFERENCES,
 			AuditoryPreferences.MY_URI, 1, 1));
+	
+	//service
+	oci_UIPreferencesService.setResourceComment("The class of services controling the UI Preferences");
+	oci_UIPreferencesService.setResourceLabel("UI Preferences Service");
+	oci_UIPreferencesService.addSuperClass(Service.MY_URI);
+	oci_UIPreferencesService.addObjectProperty(UIPreferencesService.PROP_CONTROLS).setFunctional();
+	oci_UIPreferencesService.addRestriction(MergedRestriction.getAllValuesRestriction(
+		UIPreferencesService.PROP_CONTROLS, UIPreferencesProfile.MY_URI));
 
 	// Extend UserProfile
 	OntClassInfoSetup oci = extendExistingOntClassInfo(UserProfile.MY_URI);

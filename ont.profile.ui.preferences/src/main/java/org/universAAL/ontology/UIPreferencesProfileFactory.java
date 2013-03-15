@@ -23,6 +23,7 @@ import org.universAAL.ontology.ui.preferences.GeneralInteractionPreferences;
 import org.universAAL.ontology.ui.preferences.SystemMenuPreferences;
 import org.universAAL.ontology.ui.preferences.UIPreferencesProfile;
 import org.universAAL.ontology.ui.preferences.VisualPreferences;
+import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
 
 /**
  * @author eandgrg
@@ -48,6 +49,8 @@ public class UIPreferencesProfileFactory extends ResourceFactoryImpl {
 	    return new AuditoryPreferences(instanceURI);
 	case 6:
 	    return new UIPreferencesProfile(instanceURI);
+	case 7:
+	    return new UIPreferencesService(instanceURI);
 
 	}
 	return null;
