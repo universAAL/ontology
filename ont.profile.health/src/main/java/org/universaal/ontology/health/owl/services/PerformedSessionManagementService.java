@@ -23,8 +23,8 @@ package org.universaal.ontology.health.owl.services;
 import org.universaal.ontology.health.owl.HealthOntology;
 
 /**
- * This class describes the performed session management service, which consists 
- * of storing a performed session and listing the sessions associated to the 
+ * This class describes the performed session management service, which consists
+ * of storing a performed session and listing the sessions associated to the
  * health profile performed by the assisted person.
  * 
  * @author mdelafuente
@@ -35,46 +35,49 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * @navassoc - "PROP_TIMESTAMP_FROM" 0,1 Long
  * @navassoc - "PROP_TIMESTAMP_TO" 0,1 Long
  */
-public class PerformedSessionManagementService extends HealthService{
-	
-	//NAMESPACE & PROPERTIES
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "SessionManagementService";
+public class PerformedSessionManagementService extends HealthService {
 
-	public static final String PROP_MANAGES_SESSION = HealthOntology.NAMESPACE
-	+ "managesSession";
-	public static final String PROP_ASSOCIATED_TREATMENT = HealthOntology.NAMESPACE + "sessionsTreatment";
+    // NAMESPACE & PROPERTIES
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "SessionManagementService";
 
-	public static final String PROP_TIMESTAMP_FROM = HealthOntology.NAMESPACE + "sessionsFrom";
-	public static final String PROP_TIMESTAMP_TO = HealthOntology.NAMESPACE + "sessionsTo";
-	
-	//CONSTRUCTORS
-	public PerformedSessionManagementService() {
-		super();
-	}
+    public static final String PROP_MANAGES_SESSION = HealthOntology.NAMESPACE
+	    + "managesSession";
+    public static final String PROP_ASSOCIATED_TREATMENT = HealthOntology.NAMESPACE
+	    + "sessionsTreatment";
 
-	public PerformedSessionManagementService(String uri) {
-		super(uri);
-	}
+    public static final String PROP_TIMESTAMP_FROM = HealthOntology.NAMESPACE
+	    + "sessionsFrom";
+    public static final String PROP_TIMESTAMP_TO = HealthOntology.NAMESPACE
+	    + "sessionsTo";
 
-	public String getClassURI() {
-		return MY_URI;
-	}
+    // CONSTRUCTORS
+    public PerformedSessionManagementService() {
+	super();
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-	 * (java.lang.String)
-	 */
-	public int getPropSerializationType(String propURI) {
-		return PROP_MANAGES_SESSION.equals(propURI) ||
-		PROP_MANAGES_SESSION.equals(propURI) ? PROP_SERIALIZATION_FULL : super
-				.getPropSerializationType(propURI);
-	}
+    public PerformedSessionManagementService(String uri) {
+	super(uri);
+    }
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     * (java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_MANAGES_SESSION.equals(propURI)
+		|| PROP_MANAGES_SESSION.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

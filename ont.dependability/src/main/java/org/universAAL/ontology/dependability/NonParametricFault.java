@@ -6,29 +6,28 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-
 public class NonParametricFault extends Fault {
-  public static final String MY_URI = DependabilityOntology.NAMESPACE
-    + "NonParametricFault";
+    public static final String MY_URI = DependabilityOntology.NAMESPACE
+	    + "NonParametricFault";
 
+    public NonParametricFault() {
+	super();
+    }
 
-  public NonParametricFault () {
-    super();
-  }
-  
-  public NonParametricFault (String uri) {
-    super(uri);
-  }
+    public NonParametricFault(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
+	// TODO Implement or if for Device subclasses: remove
 	return 0;
-  }
+    }
 
-  public boolean isWellFormed() {
-	return true ;
-  }
+    public boolean isWellFormed() {
+	return true;
+    }
 }

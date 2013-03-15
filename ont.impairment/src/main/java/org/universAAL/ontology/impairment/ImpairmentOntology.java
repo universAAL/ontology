@@ -54,7 +54,6 @@ public final class ImpairmentOntology extends Ontology {
 
 	OntClassInfoSetup oci;
 
-
 	// load SightImpairment
 	oci = createNewOntClassInfo(SightImpairment.MY_URI, factory, 0);
 	oci
@@ -117,6 +116,6 @@ public final class ImpairmentOntology extends Ontology {
 		.setResourceComment("Represents the level of the user's light-sensitivity.");
 	oci.setResourceLabel("LightSensitivity");
 	oci.addSuperClass(SightImpairment.MY_URI);
-	
+
     }
 }

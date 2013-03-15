@@ -96,9 +96,8 @@ public class LightSource extends Device {
     }
 
     /**
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
+     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     *      (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
 	return (PROP_AMBIENT_COVERAGE.equals(propURI) || PROP_PHYSICAL_LOCATION // PROP_SOURCE_LOCATION

@@ -41,7 +41,7 @@ public class User extends PhysicalThing {
 
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE + "User";
-    
+
     /**
      * Because there is no multiple inhertiance in Java, we copy this property
      * from Profilable (although the methods here still use

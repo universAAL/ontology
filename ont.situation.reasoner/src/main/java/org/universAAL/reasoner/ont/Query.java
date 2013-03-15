@@ -185,7 +185,9 @@ public class Query extends Persistent {
     @Override
     public String toString() {
 	String query = getResultingQuery();
-	return "<html>" + getURI() + ":<br>"
+	return "<html>"
+		+ getURI()
+		+ ":<br>"
 		+ query.replace("<", "&lt;").replace(">", "&gt;").replace(
 			System.getProperty("line.separator"), "<br>")
 		+ "</html>";

@@ -68,7 +68,7 @@ public class MainMenuConfigurationType extends ManagedIndividual {
     public int ord() {
 	return order;
     }
-    
+
     /**
      * @return number of defined configuration types
      */

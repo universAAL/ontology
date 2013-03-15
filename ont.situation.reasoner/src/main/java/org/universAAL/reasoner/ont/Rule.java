@@ -75,17 +75,18 @@ public class Rule extends Persistent {
 	if (situation != null)
 	    changeProperty(PROP_SITUATION, situation);
     }
-    
+
     public boolean equals(Rule rule) {
-	return 	(rule.getSituation()==getSituation() || rule.getSituation().equals(getSituation())) &&
-		(rule.getQuery()==getQuery() || rule.getQuery().equals(getQuery()));
+	return (rule.getSituation() == getSituation() || rule.getSituation()
+		.equals(getSituation()))
+		&& (rule.getQuery() == getQuery() || rule.getQuery().equals(
+			getQuery()));
     }
-    
+
     @Override
     public String toString() {
-	return 	"<html>" + getURI()
-		+ ":<br>Situation: " + getSituation().getURI()
-		+ "<br>Query: " + getQuery().getURI()
+	return "<html>" + getURI() + ":<br>Situation: "
+		+ getSituation().getURI() + "<br>Query: " + getQuery().getURI()
 		+ "</html>";
     }
 }

@@ -509,14 +509,17 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			UIPreferencesProfile.PROP_AUDIO_PREFERENCES,
 			AuditoryPreferences.MY_URI, 1, 1));
-	
-	//service
-	oci_UIPreferencesService.setResourceComment("The class of services controling the UI Preferences");
+
+	// service
+	oci_UIPreferencesService
+		.setResourceComment("The class of services controling the UI Preferences");
 	oci_UIPreferencesService.setResourceLabel("UI Preferences Service");
 	oci_UIPreferencesService.addSuperClass(Service.MY_URI);
-	oci_UIPreferencesService.addObjectProperty(UIPreferencesService.PROP_CONTROLS).setFunctional();
-	oci_UIPreferencesService.addRestriction(MergedRestriction.getAllValuesRestriction(
-		UIPreferencesService.PROP_CONTROLS, UIPreferencesProfile.MY_URI));
+	oci_UIPreferencesService.addObjectProperty(
+		UIPreferencesService.PROP_CONTROLS).setFunctional();
+	oci_UIPreferencesService.addRestriction(MergedRestriction
+		.getAllValuesRestriction(UIPreferencesService.PROP_CONTROLS,
+			UIPreferencesProfile.MY_URI));
 
 	// Extend UserProfile
 	OntClassInfoSetup oci = extendExistingOntClassInfo(UserProfile.MY_URI);

@@ -17,33 +17,31 @@ package org.universAAL.ontology.profile.contact;
 
 import org.universAAL.middleware.service.owl.Service;
 
-
 public class ContactManagementService extends Service {
-  public static final String MY_URI = ContactOntology.NAMESPACE
-    + "ContactManagementService";
-  public static final String PROP_MANAGES_CONTACT_LIST_SUB_PROFILE = ContactOntology.NAMESPACE
-    + "managesContactListSubProfile";
-public static final String PROP_CONTACT = ContactOntology.NAMESPACE
-    + "contactOperator";
+    public static final String MY_URI = ContactOntology.NAMESPACE
+	    + "ContactManagementService";
+    public static final String PROP_MANAGES_CONTACT_LIST_SUB_PROFILE = ContactOntology.NAMESPACE
+	    + "managesContactListSubProfile";
+    public static final String PROP_CONTACT = ContactOntology.NAMESPACE
+	    + "contactOperator";
 
+    public ContactManagementService() {
+	super();
+    }
 
-  public ContactManagementService () {
-    super();
-  }
-  
-  public ContactManagementService (String uri) {
-    super(uri);
-  }
+    public ContactManagementService(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-		return PROP_SERIALIZATION_FULL;
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_MANAGES_CONTACT_LIST_SUB_PROFILE);
-  }	
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_MANAGES_CONTACT_LIST_SUB_PROFILE);
+    }
 }

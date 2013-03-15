@@ -22,49 +22,49 @@ import org.universaal.ontology.health.owl.services.*;
 
 public class HealthOntologyFactory extends ResourceFactoryImpl {
 
-
-  public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
 	switch (factoryIndex) {
-     case 0:
+	case 0:
 	    return new BloodPressureRequirement(instanceURI);
-     case 1:
+	case 1:
 	    return new MeasuredPhysicalActivity(instanceURI);
-     case 2:
+	case 2:
 	    return new MeasurementRequirements(instanceURI);
-     case 3:
+	case 3:
 	    return new WeightRequirement(instanceURI);
-     case 4:
+	case 4:
 	    return new PlannedSession(instanceURI);
-     case 5:
+	case 5:
 	    return new PerformedMeasurementSession(instanceURI);
-     case 8:
+	case 8:
 	    return new HeartRateRequirement(instanceURI);
-     case 9:
+	case 9:
 	    return new TakeMeasurementActivity(instanceURI);
-     case 11:
+	case 11:
 	    return new TreatmentPlanning(instanceURI);
-     case 12:
+	case 12:
 	    return new HealthProfile(instanceURI);
-     case 13:
- 	    return new PerformedSession(instanceURI);
-     case 14:
-  	    return new DiastolicBloodPressureRequirement(instanceURI);
-     case 15:
-  	    return new SystolicBloodPressureRequirement(instanceURI);
-     case 16:
-   	    return new ActivityHeartRateRequirement(instanceURI);
-      case 17:
-   	    return new ReposeHeartRateRequirement(instanceURI);
-      case 20:
-        return new PerformedSessionManagementService(instanceURI);
-      case 32:
-    	  return new Diet(instanceURI);
-      case 33:
-    	  return new WeightMeasurementTreatment(instanceURI);
-      case 34:
-    	  return new Walking(instanceURI);
+	case 13:
+	    return new PerformedSession(instanceURI);
+	case 14:
+	    return new DiastolicBloodPressureRequirement(instanceURI);
+	case 15:
+	    return new SystolicBloodPressureRequirement(instanceURI);
+	case 16:
+	    return new ActivityHeartRateRequirement(instanceURI);
+	case 17:
+	    return new ReposeHeartRateRequirement(instanceURI);
+	case 20:
+	    return new PerformedSessionManagementService(instanceURI);
+	case 32:
+	    return new Diet(instanceURI);
+	case 33:
+	    return new WeightMeasurementTreatment(instanceURI);
+	case 34:
+	    return new Walking(instanceURI);
 	}
 	return null;
-  }
+    }
 }

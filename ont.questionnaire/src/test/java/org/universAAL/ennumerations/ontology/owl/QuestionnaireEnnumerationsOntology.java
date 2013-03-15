@@ -25,35 +25,33 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.profile.ProfileOntology;
 
+public class QuestionnaireEnnumerationsOntology extends Ontology {
 
-public class QuestionnaireEnnumerationsOntology extends Ontology{
+    private static QuestionnaireEnummerationsOntologyFactory factory = new QuestionnaireEnummerationsOntologyFactory();
+    public static final String NAMESPACE = "http://ontology.universaal.org/QuestionnaireEnnumerationsOntology#";
 
-	private static  QuestionnaireEnummerationsOntologyFactory factory = new QuestionnaireEnummerationsOntologyFactory();
-	public static final String NAMESPACE ="http://ontology.universaal.org/QuestionnaireEnnumerationsOntology#";
+    public QuestionnaireEnnumerationsOntology() {
+	super(NAMESPACE);
+    }
 
-	public  QuestionnaireEnnumerationsOntology() {
-		super(NAMESPACE);
-	}
+    public void create() {
+	Resource r = getInfo();
+	r
+		.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
+	r.setResourceLabel("Lighting");
+	addImport(DataRepOntology.NAMESPACE);
+	addImport(ProfileOntology.NAMESPACE);
 
-	public void create() {
-		Resource r = getInfo();
-		r.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
-		r.setResourceLabel("Lighting");
-		addImport(DataRepOntology.NAMESPACE);
-		addImport(ProfileOntology.NAMESPACE);
+	OntClassInfoSetup oci;
 
-		OntClassInfoSetup oci;
+	// ******* Enumeration classes of the ontology ******* //
 
-		// ******* Enumeration classes of the ontology ******* //
+	// load Parts of day ennumeration
+	oci = createNewAbstractOntClassInfo(PartsOfDay.MY_URI);
+	oci.setResourceComment("");
+	oci.setResourceLabel("PartsOfDay");
+	oci.toEnumeration(new ManagedIndividual[] { PartsOfDay.inTheMorning,
+		PartsOfDay.inTheAfternoon, PartsOfDay.inTheAfternoon });
 
-		// load Parts of day ennumeration
-		oci = createNewAbstractOntClassInfo(PartsOfDay.MY_URI);
-		oci.setResourceComment("");
-		oci.setResourceLabel("PartsOfDay");
-		oci.toEnumeration(new ManagedIndividual[] {
-				PartsOfDay.inTheMorning, PartsOfDay.inTheAfternoon, PartsOfDay.inTheAfternoon});
-
-
-
-	}
+    }
 }

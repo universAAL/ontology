@@ -61,7 +61,7 @@ public class PendingDialogsBuilderType extends ManagedIndividual {
     public int ord() {
 	return order;
     }
-    
+
     /**
      * @return number of defined types
      */

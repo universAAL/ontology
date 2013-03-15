@@ -6,29 +6,28 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-
 public class StructuralFault extends PhysicalFault {
-  public static final String MY_URI = DependabilityOntology.NAMESPACE
-    + "StructuralFault";
+    public static final String MY_URI = DependabilityOntology.NAMESPACE
+	    + "StructuralFault";
 
+    public StructuralFault() {
+	super();
+    }
 
-  public StructuralFault () {
-    super();
-  }
-  
-  public StructuralFault (String uri) {
-    super(uri);
-  }
+    public StructuralFault(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove 
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
+	// TODO Implement or if for Device subclasses: remove
 	return 0;
-  }
+    }
 
-  public boolean isWellFormed() {
-	return true ;
-  }
+    public boolean isWellFormed() {
+	return true;
+    }
 }

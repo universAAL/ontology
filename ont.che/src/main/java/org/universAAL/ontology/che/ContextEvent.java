@@ -142,8 +142,8 @@ public class ContextEvent extends ManagedIndividual {
      * which URI is present in the properties of the subject. Subject, predicate
      * and object must not be null. If you intend otherwise, use another
      * constructor. This is the only constructor that will set a well-formed URI
-     * to the event. If you need such an URI, but without subject, predicate
-     * or object, you can use this constructor with stub parameters and then set
+     * to the event. If you need such an URI, but without subject, predicate or
+     * object, you can use this constructor with stub parameters and then set
      * them to null with the right "set" methods.
      * 
      * @param subject

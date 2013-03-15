@@ -18,26 +18,26 @@
 package org.universaal.ontology.healthmeasurement.owl;
 
 public class SingleValueMeasurement extends Measurement {
-  public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-    + "SingleValueMeasurement";
+    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
+	    + "SingleValueMeasurement";
 
+    public SingleValueMeasurement() {
+	super();
+    }
 
-  public SingleValueMeasurement () {
-    super();
-  }
-  
-  public SingleValueMeasurement (String uri) {
-    super(uri);
-  }
+    public SingleValueMeasurement(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true ;
-  }
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

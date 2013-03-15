@@ -30,30 +30,30 @@ import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
 
 public class QuestionnaireFactory extends ResourceFactoryImpl {
 
-
-  public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
 	switch (factoryIndex) {
-     case 0:
+	case 0:
 	    return new AnsweredQuestionnaire(instanceURI);
-     case 1:
-    	 return new QuestionWithMedia(instanceURI);
-     case 2:
+	case 1:
+	    return new QuestionWithMedia(instanceURI);
+	case 2:
 	    return new MultiChoiceQuestion(instanceURI);
-     case 3:
+	case 3:
 	    return new SingleChoiceQuestion(instanceURI);
-     case 4:
+	case 4:
 	    return new Questionnaire(instanceURI);
-     case 5:
+	case 5:
 	    return new ConditionalQuestion(instanceURI);
-     case 6:
+	case 6:
 	    return new ChoiceLabel(instanceURI);
-     case 8:
+	case 8:
 	    return new Answer(instanceURI);
-     case 9:
- 	    return new QuestionnaireService(instanceURI);
+	case 9:
+	    return new QuestionnaireService(instanceURI);
 
 	}
 	return null;
-  }
+    }
 }

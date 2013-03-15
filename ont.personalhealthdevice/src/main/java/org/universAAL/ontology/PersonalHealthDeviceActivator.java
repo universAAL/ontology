@@ -6,20 +6,21 @@ import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology;
 
 /**
- * OSGi bundle activator.
- * Registers the PersonalHealthDevice Ontology in the universAAL ontology manager.
- *
+ * OSGi bundle activator. Registers the PersonalHealthDevice Ontology in the
+ * universAAL ontology manager.
+ * 
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
-public class PersonalHealthDeviceActivator implements ModuleActivator{
+public class PersonalHealthDeviceActivator implements ModuleActivator {
 
-	PersonalHealthDeviceOntology personalHealthDeviceOntology = new PersonalHealthDeviceOntology();
+    PersonalHealthDeviceOntology personalHealthDeviceOntology = new PersonalHealthDeviceOntology();
 
-	public void start(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().register(personalHealthDeviceOntology);
-	}
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(personalHealthDeviceOntology);
+    }
 
-	public void stop(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().unregister(personalHealthDeviceOntology);
-	}
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(
+		personalHealthDeviceOntology);
+    }
 }

@@ -16,18 +16,18 @@ import org.universAAL.middleware.owl.OntologyManagement;
 // Main class
 public class Activator implements BundleActivator {
 
-	// Attributes
-	ContinuaHealthManagerOntology cho = new ContinuaHealthManagerOntology();
-	
-	// Methods
-	
-	/** Start */
-	public void start(BundleContext arg0) throws Exception {
-		OntologyManagement.getInstance().register(cho);
-	}
+    // Attributes
+    ContinuaHealthManagerOntology cho = new ContinuaHealthManagerOntology();
 
-	/** Stop */
-	public void stop(BundleContext arg0) throws Exception {
-		OntologyManagement.getInstance().unregister(cho);		
-	}
+    // Methods
+
+    /** Start */
+    public void start(BundleContext arg0) throws Exception {
+	OntologyManagement.getInstance().register(cho);
+    }
+
+    /** Stop */
+    public void stop(BundleContext arg0) throws Exception {
+	OntologyManagement.getInstance().unregister(cho);
+    }
 }

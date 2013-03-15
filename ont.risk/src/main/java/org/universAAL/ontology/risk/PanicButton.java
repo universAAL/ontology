@@ -34,42 +34,44 @@ import org.universAAL.ontology.profile.AssistedPerson;
  * 
  */
 public class PanicButton extends Device {
-	public static final String MY_URI=RiskOntology.NAMESPACE + "PanicButton";
-	public static final String PROP_ACTIVATED=RiskOntology.NAMESPACE + "activated";
-	public static final String PROP_PRESSED_BY=RiskOntology.NAMESPACE + "pressedBy";
+    public static final String MY_URI = RiskOntology.NAMESPACE + "PanicButton";
+    public static final String PROP_ACTIVATED = RiskOntology.NAMESPACE
+	    + "activated";
+    public static final String PROP_PRESSED_BY = RiskOntology.NAMESPACE
+	    + "pressedBy";
 
-	public PanicButton() {
-	}
+    public PanicButton() {
+    }
 
-	public PanicButton(String uri) {
-		super(uri);
-	}
+    public PanicButton(String uri) {
+	super(uri);
+    }
 
-	public String getClassURI() {
-		return MY_URI;
-	}
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    public boolean isWellFormed() {
+	return true;
+    }
 
-	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
-	}
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-	public boolean getActivated() {
-		return ((Boolean) props.get(PROP_ACTIVATED)).booleanValue();
-	}
+    public boolean getActivated() {
+	return ((Boolean) props.get(PROP_ACTIVATED)).booleanValue();
+    }
 
-	public void setActivated(boolean value) {
-		props.put(PROP_ACTIVATED, Boolean.valueOf(value));
-	}
+    public void setActivated(boolean value) {
+	props.put(PROP_ACTIVATED, Boolean.valueOf(value));
+    }
 
-	public AssistedPerson getPressedBy() {
-		return (AssistedPerson) props.get(PROP_PRESSED_BY);
-	}
+    public AssistedPerson getPressedBy() {
+	return (AssistedPerson) props.get(PROP_PRESSED_BY);
+    }
 
-	public void setPressedBy(AssistedPerson value) {
-		props.put(PROP_PRESSED_BY, value);
-	}
+    public void setPressedBy(AssistedPerson value) {
+	props.put(PROP_PRESSED_BY, value);
+    }
 }

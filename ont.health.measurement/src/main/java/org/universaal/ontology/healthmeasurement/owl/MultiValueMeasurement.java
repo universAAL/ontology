@@ -18,50 +18,48 @@
 package org.universaal.ontology.healthmeasurement.owl;
 
 public class MultiValueMeasurement extends Measurement {
-  public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-    + "MultiValueMeasurement";
-  public static final String PROP_UNIT = HealthMeasurementOntology.NAMESPACE
-    + "unit";
-  public static final String PROP_VALUE = HealthMeasurementOntology.NAMESPACE
-    + "value";
+    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
+	    + "MultiValueMeasurement";
+    public static final String PROP_UNIT = HealthMeasurementOntology.NAMESPACE
+	    + "unit";
+    public static final String PROP_VALUE = HealthMeasurementOntology.NAMESPACE
+	    + "value";
 
+    public MultiValueMeasurement() {
+	super();
+    }
 
-  public MultiValueMeasurement () {
-    super();
-  }
-  
-  public MultiValueMeasurement (String uri) {
-    super(uri);
-  }
+    public MultiValueMeasurement(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_UNIT)
-      && hasProperty(PROP_VALUE);
-  }
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-  public String getValue() {
-    return (String)getProperty(PROP_VALUE);
-  }		
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_UNIT) && hasProperty(PROP_VALUE);
+    }
 
-  public void setValue(String newPropValue) {
-    if (newPropValue != null)
-      setProperty(PROP_VALUE, newPropValue);
-  }		
+    public String getValue() {
+	return (String) getProperty(PROP_VALUE);
+    }
 
-  public String getUnit() {
-    return (String)getProperty(PROP_UNIT);
-  }		
+    public void setValue(String newPropValue) {
+	if (newPropValue != null)
+	    setProperty(PROP_VALUE, newPropValue);
+    }
 
-  public void setUnit(String newPropValue) {
-    if (newPropValue != null)
-      setProperty(PROP_UNIT, newPropValue);
-  }		
+    public String getUnit() {
+	return (String) getProperty(PROP_UNIT);
+    }
+
+    public void setUnit(String newPropValue) {
+	if (newPropValue != null)
+	    setProperty(PROP_UNIT, newPropValue);
+    }
 }

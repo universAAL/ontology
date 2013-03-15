@@ -26,7 +26,6 @@
 
 package org.universAAL.ontology.profile;
 
-
 /**
  * Ontological representation of the specific profile of an any person. Methods
  * included in this class are the mandatory ones for representing an ontological

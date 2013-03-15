@@ -22,10 +22,9 @@
  */
 package org.universAAL.ontology.vcard;
 
-
 public class Video extends Tel {
     public static final String MY_URI = VCardOntology.NAMESPACE + "Video";
-    
+
     public Video() {
 	super();
     }
@@ -37,7 +36,7 @@ public class Video extends Tel {
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

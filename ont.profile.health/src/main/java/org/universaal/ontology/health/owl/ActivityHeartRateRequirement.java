@@ -16,27 +16,27 @@
 
 package org.universaal.ontology.health.owl;
 
-public class ActivityHeartRateRequirement extends HeartRateRequirement{
-	public static final String MY_URI = HealthOntology.NAMESPACE
-    + "ActivityHeartRateRequirement";
+public class ActivityHeartRateRequirement extends HeartRateRequirement {
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "ActivityHeartRateRequirement";
 
+    public ActivityHeartRateRequirement() {
+	super();
+    }
 
-  public ActivityHeartRateRequirement () {
-    super();
-  }
-  
-  public ActivityHeartRateRequirement (String uri) {
-    super(uri);
-  }
+    public ActivityHeartRateRequirement(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true ;
-  }
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

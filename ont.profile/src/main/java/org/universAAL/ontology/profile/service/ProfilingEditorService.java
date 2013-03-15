@@ -49,7 +49,7 @@ public class ProfilingEditorService extends Service {
     public ProfilingEditorService() {
 	super();
     }
-    
+
     public String getClassURI() {
 	return MY_URI;
     }

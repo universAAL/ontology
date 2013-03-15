@@ -20,54 +20,53 @@ package org.universAAL.ontology.questionnaire;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
- * This class describes the service given by the 
- * questionnaire ontology. 
- * Given a questionnaire to a user we get an
- * answered questionnaire.
+ * This class describes the service given by the questionnaire ontology. Given a
+ * questionnaire to a user we get an answered questionnaire.
+ * 
  * @author mdelafuente
- *
+ * 
  */
-public class QuestionnaireService extends Service{
+public class QuestionnaireService extends Service {
 
-//NAMESPACE & PROPERTIES
-	  public static final String MY_URI = QuestionnaireOntology.NAMESPACE
+    // NAMESPACE & PROPERTIES
+    public static final String MY_URI = QuestionnaireOntology.NAMESPACE
 	    + "QuestionnaireService";
 
-	  public static final String PROP_PROPOSED_QUESTIONNAIRE =  QuestionnaireOntology.NAMESPACE
+    public static final String PROP_PROPOSED_QUESTIONNAIRE = QuestionnaireOntology.NAMESPACE
 	    + "proposedQuestionnaire";
-	  public static final String PROP_TARGET_USER =  QuestionnaireOntology.NAMESPACE
+    public static final String PROP_TARGET_USER = QuestionnaireOntology.NAMESPACE
 	    + "targetUser";
-	  public static final String PROP_GENERATES_ANSWERED_QUESTIONNAIRE =  QuestionnaireOntology.NAMESPACE
+    public static final String PROP_GENERATES_ANSWERED_QUESTIONNAIRE = QuestionnaireOntology.NAMESPACE
 	    + "generatesAnsweredQuestionnaire";
-	
-//CONSTRUCTORS
-	  public QuestionnaireService() {
-		  super();
-	  }
 
-	  public QuestionnaireService(String uri) {
-		  super(uri);
-	  }
+    // CONSTRUCTORS
+    public QuestionnaireService() {
+	super();
+    }
 
-	  public String getClassURI() {
-		  return MY_URI;
-	  }
+    public QuestionnaireService(String uri) {
+	super(uri);
+    }
 
-	  /*
-	   * (non-Javadoc)
-	   * 
-	   * @see
-	   * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-	   * (java.lang.String)
-	   */
-	  public int getPropSerializationType(String propURI) {
-		  return  PROP_TARGET_USER.equals(propURI) ||
-		  PROP_GENERATES_ANSWERED_QUESTIONNAIRE.equals(propURI) ||
-		  PROP_PROPOSED_QUESTIONNAIRE.equals(propURI) ? PROP_SERIALIZATION_FULL : super
-				  .getPropSerializationType(propURI);
-	  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	  public boolean isWellFormed() {
-		  return true;
-	  }
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+     * (java.lang.String)
+     */
+    public int getPropSerializationType(String propURI) {
+	return PROP_TARGET_USER.equals(propURI)
+		|| PROP_GENERATES_ANSWERED_QUESTIONNAIRE.equals(propURI)
+		|| PROP_PROPOSED_QUESTIONNAIRE.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

@@ -31,35 +31,35 @@ import org.universaal.ontology.health.owl.HealthProfile;
  * @navassoc - "PROP_ASSISTED_USER" 1 AssistedPerson
  * @navassoc - "PROP_ASSISTED_USER_PROFILE" 1 HealthProfile
  */
-public abstract class HealthService extends Service{
-	
-	//NAMESPACE & PROPERTIES
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "HealthService";
-	
-	public static final String PROP_ASSISTED_USER = HealthOntology.NAMESPACE
-			+"assistedPerson";
+public abstract class HealthService extends Service {
 
-	public static final String PROP_ASSISTED_USER_PROFILE = HealthOntology.NAMESPACE
-			+ "healthProfile";
-	
-	//CONSTRUCTORS
-	public HealthService() {
-		super();
-	}
+    // NAMESPACE & PROPERTIES
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "HealthService";
 
-	public HealthService(String uri) {
-		super(uri);
-	}
+    public static final String PROP_ASSISTED_USER = HealthOntology.NAMESPACE
+	    + "assistedPerson";
 
-	/** {@inheritDoc} */
-	public String getClassURI() {
-		return MY_URI;
-	}
+    public static final String PROP_ASSISTED_USER_PROFILE = HealthOntology.NAMESPACE
+	    + "healthProfile";
 
-	/** {@inheritDoc} */
-	public boolean isWellFormed() {
-		  return true;
-	}
+    // CONSTRUCTORS
+    public HealthService() {
+	super();
+    }
+
+    public HealthService(String uri) {
+	super(uri);
+    }
+
+    /** {@inheritDoc} */
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    /** {@inheritDoc} */
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }

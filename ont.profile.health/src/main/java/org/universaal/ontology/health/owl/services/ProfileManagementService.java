@@ -25,35 +25,34 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * 
  * @navassoc - "manages" - HealthProfile
  */
-public class ProfileManagementService extends HealthService{
+public class ProfileManagementService extends HealthService {
 
-	//NAMESPACE & PROPERTIES
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "HealthProfileManagementService";
+    // NAMESPACE & PROPERTIES
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "HealthProfileManagementService";
 
-    //CONSTRUCTORS
-	public ProfileManagementService() {
-		super();
-	}
+    // CONSTRUCTORS
+    public ProfileManagementService() {
+	super();
+    }
 
-	public ProfileManagementService(String uri) {
-		super(uri);
-	}
+    public ProfileManagementService(String uri) {
+	super(uri);
+    }
 
-	/** {@inheritDoc} */
-	public String getClassURI() {
-		return MY_URI;
-	}
+    /** {@inheritDoc} */
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	/** {@inheritDoc} */
-	public int getPropSerializationType(String propURI) {
-		return  PROP_ASSISTED_USER_PROFILE.equals(propURI) 
-		 ? PROP_SERIALIZATION_FULL : super
-				.getPropSerializationType(propURI);
-	}
+    /** {@inheritDoc} */
+    public int getPropSerializationType(String propURI) {
+	return PROP_ASSISTED_USER_PROFILE.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
 
-	/** {@inheritDoc} */
-	public boolean isWellFormed() {
-		return true;
-	}
+    /** {@inheritDoc} */
+    public boolean isWellFormed() {
+	return true;
+    }
 }

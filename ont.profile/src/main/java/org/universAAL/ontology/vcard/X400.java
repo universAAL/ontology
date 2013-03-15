@@ -22,10 +22,9 @@
  */
 package org.universAAL.ontology.vcard;
 
-
-public class X400 extends Email{
+public class X400 extends Email {
     public static final String MY_URI = VCardOntology.NAMESPACE + "X400";
-    
+
     public X400() {
 	super();
     }
@@ -37,7 +36,7 @@ public class X400 extends Email{
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

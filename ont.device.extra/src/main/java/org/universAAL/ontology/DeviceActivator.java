@@ -28,22 +28,29 @@ import org.universAAL.ontology.device.home.DeviceOntology;
 
 /**
  * @author alfiva
- *
+ * 
  */
 public class DeviceActivator implements ModuleActivator {
 
     private DeviceOntology deviceOntology = new DeviceOntology();
 
-    /* (non-Javadoc)
-     * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext
+     * )
      */
     public void start(ModuleContext context) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();
 	om.register(deviceOntology);
     }
 
-    /* (non-Javadoc)
-     * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
      */
     public void stop(ModuleContext arg0) throws Exception {
 	OntologyManagement om = OntologyManagement.getInstance();

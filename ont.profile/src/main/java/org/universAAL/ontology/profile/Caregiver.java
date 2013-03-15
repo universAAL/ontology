@@ -26,7 +26,6 @@
 
 package org.universAAL.ontology.profile;
 
-
 /**
  * Ontology class representing a Care giver user
  * 
@@ -38,7 +37,7 @@ public class Caregiver extends User {
 
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE + "Caregiver";
-    
+
     /**
      * Because there is no multiple inhertiance in Java, we copy this property
      * from Profilable (although the methods here still use

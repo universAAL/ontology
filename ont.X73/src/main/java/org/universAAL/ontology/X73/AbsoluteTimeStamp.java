@@ -6,122 +6,108 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-
 public class AbsoluteTimeStamp extends ManagedIndividual {
-  public static final String MY_URI = X73Ontology.NAMESPACE
-    + "AbsoluteTimeStamp";
-  public static final String PROP_YEAR = X73Ontology.NAMESPACE
-    + "year";
-  public static final String PROP_CENTURY = X73Ontology.NAMESPACE
-		    + "century";
-  public static final String PROP_MONTH = X73Ontology.NAMESPACE
-		    + "month";
-  public static final String PROP_DAY = X73Ontology.NAMESPACE
-		    + "day";
-  public static final String PROP_HOUR = X73Ontology.NAMESPACE
-		    + "hour";
-  public static final String PROP_MINUTE = X73Ontology.NAMESPACE
-		    + "minute";
-  public static final String PROP_SECOND = X73Ontology.NAMESPACE
-		    + "second";
-  public static final String PROP_SECFRACTIONS = X73Ontology.NAMESPACE
-		    + "secfractions";
+    public static final String MY_URI = X73Ontology.NAMESPACE
+	    + "AbsoluteTimeStamp";
+    public static final String PROP_YEAR = X73Ontology.NAMESPACE + "year";
+    public static final String PROP_CENTURY = X73Ontology.NAMESPACE + "century";
+    public static final String PROP_MONTH = X73Ontology.NAMESPACE + "month";
+    public static final String PROP_DAY = X73Ontology.NAMESPACE + "day";
+    public static final String PROP_HOUR = X73Ontology.NAMESPACE + "hour";
+    public static final String PROP_MINUTE = X73Ontology.NAMESPACE + "minute";
+    public static final String PROP_SECOND = X73Ontology.NAMESPACE + "second";
+    public static final String PROP_SECFRACTIONS = X73Ontology.NAMESPACE
+	    + "secfractions";
 
+    public AbsoluteTimeStamp() {
+	super();
+    }
 
-  public AbsoluteTimeStamp () {
-    super();
-  }
-  
-  public AbsoluteTimeStamp (String uri) {
-    super(uri);
-  }
+    public AbsoluteTimeStamp(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
 	return PROP_SERIALIZATION_FULL;
-  }
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_YEAR)
-      && hasProperty(PROP_CENTURY);
-  }
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_YEAR) && hasProperty(PROP_CENTURY);
+    }
 
-  public int getCentury() {
+    public int getCentury() {
 	Integer i = (Integer) getProperty(PROP_CENTURY);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setCentury(int newPropValue) {
-      changeProperty(PROP_CENTURY, new Integer(newPropValue));
-  }		
+    public void setCentury(int newPropValue) {
+	changeProperty(PROP_CENTURY, new Integer(newPropValue));
+    }
 
-  public int getYear() {
+    public int getYear() {
 	Integer i = (Integer) getProperty(PROP_YEAR);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setYear(int newPropValue) {
-      changeProperty(PROP_YEAR, new Integer(newPropValue));
-  }		
+    public void setYear(int newPropValue) {
+	changeProperty(PROP_YEAR, new Integer(newPropValue));
+    }
 
-  public int getMonth() {
+    public int getMonth() {
 	Integer i = (Integer) getProperty(PROP_MONTH);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setMonth(int newPropValue) {
-      changeProperty(PROP_MONTH, new Integer(newPropValue));
-  }	
-  
-  public int getDay() {
+    public void setMonth(int newPropValue) {
+	changeProperty(PROP_MONTH, new Integer(newPropValue));
+    }
+
+    public int getDay() {
 	Integer i = (Integer) getProperty(PROP_DAY);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setDay(int newPropValue) {
-      changeProperty(PROP_DAY, new Integer(newPropValue));
-  }		
+    public void setDay(int newPropValue) {
+	changeProperty(PROP_DAY, new Integer(newPropValue));
+    }
 
-  
-  public int getHour() {
+    public int getHour() {
 	Integer i = (Integer) getProperty(PROP_HOUR);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setHour(int newPropValue) {
-      changeProperty(PROP_HOUR, new Integer(newPropValue));
-  }		
+    public void setHour(int newPropValue) {
+	changeProperty(PROP_HOUR, new Integer(newPropValue));
+    }
 
-  
-  public int getMinute() {
+    public int getMinute() {
 	Integer i = (Integer) getProperty(PROP_MINUTE);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setMinute(int newPropValue) {
-      changeProperty(PROP_MINUTE, new Integer(newPropValue));
-  }		
+    public void setMinute(int newPropValue) {
+	changeProperty(PROP_MINUTE, new Integer(newPropValue));
+    }
 
-  
-  public int getSecond() {
+    public int getSecond() {
 	Integer i = (Integer) getProperty(PROP_SECOND);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setSecond(int newPropValue) {
-      changeProperty(PROP_SECOND, new Integer(newPropValue));
-  }		
+    public void setSecond(int newPropValue) {
+	changeProperty(PROP_SECOND, new Integer(newPropValue));
+    }
 
-  
-  public int getSecfractions() {
+    public int getSecfractions() {
 	Integer i = (Integer) getProperty(PROP_SECFRACTIONS);
 	return (i == null) ? 0 : i.intValue();
-  }		
+    }
 
-  public void setSecfractions(int newPropValue) {
-      changeProperty(PROP_SECFRACTIONS, new Integer(newPropValue));
-  }		
+    public void setSecfractions(int newPropValue) {
+	changeProperty(PROP_SECFRACTIONS, new Integer(newPropValue));
+    }
 }

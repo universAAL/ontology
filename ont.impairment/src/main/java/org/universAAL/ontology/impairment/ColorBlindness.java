@@ -32,7 +32,7 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * @author mtazari
  * @author Carsten Stockloew
  */
-public class ColorBlindness extends SightImpairment  {
+public class ColorBlindness extends SightImpairment {
     public static final String MY_URI = ImpairmentOntology.NAMESPACE
 	    + "ColorBlindness";
 
@@ -55,7 +55,7 @@ public class ColorBlindness extends SightImpairment  {
 	return MY_URI;
     }
 
-     public String toString() {
+    public String toString() {
 	return "Colorblindness: " + this.getImpaimentLevel().name();
     }
 }

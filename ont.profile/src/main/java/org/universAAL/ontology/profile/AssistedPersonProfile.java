@@ -26,7 +26,6 @@
 
 package org.universAAL.ontology.profile;
 
-
 /**
  * Ontology class representing an Assisted Person Profile
  * 

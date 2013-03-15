@@ -19,56 +19,42 @@ package org.universaal.ontology.health.owl;
 
 import org.universaal.ontology.healthmeasurement.owl.HealthMeasurement;
 
-public class PerformedMeasurementSession extends PerformedSession{
-	
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "PerformedMeasurementSession";
+public class PerformedMeasurementSession extends PerformedSession {
 
-	public static final String PROP_HAS_HEALTH_MEASUREMENT = HealthOntology.NAMESPACE
-	+ "hasMeasurement";
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "PerformedMeasurementSession";
 
-	public PerformedMeasurementSession () {
-		super();
-	}
+    public static final String PROP_HAS_HEALTH_MEASUREMENT = HealthOntology.NAMESPACE
+	    + "hasMeasurement";
 
-	public PerformedMeasurementSession (String uri) {
-		super(uri);
-	}
+    public PerformedMeasurementSession() {
+	super();
+    }
 
-	public String getClassURI() {
-		return MY_URI;
-	}
-	public int getPropSerializationType(String arg0) {
-		return PROP_SERIALIZATION_FULL;
-	}
-	
-	public boolean isWellFormed() {
-		return true 
-	      && props.containsKey(PROP_HAS_HEALTH_MEASUREMENT);
-	  }
-	
-	//GETTERS & SETTERS
-	public HealthMeasurement getHealthMeasurement() {
-	    return (HealthMeasurement)props.get(PROP_HAS_HEALTH_MEASUREMENT);
-	  }		
+    public PerformedMeasurementSession(String uri) {
+	super(uri);
+    }
 
-	  public void setName(HealthMeasurement hMeasurement) {
-	    if (hMeasurement != null)
-	      props.put(PROP_HAS_HEALTH_MEASUREMENT, hMeasurement);
-	  }		
+    public String getClassURI() {
+	return MY_URI;
+    }
 
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
+    public boolean isWellFormed() {
+	return true && props.containsKey(PROP_HAS_HEALTH_MEASUREMENT);
+    }
 
+    // GETTERS & SETTERS
+    public HealthMeasurement getHealthMeasurement() {
+	return (HealthMeasurement) props.get(PROP_HAS_HEALTH_MEASUREMENT);
+    }
 
-}	
+    public void setName(HealthMeasurement hMeasurement) {
+	if (hMeasurement != null)
+	    props.put(PROP_HAS_HEALTH_MEASUREMENT, hMeasurement);
+    }
 
-
-
-
-
-
-
-
-
-
-
+}

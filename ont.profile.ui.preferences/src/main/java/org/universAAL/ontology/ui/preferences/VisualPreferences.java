@@ -85,8 +85,7 @@ public class VisualPreferences extends ManagedIndividual {
 		&& hasProperty(PROP_SCREEN_RESOLUTION)
 		&& hasProperty(PROP_CURSOR_SIZE)
 		&& hasProperty(PROP_SCREEN_SAVER_USAGE)
-		&& hasProperty(PROP_FONT_COLOR)
-		&& hasProperty(PROP_FONT_SIZE);
+		&& hasProperty(PROP_FONT_COLOR) && hasProperty(PROP_FONT_SIZE);
     }
 
     public Intensity getBrightness() {

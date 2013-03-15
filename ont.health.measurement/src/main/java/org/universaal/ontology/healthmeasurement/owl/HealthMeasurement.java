@@ -18,50 +18,49 @@
 package org.universaal.ontology.healthmeasurement.owl;
 
 public class HealthMeasurement extends Measurement {
-  public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-    + "HealthMeasurement";
-  public static final String PROP_OBTAINED_FROM = HealthMeasurementOntology.NAMESPACE
-    + "PROP_OBTAINED_FROM";
-  public static final String PROP_MEASURED_BY = HealthMeasurementOntology.NAMESPACE
-    + "PROP_MEASURED_BY";
+    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
+	    + "HealthMeasurement";
+    public static final String PROP_OBTAINED_FROM = HealthMeasurementOntology.NAMESPACE
+	    + "PROP_OBTAINED_FROM";
+    public static final String PROP_MEASURED_BY = HealthMeasurementOntology.NAMESPACE
+	    + "PROP_MEASURED_BY";
 
+    public HealthMeasurement() {
+	super();
+    }
 
-  public HealthMeasurement () {
-    super();
-  }
-  
-  public HealthMeasurement (String uri) {
-    super(uri);
-  }
+    public HealthMeasurement(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_OBTAINED_FROM)
-      && hasProperty(PROP_MEASURED_BY);
-  }
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-  public String getPROP_OBTAINED_FROM() {
-    return (String)getProperty(PROP_OBTAINED_FROM);
-  }		
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_OBTAINED_FROM)
+		&& hasProperty(PROP_MEASURED_BY);
+    }
 
-  public void setPROP_OBTAINED_FROM(String newPropValue) {
-    if (newPropValue != null)
-      setProperty(PROP_OBTAINED_FROM, newPropValue);
-  }		
+    public String getPROP_OBTAINED_FROM() {
+	return (String) getProperty(PROP_OBTAINED_FROM);
+    }
 
-  public String getPROP_MEASURED_BY() {
-    return (String)getProperty(PROP_MEASURED_BY);
-  }		
+    public void setPROP_OBTAINED_FROM(String newPropValue) {
+	if (newPropValue != null)
+	    setProperty(PROP_OBTAINED_FROM, newPropValue);
+    }
 
-  public void setPROP_MEASURED_BY(String newPropValue) {
-    if (newPropValue != null)
-      setProperty(PROP_MEASURED_BY, newPropValue);
-  }		
+    public String getPROP_MEASURED_BY() {
+	return (String) getProperty(PROP_MEASURED_BY);
+    }
+
+    public void setPROP_MEASURED_BY(String newPropValue) {
+	if (newPropValue != null)
+	    setProperty(PROP_MEASURED_BY, newPropValue);
+    }
 }

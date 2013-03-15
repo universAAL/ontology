@@ -25,7 +25,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class Gender extends ManagedIndividual {
 
-    public static final String MY_URI = ProfileOntology.NAMESPACE+"Gender";
+    public static final String MY_URI = ProfileOntology.NAMESPACE + "Gender";
 
     public static final int MALE = 0;
     public static final int FEMALE = 1;

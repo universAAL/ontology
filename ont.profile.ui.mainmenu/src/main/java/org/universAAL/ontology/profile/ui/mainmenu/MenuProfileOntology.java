@@ -60,8 +60,7 @@ public final class MenuProfileOntology extends Ontology {
 	oci.setResourceLabel("Menu Entry");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
 	oci.addObjectProperty(MenuEntry.PROP_VENDOR).setFunctional();
-	oci.addObjectProperty(MenuEntry.PROP_SERVICE_CLASS)
-		.setFunctional();
+	oci.addObjectProperty(MenuEntry.PROP_SERVICE_CLASS).setFunctional();
 	oci.addObjectProperty(MenuEntry.PROP_PATH);
 	oci.addRestriction(MergedRestriction.getCardinalityRestriction(
 		MenuEntry.PROP_VENDOR, 1, 1));
@@ -82,8 +81,7 @@ public final class MenuProfileOntology extends Ontology {
 		Profile.PROP_HAS_SUB_PROFILE);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			PROP_UI_MAINMENU_PROFILE, MenuProfile.MY_URI, 0,
-			1));
+			PROP_UI_MAINMENU_PROFILE, MenuProfile.MY_URI, 0, 1));
 
 	// extend User
 	oci = extendExistingOntClassInfo(User.MY_URI);

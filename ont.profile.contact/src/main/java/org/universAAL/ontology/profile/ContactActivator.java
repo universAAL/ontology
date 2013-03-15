@@ -22,14 +22,14 @@ import org.universAAL.ontology.profile.contact.ContactOntology;
 
 public class ContactActivator implements ModuleActivator {
 
-	private ContactOntology ont = new ContactOntology();
+    private ContactOntology ont = new ContactOntology();
 
-	public void start(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().register(ont);
-	}
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(ont);
+    }
 
-	public void stop(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().unregister(ont);
-	}
+    public void stop(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().unregister(ont);
+    }
 
 }

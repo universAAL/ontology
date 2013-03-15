@@ -14,24 +14,27 @@ import org.universAAL.ontology.ContinuaHealthManagerOntology;
 
 // Main class
 public class ContinuaHealthManager extends Service {
-	
-	// Attributes
-	public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE + "ContinuaHealthManagerService";
-	public static final String PROP_HAS_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE+"hasContinuaDevice";
-	public static final String PROP_HAS_NOT_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE+"hasNotContinuaDevice";
-	
-	// Constructor	
-	public ContinuaHealthManager(String instanceURI) {
-		super(instanceURI);
-	}
 
-	public ContinuaHealthManager() {
-		super();
-	}
+    // Attributes
+    public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE
+	    + "ContinuaHealthManagerService";
+    public static final String PROP_HAS_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE
+	    + "hasContinuaDevice";
+    public static final String PROP_HAS_NOT_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE
+	    + "hasNotContinuaDevice";
 
-	// Methods
-	public String getClassURI(){
-		return MY_URI;  
-	}
+    // Constructor
+    public ContinuaHealthManager(String instanceURI) {
+	super(instanceURI);
+    }
+
+    public ContinuaHealthManager() {
+	super();
+    }
+
+    // Methods
+    public String getClassURI() {
+	return MY_URI;
+    }
 
 }

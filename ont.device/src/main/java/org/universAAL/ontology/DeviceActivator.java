@@ -37,4 +37,4 @@ public class DeviceActivator implements ModuleActivator {
     public void stop(ModuleContext context) throws Exception {
 	OntologyManagement.getInstance().unregister(ontD);
     }
-}	
+}

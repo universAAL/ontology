@@ -5,7 +5,7 @@ import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 import org.universAAL.ontology.risk.FallDetector;
 import org.universAAL.ontology.risk.PanicButton;
 
-public class RiskFactory extends ResourceFactoryImpl{
+public class RiskFactory extends ResourceFactoryImpl {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

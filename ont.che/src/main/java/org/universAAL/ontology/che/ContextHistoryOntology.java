@@ -77,7 +77,8 @@ public class ContextHistoryOntology extends Ontology {
      */
     public void create() {
 	Resource r = getInfo();
-	r.setResourceComment("The ontology defining the CHE concepts and services");
+	r
+		.setResourceComment("The ontology defining the CHE concepts and services");
 	r.setResourceLabel("CHE");
 	addImport(DataRepOntology.NAMESPACE);
 
@@ -85,7 +86,8 @@ public class ContextHistoryOntology extends Ontology {
 
 	// load ContextEvent______________
 	oci = createNewOntClassInfo(ContextEvent.MY_URI, factory, 0);
-	oci.setResourceComment("Replicates ContextEvent as a ManagedIndividual");
+	oci
+		.setResourceComment("Replicates ContextEvent as a ManagedIndividual");
 	oci.setResourceLabel("Context Event (CHE)");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
 
@@ -108,15 +110,15 @@ public class ContextHistoryOntology extends Ontology {
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			ContextEvent.PROP_CONTEXT_TIMESTAMP,
-			TypeMapper.getDatatypeURI(Long.class), 0, 1));
+			ContextEvent.PROP_CONTEXT_TIMESTAMP, TypeMapper
+				.getDatatypeURI(Long.class), 0, 1));
 
 	oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_EXPIRATION_TIME)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			ContextEvent.PROP_CONTEXT_EXPIRATION_TIME,
-			TypeMapper.getDatatypeURI(Long.class), 0, 1));
+			ContextEvent.PROP_CONTEXT_EXPIRATION_TIME, TypeMapper
+				.getDatatypeURI(Long.class), 0, 1));
 
 	oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_CONFIDENCE)
 		.setFunctional();
@@ -135,7 +137,8 @@ public class ContextHistoryOntology extends Ontology {
 
 	// load ContextHistoryService_________
 	oci = createNewOntClassInfo(ContextHistoryService.MY_URI, factory, 1);
-	oci.setResourceComment("The class of services managing Context Events in CHE");
+	oci
+		.setResourceComment("The class of services managing Context Events in CHE");
 	oci.setResourceLabel("Context History Services");
 	oci.addSuperClass(Service.MY_URI);
 
@@ -145,39 +148,40 @@ public class ContextHistoryOntology extends Ontology {
 
 	oci.addObjectProperty(ContextHistoryService.PROP_PROCESSES);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_PROCESSES,
-		TypeMapper.getDatatypeURI(String.class)));
+		ContextHistoryService.PROP_PROCESSES, TypeMapper
+			.getDatatypeURI(String.class)));
 
 	oci.addObjectProperty(ContextHistoryService.PROP_TIMESTAMP_FROM);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_TIMESTAMP_FROM,
-		TypeMapper.getDatatypeURI(Long.class)));
+		ContextHistoryService.PROP_TIMESTAMP_FROM, TypeMapper
+			.getDatatypeURI(Long.class)));
 
 	oci.addObjectProperty(ContextHistoryService.PROP_TIMESTAMP_TO);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_TIMESTAMP_TO,
-		TypeMapper.getDatatypeURI(Long.class)));
+		ContextHistoryService.PROP_TIMESTAMP_TO, TypeMapper
+			.getDatatypeURI(Long.class)));
 
 	oci.addObjectProperty(ContextHistoryService.PROP_DURATION_FROM);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_DURATION_FROM,
-		TypeMapper.getDatatypeURI(Duration.class)));
+		ContextHistoryService.PROP_DURATION_FROM, TypeMapper
+			.getDatatypeURI(Duration.class)));
 
 	oci.addObjectProperty(ContextHistoryService.PROP_DURATION_TO);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_DURATION_TO,
-		TypeMapper.getDatatypeURI(Duration.class)));
+		ContextHistoryService.PROP_DURATION_TO, TypeMapper
+			.getDatatypeURI(Duration.class)));
 
 	oci.addObjectProperty(ContextHistoryService.PROP_RETURNS);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_RETURNS,
-		TypeMapper.getDatatypeURI(String.class)));
-//
-//	// Load ProvidedServices
-//	oci = createNewOntClassInfo(ContextHistoryServices.MY_URI, factory, 2);
-//	oci.setResourceComment("The specific services provided by CHE itself");
-//	oci.setResourceLabel("Context History Services");
-//	oci.addSuperClass(ContextHistoryService.MY_URI);
+		ContextHistoryService.PROP_RETURNS, TypeMapper
+			.getDatatypeURI(String.class)));
+	//
+	// // Load ProvidedServices
+	// oci = createNewOntClassInfo(ContextHistoryServices.MY_URI, factory,
+	// 2);
+	// oci.setResourceComment("The specific services provided by CHE itself");
+	// oci.setResourceLabel("Context History Services");
+	// oci.addSuperClass(ContextHistoryService.MY_URI);
 
     }
 

@@ -25,10 +25,10 @@ package org.universAAL.ontology.vcard;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
 
-public class Email extends ManagedIndividual{
+public class Email extends ManagedIndividual {
     public static final String MY_URI = VCardOntology.NAMESPACE + "Email";
-    public static final String PROP_VALUE = Resource.RDF_NAMESPACE+"value";
-    
+    public static final String PROP_VALUE = Resource.RDF_NAMESPACE + "value";
+
     public Email() {
 	super();
     }
@@ -40,7 +40,7 @@ public class Email extends ManagedIndividual{
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

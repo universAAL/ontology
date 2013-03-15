@@ -17,13 +17,14 @@ import org.universAAL.ontology.continua.ContinuaHealthManager;
 // Main class
 public class ContinuaHealthManagerFactory extends ResourceFactoryImpl {
 
-	public Resource createInstance(String classURI,String instanceURI,int factoryIndex) {
-		switch (factoryIndex) {
-		case 0:
-			return new ContinuaHealthDevice(instanceURI);
-		case 1:
-			return new ContinuaHealthManager(instanceURI);
-		}
-		return null;
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
+	switch (factoryIndex) {
+	case 0:
+	    return new ContinuaHealthDevice(instanceURI);
+	case 1:
+	    return new ContinuaHealthManager(instanceURI);
 	}
+	return null;
+    }
 }

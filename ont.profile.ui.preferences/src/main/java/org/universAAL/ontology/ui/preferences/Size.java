@@ -61,7 +61,7 @@ public class Size extends ManagedIndividual {
     public int ord() {
 	return order;
     }
-    
+
     /**
      * @return number of defined types
      */

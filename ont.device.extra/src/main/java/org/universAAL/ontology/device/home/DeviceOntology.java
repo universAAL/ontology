@@ -32,9 +32,9 @@ import org.universAAL.ontology.phThing.PhThingOntology;
 
 /**
  * The Ontology for Extra Devices.
- *  
+ * 
  * @author alfiva
- *
+ * 
  */
 public class DeviceOntology extends Ontology {
 
@@ -45,7 +45,7 @@ public class DeviceOntology extends Ontology {
     public DeviceOntology(String ontURI) {
 	super(ontURI);
     }
-    
+
     public DeviceOntology() {
 	super(NAMESPACE);
     }

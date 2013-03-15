@@ -61,7 +61,7 @@ public class ContentDensityType extends ManagedIndividual {
     public int ord() {
 	return order;
     }
-    
+
     /**
      * @return number of defined content density types
      */
