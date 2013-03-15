@@ -141,7 +141,7 @@ public class Disease extends ManagedIndividual {
     }
 
     public void setIsContagious(Boolean isContagious) {
-	props.put(PROP_CONTAGIOUS, new Boolean(isContagious));
+	props.put(PROP_CONTAGIOUS, isContagious);
     }
 
     public Sympthom[] getSympthoms() {
