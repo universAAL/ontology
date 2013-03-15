@@ -87,7 +87,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	OntClassInfoSetup oci_UIPreferences = createNewOntClassInfo(
 		UIPreferencesProfile.MY_URI, factory, 6);
 	OntClassInfoSetup oci_UIPreferencesService = createNewOntClassInfo(
-		UIPreferencesProfile.MY_URI, factory, 7);
+		UIPreferencesService.MY_URI, factory, 7);
 
 	// ******* Add content to enumeration classes of the ontology ******* //
 
