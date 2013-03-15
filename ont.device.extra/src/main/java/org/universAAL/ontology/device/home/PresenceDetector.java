@@ -34,7 +34,7 @@ import org.universAAL.ontology.phThing.OnOffSensor;
  * 
  */
 public class PresenceDetector extends OnOffSensor {
-    
+
     /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
 	    + "PresenceDetector";

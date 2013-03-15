@@ -22,10 +22,9 @@
  */
 package org.universAAL.ontology.vcard;
 
-
-public class Internet extends Email{
+public class Internet extends Email {
     public static final String MY_URI = VCardOntology.NAMESPACE + "Internet";
-    
+
     public Internet() {
 	super();
     }
@@ -37,7 +36,7 @@ public class Internet extends Email{
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

@@ -15,17 +15,18 @@
  * limitations under the License.
  ******************************************************************************/
 
-
 package org.universAAL.ennumerations.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 
-public class QuestionnaireEnummerationsOntologyFactory extends ResourceFactoryImpl{
+public class QuestionnaireEnummerationsOntologyFactory extends
+	ResourceFactoryImpl {
 
-	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
-		return null;
-	  }
-	
+	return null;
+    }
+
 }

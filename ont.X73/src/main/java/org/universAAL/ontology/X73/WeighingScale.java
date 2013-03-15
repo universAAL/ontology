@@ -6,42 +6,38 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-
 public class WeighingScale extends MDS {
-  public static final String MY_URI = X73Ontology.NAMESPACE
-    + "WeighingScale";
-  public static final String PROP_HAS_MEASURED_WEIGHT = X73Ontology.NAMESPACE
-    + "hasMeasuredWeight";
+    public static final String MY_URI = X73Ontology.NAMESPACE + "WeighingScale";
+    public static final String PROP_HAS_MEASURED_WEIGHT = X73Ontology.NAMESPACE
+	    + "hasMeasuredWeight";
 
+    public WeighingScale() {
+	super();
+    }
 
-  public WeighingScale () {
-    super();
-  }
-  
-  public WeighingScale (String uri) {
-    super(uri);
-  }
+    public WeighingScale(String uri) {
+	super(uri);
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  
-  public int getPropSerializationType(String propURI) {
-	return PROP_HAS_MEASURED_WEIGHT.equals(propURI) ? PROP_SERIALIZATION_FULL : 
-		super.getPropSerializationType(propURI);
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && hasProperty(PROP_HAS_MEASURED_WEIGHT);
-  }
+    public int getPropSerializationType(String propURI) {
+	return PROP_HAS_MEASURED_WEIGHT.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
 
-  public BodyWeight getHasMeasuredWeight() {
-    return (BodyWeight)getProperty(PROP_HAS_MEASURED_WEIGHT);
-  }		
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_HAS_MEASURED_WEIGHT);
+    }
 
-  public void setHasMeasuredWeight(BodyWeight newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_HAS_MEASURED_WEIGHT, newPropValue);
-  }		
+    public BodyWeight getHasMeasuredWeight() {
+	return (BodyWeight) getProperty(PROP_HAS_MEASURED_WEIGHT);
+    }
+
+    public void setHasMeasuredWeight(BodyWeight newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_HAS_MEASURED_WEIGHT, newPropValue);
+    }
 }

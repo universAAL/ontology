@@ -18,50 +18,50 @@ package org.universaal.ontology.health.owl;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class MeasurementRequirements extends ManagedIndividual {
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "MeasurementRequirements";
-	public static final String PROP_MAX_VALUE_ALLOWED = HealthOntology.NAMESPACE
-	+ "maxValueAllowed";
-	public static final String PROP_MIN_VALUE_ALLOWED = HealthOntology.NAMESPACE
-	+ "minValueAllowed";
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "MeasurementRequirements";
+    public static final String PROP_MAX_VALUE_ALLOWED = HealthOntology.NAMESPACE
+	    + "maxValueAllowed";
+    public static final String PROP_MIN_VALUE_ALLOWED = HealthOntology.NAMESPACE
+	    + "minValueAllowed";
 
-  public MeasurementRequirements () {
-    super();
-  }
-  
-  public MeasurementRequirements (String uri) {
-    super(uri);
-  }
+    public MeasurementRequirements() {
+	super();
+    }
 
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public MeasurementRequirements(String uri) {
+	super(uri);
+    }
 
-  public boolean isWellFormed() {
-	  return true 
-      && props.containsKey(PROP_MAX_VALUE_ALLOWED)
-      && props.containsKey(PROP_MIN_VALUE_ALLOWED);
-  }
-  
-  public int getMaxValueAllowed() {
-		Integer i = (Integer) props.get(PROP_MAX_VALUE_ALLOWED);
-		return (i == null) ? 0 : i.intValue();
-	  }		
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	  public void setMaxValueAllowed(int maxValue) {
-	      props.put(PROP_MAX_VALUE_ALLOWED, new Integer(maxValue));
-	  }		
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-	  public int getMinValueAllowed() {
-		Integer i = (Integer) props.get(PROP_MIN_VALUE_ALLOWED);
-		return (i == null) ? 0 : i.intValue();
-	  }		
+    public boolean isWellFormed() {
+	return true && props.containsKey(PROP_MAX_VALUE_ALLOWED)
+		&& props.containsKey(PROP_MIN_VALUE_ALLOWED);
+    }
 
-	  public void setMinValueAllowed(int minValue) {
-	      props.put(PROP_MIN_VALUE_ALLOWED, new Integer(minValue));
-	  }		
-  
+    public int getMaxValueAllowed() {
+	Integer i = (Integer) props.get(PROP_MAX_VALUE_ALLOWED);
+	return (i == null) ? 0 : i.intValue();
+    }
+
+    public void setMaxValueAllowed(int maxValue) {
+	props.put(PROP_MAX_VALUE_ALLOWED, new Integer(maxValue));
+    }
+
+    public int getMinValueAllowed() {
+	Integer i = (Integer) props.get(PROP_MIN_VALUE_ALLOWED);
+	return (i == null) ? 0 : i.intValue();
+    }
+
+    public void setMinValueAllowed(int minValue) {
+	props.put(PROP_MIN_VALUE_ALLOWED, new Integer(minValue));
+    }
+
 }

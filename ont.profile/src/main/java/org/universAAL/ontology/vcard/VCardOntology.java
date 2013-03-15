@@ -65,7 +65,8 @@ public class VCardOntology extends Ontology {
 
     public void create() {
 	Resource r = getInfo();
-	r.setResourceComment("This ontology models and represents vCards in RDF using current best practices.");
+	r
+		.setResourceComment("This ontology models and represents vCards in RDF using current best practices.");
 	r.setResourceLabel("An Ontology for vCards");
 
 	addImport(DataRepOntology.NAMESPACE);
@@ -74,7 +75,8 @@ public class VCardOntology extends Ontology {
 
 	// Tel
 	oci = createNewOntClassInfo(Tel.MY_URI, factory, TEL);
-	oci.setResourceComment("Resources that are vCard Telephony communication mechanisms");
+	oci
+		.setResourceComment("Resources that are vCard Telephony communication mechanisms");
 	oci.setResourceLabel("Telephone");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
 	oci.addDatatypeProperty(Tel.PROP_VALUE);
@@ -171,22 +173,24 @@ public class VCardOntology extends Ontology {
 	oci.addSuperClass(ManagedIndividual.MY_URI);
 	oci.addDatatypeProperty(Name.PROP_ADDITIONAL_NAME);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Name.PROP_ADDITIONAL_NAME,
-		TypeMapper.getDatatypeURI(String.class)));
+		Name.PROP_ADDITIONAL_NAME, TypeMapper
+			.getDatatypeURI(String.class)));
 	oci.addDatatypeProperty(Name.PROP_FAMILY_NAME);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Name.PROP_FAMILY_NAME, TypeMapper.getDatatypeURI(String.class)));
+	oci
+		.addRestriction(MergedRestriction.getAllValuesRestriction(
+			Name.PROP_FAMILY_NAME, TypeMapper
+				.getDatatypeURI(String.class)));
 	oci.addDatatypeProperty(Name.PROP_GIVEN_NAME);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Name.PROP_GIVEN_NAME, TypeMapper.getDatatypeURI(String.class)));
 	oci.addDatatypeProperty(Name.PROP_HONORIFIC_PREFIX);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Name.PROP_HONORIFIC_PREFIX,
-		TypeMapper.getDatatypeURI(String.class)));
+		Name.PROP_HONORIFIC_PREFIX, TypeMapper
+			.getDatatypeURI(String.class)));
 	oci.addDatatypeProperty(Name.PROP_HONORIFIC_SUFFIX);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Name.PROP_HONORIFIC_SUFFIX,
-		TypeMapper.getDatatypeURI(String.class)));
+		Name.PROP_HONORIFIC_SUFFIX, TypeMapper
+			.getDatatypeURI(String.class)));
 
 	// Organization
 	oci = createNewOntClassInfo(Organization.MY_URI, factory, ORG);
@@ -195,18 +199,19 @@ public class VCardOntology extends Ontology {
 	oci.addSuperClass(ManagedIndividual.MY_URI);
 	oci.addDatatypeProperty(Organization.PROP_ORGANIZATION_NAME);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Organization.PROP_ORGANIZATION_NAME,
-		TypeMapper.getDatatypeURI(String.class)));
+		Organization.PROP_ORGANIZATION_NAME, TypeMapper
+			.getDatatypeURI(String.class)));
 	oci.addDatatypeProperty(Organization.PROP_ORGANIZATION_UNIT);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Organization.PROP_ORGANIZATION_UNIT,
-		TypeMapper.getDatatypeURI(String.class)));
+		Organization.PROP_ORGANIZATION_UNIT, TypeMapper
+			.getDatatypeURI(String.class)));
 
 	// VCard
 	oci = createNewOntClassInfo(VCard.MY_URI, factory, VCARD);
-	oci.setResourceComment("Resources that are vCards and the URIs that denote "
-		+ "these vCards can also be the same URIs that denote "
-		+ "people/orgs");
+	oci
+		.setResourceComment("Resources that are vCards and the URIs that denote "
+			+ "these vCards can also be the same URIs that denote "
+			+ "people/orgs");
 	oci.setResourceLabel("vCard");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
 	oci.addDatatypeProperty(VCard.PROP_BDAY).setFunctional();

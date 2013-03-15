@@ -39,16 +39,16 @@ import org.universAAL.reasoner.ont.*;
  * 
  */
 public class Activator implements ModuleActivator {
-	
-	ReasoningOntology _ontontology = new ReasoningOntology();
 
-	@Override
-	public void start(ModuleContext arg0) throws Exception {
-		OntologyManagement.getInstance().register(_ontontology);
-	}
+    ReasoningOntology _ontontology = new ReasoningOntology();
 
-	@Override
-	public void stop(ModuleContext arg0) throws Exception {
-		OntologyManagement.getInstance().unregister(_ontontology);
-	}
+    @Override
+    public void start(ModuleContext arg0) throws Exception {
+	OntologyManagement.getInstance().register(_ontontology);
+    }
+
+    @Override
+    public void stop(ModuleContext arg0) throws Exception {
+	OntologyManagement.getInstance().unregister(_ontontology);
+    }
 }

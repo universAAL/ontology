@@ -42,13 +42,15 @@ public class RiskOntology extends Ontology {
 	oci.setResourceLabel("Fall Detector");
 	oci.addSuperClass(Sensor.MY_URI);
 	oci.addObjectProperty(FallDetector.PROP_WORN_BY).setFunctional();
+	oci
+		.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+				FallDetector.PROP_WORN_BY,
+				AssistedPerson.MY_URI, 0, 1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			FallDetector.PROP_WORN_BY, AssistedPerson.MY_URI, 0, 1));
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Sensor.PROP_MEASURED_VALUE,
-			TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
+			Sensor.PROP_MEASURED_VALUE, TypeMapper
+				.getDatatypeURI(Boolean.class), 0, 1));
 
 	// Panic button
 	oci = createNewOntClassInfo(PanicButton.MY_URI, factory, 1);
@@ -59,11 +61,12 @@ public class RiskOntology extends Ontology {
 	oci.addObjectProperty(PanicButton.PROP_PRESSED_BY).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			PanicButton.PROP_PRESSED_BY, AssistedPerson.MY_URI, 0, 1));
+			PanicButton.PROP_PRESSED_BY, AssistedPerson.MY_URI, 0,
+			1));
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			PanicButton.PROP_ACTIVATED,
-			TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
+			PanicButton.PROP_ACTIVATED, TypeMapper
+				.getDatatypeURI(Boolean.class), 0, 1));
 
     }
 

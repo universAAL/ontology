@@ -18,36 +18,37 @@ package org.universaal.ontology.health.owl;
 
 public class SystolicBloodPressureRequirement extends BloodPressureRequirement {
 
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "SystolicBloodPressureRequirement";
-	public static final String PROP_SYSTOLIC_PRESSURE_MIN_VALUE_ALLOWED = HealthOntology.NAMESPACE
-	+ "systolicPressureMinValueAllowed";
-	public static final String PROP_SYSTOLIC_PRESSURE_MAX_VALUE_ALLOWED = HealthOntology.NAMESPACE
-	+ "systolicPressureMaxValueAllowed";
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "SystolicBloodPressureRequirement";
+    public static final String PROP_SYSTOLIC_PRESSURE_MIN_VALUE_ALLOWED = HealthOntology.NAMESPACE
+	    + "systolicPressureMinValueAllowed";
+    public static final String PROP_SYSTOLIC_PRESSURE_MAX_VALUE_ALLOWED = HealthOntology.NAMESPACE
+	    + "systolicPressureMaxValueAllowed";
 
+    public SystolicBloodPressureRequirement() {
+	super();
+    }
 
-	public SystolicBloodPressureRequirement() {
-		super();
-	}
+    public SystolicBloodPressureRequirement(String uri) {
+	super(uri);
+    }
 
-	public SystolicBloodPressureRequirement (String uri) {
-		super(uri);
-	}
+    public SystolicBloodPressureRequirement(int minPressureAllowed,
+	    int maxPressureAllowed) {
+    }
 
-	public SystolicBloodPressureRequirement(int minPressureAllowed, int maxPressureAllowed){
-	}
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	public String getClassURI() {
-		return MY_URI;
-	}
-	public int getPropSerializationType(String arg0) {
-		return PROP_SERIALIZATION_FULL;
-	}
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-	public boolean isWellFormed() {
-		return true
+    public boolean isWellFormed() {
+	return true
 		&& props.containsKey(PROP_SYSTOLIC_PRESSURE_MIN_VALUE_ALLOWED)
 		&& props.containsKey(PROP_SYSTOLIC_PRESSURE_MAX_VALUE_ALLOWED);
-	}
+    }
 
 }

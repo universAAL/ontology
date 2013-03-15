@@ -10,7 +10,6 @@ import org.universAAL.itests.IntegrationTest;
  */
 public class ArtifactIntegrationTest extends IntegrationTest {
 
-
     public void testComposite() {
 	logAllBundles();
     }

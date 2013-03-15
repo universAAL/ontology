@@ -19,49 +19,50 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universaal.ontology.health.owl.HealthOntology;
 
 /**
- * Launch display of a treatment.
- * Service Profiles should specify the class of Treatment they are intended to.
- * The UI must be a Dialog and must be return as {@link DisplayTreatmentService#PROP_FORM_FOR_TREATMENT}
+ * Launch display of a treatment. Service Profiles should specify the class of
+ * Treatment they are intended to. The UI must be a Dialog and must be return as
+ * {@link DisplayTreatmentService#PROP_FORM_FOR_TREATMENT}
+ * 
  * @author amedrano
  * 
  * @navassoc - "PROP_TREATMENT" 1 Treatment
  * @navassoc - "PROP_FORM_FOR_TREATMENT" 1 Form
- *
+ * 
  */
 public class DisplayTreatmentService extends Service {
 
-	public static final String MY_URI = HealthOntology.NAMESPACE
-			+ "DisplayTreatmentService";
-	
-	public static final String PROP_TREATMENT = HealthOntology.NAMESPACE
-			+ "treatmentToBeDisplayed";
-	
-	public static final String PROP_FORM_FOR_TREATMENT = HealthOntology.NAMESPACE
-			+ "formForTreatment";
-	//CONSTRUCTORS
-	public DisplayTreatmentService() {
-		super();
-	}
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "DisplayTreatmentService";
 
-	public DisplayTreatmentService(String uri) {
-		super(uri);
-	}
+    public static final String PROP_TREATMENT = HealthOntology.NAMESPACE
+	    + "treatmentToBeDisplayed";
 
-	/** {@inheritDoc} */
-	public String getClassURI() {
-		return MY_URI;
-	}
+    public static final String PROP_FORM_FOR_TREATMENT = HealthOntology.NAMESPACE
+	    + "formForTreatment";
 
-	
-	/** {@inheritDoc} */
-	public int getPropSerializationType(String propURI) {
-		return PROP_TREATMENT.equals(propURI) 
-				|| PROP_FORM_FOR_TREATMENT.equals(propURI)? PROP_SERIALIZATION_FULL : super
-				.getPropSerializationType(propURI);
-	}
+    // CONSTRUCTORS
+    public DisplayTreatmentService() {
+	super();
+    }
 
-	/** {@inheritDoc} */
-	public boolean isWellFormed() {
-		return true;
-	}
+    public DisplayTreatmentService(String uri) {
+	super(uri);
+    }
+
+    /** {@inheritDoc} */
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    /** {@inheritDoc} */
+    public int getPropSerializationType(String propURI) {
+	return PROP_TREATMENT.equals(propURI)
+		|| PROP_FORM_FOR_TREATMENT.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
+
+    /** {@inheritDoc} */
+    public boolean isWellFormed() {
+	return true;
+    }
 }

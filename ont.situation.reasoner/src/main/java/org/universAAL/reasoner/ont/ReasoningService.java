@@ -26,11 +26,14 @@ import org.universAAL.middleware.service.owl.Service;
 
 @SuppressWarnings("unchecked")
 public class ReasoningService extends Service {
-    public static final String MY_URI = ReasoningOntology.NAMESPACE + "ReasoningService";
+    public static final String MY_URI = ReasoningOntology.NAMESPACE
+	    + "ReasoningService";
     public static final String PROP_SITUATIONS = ReasoningOntology.NAMESPACE
 	    + "situation";
-    public static final String PROP_QUERIES = ReasoningOntology.NAMESPACE + "query";
-    public static final String PROP_RULES = ReasoningOntology.NAMESPACE + "rules";
+    public static final String PROP_QUERIES = ReasoningOntology.NAMESPACE
+	    + "query";
+    public static final String PROP_RULES = ReasoningOntology.NAMESPACE
+	    + "rules";
 
     public ReasoningService() {
 	super();
@@ -49,8 +52,8 @@ public class ReasoningService extends Service {
     }
 
     public boolean isWellFormed() {
-	return true && hasProperty(PROP_SITUATIONS) && hasProperty(PROP_QUERIES)
-		&& hasProperty(PROP_RULES);
+	return true && hasProperty(PROP_SITUATIONS)
+		&& hasProperty(PROP_QUERIES) && hasProperty(PROP_RULES);
     }
 
     public Query[] getQuery() {

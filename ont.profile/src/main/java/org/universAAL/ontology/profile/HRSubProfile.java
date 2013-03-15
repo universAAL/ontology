@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.profile;
 
-
 public class HRSubProfile extends SubProfile {
 
     public static final String MY_URI = ProfileOntology.NAMESPACE
@@ -51,7 +50,7 @@ public class HRSubProfile extends SubProfile {
 	    + "hasHRProperties";
     public static final String PROP_HR_RELATED_USERS = ProfileOntology.NAMESPACE
 	    + "hasHRRelatedUsers";
-    
+
     protected HRSubProfile() {
 	super();
     }

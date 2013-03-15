@@ -24,11 +24,14 @@ package org.universAAL.ontology.vcard;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-public class Organization extends ManagedIndividual{
-    public static final String MY_URI = VCardOntology.NAMESPACE + "Organization";
-    public static final String PROP_ORGANIZATION_NAME = VCardOntology.NAMESPACE+"organization-name";
-    public static final String PROP_ORGANIZATION_UNIT = VCardOntology.NAMESPACE+"organization-unit";
-    
+public class Organization extends ManagedIndividual {
+    public static final String MY_URI = VCardOntology.NAMESPACE
+	    + "Organization";
+    public static final String PROP_ORGANIZATION_NAME = VCardOntology.NAMESPACE
+	    + "organization-name";
+    public static final String PROP_ORGANIZATION_UNIT = VCardOntology.NAMESPACE
+	    + "organization-unit";
+
     public Organization() {
 	super();
     }
@@ -40,7 +43,7 @@ public class Organization extends ManagedIndividual{
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

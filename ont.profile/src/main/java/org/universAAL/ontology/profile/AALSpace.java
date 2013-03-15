@@ -27,6 +27,7 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.ontology.location.Place;
+
 //import org.universAAL.ontology.profile.AALSpaceProfile;
 //import org.universAAL.ontology.profile.Profile;
 

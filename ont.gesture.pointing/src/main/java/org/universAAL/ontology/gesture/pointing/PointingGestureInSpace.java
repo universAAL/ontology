@@ -67,16 +67,16 @@ public class PointingGestureInSpace extends GestureRecognition {
 	setTimeStamp(timestamp);
     }
 
-    
-    public static MergedRestriction getClassRestrictionsOnProperty(String propURI) {
+    public static MergedRestriction getClassRestrictionsOnProperty(
+	    String propURI) {
 	if (propURI == null)
 	    return null;
 	if (propURI.equals(PROP_ADDRESSED_THINGS))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
-		    PhysicalThing.MY_URI, 1, 0);
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
+		    propURI, PhysicalThing.MY_URI, 1, 0);
 	if (propURI.equals(PROP_TIMESTAMP))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
-		    TypeMapper.getDatatypeURI(Long.class), 1, 0);
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
+		    propURI, TypeMapper.getDatatypeURI(Long.class), 1, 0);
 
 	return GestureRecognition.getClassRestrictionsOnProperty(propURI);
     }

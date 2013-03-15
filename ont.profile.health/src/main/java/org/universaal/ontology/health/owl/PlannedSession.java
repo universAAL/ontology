@@ -20,93 +20,90 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-public class PlannedSession extends ManagedIndividual{
-  public static final String MY_URI = HealthOntology.NAMESPACE
-    + "Session";
-  public static final String PROP_DATE = HealthOntology.NAMESPACE
-    + "date";
-  public static final String PROP_START_TIME = HealthOntology.NAMESPACE
-    + "startTime";
-  public static final String PROP_DURATION = HealthOntology.NAMESPACE
-    + "duration";
-  public static final String PROP_PERFORMED = HealthOntology.NAMESPACE
-    + "performed";
-  public static final String PROP_DETAILS = HealthOntology.NAMESPACE
-  + "details";
+public class PlannedSession extends ManagedIndividual {
+    public static final String MY_URI = HealthOntology.NAMESPACE + "Session";
+    public static final String PROP_DATE = HealthOntology.NAMESPACE + "date";
+    public static final String PROP_START_TIME = HealthOntology.NAMESPACE
+	    + "startTime";
+    public static final String PROP_DURATION = HealthOntology.NAMESPACE
+	    + "duration";
+    public static final String PROP_PERFORMED = HealthOntology.NAMESPACE
+	    + "performed";
+    public static final String PROP_DETAILS = HealthOntology.NAMESPACE
+	    + "details";
 
+    public PlannedSession() {
+	super();
+    }
 
-  public PlannedSession () {
-    super();
-  }
-  
-  public PlannedSession (String uri) {
-    super(uri);
-  }
+    public PlannedSession(String uri) {
+	super(uri);
+    }
 
-  public PlannedSession(XMLGregorianCalendar stDt, XMLGregorianCalendar stTime, Duration duration, boolean performed){
-	  this.setDate(stDt);
-  }
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public PlannedSession(XMLGregorianCalendar stDt,
+	    XMLGregorianCalendar stTime, Duration duration, boolean performed) {
+	this.setDate(stDt);
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && props.containsKey(PROP_DATE)
-      && props.containsKey(PROP_START_TIME)
-      && props.containsKey(PROP_DURATION)
-      && props.containsKey(PROP_PERFORMED)
-      && props.containsKey(PROP_DETAILS);
-  }
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-  public XMLGregorianCalendar getDate() {
-    return (XMLGregorianCalendar)props.get(PROP_DATE);
-  }		
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-  public void setDate(XMLGregorianCalendar stDt) {
-    if (stDt != null)
-      props.put(PROP_DATE, stDt);
-  }		
+    public boolean isWellFormed() {
+	return true && props.containsKey(PROP_DATE)
+		&& props.containsKey(PROP_START_TIME)
+		&& props.containsKey(PROP_DURATION)
+		&& props.containsKey(PROP_PERFORMED)
+		&& props.containsKey(PROP_DETAILS);
+    }
 
-  public XMLGregorianCalendar getStartTime() {
-    return (XMLGregorianCalendar)props.get(PROP_START_TIME);
-  }		
+    public XMLGregorianCalendar getDate() {
+	return (XMLGregorianCalendar) props.get(PROP_DATE);
+    }
 
-  public void setStartTime(XMLGregorianCalendar stTime) {
-    if (stTime != null)
-      props.put(PROP_START_TIME, stTime);
-  }		
+    public void setDate(XMLGregorianCalendar stDt) {
+	if (stDt != null)
+	    props.put(PROP_DATE, stDt);
+    }
 
-  public Duration getDuration() {
-    return (Duration)props.get(PROP_DURATION);
-  }		
+    public XMLGregorianCalendar getStartTime() {
+	return (XMLGregorianCalendar) props.get(PROP_START_TIME);
+    }
 
-  public void setDuration(Duration duration) {
-    if (duration != null)
-      props.put(PROP_DURATION, duration);
-  }		
+    public void setStartTime(XMLGregorianCalendar stTime) {
+	if (stTime != null)
+	    props.put(PROP_START_TIME, stTime);
+    }
 
-  public PerformedSession getPerformance() {
-	  return (PerformedSession)props.get(PROP_PERFORMED);
-  }		
+    public Duration getDuration() {
+	return (Duration) props.get(PROP_DURATION);
+    }
 
-  public void setPerformance(PerformedSession performance) {
-	  if (performance != null)
-	      props.put(PROP_PERFORMED, performance);
-  }	
-  
-  public String getDetails() {
-	  return (String)props.get(PROP_DETAILS);
-  }		
+    public void setDuration(Duration duration) {
+	if (duration != null)
+	    props.put(PROP_DURATION, duration);
+    }
 
-  public void setDetails(String details) {
-	  if (details != null)
-	      props.put(PROP_DETAILS, details);
-  }	
-  
-  
+    public PerformedSession getPerformance() {
+	return (PerformedSession) props.get(PROP_PERFORMED);
+    }
+
+    public void setPerformance(PerformedSession performance) {
+	if (performance != null)
+	    props.put(PROP_PERFORMED, performance);
+    }
+
+    public String getDetails() {
+	return (String) props.get(PROP_DETAILS);
+    }
+
+    public void setDetails(String details) {
+	if (details != null)
+	    props.put(PROP_DETAILS, details);
+    }
 
 }

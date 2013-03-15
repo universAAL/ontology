@@ -59,7 +59,7 @@ public class Status extends ManagedIndividual {
     public int ord() {
 	return order;
     }
-    
+
     /**
      * @return number of defined types
      */

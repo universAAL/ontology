@@ -23,10 +23,9 @@ package org.universaal.ontology.health.owl.services;
 import org.universaal.ontology.health.owl.HealthOntology;
 
 /**
- * This class describes the treatment management service, 
- * which consists of editing, creating and deleting a treatment.
- * Also, this service lists the treatments associated to the 
- * health profile of an assisted person.
+ * This class describes the treatment management service, which consists of
+ * editing, creating and deleting a treatment. Also, this service lists the
+ * treatments associated to the health profile of an assisted person.
  * 
  * @author mdelafuente
  * @author roni
@@ -35,46 +34,43 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * @navassoc - "PROP_TIMESTAMP_FROM" 0,1 Long
  * @navassoc - "PROP_TIMESTAMP_TO" 0,1 Long
  */
-public class TreatmentManagementService extends HealthService{
+public class TreatmentManagementService extends HealthService {
 
-	//NAMESPACE & PROPERTIES
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "TreatmentManagementService";
+    // NAMESPACE & PROPERTIES
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "TreatmentManagementService";
 
-	public static final String PROP_MANAGES_TREATMENT = HealthOntology.NAMESPACE
-	+ "managesTreatments";
+    public static final String PROP_MANAGES_TREATMENT = HealthOntology.NAMESPACE
+	    + "managesTreatments";
 
-	// Filtering between timestamps
-	public static final String PROP_TIMESTAMP_FROM =  HealthOntology.NAMESPACE
-			+ "listsTreatmentsTimestampFrom";
-	public static final String PROP_TIMESTAMP_TO =  HealthOntology.NAMESPACE
-			+ "listsTreatmentsTimestampTo";
+    // Filtering between timestamps
+    public static final String PROP_TIMESTAMP_FROM = HealthOntology.NAMESPACE
+	    + "listsTreatmentsTimestampFrom";
+    public static final String PROP_TIMESTAMP_TO = HealthOntology.NAMESPACE
+	    + "listsTreatmentsTimestampTo";
 
+    // CONSTRUCTORS
+    public TreatmentManagementService() {
+	super();
+    }
 
-	
-    //CONSTRUCTORS
-	public TreatmentManagementService() {
-		super();
-	}
+    public TreatmentManagementService(String uri) {
+	super(uri);
+    }
 
-	public TreatmentManagementService(String uri) {
-		super(uri);
-	}
+    /** {@inheritDoc} */
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	/** {@inheritDoc} */
-	public String getClassURI() {
-		return MY_URI;
-	}
+    /** {@inheritDoc} */
+    public int getPropSerializationType(String propURI) {
+	return PROP_MANAGES_TREATMENT.equals(propURI) ? PROP_SERIALIZATION_FULL
+		: super.getPropSerializationType(propURI);
+    }
 
-	/** {@inheritDoc} */
-	public int getPropSerializationType(String propURI) {
-		return  PROP_MANAGES_TREATMENT.equals(propURI) 
-		 ? PROP_SERIALIZATION_FULL : super
-				.getPropSerializationType(propURI);
-	}
-
-	/** {@inheritDoc} */
-	public boolean isWellFormed() {
-		return true;
-	}
+    /** {@inheritDoc} */
+    public boolean isWellFormed() {
+	return true;
+    }
 }

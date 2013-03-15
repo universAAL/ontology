@@ -21,7 +21,6 @@
  */
 package org.universAAL.ontology.profile;
 
-
 public class AALAppSubProfile extends SubProfile {
 
     public static final String MY_URI = ProfileOntology.NAMESPACE

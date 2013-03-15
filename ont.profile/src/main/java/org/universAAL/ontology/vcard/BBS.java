@@ -22,10 +22,9 @@
  */
 package org.universAAL.ontology.vcard;
 
-
 public class BBS extends Tel {
     public static final String MY_URI = VCardOntology.NAMESPACE + "BBS";
-    
+
     public BBS() {
 	super();
     }
@@ -41,7 +40,7 @@ public class BBS extends Tel {
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public boolean isWellFormed() {
 	return true;
     }

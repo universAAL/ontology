@@ -27,10 +27,11 @@ import org.universAAL.ontology.device.home.*;
 
 /**
  * The factory for instantiating objects of the ontology classes.
+ * 
  * @author alfiva
- *
+ * 
  */
-public class DeviceFactory extends ResourceFactoryImpl{
+public class DeviceFactory extends ResourceFactoryImpl {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

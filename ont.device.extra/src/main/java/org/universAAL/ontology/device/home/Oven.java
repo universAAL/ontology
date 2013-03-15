@@ -32,7 +32,7 @@ import org.universAAL.ontology.phThing.OnOffActuator;
  * 
  */
 public class Oven extends OnOffActuator {
-    
+
     /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Oven";
 

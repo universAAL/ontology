@@ -97,16 +97,11 @@ public class Situation extends Persistent {
 		&& (situation.getRdfPredicate() == this.getRdfPredicate() || situation
 			.getRdfPredicate().equals(this.getRdfPredicate()));
     }
-    
+
     @Override
     public String toString() {
-	return "<html>" + getURI()
-	    + ":<br>Subject: "
-	    + this.getRdfSubject()
-	    + "<br>Predicate: "
-	    + this.getRdfPredicate()
-	    + "<br>Object: "
-	    + this.getRdfObject()
-	    + "</html>";
+	return "<html>" + getURI() + ":<br>Subject: " + this.getRdfSubject()
+		+ "<br>Predicate: " + this.getRdfPredicate() + "<br>Object: "
+		+ this.getRdfObject() + "</html>";
     }
 }

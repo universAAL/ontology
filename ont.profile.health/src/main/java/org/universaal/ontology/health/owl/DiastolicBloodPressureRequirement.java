@@ -16,35 +16,34 @@
 
 package org.universaal.ontology.health.owl;
 
-public class DiastolicBloodPressureRequirement extends BloodPressureRequirement{
+public class DiastolicBloodPressureRequirement extends BloodPressureRequirement {
 
-	public static final String MY_URI = HealthOntology.NAMESPACE
-	+ "DiastolicBloodPressureRequirement";
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "DiastolicBloodPressureRequirement";
 
+    public DiastolicBloodPressureRequirement() {
+	super();
+    }
 
-	public DiastolicBloodPressureRequirement() {
-		super();
-	}
+    public DiastolicBloodPressureRequirement(String uri) {
+	super(uri);
+    }
 
-	public DiastolicBloodPressureRequirement (String uri) {
-		super(uri);
-	}
+    public DiastolicBloodPressureRequirement(int minPressureAllowed,
+	    int maxPressureAllowed) {
+	super(maxPressureAllowed, minPressureAllowed);
+    }
 
-	public DiastolicBloodPressureRequirement(int minPressureAllowed, int maxPressureAllowed){
-		super(maxPressureAllowed, minPressureAllowed);
-	}
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	public String getClassURI() {
-		return MY_URI;
-	}
-	public int getPropSerializationType(String arg0) {
-		return PROP_SERIALIZATION_FULL;
-	}
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-	public boolean isWellFormed() {
-		return true;
-	}
-
-
+    public boolean isWellFormed() {
+	return true;
+    }
 
 }

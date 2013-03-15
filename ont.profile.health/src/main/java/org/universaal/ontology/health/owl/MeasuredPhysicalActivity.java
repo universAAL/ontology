@@ -22,57 +22,66 @@ import org.universAAL.ontology.profile.Caregiver;
 import org.universaal.ontology.disease.owl.Disease;
 
 public class MeasuredPhysicalActivity extends TakeMeasurementActivity {
-  public static final String MY_URI = HealthOntology.NAMESPACE
-    + "PhysicalActivity";
-  public static final String PROP_HAS_ASSOCIATED_MEASUREMENT = HealthOntology.NAMESPACE
-    + "hasAssociatedMeasurement";
+    public static final String MY_URI = HealthOntology.NAMESPACE
+	    + "PhysicalActivity";
+    public static final String PROP_HAS_ASSOCIATED_MEASUREMENT = HealthOntology.NAMESPACE
+	    + "hasAssociatedMeasurement";
 
-  public MeasuredPhysicalActivity (){
-	  super();
-  } 
-  
-  public MeasuredPhysicalActivity (String uri) {
-    super(uri);
-  }
+    public MeasuredPhysicalActivity() {
+	super();
+    }
 
-  public MeasuredPhysicalActivity (AssistedPersonProfile assistedPerson, Caregiver caregiver, String tname, String description, XMLGregorianCalendar stDt, String diseaseURI) {
-	    super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
-  }
-  
-  public MeasuredPhysicalActivity (AssistedPersonProfile assistedPerson, Caregiver caregiver, String tname, TreatmentPlanning tp, String description, String diseaseURI){
-	  super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
-  }
-  public MeasuredPhysicalActivity (String tname, String description, String diseaseURI){
-	  super(tname, description, diseaseURI);
-  } 
+    public MeasuredPhysicalActivity(String uri) {
+	super(uri);
+    }
 
-  public MeasuredPhysicalActivity (String tname, String description, XMLGregorianCalendar stDt, String diseaseURI){
-	  super(tname, description, stDt, diseaseURI);
-  }
-  
-  public MeasuredPhysicalActivity (String tname, String description, TreatmentPlanning tp, String diseaseURI){
-	  super(tname, description, tp, diseaseURI);
-  }
+    public MeasuredPhysicalActivity(AssistedPersonProfile assistedPerson,
+	    Caregiver caregiver, String tname, String description,
+	    XMLGregorianCalendar stDt, String diseaseURI) {
+	super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
+    }
 
-  
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    public MeasuredPhysicalActivity(AssistedPersonProfile assistedPerson,
+	    Caregiver caregiver, String tname, TreatmentPlanning tp,
+	    String description, String diseaseURI) {
+	super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
+    }
 
-  public boolean isWellFormed() {
-	return true 
-      && props.containsKey(PROP_HAS_ASSOCIATED_MEASUREMENT);
-  }
+    public MeasuredPhysicalActivity(String tname, String description,
+	    String diseaseURI) {
+	super(tname, description, diseaseURI);
+    }
 
-  public TakeMeasurementActivity getHasAssociatedMeasurement() {
-    return (TakeMeasurementActivity)props.get(PROP_HAS_ASSOCIATED_MEASUREMENT);
-  }		
+    public MeasuredPhysicalActivity(String tname, String description,
+	    XMLGregorianCalendar stDt, String diseaseURI) {
+	super(tname, description, stDt, diseaseURI);
+    }
 
-  public void setHasAssociatedMeasurement(TakeMeasurementActivity associatedMeasurement) {
-    if (associatedMeasurement != null)
-      props.put(PROP_HAS_ASSOCIATED_MEASUREMENT, associatedMeasurement);
-  }		
+    public MeasuredPhysicalActivity(String tname, String description,
+	    TreatmentPlanning tp, String diseaseURI) {
+	super(tname, description, tp, diseaseURI);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true && props.containsKey(PROP_HAS_ASSOCIATED_MEASUREMENT);
+    }
+
+    public TakeMeasurementActivity getHasAssociatedMeasurement() {
+	return (TakeMeasurementActivity) props
+		.get(PROP_HAS_ASSOCIATED_MEASUREMENT);
+    }
+
+    public void setHasAssociatedMeasurement(
+	    TakeMeasurementActivity associatedMeasurement) {
+	if (associatedMeasurement != null)
+	    props.put(PROP_HAS_ASSOCIATED_MEASUREMENT, associatedMeasurement);
+    }
 }

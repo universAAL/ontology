@@ -27,7 +27,7 @@ import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.che.ContextHistoryOntology;
 
 public class ContextHistoryActivator implements ModuleActivator {
-    private ContextHistoryOntology ont=new ContextHistoryOntology();
+    private ContextHistoryOntology ont = new ContextHistoryOntology();
 
     public void start(ModuleContext bcontext) throws Exception {
 	OntologyManagement.getInstance().register(ont);

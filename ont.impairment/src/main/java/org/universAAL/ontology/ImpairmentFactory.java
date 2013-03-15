@@ -29,6 +29,7 @@ import org.universAAL.ontology.impairment.NearSightedness;
 import org.universAAL.ontology.impairment.PhysicalImpairment;
 import org.universAAL.ontology.impairment.SightImpairment;
 import org.universAAL.ontology.impairment.SpeakingImpairment;
+
 /**
  * The factory for instantiating objects of the ontology classes.
  * 

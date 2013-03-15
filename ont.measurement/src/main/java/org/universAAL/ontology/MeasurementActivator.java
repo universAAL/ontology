@@ -27,12 +27,12 @@ import org.universAAL.ontology.measurement.MeasurementOntology;
 public class MeasurementActivator implements ModuleActivator {
 
     private MeasurementOntology _owlontology = new MeasurementOntology();
-    
+
     public void start(ModuleContext context) throws Exception {
-      OntologyManagement.getInstance().register(_owlontology);
+	OntologyManagement.getInstance().register(_owlontology);
     }
 
     public void stop(ModuleContext arg0) throws Exception {
-      OntologyManagement.getInstance().unregister(_owlontology);
-     }
+	OntologyManagement.getInstance().unregister(_owlontology);
+    }
 }

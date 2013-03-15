@@ -22,16 +22,16 @@ import org.universAAL.ontology.measurement.Measurement;
 
 public class MeasurementFactory extends ResourceFactoryImpl {
 
-
-  public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+    public Resource createInstance(String classURI, String instanceURI,
+	    int factoryIndex) {
 
 	switch (factoryIndex) {
-     case 0:
-       return new MeanSquareError(instanceURI);
-     case 1:
-       return new Measurement(instanceURI);
+	case 0:
+	    return new MeanSquareError(instanceURI);
+	case 1:
+	    return new Measurement(instanceURI);
 
 	}
 	return null;
-  }
+    }
 }

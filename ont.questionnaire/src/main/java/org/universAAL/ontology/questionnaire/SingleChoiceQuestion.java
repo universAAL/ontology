@@ -17,71 +17,79 @@
 package org.universAAL.ontology.questionnaire;
 
 /**
- * This class describes the concept of SingleChoiceQuestion, its properties 
- * and its associated methods.
- * A single-choice question is the kind of question that only has one choice
- * as an answer. 
+ * This class describes the concept of SingleChoiceQuestion, its properties and
+ * its associated methods. A single-choice question is the kind of question that
+ * only has one choice as an answer.
+ * 
  * @author mdelafuente
- *
+ * 
  */
 public class SingleChoiceQuestion extends Question {
-  public static final String MY_URI =  QuestionnaireOntology.NAMESPACE
-    + "SingleChoiceQuestion";
+    public static final String MY_URI = QuestionnaireOntology.NAMESPACE
+	    + "SingleChoiceQuestion";
 
+    public SingleChoiceQuestion() {
+	super();
+    }
 
-  public SingleChoiceQuestion () {
-    super();
-  }
-  
-  public SingleChoiceQuestion (String uri) {
-    super(uri);
-  }
+    public SingleChoiceQuestion(String uri) {
+	super(uri);
+    }
 
-  /**
-   * A SingleChoiceQuestion can be implemented with the question wording and the
-   * answer type if there is not a correct answer for the question.
-   * @param qWording
-   * @param hasCorrectAnswer
-   * @param answerType
-   * @see Question
-   */
-  
-  public SingleChoiceQuestion(String qWording, String answerType){
-	  super(qWording, answerType);
-  }
-  /**
-   * A SingleChoiceQuestion can be implemented with the question wording, the
-   * answer type and the possible choices, when a correct answer is not specified
-   * @param qWording
-   * @param answerType
-   * @param choices
-   * @see Question
-   */
-  public SingleChoiceQuestion(String qWording, String answerType,ChoiceLabel[] choices){
-	  super(qWording, answerType, choices);
-  }
-  /**
-   * A SingleChoiceQuestion can be implemented with the question wording, the
-   * answer type, and the possible choices, when a correct answer is given.
-   * @param qWording
-   * @param hasCorrectAnswer
-   * @param correctAnswer
-   * @param answerType
-   * @param choices
-   * @see Question
-   */
-public SingleChoiceQuestion(String qWording, Object correctAnswer, String answerType, ChoiceLabel[] choices){
-	  super(qWording, correctAnswer, answerType, choices);
-  }
-  
-  public String getClassURI() {
-    return MY_URI;
-  }
-  public int getPropSerializationType(String arg0) {
-	  return PROP_SERIALIZATION_FULL;
-  }
+    /**
+     * A SingleChoiceQuestion can be implemented with the question wording and
+     * the answer type if there is not a correct answer for the question.
+     * 
+     * @param qWording
+     * @param hasCorrectAnswer
+     * @param answerType
+     * @see Question
+     */
 
-  public boolean isWellFormed() {
-	return true ;
-  }
+    public SingleChoiceQuestion(String qWording, String answerType) {
+	super(qWording, answerType);
+    }
+
+    /**
+     * A SingleChoiceQuestion can be implemented with the question wording, the
+     * answer type and the possible choices, when a correct answer is not
+     * specified
+     * 
+     * @param qWording
+     * @param answerType
+     * @param choices
+     * @see Question
+     */
+    public SingleChoiceQuestion(String qWording, String answerType,
+	    ChoiceLabel[] choices) {
+	super(qWording, answerType, choices);
+    }
+
+    /**
+     * A SingleChoiceQuestion can be implemented with the question wording, the
+     * answer type, and the possible choices, when a correct answer is given.
+     * 
+     * @param qWording
+     * @param hasCorrectAnswer
+     * @param correctAnswer
+     * @param answerType
+     * @param choices
+     * @see Question
+     */
+    public SingleChoiceQuestion(String qWording, Object correctAnswer,
+	    String answerType, ChoiceLabel[] choices) {
+	super(qWording, correctAnswer, answerType, choices);
+    }
+
+    public String getClassURI() {
+	return MY_URI;
+    }
+
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
+
+    public boolean isWellFormed() {
+	return true;
+    }
 }

@@ -17,62 +17,68 @@
 package org.universAAL.ontology.questionnaire;
 
 /**
- * This class describes the concept of MultiChoiceQuestion, its properties 
- * and its associated methods.
- * A multi-choice question is a question that enables to select several choices
- * within a question.
+ * This class describes the concept of MultiChoiceQuestion, its properties and
+ * its associated methods. A multi-choice question is a question that enables to
+ * select several choices within a question.
+ * 
  * @author mdelafuente
- *
+ * 
  */
 public class MultiChoiceQuestion extends Question {
 
-	//NAMESPACE AND PROPERTIES
-	public static final String MY_URI =  QuestionnaireOntology.NAMESPACE
-	+ "MultiChoiceQuestion";
+    // NAMESPACE AND PROPERTIES
+    public static final String MY_URI = QuestionnaireOntology.NAMESPACE
+	    + "MultiChoiceQuestion";
 
-	//CONSTRUCTORS
+    // CONSTRUCTORS
 
-	public MultiChoiceQuestion () {
-		super();
-	}
+    public MultiChoiceQuestion() {
+	super();
+    }
 
-	public MultiChoiceQuestion (String uri) {
-		super(uri);
-	}
+    public MultiChoiceQuestion(String uri) {
+	super(uri);
+    }
 
-	/**
-	 * A MultichoiceQuestion can be implemented with the question wording, the
-	 * answer type and the possible choices, when a correct answer is not specified
-	 * @param qWording
-	 * @param answerType
-	 * @param choices
-	 * @see Question
-	 */
-	public MultiChoiceQuestion(String qWording, String answerType,ChoiceLabel[] choices){
-		super(qWording, answerType, choices);
-	}
-	/**
-	 * A MultichoiceQuestion can be implemented with the question wording, the
-	 * set of answer type, and the possible choices, when a set of correct answer is given.
-	 * @param qWording
-	 * @param correctAnswer
-	 * @param answerType
-	 * @param choices
-	 */
-	public MultiChoiceQuestion(String qWording, Object[] correctAnswer, String[] answerType, ChoiceLabel[] choices){
-		super(qWording, correctAnswer, answerType, choices);
-	}
+    /**
+     * A MultichoiceQuestion can be implemented with the question wording, the
+     * answer type and the possible choices, when a correct answer is not
+     * specified
+     * 
+     * @param qWording
+     * @param answerType
+     * @param choices
+     * @see Question
+     */
+    public MultiChoiceQuestion(String qWording, String answerType,
+	    ChoiceLabel[] choices) {
+	super(qWording, answerType, choices);
+    }
 
+    /**
+     * A MultichoiceQuestion can be implemented with the question wording, the
+     * set of answer type, and the possible choices, when a set of correct
+     * answer is given.
+     * 
+     * @param qWording
+     * @param correctAnswer
+     * @param answerType
+     * @param choices
+     */
+    public MultiChoiceQuestion(String qWording, Object[] correctAnswer,
+	    String[] answerType, ChoiceLabel[] choices) {
+	super(qWording, correctAnswer, answerType, choices);
+    }
 
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	public String getClassURI() {
-		return MY_URI;
-	}
-	public int getPropSerializationType(String arg0) {
-		return PROP_SERIALIZATION_FULL;
-	}
+    public int getPropSerializationType(String arg0) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-	public boolean isWellFormed() {
-		return true ;
-	}
+    public boolean isWellFormed() {
+	return true;
+    }
 }

@@ -22,10 +22,9 @@
  */
 package org.universAAL.ontology.vcard;
 
-
 public class PCS extends Tel {
     public static final String MY_URI = VCardOntology.NAMESPACE + "PCS";
-    
+
     public PCS() {
 	super();
     }
@@ -37,7 +36,7 @@ public class PCS extends Tel {
     public String getClassURI() {
 	return MY_URI;
     }
-    
+
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }

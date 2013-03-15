@@ -35,42 +35,42 @@ import org.universAAL.ontology.profile.User;
  * 
  */
 public class FallDetector extends Sensor {
-	public static final String MY_URI=RiskOntology.NAMESPACE + "FallDetector";
-	public static final String PROP_WORN_BY=RiskOntology.NAMESPACE + "wornBy";
+    public static final String MY_URI = RiskOntology.NAMESPACE + "FallDetector";
+    public static final String PROP_WORN_BY = RiskOntology.NAMESPACE + "wornBy";
 
-	public FallDetector() {
-	}
+    public FallDetector() {
+    }
 
-	public FallDetector(String uri) {
-		super(uri);
-	}
+    public FallDetector(String uri) {
+	super(uri);
+    }
 
-	public String getClassURI() {
-		return MY_URI;
-	}
+    public String getClassURI() {
+	return MY_URI;
+    }
 
-	public boolean isWellFormed() {
-		return true;
-	}
+    public boolean isWellFormed() {
+	return true;
+    }
 
-	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
-	}
+    public int getPropSerializationType(String propURI) {
+	return PROP_SERIALIZATION_FULL;
+    }
 
-	public AssistedPerson getWornBy() {
-		return (AssistedPerson) props.get(PROP_WORN_BY);
-	}
+    public AssistedPerson getWornBy() {
+	return (AssistedPerson) props.get(PROP_WORN_BY);
+    }
 
-	public void setWorndBy(User value) {
-		props.put(PROP_WORN_BY, value);
-	}
+    public void setWorndBy(User value) {
+	props.put(PROP_WORN_BY, value);
+    }
 
-	public boolean getMeasuredvalue() {
-		return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
-	}
+    public boolean getMeasuredvalue() {
+	return ((Boolean) props.get(PROP_MEASURED_VALUE)).booleanValue();
+    }
 
-	public void setMeasuredValue(boolean value) {
-		props.put(PROP_MEASURED_VALUE, Boolean.valueOf(value));
-	}
+    public void setMeasuredValue(boolean value) {
+	props.put(PROP_MEASURED_VALUE, Boolean.valueOf(value));
+    }
 
 }

@@ -44,20 +44,21 @@ public abstract class GestureRecognition extends ManagedIndividual {
 	PROP_GESTURE_TYPE = GESTURE_RECOGNITION_NAMESPACE + "gestureType";
     }
 
-    public static MergedRestriction getClassRestrictionsOnProperty(String propURI) {
+    public static MergedRestriction getClassRestrictionsOnProperty(
+	    String propURI) {
 	if (propURI == null)
 	    return null;
 
 	if (propURI.equals(PROP_GESTURE_TYPE))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
-		    new Enumeration(new Integer[] { new Integer(0),
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
+		    propURI, new Enumeration(new Integer[] { new Integer(0),
 			    new Integer(1) }), 1, 1);
 
 	if (propURI.equals(PROP_SUBJECT_USER))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
-		    User.MY_URI, 1, 0);
+	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
+		    propURI, User.MY_URI, 1, 0);
 
-	return null;//ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+	return null;// ManagedIndividual.getClassRestrictionsOnProperty(propURI);
     }
 
     public static String getRDFSComment() {
