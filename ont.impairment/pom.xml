@@ -5,24 +5,17 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>1.3.1-SNAPSHOT</version>
+    <version>1.3.2-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.impairment</artifactId>
-  <version>1.3.1-SNAPSHOT</version>
+  <version>1.3.2-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology User Impairment</name>
   <organization>
     <name>SPIRIT S.A. E-BUSINESS AND COMMUNICATIONS ENGINEERING</name>
     <url>http://www.spirit-intl.com/</url>
   </organization>
-  <licenses>
-    <license>
-      <name>The Apache Software License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
   <dependencies>
     <dependency>
       <groupId>org.universAAL.support</groupId>

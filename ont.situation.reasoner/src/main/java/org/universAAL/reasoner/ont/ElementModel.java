@@ -34,7 +34,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.sodapop.msg.MessageContentSerializer;
+import org.universAAL.middleware.serialization.MessageContentSerializer;
 import org.universAAL.reasoner.ont.Persistent;
 
 /**

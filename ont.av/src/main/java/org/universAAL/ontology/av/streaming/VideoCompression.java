@@ -115,7 +115,8 @@ public class VideoCompression extends Compression {
 	return order;
     }
 
-    public void setProperty(String propURI, Object o) {
+    public boolean setProperty(String propURI, Object o) {
 	// do nothing
+	return false;
     }
 }
