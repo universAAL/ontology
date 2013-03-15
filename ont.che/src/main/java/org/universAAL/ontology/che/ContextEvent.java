@@ -279,15 +279,18 @@ public class ContextEvent extends ManagedIndividual {
      * @param confidence
      *            The confidence in percentage (0 to 100)
      */
-    public void setConfidence(Integer confidence) {
+    public boolean setConfidence(Integer confidence) {
 	if (confidence == null) {
 	    props.remove(PROP_CONTEXT_CONFIDENCE);
-	    return;
+	    return true;
 	}
 	if (confidence != null && confidence.intValue() >= 0
 		&& confidence.intValue() <= 100
-		&& !props.containsKey(PROP_CONTEXT_CONFIDENCE))
+		&& !props.containsKey(PROP_CONTEXT_CONFIDENCE)) {
 	    props.put(PROP_CONTEXT_CONFIDENCE, confidence);
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -297,14 +300,17 @@ public class ContextEvent extends ManagedIndividual {
      *            The amount of millisecond after which the event is not valid
      *            afer reception
      */
-    public void setExpirationTime(Long expirationTime) {
+    public boolean setExpirationTime(Long expirationTime) {
 	if (expirationTime == null) {
 	    props.remove(PROP_CONTEXT_EXPIRATION_TIME);
-	    return;
+	    return true;
 	}
 	if (expirationTime != null && expirationTime.longValue() > 0
-		&& !props.containsKey(PROP_CONTEXT_EXPIRATION_TIME))
+		&& !props.containsKey(PROP_CONTEXT_EXPIRATION_TIME)) {
 	    props.put(PROP_CONTEXT_EXPIRATION_TIME, expirationTime);
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -312,13 +318,16 @@ public class ContextEvent extends ManagedIndividual {
      * 
      * @param o
      */
-    public void setRDFObject(Object o) {
+    public boolean setRDFObject(Object o) {
 	if (o == null) {
 	    props.remove(PROP_RDF_OBJECT);
-	    return;
+	    return true;
 	}
-	if (o != null && !props.containsKey(PROP_RDF_OBJECT))
+	if (o != null && !props.containsKey(PROP_RDF_OBJECT)) {
 	    props.put(PROP_RDF_OBJECT, o);
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -327,14 +336,17 @@ public class ContextEvent extends ManagedIndividual {
      * @param propURI
      *            The URI of the predicate
      */
-    public void setRDFPredicate(String propURI) {
+    public boolean setRDFPredicate(String propURI) {
 	if (propURI == null) {
 	    props.remove(PROP_RDF_PREDICATE);
-	    return;
+	    return true;
 	}
 	if (propURI != null && propURI.lastIndexOf('#') > 0
-		&& !props.containsKey(PROP_RDF_PREDICATE))
+		&& !props.containsKey(PROP_RDF_PREDICATE)) {
 	    props.put(PROP_RDF_PREDICATE, new Resource(propURI));
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -342,13 +354,16 @@ public class ContextEvent extends ManagedIndividual {
      * 
      * @param src
      */
-    public void setProvider(ContextProvider src) {
+    public boolean setProvider(ContextProvider src) {
 	if (src == null) {
 	    props.remove(PROP_CONTEXT_PROVIDER);
-	    return;
+	    return true;
 	}
-	if (src != null && !props.containsKey(PROP_CONTEXT_PROVIDER))
+	if (src != null && !props.containsKey(PROP_CONTEXT_PROVIDER)) {
 	    props.put(PROP_CONTEXT_PROVIDER, src);
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -356,13 +371,16 @@ public class ContextEvent extends ManagedIndividual {
      * 
      * @param subj
      */
-    public void setRDFSubject(Resource subj) {
+    public boolean setRDFSubject(Resource subj) {
 	if (subj == null) {
 	    props.remove(PROP_RDF_SUBJECT);
-	    return;
+	    return true;
 	}
-	if (subj != null && !props.containsKey(PROP_RDF_SUBJECT))
+	if (subj != null && !props.containsKey(PROP_RDF_SUBJECT)) {
 	    props.put(PROP_RDF_SUBJECT, subj);
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -371,13 +389,16 @@ public class ContextEvent extends ManagedIndividual {
      * @param timestamp
      *            The timestamp in UNIX format
      */
-    public void setTimestamp(Long timestamp) {
+    public boolean setTimestamp(Long timestamp) {
 	if (timestamp == null) {
 	    props.remove(PROP_CONTEXT_TIMESTAMP);
-	    return;
+	    return true;
 	} else if (timestamp.longValue() > 0
-		&& !props.containsKey(PROP_CONTEXT_TIMESTAMP))
+		&& !props.containsKey(PROP_CONTEXT_TIMESTAMP)) {
 	    props.put(PROP_CONTEXT_TIMESTAMP, timestamp);
+	    return true;
+	}
+	return false;
     }
 
     /**
@@ -387,32 +408,33 @@ public class ContextEvent extends ManagedIndividual {
      * @see org.universAAL.middleware.owl.ManagedIndividual#setProperty(java.lang.String,
      *      java.lang.Object)
      */
-    public void setProperty(String propURI, Object value) {
+    public boolean setProperty(String propURI, Object value) {
 	if (propURI == null)
-	    return;
+	    return false;
 
 	if (propURI.equals(PROP_RDF_OBJECT))
-	    setRDFObject(value);
+	    return setRDFObject(value);
 	else if (value instanceof ContextProvider) {
 	    if (propURI.equals(PROP_CONTEXT_PROVIDER))
-		setProvider((ContextProvider) value);
+		return setProvider((ContextProvider) value);
 	} else if (value instanceof Resource) {
 	    if (propURI.equals(PROP_RDF_SUBJECT))
-		setRDFSubject((Resource) value);
+		return setRDFSubject((Resource) value);
 	    else if (propURI.equals(PROP_RDF_PREDICATE))
-		setRDFPredicate(((Resource) value).getURI());
+		return setRDFPredicate(((Resource) value).getURI());
 	} else if (value instanceof String) {
 	    if (propURI.equals(PROP_RDF_PREDICATE))
-		setRDFPredicate((String) value);
+		return setRDFPredicate((String) value);
 	} else if (value instanceof Long) {
 	    if (propURI.equals(PROP_CONTEXT_TIMESTAMP))
-		setTimestamp((Long) value);
+		return setTimestamp((Long) value);
 	    else if (propURI.equals(PROP_CONTEXT_EXPIRATION_TIME))
-		setExpirationTime((Long) value);
+		return setExpirationTime((Long) value);
 	} else if (value instanceof Integer) {
 	    if (propURI.equals(PROP_CONTEXT_CONFIDENCE))
-		setConfidence((Integer) value);
+		return setConfidence((Integer) value);
 	}
+	return false;
     }
 
     public String getClassURI() {

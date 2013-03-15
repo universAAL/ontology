@@ -65,8 +65,9 @@ public class Gender extends ManagedIndividual {
 	return true;
     }
 
-    public void setProperty(String propURI, Object o) {
+    public boolean setProperty(String propURI, Object o) {
 	// do nothing
+	return false;
     }
 
     public String getClassURI() {

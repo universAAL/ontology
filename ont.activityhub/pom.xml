@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>1.3.1-SNAPSHOT</version>
+    <version>1.3.2-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.activityhub</artifactId>
-  <version>1.3.2-SNAPSHOT</version>
+  <version>1.3.3-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology for ISO 11073-10471 Sensors</name>
   <description>Ontological representation of sensors specified in ISO 11073 - Part 10471 (Independent living activity hub)</description>
