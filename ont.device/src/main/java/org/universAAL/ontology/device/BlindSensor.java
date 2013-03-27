@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class BlindSensor extends Sensor {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "BlindSensor";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public BlindSensor() {
 	super();

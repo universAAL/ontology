@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class EnuresisSensor extends Sensor {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "EnuresisSensor";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public EnuresisSensor() {
 	super();

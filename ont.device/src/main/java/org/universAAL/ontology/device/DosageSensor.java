@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class DosageSensor extends Sensor {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "DosageSensor";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public DosageSensor() {
 	super();

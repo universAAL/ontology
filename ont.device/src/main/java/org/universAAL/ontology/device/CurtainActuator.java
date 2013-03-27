@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class CurtainActuator extends Actuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "CurtainActuator";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public CurtainActuator() {
 	super();

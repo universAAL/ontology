@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class WaterFlowActuator extends Actuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "WaterFlowActuator";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public WaterFlowActuator() {
 	super();
