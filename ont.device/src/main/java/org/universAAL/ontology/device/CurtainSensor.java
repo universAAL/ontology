@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class CurtainSensor extends Sensor {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "CurtainSensor";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public CurtainSensor() {
 	super();

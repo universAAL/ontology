@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class TemperatureSensor extends Sensor {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "TemperatureSensor";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public TemperatureSensor() {
 	super();

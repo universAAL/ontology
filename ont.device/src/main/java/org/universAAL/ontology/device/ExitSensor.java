@@ -23,8 +23,6 @@ package org.universAAL.ontology.device;
 
 public class ExitSensor extends Sensor {
     public static final String MY_URI = DeviceOntology.NAMESPACE + "ExitSensor";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public ExitSensor() {
 	super();

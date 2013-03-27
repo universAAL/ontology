@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class SwitchController extends Actuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "SwitchController";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public SwitchController() {
 	super();

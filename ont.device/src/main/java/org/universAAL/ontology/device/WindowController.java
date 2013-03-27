@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class WindowController extends Actuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "WindowController";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public WindowController() {
 	super();

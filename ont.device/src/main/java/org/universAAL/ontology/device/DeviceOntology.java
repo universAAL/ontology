@@ -232,7 +232,6 @@ public final class DeviceOntology extends Ontology {
 	oci_Actuator.setResourceComment("");
 	oci_Actuator.setResourceLabel("Actuator");
 	oci_Actuator.addSuperClass(ValueDevice.MY_URI);
-	oci_Actuator.addSuperClass(ValueDevice.MY_URI);
 	oci_LightController.setResourceComment("");
 	oci_LightController.setResourceLabel("LightController");
 	oci_LightController.addSuperClass(Actuator.MY_URI);
@@ -312,9 +311,6 @@ public final class DeviceOntology extends Ontology {
 			CurtainSensor.PROP_HAS_VALUE, TypeMapper
 				.getDatatypeURI(Integer.class), 1, 1));
 
-	// oci_MyService.setResourceComment("");
-	// oci_MyService.setResourceLabel("MyService");
-	// oci_MyService.addSuperClass(Service.MY_URI);
 	oci_PresenceSensor.setResourceComment("");
 	oci_PresenceSensor.setResourceLabel("PresenceSensor");
 	oci_PresenceSensor.addSuperClass(Sensor.MY_URI);
@@ -405,7 +401,6 @@ public final class DeviceOntology extends Ontology {
 	oci_ValueDevice.setResourceComment("");
 	oci_ValueDevice.setResourceLabel("ValueDevice");
 	oci_ValueDevice.addSuperClass(Device.MY_URI);
-	oci_ValueDevice.addSuperClass(Device.MY_URI);
 	oci_ValueDevice.addObjectProperty(ValueDevice.PROP_HAS_VALUE)
 		.setFunctional();
 	// The only restriction on this property is cardinality
@@ -458,7 +453,6 @@ public final class DeviceOntology extends Ontology {
 
 	oci_Sensor.setResourceComment("");
 	oci_Sensor.setResourceLabel("Sensor");
-	oci_Sensor.addSuperClass(ValueDevice.MY_URI);
 	oci_Sensor.addSuperClass(ValueDevice.MY_URI);
 	oci_WaterFlowSensor.setResourceComment("");
 	oci_WaterFlowSensor.setResourceLabel("WaterFlowSensor");

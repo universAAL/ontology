@@ -24,8 +24,6 @@ package org.universAAL.ontology.device;
 public class BlindController extends Actuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "BlindController";
-    public static final String PROP_HAS_VALUE = DeviceOntology.NAMESPACE
-	    + "hasValue";
 
     public BlindController() {
 	super();
