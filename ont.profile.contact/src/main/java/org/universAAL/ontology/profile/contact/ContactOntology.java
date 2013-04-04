@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2012 Universidad Politécnica de Madrid
+ * Copyright 2012 Universidad Politï¿½cnica de Madrid
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.profile.ContactFactory;
+import org.universAAL.ontology.profile.PersonalInformationSubprofile;
 import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.SubProfile;
-import org.universAAL.ontology.vcard.VCard;
 import org.universAAL.ontology.vcard.VCardOntology;
 
 //import the factory for this ontology
@@ -84,8 +84,7 @@ public final class ContactOntology extends Ontology {
 	oci_ContactListSubProfile.addObjectProperty(
 		ContactListSubProfile.PROP_CONTACT_LIST).setFunctional();
 	oci_ContactListSubProfile.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			ContactListSubProfile.PROP_CONTACT_LIST, VCard.MY_URI,
-			0, -1));
+		.getAllValuesRestriction(
+			ContactListSubProfile.PROP_CONTACT_LIST, PersonalInformationSubprofile.MY_URI));
     }
 }
