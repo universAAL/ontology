@@ -62,6 +62,7 @@
     <module>../ont.health.measurement</module>
     <module>../ont.profile.health</module>
     <module>composite</module>
+    <module>karaf.feature</module>
   </modules>
   <scm>
     <connection>${svn.base}/${project.artifactId}</connection>
