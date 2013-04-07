@@ -1,4 +1,4 @@
-universAAL ontology suite
+universAAL ontology Composite running provision generator
 
 I. Included Software
 

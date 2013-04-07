@@ -11,7 +11,7 @@
   <artifactId>ont.personalhealthdevice</artifactId>
   <version>1.3.2-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL ontology for personal health devices</name>
+  <name>universAAL Ontology for personal health devices</name>
   <description>Ontological representation of personal health devices (Continua certified devices), e.g. blood pressure monitor, weighing scale,...</description>
   <url></url>
   <organization>
