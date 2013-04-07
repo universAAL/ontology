@@ -25,7 +25,7 @@
 	<artifactId>ont.karaf.feature</artifactId>
 	<packaging>feature</packaging>
 
-	<name>UniversAAL Ontolgies</name>
+	<name>universAAL Ontologies feature</name>
 	<description>universAAL All Ontologies Feature</description>
 
   <dependencies>
