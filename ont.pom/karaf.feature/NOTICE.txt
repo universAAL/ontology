@@ -1,4 +1,4 @@
-universAAL ontology suite
+universAAL ontology feature provision generator
 
 I. Included Software
 

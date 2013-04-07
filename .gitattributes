@@ -496,7 +496,13 @@ ont.phWorld/src/test/resources/log4j.properties -text
 ont.pom/ASL2.0.txt -text
 ont.pom/MITX.txt -text
 ont.pom/NOTICE.txt -text
+ont.pom/composite/ASL2.0.txt -text
+ont.pom/composite/MITX.txt -text
+ont.pom/composite/NOTICE.txt -text
 ont.pom/composite/pom.xml -text
+ont.pom/karaf.feature/ASL2.0.txt -text
+ont.pom/karaf.feature/MITX.txt -text
+ont.pom/karaf.feature/NOTICE.txt -text
 ont.pom/karaf.feature/pom.xml -text
 ont.pom/karaf.feature/src/main/history/dependencies.xml -text
 ont.pom/pom.xml -text
