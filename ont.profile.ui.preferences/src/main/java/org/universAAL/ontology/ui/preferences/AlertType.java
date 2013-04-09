@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership
@@ -15,6 +15,7 @@
 package org.universAAL.ontology.ui.preferences;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+
 
 public class AlertType extends ManagedIndividual {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE

@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership

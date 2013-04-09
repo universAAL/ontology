@@ -605,8 +605,8 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/Size.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/Status.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/SystemMenuPreferences.java -text
-ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/UIPreferencesProfile.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/UIPreferencesProfileOntology.java -text
+ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/UIPreferencesSubProfile.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/VisualPreferences.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/VoiceGender.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/WindowLayoutType.java -text

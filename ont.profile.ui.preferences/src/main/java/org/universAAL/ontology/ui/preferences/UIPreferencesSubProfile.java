@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership
@@ -17,9 +17,9 @@ package org.universAAL.ontology.ui.preferences;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.profile.SubProfile;
 
-public class UIPreferencesProfile extends SubProfile {
+public class UIPreferencesSubProfile extends SubProfile {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-	    + "UIPreferencesProfile";
+	    + "UIPreferencesSubProfile";
     public static final String PROP_INTERACTION_PREFERENCES = UIPreferencesProfileOntology.NAMESPACE
 	    + "interactionPreferences";
     public static final String PROP_VISUAL_PREFERENCES = UIPreferencesProfileOntology.NAMESPACE
@@ -33,11 +33,11 @@ public class UIPreferencesProfile extends SubProfile {
     public static final String PROP_AUDIO_PREFERENCES = UIPreferencesProfileOntology.NAMESPACE
 	    + "audioPreferences";
 
-    public UIPreferencesProfile() {
+    public UIPreferencesSubProfile() {
 	super();
     }
 
-    public UIPreferencesProfile(String uri) {
+    public UIPreferencesSubProfile(String uri) {
 	super(uri);
     }
 

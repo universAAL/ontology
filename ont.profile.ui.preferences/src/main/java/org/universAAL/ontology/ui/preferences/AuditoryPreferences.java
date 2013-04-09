@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership
@@ -14,10 +14,11 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.rdf.Resource;
 
-public class AuditoryPreferences extends ManagedIndividual {
+import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.ui.owl.Preference;
+
+public class AuditoryPreferences extends Preference {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
 	    + "AuditoryPreferences";
     public static final String PROP_SPEECH_RATE = UIPreferencesProfileOntology.NAMESPACE
