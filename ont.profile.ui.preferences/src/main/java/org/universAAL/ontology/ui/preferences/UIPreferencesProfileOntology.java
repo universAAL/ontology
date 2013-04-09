@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership
@@ -20,12 +20,13 @@ import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
+import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.ontology.UIPreferencesProfileFactory;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.Profile;
 import org.universAAL.ontology.profile.UserProfile;
 import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
 
@@ -39,7 +40,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
     public static final String NAMESPACE = "http://ontology.universaal.org/InteractionPreferencesProfile.owl#";
 
     // Extend UserProfile
-    public static final String PROP_INTERACTION_PREF_PROFILE = UserProfile.PROP_HAS_SUB_PROFILE
+    public static final String PROP_INTERACTION_PREF_PROFILE = Profile.PROP_HAS_SUB_PROFILE
 	    + "UIPreferences";
 
     public UIPreferencesProfileOntology() {
@@ -70,6 +71,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	OntClassInfoSetup oci_Status = createNewAbstractOntClassInfo(Status.MY_URI);
 	OntClassInfoSetup oci_PendingDialogsBuilderType = createNewAbstractOntClassInfo(PendingDialogsBuilderType.MY_URI);
 	OntClassInfoSetup oci_Gender = createNewAbstractOntClassInfo(VoiceGender.MY_URI);
+	OntClassInfoSetup oci_Modality = createNewAbstractOntClassInfo(Modality.MY_URI);
 
 	// ******* Declaration of regular classes of the ontology ******* //
 	OntClassInfoSetup oci_VisualPreferences = createNewOntClassInfo(
@@ -85,7 +87,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	OntClassInfoSetup oci_AuditoryPreferences = createNewOntClassInfo(
 		AuditoryPreferences.MY_URI, factory, 5);
 	OntClassInfoSetup oci_UIPreferences = createNewOntClassInfo(
-		UIPreferencesProfile.MY_URI, factory, 6);
+		UIPreferencesSubProfile.MY_URI, factory, 6);
 	OntClassInfoSetup oci_UIPreferencesService = createNewOntClassInfo(
 		UIPreferencesService.MY_URI, factory, 7);
 
@@ -463,51 +465,51 @@ public final class UIPreferencesProfileOntology extends Ontology {
 				Status.MY_URI, 1, 1));
 
 	oci_UIPreferences.setResourceComment("");
-	oci_UIPreferences.setResourceLabel("UIPreferencesProfile");
-	// UIPreferencesProfile is SubProfile
+	oci_UIPreferences.setResourceLabel("UIPreferencesSubProfile");
+	// UIPreferencesSubProfile is SubProfile
 	oci_UIPreferences.addSuperClass(SubProfile.MY_URI);
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesProfile.PROP_INTERACTION_PREFERENCES)
+		UIPreferencesSubProfile.PROP_INTERACTION_PREFERENCES)
 		.setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			UIPreferencesProfile.PROP_INTERACTION_PREFERENCES,
+			UIPreferencesSubProfile.PROP_INTERACTION_PREFERENCES,
 			GeneralInteractionPreferences.MY_URI, 1, 1));
 
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesProfile.PROP_VISUAL_PREFERENCES).setFunctional();
+		UIPreferencesSubProfile.PROP_VISUAL_PREFERENCES).setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			UIPreferencesProfile.PROP_VISUAL_PREFERENCES,
+			UIPreferencesSubProfile.PROP_VISUAL_PREFERENCES,
 			VisualPreferences.MY_URI, 1, 1));
 
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesProfile.PROP_SYSTEM_MENU_PREFERENCES)
+		UIPreferencesSubProfile.PROP_SYSTEM_MENU_PREFERENCES)
 		.setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			UIPreferencesProfile.PROP_SYSTEM_MENU_PREFERENCES,
+			UIPreferencesSubProfile.PROP_SYSTEM_MENU_PREFERENCES,
 			SystemMenuPreferences.MY_URI, 1, 1));
 
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesProfile.PROP_ALERT_PREFERENCES).setFunctional();
+		UIPreferencesSubProfile.PROP_ALERT_PREFERENCES).setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			UIPreferencesProfile.PROP_ALERT_PREFERENCES,
+			UIPreferencesSubProfile.PROP_ALERT_PREFERENCES,
 			AlertPreferences.MY_URI, 0, 1));
 
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesProfile.PROP_ACCESS_MODE).setFunctional();
+		UIPreferencesSubProfile.PROP_ACCESS_MODE).setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			UIPreferencesProfile.PROP_ACCESS_MODE,
+			UIPreferencesSubProfile.PROP_ACCESS_MODE,
 			AccessMode.MY_URI, 1, 1));
 
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesProfile.PROP_AUDIO_PREFERENCES).setFunctional();
+		UIPreferencesSubProfile.PROP_AUDIO_PREFERENCES).setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			UIPreferencesProfile.PROP_AUDIO_PREFERENCES,
+			UIPreferencesSubProfile.PROP_AUDIO_PREFERENCES,
 			AuditoryPreferences.MY_URI, 1, 1));
 
 	// service
@@ -519,16 +521,16 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		UIPreferencesService.PROP_CONTROLS).setFunctional();
 	oci_UIPreferencesService.addRestriction(MergedRestriction
 		.getAllValuesRestriction(UIPreferencesService.PROP_CONTROLS,
-			UIPreferencesProfile.MY_URI));
+			UIPreferencesSubProfile.MY_URI));
 
 	// Extend UserProfile
 	OntClassInfoSetup oci = extendExistingOntClassInfo(UserProfile.MY_URI);
 	oci.addObjectProperty(PROP_INTERACTION_PREF_PROFILE).addSuperProperty(
-		UserProfile.PROP_HAS_SUB_PROFILE);
+		Profile.PROP_HAS_SUB_PROFILE);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PROP_INTERACTION_PREF_PROFILE,
-			UIPreferencesProfile.MY_URI, 0, 1));
+			UIPreferencesSubProfile.MY_URI, 0, 1));
 
     }
 }

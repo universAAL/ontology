@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership
@@ -21,7 +21,7 @@ import org.universAAL.ontology.ui.preferences.AlertPreferences;
 import org.universAAL.ontology.ui.preferences.AuditoryPreferences;
 import org.universAAL.ontology.ui.preferences.GeneralInteractionPreferences;
 import org.universAAL.ontology.ui.preferences.SystemMenuPreferences;
-import org.universAAL.ontology.ui.preferences.UIPreferencesProfile;
+import org.universAAL.ontology.ui.preferences.UIPreferencesSubProfile;
 import org.universAAL.ontology.ui.preferences.VisualPreferences;
 import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
 
@@ -48,7 +48,7 @@ public class UIPreferencesProfileFactory extends ResourceFactoryImpl {
 	case 5:
 	    return new AuditoryPreferences(instanceURI);
 	case 6:
-	    return new UIPreferencesProfile(instanceURI);
+	    return new UIPreferencesSubProfile(instanceURI);
 	case 7:
 	    return new UIPreferencesService(instanceURI);
 

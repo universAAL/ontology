@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
- * Licensed under both Apache License, Version 2.0 and MIT License .
+ * Licensed under both Apache License, Version 2.0 and MIT License.
  *
  * See the NOTICE file distributed with this work for additional 
  * information regarding copyright ownership
@@ -14,11 +14,11 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Modality;
+import org.universAAL.middleware.ui.owl.Preference;
 
-public class GeneralInteractionPreferences extends ManagedIndividual {
+public class GeneralInteractionPreferences extends Preference {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
 	    + "GeneralInteractionPreferences";
     public static final String PROP_SECONDARY_LANGUAGE = UIPreferencesProfileOntology.NAMESPACE
