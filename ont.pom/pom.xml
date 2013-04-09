@@ -95,6 +95,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <!-- Only for Itests -->
       <dependency>
         <groupId>org.universAAL.middleware</groupId>
         <artifactId>mw.pom.osgi</artifactId>
@@ -102,6 +103,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.activityhub</artifactId>
@@ -284,6 +286,16 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.universAAL.middleware</groupId>
+  		<artifactId>mw.data.representation.core</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.universAAL.middleware</groupId>
+  		<artifactId>mw.bus.service.core</artifactId>
+  	</dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>uaal-snapshots</id>
