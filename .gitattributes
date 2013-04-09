@@ -504,7 +504,6 @@ ont.pom/karaf.feature/ASL2.0.txt -text
 ont.pom/karaf.feature/MITX.txt -text
 ont.pom/karaf.feature/NOTICE.txt -text
 ont.pom/karaf.feature/pom.xml -text
-ont.pom/karaf.feature/src/main/history/dependencies.xml -text
 ont.pom/pom.xml -text
 ont.pom/update.bat -text
 ont.powersocket/ASL2.0.txt -text
