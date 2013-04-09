@@ -27,6 +27,10 @@
   <dependencies>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.container.xfaces.core</artifactId>
+    </dependency>  
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
     <dependency>
