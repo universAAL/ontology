@@ -42,12 +42,10 @@ public class Activator implements ModuleActivator {
 
     ReasoningOntology _ontontology = new ReasoningOntology();
 
-    @Override
     public void start(ModuleContext mc) throws Exception {
 	OntologyManagement.getInstance().register(mc, _ontontology);
     }
 
-    @Override
     public void stop(ModuleContext mc) throws Exception {
 	OntologyManagement.getInstance().unregister(mc, _ontontology);
     }
