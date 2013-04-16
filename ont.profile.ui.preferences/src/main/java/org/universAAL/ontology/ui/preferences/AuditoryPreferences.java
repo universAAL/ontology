@@ -45,7 +45,8 @@ public class AuditoryPreferences extends Preference {
 
     /**
      * Frequency is how fast a sound wave moves. Pitch is how high or low a
-     * sound sounds. The faster the sound wave the higher the pitch.
+     * sound sounds. The faster the sound wave the higher the pitch. This is the
+     * pitch intensity property.
      */
     public static final String PROP_PITCH = UIPreferencesProfileOntology.NAMESPACE
 	    + "pitch";
