@@ -92,10 +92,11 @@ public class PhysicalThing extends ManagedIndividual {
 	return PROP_SERIALIZATION_OPTIONAL;
     }
 
-    public void setLocation(Location loc) {
+    public boolean setLocation(Location loc) {
 	if (loc == null)
 	    throw new IllegalArgumentException();
 	props.put(PROP_PHYSICAL_LOCATION, loc);
+	return true;
     }
 
     /**
@@ -204,10 +205,10 @@ public class PhysicalThing extends ManagedIndividual {
 	    props.put(PROP_HAS_SHAPE, o);
     }
 
-    public void setProperty(String propURI, Object o) {
+    public boolean setProperty(String propURI, Object o) {
 	if (PROP_PHYSICAL_LOCATION.equals(propURI) && o instanceof Location)
-	    setLocation((Location) o);
+	    return setLocation((Location) o);
 	else
-	    super.setProperty(propURI, o);
+	    return super.setProperty(propURI, o);
     }
 }

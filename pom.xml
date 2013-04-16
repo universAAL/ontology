@@ -5,20 +5,15 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.2-SNAPSHOT</version>
     <!--<relativePath>../pom/</relativePath>-->
   </parent>
   <artifactId>ont.phWorld</artifactId>
-  <version>1.3.0</version>
+  <version>1.3.2-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>The Physical World Ontology</name>
+  <name>universAAL Ontology Physical World</name>
   <description>The upper ontology defining the most general concepts from the physical world as opposed to the virtual realm.</description>
   <url></url>
-  <!--<scm>
-    <connection>${svn.base}/physical.world</connection>
-    <developerConnection>${svn.base}/physical.world</developerConnection>
-    <url>${svn.base.url}</url>
-  </scm>-->
   <dependencies>
     <dependency>
       <groupId>org.universAAL.support</groupId>
@@ -56,7 +51,6 @@
         <configuration>
           <instructions>
             <Bundle-Name>${project.name}</Bundle-Name>
-            <!--<Bundle-Activator>org.universAAL.ontology.Activator</Bundle-Activator>-->
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Export-Package>org.universAAL.ontology.space,
@@ -67,7 +61,7 @@
 							org.universAAL.ontology.location.position,
 							org.universAAL.ontology.location.address,
 							org.universAAL.ontology.shape</Export-Package>
-          <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
+            <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
           </instructions>
         </configuration>
       </plugin>
