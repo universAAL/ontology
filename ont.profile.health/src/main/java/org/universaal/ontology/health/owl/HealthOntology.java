@@ -196,7 +196,7 @@ public final class HealthOntology extends Ontology {
 				.getDatatypeURI(Boolean.class), 1, 1));
 
 	// load TreatmentPlanning
-	oci = createNewOntClassInfo(TreatmentPlanning.MY_URI, factory, 9);
+	oci = createNewOntClassInfo(TreatmentPlanning.MY_URI, factory, 11);
 	oci
 		.setResourceComment("This class describes the planning of the sessions that composes the treatment.");
 	oci.setResourceLabel("TreatmentPlanning");
@@ -369,7 +369,7 @@ public final class HealthOntology extends Ontology {
 				BloodPressure.MY_URI, 1, 1));
 
 	// load HeartRateRequirement
-	oci = createNewOntClassInfo(HeartRateRequirement.MY_URI, factory, 6);
+	oci = createNewOntClassInfo(HeartRateRequirement.MY_URI, factory, 8);
 	oci
 		.setResourceComment("This class describes a heart rate measurement requirement.");
 	oci.setResourceLabel("HeartRateRequirement");
@@ -406,7 +406,7 @@ public final class HealthOntology extends Ontology {
 		17);
 	oci
 		.setResourceComment("This class describes a reposed heart rate measurement requirement.");
-	oci.setResourceLabel("HeartRateMeasurement");
+	oci.setResourceLabel("ReposeHeartRateRequirement");
 	oci.addSuperClass(HeartRateRequirement.MY_URI);
 
 	oci.addDatatypeProperty(
@@ -517,7 +517,7 @@ public final class HealthOntology extends Ontology {
 	oci.addSuperClass(HealthyHabitsAdoption.MY_URI);
 
 	// load TakeMeasurementActivity
-	oci = createNewOntClassInfo(TakeMeasurementActivity.MY_URI, factory, 7);
+	oci = createNewOntClassInfo(TakeMeasurementActivity.MY_URI, factory, 9);
 	oci
 		.setResourceComment("This is a treatment that consists of taking measurements.");
 	oci.setResourceLabel("TakeMeasurementActivity");
@@ -630,7 +630,7 @@ public final class HealthOntology extends Ontology {
 			PROP_HAS_HEALTH_PROFILE, HealthProfile.MY_URI, 0, 1));// NO
 	// ES
 	// LA
-	// MÃ?A,
+	// Mï¿½?A,
 	// TIENE
 	// QUE
 	// SER

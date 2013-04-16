@@ -17,7 +17,7 @@ package org.universaal.ontology.health.owl;
 
 public class HeartRateRequirement extends MeasurementRequirements {
     public static final String MY_URI = HealthOntology.NAMESPACE
-	    + "HeartRateMeasurement";
+	    + "HeartRateRequirement";
 
     public HeartRateRequirement() {
 	super();
