@@ -106,7 +106,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_MainMenuConfigurationType.toEnumeration(new ManagedIndividual[] {
 		MainMenuConfigurationType.classic,
 		MainMenuConfigurationType.smart,
-		MainMenuConfigurationType.classicWithSubmit,
 		MainMenuConfigurationType.taskBar });
 
 	oci_Language.setResourceComment("");
@@ -477,7 +476,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			GeneralInteractionPreferences.MY_URI, 1, 1));
 
 	oci_UIPreferences.addObjectProperty(
-		UIPreferencesSubProfile.PROP_VISUAL_PREFERENCES).setFunctional();
+		UIPreferencesSubProfile.PROP_VISUAL_PREFERENCES)
+		.setFunctional();
 	oci_UIPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			UIPreferencesSubProfile.PROP_VISUAL_PREFERENCES,

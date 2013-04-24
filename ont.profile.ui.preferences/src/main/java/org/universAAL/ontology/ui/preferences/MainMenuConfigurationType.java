@@ -22,18 +22,15 @@ public class MainMenuConfigurationType extends ManagedIndividual {
 
     public static final int CLASSIC = 0;
     public static final int SMART = 1;
-    public static final int CLASSIC_WITH_SUBMIT = 2;
-    public static final int TASK_BAR = 3;
 
-    private static final String[] names = { "classic", "smart",
-	    "classicWithSubmit", "taskBar" };
+    public static final int TASK_BAR = 2;
+
+    private static final String[] names = { "classic", "smart", "taskBar" };
 
     public static final MainMenuConfigurationType classic = new MainMenuConfigurationType(
 	    CLASSIC);
     public static final MainMenuConfigurationType smart = new MainMenuConfigurationType(
 	    SMART);
-    public static final MainMenuConfigurationType classicWithSubmit = new MainMenuConfigurationType(
-	    CLASSIC_WITH_SUBMIT);
     public static final MainMenuConfigurationType taskBar = new MainMenuConfigurationType(
 	    TASK_BAR);
 
@@ -88,8 +85,6 @@ public class MainMenuConfigurationType extends ManagedIndividual {
 	    return classic;
 	case SMART:
 	    return smart;
-	case CLASSIC_WITH_SUBMIT:
-	    return classicWithSubmit;
 	case TASK_BAR:
 	    return taskBar;
 	default:
