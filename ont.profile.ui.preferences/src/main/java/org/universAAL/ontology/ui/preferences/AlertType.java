@@ -16,7 +16,6 @@ package org.universAAL.ontology.ui.preferences;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-
 public class AlertType extends ManagedIndividual {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
 	    + "AlertType";
