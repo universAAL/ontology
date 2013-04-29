@@ -292,10 +292,10 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			MainMenuConfigurationType.MY_URI, 1, 1));
 
 	oci_SystemMenuPreferences.addDatatypeProperty(
-		SystemMenuPreferences.PROP_MESSAGE_PERSISTANCE).setFunctional();
+		SystemMenuPreferences.PROP_UIREQUEST_PERSISTANCE).setFunctional();
 	oci_SystemMenuPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			SystemMenuPreferences.PROP_MESSAGE_PERSISTANCE,
+			SystemMenuPreferences.PROP_UIREQUEST_PERSISTANCE,
 			Status.MY_URI, 1, 1));
 
 	oci_SystemMenuPreferences.addObjectProperty(
