@@ -22,8 +22,8 @@ public class SystemMenuPreferences extends Preference {
 	    + "SystemMenuPreferences";
     public static final String PROP_MAIN_MENU_CONFIGURATION = UIPreferencesProfileOntology.NAMESPACE
 	    + "mainMenuConfiguration";
-    public static final String PROP_MESSAGE_PERSISTANCE = UIPreferencesProfileOntology.NAMESPACE
-	    + "messagePersistance";
+    public static final String PROP_UIREQUEST_PERSISTANCE = UIPreferencesProfileOntology.NAMESPACE
+	    + "uiRequestPersistance";
     public static final String PROP_PENDING_DIALOG_BUILDER = UIPreferencesProfileOntology.NAMESPACE
 	    + "pendingDialogBuilder";
     public static final String PROP_PENDING_MESSAGE_BUILDER = UIPreferencesProfileOntology.NAMESPACE
@@ -59,7 +59,7 @@ public class SystemMenuPreferences extends Preference {
      */
     public boolean isWellFormed() {
 	return true && hasProperty(PROP_MAIN_MENU_CONFIGURATION)
-		&& hasProperty(PROP_MESSAGE_PERSISTANCE)
+		&& hasProperty(PROP_UIREQUEST_PERSISTANCE)
 		&& hasProperty(PROP_PENDING_DIALOG_BUILDER)
 		&& hasProperty(PROP_PENDING_MESSAGE_BUILDER)
 		&& hasProperty(PROP_SEARCH_FEATURE_IS_FIRST);
@@ -74,13 +74,13 @@ public class SystemMenuPreferences extends Preference {
 	    changeProperty(PROP_MAIN_MENU_CONFIGURATION, newPropValue);
     }
 
-    public Status getMessagePersistance() {
-	return (Status) getProperty(PROP_MESSAGE_PERSISTANCE);
+    public Status getUIRequestPersistance() {
+	return (Status) getProperty(PROP_UIREQUEST_PERSISTANCE);
     }
 
-    public void setMessagePersistance(Status newPropValue) {
+    public void setUIRequestPersistance(Status newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_MESSAGE_PERSISTANCE, newPropValue);
+	    changeProperty(PROP_UIREQUEST_PERSISTANCE, newPropValue);
     }
 
     public Status getSearchFeatureIsFirst() {
