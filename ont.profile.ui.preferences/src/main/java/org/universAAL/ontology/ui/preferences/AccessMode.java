@@ -14,10 +14,10 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.ui.owl.Preference;
 
-public class AccessMode extends ManagedIndividual {
+public class AccessMode extends Preference {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
 	    + "AccessMode";
     public static final String PROP_OLFACTORY_MODE_STATUS = UIPreferencesProfileOntology.NAMESPACE
