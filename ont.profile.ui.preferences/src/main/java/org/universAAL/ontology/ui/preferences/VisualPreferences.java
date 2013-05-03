@@ -14,7 +14,6 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
-
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Preference;
 
@@ -47,6 +46,8 @@ public class VisualPreferences extends Preference {
 	    + "fontColor";
     public static final String PROP_FONT_SIZE = UIPreferencesProfileOntology.NAMESPACE
 	    + "fontSize";
+    public static final String PROP_COMPONENT_SPACING = UIPreferencesProfileOntology.NAMESPACE
+	    + "componentSpacing";
 
     public VisualPreferences() {
 	super();
@@ -86,7 +87,8 @@ public class VisualPreferences extends Preference {
 		&& hasProperty(PROP_SCREEN_RESOLUTION)
 		&& hasProperty(PROP_CURSOR_SIZE)
 		&& hasProperty(PROP_SCREEN_SAVER_USAGE)
-		&& hasProperty(PROP_FONT_COLOR) && hasProperty(PROP_FONT_SIZE);
+		&& hasProperty(PROP_FONT_COLOR) && hasProperty(PROP_FONT_SIZE)
+		&& hasProperty(PROP_COMPONENT_SPACING);
     }
 
     public Intensity getBrightness() {
@@ -97,6 +99,16 @@ public class VisualPreferences extends Preference {
     public void setBrightness(Intensity newPropValue) {
 	if (newPropValue != null)
 	    changeProperty(PROP_BRIGHTNESS, newPropValue);
+    }
+
+    public Intensity getComponentSpacing() {
+	return (Intensity) getProperty(PROP_COMPONENT_SPACING);
+
+    }
+
+    public void setComponentSpacing(Intensity newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_COMPONENT_SPACING, newPropValue);
     }
 
     public Intensity getContentContrast() {
