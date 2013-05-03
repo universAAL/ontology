@@ -71,7 +71,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	OntClassInfoSetup oci_Status = createNewAbstractOntClassInfo(Status.MY_URI);
 	OntClassInfoSetup oci_PendingDialogsBuilderType = createNewAbstractOntClassInfo(PendingDialogsBuilderType.MY_URI);
 	OntClassInfoSetup oci_Gender = createNewAbstractOntClassInfo(VoiceGender.MY_URI);
-	OntClassInfoSetup oci_Modality = createNewAbstractOntClassInfo(Modality.MY_URI);
 
 	// ******* Declaration of regular classes of the ontology ******* //
 	OntClassInfoSetup oci_VisualPreferences = createNewOntClassInfo(
@@ -241,6 +240,13 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			1));
 
 	oci_VisualPreferences.addObjectProperty(
+		VisualPreferences.PROP_COMPONENT_SPACING).setFunctional();
+	oci_VisualPreferences.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			VisualPreferences.PROP_COMPONENT_SPACING,
+			Intensity.MY_URI, 1, 1));
+
+	oci_VisualPreferences.addObjectProperty(
 		VisualPreferences.PROP_CONTENT_CONTRAST).setFunctional();
 	oci_VisualPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
@@ -292,7 +298,8 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			MainMenuConfigurationType.MY_URI, 1, 1));
 
 	oci_SystemMenuPreferences.addDatatypeProperty(
-		SystemMenuPreferences.PROP_UIREQUEST_PERSISTANCE).setFunctional();
+		SystemMenuPreferences.PROP_UIREQUEST_PERSISTANCE)
+		.setFunctional();
 	oci_SystemMenuPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			SystemMenuPreferences.PROP_UIREQUEST_PERSISTANCE,
