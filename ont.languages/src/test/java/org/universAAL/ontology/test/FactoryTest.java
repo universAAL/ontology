@@ -15,11 +15,15 @@
  ******************************************************************************/
 package org.universAAL.ontology.test;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import junit.framework.TestCase;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.LanguageFactory;
+import org.universAAL.ontology.language.Language;
 import org.universAAL.ontology.language.LanguageOntology;
 
 /**
@@ -37,6 +41,13 @@ public class FactoryTest extends TestCase {
 		assertNotNull(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
 		LanguageFactory lf = new LanguageFactory(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
 		assertNotNull(lf.createInstance("", "", 5));
+		Set allLang = OntologyManagement.getInstance().getNamedSubClasses(Language.MY_URI, true, false);
+		assertTrue(allLang.size() > 0);
+		for (Iterator i = allLang.iterator(); i.hasNext();) {
+			String uri = (String) i.next();
+			System.out.println(uri);
+		}
+		System.out.println("that makes: " + allLang.size() + " languages compatible with uAAL.");
 	}
 	
 }
