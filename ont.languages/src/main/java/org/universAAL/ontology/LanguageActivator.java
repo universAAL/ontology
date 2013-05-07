@@ -22,23 +22,24 @@ import org.universAAL.ontology.language.LanguageOntology;
 
 /**
  * @author amedrano
- *
+ * @author eandgrg
+ * 
  */
 public class LanguageActivator implements ModuleActivator {
-	
-	private LanguageOntology ont = new LanguageOntology();
 
-	/** {@inheritDoc} */
-	public void start(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().register(mc, ont);
+    private LanguageOntology ont = new LanguageOntology();
 
-	}
+    /** {@inheritDoc} */
+    public void start(ModuleContext mc) throws Exception {
+	OntologyManagement.getInstance().register(mc, ont);
 
-	/** {@inheritDoc} */
-	public void stop(ModuleContext mc) throws Exception {
+    }
 
-		OntologyManagement.getInstance().unregister(mc, ont);
+    /** {@inheritDoc} */
+    public void stop(ModuleContext mc) throws Exception {
 
-	}
+	OntologyManagement.getInstance().unregister(mc, ont);
+
+    }
 
 }
