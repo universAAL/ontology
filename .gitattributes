@@ -364,14 +364,14 @@ ont.languages/LanguageOntology.di -text
 ont.languages/LanguageOntology.notation -text
 ont.languages/LanguageOntology.uml -text svneol=unset#text/plain
 ont.languages/pom.xml -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/LanguageActivator.java -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/LanguageFactory.java -text svneol=unset#text/plain
-ont.languages/src/main/java/org/universAAL/ontology/creator/LanguageOWLCreator.java -text svneol=unset#text/plain
-ont.languages/src/main/java/org/universAAL/ontology/language/EnglishLabelType.java -text svneol=unset#text/plain
-ont.languages/src/main/java/org/universAAL/ontology/language/ISO639CodeType.java -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/language/Language.java -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/language/LanguageOntology.java -text svneol=unset#text/plain
-ont.languages/src/main/java/org/universAAL/ontology/language/NativeLabelType.java -text svneol=unset#text/plain
-ont.languages/src/main/java/org/universAAL/ontology/osgi/Activator.java -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/language/impl/LanguageImpl.java -text svneol=unset#text/plain
+ont.languages/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -text
+ont.languages/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text svneol=unset#text/plain
+ont.languages/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain
 ont.lighting/ASL2.0.txt -text
 ont.lighting/MITX.txt -text
 ont.lighting/NOTICE.txt -text

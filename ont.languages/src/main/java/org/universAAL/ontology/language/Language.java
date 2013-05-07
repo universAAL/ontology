@@ -1,9 +1,5 @@
 package org.universAAL.ontology.language;
 
-import java.util.Hashtable;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 
@@ -41,29 +37,29 @@ public class Language extends ManagedIndividual {
       && hasProperty(PROP_NATIVE_LABEL);
   }
 
-  public EnglishLabelType getEnglishLabel() {
-    return (EnglishLabelType)getProperty(PROP_ENGLISH_LABEL);
+  public String getEnglishLabel() {
+    return (String)getProperty(PROP_ENGLISH_LABEL);
   }		
 
-  public void setEnglishLabel(EnglishLabelType newPropValue) {
+  public void setEnglishLabel(String newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_ENGLISH_LABEL, newPropValue);
   }		
 
-  public NativeLabelType getNativeLabel() {
-    return (NativeLabelType)getProperty(PROP_NATIVE_LABEL);
+  public String getNativeLabel() {
+    return (String)getProperty(PROP_NATIVE_LABEL);
   }		
 
-  public void setNativeLabel(NativeLabelType newPropValue) {
+  public void setNativeLabel(String newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_NATIVE_LABEL, newPropValue);
   }		
 
-  public ISO639CodeType getIso639code() {
-    return (ISO639CodeType)getProperty(PROP_ISO639CODE);
+  public String getIso639code() {
+    return (String)getProperty(PROP_ISO639CODE);
   }		
 
-  public void setIso639code(ISO639CodeType newPropValue) {
+  public void setIso639code(String newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_ISO639CODE, newPropValue);
   }		
