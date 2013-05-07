@@ -83,11 +83,11 @@ public final class LanguageOntology extends Ontology {
 					String name = ll.split("\\|")[1];
 					name = name.split(",")[0];
 					name = name.split(" ")[0];
-					// un comment to add value restrictions
-					//OntClassInfoSetup lang = 
+					OntClassInfoSetup lang = 
 					createNewOntClassInfo(NAMESPACE
 							+ name.toUpperCase(), factory, line);
-					
+					lang.addSuperClass(Language.MY_URI);
+					lang.setResourceLabel(name);
 				}
 				line++;
 			}
