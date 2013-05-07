@@ -86,7 +86,12 @@ public class MotivationalStatusType extends ManagedIndividual {
 	}
     }
 
-    public static final MotivationalStatusType valueOf(String name) {
+    public boolean equals(Object other) {
+		return other instanceof MotivationalStatusType
+				&& ((MotivationalStatusType)other).order == order;
+	}
+
+	public static final MotivationalStatusType valueOf(String name) {
 	if (name == null)
 	    return null;
 

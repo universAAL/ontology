@@ -75,6 +75,11 @@ public class DiseaseTimeEvolvingStatus extends ManagedIndividual {
 	    return null;
 	}
     }
+    
+    public boolean equals(Object other) {
+		return other instanceof DiseaseTimeEvolvingStatus
+				&& ((DiseaseTimeEvolvingStatus)other).order == order;
+	}
 
     public static final DiseaseTimeEvolvingStatus valueOf(String name) {
 	if (name == null)
