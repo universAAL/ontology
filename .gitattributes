@@ -360,9 +360,12 @@ ont.impairment/src/main/java/org/universAAL/ontology/impairment/SightImpairment.
 ont.impairment/src/main/java/org/universAAL/ontology/impairment/SpeakingImpairment.java -text
 ont.impairment/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.impairment/src/test/resources/log4j.properties -text
+ont.languages/ASL2.0.txt -text
 ont.languages/LanguageOntology.di -text
 ont.languages/LanguageOntology.notation -text
 ont.languages/LanguageOntology.uml -text svneol=unset#text/plain
+ont.languages/MITX.txt -text
+ont.languages/NOTICE.txt -text
 ont.languages/pom.xml -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/LanguageActivator.java -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/LanguageFactory.java -text svneol=unset#text/plain
