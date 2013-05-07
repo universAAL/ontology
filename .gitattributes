@@ -368,7 +368,6 @@ ont.languages/src/main/java/org/universAAL/ontology/LanguageActivator.java -text
 ont.languages/src/main/java/org/universAAL/ontology/LanguageFactory.java -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/language/Language.java -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/language/LanguageOntology.java -text svneol=unset#text/plain
-ont.languages/src/main/java/org/universAAL/ontology/language/impl/LanguageImpl.java -text svneol=unset#text/plain
 ont.languages/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -text
 ont.languages/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text svneol=unset#text/plain
 ont.languages/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain

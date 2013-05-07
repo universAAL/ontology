@@ -8,17 +8,22 @@ import java.nio.charset.Charset;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universAAL.ontology.language.LanguageOntology;
-import org.universAAL.ontology.language.impl.LanguageImpl;
+import org.universAAL.ontology.language.Language;
 
 public class LanguageFactory extends ResourceFactoryImpl {
 
-	
+	public LanguageFactory(URL dataURL){
+		super();
+		tableURL = dataURL;
+	}
 
+	private URL tableURL;
+	
 	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
-		URL tableURL = getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE);
+		Resource ret = null;
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
+			BufferedReader br = new BufferedReader(
+					new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
 			int line = 0;
 			String ll = "";
 			while (line != factoryIndex + 1
@@ -28,16 +33,27 @@ public class LanguageFactory extends ResourceFactoryImpl {
 			if (ll != null) {
 				String[] props =  ll.split("\\|");
 				if (props.length >= 4) {
-					return new LanguageImpl(props[1], props[2], props[3]);
-				}
-				else {
-					System.out.println(props.length);
+					ret = new LanguageFactory.LanguageImpl(instanceURI, props[1], props[2], props[3]);					
 				}
 			}
+			br.close();
 		}
 		catch (Exception e) {
 			// TODO: handle exception
 		}
-	return null;
+	return ret;
   }
+	/**
+	 * @author amedrano
+	 *
+	 */
+	public final class LanguageImpl extends Language {
+
+		public LanguageImpl(String uri, String name, String nativeName, String code){
+			super(uri);
+			setEnglishLabel(name);
+			setNativeLabel(nativeName);
+			setIso639code(code);
+		}
+	}
 }
