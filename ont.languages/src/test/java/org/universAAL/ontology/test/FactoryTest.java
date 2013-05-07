@@ -16,12 +16,14 @@
 package org.universAAL.ontology.test;
 
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.Set;
 
 import junit.framework.TestCase;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.LanguageFactory;
 import org.universAAL.ontology.language.Language;
 import org.universAAL.ontology.language.LanguageOntology;
@@ -46,6 +48,8 @@ public class FactoryTest extends TestCase {
 		for (Iterator i = allLang.iterator(); i.hasNext();) {
 			String uri = (String) i.next();
 			System.out.println(uri);
+			Language l = (Language) Resource.getResource(uri, Resource.generateAnonURI());
+			new Locale(l.getIso639code());
 		}
 		System.out.println("that makes: " + allLang.size() + " languages compatible with uAAL.");
 	}
