@@ -76,6 +76,7 @@ ont.impairment/uAAL.log
 ont.languages/.classpath
 ont.languages/.project
 ont.languages/.settings
+ont.languages/target
 ont.lighting/.classpath
 ont.lighting/.project
 ont.lighting/.settings
