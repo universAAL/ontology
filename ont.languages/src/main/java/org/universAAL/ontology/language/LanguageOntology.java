@@ -27,7 +27,7 @@ public final class LanguageOntology extends Ontology {
 	 */
 	public static final String LANG_TABLE = "org/universAAL/ontology/impl/lang-table.dat";
 //	public static final String LANG_TABLE = "lang-table.dat";
-	private static LanguageFactory factory = new LanguageFactory();
+	private static LanguageFactory factory;
 	public static final String NAMESPACE = "http://ontology.universAAL.org/LanguageOntology#";
 
 	public LanguageOntology() {
@@ -71,6 +71,7 @@ public final class LanguageOntology extends Ontology {
 		// ******* LOAD ALL Languages ******** //
 
 		URL tableURL = getClass().getClassLoader().getResource(LANG_TABLE);
+		factory = new LanguageFactory(tableURL);
 		if (tableURL != null){
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(
@@ -82,13 +83,15 @@ public final class LanguageOntology extends Ontology {
 					String name = ll.split("\\|")[1];
 					name = name.split(",")[0];
 					name = name.split(" ")[0];
-					OntClassInfoSetup lang = createNewOntClassInfo(NAMESPACE
-							+ name.toUpperCase(), factory);
-					System.out.println(name);
-					// can add value restrictions
+					// un comment to add value restrictions
+					//OntClassInfoSetup lang = 
+					createNewOntClassInfo(NAMESPACE
+							+ name.toUpperCase(), factory, line);
+					
 				}
 				line++;
 			}
+			br.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -17,6 +17,8 @@ package org.universAAL.ontology.test;
 
 import junit.framework.TestCase;
 
+import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.LanguageFactory;
 import org.universAAL.ontology.language.LanguageOntology;
 
@@ -25,10 +27,15 @@ import org.universAAL.ontology.language.LanguageOntology;
  *
  */
 public class FactoryTest extends TestCase {
+	
+	public void setUp(){
+		OntologyManagement.getInstance().register(null, new DataRepOntology());
+		OntologyManagement.getInstance().register(null, new LanguageOntology());
+	}
 
 	public void test1(){
 		assertNotNull(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
-		LanguageFactory lf = new LanguageFactory();
+		LanguageFactory lf = new LanguageFactory(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
 		assertNotNull(lf.createInstance("", "", 5));
 	}
 	
