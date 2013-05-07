@@ -1,6 +1,6 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer Gesellschaft - Institut für Graphische Datenverarbeitung 
+	Fraunhofer Gesellschaft - Institut fÃ¼r Graphische Datenverarbeitung 
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
@@ -375,18 +375,20 @@ public class Location extends AbsLocation {
 	return false;
     }
 
-    public boolean hasConnectionTo(AbsLocation arg0) {
-	List connected = (List) props.get(PROP_IS_CONNECTED_TO);
+    private boolean checkPropForLocation(String prop, AbsLocation loc) {
+	Object connected = props.get(prop);
 	if (connected == null)
 	    return false;
-	return connected.contains(arg0);
+	else {
+	    return (connected instanceof List) ? ((List)connected).contains(loc) : connected.equals(loc);
+	}
+    }
+    public boolean hasConnectionTo(AbsLocation arg0) {
+	return checkPropForLocation(PROP_IS_CONNECTED_TO, arg0);
     }
 
     public boolean isAdjacentTo(AbsLocation arg0) {
-	List connected = (List) props.get(PROP_IS_ADJACENT_TO);
-	if (connected == null)
-	    return false;
-	return connected.contains(arg0);
+	return checkPropForLocation(PROP_IS_ADJACENT_TO, arg0);
     }
 
     public ComparableIndividual getNext() {
