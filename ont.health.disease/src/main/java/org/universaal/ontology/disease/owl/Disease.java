@@ -15,7 +15,6 @@
  ******************************************************************************/
 package org.universaal.ontology.disease.owl;
 
-import java.util.Hashtable;
 import java.util.ArrayList;
 import java.util.List;
 

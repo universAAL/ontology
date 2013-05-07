@@ -21,6 +21,7 @@ package org.universaal.ontology.health.owl;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.universAAL.ontology.profile.AssistedPerson;

@@ -29,8 +29,6 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
-import org.universAAL.middleware.ui.owl.UIBusOntology;
-import org.universAAL.middleware.ui.rdf.Form;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.AssistedPerson;
 import org.universAAL.ontology.profile.AssistedPersonProfile;

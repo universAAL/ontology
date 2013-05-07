@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeConstants;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -26,7 +27,6 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.Caregiver;
-import org.universaal.ontology.disease.owl.Disease;
 
 public abstract class Treatment extends ManagedIndividual {
 
@@ -375,8 +375,10 @@ public abstract class Treatment extends ManagedIndividual {
 		this.setStatus(StatusType.actived);
 	    else
 		this.setStatus(StatusType.planned);
-	} catch (Exception e) {
-	}
+	} catch (DatatypeConfigurationException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} 
     }
 
     public void checkStatus() {

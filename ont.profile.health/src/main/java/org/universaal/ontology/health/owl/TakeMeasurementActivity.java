@@ -19,7 +19,6 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.Caregiver;
-import org.universaal.ontology.disease.owl.Disease;
 
 public class TakeMeasurementActivity extends Treatment {
 

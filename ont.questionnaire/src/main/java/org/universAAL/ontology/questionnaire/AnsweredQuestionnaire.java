@@ -362,12 +362,11 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
 
 	for (int i = 0; i < answers.length; i++) {
 	    Question question = answers[i].getAssociatedQuestion();
-	    if (question.isHasCorrectAnswer()) {
-		if (!(answers[i].isCorrectAnswer() == Answer.CORRECT_ANSWER)) {
+	    if (question.isHasCorrectAnswer()
+	    		&& !(answers[i].isCorrectAnswer() == Answer.CORRECT_ANSWER)) {
 		    incorrectAnswers[index] = answers[i];
 		    index++;
 		}
-	    }
 	}
 	return incorrectAnswers;
     }
@@ -387,12 +386,11 @@ public class AnsweredQuestionnaire extends ManagedIndividual {
 
 	for (int i = 0; i < answers.length; i++) {
 	    Question question = answers[i].getAssociatedQuestion();
-	    if (question.isHasCorrectAnswer()) {
-		if (answers[i].isCorrectAnswer() == Answer.CORRECT_ANSWER) {
+	    if (question.isHasCorrectAnswer()
+	    		&& answers[i].isCorrectAnswer() == Answer.CORRECT_ANSWER) {
 		    correctAnswers[index] = answers[i];
 		    index++;
 		}
-	    }
 	}
 
 	return correctAnswers;

@@ -22,7 +22,6 @@ package org.universaal.ontology.health.owl.services;
 
 import org.universAAL.middleware.service.owl.Service;
 import org.universaal.ontology.health.owl.HealthOntology;
-import org.universaal.ontology.health.owl.HealthProfile;
 
 /**
  * @author amedrano
