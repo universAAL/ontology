@@ -585,43 +585,40 @@ public class Questionnaire extends ManagedIndividual {
      * @see Question
      */
     public String questionnaireToString() {
-	String writtenQuestionnaire = getName() + "\n" + getDescription()
-		+ "\n";
+	StringBuffer writtenQuestionnaire = new StringBuffer();
+		writtenQuestionnaire.append(getName() + "\n" + getDescription()
+		+ "\n");
 	Question[] questions = getQuestions();
 	int index = 0;
 
 	for (int i = 0; i < questions.length; i++) {
-	    writtenQuestionnaire = writtenQuestionnaire + "Question " + index
-		    + ": " + questions[i].getQuestionWording() + "\n";
+	    writtenQuestionnaire.append( "Question " + index
+		    + ": " + questions[i].getQuestionWording() + "\n");
 
 	    if (questions[i] instanceof ConditionalQuestion) {
 		ConditionalQuestion cq = (ConditionalQuestion) questions[i];
 		Object[] ta = cq.getTriggerAnswer();
 		if (ta.length == 1) {
-		    writtenQuestionnaire = writtenQuestionnaire
-			    + "Answer this question ONLY if you have answered "
+		    writtenQuestionnaire.append( "Answer this question ONLY if you have answered "
 			    + "\"" + cq.getDependsOn().getLabel(ta[0]) + "\""
 			    + " to question " + "\""
 			    + cq.getDependsOn().getQuestionWording() + "\""
-			    + "\n";
+			    + "\n");
 		}
 
 		else {
-		    writtenQuestionnaire = writtenQuestionnaire
-			    + "Answer this question ONLY if you have answered ";
+		    writtenQuestionnaire.append("Answer this question ONLY if you have answered ");
 
 		    for (int k = 0; k < ta.length; k++) {
-			writtenQuestionnaire = writtenQuestionnaire + "\""
-				+ cq.getDependsOn().getLabel(ta[k]) + "\"";
+			writtenQuestionnaire.append("\""
+				+ cq.getDependsOn().getLabel(ta[k]) + "\"");
 			if (!(k == (ta.length - 1))) {
-			    writtenQuestionnaire = writtenQuestionnaire
-				    + " and ";
+			    writtenQuestionnaire.append( " and ");
 			}
 		    }
-		    writtenQuestionnaire = writtenQuestionnaire
-			    + " to question " + "\""
+		    writtenQuestionnaire.append(" to question " + "\""
 			    + cq.getDependsOn().getQuestionWording() + "\""
-			    + "\n";
+			    + "\n");
 		}
 	    }
 
@@ -629,12 +626,11 @@ public class Questionnaire extends ManagedIndividual {
 
 	    for (int j = 0; j < nChoices; j++) {
 		ChoiceLabel[] choices = questions[i].getChoiceLabel();
-		writtenQuestionnaire = writtenQuestionnaire
-			+ choices[j].getLabel() + "\n";
+		writtenQuestionnaire.append(choices[j].getLabel() + "\n");
 	    }
 
 	    index++;
 	}
-	return writtenQuestionnaire;
+	return writtenQuestionnaire.toString();
     }
 }

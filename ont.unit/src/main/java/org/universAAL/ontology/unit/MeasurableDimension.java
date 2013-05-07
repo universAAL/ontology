@@ -114,7 +114,10 @@ public class MeasurableDimension extends ManagedIndividual {
 	default:
 	    return null;
 	}
-    }
+    }    public boolean equals(Object other) {
+		return other instanceof MeasurableDimension
+				&& ((MeasurableDimension)other).order == order;
+	}
 
     public static final MeasurableDimension valueOf(String name) {
 	if (name == null)

@@ -79,6 +79,11 @@ public class DiseaseSeverityStatus extends ManagedIndividual {
 	    return null;
 	}
     }
+    
+    public boolean equals(Object other) {
+		return other instanceof DiseaseSeverityStatus
+				&& ((DiseaseSeverityStatus)other).order == order;
+	}
 
     public static final DiseaseSeverityStatus valueOf(String name) {
 	if (name == null)

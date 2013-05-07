@@ -22,11 +22,9 @@ import org.universaal.ontology.health.owl.HealthOntology;
 
 public class HealthActivator implements ModuleActivator {
 
-    static ModuleContext context = null;
     HealthOntology ontology = new HealthOntology();
 
     public void start(ModuleContext mc) throws Exception {
-	HealthActivator.context = mc;
 	OntologyManagement.getInstance().register(mc, ontology);
     }
 

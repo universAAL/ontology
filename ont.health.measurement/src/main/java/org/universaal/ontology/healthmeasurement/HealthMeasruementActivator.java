@@ -23,11 +23,9 @@ import org.universaal.ontology.healthmeasurement.owl.HealthMeasurementOntology;
 
 public class HealthMeasruementActivator implements ModuleActivator {
 
-    static ModuleContext context = null;
     HealthMeasurementOntology ontology = new HealthMeasurementOntology();
 
     public void start(ModuleContext mc) throws Exception {
-	HealthMeasruementActivator.context = mc;
 	OntologyManagement.getInstance().register(mc, ontology);
     }
 

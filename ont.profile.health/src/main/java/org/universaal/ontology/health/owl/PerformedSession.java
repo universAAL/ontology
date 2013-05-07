@@ -106,7 +106,7 @@ public class PerformedSession extends ManagedIndividual {
     }
 
     public void setIsValid(boolean valid) {
-	props.put(PROP_IS_VALID, new Boolean(valid));
+	props.put(PROP_IS_VALID, Boolean.valueOf(valid));
     }
 
     public Treatment getAssociatedTreatment() {

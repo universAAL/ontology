@@ -78,7 +78,12 @@ public class StatusType extends ManagedIndividual {
 	    return null;
 	}
     }
-
+    
+    public boolean equals(Object other) {
+		return other instanceof StatusType
+				&& ((StatusType)other).order == order;
+	}
+    
     public static final StatusType valueOf(String name) {
 	if (name == null)
 	    return null;
