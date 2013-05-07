@@ -17,8 +17,25 @@ package org.universaal.ontology.health;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universaal.ontology.health.owl.*;
-import org.universaal.ontology.health.owl.services.*;
+import org.universaal.ontology.health.owl.ActivityHeartRateRequirement;
+import org.universaal.ontology.health.owl.BloodPressureRequirement;
+import org.universaal.ontology.health.owl.DiastolicBloodPressureRequirement;
+import org.universaal.ontology.health.owl.Diet;
+import org.universaal.ontology.health.owl.HealthProfile;
+import org.universaal.ontology.health.owl.HeartRateRequirement;
+import org.universaal.ontology.health.owl.MeasuredPhysicalActivity;
+import org.universaal.ontology.health.owl.MeasurementRequirements;
+import org.universaal.ontology.health.owl.PerformedMeasurementSession;
+import org.universaal.ontology.health.owl.PerformedSession;
+import org.universaal.ontology.health.owl.PlannedSession;
+import org.universaal.ontology.health.owl.ReposeHeartRateRequirement;
+import org.universaal.ontology.health.owl.SystolicBloodPressureRequirement;
+import org.universaal.ontology.health.owl.TakeMeasurementActivity;
+import org.universaal.ontology.health.owl.TreatmentPlanning;
+import org.universaal.ontology.health.owl.Walking;
+import org.universaal.ontology.health.owl.WeightMeasurementTreatment;
+import org.universaal.ontology.health.owl.WeightRequirement;
+import org.universaal.ontology.health.owl.services.PerformedSessionManagementService;
 
 public class HealthOntologyFactory extends ResourceFactoryImpl {
 

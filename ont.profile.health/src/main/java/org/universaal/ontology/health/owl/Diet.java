@@ -15,10 +15,10 @@
  ******************************************************************************/
 package org.universaal.ontology.health.owl;
 
+import javax.xml.datatype.XMLGregorianCalendar;
+
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.Caregiver;
-import org.universaal.ontology.disease.owl.Disease;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 public class Diet extends HealthyHabitsAdoption {
 

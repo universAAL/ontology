@@ -79,7 +79,7 @@ public class DividedUnit extends DerivedUnit {
 	return (Prefix) getProperty(PROP_DIVIDED_BY_PREFIX);
     }
 
-    private void setDividedByPrefix(Prefix newPropValue) {
+    public void setDividedByPrefix(Prefix newPropValue) {
 	if (newPropValue != null)
 	    props.put(PROP_DIVIDED_BY_PREFIX, newPropValue);
     }
