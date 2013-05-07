@@ -612,7 +612,6 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/GeneralInteractionPreferences.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/GenericFontFamily.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/Intensity.java -text
-ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/Language.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/MainMenuConfigurationType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/PendingDialogsBuilderType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/PendingMessageBuilderType.java -text

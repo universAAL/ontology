@@ -17,6 +17,7 @@ package org.universAAL.ontology.ui.preferences;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.middleware.ui.owl.Preference;
+import org.universAAL.ontology.language.Language;
 
 public class GeneralInteractionPreferences extends Preference {
     public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE

@@ -24,6 +24,7 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.ontology.UIPreferencesProfileFactory;
+import org.universAAL.ontology.language.Language;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.Profile;
@@ -60,7 +61,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 
 	OntClassInfoSetup oci_PendingMessageBuilderType = createNewAbstractOntClassInfo(PendingMessageBuilderType.MY_URI);
 	OntClassInfoSetup oci_MainMenuConfigurationType = createNewAbstractOntClassInfo(MainMenuConfigurationType.MY_URI);
-	OntClassInfoSetup oci_Language = createNewAbstractOntClassInfo(Language.MY_URI);
 	OntClassInfoSetup oci_ContentDensityType = createNewAbstractOntClassInfo(ContentDensityType.MY_URI);
 	OntClassInfoSetup oci_Size = createNewAbstractOntClassInfo(Size.MY_URI);
 	OntClassInfoSetup oci_Intensity = createNewAbstractOntClassInfo(Intensity.MY_URI);
@@ -106,16 +106,6 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		MainMenuConfigurationType.classic,
 		MainMenuConfigurationType.smart,
 		MainMenuConfigurationType.taskBar });
-
-	oci_Language.setResourceComment("");
-	oci_Language.setResourceLabel("Language");
-	oci_Language.addSuperClass(ManagedIndividual.MY_URI);
-	oci_Language.toEnumeration(new ManagedIndividual[] { Language.german,
-		Language.italian, Language.greek, Language.spanish,
-		Language.english, Language.polish, Language.croatian,
-		Language.norvegian, Language.dutch, Language.french,
-		Language.taiwanese, Language.israeli, Language.portuguese,
-		Language.rusian, Language.hungarian, Language.chinese });
 
 	oci_ContentDensityType.setResourceComment("");
 	oci_ContentDensityType.setResourceLabel("ContentDensityType");
