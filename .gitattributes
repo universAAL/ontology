@@ -1460,6 +1460,17 @@ ont.hazard-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/hazard/GasDetect
 ont.hazard-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/hazard/HazardOntology.java -text
 ont.hazard-1.2.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.hazard-1.2.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.hazard-1.3.2-SNAPSHOT/ASL2.0.txt -text
+ont.hazard-1.3.2-SNAPSHOT/MITX.txt -text
+ont.hazard-1.3.2-SNAPSHOT/NOTICE.txt -text
+ont.hazard-1.3.2-SNAPSHOT/pom.xml -text
+ont.hazard-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/HazardActivator.java -text
+ont.hazard-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/HazardFactory.java -text
+ont.hazard-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/hazard/FireDetector.java -text
+ont.hazard-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/hazard/GasDetector.java -text
+ont.hazard-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/hazard/HazardOntology.java -text
+ont.hazard-1.3.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.hazard-1.3.2-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
