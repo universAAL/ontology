@@ -1,0 +1,36 @@
+universAAL ontology feature provision generator
+
+I. Included Software
+
+No software just runtime dependencies
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+The OSGi Alliance (http://www.osgi.org/).
+Copyright 2006-2008 The OSGi Alliance.
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+The OPS4J (http://www.ops4j.org)
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+This product uses software developed at
+Java3D (https://java3d.dev.java.net/).
+Licensed under the GNU General Public License (GPL),
+version 2, with the CLASSPATH exception.
+
+
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Common Public License 1.0
+- GNU GPL 2 CLASSPATH Exception
