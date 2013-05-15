@@ -1841,6 +1841,16 @@ ont.nutrition-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/nutrition/Nut
 ont.nutrition-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/nutrition/NutritionService.java -text
 ont.nutrition-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/nutrition/Recipe.java -text
 ont.nutrition-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/nutrition/ShoppingList.java -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/ASL2.0.txt -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/MITX.txt -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/NOTICE.txt -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/pom.xml -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/PersonalHealthDeviceActivator.java -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/PersonalHealthDeviceFactory.java -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMeasurement.java -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMonitor.java -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java -text
+ont.personalhealthdevice-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/WeighingScale.java -text
 ont.phWorld-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-1.0.1-SNAPSHOT/artifact-0.2.3.composite -text
