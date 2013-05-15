@@ -2831,6 +2831,19 @@ ont.situation.reasoner-1.2.1-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/
 ont.situation.reasoner-1.2.1-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/Situation.java -text
 ont.situation.reasoner-1.2.1-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/factory/OntFactory.java -text
 ont.situation.reasoner-1.2.1-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/osgi/Activator.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/ASL2.0.txt -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/MITX.txt -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/NOTICE.txt -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/pom.xml -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/ElementModel.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/Persistent.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/Query.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/ReasoningOntology.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/ReasoningService.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/Rule.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/Situation.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/factory/OntFactory.java -text
+ont.situation.reasoner-1.3.2-SNAPSHOT/src/main/java/org/universAAL/reasoner/ont/osgi/Activator.java -text
 ont.unit-1.1.4-SNAPSHOT/LICENSE.txt -text svneol=unset#text/plain
 ont.unit-1.1.4-SNAPSHOT/NOTICE.txt -text
 ont.unit-1.1.4-SNAPSHOT/Unit.di -text
