@@ -80,6 +80,10 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.languages</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.lighting</artifactId>
     </dependency>
     <dependency>

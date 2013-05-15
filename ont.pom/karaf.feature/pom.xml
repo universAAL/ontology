@@ -25,7 +25,7 @@
 	<artifactId>ont.karaf.feature</artifactId>
 	<packaging>feature</packaging>
 
-	<name>universAAL Ontologies feature</name>
+	<name>universAAL Ontology Karaf Feature</name>
 	<description>universAAL All Ontologies Feature</description>
 
   <dependencies>
@@ -88,6 +88,10 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.impairment</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.languages</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
