@@ -24,8 +24,11 @@
  */
 package org.universAAL.ontology.location;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
+
 import org.universAAL.middleware.owl.ComparableIndividual;
 import org.universAAL.middleware.owl.supply.AbsLocation;
 
@@ -56,6 +59,9 @@ public class Location extends AbsLocation {
 	PROP_IS_CONTAINED_IN = uAAL_LOCATION_NAMESPACE + "isContainedIn";
 	PROP_CONTAINS = uAAL_LOCATION_NAMESPACE + "contains";
     }
+
+    private static List multiValProps = Arrays.asList(new String[] {
+	    PROP_IS_ADJACENT_TO, PROP_IS_CONNECTED_TO, PROP_CONTAINS });
 
     /**
      * Constructor just for usage by de-serializers. Do not use this constructor
@@ -120,6 +126,29 @@ public class Location extends AbsLocation {
 	locations.add(location);
 	props.put(propURI, locations);
 	return true;
+    }
+
+    /**
+     * Sets a property. Ensures that the given property is of a valid type (List
+     * or non-List).
+     * 
+     * @see org.universAAL.middleware.owl.ManagedIndividual#setProperty(java.lang
+     *      .String, java.lang.Object)
+     */
+    public boolean setProperty(String propURI, Object value) {
+	Object newValue = null;
+
+	if (multiValProps.contains(propURI)) {
+	    if (value instanceof List) {
+		newValue = value;
+	    } else {
+		newValue = new ArrayList();
+		((List) newValue).add(value);
+	    }
+	} else {
+	    newValue = value;
+	}
+	return super.setProperty(propURI, newValue);
     }
 
     /**
@@ -375,20 +404,18 @@ public class Location extends AbsLocation {
 	return false;
     }
 
-    private boolean checkPropForLocation(String prop, AbsLocation loc) {
-	Object connected = props.get(prop);
+    public boolean hasConnectionTo(AbsLocation arg0) {
+	List connected = (List) props.get(PROP_IS_CONNECTED_TO);
 	if (connected == null)
 	    return false;
-	else {
-	    return (connected instanceof List) ? ((List)connected).contains(loc) : connected.equals(loc);
-	}
-    }
-    public boolean hasConnectionTo(AbsLocation arg0) {
-	return checkPropForLocation(PROP_IS_CONNECTED_TO, arg0);
+	return connected.contains(arg0);
     }
 
     public boolean isAdjacentTo(AbsLocation arg0) {
-	return checkPropForLocation(PROP_IS_ADJACENT_TO, arg0);
+	List connected = (List) props.get(PROP_IS_ADJACENT_TO);
+	if (connected == null)
+	    return false;
+	return connected.contains(arg0);
     }
 
     public ComparableIndividual getNext() {
