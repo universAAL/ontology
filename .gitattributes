@@ -2536,6 +2536,16 @@ ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/pro
 ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java -text
 ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java -text
 ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/ASL2.0.txt -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/MITX.txt -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/NOTICE.txt -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/pom.xml -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/UIMainMenuProfileActivator.java -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/UIMainMenuProfileFactory.java -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuEntry.java -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java -text
+ont.profile.ui.mainmenu-1.3.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/UIPreferencesProfile.di -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/UIPreferencesProfile.notation -text
 ont.profile.uipreferences-1.0.1-SNAPSHOT/UIPreferencesProfile.uml -text
