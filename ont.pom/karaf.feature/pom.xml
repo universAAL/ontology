@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<!-- Licensed to the Apache Software Foundation (ASF) under one or more 
-		contributor license agreements. See the NOTICE file distributed with this 
-		work for additional information regarding copyright ownership. The ASF licenses 
-		this file to You under the Apache License, Version 2.0 (the "License"); you 
-		may not use this file except in compliance with the License. You may obtain 
-		a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless 
-		required by applicable law or agreed to in writing, software distributed 
-		under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
-		OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
-		the specific language governing permissions and limitations under the License. -->
+  <!-- Licensed to the Apache Software Foundation (ASF) under one or more 
+    contributor license agreements. See the NOTICE file distributed with this 
+    work for additional information regarding copyright ownership. The ASF licenses 
+    this file to You under the Apache License, Version 2.0 (the "License"); you 
+    may not use this file except in compliance with the License. You may obtain 
+    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless 
+    required by applicable law or agreed to in writing, software distributed 
+    under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+    OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+    the specific language governing permissions and limitations under the License. -->
 
-	<modelVersion>4.0.0</modelVersion>
-
-	<parent>
-		<groupId>org.universAAL.ontology</groupId>
-  		<artifactId>ont.pom</artifactId>
-		<version>1.3.2-SNAPSHOT</version>
-		<relativePath>../</relativePath>
-	</parent>
-
-	<artifactId>ont.karaf.feature</artifactId>
-	<packaging>feature</packaging>
-
-	<name>universAAL Ontology Karaf Feature</name>
-	<description>universAAL All Ontologies Feature</description>
-
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.pom</artifactId>
+    <version>1.3.2-SNAPSHOT</version>
+    <relativePath>../</relativePath>
+  </parent>
+  <artifactId>ont.karaf.feature</artifactId>
+  <packaging>feature</packaging>
+  <name>universAAL Ontology Karaf Feature</name>
+  <description>universAAL All Ontologies Feature</description>
+  <scm>
+    <connection>${svn.base}/ont.pom/karaf.feature</connection>
+    <developerConnection>${svn.base}/ont.pom/karaf.feature</developerConnection>
+    <url>${svn.base.url}ont.pom%2Fkaraf.feature</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -174,62 +175,59 @@
       <artifactId>ont.X73</artifactId>
     </dependency>
   </dependencies>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.karaf.tooling</groupId>
-					<artifactId>karaf-maven-plugin</artifactId>
-					<version>3.0.0.RC1</version>
-					<extensions>true</extensions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.karaf.tooling</groupId>
-				<artifactId>karaf-maven-plugin</artifactId>
-
-				<configuration>
-					<startLevel>50</startLevel>
-					<aggregateFeatures>true</aggregateFeatures>
-					<resolver>(obr)</resolver>
-					<checkDependencyChange>false</checkDependencyChange>
-					<failOnDependencyChange>false</failOnDependencyChange>
-					<logDependencyChanges>false</logDependencyChanges>
-					<overwriteChangedDependencies>true</overwriteChangedDependencies>
-				</configuration>
-			</plugin>
-		<plugin>
-			<groupId>org.universAAL.support</groupId>
-			<artifactId>uaal-maven-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>CompositeMojo</id>
-					<phase>none</phase>
-				</execution>
-				<execution>
-					<id>TestMojo</id>
-					<phase>none</phase>
-				</execution>
-			</executions>				
-		</plugin>
-		<plugin>
-			<groupId>org.codehaus.mojo</groupId>
-			<artifactId>build-helper-maven-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>attach-composite</id>
-					<phase>none</phase>
-					<configuration>
-						<artifacts>								
-						</artifacts>
-					</configuration>
-				</execution>
-			</executions>
-		</plugin>
-		</plugins>
-	</build>
-
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.karaf.tooling</groupId>
+          <artifactId>karaf-maven-plugin</artifactId>
+          <version>3.0.0.RC1</version>
+          <extensions>true</extensions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-maven-plugin</artifactId>
+        <configuration>
+          <startLevel>50</startLevel>
+          <aggregateFeatures>true</aggregateFeatures>
+          <resolver>(obr)</resolver>
+          <checkDependencyChange>false</checkDependencyChange>
+          <failOnDependencyChange>false</failOnDependencyChange>
+          <logDependencyChanges>false</logDependencyChanges>
+          <overwriteChangedDependencies>true</overwriteChangedDependencies>
+        </configuration>
+      </plugin>
+    <plugin>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>uaal-maven-plugin</artifactId>
+      <executions>
+        <execution>
+          <id>CompositeMojo</id>
+          <phase>none</phase>
+        </execution>
+        <execution>
+          <id>TestMojo</id>
+          <phase>none</phase>
+        </execution>
+      </executions>        
+    </plugin>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>build-helper-maven-plugin</artifactId>
+      <executions>
+        <execution>
+          <id>attach-composite</id>
+          <phase>none</phase>
+          <configuration>
+            <artifacts>                
+            </artifacts>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
+    </plugins>
+  </build>
 </project>
