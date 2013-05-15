@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_hh2IcHf5EeGDR6OH_bpwaA" name="HealthMeasurement">
+    <ownedComment xmi:id="_hh2IcXf5EeGDR6OH_bpwaA" annotatedElement="_hh2vgHf5EeGDR6OH_bpwaA">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_hh2Icnf5EeGDR6OH_bpwaA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_hh2Ic3f5EeGDR6OH_bpwaA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_hh2IdHf5EeGDR6OH_bpwaA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_hh2IdXf5EeGDR6OH_bpwaA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hh2vgHf5EeGDR6OH_bpwaA" name="org.universaal.ontology.healthmeasurement">
+      <packagedElement xmi:type="uml:Class" xmi:id="_hh2vhXf5EeGDR6OH_bpwaA" name="HealthMeasurement">
+        <generalization xmi:id="_y6dkoHf6EeGDR6OH_bpwaA" general="_gHWD4Hf6EeGDR6OH_bpwaA"/>
+        <ownedAttribute xmi:id="_1sPIsHf6EeGDR6OH_bpwaA" name="PROP_OBTAINED_FROM"/>
+        <ownedAttribute xmi:id="_4lmigHf6EeGDR6OH_bpwaA" name="PROP_MEASURED_BY"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HAxBAHf6EeGDR6OH_bpwaA" name="PersonWeight">
+        <generalization xmi:id="_GTlVcHf7EeGDR6OH_bpwaA" general="_hh2vhXf5EeGDR6OH_bpwaA"/>
+        <generalization xmi:id="_HSBToHf7EeGDR6OH_bpwaA" general="_bxvVkHf6EeGDR6OH_bpwaA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RDiGcHf6EeGDR6OH_bpwaA" name="HeartRate">
+        <generalization xmi:id="_FxmpwHf7EeGDR6OH_bpwaA" general="_hh2vhXf5EeGDR6OH_bpwaA"/>
+        <generalization xmi:id="_H8MSAHf7EeGDR6OH_bpwaA" general="_bxvVkHf6EeGDR6OH_bpwaA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SXSNUHf6EeGDR6OH_bpwaA" name="BloodPressure">
+        <generalization xmi:id="_FKQ88Hf7EeGDR6OH_bpwaA" general="_hh2vhXf5EeGDR6OH_bpwaA"/>
+        <generalization xmi:id="_MbfH0Hf7EeGDR6OH_bpwaA" general="_hTV88Hf6EeGDR6OH_bpwaA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bxvVkHf6EeGDR6OH_bpwaA" name="SingleValueMeasurement">
+        <generalization xmi:id="_AAZDoHf8EeGDR6OH_bpwaA" general="_gHWD4Hf6EeGDR6OH_bpwaA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gHWD4Hf6EeGDR6OH_bpwaA" name="Measurement">
+        <generalization xmi:id="_xz_EwHf6EeGDR6OH_bpwaA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hTV88Hf6EeGDR6OH_bpwaA" name="MultiValueMeasurement">
+        <generalization xmi:id="_9qMBQHf7EeGDR6OH_bpwaA" general="_gHWD4Hf6EeGDR6OH_bpwaA"/>
+        <ownedAttribute xmi:id="_wTdQsHf7EeGDR6OH_bpwaA" name="value"/>
+        <ownedAttribute xmi:id="_yO1YQHf7EeGDR6OH_bpwaA" name="datatypeProperty1"/>
+        <ownedAttribute xmi:id="_ze21sHf7EeGDR6OH_bpwaA" name="unit"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lC9CQHf6EeGDR6OH_bpwaA" name="HeartRateSignal">
+        <generalization xmi:id="_Ok32MHf7EeGDR6OH_bpwaA" general="_mWsiEHf6EeGDR6OH_bpwaA"/>
+        <ownedAttribute xmi:id="_NKHvcHf7EeGDR6OH_bpwaA" name="isComposedBy" type="_RDiGcHf6EeGDR6OH_bpwaA" association="_NKHvc3f7EeGDR6OH_bpwaA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NKHvcXf7EeGDR6OH_bpwaA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NKHvcnf7EeGDR6OH_bpwaA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_grI4AHf7EeGDR6OH_bpwaA" name="PROP_INTERVAL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mWsiEHf6EeGDR6OH_bpwaA" name="Signal"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NKHvc3f7EeGDR6OH_bpwaA" name="heartRateSignl_heartRate_1" memberEnd="_NKHvdHf7EeGDR6OH_bpwaA _NKHvcHf7EeGDR6OH_bpwaA">
+        <ownedEnd xmi:id="_NKHvdHf7EeGDR6OH_bpwaA" name="heartRateSignal" type="_lC9CQHf6EeGDR6OH_bpwaA" association="_NKHvc3f7EeGDR6OH_bpwaA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NKHvdXf7EeGDR6OH_bpwaA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NKHvdnf7EeGDR6OH_bpwaA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TWytEHf7EeGDR6OH_bpwaA" name="Unit">
+        <generalization xmi:id="_41lCwHf7EeGDR6OH_bpwaA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_hh2vh3f5EeGDR6OH_bpwaA">
+      <eAnnotations xmi:id="_hh2viHf5EeGDR6OH_bpwaA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_hh2viXf5EeGDR6OH_bpwaA">
+      <eAnnotations xmi:id="_hh2vinf5EeGDR6OH_bpwaA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_hh2vi3f5EeGDR6OH_bpwaA" defaultNamespace="http://ontology.universaal.org/HealthMeasurement" base_Package="_hh2IcHf5EeGDR6OH_bpwaA" versionInfo="0.1.0-SNAPSHOT"/>
+  <OWL:objectProperty xmi:id="_1s-vkHf6EeGDR6OH_bpwaA" base_Property="_1sPIsHf6EeGDR6OH_bpwaA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_4l6EgHf6EeGDR6OH_bpwaA" base_Property="_4lmigHf6EeGDR6OH_bpwaA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_grSpAnf7EeGDR6OH_bpwaA" base_Property="_grI4AHf7EeGDR6OH_bpwaA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_wTwLoHf7EeGDR6OH_bpwaA" base_Property="_wTdQsHf7EeGDR6OH_bpwaA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_yO_JQnf7EeGDR6OH_bpwaA" base_Property="_yO1YQHf7EeGDR6OH_bpwaA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_zfJwonf7EeGDR6OH_bpwaA" base_Property="_ze21sHf7EeGDR6OH_bpwaA" isFunctional="true"/>
+</xmi:XMI>
