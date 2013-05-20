@@ -475,16 +475,11 @@ ont.phWorld/src/main/java/org/universAAL/ontology/location/outdoor/State.java -t
 ont.phWorld/src/main/java/org/universAAL/ontology/location/position/CoordinateSystem.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/location/position/OriginedMetric.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/location/position/Point.java -text
-ont.phWorld/src/main/java/org/universAAL/ontology/phThing/Actuator.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/phThing/Device.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/phThing/DeviceService.java -text
-ont.phWorld/src/main/java/org/universAAL/ontology/phThing/DimmerActuator.java -text
-ont.phWorld/src/main/java/org/universAAL/ontology/phThing/OnOffActuator.java -text
-ont.phWorld/src/main/java/org/universAAL/ontology/phThing/OnOffSensor.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/phThing/PhThingOntology.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/phThing/PhysicalContainer.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/phThing/PhysicalThing.java -text
-ont.phWorld/src/main/java/org/universAAL/ontology/phThing/Sensor.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/shape/BooleanShape.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/shape/Box.java -text
 ont.phWorld/src/main/java/org/universAAL/ontology/shape/Circle.java -text
