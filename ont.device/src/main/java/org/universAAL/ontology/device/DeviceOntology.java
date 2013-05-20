@@ -43,9 +43,7 @@ import org.universAAL.ontology.DeviceFactory;
 public final class DeviceOntology extends Ontology {
 
     private static DeviceFactory factory = new DeviceFactory();
-    // TODO change namespace back to just "Device". It is for now Xtra to avoid
-    // duplication of Actuator and Sensor from phWorld
-    public static final String NAMESPACE = "http://ontology.universAAL.org/DeviceXtra#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/Device#";
 
     public DeviceOntology() {
 	super(NAMESPACE);
