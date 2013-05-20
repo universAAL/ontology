@@ -33,22 +33,13 @@ public class PhThingFactory extends ResourceFactoryImpl {
 	    return new PhysicalThing(instanceURI);
 	case 1:
 	    return new Device(instanceURI);
-	case 2:
-	    return new Actuator(instanceURI);
 	case 3:
 	    return new DeviceService(instanceURI);
 	case 4:
 	    return new PhysicalContainer(instanceURI);
-	case 5:
-	    return new DimmerActuator(instanceURI);
-	case 6:
-	    return new OnOffActuator(instanceURI);
-	case 7:
-	    return new Sensor(instanceURI);
-	case 8:
-	    return new OnOffSensor(instanceURI);
 	}
-
+	// legacy: Actuator, sensor and such return null. They are in ont.device
+	// now.
 	return null;
     }
 }

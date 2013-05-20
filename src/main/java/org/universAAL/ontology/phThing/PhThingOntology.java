@@ -19,7 +19,6 @@
  */
 package org.universAAL.ontology.phThing;
 
-import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
@@ -56,12 +55,6 @@ public class PhThingOntology extends Ontology {
 	r.setResourceLabel("Physical Things");
 
 	OntClassInfoSetup oci;
-
-	// load Actuator
-	oci = createNewOntClassInfo(Actuator.MY_URI, factory, 2);
-	oci.setResourceComment("A Generic Actuator Device");
-	oci.setResourceLabel("Actuator");
-	oci.addSuperClass(Device.MY_URI);
 
 	// load PhysicalContainer
 	oci = createNewOntClassInfo(PhysicalContainer.MY_URI, factory, 4);
@@ -134,47 +127,5 @@ public class PhThingOntology extends Ontology {
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		DeviceService.PROP_CONTROLS, Device.MY_URI));
 
-	// load DimmerActuator
-	oci = createNewOntClassInfo(DimmerActuator.MY_URI, factory, 5);
-	oci.setResourceComment("A Dimmer kind of Actuator");
-	oci.setResourceLabel("Dimmer Actuator");
-	oci.addSuperClass(Actuator.MY_URI);
-	oci.addDatatypeProperty(DimmerActuator.PROP_DIMMABLE_STATUS)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			DimmerActuator.PROP_DIMMABLE_STATUS,
-			new IntRestriction(new Integer(0), true, new Integer(
-				100), true), 1, 1));
-
-	// load OnOffActuator
-	oci = createNewOntClassInfo(OnOffActuator.MY_URI, factory, 6);
-	oci.setResourceComment("An On/Off kind of Actuator");
-	oci.setResourceLabel("On/Off Actuator");
-	oci.addSuperClass(Actuator.MY_URI);
-	oci.addDatatypeProperty(OnOffActuator.PROP_STATUS).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			OnOffActuator.PROP_STATUS, TypeMapper
-				.getDatatypeURI(Boolean.class), 1, 1));
-
-	// load Sensor
-	oci = createNewOntClassInfo(Sensor.MY_URI, factory, 7);
-	oci.setResourceComment("A Sensor Device");
-	oci.setResourceLabel("Sensor");
-	oci.addSuperClass(Device.MY_URI);
-	oci.addDatatypeProperty(Sensor.PROP_MEASURED_VALUE).setFunctional();
-	oci.addObjectProperty(Sensor.PROP_MEASURED_VALUE).setFunctional();
-	oci.addRestriction(MergedRestriction.getCardinalityRestriction(
-		Sensor.PROP_MEASURED_VALUE, 1, 1));
-
-	// load OnOffSensor
-	oci = createNewOntClassInfo(OnOffSensor.MY_URI, factory, 8);
-	oci.setResourceComment("A Home Appliance On/Off Sensor Device");
-	oci.setResourceLabel("On/Off Sensor");
-	oci.addSuperClass(Sensor.MY_URI);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Sensor.PROP_MEASURED_VALUE, TypeMapper
-			.getDatatypeURI(Boolean.class)));
     }
 }
