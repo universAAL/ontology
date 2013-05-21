@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 Universidad Politécnica de Madrid
+ * Copyright 2013 Universidad Politï¿½cnica de Madrid
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
  * Licensed under both Apache License, Version 2.0 and MIT License.
@@ -23,6 +23,7 @@ import java.nio.charset.Charset;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
 import org.universAAL.ontology.language.Language;
+import org.universAAL.ontology.language.LanguageOntology;
 
 /**
  * @author amedrano
@@ -52,29 +53,50 @@ public class LanguageFactory extends ResourceFactoryImpl {
 	    if (ll != null) {
 		String[] props = ll.split("\\|");
 		if (props.length >= 4) {
-		    ret = new LanguageFactory.LanguageImpl(instanceURI,
+			/*
+			 * FIXME DIRTY TRICK to get over the init() in ManagedIndividual
+			 */
+			LanguageImpl.tempURI = classURI;
+		    ret = new LanguageImpl(instanceURI,
 			    props[1], props[2], props[3]);
 		}
 	    }
 	    br.close();
 	} catch (Exception e) {
 	    // TODO: handle exception
+		e.printStackTrace();
 	}
 	return ret;
     }
-
+    
     /**
      * @author amedrano
      * 
      */
-    public final class LanguageImpl extends Language {
+    public final static class LanguageImpl extends Language {
 
-	public LanguageImpl(String uri, String name, String nativeName,
-		String code) {
-	    super(uri);
-	    setEnglishLabel(name);
-	    setNativeLabel(nativeName);
-	    setIso639code(code);
-	}
+    	private static String tempURI;
+    	
+    	private String uri;
+
+    	public LanguageImpl(String uri, String name, String nativeName,
+    			String code) {
+    		super(uri);
+    		props.put(Language.PROP_ENGLISH_LABEL, name);
+    		props.put(Language.PROP_NATIVE_LABEL, nativeName);
+    		props.put(Language.PROP_ISO639CODE, code);
+    		uri = LanguageOntology.NAMESPACE + LanguageOntology.getURIFromLabel(getEnglishLabel());
+    		
+    	}
+
+    	/** {@ inheritDoc}	 */
+    	public String getClassURI() {
+    		if (uri != null)
+    			return uri ;
+    		else
+    			return tempURI;
+    	}
+
+
     }
 }
