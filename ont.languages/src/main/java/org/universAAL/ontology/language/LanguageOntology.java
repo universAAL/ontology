@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 Universidad Politécnica de Madrid
+ * Copyright 2013 Universidad Politï¿½cnica de Madrid
  * Copyright 2013 Ericsson Nikola Tesla d.d.
  *
  * Licensed under both Apache License, Version 2.0 and MIT License.
@@ -93,10 +93,8 @@ public final class LanguageOntology extends Ontology {
 		while ((ll = br.readLine()) != null) {
 		    if (line != 0) {
 			String name = ll.split("\\|")[1];
-			name = name.split(",")[0];
-			name = name.split(" ")[0];
 			OntClassInfoSetup lang = createNewOntClassInfo(
-				NAMESPACE + name.toUpperCase(), factory, line);
+				NAMESPACE + getURIFromLabel(name), factory, line);
 			lang.addSuperClass(Language.MY_URI);
 			lang.setResourceLabel(name);
 		    }
@@ -109,5 +107,11 @@ public final class LanguageOntology extends Ontology {
 	    }
 	}
 
+    }
+    
+    public static String getURIFromLabel(String english){
+    	String name = english.split(",")[0];
+		name = name.split(" ")[0];
+		return name.toUpperCase();
     }
 }
