@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 2011 Universidad Politécnica de Madrid
+ * Copyright 2013 2011 Universidad PolitÃ©cnica de Madrid
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
