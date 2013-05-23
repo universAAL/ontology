@@ -42,7 +42,7 @@ public class FactoryTest extends TestCase {
 	public void test1(){
 		assertNotNull(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
 		LanguageFactory lf = new LanguageFactory(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
-		assertNotNull(lf.createInstance("", "", 5));
+		assertNotNull(lf.createInstance(LanguageOntology.NAMESPACE+"ALBANIAN", Resource.generateAnonURI(),5));
 		Set allLang = OntologyManagement.getInstance().getNamedSubClasses(Language.MY_URI, true, false);
 		assertTrue(allLang.size() > 0);
 		for (Iterator i = allLang.iterator(); i.hasNext();) {
