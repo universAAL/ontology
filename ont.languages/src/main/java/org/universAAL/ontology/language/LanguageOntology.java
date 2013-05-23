@@ -109,7 +109,7 @@ public final class LanguageOntology extends Ontology {
 
     }
     
-    public static String getURIFromLabel(String english){
+    static String getURIFromLabel(String english){
     	String name = english.split(",")[0];
 		name = name.split(" ")[0];
 		return name.toUpperCase();

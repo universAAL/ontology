@@ -22,8 +22,7 @@ import java.nio.charset.Charset;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-import org.universAAL.ontology.language.Language;
-import org.universAAL.ontology.language.LanguageOntology;
+import org.universAAL.ontology.language.LanguageImpl;
 
 /**
  * @author amedrano
@@ -67,36 +66,5 @@ public class LanguageFactory extends ResourceFactoryImpl {
 		e.printStackTrace();
 	}
 	return ret;
-    }
-    
-    /**
-     * @author amedrano
-     * 
-     */
-    public final static class LanguageImpl extends Language {
-
-    	private static String tempURI;
-    	
-    	private String uri;
-
-    	public LanguageImpl(String uri, String name, String nativeName,
-    			String code) {
-    		super(uri);
-    		props.put(Language.PROP_ENGLISH_LABEL, name);
-    		props.put(Language.PROP_NATIVE_LABEL, nativeName);
-    		props.put(Language.PROP_ISO639CODE, code);
-    		uri = LanguageOntology.NAMESPACE + LanguageOntology.getURIFromLabel(getEnglishLabel());
-    		
-    	}
-
-    	/** {@ inheritDoc}	 */
-    	public String getClassURI() {
-    		if (uri != null)
-    			return uri ;
-    		else
-    			return tempURI;
-    	}
-
-
     }
 }
