@@ -27,18 +27,18 @@ public class MotionValue extends ManagedIndividual {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "MotionValue";
 
-    public static final int _DETECTED = 0;
-    public static final int _DELAYED = 1;
-    public static final int _TAMPERED = 2;
-    public static final int _NOT_DETECTED = 3;
+    public static final int DETECTED = 0;
+    public static final int DELAYED = 1;
+    public static final int TAMPERED = 2;
+    public static final int NOT_DETECTED = 3;
 
     private static final String[] names = { "Detected", "Delayed", "Tampered",
 	    "NotDetected" };
 
-    public static final MotionValue Detected = new MotionValue(_DETECTED);
-    public static final MotionValue Delayed = new MotionValue(_DELAYED);
-    public static final MotionValue Tampered = new MotionValue(_TAMPERED);
-    public static final MotionValue NotDetected = new MotionValue(_NOT_DETECTED);
+    public static final MotionValue Detected = new MotionValue(DETECTED);
+    public static final MotionValue Delayed = new MotionValue(DELAYED);
+    public static final MotionValue Tampered = new MotionValue(TAMPERED);
+    public static final MotionValue NotDetected = new MotionValue(NOT_DETECTED);
 
     private int order;
 
@@ -69,13 +69,13 @@ public class MotionValue extends ManagedIndividual {
 
     public static MotionValue getMotionValueByOrder(int order) {
 	switch (order) {
-	case _DETECTED:
+	case DETECTED:
 	    return Detected;
-	case _DELAYED:
+	case DELAYED:
 	    return Delayed;
-	case _TAMPERED:
+	case TAMPERED:
 	    return Tampered;
-	case _NOT_DETECTED:
+	case NOT_DETECTED:
 	    return NotDetected;
 	default:
 	    return null;
@@ -89,7 +89,7 @@ public class MotionValue extends ManagedIndividual {
 	if (name.startsWith(DeviceOntology.NAMESPACE))
 	    name = name.substring(DeviceOntology.NAMESPACE.length());
 
-	for (int i = _DETECTED; i <= _NOT_DETECTED; i++)
+	for (int i = DETECTED; i <= NOT_DETECTED; i++)
 	    if (names[i].equals(name))
 		return getMotionValueByOrder(i);
 

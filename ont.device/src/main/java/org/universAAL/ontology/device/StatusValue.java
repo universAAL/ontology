@@ -27,17 +27,17 @@ public class StatusValue extends ManagedIndividual {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "StatusValue";
 
-    public static final int _ACTIVATED = 0;
-    public static final int _NOT_ACTIVATED = 1;
-    public static final int _NO_CONDITION = 2;
+    public static final int ACTIVATED = 0;
+    public static final int NOT_ACTIVATED = 1;
+    public static final int NO_CONDITION = 2;
 
     private static final String[] names = { "Activated", "NotActivated",
 	    "NoCondition" };
 
-    public static final StatusValue Activated = new StatusValue(_ACTIVATED);
+    public static final StatusValue Activated = new StatusValue(ACTIVATED);
     public static final StatusValue NotActivated = new StatusValue(
-	    _NOT_ACTIVATED);
-    public static final StatusValue NoCondition = new StatusValue(_NO_CONDITION);
+	    NOT_ACTIVATED);
+    public static final StatusValue NoCondition = new StatusValue(NO_CONDITION);
 
     private int order;
 
@@ -68,11 +68,11 @@ public class StatusValue extends ManagedIndividual {
 
     public static StatusValue getStatusValueByOrder(int order) {
 	switch (order) {
-	case _ACTIVATED:
+	case ACTIVATED:
 	    return Activated;
-	case _NOT_ACTIVATED:
+	case NOT_ACTIVATED:
 	    return NotActivated;
-	case _NO_CONDITION:
+	case NO_CONDITION:
 	    return NoCondition;
 	default:
 	    return null;
@@ -86,7 +86,7 @@ public class StatusValue extends ManagedIndividual {
 	if (name.startsWith(DeviceOntology.NAMESPACE))
 	    name = name.substring(DeviceOntology.NAMESPACE.length());
 
-	for (int i = _ACTIVATED; i <= _NO_CONDITION; i++)
+	for (int i = ACTIVATED; i <= NO_CONDITION; i++)
 	    if (names[i].equals(name))
 		return getStatusValueByOrder(i);
 

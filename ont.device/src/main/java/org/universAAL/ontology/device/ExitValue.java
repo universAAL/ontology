@@ -26,16 +26,16 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 public class ExitValue extends ManagedIndividual {
     public static final String MY_URI = DeviceOntology.NAMESPACE + "ExitValue";
 
-    public static final int _EXIT = 0;
-    public static final int _DOOR_LEFT_OPEN = 1;
-    public static final int _NO_CONDITION = 2;
+    public static final int EXIT = 0;
+    public static final int DOOR_LEFT_OPEN = 1;
+    public static final int NO_CONDITION = 2;
 
     private static final String[] names = { "Exit", "DoorLeftOpen",
 	    "NoCondition" };
 
-    public static final ExitValue Exit = new ExitValue(_EXIT);
-    public static final ExitValue DoorLeftOpen = new ExitValue(_DOOR_LEFT_OPEN);
-    public static final ExitValue NoCondition = new ExitValue(_NO_CONDITION);
+    public static final ExitValue Exit = new ExitValue(EXIT);
+    public static final ExitValue DoorLeftOpen = new ExitValue(DOOR_LEFT_OPEN);
+    public static final ExitValue NoCondition = new ExitValue(NO_CONDITION);
 
     private int order;
 
@@ -66,11 +66,11 @@ public class ExitValue extends ManagedIndividual {
 
     public static ExitValue getExitValueByOrder(int order) {
 	switch (order) {
-	case _EXIT:
+	case EXIT:
 	    return Exit;
-	case _DOOR_LEFT_OPEN:
+	case DOOR_LEFT_OPEN:
 	    return DoorLeftOpen;
-	case _NO_CONDITION:
+	case NO_CONDITION:
 	    return NoCondition;
 	default:
 	    return null;
@@ -84,7 +84,7 @@ public class ExitValue extends ManagedIndividual {
 	if (name.startsWith(DeviceOntology.NAMESPACE))
 	    name = name.substring(DeviceOntology.NAMESPACE.length());
 
-	for (int i = _EXIT; i <= _NO_CONDITION; i++)
+	for (int i = EXIT; i <= NO_CONDITION; i++)
 	    if (names[i].equals(name))
 		return getExitValueByOrder(i);
 
