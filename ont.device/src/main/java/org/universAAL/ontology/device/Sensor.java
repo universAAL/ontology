@@ -24,6 +24,8 @@ package org.universAAL.ontology.device;
 public abstract class Sensor extends ValueDevice {
     public static final String MY_URI = DeviceOntology.NAMESPACE + "Sensor";
 
+    public static final String PROP_MEASURED_VALUE = DeviceOntology.NAMESPACE + "measuredValue";
+    
     public Sensor() {
 	super();
     }

@@ -9,8 +9,8 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.*;
 import org.universAAL.ontology.activityhub.factory.ActivityHubFactory;
-import org.universAAL.ontology.phThing.Actuator;
-import org.universAAL.ontology.phThing.Sensor;
+import org.universAAL.ontology.device.Actuator;
+import org.universAAL.ontology.device.Sensor;
 
 /**
  * The ontology represents the sensors specified in ISO 11073 - Part 10471

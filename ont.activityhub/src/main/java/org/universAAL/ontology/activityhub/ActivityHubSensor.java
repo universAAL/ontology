@@ -4,7 +4,7 @@
 package org.universAAL.ontology.activityhub;
 
 import org.universAAL.ontology.ActivityHubOntology;
-import org.universAAL.ontology.phThing.Sensor;
+import org.universAAL.ontology.device.Sensor;
 
 /**
  * Ontological representation of an activity hub sensor concept, to be extended
