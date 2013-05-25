@@ -4,7 +4,7 @@
 package org.universAAL.ontology.activityhub.ext;
 
 import org.universAAL.ontology.ActivityHubOntology;
-import org.universAAL.ontology.phThing.Actuator;
+import org.universAAL.ontology.device.Actuator;
 import org.universAAL.ontology.phThing.Device;
 
 /**
