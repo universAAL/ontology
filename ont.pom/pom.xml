@@ -32,12 +32,12 @@
     <module>../ont.che</module>
     <module>../ont.continuahealthmanager</module>
     <module>../ont.device</module>
-    <module>../ont.device.extra</module>
+    <!--<module>../ont.device.extra</module>-->
     <module>../ont.dependability</module>
     <module>../ont.furniture</module>
     <module>../ont.gesture.pointing</module>
     <module>../ont.handgestures</module>
-    <module>../ont.hazard</module>
+    <!-- <module>../ont.hazard</module> -->
     <module>../ont.health.measurement</module>
     <module>../ont.health.disease</module>
     <module>../ont.impairment</module>
@@ -55,12 +55,12 @@
     <module>../ont.personalhealthdevice</module>
     <module>../ont.profile.health</module>
     <module>../ont.questionnaire</module>
-    <module>../ont.risk</module>
+    <!-- <module>../ont.risk</module> -->
     <module>../ont.situation.reasoner</module>
     <module>../ont.unit</module>
-    <module>../ont.water</module>
-    <module>../ont.weather</module>
-    <module>../ont.window</module>
+    <!-- <module>../ont.water</module> -->
+    <!-- <module>../ont.weather</module> -->
+    <!-- <module>../ont.window</module> -->
     <module>../ont.X73</module>
     <module>composite</module>
     <module>karaf.feature</module>

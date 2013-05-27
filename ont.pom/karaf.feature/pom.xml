@@ -49,10 +49,6 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.device.extra</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.furniture</artifactId>
     </dependency>
     <dependency>
@@ -62,10 +58,6 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.handgestures</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.hazard</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -137,27 +129,11 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.risk</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.situation.reasoner</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.unit</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.water</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.weather</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.window</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
