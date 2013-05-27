@@ -12,7 +12,6 @@ import org.universAAL.ontology.X73Factory;
 import org.universAAL.ontology.location.LocationOntology;
 
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.Sensor;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.service.owl.Service;
 
