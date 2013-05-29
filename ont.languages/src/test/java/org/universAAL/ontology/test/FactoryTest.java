@@ -18,6 +18,7 @@ package org.universAAL.ontology.test;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Set;
+import java.util.TreeSet;
 
 import junit.framework.TestCase;
 
@@ -42,8 +43,9 @@ public class FactoryTest extends TestCase {
 	public void test1(){
 		assertNotNull(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
 		LanguageFactory lf = new LanguageFactory(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
-		assertNotNull(lf.createInstance(LanguageOntology.NAMESPACE+"ALBANIAN", Resource.generateAnonURI(),5));
+		assertNotNull(lf.createInstance(LanguageOntology.NAMESPACE+"Albanian", Resource.generateAnonURI(),5));
 		Set allLang = OntologyManagement.getInstance().getNamedSubClasses(Language.MY_URI, true, false);
+		allLang = new TreeSet(allLang);
 		assertTrue(allLang.size() > 0);
 		for (Iterator i = allLang.iterator(); i.hasNext();) {
 			String uri = (String) i.next();
