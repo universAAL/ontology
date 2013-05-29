@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.text.Normalizer;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -112,6 +113,10 @@ public final class LanguageOntology extends Ontology {
     static String getURIFromLabel(String english){
     	String name = english.split(",")[0];
 		name = name.split(" ")[0];
-		return name.toUpperCase();
+		name = Normalizer
+        .normalize(name, Normalizer.Form.NFD)
+        .replaceAll("[^\\p{ASCII}]", "");
+		name =  name.substring(0, 1).toUpperCase() + name.substring(1);
+		return name;
     }
 }
