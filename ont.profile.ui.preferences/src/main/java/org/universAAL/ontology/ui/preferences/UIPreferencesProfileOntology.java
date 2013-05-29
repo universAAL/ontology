@@ -25,6 +25,7 @@ import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.ontology.UIPreferencesProfileFactory;
 import org.universAAL.ontology.language.Language;
+import org.universAAL.ontology.language.LanguageOntology;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.Profile;
@@ -56,6 +57,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
+	addImport(LanguageOntology.NAMESPACE);
 
 	// ******* Declaration of enumeration classes of the ontology ******* //
 
