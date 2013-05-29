@@ -19,9 +19,9 @@
  */
 package org.universAAL.ontology.location.position;
 
-import javax.media.j3d.Transform3D;
-import javax.vecmath.Point3d;
-import javax.vecmath.Vector3d;
+//import javax.media.j3d.Transform3D;
+//import javax.vecmath.Point3d;
+//import javax.vecmath.Vector3d;
 import org.universAAL.ontology.location.Location;
 
 /**
@@ -294,30 +294,45 @@ public class Point extends Location {
      * @return the point
      */
     public Point getInHigherCoordinateSystem() {
-	CoordinateSystem Sys = getCoordinateSystem();
-	if (!(Sys instanceof OriginedMetric))
-	    throw new IllegalArgumentException(
-		    "Point is not in an OriginedMetric");
-	Point origin = ((OriginedMetric) Sys).getOrigin();
-	if (Sys.getClass() != origin.getCoordinateSystem().getClass())
-	    throw new IllegalArgumentException(
-		    "Higher system is of an other type");
-	double[] p = get3DCoordinates();
-	double[] o = origin.get3DCoordinates();
-	if (Double.isNaN(p[2]))
-	    p[2] = 0;
-	Point3d point = new Point3d(p[0], p[1], p[2]);
-	Transform3D map = new Transform3D(), rmap = new Transform3D();
-	rmap.rotX(Math.toRadians(((OriginedMetric) Sys).getRotateX()));
-	map.mul(rmap);
-	rmap.rotY(Math.toRadians(((OriginedMetric) Sys).getRotateY()));
-	map.mul(rmap);
-	rmap.rotY(Math.toRadians(((OriginedMetric) Sys).getRotateZ()));
-	map.mul(rmap);
-	map.setTranslation(new Vector3d(o[0], o[1], o[2]));
-	map.transform(point);
-	return new Point(point.x, point.y, point.z, origin
-		.getCoordinateSystem());
+//	CoordinateSystem Sys = getCoordinateSystem();
+//	if (!(Sys instanceof OriginedMetric))
+//	    throw new IllegalArgumentException(
+//		    "Point is not in an OriginedMetric");
+//	Point origin = ((OriginedMetric) Sys).getOrigin();
+//	if (Sys.getClass() != origin.getCoordinateSystem().getClass())
+//	    throw new IllegalArgumentException(
+//		    "Higher system is of an other type");
+//	double[] p = get3DCoordinates();
+//	double[] o = origin.get3DCoordinates();
+//	if (Double.isNaN(p[2]))
+//	    p[2] = 0;
+//	Point3d point = new Point3d(p[0], p[1], p[2]);
+//	Transform3D map = new Transform3D(), rmap = new Transform3D();
+//	rmap.rotX(Math.toRadians(((OriginedMetric) Sys).getRotateX()));
+//	map.mul(rmap);
+//	rmap.rotY(Math.toRadians(((OriginedMetric) Sys).getRotateY()));
+//	map.mul(rmap);
+//	rmap.rotY(Math.toRadians(((OriginedMetric) Sys).getRotateZ()));
+//	map.mul(rmap);
+//	map.setTranslation(new Vector3d(o[0], o[1], o[2]));
+//	map.transform(point);
+//	return new Point(point.x, point.y, point.z, origin
+//		.getCoordinateSystem());
+	try {
+	    throw new Exception(
+		    "The method 'getInHigherCoordinateSystem' is disabled in this version of to "
+			    + "avoid GPL libraries. If you really need this method, use the restricted GPL version, or"
+			    + "modify source code of this version to include the dependencies you need:"
+			    + "j3d-core and vecmath, versions at least 1.3.1.");
+	} catch (Exception e) {
+	    System.out
+		    .println("The method 'getInHigherCoordinateSystem' is disabled in this version of to "
+			    + "avoid GPL libraries. If you really need this method, use the restricted GPL version, or"
+			    + "modify source code of this version to include the dependencies you need:"
+			    + "j3d-core and vecmath, versions at least 1.3.1.");
+	    e.printStackTrace();
+	}
+	return null;
     }
 
     /**

@@ -23,11 +23,11 @@
  */
 package org.universAAL.ontology.shape;
 
-import javax.media.j3d.BoundingBox;
-import javax.media.j3d.BoundingSphere;
-import javax.media.j3d.Bounds;
-import javax.vecmath.Point3d;
-import javax.vecmath.Vector3d;
+//import javax.media.j3d.BoundingBox;
+//import javax.media.j3d.BoundingSphere;
+//import javax.media.j3d.Bounds;
+//import javax.vecmath.Point3d;
+//import javax.vecmath.Vector3d;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.location.position.CoordinateSystem;
@@ -273,28 +273,43 @@ public abstract class Shape extends ManagedIndividual {
      * @return true, if the ray intersects the shape
      */
     public boolean intersects(Point base, Point dir) {
-	Shape bound = getBoundingVolume();
-	Bounds bounds = null;
-	CoordinateSystem cs = CoordinateSystem
-		.findCommonParentSystem(base.getCoordinateSystem(), bound
-			.getCenter().getCoordinateSystem());
-	double[] center = bound.getCenter().getInHigherCoordinateSystem(cs)
-		.get3DCoordinates();
-	if (bound.getClass() == Box.class) {
-	    bounds = new BoundingBox(new Point3d(center[0]
-		    - ((Box) bound).getWidth() / 2d, center[1]
-		    - ((Box) bound).getDepth() / 2d, center[2]
-		    - ((Box) bound).getHeight() / 2d), new Point3d(center[0]
-		    + ((Box) bound).getWidth() / 2d, center[1]
-		    + ((Box) bound).getDepth() / 2d, center[2]
-		    + ((Box) bound).getHeight() / 2d));
+//	Shape bound = getBoundingVolume();
+//	Bounds bounds = null;
+//	CoordinateSystem cs = CoordinateSystem
+//		.findCommonParentSystem(base.getCoordinateSystem(), bound
+//			.getCenter().getCoordinateSystem());
+//	double[] center = bound.getCenter().getInHigherCoordinateSystem(cs)
+//		.get3DCoordinates();
+//	if (bound.getClass() == Box.class) {
+//	    bounds = new BoundingBox(new Point3d(center[0]
+//		    - ((Box) bound).getWidth() / 2d, center[1]
+//		    - ((Box) bound).getDepth() / 2d, center[2]
+//		    - ((Box) bound).getHeight() / 2d), new Point3d(center[0]
+//		    + ((Box) bound).getWidth() / 2d, center[1]
+//		    + ((Box) bound).getDepth() / 2d, center[2]
+//		    + ((Box) bound).getHeight() / 2d));
+//	}
+//	if (bound.getClass() == Sphere.class) {
+//	    bounds = new BoundingSphere(new Point3d(center[0], center[1],
+//		    center[2]), ((Sphere) bound).getRadius());
+//	}
+//	return bounds.intersect(new Point3d(base.getX(), base.getY(), base
+//		.getZ()), new Vector3d(dir.getX(), dir.getY(), dir.getZ()));
+	try {
+	    throw new Exception(
+		    "The method 'intersects' is disabled in this version to "
+			    + "avoid GPL libraries. If you really need this method, use the restricted GPL version, or"
+			    + "modify source code of this version to include the dependencies you need:"
+			    + "j3d-core and vecmath, versions at least 1.3.1.");
+	} catch (Exception e) {
+	    System.out
+		    .println("The method 'intersects' is disabled in this version of to "
+			    + "avoid GPL libraries. If you really need this method, use the restricted GPL version, or"
+			    + "modify source code of this version to include the dependencies you need:"
+			    + "j3d-core and vecmath, versions at least 1.3.1.");
+	    e.printStackTrace();
 	}
-	if (bound.getClass() == Sphere.class) {
-	    bounds = new BoundingSphere(new Point3d(center[0], center[1],
-		    center[2]), ((Sphere) bound).getRadius());
-	}
-	return bounds.intersect(new Point3d(base.getX(), base.getY(), base
-		.getZ()), new Vector3d(dir.getX(), dir.getY(), dir.getZ()));
+	return false;
     }
 
     /**
