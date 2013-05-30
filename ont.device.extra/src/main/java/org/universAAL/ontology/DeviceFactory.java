@@ -39,14 +39,10 @@ public class DeviceFactory extends ResourceFactoryImpl {
 	case 0:
 	    return new CarpetSensor(instanceURI);
 	case 1:
-	    return new ContactSensor(instanceURI);
-	case 2:
 	    return new Oven(instanceURI);
-	case 3:
-	    return new PresenceDetector(instanceURI);
-	case 4:
+	case 2:
 	    return new SirenActuator(instanceURI);
-	case 5:
+	case 3:
 	    return new Strap(instanceURI);
 	}
 	return null;

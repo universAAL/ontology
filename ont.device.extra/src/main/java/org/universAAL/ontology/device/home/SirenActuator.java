@@ -21,8 +21,9 @@
  */
 package org.universAAL.ontology.device.home;
 
+import org.universAAL.ontology.device.Actuator;
+import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**
  * Ontological representation of a siren that can be sounded. Methods included
@@ -33,13 +34,14 @@ import org.universAAL.ontology.phThing.OnOffActuator;
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
-public class SirenActuator extends OnOffActuator {
+public class SirenActuator extends Actuator {
 
     /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
 	    + "SirenActuator";
 
     public SirenActuator() {
+	super();
     }
 
     public SirenActuator(String uri) {
@@ -51,11 +53,19 @@ public class SirenActuator extends OnOffActuator {
     }
 
     public boolean isWellFormed() {
-	return true;
+	return true && hasProperty(PROP_HAS_VALUE);
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
 
+    public StatusValue getValue() {
+	return (StatusValue) getProperty(PROP_HAS_VALUE);
+    }
+
+    public void setValue(StatusValue newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_HAS_VALUE, newPropValue);
+    }
 }

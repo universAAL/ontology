@@ -21,8 +21,9 @@
  */
 package org.universAAL.ontology.device.home;
 
+import org.universAAL.ontology.device.Sensor;
+import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.OnOffSensor;
 
 /**
  * Ontological representation of a pressure sensor embedded on a carpet. Methods
@@ -33,7 +34,7 @@ import org.universAAL.ontology.phThing.OnOffSensor;
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * 
  */
-public class CarpetSensor extends OnOffSensor {
+public class CarpetSensor extends Sensor {
 
     /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
@@ -50,12 +51,21 @@ public class CarpetSensor extends OnOffSensor {
 	return MY_URI;
     }
 
-    public boolean isWellFormed() {
-	return true;
-    }
-
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
+    }
+    
+    public boolean isWellFormed() {
+	return true && hasProperty(PROP_HAS_VALUE);
+    }
+
+    public StatusValue getValue() {
+	return (StatusValue) getProperty(PROP_HAS_VALUE);
+    }
+
+    public void setValue(StatusValue newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_HAS_VALUE, newPropValue);
     }
 
 }
