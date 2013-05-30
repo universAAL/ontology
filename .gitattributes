@@ -243,6 +243,7 @@ ont.device/src/main/java/org/universAAL/ontology/device/WindowActuator.java -tex
 ont.device/src/main/java/org/universAAL/ontology/device/WindowController.java -text
 ont.device/src/main/java/org/universAAL/ontology/device/WindowSensor.java -text
 ont.device/src/main/resources/ArtifactIntegrationTest.java -text
+ont.device/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.furniture/ASL2.0.txt -text
 ont.furniture/MITX.txt -text
 ont.furniture/NOTICE.txt -text
