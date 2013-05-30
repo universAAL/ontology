@@ -45,12 +45,12 @@ public class DimmerController extends DimmerActuator {
 	return true && hasProperty(PROP_HAS_VALUE);
     }
 
-    public int getHasValue() {
+    public int getValue() {
 	Integer i = (Integer) getProperty(PROP_HAS_VALUE);
 	return (i == null) ? 0 : i.intValue();
     }
 
-    public void setHasValue(int newPropValue) {
+    public void setValue(int newPropValue) {
 	changeProperty(PROP_HAS_VALUE, new Integer(newPropValue));
     }
 }
