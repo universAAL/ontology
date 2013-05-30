@@ -21,13 +21,15 @@
  */
 package org.universAAL.ontology.device.home;
 
+import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.DeviceFactory;
+import org.universAAL.ontology.device.Actuator;
+import org.universAAL.ontology.device.Sensor;
+import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.OnOffActuator;
-import org.universAAL.ontology.phThing.OnOffSensor;
 import org.universAAL.ontology.phThing.PhThingOntology;
 
 /**
@@ -59,41 +61,47 @@ public class DeviceOntology extends Ontology {
 	OntClassInfoSetup oci;
 
 	oci = extendExistingOntClassInfo(Device.MY_URI);
-	oci = extendExistingOntClassInfo(OnOffSensor.MY_URI);
-	oci = extendExistingOntClassInfo(OnOffActuator.MY_URI);
+	oci = extendExistingOntClassInfo(Sensor.MY_URI);
+	oci = extendExistingOntClassInfo(Actuator.MY_URI);
 
 	// CarpetSensor
 	oci = createNewOntClassInfo(CarpetSensor.MY_URI, factory, 0);
 	oci.setResourceComment("A Carpet Presence Detector Device");
 	oci.setResourceLabel("Carpet Presence Detector");
-	oci.addSuperClass(OnOffSensor.MY_URI);
-
-	// ContactSensor
-	oci = createNewOntClassInfo(ContactSensor.MY_URI, factory, 1);
-	oci.setResourceComment("A Magnetic Contact Sensor Device");
-	oci.setResourceLabel("Contact Sensor");
-	oci.addSuperClass(OnOffSensor.MY_URI);
+	oci.addSuperClass(Sensor.MY_URI);
+	oci.addObjectProperty(
+		CarpetSensor.PROP_HAS_VALUE).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			CarpetSensor.PROP_HAS_VALUE, StatusValue.MY_URI,
+			1, 1));
 
 	// Oven
-	oci = createNewOntClassInfo(Oven.MY_URI, factory, 2);
+	oci = createNewOntClassInfo(Oven.MY_URI, factory, 1);
 	oci.setResourceComment("The class of all Ovens.");
 	oci.setResourceLabel("Oven");
-	oci.addSuperClass(OnOffActuator.MY_URI);
-
-	// PresenceDetector
-	oci = createNewOntClassInfo(PresenceDetector.MY_URI, factory, 3);
-	oci.setResourceComment("A Presence Detector Device");
-	oci.setResourceLabel("Presence Detector");
-	oci.addSuperClass(OnOffSensor.MY_URI);
+	oci.addSuperClass(Actuator.MY_URI);
+	oci.addObjectProperty(
+		Oven.PROP_HAS_VALUE).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			Oven.PROP_HAS_VALUE, StatusValue.MY_URI,
+			1, 1));
 
 	// SirenActuator
-	oci = createNewOntClassInfo(SirenActuator.MY_URI, factory, 4);
+	oci = createNewOntClassInfo(SirenActuator.MY_URI, factory, 2);
 	oci.setResourceComment("An Acoustic Siren Actuator");
 	oci.setResourceLabel("Siren Actuator");
-	oci.addSuperClass(OnOffActuator.MY_URI);
+	oci.addSuperClass(Actuator.MY_URI);
+	oci.addObjectProperty(
+		SirenActuator.PROP_HAS_VALUE).setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			SirenActuator.PROP_HAS_VALUE, StatusValue.MY_URI,
+			1, 1));
 
 	// Strap
-	oci = createNewOntClassInfo(Strap.MY_URI, factory, 5);
+	oci = createNewOntClassInfo(Strap.MY_URI, factory, 3);
 	oci.setResourceComment("A Strap Device");
 	oci.setResourceLabel("Strap");
 	oci.addSuperClass(Device.MY_URI);

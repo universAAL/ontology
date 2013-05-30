@@ -19,8 +19,9 @@
  */
 package org.universAAL.ontology.device.home;
 
+import org.universAAL.ontology.device.Actuator;
+import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.OnOffActuator;
 
 /**
  * Ontological representation of an oven appliance. Methods included in this
@@ -31,7 +32,7 @@ import org.universAAL.ontology.phThing.OnOffActuator;
  * @author amoretti
  * 
  */
-public class Oven extends OnOffActuator {
+public class Oven extends Actuator {
 
     /** Class URI */
     public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE + "Oven";
@@ -44,25 +45,25 @@ public class Oven extends OnOffActuator {
 	super(uri);
     }
 
-    public Oven(String uri, Boolean isOn) {
-	super(uri);
-
-	if (isOn == null)
-	    throw new IllegalArgumentException();
-
-	props.put(PROP_STATUS, isOn);
-    }
-
     public String getClassURI() {
 	return MY_URI;
     }
 
     public boolean isWellFormed() {
-	return true;
+	return true && hasProperty(PROP_HAS_VALUE);
     }
 
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
+    }
+    
+    public StatusValue getValue() {
+	return (StatusValue) getProperty(PROP_HAS_VALUE);
+    }
+
+    public void setValue(StatusValue newPropValue) {
+	if (newPropValue != null)
+	    changeProperty(PROP_HAS_VALUE, newPropValue);
     }
 
 }
