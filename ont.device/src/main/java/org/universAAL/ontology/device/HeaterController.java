@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class HeaterController extends Actuator {
+public class HeaterController extends HeaterActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "HeaterController";
 

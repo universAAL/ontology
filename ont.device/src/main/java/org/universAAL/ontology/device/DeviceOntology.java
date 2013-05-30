@@ -218,8 +218,8 @@ public final class DeviceOntology extends Ontology {
 
 	oci_WindowController.setResourceComment("");
 	oci_WindowController.setResourceLabel("WindowController");
-	oci_WindowController.addSuperClass(Actuator.MY_URI);
-	oci_WindowController.addSuperClass(Sensor.MY_URI);
+	oci_WindowController.addSuperClass(WindowActuator.MY_URI);
+	oci_WindowController.addSuperClass(WindowSensor.MY_URI);
 	oci_WindowController.addObjectProperty(WindowController.PROP_HAS_VALUE)
 		.setFunctional();
 	oci_WindowController.addRestriction(MergedRestriction
@@ -232,8 +232,8 @@ public final class DeviceOntology extends Ontology {
 	oci_Actuator.addSuperClass(ValueDevice.MY_URI);
 	oci_LightController.setResourceComment("");
 	oci_LightController.setResourceLabel("LightController");
-	oci_LightController.addSuperClass(Actuator.MY_URI);
-	oci_LightController.addSuperClass(Sensor.MY_URI);
+	oci_LightController.addSuperClass(LightActuator.MY_URI);
+	oci_LightController.addSuperClass(LightSensor.MY_URI);
 	oci_LightController.addDatatypeProperty(LightController.PROP_HAS_VALUE)
 		.setFunctional();
 	oci_LightController.addRestriction(MergedRestriction
@@ -355,8 +355,8 @@ public final class DeviceOntology extends Ontology {
 	oci_SmokeSensor.addSuperClass(EnvironmentSensor.MY_URI);
 	oci_CurtainController.setResourceComment("");
 	oci_CurtainController.setResourceLabel("CurtainController");
-	oci_CurtainController.addSuperClass(Actuator.MY_URI);
-	oci_CurtainController.addSuperClass(Sensor.MY_URI);
+	oci_CurtainController.addSuperClass(CurtainActuator.MY_URI);
+	oci_CurtainController.addSuperClass(CurtainSensor.MY_URI);
 	oci_CurtainController.addDatatypeProperty(
 		CurtainController.PROP_HAS_VALUE).setFunctional();
 	oci_CurtainController.addRestriction(MergedRestriction
@@ -366,8 +366,8 @@ public final class DeviceOntology extends Ontology {
 
 	oci_SwitchController.setResourceComment("");
 	oci_SwitchController.setResourceLabel("SwitchController");
-	oci_SwitchController.addSuperClass(Actuator.MY_URI);
-	oci_SwitchController.addSuperClass(Sensor.MY_URI);
+	oci_SwitchController.addSuperClass(SwitchActuator.MY_URI);
+	oci_SwitchController.addSuperClass(SwitchSensor.MY_URI);
 	oci_SwitchController.addObjectProperty(SwitchController.PROP_HAS_VALUE)
 		.setFunctional();
 	oci_SwitchController.addRestriction(MergedRestriction
@@ -387,8 +387,8 @@ public final class DeviceOntology extends Ontology {
 
 	oci_HeaterController.setResourceComment("");
 	oci_HeaterController.setResourceLabel("HeaterController");
-	oci_HeaterController.addSuperClass(Actuator.MY_URI);
-	oci_HeaterController.addSuperClass(Sensor.MY_URI);
+	oci_HeaterController.addSuperClass(HeaterActuator.MY_URI);
+	oci_HeaterController.addSuperClass(HeaterSensor.MY_URI);
 	oci_HeaterController.addObjectProperty(HeaterController.PROP_HAS_VALUE)
 		.setFunctional();
 	oci_HeaterController.addRestriction(MergedRestriction
@@ -464,8 +464,8 @@ public final class DeviceOntology extends Ontology {
 
 	oci_WaterFlowController.setResourceComment("");
 	oci_WaterFlowController.setResourceLabel("WaterFlowController");
-	oci_WaterFlowController.addSuperClass(Actuator.MY_URI);
-	oci_WaterFlowController.addSuperClass(Sensor.MY_URI);
+	oci_WaterFlowController.addSuperClass(WaterFlowActuator.MY_URI);
+	oci_WaterFlowController.addSuperClass(WaterFlowSensor.MY_URI);
 	oci_WaterFlowController.addObjectProperty(
 		WaterFlowController.PROP_HAS_VALUE).setFunctional();
 	oci_WaterFlowController.addRestriction(MergedRestriction
@@ -527,8 +527,8 @@ public final class DeviceOntology extends Ontology {
 
 	oci_DimmerController.setResourceComment("");
 	oci_DimmerController.setResourceLabel("DimmerController");
-	oci_DimmerController.addSuperClass(Actuator.MY_URI);
-	oci_DimmerController.addSuperClass(Sensor.MY_URI);
+	oci_DimmerController.addSuperClass(DimmerActuator.MY_URI);
+	oci_DimmerController.addSuperClass(DimmerSensor.MY_URI);
 	oci_DimmerController.addDatatypeProperty(
 		DimmerController.PROP_HAS_VALUE).setFunctional();
 	oci_DimmerController.addRestriction(MergedRestriction
@@ -558,8 +558,8 @@ public final class DeviceOntology extends Ontology {
 
 	oci_BlindController.setResourceComment("");
 	oci_BlindController.setResourceLabel("BlindController");
-	oci_BlindController.addSuperClass(Actuator.MY_URI);
-	oci_BlindController.addSuperClass(Sensor.MY_URI);
+	oci_BlindController.addSuperClass(BlindActuator.MY_URI);
+	oci_BlindController.addSuperClass(BlindSensor.MY_URI);
 	oci_BlindController.addDatatypeProperty(BlindController.PROP_HAS_VALUE)
 		.setFunctional();
 	oci_BlindController.addRestriction(MergedRestriction

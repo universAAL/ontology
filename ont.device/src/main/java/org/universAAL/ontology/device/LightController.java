@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class LightController extends Actuator {
+public class LightController extends LightActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "LightController";
 

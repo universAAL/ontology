@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class DimmerController extends Actuator {
+public class DimmerController extends DimmerActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "DimmerController";
 
