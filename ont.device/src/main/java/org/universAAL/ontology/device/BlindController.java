@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class BlindController extends Actuator {
+public class BlindController extends BlindActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "BlindController";
 

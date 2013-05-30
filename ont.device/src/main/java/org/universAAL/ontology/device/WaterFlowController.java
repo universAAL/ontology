@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class WaterFlowController extends Actuator {
+public class WaterFlowController extends WaterFlowActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "WaterFlowController";
 

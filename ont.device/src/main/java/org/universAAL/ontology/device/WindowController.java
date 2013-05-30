@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class WindowController extends Actuator {
+public class WindowController extends WindowActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "WindowController";
 

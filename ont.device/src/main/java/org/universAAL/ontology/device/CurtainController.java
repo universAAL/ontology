@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.device;
 
-public class CurtainController extends Actuator {
+public class CurtainController extends CurtainActuator {
     public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "CurtainController";
 
