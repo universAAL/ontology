@@ -169,8 +169,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_VTSLoDftEeKEOs6yTQFaQw" name="SwitchController">
-        <generalization xmi:id="_4oR4YDfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_42i94DfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_p-01oMkAEeKAcp7RjNU-PQ" general="_SYDwoDftEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_qirJkMkAEeKAcp7RjNU-PQ" general="_UPOtoDftEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_TmvYwDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_TmvYwziGEeK_5M40qoRWyw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TmvYwTiGEeK_5M40qoRWyw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TmvYwjiGEeK_5M40qoRWyw" value="1"/>
@@ -210,8 +210,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9oU8wDftEeKEOs6yTQFaQw" name="BlindController">
-        <generalization xmi:id="_58IF4DfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_6N-q4DfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_mXx2cMkAEeKAcp7RjNU-PQ" general="_7eTVMDftEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_m1r6cMkAEeKAcp7RjNU-PQ" general="_8p1UMDftEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_TllXoDiFEeK_5M40qoRWyw" name="hasValue">
           <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
         </ownedAttribute>
@@ -223,8 +223,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_voB1UDfuEeKEOs6yTQFaQw" name="CurtainController">
-        <generalization xmi:id="_8PvuUDfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_8nZZUDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_naR1QMkAEeKAcp7RjNU-PQ" general="_upGH4DfuEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_n8WnkMkAEeKAcp7RjNU-PQ" general="_wdIRUDfuEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_UlG68DiFEeK_5M40qoRWyw" name="hasValue">
           <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
         </ownedAttribute>
@@ -250,8 +250,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9iF8cDfuEeKEOs6yTQFaQw" name="WindowController">
-        <generalization xmi:id="_9tgs0DfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_-F6lwDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_tLYRMMkAEeKAcp7RjNU-PQ" general="_7OPqgDfuEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_tvYWIMkAEeKAcp7RjNU-PQ" general="_-4iK8DfuEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_c5iZ0DiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_c5iZ0ziGEeK_5M40qoRWyw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c5iZ0TiGEeK_5M40qoRWyw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c5iZ0jiGEeK_5M40qoRWyw" value="1"/>
@@ -302,8 +302,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Zq0hsDfvEeKEOs6yTQFaQw" name="WaterFlowController">
-        <generalization xmi:id="_KzY98DfwEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_Lq2xcDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_rHa1YMkAEeKAcp7RjNU-PQ" general="_YtG8QDfvEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_rfq9UMkAEeKAcp7RjNU-PQ" general="_avVSsDfvEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_YQvCsDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_YQvCsziGEeK_5M40qoRWyw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQvCsTiGEeK_5M40qoRWyw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YQvCsjiGEeK_5M40qoRWyw" value="1"/>
@@ -330,8 +330,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vO9_oDfvEeKEOs6yTQFaQw" name="DimmerController">
-        <generalization xmi:id="_O4EUUDfwEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_Pw0hQDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_j1UgwMkAEeKAcp7RjNU-PQ" general="_uVD8IDfvEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_lvd5QMkAEeKAcp7RjNU-PQ" general="_wPqnoDfvEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_SmWvQDiFEeK_5M40qoRWyw" name="hasValue">
           <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
         </ownedAttribute>
@@ -343,8 +343,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_F1GfADfwEeKEOs6yTQFaQw" name="HeaterController">
-        <generalization xmi:id="_IKUC4DfwEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_Iu4IgDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_uRTXcMkAEeKAcp7RjNU-PQ" general="_GiEvMDfvEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_u1TcYMkAEeKAcp7RjNU-PQ" general="_FXAqQDfvEeKEOs6yTQFaQw"/>
         <ownedAttribute xmi:id="_hcPwADiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_hcPwAziGEeK_5M40qoRWyw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hcPwATiGEeK_5M40qoRWyw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hcPwAjiGEeK_5M40qoRWyw" value="1"/>
@@ -479,8 +479,8 @@
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vB2fgDiFEeK_5M40qoRWyw" name="LightController">
-        <generalization xmi:id="_x2ULMDiFEeK_5M40qoRWyw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
-        <generalization xmi:id="_yXV0oDiFEeK_5M40qoRWyw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_oYd70MkAEeKAcp7RjNU-PQ" general="_uGo0cDiFEeK_5M40qoRWyw"/>
+        <generalization xmi:id="_oyNRgMkAEeKAcp7RjNU-PQ" general="_v5pDIDiFEeK_5M40qoRWyw"/>
         <ownedAttribute xmi:id="_0VWZcDiFEeK_5M40qoRWyw" name="hasValue">
           <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
         </ownedAttribute>
