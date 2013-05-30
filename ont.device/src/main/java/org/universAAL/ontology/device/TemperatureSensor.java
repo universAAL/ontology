@@ -45,12 +45,12 @@ public class TemperatureSensor extends Sensor {
 	return true && hasProperty(PROP_HAS_VALUE);
     }
 
-    public float getHasValue() {
+    public float getValue() {
 	Float f = (Float) getProperty(PROP_HAS_VALUE);
 	return (f == null) ? 0 : f.floatValue();
     }
 
-    public void setHasValue(float newPropValue) {
+    public void setValue(float newPropValue) {
 	changeProperty(PROP_HAS_VALUE, new Float(newPropValue));
     }
 }
