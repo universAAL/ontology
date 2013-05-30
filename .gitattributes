@@ -277,17 +277,6 @@ ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandGestureS
 ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandGestureType.java -text
 ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandGestures.java -text
 ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandgesturesOntology.java -text
-ont.hazard/ASL2.0.txt -text
-ont.hazard/MITX.txt -text
-ont.hazard/NOTICE.txt -text
-ont.hazard/pom.xml -text
-ont.hazard/src/main/java/org/universAAL/ontology/HazardActivator.java -text
-ont.hazard/src/main/java/org/universAAL/ontology/HazardFactory.java -text
-ont.hazard/src/main/java/org/universAAL/ontology/hazard/FireDetector.java -text
-ont.hazard/src/main/java/org/universAAL/ontology/hazard/GasDetector.java -text
-ont.hazard/src/main/java/org/universAAL/ontology/hazard/HazardOntology.java -text
-ont.hazard/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.hazard/src/test/resources/log4j.properties -text
 ont.health.disease/ASL2.0.txt -text svneol=unset#text/plain
 ont.health.disease/Disease.di -text
 ont.health.disease/Disease.notation -text
@@ -711,17 +700,6 @@ ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireMu
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireNextQuestion.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/TestQuestionnaireQuestions.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/resources/log4j.properties -text
-ont.risk/ASL2.0.txt -text
-ont.risk/MITX.txt -text
-ont.risk/NOTICE.txt -text
-ont.risk/pom.xml -text
-ont.risk/src/main/java/org/universAAL/ontology/RiskActivator.java -text
-ont.risk/src/main/java/org/universAAL/ontology/RiskFactory.java -text
-ont.risk/src/main/java/org/universAAL/ontology/risk/FallDetector.java -text
-ont.risk/src/main/java/org/universAAL/ontology/risk/PanicButton.java -text
-ont.risk/src/main/java/org/universAAL/ontology/risk/RiskOntology.java -text
-ont.risk/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.risk/src/test/resources/log4j.properties -text
 ont.situation.reasoner/ASL2.0.txt -text
 ont.situation.reasoner/MITX.txt -text
 ont.situation.reasoner/NOTICE.txt -text
@@ -757,45 +735,3 @@ ont.unit/src/main/java/org/universAAL/ontology/unit/system/BinarySystem.java -te
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/InternationalSystem.java -text svneol=unset#text/plain
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
 ont.unit/src/test/java/test/integration/OntTest.java -text svneol=unset#text/plain
-ont.water/ASL2.0.txt -text
-ont.water/MITX.txt -text
-ont.water/NOTICE.txt -text
-ont.water/pom.xml -text
-ont.water/src/main/java/org/universAAL/ontology/WaterActivator.java -text
-ont.water/src/main/java/org/universAAL/ontology/WaterFactory.java -text
-ont.water/src/main/java/org/universAAL/ontology/water/FaucetSensor.java -text
-ont.water/src/main/java/org/universAAL/ontology/water/WaterActuator.java -text
-ont.water/src/main/java/org/universAAL/ontology/water/WaterFloodDetector.java -text
-ont.water/src/main/java/org/universAAL/ontology/water/WaterOntology.java -text
-ont.water/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.water/src/test/resources/log4j.properties -text
-ont.weather/ASL2.0.txt -text
-ont.weather/MITX.txt -text
-ont.weather/NOTICE.txt -text
-ont.weather/pom.xml -text
-ont.weather/src/main/java/org/universAAL/ontology/WeatherActivator.java -text
-ont.weather/src/main/java/org/universAAL/ontology/WeatherFactory.java -text
-ont.weather/src/main/java/org/universAAL/ontology/weather/HeaterActuator.java -text
-ont.weather/src/main/java/org/universAAL/ontology/weather/RelHumiditySensor.java -text
-ont.weather/src/main/java/org/universAAL/ontology/weather/TempSensor.java -text
-ont.weather/src/main/java/org/universAAL/ontology/weather/Temperature.java -text
-ont.weather/src/main/java/org/universAAL/ontology/weather/WeatherOntology.java -text
-ont.weather/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.weather/src/test/resources/log4j.properties -text
-ont.window/ASL2.0.txt -text
-ont.window/MITX.txt -text
-ont.window/NOTICE.txt -text
-ont.window/pom.xml -text
-ont.window/src/main/java/org/universAAL/ontology/WindowActivator.java -text
-ont.window/src/main/java/org/universAAL/ontology/WindowFactory.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/BlindActuator.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/BlindController.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/CurtainActuator.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/CurtainController.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/GlassBreakSensor.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/WindowActuator.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/WindowController.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/WindowOntology.java -text
-ont.window/src/main/java/org/universAAL/ontology/window/WindowType.java -text
-ont.window/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
-ont.window/src/test/resources/log4j.properties -text
