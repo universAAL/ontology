@@ -60,5 +60,9 @@ public class SubProfile extends ManagedIndividual {
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
+    
+    public boolean isClosedCollection(String propURI) {
+	return false;
+    }
 
 }

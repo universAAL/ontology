@@ -61,4 +61,8 @@ public class Profilable extends ManagedIndividual {
 	return PROP_SERIALIZATION_FULL;
     }
 
+    public boolean isClosedCollection(String propURI) {
+	return false;
+    }
+
 }
