@@ -73,5 +73,9 @@ public class Profile extends ManagedIndividual {
     public SubProfile getSubProfile() {
 	return (SubProfile) props.get(PROP_HAS_SUB_PROFILE);
     }
+    
+    public boolean isClosedCollection(String propURI) {
+	return false;
+    }
 
 }
