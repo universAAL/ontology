@@ -26,32 +26,31 @@
     </developer>
   </developers>
   <modules>
-    <module>../ont.aalfficiency</module>
     <module>../ont.activityhub</module>
     <module>../ont.av</module>
     <module>../ont.che</module>
     <module>../ont.continuahealthmanager</module>
-    <module>../ont.device</module>
     <module>../ont.dependability</module>
+    <module>../ont.device</module>
     <module>../ont.furniture</module>
     <module>../ont.gesture.pointing</module>
     <module>../ont.handgestures</module>
-    <module>../ont.health.measurement</module>
     <module>../ont.health.disease</module>
+    <module>../ont.health.measurement</module>
     <module>../ont.impairment</module>
     <module>../ont.languages</module>
     <module>../ont.lighting</module>
     <module>../ont.measurement</module>
     <module>../ont.multimedia</module>
-    <module>../ont.profile.contact</module>
+    <module>../ont.personalhealthdevice</module>
     <module>../ont.phWorld</module>
     <module>../ont.powersocket</module>
-    <module>../ont.profile.userid</module>
     <module>../ont.profile</module>
+    <module>../ont.profile.contact</module>
+    <module>../ont.profile.health</module>
     <module>../ont.profile.ui.mainmenu</module>
     <module>../ont.profile.ui.preferences</module>
-    <module>../ont.personalhealthdevice</module>
-    <module>../ont.profile.health</module>
+    <module>../ont.profile.userid</module>
     <module>../ont.questionnaire</module>
     <module>../ont.situation.reasoner</module>
     <module>../ont.unit</module>

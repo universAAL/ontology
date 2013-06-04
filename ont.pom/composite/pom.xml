@@ -20,10 +20,6 @@
   <dependencies>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.aalfficiency</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.activityhub</artifactId>
     </dependency>
     <dependency>
