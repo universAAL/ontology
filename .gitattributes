@@ -1,6 +1,5 @@
 * text=auto !eol
 /ASL2.0.txt -text
-/MITX.txt -text
 /NOTICE.txt -text
 /artifact_manual.composite -text
 documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
