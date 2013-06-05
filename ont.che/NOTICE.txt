@@ -29,7 +29,6 @@ Licensed under specific License.
 
 III. License Summary
 - Apache License 2.0
-- MIT License
 - JGCL - Java Geometry Class Library:
 
  Copyright 2000 by Information-technology Promotion Agency, Japan
