@@ -561,7 +561,6 @@ ont.profile.ui.preferences/ASL2.0.txt -text
 ont.profile.ui.preferences/InteractionPreferences.di -text
 ont.profile.ui.preferences/InteractionPreferences.notation -text
 ont.profile.ui.preferences/InteractionPreferences.uml -text
-ont.profile.ui.preferences/MITX.txt -text
 ont.profile.ui.preferences/NOTICE.txt -text
 ont.profile.ui.preferences/pom.xml -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/UIPreferencesProfileActivator.java -text
@@ -589,7 +588,6 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/service/UIPreferencesService.java -text
 ont.profile.ui.preferences/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.userid/ASL2.0.txt -text
-ont.profile.userid/MITX.txt -text
 ont.profile.userid/NOTICE.txt -text
 ont.profile.userid/pom.xml -text
 ont.profile.userid/src/main/java/org/universAAL/ontology/UserIDProfileActivator.java -text
