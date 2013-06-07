@@ -65,7 +65,6 @@ ont.activityhub/src/main/java/org/universAAL/ontology/activityhub/util/ActivityH
 ont.activityhub/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.activityhub/src/test/resources/log4j.properties -text
 ont.av/ASL2.0.txt -text
-ont.av/MITX.txt -text
 ont.av/NOTICE.txt -text
 ont.av/pom.xml -text
 ont.av/src/main/java/org/universAAL/ontology/AVActivator.java -text
@@ -111,7 +110,6 @@ ont.dependability/ASL[!!-~]2.0.txt -text
 ont.dependability/Dependability.di -text
 ont.dependability/Dependability.notation -text
 ont.dependability/Dependability.uml -text
-ont.dependability/MITX.txt -text
 ont.dependability/NOTICE.txt -text
 ont.dependability/ont.dependability.PDF -text svneol=unset#unset
 ont.dependability/pom.xml -text
@@ -223,7 +221,6 @@ ont.device/src/main/java/org/universAAL/ontology/device/WindowSensor.java -text
 ont.device/src/main/resources/ArtifactIntegrationTest.java -text
 ont.device/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.furniture/ASL2.0.txt -text
-ont.furniture/MITX.txt -text
 ont.furniture/NOTICE.txt -text
 ont.furniture/pom.xml -text
 ont.furniture/src/main/java/org/universAAL/ontology/FurnitureActivator.java -text
@@ -234,7 +231,6 @@ ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java
 ont.furniture/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.furniture/src/test/resources/log4j.properties -text
 ont.gesture.pointing/ASL2.0.txt -text
-ont.gesture.pointing/MITX.txt -text
 ont.gesture.pointing/NOTICE.txt -text
 ont.gesture.pointing/pom.xml -text
 ont.gesture.pointing/src/main/java/org/universAAL/ontology/GesturePointingActivator.java -text
@@ -246,7 +242,6 @@ ont.handgestures/ASL2.0.txt -text
 ont.handgestures/HandGestures.di -text
 ont.handgestures/HandGestures.notation -text
 ont.handgestures/HandGestures.uml -text
-ont.handgestures/MITX.txt -text
 ont.handgestures/NOTICE.txt -text
 ont.handgestures/pom.xml -text
 ont.handgestures/src/main/HandGesture[!!-~]type.PNG -text
@@ -344,7 +339,6 @@ ont.languages/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -te
 ont.languages/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text svneol=unset#text/plain
 ont.languages/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain
 ont.lighting/ASL2.0.txt -text
-ont.lighting/MITX.txt -text
 ont.lighting/NOTICE.txt -text
 ont.lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
 ont.lighting/pom.xml -text
@@ -382,7 +376,6 @@ ont.measurement/src/main/resources/Measurement.jpg -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement/src/test/resources/log4j.properties -text
 ont.multimedia/ASL2.0.txt -text
-ont.multimedia/MITX.txt -text
 ont.multimedia/NOTICE.txt -text
 ont.multimedia/pom.xml -text
 ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaActivator.java -text
@@ -471,20 +464,16 @@ ont.phWorld/src/main/java/org/universAAL/ontology/space/SpaceOntology.java -text
 ont.phWorld/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.phWorld/src/test/resources/log4j.properties -text
 ont.pom/ASL2.0.txt -text
-ont.pom/MITX.txt -text
 ont.pom/NOTICE.txt -text
 ont.pom/composite/ASL2.0.txt -text
-ont.pom/composite/MITX.txt -text
 ont.pom/composite/NOTICE.txt -text
 ont.pom/composite/pom.xml -text
 ont.pom/karaf.feature/ASL2.0.txt -text
-ont.pom/karaf.feature/MITX.txt -text
 ont.pom/karaf.feature/NOTICE.txt -text
 ont.pom/karaf.feature/pom.xml -text
 ont.pom/pom.xml -text
 ont.pom/update.bat -text
 ont.powersocket/ASL2.0.txt -text
-ont.powersocket/MITX.txt -text
 ont.powersocket/NOTICE.txt -text
 ont.powersocket/pom.xml -text
 ont.powersocket/src/main/java/org/universAAL/ontology/PowersocketActivator.java -text
@@ -548,7 +537,6 @@ ont.profile.health/src/main/java/org/universaal/ontology/health/owl/services/Pro
 ont.profile.health/src/main/java/org/universaal/ontology/health/owl/services/TreatmentManagementService.java -text
 ont.profile.health/src/test/java/org/universaal/ontology/test/HealthOntologyTest.java -text
 ont.profile.ui.mainmenu/ASL2.0.txt -text
-ont.profile.ui.mainmenu/MITX.txt -text
 ont.profile.ui.mainmenu/NOTICE.txt -text
 ont.profile.ui.mainmenu/pom.xml -text
 ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileActivator.java -text
