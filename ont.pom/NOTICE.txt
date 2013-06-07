@@ -23,14 +23,7 @@ This product uses software developed at
 Junit (http://www.junit.org/).
 Licensed under Common Public License 1.0.
 
-This product uses software developed at
-Java3D (https://java3d.dev.java.net/).
-Licensed under the GNU General Public License (GPL),
-version 2, with the CLASSPATH exception.
-
 
 III. License Summary
 - Apache License 2.0
-- MIT License
 - Common Public License 1.0
-- GNU GPL 2 CLASSPATH Exception
