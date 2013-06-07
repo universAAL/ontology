@@ -1,6 +1,6 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer Gesellschaft - Institut für Graphische Datenverarbeitung 
+	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
 	
 	Copyright 2008-2010 ITACA-TSB, http://www.tsb.upv.es
         Instituto Tecnologico de Aplicaciones de Comunicacion 

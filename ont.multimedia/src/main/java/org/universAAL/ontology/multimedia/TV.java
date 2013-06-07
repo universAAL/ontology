@@ -1,6 +1,6 @@
 /*
-	Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
+	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
 	
 	Copyright 2008-2010 R&S Info, http://www.rsinfo.eu
 	R&S INFO s.r.l. 
