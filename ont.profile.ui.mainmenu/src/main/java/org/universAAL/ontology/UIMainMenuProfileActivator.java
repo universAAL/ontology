@@ -1,6 +1,6 @@
 /*	
 	Copyright 2007-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
-	Fraunhofer-Gesellschaft - Institut für Graphische Datenverarbeitung
+	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
