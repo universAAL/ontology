@@ -35,11 +35,6 @@
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.bus.context.core</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.coode.owlapi</groupId>
-      <artifactId>owlapi</artifactId>
-      <version>3.3</version>
-    </dependency>
   </dependencies>
   <build>
     <plugins>
