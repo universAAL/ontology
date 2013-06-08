@@ -669,13 +669,13 @@ ont.situation.reasoner/NOTICE.txt -text
 ont.situation.reasoner/pom.xml -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/ReasoningActivator.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/ReasoningFactory.java -text
-ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/ElementModel.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Persistent.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Query.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/ReasoningOntology.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/ReasoningService.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Rule.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Situation.java -text
+ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/util/ElementModel.java -text
 ont.unit/ASL2.0.txt -text
 ont.unit/MITX.txt -text
 ont.unit/NOTICE.txt -text

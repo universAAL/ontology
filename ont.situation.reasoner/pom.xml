@@ -52,7 +52,8 @@
             <Bundle-Name>${project.name}</Bundle-Name>
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Export-Package>org.universAAL.ontology.reasoner</Export-Package>
+            <Export-Package>org.universAAL.ontology.reasoner,
+            	org.universAAL.ontology.reasoner.util</Export-Package>
             <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
           </instructions>
         </configuration>
