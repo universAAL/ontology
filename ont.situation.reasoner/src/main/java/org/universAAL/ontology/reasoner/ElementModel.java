@@ -18,7 +18,7 @@
 	limitations under the License.
  */
 
-package org.universAAL.reasoner.ont;
+package org.universAAL.ontology.reasoner;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -35,7 +35,7 @@ import java.util.Random;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.serialization.MessageContentSerializer;
-import org.universAAL.reasoner.ont.Persistent;
+import org.universAAL.ontology.reasoner.Persistent;
 
 /**
  * It is a pattern for the Reasoner that its elements need to be saved/loaded

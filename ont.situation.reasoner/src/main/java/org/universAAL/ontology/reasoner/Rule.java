@@ -17,7 +17,7 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.reasoner.ont;
+package org.universAAL.ontology.reasoner;
 
 public class Rule extends Persistent {
     public static final String MY_URI = ReasoningOntology.NAMESPACE + "Rule";
