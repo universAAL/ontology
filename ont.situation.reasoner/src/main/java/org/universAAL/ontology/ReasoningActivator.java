@@ -17,12 +17,12 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.reasoner.ont.osgi;
+package org.universAAL.ontology;
 
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.reasoner.ont.*;
+import org.universAAL.ontology.reasoner.*;
 
 /**
  * The basic idea of the ontology is to have Situations, Queries and Rules like
@@ -38,7 +38,7 @@ import org.universAAL.reasoner.ont.*;
  * @author amarinc
  * 
  */
-public class Activator implements ModuleActivator {
+public class ReasoningActivator implements ModuleActivator {
 
     ReasoningOntology _ontontology = new ReasoningOntology();
 

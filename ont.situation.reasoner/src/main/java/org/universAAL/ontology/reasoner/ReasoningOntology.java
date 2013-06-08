@@ -17,7 +17,7 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.reasoner.ont;
+package org.universAAL.ontology.reasoner;
 
 import org.universAAL.middleware.context.ContextEvent;
 import org.universAAL.middleware.context.owl.ContextBusOntology;
@@ -31,14 +31,14 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.reasoner.ont.factory.OntFactory;
+import org.universAAL.ontology.ReasoningFactory;
 
 /**
  * @author AAL Studio: UML2Java transformation
  */
 public final class ReasoningOntology extends Ontology {
 
-    private static OntFactory factory = new OntFactory();
+    private static ReasoningFactory factory = new ReasoningFactory();
     public static final String NAMESPACE = "http://reasoner.universAAL.org/ReasoningOntology#";
 
     public ReasoningOntology() {
