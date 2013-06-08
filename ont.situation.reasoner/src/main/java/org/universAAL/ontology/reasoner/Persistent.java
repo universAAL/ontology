@@ -21,7 +21,7 @@ package org.universAAL.ontology.reasoner;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-public class Persistent extends ManagedIndividual {
+public abstract class Persistent extends ManagedIndividual {
     public static final String MY_URI = ReasoningOntology.NAMESPACE
 	    + "Persistent";
     public static final String PROP_PERSISTENT = ReasoningOntology.NAMESPACE

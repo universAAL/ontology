@@ -18,7 +18,7 @@
 	limitations under the License.
  */
 
-package org.universAAL.ontology.reasoner;
+package org.universAAL.ontology.reasoner.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -41,13 +41,13 @@ import org.universAAL.ontology.reasoner.Persistent;
  * It is a pattern for the Reasoner that its elements need to be saved/loaded
  * and added/removed/returned. To encapsulate the redundant parts this class
  * provides the basic methods to hold object of type P during runtime and
- * save/load them from the file-system using the capabilite of the middlewares
+ * save/load them from the file-system using the capabilities of the middlewares
  * serializer.
  * 
  * @author amarinc
  * 
  * @param <P>
- *            Class the be manged. Need to be a sibling of Persistent
+ *            Class the be managed. Need to be a sibling of Persistent
  */
 public class ElementModel<P extends Resource> {
     private static final String FILENAME_POSTFIX = ".owl";
