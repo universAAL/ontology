@@ -64,6 +64,6 @@ public abstract class Persistent extends ManagedIndividual {
     }
 
     public void setPersistent(boolean saveIt) {
-	changeProperty(PROP_PERSISTENT, new Boolean(saveIt));
+	props.put(PROP_PERSISTENT, new Boolean(saveIt));
     }
 }
