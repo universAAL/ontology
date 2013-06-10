@@ -25,9 +25,6 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * 
  * @author amedrano
  * 
- * @navassoc - "PROP_TREATMENT" 1 Treatment
- * @navassoc - "PROP_FORM_FOR_TREATMENT" 1 Form
- * 
  */
 public class DisplayTreatmentService extends Service {
 
