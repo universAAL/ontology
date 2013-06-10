@@ -106,7 +106,7 @@ ont.continuahealthmanager/src/main/java/org/universAAL/ontology/ContinuaHealthMa
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/ContinuaHealthManagerOntology.java -text
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/continua/ContinuaHealthDevice.java -text
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/continua/ContinuaHealthManager.java -text
-ont.dependability/ASL[!!-~]2.0.txt -text
+ont.dependability/ASL2.0.txt -text
 ont.dependability/Dependability.di -text
 ont.dependability/Dependability.notation -text
 ont.dependability/Dependability.uml -text
