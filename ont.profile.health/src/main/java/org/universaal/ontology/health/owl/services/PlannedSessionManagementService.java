@@ -26,8 +26,6 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * 
  * @author mdelafuente
  * 
- * @navassoc - "PROP_MANAGES_SESSION" * PlannedSession
- * @navassoc - "PROP_ASSOCIATED_TREATMENT" 0,1 Treatment
  */
 public class PlannedSessionManagementService extends HealthService {
 

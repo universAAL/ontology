@@ -23,7 +23,6 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * 
  * @author mdelafuente
  * 
- * @navassoc - "manages" - HealthProfile
  */
 public class ProfileManagementService extends HealthService {
 

@@ -27,8 +27,6 @@ import org.universaal.ontology.health.owl.HealthOntology;
  * @author amedrano
  * @author roni
  * 
- * @navassoc - "PROP_ASSISTED_USER" 1 AssistedPerson
- * @navassoc - "PROP_ASSISTED_USER_PROFILE" 1 HealthProfile
  */
 public abstract class HealthService extends Service {
 
