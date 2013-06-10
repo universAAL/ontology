@@ -14,7 +14,7 @@ import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
 
 // Main class
-public class Activator implements ModuleActivator {
+public class ContinuaHealthManagerActivator implements ModuleActivator {
 
     // Attributes
     ContinuaHealthManagerOntology cho = new ContinuaHealthManagerOntology();
