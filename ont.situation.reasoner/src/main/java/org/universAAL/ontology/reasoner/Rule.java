@@ -64,7 +64,7 @@ public class Rule extends Persistent {
 
     public void setQuery(Query query) {
 	if (query != null)
-	    changeProperty(PROP_QUERY, query);
+	    props.put(PROP_QUERY, query);
     }
 
     public Situation getSituation() {
@@ -73,7 +73,7 @@ public class Rule extends Persistent {
 
     public void setSituation(Situation situation) {
 	if (situation != null)
-	    changeProperty(PROP_SITUATION, situation);
+	    props.put(PROP_SITUATION, situation);
     }
 
     public boolean equals(Rule rule) {

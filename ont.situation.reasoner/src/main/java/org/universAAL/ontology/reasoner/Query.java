@@ -84,7 +84,7 @@ public class Query extends Persistent {
 
     public void setFullQuery(String query) {
 	if (query != null)
-	    changeProperty(PROP_FULL_TEXT_QUERY, query);
+	    props.put(PROP_FULL_TEXT_QUERY, query);
     }
 
     public ContextEvent getResultingEvent() {
@@ -93,7 +93,7 @@ public class Query extends Persistent {
 
     public void setResultingEvent(ContextEvent newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_RESULTING_EVENT, newPropValue);
+	    props.put(PROP_RESULTING_EVENT, newPropValue);
     }
 
     public String getSearchString() {
@@ -102,7 +102,7 @@ public class Query extends Persistent {
 
     public void setSearchString(String newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_SEARCH_STRING, newPropValue);
+	    props.put(PROP_SEARCH_STRING, newPropValue);
     }
 
     public boolean equals(Query query) {

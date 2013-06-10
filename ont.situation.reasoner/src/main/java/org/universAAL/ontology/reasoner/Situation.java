@@ -69,7 +69,7 @@ public class Situation extends Persistent {
 
     public void setRdfSubject(String newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_RDF_SUBJECT, newPropValue);
+	    props.put(PROP_RDF_SUBJECT, newPropValue);
     }
 
     public String getRdfPredicate() {
@@ -78,7 +78,7 @@ public class Situation extends Persistent {
 
     public void setRdfPredicate(String newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_RDF_PREDICATE, newPropValue);
+	    props.put(PROP_RDF_PREDICATE, newPropValue);
     }
 
     public String getRdfObject() {
@@ -87,7 +87,7 @@ public class Situation extends Persistent {
 
     public void setRdfObject(String newPropValue) {
 	if (newPropValue != null)
-	    changeProperty(PROP_RDF_OBJECT, newPropValue);
+	    props.put(PROP_RDF_OBJECT, newPropValue);
     }
 
     public boolean equals(Situation situation) {
