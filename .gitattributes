@@ -101,7 +101,7 @@ ont.che/src/main/java/org/universAAL/ontology/che/ContextHistoryService.java -te
 ont.che/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.che/src/test/resources/log4j.properties -text
 ont.continuahealthmanager/pom.xml -text
-ont.continuahealthmanager/src/main/java/org/universAAL/ontology/Activator.java -text
+ont.continuahealthmanager/src/main/java/org/universAAL/ontology/ContinuaHealthManagerActivator.java -text
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/ContinuaHealthManagerFactory.java -text
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/ContinuaHealthManagerOntology.java -text
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/continua/ContinuaHealthDevice.java -text
