@@ -44,7 +44,6 @@
     <module>../ont.multimedia</module>
     <module>../ont.personalhealthdevice</module>
     <module>../ont.phWorld</module>
-    <module>../ont.powersocket</module>
     <module>../ont.profile</module>
     <module>../ont.profile.contact</module>
     <module>../ont.profile.health</module>
@@ -159,11 +158,6 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.phWorld</artifactId>
-        <version>1.3.3-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.universAAL.ontology</groupId>
-        <artifactId>ont.powersocket</artifactId>
         <version>1.3.3-SNAPSHOT</version>
       </dependency>
       <dependency>
