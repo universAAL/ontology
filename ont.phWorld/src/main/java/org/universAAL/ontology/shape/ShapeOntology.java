@@ -36,7 +36,7 @@ import org.universAAL.ontology.location.position.Point;
  */
 public class ShapeOntology extends Ontology {
 
-    public static final String NAMESPACE = Shape.uAAL_SHAPE_NAMESPACE;
+    public static final String NAMESPACE = "http://ontology.universaal.org/Shape.owl#";
 
     private static ShapeFactory factory = new ShapeFactory();
 

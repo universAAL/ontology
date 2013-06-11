@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.location.indoor;
 
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -35,9 +36,9 @@ public class StairWay extends IndoorPlace {
     public static final String PROP_TO_LEVEL;
 
     static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "StairWay";
-	PROP_FROM_LEVEL = uAAL_LOCATION_NAMESPACE + "toLevel";
-	PROP_TO_LEVEL = uAAL_LOCATION_NAMESPACE + "fromLevel";
+	MY_URI = LocationOntology.NAMESPACE + "StairWay";
+	PROP_FROM_LEVEL = LocationOntology.NAMESPACE + "toLevel";
+	PROP_TO_LEVEL = LocationOntology.NAMESPACE + "fromLevel";
     }
 
     /**

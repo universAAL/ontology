@@ -23,7 +23,7 @@ import java.util.Vector;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 
 /**
  * Ontological representation of a geometric location coordinates system.
@@ -34,7 +34,7 @@ import org.universAAL.ontology.location.Location;
  */
 public class CoordinateSystem extends ManagedIndividual {
 
-    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE
+    public static final String MY_URI = LocationOntology.NAMESPACE
 	    + "CoordinateSystem";
 
     // private static final String[] names = {
@@ -42,7 +42,7 @@ public class CoordinateSystem extends ManagedIndividual {
     // };
 
     public static final CoordinateSystem WGS84 = new CoordinateSystem(
-	    Location.uAAL_LOCATION_NAMESPACE + "WGS84");
+	    LocationOntology.NAMESPACE + "WGS84");
 
     /**
      * Creates a CoordinateSystem object

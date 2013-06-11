@@ -32,9 +32,9 @@ import org.universAAL.middleware.service.owl.Service;
  * @author alfiva
  */
 public class DeviceService extends Service {
-    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+    public static final String MY_URI = PhThingOntology.NAMESPACE
 	    + "DeviceService";
-    public static final String PROP_CONTROLS = Device.uAAL_DEVICE_NAMESPACE
+    public static final String PROP_CONTROLS = PhThingOntology.NAMESPACE
 	    + "controls";
 
     public DeviceService(String uri) {

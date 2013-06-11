@@ -24,7 +24,7 @@
  */
 package org.universAAL.ontology.location.address;
 
-import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 
 /**
  * Ontological representation of a Mail Box. It is used when the address
@@ -42,9 +42,9 @@ public class MailBox extends Address {
     public static final String PROP_POST_OFFICE_BOX;
 
     static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "MailBox";
+	MY_URI = LocationOntology.NAMESPACE + "MailBox";
 
-	PROP_POST_OFFICE_BOX = Location.uAAL_LOCATION_NAMESPACE
+	PROP_POST_OFFICE_BOX = LocationOntology.NAMESPACE
 		+ "postOfficeBox";
     }
 

@@ -35,7 +35,7 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Triangle extends Polygon {
 
-    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Triangle";
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Triangle";
 
     /**
      * Creates a Triangle object

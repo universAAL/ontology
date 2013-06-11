@@ -44,8 +44,8 @@ public class Polygon extends Shape3D {
     public static final String PROP_VERTICES;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Polygon";
-	PROP_VERTICES = uAAL_SHAPE_NAMESPACE + "Vertices";
+	MY_URI = ShapeOntology.NAMESPACE + "Polygon";
+	PROP_VERTICES = ShapeOntology.NAMESPACE + "Vertices";
     }
 
     /**

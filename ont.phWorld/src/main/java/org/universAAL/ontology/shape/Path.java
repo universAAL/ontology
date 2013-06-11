@@ -44,8 +44,8 @@ public abstract class Path extends Shape3D {
     public static final String PROP_POINTS;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Path";
-	PROP_POINTS = uAAL_SHAPE_NAMESPACE + "Points";
+	MY_URI = ShapeOntology.NAMESPACE + "Path";
+	PROP_POINTS = ShapeOntology.NAMESPACE + "Points";
     }
 
     /**

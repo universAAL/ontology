@@ -33,7 +33,7 @@ import org.universAAL.ontology.location.position.Point;
 
 public class MergedShape extends BooleanShape {
 
-    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "MergedShape";
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "MergedShape";
 
     public MergedShape(String uri) {
 	super(uri);

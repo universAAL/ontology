@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.location.outdoor;
 
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -33,9 +34,9 @@ import org.universAAL.ontology.shape.Shape;
 
 public class CityRegion extends OutdoorPlace {
 
-    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "CityRegion";
+    public static final String MY_URI = LocationOntology.NAMESPACE + "CityRegion";
 
-    public static final String PROP_HAS_ZIP_CODE = uAAL_LOCATION_NAMESPACE
+    public static final String PROP_HAS_ZIP_CODE = LocationOntology.NAMESPACE
 	    + "hasZIPCode";
 
     /**

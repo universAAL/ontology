@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.location.indoor;
 
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -30,7 +31,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Home extends IndoorPlace {
 
-    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Home";
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Home";
 
     /**
      * Creates a Home object

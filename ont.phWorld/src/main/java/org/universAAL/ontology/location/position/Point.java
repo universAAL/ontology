@@ -23,6 +23,7 @@ package org.universAAL.ontology.location.position;
 //import javax.vecmath.Point3d;
 //import javax.vecmath.Vector3d;
 import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 
 /**
  * Ontological representation of an exact point in a geometric coordinate
@@ -47,11 +48,11 @@ public class Point extends Location {
     public static final double EARTH_QUADRATIC_MEAN_RADIUS = 6372795.477598;
 
     static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Point";
-	PROP_X = uAAL_LOCATION_NAMESPACE + "xPosition";
-	PROP_Y = uAAL_LOCATION_NAMESPACE + "yPosition";
-	PROP_Z = uAAL_LOCATION_NAMESPACE + "zPosition";
-	PROP_COORDINATE_SYSTEM = uAAL_LOCATION_NAMESPACE + "coordianteSystem";
+	MY_URI = LocationOntology.NAMESPACE + "Point";
+	PROP_X = LocationOntology.NAMESPACE + "xPosition";
+	PROP_Y = LocationOntology.NAMESPACE + "yPosition";
+	PROP_Z = LocationOntology.NAMESPACE + "zPosition";
+	PROP_COORDINATE_SYSTEM = LocationOntology.NAMESPACE + "coordianteSystem";
     }
 
     /**

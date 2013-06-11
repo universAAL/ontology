@@ -33,7 +33,7 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Line extends Path {
 
-    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "Line";
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Line";
 
     /**
      * Creates a Line object

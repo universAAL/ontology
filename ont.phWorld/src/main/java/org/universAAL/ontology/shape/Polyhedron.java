@@ -42,8 +42,8 @@ public class Polyhedron extends Shape3D {
     public static final String PROP_FACES;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Polyhedron";
-	PROP_FACES = uAAL_SHAPE_NAMESPACE + "Faces";
+	MY_URI = ShapeOntology.NAMESPACE + "Polyhedron";
+	PROP_FACES = ShapeOntology.NAMESPACE + "Faces";
     }
 
     /**

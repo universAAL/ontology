@@ -42,7 +42,6 @@ import org.universAAL.middleware.owl.supply.AbsLocation;
  */
 public class Location extends AbsLocation {
 
-    public static final String uAAL_LOCATION_NAMESPACE = "http://ontology.universAAL.org/Location.owl#";
     public static final String MY_URI;
 
     public static final String PROP_HAS_NAME;
@@ -52,12 +51,12 @@ public class Location extends AbsLocation {
     public static final String PROP_CONTAINS;
 
     static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Location";
-	PROP_HAS_NAME = uAAL_LOCATION_NAMESPACE + "hasName";
-	PROP_IS_ADJACENT_TO = uAAL_LOCATION_NAMESPACE + "isAdjacentTo";
-	PROP_IS_CONNECTED_TO = uAAL_LOCATION_NAMESPACE + "isConnectedTo";
-	PROP_IS_CONTAINED_IN = uAAL_LOCATION_NAMESPACE + "isContainedIn";
-	PROP_CONTAINS = uAAL_LOCATION_NAMESPACE + "contains";
+	MY_URI = LocationOntology.NAMESPACE + "Location";
+	PROP_HAS_NAME = LocationOntology.NAMESPACE + "hasName";
+	PROP_IS_ADJACENT_TO = LocationOntology.NAMESPACE + "isAdjacentTo";
+	PROP_IS_CONNECTED_TO = LocationOntology.NAMESPACE + "isConnectedTo";
+	PROP_IS_CONTAINED_IN = LocationOntology.NAMESPACE + "isContainedIn";
+	PROP_CONTAINS = LocationOntology.NAMESPACE + "contains";
     }
 
     private static List multiValProps = Arrays.asList(new String[] {

@@ -22,8 +22,7 @@ package org.universAAL.ontology.location.indoor;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.OntClassInfo;
 import org.universAAL.middleware.owl.OntologyManagement;
-
-import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 
 /**
  * Ontological enumeration of possible functions of a room in a house. Methods
@@ -33,7 +32,7 @@ import org.universAAL.ontology.location.Location;
  */
 public class RoomFunction extends ManagedIndividual {
 
-    public static final String MY_URI = Location.uAAL_LOCATION_NAMESPACE
+    public static final String MY_URI = LocationOntology.NAMESPACE
 	    + "RoomFunction";
 
     public static final int BATHROOM = 0;

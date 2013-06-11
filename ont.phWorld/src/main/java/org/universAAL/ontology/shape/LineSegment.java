@@ -47,7 +47,7 @@ import org.universAAL.ontology.location.position.Point;
 
 public class LineSegment extends Line {
 
-    public static final String MY_URI = uAAL_SHAPE_NAMESPACE + "LineSegment";
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "LineSegment";
 
     /**
      * Creates a LineSegment object

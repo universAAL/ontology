@@ -19,7 +19,7 @@
  */
 package org.universAAL.ontology.location.position;
 
-import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.shape.Shape;
 
@@ -43,11 +43,11 @@ public class OriginedMetric extends CoordinateSystem {
     public static final String PROP_ROTATE_Z;
 
     static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "OriginedMetric";
-	PROP_ORIGIN = Location.uAAL_LOCATION_NAMESPACE + "origin";
-	PROP_ROTATE_X = Location.uAAL_LOCATION_NAMESPACE + "rotateX";
-	PROP_ROTATE_Y = Location.uAAL_LOCATION_NAMESPACE + "rotateY";
-	PROP_ROTATE_Z = Location.uAAL_LOCATION_NAMESPACE + "rotateZ";
+	MY_URI = LocationOntology.NAMESPACE + "OriginedMetric";
+	PROP_ORIGIN = LocationOntology.NAMESPACE + "origin";
+	PROP_ROTATE_X = LocationOntology.NAMESPACE + "rotateX";
+	PROP_ROTATE_Y = LocationOntology.NAMESPACE + "rotateY";
+	PROP_ROTATE_Z = LocationOntology.NAMESPACE + "rotateZ";
     }
 
     /**

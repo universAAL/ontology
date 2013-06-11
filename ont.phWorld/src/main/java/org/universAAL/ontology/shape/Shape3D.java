@@ -39,8 +39,8 @@ public abstract class Shape3D extends Shape {
     public static final String PROP_2D_REPRESENTATION;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Shape3D";
-	PROP_2D_REPRESENTATION = uAAL_SHAPE_NAMESPACE + "2DReperesentation";
+	MY_URI = ShapeOntology.NAMESPACE + "Shape3D";
+	PROP_2D_REPRESENTATION = ShapeOntology.NAMESPACE + "2DReperesentation";
     }
 
     /**

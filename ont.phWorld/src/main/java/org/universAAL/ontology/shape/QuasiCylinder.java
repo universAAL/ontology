@@ -41,9 +41,9 @@ public class QuasiCylinder extends Shape3D {
     public static final String PROP_FOOT;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "QuasiCylinder";
-	PROP_HEAD = uAAL_SHAPE_NAMESPACE + "Head";
-	PROP_FOOT = uAAL_SHAPE_NAMESPACE + "Foot";
+	MY_URI = ShapeOntology.NAMESPACE + "QuasiCylinder";
+	PROP_HEAD = ShapeOntology.NAMESPACE + "Head";
+	PROP_FOOT = ShapeOntology.NAMESPACE + "Foot";
     }
 
     /**

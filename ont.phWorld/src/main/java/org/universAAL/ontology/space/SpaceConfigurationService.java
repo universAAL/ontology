@@ -20,7 +20,6 @@
 package org.universAAL.ontology.space;
 
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.location.Location;
 
 /**
  * Ontological service that handles the arrangement of locations and physical
@@ -34,11 +33,11 @@ public class SpaceConfigurationService extends Service {
     public static final String PROP_MANAGED_PHYSICAL_THINGS;
 
     static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE
+	MY_URI = SpaceOntology.NAMESPACE
 		+ "locationConfigurationService";
-	PROP_MANAGED_LOCATIONS = Location.uAAL_LOCATION_NAMESPACE
+	PROP_MANAGED_LOCATIONS = SpaceOntology.NAMESPACE
 		+ "managedLocations";
-	PROP_MANAGED_PHYSICAL_THINGS = Location.uAAL_LOCATION_NAMESPACE
+	PROP_MANAGED_PHYSICAL_THINGS = SpaceOntology.NAMESPACE
 		+ "managedPhysicalThings";
     }
 

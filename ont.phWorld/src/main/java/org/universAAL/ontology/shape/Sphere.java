@@ -38,8 +38,8 @@ public class Sphere extends Shape3D {
     public static final String PROP_RADIUS;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "FHSphere";
-	PROP_RADIUS = uAAL_SHAPE_NAMESPACE + "Radius";
+	MY_URI = ShapeOntology.NAMESPACE + "FHSphere";
+	PROP_RADIUS = ShapeOntology.NAMESPACE + "Radius";
     }
 
     /**

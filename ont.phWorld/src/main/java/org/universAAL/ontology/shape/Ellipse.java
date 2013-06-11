@@ -46,9 +46,9 @@ public class Ellipse extends Shape2D {
     public static final String PROP_MINOR_AXIS_LENGTH;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Ellipse";
-	PROP_MINOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MinorAxisLength";
-	PROP_MAJOR_AXIS_LENGTH = uAAL_SHAPE_NAMESPACE + "MajorAxisLength";
+	MY_URI = ShapeOntology.NAMESPACE + "Ellipse";
+	PROP_MINOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MinorAxisLength";
+	PROP_MAJOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MajorAxisLength";
     }
 
     public Ellipse(String uri) {
