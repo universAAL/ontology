@@ -38,8 +38,8 @@ public abstract class BooleanShape extends Shape {
     public static final String PROP_SHAPES;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "BooleanShape";
-	PROP_SHAPES = uAAL_SHAPE_NAMESPACE + "Shapes";
+	MY_URI = ShapeOntology.NAMESPACE + "BooleanShape";
+	PROP_SHAPES = ShapeOntology.NAMESPACE + "Shapes";
     }
 
     /**

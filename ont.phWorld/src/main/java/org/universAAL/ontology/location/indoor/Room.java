@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.location.indoor;
 
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -34,8 +35,8 @@ public class Room extends HomeArea {
     public static final String PROP_ROOM_FUNCTION;
 
     static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Room";
-	PROP_ROOM_FUNCTION = uAAL_LOCATION_NAMESPACE + "roomFunction";
+	MY_URI = LocationOntology.NAMESPACE + "Room";
+	PROP_ROOM_FUNCTION = LocationOntology.NAMESPACE + "roomFunction";
     }
 
     /**

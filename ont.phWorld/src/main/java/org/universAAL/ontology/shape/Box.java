@@ -43,10 +43,10 @@ public class Box extends Shape3D {
     public static final String PROP_DEPTH;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Box";
-	PROP_WIDTH = uAAL_SHAPE_NAMESPACE + "Width";
-	PROP_HEIGHT = uAAL_SHAPE_NAMESPACE + "Height";
-	PROP_DEPTH = uAAL_SHAPE_NAMESPACE + "Depth";
+	MY_URI = ShapeOntology.NAMESPACE + "Box";
+	PROP_WIDTH = ShapeOntology.NAMESPACE + "Width";
+	PROP_HEIGHT = ShapeOntology.NAMESPACE + "Height";
+	PROP_DEPTH = ShapeOntology.NAMESPACE + "Depth";
     }
 
     /**

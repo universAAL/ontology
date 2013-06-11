@@ -23,7 +23,6 @@ package org.universAAL.ontology.device.home;
 
 import org.universAAL.ontology.device.Actuator;
 import org.universAAL.ontology.device.StatusValue;
-import org.universAAL.ontology.phThing.Device;
 
 /**
  * Ontological representation of a siren that can be sounded. Methods included
@@ -37,7 +36,7 @@ import org.universAAL.ontology.phThing.Device;
 public class SirenActuator extends Actuator {
 
     /** Class URI */
-    public static final String MY_URI = Device.uAAL_DEVICE_NAMESPACE
+    public static final String MY_URI = DeviceOntology.NAMESPACE
 	    + "SirenActuator";
 
     public SirenActuator() {

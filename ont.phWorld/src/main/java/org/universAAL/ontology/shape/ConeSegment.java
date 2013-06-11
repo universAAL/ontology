@@ -45,9 +45,9 @@ public class ConeSegment extends LineSegment {
     public static final String PROP_RADIUS_END;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "ConeSegment";
-	PROP_RADIUS_START = uAAL_SHAPE_NAMESPACE + "RadiusStart";
-	PROP_RADIUS_END = uAAL_SHAPE_NAMESPACE + "RadiusEnd";
+	MY_URI = ShapeOntology.NAMESPACE + "ConeSegment";
+	PROP_RADIUS_START = ShapeOntology.NAMESPACE + "RadiusStart";
+	PROP_RADIUS_END = ShapeOntology.NAMESPACE + "RadiusEnd";
     }
 
     public int getPropSerializationType(String propURI) {

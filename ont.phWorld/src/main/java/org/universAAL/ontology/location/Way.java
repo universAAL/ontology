@@ -33,7 +33,7 @@ import org.universAAL.ontology.shape.Shape;
 
 public class Way extends Place {
 
-    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Way";
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Way";
 
     /**
      * Creates a Way object

@@ -46,7 +46,6 @@ import org.universAAL.ontology.location.position.Point;
 
 public abstract class Shape extends ManagedIndividual {
 
-    public static final String uAAL_SHAPE_NAMESPACE = "http://ontology.universaal.org/Shape.owl#";
     public static final String MY_URI;
 
     public static final String PROP_POINT_REPRESENTATION;
@@ -54,11 +53,12 @@ public abstract class Shape extends ManagedIndividual {
     public static final String PROP_BOUNDING_VOLUME;
 
     static {
-	MY_URI = uAAL_SHAPE_NAMESPACE + "Shape";
-	PROP_POINT_REPRESENTATION = uAAL_SHAPE_NAMESPACE
+	MY_URI = ShapeOntology.NAMESPACE + "Shape";
+	PROP_POINT_REPRESENTATION = ShapeOntology.NAMESPACE
 		+ "PointReperesentation";
-	PROP_LOCAL_COORDINATE_SYSTEM = uAAL_SHAPE_NAMESPACE + "localCoordSys";
-	PROP_BOUNDING_VOLUME = uAAL_SHAPE_NAMESPACE + "boundingVolume";
+	PROP_LOCAL_COORDINATE_SYSTEM = ShapeOntology.NAMESPACE
+		+ "localCoordSys";
+	PROP_BOUNDING_VOLUME = ShapeOntology.NAMESPACE + "boundingVolume";
     }
 
     /**

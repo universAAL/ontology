@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.location.outdoor;
 
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.shape.Shape;
 
 /**
@@ -30,7 +31,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Building extends CityPlace {
 
-    public static final String MY_URI = uAAL_LOCATION_NAMESPACE + "Building";
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Building";
 
     /**
      * Creates a Building object

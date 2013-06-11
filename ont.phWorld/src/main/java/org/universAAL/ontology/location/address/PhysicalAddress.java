@@ -26,7 +26,7 @@ package org.universAAL.ontology.location.address;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 
 /**
  * Ontological representation of a Physical Address. It is used when the address
@@ -52,17 +52,15 @@ public class PhysicalAddress extends Address {
     // public static final String PROP_HAS_NUMBER;
 
     static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "PhysicalAddress";
+	MY_URI = LocationOntology.NAMESPACE + "PhysicalAddress";
 
-	PROP_HAS_BUILDING_ID = Location.uAAL_LOCATION_NAMESPACE
-		+ "hasBuildingID";
-	PROP_HAS_HALL_ID = Location.uAAL_LOCATION_NAMESPACE + "hasHallID";
-	PROP_HAS_FLOOR_ID = Location.uAAL_LOCATION_NAMESPACE + "hasFloorID";
-	PROP_HAS_DOOR_ID = Location.uAAL_LOCATION_NAMESPACE + "hasDoorID";
-	PROP_HAS_DESK_ID = Location.uAAL_LOCATION_NAMESPACE + "hasDeskID";
-	PROP_HAS_OFFICE_ID = Location.uAAL_LOCATION_NAMESPACE + "hasOfficeID";
-	PROP_HAS_ADDITIONAL_ID = Location.uAAL_LOCATION_NAMESPACE
-		+ "hasAdditionalID";
+	PROP_HAS_BUILDING_ID = LocationOntology.NAMESPACE + "hasBuildingID";
+	PROP_HAS_HALL_ID = LocationOntology.NAMESPACE + "hasHallID";
+	PROP_HAS_FLOOR_ID = LocationOntology.NAMESPACE + "hasFloorID";
+	PROP_HAS_DOOR_ID = LocationOntology.NAMESPACE + "hasDoorID";
+	PROP_HAS_DESK_ID = LocationOntology.NAMESPACE + "hasDeskID";
+	PROP_HAS_OFFICE_ID = LocationOntology.NAMESPACE + "hasOfficeID";
+	PROP_HAS_ADDITIONAL_ID = LocationOntology.NAMESPACE + "hasAdditionalID";
 	// PROP_HAS_STREET = Location.uAAL_LOCATION_NAMESPACE +
 	// "hasAddressStreet";
 	// PROP_HAS_STREET = Location.uAAL_LOCATION_NAMESPACE +

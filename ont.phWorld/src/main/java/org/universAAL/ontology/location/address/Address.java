@@ -25,7 +25,7 @@
 package org.universAAL.ontology.location.address;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.location.outdoor.*;
 
 /**
@@ -51,22 +51,20 @@ public class Address extends ManagedIndividual {
     public static final String PROP_HAS_EXTENDEDADDRESS;
 
     static {
-	MY_URI = Location.uAAL_LOCATION_NAMESPACE + "Address";
+	MY_URI = LocationOntology.NAMESPACE + "Address";
 
-	PROP_HAS_REGION = Location.uAAL_LOCATION_NAMESPACE + "hasAddressRegion";
-	PROP_HAS_COUNTRY = Location.uAAL_LOCATION_NAMESPACE
-		+ "hasAddressCountry";
-	PROP_HAS_STATE = Location.uAAL_LOCATION_NAMESPACE + "hasAddressState";
-	PROP_HAS_CITY = Location.uAAL_LOCATION_NAMESPACE + "hasAddressCity";
-	PROP_HAS_CITYQUARTER = Location.uAAL_LOCATION_NAMESPACE
+	PROP_HAS_REGION = LocationOntology.NAMESPACE + "hasAddressRegion";
+	PROP_HAS_COUNTRY = LocationOntology.NAMESPACE + "hasAddressCountry";
+	PROP_HAS_STATE = LocationOntology.NAMESPACE + "hasAddressState";
+	PROP_HAS_CITY = LocationOntology.NAMESPACE + "hasAddressCity";
+	PROP_HAS_CITYQUARTER = LocationOntology.NAMESPACE
 		+ "hasAddressCityQuarter";
-	PROP_HAS_CITYREGION = Location.uAAL_LOCATION_NAMESPACE
+	PROP_HAS_CITYREGION = LocationOntology.NAMESPACE
 		+ "hasAddressCityRegion";
-	PROP_HAS_CITYPLACE = Location.uAAL_LOCATION_NAMESPACE
-		+ "hasAddressCityPlace";
-	PROP_HAS_POSTALCODE = Location.uAAL_LOCATION_NAMESPACE
+	PROP_HAS_CITYPLACE = LocationOntology.NAMESPACE + "hasAddressCityPlace";
+	PROP_HAS_POSTALCODE = LocationOntology.NAMESPACE
 		+ "hasAddressPostalCode";
-	PROP_HAS_EXTENDEDADDRESS = Location.uAAL_LOCATION_NAMESPACE
+	PROP_HAS_EXTENDEDADDRESS = LocationOntology.NAMESPACE
 		+ "hasExtendedAddressDescription";
     }
 

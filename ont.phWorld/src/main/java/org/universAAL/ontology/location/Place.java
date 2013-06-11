@@ -46,11 +46,11 @@ public class Place extends Location {
     public static final String PROP_HAS_ADDRESS;
 
     static {
-	MY_URI = uAAL_LOCATION_NAMESPACE + "Place";
-	PROP_HAS_SHAPE = uAAL_LOCATION_NAMESPACE + "hasShape";
-	PROP_LOCATION_OF_PHYSICAL_THING = uAAL_LOCATION_NAMESPACE
+	MY_URI = LocationOntology.NAMESPACE + "Place";
+	PROP_HAS_SHAPE = LocationOntology.NAMESPACE + "hasShape";
+	PROP_LOCATION_OF_PHYSICAL_THING = LocationOntology.NAMESPACE
 		+ "locationOf";
-	PROP_HAS_ADDRESS = uAAL_LOCATION_NAMESPACE + "hasAddress";
+	PROP_HAS_ADDRESS = LocationOntology.NAMESPACE + "hasAddress";
     }
 
     /**

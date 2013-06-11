@@ -64,7 +64,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class LocationOntology extends Ontology {
 
-    public static final String NAMESPACE = Location.uAAL_LOCATION_NAMESPACE;
+    public static final String NAMESPACE = "http://ontology.universAAL.org/Location.owl#";
 
     private static LocationFactory factory = new LocationFactory();
 

@@ -32,12 +32,9 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  */
 public class Device extends PhysicalThing {
 
-    public static final String uAAL_DEVICE_NAMESPACE = uAAL_NAMESPACE_PREFIX
-	    + "Device.owl#";
+    public static final String MY_URI = PhThingOntology.NAMESPACE + "Device";
 
-    public static final String MY_URI = uAAL_DEVICE_NAMESPACE + "Device";
-
-    public static final String PROP_BATTERY_LEVEL = Device.uAAL_DEVICE_NAMESPACE
+    public static final String PROP_BATTERY_LEVEL = PhThingOntology.NAMESPACE
 	    + "batteryLevel";
 
     public Device() {
