@@ -27,7 +27,7 @@ package org.universAAL.ontology.phThing;
  * 
  */
 public class PhysicalContainer extends PhysicalThing {
-    public static final String MY_URI = uAAL_VOCABULARY_NAMESPACE
+    public static final String MY_URI = PhThingOntology.NAMESPACE
 	    + "PhysicalContainer";
 
     public PhysicalContainer() {

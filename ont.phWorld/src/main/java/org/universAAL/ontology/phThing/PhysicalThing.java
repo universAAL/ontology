@@ -43,14 +43,14 @@ public class PhysicalThing extends ManagedIndividual {
     public static final String PROP_HAS_SHAPE;
 
     static {
-	MY_URI = uAAL_VOCABULARY_NAMESPACE + "PhysicalThing";
-	PROP_CARRIED_BY = uAAL_VOCABULARY_NAMESPACE + "carriedBy";
-	PROP_IS_IN = uAAL_VOCABULARY_NAMESPACE + "isIn";
-	PROP_IS_PORTABLE = uAAL_VOCABULARY_NAMESPACE + "isPortable";
-	PROP_IS_STATIONARY = uAAL_VOCABULARY_NAMESPACE + "isStationary";
-	PROP_PART_OF = uAAL_VOCABULARY_NAMESPACE + "partOf";
-	PROP_PHYSICAL_LOCATION = uAAL_VOCABULARY_NAMESPACE + "hasLocation";
-	PROP_HAS_SHAPE = uAAL_VOCABULARY_NAMESPACE + "hasShape";
+	MY_URI = PhThingOntology.NAMESPACE + "PhysicalThing";
+	PROP_CARRIED_BY = PhThingOntology.NAMESPACE + "carriedBy";
+	PROP_IS_IN = PhThingOntology.NAMESPACE + "isIn";
+	PROP_IS_PORTABLE = PhThingOntology.NAMESPACE + "isPortable";
+	PROP_IS_STATIONARY = PhThingOntology.NAMESPACE + "isStationary";
+	PROP_PART_OF = PhThingOntology.NAMESPACE + "partOf";
+	PROP_PHYSICAL_LOCATION = PhThingOntology.NAMESPACE + "hasLocation";
+	PROP_HAS_SHAPE = PhThingOntology.NAMESPACE + "hasShape";
     }
 
     protected PhysicalThing() {

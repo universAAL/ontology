@@ -38,7 +38,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class PhThingOntology extends Ontology {
 
-    public static final String NAMESPACE = Resource.uAAL_VOCABULARY_NAMESPACE;
+    public static final String NAMESPACE = "http://ontology.universaal.org/PhThing.owl#";;
 
     private static PhThingFactory factory = new PhThingFactory();
 
