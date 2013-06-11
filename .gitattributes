@@ -1,6 +1,5 @@
 * text=auto !eol
 ont.X73/ASL2.0.txt -text
-ont.X73/MITX.txt -text
 ont.X73/NOTICE.txt -text
 ont.X73/pom.xml -text
 ont.X73/src/main/java/org/universAAL/ontology/X73/AbsoluteTimeStamp.java -text
@@ -23,7 +22,6 @@ ont.X73/x73.di -text
 ont.X73/x73.notation -text
 ont.X73/x73.uml -text
 ont.activityhub/ASL2.0.txt -text
-ont.activityhub/MITX.txt -text
 ont.activityhub/NOTICE.txt -text
 ont.activityhub/documentation/Development_notes.txt -text
 ont.activityhub/pom.xml -text
@@ -256,7 +254,6 @@ ont.health.disease/ASL2.0.txt -text svneol=unset#text/plain
 ont.health.disease/Disease.di -text
 ont.health.disease/Disease.notation -text
 ont.health.disease/Disease.uml -text
-ont.health.disease/MITX.txt -text
 ont.health.disease/NOTICE.txt -text svneol=unset#text/plain
 ont.health.disease/pom.xml -text
 ont.health.disease/src/main/java/org/universaal/ontology/ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.java -text
@@ -288,7 +285,6 @@ ont.health.measurement/ASL2.0.txt -text svneol=unset#text/plain
 ont.health.measurement/HealthMeasurement.di -text
 ont.health.measurement/HealthMeasurement.notation -text
 ont.health.measurement/HealthMeasurement.uml -text
-ont.health.measurement/MITX.txt -text
 ont.health.measurement/NOTICE.txt -text svneol=unset#text/plain
 ont.health.measurement/pom.xml -text
 ont.health.measurement/src/main/java/org/universaal/ontology/healthmeasurement/HealthMeasruementActivator.java -text
@@ -306,7 +302,6 @@ ont.health.measurement/src/main/java/org/universaal/ontology/healthmeasurement/o
 ont.health.measurement/src/main/java/org/universaal/ontology/healthmeasurement/owl/Unit.java -text
 ont.health.measurement/src/test/java/ont/healthmeasurement/tests/ArtifactTest.java -text
 ont.impairment/ASL2.0.txt -text
-ont.impairment/MITX.txt -text
 ont.impairment/NOTICE.txt -text
 ont.impairment/pom.xml -text
 ont.impairment/src/main/java/org/universAAL/ontology/ImpairmentActivator.java -text
@@ -327,7 +322,6 @@ ont.languages/ASL2.0.txt -text
 ont.languages/LanguageOntology.di -text
 ont.languages/LanguageOntology.notation -text
 ont.languages/LanguageOntology.uml -text svneol=unset#text/plain
-ont.languages/MITX.txt -text
 ont.languages/NOTICE.txt -text
 ont.languages/pom.xml -text svneol=unset#text/plain
 ont.languages/src/main/java/org/universAAL/ontology/LanguageActivator.java -text svneol=unset#text/plain
@@ -360,7 +354,6 @@ ont.lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -t
 ont.lighting/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.lighting/src/test/resources/log4j.properties -text
 ont.measurement/ASL2.0.txt -text
-ont.measurement/MITX.txt -text
 ont.measurement/Measurement.di -text
 ont.measurement/Measurement.notation -text
 ont.measurement/Measurement.uml -text
@@ -386,7 +379,6 @@ ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 ont.multimedia/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.multimedia/src/test/resources/log4j.properties -text
 ont.personalhealthdevice/ASL2.0.txt -text
-ont.personalhealthdevice/MITX.txt -text
 ont.personalhealthdevice/NOTICE.txt -text
 ont.personalhealthdevice/pom.xml -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/PersonalHealthDeviceActivator.java -text
@@ -486,7 +478,6 @@ ont.powersocket/src/main/java/org/universAAL/ontology/powersocket/SwitchableSock
 ont.powersocket/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.powersocket/src/test/resources/log4j.properties -text
 ont.profile.contact/ASL2.0.txt -text
-ont.profile.contact/MITX.txt -text
 ont.profile.contact/NOTICE.txt -text
 ont.profile.contact/pom.xml -text
 ont.profile.contact/profile.contact.di -text
@@ -501,7 +492,6 @@ ont.profile.health/ASL2.0.txt -text svneol=unset#text/plain
 ont.profile.health/HealthOntology.di -text
 ont.profile.health/HealthOntology.notation -text
 ont.profile.health/HealthOntology.uml -text
-ont.profile.health/MITX.txt -text
 ont.profile.health/NOTICE.txt -text svneol=unset#text/plain
 ont.profile.health/pom.xml -text
 ont.profile.health/src/main/java/org/universaal/ontology/health/HealthActivator.java -text
@@ -637,7 +627,6 @@ ont.profile/src/main/java/org/universAAL/ontology/vcard/X400.java -text
 ont.profile/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile/src/test/resources/log4j.properties -text
 ont.questionnaire/ASL2.0.txt -text
-ont.questionnaire/MITX.txt -text
 ont.questionnaire/NOTICE.txt -text
 ont.questionnaire/pom.xml -text
 ont.questionnaire/src/main/java/org/universAAL/ontology/QuestionnaireActivator.java -text
@@ -677,7 +666,6 @@ ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Rule.java 
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Situation.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/util/ElementModel.java -text
 ont.unit/ASL2.0.txt -text
-ont.unit/MITX.txt -text
 ont.unit/NOTICE.txt -text
 ont.unit/Unit.di -text
 ont.unit/Unit.notation -text

@@ -32,21 +32,7 @@ This product uses software developed at
 Junit (http://www.junit.org/).
 Licensed under Common Public License 1.0.
 
-This product uses software developed at
-Information-technology Promotion Agency, (http://www.ipa.go.jp/)
-& Precision Modeling Laboratory, Inc., (http://www.pml.co.jp/)
-Copyright 2000 Software Research Associates, Inc., Tokyo, Japan.
-Licensed under specific License.
-
-This product uses software developed at
-The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-Copyright (c) 2000 - 2009 The Legion Of The Bouncy Castle
-Licensed under modified MIT X11 License.
-
 
 III. License Summary
 - Apache License 2.0
 - Common Public License 1.0
-- Modified MIT X11 License
-- MIT License
-- JGCL - Java Geometry Class Library
