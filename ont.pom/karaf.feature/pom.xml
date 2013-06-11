@@ -21,10 +21,6 @@
   <dependencies>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.aalfficiency</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.activityhub</artifactId>
     </dependency>
     <dependency>
@@ -94,10 +90,6 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.phWorld</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.powersocket</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
