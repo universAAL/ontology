@@ -21,7 +21,7 @@ public class AdaptorPlugActuator extends Actuator {
 
     public static final String MY_URI = ActivityHubOntology.NAMESPACE
 	    + "AdaptorPlugActuator";
-    public static final String PROP_STATUS = Device.uAAL_DEVICE_NAMESPACE
+    public static final String PROP_STATUS = ActivityHubOntology.NAMESPACE
 	    + "Status";
 
     public AdaptorPlugActuator() {
