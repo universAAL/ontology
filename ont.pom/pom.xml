@@ -56,6 +56,7 @@
     <module>../ont.X73</module>
     <module>composite</module>
     <module>karaf.feature</module>
+    <module>../ont.device.extra</module>
   </modules>
   <scm>
     <connection>${svn.base}/${project.artifactId}</connection>
