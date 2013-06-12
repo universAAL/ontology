@@ -31,11 +31,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class BuildingLevel extends IndoorPlace {
 
-    public static final String MY_URI;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "BuildingLevel";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "BuildingLevel";
-    }
 
     /**
      * Creates a BuildingLevel object

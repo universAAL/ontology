@@ -29,55 +29,45 @@ public class InternationalSystem extends UnitSystem {
     /*
      * STATIC resources
      */
-    public static final InternationalSystem IND_SI;
+    public static final InternationalSystem IND_SI = new InternationalSystem("internationalSystemOfUnits");
     // Units
-    public static final Unit IND_UNIT_SI_METER;
-    public static final Unit IND_UNIT_SI_GRAM;
-    public static final Unit IND_UNIT_SI_SECOND;
-    public static final Unit IND_UNIT_SI_AMPERE;
-    public static final Unit IND_UNIT_SI_KELVIN;
-    public static final Unit IND_UNIT_SI_CANDELA;
-    public static final Unit IND_UNIT_SI_MOLE;
+    public static final Unit IND_UNIT_SI_METER = new Unit("meter", "Meter", "m",
+    		MeasurableDimension.Length, IND_SI);
+    public static final Unit IND_UNIT_SI_GRAM = new Unit("gram", "Gram", "g",
+    		MeasurableDimension.Mass, IND_SI);
+    public static final Unit IND_UNIT_SI_SECOND = new Unit("sec", "Second", "s",
+    		MeasurableDimension.Time, IND_SI);
+    public static final Unit IND_UNIT_SI_AMPERE = new Unit("amp", "Ampere", "A",
+    		MeasurableDimension.Current, IND_SI);
+    public static final Unit IND_UNIT_SI_KELVIN = new Unit("kelvin", "Kelvin", "K",
+    		MeasurableDimension.Temperature, IND_SI);
+    public static final Unit IND_UNIT_SI_CANDELA = new Unit("candela", "Candela", "cd",
+    		MeasurableDimension.Luminance, IND_SI);
+    public static final Unit IND_UNIT_SI_MOLE = new Unit("mole", "Mole", "mol",
+    		MeasurableDimension.SubstanceAmmount, IND_SI);
     // Prefixes
-    public static final Prefix IND_PREFIX_SI_YOTTA;
-    public static final Prefix IND_PREFIX_SI_ZETTA;
-    public static final Prefix IND_PREFIX_SI_EXA;
-    public static final Prefix IND_PREFIX_SI_PETA;
-    public static final Prefix IND_PREFIX_SI_TERA;
-    public static final Prefix IND_PREFIX_SI_GIGA;
-    public static final Prefix IND_PREFIX_SI_MEGA;
-    public static final Prefix IND_PREFIX_SI_KILO;
-    public static final Prefix IND_PREFIX_SI_HECTO;
-    public static final Prefix IND_PREFIX_SI_DECA;
-    public static final Prefix IND_PREFIX_SI_DECI;
-    public static final Prefix IND_PREFIX_SI_CENTI;
-    public static final Prefix IND_PREFIX_SI_MILI;
-    public static final Prefix IND_PREFIX_SI_MICRO;
-    public static final Prefix IND_PREFIX_SI_NANO;
-    public static final Prefix IND_PREFIX_SI_PICO;
-    public static final Prefix IND_PREFIX_SI_FEMTO;
-    public static final Prefix IND_PREFIX_SI_ATTO;
-    public static final Prefix IND_PREFIX_SI_ZEPTO;
-    public static final Prefix IND_PREFIX_SI_YOCTO;
+    public static final Prefix IND_PREFIX_SI_YOTTA = newDecimalPrefix("Yotta", "Y", 24);
+    public static final Prefix IND_PREFIX_SI_ZETTA = newDecimalPrefix("Zetta", "Z", 21);
+    public static final Prefix IND_PREFIX_SI_EXA = newDecimalPrefix("Exa", "E", 18);
+    public static final Prefix IND_PREFIX_SI_PETA = newDecimalPrefix("Peta", "P", 15);
+    public static final Prefix IND_PREFIX_SI_TERA = newDecimalPrefix("Tera", "T", 12);
+    public static final Prefix IND_PREFIX_SI_GIGA = newDecimalPrefix("Giga", "G", 9);
+    public static final Prefix IND_PREFIX_SI_MEGA = newDecimalPrefix("Mega", "M", 6);
+    public static final Prefix IND_PREFIX_SI_KILO = newDecimalPrefix("Kilo", "k", 3);
+    public static final Prefix IND_PREFIX_SI_HECTO = newDecimalPrefix("Hecto", "h", 2);
+    public static final Prefix IND_PREFIX_SI_DECA = newDecimalPrefix("Deca", "da", 1);
+    public static final Prefix IND_PREFIX_SI_DECI = newDecimalPrefix("Deci", "d", -1);
+    public static final Prefix IND_PREFIX_SI_CENTI = newDecimalPrefix("Centi", "c", -2);
+    public static final Prefix IND_PREFIX_SI_MILI = newDecimalPrefix("Mili", "m", -3);
+    public static final Prefix IND_PREFIX_SI_MICRO = newDecimalPrefix("Micro", "μ", -6);
+    public static final Prefix IND_PREFIX_SI_NANO = newDecimalPrefix("Nano", "n", -9);
+    public static final Prefix IND_PREFIX_SI_PICO = newDecimalPrefix("Pico", "p", -12);
+    public static final Prefix IND_PREFIX_SI_FEMTO = newDecimalPrefix("Femto", "f", -15);
+    public static final Prefix IND_PREFIX_SI_ATTO = newDecimalPrefix("Atto", "a", -18);
+    public static final Prefix IND_PREFIX_SI_ZEPTO = newDecimalPrefix("Zepto", "z", -21);
+    public static final Prefix IND_PREFIX_SI_YOCTO = newDecimalPrefix("Yocto", "y", -24);
 
     static {
-	IND_SI = new InternationalSystem("internationalSystemOfUnits");
-
-	IND_UNIT_SI_METER = new Unit("meter", "Meter", "m",
-		MeasurableDimension.Length, IND_SI);
-	IND_UNIT_SI_GRAM = new Unit("gram", "Gram", "g",
-		MeasurableDimension.Mass, IND_SI);
-	IND_UNIT_SI_SECOND = new Unit("sec", "Second", "s",
-		MeasurableDimension.Time, IND_SI);
-	IND_UNIT_SI_AMPERE = new Unit("amp", "Ampere", "A",
-		MeasurableDimension.Current, IND_SI);
-	IND_UNIT_SI_KELVIN = new Unit("kelvin", "Kelvin", "K",
-		MeasurableDimension.Temperature, IND_SI);
-	IND_UNIT_SI_CANDELA = new Unit("candela", "Candela", "cd",
-		MeasurableDimension.Luminance, IND_SI);
-	IND_UNIT_SI_MOLE = new Unit("mole", "Mole", "mol",
-		MeasurableDimension.SubstanceAmmount, IND_SI);
-
 	IND_SI.addUnits(IND_UNIT_SI_METER);
 	IND_SI.addUnits(IND_UNIT_SI_GRAM);
 	IND_SI.addUnits(IND_UNIT_SI_SECOND);
@@ -85,27 +75,6 @@ public class InternationalSystem extends UnitSystem {
 	IND_SI.addUnits(IND_UNIT_SI_KELVIN);
 	IND_SI.addUnits(IND_UNIT_SI_CANDELA);
 	IND_SI.addUnits(IND_UNIT_SI_MOLE);
-
-	IND_PREFIX_SI_YOTTA = newDecimalPrefix("Yotta", "Y", 24);
-	IND_PREFIX_SI_ZETTA = newDecimalPrefix("Zetta", "Z", 21);
-	IND_PREFIX_SI_EXA = newDecimalPrefix("Exa", "E", 18);
-	IND_PREFIX_SI_PETA = newDecimalPrefix("Peta", "P", 15);
-	IND_PREFIX_SI_TERA = newDecimalPrefix("Tera", "T", 12);
-	IND_PREFIX_SI_GIGA = newDecimalPrefix("Giga", "G", 9);
-	IND_PREFIX_SI_MEGA = newDecimalPrefix("Mega", "M", 6);
-	IND_PREFIX_SI_KILO = newDecimalPrefix("Kilo", "k", 3);
-	IND_PREFIX_SI_HECTO = newDecimalPrefix("Hecto", "h", 2);
-	IND_PREFIX_SI_DECA = newDecimalPrefix("Deca", "da", 1);
-	IND_PREFIX_SI_DECI = newDecimalPrefix("Deci", "d", -1);
-	IND_PREFIX_SI_CENTI = newDecimalPrefix("Centi", "c", -2);
-	IND_PREFIX_SI_MILI = newDecimalPrefix("Mili", "m", -3);
-	IND_PREFIX_SI_MICRO = newDecimalPrefix("Micro", "μ", -6);
-	IND_PREFIX_SI_NANO = newDecimalPrefix("Nano", "n", -9);
-	IND_PREFIX_SI_PICO = newDecimalPrefix("Pico", "p", -12);
-	IND_PREFIX_SI_FEMTO = newDecimalPrefix("Femto", "f", -15);
-	IND_PREFIX_SI_ATTO = newDecimalPrefix("Atto", "a", -18);
-	IND_PREFIX_SI_ZEPTO = newDecimalPrefix("Zepto", "z", -21);
-	IND_PREFIX_SI_YOCTO = newDecimalPrefix("Yocto", "y", -24);
     }
 
     protected InternationalSystem(String uri) {

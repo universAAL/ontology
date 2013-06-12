@@ -31,18 +31,12 @@ import org.universAAL.ontology.profile.User;
 public abstract class GestureRecognition extends ManagedIndividual {
     public static final String GESTURE_RECOGNITION_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/GestureRecognition.owl#";
 
-    public static final String MY_URI;
-    public static final String PROP_SUBJECT_USER;
-    public static final String PROP_GESTURE_TYPE;
+    public static final String MY_URI = GESTURE_RECOGNITION_NAMESPACE + "GestureRecognition";
+    public static final String PROP_SUBJECT_USER = GESTURE_RECOGNITION_NAMESPACE + "subjectUser";
+    public static final String PROP_GESTURE_TYPE = GESTURE_RECOGNITION_NAMESPACE + "gestureType";
 
     public static final int GESTURE_TYPE_COMMAND = 0;
     public static final int GESTURE_TYPE_POINTING = 1;
-
-    static {
-	MY_URI = GESTURE_RECOGNITION_NAMESPACE + "GestureRecognition";
-	PROP_SUBJECT_USER = GESTURE_RECOGNITION_NAMESPACE + "subjectUser";
-	PROP_GESTURE_TYPE = GESTURE_RECOGNITION_NAMESPACE + "gestureType";
-    }
 
     public static MergedRestriction getClassRestrictionsOnProperty(
 	    String propURI) {

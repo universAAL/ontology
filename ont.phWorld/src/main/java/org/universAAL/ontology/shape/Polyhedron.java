@@ -37,14 +37,10 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Polyhedron extends Shape3D {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Polyhedron";
 
-    public static final String PROP_FACES;
+    public static final String PROP_FACES = ShapeOntology.NAMESPACE + "Faces";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Polyhedron";
-	PROP_FACES = ShapeOntology.NAMESPACE + "Faces";
-    }
 
     /**
      * Creates a Polygon object

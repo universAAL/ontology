@@ -34,18 +34,11 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class AudioFile extends ManagedIndividual {
 
-    public static final String MY_URI;
-    public static final String PROP_HAS_URL;
+    public static final String MY_URI = AVOntology.NAMESPACE + "AudioFile";
+    public static final String PROP_HAS_URL = AVOntology.NAMESPACE + "hasURL";
     // content type should be replaced by format
-    public static final String PROP_HAS_CONTENT_TYPE;
-    public static final String PROP_HAS_FORMAT;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "AudioFile";
-	PROP_HAS_URL = AVOntology.NAMESPACE + "hasURL";
-	PROP_HAS_CONTENT_TYPE = AVOntology.NAMESPACE + "hasContentType";
-	PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
-    }
+    public static final String PROP_HAS_CONTENT_TYPE = AVOntology.NAMESPACE + "hasContentType";
+    public static final String PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
 
     /** The default constructor */
     public AudioFile() {

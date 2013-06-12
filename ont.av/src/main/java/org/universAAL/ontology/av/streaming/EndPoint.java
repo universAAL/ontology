@@ -34,15 +34,9 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class EndPoint extends ManagedIndividual {
 
-    public static final String MY_URI;
-    public static final String PROP_IP;
-    public static final String PROP_TCP_PORT;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "EndPoint";
-	PROP_IP = AVOntology.NAMESPACE + "ip";
-	PROP_TCP_PORT = AVOntology.NAMESPACE + "tcpPort";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "EndPoint";
+    public static final String PROP_IP = AVOntology.NAMESPACE + "ip";
+    public static final String PROP_TCP_PORT = AVOntology.NAMESPACE + "tcpPort";
 
     /** Default constructor */
     public EndPoint() {

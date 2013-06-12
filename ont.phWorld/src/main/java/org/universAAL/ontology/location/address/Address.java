@@ -39,34 +39,21 @@ import org.universAAL.ontology.location.outdoor.*;
  */
 public class Address extends ManagedIndividual {
 
-    public static final String MY_URI;
-    public static final String PROP_HAS_REGION;
-    public static final String PROP_HAS_COUNTRY;
-    public static final String PROP_HAS_STATE;
-    public static final String PROP_HAS_CITY;
-    public static final String PROP_HAS_CITYQUARTER;
-    public static final String PROP_HAS_CITYREGION;
-    public static final String PROP_HAS_CITYPLACE;
-    public static final String PROP_HAS_POSTALCODE;
-    public static final String PROP_HAS_EXTENDEDADDRESS;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Address";
+    public static final String PROP_HAS_REGION = LocationOntology.NAMESPACE + "hasAddressRegion";
+    public static final String PROP_HAS_COUNTRY = LocationOntology.NAMESPACE + "hasAddressCountry";
+    public static final String PROP_HAS_STATE = LocationOntology.NAMESPACE + "hasAddressState";
+    public static final String PROP_HAS_CITY = LocationOntology.NAMESPACE + "hasAddressCity";
+    public static final String PROP_HAS_CITYQUARTER = LocationOntology.NAMESPACE
+    		+ "hasAddressCityQuarter";
+    public static final String PROP_HAS_CITYREGION = LocationOntology.NAMESPACE
+    		+ "hasAddressCityRegion";
+    public static final String PROP_HAS_CITYPLACE = LocationOntology.NAMESPACE + "hasAddressCityPlace";
+    public static final String PROP_HAS_POSTALCODE = LocationOntology.NAMESPACE
+    		+ "hasAddressPostalCode";
+    public static final String PROP_HAS_EXTENDEDADDRESS = LocationOntology.NAMESPACE
+    		+ "hasExtendedAddressDescription";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "Address";
-
-	PROP_HAS_REGION = LocationOntology.NAMESPACE + "hasAddressRegion";
-	PROP_HAS_COUNTRY = LocationOntology.NAMESPACE + "hasAddressCountry";
-	PROP_HAS_STATE = LocationOntology.NAMESPACE + "hasAddressState";
-	PROP_HAS_CITY = LocationOntology.NAMESPACE + "hasAddressCity";
-	PROP_HAS_CITYQUARTER = LocationOntology.NAMESPACE
-		+ "hasAddressCityQuarter";
-	PROP_HAS_CITYREGION = LocationOntology.NAMESPACE
-		+ "hasAddressCityRegion";
-	PROP_HAS_CITYPLACE = LocationOntology.NAMESPACE + "hasAddressCityPlace";
-	PROP_HAS_POSTALCODE = LocationOntology.NAMESPACE
-		+ "hasAddressPostalCode";
-	PROP_HAS_EXTENDEDADDRESS = LocationOntology.NAMESPACE
-		+ "hasExtendedAddressDescription";
-    }
 
     /**
      * Creates a Address object

@@ -35,80 +35,48 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class VideoCamera extends Device {
 
-    public static final String MY_URI;
+    public static final String MY_URI = AVOntology.NAMESPACE + "VideoCamera";
 
     // some properties offered by persona.streaming
-    public static final String PROP_BACKLIGHTCOMPENSATION;
-    public static final String PROP_BRIGHTNESS;
-    public static final String PROP_COLORENABLE;
-    public static final String PROP_CONTRAST;
-    public static final String PROP_EXPOSURE;
-    public static final String PROP_FOCUS;
-    public static final String PROP_GAIN;
-    public static final String PROP_GAMMA;
-    public static final String PROP_HUE;
-    public static final String PROP_IRIS;
-    public static final String PROP_PAN;
-    public static final String PROP_ROLL;
-    public static final String PROP_SATURATION;
-    public static final String PROP_SHARPNESS;
-    public static final String PROP_TILT;
-    public static final String PROP_WHITEBALANCE;
+    public static final String PROP_BACKLIGHTCOMPENSATION = AVOntology.NAMESPACE + "";
+    public static final String PROP_BRIGHTNESS = AVOntology.NAMESPACE + "brightness";
+    public static final String PROP_COLORENABLE = AVOntology.NAMESPACE + "colorenable";
+    public static final String PROP_CONTRAST = AVOntology.NAMESPACE + "contrast";
+    public static final String PROP_EXPOSURE = AVOntology.NAMESPACE + "exposure";
+    public static final String PROP_FOCUS = AVOntology.NAMESPACE + "focus";
+    public static final String PROP_GAIN = AVOntology.NAMESPACE + "gain";
+    public static final String PROP_GAMMA = AVOntology.NAMESPACE + "gamma";
+    public static final String PROP_HUE = AVOntology.NAMESPACE + "hue";
+    public static final String PROP_IRIS = AVOntology.NAMESPACE + "iris";
+    public static final String PROP_PAN = AVOntology.NAMESPACE + "pan";
+    public static final String PROP_ROLL = AVOntology.NAMESPACE + "roll";
+    public static final String PROP_SATURATION = AVOntology.NAMESPACE + "saturation";
+    public static final String PROP_SHARPNESS = AVOntology.NAMESPACE + "sharpness";
+    public static final String PROP_TILT = AVOntology.NAMESPACE + "tilt";
+    public static final String PROP_WHITEBALANCE = AVOntology.NAMESPACE + "whitebalance";
 
     // perhaps it is better, to add a format attribute
     // concerning the format
-    public static final String PROP_VIDEO_COMPRESSION;
-    public static final String PROP_FRAMES_PER_SECOND; // also offered by
+    public static final String PROP_VIDEO_COMPRESSION = AVOntology.NAMESPACE + "videoCompression";
+    public static final String PROP_FRAMES_PER_SECOND = AVOntology.NAMESPACE + "framesPerSecond"; // also offered by
     // persona.streaming
-    public static final String PROP_PIXEL_SIZE_IN_MICRON_SQUARE;
-    public static final String PROP_DPI;
+    public static final String PROP_PIXEL_SIZE_IN_MICRON_SQUARE = AVOntology.NAMESPACE
+    		+ "pixelSizeInMicronSquare";
+    public static final String PROP_DPI = AVOntology.NAMESPACE + "dpi";
 
-    public static final String PROP_FOCUS_POINT;
-    public static final String PROP_X_RESOLUTION;
-    public static final String PROP_Y_RESOLUTION;
-    public static final String PROP_Z_RESOLUTION;
-    public static final String PROP_ZOOM; // also offered by persona.streaming
+    public static final String PROP_FOCUS_POINT = AVOntology.NAMESPACE + "focusPoint";
+    public static final String PROP_X_RESOLUTION = AVOntology.NAMESPACE + "xResolution";
+    public static final String PROP_Y_RESOLUTION = AVOntology.NAMESPACE + "yResolution";
+    public static final String PROP_Z_RESOLUTION = AVOntology.NAMESPACE + "zResolution";
+    public static final String PROP_ZOOM = AVOntology.NAMESPACE + "zoom"; // also offered by persona.streaming
 
-    public static final String PROP_FOCAL_DISTANCE;
-    public static final String PROP_FIELD_OF_VIEW_HORIZONTAL;
-    public static final String PROP_FIELD_OF_VIEW_VERTICAL;
+    public static final String PROP_FOCAL_DISTANCE = AVOntology.NAMESPACE + "focalDistance";
+    public static final String PROP_FIELD_OF_VIEW_HORIZONTAL = AVOntology.NAMESPACE
+    		+ "fieldOfViewHorizontal";
+    public static final String PROP_FIELD_OF_VIEW_VERTICAL = AVOntology.NAMESPACE
+    		+ "fieldOfViewVertical";
 
-    static {
-	MY_URI = AVOntology.NAMESPACE + "VideoCamera";
-
-	PROP_DPI = AVOntology.NAMESPACE + "dpi";
-	PROP_FOCUS_POINT = AVOntology.NAMESPACE + "focusPoint";
-	PROP_FRAMES_PER_SECOND = AVOntology.NAMESPACE + "framesPerSecond";
-	PROP_PIXEL_SIZE_IN_MICRON_SQUARE = AVOntology.NAMESPACE
-		+ "pixelSizeInMicronSquare";
-	PROP_X_RESOLUTION = AVOntology.NAMESPACE + "xResolution";
-	PROP_Y_RESOLUTION = AVOntology.NAMESPACE + "yResolution";
-	PROP_Z_RESOLUTION = AVOntology.NAMESPACE + "zResolution";
-	PROP_ZOOM = AVOntology.NAMESPACE + "zoom";
-	PROP_VIDEO_COMPRESSION = AVOntology.NAMESPACE + "videoCompression";
-	PROP_BACKLIGHTCOMPENSATION = AVOntology.NAMESPACE + "";
-	PROP_BRIGHTNESS = AVOntology.NAMESPACE + "brightness";
-	PROP_COLORENABLE = AVOntology.NAMESPACE + "colorenable";
-	PROP_CONTRAST = AVOntology.NAMESPACE + "contrast";
-	PROP_EXPOSURE = AVOntology.NAMESPACE + "exposure";
-	PROP_FOCUS = AVOntology.NAMESPACE + "focus";
-	PROP_GAIN = AVOntology.NAMESPACE + "gain";
-	PROP_GAMMA = AVOntology.NAMESPACE + "gamma";
-	PROP_HUE = AVOntology.NAMESPACE + "hue";
-	PROP_IRIS = AVOntology.NAMESPACE + "iris";
-	PROP_PAN = AVOntology.NAMESPACE + "pan";
-	PROP_ROLL = AVOntology.NAMESPACE + "roll";
-	PROP_SATURATION = AVOntology.NAMESPACE + "saturation";
-	PROP_SHARPNESS = AVOntology.NAMESPACE + "sharpness";
-	PROP_TILT = AVOntology.NAMESPACE + "tilt";
-	PROP_WHITEBALANCE = AVOntology.NAMESPACE + "whitebalance";
-	PROP_FOCAL_DISTANCE = AVOntology.NAMESPACE + "focalDistance";
-	PROP_FIELD_OF_VIEW_HORIZONTAL = AVOntology.NAMESPACE
-		+ "fieldOfViewHorizontal";
-	PROP_FIELD_OF_VIEW_VERTICAL = AVOntology.NAMESPACE
-		+ "fieldOfViewVertical";
-    }
-
+    
     /** the default constructor */
     public VideoCamera() {
 	super();

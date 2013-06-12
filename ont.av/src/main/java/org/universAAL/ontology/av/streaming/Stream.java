@@ -34,15 +34,9 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public abstract class Stream extends ManagedIndividual {
 
-    public static final String MY_URI;
-    public static final String PROP_HAS_FORMAT;
-    public static final String PROP_HAS_ENDPOINT;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "Stream";
-	PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
-	PROP_HAS_ENDPOINT = AVOntology.NAMESPACE + "hasEndPoint";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "Stream";
+    public static final String PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
+    public static final String PROP_HAS_ENDPOINT = AVOntology.NAMESPACE + "hasEndPoint";
 
     /** default constructor */
     public Stream() {

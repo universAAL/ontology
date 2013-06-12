@@ -31,11 +31,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Corridor extends HomeArea {
 
-    public static final String MY_URI;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Corridor";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "Corridor";
-    }
 
     /**
      * Creates a Corridor object

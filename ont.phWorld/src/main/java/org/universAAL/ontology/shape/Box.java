@@ -36,18 +36,11 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Box extends Shape3D {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Box";
 
-    public static final String PROP_WIDTH;
-    public static final String PROP_HEIGHT;
-    public static final String PROP_DEPTH;
-
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Box";
-	PROP_WIDTH = ShapeOntology.NAMESPACE + "Width";
-	PROP_HEIGHT = ShapeOntology.NAMESPACE + "Height";
-	PROP_DEPTH = ShapeOntology.NAMESPACE + "Depth";
-    }
+    public static final String PROP_WIDTH = ShapeOntology.NAMESPACE + "Width";
+    public static final String PROP_HEIGHT = ShapeOntology.NAMESPACE + "Height";
+    public static final String PROP_DEPTH = ShapeOntology.NAMESPACE + "Depth";
 
     /**
      * assumes the given coordinate system to be centered at the lower left

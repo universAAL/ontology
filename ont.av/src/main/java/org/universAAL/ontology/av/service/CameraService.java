@@ -33,15 +33,9 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class CameraService extends Service {
 
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-    public static final String PROP_DELIVERS;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "CameraService";
-	PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
-	PROP_DELIVERS = AVOntology.NAMESPACE + "delivers";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "CameraService";
+    public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
+    public static final String PROP_DELIVERS = AVOntology.NAMESPACE + "delivers";
 
     /** default constructor */
     public CameraService() {

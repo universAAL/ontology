@@ -34,11 +34,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class OutdoorPlace extends Place {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "OutdoorPlace";
-    }
+    public static final String MY_URI = LocationOntology.NAMESPACE + "OutdoorPlace";
 
     /**
      * Creates a Place object

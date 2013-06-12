@@ -35,31 +35,17 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class Microphone extends Device {
 
-    public static final String MY_URI;
-    public static final String PROP_VOLUME;
-    public static final String PROP_AMPLIFICATION;
-    public static final String PROP_BANDWIDTH_IN_HZ;
-    public static final String PROP_SAMPLINGRATE_IN_HZ;
-    public static final String PROP_AUDIO_COMPRESSION;
-    public static final String PROP_POINTS_TO;
-    public static final String PROP_ACTIVITY;
-    public static final String PROP_SILENCE_LEVEL;
-    public static final String PROP_USE_ECHO_SUPRESSION;
-    public static final String PROP_IS_MUTED;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "Microphone";
-	PROP_VOLUME = AVOntology.NAMESPACE + "volume";
-	PROP_AMPLIFICATION = AVOntology.NAMESPACE + "amplification";
-	PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandwidthInHz";
-	PROP_SAMPLINGRATE_IN_HZ = AVOntology.NAMESPACE + "samplingRateInHz";
-	PROP_AUDIO_COMPRESSION = AVOntology.NAMESPACE + "audioCompression";
-	PROP_POINTS_TO = AVOntology.NAMESPACE + "pointsTo";
-	PROP_ACTIVITY = AVOntology.NAMESPACE + "activity";
-	PROP_SILENCE_LEVEL = AVOntology.NAMESPACE + "silenceLevel";
-	PROP_USE_ECHO_SUPRESSION = AVOntology.NAMESPACE + "useEchoSupression";
-	PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "Microphone";
+    public static final String PROP_VOLUME = AVOntology.NAMESPACE + "volume";
+    public static final String PROP_AMPLIFICATION = AVOntology.NAMESPACE + "amplification";
+    public static final String PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandwidthInHz";
+    public static final String PROP_SAMPLINGRATE_IN_HZ = AVOntology.NAMESPACE + "samplingRateInHz";
+    public static final String PROP_AUDIO_COMPRESSION = AVOntology.NAMESPACE + "audioCompression";
+    public static final String PROP_POINTS_TO = AVOntology.NAMESPACE + "pointsTo";
+    public static final String PROP_ACTIVITY = AVOntology.NAMESPACE + "activity";
+    public static final String PROP_SILENCE_LEVEL = AVOntology.NAMESPACE + "silenceLevel";
+    public static final String PROP_USE_ECHO_SUPRESSION = AVOntology.NAMESPACE + "useEchoSupression";
+    public static final String PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
 
     /** The default constructor */
     public Microphone() {

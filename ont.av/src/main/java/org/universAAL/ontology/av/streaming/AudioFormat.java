@@ -33,21 +33,12 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class AudioFormat extends Format {
 
-    public static final String MY_URI;
-    public static final String PROP_CHANNELS;
-    public static final String PROP_SAMPLES_PER_SECOND;
-    public static final String PROP_BITS_PER_SAMPLE;
-    public static final String PROP_BIG_ENDIAN;
-    public static final String PROP_SIGNED;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "audioFormat";
-	PROP_CHANNELS = AVOntology.NAMESPACE + "channels";
-	PROP_SAMPLES_PER_SECOND = AVOntology.NAMESPACE + "samplesPerSecond";
-	PROP_BITS_PER_SAMPLE = AVOntology.NAMESPACE + "bitsPerSample";
-	PROP_BIG_ENDIAN = AVOntology.NAMESPACE + "bigEndian";
-	PROP_SIGNED = AVOntology.NAMESPACE + "signed";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "audioFormat";
+    public static final String PROP_CHANNELS = AVOntology.NAMESPACE + "channels";
+    public static final String PROP_SAMPLES_PER_SECOND = AVOntology.NAMESPACE + "samplesPerSecond";
+    public static final String PROP_BITS_PER_SAMPLE = AVOntology.NAMESPACE + "bitsPerSample";
+    public static final String PROP_BIG_ENDIAN = AVOntology.NAMESPACE + "bigEndian";
+    public static final String PROP_SIGNED = AVOntology.NAMESPACE + "signed";
 
     /**
      * the default constructor

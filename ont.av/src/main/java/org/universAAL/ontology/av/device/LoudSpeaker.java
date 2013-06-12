@@ -38,24 +38,15 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class LoudSpeaker extends Device {
 
-    public static final String MY_URI;
-    public static final String PROP_VOLUME;
-    public static final String PROP_EFFECTIVE_POWER_IN_WATT;
-    public static final String PROP_BANDWIDTH_IN_HZ;
-    public static final String PROP_IS_MUSIC_COMPATIBLE;
-    public static final String PROP_UPPER_BOUND;
-    public static final String PROP_IS_MUTED;
+    public static final String MY_URI = AVOntology.NAMESPACE + "LoudSpeaker";
+    public static final String PROP_VOLUME = AVOntology.NAMESPACE + "volume";
+    public static final String PROP_EFFECTIVE_POWER_IN_WATT = AVOntology.NAMESPACE
+    		+ "effectivePowerInWatt";
+    public static final String PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandWidthInHz";
+    public static final String PROP_IS_MUSIC_COMPATIBLE = AVOntology.NAMESPACE + "isMusicCompatible";
+    public static final String PROP_UPPER_BOUND = AVOntology.NAMESPACE + "upperBound";
+    public static final String PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
 
-    static {
-	MY_URI = AVOntology.NAMESPACE + "LoudSpeaker";
-	PROP_VOLUME = AVOntology.NAMESPACE + "volume";
-	PROP_EFFECTIVE_POWER_IN_WATT = AVOntology.NAMESPACE
-		+ "effectivePowerInWatt";
-	PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandWidthInHz";
-	PROP_IS_MUSIC_COMPATIBLE = AVOntology.NAMESPACE + "isMusicCompatible";
-	PROP_UPPER_BOUND = AVOntology.NAMESPACE + "upperBound";
-	PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
-    }
 
     /** The default constructor */
     public LoudSpeaker() {

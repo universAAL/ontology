@@ -33,19 +33,12 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class VideoFormat extends Format {
 
-    public static final String MY_URI;
-    public static final String PROP_FRAMES_PER_SECOND;
-    public static final String PROP_HEIGHT;
-    public static final String PROP_WIDTH;
-    public static final String PROP_BITS_PER_PIXEL;
+    public static final String MY_URI = AVOntology.NAMESPACE + "videoFormat";;
+    public static final String PROP_FRAMES_PER_SECOND = AVOntology.NAMESPACE + "framesPerSecond";
+    public static final String PROP_HEIGHT = AVOntology.NAMESPACE + "height";
+    public static final String PROP_WIDTH = AVOntology.NAMESPACE + "width";
+    public static final String PROP_BITS_PER_PIXEL = AVOntology.NAMESPACE + "bitsPerPixel";
 
-    static {
-	MY_URI = AVOntology.NAMESPACE + "videoFormat";
-	PROP_FRAMES_PER_SECOND = AVOntology.NAMESPACE + "framesPerSecond";
-	PROP_HEIGHT = AVOntology.NAMESPACE + "height";
-	PROP_WIDTH = AVOntology.NAMESPACE + "width";
-	PROP_BITS_PER_PIXEL = AVOntology.NAMESPACE + "bitsPerPixel";
-    }
 
     /** The default constructor */
     public VideoFormat() {
