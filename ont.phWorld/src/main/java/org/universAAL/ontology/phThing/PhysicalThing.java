@@ -39,7 +39,7 @@ public class PhysicalThing extends ManagedIndividual {
     public static final String PROP_IS_IN;
     public static final String PROP_IS_PORTABLE;
     public static final String PROP_IS_STATIONARY;
-    public static final String PROP_PHYSICAL_LOCATION;
+    public static final String PROP_PHYSICAL_LOCATION = PhThingOntology.NAMESPACE + "hasLocation";
     public static final String PROP_HAS_SHAPE;
 
     static {
@@ -49,7 +49,7 @@ public class PhysicalThing extends ManagedIndividual {
 	PROP_IS_PORTABLE = PhThingOntology.NAMESPACE + "isPortable";
 	PROP_IS_STATIONARY = PhThingOntology.NAMESPACE + "isStationary";
 	PROP_PART_OF = PhThingOntology.NAMESPACE + "partOf";
-	PROP_PHYSICAL_LOCATION = PhThingOntology.NAMESPACE + "hasLocation";
+//	PROP_PHYSICAL_LOCATION = PhThingOntology.NAMESPACE + "hasLocation";
 	PROP_HAS_SHAPE = PhThingOntology.NAMESPACE + "hasShape";
     }
 
