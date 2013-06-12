@@ -39,14 +39,10 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Polygon extends Shape3D {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Polygon";
 
-    public static final String PROP_VERTICES;
+    public static final String PROP_VERTICES = ShapeOntology.NAMESPACE + "Vertices";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Polygon";
-	PROP_VERTICES = ShapeOntology.NAMESPACE + "Vertices";
-    }
 
     /**
      * Creates a Polygon object

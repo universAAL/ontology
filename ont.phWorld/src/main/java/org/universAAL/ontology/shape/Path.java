@@ -39,14 +39,10 @@ import org.universAAL.ontology.location.position.Point;
 
 public abstract class Path extends Shape3D {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Path";
 
-    public static final String PROP_POINTS;
+    public static final String PROP_POINTS = ShapeOntology.NAMESPACE + "Points";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Path";
-	PROP_POINTS = ShapeOntology.NAMESPACE + "Points";
-    }
 
     /**
      * Creates a Path object

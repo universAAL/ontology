@@ -36,17 +36,11 @@ public class ContinuaHealthDevice extends ManagedIndividual {
 
     // Attributes
 
-    public static final String MY_URI;
-    public static final String PROP_HAS_MAC;
-    public static final String PROP_HAS_DATA_TYPE;
+    public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE + "Fact";
+    public static final String PROP_HAS_MAC = ContinuaHealthManagerOntology.NAMESPACE + "hasMAC";
+    public static final String PROP_HAS_DATA_TYPE = ContinuaHealthManagerOntology.NAMESPACE
+    		+ "hasDataType";
 
-    // Set the URIs of your concept and its properties
-    static {
-	MY_URI = ContinuaHealthManagerOntology.NAMESPACE + "Fact";
-	PROP_HAS_MAC = ContinuaHealthManagerOntology.NAMESPACE + "hasMAC";
-	PROP_HAS_DATA_TYPE = ContinuaHealthManagerOntology.NAMESPACE
-		+ "hasDataType";
-    }
 
     // Constructor
     public ContinuaHealthDevice() {

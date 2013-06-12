@@ -35,16 +35,11 @@ import org.universAAL.ontology.location.position.Point;
 
 public class QuasiCylinder extends Shape3D {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "QuasiCylinder";
 
-    public static final String PROP_HEAD;
-    public static final String PROP_FOOT;
+    public static final String PROP_HEAD = ShapeOntology.NAMESPACE + "Head";
+    public static final String PROP_FOOT = ShapeOntology.NAMESPACE + "Foot";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "QuasiCylinder";
-	PROP_HEAD = ShapeOntology.NAMESPACE + "Head";
-	PROP_FOOT = ShapeOntology.NAMESPACE + "Foot";
-    }
 
     /**
      * Creates a Shape object

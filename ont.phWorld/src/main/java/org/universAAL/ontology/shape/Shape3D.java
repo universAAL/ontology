@@ -34,14 +34,9 @@ import org.universAAL.ontology.location.position.Point;
 
 public abstract class Shape3D extends Shape {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Shape3D";
 
-    public static final String PROP_2D_REPRESENTATION;
-
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Shape3D";
-	PROP_2D_REPRESENTATION = ShapeOntology.NAMESPACE + "2DReperesentation";
-    }
+    public static final String PROP_2D_REPRESENTATION = ShapeOntology.NAMESPACE + "2DReperesentation";
 
     /**
      * Creates a Shape object

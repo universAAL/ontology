@@ -31,11 +31,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class EntranceHall extends HomeArea {
 
-    public static final String MY_URI;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "EntranceHall";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "EntranceHall";
-    }
 
     /**
      * Creates a EntranceHall object

@@ -33,13 +33,8 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public abstract class Format extends ManagedIndividual {
 
-    public static final String MY_URI;
-    public static final String PROP_ENCODING;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "format";
-	PROP_ENCODING = AVOntology.NAMESPACE + "encoding";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "format";
+    public static final String PROP_ENCODING = AVOntology.NAMESPACE + "encoding";
 
     /** The default constructor */
     public Format() {

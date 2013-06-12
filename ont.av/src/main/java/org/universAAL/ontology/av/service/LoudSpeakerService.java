@@ -34,19 +34,12 @@ import org.universAAL.ontology.av.AVOntology;
 public class LoudSpeakerService extends Service {
 
     // customizing necessary!!!!
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-    public static final String PROP_HAS_TO_BROADCAST_AUDIO_FILE;
-    public static final String PROP_HAS_TO_BROADCAST_AUDIO_STREAM;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "LoudSpeakerService";
-	PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
-	PROP_HAS_TO_BROADCAST_AUDIO_FILE = AVOntology.NAMESPACE
-		+ "broadcastsAudioFile";
-	PROP_HAS_TO_BROADCAST_AUDIO_STREAM = AVOntology.NAMESPACE
-		+ "broadcastsAudioStream";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "LoudSpeakerService";
+    public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
+    public static final String PROP_HAS_TO_BROADCAST_AUDIO_FILE = AVOntology.NAMESPACE
+    		+ "broadcastsAudioFile";
+    public static final String PROP_HAS_TO_BROADCAST_AUDIO_STREAM = AVOntology.NAMESPACE
+    		+ "broadcastsAudioStream";
 
     /** default constructor */
     public LoudSpeakerService() {

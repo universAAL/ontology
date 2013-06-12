@@ -34,13 +34,9 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Sphere extends Shape3D {
 
-    public static final String MY_URI;
-    public static final String PROP_RADIUS;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "FHSphere";
+    public static final String PROP_RADIUS = ShapeOntology.NAMESPACE + "Radius";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "FHSphere";
-	PROP_RADIUS = ShapeOntology.NAMESPACE + "Radius";
-    }
 
     /**
      * Creates a Shape object

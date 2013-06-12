@@ -32,22 +32,15 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  */
 public class PointingGestureInSpace extends GestureRecognition {
 
-    public static final String MY_URI;
-    public static final String PROP_ADDRESSED_THINGS;
-    public static final String PROP_TIMESTAMP;
-    public static final String PROP_INTERACTING_ARM;
+    public static final String MY_URI = GESTURE_RECOGNITION_NAMESPACE + "PointingGestureInSpace";
+    public static final String PROP_ADDRESSED_THINGS = GESTURE_RECOGNITION_NAMESPACE
+    		+ "addressedThings";
+    public static final String PROP_TIMESTAMP = GESTURE_RECOGNITION_NAMESPACE + "timeStamp";
+    public static final String PROP_INTERACTING_ARM = GESTURE_RECOGNITION_NAMESPACE + "interactingArm";
 
     public static final int INTERACTING_ARM_UNKNOWN = 0;
     public static final int INTERACTING_ARM_LEFT = 1;
     public static final int INTERACTING_ARM_RIGHT = 2;
-
-    static {
-	MY_URI = GESTURE_RECOGNITION_NAMESPACE + "PointingGestureInSpace";
-	PROP_ADDRESSED_THINGS = GESTURE_RECOGNITION_NAMESPACE
-		+ "addressedThings";
-	PROP_TIMESTAMP = GESTURE_RECOGNITION_NAMESPACE + "timeStamp";
-	PROP_INTERACTING_ARM = GESTURE_RECOGNITION_NAMESPACE + "interactingArm";
-    }
 
     public PointingGestureInSpace() {
 	super(GESTURE_TYPE_POINTING);

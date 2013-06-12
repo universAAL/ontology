@@ -38,15 +38,9 @@ import org.universAAL.ontology.location.LocationOntology;
  * 
  */
 public class MailBox extends Address {
-    public static final String MY_URI;
-    public static final String PROP_POST_OFFICE_BOX;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "MailBox";
-
-	PROP_POST_OFFICE_BOX = LocationOntology.NAMESPACE
-		+ "postOfficeBox";
-    }
+    public static final String MY_URI = LocationOntology.NAMESPACE + "MailBox";
+    public static final String PROP_POST_OFFICE_BOX = LocationOntology.NAMESPACE
+    		+ "postOfficeBox";
 
     /**
      * Creates a MailBox object

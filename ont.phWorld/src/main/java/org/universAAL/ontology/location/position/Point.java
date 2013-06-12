@@ -37,23 +37,16 @@ import org.universAAL.ontology.location.LocationOntology;
 
 public class Point extends Location {
 
-    public static final String MY_URI;
-    public static final String PROP_X;
-    public static final String PROP_Y;
-    public static final String PROP_Z;
-    public static final String PROP_COORDINATE_SYSTEM;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Point";
+    public static final String PROP_X = LocationOntology.NAMESPACE + "xPosition";
+    public static final String PROP_Y = LocationOntology.NAMESPACE + "yPosition";
+    public static final String PROP_Z = LocationOntology.NAMESPACE + "zPosition";
+    public static final String PROP_COORDINATE_SYSTEM = LocationOntology.NAMESPACE + "coordianteSystem";
 
     public static final int NOT_COMPUTABLE_DISTANCE = -1;
     public static final int INTERSECTING = -2;
     public static final double EARTH_QUADRATIC_MEAN_RADIUS = 6372795.477598;
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "Point";
-	PROP_X = LocationOntology.NAMESPACE + "xPosition";
-	PROP_Y = LocationOntology.NAMESPACE + "yPosition";
-	PROP_Z = LocationOntology.NAMESPACE + "zPosition";
-	PROP_COORDINATE_SYSTEM = LocationOntology.NAMESPACE + "coordianteSystem";
-    }
 
     /**
      * Constructor just for usage by de-serializers. Do not use this constructor

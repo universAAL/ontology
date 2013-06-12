@@ -31,13 +31,8 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Room extends HomeArea {
 
-    public static final String MY_URI;
-    public static final String PROP_ROOM_FUNCTION;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "Room";
-	PROP_ROOM_FUNCTION = LocationOntology.NAMESPACE + "roomFunction";
-    }
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Room";
+    public static final String PROP_ROOM_FUNCTION = LocationOntology.NAMESPACE + "roomFunction";
 
     /**
      * Creates a Room object

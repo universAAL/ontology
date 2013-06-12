@@ -42,22 +42,14 @@ import org.universAAL.middleware.owl.supply.AbsLocation;
  */
 public class Location extends AbsLocation {
 
-    public static final String MY_URI;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Location";
 
-    public static final String PROP_HAS_NAME;
-    public static final String PROP_IS_ADJACENT_TO;
-    public static final String PROP_IS_CONNECTED_TO;
-    public static final String PROP_IS_CONTAINED_IN;
-    public static final String PROP_CONTAINS;
+    public static final String PROP_HAS_NAME = LocationOntology.NAMESPACE + "hasName";
+    public static final String PROP_IS_ADJACENT_TO = LocationOntology.NAMESPACE + "isAdjacentTo";
+    public static final String PROP_IS_CONNECTED_TO = LocationOntology.NAMESPACE + "isConnectedTo";
+    public static final String PROP_IS_CONTAINED_IN = LocationOntology.NAMESPACE + "isContainedIn";
+    public static final String PROP_CONTAINS = LocationOntology.NAMESPACE + "contains";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "Location";
-	PROP_HAS_NAME = LocationOntology.NAMESPACE + "hasName";
-	PROP_IS_ADJACENT_TO = LocationOntology.NAMESPACE + "isAdjacentTo";
-	PROP_IS_CONNECTED_TO = LocationOntology.NAMESPACE + "isConnectedTo";
-	PROP_IS_CONTAINED_IN = LocationOntology.NAMESPACE + "isContainedIn";
-	PROP_CONTAINS = LocationOntology.NAMESPACE + "contains";
-    }
 
     private static List multiValProps = Arrays.asList(new String[] {
 	    PROP_IS_ADJACENT_TO, PROP_IS_CONNECTED_TO, PROP_CONTAINS });

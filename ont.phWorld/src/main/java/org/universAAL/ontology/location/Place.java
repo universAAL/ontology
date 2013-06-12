@@ -39,19 +39,13 @@ import org.universAAL.ontology.shape.Shape;
 
 public class Place extends Location {
 
-    public static final String MY_URI;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "Place";
 
-    public static final String PROP_HAS_SHAPE;
-    public static final String PROP_LOCATION_OF_PHYSICAL_THING;
-    public static final String PROP_HAS_ADDRESS;
+    public static final String PROP_HAS_SHAPE = LocationOntology.NAMESPACE + "hasShape";
+    public static final String PROP_LOCATION_OF_PHYSICAL_THING = LocationOntology.NAMESPACE
+    		+ "locationOf";
+    public static final String PROP_HAS_ADDRESS = LocationOntology.NAMESPACE + "hasAddress";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "Place";
-	PROP_HAS_SHAPE = LocationOntology.NAMESPACE + "hasShape";
-	PROP_LOCATION_OF_PHYSICAL_THING = LocationOntology.NAMESPACE
-		+ "locationOf";
-	PROP_HAS_ADDRESS = LocationOntology.NAMESPACE + "hasAddress";
-    }
 
     /**
      * Creates a Place object

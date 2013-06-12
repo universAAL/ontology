@@ -34,15 +34,9 @@ import org.universAAL.ontology.av.AVOntology;
 public class MicrophoneService extends Service {
 
     // customizing necessary!!!!
-    public static final String MY_URI;
-    public static final String PROP_CONTROLS;
-    public static final String PROP_DELIVERS;
-
-    static {
-	MY_URI = AVOntology.NAMESPACE + "MicrophoneService";
-	PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
-	PROP_DELIVERS = AVOntology.NAMESPACE + "delivers";
-    }
+    public static final String MY_URI = AVOntology.NAMESPACE + "MicrophoneService";
+    public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
+    public static final String PROP_DELIVERS = AVOntology.NAMESPACE + "delivers";
 
     /** default constructor */
     public MicrophoneService() {

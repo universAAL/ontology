@@ -35,20 +35,12 @@ import org.universAAL.ontology.shape.Shape;
 
 public class OriginedMetric extends CoordinateSystem {
 
-    public static final String MY_URI;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "OriginedMetric";
 
-    public static final String PROP_ORIGIN;
-    public static final String PROP_ROTATE_X;
-    public static final String PROP_ROTATE_Y;
-    public static final String PROP_ROTATE_Z;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "OriginedMetric";
-	PROP_ORIGIN = LocationOntology.NAMESPACE + "origin";
-	PROP_ROTATE_X = LocationOntology.NAMESPACE + "rotateX";
-	PROP_ROTATE_Y = LocationOntology.NAMESPACE + "rotateY";
-	PROP_ROTATE_Z = LocationOntology.NAMESPACE + "rotateZ";
-    }
+    public static final String PROP_ORIGIN = LocationOntology.NAMESPACE + "origin";
+    public static final String PROP_ROTATE_X = LocationOntology.NAMESPACE + "rotateX";
+    public static final String PROP_ROTATE_Y = LocationOntology.NAMESPACE + "rotateY";
+    public static final String PROP_ROTATE_Z = LocationOntology.NAMESPACE + "rotateZ";
 
     /**
      * Creates a OriginedMetric object

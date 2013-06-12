@@ -46,20 +46,14 @@ import org.universAAL.ontology.location.position.Point;
 
 public abstract class Shape extends ManagedIndividual {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Shape";
 
-    public static final String PROP_POINT_REPRESENTATION;
-    public static final String PROP_LOCAL_COORDINATE_SYSTEM;
-    public static final String PROP_BOUNDING_VOLUME;
+    public static final String PROP_POINT_REPRESENTATION = ShapeOntology.NAMESPACE
+    		+ "PointReperesentation";
+    public static final String PROP_LOCAL_COORDINATE_SYSTEM = ShapeOntology.NAMESPACE
+    		+ "localCoordSys";
+    public static final String PROP_BOUNDING_VOLUME = ShapeOntology.NAMESPACE + "boundingVolume";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Shape";
-	PROP_POINT_REPRESENTATION = ShapeOntology.NAMESPACE
-		+ "PointReperesentation";
-	PROP_LOCAL_COORDINATE_SYSTEM = ShapeOntology.NAMESPACE
-		+ "localCoordSys";
-	PROP_BOUNDING_VOLUME = ShapeOntology.NAMESPACE + "boundingVolume";
-    }
 
     /**
      * Creates a Shape object

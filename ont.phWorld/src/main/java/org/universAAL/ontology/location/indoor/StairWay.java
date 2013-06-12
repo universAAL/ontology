@@ -31,15 +31,9 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class StairWay extends IndoorPlace {
 
-    public static final String MY_URI;
-    public static final String PROP_FROM_LEVEL;
-    public static final String PROP_TO_LEVEL;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "StairWay";
-	PROP_FROM_LEVEL = LocationOntology.NAMESPACE + "toLevel";
-	PROP_TO_LEVEL = LocationOntology.NAMESPACE + "fromLevel";
-    }
+    public static final String MY_URI = LocationOntology.NAMESPACE + "StairWay";
+    public static final String PROP_FROM_LEVEL = LocationOntology.NAMESPACE + "toLevel";
+    public static final String PROP_TO_LEVEL = LocationOntology.NAMESPACE + "fromLevel";
 
     /**
      * Creates a StairWay object

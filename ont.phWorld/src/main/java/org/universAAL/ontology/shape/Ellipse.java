@@ -40,16 +40,11 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Ellipse extends Shape2D {
 
-    public static final String MY_URI;
+    public static final String MY_URI = ShapeOntology.NAMESPACE + "Ellipse";
 
-    public static final String PROP_MAJOR_AXIS_LENGTH;
-    public static final String PROP_MINOR_AXIS_LENGTH;
+    public static final String PROP_MINOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MinorAxisLength";
+    public static final String PROP_MAJOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MajorAxisLength";
 
-    static {
-	MY_URI = ShapeOntology.NAMESPACE + "Ellipse";
-	PROP_MINOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MinorAxisLength";
-	PROP_MAJOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MajorAxisLength";
-    }
 
     public Ellipse(String uri) {
 	super(uri);

@@ -25,37 +25,23 @@ public class BinarySystem extends UnitSystem {
 
     public static final String MY_URI = UnitOntology.NAMESPACE + "BinarySystem";
 
-    public static final BinarySystem IND_BS;
-    public static final Unit IND_UNIT_BS_BIT;
-    public static final Unit IND_UNIT_BS_BYTE;
-    public static final Prefix IND_PREFIX_BS_KIBI;
-    public static final Prefix IND_PREFIX_BS_MEBI;
-    public static final Prefix IND_PREFIX_BS_GIBI;
-    public static final Prefix IND_PREFIX_BS_TEBI;
-    public static final Prefix IND_PREFIX_BS_PEBI;
-    public static final Prefix IND_PREFIX_BS_EXBI;
-    public static final Prefix IND_PREFIX_BS_ZEBI;
-    public static final Prefix IND_PREFIX_BS_YOBI;
+    public static final BinarySystem IND_BS = new BinarySystem("binarySytem");
+    public static final Unit IND_UNIT_BS_BIT = new Unit("bit", "Bit", "b",
+    		MeasurableDimension.ComputerStorage, IND_BS);
+    public static final Unit IND_UNIT_BS_BYTE = new Unit("byte", "Byte", "B",
+    		MeasurableDimension.ComputerStorage, IND_BS);
+    public static final Prefix IND_PREFIX_BS_KIBI = newBinaryPrefix("Kibi", "ki", 10);
+    public static final Prefix IND_PREFIX_BS_MEBI = newBinaryPrefix("Mebi", "Mi", 20);
+    public static final Prefix IND_PREFIX_BS_GIBI = newBinaryPrefix("Gibi", "Gi", 30);
+    public static final Prefix IND_PREFIX_BS_TEBI = newBinaryPrefix("Tebi", "Ti", 40);
+    public static final Prefix IND_PREFIX_BS_PEBI = newBinaryPrefix("Pebi", "Pi", 50);
+    public static final Prefix IND_PREFIX_BS_EXBI = newBinaryPrefix("Exbi", "Ei", 60);
+    public static final Prefix IND_PREFIX_BS_ZEBI = newBinaryPrefix("Zebi", "Zi", 70);
+    public static final Prefix IND_PREFIX_BS_YOBI = newBinaryPrefix("Yobi", "Yi", 80);
 
     static {
-	IND_BS = new BinarySystem("binarySytem");
-
-	IND_UNIT_BS_BIT = new Unit("bit", "Bit", "b",
-		MeasurableDimension.ComputerStorage, IND_BS);
-	IND_UNIT_BS_BYTE = new Unit("byte", "Byte", "B",
-		MeasurableDimension.ComputerStorage, IND_BS);
-
 	IND_BS.addUnits(IND_UNIT_BS_BIT);
 	IND_BS.addUnits(IND_UNIT_BS_BYTE);
-
-	IND_PREFIX_BS_KIBI = newBinaryPrefix("Kibi", "ki", 10);
-	IND_PREFIX_BS_MEBI = newBinaryPrefix("Mebi", "Mi", 20);
-	IND_PREFIX_BS_GIBI = newBinaryPrefix("Gibi", "Gi", 30);
-	IND_PREFIX_BS_TEBI = newBinaryPrefix("Tebi", "Ti", 40);
-	IND_PREFIX_BS_PEBI = newBinaryPrefix("Pebi", "Pi", 50);
-	IND_PREFIX_BS_EXBI = newBinaryPrefix("Exbi", "Ei", 60);
-	IND_PREFIX_BS_ZEBI = newBinaryPrefix("Zebi", "Zi", 70);
-	IND_PREFIX_BS_YOBI = newBinaryPrefix("Yobi", "Yi", 80);
     }
 
     protected BinarySystem(String uri) {

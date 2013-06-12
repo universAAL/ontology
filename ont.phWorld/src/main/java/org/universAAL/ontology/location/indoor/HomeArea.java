@@ -31,11 +31,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class HomeArea extends IndoorPlace {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "HomeArea";
-    }
+    public static final String MY_URI = LocationOntology.NAMESPACE + "HomeArea";
 
     /**
      * Creates a HomeArea object

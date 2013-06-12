@@ -31,11 +31,7 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class StairCase extends IndoorPlace {
 
-    public static final String MY_URI;
-
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "StairCase";
-    }
+    public static final String MY_URI = LocationOntology.NAMESPACE + "StairCase";
 
     /**
      * Creates a StairCase object

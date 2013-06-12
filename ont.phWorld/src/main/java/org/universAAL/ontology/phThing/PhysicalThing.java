@@ -33,25 +33,14 @@ import org.universAAL.ontology.shape.Shape;
  * 
  */
 public class PhysicalThing extends ManagedIndividual {
-    public static final String MY_URI;
-    public static final String PROP_CARRIED_BY;
-    public static final String PROP_PART_OF;
-    public static final String PROP_IS_IN;
-    public static final String PROP_IS_PORTABLE;
-    public static final String PROP_IS_STATIONARY;
+    public static final String MY_URI = PhThingOntology.NAMESPACE + "PhysicalThing";
+    public static final String PROP_CARRIED_BY = PhThingOntology.NAMESPACE + "carriedBy";
+    public static final String PROP_PART_OF = PhThingOntology.NAMESPACE + "partOf";
+    public static final String PROP_IS_IN = PhThingOntology.NAMESPACE + "isIn";
+    public static final String PROP_IS_PORTABLE = PhThingOntology.NAMESPACE + "isPortable";
+    public static final String PROP_IS_STATIONARY = PhThingOntology.NAMESPACE + "isStationary";
     public static final String PROP_PHYSICAL_LOCATION = PhThingOntology.NAMESPACE + "hasLocation";
-    public static final String PROP_HAS_SHAPE;
-
-    static {
-	MY_URI = PhThingOntology.NAMESPACE + "PhysicalThing";
-	PROP_CARRIED_BY = PhThingOntology.NAMESPACE + "carriedBy";
-	PROP_IS_IN = PhThingOntology.NAMESPACE + "isIn";
-	PROP_IS_PORTABLE = PhThingOntology.NAMESPACE + "isPortable";
-	PROP_IS_STATIONARY = PhThingOntology.NAMESPACE + "isStationary";
-	PROP_PART_OF = PhThingOntology.NAMESPACE + "partOf";
-//	PROP_PHYSICAL_LOCATION = PhThingOntology.NAMESPACE + "hasLocation";
-	PROP_HAS_SHAPE = PhThingOntology.NAMESPACE + "hasShape";
-    }
+    public static final String PROP_HAS_SHAPE = PhThingOntology.NAMESPACE + "hasShape";
 
     protected PhysicalThing() {
 	super();

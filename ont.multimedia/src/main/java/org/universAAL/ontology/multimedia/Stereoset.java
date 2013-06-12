@@ -32,15 +32,9 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class Stereoset extends Device {
 
-    public static final String MY_URI;
-    public static final String PROP_IS_ON_PROG;
-    public static final String PROP_IS_ON_COMM;
-
-    static {
-	MY_URI = MultimediaOntology.NAMESPACE + "Stereoset";
-	PROP_IS_ON_PROG = MultimediaOntology.NAMESPACE + "isOnProg";
-	PROP_IS_ON_COMM = MultimediaOntology.NAMESPACE + "isOnComm";
-    }
+    public static final String MY_URI = MultimediaOntology.NAMESPACE + "Stereoset";
+    public static final String PROP_IS_ON_PROG = MultimediaOntology.NAMESPACE + "isOnProg";
+    public static final String PROP_IS_ON_COMM = MultimediaOntology.NAMESPACE + "isOnComm";
 
     public Stereoset() {
 	super();

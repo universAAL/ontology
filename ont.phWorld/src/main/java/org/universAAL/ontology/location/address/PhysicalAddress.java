@@ -40,32 +40,15 @@ import org.universAAL.ontology.location.LocationOntology;
  */
 public class PhysicalAddress extends Address {
 
-    public static final String MY_URI;
-    public static final String PROP_HAS_BUILDING_ID;
-    public static final String PROP_HAS_HALL_ID;
-    public static final String PROP_HAS_FLOOR_ID;
-    public static final String PROP_HAS_DOOR_ID;
-    public static final String PROP_HAS_DESK_ID;
-    public static final String PROP_HAS_OFFICE_ID;
-    public static final String PROP_HAS_ADDITIONAL_ID;
-    // public static final String PROP_HAS_STREET;
-    // public static final String PROP_HAS_NUMBER;
+    public static final String MY_URI = LocationOntology.NAMESPACE + "PhysicalAddress";
+    public static final String PROP_HAS_BUILDING_ID = LocationOntology.NAMESPACE + "hasBuildingID";
+    public static final String PROP_HAS_HALL_ID = LocationOntology.NAMESPACE + "hasHallID";
+    public static final String PROP_HAS_FLOOR_ID = LocationOntology.NAMESPACE + "hasFloorID";
+    public static final String PROP_HAS_DOOR_ID = LocationOntology.NAMESPACE + "hasDoorID";
+    public static final String PROP_HAS_DESK_ID = LocationOntology.NAMESPACE + "hasDeskID";
+    public static final String PROP_HAS_OFFICE_ID = LocationOntology.NAMESPACE + "hasOfficeID";
+    public static final String PROP_HAS_ADDITIONAL_ID = LocationOntology.NAMESPACE + "hasAdditionalID";
 
-    static {
-	MY_URI = LocationOntology.NAMESPACE + "PhysicalAddress";
-
-	PROP_HAS_BUILDING_ID = LocationOntology.NAMESPACE + "hasBuildingID";
-	PROP_HAS_HALL_ID = LocationOntology.NAMESPACE + "hasHallID";
-	PROP_HAS_FLOOR_ID = LocationOntology.NAMESPACE + "hasFloorID";
-	PROP_HAS_DOOR_ID = LocationOntology.NAMESPACE + "hasDoorID";
-	PROP_HAS_DESK_ID = LocationOntology.NAMESPACE + "hasDeskID";
-	PROP_HAS_OFFICE_ID = LocationOntology.NAMESPACE + "hasOfficeID";
-	PROP_HAS_ADDITIONAL_ID = LocationOntology.NAMESPACE + "hasAdditionalID";
-	// PROP_HAS_STREET = Location.uAAL_LOCATION_NAMESPACE +
-	// "hasAddressStreet";
-	// PROP_HAS_STREET = Location.uAAL_LOCATION_NAMESPACE +
-	// "hasAddressNumber";
-    }
 
     /**
      * Creates a PhysicalAddress object
