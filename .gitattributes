@@ -99,7 +99,6 @@ ont.che/src/main/java/org/universAAL/ontology/che/ContextHistoryService.java -te
 ont.che/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.che/src/test/resources/log4j.properties -text
 ont.continuahealthmanager/ASL2.0.txt -text
-ont.continuahealthmanager/MITX.txt -text
 ont.continuahealthmanager/NOTICE.txt -text
 ont.continuahealthmanager/pom.xml -text
 ont.continuahealthmanager/src/main/java/org/universAAL/ontology/ContinuaHealthManagerActivator.java -text
