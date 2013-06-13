@@ -14,5 +14,5 @@ This product does not use additional software.
 
 
 III. License Summary
-- GNU General Public License (GPL).
+- Apache License 2.0.
 
