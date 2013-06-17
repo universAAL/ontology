@@ -58,7 +58,7 @@ import org.universaal.ontology.healthmeasurement.owl.PersonWeight;
 public final class HealthOntology extends Ontology {
 
     private static HealthOntologyFactory factory = new HealthOntologyFactory();
-    public static final String NAMESPACE = "http://health.ontology.universaal.org/HealthOntology#";
+    public static final String NAMESPACE = "http://ontology.universaal.org/Health.owl#";
 
     public static final String PROP_HAS_HEALTH_PROFILE = HealthOntology.NAMESPACE
 	    + "hasHealthProfile";
@@ -206,7 +206,7 @@ public final class HealthOntology extends Ontology {
 			TreatmentPlanning.PROP_RECURRENCE, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));
 
-	oci.addObjectProperty(TreatmentPlanning.PROP_START_DATE)
+	oci.addDatatypeProperty(TreatmentPlanning.PROP_START_DATE)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
@@ -214,7 +214,7 @@ public final class HealthOntology extends Ontology {
 				.getDatatypeURI(XMLGregorianCalendar.class), 1,
 			1));
 
-	oci.addObjectProperty(TreatmentPlanning.PROP_END_DATE).setFunctional();
+	oci.addDatatypeProperty(TreatmentPlanning.PROP_END_DATE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			TreatmentPlanning.PROP_END_DATE, TypeMapper
@@ -288,7 +288,7 @@ public final class HealthOntology extends Ontology {
 	oci.setResourceLabel("WeightMeasurement");
 	oci.addSuperClass(MeasurementRequirements.MY_URI);
 
-	oci.addDatatypeProperty(WeightRequirement.PROP_MIN_VALUE_ALLOWED)
+	oci.addObjectProperty(WeightRequirement.PROP_MIN_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
 	oci.addRestriction(MergedRestriction
@@ -296,7 +296,7 @@ public final class HealthOntology extends Ontology {
 			WeightRequirement.PROP_MIN_VALUE_ALLOWED,
 			PersonWeight.MY_URI, 1, 1));
 
-	oci.addDatatypeProperty(WeightRequirement.PROP_MAX_VALUE_ALLOWED)
+	oci.addObjectProperty(WeightRequirement.PROP_MAX_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
 	oci.addRestriction(MergedRestriction
@@ -319,7 +319,7 @@ public final class HealthOntology extends Ontology {
 	oci.setResourceLabel("DiastolicBloodPressureRequirement");
 	oci.addSuperClass(BloodPressureRequirement.MY_URI);
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		DiastolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
@@ -329,7 +329,7 @@ public final class HealthOntology extends Ontology {
 				DiastolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED,
 				BloodPressure.MY_URI, 1, 1));
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		DiastolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
@@ -347,7 +347,7 @@ public final class HealthOntology extends Ontology {
 	oci.setResourceLabel("SystolicBloodPressureRequirement");
 	oci.addSuperClass(BloodPressureRequirement.MY_URI);
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		SystolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
@@ -356,7 +356,7 @@ public final class HealthOntology extends Ontology {
 			.getAllValuesRestrictionWithCardinality(
 				SystolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED,
 				BloodPressure.MY_URI, 1, 1));
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		SystolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
@@ -381,7 +381,7 @@ public final class HealthOntology extends Ontology {
 	oci.setResourceLabel("HeartRateRequirement");
 	oci.addSuperClass(HeartRateRequirement.MY_URI);
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		ActivityHeartRateRequirement.PROP_MIN_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
@@ -390,7 +390,7 @@ public final class HealthOntology extends Ontology {
 			ActivityHeartRateRequirement.PROP_MIN_VALUE_ALLOWED,
 			HeartRate.MY_URI, 1, 1));
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		ActivityHeartRateRequirement.PROP_MAX_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
@@ -407,7 +407,7 @@ public final class HealthOntology extends Ontology {
 	oci.setResourceLabel("ReposeHeartRateRequirement");
 	oci.addSuperClass(HeartRateRequirement.MY_URI);
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		ReposeHeartRateRequirement.PROP_MIN_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
@@ -416,7 +416,7 @@ public final class HealthOntology extends Ontology {
 			ReposeHeartRateRequirement.PROP_MIN_VALUE_ALLOWED,
 			HeartRate.MY_URI, 1, 1));
 
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		ReposeHeartRateRequirement.PROP_MAX_VALUE_ALLOWED)
 		.addSuperProperty(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);

@@ -39,7 +39,7 @@ import org.universAAL.ontology.ReasoningFactory;
 public final class ReasoningOntology extends Ontology {
 
     private static ReasoningFactory factory = new ReasoningFactory();
-    public static final String NAMESPACE = "http://reasoner.universAAL.org/ReasoningOntology#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/ReasoningOntology.owl#";
 
     public ReasoningOntology() {
 	super(NAMESPACE);
@@ -120,7 +120,7 @@ public final class ReasoningOntology extends Ontology {
 			Query.PROP_SEARCH_STRING, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));
 
-	oci_Query.addObjectProperty(Query.PROP_RESULTING_EVENT).setFunctional();
+	oci_Query.addDatatypeProperty(Query.PROP_RESULTING_EVENT).setFunctional();
 	oci_Query.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Query.PROP_RESULTING_EVENT, TypeMapper
@@ -130,12 +130,12 @@ public final class ReasoningOntology extends Ontology {
 	oci_Rule.setResourceComment("");
 	oci_Rule.setResourceLabel("Rule");
 	oci_Rule.addSuperClass(Persistent.MY_URI);
-	oci_Rule.addDatatypeProperty(Rule.PROP_SITUATION).setFunctional();
+	oci_Rule.addObjectProperty(Rule.PROP_SITUATION).setFunctional();
 	oci_Rule.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Rule.PROP_SITUATION,
 			Situation.MY_URI, 1, 1));
 
-	oci_Rule.addDatatypeProperty(Rule.PROP_QUERY).setFunctional();
+	oci_Rule.addObjectProperty(Rule.PROP_QUERY).setFunctional();
 	oci_Rule.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(Rule.PROP_QUERY,
 			Query.MY_URI, 1, 1));

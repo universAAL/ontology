@@ -223,41 +223,40 @@ public final class ProfileOntology extends Ontology {
 		.setResourceComment("Personal information subprofile as described (mainly) in ETSI ES 202 746 and 642");
 	oci.setResourceLabel("Personal Information Subprofile");
 	oci.addSuperClass(SubProfile.MY_URI);
-	oci.addObjectProperty(PersonalInformationSubprofile.PROP_VCARD_VERSION)
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_VCARD_VERSION)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PersonalInformationSubprofile.PROP_VCARD_VERSION,
 			TypeMapper.getDatatypeURI(String.class), 1, 1));
-	oci.addObjectProperty(PersonalInformationSubprofile.PROP_LAST_REVISION)
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_LAST_REVISION)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PersonalInformationSubprofile.PROP_LAST_REVISION,
 			TypeMapper.getDatatypeURI(XMLGregorianCalendar.class),
 			1, 1));
-	oci.addObjectProperty(PersonalInformationSubprofile.PROP_NICKNAME)
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_NICKNAME)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PersonalInformationSubprofile.PROP_NICKNAME, TypeMapper
 				.getDatatypeURI(String.class), 1, 1));
-	oci.addObjectProperty(PersonalInformationSubprofile.PROP_DISPLAY_NAME);
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_DISPLAY_NAME);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		PersonalInformationSubprofile.PROP_DISPLAY_NAME, TypeMapper
 			.getDatatypeURI(String.class)));
-	oci.addObjectProperty(PersonalInformationSubprofile.PROP_UCI_LABEL)
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_UCI_LABEL)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			PersonalInformationSubprofile.PROP_UCI_LABEL,
 			TypeMapper.getDatatypeURI(String.class), 1, 1));
-	oci
-		.addObjectProperty(PersonalInformationSubprofile.PROP_UCI_ADDITIONAL_DATA);
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_UCI_ADDITIONAL_DATA);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		PersonalInformationSubprofile.PROP_UCI_ADDITIONAL_DATA,
 		TypeMapper.getDatatypeURI(String.class)));
-	oci.addObjectProperty(PersonalInformationSubprofile.PROP_ABOUT_ME);
+	oci.addDatatypeProperty(PersonalInformationSubprofile.PROP_ABOUT_ME);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		PersonalInformationSubprofile.PROP_ABOUT_ME, TypeMapper
 			.getDatatypeURI(String.class)));

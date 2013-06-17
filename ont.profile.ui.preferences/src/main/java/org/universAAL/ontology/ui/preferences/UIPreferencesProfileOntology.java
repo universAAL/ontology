@@ -252,7 +252,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			VisualPreferences.PROP_SCREEN_RESOLUTION,
 			Intensity.MY_URI, 1, 1));
 
-	oci_VisualPreferences.addDatatypeProperty(
+	oci_VisualPreferences.addObjectProperty(
 		VisualPreferences.PROP_CURSOR_SIZE).setFunctional();
 	oci_VisualPreferences.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
@@ -289,7 +289,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 			SystemMenuPreferences.PROP_MAIN_MENU_CONFIGURATION,
 			MainMenuConfigurationType.MY_URI, 1, 1));
 
-	oci_SystemMenuPreferences.addDatatypeProperty(
+	oci_SystemMenuPreferences.addObjectProperty(
 		SystemMenuPreferences.PROP_UIREQUEST_PERSISTANCE)
 		.setFunctional();
 	oci_SystemMenuPreferences.addRestriction(MergedRestriction

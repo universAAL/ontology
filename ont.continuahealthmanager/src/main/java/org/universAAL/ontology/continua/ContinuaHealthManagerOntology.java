@@ -25,7 +25,7 @@
  */
 
 // Package
-package org.universAAL.ontology;
+package org.universAAL.ontology.continua;
 
 // Imports
 import org.universAAL.middleware.owl.DataRepOntology;
@@ -35,8 +35,7 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.ontology.continua.ContinuaHealthDevice;
-import org.universAAL.ontology.continua.ContinuaHealthManager;
+import org.universAAL.ontology.ContinuaHealthManagerFactory;
 
 // Main class
 public class ContinuaHealthManagerOntology extends Ontology {
@@ -87,12 +86,12 @@ public class ContinuaHealthManagerOntology extends Ontology {
 		.setResourceComment("A key-value pair (MAC, DataType) which describes a Continua Health Device");
 	oci.setResourceLabel("Continua Health Manager");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.addDatatypeProperty(ContinuaHealthManager.PROP_HAS_CONTINUA_DEVICE)
+	oci.addObjectProperty(ContinuaHealthManager.PROP_HAS_CONTINUA_DEVICE)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		ContinuaHealthManager.PROP_HAS_CONTINUA_DEVICE,
 		ContinuaHealthDevice.MY_URI));
-	oci.addDatatypeProperty(
+	oci.addObjectProperty(
 		ContinuaHealthManager.PROP_HAS_NOT_CONTINUA_DEVICE)
 		.setFunctional();
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(

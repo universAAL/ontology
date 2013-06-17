@@ -15,7 +15,7 @@ package org.universAAL.ontology.dependability;
  limitations under the License.
 
  * @author <a href="mailto:abu.sadat@uni-siegen.de">Rubaiyat Sadat</a>
- *	       ©2012
+ *	       ï¿½2012
  */
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -37,7 +37,7 @@ import org.universAAL.ontology.DependabilityFactory;
 public final class DependabilityOntology extends Ontology {
 
     private static DependabilityFactory factory = new DependabilityFactory();
-    public static final String NAMESPACE = "http://ontology.universAAL.org/Dependability#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/Dependability.owl#";
 
     public DependabilityOntology() {
 	super(NAMESPACE);
@@ -178,7 +178,7 @@ public final class DependabilityOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(Fault.PROP_LOCATION,
 			TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-	oci_Fault.addObjectProperty(Fault.PROP_FAULT_DECISION).setFunctional();
+	oci_Fault.addDatatypeProperty(Fault.PROP_FAULT_DECISION).setFunctional();
 	oci_Fault.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Fault.PROP_FAULT_DECISION, TypeMapper

@@ -29,7 +29,6 @@ package org.universAAL.ontology.continua;
 
 // Imports
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.ContinuaHealthManagerOntology;
 
 // Main class
 public class ContinuaHealthDevice extends ManagedIndividual {

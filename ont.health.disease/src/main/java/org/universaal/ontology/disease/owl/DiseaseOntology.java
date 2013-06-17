@@ -44,7 +44,7 @@ import org.universaal.ontology.disease.DiseaseFactory;
 public final class DiseaseOntology extends Ontology {
 
     private static DiseaseFactory factory = new DiseaseFactory();
-    public static final String NAMESPACE = "http://health.ontology.universaal.org/Disease#";
+    public static final String NAMESPACE = "http://health.ontology.universaal.org/Disease.owl#";
 
     public DiseaseOntology() {
 	super(NAMESPACE);
@@ -168,7 +168,7 @@ public final class DiseaseOntology extends Ontology {
 	oci_Disease.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Disease.PROP_SYMPTHOMS, Sympthom.MY_URI));
 
-	oci_Disease.addDatatypeProperty(Disease.PROP_DISEASE_STATUS)
+	oci_Disease.addObjectProperty(Disease.PROP_DISEASE_STATUS)
 		.setFunctional();
 	oci_Disease.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(

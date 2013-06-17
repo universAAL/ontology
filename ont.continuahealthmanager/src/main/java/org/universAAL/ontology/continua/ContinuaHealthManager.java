@@ -29,7 +29,6 @@ package org.universAAL.ontology.continua;
 
 // Imports
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.ContinuaHealthManagerOntology;
 
 // Main class
 public class ContinuaHealthManager extends Service {
