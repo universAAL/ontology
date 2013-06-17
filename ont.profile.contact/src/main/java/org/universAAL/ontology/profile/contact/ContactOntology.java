@@ -36,7 +36,7 @@ import org.universAAL.ontology.vcard.VCardOntology;
 public final class ContactOntology extends Ontology {
 
     private static ContactFactory factory = new ContactFactory();
-    public static final String NAMESPACE = "http://ontology.universAAL.org/profile.contact#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/profile.contact.owl#";
 
     public ContactOntology() {
 	super(NAMESPACE);

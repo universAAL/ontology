@@ -250,12 +250,12 @@ public class LocationOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_CITYPLACE, CityPlace.MY_URI, 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_POSTALCODE).setFunctional();
+	oci.addDatatypeProperty(Address.PROP_HAS_POSTALCODE).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_POSTALCODE, TypeMapper
 				.getDatatypeURI(String.class), 0, 1));
-	oci.addObjectProperty(Address.PROP_HAS_EXTENDEDADDRESS).setFunctional();
+	oci.addDatatypeProperty(Address.PROP_HAS_EXTENDEDADDRESS).setFunctional();
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			Address.PROP_HAS_EXTENDEDADDRESS, TypeMapper

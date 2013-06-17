@@ -39,7 +39,7 @@ import org.universaal.ontology.healthmeasurement.HealthMeasurementFactory;
 public final class HealthMeasurementOntology extends Ontology {
 
     private static HealthMeasurementFactory factory = new HealthMeasurementFactory();
-    public static final String NAMESPACE = "http://ontology.universaal.org/HealthMeasurement#";
+    public static final String NAMESPACE = "http://ontology.universaal.org/HealthMeasurement.owl#";
 
     public HealthMeasurementOntology() {
 	super(NAMESPACE);
@@ -177,7 +177,7 @@ public final class HealthMeasurementOntology extends Ontology {
 			HeartRateSignal.PROP_IS_COMPOSED_BY, HeartRate.MY_URI,
 			1, -1));
 
-	oci_HeartRateSignal.addObjectProperty(HeartRateSignal.PROP_INTERVAL)
+	oci_HeartRateSignal.addDatatypeProperty(HeartRateSignal.PROP_INTERVAL)
 		.setFunctional();
 	oci_HeartRateSignal.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(

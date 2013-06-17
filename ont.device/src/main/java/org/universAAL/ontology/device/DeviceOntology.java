@@ -43,7 +43,7 @@ import org.universAAL.ontology.DeviceFactory;
 public final class DeviceOntology extends Ontology {
 
     private static DeviceFactory factory = new DeviceFactory();
-    public static final String NAMESPACE = "http://ontology.universAAL.org/Device#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/Device.owl#";
 
     public DeviceOntology() {
 	super(NAMESPACE);

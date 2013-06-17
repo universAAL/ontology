@@ -38,7 +38,7 @@ public class DimmerController extends DimmerActuator {
     }
 
     public int getPropSerializationType(String arg0) {
-	return 0;
+	return PROP_SERIALIZATION_FULL;
     }
 
     public boolean isWellFormed() {
