@@ -201,7 +201,7 @@ public final class UnitOntology extends Ontology {
 	oci_UnitService
 		.setResourceComment("Root service concept that allows providing services that handle Unit operations");
 	oci_UnitService.setResourceLabel("UnitService");
-	oci_UnitService.addSuperClass(UnitService.MY_URI);
+	oci_UnitService.addSuperClass(Service.MY_URI);
 	oci_UnitService.addObjectProperty(UnitService.PROP_CONTROLS);
 	oci_UnitService
 		.addRestriction(MergedRestriction.getAllValuesRestriction(
