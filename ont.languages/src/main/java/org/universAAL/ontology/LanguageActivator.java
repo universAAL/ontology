@@ -28,18 +28,17 @@ import org.universAAL.ontology.language.LanguageOntology;
 public class LanguageActivator implements ModuleActivator {
 
     private LanguageOntology ont = new LanguageOntology();
+    public static ModuleContext context = null;
 
     /** {@inheritDoc} */
     public void start(ModuleContext mc) throws Exception {
+	System.out.println("---- LanguageActivator");
+	LanguageActivator.context = mc;
 	OntologyManagement.getInstance().register(mc, ont);
-
     }
 
     /** {@inheritDoc} */
     public void stop(ModuleContext mc) throws Exception {
-
 	OntologyManagement.getInstance().unregister(mc, ont);
-
     }
-
 }
