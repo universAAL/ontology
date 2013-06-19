@@ -15,7 +15,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.ui.preferences.AccessMode;
 import org.universAAL.ontology.ui.preferences.AlertPreferences;
 import org.universAAL.ontology.ui.preferences.AuditoryPreferences;
@@ -29,7 +29,7 @@ import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
  * @author eandgrg
  * 
  */
-public class UIPreferencesProfileFactory extends ResourceFactoryImpl {
+public class UIPreferencesProfileFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

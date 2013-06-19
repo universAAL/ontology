@@ -16,7 +16,7 @@
 package org.universaal.ontology.health;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universaal.ontology.health.owl.ActivityHeartRateRequirement;
 import org.universaal.ontology.health.owl.BloodPressureRequirement;
 import org.universaal.ontology.health.owl.DiastolicBloodPressureRequirement;
@@ -37,7 +37,7 @@ import org.universaal.ontology.health.owl.WeightMeasurementTreatment;
 import org.universaal.ontology.health.owl.WeightRequirement;
 import org.universaal.ontology.health.owl.services.PerformedSessionManagementService;
 
-public class HealthOntologyFactory extends ResourceFactoryImpl {
+public class HealthOntologyFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

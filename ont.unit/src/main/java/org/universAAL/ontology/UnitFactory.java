@@ -16,7 +16,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.unit.DividedUnit;
 import org.universAAL.ontology.unit.MultipliedUnit;
 import org.universAAL.ontology.unit.Prefix;
@@ -24,7 +24,7 @@ import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitService;
 import org.universAAL.ontology.unit.UnitSystem;
 
-public class UnitFactory extends ResourceFactoryImpl {
+public class UnitFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

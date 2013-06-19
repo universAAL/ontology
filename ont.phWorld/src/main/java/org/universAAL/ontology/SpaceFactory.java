@@ -20,10 +20,10 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.space.SpaceConfigurationService;
 
-public class SpaceFactory extends ResourceFactoryImpl {
+public class SpaceFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

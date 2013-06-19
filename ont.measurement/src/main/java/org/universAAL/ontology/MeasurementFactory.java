@@ -16,11 +16,11 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.measurement.MeanSquareError;
 import org.universAAL.ontology.measurement.Measurement;
 
-public class MeasurementFactory extends ResourceFactoryImpl {
+public class MeasurementFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

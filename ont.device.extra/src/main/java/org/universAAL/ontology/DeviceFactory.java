@@ -22,7 +22,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.device.home.*;
 
 /**
@@ -31,7 +31,7 @@ import org.universAAL.ontology.device.home.*;
  * @author alfiva
  * 
  */
-public class DeviceFactory extends ResourceFactoryImpl {
+public class DeviceFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
@@ -47,5 +47,4 @@ public class DeviceFactory extends ResourceFactoryImpl {
 	}
 	return null;
     }
-
 }

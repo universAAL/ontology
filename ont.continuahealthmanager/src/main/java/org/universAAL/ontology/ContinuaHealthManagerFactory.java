@@ -29,12 +29,12 @@ package org.universAAL.ontology;
 
 // Imports
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.continua.ContinuaHealthDevice;
 import org.universAAL.ontology.continua.ContinuaHealthManager;
 
 // Main class
-public class ContinuaHealthManagerFactory extends ResourceFactoryImpl {
+public class ContinuaHealthManagerFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

@@ -15,13 +15,12 @@ package org.universAAL.ontology;
  limitations under the License.
 
  * @author <a href="mailto:abu.sadat@uni-siegen.de">Rubaiyat Sadat</a>
- *	       ©2012
+ *	       ï¿½2012
  */
 
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
-
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.dependability.Symptom;
 import org.universAAL.ontology.dependability.DirectFault;
 import org.universAAL.ontology.dependability.ErrorDetector;
@@ -52,7 +51,7 @@ import org.universAAL.ontology.dependability.DevelopmentFault;
 import org.universAAL.ontology.dependability.TransientFault;
 import org.universAAL.ontology.dependability.NonMaliciousFault;
 
-public class DependabilityFactory extends ResourceFactoryImpl {
+public class DependabilityFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

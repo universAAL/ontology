@@ -19,7 +19,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.multimedia.TV;
 import org.universAAL.ontology.multimedia.Stereoset;
 
@@ -29,7 +29,7 @@ import org.universAAL.ontology.multimedia.Stereoset;
  * @author Carsten Stockloew
  */
 
-public class MultimediaFactory extends ResourceFactoryImpl {
+public class MultimediaFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

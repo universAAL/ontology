@@ -20,7 +20,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.furniture.Furniture;
 
 /**
@@ -28,7 +28,7 @@ import org.universAAL.ontology.furniture.Furniture;
  * @author Carsten Stockloew
  * 
  */
-public class FurnitureFactory extends ResourceFactoryImpl {
+public class FurnitureFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
