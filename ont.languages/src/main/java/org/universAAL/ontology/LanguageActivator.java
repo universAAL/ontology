@@ -32,7 +32,6 @@ public class LanguageActivator implements ModuleActivator {
 
     /** {@inheritDoc} */
     public void start(ModuleContext mc) throws Exception {
-	System.out.println("---- LanguageActivator");
 	LanguageActivator.context = mc;
 	OntologyManagement.getInstance().register(mc, ont);
     }
