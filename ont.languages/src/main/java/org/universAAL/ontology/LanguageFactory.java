@@ -20,8 +20,9 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.Charset;
 
+import org.universAAL.middleware.container.utils.LogUtils;
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.language.LanguageImpl;
 
 /**
@@ -29,10 +30,9 @@ import org.universAAL.ontology.language.LanguageImpl;
  * @author eandgrg
  * 
  */
-public class LanguageFactory extends ResourceFactoryImpl {
+public class LanguageFactory implements ResourceFactory {
 
     public LanguageFactory(URL dataURL) {
-	super();
 	tableURL = dataURL;
     }
 
@@ -40,7 +40,6 @@ public class LanguageFactory extends ResourceFactoryImpl {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
-	Resource ret = null;
 	try {
 	    BufferedReader br = new BufferedReader(new InputStreamReader(
 		    tableURL.openStream(), Charset.forName("UTF-8")));
@@ -49,22 +48,37 @@ public class LanguageFactory extends ResourceFactoryImpl {
 	    while (line != factoryIndex + 1 && (ll = br.readLine()) != null) {
 		line++;
 	    }
+	    br.close();
 	    if (ll != null) {
 		String[] props = ll.split("\\|");
 		if (props.length >= 4) {
-			/*
-			 * FIXME DIRTY TRICK to get over the init() in ManagedIndividual
-			 */
-			LanguageImpl.tempURI = classURI;
-		    ret = new LanguageImpl(instanceURI,
-			    props[1], props[2], props[3]);
+		    /*
+		     * FIXME DIRTY TRICK to get over the init() in
+		     * ManagedIndividual
+		     */
+		    LanguageImpl.tempURI = classURI;
+		    return new LanguageImpl(instanceURI, props[1], props[2],
+			    props[3]);
+		} else {
+		    LogUtils.logError(LanguageActivator.context,
+			    LanguageFactory.class, "createInstance",
+			    "No element found for classURI " + classURI
+				    + ", instanceURI " + instanceURI
+				    + ", factoryIndex: " + factoryIndex
+				    + ": props.length too small.");
 		}
+	    } else {
+		LogUtils.logError(LanguageActivator.context,
+			LanguageFactory.class, "createInstance",
+			"No element found for classURI " + classURI
+				+ ", instanceURI " + instanceURI
+				+ ", factoryIndex: " + factoryIndex
+				+ ": index too big, line not found.");
 	    }
-	    br.close();
+
 	} catch (Exception e) {
-	    // TODO: handle exception
-		e.printStackTrace();
+	    e.printStackTrace();
 	}
-	return ret;
+	return null;
     }
 }
