@@ -19,7 +19,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.impairment.Astigmatism;
 import org.universAAL.ontology.impairment.ColorBlindness;
 import org.universAAL.ontology.impairment.FarSightedness;
@@ -36,7 +36,7 @@ import org.universAAL.ontology.impairment.SpeakingImpairment;
  * @author Carsten Stockloew
  */
 
-public class ImpairmentFactory extends ResourceFactoryImpl {
+public class ImpairmentFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

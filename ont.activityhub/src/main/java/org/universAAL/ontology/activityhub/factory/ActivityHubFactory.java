@@ -1,7 +1,7 @@
 package org.universAAL.ontology.activityhub.factory;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator;
 import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
@@ -12,7 +12,7 @@ import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
  * 
  * @author Thomas Fuxreiter
  */
-public class ActivityHubFactory extends ResourceFactoryImpl {
+public class ActivityHubFactory implements ResourceFactory {
 
     /**
      * @param classURI

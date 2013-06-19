@@ -20,7 +20,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.av.device.LoudSpeaker;
 import org.universAAL.ontology.av.device.Microphone;
 import org.universAAL.ontology.av.device.VideoCamera;
@@ -39,7 +39,7 @@ import org.universAAL.ontology.av.streaming.VideoStream;
  * @author Carsten Stockloew
  * 
  */
-public class AVFactory extends ResourceFactoryImpl {
+public class AVFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

@@ -17,10 +17,10 @@
 package org.universaal.ontology.healthmeasurement;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universaal.ontology.healthmeasurement.owl.*;
 
-public class HealthMeasurementFactory extends ResourceFactoryImpl {
+public class HealthMeasurementFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

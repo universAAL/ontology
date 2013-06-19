@@ -16,11 +16,11 @@
 package org.universAAL.ontology.profile;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.profile.contact.ContactListSubProfile;
 import org.universAAL.ontology.profile.contact.ContactManagementService;
 
-public class ContactFactory extends ResourceFactoryImpl {
+public class ContactFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

@@ -16,7 +16,7 @@
 package org.universaal.ontology.disease;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universaal.ontology.ICD10CirculatorySystemDiseases.owl.AcuteRheumaticFever;
 import org.universaal.ontology.ICD10CirculatorySystemDiseases.owl.HeartFailure;
 import org.universaal.ontology.ICD10CirculatorySystemDiseases.owl.HypertensiveDisease;
@@ -37,7 +37,7 @@ import org.universaal.ontology.disease.owl.Patogeny;
 import org.universaal.ontology.disease.owl.Pronostic;
 import org.universaal.ontology.disease.owl.Sympthom;
 
-public class DiseaseFactory extends ResourceFactoryImpl {
+public class DiseaseFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

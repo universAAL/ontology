@@ -1,7 +1,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.X73.AbsoluteTimeStamp;
 import org.universAAL.ontology.X73.BloodPressureDia;
 import org.universAAL.ontology.X73.BloodPressureMonitor;
@@ -13,7 +13,7 @@ import org.universAAL.ontology.X73.WeighingScale;
 import org.universAAL.ontology.X73.X73;
 import org.universAAL.ontology.X73.compoundBasicNuValue;
 
-public class X73Factory extends ResourceFactoryImpl {
+public class X73Factory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

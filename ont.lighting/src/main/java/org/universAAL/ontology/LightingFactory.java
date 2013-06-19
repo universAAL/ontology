@@ -20,7 +20,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.lighting.Beaming;
 import org.universAAL.ontology.lighting.BeamingSource;
 import org.universAAL.ontology.lighting.BlinkableBeaming;
@@ -32,9 +32,9 @@ import org.universAAL.ontology.lighting.Lighting;
 
 /**
  * @author mtazari
- * 
+ * @author Carsten Stockloew
  */
-public class LightingFactory extends ResourceFactoryImpl {
+public class LightingFactory implements ResourceFactory {
     // private static final int NAMESPACE_LENGTH = LIGHTING_NAMESPACE.length();
     // private static final String PROP_ORIG_INDIVIDUAL = LIGHTING_NAMESPACE
     // + LightingFactory.class.hashCode();
@@ -90,59 +90,5 @@ public class LightingFactory extends ResourceFactoryImpl {
 	// if (className.equals("LightSource"))
 	// return new LightSource(instanceURI);
 	return null;
-    }
-
-    public Resource castAs(Resource r, String classURI) {
-	/*
-	 * General comment for this implementation: we assume that the
-	 * non-static method Resource#castAs(String) will call this method
-	 */
-	/*
-	 * if (classURI == null || !classURI.startsWith(LIGHTING_NAMESPACE))
-	 * return null;
-	 * 
-	 * String target = classURI.substring(NAMESPACE_LENGTH); Object orig =
-	 * r.getProperty(PROP_ORIG_INDIVIDUAL);
-	 * 
-	 * if (target.equals("Beaming")) if (r instanceof Beaming || r
-	 * instanceof BlinkableBeaming) return r; else if (r instanceof
-	 * BlinkableLighting && orig instanceof Beaming) return (Resource) orig;
-	 * else return null;
-	 * 
-	 * if (target.equals("BeamingSource")) if (r instanceof BeamingSource ||
-	 * r instanceof BlinkableBeamingSource) return r; else if (r instanceof
-	 * BlinkableLightSource && orig instanceof BeamingSource) return
-	 * (Resource) orig; else return null;
-	 * 
-	 * if (target.equals("BlinkableBeaming")) if (r instanceof
-	 * BlinkableBeaming) return r; else if (r instanceof BlinkableLighting
-	 * && orig instanceof BlinkableBeaming) return (Resource) orig; else
-	 * return null;
-	 * 
-	 * if (target.equals("BlinkableBeamingSource")) if (r instanceof
-	 * BlinkableBeamingSource) return r; else if (r instanceof
-	 * BlinkableLightSource && orig instanceof BlinkableBeamingSource)
-	 * return (Resource) orig; else return null;
-	 * 
-	 * if (target.equals("BlinkableLighting")) if (r instanceof
-	 * BlinkableLighting) return r; else if (r instanceof BlinkableBeaming)
-	 * { Resource result = new BlinkableLighting(r.getURI());
-	 * r.copyTo(result); // method to be added to the Resource class
-	 * result.setProperty(PROP_ORIG_INDIVIDUAL, r); return result; } else
-	 * return null;
-	 * 
-	 * if (target.equals("BlinkableLightSource")) if (r instanceof
-	 * BlinkableLightSource) return r; else if (r instanceof
-	 * BlinkableBeamingSource) { Resource result = new
-	 * BlinkableLightSource(r.getURI()); r.copyTo(result); // method to be
-	 * added to the Resource class result.setProperty(PROP_ORIG_INDIVIDUAL,
-	 * r); return result; } else return null;
-	 * 
-	 * if (target.equals("Lighting")) if (r instanceof Lighting) return r;
-	 * else return null;
-	 * 
-	 * if (target.equals("LightSource")) if (r instanceof LightSource)
-	 * return r; else return null;
-	 */return null;
     }
 }

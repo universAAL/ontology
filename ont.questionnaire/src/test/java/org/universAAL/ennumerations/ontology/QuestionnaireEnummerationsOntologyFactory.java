@@ -18,15 +18,14 @@
 package org.universAAL.ennumerations.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 
-public class QuestionnaireEnummerationsOntologyFactory extends
-	ResourceFactoryImpl {
+public class QuestionnaireEnummerationsOntologyFactory implements
+	ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
 
 	return null;
     }
-
 }

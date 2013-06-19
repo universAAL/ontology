@@ -20,7 +20,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.personalhealthdevice.BloodPressureMeasurement;
 import org.universAAL.ontology.personalhealthdevice.BloodPressureMonitor;
 import org.universAAL.ontology.personalhealthdevice.WeighingScale;
@@ -30,7 +30,7 @@ import org.universAAL.ontology.personalhealthdevice.WeighingScale;
  * 
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
-public class PersonalHealthDeviceFactory extends ResourceFactoryImpl {
+public class PersonalHealthDeviceFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
@@ -51,5 +51,4 @@ public class PersonalHealthDeviceFactory extends ResourceFactoryImpl {
 
 	return null;
     }
-
 }

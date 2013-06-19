@@ -26,7 +26,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.profile.*;
 import org.universAAL.ontology.profile.service.ProfilingEditorService;
 import org.universAAL.ontology.profile.service.ProfilingService;
@@ -37,7 +37,7 @@ import org.universAAL.ontology.profile.service.ProfilingService;
  * @author Carsten Stockloew
  */
 
-public class ProfileFactory extends ResourceFactoryImpl {
+public class ProfileFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

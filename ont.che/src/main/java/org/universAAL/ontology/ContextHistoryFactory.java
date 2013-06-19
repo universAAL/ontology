@@ -22,7 +22,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.che.ContextEvent;
 import org.universAAL.ontology.che.ContextHistoryService;
 
@@ -32,7 +32,7 @@ import org.universAAL.ontology.che.ContextHistoryService;
  * @author alfiva
  * 
  */
-public class ContextHistoryFactory extends ResourceFactoryImpl {
+public class ContextHistoryFactory implements ResourceFactory {
 
     /*
      * (non-Javadoc)

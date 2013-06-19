@@ -17,7 +17,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.questionnaire.Answer;
 import org.universAAL.ontology.questionnaire.AnsweredQuestionnaire;
 import org.universAAL.ontology.questionnaire.ChoiceLabel;
@@ -28,7 +28,7 @@ import org.universAAL.ontology.questionnaire.Questionnaire;
 import org.universAAL.ontology.questionnaire.QuestionnaireService;
 import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
 
-public class QuestionnaireFactory extends ResourceFactoryImpl {
+public class QuestionnaireFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {
