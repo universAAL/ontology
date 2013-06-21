@@ -1,0 +1,36 @@
+PERSONA CASF Ontology
+
+Copyright 2008-2010 Fraunhofer IGD, http://www.igd.fraunhofer.de
+Fraunhofer-Gesellschaft - Institute of Computer Graphics Research 
+
+Copyright 2008-2010 ITACA-TSB, http://www.tsb.upv.es
+Instituto Tecnologico de Aplicaciones de Comunicacion 
+Avanzadas - Grupo Tecnologias para la Salud y el 
+Bienestar (TSB)
+
+Copyright 2008-2010 Vodafone Italy, http://www.vodafone.it
+Vodafone Omnitel N.V.
+
+Copyright 2008-2010 R&S Info, http://www.rsinfo.eu
+R&S INFO s.r.l. 
+
+I. Included Software
+
+This does not include any software developed by 3rd parties
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+
+III. License Summary
+- Apache License 2.0
+- Common Public License 1.0
+
