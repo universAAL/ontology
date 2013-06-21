@@ -1,0 +1,17 @@
+universAAL Ontology for hand gestures
+
+Copyright by 2012 Ericsson Nikola Tesla d.d., www.ericsson.com/hr
+
+
+I. Included Software
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0
