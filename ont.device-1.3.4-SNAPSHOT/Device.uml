@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_UkOj0NJAEeGCrI2l36sLrg" name="Device">
+    <ownedComment xmi:id="_UkOj0dJAEeGCrI2l36sLrg" annotatedElement="_UkOj1tJAEeGCrI2l36sLrg">
+      <body>The Collection of Devices Ontology</body>
+    </ownedComment>
+    <packageImport xmi:id="_UkOj0tJAEeGCrI2l36sLrg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_UkOj09JAEeGCrI2l36sLrg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_UkOj1NJAEeGCrI2l36sLrg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_UkOj1dJAEeGCrI2l36sLrg">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UkOj1tJAEeGCrI2l36sLrg" name="org.universAAL.ontology.device">
+      <packagedElement xmi:type="uml:Class" xmi:id="_UkOj19JAEeGCrI2l36sLrg" name="MyService">
+        <generalization xmi:id="_UkOj2NJAEeGCrI2l36sLrg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UkOj2dJAEeGCrI2l36sLrg" name="Sensor" isAbstract="true">
+        <generalization xmi:id="_UkOj2tJAEeGCrI2l36sLrg" general="_DJdZIDflEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_niB-kDfuEeKEOs6yTQFaQw" general="_DJdZIDflEeKEOs6yTQFaQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UkOj29JAEeGCrI2l36sLrg" name="MeasuredEvent" isAbstract="true">
+        <generalization xmi:id="_UkOj3NJAEeGCrI2l36sLrg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CIfy4NJBEeGCrI2l36sLrg" name="Actuator" clientDependency="_Dnti4NJBEeGCrI2l36sLrg" isAbstract="true">
+        <generalization xmi:id="_FVzcYNJBEeGCrI2l36sLrg" general="_DJdZIDflEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_nP9XIDfuEeKEOs6yTQFaQw" general="_DJdZIDflEeKEOs6yTQFaQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Dnti4NJBEeGCrI2l36sLrg" name="Abstraction1" client="_CIfy4NJBEeGCrI2l36sLrg">
+        <supplier xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bX3TcNJDEeGCrI2l36sLrg" name="MeasuredState" isAbstract="true">
+        <generalization xmi:id="_fBV7kNJDEeGCrI2l36sLrg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DJdZIDflEeKEOs6yTQFaQw" name="ValueDevice" isAbstract="true">
+        <generalization xmi:id="_Jt4vcDflEeKEOs6yTQFaQw">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <generalization xmi:id="_m8u5IDfuEeKEOs6yTQFaQw">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_KH0c8DfmEeKEOs6yTQFaQw" name="valueType" type="_a6zHYDflEeKEOs6yTQFaQw" association="_KH1EADfmEeKEOs6yTQFaQw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KH0c8TfmEeKEOs6yTQFaQw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KH0c8jfmEeKEOs6yTQFaQw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tkX1IDfmEeKEOs6yTQFaQw" name="valueType" type="_a6zHYDflEeKEOs6yTQFaQw" association="_tkYcMDfmEeKEOs6yTQFaQw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tkX1ITfmEeKEOs6yTQFaQw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tkX1IjfmEeKEOs6yTQFaQw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cKJ1cDfwEeKEOs6yTQFaQw" name="hasValue">
+          <type xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_Xh6tEKFMEeCPiYRKlVcMuQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gn82cDfwEeKEOs6yTQFaQw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gn8PYDfwEeKEOs6yTQFaQw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_a6zHYDflEeKEOs6yTQFaQw" name="ValueType">
+        <ownedLiteral xmi:id="_A4veQDfmEeKEOs6yTQFaQw" name="event"/>
+        <ownedLiteral xmi:id="_G3QrIDfmEeKEOs6yTQFaQw" name="state"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_KH1EADfmEeKEOs6yTQFaQw" name="hasValueType" memberEnd="_KH1EATfmEeKEOs6yTQFaQw _KH0c8DfmEeKEOs6yTQFaQw">
+        <ownedEnd xmi:id="_KH1EATfmEeKEOs6yTQFaQw" name="valueDevice" type="_DJdZIDflEeKEOs6yTQFaQw" association="_KH1EADfmEeKEOs6yTQFaQw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KH1EAjfmEeKEOs6yTQFaQw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KH1EAzfmEeKEOs6yTQFaQw"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tkYcMDfmEeKEOs6yTQFaQw" name="hasValueType" memberEnd="_tkYcMTfmEeKEOs6yTQFaQw _tkX1IDfmEeKEOs6yTQFaQw">
+        <ownedEnd xmi:id="_tkYcMTfmEeKEOs6yTQFaQw" name="valueDevice" type="_DJdZIDflEeKEOs6yTQFaQw" association="_tkYcMDfmEeKEOs6yTQFaQw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tkYcMjfmEeKEOs6yTQFaQw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tkYcMzfmEeKEOs6yTQFaQw"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hnc94DfrEeKEOs6yTQFaQw" name="ContactSensor">
+        <generalization xmi:id="_STKiMDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_mM5i8DiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_mM5i8ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mM5i8TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mM5i8jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kc458DfrEeKEOs6yTQFaQw" name="COSensor">
+        <generalization xmi:id="_ooJSEDfuEeKEOs6yTQFaQw" general="_jd_W0DftEeKEOs6yTQFaQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ksOWcDfrEeKEOs6yTQFaQw" name="EnuresisSensor">
+        <generalization xmi:id="_UgdgMDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_XhsSwDiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_XhsSwziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhsSwTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XhsSwjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_k7QQ8DfrEeKEOs6yTQFaQw" name="FallSensor">
+        <generalization xmi:id="_SpwdQDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_TWfdoDiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_TWfdoziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TWfdoTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TWfdojiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lKql8DfrEeKEOs6yTQFaQw" name="GasSensor">
+        <generalization xmi:id="_o8SWEDfuEeKEOs6yTQFaQw" general="_jd_W0DftEeKEOs6yTQFaQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lZKU8DfrEeKEOs6yTQFaQw" name="DosageSensor">
+        <generalization xmi:id="_UG-pMDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_kUFnMDiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_kUFnMziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kUFnMTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kUFnMjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_i5rCMDiEEeK_5M40qoRWyw" name="dosageValue" type="_blVR4DiEEeK_5M40qoRWyw" association="_i5rCMziEEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i5rCMTiEEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i5rCMjiEEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lq8BcDfrEeKEOs6yTQFaQw" name="MotionSensor">
+        <generalization xmi:id="_TCPOsDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_fru8ADiDEeK_5M40qoRWyw" name="statusValue" type="_3aR8UDiAEeK_5M40qoRWyw" association="_fru8AziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fru8ATiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fru8AjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ixAq4DiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_ixAq4ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixAq4TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixAq4jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_pWEd4DiEEeK_5M40qoRWyw" name="motionValue" type="_kWWbkDiEEeK_5M40qoRWyw" association="_pWEd4ziEEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pWEd4TiEEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pWEd4jiEEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6ETuUDfrEeKEOs6yTQFaQw" name="PresenceSensor">
+        <generalization xmi:id="_TZ0BMDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_RNxdoDiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_RNxdoziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RNxdoTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RNxdojiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6R4QQDfrEeKEOs6yTQFaQw" name="ExitSensor">
+        <generalization xmi:id="_WfjqIDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_eQPOYDiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_eQPOYziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eQPOYTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eQPOYjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_aAA54DiEEeK_5M40qoRWyw" name="exitValue" type="_TUvUsDiEEeK_5M40qoRWyw" association="_aAA54ziEEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aAA54TiEEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAA54jiEEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6hhOwDfrEeKEOs6yTQFaQw" name="SmokeSensor">
+        <generalization xmi:id="_pUPjEDfuEeKEOs6yTQFaQw" general="_jd_W0DftEeKEOs6yTQFaQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SYDwoDftEeKEOs6yTQFaQw" name="SwitchSensor">
+        <generalization xmi:id="_5KxhcDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_RGELwDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_RGELwziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RGELwTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RGELwjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UPOtoDftEeKEOs6yTQFaQw" name="SwitchActuator">
+        <generalization xmi:id="_4SKecDfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_VO4bQDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_VO4bQziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VO4bQTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VO4bQjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VTSLoDftEeKEOs6yTQFaQw" name="SwitchController">
+        <generalization xmi:id="_p-01oMkAEeKAcp7RjNU-PQ" general="_SYDwoDftEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_qirJkMkAEeKAcp7RjNU-PQ" general="_UPOtoDftEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_TmvYwDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_TmvYwziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TmvYwTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TmvYwjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jd_W0DftEeKEOs6yTQFaQw" name="EnvironmentSensor">
+        <generalization xmi:id="_oQzJEDfuEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_VLkv8DiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_VLkv8ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VLkv8TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VLkv8jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lnVB4DftEeKEOs6yTQFaQw" name="TemperatureLevelSensor">
+        <generalization xmi:id="_U1IvsDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_RCFp8DfyEeKEOs6yTQFaQw" name="temperatureLevel" type="_LOhI0DfyEeKEOs6yTQFaQw" association="_RCGRADfyEeKEOs6yTQFaQw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCFp8TfyEeKEOs6yTQFaQw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCFp8jfyEeKEOs6yTQFaQw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_oYfh8DftEeKEOs6yTQFaQw" name="FloodSensor">
+        <generalization xmi:id="_TtkqsDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_OfZy4DiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_Ofjj4DiDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OfZy4TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OfZy4jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7eTVMDftEeKEOs6yTQFaQw" name="BlindSensor">
+        <generalization xmi:id="_6fc1YDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_WMpggDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8p1UMDftEeKEOs6yTQFaQw" name="BlindActuator">
+        <generalization xmi:id="_5p9-4DfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_QXFbUDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9oU8wDftEeKEOs6yTQFaQw" name="BlindController">
+        <generalization xmi:id="_mXx2cMkAEeKAcp7RjNU-PQ" general="_7eTVMDftEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_m1r6cMkAEeKAcp7RjNU-PQ" general="_8p1UMDftEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_TllXoDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_upGH4DfuEeKEOs6yTQFaQw" name="CurtainSensor">
+        <generalization xmi:id="_89SJwDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_W5R9ADiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_voB1UDfuEeKEOs6yTQFaQw" name="CurtainController">
+        <generalization xmi:id="_naR1QMkAEeKAcp7RjNU-PQ" general="_upGH4DfuEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_n8WnkMkAEeKAcp7RjNU-PQ" general="_wdIRUDfuEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_UlG68DiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wdIRUDfuEeKEOs6yTQFaQw" name="CurtainActuator">
+        <generalization xmi:id="_77Ee0DfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_RWBIwDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1SGcMDfuEeKEOs6yTQFaQw" name="GlassBreakSensor">
+        <generalization xmi:id="_W5VcEDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_Zpqr4DiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_Zpqr4ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zpqr4TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zpqr4jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7OPqgDfuEeKEOs6yTQFaQw" name="WindowSensor">
+        <generalization xmi:id="_-dG9wDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_bepJIDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_bepJIziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bepJITiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bepJIjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9iF8cDfuEeKEOs6yTQFaQw" name="WindowController">
+        <generalization xmi:id="_tLYRMMkAEeKAcp7RjNU-PQ" general="_7OPqgDfuEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_tvYWIMkAEeKAcp7RjNU-PQ" general="_-4iK8DfuEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_c5iZ0DiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_c5iZ0ziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c5iZ0TiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c5iZ0jiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-4iK8DfuEeKEOs6yTQFaQw" name="WindowActuator">
+        <generalization xmi:id="_9XTMQDfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_eqKC4DiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_eqKC4ziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eqKC4TiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eqKC4jiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FXAqQDfvEeKEOs6yTQFaQw" name="HeaterActuator">
+        <generalization xmi:id="__DyjQDfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_i_LiYDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_i_LiYziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i_LiYTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i_LiYjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GiEvMDfvEeKEOs6yTQFaQw" name="HeaterSensor">
+        <generalization xmi:id="_AZACsDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_gEBY0DiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_gEBY0ziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gEBY0TiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gEBY0jiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HztWMDfvEeKEOs6yTQFaQw" name="HeaterController">
+        <generalization xmi:id="__cbswDfvEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <generalization xmi:id="__158sDfvEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MAA-kDfvEeKEOs6yTQFaQw" name="HumiditySensor">
+        <generalization xmi:id="_Vj-LoDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_VaylADfxEeKEOs6yTQFaQw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_ir6pUGkbEeGIl7HiYaL9OA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NsMMgDfvEeKEOs6yTQFaQw" name="TemperatureSensor">
+        <generalization xmi:id="_VKy2oDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="__x2tsDfwEeKEOs6yTQFaQw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_ir6pUGkbEeGIl7HiYaL9OA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YtG8QDfvEeKEOs6yTQFaQw" name="WaterFlowSensor">
+        <generalization xmi:id="_Mg3MYDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_WxOXwDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_WxOXwziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WxOXwTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WxOXwjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Zq0hsDfvEeKEOs6yTQFaQw" name="WaterFlowController">
+        <generalization xmi:id="_rHa1YMkAEeKAcp7RjNU-PQ" general="_YtG8QDfvEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_rfq9UMkAEeKAcp7RjNU-PQ" general="_avVSsDfvEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_YQvCsDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_YQvCsziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQvCsTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YQvCsjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_avVSsDfvEeKEOs6yTQFaQw" name="WaterFlowActuator">
+        <generalization xmi:id="_J58NcDfwEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_ZyyEQDiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_ZyyEQziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyyEQTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZyyEQjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mGmF4DfvEeKEOs6yTQFaQw" name="PanicButtonSensor">
+        <generalization xmi:id="_XRXhkDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_btoHsDiDEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_btoHsziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btoHsTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btoHsjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uVD8IDfvEeKEOs6yTQFaQw" name="DimmerSensor">
+        <generalization xmi:id="_Qw-9wDfwEeKEOs6yTQFaQw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_VbQf0DiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vO9_oDfvEeKEOs6yTQFaQw" name="DimmerController">
+        <generalization xmi:id="_j1UgwMkAEeKAcp7RjNU-PQ" general="_uVD8IDfvEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_lvd5QMkAEeKAcp7RjNU-PQ" general="_wPqnoDfvEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_SmWvQDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wPqnoDfvEeKEOs6yTQFaQw" name="DimmerActuator">
+        <generalization xmi:id="_N-irUDfwEeKEOs6yTQFaQw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_Lq28wDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_F1GfADfwEeKEOs6yTQFaQw" name="HeaterController">
+        <generalization xmi:id="_uRTXcMkAEeKAcp7RjNU-PQ" general="_GiEvMDfvEeKEOs6yTQFaQw"/>
+        <generalization xmi:id="_u1TcYMkAEeKAcp7RjNU-PQ" general="_FXAqQDfvEeKEOs6yTQFaQw"/>
+        <ownedAttribute xmi:id="_hcPwADiGEeK_5M40qoRWyw" name="" type="_3aR8UDiAEeK_5M40qoRWyw" association="_hcPwAziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hcPwATiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hcPwAjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_LOhI0DfyEeKEOs6yTQFaQw" name="TemperatureLevelValue">
+        <ownedLiteral xmi:id="_MVPgUDfyEeKEOs6yTQFaQw" name="HighTemperature"/>
+        <ownedLiteral xmi:id="_Ow4cUDfyEeKEOs6yTQFaQw" name="LowTemperature"/>
+        <ownedLiteral xmi:id="_Pv1X4DfyEeKEOs6yTQFaQw" name="ChangeTooFast"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RCGRADfyEeKEOs6yTQFaQw" name="hasValue" memberEnd="_RCGRATfyEeKEOs6yTQFaQw _RCFp8DfyEeKEOs6yTQFaQw">
+        <ownedEnd xmi:id="_RCGRATfyEeKEOs6yTQFaQw" name="temperatureLevelSensor" type="_lnVB4DftEeKEOs6yTQFaQw" association="_RCGRADfyEeKEOs6yTQFaQw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCGRAjfyEeKEOs6yTQFaQw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCGRAzfyEeKEOs6yTQFaQw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_3aR8UDiAEeK_5M40qoRWyw" name="StatusValue">
+        <ownedLiteral xmi:id="_AFW2EDiBEeK_5M40qoRWyw" name="Activated"/>
+        <ownedLiteral xmi:id="_Dm5qMDiBEeK_5M40qoRWyw" name="NotActivated"/>
+        <ownedLiteral xmi:id="_Elh1oDiBEeK_5M40qoRWyw" name="NoCondition"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ofjj4DiDEeK_5M40qoRWyw" name="hasValue" memberEnd="_Ofjj4TiDEeK_5M40qoRWyw _OfZy4DiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_Ofjj4TiDEeK_5M40qoRWyw" name="" type="_oYfh8DftEeKEOs6yTQFaQw" association="_Ofjj4DiDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ofjj4jiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ofjj4ziDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RNxdoziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_RNxdpDiDEeK_5M40qoRWyw _RNxdoDiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_RNxdpDiDEeK_5M40qoRWyw" name="" type="_6ETuUDfrEeKEOs6yTQFaQw" association="_RNxdoziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RNxdpTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RNxdpjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_TWfdoziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_TWfdpDiDEeK_5M40qoRWyw _TWfdoDiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_TWfdpDiDEeK_5M40qoRWyw" name="" type="_k7QQ8DfrEeKEOs6yTQFaQw" association="_TWfdoziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TWfdpTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TWfdpjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VLkv8ziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_VLkv9DiDEeK_5M40qoRWyw _VLkv8DiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_VLkv9DiDEeK_5M40qoRWyw" name="" type="_jd_W0DftEeKEOs6yTQFaQw" association="_VLkv8ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VLkv9TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VLkv9jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XhsSwziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_XhsSxDiDEeK_5M40qoRWyw _XhsSwDiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_XhsSxDiDEeK_5M40qoRWyw" name="" type="_ksOWcDfrEeKEOs6yTQFaQw" association="_XhsSwziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhsSxTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XhsSxjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Zpqr4ziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_Zpqr5DiDEeK_5M40qoRWyw _Zpqr4DiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_Zpqr5DiDEeK_5M40qoRWyw" name="" type="_1SGcMDfuEeKEOs6yTQFaQw" association="_Zpqr4ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zpqr5TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zpqr5jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_btoHsziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_btoHtDiDEeK_5M40qoRWyw _btoHsDiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_btoHtDiDEeK_5M40qoRWyw" name="" type="_mGmF4DfvEeKEOs6yTQFaQw" association="_btoHsziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btoHtTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btoHtjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_eQPOYziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_eQPOZDiDEeK_5M40qoRWyw _eQPOYDiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_eQPOZDiDEeK_5M40qoRWyw" name="" type="_6R4QQDfrEeKEOs6yTQFaQw" association="_eQPOYziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eQPOZTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eQPOZjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_fru8AziDEeK_5M40qoRWyw" name="motionSensor_statusValue_1" memberEnd="_fru8BDiDEeK_5M40qoRWyw _fru8ADiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_fru8BDiDEeK_5M40qoRWyw" name="motionSensor" type="_lq8BcDfrEeKEOs6yTQFaQw" association="_fru8AziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fru8BTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fru8BjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ixAq4ziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_ixAq5DiDEeK_5M40qoRWyw _ixAq4DiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_ixAq5DiDEeK_5M40qoRWyw" name="" type="_lq8BcDfrEeKEOs6yTQFaQw" association="_ixAq4ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixAq5TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixAq5jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_kUFnMziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_kUFnNDiDEeK_5M40qoRWyw _kUFnMDiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_kUFnNDiDEeK_5M40qoRWyw" name="" type="_lZKU8DfrEeKEOs6yTQFaQw" association="_kUFnMziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kUFnNTiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kUFnNjiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mM5i8ziDEeK_5M40qoRWyw" name="hasValue" memberEnd="_mM5i9DiDEeK_5M40qoRWyw _mM5i8DiDEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_mM5i9DiDEeK_5M40qoRWyw" name="" type="_hnc94DfrEeKEOs6yTQFaQw" association="_mM5i8ziDEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mM5i9TiDEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mM5i9jiDEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_TUvUsDiEEeK_5M40qoRWyw" name="ExitValue">
+        <ownedLiteral xmi:id="_W6TGIDiEEeK_5M40qoRWyw" name="Exit"/>
+        <ownedLiteral xmi:id="_XgFTwDiEEeK_5M40qoRWyw" name="DoorLeftOpen"/>
+        <ownedLiteral xmi:id="_Y5f9wDiEEeK_5M40qoRWyw" name="NoCondition"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_aAA54ziEEeK_5M40qoRWyw" name="hasValue" memberEnd="_aAA55DiEEeK_5M40qoRWyw _aAA54DiEEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_aAA55DiEEeK_5M40qoRWyw" name="exitSensor" type="_6R4QQDfrEeKEOs6yTQFaQw" association="_aAA54ziEEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aAA55TiEEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAA55jiEEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_blVR4DiEEeK_5M40qoRWyw" name="DosageValue">
+        <ownedLiteral xmi:id="_flXY0DiEEeK_5M40qoRWyw" name="Taken"/>
+        <ownedLiteral xmi:id="_hRh_sDiEEeK_5M40qoRWyw" name="Missed"/>
+        <ownedLiteral xmi:id="_h6I30DiEEeK_5M40qoRWyw" name="NoCondition"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_i5rCMziEEeK_5M40qoRWyw" name="hasValue" memberEnd="_i5rCNDiEEeK_5M40qoRWyw _i5rCMDiEEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_i5rCNDiEEeK_5M40qoRWyw" name="dosageSensor" type="_lZKU8DfrEeKEOs6yTQFaQw" association="_i5rCMziEEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i5rCNTiEEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i5rCNjiEEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_kWWbkDiEEeK_5M40qoRWyw" name="MotionValue">
+        <ownedLiteral xmi:id="_msLDcDiEEeK_5M40qoRWyw" name="Detected"/>
+        <ownedLiteral xmi:id="_np6eEDiEEeK_5M40qoRWyw" name="Delayed"/>
+        <ownedLiteral xmi:id="_oYCIUDiEEeK_5M40qoRWyw" name="Tampered"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pWEd4ziEEeK_5M40qoRWyw" name="hasValue" memberEnd="_pWEd5DiEEeK_5M40qoRWyw _pWEd4DiEEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_pWEd5DiEEeK_5M40qoRWyw" name="motionSensor" type="_lq8BcDfrEeKEOs6yTQFaQw" association="_pWEd4ziEEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pWEd5TiEEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pWEd5jiEEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uGo0cDiFEeK_5M40qoRWyw" name="LightSensor">
+        <generalization xmi:id="_xY2zIDiFEeK_5M40qoRWyw" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_VVeHcDiyEeKIT6ZUFQtXdg" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_zjgs0DiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vB2fgDiFEeK_5M40qoRWyw" name="LightController">
+        <generalization xmi:id="_oYd70MkAEeKAcp7RjNU-PQ" general="_uGo0cDiFEeK_5M40qoRWyw"/>
+        <generalization xmi:id="_oyNRgMkAEeKAcp7RjNU-PQ" general="_v5pDIDiFEeK_5M40qoRWyw"/>
+        <ownedAttribute xmi:id="_0VWZcDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_v5pDIDiFEeK_5M40qoRWyw" name="LightActuator">
+        <generalization xmi:id="_yx0xMDiFEeK_5M40qoRWyw" general="_UkOj2dJAEeGCrI2l36sLrg"/>
+        <generalization xmi:id="_UnzJIDiyEeKIT6ZUFQtXdg" general="_CIfy4NJBEeGCrI2l36sLrg"/>
+        <ownedAttribute xmi:id="_1DBXwDiFEeK_5M40qoRWyw" name="hasValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RGELwziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_RGELxDiGEeK_5M40qoRWyw _RGELwDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_RGELxDiGEeK_5M40qoRWyw" name="" type="_SYDwoDftEeKEOs6yTQFaQw" association="_RGELwziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RGELxTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RGELxjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_TmvYwziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_TmvYxDiGEeK_5M40qoRWyw _TmvYwDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_TmvYxDiGEeK_5M40qoRWyw" name="" type="_VTSLoDftEeKEOs6yTQFaQw" association="_TmvYwziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TmvYxTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TmvYxjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VO4bQziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_VO4bRDiGEeK_5M40qoRWyw _VO4bQDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_VO4bRDiGEeK_5M40qoRWyw" name="" type="_UPOtoDftEeKEOs6yTQFaQw" association="_VO4bQziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VO4bRTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VO4bRjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_WxOXwziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_WxOXxDiGEeK_5M40qoRWyw _WxOXwDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_WxOXxDiGEeK_5M40qoRWyw" name="" type="_YtG8QDfvEeKEOs6yTQFaQw" association="_WxOXwziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WxOXxTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WxOXxjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YQvCsziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_YQvCtDiGEeK_5M40qoRWyw _YQvCsDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_YQvCtDiGEeK_5M40qoRWyw" name="" type="_Zq0hsDfvEeKEOs6yTQFaQw" association="_YQvCsziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQvCtTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YQvCtjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZyyEQziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_ZyyERDiGEeK_5M40qoRWyw _ZyyEQDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_ZyyERDiGEeK_5M40qoRWyw" name="" type="_avVSsDfvEeKEOs6yTQFaQw" association="_ZyyEQziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyyERTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZyyERjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bepJIziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_bepJJDiGEeK_5M40qoRWyw _bepJIDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_bepJJDiGEeK_5M40qoRWyw" name="" type="_7OPqgDfuEeKEOs6yTQFaQw" association="_bepJIziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bepJJTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bepJJjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_c5iZ0ziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_c5iZ1DiGEeK_5M40qoRWyw _c5iZ0DiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_c5iZ1DiGEeK_5M40qoRWyw" name="" type="_9iF8cDfuEeKEOs6yTQFaQw" association="_c5iZ0ziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c5iZ1TiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c5iZ1jiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_eqKC4ziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_eqKC5DiGEeK_5M40qoRWyw _eqKC4DiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_eqKC5DiGEeK_5M40qoRWyw" name="" type="_-4iK8DfuEeKEOs6yTQFaQw" association="_eqKC4ziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eqKC5TiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eqKC5jiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gEBY0ziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_gEBY1DiGEeK_5M40qoRWyw _gEBY0DiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_gEBY1DiGEeK_5M40qoRWyw" name="" type="_GiEvMDfvEeKEOs6yTQFaQw" association="_gEBY0ziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gEBY1TiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gEBY1jiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_hcPwAziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_hcPwBDiGEeK_5M40qoRWyw _hcPwADiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_hcPwBDiGEeK_5M40qoRWyw" name="" type="_F1GfADfwEeKEOs6yTQFaQw" association="_hcPwAziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hcPwBTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hcPwBjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_i_LiYziGEeK_5M40qoRWyw" name="hasValue" memberEnd="_i_LiZDiGEeK_5M40qoRWyw _i_LiYDiGEeK_5M40qoRWyw">
+        <ownedEnd xmi:id="_i_LiZDiGEeK_5M40qoRWyw" name="" type="_FXAqQDfvEeKEOs6yTQFaQw" association="_i_LiYziGEeK_5M40qoRWyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i_LiZTiGEeK_5M40qoRWyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i_LiZjiGEeK_5M40qoRWyw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_UkOj3dJAEeGCrI2l36sLrg">
+      <eAnnotations xmi:id="_UkOj3tJAEeGCrI2l36sLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_UkOj39JAEeGCrI2l36sLrg">
+      <eAnnotations xmi:id="_UkOj4NJAEeGCrI2l36sLrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_UkOj4dJAEeGCrI2l36sLrg" defaultNamespace="http://ontology.universAAL.org/Device" base_Package="_UkOj1tJAEeGCrI2l36sLrg" versionInfo="0.1.0-SNAPSHOT"/>
+  <OWL:objectProperty xmi:id="_cKelkDfwEeKEOs6yTQFaQw" base_Property="_cKJ1cDfwEeKEOs6yTQFaQw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="__x6YEDfwEeKEOs6yTQFaQw" base_Property="__x2tsDfwEeKEOs6yTQFaQw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_Va2PYDfxEeKEOs6yTQFaQw" base_Property="_VaylADfxEeKEOs6yTQFaQw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_LrJ3sDiFEeK_5M40qoRWyw" base_Property="_Lq28wDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_QXFbUziFEeK_5M40qoRWyw" base_Property="_QXFbUDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_RWBIwziFEeK_5M40qoRWyw" base_Property="_RWBIwDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_Smf5MDiFEeK_5M40qoRWyw" base_Property="_SmWvQDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_TluhkDiFEeK_5M40qoRWyw" base_Property="_TllXoDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_UlG68ziFEeK_5M40qoRWyw" base_Property="_UlG68DiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_VbQf0ziFEeK_5M40qoRWyw" base_Property="_VbQf0DiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_WMzRgjiFEeK_5M40qoRWyw" base_Property="_WMpggDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_W5buAjiFEeK_5M40qoRWyw" base_Property="_W5R9ADiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_zjgs0ziFEeK_5M40qoRWyw" base_Property="_zjgs0DiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_0VgKcjiFEeK_5M40qoRWyw" base_Property="_0VWZcDiFEeK_5M40qoRWyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_1DBXwziFEeK_5M40qoRWyw" base_Property="_1DBXwDiFEeK_5M40qoRWyw" isFunctional="true"/>
+</xmi:XMI>
