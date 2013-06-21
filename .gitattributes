@@ -3475,6 +3475,15 @@ ont.profile.userid-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/
 ont.profile.userid-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfileOntology.java -text
 ont.profile.userid-1.3.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile.userid-1.3.2-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.profile.userid-1.3.3-SNAPSHOT/ASL2.0.txt -text
+ont.profile.userid-1.3.3-SNAPSHOT/NOTICE.txt -text
+ont.profile.userid-1.3.3-SNAPSHOT/pom.xml -text
+ont.profile.userid-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/UserIDProfileActivator.java -text
+ont.profile.userid-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/UserIDProfileFactory.java -text
+ont.profile.userid-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfile.java -text
+ont.profile.userid-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfileOntology.java -text
+ont.profile.userid-1.3.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.profile.userid-1.3.3-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.questionnaire-1.1.4-SNAPSHOT/pom.xml -text
 ont.questionnaire-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/QuestionnaireActivator.java -text
 ont.questionnaire-1.1.4-SNAPSHOT/src/main/java/org/universAAL/ontology/QuestionnaireFactory.java -text
