@@ -482,6 +482,15 @@ ont.profile.health/src/main/java/org/universaal/ontology/health/owl/services/Pla
 ont.profile.health/src/main/java/org/universaal/ontology/health/owl/services/ProfileManagementService.java -text
 ont.profile.health/src/main/java/org/universaal/ontology/health/owl/services/TreatmentManagementService.java -text
 ont.profile.health/src/test/java/org/universaal/ontology/test/HealthOntologyTest.java -text
+ont.profile.ui.mainmenu/ASL2.0.txt -text
+ont.profile.ui.mainmenu/NOTICE.txt -text
+ont.profile.ui.mainmenu/pom.xml -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileActivator.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/UIMainMenuProfileFactory.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuEntry.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java -text
+ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java -text
+ont.profile.ui.mainmenu/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile/ASL2.0.txt -text
 ont.profile/NOTICE.txt -text
 ont.profile/pom.xml -text
