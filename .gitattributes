@@ -346,6 +346,15 @@ ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -
 ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 ont.multimedia/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.multimedia/src/test/resources/log4j.properties -text
+ont.personalhealthdevice/ASL2.0.txt -text
+ont.personalhealthdevice/NOTICE.txt -text
+ont.personalhealthdevice/pom.xml -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/PersonalHealthDeviceActivator.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/PersonalHealthDeviceFactory.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMeasurement.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMonitor.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/WeighingScale.java -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
