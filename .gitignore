@@ -56,6 +56,11 @@ ont.languages/.classpath
 ont.languages/.project
 ont.languages/.settings
 ont.languages/target
+ont.lighting/.classpath
+ont.lighting/.project
+ont.lighting/.settings
+ont.lighting/target
+ont.lighting/uAAL.log
 ont.phWorld/.classpath
 ont.phWorld/.project
 ont.phWorld/.settings
