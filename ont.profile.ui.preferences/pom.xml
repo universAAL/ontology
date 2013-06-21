@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>1.3.3-SNAPSHOT</version>
+    <version>2.0.0</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.profile.ui.preferences</artifactId>
-  <version>1.3.7-SNAPSHOT</version>
+  <version>2.0.0</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology User Interaction Preferences Profile</name>
   <description>User Interaction preferences of a User inspired by ETSI ES 746 standard (Personalization and user profile management - User Profile Preferences and Information), ISO IEC 24751-2 (Information technology ? Individualized
