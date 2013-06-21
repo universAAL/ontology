@@ -1893,6 +1893,26 @@ ont.health.measurement-1.3.2-SNAPSHOT/src/main/java/org/universaal/ontology/heal
 ont.health.measurement-1.3.2-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/SingleValueMeasurement.java -text
 ont.health.measurement-1.3.2-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/Unit.java -text
 ont.health.measurement-1.3.2-SNAPSHOT/src/test/java/ont/healthmeasurement/tests/ArtifactTest.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/ASL2.0.txt -text svneol=unset#text/plain
+ont.health.measurement-1.3.3-SNAPSHOT/HealthMeasurement.di -text
+ont.health.measurement-1.3.3-SNAPSHOT/HealthMeasurement.notation -text
+ont.health.measurement-1.3.3-SNAPSHOT/HealthMeasurement.uml -text
+ont.health.measurement-1.3.3-SNAPSHOT/NOTICE.txt -text svneol=unset#text/plain
+ont.health.measurement-1.3.3-SNAPSHOT/pom.xml -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/HealthMeasruementActivator.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/HealthMeasurementFactory.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/BloodPressure.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/HealthMeasurement.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/HealthMeasurementOntology.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/HeartRate.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/HeartRateSignal.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/Measurement.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/MultiValueMeasurement.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/PersonWeight.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/Signal.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/SingleValueMeasurement.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/main/java/org/universaal/ontology/healthmeasurement/owl/Unit.java -text
+ont.health.measurement-1.3.3-SNAPSHOT/src/test/java/ont/healthmeasurement/tests/ArtifactTest.java -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
