@@ -451,3 +451,24 @@ ont.profile/src/main/java/org/universAAL/ontology/vcard/Voice.java -text
 ont.profile/src/main/java/org/universAAL/ontology/vcard/X400.java -text
 ont.profile/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.profile/src/test/resources/log4j.properties -text
+ont.unit/ASL2.0.txt -text
+ont.unit/NOTICE.txt -text
+ont.unit/Unit.di -text
+ont.unit/Unit.notation -text
+ont.unit/Unit.uml -text svneol=unset#text/plain
+ont.unit/pom.xml -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/UnitActivator.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/UnitFactory.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/DerivedUnit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/DividedUnit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/MeasurableDimension.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/MultipliedUnit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/Prefix.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/Unit.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/UnitOntology.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/UnitService.java -text
+ont.unit/src/main/java/org/universAAL/ontology/unit/UnitSystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/system/BinarySystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/system/InternationalSystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
+ont.unit/src/test/java/test/integration/OntTest.java -text svneol=unset#text/plain
