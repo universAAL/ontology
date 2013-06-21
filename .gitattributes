@@ -2295,6 +2295,16 @@ ont.multimedia-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/S
 ont.multimedia-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
 ont.multimedia-1.3.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.multimedia-1.3.2-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.multimedia-1.3.3-SNAPSHOT/ASL2.0.txt -text
+ont.multimedia-1.3.3-SNAPSHOT/NOTICE.txt -text
+ont.multimedia-1.3.3-SNAPSHOT/pom.xml -text
+ont.multimedia-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaActivator.java -text
+ont.multimedia-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
+ont.multimedia-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/MultimediaOntology.java -text
+ont.multimedia-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
+ont.multimedia-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
+ont.multimedia-1.3.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.multimedia-1.3.3-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.nutrition-1.2.1-SNAPSHOT/ASL2.0.txt -text
 ont.nutrition-1.2.1-SNAPSHOT/MITX.txt -text
 ont.nutrition-1.2.1-SNAPSHOT/NOTICE.txt -text

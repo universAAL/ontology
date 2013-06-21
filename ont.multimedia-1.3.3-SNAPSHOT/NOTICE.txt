@@ -1,0 +1,17 @@
+universAAL ontology Multimedia Devices
+
+Copyright by XXXXXXX
+
+
+I. Included Software
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0
