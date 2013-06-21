@@ -124,6 +124,10 @@ ont.questionnaire/.project
 ont.questionnaire/.settings
 ont.questionnaire/target
 ont.questionnaire/uAAL.log
+ont.situation.reasoner/.classpath
+ont.situation.reasoner/.project
+ont.situation.reasoner/.settings
+ont.situation.reasoner/target
 ont.unit/*.log
 ont.unit/.classpath
 ont.unit/.project
