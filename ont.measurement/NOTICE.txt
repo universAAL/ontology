@@ -1,0 +1,31 @@
+universAAL ontology Measurement
+
+Copyright 2010-2014 UPM http://www.upm.es
+	Universidad Politécnica de Madrdid
+
+
+I. Included Software
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+This product uses software developed at
+The OPS4J (http://www.ops4j.org)
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+UniversAAL (http://www.universaal.org)
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0
+- Common Public License 1.0
