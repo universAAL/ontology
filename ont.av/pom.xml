@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.av</artifactId>
-  <version>2.0.0</version>
+  <version>2.0.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Audio - Video</name>
   <description>The upper ontology defining the most general concepts from the audio and video world.</description>
