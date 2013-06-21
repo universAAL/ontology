@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>ont.pom</artifactId>
+    <version>1.3.3-SNAPSHOT</version>
+    <relativePath>../ont.pom</relativePath>
+  </parent>
+  <artifactId>ont.che</artifactId>
+  <version>1.3.3-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>universAAL Ontology Context History Entrepot</name>
+  <description>Ontology for the services that manage Context History</description>
+  <organization>
+    <name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research</name>
+    <url>http://www.itaca.upv.es/
+	http://www.igd.fraunhofer.de/</url>
+  </organization>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.context.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.phWorld</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.che</Export-Package>
+            <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
