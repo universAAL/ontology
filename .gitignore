@@ -25,6 +25,11 @@ ont.device/.classpath
 ont.device/.project
 ont.device/.settings
 ont.device/target
+ont.furniture/.classpath
+ont.furniture/.project
+ont.furniture/.settings
+ont.furniture/target
+ont.furniture/uAAL.log
 ont.phWorld/.classpath
 ont.phWorld/.project
 ont.phWorld/.settings

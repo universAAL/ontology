@@ -186,6 +186,16 @@ ont.device/src/main/java/org/universAAL/ontology/device/WindowController.java -t
 ont.device/src/main/java/org/universAAL/ontology/device/WindowSensor.java -text
 ont.device/src/main/resources/ArtifactIntegrationTest.java -text
 ont.device/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.furniture/ASL2.0.txt -text
+ont.furniture/NOTICE.txt -text
+ont.furniture/pom.xml -text
+ont.furniture/src/main/java/org/universAAL/ontology/FurnitureActivator.java -text
+ont.furniture/src/main/java/org/universAAL/ontology/FurnitureFactory.java -text
+ont.furniture/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
+ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureOntology.java -text
+ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
+ont.furniture/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.furniture/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
