@@ -1312,6 +1312,14 @@ ont.continuahealthmanager-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/C
 ont.continuahealthmanager-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/ContinuaHealthManagerOntology.java -text
 ont.continuahealthmanager-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/continua/ContinuaHealthDevice.java -text
 ont.continuahealthmanager-1.3.2-SNAPSHOT/src/main/java/org/universAAL/ontology/continua/ContinuaHealthManager.java -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/ASL2.0.txt -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/NOTICE.txt -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/pom.xml -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/ContinuaHealthManagerActivator.java -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/ContinuaHealthManagerFactory.java -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/continua/ContinuaHealthDevice.java -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/continua/ContinuaHealthManager.java -text
+ont.continuahealthmanager-1.3.3-SNAPSHOT/src/main/java/org/universAAL/ontology/continua/ContinuaHealthManagerOntology.java -text
 ont.dependability-1.2.1-SNAPSHOT/ASL[!!-~]2.0.txt -text
 ont.dependability-1.2.1-SNAPSHOT/Dependability.di -text
 ont.dependability-1.2.1-SNAPSHOT/Dependability.notation -text
