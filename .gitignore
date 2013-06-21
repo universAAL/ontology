@@ -16,3 +16,8 @@ ont.pom/karaf.feature/.settings
 ont.pom/karaf.feature/target
 ont.pom/target
 ont.pom/uAAL.log
+ont.profile/.classpath
+ont.profile/.project
+ont.profile/.settings
+ont.profile/target
+ont.profile/uAAL.log
