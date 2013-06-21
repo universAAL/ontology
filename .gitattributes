@@ -196,6 +196,14 @@ ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureOntology.
 ont.furniture/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 ont.furniture/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.furniture/src/test/resources/log4j.properties -text
+ont.gesture.pointing/ASL2.0.txt -text
+ont.gesture.pointing/NOTICE.txt -text
+ont.gesture.pointing/pom.xml -text
+ont.gesture.pointing/src/main/java/org/universAAL/ontology/GesturePointingActivator.java -text
+ont.gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
+ont.gesture.pointing/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
+ont.gesture.pointing/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
+ont.gesture.pointing/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
