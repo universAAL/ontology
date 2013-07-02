@@ -27,13 +27,12 @@ import jp.go.ipa.jgcl.JgclLine3D;
 import jp.go.ipa.jgcl.JgclPoint3D;
 import jp.go.ipa.jgcl.JgclPointOnCurve3D;
 
+import org.universAAL.ontology.location.position.CoordinateSystem;
+import org.universAAL.ontology.location.position.Point;
 //import org.universAAL.middleware.rdf.TypeMapper;
 //import org.universAAL.middleware.owl.Restriction;
 //import org.universAAL.ontology.location.PlaceType;
 //import org.universAAL.ontology.ComparableIndividual;
-
-import org.universAAL.ontology.location.position.CoordinateSystem;
-import org.universAAL.ontology.location.position.Point;
 
 /**
  * Ontological representation of a segment of a line. Methods included in this

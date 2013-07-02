@@ -19,10 +19,10 @@
  */
 package org.universAAL.ontology.phThing;
 
+import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.util.Constants;
 import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.location.Place;
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.shape.Box;
 import org.universAAL.ontology.shape.Shape;
 

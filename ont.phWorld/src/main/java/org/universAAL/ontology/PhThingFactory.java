@@ -21,7 +21,10 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
-import org.universAAL.ontology.phThing.*;
+import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.phThing.DeviceService;
+import org.universAAL.ontology.phThing.PhysicalContainer;
+import org.universAAL.ontology.phThing.PhysicalThing;
 
 public class PhThingFactory implements ResourceFactory {
 

@@ -21,7 +21,18 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
-import org.universAAL.ontology.shape.*;
+import org.universAAL.ontology.shape.Box;
+import org.universAAL.ontology.shape.Circle;
+import org.universAAL.ontology.shape.ConeSegment;
+import org.universAAL.ontology.shape.Ellipse;
+import org.universAAL.ontology.shape.Line;
+import org.universAAL.ontology.shape.LineSegment;
+import org.universAAL.ontology.shape.MergedShape;
+import org.universAAL.ontology.shape.Polygon;
+import org.universAAL.ontology.shape.Polyhedron;
+import org.universAAL.ontology.shape.QuasiCylinder;
+import org.universAAL.ontology.shape.Sphere;
+import org.universAAL.ontology.shape.Triangle;
 
 public class ShapeFactory implements ResourceFactory {
 

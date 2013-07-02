@@ -22,7 +22,6 @@ package org.universAAL.ontology.location.position;
 import java.util.Vector;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-
 import org.universAAL.ontology.location.LocationOntology;
 
 /**
