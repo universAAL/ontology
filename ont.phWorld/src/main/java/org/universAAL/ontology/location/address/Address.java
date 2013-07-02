@@ -26,7 +26,13 @@ package org.universAAL.ontology.location.address;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.location.outdoor.*;
+import org.universAAL.ontology.location.outdoor.City;
+import org.universAAL.ontology.location.outdoor.CityPlace;
+import org.universAAL.ontology.location.outdoor.CityQuarter;
+import org.universAAL.ontology.location.outdoor.CityRegion;
+import org.universAAL.ontology.location.outdoor.Country;
+import org.universAAL.ontology.location.outdoor.Region;
+import org.universAAL.ontology.location.outdoor.State;
 
 /**
  * Ontological representation of an Address. It can be used on its own but it is

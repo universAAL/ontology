@@ -26,6 +26,7 @@ package org.universAAL.ontology.location.address;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.universAAL.ontology.location.LocationOntology;
 
 /**
