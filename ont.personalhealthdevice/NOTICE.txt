@@ -1,28 +1,16 @@
 Personal Health Devices Ontology
 
-Copyright 2010-2014 AIT, http://www.ait.ac.at
-Austrian Institute of Technology
-Biomedical Engineering Group (HBS)
-
+Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
+http://www.ait.ac.at
 
 I. Included Software
 
-Personal Health Devices Ontology
-
+Software developed by AIT for the universAAL project.
 
 II. Used Software
 
 This product uses software developed at
 The Apache Software Foundation (http://www.apache.org/).
-Licensed under the Apache License 2.0.
-
-This product uses software developed at
-The OPS4J (http://www.ops4j.org)
-Licensed under the Apache License 2.0.
-
-This product uses software developed at
-The OSGi Alliance (http://www.osgi.org/).
-Copyright 2006-2008 The OSGi Alliance.
 Licensed under the Apache License 2.0.
 
 III. License Summary
