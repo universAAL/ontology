@@ -30,7 +30,8 @@ public class OwlOWLCreator {
 			    new Object[] { MessageContentSerializer.class
 				    .getName() });
 	    if (contentSerializer == null) {
-		System.out.println("ERROR: no serializer found for serializing the ontology");
+		System.out
+			.println("ERROR: no serializer found for serializing the ontology");
 		return false;
 	    }
 	}
@@ -42,6 +43,7 @@ public class OwlOWLCreator {
 	    name = Integer.toHexString(new Random(System.currentTimeMillis())
 		    .nextInt());
 
+	name = "target\\" + name;
 	String nameTtl = name + ".ttl";
 	String nameOwl = name + ".owl";
 
@@ -55,15 +57,15 @@ public class OwlOWLCreator {
 	    System.out.println("Exception " + e);
 	    return false;
 	}
-	
+
 	File outFile = new File(nameOwl);
 	File file = new File(nameTtl);
-	try {
-	    System.out.println("   File OWL: " + outFile.getCanonicalPath());
-	    System.out.println("   File TTL: " + file.getCanonicalPath());
-	} catch (IOException e2) {
-	    e2.printStackTrace();
-	}
+	// try {
+	// System.out.println("   File OWL: " + outFile.getCanonicalPath());
+	// System.out.println("   File TTL: " + file.getCanonicalPath());
+	// } catch (IOException e2) {
+	// e2.printStackTrace();
+	// }
 	OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 	IRI documentIRI = IRI.create(file);
 	OWLOntology owlOntology;
