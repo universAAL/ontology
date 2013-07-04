@@ -60,25 +60,25 @@ public class ContextEvent extends ManagedIndividual {
     public static final String MY_URI = uAAL_CONTEXT_NAMESPACE
 	    + "ContextEventCHE2";
     public static final String CONTEXT_EVENT_URI_PREFIX = "urn:org.universAAL.middleware.context.rdf:ContextEvent#";
-    public static final String LOCAL_NAME_SUBJECT = "subject";
+    public static final String LOCAL_NAME_SUBJECT = "subjectCHE2";
     public static final String PROP_RDF_SUBJECT = RDF_NAMESPACE
 	    + LOCAL_NAME_SUBJECT;
-    public static final String LOCAL_NAME_PREDICATE = "predicate";
+    public static final String LOCAL_NAME_PREDICATE = "predicateCHE2";
     public static final String PROP_RDF_PREDICATE = RDF_NAMESPACE
 	    + LOCAL_NAME_PREDICATE;
-    public static final String LOCAL_NAME_OBJECT = "object";
+    public static final String LOCAL_NAME_OBJECT = "objectCHE2";
     public static final String PROP_RDF_OBJECT = RDF_NAMESPACE
 	    + LOCAL_NAME_OBJECT;
-    public static final String LOCAL_NAME_CONFIDENCE = "hasConfidence";
+    public static final String LOCAL_NAME_CONFIDENCE = "hasConfidenceCHE2";
     public static final String PROP_CONTEXT_CONFIDENCE = uAAL_CONTEXT_NAMESPACE
 	    + LOCAL_NAME_CONFIDENCE;
-    public static final String LOCAL_NAME_PROVIDER = "hasProvider";
+    public static final String LOCAL_NAME_PROVIDER = "hasProviderCHE2";
     public static final String PROP_CONTEXT_PROVIDER = uAAL_CONTEXT_NAMESPACE
 	    + LOCAL_NAME_PROVIDER;
-    public static final String LOCAL_NAME_EXPIRATION_TIME = "hasExpirationTime";
+    public static final String LOCAL_NAME_EXPIRATION_TIME = "hasExpirationTimeCHE2";
     public static final String PROP_CONTEXT_EXPIRATION_TIME = uAAL_CONTEXT_NAMESPACE
 	    + LOCAL_NAME_EXPIRATION_TIME;
-    public static final String LOCAL_NAME_TIMESTAMP = "hasTimestamp";
+    public static final String LOCAL_NAME_TIMESTAMP = "hasTimestampCHE2";
     public static final String PROP_CONTEXT_TIMESTAMP = uAAL_CONTEXT_NAMESPACE
 	    + LOCAL_NAME_TIMESTAMP;
 
