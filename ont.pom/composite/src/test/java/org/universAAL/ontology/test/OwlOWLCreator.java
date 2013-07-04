@@ -43,7 +43,12 @@ public class OwlOWLCreator {
 	    name = Integer.toHexString(new Random(System.currentTimeMillis())
 		    .nextInt());
 
-	name = "target\\" + name;
+	String strDir = "target" + File.separator + "ontologies";
+	File dir = new File(strDir);
+	if (!dir.exists())
+	   dir.mkdirs();
+		    
+	name = strDir + File.separator + name;
 	String nameTtl = name + ".ttl";
 	String nameOwl = name + ".owl";
 
