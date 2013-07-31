@@ -15,7 +15,6 @@
  ******************************************************************************/
 package org.universaal.ontology.health.owl;
 
-//import net.fortuna.ical4j.model.Date;
 
 import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
