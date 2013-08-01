@@ -84,22 +84,34 @@ public final class HealthMeasurementOntology extends Ontology {
 	oci_HealthMeasurement.setResourceLabel("HealthMeasurement");
 	oci_HealthMeasurement.addSuperClass(Measurement.MY_URI);
 	oci_HealthMeasurement.addObjectProperty(
-		HealthMeasurement.PROP_OBTAINED_FROM).setFunctional();
+		HealthMeasurement.PROP_OBTAINED_BY).setFunctional();
 	oci_HealthMeasurement
 		.addRestriction(MergedRestriction
 			.getAllValuesRestrictionWithCardinality(
-				HealthMeasurement.PROP_OBTAINED_FROM,
+				HealthMeasurement.PROP_OBTAINED_BY,
 				User.MY_URI, 1, 1));
 
 	oci_HealthMeasurement.addObjectProperty(
-		HealthMeasurement.PROP_MEASURED_BY).setFunctional();
+		HealthMeasurement.PROP_MEASURED_FROM).setFunctional();
 	// oci_HealthMeasurement.addRestriction(MergedRestriction.getCardinalityRestriction(HealthMeasurement.PROP_MEASURED_BY,
 	// 1, 1));
 	oci_HealthMeasurement
 		.addRestriction(MergedRestriction
 			.getAllValuesRestrictionWithCardinality(
-				HealthMeasurement.PROP_MEASURED_BY,
+				HealthMeasurement.PROP_MEASURED_FROM,
 				Device.MY_URI, 1, 1));
+	
+	oci_HealthMeasurement
+		.addDatatypeProperty(HealthMeasurement.PROP_NAME);
+	oci_HealthMeasurement
+		.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+				HealthMeasurement.PROP_NAME, TypeMapper.getDatatypeURI(String.class), 1, 1));
+	
+	oci_HealthMeasurement
+	.addDatatypeProperty(HealthMeasurement.PROP_DESCIPTION);
+	oci_HealthMeasurement
+	.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+			HealthMeasurement.PROP_DESCIPTION, TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 	// Unit
 	oci_Unit.setResourceComment("");

@@ -17,14 +17,20 @@
 
 package org.universaal.ontology.healthmeasurement.owl;
 
+import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.profile.User;
+
 public class HealthMeasurement extends Measurement {
     public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
 	    + "HealthMeasurement";
-    public static final String PROP_OBTAINED_FROM = HealthMeasurementOntology.NAMESPACE
-	    + "PROP_OBTAINED_FROM";
-    public static final String PROP_MEASURED_BY = HealthMeasurementOntology.NAMESPACE
-	    + "PROP_MEASURED_BY";
-
+    public static final String PROP_OBTAINED_BY = HealthMeasurementOntology.NAMESPACE
+	    + "obtainedFrom";
+    public static final String PROP_MEASURED_FROM = HealthMeasurementOntology.NAMESPACE
+	    + "measuredBy";
+    public static final String PROP_NAME = HealthMeasurementOntology.NAMESPACE
+    		+ "name";
+    public static final String PROP_DESCIPTION = HealthMeasurementOntology.NAMESPACE
+    		+ "description";
     public HealthMeasurement() {
 	super();
     }
@@ -42,25 +48,43 @@ public class HealthMeasurement extends Measurement {
     }
 
     public boolean isWellFormed() {
-	return true && hasProperty(PROP_OBTAINED_FROM)
-		&& hasProperty(PROP_MEASURED_BY);
+	return true && hasProperty(PROP_OBTAINED_BY)
+		&& hasProperty(PROP_MEASURED_FROM);
     }
 
-    public String getPROP_OBTAINED_FROM() {
-	return (String) getProperty(PROP_OBTAINED_FROM);
+    public User getObtainedBy() {
+	return (User) getProperty(PROP_OBTAINED_BY);
     }
 
-    public void setPROP_OBTAINED_FROM(String newPropValue) {
+    public void setObtainedBy(User newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_OBTAINED_FROM, newPropValue);
+	    setProperty(PROP_OBTAINED_BY, newPropValue);
     }
 
-    public String getPROP_MEASURED_BY() {
-	return (String) getProperty(PROP_MEASURED_BY);
+    public String getName() {
+	return (String) getProperty(PROP_NAME);
     }
 
-    public void setPROP_MEASURED_BY(String newPropValue) {
+    public void setName(String newPropValue) {
 	if (newPropValue != null)
-	    setProperty(PROP_MEASURED_BY, newPropValue);
+	    setProperty(PROP_NAME, newPropValue);
+    }
+    
+    public Device getMeasuredFrom() {
+    	return (Device) getProperty(PROP_MEASURED_FROM);
+    }
+
+    public void setMeasuredFrom(Device newPropValue) {
+    	if (newPropValue != null)
+    		setProperty(PROP_MEASURED_FROM, newPropValue);
+    }
+
+    public String getDescription() {
+    	return (String) getProperty(PROP_DESCIPTION);
+    }
+
+    public void setDescription(String newPropValue) {
+    	if (newPropValue != null)
+    		setProperty(PROP_DESCIPTION, newPropValue);
     }
 }
