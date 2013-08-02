@@ -64,11 +64,11 @@ public class Measurement extends ManagedIndividual {
 		&& hasProperty(PROP_VALUE);
     }
 
-    public String getValue() {
-	return (String) getProperty(PROP_VALUE);
+    public Object getValue() {
+	return  getProperty(PROP_VALUE);
     }
 
-    public void setValue(String newPropValue) {
+    public void setValue(Object newPropValue) {
 	if (newPropValue != null)
 	    changeProperty(PROP_VALUE, newPropValue);
     }
