@@ -20,6 +20,10 @@ package org.universaal.ontology.healthmeasurement.owl;
 public class BloodPressure extends HealthMeasurement {
     public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
 	    + "BloodPressure";
+    public static final String PROP_SYSTOLIC = HealthMeasurementOntology.NAMESPACE
+    	    + "systolicBloodPreassure";
+    public static final String PROP_DIASTOLIC = HealthMeasurementOntology.NAMESPACE
+    	    + "diatolicBloodPreassure";
 
     public BloodPressure() {
 	super();

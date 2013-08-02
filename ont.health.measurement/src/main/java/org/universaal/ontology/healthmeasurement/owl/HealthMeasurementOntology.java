@@ -17,7 +17,6 @@
 
 package org.universaal.ontology.healthmeasurement.owl;
 
-import javax.xml.datatype.Duration;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -27,6 +26,8 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.location.LocationOntology;
+import org.universAAL.ontology.measurement.Measurement;
+import org.universAAL.ontology.measurement.Signal;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.ProfileOntology;
@@ -58,31 +59,21 @@ public final class HealthMeasurementOntology extends Ontology {
 	// ******* Declaration of regular classes of the ontology ******* //
 	OntClassInfoSetup oci_HealthMeasurement = createNewOntClassInfo(
 		HealthMeasurement.MY_URI, factory, 0);
-	OntClassInfoSetup oci_Unit = createNewOntClassInfo(Unit.MY_URI,
-		factory, 1);
-	OntClassInfoSetup oci_MultiValueMeasurement = createNewOntClassInfo(
-		MultiValueMeasurement.MY_URI, factory, 2);
 	OntClassInfoSetup oci_PersonWeight = createNewOntClassInfo(
 		PersonWeight.MY_URI, factory, 3);
-	OntClassInfoSetup oci_SingleValueMeasurement = createNewOntClassInfo(
-		SingleValueMeasurement.MY_URI, factory, 4);
-	OntClassInfoSetup oci_Measurement = createNewOntClassInfo(
-		Measurement.MY_URI, factory, 5);
 	OntClassInfoSetup oci_BloodPressure = createNewOntClassInfo(
 		BloodPressure.MY_URI, factory, 6);
 	OntClassInfoSetup oci_HeartRate = createNewOntClassInfo(
 		HeartRate.MY_URI, factory, 7);
 	OntClassInfoSetup oci_HeartRateSignal = createNewOntClassInfo(
 		HeartRateSignal.MY_URI, factory, 8);
-	OntClassInfoSetup oci_Signal = createNewOntClassInfo(Signal.MY_URI,
-		factory, 9);
 
 	// ******* Add content to regular classes of the ontology ******* //
 
 	// Health Measurement
 	oci_HealthMeasurement.setResourceComment("");
 	oci_HealthMeasurement.setResourceLabel("HealthMeasurement");
-	oci_HealthMeasurement.addSuperClass(Measurement.MY_URI);
+	oci_HealthMeasurement.addSuperClass(ManagedIndividual.MY_URI);
 	oci_HealthMeasurement.addObjectProperty(
 		HealthMeasurement.PROP_OBTAINED_BY).setFunctional();
 	oci_HealthMeasurement
@@ -113,102 +104,41 @@ public final class HealthMeasurementOntology extends Ontology {
 	.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
 			HealthMeasurement.PROP_DESCIPTION, TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-	// Unit
-	oci_Unit.setResourceComment("");
-	oci_Unit.setResourceLabel("Unit");
-	oci_Unit.addSuperClass(ManagedIndividual.MY_URI);
-
-	// Multi-Value Measurement
-	oci_MultiValueMeasurement.setResourceComment("");
-	oci_MultiValueMeasurement.setResourceLabel("MultiValueMeasurement");
-	oci_MultiValueMeasurement.addSuperClass(Measurement.MY_URI);
-
-	oci_MultiValueMeasurement.addObjectProperty(
-		MultiValueMeasurement.PROP_UNIT).setFunctional();
-	oci_MultiValueMeasurement.addRestriction(MergedRestriction
-		.getAllValuesRestriction(MultiValueMeasurement.PROP_UNIT,
-			Unit.MY_URI));
-
-	oci_MultiValueMeasurement.addDatatypeProperty(
-		MultiValueMeasurement.PROP_VALUE).setFunctional();
-	oci_MultiValueMeasurement.addRestriction(MergedRestriction
-		.getAllValuesRestriction(MultiValueMeasurement.PROP_VALUE,
-			TypeMapper.getDatatypeURI(Double.class)));
-
 	// Person Weight
 	oci_PersonWeight.setResourceComment("");
 	oci_PersonWeight.setResourceLabel("PersonWeight");
 	oci_PersonWeight.addSuperClass(HealthMeasurement.MY_URI);
-	oci_PersonWeight.addSuperClass(SingleValueMeasurement.MY_URI);
-
-	// Single-value Measurement
-	oci_SingleValueMeasurement.setResourceComment("");
-	oci_SingleValueMeasurement.setResourceLabel("SingleValueMeasurement");
-	oci_SingleValueMeasurement.addSuperClass(Measurement.MY_URI);
-
-	oci_SingleValueMeasurement.addObjectProperty(
-		MultiValueMeasurement.PROP_UNIT).setFunctional();
-	// oci_SingleValueMeasurement.addRestriction(MergedRestriction.getCardinalityRestriction(MultiValueMeasurement.PROP_UNIT,
-	// 1, 1));
-	oci_SingleValueMeasurement.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			MultiValueMeasurement.PROP_UNIT, Unit.MY_URI, 1, 1));
-
-	oci_SingleValueMeasurement.addDatatypeProperty(
-		MultiValueMeasurement.PROP_VALUE).setFunctional();
-	oci_SingleValueMeasurement.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			MultiValueMeasurement.PROP_VALUE, TypeMapper
-				.getDatatypeURI(Double.class), 1, 1));
-
-	// Measurement
-	oci_Measurement.setResourceComment("");
-	oci_Measurement.setResourceLabel("Measurement");
-	oci_Measurement.addSuperClass(ManagedIndividual.MY_URI);
+	oci_PersonWeight.addSuperClass(Measurement.MY_URI);
+	//XXX:add restriction to unit.
 
 	// Blood pressure
 	oci_BloodPressure.setResourceComment("");
 	oci_BloodPressure.setResourceLabel("BloodPressure");
 	oci_BloodPressure.addSuperClass(HealthMeasurement.MY_URI);
-	oci_BloodPressure.addSuperClass(MultiValueMeasurement.MY_URI);
+	//TODO: ADD sys and dia props (Measurements)
 
 	// Heart rate
 	oci_HeartRate.setResourceComment("");
 	oci_HeartRate.setResourceLabel("HeartRate");
 	oci_HeartRate.addSuperClass(HealthMeasurement.MY_URI);
-	oci_HeartRate.addSuperClass(SingleValueMeasurement.MY_URI);
+	oci_PersonWeight.addSuperClass(Measurement.MY_URI);
+	//XXX: Set restriction on Unit
 
 	// Heart rate signal
 	oci_HeartRateSignal.setResourceComment("");
 	oci_HeartRateSignal.setResourceLabel("HeartRateSignal");
 	oci_HeartRateSignal.addSuperClass(Signal.MY_URI);
-	oci_HeartRateSignal.addObjectProperty(
-		HeartRateSignal.PROP_IS_COMPOSED_BY).setFunctional();
-	oci_HeartRateSignal.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			HeartRateSignal.PROP_IS_COMPOSED_BY, HeartRate.MY_URI,
-			1, -1));
+//	oci_HeartRateSignal.addObjectProperty(
+//		HeartRateSignal.PROP_IS_COMPOSED_BY).setFunctional();
+//	oci_HeartRateSignal.addRestriction(MergedRestriction
+//		.getAllValuesRestrictionWithCardinality(
+//			HeartRateSignal.PROP_IS_COMPOSED_BY, HeartRate.MY_URI,
+//			1, -1));
 
 	oci_HeartRateSignal.addDatatypeProperty(HeartRateSignal.PROP_INTERVAL)
-		.setFunctional();
-	oci_HeartRateSignal.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			HeartRateSignal.PROP_INTERVAL, TypeMapper
-				.getDatatypeURI(Duration.class), 1, 1));
+		.addSuperProperty(Signal.PROP_MEASUREMENT_INTERVAL);
+	// XXX: set restriction so that the interval unit is for time.
+	// XXX: set restriction so that the unit if the signal is the same as HeartRate.
 
-	// Signal
-	oci_Signal.setResourceComment("");
-	oci_Signal.setResourceLabel("Signal");
-
-	oci_Signal.addObjectProperty(Signal.PROP_MEASUREMENT_INTERVAL)
-		.setFunctional();
-	oci_Signal.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Signal.PROP_MEASUREMENT_INTERVAL, Measurement.MY_URI,
-			1, 1));
-
-	oci_Signal.addObjectProperty(Signal.PROP_MEASUREMENT).setFunctional();
-	oci_Signal.addRestriction(MergedRestriction.getAllValuesRestriction(
-		Signal.PROP_MEASUREMENT, Measurement.MY_URI));
     }
 }
