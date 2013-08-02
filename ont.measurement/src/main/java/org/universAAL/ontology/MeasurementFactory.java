@@ -19,6 +19,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.measurement.MeanSquareError;
 import org.universAAL.ontology.measurement.Measurement;
+import org.universAAL.ontology.measurement.Signal;
 
 public class MeasurementFactory implements ResourceFactory {
 
@@ -30,7 +31,8 @@ public class MeasurementFactory implements ResourceFactory {
 	    return new MeanSquareError(instanceURI);
 	case 1:
 	    return new Measurement(instanceURI);
-
+	case 2:
+		return new Signal(instanceURI);
 	}
 	return null;
     }

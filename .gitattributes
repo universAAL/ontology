@@ -367,6 +367,7 @@ ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeanSquareErro
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/Measurement.java -text svneol=unset#text/plain
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementError.java -text svneol=unset#text/plain
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOntology.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/Signal.java -text
 ont.measurement/src/main/resources/Measurement.jpg -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement/src/test/resources/log4j.properties -text

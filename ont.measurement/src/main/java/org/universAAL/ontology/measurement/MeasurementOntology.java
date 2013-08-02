@@ -51,18 +51,24 @@ public final class MeasurementOntology extends Ontology {
 	OntClassInfoSetup oci_MeasurementError = createNewAbstractOntClassInfo(MeasurementError.MY_URI);
 	OntClassInfoSetup oci_Measurement = createNewOntClassInfo(
 		Measurement.MY_URI, factory, 1);
+	OntClassInfoSetup oci_Signal = createNewOntClassInfo(
+			Signal.MY_URI, factory, 2);
 
 	// ******* Add content to regular classes of the ontology ******* //
-	oci_MeanSquareError.setResourceComment("");
+	
+	//
 	oci_MeanSquareError.setResourceLabel("MeanSquareError");
+	oci_MeanSquareError.setResourceComment("Representation of the Mean Square Error");
 	oci_MeanSquareError.addSuperClass(MeasurementError.MY_URI);
 
-	oci_MeasurementError.setResourceComment("");
+	//
 	oci_MeasurementError.setResourceLabel("MeasurementError");
+	oci_MeasurementError.setResourceComment("Generic Representation of Measurement Error");
 	oci_MeasurementError.addSuperClass(Measurement.MY_URI);
 
-	oci_Measurement.setResourceComment("");
+	//
 	oci_Measurement.setResourceLabel("Measurement");
+	oci_Measurement.setResourceComment("A single Measurement");
 	oci_Measurement.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Measurement.addObjectProperty(Measurement.PROP_HAS_ERROR)
 		.setFunctional();
@@ -88,5 +94,17 @@ public final class MeasurementOntology extends Ontology {
 	oci_Measurement.addRestriction(MergedRestriction
 		.getCardinalityRestriction(Measurement.PROP_VALUE, 1, 1));
 
+	//
+	oci_Signal.setResourceLabel("Signal");
+	oci_Signal.setResourceComment("Generic representation of a signal, as a collection of meausurements separted by an interval");
+	oci_Signal.addSuperClass(Measurement.MY_URI);
+	
+	oci_Signal.addObjectProperty(Signal.PROP_MEASUREMENTS).setFunctional();
+	oci_Signal.addDatatypeProperty(Signal.PROP_MEASUREMENT_INTERVAL).setFunctional();
+	
+	oci_Signal.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(Signal.PROP_MEASUREMENT_INTERVAL,
+					Measurement.MY_URI, 1, 1));
+	
     }
 }
