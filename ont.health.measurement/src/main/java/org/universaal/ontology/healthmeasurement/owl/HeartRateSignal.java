@@ -19,7 +19,10 @@ package org.universaal.ontology.healthmeasurement.owl;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.xml.datatype.Duration;
+
+import org.universAAL.ontology.measurement.Signal;
 
 public class HeartRateSignal extends Signal {
     public static final String MY_URI = HealthMeasurementOntology.NAMESPACE

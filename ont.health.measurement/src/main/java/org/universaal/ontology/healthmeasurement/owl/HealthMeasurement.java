@@ -17,10 +17,11 @@
 
 package org.universaal.ontology.healthmeasurement.owl;
 
+import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.User;
 
-public class HealthMeasurement extends Measurement {
+public class HealthMeasurement extends ManagedIndividual {
     public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
 	    + "HealthMeasurement";
     public static final String PROP_OBTAINED_BY = HealthMeasurementOntology.NAMESPACE
