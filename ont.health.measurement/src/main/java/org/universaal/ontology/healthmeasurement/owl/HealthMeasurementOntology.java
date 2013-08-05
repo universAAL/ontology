@@ -33,7 +33,6 @@ import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.User;
 import org.universAAL.ontology.unit.DividedUnit;
-import org.universAAL.ontology.unit.Prefix;
 import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.system.InternationalSystem;
 import org.universAAL.ontology.unit.system.TimeSystem;
