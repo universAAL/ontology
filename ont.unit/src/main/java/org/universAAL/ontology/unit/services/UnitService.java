@@ -13,9 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universAAL.ontology.unit;
+package org.universAAL.ontology.unit.services;
 
 import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.ontology.unit.UnitOntology;
 
 public class UnitService extends Service {
     public static final String MY_URI = UnitOntology.NAMESPACE + "UnitService";
