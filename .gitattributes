@@ -669,9 +669,11 @@ ont.unit/src/main/java/org/universAAL/ontology/unit/MultipliedUnit.java -text sv
 ont.unit/src/main/java/org/universAAL/ontology/unit/Prefix.java -text svneol=unset#text/plain
 ont.unit/src/main/java/org/universAAL/ontology/unit/Unit.java -text svneol=unset#text/plain
 ont.unit/src/main/java/org/universAAL/ontology/unit/UnitOntology.java -text svneol=unset#text/plain
-ont.unit/src/main/java/org/universAAL/ontology/unit/UnitService.java -text
 ont.unit/src/main/java/org/universAAL/ontology/unit/UnitSystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/services/UnitConversionService.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/services/UnitService.java -text
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/BinarySystem.java -text svneol=unset#text/plain
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/InternationalSystem.java -text svneol=unset#text/plain
+ont.unit/src/main/java/org/universAAL/ontology/unit/system/TimeSystem.java -text svneol=unset#text/plain
 ont.unit/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
 ont.unit/src/test/java/test/integration/OntTest.java -text svneol=unset#text/plain

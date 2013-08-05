@@ -21,8 +21,9 @@ import org.universAAL.ontology.unit.DividedUnit;
 import org.universAAL.ontology.unit.MultipliedUnit;
 import org.universAAL.ontology.unit.Prefix;
 import org.universAAL.ontology.unit.Unit;
-import org.universAAL.ontology.unit.UnitService;
 import org.universAAL.ontology.unit.UnitSystem;
+import org.universAAL.ontology.unit.services.UnitConversionService;
+import org.universAAL.ontology.unit.services.UnitService;
 
 public class UnitFactory implements ResourceFactory {
 
@@ -41,6 +42,8 @@ public class UnitFactory implements ResourceFactory {
 	    return new DividedUnit(instanceURI);
 	case 6:
 	    return new UnitService(instanceURI);
+	case 7:
+		return new UnitConversionService(instanceURI);
 	}
 	return null;
     }

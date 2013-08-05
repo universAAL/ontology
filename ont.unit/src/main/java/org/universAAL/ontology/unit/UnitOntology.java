@@ -25,8 +25,11 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.UnitFactory;
+import org.universAAL.ontology.unit.services.UnitConversionService;
+import org.universAAL.ontology.unit.services.UnitService;
 import org.universAAL.ontology.unit.system.BinarySystem;
 import org.universAAL.ontology.unit.system.InternationalSystem;
+import org.universAAL.ontology.unit.system.TimeSystem;
 import org.universAAL.ontology.unit.system.Util;
 
 /**
@@ -53,23 +56,22 @@ public final class UnitOntology extends Ontology {
 	OntClassInfoSetup oci_measurableDimension = createNewAbstractOntClassInfo(MeasurableDimension.MY_URI);
 
 	// ******* Declaration of regular classes of the ontology ******* //
-	OntClassInfoSetup oci_DividedUnit = createNewOntClassInfo(
-		DividedUnit.MY_URI, factory, 5);
-	OntClassInfoSetup oci_UnitSystem = createNewOntClassInfo(
-		UnitSystem.MY_URI, factory, 2);
 	OntClassInfoSetup oci_Unit = createNewOntClassInfo(Unit.MY_URI,
 		factory, 1);
-	OntClassInfoSetup oci_DerivedUnit = createNewAbstractOntClassInfo(DerivedUnit.MY_URI);
+	OntClassInfoSetup oci_UnitSystem = createNewOntClassInfo(
+		UnitSystem.MY_URI, factory, 2);
 	OntClassInfoSetup oci_Prefix = createNewOntClassInfo(Prefix.MY_URI,
 		factory, 3);
 	OntClassInfoSetup oci_MultipliedUnit = createNewOntClassInfo(
 		MultipliedUnit.MY_URI, factory, 4);
+	OntClassInfoSetup oci_DividedUnit = createNewOntClassInfo(
+		DividedUnit.MY_URI, factory, 5);
+	OntClassInfoSetup oci_DerivedUnit = createNewAbstractOntClassInfo(DerivedUnit.MY_URI);
 	OntClassInfoSetup oci_UnitService = createNewOntClassInfo(
 		UnitService.MY_URI, factory, 6);
-
-	OntClassInfoSetup oci_BinarySystem = createNewAbstractOntClassInfo(BinarySystem.MY_URI);
-	OntClassInfoSetup oci_InternationalSystem = createNewAbstractOntClassInfo(InternationalSystem.MY_URI);
-
+	OntClassInfoSetup oci_UnitConversionService = 
+			createNewOntClassInfo(UnitConversionService.MY_URI, factory,7);
+	
 	// ******* Add content to enumeration classes of the ontology ******* //
 
 	oci_measurableDimension
@@ -207,15 +209,35 @@ public final class UnitOntology extends Ontology {
 	oci_UnitService
 		.addRestriction(MergedRestriction.getAllValuesRestriction(
 			UnitService.PROP_CONTROLS, Unit.MY_URI));
+	
 
-	oci_BinarySystem.addSuperClass(UnitSystem.MY_URI);
-	oci_InternationalSystem.addSuperClass(UnitSystem.MY_URI);
-
+	oci_UnitConversionService.setResourceComment("Service for Unit conversion operations");
+	oci_UnitConversionService.setResourceLabel("UnitConversionService");
+	oci_UnitConversionService.addSuperClass(Service.MY_URI);
+	oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_FROM_UNIT);
+	oci_UnitConversionService
+	.addRestriction(MergedRestriction.getAllValuesRestriction(
+			UnitConversionService.PROP_FROM_UNIT, Unit.MY_URI));
+	oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_TO_UNIT);
+	oci_UnitConversionService
+	.addRestriction(MergedRestriction.getAllValuesRestriction(
+			UnitConversionService.PROP_TO_UNIT, Unit.MY_URI));
+	oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_FROM_PREFIX);
+	oci_UnitConversionService
+	.addRestriction(MergedRestriction.getAllValuesRestriction(
+			UnitConversionService.PROP_FROM_PREFIX, Prefix.MY_URI));
+	oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_TO_PREFIX);
+	oci_UnitConversionService
+	.addRestriction(MergedRestriction.getAllValuesRestriction(
+			UnitConversionService.PROP_TO_PREFIX, Prefix.MY_URI));
+	oci_UnitConversionService.addDatatypeProperty(UnitConversionService.PROP_FROM_VALUE);
+	oci_UnitConversionService.addDatatypeProperty(UnitConversionService.PROP_TO_VALUE);
+	
 	/*
 	 * INDIVIDUAL CONCEPTS
 	 */
 
-	oci_InternationalSystem.addInstance(InternationalSystem.IND_SI);
+	oci_UnitSystem.addInstance(InternationalSystem.IND_SI);
 
 	oci_Unit.addInstance(InternationalSystem.IND_UNIT_SI_METER);
 	oci_Unit.addInstance(InternationalSystem.IND_UNIT_SI_GRAM);
@@ -246,7 +268,21 @@ public final class UnitOntology extends Ontology {
 	oci_Prefix.addInstance(InternationalSystem.IND_PREFIX_SI_ZEPTO);
 	oci_Prefix.addInstance(InternationalSystem.IND_PREFIX_SI_YOCTO);
 
-	oci_BinarySystem.addInstance(BinarySystem.IND_BS);
+	oci_UnitSystem.addInstance(TimeSystem.IND_TS);
+	
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_SECOND);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_MINUTE);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_HOUR);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_DAY);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_WEEK);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_MONTH);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_YEAR);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_LUSTRUM);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_DECADE);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_CENTURY);
+	oci_Unit.addInstance(TimeSystem.IND_UNIT_TS_MILENIUM);
+	
+	oci_UnitSystem.addInstance(BinarySystem.IND_BS);
 
 	oci_Unit.addInstance(BinarySystem.IND_UNIT_BS_BIT);
 	oci_Unit.addInstance(BinarySystem.IND_UNIT_BS_BYTE);
