@@ -72,7 +72,7 @@ public class UnitSystem extends ManagedIndividual {
 	return new Unit[0];
     }
 
-    protected void addUnits(Unit newValue) {
+    public void addUnits(Unit newValue) {
 	Object propList = getProperty(PROP_UNITS);
 	List newList;
 	if (propList instanceof List)
@@ -105,7 +105,7 @@ public class UnitSystem extends ManagedIndividual {
 	return new Prefix[0];
     }
 
-    protected void addPrefixes(Prefix newValue) {
+    public void addPrefixes(Prefix newValue) {
 	Object propList = getProperty(PROP_PREFIXES);
 	List newList;
 	if (propList instanceof List)
