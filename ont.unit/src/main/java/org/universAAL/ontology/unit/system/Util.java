@@ -19,11 +19,8 @@ import org.universAAL.ontology.unit.DividedUnit;
 import org.universAAL.ontology.unit.MeasurableDimension;
 import org.universAAL.ontology.unit.MultipliedUnit;
 import org.universAAL.ontology.unit.Unit;
-import org.universAAL.ontology.unit.UnitOntology;
 
 public class Util {
-
-    public static final String MY_URI = UnitOntology.NAMESPACE + "UtilUnits";
 
     public static final Unit IND_UNIT_UNITY = new Unit("unity", "Unity", "1",
 			MeasurableDimension.Adiemnsional);
@@ -48,6 +45,4 @@ public class Util {
     					InternationalSystem.IND_UNIT_SI_SECOND))));
 
 
-    private Util() {
-    }
 }

@@ -21,11 +21,9 @@ import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
 import org.universAAL.ontology.unit.UnitSystem;
 
-public class BinarySystem extends UnitSystem {
+public class BinarySystem {
 
-    public static final String MY_URI = UnitOntology.NAMESPACE + "BinarySystem";
-
-    public static final BinarySystem IND_BS = new BinarySystem("binarySytem");
+    public static final UnitSystem IND_BS = new UnitSystem(UnitOntology.NAMESPACE+"binarySytem");
     public static final Unit IND_UNIT_BS_BIT = new Unit("bit", "Bit", "b",
     		MeasurableDimension.ComputerStorage, IND_BS);
     public static final Unit IND_UNIT_BS_BYTE = new Unit("byte", "Byte", "B",
@@ -42,22 +40,6 @@ public class BinarySystem extends UnitSystem {
     static {
 	IND_BS.addUnits(IND_UNIT_BS_BIT);
 	IND_BS.addUnits(IND_UNIT_BS_BYTE);
-    }
-
-    protected BinarySystem(String uri) {
-	super(uri, "Binary System");
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
     }
 
     private static Prefix newBinaryPrefix(String name, String symb, int power) {

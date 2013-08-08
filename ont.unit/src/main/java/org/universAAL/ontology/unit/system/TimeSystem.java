@@ -12,15 +12,12 @@ import org.universAAL.ontology.unit.UnitSystem;;
  * @author amedrano
  *
  */
-public class TimeSystem extends UnitSystem {
-
-    public static final String MY_URI = UnitOntology.NAMESPACE
-    	    + "TimeSystem";
+public class TimeSystem {
 
         /*
          * STATIC resources
          */
-        public static final TimeSystem IND_TS = new TimeSystem("timeForTimeUnits");
+        public static final UnitSystem IND_TS = new UnitSystem(UnitOntology.NAMESPACE+"timeForTimeUnits");
         
         // Units
         public static final Unit IND_UNIT_TS_SECOND = InternationalSystem.IND_UNIT_SI_SECOND;
@@ -58,22 +55,5 @@ public class TimeSystem extends UnitSystem {
         	IND_TS.addUnits(IND_UNIT_TS_DECADE);
         	IND_TS.addUnits(IND_UNIT_TS_CENTURY);
         	IND_TS.addUnits(IND_UNIT_TS_MILENIUM);
-        }
-        
-        protected TimeSystem(String uri) {
-        	super(uri, "Time Units");
-        }
-
-        public String getClassURI() {
-        	return MY_URI;
-        }
-
-        public int getPropSerializationType(String arg0) {
-        	return PROP_SERIALIZATION_FULL;
-        }
-
-        public boolean isWellFormed() {
-        	return true && hasProperty(PROP_NAME);
-        }
-        
+        }        
 }

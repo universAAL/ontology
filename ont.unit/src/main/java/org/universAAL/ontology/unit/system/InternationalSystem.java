@@ -21,15 +21,12 @@ import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
 import org.universAAL.ontology.unit.UnitSystem;
 
-public class InternationalSystem extends UnitSystem {
-
-    public static final String MY_URI = UnitOntology.NAMESPACE
-	    + "InternationalSystem";
+public class InternationalSystem {
 
     /*
      * STATIC resources
      */
-    public static final InternationalSystem IND_SI = new InternationalSystem("internationalSystemOfUnits");
+    public static final UnitSystem IND_SI = new UnitSystem(UnitOntology.NAMESPACE+"internationalSystemOfUnits");
     // Units
     public static final Unit IND_UNIT_SI_METER = new Unit("meter", "Meter", "m",
     		MeasurableDimension.Length, IND_SI);
@@ -75,22 +72,6 @@ public class InternationalSystem extends UnitSystem {
 	IND_SI.addUnits(IND_UNIT_SI_KELVIN);
 	IND_SI.addUnits(IND_UNIT_SI_CANDELA);
 	IND_SI.addUnits(IND_UNIT_SI_MOLE);
-    }
-
-    protected InternationalSystem(String uri) {
-	super(uri, "International Sistem of Units");
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_NAME);
     }
 
     private static Prefix newDecimalPrefix(String name, String symb, int power) {
