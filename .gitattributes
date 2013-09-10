@@ -464,6 +464,7 @@ ont.pom/composite/src/test/java/org/universAAL/ontology/test/OwlOWLCreator.java 
 ont.pom/karaf.feature/ASL2.0.txt -text
 ont.pom/karaf.feature/NOTICE.txt -text
 ont.pom/karaf.feature/pom.xml -text
+ont.pom/karaf.feature/src/features/features.xml -text svneol=unset#text/plain
 ont.pom/pom.xml -text
 ont.pom/update.bat -text
 ont.profile.contact/ASL2.0.txt -text
