@@ -1,173 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.universAAL.ontology</groupId>
-    <artifactId>ont.pom</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
-    <relativePath>../</relativePath>
+	  <groupId>org.universAAL.ontology</groupId>
+	  <artifactId>ont.pom</artifactId>
+	  <version>2.0.1-SNAPSHOT</version>
+    	<relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>ont.karaf.feature</artifactId>
   <version>2.0.1-SNAPSHOT</version>
-  <packaging>feature</packaging>
-  <name>universAAL Ontology Karaf Feature</name>
-  <description>universAAL All Ontologies Feature</description>
-  <scm>
-    <connection>${svn.base}/ont.pom/karaf.feature</connection>
-    <developerConnection>${svn.base}/ont.pom/karaf.feature</developerConnection>
-    <url>${svn.base.url}ont.pom%2Fkaraf.feature</url>
-  </scm>
-  <dependencies>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.activityhub</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.av</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.che</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.continuahealthmanager</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.dependability</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.device</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.furniture</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.gesture.pointing</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.handgestures</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.health.disease</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.health.measurement</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.impairment</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.languages</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.lighting</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.measurement</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.multimedia</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.personalhealthdevice</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.contact</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.health</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.ui.mainmenu</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.ui.preferences</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.userid</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.questionnaire</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.situation.reasoner</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.unit</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.X73</artifactId>
-    </dependency>
-  </dependencies>
+  <name>universAAL Karaf Feature Ontologies</name>
+  <properties>
+    <commons-beanutils-version>1.8.3</commons-beanutils-version>
+    <commons-codec-version>1.4</commons-codec-version>
+    <felix-version>2.0.1</felix-version>
+    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+  </properties>
+<!--   <dependencies> -->
+<!--     <dependency> -->
+<!--       <groupId>commons-beanutils</groupId> -->
+<!--       <artifactId>commons-beanutils-core</artifactId> -->
+<!--       <version>${commons-beanutils-version}</version> -->
+<!--     </dependency> -->
+<!--     <dependency> -->
+<!--       <groupId>commons-codec</groupId> -->
+<!--       <artifactId>commons-codec</artifactId> -->
+<!--       <version>${commons-codec-version}</version> -->
+<!--     </dependency> -->
+<!--   </dependencies> -->
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.karaf.tooling</groupId>
-          <artifactId>karaf-maven-plugin</artifactId>
-          <version>3.0.0.RC1</version>
-          <extensions>true</extensions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>org.apache.karaf.tooling</groupId>
-        <artifactId>karaf-maven-plugin</artifactId>
-        <configuration>
-          <startLevel>50</startLevel>
-          <aggregateFeatures>true</aggregateFeatures>
-          <resolver>(obr)</resolver>
-          <checkDependencyChange>false</checkDependencyChange>
-          <failOnDependencyChange>false</failOnDependencyChange>
-          <logDependencyChanges>false</logDependencyChanges>
-          <overwriteChangedDependencies>true</overwriteChangedDependencies>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.universAAL.support</groupId>
-        <artifactId>uaal-maven-plugin</artifactId>
+        <artifactId>maven-resources-plugin</artifactId>
         <executions>
           <execution>
-            <id>CompositeMojo</id>
-            <phase>none</phase>
-          </execution>
-          <execution>
-            <id>TestMojo</id>
-            <phase>none</phase>
+            <id>copy-features</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>target/features</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/features</directory>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -176,10 +57,19 @@
         <artifactId>build-helper-maven-plugin</artifactId>
         <executions>
           <execution>
-            <id>attach-composite</id>
-            <phase>none</phase>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
             <configuration>
-              <artifacts></artifacts>
+              <artifacts>
+                <artifact>
+                  <file>target/features/features.xml</file>
+                  <type>xml</type>
+                  <classifier>features</classifier>
+                </artifact>
+              </artifacts>
             </configuration>
           </execution>
         </executions>
