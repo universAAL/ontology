@@ -105,13 +105,13 @@
 	
 	<feature name="uAAL-Ont.Health.Disease" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.PhWorld</feature>
-		<bundle start-level='91' start='true'>mvn:org.universAAL.ontology/ont.disease/2.0.1-SNAPSHOT</bundle>
+		<bundle start-level='91' start='true'>mvn:org.universAAL.ontology/ont.health.disease/2.0.1-SNAPSHOT</bundle>
 	</feature>
 	
 	<feature name="uAAL-Ont.Profile.Health" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>
 		<feature>uAAL-Ont.Health.Disease</feature>
-		<feature>uAAL-Ont.Heakth.Measurement</feature>
+		<feature>uAAL-Ont.Health.Measurement</feature>
 		<bundle start-level='94' start='true'>mvn:org.universAAL.ontology/ont.profile.health/2.0.1-SNAPSHOT</bundle>
 	</feature>
 	
@@ -152,7 +152,7 @@
 	
 	<feature name="uAAL-Ont.Lightning" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.PhWorld</feature>
-		<bundle start-level='91' start='true'>mvn:org.universAAL.ontology/ont.lightning/2.0.1-SNAPSHOT</bundle>
+		<bundle start-level='91' start='true'>mvn:org.universAAL.ontology/ont.lighting/2.0.1-SNAPSHOT</bundle>
 	</feature>
 	
 	<feature name="uAAL-Ont.X73" version="${pom.version}" resolver='(obr)'>
