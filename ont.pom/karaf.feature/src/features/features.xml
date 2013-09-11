@@ -45,7 +45,7 @@
 		<bundle start-level='92' start='true'>mvn:org.universAAL.ontology/ont.gesture.pointing/2.0.1-SNAPSHOT</bundle>
 	</feature>
 	
-	<feature name="uAAL-Ont.Profile.ui.prefferences" version="${pom.version}" resolver='(obr)'>
+	<feature name="uAAL-Ont.Profile.ui.preferences" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>
 		<feature>uAAL-Ont.Languages</feature>
 		<bundle start-level='92' start='true'>mvn:org.universAAL.ontology/ont.profile.ui.preferences/2.0.1-SNAPSHOT</bundle>
