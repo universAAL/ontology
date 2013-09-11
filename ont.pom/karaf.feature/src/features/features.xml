@@ -2,7 +2,7 @@
 <features name="universAAL-Ontologies" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
 
 	<!-- Change version of repository accordingly -->
-	<repository>mvn:org.universAAL.middleware/mw.karaf.feature/2.0.0/xml/features</repository>
+	<repository>mvn:org.universAAL.middleware/mw.karaf.feature/2.0.1-SNAPSHOT/xml/features</repository>
 	
 	<feature name="uAAL-Ont.PhWorld" description="The Physical World Ontolgy."
 		version="${pom.version}" resolver='(obr)'>
