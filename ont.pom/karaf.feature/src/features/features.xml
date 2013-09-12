@@ -7,7 +7,7 @@
 	<feature name="uAAL-Ont.PhWorld" description="The Physical World Ontolgy."
 		version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-MW</feature>
-		<bundle>wrap:mvn:jp.go.ipa/jgcl/1.0</bundle>
+		<bundle start-level='50'>wrap:mvn:jp.go.ipa/jgcl/1.0</bundle>
 		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.phWorld/2.0.1-SNAPSHOT</bundle>
 	</feature>
 		
