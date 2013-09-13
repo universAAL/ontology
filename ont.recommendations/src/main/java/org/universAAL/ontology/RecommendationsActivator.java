@@ -18,10 +18,10 @@
  ******************************************************************************/
 package org.universAAL.ontology;
 
-import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.ModuleActivator;
+import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.recommendations.*;
+import org.universAAL.ontology.recommendations.RecommendationsOntology;
 
 
 public class RecommendationsActivator implements ModuleActivator {
