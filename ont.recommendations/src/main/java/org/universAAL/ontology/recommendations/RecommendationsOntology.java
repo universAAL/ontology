@@ -19,10 +19,10 @@
 package org.universAAL.ontology.recommendations;
 
 import org.universAAL.middleware.owl.DataRepOntology;
-import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.ui.owl.Recommendation;
 import org.universAAL.middleware.ui.owl.UIBusOntology;
 import org.universAAL.ontology.RecommendationsFactory;
 
@@ -68,8 +68,6 @@ public final class RecommendationsOntology extends Ontology {
 				GridLayout.MY_URI, factory, 7);
 		OntClassInfoSetup oci_WebRecommendation = createNewOntClassInfo(
 				WebRecommendation.MY_URI, factory, 8);
-		OntClassInfoSetup oci_Recommendations = createNewOntClassInfo(
-				Recommendations.MY_URI, factory, 9);
 		OntClassInfoSetup oci_VerticalAlignment = createNewOntClassInfo(
 				VerticalAlignment.MY_URI, factory, 10);
 		OntClassInfoSetup oci_TextSize = createNewOntClassInfo(TextSize.MY_URI,
@@ -120,11 +118,7 @@ public final class RecommendationsOntology extends Ontology {
 
 		oci_WebRecommendation.setResourceComment("");
 		oci_WebRecommendation.setResourceLabel("WebRecommendation");
-		oci_WebRecommendation.addSuperClass(Recommendations.MY_URI);
-
-		oci_Recommendations.setResourceComment("");
-		oci_Recommendations.setResourceLabel("Recommendations");
-		oci_Recommendations.addSuperClass(ManagedIndividual.MY_URI);
+		oci_WebRecommendation.addSuperClass(Recommendation.MY_URI);
 
 		oci_VerticalAlignment.setResourceComment("");
 		oci_VerticalAlignment.setResourceLabel("VerticalAlignment");
@@ -140,7 +134,7 @@ public final class RecommendationsOntology extends Ontology {
 
 		oci_VisualRecommendation.setResourceComment("");
 		oci_VisualRecommendation.setResourceLabel("VisualRecommendation");
-		oci_VisualRecommendation.addSuperClass(Recommendations.MY_URI);
+		oci_VisualRecommendation.addSuperClass(Recommendation.MY_URI);
 
 		oci_TextAlignment.setResourceComment("");
 		oci_TextAlignment.setResourceLabel("TextAlignment");
@@ -152,7 +146,7 @@ public final class RecommendationsOntology extends Ontology {
 
 		oci_AuditoryRecommendation.setResourceComment("");
 		oci_AuditoryRecommendation.setResourceLabel("AuditoryRecommendation");
-		oci_AuditoryRecommendation.addSuperClass(Recommendations.MY_URI);
+		oci_AuditoryRecommendation.addSuperClass(Recommendation.MY_URI);
 
 	}
 }

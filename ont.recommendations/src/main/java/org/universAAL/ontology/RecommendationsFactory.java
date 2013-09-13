@@ -19,7 +19,7 @@
 package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.impl.ResourceFactoryImpl;
+import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.recommendations.Alignment;
 import org.universAAL.ontology.recommendations.AuditoryRecommendation;
 import org.universAAL.ontology.recommendations.FillParent;
@@ -28,7 +28,6 @@ import org.universAAL.ontology.recommendations.GridLayout;
 import org.universAAL.ontology.recommendations.HorizontalAlignment;
 import org.universAAL.ontology.recommendations.HorizontalLayout;
 import org.universAAL.ontology.recommendations.Layout;
-import org.universAAL.ontology.recommendations.Recommendations;
 import org.universAAL.ontology.recommendations.Size;
 import org.universAAL.ontology.recommendations.Text;
 import org.universAAL.ontology.recommendations.TextAlignment;
@@ -38,7 +37,7 @@ import org.universAAL.ontology.recommendations.VerticalLayout;
 import org.universAAL.ontology.recommendations.VisualRecommendation;
 import org.universAAL.ontology.recommendations.WebRecommendation;
 
-public class RecommendationsFactory extends ResourceFactoryImpl {
+public class RecommendationsFactory implements ResourceFactory {
 
 
   public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
@@ -62,8 +61,6 @@ public class RecommendationsFactory extends ResourceFactoryImpl {
        return new GridLayout(instanceURI);
      case 8:
        return new WebRecommendation(instanceURI);
-     case 9:
-       return new Recommendations(instanceURI);
      case 10:
        return new VerticalAlignment(instanceURI);
      case 11:

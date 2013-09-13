@@ -659,7 +659,6 @@ ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/GridLa
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/HorizontalAlignment.java -text svneol=unset#text/plain
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/HorizontalLayout.java -text svneol=unset#text/plain
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Layout.java -text svneol=unset#text/plain
-ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Recommendations.java -text svneol=unset#text/plain
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/RecommendationsOntology.java -text svneol=unset#text/plain
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Size.java -text svneol=unset#text/plain
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Text.java -text svneol=unset#text/plain
