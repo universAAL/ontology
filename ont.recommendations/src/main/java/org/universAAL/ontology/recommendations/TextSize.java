@@ -33,6 +33,8 @@ public class TextSize extends Text {
   public static final String MY_URI = RecommendationsOntology.NAMESPACE
     + "TextSize";
 
+  public static final String PROP_RELATIVE_SIZE = RecommendationsOntology.NAMESPACE
+		    + "relativeSize";
 
   public TextSize () {
     super();
@@ -54,6 +56,18 @@ public class TextSize extends Text {
 	return super.isWellFormed();
   }
 
- 
+  public TextSize setRelativeSize(int plusMinus){
+	 changeProperty(PROP_RELATIVE_SIZE, Integer.valueOf(plusMinus));
+	 return this;
+  }
 
+  public int getRelativeSize(){
+	  Integer rel = (Integer) getProperty(PROP_RELATIVE_SIZE);
+	  if (rel == null){
+		  return 0;
+	  }
+	  else {
+		  return rel.intValue();
+	  }
+  }
 }

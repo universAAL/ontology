@@ -31,8 +31,16 @@ package org.universAAL.ontology.recommendations;
  */
 public class VerticalAlignment extends Alignment {
   public static final String MY_URI = RecommendationsOntology.NAMESPACE
-    + "VerticalAlignment";
+     + "VerticalAlignment";
+
+  static final String INST_TOP = RecommendationsOntology.NAMESPACE + "topAlignment";
+  static final String INST_MIDDLE = RecommendationsOntology.NAMESPACE + "middleAlignment";
+  static final String INST_BOTTOM = RecommendationsOntology.NAMESPACE + "bottomAlignment";
   
+  public static VerticalAlignment top;
+  public static VerticalAlignment middle;
+  public static VerticalAlignment bottom;
+
 
 
   public VerticalAlignment () {
