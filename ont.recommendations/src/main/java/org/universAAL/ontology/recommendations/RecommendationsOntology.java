@@ -170,8 +170,10 @@ public final class RecommendationsOntology extends Ontology {
 		//instances
 		FillParent.verticallly = new FillParent(FillParent.INST_VERTICAL);
 		FillParent.horizontally = new FillParent(FillParent.INST_HORIZONTAL);
+		FillParent.keepOriginal= new FillParent(FillParent.INST_KEEP);
 		oci_FillParent.addInstance(FillParent.verticallly);
-		oci_FillParent.addInstance(FillParent.verticallly);
+		oci_FillParent.addInstance(FillParent.horizontally);
+		oci_FillParent.addInstance(FillParent.keepOriginal);
 		
 		VerticalAlignment.top = new VerticalAlignment(VerticalAlignment.INST_TOP);
 		oci_VerticalAlignment.addInstance(VerticalAlignment.top);

@@ -37,10 +37,14 @@ public class FillParent extends VisualRecommendation {
 	static final String INST_VERTICAL = RecommendationsOntology.NAMESPACE+ "verticalParentFilling";
 
 	static final String INST_HORIZONTAL = RecommendationsOntology.NAMESPACE+ "horizontalParentFilling";
+	
+	static final String INST_KEEP = RecommendationsOntology.NAMESPACE+ "dontStreach";
 
 	public static FillParent verticallly;
 
 	public static FillParent horizontally;
+	
+	public static FillParent keepOriginal;
 
 	public FillParent() {
 		super();
