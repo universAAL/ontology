@@ -20,7 +20,7 @@
 	<feature name="uAAL-Ont.Recommendation" description="UI Recommendation options."
 		version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-MW</feature>
-		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.recommendation/2.0.1-SNAPSHOT</bundle>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.recommendations/2.0.1-SNAPSHOT</bundle>
 	</feature>
 	
 	<feature name="uAAL-Ont.Unit" description="The Unit Sistem."
