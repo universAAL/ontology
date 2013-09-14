@@ -34,6 +34,15 @@ public class HorizontalAlignment extends Alignment {
     + "HorizontalAlignment";
 
 
+  static final String INST_LEFT = RecommendationsOntology.NAMESPACE + "leftHorizontalAlignment";
+  static final String INST_CENTER = RecommendationsOntology.NAMESPACE + "centerHorizontalAlignment";
+  static final String INST_RIGHT = RecommendationsOntology.NAMESPACE + "rightHorizontalAlignment";
+  
+  public static VerticalAlignment left;
+  public static VerticalAlignment center;
+  public static VerticalAlignment right;
+
+
   public HorizontalAlignment () {
     super();
   }

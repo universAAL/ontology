@@ -32,6 +32,8 @@ package org.universAAL.ontology.recommendations;
 public class GridLayout extends Layout {
   public static final String MY_URI = RecommendationsOntology.NAMESPACE
     + "GridLayout";
+  public static final String PROP_NUMBER_OF_COLUMNS = RecommendationsOntology.NAMESPACE+"colNumber";
+  public static final String PROP_NUMBER_OF_ROWS = RecommendationsOntology.NAMESPACE+"rowNumber";
 
   public GridLayout () {
     super();
