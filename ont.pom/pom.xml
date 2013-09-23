@@ -55,10 +55,10 @@
 		<module>../ont.situation.reasoner</module>
 		<module>../ont.unit</module>
 		<module>../ont.X73</module>
-		<module>composite</module>
-		<module>karaf.feature</module>
 		<module>../ont.device.extra</module>
 		<module>../ont.recommendations</module>
+		<module>composite</module>
+		<module>karaf.feature</module>
 	</modules>
 	<scm>
 		<connection>${svn.base}/${project.artifactId}</connection>
