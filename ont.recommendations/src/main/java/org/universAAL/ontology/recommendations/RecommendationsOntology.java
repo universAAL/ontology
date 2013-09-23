@@ -185,11 +185,11 @@ public final class RecommendationsOntology extends Ontology {
 		VerticalAlignment.bottom = new VerticalAlignment(VerticalAlignment.INST_BOTTOM);
 		oci_VerticalAlignment.addInstance(VerticalAlignment.bottom);
 		
-		HorizontalAlignment.left = new VerticalAlignment(HorizontalAlignment.INST_LEFT);
+		HorizontalAlignment.left = new HorizontalAlignment(HorizontalAlignment.INST_LEFT);
 		oci_HorizontalAlignment.addInstance(HorizontalAlignment.left);
-		HorizontalAlignment.center = new VerticalAlignment(HorizontalAlignment.INST_CENTER);
+		HorizontalAlignment.center = new HorizontalAlignment(HorizontalAlignment.INST_CENTER);
 		oci_HorizontalAlignment.addInstance(HorizontalAlignment.center);
-		HorizontalAlignment.right = new VerticalAlignment(HorizontalAlignment.INST_RIGHT);
+		HorizontalAlignment.right = new HorizontalAlignment(HorizontalAlignment.INST_RIGHT);
 		oci_HorizontalAlignment.addInstance(HorizontalAlignment.right);
 		
 	}
