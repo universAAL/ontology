@@ -16,7 +16,7 @@ public class ArtifactIntegrationTest extends IntegrationTest {
     	Dictionary d = bundleContext.getBundle(2).getHeaders();
     	Enumeration e = d.keys();
     	while (e.hasMoreElements()) {
-			Object k = (Object) d.keys().nextElement();
+			Object k = (Object) e.nextElement();
 			System.out.println(k.toString() + " : " + d.get(k));
 		}
 	logAllBundles();
