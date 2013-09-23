@@ -20,14 +20,13 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
-import org.universAAL.ontology.recommendations.FillParent;
-import org.universAAL.ontology.recommendations.Font;
+import org.universAAL.ontology.recommendations.CSSRecommendation;
 import org.universAAL.ontology.recommendations.GridLayout;
 import org.universAAL.ontology.recommendations.HorizontalAlignment;
 import org.universAAL.ontology.recommendations.HorizontalLayout;
-import org.universAAL.ontology.recommendations.Size;
-import org.universAAL.ontology.recommendations.TextAlignment;
-import org.universAAL.ontology.recommendations.TextSize;
+import org.universAAL.ontology.recommendations.MaximumSize;
+import org.universAAL.ontology.recommendations.MinimumSize;
+import org.universAAL.ontology.recommendations.PreferredSize;
 import org.universAAL.ontology.recommendations.VerticalAlignment;
 import org.universAAL.ontology.recommendations.VerticalLayout;
 
@@ -39,25 +38,22 @@ public class RecommendationsFactory implements ResourceFactory {
 	switch (factoryIndex) {
      case 0:
        return new VerticalLayout(instanceURI);
-     case 2:
+     case 1:
        return new HorizontalLayout(instanceURI);
-     case 3:
-       return new Size(instanceURI);
-     case 4:
-       return new FillParent(instanceURI);
-     case 5:
+     case 2:
        return new HorizontalAlignment(instanceURI);
-     case 6:
-       return new Font(instanceURI);
-     case 7:
+     case 3:
        return new GridLayout(instanceURI);
-     case 10:
+     case 4:
        return new VerticalAlignment(instanceURI);
-     case 11:
-       return new TextSize(instanceURI);
-     case 14:
-       return new TextAlignment(instanceURI);
-
+     case 5:
+    	 return new MaximumSize(instanceURI);
+     case 6:
+    	 return new MinimumSize(instanceURI);
+     case 7:
+    	 return new PreferredSize(instanceURI);
+     case 8:
+    	 return new CSSRecommendation(instanceURI);
 	}
 	return null;
   }

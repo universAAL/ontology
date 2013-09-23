@@ -19,6 +19,7 @@
 package org.universAAL.ontology.recommendations;
 
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
@@ -52,52 +53,49 @@ public final class RecommendationsOntology extends Ontology {
 		// Abstract classes
 		OntClassInfoSetup oci_VisualRecommendation = createNewAbstractOntClassInfo(
 				VisualRecommendation.MY_URI);
-		OntClassInfoSetup oci_AuditoryRecommendation = createNewAbstractOntClassInfo(
-				AuditoryRecommendation.MY_URI);
-		OntClassInfoSetup oci_WebRecommendation = createNewAbstractOntClassInfo(
-				WebRecommendation.MY_URI);
+		OntClassInfoSetup oci_ScriptRecommendation = createNewAbstractOntClassInfo(
+				ScriptedRecommendation.MY_URI);
 		OntClassInfoSetup oci_Layout = createNewAbstractOntClassInfo(Layout.MY_URI);
-		OntClassInfoSetup oci_Text = createNewAbstractOntClassInfo(Text.MY_URI);
 		OntClassInfoSetup oci_Alignment = createNewAbstractOntClassInfo(
 				Alignment.MY_URI);
-		
+		OntClassInfoSetup oci_SizeUnit =  createNewAbstractOntClassInfo(SizeUnit.MY_URI);
+		OntClassInfoSetup oci_Size = createNewAbstractOntClassInfo(Size.MY_URI);
 		
 		// ******* Declaration of regular classes of the ontology ******* //
 		OntClassInfoSetup oci_VerticalLayout = createNewOntClassInfo(
 				VerticalLayout.MY_URI, factory, 0);
-		
 		OntClassInfoSetup oci_HorizontalLayout = createNewOntClassInfo(
-				HorizontalLayout.MY_URI, factory, 2);
-		OntClassInfoSetup oci_Size = createNewOntClassInfo(Size.MY_URI,
-				factory, 3);
-		OntClassInfoSetup oci_FillParent = createNewOntClassInfo(
-				FillParent.MY_URI, factory, 4);
+				HorizontalLayout.MY_URI, factory, 1);
 		OntClassInfoSetup oci_HorizontalAlignment = createNewOntClassInfo(
-				HorizontalAlignment.MY_URI, factory, 5);
-		OntClassInfoSetup oci_Font = createNewOntClassInfo(Font.MY_URI,
-				factory, 6);
+				HorizontalAlignment.MY_URI, factory, 2);
 		OntClassInfoSetup oci_GridLayout = createNewOntClassInfo(
-				GridLayout.MY_URI, factory, 7);
-		
+				GridLayout.MY_URI, factory, 3);
 		OntClassInfoSetup oci_VerticalAlignment = createNewOntClassInfo(
-				VerticalAlignment.MY_URI, factory, 10);
-		OntClassInfoSetup oci_TextSize = createNewOntClassInfo(TextSize.MY_URI,
-				factory, 11);
+				VerticalAlignment.MY_URI, factory, 4);
+		OntClassInfoSetup oci_maxSize = createNewOntClassInfo(
+				MaximumSize.MY_URI, factory, 5);
+		OntClassInfoSetup oci_minSize = createNewOntClassInfo(
+				MinimumSize.MY_URI, factory, 6);
+		OntClassInfoSetup oci_prefSize = createNewOntClassInfo(
+				PreferredSize.MY_URI, factory, 7);
+		OntClassInfoSetup oci_CSS = createNewOntClassInfo(
+				CSSRecommendation.MY_URI, factory,8);
 		
-		
-		OntClassInfoSetup oci_TextAlignment = createNewOntClassInfo(
-				TextAlignment.MY_URI, factory, 14);
-		
-		
-
 		// ******* Add content to regular classes of the ontology ******* //
+		
+		oci_SizeUnit.setResourceComment("Size units");
+		oci_SizeUnit.setResourceLabel("SizeUnit");
+		oci_SizeUnit.addSuperClass(ManagedIndividual.MY_URI);
+		oci_SizeUnit.toEnumeration(
+				new ManagedIndividual[]{
+						SizeUnit.absolute,
+						SizeUnit.screenRelative,
+						SizeUnit.ParentRelative,
+						});
+		
 		oci_VerticalLayout.setResourceComment("Vertical ordering of elements");
 		oci_VerticalLayout.setResourceLabel("VerticalLayout");
 		oci_VerticalLayout.addSuperClass(Layout.MY_URI);
-
-		oci_Text.setResourceComment("Text related Recommendations");
-		oci_Text.setResourceLabel("Text");
-		oci_Text.addSuperClass(VisualRecommendation.MY_URI);
 
 		oci_HorizontalLayout.setResourceComment("Horizontal ordering of elements");
 		oci_HorizontalLayout.setResourceLabel("HorizontalLayout");
@@ -106,18 +104,31 @@ public final class RecommendationsOntology extends Ontology {
 		oci_Size.setResourceComment("Size of elements");
 		oci_Size.setResourceLabel("Size");
 		oci_Size.addSuperClass(VisualRecommendation.MY_URI);
-
-		oci_FillParent.setResourceComment("Relative size to the freespace for the element");
-		oci_FillParent.setResourceLabel("FillParent");
-		oci_FillParent.addSuperClass(VisualRecommendation.MY_URI);
-
+		oci_Size.addDatatypeProperty(Size.PROP_HORIZONTAL);
+		oci_Size.addDatatypeProperty(Size.PROP_VERTICAL);
+		oci_Size.addObjectProperty(Size.PROP_SIZE_UNIT);
+		oci_Size.addRestriction(
+				MergedRestriction.getAllValuesRestrictionWithCardinality(Size.PROP_HORIZONTAL, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+		oci_Size.addRestriction(
+				MergedRestriction.getAllValuesRestrictionWithCardinality(Size.PROP_VERTICAL, TypeMapper.getDatatypeURI(Integer.class), 1, 1));
+		oci_Size.addRestriction(
+				MergedRestriction.getAllValuesRestrictionWithCardinality(Size.PROP_SIZE_UNIT, SizeUnit.MY_URI, 1, 1));
+		
+		oci_maxSize.setResourceComment("Maximum Size of the element");
+		oci_maxSize.setResourceLabel("MaximumSize");
+		oci_maxSize.addSuperClass(Size.MY_URI);
+		
+		oci_minSize.setResourceComment("Minimum Size of the element");
+		oci_minSize.setResourceLabel("MinimumSize");
+		oci_minSize.addSuperClass(Size.MY_URI);
+		
+		oci_prefSize.setResourceComment("Preferred Size of the element");
+		oci_prefSize.setResourceLabel("PreferredSize");
+		oci_prefSize.addSuperClass(Size.MY_URI);
+		
 		oci_HorizontalAlignment.setResourceComment("Horizontal position to respect of the freespace");
 		oci_HorizontalAlignment.setResourceLabel("HorizontalAlignment");
 		oci_HorizontalAlignment.addSuperClass(Alignment.MY_URI);
-
-		oci_Font.setResourceComment("Font recommedation");
-		oci_Font.setResourceLabel("Font");
-		oci_Font.addSuperClass(Text.MY_URI);
 
 		oci_GridLayout.setResourceComment("Arrange in a grid or array fashion");
 		oci_GridLayout.setResourceLabel("GridLayout");
@@ -131,21 +142,27 @@ public final class RecommendationsOntology extends Ontology {
 				MergedRestriction.getAllValuesRestrictionWithCardinality(
 						GridLayout.PROP_NUMBER_OF_ROWS, TypeMapper.getDatatypeURI(Integer.class), 0, 1));
 
-		oci_WebRecommendation.setResourceComment("Generic Web recomendation.");
-		oci_WebRecommendation.setResourceLabel("WebRecommendation");
-		oci_WebRecommendation.addSuperClass(Recommendation.MY_URI);
+		oci_ScriptRecommendation.setResourceComment("Generic Web recomendation.");
+		oci_ScriptRecommendation.setResourceLabel("WebRecommendation");
+		oci_ScriptRecommendation.addSuperClass(Recommendation.MY_URI);
+		oci_ScriptRecommendation.addDatatypeProperty(ScriptedRecommendation.PROP_LANGUAJE);
+		oci_ScriptRecommendation.addRestriction(
+				MergedRestriction.getAllValuesRestrictionWithCardinality(
+						ScriptedRecommendation.PROP_LANGUAJE, TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_ScriptRecommendation.addDatatypeProperty(ScriptedRecommendation.PROP_CONTENT);
+		oci_ScriptRecommendation.addRestriction(
+				MergedRestriction.getAllValuesRestrictionWithCardinality(
+						ScriptedRecommendation.PROP_CONTENT, TypeMapper.getDatatypeURI(String.class), 1, 1));
+		
+		oci_CSS.setResourceComment("CSS description recommendation");
+		oci_CSS.setResourceLabel("CSSRecommendation");
+		oci_CSS.addRestriction(MergedRestriction.getFixedValueRestriction(
+				CSSRecommendation.PROP_LANGUAJE, CSSRecommendation.CSS_LANG));
+
 
 		oci_VerticalAlignment.setResourceComment("version position to respect of freespace");
 		oci_VerticalAlignment.setResourceLabel("VerticalAlignment");
 		oci_VerticalAlignment.addSuperClass(Alignment.MY_URI);
-
-		oci_TextSize.setResourceComment("Text size modification");
-		oci_TextSize.setResourceLabel("TextSize");
-		oci_TextSize.addSuperClass(Text.MY_URI);
-		oci_TextSize.addDatatypeProperty(TextSize.PROP_RELATIVE_SIZE);
-		oci_TextSize.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(
-						TextSize.PROP_RELATIVE_SIZE, TypeMapper.getDatatypeURI(Integer.class), 0, 1));
 
 		oci_Layout.setResourceComment("Generic Layout Recomendation");
 		oci_Layout.setResourceLabel("Layout");
@@ -155,25 +172,11 @@ public final class RecommendationsOntology extends Ontology {
 		oci_VisualRecommendation.setResourceLabel("VisualRecommendation");
 		oci_VisualRecommendation.addSuperClass(Recommendation.MY_URI);
 
-		oci_TextAlignment.setResourceComment("Text positioning");
-		oci_TextAlignment.setResourceLabel("TextAlignment");
-		oci_TextAlignment.addSuperClass(Text.MY_URI);
-
 		oci_Alignment.setResourceComment("Alignment of elements");
 		oci_Alignment.setResourceLabel("Alignment");
 		oci_Alignment.addSuperClass(VisualRecommendation.MY_URI);
-
-		oci_AuditoryRecommendation.setResourceComment("Generic auditory recomendation");
-		oci_AuditoryRecommendation.setResourceLabel("AuditoryRecommendation");
-		oci_AuditoryRecommendation.addSuperClass(Recommendation.MY_URI);
 		
 		//instances
-		FillParent.verticallly = new FillParent(FillParent.INST_VERTICAL);
-		FillParent.horizontally = new FillParent(FillParent.INST_HORIZONTAL);
-		FillParent.keepOriginal= new FillParent(FillParent.INST_KEEP);
-		oci_FillParent.addInstance(FillParent.verticallly);
-		oci_FillParent.addInstance(FillParent.horizontally);
-		oci_FillParent.addInstance(FillParent.keepOriginal);
 		
 		VerticalAlignment.top = new VerticalAlignment(VerticalAlignment.INST_TOP);
 		oci_VerticalAlignment.addInstance(VerticalAlignment.top);
