@@ -40,7 +40,7 @@
 		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.situtation.reasoner/2.0.1-SNAPSHOT</bundle>
 	</feature>
 	
-	<feature name="uAAL-Ont.Profile" description="The Profile Ontolgy."
+	<feature name="uAAL-Ont.Profile" description="The Profile Ontology"
 		version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.PhWorld</feature>
 		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.profile/2.0.1-SNAPSHOT</bundle>
