@@ -38,7 +38,7 @@ public class CSSRecommendation extends ScriptedRecommendation {
 	 * 
 	 */
 	public CSSRecommendation() {
-		changeProperty(PROP_LANGUAJE, CSS_LANG);
+//		changeProperty(PROP_LANGUAJE, CSS_LANG);
 	}
 
 	/**
@@ -46,7 +46,7 @@ public class CSSRecommendation extends ScriptedRecommendation {
 	 */
 	public CSSRecommendation(String uri) {
 		super(uri);
-		changeProperty(PROP_LANGUAJE, CSS_LANG);
+//		changeProperty(PROP_LANGUAJE, CSS_LANG);
 	}
 
 	public String getClassURI() {
