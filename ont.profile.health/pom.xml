@@ -63,9 +63,9 @@
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
-            <Export-Package>org.universaal.ontology.health.owl,
-							org.universaal.ontology.health.owl.services</Export-Package>
-            <Private-Package>org.universaal.ontology.health</Private-Package>
+            <Export-Package>org.universAAL.ontology.health.owl,
+							org.universAAL.ontology.health.owl.services</Export-Package>
+            <Private-Package>org.universAAL.ontology.health</Private-Package>
           </instructions>
         </configuration>
       </plugin>
