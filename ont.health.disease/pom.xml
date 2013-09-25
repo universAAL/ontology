@@ -45,10 +45,10 @@
             <Bundle-Name>${project.name}</Bundle-Name>
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Export-Package>org.universaal.ontology.disease.owl.*,
-							org.universaal.ontology.ICD10CirculatorySystemDiseases.owl,
-							org.universaal.ontology.ICD10Diseases.owl</Export-Package>
-            <Private-Package>org.universaal.ontology.disease.*</Private-Package>
+            <Export-Package>org.universAAL.ontology.disease.owl.*,
+							org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl,
+							org.universAAL.ontology.ICD10Diseases.owl</Export-Package>
+            <Private-Package>org.universAAL.ontology.disease.*</Private-Package>
           </instructions>
         </configuration>
       </plugin>
