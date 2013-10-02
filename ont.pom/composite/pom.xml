@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.2-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
   <artifactId>ont.composite</artifactId>
-  <version>2.0.1-SNAPSHOT</version>
+  <version>2.0.2-SNAPSHOT</version>
   <name>universAAL Ontology Composite</name>
   <url></url>
   <scm>
@@ -151,7 +151,6 @@
         <configuration>
           <instructions>
             <Bundle-Name>${project.name}</Bundle-Name>
-            <!-- <Bundle-Activator>org.universAAL.middleware.datarep.osgi.Activator</Bundle-Activator> -->
             <Private-Package>org.universAAL.ontology</Private-Package>
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
