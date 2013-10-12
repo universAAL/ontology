@@ -770,8 +770,5 @@ public final class HealthProfileOntology extends Ontology {
 			DisplayTreatmentService.PROP_TREATMENT,
 			Treatment.MY_URI, 1, 1));
 
-	// oci.addObjectProperty(DisplayTreatmentService.PROP_FORM_FOR_TREATMENT);
-	// oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-	// DisplayTreatmentService.PROP_FORM_FOR_TREATMENT, Form.MY_URI, 1, 1));
     }
 }

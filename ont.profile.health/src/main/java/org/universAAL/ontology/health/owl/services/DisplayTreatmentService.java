@@ -34,9 +34,6 @@ public class DisplayTreatmentService extends Service {
     public static final String PROP_TREATMENT = HealthProfileOntology.NAMESPACE
 	    + "treatmentToBeDisplayed";
 
-    public static final String PROP_FORM_FOR_TREATMENT = HealthProfileOntology.NAMESPACE
-	    + "formForTreatment";
-
     // CONSTRUCTORS
     public DisplayTreatmentService() {
 	super();
@@ -53,8 +50,7 @@ public class DisplayTreatmentService extends Service {
 
     /** {@inheritDoc} */
     public int getPropSerializationType(String propURI) {
-	return PROP_TREATMENT.equals(propURI)
-		|| PROP_FORM_FOR_TREATMENT.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_TREATMENT.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 
