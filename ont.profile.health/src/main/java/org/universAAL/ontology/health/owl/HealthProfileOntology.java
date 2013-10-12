@@ -768,7 +768,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			DisplayTreatmentService.PROP_TREATMENT,
-			Treatment.MY_URI, 1, 1));
+			Treatment.MY_URI, 0, 1));
 
     }
 }
