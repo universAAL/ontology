@@ -73,7 +73,7 @@ public class MailBox extends Address {
     }
 
     public boolean isWellFormed() {
-	return props.contains(PROP_POST_OFFICE_BOX);
+	return props.containsKey(PROP_POST_OFFICE_BOX);
     }
 
     /**
