@@ -27,7 +27,7 @@ import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
  * 
  */
 
-public class TestQuestionnaireMultiTrigger extends IntegrationTest {
+public class QuestionnaireMultiTriggerIT extends IntegrationTest {
 
     Questionnaire questionnaire;
     User peter;

@@ -36,7 +36,7 @@ import org.universAAL.ontology.questionnaire.ChoiceLabel;
 import org.universAAL.ontology.questionnaire.Question;
 import org.universAAL.ontology.questionnaire.Questionnaire;
 
-public class TestQuestionnaireGeneralWorking extends IntegrationTest {
+public class QuestionnaireGeneralWorkingIT extends IntegrationTest {
 
     Questionnaire questionnaire;
     User peter;

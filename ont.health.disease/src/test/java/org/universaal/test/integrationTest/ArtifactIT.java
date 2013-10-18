@@ -17,7 +17,7 @@ package org.universaal.test.integrationTest;
 
 import org.universAAL.itests.IntegrationTest;
 
-public class ArtifactTest extends IntegrationTest {
+public class ArtifactIT extends IntegrationTest {
 
     public void testLoad() {
 	logAllBundles();
