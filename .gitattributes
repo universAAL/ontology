@@ -157,7 +157,6 @@ ont.device.extra/src/main/java/org/universAAL/ontology/device/home/DeviceOntolog
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Oven.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/SirenActuator.java -text
 ont.device.extra/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
-ont.device.extra/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.device.extra/src/test/resources/log4j.properties -text
 ont.device/ASL2.0.txt -text
 ont.device/Device.di -text
