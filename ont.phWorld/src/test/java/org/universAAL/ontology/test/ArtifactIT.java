@@ -8,7 +8,7 @@ import org.universAAL.itests.IntegrationTest;
  * @author rotgier
  * 
  */
-public class ArtifactIntegrationTest extends IntegrationTest {
+public class ArtifactIT extends IntegrationTest {
 
     public void testComposite() {
 	logAllBundles();

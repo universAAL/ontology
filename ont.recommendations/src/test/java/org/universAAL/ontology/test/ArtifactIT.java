@@ -9,7 +9,7 @@ import org.universAAL.itests.IntegrationTest;
  * Here developer's of this artifact should code their integration tests.
  * 
  */
-public class ArtifactIntegrationTest extends IntegrationTest {
+public class ArtifactIT extends IntegrationTest {
 
     public void testComposite() {
     	

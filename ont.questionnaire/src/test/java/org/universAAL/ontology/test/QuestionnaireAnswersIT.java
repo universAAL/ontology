@@ -41,7 +41,7 @@ import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
  * @author mdelafuente
  * 
  */
-public class TestQuestionnaireAnswers extends IntegrationTest {
+public class QuestionnaireAnswersIT extends IntegrationTest {
 
     Questionnaire questionnaire;
     User peter;

@@ -40,7 +40,7 @@ import org.universAAL.ontology.questionnaire.Question;
 import org.universAAL.ontology.questionnaire.Questionnaire;
 import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
 
-public class TestQuestionnaireQuestions extends IntegrationTest {
+public class QuestionnaireQuestionsIT extends IntegrationTest {
 
     Questionnaire questionnaire;
     User peter;
