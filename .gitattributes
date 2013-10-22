@@ -514,6 +514,7 @@ ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/services/Per
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/services/PlannedSessionManagementService.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/services/ProfileManagementService.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/services/TreatmentManagementService.java -text
+ont.profile.health/src/test/java/org/universaal/ontology/test/BusTest.java -text
 ont.profile.health/src/test/java/org/universaal/ontology/test/HealthOntologyIT.java -text
 ont.profile.ui.mainmenu/ASL2.0.txt -text
 ont.profile.ui.mainmenu/NOTICE.txt -text
