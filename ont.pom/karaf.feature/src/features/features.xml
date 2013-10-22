@@ -14,7 +14,7 @@
 	<feature name="uAAL-Ont.Impairment" description="Description of user interaction impairments"
 		version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-MW</feature>
-		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.impairment/${ont.impairment.version}/bundle>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.impairment/${ont.impairment.version}</bundle>
 	</feature>
 	
 	<feature name="uAAL-Ont.Recommendation" description="UI Recommendation options."
