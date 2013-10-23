@@ -317,19 +317,19 @@ public abstract class Treatment extends ManagedIndividual {
 	props.put(PROP_HAS_PERFORMED_SESSION, propList);
     }
 
-    public void addPerformedSession(PerformedSession pSession) {
+    public boolean addPerformedSession(PerformedSession pSession) {
 	Object propList = props.get(PROP_HAS_PERFORMED_SESSION);
 	if (propList instanceof List) {
 	    List list = (List) propList;
 	    list.add(pSession);
-	    props.put(PROP_HAS_PERFORMED_SESSION, list);
+	    return changeProperty(PROP_HAS_PERFORMED_SESSION, list);
 	} else if (propList == null) {
-	    props.put(PROP_HAS_PERFORMED_SESSION, pSession);
+		return changeProperty(PROP_HAS_PERFORMED_SESSION, pSession);
 	} else {
 	    List list = new ArrayList();
 	    list.add((PerformedSession) propList);
 	    list.add(pSession);
-	    props.put(PROP_HAS_PERFORMED_SESSION, list);
+	    return changeProperty(PROP_HAS_PERFORMED_SESSION, list);
 	}
     }
 

@@ -16,6 +16,7 @@
 package org.universAAL.ontology.health.owl;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.measurement.Measurement;
 
 public class MeasurementRequirements extends ManagedIndividual {
     public static final String MY_URI = HealthProfileOntology.NAMESPACE
@@ -42,26 +43,23 @@ public class MeasurementRequirements extends ManagedIndividual {
     }
 
     public boolean isWellFormed() {
-	return true && props.containsKey(PROP_MAX_VALUE_ALLOWED)
-		&& props.containsKey(PROP_MIN_VALUE_ALLOWED);
+	return true;
     }
 
-    public int getMaxValueAllowed() {
-	Integer i = (Integer) props.get(PROP_MAX_VALUE_ALLOWED);
-	return (i == null) ? 0 : i.intValue();
+    public Measurement getMaxValueAllowed() {
+    	return  (Measurement) props.get(PROP_MAX_VALUE_ALLOWED);
     }
 
-    public void setMaxValueAllowed(int maxValue) {
-	props.put(PROP_MAX_VALUE_ALLOWED, new Integer(maxValue));
+    public boolean setMaxValueAllowed(Measurement maxValue) {
+    	return changeProperty(PROP_MAX_VALUE_ALLOWED, maxValue);
     }
 
-    public int getMinValueAllowed() {
-	Integer i = (Integer) props.get(PROP_MIN_VALUE_ALLOWED);
-	return (i == null) ? 0 : i.intValue();
+    public Measurement getMinValueAllowed() {
+	 return (Measurement) getProperty(PROP_MIN_VALUE_ALLOWED);
     }
 
-    public void setMinValueAllowed(int minValue) {
-	props.put(PROP_MIN_VALUE_ALLOWED, new Integer(minValue));
+    public boolean setMinValueAllowed(Measurement minValue) {
+    	return changeProperty(PROP_MIN_VALUE_ALLOWED, minValue);
     }
 
 }
