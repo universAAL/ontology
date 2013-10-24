@@ -37,32 +37,32 @@ public class WeightMeasurementTreatment extends TakeMeasurementActivity {
 	    Caregiver caregiver, String tname, String description,
 	    XMLGregorianCalendar stDt, String diseaseURI, WeightRequirement wr) {
 	super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
-	this.setHasMeasurementRequirements(wr);
+	this.setMeasurementRequirements(wr);
     }
 
     public WeightMeasurementTreatment(AssistedPersonProfile assistedPerson,
 	    Caregiver caregiver, String tname, TreatmentPlanning tp,
 	    String description, String diseaseURI, WeightRequirement wr) {
 	super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
-	this.setHasMeasurementRequirements(wr);
+	this.setMeasurementRequirements(wr);
     }
 
     public WeightMeasurementTreatment(String tname, String description,
 	    String diseaseURI, WeightRequirement wr) {
 	super(tname, description, diseaseURI);
-	this.setHasMeasurementRequirements(wr);
+	this.setMeasurementRequirements(wr);
     }
 
     public WeightMeasurementTreatment(String tname, String description,
 	    XMLGregorianCalendar stDt, String diseaseURI, WeightRequirement wr) {
 	super(tname, description, stDt, diseaseURI);
-	this.setHasMeasurementRequirements(wr);
+	this.setMeasurementRequirements(wr);
     }
 
     public WeightMeasurementTreatment(String tname, String description,
 	    TreatmentPlanning tp, String diseaseURI, WeightRequirement wr) {
 	super(tname, description, tp, diseaseURI);
-	this.setHasMeasurementRequirements(wr);
+	this.setMeasurementRequirements(wr);
     }
 
     public String getClassURI() {

@@ -29,11 +29,6 @@ public class DiastolicBloodPressureRequirement extends BloodPressureRequirement 
 	super(uri);
     }
 
-    public DiastolicBloodPressureRequirement(int minPressureAllowed,
-	    int maxPressureAllowed) {
-	super(maxPressureAllowed, minPressureAllowed);
-    }
-
     public String getClassURI() {
 	return MY_URI;
     }

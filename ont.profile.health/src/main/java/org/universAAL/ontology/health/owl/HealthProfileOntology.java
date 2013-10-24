@@ -488,13 +488,6 @@ public final class HealthProfileOntology extends Ontology {
 			Treatment.PROP_DESCRIPTION, TypeMapper
 				.getDatatypeURI(String.class), 1, 1));
 
-	oci_treatment
-		.addObjectProperty(Treatment.PROP_MEASUREMENT_REQUIREMENTS);
-	oci_treatment.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Treatment.PROP_MEASUREMENT_REQUIREMENTS,
-			MeasurementRequirements.MY_URI, 0, 1));
-
 	oci_treatment.addObjectProperty(Treatment.PROP_HAS_PERFORMED_SESSION);
 	oci_treatment.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Treatment.PROP_HAS_PERFORMED_SESSION, PerformedSession.MY_URI));

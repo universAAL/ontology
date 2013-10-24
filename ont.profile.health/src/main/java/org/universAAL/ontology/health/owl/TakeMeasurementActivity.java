@@ -78,12 +78,12 @@ public class TakeMeasurementActivity extends Treatment {
 
     // GETTERS & SETTERS
 
-    public MeasurementRequirements getHasMeasurementRequirements() {
+    public MeasurementRequirements getMeasurementRequirements() {
 	return (MeasurementRequirements) props
 		.get(PROP_HAS_MEASUREMENT_REQUIREMENTS);
     }
 
-    public void setHasMeasurementRequirements(
+    public void setMeasurementRequirements(
 	    MeasurementRequirements newPropValue) {
 	if (newPropValue != null)
 	    props.put(PROP_HAS_MEASUREMENT_REQUIREMENTS, newPropValue);
