@@ -19,9 +19,21 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.health.owl.HealthProfileOntology;
 
 /**
- * Launch display of a treatment. Service Profiles should specify the class of
- * Treatment they are intended to. The UI must be a Dialog and must be return as
- * {@link DisplayTreatmentService#PROP_FORM_FOR_TREATMENT}
+ * Launch display of a treatment. 
+ * Involved User must be set, this user is the one behind the UI.
+ * Affected user will be the user for which health profile the operation is meant. <br>
+ * Typical profiles:
+ * <ul>
+ * <li> filterInput {@link DisplayTreatmentService#PROP_AFFECTED_USER}, addEffect {@link DisplayTreatmentService#PROP_TREATMENT} 
+ * 	<br> show the form for a new treatment for the affected user (form is shown to involveduser).
+ * <li> filterInput {@link DisplayTreatmentService#PROP_AFFECTED_USER}, changeEffect {@link DisplayTreatmentService#PROP_TREATMENT}
+ * <br> show the form for editing treatment for the affected user (form is shown to involveduser).
+ * <li> filterInput {@link DisplayTreatmentService#PROP_AFFECTED_USER}, removeEffect {@link DisplayTreatmentService#PROP_TREATMENT}
+ * <br> show the form before removing the treatment for the affected user (form is shown to involveduser). used as confirmation for deletion.
+ * <li> filterInput {@link DisplayTreatmentService#PROP_AFFECTED_USER}
+ * <br> show the form with the list of treatments for the affected User (form is shown to involveduser). health.ui.client should be the only 
+ * component implementing this profile.
+ * </ul>
  * 
  * @author amedrano
  * 
@@ -30,6 +42,9 @@ public class DisplayTreatmentService extends Service {
 
     public static final String MY_URI = HealthProfileOntology.NAMESPACE
 	    + "DisplayTreatmentService";
+    
+    public static final String PROP_AFFECTED_USER = HealthProfileOntology.NAMESPACE
+    	    + "targetUser";
 
     public static final String PROP_TREATMENT = HealthProfileOntology.NAMESPACE
 	    + "treatmentToBeDisplayed";
