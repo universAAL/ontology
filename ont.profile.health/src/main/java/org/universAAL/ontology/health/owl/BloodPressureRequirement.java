@@ -27,12 +27,6 @@ public class BloodPressureRequirement extends MeasurementRequirements {
 	super(uri);
     }
 
-    public BloodPressureRequirement(int minPressureAllowed,
-	    int maxPressureAllowed) {
-	this.setMaxValueAllowed(maxPressureAllowed);
-	this.setMinValueAllowed(minPressureAllowed);
-    }
-
     public String getClassURI() {
 	return MY_URI;
     }
