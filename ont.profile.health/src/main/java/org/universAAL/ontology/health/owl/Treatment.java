@@ -49,9 +49,6 @@ public abstract class Treatment extends ManagedIndividual {
 	    + "hasPrivacy";
     public static final String PROP_DESCRIPTION = HealthProfileOntology.NAMESPACE
 	    + "description";
-    public static final String PROP_MEASUREMENT_REQUIREMENTS = HealthProfileOntology.NAMESPACE
-	    + "measurementRequirements";
-
     public static final String PROP_HAS_PERFORMED_SESSION = HealthProfileOntology.NAMESPACE
 	    + "hasPerformedSession";
 
@@ -213,7 +210,6 @@ public abstract class Treatment extends ManagedIndividual {
 		&& props.containsKey(PROP_MOTIVATIONAL_STATUS)
 		&& props.containsKey(PROP_HAS_PRIVACY)
 		&& props.containsKey(PROP_DESCRIPTION)
-		&& props.containsKey(PROP_MEASUREMENT_REQUIREMENTS)
 		&& props.containsKey(PROP_HAS_PERFORMED_SESSION)
 		&& props.containsKey(PROP_IS_ASSOCIATED_TO_DISEASE);
     }
@@ -290,23 +286,6 @@ public abstract class Treatment extends ManagedIndividual {
     public void setAssociatedDisease(String diseaseURI) {
 	if (diseaseURI != null)
 	    props.put(PROP_IS_ASSOCIATED_TO_DISEASE, diseaseURI);
-    }
-
-    /*
-     * public Privacy getPrivacy() { return
-     * (Privacy)props.get(PROP_HAS_PRIVACY); }
-     * 
-     * public void setPrivacy(Privacy privacy) { if (privacy != null)
-     * props.put(PROP_HAS_PRIVACY, privacy); }
-     */
-    public MeasurementRequirements getMeasurementRequirements() {
-	return (MeasurementRequirements) props
-		.get(PROP_MEASUREMENT_REQUIREMENTS);
-    }
-
-    public void setMeasurementRequirements(MeasurementRequirements mr) {
-	if (mr != null)
-	    props.put(PROP_MEASUREMENT_REQUIREMENTS, mr);
     }
 
     public void setPerformedSessions(PerformedSession[] pSession) {
@@ -494,13 +473,6 @@ public abstract class Treatment extends ManagedIndividual {
 	TreatmentPlanning tp = new TreatmentPlanning(stDt, endDt);
 	this.setTreatmentPlanning(tp);
 
-    }
-
-    public boolean hasMeasurementRequirements() {
-	if (getMeasurementRequirements() != null)
-	    return true;
-	else
-	    return false;
     }
 
     public void setCompletenessUnit(float unit) {
