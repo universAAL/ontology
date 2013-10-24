@@ -50,6 +50,7 @@ import org.universAAL.ontology.profile.Gender;
 import org.universAAL.ontology.profile.Profile;
 import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.User;
 
 /**
  * @author AAL Studio
@@ -762,6 +763,12 @@ public final class HealthProfileOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			DisplayTreatmentService.PROP_TREATMENT,
 			Treatment.MY_URI, 0, 1));
+	
+	oci.addObjectProperty(DisplayTreatmentService.PROP_AFFECTED_USER);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			DisplayTreatmentService.PROP_AFFECTED_USER,
+			AssistedPerson.MY_URI, 0, 1));
 
     }
 }
