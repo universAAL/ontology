@@ -27,11 +27,6 @@ public class WeightRequirement extends MeasurementRequirements {
 	super(uri);
     }
 
-    public WeightRequirement(int maxValue, int minValue) {
-	this.setMaxValueAllowed(maxValue);
-	this.setMinValueAllowed(minValue);
-    }
-
     public String getClassURI() {
 	return MY_URI;
     }
