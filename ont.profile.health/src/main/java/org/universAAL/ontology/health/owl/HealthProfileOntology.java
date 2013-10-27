@@ -273,13 +273,13 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED,
-			TypeMapper.getDatatypeURI(Integer.class), 0, 1));
+			HealthMeasurement.MY_URI, 0, 1));
 
 	oci.addDatatypeProperty(MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED,
-			TypeMapper.getDatatypeURI(Integer.class), 0, 1));
+			HealthMeasurement.MY_URI, 0, 1));
 
 	// load WeightRequirement
 	oci = createNewOntClassInfo(WeightRequirement.MY_URI, factory, 3);
