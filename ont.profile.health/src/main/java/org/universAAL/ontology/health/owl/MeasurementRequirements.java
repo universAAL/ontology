@@ -16,6 +16,7 @@
 package org.universAAL.ontology.health.owl;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement;
 import org.universAAL.ontology.measurement.Measurement;
 
 public class MeasurementRequirements extends ManagedIndividual {
@@ -46,19 +47,19 @@ public class MeasurementRequirements extends ManagedIndividual {
 	return true;
     }
 
-    public Measurement getMaxValueAllowed() {
-    	return  (Measurement) props.get(PROP_MAX_VALUE_ALLOWED);
+    public HealthMeasurement getMaxValueAllowed() {
+    	return  (HealthMeasurement) props.get(PROP_MAX_VALUE_ALLOWED);
     }
 
-    public boolean setMaxValueAllowed(Measurement maxValue) {
+    public boolean setMaxValueAllowed(HealthMeasurement maxValue) {
     	return changeProperty(PROP_MAX_VALUE_ALLOWED, maxValue);
     }
 
-    public Measurement getMinValueAllowed() {
-	 return (Measurement) getProperty(PROP_MIN_VALUE_ALLOWED);
+    public HealthMeasurement getMinValueAllowed() {
+	 return (HealthMeasurement) getProperty(PROP_MIN_VALUE_ALLOWED);
     }
 
-    public boolean setMinValueAllowed(Measurement minValue) {
+    public boolean setMinValueAllowed(HealthMeasurement minValue) {
     	return changeProperty(PROP_MIN_VALUE_ALLOWED, minValue);
     }
 
