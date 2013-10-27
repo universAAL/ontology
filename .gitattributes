@@ -486,12 +486,13 @@ ont.profile.health/pom.xml -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/HealthActivator.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/HealthOntologyFactory.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/ActivityHeartRateRequirement.java -text
+ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/BloodPressureMeasurementTreatment.java -text svneol=unset#text/plain
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/BloodPressureRequirement.java -text
-ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/DiastolicBloodPressureRequirement.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/Diet.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/HealthProfile.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/HealthProfileOntology.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/HealthyHabitsAdoption.java -text
+ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/HeartRateMeasurementTreatment.java -text svneol=unset#text/plain
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/HeartRateRequirement.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/MeasuredPhysicalActivity.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/MeasurementRequirements.java -text
@@ -501,7 +502,6 @@ ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/PerformedSes
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/PlannedSession.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/ReposeHeartRateRequirement.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/StatusType.java -text
-ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/SystolicBloodPressureRequirement.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/TakeMeasurementActivity.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/Treatment.java -text
 ont.profile.health/src/main/java/org/universAAL/ontology/health/owl/TreatmentPlanning.java -text

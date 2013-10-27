@@ -20,49 +20,49 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.Caregiver;
 
-public class TakeMeasurementActivity extends Treatment {
+public class BloodPressureMeasurementTreatment extends TakeMeasurementActivity {
 
-    // NAMESPACE & PROPERTIES
     public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "TakeMeasurementActivity";
-    // TODO add cardinality * to requierements.
-    public static final String PROP_HAS_MEASUREMENT_REQUIREMENTS = HealthProfileOntology.NAMESPACE
-	    + "hasMeasurementRequirements";
+	    + "BloodPreasureMeasurementTreatment";
 
-    // CONSTRUCTORS
-    public TakeMeasurementActivity() {
+    public BloodPressureMeasurementTreatment() {
 	super();
     }
 
-    public TakeMeasurementActivity(String uri) {
+    public BloodPressureMeasurementTreatment(String uri) {
 	super(uri);
     }
 
-    public TakeMeasurementActivity(AssistedPersonProfile assistedPerson,
+    public BloodPressureMeasurementTreatment(AssistedPersonProfile assistedPerson,
 	    Caregiver caregiver, String tname, String description,
-	    XMLGregorianCalendar stDt, String diseaseURI) {
+	    XMLGregorianCalendar stDt, String diseaseURI, BloodPressureRequirement wr) {
 	super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
+	this.setMeasurementRequirements(wr);
     }
 
-    public TakeMeasurementActivity(AssistedPersonProfile assistedPerson,
+    public BloodPressureMeasurementTreatment(AssistedPersonProfile assistedPerson,
 	    Caregiver caregiver, String tname, TreatmentPlanning tp,
-	    String description, String diseaseURI) {
+	    String description, String diseaseURI, BloodPressureRequirement wr) {
 	super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
+	this.setMeasurementRequirements(wr);
     }
 
-    public TakeMeasurementActivity(String tname, String description,
-	    String diseaseURI) {
+    public BloodPressureMeasurementTreatment(String tname, String description,
+	    String diseaseURI, BloodPressureRequirement wr) {
 	super(tname, description, diseaseURI);
+	this.setMeasurementRequirements(wr);
     }
 
-    public TakeMeasurementActivity(String tname, String description,
-	    XMLGregorianCalendar stDt, String diseaseURI) {
+    public BloodPressureMeasurementTreatment(String tname, String description,
+	    XMLGregorianCalendar stDt, String diseaseURI, BloodPressureRequirement wr) {
 	super(tname, description, stDt, diseaseURI);
+	this.setMeasurementRequirements(wr);
     }
 
-    public TakeMeasurementActivity(String tname, String description,
-	    TreatmentPlanning tp, String diseaseURI) {
+    public BloodPressureMeasurementTreatment(String tname, String description,
+	    TreatmentPlanning tp, String diseaseURI, BloodPressureRequirement wr) {
 	super(tname, description, tp, diseaseURI);
+	this.setMeasurementRequirements(wr);
     }
 
     public String getClassURI() {
@@ -74,19 +74,7 @@ public class TakeMeasurementActivity extends Treatment {
     }
 
     public boolean isWellFormed() {
-	return true && props.containsKey(PROP_HAS_MEASUREMENT_REQUIREMENTS);
+	return true;
     }
 
-    // GETTERS & SETTERS
-
-    public MeasurementRequirements getMeasurementRequirements() {
-	return (MeasurementRequirements) props
-		.get(PROP_HAS_MEASUREMENT_REQUIREMENTS);
-    }
-
-    public void setMeasurementRequirements(
-	    MeasurementRequirements newPropValue) {
-	if (newPropValue != null)
-	    props.put(PROP_HAS_MEASUREMENT_REQUIREMENTS, newPropValue);
-    }
 }
