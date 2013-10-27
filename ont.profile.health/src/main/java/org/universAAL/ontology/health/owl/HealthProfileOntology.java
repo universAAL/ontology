@@ -294,7 +294,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			WeightRequirement.PROP_MIN_VALUE_ALLOWED,
-			PersonWeight.MY_URI, 1, 1));
+			PersonWeight.MY_URI, 0, 1));
 
 	oci.addObjectProperty(WeightRequirement.PROP_MAX_VALUE_ALLOWED)
 		.addSuperProperty(
@@ -302,7 +302,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			WeightRequirement.PROP_MAX_VALUE_ALLOWED,
-			PersonWeight.MY_URI, 1, 1));
+			PersonWeight.MY_URI, 0, 1));
 
 	// load BloodPressureRequirement
 	oci = createNewOntClassInfo(BloodPressureRequirement.MY_URI, factory, 0);
@@ -311,60 +311,21 @@ public final class HealthProfileOntology extends Ontology {
 	oci.setResourceLabel("BloodPressureMeasurement");
 	oci.addSuperClass(MeasurementRequirements.MY_URI);
 
-	// load DiastolicBloodPressureRequirement
-	oci = createNewOntClassInfo(DiastolicBloodPressureRequirement.MY_URI,
-		factory, 14);
-	oci
-		.setResourceComment("This class describes a diastolic blood pressure measurement requirement.");
-	oci.setResourceLabel("DiastolicBloodPressureRequirement");
-	oci.addSuperClass(BloodPressureRequirement.MY_URI);
+	oci.addObjectProperty(BloodPressureRequirement.PROP_MIN_VALUE_ALLOWED)
+	.addSuperProperty(
+		MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			BloodPressureRequirement.PROP_MIN_VALUE_ALLOWED,
+			BloodPressure.MY_URI, 0, 1));
 
-	oci.addObjectProperty(
-		DiastolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED)
-		.addSuperProperty(
-			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
-	oci
-		.addRestriction(MergedRestriction
-			.getAllValuesRestrictionWithCardinality(
-				DiastolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED,
-				BloodPressure.MY_URI, 1, 1));
-
-	oci.addObjectProperty(
-		DiastolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED)
-		.addSuperProperty(
-			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
-	oci
-		.addRestriction(MergedRestriction
-			.getAllValuesRestrictionWithCardinality(
-				DiastolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED,
-				BloodPressure.MY_URI, 1, 1));
-
-	// load SystolicBloodPressureRequirement
-	oci = createNewOntClassInfo(SystolicBloodPressureRequirement.MY_URI,
-		factory, 15);
-	oci
-		.setResourceComment("This class describes a systolic blood pressure measurement requirement.");
-	oci.setResourceLabel("SystolicBloodPressureRequirement");
-	oci.addSuperClass(BloodPressureRequirement.MY_URI);
-
-	oci.addObjectProperty(
-		SystolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED)
-		.addSuperProperty(
-			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
-	oci
-		.addRestriction(MergedRestriction
-			.getAllValuesRestrictionWithCardinality(
-				SystolicBloodPressureRequirement.PROP_MIN_VALUE_ALLOWED,
-				BloodPressure.MY_URI, 1, 1));
-	oci.addObjectProperty(
-		SystolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED)
-		.addSuperProperty(
-			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
-	oci
-		.addRestriction(MergedRestriction
-			.getAllValuesRestrictionWithCardinality(
-				SystolicBloodPressureRequirement.PROP_MAX_VALUE_ALLOWED,
-				BloodPressure.MY_URI, 1, 1));
+	oci.addObjectProperty(BloodPressureRequirement.PROP_MAX_VALUE_ALLOWED)
+	.addSuperProperty(
+		MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			BloodPressureRequirement.PROP_MAX_VALUE_ALLOWED,
+			BloodPressure.MY_URI, 0, 1));
 
 	// load HeartRateRequirement
 	oci = createNewOntClassInfo(HeartRateRequirement.MY_URI, factory, 8);
@@ -388,7 +349,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			ActivityHeartRateRequirement.PROP_MIN_VALUE_ALLOWED,
-			HeartRate.MY_URI, 1, 1));
+			HeartRate.MY_URI, 0, 1));
 
 	oci.addObjectProperty(
 		ActivityHeartRateRequirement.PROP_MAX_VALUE_ALLOWED)
@@ -397,7 +358,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			ActivityHeartRateRequirement.PROP_MAX_VALUE_ALLOWED,
-			HeartRate.MY_URI, 1, 1));
+			HeartRate.MY_URI, 0, 1));
 
 	// load ReposeHeartRateRequirement
 	oci = createNewOntClassInfo(ReposeHeartRateRequirement.MY_URI, factory,
@@ -414,7 +375,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			ReposeHeartRateRequirement.PROP_MIN_VALUE_ALLOWED,
-			HeartRate.MY_URI, 1, 1));
+			HeartRate.MY_URI, 0, 1));
 
 	oci.addObjectProperty(
 		ReposeHeartRateRequirement.PROP_MAX_VALUE_ALLOWED)
@@ -423,7 +384,7 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			ReposeHeartRateRequirement.PROP_MAX_VALUE_ALLOWED,
-			HeartRate.MY_URI, 1, 1));
+			HeartRate.MY_URI, 0, 1));
 
 	// load Treatment
 	oci_treatment = createNewAbstractOntClassInfo(Treatment.MY_URI);
@@ -508,7 +469,8 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addSuperClass(HealthyHabitsAdoption.MY_URI);
 
 	// load TakeMeasurementActivity
-	oci = createNewOntClassInfo(TakeMeasurementActivity.MY_URI, factory, 9);
+//	oci = createNewOntClassInfo(TakeMeasurementActivity.MY_URI, factory, 9);
+	oci = createNewAbstractOntClassInfo(TakeMeasurementActivity.MY_URI);
 	oci
 		.setResourceComment("This is a treatment that consists of taking measurements.");
 	oci.setResourceLabel("TakeMeasurementActivity");
@@ -521,6 +483,7 @@ public final class HealthProfileOntology extends Ontology {
 			.getAllValuesRestrictionWithCardinality(
 				TakeMeasurementActivity.PROP_HAS_MEASUREMENT_REQUIREMENTS,
 				MeasurementRequirements.MY_URI, 0, 1));
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.MY_URI));
 
 	// load PhysicalActivity
 	oci = createNewOntClassInfo(MeasuredPhysicalActivity.MY_URI, factory, 1);
@@ -608,9 +571,37 @@ public final class HealthProfileOntology extends Ontology {
 	// load WeightMeasurementTreatment
 	oci = createNewOntClassInfo(WeightMeasurementTreatment.MY_URI, factory,
 		33);
-	oci.setResourceLabel("WeightMeasurementTreatment");
+	oci.addSuperClass(TakeMeasurementActivity.MY_URI);
+	oci.setResourceLabel("Weight Measurement");
 	oci.setResourceComment("");
-
+	
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		WeightMeasurementTreatment.PROP_HAS_MEASUREMENT_REQUIREMENTS, WeightRequirement.MY_URI));
+	//TODO add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+	
+	// load BloodPreasureMeasurementTreatment
+	oci = createNewOntClassInfo(BloodPressureMeasurementTreatment.MY_URI, factory,
+		35);
+	oci.addSuperClass(TakeMeasurementActivity.MY_URI);
+	oci.setResourceLabel("Blood Preasure Measurement");
+	oci.setResourceComment("");
+	
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		WeightMeasurementTreatment.PROP_HAS_MEASUREMENT_REQUIREMENTS, BloodPressureRequirement.MY_URI));
+	//TODO add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+	
+	
+	// load HeartRateMeasurementTreatment
+	oci = createNewOntClassInfo(HeartRateMeasurementTreatment.MY_URI, factory,
+		36);
+	oci.addSuperClass(TakeMeasurementActivity.MY_URI);
+	oci.setResourceLabel("Pulse Measurement");
+	oci.setResourceComment("");
+	
+	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+		WeightMeasurementTreatment.PROP_HAS_MEASUREMENT_REQUIREMENTS, HeartRateRequirement.MY_URI));
+	//TODO add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+	
 	// extension for AssistedPersonProfile: an assisted person can contain a
 	// health profile, where treatments are specified.
 	oci = extendExistingOntClassInfo(AssistedPersonProfile.MY_URI);
@@ -618,16 +609,7 @@ public final class HealthProfileOntology extends Ontology {
 		Profile.PROP_HAS_SUB_PROFILE);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
-			PROP_HAS_HEALTH_PROFILE, HealthProfile.MY_URI, 0, 1));// NO
-	// ES
-	// LA
-	// M�?A,
-	// TIENE
-	// QUE
-	// SER
-	// LA
-	// DE
-	// CARSTEN
+			PROP_HAS_HEALTH_PROFILE, HealthProfile.MY_URI, 0, 1));
 
 	// extension for Caregiver: a caregiver can prescribe treatments
 	oci = extendExistingOntClassInfo(org.universAAL.ontology.profile.Caregiver.MY_URI);

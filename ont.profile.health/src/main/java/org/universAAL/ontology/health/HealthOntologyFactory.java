@@ -18,10 +18,11 @@ package org.universAAL.ontology.health;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.health.owl.ActivityHeartRateRequirement;
+import org.universAAL.ontology.health.owl.BloodPressureMeasurementTreatment;
 import org.universAAL.ontology.health.owl.BloodPressureRequirement;
-import org.universAAL.ontology.health.owl.DiastolicBloodPressureRequirement;
 import org.universAAL.ontology.health.owl.Diet;
 import org.universAAL.ontology.health.owl.HealthProfile;
+import org.universAAL.ontology.health.owl.HeartRateMeasurementTreatment;
 import org.universAAL.ontology.health.owl.HeartRateRequirement;
 import org.universAAL.ontology.health.owl.MeasuredPhysicalActivity;
 import org.universAAL.ontology.health.owl.MeasurementRequirements;
@@ -29,7 +30,6 @@ import org.universAAL.ontology.health.owl.PerformedMeasurementSession;
 import org.universAAL.ontology.health.owl.PerformedSession;
 import org.universAAL.ontology.health.owl.PlannedSession;
 import org.universAAL.ontology.health.owl.ReposeHeartRateRequirement;
-import org.universAAL.ontology.health.owl.SystolicBloodPressureRequirement;
 import org.universAAL.ontology.health.owl.TakeMeasurementActivity;
 import org.universAAL.ontology.health.owl.TreatmentPlanning;
 import org.universAAL.ontology.health.owl.Walking;
@@ -66,9 +66,9 @@ public class HealthOntologyFactory implements ResourceFactory {
 	case 13:
 	    return new PerformedSession(instanceURI);
 	case 14:
-	    return new DiastolicBloodPressureRequirement(instanceURI);
+//	    return new DiastolicBloodPressureRequirement(instanceURI);
 	case 15:
-	    return new SystolicBloodPressureRequirement(instanceURI);
+//	    return new SystolicBloodPressureRequirement(instanceURI);
 	case 16:
 	    return new ActivityHeartRateRequirement(instanceURI);
 	case 17:
@@ -81,6 +81,10 @@ public class HealthOntologyFactory implements ResourceFactory {
 	    return new WeightMeasurementTreatment(instanceURI);
 	case 34:
 	    return new Walking(instanceURI);
+	case 35:
+	    return new BloodPressureMeasurementTreatment(instanceURI);
+	case 36:
+	    return new HeartRateMeasurementTreatment(instanceURI);
 	}
 	return null;
     }
