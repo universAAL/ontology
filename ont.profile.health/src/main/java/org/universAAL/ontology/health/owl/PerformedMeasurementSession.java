@@ -52,7 +52,7 @@ public class PerformedMeasurementSession extends PerformedSession {
 	return (HealthMeasurement) props.get(PROP_HAS_HEALTH_MEASUREMENT);
     }
 
-    public void setName(HealthMeasurement hMeasurement) {
+    public void setHealthMeasurement(HealthMeasurement hMeasurement) {
 	if (hMeasurement != null)
 	    props.put(PROP_HAS_HEALTH_MEASUREMENT, hMeasurement);
     }
