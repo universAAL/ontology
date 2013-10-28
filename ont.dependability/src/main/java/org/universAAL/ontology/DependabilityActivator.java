@@ -15,7 +15,7 @@ package org.universAAL.ontology;
  limitations under the License.
 
  * @author <a href="mailto:abu.sadat@uni-siegen.de">Rubaiyat Sadat</a>
- *	       ©2012
+ *	       Â©2012
  */
 
 /**

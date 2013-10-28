@@ -14,7 +14,7 @@ package org.universAAL.ontology.dependability;
  limitations under the License.
 
  * @author <a href="mailto:abu.sadat@uni-siegen.de">Rubaiyat Sadat</a>
- *	       ©2012
+ *	       Â©2012
  */
 import java.util.Hashtable;
 import java.util.ArrayList;
