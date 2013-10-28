@@ -3127,6 +3127,15 @@ ont.personalhealthdevice-2.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/pe
 ont.personalhealthdevice-2.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMonitor.java -text
 ont.personalhealthdevice-2.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java -text
 ont.personalhealthdevice-2.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/WeighingScale.java -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/ASL2.0.txt -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/NOTICE.txt -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/pom.xml -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/PersonalHealthDeviceActivator.java -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/PersonalHealthDeviceFactory.java -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMeasurement.java -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMonitor.java -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java -text
+ont.personalhealthdevice-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/personalhealthdevice/WeighingScale.java -text
 ont.phWorld-0.2.3-SNAPSHOT/LICENSE.txt -text
 ont.phWorld-0.2.3-SNAPSHOT/NOTICE.txt -text
 ont.phWorld-0.2.3-SNAPSHOT/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
