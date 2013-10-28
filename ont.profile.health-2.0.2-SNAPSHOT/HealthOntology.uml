@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_UB4q4EgLEeGln-1l2BqQlw" name="HealthOntology">
+    <ownedComment xmi:id="_UB4q4UgLEeGln-1l2BqQlw" annotatedElement="_UB4q5kgLEeGln-1l2BqQlw">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_UB4q4kgLEeGln-1l2BqQlw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_UB4q40gLEeGln-1l2BqQlw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_UB4q5EgLEeGln-1l2BqQlw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_UB4q5UgLEeGln-1l2BqQlw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UB4q5kgLEeGln-1l2BqQlw" name="org.universaal.ontology.health">
+      <packagedElement xmi:type="uml:Class" xmi:id="_UB4q7UgLEeGln-1l2BqQlw" name="Treatment" isAbstract="true">
+        <generalization xmi:id="_UB4q7kgLEeGln-1l2BqQlw">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_5FW2MEgOEeGln-1l2BqQlw" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yE3csEgTEeGln-1l2BqQlw" name="completeness">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7WCGEEgTEeGln-1l2BqQlw" name="status" type="_iDSkkEgVEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_Nl_kgEgWEeGln-1l2BqQlw" name="motivationalStatus" type="_Qrj5MEgUEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_0ZpoIEgmEeGln-1l2BqQlw" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_jdcEgtEeGln-1l2BqQlw" name="hasTreatmentPlanning" type="_mOjOoEgWEeGln-1l2BqQlw" association="_W_lSoEgtEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_jdcUgtEeGln-1l2BqQlw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W_jdckgtEeGln-1l2BqQlw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yqt88EgtEeGln-1l2BqQlw" name="hasCaregiver" type="_-qpW0EgmEeGln-1l2BqQlw" association="_yqwZMEgtEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yqt88UgtEeGln-1l2BqQlw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yqt88kgtEeGln-1l2BqQlw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__2XCYEguEeGln-1l2BqQlw" name="hasPrivacy" type="_63bj4EgmEeGln-1l2BqQlw" association="__2ZeoEguEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__2XCYUguEeGln-1l2BqQlw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__2XCYkguEeGln-1l2BqQlw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MMt2YE5WEeGa-8f5rfYssQ" name="accepted">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Qrj5MEgUEeGln-1l2BqQlw" name="MotivationalStatusType">
+        <ownedLiteral xmi:id="_lOX18EgUEeGln-1l2BqQlw" name="precontemplation"/>
+        <ownedLiteral xmi:id="_dDK5oEgVEeGln-1l2BqQlw" name="contemplation"/>
+        <ownedLiteral xmi:id="_fBb9IEgVEeGln-1l2BqQlw" name="action"/>
+        <ownedLiteral xmi:id="_gVu2kEgVEeGln-1l2BqQlw" name="maintenance"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_iDSkkEgVEeGln-1l2BqQlw" name="StatusType">
+        <ownedLiteral xmi:id="_j6YCAEgVEeGln-1l2BqQlw" name="planned"/>
+        <ownedLiteral xmi:id="__-l6sEgVEeGln-1l2BqQlw" name="actived"/>
+        <ownedLiteral xmi:id="_D9VBIEgWEeGln-1l2BqQlw" name="finished"/>
+        <ownedLiteral xmi:id="_Fw0_EEgWEeGln-1l2BqQlw" name="cancelled"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mOjOoEgWEeGln-1l2BqQlw" name="TreatmentPlanning">
+        <ownedAttribute xmi:id="_sqIyAEgWEeGln-1l2BqQlw" name="startDate"/>
+        <ownedAttribute xmi:id="_uqUhEEgWEeGln-1l2BqQlw" name="endDate"/>
+        <ownedAttribute xmi:id="_xfglgEgWEeGln-1l2BqQlw" name="description"/>
+        <ownedAttribute xmi:id="_0edC4EgWEeGln-1l2BqQlw" name="recurrence"/>
+        <ownedAttribute xmi:id="_yBsYoEguEeGln-1l2BqQlw" name="hasSessions" type="_4Tk6UEgWEeGln-1l2BqQlw" association="_yBtmwEguEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yBsYoUguEeGln-1l2BqQlw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yBsYokguEeGln-1l2BqQlw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4Tk6UEgWEeGln-1l2BqQlw" name="Session">
+        <ownedAttribute xmi:id="_9y6Q0EgWEeGln-1l2BqQlw" name="date"/>
+        <ownedAttribute xmi:id="__j9-wEgWEeGln-1l2BqQlw" name="startTime"/>
+        <ownedAttribute xmi:id="_A-h4QEgXEeGln-1l2BqQlw" name="duration"/>
+        <ownedAttribute xmi:id="_FE0_QEgXEeGln-1l2BqQlw" name="performed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KJJ-UEgjEeGln-1l2BqQlw" name="HealthyHabitsAdoption" isAbstract="true">
+        <generalization xmi:id="_U4eAsEgjEeGln-1l2BqQlw" general="_UB4q7UgLEeGln-1l2BqQlw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_X8S-EEgjEeGln-1l2BqQlw" name="PhysicalActivity">
+        <generalization xmi:id="_x20QQEgsEeGln-1l2BqQlw" general="_KJJ-UEgjEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_WzBhQEs2EeGZRfVWeTuYVQ" name="hasAssociatedMeasurement" type="_DE9QoEs1EeGZRfVWeTuYVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WzBhQUs2EeGZRfVWeTuYVQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WzBhQks2EeGZRfVWeTuYVQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OgO20EgkEeGln-1l2BqQlw" name="MeasurementRequirements"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VX1AwEgkEeGln-1l2BqQlw" name="WeightMeasurement">
+        <generalization xmi:id="_bDqzIEgtEeGln-1l2BqQlw" general="_OgO20EgkEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_Lx2IgEglEeGln-1l2BqQlw" name="maxValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_XCpuYEglEeGln-1l2BqQlw" name="minValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XpiksEgkEeGln-1l2BqQlw" name="HeartRateMeasurement">
+        <generalization xmi:id="_frJ7oEgtEeGln-1l2BqQlw" general="_OgO20EgkEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_JsH8sEgmEeGln-1l2BqQlw" name="reposeHRMaxValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_T-N3kEgmEeGln-1l2BqQlw" name="reposeHRMinValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_hscEgmEeGln-1l2BqQlw" name="activityHRMaxValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_dQhJYEgmEeGln-1l2BqQlw" name="activityHRMinValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_idSlsEglEeGln-1l2BqQlw" name="BloodPressureMeasurement">
+        <generalization xmi:id="_hh2-kEgtEeGln-1l2BqQlw" general="_OgO20EgkEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_lxm2IEglEeGln-1l2BqQlw" name="systolicPressureMaxValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mF5rIEglEeGln-1l2BqQlw" name="systolicPressureMinValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_nf8AMEglEeGln-1l2BqQlw" name="diastolicPressureMaxValueAllowed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_n0_DIEglEeGln-1l2BqQlw" name="diastolicPressureMinValueAllowed"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_63bj4EgmEeGln-1l2BqQlw" name="Privacy"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-qpW0EgmEeGln-1l2BqQlw" name="CaregiverProfile"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AJM_gEgnEeGln-1l2BqQlw" name="AssistedPersonProfile">
+        <ownedAttribute xmi:id="_Z-bbcEzlEeGy1eg-wb-CuQ" name="hasHealthProfile" type="_PCOMkEzlEeGy1eg-wb-CuQ" association="_Z-lMcEzlEeGy1eg-wb-CuQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z-bbcUzlEeGy1eg-wb-CuQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z-bbckzlEeGy1eg-wb-CuQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W_lSoEgtEeGln-1l2BqQlw" name="hasTreatmentPlanning" memberEnd="_W_lSoUgtEeGln-1l2BqQlw _W_jdcEgtEeGln-1l2BqQlw">
+        <ownedEnd xmi:id="_W_lSoUgtEeGln-1l2BqQlw" name="" type="_UB4q7UgLEeGln-1l2BqQlw" association="_W_lSoEgtEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_lSokgtEeGln-1l2BqQlw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W_lSo0gtEeGln-1l2BqQlw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yqwZMEgtEeGln-1l2BqQlw" name="hasCaregiver" memberEnd="_yqwZMUgtEeGln-1l2BqQlw _yqt88EgtEeGln-1l2BqQlw">
+        <ownedEnd xmi:id="_yqwZMUgtEeGln-1l2BqQlw" name="" type="_UB4q7UgLEeGln-1l2BqQlw" association="_yqwZMEgtEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yqwZMkgtEeGln-1l2BqQlw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yqwZM0gtEeGln-1l2BqQlw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yBtmwEguEeGln-1l2BqQlw" name="hasSessions" memberEnd="_yBuN0EguEeGln-1l2BqQlw _yBsYoEguEeGln-1l2BqQlw">
+        <ownedEnd xmi:id="_yBuN0EguEeGln-1l2BqQlw" name="" type="_mOjOoEgWEeGln-1l2BqQlw" association="_yBtmwEguEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yBuN0UguEeGln-1l2BqQlw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yBuN0kguEeGln-1l2BqQlw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__2ZeoEguEeGln-1l2BqQlw" name="hasPrivacy" memberEnd="__2ZeoUguEeGln-1l2BqQlw __2XCYEguEeGln-1l2BqQlw">
+        <ownedEnd xmi:id="__2ZeoUguEeGln-1l2BqQlw" name="" type="_UB4q7UgLEeGln-1l2BqQlw" association="__2ZeoEguEeGln-1l2BqQlw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__2ZeokguEeGln-1l2BqQlw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__2Zeo0guEeGln-1l2BqQlw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JY5IkEgvEeGln-1l2BqQlw" name="Measurement">
+        <ownedAttribute xmi:id="_tVXiQEs1EeGZRfVWeTuYVQ" name="belongsTo" type="_4Tk6UEgWEeGln-1l2BqQlw" association="_tVZXcEs1EeGZRfVWeTuYVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tVXiQUs1EeGZRfVWeTuYVQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tVXiQks1EeGZRfVWeTuYVQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DE9QoEs1EeGZRfVWeTuYVQ" name="TakeMeasurementActivity">
+        <generalization xmi:id="_ScI2AEs1EeGZRfVWeTuYVQ" general="_UB4q7UgLEeGln-1l2BqQlw"/>
+        <ownedAttribute xmi:id="_U0EWsEs1EeGZRfVWeTuYVQ" name="hasMeasurementRequirements" type="_OgO20EgkEeGln-1l2BqQlw" association="_U0GL4Es1EeGZRfVWeTuYVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U0EWsUs1EeGZRfVWeTuYVQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U0EWsks1EeGZRfVWeTuYVQ"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_U0GL4Es1EeGZRfVWeTuYVQ" name="hasMeasurementRequirements" memberEnd="_U0GL4Us1EeGZRfVWeTuYVQ _U0EWsEs1EeGZRfVWeTuYVQ">
+        <ownedEnd xmi:id="_U0GL4Us1EeGZRfVWeTuYVQ" name="" type="_UB4q7UgLEeGln-1l2BqQlw" association="_U0GL4Es1EeGZRfVWeTuYVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U0GL4ks1EeGZRfVWeTuYVQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U0GL40s1EeGZRfVWeTuYVQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tVZXcEs1EeGZRfVWeTuYVQ" name="belongsTo" memberEnd="_tVZXcUs1EeGZRfVWeTuYVQ _tVXiQEs1EeGZRfVWeTuYVQ">
+        <ownedEnd xmi:id="_tVZXcUs1EeGZRfVWeTuYVQ" name="" type="_JY5IkEgvEeGln-1l2BqQlw" association="_tVZXcEs1EeGZRfVWeTuYVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tVZXcks1EeGZRfVWeTuYVQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tVZXc0s1EeGZRfVWeTuYVQ"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PCOMkEzlEeGy1eg-wb-CuQ" name="HealthProfile">
+        <ownedAttribute xmi:id="_f9sPMEzlEeGy1eg-wb-CuQ" name="hasTreatment" type="_UB4q7UgLEeGln-1l2BqQlw" association="_f91ZIEzlEeGy1eg-wb-CuQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9sPMUzlEeGy1eg-wb-CuQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9sPMkzlEeGy1eg-wb-CuQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Z-lMcEzlEeGy1eg-wb-CuQ" name="hasHealthProfile" memberEnd="_Z-lMcUzlEeGy1eg-wb-CuQ _Z-bbcEzlEeGy1eg-wb-CuQ">
+        <ownedEnd xmi:id="_Z-lMcUzlEeGy1eg-wb-CuQ" name="" type="_AJM_gEgnEeGln-1l2BqQlw" association="_Z-lMcEzlEeGy1eg-wb-CuQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z-lMckzlEeGy1eg-wb-CuQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z-lMc0zlEeGy1eg-wb-CuQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f91ZIEzlEeGy1eg-wb-CuQ" name="hasTreatment" memberEnd="_f91ZIUzlEeGy1eg-wb-CuQ _f9sPMEzlEeGy1eg-wb-CuQ">
+        <ownedEnd xmi:id="_f91ZIUzlEeGy1eg-wb-CuQ" name="" type="_PCOMkEzlEeGy1eg-wb-CuQ" association="_f91ZIEzlEeGy1eg-wb-CuQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f91ZIkzlEeGy1eg-wb-CuQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f91ZI0zlEeGy1eg-wb-CuQ"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_UB4q70gLEeGln-1l2BqQlw">
+      <eAnnotations xmi:id="_UB4q8EgLEeGln-1l2BqQlw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_UB4q8UgLEeGln-1l2BqQlw">
+      <eAnnotations xmi:id="_UB4q8kgLEeGln-1l2BqQlw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_UB4q80gLEeGln-1l2BqQlw" defaultNamespace="http://health.ontology.universaal.org/HealthOntology" base_Package="_UB4q4EgLEeGln-1l2BqQlw" versionInfo="0.1.0-SNAPSHOT"/>
+  <OWL:owlAnnotation xmi:id="_1CViIEgNEeGln-1l2BqQlw" base_Class="_UB4q7UgLEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_i5zM8E5DEeGa-8f5rfYssQ" base_Property="_5FW2MEgOEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_kGwvUE5DEeGa-8f5rfYssQ" base_Property="_yE3csEgTEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_lbjYAE5DEeGa-8f5rfYssQ" base_Property="_7WCGEEgTEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_oXlEQE5DEeGa-8f5rfYssQ" base_Property="_0ZpoIEgmEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_q4OcEE5DEeGa-8f5rfYssQ" base_Property="_FE0_QEgXEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_xeiowE5DEeGa-8f5rfYssQ" base_Property="_Lx2IgEglEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_ysx9gE5DEeGa-8f5rfYssQ" base_Property="_XCpuYEglEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_2r0l8E5DEeGa-8f5rfYssQ" base_Property="_JsH8sEgmEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_3vu6AE5DEeGa-8f5rfYssQ" base_Property="_T-N3kEgmEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_4yafAE5DEeGa-8f5rfYssQ" base_Property="_W_hscEgmEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_6BJjAE5DEeGa-8f5rfYssQ" base_Property="_dQhJYEgmEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_7YqIgE5DEeGa-8f5rfYssQ" base_Property="_lxm2IEglEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_8OouQE5DEeGa-8f5rfYssQ" base_Property="_mF5rIEglEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_9NAbAE5DEeGa-8f5rfYssQ" base_Property="_nf8AMEglEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_-Bd90E5DEeGa-8f5rfYssQ" base_Property="_n0_DIEglEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_WlfT8E5JEeGa-8f5rfYssQ" base_Property="_Nl_kgEgWEeGln-1l2BqQlw"/>
+  <OWL:datatypeProperty xmi:id="_MPPl8E5WEeGa-8f5rfYssQ" base_Property="_MMt2YE5WEeGa-8f5rfYssQ"/>
+</xmi:XMI>
