@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_IzV20Jq1EeGhnKlvlD68og" name="Disease">
+    <ownedComment xmi:id="_IzV20Zq1EeGhnKlvlD68og" annotatedElement="_IzV21pq1EeGhnKlvlD68og">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_IzV20pq1EeGhnKlvlD68og">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_IzV205q1EeGhnKlvlD68og">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_IzV21Jq1EeGhnKlvlD68og">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_IzV21Zq1EeGhnKlvlD68og">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_IzV21pq1EeGhnKlvlD68og" name="org.universaal.ontology.disease">
+      <packagedElement xmi:type="uml:Class" xmi:id="_IzV225q1EeGhnKlvlD68og" name="Disease">
+        <generalization xmi:id="_IzV23Jq1EeGhnKlvlD68og">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_71qNgJq2EeGhnKlvlD68og" name="EnvironmentalDisease">
+        <generalization xmi:id="_d-7Y4Jq3EeGhnKlvlD68og" general="_IzV225q1EeGhnKlvlD68og"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_IzV23Zq1EeGhnKlvlD68og">
+      <eAnnotations xmi:id="_IzV23pq1EeGhnKlvlD68og" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_IzV235q1EeGhnKlvlD68og">
+      <eAnnotations xmi:id="_IzV24Jq1EeGhnKlvlD68og" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_IzV24Zq1EeGhnKlvlD68og" defaultNamespace="http://ontology.universaal.org/Disease" base_Package="_IzV20Jq1EeGhnKlvlD68og" versionInfo="1.1.1-SNAPSHOT"/>
+</xmi:XMI>
