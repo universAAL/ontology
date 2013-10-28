@@ -2897,6 +2897,22 @@ ont.measurement-2.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement
 ont.measurement-2.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/Signal.java -text
 ont.measurement-2.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIntegrationTest.java -text
 ont.measurement-2.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.measurement-2.0.2-SNAPSHOT/ASL2.0.txt -text
+ont.measurement-2.0.2-SNAPSHOT/Measurement.di -text
+ont.measurement-2.0.2-SNAPSHOT/Measurement.jpg -text
+ont.measurement-2.0.2-SNAPSHOT/Measurement.notation -text
+ont.measurement-2.0.2-SNAPSHOT/Measurement.uml -text
+ont.measurement-2.0.2-SNAPSHOT/NOTICE.txt -text svneol=unset#text/plain
+ont.measurement-2.0.2-SNAPSHOT/pom.xml -text
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/MeasurementActivator.java -text
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/MeasurementFactory.java -text svneol=unset#text/plain
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/MeanSquareError.java -text svneol=unset#text/plain
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/Measurement.java -text svneol=unset#text/plain
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/MeasurementError.java -text svneol=unset#text/plain
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/MeasurementOntology.java -text svneol=unset#text/plain
+ont.measurement-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/measurement/Signal.java -text
+ont.measurement-2.0.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.measurement-2.0.2-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.medication-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.medication-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.medication-1.0.1-SNAPSHOT/pom.xml -text
