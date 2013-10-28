@@ -3325,6 +3325,20 @@ ont.pom-2.0.1-SNAPSHOT/karaf.feature/pom.xml -text
 ont.pom-2.0.1-SNAPSHOT/karaf.feature/src/features/features.xml -text svneol=unset#text/plain
 ont.pom-2.0.1-SNAPSHOT/pom.xml -text
 ont.pom-2.0.1-SNAPSHOT/update.bat -text
+ont.pom-2.0.2-SNAPSHOT/ASL2.0.txt -text
+ont.pom-2.0.2-SNAPSHOT/NOTICE.txt -text
+ont.pom-2.0.2-SNAPSHOT/composite/ASL2.0.txt -text
+ont.pom-2.0.2-SNAPSHOT/composite/NOTICE.txt -text
+ont.pom-2.0.2-SNAPSHOT/composite/pom.xml -text
+ont.pom-2.0.2-SNAPSHOT/composite/src/test/java/org/universAAL/ontology/test/Activator.java -text
+ont.pom-2.0.2-SNAPSHOT/composite/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.pom-2.0.2-SNAPSHOT/composite/src/test/java/org/universAAL/ontology/test/OwlOWLCreator.java -text
+ont.pom-2.0.2-SNAPSHOT/karaf.feature/ASL2.0.txt -text
+ont.pom-2.0.2-SNAPSHOT/karaf.feature/NOTICE.txt -text
+ont.pom-2.0.2-SNAPSHOT/karaf.feature/pom.xml -text
+ont.pom-2.0.2-SNAPSHOT/karaf.feature/src/features/features.xml -text svneol=unset#text/plain
+ont.pom-2.0.2-SNAPSHOT/pom.xml -text
+ont.pom-2.0.2-SNAPSHOT/update.bat -text
 ont.powersocket-1.0.1-SNAPSHOT/LICENSE.txt -text
 ont.powersocket-1.0.1-SNAPSHOT/NOTICE.txt -text
 ont.powersocket-1.0.1-SNAPSHOT/pom.xml -text
