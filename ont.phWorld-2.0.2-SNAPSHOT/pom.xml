@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.universAAL.ontology</groupId>
+    <artifactId>ont.pom</artifactId>
+    <version>2.0.2-SNAPSHOT</version>
+    <relativePath>../ont.pom</relativePath>
+  </parent>
+  <artifactId>ont.phWorld</artifactId>
+  <version>2.0.2-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>universAAL Ontology Physical World</name>
+  <description>The upper ontology defining the most general concepts from the physical world as opposed to the virtual realm.</description>
+  <url></url>
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>jp.go.ipa</groupId>
+      <artifactId>jgcl</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.service.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.container.xfaces.core</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.space,
+							org.universAAL.ontology.phThing,
+							org.universAAL.ontology.location,
+							org.universAAL.ontology.location.indoor,
+							org.universAAL.ontology.location.outdoor,
+							org.universAAL.ontology.location.position,
+							org.universAAL.ontology.location.address,
+							org.universAAL.ontology.shape</Export-Package>
+            <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
