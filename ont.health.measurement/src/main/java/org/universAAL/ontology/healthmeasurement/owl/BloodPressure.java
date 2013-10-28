@@ -17,6 +17,8 @@
 
 package org.universAAL.ontology.healthmeasurement.owl;
 
+import org.universAAL.ontology.measurement.Measurement;
+
 public class BloodPressure extends HealthMeasurement {
     public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
 	    + "BloodPressure";
@@ -39,6 +41,24 @@ public class BloodPressure extends HealthMeasurement {
 
     public int getPropSerializationType(String arg0) {
 	return PROP_SERIALIZATION_FULL;
+    }
+    
+    public void setSyst(Measurement m){
+	if(m != null){
+	    changeProperty(PROP_SYSTOLIC, m);
+	}
+    }
+    public Measurement getSyst(){
+	return (Measurement) getProperty(PROP_SYSTOLIC);
+    }
+    
+    public void setDias(Measurement m){
+	if(m != null){
+	    changeProperty(PROP_SYSTOLIC, m);
+	}
+    }
+    public Measurement getDias(){
+	return (Measurement) getProperty(PROP_SYSTOLIC);
     }
 
     public boolean isWellFormed() {
