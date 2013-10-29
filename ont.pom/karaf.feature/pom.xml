@@ -143,6 +143,10 @@
       <artifactId>ont.recommendations</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.security</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.karaf.feature</artifactId>
     </dependency>
