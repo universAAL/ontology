@@ -19,6 +19,7 @@ package org.universAAL.ontology.health.owl;
 import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+import org.universAAL.middleware.owl.AllValuesFromRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -600,7 +601,14 @@ public final class HealthProfileOntology extends Ontology {
 	
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		WeightMeasurementTreatment.PROP_HAS_MEASUREMENT_REQUIREMENTS, HeartRateRequirement.MY_URI));
-	//TODO add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+	
+	//add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+
+	MergedRestriction res = new MergedRestriction(Treatment.PROP_HAS_PERFORMED_SESSION);
+	res.addRestriction(new AllValuesFromRestriction(Treatment.PROP_HAS_PERFORMED_SESSION, 
+		new AllValuesFromRestriction(PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT,
+			HeartRate.MY_URI)));
+	oci.addRestriction(res);
 	
 	// extension for AssistedPersonProfile: an assisted person can contain a
 	// health profile, where treatments are specified.

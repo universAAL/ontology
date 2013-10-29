@@ -67,6 +67,11 @@
 		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.profile.ui.mainmenu/${ont.profile.ui.mainmenu.version}</bundle>
 	</feature>
 	
+	<feature name="uAAL-Ont.Security" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.security/${ont.security.version}</bundle>
+	</feature>
+	
 	<feature name="uAAL-Ont.Profile.userId" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>
 		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.profile.userid/${ont.profile.userid.version}</bundle>
