@@ -579,6 +579,11 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		WeightMeasurementTreatment.PROP_HAS_MEASUREMENT_REQUIREMENTS, WeightRequirement.MY_URI));
 	//TODO add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+	MergedRestriction res = new MergedRestriction(Treatment.PROP_HAS_PERFORMED_SESSION);
+	res.addRestriction(new AllValuesFromRestriction(Treatment.PROP_HAS_PERFORMED_SESSION, 
+		new AllValuesFromRestriction(PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT,
+			PersonWeight.MY_URI)));
+	oci.addRestriction(res);
 	
 	// load BloodPreasureMeasurementTreatment
 	oci = createNewOntClassInfo(BloodPressureMeasurementTreatment.MY_URI, factory,
@@ -589,8 +594,12 @@ public final class HealthProfileOntology extends Ontology {
 	
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		WeightMeasurementTreatment.PROP_HAS_MEASUREMENT_REQUIREMENTS, BloodPressureRequirement.MY_URI));
-	//TODO add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
-	
+	//add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
+	res = new MergedRestriction(Treatment.PROP_HAS_PERFORMED_SESSION);
+	res.addRestriction(new AllValuesFromRestriction(Treatment.PROP_HAS_PERFORMED_SESSION, 
+		new AllValuesFromRestriction(PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT,
+			BloodPressure.MY_URI)));
+	oci.addRestriction(res);
 	
 	// load HeartRateMeasurementTreatment
 	oci = createNewOntClassInfo(HeartRateMeasurementTreatment.MY_URI, factory,
@@ -604,7 +613,7 @@ public final class HealthProfileOntology extends Ontology {
 	
 	//add restrinction on ppath {Treatment.PROP_HAS_PERFORMED_SESSION, PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT}
 
-	MergedRestriction res = new MergedRestriction(Treatment.PROP_HAS_PERFORMED_SESSION);
+	res = new MergedRestriction(Treatment.PROP_HAS_PERFORMED_SESSION);
 	res.addRestriction(new AllValuesFromRestriction(Treatment.PROP_HAS_PERFORMED_SESSION, 
 		new AllValuesFromRestriction(PerformedMeasurementSession.PROP_HAS_HEALTH_MEASUREMENT,
 			HeartRate.MY_URI)));
