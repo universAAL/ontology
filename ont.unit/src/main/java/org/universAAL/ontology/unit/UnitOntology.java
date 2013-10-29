@@ -231,13 +231,13 @@ public final class UnitOntology extends Ontology {
 	.addRestriction(MergedRestriction.getAllValuesRestriction(
 			UnitConversionService.PROP_TO_PREFIX, Prefix.MY_URI));
 	oci_UnitConversionService.addDatatypeProperty(UnitConversionService.PROP_FROM_VALUE);
-	oci_UnitConversionService
-	.addRestriction(MergedRestriction.getAllValuesRestriction(
-			UnitConversionService.PROP_FROM_VALUE, TypeMapper.getDatatypeURI(Double.class)));
+//	oci_UnitConversionService
+//	.addRestriction(MergedRestriction.getAllValuesRestriction(
+//			UnitConversionService.PROP_FROM_VALUE, TypeMapper.getDatatypeURI(Double.class)));
 	oci_UnitConversionService.addDatatypeProperty(UnitConversionService.PROP_TO_VALUE);
-	oci_UnitConversionService
-	.addRestriction(MergedRestriction.getAllValuesRestriction(
-			UnitConversionService.PROP_TO_VALUE, TypeMapper.getDatatypeURI(Double.class)));
+//	oci_UnitConversionService
+//	.addRestriction(MergedRestriction.getAllValuesRestriction(
+//			UnitConversionService.PROP_TO_VALUE, TypeMapper.getDatatypeURI(Double.class)));
 	
 	/*
 	 * INDIVIDUAL CONCEPTS
