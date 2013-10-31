@@ -56,6 +56,10 @@ public class Unit extends ManagedIndividual {
     }
 
     public int getPropSerializationType(String arg0) {
+	if (arg0.equals(PROP_UNIT_SYSTEM)
+		|| arg0.equals(PROP_DIMENSION)){
+	    return PROP_SERIALIZATION_REDUCED;
+	}
 	return PROP_SERIALIZATION_FULL;
     }
 

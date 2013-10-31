@@ -51,7 +51,7 @@ public abstract class DerivedUnit extends Unit {
     }
 
     public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(arg0);
     }
 
     public boolean isWellFormed() {
