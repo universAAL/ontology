@@ -17,7 +17,7 @@
 
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.service.owl.Service;
 
 /**
  * Service Description for checking validity of {@link Session}s.
@@ -25,7 +25,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * @author amedrano
  *
  */
-public class SessionValidationService extends ManagedIndividual {
+public class SessionValidationService extends Service {
 
 
     public static final String MY_URI = SecurityOntology.NAMESPACE + "SessionService";

@@ -145,16 +145,16 @@ public final class SecurityOntology extends Ontology {
 	oci_authService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AuthenticationService.PROP_AUTHENTICATED_USER, User.MY_URI, 0, 1));
 	
 	//Session Service
-	oci_session.setResourceComment("Service to check the validity of sessions, or available sessions.");
-	oci_session.setResourceLabel("Session Service");
-	oci_session.addSuperClass(Service.MY_URI);
-	oci_session.addObjectProperty(SessionValidationService.PROP_USERS);
-	oci_session.addRestriction(MergedRestriction.getAllValuesRestriction(SessionValidationService.PROP_USERS, User.MY_URI));
-	oci_session.addObjectProperty(SessionValidationService.PROP_DEVICE);
-	oci_session.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_DEVICE, Device.MY_URI, 0, 1));
-	oci_session.addObjectProperty(SessionValidationService.PROP_LOCATION);
-	oci_session.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_LOCATION, AbsLocation.MY_URI, 0, 1));
-	oci_session.addDatatypeProperty(SessionValidationService.PROP_IS_VALID).setFunctional();	
-	oci_session.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_IS_VALID, TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
+	oci_sessionService.setResourceComment("Service to check the validity of sessions, or available sessions.");
+	oci_sessionService.setResourceLabel("Session Service");
+	oci_sessionService.addSuperClass(Service.MY_URI);
+	oci_sessionService.addObjectProperty(SessionValidationService.PROP_USERS);
+	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestriction(SessionValidationService.PROP_USERS, User.MY_URI));
+	oci_sessionService.addObjectProperty(SessionValidationService.PROP_DEVICE);
+	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_DEVICE, Device.MY_URI, 0, 1));
+	oci_sessionService.addObjectProperty(SessionValidationService.PROP_LOCATION);
+	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_LOCATION, AbsLocation.MY_URI, 0, 1));
+	oci_sessionService.addDatatypeProperty(SessionValidationService.PROP_IS_VALID).setFunctional();	
+	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_IS_VALID, TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
     }
 }

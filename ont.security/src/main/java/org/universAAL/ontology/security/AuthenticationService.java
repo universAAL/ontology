@@ -17,7 +17,7 @@
 
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.service.owl.Service;
 
 /**
  * Service Description for Authentication.
@@ -25,7 +25,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * @author amedrano
  *
  */
-public class AuthenticationService extends ManagedIndividual {
+public class AuthenticationService extends Service {
 
 
     public static final String MY_URI = SecurityOntology.NAMESPACE + "AuthenticationService";
