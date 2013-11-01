@@ -678,6 +678,7 @@ ont.security/src/main/java/org/universAAL/ontology/security/Credentials.java -te
 ont.security/src/main/java/org/universAAL/ontology/security/DeviceBoundSession.java -text
 ont.security/src/main/java/org/universAAL/ontology/security/LocationBoundSession.java -text
 ont.security/src/main/java/org/universAAL/ontology/security/SecurityOntology.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/SecuritySubprofile.java -text svneol=unset#text/plain
 ont.security/src/main/java/org/universAAL/ontology/security/Session.java -text
 ont.security/src/main/java/org/universAAL/ontology/security/SessionValidationService.java -text
 ont.security/src/main/java/org/universAAL/ontology/security/UserPasswordCredentials.java -text

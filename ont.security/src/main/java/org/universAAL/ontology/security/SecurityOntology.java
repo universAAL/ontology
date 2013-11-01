@@ -29,6 +29,7 @@ import org.universAAL.ontology.SecurityFactory;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.ProfileOntology;
+import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.User;
 
 /**
@@ -67,6 +68,7 @@ public final class SecurityOntology extends Ontology {
 	OntClassInfoSetup oci_locSession = createNewOntClassInfo(LocationBoundSession.MY_URI, factory, 2);
 	OntClassInfoSetup oci_sessionService = createNewOntClassInfo(SessionValidationService.MY_URI, factory, 3);
 	OntClassInfoSetup oci_authService = createNewOntClassInfo(AuthenticationService.MY_URI, factory, 4);	
+	OntClassInfoSetup oci_secProf = createNewOntClassInfo(SecuritySubprofile.MY_URI, factory, 5);	
 	
 	// Credentials
 	oci_credentials.setResourceLabel("Credentials");
@@ -117,6 +119,14 @@ public final class SecurityOntology extends Ontology {
 	oci_locSession.addObjectProperty(LocationBoundSession.PROP_BOUNDED_LOCATION).addSuperProperty(Session.PROP_BOUND_TO);
 	oci_locSession.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(LocationBoundSession.PROP_BOUNDED_LOCATION, AbsLocation.MY_URI, 1, 1));
 
+	// SecurityProfile
+	oci_secProf.setResourceComment("Profile storing credentials, Roles, AcessRights and any security concept for a given profilable.");
+	oci_secProf.setResourceLabel("Security Profile");
+	oci_secProf.addSuperClass(SubProfile.MY_URI);
+	oci_secProf.addObjectProperty(SecuritySubprofile.PROP_CREDENTIALS);
+	oci_secProf.addRestriction(MergedRestriction.getAllValuesRestriction(SecuritySubprofile.PROP_CREDENTIALS, Credentials.MY_URI));
+
+	
 	/*
 	 * Extensions provided
 	 */
@@ -131,6 +141,7 @@ public final class SecurityOntology extends Ontology {
 	//USER.deauthenticatedby
 	oci_user.addObjectProperty(PROP_REVOKED);
 	oci_user.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PROP_REVOKED, Device.MY_URI, 0, 1));
+	
 	
 	/*
 	 * Services
