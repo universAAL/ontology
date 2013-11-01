@@ -39,7 +39,7 @@ import org.universAAL.ontology.profile.User;
 public final class SecurityOntology extends Ontology {
 
     private static SecurityFactory factory = new SecurityFactory();
-    public static final String NAMESPACE = "http://ontology.universaal.org/Security.owl#";
+    public static final String NAMESPACE = "http://ontology.universAAL.org/Security.owl#";
 
     public static final String PROP_SESSION = NAMESPACE + "hasSession";
     public static final String PROP_AUTHENTICATED = NAMESPACE + "authenticatedTo";
