@@ -17,6 +17,8 @@
 
 package org.universAAL.ontology.security;
 
+import org.universAAL.middleware.xsd.util.Base64;
+
 /**
  * User-Password type Credentials.
  * @author amedrano
@@ -73,8 +75,8 @@ public class UserPasswordCredentials extends Credentials {
 	public String getUsername(){
 		return (String) getProperty(PROP_USERNAME);
 	}
-	public String getPassword(){
-		return (String) getProperty(PROP_PASSWORD);
+	public Base64 getPassword(){
+		return (Base64) getProperty(PROP_PASSWORD);
 	}
 	public String getDigestAlgorithm(){
 		return (String) getProperty(PROP_PASSWORD_DIGEST);
@@ -86,7 +88,7 @@ public class UserPasswordCredentials extends Credentials {
 		}
 	}
 	
-	public void setpassword(String value){
+	public void setpassword(Base64 value){
 		if (value != null ){
 			changeProperty(PROP_PASSWORD, value);
 		}
