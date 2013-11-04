@@ -25,7 +25,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
-import org.universAAL.middleware.xsd.util.Base64;
+import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.SecurityFactory;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
@@ -97,7 +97,7 @@ public final class SecurityOntology extends Ontology {
 	oci_userPass.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			UserPasswordCredentials.PROP_PASSWORD, TypeMapper
-				.getDatatypeURI(Base64.class), 1, 1));
+				.getDatatypeURI(Base64Binary.class), 1, 1));
 	
 	oci_userPass.addDatatypeProperty(UserPasswordCredentials.PROP_PASSWORD_DIGEST).setFunctional();
 	oci_userPass.addRestriction(MergedRestriction
