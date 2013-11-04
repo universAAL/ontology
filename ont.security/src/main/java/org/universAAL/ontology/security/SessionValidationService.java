@@ -38,6 +38,7 @@ public class SessionValidationService extends Service {
 	 * Only for serializers.
 	 */
 	public SessionValidationService() {
+	    super();
 	}
 
 	/**

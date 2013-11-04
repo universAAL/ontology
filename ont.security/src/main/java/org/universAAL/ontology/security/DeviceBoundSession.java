@@ -34,6 +34,7 @@ public class DeviceBoundSession extends Session {
 	 * Only for serializers.
 	 */
 	public DeviceBoundSession() {
+	    super();
 	}
 
 	/**

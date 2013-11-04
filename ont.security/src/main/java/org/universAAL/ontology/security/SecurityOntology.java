@@ -102,7 +102,7 @@ public final class SecurityOntology extends Ontology {
 	oci_userPass.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			UserPasswordCredentials.PROP_PASSWORD_DIGEST, TypeMapper
-				.getDatatypeURI(String.class), 1, 1));
+				.getDatatypeURI(String.class), 0, 1));
 	//XXX Password Digest should be an ontological class?
 	
 	// DeviceBoundSession

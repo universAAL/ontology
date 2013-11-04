@@ -38,6 +38,7 @@ public class UserPasswordCredentials extends Credentials {
 	 * Only for serializers.
 	 */
 	public UserPasswordCredentials() {
+	    super();
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class UserPasswordCredentials extends Credentials {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_PASSWORD)||propURI.equals(PROP_USERNAME)){
+		if (propURI.equals(PROP_PASSWORD)||propURI.equals(PROP_USERNAME)
+			||propURI.equals(PROP_PASSWORD_DIGEST)){
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_UNDEFINED;

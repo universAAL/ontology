@@ -36,6 +36,7 @@ public class AuthenticationService extends Service {
 	 * Only for serializers.
 	 */
 	public AuthenticationService() {
+	    super();
 	}
 
 	/**
