@@ -41,6 +41,7 @@ public class Session extends ManagedIndividual {
 	 * Only for serializers.
 	 */
 	public Session() {
+	    super();
 	}
 
 	/**

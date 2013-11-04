@@ -34,6 +34,7 @@ public class LocationBoundSession extends Session {
 	 * Only for serializers.
 	 */
 	public LocationBoundSession() {
+	    super();
 	}
 
 	/**

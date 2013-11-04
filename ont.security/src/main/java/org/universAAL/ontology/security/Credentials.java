@@ -34,6 +34,7 @@ public class Credentials extends ManagedIndividual {
 	 * Only for serializers.
 	 */
 	public Credentials() {
+	    super();
 	}
 
 	/**

@@ -40,6 +40,7 @@ public class SecuritySubprofile extends SubProfile {
 	 * Only for serializers.
 	 */
 	public SecuritySubprofile() {
+	    super();
 	}
 
 	/**
@@ -62,7 +63,7 @@ public class SecuritySubprofile extends SubProfile {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_UNDEFINED;
+		return PROP_SERIALIZATION_FULL;
 	}
 
 	public List getCredentials(){
