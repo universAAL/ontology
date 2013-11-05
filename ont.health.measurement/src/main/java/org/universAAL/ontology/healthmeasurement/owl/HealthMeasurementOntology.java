@@ -150,8 +150,8 @@ public final class HealthMeasurementOntology extends Ontology {
 	Unit beatsPerMinute = new DividedUnit("BPM", Util.IND_UNIT_UNITY,
     		TimeSystem.IND_UNIT_TS_MINUTE);
 	
-	oci_HeartRate.addRestriction(MergedRestriction.getFixedValueRestriction(
-			Measurement.PROP_HAS_UNIT, beatsPerMinute));
+//	oci_HeartRate.addRestriction(MergedRestriction.getFixedValueRestriction(
+//			Measurement.PROP_HAS_UNIT, beatsPerMinute));
 
 	// Heart rate signal
 	oci_HeartRateSignal.setResourceComment("");
