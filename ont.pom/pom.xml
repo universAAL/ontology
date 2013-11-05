@@ -49,7 +49,6 @@
     <module>../ont.profile.health</module>
     <module>../ont.profile.ui.mainmenu</module>
     <module>../ont.profile.ui.preferences</module>
-    <module>../ont.profile.userid</module>
     <module>../ont.questionnaire</module>
     <module>../ont.situation.reasoner</module>
     <module>../ont.unit</module>
@@ -173,11 +172,11 @@
         <artifactId>ont.profile.ui.preferences</artifactId>
         <version>2.0.3-SNAPSHOT</version>
       </dependency>
-      <dependency>
-        <groupId>org.universAAL.ontology</groupId>
-        <artifactId>ont.profile.userid</artifactId>
-        <version>2.0.3-SNAPSHOT</version>
-      </dependency>
+<!--       <dependency> -->
+<!--         <groupId>org.universAAL.ontology</groupId> -->
+<!--         <artifactId>ont.profile.userid</artifactId> -->
+<!--         <version>2.0.3-SNAPSHOT</version> -->
+<!--       </dependency> -->
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.questionnaire</artifactId>
