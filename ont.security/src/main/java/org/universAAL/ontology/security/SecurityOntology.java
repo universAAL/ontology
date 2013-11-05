@@ -149,7 +149,7 @@ public final class SecurityOntology extends Ontology {
 	 */
 	//Authentication Service
 	oci_authService.setResourceComment("Service to Athenticate a User Given some credentials.");
-	oci_authService.setResourceLabel("Authentiaction Service");
+	oci_authService.setResourceLabel("Authentication Service");
 	oci_authService.addSuperClass(Service.MY_URI);
 	oci_authService.addObjectProperty(AuthenticationService.PROP_GIVEN_CREDENTIALS);
 	oci_authService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AuthenticationService.PROP_GIVEN_CREDENTIALS, Credentials.MY_URI, 1, 1));
