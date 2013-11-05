@@ -124,10 +124,6 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.userid</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.questionnaire</artifactId>
     </dependency>
     <dependency>
