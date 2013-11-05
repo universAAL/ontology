@@ -62,7 +62,7 @@ public class AuthenticationService extends Service {
 		if (propURI.equals(PROP_AUTHENTICATED_USER)|| propURI.equals(PROP_GIVEN_CREDENTIALS)){
 			return PROP_SERIALIZATION_FULL;
 		}
-		return PROP_SERIALIZATION_UNDEFINED;
+		return super.getPropSerializationType(propURI);
 	}
 
 }
