@@ -555,15 +555,6 @@ ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/WindowLayoutType.java -text
 ont.profile.ui.preferences/src/main/java/org/universAAL/ontology/ui/preferences/service/UIPreferencesService.java -text
 ont.profile.ui.preferences/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
-ont.profile.userid/ASL2.0.txt -text
-ont.profile.userid/NOTICE.txt -text
-ont.profile.userid/pom.xml -text
-ont.profile.userid/src/main/java/org/universAAL/ontology/UserIDProfileActivator.java -text
-ont.profile.userid/src/main/java/org/universAAL/ontology/UserIDProfileFactory.java -text
-ont.profile.userid/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfile.java -text
-ont.profile.userid/src/main/java/org/universAAL/ontology/profile/userid/UserIDProfileOntology.java -text
-ont.profile.userid/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
-ont.profile.userid/src/test/resources/log4j.properties -text
 ont.profile/ASL2.0.txt -text
 ont.profile/NOTICE.txt -text
 ont.profile/pom.xml -text
