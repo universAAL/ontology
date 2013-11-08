@@ -16,7 +16,7 @@
     <commons-codec-version>1.4</commons-codec-version>
     <felix-version>2.0.1</felix-version>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-  </properties>>
+  </properties>
   <scm>
     <connection>${svn.base}/ont.pom/${project.artifactId}</connection>
     <developerConnection>${svn.base}/ont.pom/${project.artifactId}</developerConnection>
