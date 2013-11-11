@@ -25,26 +25,23 @@ import org.universAAL.middleware.service.owl.Service;
  * @author amedrano
  *
  */
-public class SessionValidationService extends Service {
+public class SessionManagementService extends Service {
 
 
     public static final String MY_URI = SecurityOntology.NAMESPACE + "SessionService";
-    public static final String PROP_DEVICE = SecurityOntology.NAMESPACE + "forDevice";
-    public static final String PROP_USERS = SecurityOntology.NAMESPACE + "forUser";
-    public static final String PROP_LOCATION = SecurityOntology.NAMESPACE + "forLocation";
-    public static final String PROP_IS_VALID = SecurityOntology.NAMESPACE + "isvalid";
+    public static final String PROP_VALIDATES = SecurityOntology.NAMESPACE + "validates";
 	
 	/**
 	 * Only for serializers.
 	 */
-	public SessionValidationService() {
+	public SessionManagementService() {
 	    super();
 	}
 
 	/**
 	 * @param uri
 	 */
-	public SessionValidationService(String uri) {
+	public SessionManagementService(String uri) {
 		super(uri);
 	}
 
@@ -61,8 +58,7 @@ public class SessionValidationService extends Service {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_USERS)|| propURI.equals(PROP_DEVICE)
-			|| propURI.equals(PROP_LOCATION)){
+		if (propURI.equals(PROP_VALIDATES)){
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_UNDEFINED;

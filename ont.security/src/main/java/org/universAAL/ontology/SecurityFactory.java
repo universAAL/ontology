@@ -22,7 +22,7 @@ import org.universAAL.ontology.security.AuthenticationService;
 import org.universAAL.ontology.security.DeviceBoundSession;
 import org.universAAL.ontology.security.LocationBoundSession;
 import org.universAAL.ontology.security.SecuritySubprofile;
-import org.universAAL.ontology.security.SessionValidationService;
+import org.universAAL.ontology.security.SessionManagementService;
 import org.universAAL.ontology.security.UserPasswordCredentials;
 
 /**
@@ -42,7 +42,7 @@ public class SecurityFactory implements ResourceFactory {
 	case 2:
 	    return new LocationBoundSession(instanceURI);
 	case 3:
-	    return new SessionValidationService(instanceURI);
+	    return new SessionManagementService(instanceURI);
 	case 4: 
 	    return new AuthenticationService(instanceURI);
 	case 5:

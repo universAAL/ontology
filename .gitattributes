@@ -671,7 +671,7 @@ ont.security/src/main/java/org/universAAL/ontology/security/LocationBoundSession
 ont.security/src/main/java/org/universAAL/ontology/security/SecurityOntology.java -text
 ont.security/src/main/java/org/universAAL/ontology/security/SecuritySubprofile.java -text svneol=unset#text/plain
 ont.security/src/main/java/org/universAAL/ontology/security/Session.java -text
-ont.security/src/main/java/org/universAAL/ontology/security/SessionValidationService.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/SessionManagementService.java -text
 ont.security/src/main/java/org/universAAL/ontology/security/UserPasswordCredentials.java -text
 ont.security/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.security/src/test/resources/log4j.properties -text
