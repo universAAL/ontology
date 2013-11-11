@@ -67,7 +67,7 @@ public final class SecurityOntology extends Ontology {
 	OntClassInfoSetup oci_userPass = createNewOntClassInfo(UserPasswordCredentials.MY_URI, factory, 0);
 	OntClassInfoSetup oci_devSession = createNewOntClassInfo(DeviceBoundSession.MY_URI, factory, 1);
 	OntClassInfoSetup oci_locSession = createNewOntClassInfo(LocationBoundSession.MY_URI, factory, 2);
-	OntClassInfoSetup oci_sessionService = createNewOntClassInfo(SessionValidationService.MY_URI, factory, 3);
+	OntClassInfoSetup oci_sessionService = createNewOntClassInfo(SessionManagementService.MY_URI, factory, 3);
 	OntClassInfoSetup oci_authService = createNewOntClassInfo(AuthenticationService.MY_URI, factory, 4);	
 	OntClassInfoSetup oci_secProf = createNewOntClassInfo(SecuritySubprofile.MY_URI, factory, 5);	
 	
@@ -160,13 +160,7 @@ public final class SecurityOntology extends Ontology {
 	oci_sessionService.setResourceComment("Service to check the validity of sessions, or available sessions.");
 	oci_sessionService.setResourceLabel("Session Service");
 	oci_sessionService.addSuperClass(Service.MY_URI);
-	oci_sessionService.addObjectProperty(SessionValidationService.PROP_USERS);
-	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestriction(SessionValidationService.PROP_USERS, User.MY_URI));
-	oci_sessionService.addObjectProperty(SessionValidationService.PROP_DEVICE);
-	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_DEVICE, Device.MY_URI, 0, 1));
-	oci_sessionService.addObjectProperty(SessionValidationService.PROP_LOCATION);
-	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_LOCATION, AbsLocation.MY_URI, 0, 1));
-	oci_sessionService.addDatatypeProperty(SessionValidationService.PROP_IS_VALID).setFunctional();	
-	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SessionValidationService.PROP_IS_VALID, TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
+	oci_sessionService.addObjectProperty(SessionManagementService.PROP_VALIDATES);
+	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestriction(SessionManagementService.PROP_VALIDATES, Session.MY_URI));
     }
 }
