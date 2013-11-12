@@ -99,10 +99,10 @@ ont.pom/composite/.classpath
 ont.pom/composite/.project
 ont.pom/composite/.settings
 ont.pom/composite/target
-ont.pom/karaf.feature/.classpath
-ont.pom/karaf.feature/.project
-ont.pom/karaf.feature/.settings
-ont.pom/karaf.feature/target
+ont.pom/ont.karaf.feature/.classpath
+ont.pom/ont.karaf.feature/.project
+ont.pom/ont.karaf.feature/.settings
+ont.pom/ont.karaf.feature/target
 ont.pom/target
 ont.pom/uAAL.log
 ont.profile.contact/.classpath
