@@ -15,6 +15,7 @@
  ******************************************************************************/
 package org.universAAL.ontology.security;
 
+import org.universAAL.middleware.owl.AllValuesFromRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -160,7 +161,12 @@ public final class SecurityOntology extends Ontology {
 	oci_sessionService.setResourceComment("Service to check the validity of sessions, or available sessions.");
 	oci_sessionService.setResourceLabel("Session Service");
 	oci_sessionService.addSuperClass(Service.MY_URI);
-	oci_sessionService.addObjectProperty(SessionManagementService.PROP_VALIDATES);
-	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestriction(SessionManagementService.PROP_VALIDATES, Session.MY_URI));
+	oci_sessionService.addObjectProperty(SessionManagementService.PROP_USER);
+	oci_sessionService.addRestriction(MergedRestriction.getAllValuesRestriction(SessionManagementService.PROP_USER, User.MY_URI));
+	//add restrinction on ppath {SessionManagementService.PROP_USER, User.PROP_HAS_SESSION}
+		MergedRestriction res = new MergedRestriction(SessionManagementService.PROP_USER);
+		res.addRestriction(new AllValuesFromRestriction(SessionManagementService.PROP_USER, 
+			new AllValuesFromRestriction(PROP_SESSION,
+				Session.MY_URI)));
     }
 }

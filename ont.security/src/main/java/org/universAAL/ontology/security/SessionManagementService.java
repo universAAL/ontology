@@ -29,7 +29,7 @@ public class SessionManagementService extends Service {
 
 
     public static final String MY_URI = SecurityOntology.NAMESPACE + "SessionService";
-    public static final String PROP_VALIDATES = SecurityOntology.NAMESPACE + "validates";
+    public static final String PROP_USER = SecurityOntology.NAMESPACE + "managesSessionsFor";
 	
 	/**
 	 * Only for serializers.
@@ -58,7 +58,7 @@ public class SessionManagementService extends Service {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_VALIDATES)){
+		if (propURI.equals(PROP_USER)){
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_UNDEFINED;
