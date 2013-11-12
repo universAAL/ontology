@@ -57,7 +57,7 @@
     <module>../ont.recommendations</module>
     <module>../ont.security</module>
     <module>composite</module>
-    <module>karaf.feature</module>
+    <module>ont.karaf.feature</module>
   </modules>
   <scm>
     <connection>${svn.base}/${project.artifactId}</connection>
