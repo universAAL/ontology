@@ -44,9 +44,9 @@ public class HandGestureService extends Service {
 	return MY_URI;
     }
 
-    public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
+    public int getPropSerializationType(String propURI) {
+	return propURI == PROP_PROP_CONTROLS ? PROP_SERIALIZATION_FULL : super
+		.getPropSerializationType(propURI);
     }
 
     public boolean isWellFormed() {

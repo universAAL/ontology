@@ -51,7 +51,7 @@ public class DeviceService extends Service {
 
     public int getPropSerializationType(String propURI) {
 	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: PROP_SERIALIZATION_OPTIONAL;
+		: super.getPropSerializationType(propURI);
     }
 
     public boolean isWellFormed() {
