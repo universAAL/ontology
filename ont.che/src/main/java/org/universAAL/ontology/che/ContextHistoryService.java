@@ -82,7 +82,7 @@ public class ContextHistoryService extends Service {
 		|| PROP_TIMESTAMP_TO.equals(propURI)
 		|| PROP_DURATION_FROM.equals(propURI)
 		|| PROP_DURATION_TO.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: PROP_SERIALIZATION_OPTIONAL;
+		: super.getPropSerializationType(propURI);
     }
 
     /*
