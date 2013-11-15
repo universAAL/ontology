@@ -75,8 +75,11 @@ public class MenuEntry extends ManagedIndividual {
 	    return new ArrayList();
 	if (o instanceof List)
 	    return new UnmodifiableResourceList((List) o);
-	if (o instanceof Resource)
-	    return new UnmodifiableResourceList(new ArrayList((List) o));
+	if (o instanceof Resource) {
+	    ArrayList al = new ArrayList();
+	    al.add((Resource)o);
+	    return new UnmodifiableResourceList(al);
+	}
 	return null;
     }
 
