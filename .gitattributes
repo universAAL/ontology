@@ -5515,6 +5515,33 @@ ont.questionnaire-2.0.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/Ques
 ont.questionnaire-2.0.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireNextQuestionIT.java -text svneol=unset#text/plain
 ont.questionnaire-2.0.2-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireQuestionsIT.java -text svneol=unset#text/plain
 ont.questionnaire-2.0.2-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.questionnaire-2.0.3-SNAPSHOT/ASL2.0.txt -text
+ont.questionnaire-2.0.3-SNAPSHOT/NOTICE.txt -text
+ont.questionnaire-2.0.3-SNAPSHOT/pom.xml -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/QuestionnaireActivator.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/QuestionnaireFactory.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/Answer.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/AnsweredQuestionnaire.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/ChoiceLabel.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/ConditionalQuestion.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/MultiChoiceQuestion.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/Question.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/QuestionWithMedia.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/Questionnaire.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/QuestionnaireOntology.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/QuestionnaireService.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/questionnaire/SingleChoiceQuestion.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ennumerations/ontology/QuestionnaireEnummerationsOntologyFactory.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ennumerations/ontology/owl/PartsOfDay.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ennumerations/ontology/owl/QuestionnaireEnnumerationsOntology.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireAnswersIT.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireCompletenessIT.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireGeneralWorkingIT.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireMultiTriggerIT.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireNextQuestionIT.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/QuestionnaireQuestionsIT.java -text svneol=unset#text/plain
+ont.questionnaire-2.0.3-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.readenergy-1.2.1-SNAPSHOT/ASL2.0.txt -text
 ont.readenergy-1.2.1-SNAPSHOT/MITX.txt -text
 ont.readenergy-1.2.1-SNAPSHOT/NOTICE -text
