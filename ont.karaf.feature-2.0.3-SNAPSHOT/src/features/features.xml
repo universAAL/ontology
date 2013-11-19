@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="universAAL-Ontologies" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+	<!-- Change version of repository accordingly -->
+	<repository>mvn:org.universAAL.middleware/mw.karaf.feature/${mw.karaf.feature.version}/xml/features</repository>
+	
+	<feature name="uAAL-Ont.PhWorld" description="The Physical World Ontolgy."
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='50'>wrap:mvn:jp.go.ipa/jgcl/${jgcl.version}</bundle>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.phWorld/${ont.phWorld.version}</bundle>
+	</feature>
+		
+	<feature name="uAAL-Ont.Impairment" description="Description of user interaction impairments"
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.impairment/${ont.impairment.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Recommendation" description="UI Recommendation options."
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.recommendations/${ont.recommendations.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Unit" description="The Unit Sistem."
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.unit/${ont.unit.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Languages" description= "List of All Human Languages."
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.languages/${ont.languages.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Situation.Reasoner" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.situtation.reasoner/${ont.situation.reasoner.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Profile" description="The Profile Ontology"
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.profile/${ont.profile.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.gesturePointing" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.gesture.pointing/${ont.gesture.pointing.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Profile.ui.preferences" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<feature>uAAL-Ont.Languages</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.profile.ui.preferences/${ont.profile.ui.preferences.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Profile.contact" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.profile.contact/${ont.profile.contact.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Profile.ui.mainmenu" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.profile.ui.mainmenu/${ont.profile.ui.mainmenu.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Security" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.security/${ont.security.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.questionnaire" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.questionnaire/${ont.questionnaire.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Device" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.device/${ont.device.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Activityhub" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Device</feature>
+		<bundle start-level='63' start='true'>mvn:org.universAAL.ontology/ont.activityhub/${ont.activityhub.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Device.Extra" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Device</feature>
+		<bundle start-level='63' start='true'>mvn:org.universAAL.ontology/ont.device.extra/${ont.device.extra.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Measurement" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Unit</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.measurement/${ont.measurement.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.personalhealthdevice" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<feature>uAAL-Ont.Measurement</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.personalhealthdevice/${ont.personalhealthdevice.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Health.Measurement" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<feature>uAAL-Ont.Measurement</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.health.measurement/${ont.health.measurement.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Health.Disease" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.health.disease/${ont.health.disease.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Profile.Health" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Profile</feature>
+		<feature>uAAL-Ont.Health.Disease</feature>
+		<feature>uAAL-Ont.Health.Measurement</feature>
+		<bundle start-level='64' start='true'>mvn:org.universAAL.ontology/ont.profile.health/${ont.profile.health.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.AV" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.av/${ont.av.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Multimedia" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.multimedia/${ont.multimedia.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.ContinuaHealth" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.continuahealthmanager/${ont.continuahealthmanager.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.CHe" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.che/${ont.che.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Dependability" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.dependability/${ont.dependability.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Handgestures" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.handgestures/${ont.handgestures.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Furniture" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.furniture/${ont.furniture.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.Lightning" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.lighting/${ont.lighting.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.X73" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.X73/${ont.X73.version}</bundle>
+	</feature>
+</features>
