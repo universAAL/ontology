@@ -4806,6 +4806,17 @@ ont.profile.contact-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile
 ont.profile.contact-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/contact/ContactListSubProfile.java -text
 ont.profile.contact-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/contact/ContactManagementService.java -text
 ont.profile.contact-2.0.2-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/contact/ContactOntology.java -text
+ont.profile.contact-2.0.3-SNAPSHOT/ASL2.0.txt -text
+ont.profile.contact-2.0.3-SNAPSHOT/NOTICE.txt -text
+ont.profile.contact-2.0.3-SNAPSHOT/pom.xml -text
+ont.profile.contact-2.0.3-SNAPSHOT/profile.contact.di -text
+ont.profile.contact-2.0.3-SNAPSHOT/profile.contact.notation -text
+ont.profile.contact-2.0.3-SNAPSHOT/profile.contact.uml -text
+ont.profile.contact-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ContactActivator.java -text
+ont.profile.contact-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/ContactFactory.java -text
+ont.profile.contact-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/contact/ContactListSubProfile.java -text
+ont.profile.contact-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/contact/ContactManagementService.java -text
+ont.profile.contact-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/profile/contact/ContactOntology.java -text
 ont.profile.health-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.profile.health-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.profile.health-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
