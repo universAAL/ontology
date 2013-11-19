@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_FNQvgPdQEeG0BuNSHtW53A" name="HandGestures">
+    <ownedComment xmi:id="_FNQvgfdQEeG0BuNSHtW53A" annotatedElement="_FNQvhvdQEeG0BuNSHtW53A">
+      <body>Ontology that describes different hand gestures</body>
+    </ownedComment>
+    <packageImport xmi:id="_FNQvgvdQEeG0BuNSHtW53A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_FNQvg_dQEeG0BuNSHtW53A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universAAL.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_FNQvhPdQEeG0BuNSHtW53A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_FNQvhfdQEeG0BuNSHtW53A">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universAAL.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_FNQvhvdQEeG0BuNSHtW53A" name="org.universAAL.ontology.handgestures">
+      <packagedElement xmi:type="uml:Class" xmi:id="_FNQvh_dQEeG0BuNSHtW53A" name="HandGestureService">
+        <generalization xmi:id="_FNQviPdQEeG0BuNSHtW53A">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_Htn2oPdUEeG0BuNSHtW53A" name="propControls">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universAAL.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FNQvifdQEeG0BuNSHtW53A" name="MyDevice">
+        <generalization xmi:id="_FNQvivdQEeG0BuNSHtW53A">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universAAL.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FNQvi_dQEeG0BuNSHtW53A" name="HandGestures">
+        <generalization xmi:id="_FNQvjPdQEeG0BuNSHtW53A">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_PdFuoPdSEeG0BuNSHtW53A" name="gestureType" type="_u5HGEPdREeG0BuNSHtW53A"/>
+        <ownedAttribute xmi:id="_kHqgQPdSEeG0BuNSHtW53A" name="user">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universAAL.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_1gHkYPdTEeG0BuNSHtW53A" name="timestamp">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universAAL.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_u5HGEPdREeG0BuNSHtW53A" name="HandGestureType">
+        <ownedLiteral xmi:id="_00tFUPdSEeG0BuNSHtW53A" name="rightHandSwipeRight"/>
+        <ownedLiteral xmi:id="_8pwWAPdSEeG0BuNSHtW53A" name="rightHandSwipeLeft"/>
+        <ownedLiteral xmi:id="_9zdwEPdSEeG0BuNSHtW53A" name="leftHandSwipeRight"/>
+        <ownedLiteral xmi:id="_AK6voPdTEeG0BuNSHtW53A" name="leftHandSwipeLeft"/>
+        <ownedLiteral xmi:id="_Cr_lQPdTEeG0BuNSHtW53A" name="twoHandsZoomIn"/>
+        <ownedLiteral xmi:id="_ESisUPdTEeG0BuNSHtW53A" name="twoHandsZoomOut"/>
+        <ownedLiteral xmi:id="_FYzJwPdTEeG0BuNSHtW53A" name="rightHandWave"/>
+        <ownedLiteral xmi:id="_HwL34PdTEeG0BuNSHtW53A" name="leftHandWave"/>
+        <ownedLiteral xmi:id="_JxSM8PdTEeG0BuNSHtW53A" name="rightHandPullDown"/>
+        <ownedLiteral xmi:id="_LpUsoPdTEeG0BuNSHtW53A" name="rightHandPushUp"/>
+        <ownedLiteral xmi:id="_OG7-kPdTEeG0BuNSHtW53A" name="leftHandPullDown"/>
+        <ownedLiteral xmi:id="_P4ZVIPdTEeG0BuNSHtW53A" name="leftHandPushUp"/>
+        <ownedLiteral xmi:id="_S6kssPdTEeG0BuNSHtW53A" name="bothHandsPullDown"/>
+        <ownedLiteral xmi:id="_UpS4UPdTEeG0BuNSHtW53A" name="bothHandsPushUp"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_FNQvjfdQEeG0BuNSHtW53A">
+      <eAnnotations xmi:id="_FNQvjvdQEeG0BuNSHtW53A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_FNQvj_dQEeG0BuNSHtW53A">
+      <eAnnotations xmi:id="_FNQvkPdQEeG0BuNSHtW53A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_FNQvkfdQEeG0BuNSHtW53A" defaultNamespace="http://ontology.universaal.org/HandGestures" base_Package="_FNQvhvdQEeG0BuNSHtW53A" versionInfo="1.2.1-SNAPSHOT"/>
+  <OWL:objectProperty xmi:id="_PeNwAPdSEeG0BuNSHtW53A" base_Property="_PdFuoPdSEeG0BuNSHtW53A" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_kHuxsPdSEeG0BuNSHtW53A" base_Property="_kHqgQPdSEeG0BuNSHtW53A" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_1gLOwPdTEeG0BuNSHtW53A" base_Property="_1gHkYPdTEeG0BuNSHtW53A" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_HtrhAPdUEeG0BuNSHtW53A" base_Property="_Htn2oPdUEeG0BuNSHtW53A" isFunctional="true"/>
+</xmi:XMI>
