@@ -5,13 +5,13 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>2.0.3-SNAPSHOT</version>
+    <version>2.0.4-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.security</artifactId>
-  <version>2.0.3-SNAPSHOT</version>
+  <version>2.0.4-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL Ontology Security </name>
+  <name>universAAL Ontology Security</name>
   <description>Security concepts and service definition.</description>
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -30,7 +30,6 @@
       <artifactId>ont.profile</artifactId>
     </dependency>
   </dependencies>
-  
   <build>
     <plugins>
       <plugin>
