@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>2.0.3-SNAPSHOT</version>
+    <version>2.0.4-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.X73</artifactId>
-  <version>2.0.3-SNAPSHOT</version>
+  <version>2.0.4-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology x73 devices</name>
   <description>Ontology for devices based on ISO 11073 devices/model (health device communication) for the universAAL middleware</description>
