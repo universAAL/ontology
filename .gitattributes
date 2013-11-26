@@ -525,6 +525,7 @@ ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmen
 ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java -text
 ont.profile.ui.mainmenu/src/main/java/org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java -text
 ont.profile.ui.mainmenu/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.profile.ui.mainmenu/src/test/java/org/universAAL/ontology/test/MyTest.java -text
 ont.profile.ui.preferences/ASL2.0.txt -text
 ont.profile.ui.preferences/InteractionPreferences.di -text
 ont.profile.ui.preferences/InteractionPreferences.notation -text
