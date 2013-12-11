@@ -219,10 +219,6 @@ ont.device/src/main/java/org/universAAL/ontology/device/WindowController.java -t
 ont.device/src/main/java/org/universAAL/ontology/device/WindowSensor.java -text
 ont.device/src/main/resources/ArtifactIntegrationTest.java -text
 ont.device/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
-ont.drools/.settings/org.eclipse.core.resources.prefs -text
-ont.drools/.settings/org.eclipse.jdt.core.prefs -text
-ont.drools/.settings/org.eclipse.m2e.core.prefs -text
-ont.drools/.settings/org.maven.ide.eclipse.prefs -text
 ont.drools/ASL2.0.txt -text
 ont.drools/NOTICE -text
 ont.drools/pom.xml -text
