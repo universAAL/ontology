@@ -40,6 +40,12 @@
 		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.situtation.reasoner/${ont.situation.reasoner.version}</bundle>
 	</feature>
 	
+	<feature name="uAAL-Ont.Drools" description="Drools reasoner Ontology"
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.drools/${ont.drools.version}</bundle>
+	</feature>
+	
 	<feature name="uAAL-Ont.Profile" description="The Profile Ontology"
 		version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.PhWorld</feature>

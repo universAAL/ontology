@@ -37,6 +37,10 @@ ont.device/.classpath
 ont.device/.project
 ont.device/.settings
 ont.device/target
+ont.drools/.classpath
+ont.drools/.project
+ont.drools/.settings
+ont.drools/target
 ont.furniture/.classpath
 ont.furniture/.project
 ont.furniture/.settings
