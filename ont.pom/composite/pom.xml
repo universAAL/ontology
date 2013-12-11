@@ -44,11 +44,7 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.continuahealthmanager</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.dependability</artifactId>
+      <artifactId>ont.device.extra</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -61,18 +57,6 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.gesture.pointing</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.handgestures</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.health.disease</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.health.measurement</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -96,27 +80,11 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.personalhealthdevice</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.phWorld</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.profile</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.contact</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.health</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile.ui.mainmenu</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
@@ -128,15 +96,63 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.situation.reasoner</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.unit</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.X73</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.ui.mainmenu</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.situation.reasoner</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.contact</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.dependability</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.handgestures</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.personalhealthdevice</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.continuahealthmanager</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.health.disease</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.health.measurement</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.profile.health</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.recommendations</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.drools</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.security</artifactId>
     </dependency>
   </dependencies>
   <build>

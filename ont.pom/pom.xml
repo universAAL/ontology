@@ -32,6 +32,7 @@
     <module>../ont.continuahealthmanager</module>
     <module>../ont.dependability</module>
     <module>../ont.device</module>
+    <module>../ont.drools</module>
     <module>../ont.furniture</module>
     <module>../ont.gesture.pointing</module>
     <module>../ont.handgestures</module>
@@ -255,6 +256,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.karaf.feature</artifactId>
+        <version>2.0.4-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.drools</artifactId>
         <version>2.0.4-SNAPSHOT</version>
       </dependency>
     </dependencies>
