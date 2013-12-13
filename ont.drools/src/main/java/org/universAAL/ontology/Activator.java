@@ -1,6 +1,6 @@
 /*
 	Copyright 2008-2014 TSB, http://www.tsbtecnologias.es
-	TSB - Tecnolog�as para la Salud y el Bienestar
+	TSB - Tecnologías para la Salud y el Bienestar
 	
 	See the NOTICE file distributed with this work for additional 
 	information regarding copyright ownership
