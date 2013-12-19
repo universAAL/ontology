@@ -17,7 +17,7 @@
       <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_VMoC1sB0EeGsLP-h7_2yiw" name="org.universAAL.ontology.ui.preferences">
-      <packagedElement xmi:type="uml:Class" xmi:id="_VMoC28B0EeGsLP-h7_2yiw" name="UIPreferences">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VMoC28B0EeGsLP-h7_2yiw" name="UIPreferencesSubProfile">
         <generalization xmi:id="_VMoC3MB0EeGsLP-h7_2yiw">
           <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
         </generalization>
@@ -57,25 +57,18 @@
         </ownedAttribute>
         <ownedAttribute xmi:id="_wJ9YcMEjEeGvZOBAjbmuGw" name="contentContrast" type="_MqunEMEgEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_y62ywMEjEeGvZOBAjbmuGw" name="screenSaverUsage" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
-        <ownedAttribute xmi:id="_vhps8MHAEeGvZOBAjbmuGw" name="backgroundColorHex">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_bqc8MMHEEeGvZOBAjbmuGw" name="value" value="D5EDF7"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_9a6i0MHAEeGvZOBAjbmuGw" name="fontColorHex">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f05jYMHEEeGvZOBAjbmuGw" name="value" value="000000"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_71BQUMHyEeGvZOBAjbmuGw" name="fontSize" type="_uzy1sMHyEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_YE0xIMH3EeGvZOBAjbmuGw" name="screenResolution" type="_MqunEMEgEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_BMrfQMH4EeGvZOBAjbmuGw" name="dayNightMode" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_bwUKsBH0EeKt5s2atPgyjg" name="windowLayout" type="__oouUBHzEeKt5s2atPgyjg"/>
         <ownedAttribute xmi:id="_bHCc0BH3EeKt5s2atPgyjg" name="fontFamily" type="_K8A_sBH3EeKt5s2atPgyjg"/>
         <ownedAttribute xmi:id="_eOIEYBIJEeKt5s2atPgyjg" name="flashingResources" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
-        <ownedAttribute xmi:id="_22EF4DiJEeKznJCHJJGI_g" name="highlightColorHex">
-          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_Oequ4DiKEeKznJCHJJGI_g" name="cursorSize" type="_uzy1sMHyEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_sjdhsGVMEeK_078F8lI7VA" name="brightness" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_JxFYkGi-EeOLIrxkqxM3xg" name="backgroundColor" type="_DJxYQGi8EeOLIrxkqxM3xg"/>
+        <ownedAttribute xmi:id="_cGUqgGi-EeOLIrxkqxM3xg" name="componentSpacing" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_jhNHsGi-EeOLIrxkqxM3xg" name="  fontColor" type="_DJxYQGi8EeOLIrxkqxM3xg"/>
+        <ownedAttribute xmi:id="_nSqnIGi-EeOLIrxkqxM3xg" name="highlightColor" type="_DJxYQGi8EeOLIrxkqxM3xg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_CbO4wMEWEeGvZOBAjbmuGw" name="AuditoryPreferences">
         <ownedAttribute xmi:id="_5n8V0MEjEeGvZOBAjbmuGw" name="volume" type="_MqunEMEgEeGvZOBAjbmuGw"/>
@@ -95,30 +88,15 @@
         <ownedLiteral xmi:id="_pH9nQMEhEeGvZOBAjbmuGw" name="off"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ScPgcMElEeGvZOBAjbmuGw" name="GeneralInteractionPreferences">
-        <ownedAttribute xmi:id="_CYNtEMEuEeGvZOBAjbmuGw" name="preferredModality" type="_DqV4wMEtEeGvZOBAjbmuGw"/>
-        <ownedAttribute xmi:id="_Ldz_oMEuEeGvZOBAjbmuGw" name="secondaryModality" type="_DqV4wMEtEeGvZOBAjbmuGw"/>
-        <ownedAttribute xmi:id="_IuigYAIxEeK9UpjHgK1FlA" name="preferredLanguage" type="__rMlsAIyEeK9UpjHgK1FlA"/>
-        <ownedAttribute xmi:id="_7ylf8AIzEeK9UpjHgK1FlA" name="secondaryLanguage" type="__rMlsAIyEeK9UpjHgK1FlA"/>
+        <ownedAttribute xmi:id="_CYNtEMEuEeGvZOBAjbmuGw" name="preferredModality"/>
+        <ownedAttribute xmi:id="_Ldz_oMEuEeGvZOBAjbmuGw" name="secondaryModality"/>
+        <ownedAttribute xmi:id="_IuigYAIxEeK9UpjHgK1FlA" name="preferredLanguage"/>
+        <ownedAttribute xmi:id="_7ylf8AIzEeK9UpjHgK1FlA" name="secondaryLanguage"/>
         <ownedAttribute xmi:id="_MxhlQBH2EeKt5s2atPgyjg" name="contentDensity" type="_OlGbsBH2EeKt5s2atPgyjg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_DqV4wMEtEeGvZOBAjbmuGw" name="Modality">
-        <ownedLiteral xmi:id="_EzuisMEtEeGvZOBAjbmuGw" name="gui"/>
-        <ownedLiteral xmi:id="_Fk79MMEtEeGvZOBAjbmuGw" name="voice"/>
-        <ownedLiteral xmi:id="_G6A5wMEtEeGvZOBAjbmuGw" name="gesture"/>
-        <ownedLiteral xmi:id="_VMRecMEtEeGvZOBAjbmuGw" name="sms"/>
-        <ownedLiteral xmi:id="_WF9fgMEtEeGvZOBAjbmuGw" name="mobile"/>
-        <ownedLiteral xmi:id="_XgNP8MEtEeGvZOBAjbmuGw" name="web"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7LckMEuEeGvZOBAjbmuGw" name="Gender">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7LckMEuEeGvZOBAjbmuGw" name="VoiceGender">
         <ownedLiteral xmi:id="_qzMHEMEuEeGvZOBAjbmuGw" name="male"/>
         <ownedLiteral xmi:id="_rPQ_EMEuEeGvZOBAjbmuGw" name="female"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_xzIUsMEuEeGvZOBAjbmuGw" name="PrivacyLevel">
-        <ownedLiteral xmi:id="_zhALwMEuEeGvZOBAjbmuGw" name="insensible"/>
-        <ownedLiteral xmi:id="_BJrA4MEvEeGvZOBAjbmuGw" name="knownPeopleOnly"/>
-        <ownedLiteral xmi:id="_tD5wAMEvEeGvZOBAjbmuGw" name="intimatesOnly"/>
-        <ownedLiteral xmi:id="_wrTUgMEvEeGvZOBAjbmuGw" name="homeMatesOnly"/>
-        <ownedLiteral xmi:id="_y79vkMEvEeGvZOBAjbmuGw" name="personal"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_PWILMMHBEeGvZOBAjbmuGw" name="AlertPreferences">
         <ownedAttribute xmi:id="_bp97YMHBEeGvZOBAjbmuGw" name="alertOption" type="_SSz-wMHBEeGvZOBAjbmuGw"/>
@@ -157,24 +135,6 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsTFU8H2EeGvZOBAjbmuGw" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="__rMlsAIyEeK9UpjHgK1FlA" name="Language">
-        <ownedLiteral xmi:id="_J6gSUAIzEeK9UpjHgK1FlA" name="german"/>
-        <ownedLiteral xmi:id="_RsCU8AIzEeK9UpjHgK1FlA" name="italian"/>
-        <ownedLiteral xmi:id="_TabJYAIzEeK9UpjHgK1FlA" name="greek"/>
-        <ownedLiteral xmi:id="_WnXmgAIzEeK9UpjHgK1FlA" name="spanish"/>
-        <ownedLiteral xmi:id="_Xq0AgAIzEeK9UpjHgK1FlA" name="english"/>
-        <ownedLiteral xmi:id="_YT72AAIzEeK9UpjHgK1FlA" name="polish"/>
-        <ownedLiteral xmi:id="_ZduIkAIzEeK9UpjHgK1FlA" name="croatian"/>
-        <ownedLiteral xmi:id="_aVznIAIzEeK9UpjHgK1FlA" name="norvegian"/>
-        <ownedLiteral xmi:id="_b3YHkAIzEeK9UpjHgK1FlA" name="dutch"/>
-        <ownedLiteral xmi:id="_diGkAAIzEeK9UpjHgK1FlA" name="french"/>
-        <ownedLiteral xmi:id="_iSw2oAIzEeK9UpjHgK1FlA" name="taiwanese"/>
-        <ownedLiteral xmi:id="_qP33IAIzEeK9UpjHgK1FlA" name="israeli"/>
-        <ownedLiteral xmi:id="_tn90UAIzEeK9UpjHgK1FlA" name="portuguese"/>
-        <ownedLiteral xmi:id="_xUGH0AIzEeK9UpjHgK1FlA" name="rusian"/>
-        <ownedLiteral xmi:id="_z-KhYAIzEeK9UpjHgK1FlA" name="hungarian"/>
-        <ownedLiteral xmi:id="_1IUAUAIzEeK9UpjHgK1FlA" name="chinese"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="__oouUBHzEeKt5s2atPgyjg" name="WindowLayoutType">
         <ownedLiteral xmi:id="_A-d40BH0EeKt5s2atPgyjg" name="tiled"/>
         <ownedLiteral xmi:id="_D0bZUBH0EeKt5s2atPgyjg" name="overlap"/>
@@ -204,9 +164,8 @@
         <ownedLiteral xmi:id="_Z5qDsBH3EeKt5s2atPgyjg" name="monospace"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ceBfkDMBEeKVtdotENUEYQ" name="SystemMenuPreferences">
-        <ownedAttribute xmi:id="_gHReMDMBEeKVtdotENUEYQ" name="messagePersistance" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_gHReMDMBEeKVtdotENUEYQ" name="  uiRequestPersistance" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_hnLKsDMBEeKVtdotENUEYQ" name="mainMenuConfiguration" type="_pWXrADMBEeKVtdotENUEYQ"/>
-        <ownedAttribute xmi:id="_bUE_gDMCEeKVtdotENUEYQ" name="messagePersistance" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_ozubgDMCEeKVtdotENUEYQ" name="searchFeatureIsFirst" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
         <ownedAttribute xmi:id="_LdFjgDimEeKznJCHJJGI_g" name="pendingMessageBuilder" type="_mqE2EDiiEeKznJCHJJGI_g"/>
         <ownedAttribute xmi:id="_RhXaIDimEeKznJCHJJGI_g" name="pendingDialogBuilder" type="_vmRKcDihEeKznJCHJJGI_g"/>
@@ -214,7 +173,6 @@
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWXrADMBEeKVtdotENUEYQ" name="MainMenuConfigurationType">
         <ownedLiteral xmi:id="_tK5skDMBEeKVtdotENUEYQ" name="classic"/>
         <ownedLiteral xmi:id="_upg_oDMBEeKVtdotENUEYQ" name="smart"/>
-        <ownedLiteral xmi:id="_veTSkDMBEeKVtdotENUEYQ" name="classicWithSubmit"/>
         <ownedLiteral xmi:id="_87WtkDMBEeKVtdotENUEYQ" name="taskBar"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_AZTlsDMDEeKVtdotENUEYQ" name="uIPreferences_systemMenuPreferences_1" memberEnd="_AZTlsTMDEeKVtdotENUEYQ _AZS-oDMDEeKVtdotENUEYQ">
@@ -229,6 +187,21 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_mqE2EDiiEeKznJCHJJGI_g" name="PendingMessageBuilderType">
         <ownedLiteral xmi:id="_UiRmYDimEeKznJCHJJGI_g" name="simpleTable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_DJxYQGi8EeOLIrxkqxM3xg" name="ColorType">
+        <ownedLiteral xmi:id="_NY9wIGi8EeOLIrxkqxM3xg" name="black"/>
+        <ownedLiteral xmi:id="_OJKeAGi8EeOLIrxkqxM3xg" name="lightGray"/>
+        <ownedLiteral xmi:id="_PMaqwGi8EeOLIrxkqxM3xg" name="darkGray"/>
+        <ownedLiteral xmi:id="_QsFGsGi8EeOLIrxkqxM3xg" name="lightBlue"/>
+        <ownedLiteral xmi:id="_SM71cGi8EeOLIrxkqxM3xg" name="darkBlue"/>
+        <ownedLiteral xmi:id="_TTdYoGi8EeOLIrxkqxM3xg" name="lightGreen"/>
+        <ownedLiteral xmi:id="_U4e1sGi8EeOLIrxkqxM3xg" name="darkGreen"/>
+        <ownedLiteral xmi:id="_Vlj-IGi8EeOLIrxkqxM3xg" name="orange"/>
+        <ownedLiteral xmi:id="_WhOVIGi8EeOLIrxkqxM3xg" name="yellow"/>
+        <ownedLiteral xmi:id="_XeOv8Gi8EeOLIrxkqxM3xg" name="cyan"/>
+        <ownedLiteral xmi:id="_ZG0eYGi8EeOLIrxkqxM3xg" name="purple"/>
+        <ownedLiteral xmi:id="_Z2b9cGi8EeOLIrxkqxM3xg" name="magenta"/>
+        <ownedLiteral xmi:id="_amC1cGi8EeOLIrxkqxM3xg" name="pink"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_VMoC3cB0EeGsLP-h7_2yiw">
@@ -253,8 +226,6 @@
   <OWL:objectProperty xmi:id="_Q0IIkMEkEeGvZOBAjbmuGw" base_Property="_Q0DQEMEkEeGvZOBAjbmuGw" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_CYWP8MEuEeGvZOBAjbmuGw" base_Property="_CYNtEMEuEeGvZOBAjbmuGw" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_Ld77cMEuEeGvZOBAjbmuGw" base_Property="_Ldz_oMEuEeGvZOBAjbmuGw" isFunctional="true"/>
-  <OWL:datatypeProperty xmi:id="_wYzXYMHAEeGvZOBAjbmuGw" base_Property="_vhps8MHAEeGvZOBAjbmuGw" isFunctional="true"/>
-  <OWL:datatypeProperty xmi:id="_9bIlQMHAEeGvZOBAjbmuGw" base_Property="_9a6i0MHAEeGvZOBAjbmuGw" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_bqSrgMHBEeGvZOBAjbmuGw" base_Property="_bp97YMHBEeGvZOBAjbmuGw" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_72oZ4MHyEeGvZOBAjbmuGw" base_Property="_71BQUMHyEeGvZOBAjbmuGw" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_YE8s8MH3EeGvZOBAjbmuGw" base_Property="_YE0xIMH3EeGvZOBAjbmuGw" isFunctional="true"/>
@@ -274,12 +245,14 @@
   <OWL:objectProperty xmi:id="_eOMV0BIJEeKt5s2atPgyjg" base_Property="_eOIEYBIJEeKt5s2atPgyjg" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_gHWWsDMBEeKVtdotENUEYQ" base_Property="_gHReMDMBEeKVtdotENUEYQ" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_hnQDMDMBEeKVtdotENUEYQ" base_Property="_hnLKsDMBEeKVtdotENUEYQ" isFunctional="true"/>
-  <OWL:datatypeProperty xmi:id="_bUJQ8DMCEeKVtdotENUEYQ" base_Property="_bUE_gDMCEeKVtdotENUEYQ" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_ozys8DMCEeKVtdotENUEYQ" base_Property="_ozubgDMCEeKVtdotENUEYQ" isFunctional="true"/>
-  <OWL:datatypeProperty xmi:id="_3OraMDiJEeKznJCHJJGI_g" base_Property="_22EF4DiJEeKznJCHJJGI_g" isFunctional="true"/>
   <OWL:datatypeProperty xmi:id="_OfPWoDiKEeKznJCHJJGI_g" base_Property="_Oequ4DiKEeKznJCHJJGI_g" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_LdLqIjimEeKznJCHJJGI_g" base_Property="_LdFjgDimEeKznJCHJJGI_g" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_RhdgwDimEeKznJCHJJGI_g" base_Property="_RhXaIDimEeKznJCHJJGI_g" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_-UBKwGSzEeKagIGyh2nCfQ" base_Property="_-Jn4oGSzEeKagIGyh2nCfQ" isFunctional="true"/>
   <OWL:objectProperty xmi:id="_sj8C0GVMEeK_078F8lI7VA" base_Property="_sjdhsGVMEeK_078F8lI7VA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_JxYTgGi-EeOLIrxkqxM3xg" base_Property="_JxFYkGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_cGebgmi-EeOLIrxkqxM3xg" base_Property="_cGUqgGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_jhNHs2i-EeOLIrxkqxM3xg" base_Property="_jhNHsGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_nS0YIGi-EeOLIrxkqxM3xg" base_Property="_nSqnIGi-EeOLIrxkqxM3xg" isFunctional="true"/>
 </xmi:XMI>
