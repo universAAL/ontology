@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_Y1vPgByLEeORFpxNxvLTyw" name="Recommendations">
+    <ownedComment xmi:id="_Y1vPgRyLEeORFpxNxvLTyw" annotatedElement="_Y1vPiRyLEeORFpxNxvLTyw">
+      <body></body>
+    </ownedComment>
+    <packageImport xmi:id="_Y1vPghyLEeORFpxNxvLTyw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_Y1vPgxyLEeORFpxNxvLTyw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_Y1vPhByLEeORFpxNxvLTyw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_Y1vPhRyLEeORFpxNxvLTyw">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packageImport xmi:id="_Y1vPhhyLEeORFpxNxvLTyw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.unit.uml#_iTg3EEzlEeG4aIoxfVByDw"/>
+    </packageImport>
+    <packageImport xmi:id="_Y1vPhxyLEeORFpxNxvLTyw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.measurement.uml#__ImLAIn5EeGWy6MmckrVYA"/>
+    </packageImport>
+    <packageImport xmi:id="_Y1vPiByLEeORFpxNxvLTyw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.device.uml#_UkOj0NJAEeGCrI2l36sLrg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Y1vPiRyLEeORFpxNxvLTyw" name="org.universAAL.ontology.recommendations">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y1vPkByLEeORFpxNxvLTyw" name="Recommendations">
+        <generalization xmi:id="_Y1vPkRyLEeORFpxNxvLTyw">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_xx7UYByYEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rz_HMByPEeORFpxNxvLTyw" name="AuditoryRecommendation">
+        <generalization xmi:id="_EpQHEByWEeORFpxNxvLTyw" general="_Y1vPkByLEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_-s9AYByYEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eSCjUByPEeORFpxNxvLTyw" name="WebRecommendation">
+        <generalization xmi:id="_D-jkQByWEeORFpxNxvLTyw" general="_Y1vPkByLEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_87S1gByYEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rGa_UByQEeORFpxNxvLTyw" name="FillParent">
+        <generalization xmi:id="_JSUVMBycEeOkH6UXh-77NQ" general="_HUJ_YBycEeOkH6UXh-77NQ"/>
+        <ownedAttribute xmi:id="_1v47kByUEeORFpxNxvLTyw" name="visualRecommendation">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1v47kRyUEeORFpxNxvLTyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1v47khyUEeORFpxNxvLTyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__VaukByYEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sUPdUByQEeORFpxNxvLTyw" name="Alignment">
+        <generalization xmi:id="_Jkd1IBycEeOkH6UXh-77NQ" general="_HUJ_YBycEeOkH6UXh-77NQ"/>
+        <ownedAttribute xmi:id="_wZzkgByQEeORFpxNxvLTyw" name="visualRecommendation">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wZzkgRyQEeORFpxNxvLTyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wZzkghyQEeORFpxNxvLTyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__thFgByYEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_t63c4ByQEeORFpxNxvLTyw" name="Layout">
+        <generalization xmi:id="_KuHk0BycEeOkH6UXh-77NQ" general="_HUJ_YBycEeOkH6UXh-77NQ"/>
+        <ownedAttribute xmi:id="_ADiY0ByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OzCz0ByREeORFpxNxvLTyw" name="Text">
+        <generalization xmi:id="_LLkV0BycEeOkH6UXh-77NQ" general="_HUJ_YBycEeOkH6UXh-77NQ"/>
+        <ownedAttribute xmi:id="_24XmkByUEeORFpxNxvLTyw" name="visualRecommendation">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_24XmkRyUEeORFpxNxvLTyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_24XmkhyUEeORFpxNxvLTyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AT5wEByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TEkTYByREeORFpxNxvLTyw" name="Font">
+        <generalization xmi:id="_q51tIByWEeORFpxNxvLTyw" general="_OzCz0ByREeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_BfCGcByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ToDa8ByREeORFpxNxvLTyw" name="TextSize">
+        <generalization xmi:id="_qo4gAByWEeORFpxNxvLTyw" general="_OzCz0ByREeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_A9jxEByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dpsfAByREeORFpxNxvLTyw" name="TextAlignment">
+        <generalization xmi:id="_rLZXMByWEeORFpxNxvLTyw" general="_OzCz0ByREeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_Bv2JoByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iCsfkByREeORFpxNxvLTyw" name="VerticalAlignment">
+        <generalization xmi:id="_nyCOsByWEeORFpxNxvLTyw" general="_sUPdUByQEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_DOBX0ByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3BcKYByREeORFpxNxvLTyw" name="Size">
+        <generalization xmi:id="_LkkEoBycEeOkH6UXh-77NQ" general="_HUJ_YBycEeOkH6UXh-77NQ"/>
+        <ownedAttribute xmi:id="_5vZlcByREeORFpxNxvLTyw" name="vertical">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NCQWMBySEeORFpxNxvLTyw" name="horizontal">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l7jLABySEeORFpxNxvLTyw" name="VerticalLayout">
+        <generalization xmi:id="_rm61kByWEeORFpxNxvLTyw" general="_t63c4ByQEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_B-lJMByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mUa-ABySEeORFpxNxvLTyw" name="HorizontalLayout">
+        <generalization xmi:id="_r5EVgByWEeORFpxNxvLTyw" general="_t63c4ByQEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_5sHgkByUEeORFpxNxvLTyw" name="layout" type="_t63c4ByQEeORFpxNxvLTyw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5sIHoByUEeORFpxNxvLTyw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5sIHoRyUEeORFpxNxvLTyw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_CPFqYByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ox00kBySEeORFpxNxvLTyw" name="GridLayout">
+        <generalization xmi:id="_sPFo0ByWEeORFpxNxvLTyw" general="_t63c4ByQEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_CfdBoByZEeORFpxNxvLTyw" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ibkuEBybEeOkH6UXh-77NQ" name="HorizontalAlignment">
+        <generalization xmi:id="_kEKcgBybEeOkH6UXh-77NQ" general="_sUPdUByQEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_ksLewBybEeOkH6UXh-77NQ" name="fake">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HUJ_YBycEeOkH6UXh-77NQ" name="VisualRecommendation">
+        <generalization xmi:id="_IxI6wBycEeOkH6UXh-77NQ" general="_Y1vPkByLEeORFpxNxvLTyw"/>
+        <ownedAttribute xmi:id="_McgZQBycEeOkH6UXh-77NQ" name="data">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Y1vPkhyLEeORFpxNxvLTyw">
+      <eAnnotations xmi:id="_Y1vPkxyLEeORFpxNxvLTyw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Y1vPlByLEeORFpxNxvLTyw">
+      <eAnnotations xmi:id="_Y1vPlRyLEeORFpxNxvLTyw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_Y1vPlhyLEeORFpxNxvLTyw" defaultNamespace="http://ontology.universAAL.org/Recommendations" base_Package="_Y1vPiRyLEeORFpxNxvLTyw" versionInfo="2.0.1-SNAPSHOT"/>
+  <OWL:datatypeProperty xmi:id="_5wLBgByREeORFpxNxvLTyw" base_Property="_5vZlcByREeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_NCTZgBySEeORFpxNxvLTyw" base_Property="_NCQWMBySEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_xx7UYxyYEeORFpxNxvLTyw" base_Property="_xx7UYByYEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_87S1gxyYEeORFpxNxvLTyw" base_Property="_87S1gByYEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_-s9AYxyYEeORFpxNxvLTyw" base_Property="_-s9AYByYEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="__VaukxyYEeORFpxNxvLTyw" base_Property="__VaukByYEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="__thFgxyYEeORFpxNxvLTyw" base_Property="__thFgByYEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_ADsJ0ByZEeORFpxNxvLTyw" base_Property="_ADiY0ByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_AT5wExyZEeORFpxNxvLTyw" base_Property="_AT5wEByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_A9jxExyZEeORFpxNxvLTyw" base_Property="_A9jxEByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_BfCGcxyZEeORFpxNxvLTyw" base_Property="_BfCGcByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_Bv2JoxyZEeORFpxNxvLTyw" base_Property="_Bv2JoByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_B-lJMxyZEeORFpxNxvLTyw" base_Property="_B-lJMByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_CPFqYxyZEeORFpxNxvLTyw" base_Property="_CPFqYByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_CfdBoxyZEeORFpxNxvLTyw" base_Property="_CfdBoByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_DOLI0ByZEeORFpxNxvLTyw" base_Property="_DOBX0ByZEeORFpxNxvLTyw" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_ksLewxybEeOkH6UXh-77NQ" base_Property="_ksLewBybEeOkH6UXh-77NQ" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_MczUMBycEeOkH6UXh-77NQ" base_Property="_McgZQBycEeOkH6UXh-77NQ" isFunctional="true"/>
+</xmi:XMI>
