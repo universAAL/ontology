@@ -2723,6 +2723,14 @@ ont.gesture.pointing-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/gestur
 ont.gesture.pointing-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
 ont.gesture.pointing-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.gesture.pointing-2.0.3-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/ASL2.0.txt -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/NOTICE.txt -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/pom.xml -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/GesturePointingActivator.java -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.gesture.pointing-2.0.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.handgestures-1.3.2-SNAPSHOT/ASL2.0.txt -text
 ont.handgestures-1.3.2-SNAPSHOT/HandGestures.di -text
 ont.handgestures-1.3.2-SNAPSHOT/HandGestures.notation -text
