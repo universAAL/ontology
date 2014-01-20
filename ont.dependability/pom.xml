@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>2.0.4-SNAPSHOT</version>
+    <version>3.0.0</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.dependability</artifactId>
-  <version>2.0.4-SNAPSHOT</version>
+  <version>3.0.0</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Dependability</name>
   <description>The dependability ontology defining the concepts for realibility and fault tolerance.</description>
