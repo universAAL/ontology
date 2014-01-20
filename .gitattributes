@@ -1,0 +1,15 @@
+* text=auto !eol
+ont.pom/ASL2.0.txt -text
+ont.pom/NOTICE.txt -text
+ont.pom/composite/ASL2.0.txt -text
+ont.pom/composite/NOTICE.txt -text
+ont.pom/composite/pom.xml -text
+ont.pom/composite/src/test/java/org/universAAL/ontology/test/Activator.java -text
+ont.pom/composite/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.pom/composite/src/test/java/org/universAAL/ontology/test/OwlOWLCreator.java -text
+ont.pom/ont.karaf.feature/ASL2.0.txt -text
+ont.pom/ont.karaf.feature/NOTICE.txt -text
+ont.pom/ont.karaf.feature/pom.xml -text
+ont.pom/ont.karaf.feature/src/features/features.xml -text svneol=unset#text/plain
+ont.pom/pom.xml -text
+ont.pom/update.bat -text
