@@ -1,0 +1,17 @@
+universAAL ontology for ISO 11073-10471 Sensors
+
+Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
+http://www.ait.ac.at
+
+I. Included Software
+
+Software developed by AIT for the universAAL project.
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+III. License Summary
+- Apache License 2.0
