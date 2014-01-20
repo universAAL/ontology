@@ -6401,6 +6401,22 @@ ont.security-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/security/Sessi
 ont.security-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/security/UserPasswordCredentials.java -text
 ont.security-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.security-2.0.3-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.security-2.0.4-SNAPSHOT/ASL2.0.txt -text
+ont.security-2.0.4-SNAPSHOT/NOTICE.txt -text
+ont.security-2.0.4-SNAPSHOT/pom.xml -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/SecurityActivator.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/SecurityFactory.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/AuthenticationService.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/Credentials.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/DeviceBoundSession.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/LocationBoundSession.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/SecurityOntology.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/SecuritySubprofile.java -text svneol=unset#text/plain
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/Session.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/SessionManagementService.java -text
+ont.security-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/security/UserPasswordCredentials.java -text
+ont.security-2.0.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.security-2.0.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.situation.reasoner-1.2.1-SNAPSHOT/ASL2.0.txt -text
 ont.situation.reasoner-1.2.1-SNAPSHOT/MITX.txt -text
 ont.situation.reasoner-1.2.1-SNAPSHOT/NOTICE.txt -text
