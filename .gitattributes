@@ -220,7 +220,7 @@ ont.device/src/main/java/org/universAAL/ontology/device/WindowSensor.java -text
 ont.device/src/main/resources/ArtifactIntegrationTest.java -text
 ont.device/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.drools/ASL2.0.txt -text
-ont.drools/NOTICE -text
+ont.drools/NOTICE.txt -text
 ont.drools/pom.xml -text
 ont.drools/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.drools/src/main/java/org/universAAL/ontology/DroolsReasoningFactory.java -text
