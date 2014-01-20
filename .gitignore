@@ -47,6 +47,10 @@ ont.health.disease/.classpath
 ont.health.disease/.project
 ont.health.disease/.settings
 ont.health.disease/target
+ont.health.measurement/.classpath
+ont.health.measurement/.project
+ont.health.measurement/.settings
+ont.health.measurement/target
 ont.measurement/.classpath
 ont.measurement/.project
 ont.measurement/.settings

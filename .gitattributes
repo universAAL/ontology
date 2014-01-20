@@ -261,6 +261,21 @@ ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Patogeny.ja
 ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Pronostic.java -text
 ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Sympthom.java -text
 ont.health.disease/src/test/java/org/universaal/test/integrationTest/ArtifactIT.java -text
+ont.health.measurement/ASL2.0.txt -text svneol=unset#text/plain
+ont.health.measurement/HealthMeasurement.di -text
+ont.health.measurement/HealthMeasurement.notation -text
+ont.health.measurement/HealthMeasurement.uml -text
+ont.health.measurement/NOTICE.txt -text svneol=unset#text/plain
+ont.health.measurement/pom.xml -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/HealthMeasruementActivator.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/HealthMeasurementFactory.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/BloodPressure.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HealthMeasurement.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HealthMeasurementOntology.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HeartRate.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HeartRateSignal.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/PersonWeight.java -text
+ont.health.measurement/src/test/java/ont/healthmeasurement/tests/ArtifactIT.java -text
 ont.measurement/ASL2.0.txt -text
 ont.measurement/Measurement.di -text
 ont.measurement/Measurement.jpg -text
