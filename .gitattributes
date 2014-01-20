@@ -293,6 +293,20 @@ ont.impairment/src/main/java/org/universAAL/ontology/impairment/SightImpairment.
 ont.impairment/src/main/java/org/universAAL/ontology/impairment/SpeakingImpairment.java -text
 ont.impairment/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.impairment/src/test/resources/log4j.properties -text
+ont.languages/ASL2.0.txt -text
+ont.languages/LanguageOntology.di -text
+ont.languages/LanguageOntology.notation -text
+ont.languages/LanguageOntology.uml -text svneol=unset#text/plain
+ont.languages/NOTICE.txt -text
+ont.languages/pom.xml -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/LanguageActivator.java -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/LanguageFactory.java -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/language/Language.java -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/language/LanguageImpl.java -text svneol=unset#text/plain
+ont.languages/src/main/java/org/universAAL/ontology/language/LanguageOntology.java -text svneol=unset#text/plain
+ont.languages/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -text
+ont.languages/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text svneol=unset#text/plain
+ont.languages/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain
 ont.measurement/ASL2.0.txt -text
 ont.measurement/Measurement.di -text
 ont.measurement/Measurement.jpg -text
