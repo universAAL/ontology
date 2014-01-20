@@ -1684,6 +1684,17 @@ ont.che-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/che/ContextHistoryO
 ont.che-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/che/ContextHistoryService.java -text
 ont.che-2.0.3-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.che-2.0.3-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.che-2.0.4-SNAPSHOT/ASL2.0.txt -text
+ont.che-2.0.4-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
+ont.che-2.0.4-SNAPSHOT/NOTICE.txt -text
+ont.che-2.0.4-SNAPSHOT/pom.xml -text
+ont.che-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/ContextHistoryActivator.java -text
+ont.che-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/ContextHistoryFactory.java -text
+ont.che-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/che/ContextEvent.java -text
+ont.che-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/che/ContextHistoryOntology.java -text
+ont.che-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/che/ContextHistoryService.java -text
+ont.che-2.0.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.che-2.0.4-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.composite-1.0.1-SNAPSHOT/pom.xml -text
 ont.composite-1.1.4-SNAPSHOT/pom.xml -text
 ont.composite-1.2.1-SNAPSHOT/pom.xml -text
