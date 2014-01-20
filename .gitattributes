@@ -3125,6 +3125,21 @@ ont.health.measurement-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/heal
 ont.health.measurement-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HeartRateSignal.java -text
 ont.health.measurement-2.0.3-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/PersonWeight.java -text
 ont.health.measurement-2.0.3-SNAPSHOT/src/test/java/ont/healthmeasurement/tests/ArtifactIT.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/ASL2.0.txt -text svneol=unset#text/plain
+ont.health.measurement-2.0.4-SNAPSHOT/HealthMeasurement.di -text
+ont.health.measurement-2.0.4-SNAPSHOT/HealthMeasurement.notation -text
+ont.health.measurement-2.0.4-SNAPSHOT/HealthMeasurement.uml -text
+ont.health.measurement-2.0.4-SNAPSHOT/NOTICE.txt -text svneol=unset#text/plain
+ont.health.measurement-2.0.4-SNAPSHOT/pom.xml -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/HealthMeasruementActivator.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/HealthMeasurementFactory.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/BloodPressure.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HealthMeasurement.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HealthMeasurementOntology.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HeartRate.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HeartRateSignal.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/healthmeasurement/owl/PersonWeight.java -text
+ont.health.measurement-2.0.4-SNAPSHOT/src/test/java/ont/healthmeasurement/tests/ArtifactIT.java -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-CPL-JUnit.txt -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-JGCL.txt -text
 ont.impairment-1.0.1-SNAPSHOT/LICENSE-MIT11-Bouncycastle.txt -text
