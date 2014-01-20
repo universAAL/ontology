@@ -230,6 +230,37 @@ ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandGestureS
 ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandGestureType.java -text
 ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandGestures.java -text
 ont.handgestures/src/main/java/org/universAAL/ontology/handgestures/HandgesturesOntology.java -text
+ont.health.disease/ASL2.0.txt -text svneol=unset#text/plain
+ont.health.disease/Disease.di -text
+ont.health.disease/Disease.notation -text
+ont.health.disease/Disease.uml -text
+ont.health.disease/NOTICE.txt -text svneol=unset#text/plain
+ont.health.disease/pom.xml -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/HeartFailure.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/HypertensiveDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/IschemicHeartDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/OtherCirculatorySystemDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/CertainInfectiousParasiticDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/CirculatorySystemDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/DigestiveSystemDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/MentalDisorder.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/Neoplasms.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/NervousSystemDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/ICD10Diseases/owl/RespiratorySystemDisease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/DeseaseActivator.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/DiseaseFactory.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Diagnostic.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Disease.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/DiseaseOntology.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/DiseaseSeverityStatus.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/DiseaseTimeEvolvingStatus.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Epidemiology.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Etiology.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Patogeny.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Pronostic.java -text
+ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Sympthom.java -text
+ont.health.disease/src/test/java/org/universaal/test/integrationTest/ArtifactIT.java -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
