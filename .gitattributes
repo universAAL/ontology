@@ -700,6 +700,8 @@ ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/ReasoningS
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Rule.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/Situation.java -text
 ont.situation.reasoner/src/main/java/org/universAAL/ontology/reasoner/util/ElementModel.java -text
+ont.sysinfo/ASL2.0.txt -text
+ont.sysinfo/NOTICE.txt -text
 ont.sysinfo/ont.sysinfo.di -text
 ont.sysinfo/ont.sysinfo.notation -text
 ont.sysinfo/ont.sysinfo.uml -text

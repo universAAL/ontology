@@ -6,12 +6,13 @@
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
     <version>3.0.1-SNAPSHOT</version>
-<!--     <relativePath>../ont.pom</relativePath> -->
+    <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.sysinfo</artifactId>
   <version>3.0.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology System Info</name>
+  <description>Description of AAL Space-related events</description>
   <organization>
     <name>Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)</name>
     <url>http://www.itaca.upv.es/</url>
