@@ -57,6 +57,7 @@
     <module>../ont.device.extra</module>
     <module>../ont.recommendations</module>
     <module>../ont.security</module>
+    <module>../ont.sysinfo</module>
     <module>composite</module>
     <module>ont.karaf.feature</module>
   </modules>
@@ -251,6 +252,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.security</artifactId>
+        <version>3.0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.sysinfo</artifactId>
         <version>3.0.1-SNAPSHOT</version>
       </dependency>
       <dependency>
