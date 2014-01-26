@@ -13,6 +13,12 @@
   <packaging>pom</packaging>
   <name>universAAL Ontology Suite</name>
   <description>Set of ontologies used within universAAL</description>
+	<distributionManagement>
+		<site>
+			<id>depot.universaal.org</id>
+			<url>${uaal.site.url}ontology/ont.pom</url>
+		</site>
+	</distributionManagement>
   <developers>
     <developer>
       <id>saied</id>
