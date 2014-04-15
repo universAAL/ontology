@@ -28,7 +28,7 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
  * @author roni
  * 
  */
-public abstract class HealthService extends Service {
+public class HealthService extends Service {
 
     // NAMESPACE & PROPERTIES
     public static final String MY_URI = HealthProfileOntology.NAMESPACE

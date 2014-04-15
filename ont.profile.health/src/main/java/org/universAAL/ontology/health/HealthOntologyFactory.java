@@ -35,7 +35,12 @@ import org.universAAL.ontology.health.owl.TreatmentPlanning;
 import org.universAAL.ontology.health.owl.Walking;
 import org.universAAL.ontology.health.owl.WeightMeasurementTreatment;
 import org.universAAL.ontology.health.owl.WeightRequirement;
+import org.universAAL.ontology.health.owl.services.DisplayTreatmentService;
+import org.universAAL.ontology.health.owl.services.HealthService;
 import org.universAAL.ontology.health.owl.services.PerformedSessionManagementService;
+import org.universAAL.ontology.health.owl.services.PlannedSessionManagementService;
+import org.universAAL.ontology.health.owl.services.ProfileManagementService;
+import org.universAAL.ontology.health.owl.services.TreatmentManagementService;
 
 public class HealthOntologyFactory implements ResourceFactory {
 
@@ -85,6 +90,18 @@ public class HealthOntologyFactory implements ResourceFactory {
 	    return new BloodPressureMeasurementTreatment(instanceURI);
 	case 36:
 	    return new HeartRateMeasurementTreatment(instanceURI);
+	case 41:
+	    return new HealthService(instanceURI);
+	case 42:
+	    return new TreatmentManagementService(instanceURI);
+	case 43:
+	    return new PlannedSessionManagementService(instanceURI);
+	case 44:
+	    return new PerformedSessionManagementService(instanceURI);
+	case 45:
+	    return new ProfileManagementService(instanceURI);
+	case 46:
+	    return new DisplayTreatmentService(instanceURI);
 	}
 	return null;
     }

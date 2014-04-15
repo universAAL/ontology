@@ -276,13 +276,13 @@ public final class HealthProfileOntology extends Ontology {
 		.setResourceComment("This concept involves all the measurement types that are required in a treatment.");
 	oci.setResourceLabel("MeasurementRequirements");
 
-	oci.addDatatypeProperty(MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
+	oci.addObjectProperty(MeasurementRequirements.PROP_MAX_VALUE_ALLOWED);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			MeasurementRequirements.PROP_MAX_VALUE_ALLOWED,
 			HealthMeasurement.MY_URI, 0, 1));
 
-	oci.addDatatypeProperty(MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
+	oci.addObjectProperty(MeasurementRequirements.PROP_MIN_VALUE_ALLOWED);
 	oci.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 			MeasurementRequirements.PROP_MIN_VALUE_ALLOWED,
@@ -572,6 +572,7 @@ public final class HealthProfileOntology extends Ontology {
 
 	// load Diet
 	oci = createNewOntClassInfo(Diet.MY_URI, factory, 32);
+	oci.addSuperClass(HealthyHabitsAdoption.MY_URI);
 	oci.setResourceLabel("Diet");
 	oci.setResourceComment("");
 
@@ -645,7 +646,7 @@ public final class HealthProfileOntology extends Ontology {
 	 */
 
 	// load HealthService
-	oci = createNewAbstractOntClassInfo(HealthService.MY_URI);
+	oci = createNewOntClassInfo(HealthService.MY_URI,factory,41);
 	oci.setResourceComment("Description of the health service.");
 	oci.setResourceLabel("HealthService");
 	oci.addSuperClass(Service.MY_URI);
@@ -663,7 +664,7 @@ public final class HealthProfileOntology extends Ontology {
 			HealthProfile.MY_URI, 0, 1));
 
 	// load TreatmentManagementService
-	oci = createNewAbstractOntClassInfo(TreatmentManagementService.MY_URI);
+	oci = createNewOntClassInfo(TreatmentManagementService.MY_URI,factory,42);
 	oci
 		.setResourceComment("Description of the treatment management service.");
 	oci.setResourceLabel("TreatmentManagementService");
@@ -691,7 +692,7 @@ public final class HealthProfileOntology extends Ontology {
 
 	// load PlannedSessionManagementService
 
-	oci = createNewAbstractOntClassInfo(PlannedSessionManagementService.MY_URI);
+	oci = createNewOntClassInfo(PlannedSessionManagementService.MY_URI,factory,43);
 	oci
 		.setResourceComment("Description of the planned session management service.");
 	oci.setResourceLabel("PlannedSessionManagementService");
@@ -715,7 +716,7 @@ public final class HealthProfileOntology extends Ontology {
 	// PlannedSession.MY_URI));
 
 	// load PerformedSessionManagementService
-	oci = createNewAbstractOntClassInfo(PerformedSessionManagementService.MY_URI);
+	oci = createNewOntClassInfo(PerformedSessionManagementService.MY_URI,factory,44);
 	oci
 		.setResourceComment("Description of the performed session management service.");
 	oci.setResourceLabel("PerformedSessionManagementService");
@@ -752,13 +753,13 @@ public final class HealthProfileOntology extends Ontology {
 	// TODO change to XMLGregorianCalendar!
 
 	// load ProfileManagementService
-	oci = createNewAbstractOntClassInfo(ProfileManagementService.MY_URI);
+	oci = createNewOntClassInfo(ProfileManagementService.MY_URI,factory,45);
 	oci.setResourceComment("Services to manage Health Profile.");
 	oci.setResourceLabel("HealthProfileManagementService");
 	oci.addSuperClass(HealthService.MY_URI);
 
 	// load DisplayTreatmentService
-	oci = createNewAbstractOntClassInfo(DisplayTreatmentService.MY_URI);
+	oci = createNewOntClassInfo(DisplayTreatmentService.MY_URI,factory,46);
 	oci.setResourceComment("Services to display specific treatments.");
 	oci.setResourceLabel("HealthDisplayTreatmentService");
 	oci.addSuperClass(Service.MY_URI);
