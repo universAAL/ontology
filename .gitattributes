@@ -179,6 +179,9 @@ ont.device/src/main/java/org/universAAL/ontology/device/DeviceOntology.java -tex
 ont.device/src/main/java/org/universAAL/ontology/device/DimmerActuator.java -text
 ont.device/src/main/java/org/universAAL/ontology/device/DimmerController.java -text
 ont.device/src/main/java/org/universAAL/ontology/device/DimmerSensor.java -text
+ont.device/src/main/java/org/universAAL/ontology/device/DoorActuator.java -text svneol=unset#text/plain
+ont.device/src/main/java/org/universAAL/ontology/device/DoorController.java -text svneol=unset#text/plain
+ont.device/src/main/java/org/universAAL/ontology/device/DoorSensor.java -text svneol=unset#text/plain
 ont.device/src/main/java/org/universAAL/ontology/device/DosageSensor.java -text
 ont.device/src/main/java/org/universAAL/ontology/device/DosageValue.java -text
 ont.device/src/main/java/org/universAAL/ontology/device/EnuresisSensor.java -text

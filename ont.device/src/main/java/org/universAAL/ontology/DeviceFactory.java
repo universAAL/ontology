@@ -115,6 +115,12 @@ public class DeviceFactory implements ResourceFactory {
 	    return new HeaterActuator(instanceURI);
 	case 41:
 	    return new LightActuator(instanceURI);
+	case 42:
+		return new DoorActuator(instanceURI);
+	case 43:
+		return new DoorController(instanceURI);
+	case 44:
+		return new DoorSensor(instanceURI);
 
 	}
 	return null;
