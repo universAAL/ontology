@@ -158,6 +158,12 @@ public final class DeviceOntology extends Ontology {
 		HeaterActuator.MY_URI, factory, 40);
 	OntClassInfoSetup oci_LightActuator = createNewOntClassInfo(
 		LightActuator.MY_URI, factory, 41);
+	OntClassInfoSetup oci_DoorActuator = createNewOntClassInfo(
+			DoorActuator.MY_URI, factory, 42);
+	OntClassInfoSetup oci_DoorController = createNewOntClassInfo(
+			DoorController.MY_URI, factory, 43);
+	OntClassInfoSetup oci_DoorSensor = createNewOntClassInfo(
+			DoorSensor.MY_URI, factory, 44);
 
 	// ******* Add content to enumeration classes of the ontology ******* //
 
@@ -619,5 +625,37 @@ public final class DeviceOntology extends Ontology {
 			LightActuator.PROP_HAS_VALUE, TypeMapper
 				.getDatatypeURI(Integer.class), 1, 1));
 
+	oci_DoorActuator.setResourceComment("");
+	oci_DoorActuator.setResourceLabel("DoorActuator");
+	oci_DoorActuator.addSuperClass(Actuator.MY_URI);
+	oci_DoorActuator.addObjectProperty(DoorActuator.PROP_HAS_VALUE)
+		.setFunctional();
+	oci_DoorActuator
+		.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					DoorActuator.PROP_HAS_VALUE,
+				StatusValue.MY_URI, 1, 1));
+
+
+	oci_DoorController.setResourceComment("");
+	oci_DoorController.setResourceLabel("DoorController");
+	oci_DoorController.addSuperClass(DoorController.MY_URI);
+	oci_DoorController.addSuperClass(DoorSensor.MY_URI);
+	oci_DoorController.addObjectProperty(DoorController.PROP_HAS_VALUE)
+		.setFunctional();
+	oci_DoorController.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+				DoorController.PROP_HAS_VALUE, StatusValue.MY_URI, 1,
+			1));
+	
+	oci_DoorSensor.setResourceComment("");
+	oci_DoorSensor.setResourceLabel("DoorSensor");
+	oci_DoorSensor.addSuperClass(Sensor.MY_URI);
+	oci_DoorSensor.addObjectProperty(DoorSensor.PROP_HAS_VALUE)
+		.setFunctional();
+	oci_DoorSensor.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+				DoorSensor.PROP_HAS_VALUE, StatusValue.MY_URI, 1, 1));
+	
     }
 }
