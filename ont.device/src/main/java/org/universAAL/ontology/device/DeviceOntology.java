@@ -635,18 +635,6 @@ public final class DeviceOntology extends Ontology {
 			.getAllValuesRestrictionWithCardinality(
 					DoorActuator.PROP_HAS_VALUE,
 				StatusValue.MY_URI, 1, 1));
-
-
-	oci_DoorController.setResourceComment("");
-	oci_DoorController.setResourceLabel("DoorController");
-	oci_DoorController.addSuperClass(DoorController.MY_URI);
-	oci_DoorController.addSuperClass(DoorSensor.MY_URI);
-	oci_DoorController.addObjectProperty(DoorController.PROP_HAS_VALUE)
-		.setFunctional();
-	oci_DoorController.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-				DoorController.PROP_HAS_VALUE, StatusValue.MY_URI, 1,
-			1));
 	
 	oci_DoorSensor.setResourceComment("");
 	oci_DoorSensor.setResourceLabel("DoorSensor");
@@ -656,6 +644,18 @@ public final class DeviceOntology extends Ontology {
 	oci_DoorSensor.addRestriction(MergedRestriction
 		.getAllValuesRestrictionWithCardinality(
 				DoorSensor.PROP_HAS_VALUE, StatusValue.MY_URI, 1, 1));
+
+
+	oci_DoorController.setResourceComment("");
+	oci_DoorController.setResourceLabel("DoorController");
+	oci_DoorController.addSuperClass(DoorActuator.MY_URI);
+	oci_DoorController.addSuperClass(DoorSensor.MY_URI);
+	oci_DoorController.addObjectProperty(DoorController.PROP_HAS_VALUE)
+		.setFunctional();
+	oci_DoorController.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+				DoorController.PROP_HAS_VALUE, StatusValue.MY_URI, 1,
+			1));
 	
     }
 }
