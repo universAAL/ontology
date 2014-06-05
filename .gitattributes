@@ -264,6 +264,22 @@ ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Patogeny.ja
 ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Pronostic.java -text
 ont.health.disease/src/main/java/org/universAAL/ontology/disease/owl/Sympthom.java -text
 ont.health.disease/src/test/java/org/universaal/test/integrationTest/ArtifactIT.java -text
+ont.measurement/ASL2.0.txt -text
+ont.measurement/Measurement.di -text
+ont.measurement/Measurement.jpg -text
+ont.measurement/Measurement.notation -text
+ont.measurement/Measurement.uml -text
+ont.measurement/NOTICE.txt -text svneol=unset#text/plain
+ont.measurement/pom.xml -text
+ont.measurement/src/main/java/org/universAAL/ontology/MeasurementActivator.java -text
+ont.measurement/src/main/java/org/universAAL/ontology/MeasurementFactory.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeanSquareError.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/Measurement.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementError.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOntology.java -text svneol=unset#text/plain
+ont.measurement/src/main/java/org/universAAL/ontology/measurement/Signal.java -text
+ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.measurement/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
