@@ -448,6 +448,17 @@ ont.pom/ont.karaf.feature/pom.xml -text
 ont.pom/ont.karaf.feature/src/features/features.xml -text svneol=unset#text/plain
 ont.pom/pom.xml -text
 ont.pom/update.bat -text
+ont.profile.contact/ASL2.0.txt -text
+ont.profile.contact/NOTICE.txt -text
+ont.profile.contact/pom.xml -text
+ont.profile.contact/profile.contact.di -text
+ont.profile.contact/profile.contact.notation -text
+ont.profile.contact/profile.contact.uml -text
+ont.profile.contact/src/main/java/org/universAAL/ontology/profile/ContactActivator.java -text
+ont.profile.contact/src/main/java/org/universAAL/ontology/profile/ContactFactory.java -text
+ont.profile.contact/src/main/java/org/universAAL/ontology/profile/contact/ContactListSubProfile.java -text
+ont.profile.contact/src/main/java/org/universAAL/ontology/profile/contact/ContactManagementService.java -text
+ont.profile.contact/src/main/java/org/universAAL/ontology/profile/contact/ContactOntology.java -text
 ont.profile/ASL2.0.txt -text
 ont.profile/NOTICE.txt -text
 ont.profile/pom.xml -text
