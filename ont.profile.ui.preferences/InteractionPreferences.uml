@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_VMoC0MB0EeGsLP-h7_2yiw" name="InteractionPreferences">
+    <ownedComment xmi:id="_VMoC0cB0EeGsLP-h7_2yiw" annotatedElement="_VMoC1sB0EeGsLP-h7_2yiw">
+      <body>User Interaction preferences of a User based on ETSI ES 746 standard (Personalization and user profile management) and ES 202 642 draft (Personalization of eHealth systems)</body>
+    </ownedComment>
+    <packageImport xmi:id="_VMoC0sB0EeGsLP-h7_2yiw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_VMoC08B0EeGsLP-h7_2yiw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_VMoC1MB0EeGsLP-h7_2yiw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_VMoC1cB0EeGsLP-h7_2yiw">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VMoC1sB0EeGsLP-h7_2yiw" name="org.universAAL.ontology.ui.preferences">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VMoC28B0EeGsLP-h7_2yiw" name="UIPreferencesSubProfile">
+        <generalization xmi:id="_VMoC3MB0EeGsLP-h7_2yiw">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_grWKkMHBEeGvZOBAjbmuGw" name="alertPreferences" type="_PWILMMHBEeGvZOBAjbmuGw" association="_grWxoMHBEeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_grWKkcHBEeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_grWKksHBEeGvZOBAjbmuGw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_q-jFoMH2EeGvZOBAjbmuGw" name="visualPreferences" type="_4YhdsMEVEeGvZOBAjbmuGw" association="_q-jssMH2EeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q-jFocH2EeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q-jFosH2EeGvZOBAjbmuGw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tVxbsMH2EeGvZOBAjbmuGw" name="audioPreferences" type="_CbO4wMEWEeGvZOBAjbmuGw" association="_tVyCwMH2EeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tVxbscH2EeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tVxbssH2EeGvZOBAjbmuGw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tr0kMMH2EeGvZOBAjbmuGw" name="interactionPreferences" type="_ScPgcMElEeGvZOBAjbmuGw" association="_tsTFUMH2EeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tr0kMcH2EeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tr0kMsH2EeGvZOBAjbmuGw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yvhb8BH1EeKt5s2atPgyjg" name="accessMode" type="_wnktcBH0EeKt5s2atPgyjg" association="_yviDABH1EeKt5s2atPgyjg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yvhb8RH1EeKt5s2atPgyjg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yvhb8hH1EeKt5s2atPgyjg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AZS-oDMDEeKVtdotENUEYQ" name="systemMenuPreferences" type="_ceBfkDMBEeKVtdotENUEYQ" association="_AZTlsDMDEeKVtdotENUEYQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZS-oTMDEeKVtdotENUEYQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZS-ojMDEeKVtdotENUEYQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_kpMgcGS1EeKagIGyh2nCfQ" name="adaptationPreferences">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kpMgcWS1EeKagIGyh2nCfQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kpMgcmS1EeKagIGyh2nCfQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4YhdsMEVEeGvZOBAjbmuGw" name="VisualPreferences">
+        <ownedAttribute xmi:id="_pgEmQMEWEeGvZOBAjbmuGw" name="brightness" type="_MqunEMEgEeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jr34AMEaEeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JqibQMEaEeGvZOBAjbmuGw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_wJ9YcMEjEeGvZOBAjbmuGw" name="contentContrast" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_y62ywMEjEeGvZOBAjbmuGw" name="screenSaverUsage" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_71BQUMHyEeGvZOBAjbmuGw" name="fontSize" type="_uzy1sMHyEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_YE0xIMH3EeGvZOBAjbmuGw" name="screenResolution" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_BMrfQMH4EeGvZOBAjbmuGw" name="dayNightMode" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_bwUKsBH0EeKt5s2atPgyjg" name="windowLayout" type="__oouUBHzEeKt5s2atPgyjg"/>
+        <ownedAttribute xmi:id="_bHCc0BH3EeKt5s2atPgyjg" name="fontFamily" type="_K8A_sBH3EeKt5s2atPgyjg"/>
+        <ownedAttribute xmi:id="_eOIEYBIJEeKt5s2atPgyjg" name="flashingResources" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_Oequ4DiKEeKznJCHJJGI_g" name="cursorSize" type="_uzy1sMHyEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_sjdhsGVMEeK_078F8lI7VA" name="brightness" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_JxFYkGi-EeOLIrxkqxM3xg" name="backgroundColor" type="_DJxYQGi8EeOLIrxkqxM3xg"/>
+        <ownedAttribute xmi:id="_cGUqgGi-EeOLIrxkqxM3xg" name="componentSpacing" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_jhNHsGi-EeOLIrxkqxM3xg" name="  fontColor" type="_DJxYQGi8EeOLIrxkqxM3xg"/>
+        <ownedAttribute xmi:id="_nSqnIGi-EeOLIrxkqxM3xg" name="highlightColor" type="_DJxYQGi8EeOLIrxkqxM3xg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CbO4wMEWEeGvZOBAjbmuGw" name="AuditoryPreferences">
+        <ownedAttribute xmi:id="_5n8V0MEjEeGvZOBAjbmuGw" name="volume" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_LDJocMEkEeGvZOBAjbmuGw" name="pitch" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_Q0DQEMEkEeGvZOBAjbmuGw" name="keySound" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_jaVQ0MH3EeGvZOBAjbmuGw" name="voiceGender" type="_o7LckMEuEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_I2KKoBHwEeKt5s2atPgyjg" name="speechRate" type="_MqunEMEgEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_-Jn4oGSzEeKagIGyh2nCfQ" name="systemSounds" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MqunEMEgEeGvZOBAjbmuGw" name="Intensity">
+        <ownedLiteral xmi:id="_ovIF8MEgEeGvZOBAjbmuGw" name="low"/>
+        <ownedLiteral xmi:id="_pdXE8MEgEeGvZOBAjbmuGw" name="medium"/>
+        <ownedLiteral xmi:id="_qGtj8MEgEeGvZOBAjbmuGw" name="high"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_n1MX0MEhEeGvZOBAjbmuGw" name="Status">
+        <ownedLiteral xmi:id="_oveOwMEhEeGvZOBAjbmuGw" name="on"/>
+        <ownedLiteral xmi:id="_pH9nQMEhEeGvZOBAjbmuGw" name="off"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ScPgcMElEeGvZOBAjbmuGw" name="GeneralInteractionPreferences">
+        <ownedAttribute xmi:id="_CYNtEMEuEeGvZOBAjbmuGw" name="preferredModality"/>
+        <ownedAttribute xmi:id="_Ldz_oMEuEeGvZOBAjbmuGw" name="secondaryModality"/>
+        <ownedAttribute xmi:id="_IuigYAIxEeK9UpjHgK1FlA" name="preferredLanguage"/>
+        <ownedAttribute xmi:id="_7ylf8AIzEeK9UpjHgK1FlA" name="secondaryLanguage"/>
+        <ownedAttribute xmi:id="_MxhlQBH2EeKt5s2atPgyjg" name="contentDensity" type="_OlGbsBH2EeKt5s2atPgyjg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7LckMEuEeGvZOBAjbmuGw" name="VoiceGender">
+        <ownedLiteral xmi:id="_qzMHEMEuEeGvZOBAjbmuGw" name="male"/>
+        <ownedLiteral xmi:id="_rPQ_EMEuEeGvZOBAjbmuGw" name="female"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PWILMMHBEeGvZOBAjbmuGw" name="AlertPreferences">
+        <ownedAttribute xmi:id="_bp97YMHBEeGvZOBAjbmuGw" name="alertOption" type="_SSz-wMHBEeGvZOBAjbmuGw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_SSz-wMHBEeGvZOBAjbmuGw" name="AlertType">
+        <ownedLiteral xmi:id="_V5E60MHBEeGvZOBAjbmuGw" name="visualOnly"/>
+        <ownedLiteral xmi:id="_YPweUMHBEeGvZOBAjbmuGw" name="audioOnly"/>
+        <ownedLiteral xmi:id="_ZG6v0MHBEeGvZOBAjbmuGw" name="visualAndAudio"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_grWxoMHBEeGvZOBAjbmuGw" name="uIPreferences_alertPreferences_1" memberEnd="_grWxocHBEeGvZOBAjbmuGw _grWKkMHBEeGvZOBAjbmuGw">
+        <ownedEnd xmi:id="_grWxocHBEeGvZOBAjbmuGw" name="uIPreferences" type="_VMoC28B0EeGsLP-h7_2yiw" association="_grWxoMHBEeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_grWxosHBEeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_grWxo8HBEeGvZOBAjbmuGw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_uzy1sMHyEeGvZOBAjbmuGw" name="Size">
+        <ownedLiteral xmi:id="_xfiDMMHyEeGvZOBAjbmuGw" name="small"/>
+        <ownedLiteral xmi:id="_yMjhQMHyEeGvZOBAjbmuGw" name="medium"/>
+        <ownedLiteral xmi:id="_zA9ZsMHyEeGvZOBAjbmuGw" name="large"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_q-jssMH2EeGvZOBAjbmuGw" name="uIPreferences_visualPreferences_1" memberEnd="_q-jsscH2EeGvZOBAjbmuGw _q-jFoMH2EeGvZOBAjbmuGw">
+        <ownedEnd xmi:id="_q-jsscH2EeGvZOBAjbmuGw" name="uIPreferences" type="_VMoC28B0EeGsLP-h7_2yiw" association="_q-jssMH2EeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q-jsssH2EeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q-jss8H2EeGvZOBAjbmuGw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tVyCwMH2EeGvZOBAjbmuGw" name="uIPreferences_audioPreferences_1" memberEnd="_tVyCwcH2EeGvZOBAjbmuGw _tVxbsMH2EeGvZOBAjbmuGw">
+        <ownedEnd xmi:id="_tVyCwcH2EeGvZOBAjbmuGw" name="uIPreferences" type="_VMoC28B0EeGsLP-h7_2yiw" association="_tVyCwMH2EeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tVyCwsH2EeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tVyCw8H2EeGvZOBAjbmuGw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tsTFUMH2EeGvZOBAjbmuGw" name="uIPreferences_interactionPreferences_1" memberEnd="_tsTFUcH2EeGvZOBAjbmuGw _tr0kMMH2EeGvZOBAjbmuGw">
+        <ownedEnd xmi:id="_tsTFUcH2EeGvZOBAjbmuGw" name="uIPreferences" type="_VMoC28B0EeGsLP-h7_2yiw" association="_tsTFUMH2EeGvZOBAjbmuGw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsTFUsH2EeGvZOBAjbmuGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsTFU8H2EeGvZOBAjbmuGw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="__oouUBHzEeKt5s2atPgyjg" name="WindowLayoutType">
+        <ownedLiteral xmi:id="_A-d40BH0EeKt5s2atPgyjg" name="tiled"/>
+        <ownedLiteral xmi:id="_D0bZUBH0EeKt5s2atPgyjg" name="overlap"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wnktcBH0EeKt5s2atPgyjg" name="AccessMode">
+        <ownedAttribute xmi:id="_FU7tUBH1EeKt5s2atPgyjg" name="visualModeStatus" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_KrpTUBH1EeKt5s2atPgyjg" name="auditoryModeStatus" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_M_C5UBH1EeKt5s2atPgyjg" name="tactileModeStatus" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_PzyR0BH1EeKt5s2atPgyjg" name="olfactoryModeStatus" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_dmw5gBH1EeKt5s2atPgyjg" name="textualModeStatus" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yviDABH1EeKt5s2atPgyjg" name="uIPreferences_accessMode_1" memberEnd="_yviDARH1EeKt5s2atPgyjg _yvhb8BH1EeKt5s2atPgyjg">
+        <ownedEnd xmi:id="_yviDARH1EeKt5s2atPgyjg" name="uIPreferences" type="_VMoC28B0EeGsLP-h7_2yiw" association="_yviDABH1EeKt5s2atPgyjg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yviDAhH1EeKt5s2atPgyjg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yviDAxH1EeKt5s2atPgyjg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_OlGbsBH2EeKt5s2atPgyjg" name="ContentDensityType">
+        <ownedLiteral xmi:id="_QQ6dQBH2EeKt5s2atPgyjg" name="overview"/>
+        <ownedLiteral xmi:id="_R50UwBH2EeKt5s2atPgyjg" name="detailed"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_K8A_sBH3EeKt5s2atPgyjg" name="GenericFontFamily">
+        <ownedLiteral xmi:id="_WOmHMBH3EeKt5s2atPgyjg" name="serif"/>
+        <ownedLiteral xmi:id="_W-bBoBH3EeKt5s2atPgyjg" name="sans-serif"/>
+        <ownedLiteral xmi:id="_X_grMBH3EeKt5s2atPgyjg" name="cursive"/>
+        <ownedLiteral xmi:id="_Y5fnMBH3EeKt5s2atPgyjg" name="fantasy"/>
+        <ownedLiteral xmi:id="_Z5qDsBH3EeKt5s2atPgyjg" name="monospace"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ceBfkDMBEeKVtdotENUEYQ" name="SystemMenuPreferences">
+        <ownedAttribute xmi:id="_gHReMDMBEeKVtdotENUEYQ" name="  uiRequestPersistance" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_hnLKsDMBEeKVtdotENUEYQ" name="mainMenuConfiguration" type="_pWXrADMBEeKVtdotENUEYQ"/>
+        <ownedAttribute xmi:id="_ozubgDMCEeKVtdotENUEYQ" name="searchFeatureIsFirst" type="_n1MX0MEhEeGvZOBAjbmuGw"/>
+        <ownedAttribute xmi:id="_LdFjgDimEeKznJCHJJGI_g" name="pendingMessageBuilder" type="_mqE2EDiiEeKznJCHJJGI_g"/>
+        <ownedAttribute xmi:id="_RhXaIDimEeKznJCHJJGI_g" name="pendingDialogBuilder" type="_vmRKcDihEeKznJCHJJGI_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWXrADMBEeKVtdotENUEYQ" name="MainMenuConfigurationType">
+        <ownedLiteral xmi:id="_tK5skDMBEeKVtdotENUEYQ" name="classic"/>
+        <ownedLiteral xmi:id="_upg_oDMBEeKVtdotENUEYQ" name="smart"/>
+        <ownedLiteral xmi:id="_87WtkDMBEeKVtdotENUEYQ" name="taskBar"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AZTlsDMDEeKVtdotENUEYQ" name="uIPreferences_systemMenuPreferences_1" memberEnd="_AZTlsTMDEeKVtdotENUEYQ _AZS-oDMDEeKVtdotENUEYQ">
+        <ownedEnd xmi:id="_AZTlsTMDEeKVtdotENUEYQ" name="uIPreferences" type="_VMoC28B0EeGsLP-h7_2yiw" association="_AZTlsDMDEeKVtdotENUEYQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZTlsjMDEeKVtdotENUEYQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZTlszMDEeKVtdotENUEYQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_vmRKcDihEeKznJCHJJGI_g" name="PendingDialogsBuilderType">
+        <ownedLiteral xmi:id="_wl_iEDihEeKznJCHJJGI_g" name="table"/>
+        <ownedLiteral xmi:id="_-uefsDihEeKznJCHJJGI_g" name="buttons"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_mqE2EDiiEeKznJCHJJGI_g" name="PendingMessageBuilderType">
+        <ownedLiteral xmi:id="_UiRmYDimEeKznJCHJJGI_g" name="simpleTable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_DJxYQGi8EeOLIrxkqxM3xg" name="ColorType">
+        <ownedLiteral xmi:id="_NY9wIGi8EeOLIrxkqxM3xg" name="black"/>
+        <ownedLiteral xmi:id="_OJKeAGi8EeOLIrxkqxM3xg" name="lightGray"/>
+        <ownedLiteral xmi:id="_PMaqwGi8EeOLIrxkqxM3xg" name="darkGray"/>
+        <ownedLiteral xmi:id="_QsFGsGi8EeOLIrxkqxM3xg" name="lightBlue"/>
+        <ownedLiteral xmi:id="_SM71cGi8EeOLIrxkqxM3xg" name="darkBlue"/>
+        <ownedLiteral xmi:id="_TTdYoGi8EeOLIrxkqxM3xg" name="lightGreen"/>
+        <ownedLiteral xmi:id="_U4e1sGi8EeOLIrxkqxM3xg" name="darkGreen"/>
+        <ownedLiteral xmi:id="_Vlj-IGi8EeOLIrxkqxM3xg" name="orange"/>
+        <ownedLiteral xmi:id="_WhOVIGi8EeOLIrxkqxM3xg" name="yellow"/>
+        <ownedLiteral xmi:id="_XeOv8Gi8EeOLIrxkqxM3xg" name="cyan"/>
+        <ownedLiteral xmi:id="_ZG0eYGi8EeOLIrxkqxM3xg" name="purple"/>
+        <ownedLiteral xmi:id="_Z2b9cGi8EeOLIrxkqxM3xg" name="magenta"/>
+        <ownedLiteral xmi:id="_amC1cGi8EeOLIrxkqxM3xg" name="pink"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_VMoC3cB0EeGsLP-h7_2yiw">
+      <eAnnotations xmi:id="_VMoC3sB0EeGsLP-h7_2yiw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_VMoC38B0EeGsLP-h7_2yiw">
+      <eAnnotations xmi:id="_VMoC4MB0EeGsLP-h7_2yiw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_VMoC4cB0EeGsLP-h7_2yiw" defaultNamespace="http://uipreferences.profile.ont/interactionpreferences" base_Package="_VMoC1sB0EeGsLP-h7_2yiw" versionInfo="1.1.6-SNAPSHOT"/>
+  <OWL:datatypeProperty xmi:id="_pgJewMEWEeGvZOBAjbmuGw" base_Property="_pgEmQMEWEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_wKCQ8MEjEeGvZOBAjbmuGw" base_Property="_wJ9YcMEjEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_y67EMMEjEeGvZOBAjbmuGw" base_Property="_y62ywMEjEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_5oAnQMEjEeGvZOBAjbmuGw" base_Property="_5n8V0MEjEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_LDPIAMEkEeGvZOBAjbmuGw" base_Property="_LDJocMEkEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_Q0IIkMEkEeGvZOBAjbmuGw" base_Property="_Q0DQEMEkEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_CYWP8MEuEeGvZOBAjbmuGw" base_Property="_CYNtEMEuEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_Ld77cMEuEeGvZOBAjbmuGw" base_Property="_Ldz_oMEuEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_bqSrgMHBEeGvZOBAjbmuGw" base_Property="_bp97YMHBEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_72oZ4MHyEeGvZOBAjbmuGw" base_Property="_71BQUMHyEeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_YE8s8MH3EeGvZOBAjbmuGw" base_Property="_YE0xIMH3EeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_jaclkMH3EeGvZOBAjbmuGw" base_Property="_jaVQ0MH3EeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_BMy0AMH4EeGvZOBAjbmuGw" base_Property="_BMrfQMH4EeGvZOBAjbmuGw" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_I9oFQAIxEeK9UpjHgK1FlA" base_Property="_IuigYAIxEeK9UpjHgK1FlA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_7yqYcAIzEeK9UpjHgK1FlA" base_Property="_7ylf8AIzEeK9UpjHgK1FlA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_JS8NQBHwEeKt5s2atPgyjg" base_Property="_I2KKoBHwEeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_bwYcIBH0EeKt5s2atPgyjg" base_Property="_bwUKsBH0EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_KrtkwBH1EeKt5s2atPgyjg" base_Property="_KrpTUBH1EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_M_Hx0BH1EeKt5s2atPgyjg" base_Property="_M_C5UBH1EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_Pz2jQBH1EeKt5s2atPgyjg" base_Property="_PzyR0BH1EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_XAlPsBH1EeKt5s2atPgyjg" base_Property="_FU7tUBH1EeKt5s2atPgyjg"/>
+  <OWL:objectProperty xmi:id="_dm0j4BH1EeKt5s2atPgyjg" base_Property="_dmw5gBH1EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_Mxl2sBH2EeKt5s2atPgyjg" base_Property="_MxhlQBH2EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_bHGHMBH3EeKt5s2atPgyjg" base_Property="_bHCc0BH3EeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_eOMV0BIJEeKt5s2atPgyjg" base_Property="_eOIEYBIJEeKt5s2atPgyjg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_gHWWsDMBEeKVtdotENUEYQ" base_Property="_gHReMDMBEeKVtdotENUEYQ" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_hnQDMDMBEeKVtdotENUEYQ" base_Property="_hnLKsDMBEeKVtdotENUEYQ" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_ozys8DMCEeKVtdotENUEYQ" base_Property="_ozubgDMCEeKVtdotENUEYQ" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_OfPWoDiKEeKznJCHJJGI_g" base_Property="_Oequ4DiKEeKznJCHJJGI_g" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_LdLqIjimEeKznJCHJJGI_g" base_Property="_LdFjgDimEeKznJCHJJGI_g" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_RhdgwDimEeKznJCHJJGI_g" base_Property="_RhXaIDimEeKznJCHJJGI_g" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_-UBKwGSzEeKagIGyh2nCfQ" base_Property="_-Jn4oGSzEeKagIGyh2nCfQ" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_sj8C0GVMEeK_078F8lI7VA" base_Property="_sjdhsGVMEeK_078F8lI7VA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_JxYTgGi-EeOLIrxkqxM3xg" base_Property="_JxFYkGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_cGebgmi-EeOLIrxkqxM3xg" base_Property="_cGUqgGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_jhNHs2i-EeOLIrxkqxM3xg" base_Property="_jhNHsGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_nS0YIGi-EeOLIrxkqxM3xg" base_Property="_nSqnIGi-EeOLIrxkqxM3xg" isFunctional="true"/>
+</xmi:XMI>
