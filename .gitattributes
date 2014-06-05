@@ -347,6 +347,16 @@ ont.measurement/src/main/java/org/universAAL/ontology/measurement/MeasurementOnt
 ont.measurement/src/main/java/org/universAAL/ontology/measurement/Signal.java -text
 ont.measurement/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.measurement/src/test/resources/log4j.properties -text
+ont.multimedia/ASL2.0.txt -text
+ont.multimedia/NOTICE.txt -text
+ont.multimedia/pom.xml -text
+ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaActivator.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/MultimediaFactory.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/MultimediaOntology.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/Stereoset.java -text
+ont.multimedia/src/main/java/org/universAAL/ontology/multimedia/TV.java -text
+ont.multimedia/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.multimedia/src/test/resources/log4j.properties -text
 ont.phWorld/ASL2.0.txt -text
 ont.phWorld/NOTICE.txt -text
 ont.phWorld/documentation/ont.phWorld.location[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
