@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <notation:Diagram xmi:id="_Pgt64EgNEeGln-1l2BqQlw" type="PapyrusUMLClassDiagram" name="Ontology root diagram" measurementUnit="Pixel">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt64UgNEeGln-1l2BqQlw" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt64kgNEeGln-1l2BqQlw" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt640gNEeGln-1l2BqQlw" key="StereotypeList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt65EgNEeGln-1l2BqQlw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt65UgNEeGln-1l2BqQlw" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt65kgNEeGln-1l2BqQlw" key="StereotypePropertyLocation" value="Comment"/>
+    </eAnnotations>
+    <children xmi:type="notation:Shape" xmi:id="_Pgt650gNEeGln-1l2BqQlw" type="2007" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt66EgNEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt66UgNEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt66kgNEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt660gNEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt67EgNEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt67UgNEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pgt67kgNEeGln-1l2BqQlw" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pgt670gNEeGln-1l2BqQlw" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt68EgNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt68UgNEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Package" href="HealthOntology.uml#_UB4q5kgLEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt68kgNEeGln-1l2BqQlw" x="145" y="77"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Pgt680gNEeGln-1l2BqQlw" type="2012" fontName="Times New Roman" fontHeight="11" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt69EgNEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt69UgNEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt69kgNEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt690gNEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt6-EgNEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt6-UgNEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt6-kgNEeGln-1l2BqQlw" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt6-0gNEeGln-1l2BqQlw" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt6_EgNEeGln-1l2BqQlw" key="StereotypeList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt6_UgNEeGln-1l2BqQlw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt6_kgNEeGln-1l2BqQlw" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt6_0gNEeGln-1l2BqQlw" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pgt7AEgNEeGln-1l2BqQlw" type="5038">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7AUgNEeGln-1l2BqQlw" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7AkgNEeGln-1l2BqQlw" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7A0gNEeGln-1l2BqQlw" key="StereotypeList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7BEgNEeGln-1l2BqQlw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7BUgNEeGln-1l2BqQlw" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7BkgNEeGln-1l2BqQlw" key="StereotypePropertyLocation" value="With brace"/>
+        </eAnnotations>
+      </children>
+      <element xmi:type="uml:Comment" href="HealthOntology.uml#_UB4q4UgLEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7B0gNEeGln-1l2BqQlw" x="126" y="225" width="310" height="115"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Pgt7CEgNEeGln-1l2BqQlw"/>
+    <element xmi:type="uml:Model" href="HealthOntology.uml#_UB4q4EgLEeGln-1l2BqQlw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_Pgt7CUgNEeGln-1l2BqQlw" type="4013" source="_Pgt680gNEeGln-1l2BqQlw" target="_Pgt650gNEeGln-1l2BqQlw" lineColor="0">
+      <styles xmi:type="notation:FontStyle" xmi:id="_Pgt7CkgNEeGln-1l2BqQlw" fontName="Lucida Grande" fontHeight="11"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pgt7C0gNEeGln-1l2BqQlw" points="[-15, -60, 25, 137]$[-44, -147, -4, 50]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pgt7DEgNEeGln-1l2BqQlw" id="(0.36451612903225805,0.017391304347826087)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_Pgt7DUgNEeGln-1l2BqQlw" type="PapyrusUMLClassDiagram" name="Ontology overview" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_Pgt7PkgNEeGln-1l2BqQlw" type="2008" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7P0gNEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7QEgNEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7QUgNEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7QkgNEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7Q0gNEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7REgNEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pgt7RUgNEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Pgt7RkgNEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt7R0gNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Pgt7SEgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Pgt7SUgNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7SkgNEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Pgt7S0gNEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt7TEgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Pgt7TUgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Pgt7TkgNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7T0gNEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Pgt7UEgNEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt7UUgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Pgt7UkgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Pgt7U0gNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7VEgNEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7VUgNEeGln-1l2BqQlw" x="205" y="5" width="136"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Pgt7j0gNEeGln-1l2BqQlw" type="2008" fontName="Lucida Grande" fontHeight="11" fillColor="12621752" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7kEgNEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7kUgNEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7kkgNEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7k0gNEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pgt7lEgNEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pgt7lUgNEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pgt7lkgNEeGln-1l2BqQlw" type="5029">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1C7_EEgNEeGln-1l2BqQlw" source="Stereotype_Annotation">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1C7_EUgNEeGln-1l2BqQlw" key="StereotypeWithQualifiedNameList" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1C7_EkgNEeGln-1l2BqQlw" key="StereotypeList" value="OWL::owlAnnotation"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1C7_E0gNEeGln-1l2BqQlw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1C7_FEgNEeGln-1l2BqQlw" key="PropStereoDisplay" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1C7_FUgNEeGln-1l2BqQlw" key="StereotypePropertyLocation" value="Compartment"/>
+        </eAnnotations>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Pgt7l0gNEeGln-1l2BqQlw" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_5FgAIEgOEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7HS4wEgOEeGln-1l2BqQlw" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6V_gE5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6V_gU5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6V_gk5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6WmkE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6WmkU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_5FW2MEgOEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_5FgAIUgOEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_yFSTcEgTEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kG__4E5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kHAm8E5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kHAm8U5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kHAm8k5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kHAm805DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kHAm9E5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_yE3csEgTEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_yFSTcUgTEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_7WPhcEgTEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lbz2sE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lbz2sU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lbz2sk5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lbz2s05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lbz2tE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lbz2tU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_7WCGEEgTEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_7WPhcUgTEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_NmNm8EgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WlsIQE5JEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WlsIQU5JEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WlsIQk5JEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WlsIQ05JEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WlsvUE5JEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WlsvUU5JEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_Nl_kgEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_NmNm8UgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_0Z44sEgmEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oX3YIE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oX3YIU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oX3YIk5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oX3_ME5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oX3_MU5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oX3_Mk5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_0ZpoIEgmEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0Z44sUgmEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_MO1WQE5WEeGa-8f5rfYssQ" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MPWToE5WEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPWToU5WEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPW6sE5WEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPW6sU5WEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPW6sk5WEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MPW6s05WEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_MMt2YE5WEeGa-8f5rfYssQ"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_MO1WQU5WEeGa-8f5rfYssQ"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt7mEgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Pgt7mUgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Pgt7mkgNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7m0gNEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Pgt7nEgNEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt7nUgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Pgt7nkgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Pgt7n0gNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7oEgNEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Pgt7oUgNEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Pgt7okgNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Pgt7o0gNEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Pgt7pEgNEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7pUgNEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_UB4q7UgLEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgt7pkgNEeGln-1l2BqQlw" x="100" y="170"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Qr53cEgUEeGln-1l2BqQlw" type="2006" fontName="Segoe UI" fillColor="8905185" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qr6egEgUEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qr6egUgUEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qr6egkgUEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qr6eg0gUEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qr6ehEgUEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qr6ehUgUEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Qr6ehkgUEeGln-1l2BqQlw" type="5023"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Qr6eh0gUEeGln-1l2BqQlw" type="7015">
+        <children xmi:type="notation:Shape" xmi:id="_lOmfcEgUEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_lOX18EgUEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lOmfcUgUEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_dDY8EEgVEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_dDK5oEgVEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dDY8EUgVEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_fBpYgEgVEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_fBb9IEgVEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_fBpYgUgVEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gV-HIEgVEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_gVu2kEgVEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gV-HIUgVEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Qr6eiEgUEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Qr6eiUgUEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Qr6eikgUEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qr6ei0gUEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Enumeration" href="HealthOntology.uml#_Qrj5MEgUEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qr53cUgUEeGln-1l2BqQlw" x="500" y="10" width="145"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_iDhOEEgVEeGln-1l2BqQlw" type="2006" fontName="Segoe UI" fillColor="8905185" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iDh1IEgVEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iDh1IUgVEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iDh1IkgVEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iDh1I0gVEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iDh1JEgVEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iDh1JUgVEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_iDh1JkgVEeGln-1l2BqQlw" type="5023"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_iDh1J0gVEeGln-1l2BqQlw" type="7015">
+        <children xmi:type="notation:Shape" xmi:id="_j6jBIEgVEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_j6YCAEgVEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_j6jBIUgVEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__-zWEEgVEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#__-l6sEgVEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__-zWEUgVEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_D9jDkEgWEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_D9VBIEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_D9jDkUgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_FxDBgEgWEeGln-1l2BqQlw" type="3017" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:EnumerationLiteral" href="HealthOntology.uml#_Fw0_EEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_FxDBgUgWEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_iDh1KEgVEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_iDh1KUgVEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_iDh1KkgVEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iDh1K0gVEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Enumeration" href="HealthOntology.uml#_iDSkkEgVEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iDhOEUgVEeGln-1l2BqQlw" x="660" y="10"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_mOu00EgWEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mOvb4EgWEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mOvb4UgWEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mOvb4kgWEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mOwC8EgWEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mOwC8UgWEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mOwC8kgWEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_mOwC80gWEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_mOwC9EgWEeGln-1l2BqQlw" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_sqR78EgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_sqIyAEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_sqR78UgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_uqh8cEgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_uqUhEEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_uqh8cUgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xfuA4EgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_xfglgEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xfuA4UgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_0ersYEgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_0edC4EgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0ersYUgWEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_mOwC9UgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_mOwC9kgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_mOwC90gWEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mOwC-EgWEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_mOwC-UgWEeGln-1l2BqQlw" visible="false" type="7018" collapsed="true">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_mOwC-kgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_mOwC-0gWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_mOwC_EgWEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mOwC_UgWEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_mOwC_kgWEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_mOwC_0gWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_mOwDAEgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_mOwDAUgWEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mOwDAkgWEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_mOjOoEgWEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mOu00UgWEeGln-1l2BqQlw" x="615" y="160" width="143"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_4Ty8wEgWEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4Tzj0EgWEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4Tzj0UgWEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4Tzj0kgWEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4Tzj00gWEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4Tzj1EgWEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4Tzj1UgWEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_4Tzj1kgWEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_4Tzj10gWEeGln-1l2BqQlw" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_9zF3AEgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_9y6Q0EgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9zF3AUgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__kMBMEgWEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#__j9-wEgWEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__kMBMUgWEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_A-v6sEgXEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_A-h4QEgXEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_A-v6sUgXEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_FFDowEgXEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q4fh0E5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q4fh0U5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q4fh0k5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q4fh005DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q4fh1E5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q4fh1U5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_FE0_QEgXEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_FFDowUgXEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4Tzj2EgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4T0K4EgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4T0K4UgWEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4T0K4kgWEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_4T0K40gWEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4T0K5EgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4T0K5UgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4T0K5kgWEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4T0K50gWEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_4T0K6EgWEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4T0K6UgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4T0K6kgWEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4T0K60gWEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4T0K7EgWEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_4Tk6UEgWEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4Ty8wUgWEeGln-1l2BqQlw" x="865" y="165"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_KJWyoEgjEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="12621752" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJXZsEgjEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJXZsUgjEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJYAwEgjEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJYAwUgjEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJYAwkgjEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KJYAw0gjEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_KJYAxEgjEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_KJYAxUgjEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_KJYAxkgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_KJYAx0gjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_KJYAyEgjEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KJYAyUgjEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_KJYAykgjEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_KJYAy0gjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_KJYAzEgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_KJYAzUgjEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KJYAzkgjEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_KJYn0EgjEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_KJYn0UgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_KJYn0kgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_KJYn00gjEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KJYn1EgjEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_KJJ-UEgjEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KJWyoUgjEeGln-1l2BqQlw" x="-45" y="330" width="149"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_X8fyYEgjEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="12621752" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X8gZcEgjEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X8gZcUgjEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X8gZckgjEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X8gZc0gjEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X8gZdEgjEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X8gZdUgjEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_X8gZdkgjEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_X8gZd0gjEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_X8gZeEgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_X8gZeUgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_X8gZekgjEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X8gZe0gjEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_X8gZfEgjEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_X8gZfUgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_X8gZfkgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_X8gZf0gjEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X8gZgEgjEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_X8gZgUgjEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_X8gZgkgjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_X8gZg0gjEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_X8gZhEgjEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X8gZhUgjEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_X8S-EEgjEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X8fyYUgjEeGln-1l2BqQlw" x="-20" y="465"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Ogc5QEgkEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OgdgUEgkEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OgdgUUgkEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OgeHYEgkEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OgeHYUgkEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OgeHYkgkEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OgeHY0gkEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_OgeHZEgkEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_OgeHZUgkEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_OgeHZkgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_OgeHZ0gkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_OgeHaEgkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OgeHaUgkEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_OgeHakgkEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_OgeHa0gkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_OgeHbEgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_OgeHbUgkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OgeHbkgkEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_OgeucEgkEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_OgeucUgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_OgeuckgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Ogeuc0gkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OgeudEgkEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_OgO20EgkEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ogc5QUgkEeGln-1l2BqQlw" x="320" y="565" width="209"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_VYCcIEgkEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VYDDMEgkEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VYDDMUgkEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VYDDMkgkEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VYDDM0gkEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VYDDNEgkEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VYDDNUgkEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_VYDDNkgkEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_VYDDN0gkEeGln-1l2BqQlw" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_LyDj4EglEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xex5UE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xex5UU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xex5Uk5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xex5U05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xex5VE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xex5VU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_Lx2IgEglEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_LyDj4UglEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_XC3w0EglEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ytE4cE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ytE4cU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ytFfgE5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ytFfgU5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ytFfgk5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ytFfg05DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_XCpuYEglEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_XC3w0UglEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_VYDDOEgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_VYDDOUgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_VYDDOkgkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYDDO0gkEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_VYDqQEgkEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_VYDqQUgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_VYDqQkgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_VYDqQ0gkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYDqREgkEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_VYDqRUgkEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_VYDqRkgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_VYDqR0gkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_VYDqSEgkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYDqSUgkEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_VX1AwEgkEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYCcIUgkEeGln-1l2BqQlw" x="5" y="715" width="276"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_XpxOMEgkEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xpx1QEgkEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Xpx1QUgkEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xpx1QkgkEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Xpx1Q0gkEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xpx1REgkEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XpycUEgkEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_XpycUUgkEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_XpycUkgkEeGln-1l2BqQlw" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_JsVYEEgmEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2sEdkE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2sFEoE5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2sFEoU5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2sFEok5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2sFEo05DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2sFEpE5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_JsH8sEgmEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_JsVYEUgmEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_T-e9UEgmEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3v-KkE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3v-KkU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3v-Kkk5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3v-Kk05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3v-KlE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3v-KlU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_T-N3kEgmEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_T-e9UUgmEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_W_xkEEgmEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4yqWoE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4yqWoU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4yqWok5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4yqWo05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4yq9sE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4yq9sU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_W_hscEgmEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_W_xkEUgmEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_dQ1ScEgmEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6BW-YE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6BW-YU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6BW-Yk5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6BW-Y05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6BW-ZE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6BW-ZU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_dQhJYEgmEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dQ1ScUgmEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_XpycU0gkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_XpycVEgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_XpycVUgkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XpycVkgkEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_XpycV0gkEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_XpycWEgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_XpycWUgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_XpycWkgkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XpycW0gkEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_XpycXEgkEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_XpycXUgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_XpycXkgkEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_XpycX0gkEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XpycYEgkEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_XpiksEgkEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XpxOMUgkEeGln-1l2BqQlw" x="355" y="710" width="166"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ididUEglEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_idjEYEglEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_idjEYUglEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_idjEYkglEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_idjEY0glEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_idjEZEglEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_idjEZUglEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_idjEZkglEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_idjrcEglEeGln-1l2BqQlw" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_lx1foEglEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7Y5ZEE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y6AIE5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y6AIU5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y6AIk5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y6AI05DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Y6AJE5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_lxm2IEglEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lx1foUglEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mGHtkEglEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8O2JoE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8O2JoU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8O2Jok5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8O2Jo05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8O2JpE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8O2JpU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_mF5rIEglEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_mGHtkUglEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ngLQwEglEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9NPEgE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9NPEgU5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9NPEgk5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9NPEg05DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9NPEhE5DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9NPEhU5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_nf8AMEglEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ngLQwUglEeGln-1l2BqQlw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_n1TzQEglEeGln-1l2BqQlw" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-BsAQE5DEeGa-8f5rfYssQ" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-BsnUE5DEeGa-8f5rfYssQ" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-BsnUU5DEeGa-8f5rfYssQ" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-BsnUk5DEeGa-8f5rfYssQ" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-BsnU05DEeGa-8f5rfYssQ" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-BsnVE5DEeGa-8f5rfYssQ" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="HealthOntology.uml#_n0_DIEglEeGln-1l2BqQlw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_n1TzQUglEeGln-1l2BqQlw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_idjrcUglEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_idjrckglEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_idjrc0glEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_idjrdEglEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_idjrdUglEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_idjrdkglEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_idjrd0glEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_idjreEglEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_idjreUglEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_idjrekglEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_idjre0glEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_idjrfEglEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_idjrfUglEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_idjrfkglEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_idSlsEglEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ididUUglEeGln-1l2BqQlw" x="555" y="700" width="251"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_63vF4EgmEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="8047085" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_63vs8EgmEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_63wUAEgmEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_63wUAUgmEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_63wUAkgmEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_63wUA0gmEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_63wUBEgmEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_63wUBUgmEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_63wUBkgmEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_63wUB0gmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_63wUCEgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_63wUCUgmEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_63wUCkgmEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_63wUC0gmEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_63wUDEgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_63wUDUgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_63wUDkgmEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_63wUD0gmEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_63w7EEgmEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_63w7EUgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_63w7EkgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_63w7E0gmEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_63w7FEgmEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_63bj4EgmEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_63vF4UgmEeGln-1l2BqQlw" x="510" y="345"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_-q7DoEgmEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="10265827" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-q7qsUgmEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-q8RwEgmEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-q8RwUgmEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-q8RwkgmEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-q8Rw0gmEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-q8RxEgmEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-q8RxUgmEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_-q840EgmEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_-q840UgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-q840kgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-q8400gmEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-q841EgmEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_-q841UgmEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_-q841kgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-q8410gmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-q842EgmEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-q842UgmEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_-q842kgmEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_-q8420gmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-q843EgmEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-q843UgmEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-q843kgmEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_-qpW0EgmEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-q7qsEgmEeGln-1l2BqQlw" x="-30" y="5"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_AJfTYEgnEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="10265827" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AJf6cEgnEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AJf6cUgnEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AJghgEgnEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AJghgUgnEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AJghgkgnEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AJghg0gnEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_AJghhEgnEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_AJghhUgnEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_AJghhkgnEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_AJghh0gnEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_AJghiEgnEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJghiUgnEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_AJghikgnEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_AJghi0gnEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_AJghjEgnEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_AJghjUgnEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJghjkgnEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_AJhIkEgnEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_AJhIkUgnEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_AJhIkkgnEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_AJhIk0gnEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJhIlEgnEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_AJM_gEgnEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJfTYUgnEeGln-1l2BqQlw" x="-350" y="195" width="126"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_JZXpsEgvEeGln-1l2BqQlw" type="2008" fontName="Segoe UI" fillColor="10265827" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZY30EgvEeGln-1l2BqQlw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JZY30UgvEeGln-1l2BqQlw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZZe4EgvEeGln-1l2BqQlw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JZZe4UgvEeGln-1l2BqQlw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZZe4kgvEeGln-1l2BqQlw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JZZe40gvEeGln-1l2BqQlw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_JZZe5EgvEeGln-1l2BqQlw" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JZZe5UgvEeGln-1l2BqQlw" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JZZe5kgvEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JZZe50gvEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JZZe6EgvEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JZZe6UgvEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JZaF8EgvEeGln-1l2BqQlw" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JZaF8UgvEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JZaF8kgvEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JZaF80gvEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JZaF9EgvEeGln-1l2BqQlw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JZaF9UgvEeGln-1l2BqQlw" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JZaF9kgvEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JZaF90gvEeGln-1l2BqQlw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JZaF-EgvEeGln-1l2BqQlw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JZaF-UgvEeGln-1l2BqQlw"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_JY5IkEgvEeGln-1l2BqQlw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JZYQwEgvEeGln-1l2BqQlw" x="940" y="370"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_DFjtkEs1EeGZRfVWeTuYVQ" type="2008" fontName="Segoe UI" fillColor="12621752" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DFk7sEs1EeGZRfVWeTuYVQ" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DFk7sUs1EeGZRfVWeTuYVQ" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DFliwEs1EeGZRfVWeTuYVQ" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DFliwUs1EeGZRfVWeTuYVQ" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DFliwks1EeGZRfVWeTuYVQ" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DFliw0s1EeGZRfVWeTuYVQ" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DFmJ0Es1EeGZRfVWeTuYVQ" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DFmJ0Us1EeGZRfVWeTuYVQ" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DFmJ0ks1EeGZRfVWeTuYVQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DFmJ00s1EeGZRfVWeTuYVQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DFmJ1Es1EeGZRfVWeTuYVQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DFmJ1Us1EeGZRfVWeTuYVQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DFmJ1ks1EeGZRfVWeTuYVQ" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DFmJ10s1EeGZRfVWeTuYVQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DFmJ2Es1EeGZRfVWeTuYVQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DFmJ2Us1EeGZRfVWeTuYVQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DFmJ2ks1EeGZRfVWeTuYVQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DFmJ20s1EeGZRfVWeTuYVQ" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DFmJ3Es1EeGZRfVWeTuYVQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DFmJ3Us1EeGZRfVWeTuYVQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DFmJ3ks1EeGZRfVWeTuYVQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DFmJ30s1EeGZRfVWeTuYVQ"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_DE9QoEs1EeGZRfVWeTuYVQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DFjtkUs1EeGZRfVWeTuYVQ" x="195" y="405" width="161"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_PC9zcEzlEeGy1eg-wb-CuQ" type="2008" fontName="Segoe UI" fillColor="10265827" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PC9zckzlEeGy1eg-wb-CuQ" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PC9zc0zlEeGy1eg-wb-CuQ" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PC9zdEzlEeGy1eg-wb-CuQ" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PC9zdUzlEeGy1eg-wb-CuQ" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PC9zdkzlEeGy1eg-wb-CuQ" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PC9zd0zlEeGy1eg-wb-CuQ" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PC9zeEzlEeGy1eg-wb-CuQ" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_PC9zeUzlEeGy1eg-wb-CuQ" visible="false" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_PC9zekzlEeGy1eg-wb-CuQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_PC9ze0zlEeGy1eg-wb-CuQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_PC9zfEzlEeGy1eg-wb-CuQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PC9zfUzlEeGy1eg-wb-CuQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_PC9zfkzlEeGy1eg-wb-CuQ" visible="false" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_PC9zf0zlEeGy1eg-wb-CuQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_PC9zgEzlEeGy1eg-wb-CuQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_PC9zgUzlEeGy1eg-wb-CuQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PC9zgkzlEeGy1eg-wb-CuQ"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_PC9zg0zlEeGy1eg-wb-CuQ" visible="false" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_PC9zhEzlEeGy1eg-wb-CuQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_PC9zhUzlEeGy1eg-wb-CuQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_PC9zhkzlEeGy1eg-wb-CuQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PC9zh0zlEeGy1eg-wb-CuQ"/>
+      </children>
+      <element xmi:type="uml:Class" href="HealthOntology.uml#_PCOMkEzlEeGy1eg-wb-CuQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PC9zcUzlEeGy1eg-wb-CuQ" x="-110" y="195"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Pgt7sEgNEeGln-1l2BqQlw"/>
+    <element xmi:type="uml:Package" href="HealthOntology.uml#_UB4q5kgLEeGln-1l2BqQlw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_Pg3r8UgNEeGln-1l2BqQlw" type="4002" source="_Pgt7j0gNEeGln-1l2BqQlw" target="_Pgt7PkgNEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Pg3r8kgNEeGln-1l2BqQlw" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Pg3r80gNEeGln-1l2BqQlw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Pg3r9EgNEeGln-1l2BqQlw" fontName="Lucida Grande" fontHeight="11"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_UB4q7kgLEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg3r9UgNEeGln-1l2BqQlw" points="[4, -13, 0, 94]$[2, -91, -2, 16]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg3r9kgNEeGln-1l2BqQlw" id="(0.45,0.13)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg3r90gNEeGln-1l2BqQlw" id="(0.4715447154471545,0.84)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_U4oYwEgjEeGln-1l2BqQlw" type="4002" source="_KJWyoEgjEeGln-1l2BqQlw" target="_Pgt7j0gNEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_U4pm4EgjEeGln-1l2BqQlw" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4pm4UgjEeGln-1l2BqQlw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_U4oYwUgjEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_U4eAsEgjEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U4oYwkgjEeGln-1l2BqQlw" points="[3, 0, -176, 26]$[104, 0, -75, 26]$[172, -23, -7, 3]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U4_lIEgjEeGln-1l2BqQlw" id="(0.9798657718120806,0.19)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U4_lIUgjEeGln-1l2BqQlw" id="(0.07450980392156863,0.9487179487179487)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_x3FWAEgsEeGln-1l2BqQlw" type="4002" source="_X8fyYEgjEeGln-1l2BqQlw" target="_KJWyoEgjEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_x3F9EEgsEeGln-1l2BqQlw" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_x3F9EUgsEeGln-1l2BqQlw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_x3FWAUgsEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_x20QQEgsEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x3FWAkgsEeGln-1l2BqQlw" points="[-7, -98, 0, 32]$[-8, -128, -1, 2]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x3ha4EgsEeGln-1l2BqQlw" id="(0.48,0.98)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x3ha4UgsEeGln-1l2BqQlw" id="(0.40939597315436244,0.98)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_W_4NkEgtEeGln-1l2BqQlw" type="4001" source="_Pgt7j0gNEeGln-1l2BqQlw" target="_mOu00EgWEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_W_40oEgtEeGln-1l2BqQlw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W_40oUgtEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_W_5bsEgtEeGln-1l2BqQlw" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W_5bsUgtEeGln-1l2BqQlw" x="-1" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_W_5bskgtEeGln-1l2BqQlw" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W_5bs0gtEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_W_5btEgtEeGln-1l2BqQlw" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W_5btUgtEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_W_5btkgtEeGln-1l2BqQlw" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W_5bt0gtEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_W_6CwEgtEeGln-1l2BqQlw" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W_6CwUgtEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W_4NkUgtEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_W_lSoEgtEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W_4NkkgtEeGln-1l2BqQlw" points="[1, -8, -221, 0]$[166, -8, -56, 0]$[221, -8, -1, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XAYj4EgtEeGln-1l2BqQlw" id="(0.996078431372549,0.33974358974358976)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XAYj4UgtEeGln-1l2BqQlw" id="(0.006993006993006993,0.39568345323741005)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_bD5coEgtEeGln-1l2BqQlw" type="4002" source="_VYCcIEgkEeGln-1l2BqQlw" target="_Ogc5QEgkEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bD5co0gtEeGln-1l2BqQlw" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bD5cpEgtEeGln-1l2BqQlw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bD5coUgtEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_bDqzIEgtEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bD5cokgtEeGln-1l2BqQlw" points="[46, -107, -42, 96]$[86, -202, -2, 1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bEWvoEgtEeGln-1l2BqQlw" id="(0.48872180451127817,0.981651376146789)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bEWvoUgtEeGln-1l2BqQlw" id="(0.15789473684210525,0.99)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_frYlIEgtEeGln-1l2BqQlw" type="4002" source="_XpxOMEgkEeGln-1l2BqQlw" target="_Ogc5QEgkEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_frZzQEgtEeGln-1l2BqQlw" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_frZzQUgtEeGln-1l2BqQlw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_frYlIUgtEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_frJ7oEgtEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_frYlIkgtEeGln-1l2BqQlw" points="[-6, -133, 4, 145]$[-11, -228, -1, 50]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fsAQMEgtEeGln-1l2BqQlw" id="(0.5060240963855421,0.9568345323741008)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_hiGPIEgtEeGln-1l2BqQlw" type="4002" source="_ididUEglEeGln-1l2BqQlw" target="_Ogc5QEgkEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hiG2MEgtEeGln-1l2BqQlw" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hiHdQEgtEeGln-1l2BqQlw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_hiGPIUgtEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_hh2-kEgtEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hiGPIkgtEeGln-1l2BqQlw" points="[-67, -136, 48, 99]$[-109, -231, 6, 4]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hil-YEgtEeGln-1l2BqQlw" id="(0.5197368421052632,0.9784172661870504)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hil-YUgtEeGln-1l2BqQlw" id="(0.8803827751196173,0.96)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_yrGXcEgtEeGln-1l2BqQlw" type="4001" source="_Pgt7j0gNEeGln-1l2BqQlw" target="_-q7DoEgmEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_yrG-gEgtEeGln-1l2BqQlw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yrG-gUgtEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yrG-gkgtEeGln-1l2BqQlw" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yrG-g0gtEeGln-1l2BqQlw" x="-5" y="48"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yrHlkEgtEeGln-1l2BqQlw" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yrHlkUgtEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yrHlkkgtEeGln-1l2BqQlw" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yrHlk0gtEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yrIMoEgtEeGln-1l2BqQlw" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yrIMoUgtEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yrIMokgtEeGln-1l2BqQlw" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yrIMo0gtEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_yrGXcUgtEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_yqwZMEgtEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yrGXckgtEeGln-1l2BqQlw" points="[-5, -5, 93, 93]$[-97, -98, 1, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yrsNUEgtEeGln-1l2BqQlw" id="(0.06666666666666667,0.03205128205128205)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yrsNUUgtEeGln-1l2BqQlw" id="(0.99,0.72)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_yCBv0EguEeGln-1l2BqQlw" type="4001" source="_mOu00EgWEeGln-1l2BqQlw" target="_4Ty8wEgWEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_yCC98EguEeGln-1l2BqQlw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yCC98UguEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yCC98kguEeGln-1l2BqQlw" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yCC980guEeGln-1l2BqQlw" x="-8" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yCC99EguEeGln-1l2BqQlw" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yCC99UguEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yCC99kguEeGln-1l2BqQlw" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yCC990guEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yCDlAEguEeGln-1l2BqQlw" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yCDlAUguEeGln-1l2BqQlw" x="32" y="12"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_yCDlAkguEeGln-1l2BqQlw" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yCDlA0guEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_yCBv0UguEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_yBtmwEguEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yCBv0kguEeGln-1l2BqQlw" points="[1, -2, -107, 0]$[108, -2, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yCmXkEguEeGln-1l2BqQlw" id="(0.993006993006993,0.41007194244604317)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yCmXkUguEeGln-1l2BqQlw" id="(0.0,0.3597122302158273)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="__2tnsEguEeGln-1l2BqQlw" type="4001" source="_Pgt7j0gNEeGln-1l2BqQlw" target="_63vF4EgmEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="__2u10EguEeGln-1l2BqQlw" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__2u10UguEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__2u10kguEeGln-1l2BqQlw" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__2u100guEeGln-1l2BqQlw" x="9" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__2u11EguEeGln-1l2BqQlw" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__2u11UguEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__2u11kguEeGln-1l2BqQlw" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__2u110guEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__2u12EguEeGln-1l2BqQlw" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__2vc4EguEeGln-1l2BqQlw" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="__2vc4UguEeGln-1l2BqQlw" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__2vc4kguEeGln-1l2BqQlw" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="__2tnsUguEeGln-1l2BqQlw" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#__2ZeoEguEeGln-1l2BqQlw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__2tnskguEeGln-1l2BqQlw" points="[1, 0, -106, -47]$[106, 46, -1, -1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__3TdkEguEeGln-1l2BqQlw" id="(0.996078431372549,0.8269230769230769)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__3TdkUguEeGln-1l2BqQlw" id="(0.46,0.01)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Sd-CAEs1EeGZRfVWeTuYVQ" type="4002" source="_DFjtkEs1EeGZRfVWeTuYVQ" target="_Pgt7j0gNEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Sd-pEEs1EeGZRfVWeTuYVQ" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Sd-pEUs1EeGZRfVWeTuYVQ" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Sd-CAUs1EeGZRfVWeTuYVQ" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="HealthOntology.uml#_ScI2AEs1EeGZRfVWeTuYVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Sd-CAks1EeGZRfVWeTuYVQ" points="[-3, -97, 0, 83]$[-4, -176, -1, 4]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SeniQEs1EeGZRfVWeTuYVQ" id="(0.49137931034482757,0.97)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SeniQUs1EeGZRfVWeTuYVQ" id="(0.4470588235294118,0.9743589743589743)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_U0emYEs1EeGZRfVWeTuYVQ" type="4001" source="_Pgt7j0gNEeGln-1l2BqQlw" target="_Ogc5QEgkEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_U0fNcEs1EeGZRfVWeTuYVQ" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U0f0gEs1EeGZRfVWeTuYVQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_U0f0gUs1EeGZRfVWeTuYVQ" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U0f0gks1EeGZRfVWeTuYVQ" x="21" y="-89"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_U0f0g0s1EeGZRfVWeTuYVQ" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U0f0hEs1EeGZRfVWeTuYVQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_U0f0hUs1EeGZRfVWeTuYVQ" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U0f0hks1EeGZRfVWeTuYVQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_U0f0h0s1EeGZRfVWeTuYVQ" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U0f0iEs1EeGZRfVWeTuYVQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_U0gbkEs1EeGZRfVWeTuYVQ" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U0gbkUs1EeGZRfVWeTuYVQ" x="-42" y="-23"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_U0emYUs1EeGZRfVWeTuYVQ" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_U0GL4Es1EeGZRfVWeTuYVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U0emYks1EeGZRfVWeTuYVQ" points="[6, 3, 0, -65]$[5, 63, -1, -5]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U1Ts0Es1EeGZRfVWeTuYVQ" id="(0.9058823529411765,0.9871794871794872)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U1Ts0Us1EeGZRfVWeTuYVQ" id="(0.4688995215311005,0.05)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_tV3RgEs1EeGZRfVWeTuYVQ" type="4001" source="_JZXpsEgvEeGln-1l2BqQlw" target="_4Ty8wEgWEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_tV4foEs1EeGZRfVWeTuYVQ" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tV4foUs1EeGZRfVWeTuYVQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_tV4foks1EeGZRfVWeTuYVQ" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tV4fo0s1EeGZRfVWeTuYVQ" y="-42"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_tV4fpEs1EeGZRfVWeTuYVQ" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tV4fpUs1EeGZRfVWeTuYVQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_tV4fpks1EeGZRfVWeTuYVQ" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tV4fp0s1EeGZRfVWeTuYVQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_tV4fqEs1EeGZRfVWeTuYVQ" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tV5GsEs1EeGZRfVWeTuYVQ" x="23" y="14"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_tV5GsUs1EeGZRfVWeTuYVQ" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tV5Gsks1EeGZRfVWeTuYVQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_tV3RgUs1EeGZRfVWeTuYVQ" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_tVZXcEs1EeGZRfVWeTuYVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tV3Rgks1EeGZRfVWeTuYVQ" points="[-4, 0, 0, 67]$[-4, -66, 0, 1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tWp7sEs1EeGZRfVWeTuYVQ" id="(0.49,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tWp7sUs1EeGZRfVWeTuYVQ" id="(0.5263157894736842,0.9928057553956835)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Z-4HYEzlEeGy1eg-wb-CuQ" type="4001" source="_AJfTYEgnEeGln-1l2BqQlw" target="_PC9zcEzlEeGy1eg-wb-CuQ" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-4HY0zlEeGy1eg-wb-CuQ" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-4HZEzlEeGy1eg-wb-CuQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-4HZUzlEeGy1eg-wb-CuQ" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-4HZkzlEeGy1eg-wb-CuQ" x="-1" y="-15"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-4HZ0zlEeGy1eg-wb-CuQ" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-4HaEzlEeGy1eg-wb-CuQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-4HaUzlEeGy1eg-wb-CuQ" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-4HakzlEeGy1eg-wb-CuQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-4Ha0zlEeGy1eg-wb-CuQ" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-4HbEzlEeGy1eg-wb-CuQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-4HbUzlEeGy1eg-wb-CuQ" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Z-4HbkzlEeGy1eg-wb-CuQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Z-4HYUzlEeGy1eg-wb-CuQ" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_Z-lMcEzlEeGy1eg-wb-CuQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z-4HYkzlEeGy1eg-wb-CuQ" points="[4, -3, -104, 0]$[104, -4, -4, -1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z_nuQEzlEeGy1eg-wb-CuQ" id="(0.9716312056737588,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z_nuQUzlEeGy1eg-wb-CuQ" id="(0.04,0.47)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_f-I7IEzlEeGy1eg-wb-CuQ" type="4001" source="_PC9zcEzlEeGy1eg-wb-CuQ" target="_Pgt7j0gNEeGln-1l2BqQlw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_f-I7I0zlEeGy1eg-wb-CuQ" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f-I7JEzlEeGy1eg-wb-CuQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f-I7JUzlEeGy1eg-wb-CuQ" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f-I7JkzlEeGy1eg-wb-CuQ" x="-1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f-I7J0zlEeGy1eg-wb-CuQ" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f-I7KEzlEeGy1eg-wb-CuQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f-I7KUzlEeGy1eg-wb-CuQ" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f-I7KkzlEeGy1eg-wb-CuQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f-I7K0zlEeGy1eg-wb-CuQ" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f-I7LEzlEeGy1eg-wb-CuQ" x="53" y="12"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f-I7LUzlEeGy1eg-wb-CuQ" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f-I7LkzlEeGy1eg-wb-CuQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_f-I7IUzlEeGy1eg-wb-CuQ" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="HealthOntology.uml#_f91ZIEzlEeGy1eg-wb-CuQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_f-I7IkzlEeGy1eg-wb-CuQ" points="[2, -1, -135, 0]$[137, -1, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_f-4iAEzlEeGy1eg-wb-CuQ" id="(0.98,0.46)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_f-4iAUzlEeGy1eg-wb-CuQ" id="(0.0,0.44871794871794873)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
