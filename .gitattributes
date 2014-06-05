@@ -3742,6 +3742,20 @@ ont.languages-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/language/Lang
 ont.languages-2.0.4-SNAPSHOT/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -text
 ont.languages-2.0.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text svneol=unset#text/plain
 ont.languages-2.0.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/ASL2.0.txt -text
+ont.languages-3.0.1-SNAPSHOT/LanguageOntology.di -text
+ont.languages-3.0.1-SNAPSHOT/LanguageOntology.notation -text
+ont.languages-3.0.1-SNAPSHOT/LanguageOntology.uml -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/NOTICE.txt -text
+ont.languages-3.0.1-SNAPSHOT/pom.xml -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/LanguageActivator.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/LanguageFactory.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/language/Language.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/language/LanguageImpl.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/language/LanguageOntology.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -text
+ont.languages-3.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text svneol=unset#text/plain
+ont.languages-3.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain
 ont.lighting-0.2.1-SNAPSHOT/LICENSE.txt -text
 ont.lighting-0.2.1-SNAPSHOT/NOTICE.txt -text
 ont.lighting-0.2.1-SNAPSHOT/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text

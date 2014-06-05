@@ -1,0 +1,27 @@
+universAAL ontology Languages
+
+2010-2014 Ericsson Nikola Tesla d.d., www.ericsson.com/hr
+
+2012-2014 Universidad Politécnica de Madrid http://www.upm.es
+
+
+I. Included Software
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+This product uses software developed at
+The OPS4J (http://www.ops4j.org)
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0
