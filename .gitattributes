@@ -7089,6 +7089,29 @@ ont.unit-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/Intern
 ont.unit-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/TimeSystem.java -text svneol=unset#text/plain
 ont.unit-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
 ont.unit-2.0.4-SNAPSHOT/src/test/java/test/integration/ArtifactIT.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/ASL2.0.txt -text
+ont.unit-3.0.1-SNAPSHOT/NOTICE.txt -text
+ont.unit-3.0.1-SNAPSHOT/Unit.di -text
+ont.unit-3.0.1-SNAPSHOT/Unit.notation -text
+ont.unit-3.0.1-SNAPSHOT/Unit.uml -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/pom.xml -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/UnitActivator.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/UnitFactory.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/DerivedUnit.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/DividedUnit.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/MeasurableDimension.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/MultipliedUnit.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/Prefix.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/Unit.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/UnitOntology.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/UnitSystem.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/services/UnitConversionService.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/services/UnitService.java -text
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/BinarySystem.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/InternationalSystem.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/TimeSystem.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/unit/system/Util.java -text svneol=unset#text/plain
+ont.unit-3.0.1-SNAPSHOT/src/test/java/test/integration/ArtifactIT.java -text svneol=unset#text/plain
 ont.water-1.0.1-SNAPSHOT/pom.xml -text
 ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.water-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/WaterFactory.java -text
