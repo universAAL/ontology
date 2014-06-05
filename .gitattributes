@@ -2904,6 +2904,16 @@ ont.furniture-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/Fur
 ont.furniture-2.0.4-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
 ont.furniture-2.0.4-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.furniture-2.0.4-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.furniture-3.0.1-SNAPSHOT/ASL2.0.txt -text
+ont.furniture-3.0.1-SNAPSHOT/NOTICE.txt -text
+ont.furniture-3.0.1-SNAPSHOT/pom.xml -text
+ont.furniture-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/FurnitureActivator.java -text
+ont.furniture-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/FurnitureFactory.java -text
+ont.furniture-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/Furniture.java -text
+ont.furniture-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/FurnitureOntology.java -text
+ont.furniture-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/furniture/FurnitureType.java -text
+ont.furniture-3.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.furniture-3.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.gesture.pointing-1.0.1-SNAPSHOT/pom.xml -text
 ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/Activator.java -text
 ont.gesture.pointing-1.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/gesture/pointing/GestureRecognition.java -text
