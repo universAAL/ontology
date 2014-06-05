@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="__2W6sBaoEeKBk4z3KwYUpA" name="Dependability">
+    <ownedComment xmi:id="__2W6sRaoEeKBk4z3KwYUpA" annotatedElement="__2W6thaoEeKBk4z3KwYUpA">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="__2W6shaoEeKBk4z3KwYUpA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="__2W6sxaoEeKBk4z3KwYUpA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="__2W6tBaoEeKBk4z3KwYUpA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="__2W6tRaoEeKBk4z3KwYUpA">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="__2W6thaoEeKBk4z3KwYUpA" name="org.universAAL.ontology.dependability">
+      <packagedElement xmi:type="uml:Class" xmi:id="__2W6txaoEeKBk4z3KwYUpA" name="ErrorDetector">
+        <generalization xmi:id="_b0OMIDImEeKXiMgBOo5Ztg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_7_5xEBapEeKBk4z3KwYUpA" name="symptom" type="_dlUd8BapEeKBk4z3KwYUpA" association="_7_6_MBapEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7_5xERapEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7_5xEhapEeKBk4z3KwYUpA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DSIBgBaqEeKBk4z3KwYUpA" name="fault" type="__2W6uxaoEeKBk4z3KwYUpA" association="_DSIokBaqEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DSIBgRaqEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DSIBghaqEeKBk4z3KwYUpA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__2W6uRaoEeKBk4z3KwYUpA" name="Sensor">
+        <generalization xmi:id="__2W6uhaoEeKBk4z3KwYUpA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_Kbe0kKFHEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_iK1QgBapEeKBk4z3KwYUpA" name="symptom" type="_dlUd8BapEeKBk4z3KwYUpA" association="_iK2eoBapEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iK1QgRapEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iK1QghapEeKBk4z3KwYUpA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__2W6uxaoEeKBk4z3KwYUpA" name="Fault">
+        <generalization xmi:id="__2W6vBaoEeKBk4z3KwYUpA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_QH8LcBasEeKBk4z3KwYUpA" name="timestamp">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_gtLPQGkcEeGIl7HiYaL9OA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_vZNO8BasEeKBk4z3KwYUpA" name="faultDecision">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_1blGEGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_QvO_gBatEeKBk4z3KwYUpA" name="location">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_a9s7cBapEeKBk4z3KwYUpA" name="FCR" clientDependency="_LH31wBaqEeKBk4z3KwYUpA">
+        <generalization xmi:id="_cE0UgBapEeKBk4z3KwYUpA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_E6yzABarEeKBk4z3KwYUpA" name="fault" type="__2W6uxaoEeKBk4z3KwYUpA" association="_E6zaEBarEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E6yzARarEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E6yzAharEeKBk4z3KwYUpA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_qpPqcBatEeKBk4z3KwYUpA" name="location">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dlUd8BapEeKBk4z3KwYUpA" name="Symptom">
+        <ownedAttribute xmi:id="_lofqMBapEeKBk4z3KwYUpA" name="errorDetector" type="__2W6txaoEeKBk4z3KwYUpA" association="_logRQBapEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lofqMRapEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lofqMhapEeKBk4z3KwYUpA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_iK2eoBapEeKBk4z3KwYUpA" name="generates" memberEnd="_iK2eoRapEeKBk4z3KwYUpA _iK1QgBapEeKBk4z3KwYUpA">
+        <ownedEnd xmi:id="_iK2eoRapEeKBk4z3KwYUpA" name="sensor" type="__2W6uRaoEeKBk4z3KwYUpA" association="_iK2eoBapEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iK2eohapEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iK2eoxapEeKBk4z3KwYUpA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_logRQBapEeKBk4z3KwYUpA" name="symptom_errorDetector_1" memberEnd="_logRQRapEeKBk4z3KwYUpA _lofqMBapEeKBk4z3KwYUpA">
+        <ownedEnd xmi:id="_logRQRapEeKBk4z3KwYUpA" name="symptom" type="_dlUd8BapEeKBk4z3KwYUpA" association="_logRQBapEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_logRQhapEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_logRQxapEeKBk4z3KwYUpA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7_6_MBapEeKBk4z3KwYUpA" name="uses" memberEnd="_7_6_MRapEeKBk4z3KwYUpA _7_5xEBapEeKBk4z3KwYUpA">
+        <ownedEnd xmi:id="_7_6_MRapEeKBk4z3KwYUpA" name="errorDetector" type="__2W6txaoEeKBk4z3KwYUpA" association="_7_6_MBapEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7_6_MhapEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7_6_MxapEeKBk4z3KwYUpA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DSIokBaqEeKBk4z3KwYUpA" name="indicates" memberEnd="_DSIokRaqEeKBk4z3KwYUpA _DSIBgBaqEeKBk4z3KwYUpA">
+        <ownedEnd xmi:id="_DSIokRaqEeKBk4z3KwYUpA" name="errorDetector" type="__2W6txaoEeKBk4z3KwYUpA" association="_DSIokBaqEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DSIokhaqEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DSIokxaqEeKBk4z3KwYUpA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_LH31wBaqEeKBk4z3KwYUpA" name="abstracts" supplier="__2W6uRaoEeKBk4z3KwYUpA" client="_a9s7cBapEeKBk4z3KwYUpA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9L3YcBaqEeKBk4z3KwYUpA" name="TimingFault">
+        <generalization xmi:id="_B23vABarEeKBk4z3KwYUpA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+        <generalization xmi:id="_103JsDR6EeKlkt5WMCBvqA" general="_r1R7IDR6EeKlkt5WMCBvqA"/>
+        <ownedAttribute xmi:id="_kcGxkDPfEeKQbPc878pRVg" name="timeThreshold">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_gObTMGkbEeGIl7HiYaL9OA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-LRnABaqEeKBk4z3KwYUpA" name="ValueFault">
+        <generalization xmi:id="_CXmdgBarEeKBk4z3KwYUpA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+        <generalization xmi:id="_2VSWMDR6EeKlkt5WMCBvqA" general="_r1R7IDR6EeKlkt5WMCBvqA"/>
+        <ownedAttribute xmi:id="_T1HxMDPfEeKQbPc878pRVg" name="value">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_gObTMGkbEeGIl7HiYaL9OA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__M9GcBaqEeKBk4z3KwYUpA" name="EarlyTimingFault" isLeaf="true">
+        <generalization xmi:id="_CveyABarEeKBk4z3KwYUpA" general="_9L3YcBaqEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AU-ecBarEeKBk4z3KwYUpA" name="LateTimingFault" isLeaf="true">
+        <generalization xmi:id="_DFEngBarEeKBk4z3KwYUpA" general="_9L3YcBaqEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_E6zaEBarEeKBk4z3KwYUpA" name="contains" memberEnd="_E6zaERarEeKBk4z3KwYUpA _E6yzABarEeKBk4z3KwYUpA">
+        <ownedEnd xmi:id="_E6zaERarEeKBk4z3KwYUpA" name="fCR" type="_a9s7cBapEeKBk4z3KwYUpA" association="_E6zaEBarEeKBk4z3KwYUpA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E6zaEharEeKBk4z3KwYUpA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E6zaExarEeKBk4z3KwYUpA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Kkke8BarEeKBk4z3KwYUpA" name="RecoveryAction" clientDependency="_OXHjgBarEeKBk4z3KwYUpA">
+        <generalization xmi:id="_baqcoDImEeKXiMgBOo5Ztg">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_OXHjgBarEeKBk4z3KwYUpA" name="depends_on" supplier="__2W6uxaoEeKBk4z3KwYUpA" client="_Kkke8BarEeKBk4z3KwYUpA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_r1R7IDR6EeKlkt5WMCBvqA" name="SoftwareFault">
+        <generalization xmi:id="_zKXSUDR6EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8Y2bIDR6EeKlkt5WMCBvqA" name="TransientFault">
+        <generalization xmi:id="_AA78IDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9zAE8DR6EeKlkt5WMCBvqA" name="IntermittentFault">
+        <generalization xmi:id="_AkfVIDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ErXq8DR7EeKlkt5WMCBvqA" name="NonMaliciousFault">
+        <generalization xmi:id="_GjId0DR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HVH7cDR7EeKlkt5WMCBvqA" name="InternalCauseFault">
+        <generalization xmi:id="_IyG20DR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PONXkDR7EeKlkt5WMCBvqA" name="PhysicalFault">
+        <generalization xmi:id="_QjAnUDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TSRC4DR7EeKlkt5WMCBvqA" name="StructuralFault">
+        <generalization xmi:id="_WrLfcDR7EeKlkt5WMCBvqA" general="_PONXkDR7EeKlkt5WMCBvqA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UZ0g0DR7EeKlkt5WMCBvqA" name="ShapeFault">
+        <generalization xmi:id="_XB7ykDR7EeKlkt5WMCBvqA" general="_PONXkDR7EeKlkt5WMCBvqA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VPPF4DR7EeKlkt5WMCBvqA" name="PropertyFault">
+        <generalization xmi:id="_XaCwkDR7EeKlkt5WMCBvqA" general="_PONXkDR7EeKlkt5WMCBvqA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_b4JTkDR7EeKlkt5WMCBvqA" name="OperationalFault">
+        <generalization xmi:id="_dGZPYDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_d944EDR7EeKlkt5WMCBvqA" name="ExternalFault">
+        <generalization xmi:id="_gYw_EDR7EeKlkt5WMCBvqA" general="_b4JTkDR7EeKlkt5WMCBvqA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fDOIcDR7EeKlkt5WMCBvqA" name="InteractionFault">
+        <generalization xmi:id="_gvFNUDR7EeKlkt5WMCBvqA" general="_b4JTkDR7EeKlkt5WMCBvqA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_i9dJYDR7EeKlkt5WMCBvqA" name="ContinuedFault">
+        <generalization xmi:id="_keAWIDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lUmm8DR7EeKlkt5WMCBvqA" name="DevelopmentFault">
+        <generalization xmi:id="_n4QPcDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pPJJ4DR7EeKlkt5WMCBvqA" name="PermanentFault">
+        <generalization xmi:id="_qvGgwDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_txi-EDR7EeKlkt5WMCBvqA" name="NonParametricFault">
+        <generalization xmi:id="_vH1bkDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wXIgQDR7EeKlkt5WMCBvqA" name="DirectFault">
+        <generalization xmi:id="_xitikDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_x6g-kDR7EeKlkt5WMCBvqA" name="IndirectFault">
+        <generalization xmi:id="_zWwTEDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_05_AYDR7EeKlkt5WMCBvqA" name="ParametricFault">
+        <generalization xmi:id="_2dgooDR7EeKlkt5WMCBvqA" general="__2W6uxaoEeKBk4z3KwYUpA"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="__2W6vRaoEeKBk4z3KwYUpA">
+      <eAnnotations xmi:id="__2W6vhaoEeKBk4z3KwYUpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="__2W6vxaoEeKBk4z3KwYUpA">
+      <eAnnotations xmi:id="__2W6wBaoEeKBk4z3KwYUpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="__2W6wRaoEeKBk4z3KwYUpA" defaultNamespace="http://ontology.universAAL.org/Dependability" base_Package="__2W6thaoEeKBk4z3KwYUpA" versionInfo="0.1.0-SNAPSHOT"/>
+  <OWL:datatypeProperty xmi:id="_QIAc4BasEeKBk4z3KwYUpA" base_Property="_QH8LcBasEeKBk4z3KwYUpA" isFunctional="true"/>
+  <OWL:objectProperty xmi:id="_vZRgYBasEeKBk4z3KwYUpA" base_Property="_vZNO8BasEeKBk4z3KwYUpA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_QvUfEBatEeKBk4z3KwYUpA" base_Property="_QvO_gBatEeKBk4z3KwYUpA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_qpTU0BatEeKBk4z3KwYUpA" base_Property="_qpPqcBatEeKBk4z3KwYUpA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_T4i4oDPfEeKQbPc878pRVg" base_Property="_T1HxMDPfEeKQbPc878pRVg" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_kcGxkzPfEeKQbPc878pRVg" base_Property="_kcGxkDPfEeKQbPc878pRVg" isFunctional="true"/>
+</xmi:XMI>
