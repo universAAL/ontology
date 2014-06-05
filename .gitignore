@@ -3436,6 +3436,10 @@ ont.karaf.feature-2.0.4-SNAPSHOT/.classpath
 ont.karaf.feature-2.0.4-SNAPSHOT/.project
 ont.karaf.feature-2.0.4-SNAPSHOT/.settings
 ont.karaf.feature-2.0.4-SNAPSHOT/target
+ont.karaf.feature-3.0.1-SNAPSHOT/.classpath
+ont.karaf.feature-3.0.1-SNAPSHOT/.project
+ont.karaf.feature-3.0.1-SNAPSHOT/.settings
+ont.karaf.feature-3.0.1-SNAPSHOT/target
 ont.languages-1.3.2-SNAPSHOT/.classpath
 ont.languages-1.3.2-SNAPSHOT/.project
 ont.languages-1.3.2-SNAPSHOT/.settings
