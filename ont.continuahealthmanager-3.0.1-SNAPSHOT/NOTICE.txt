@@ -1,0 +1,18 @@
+Continua Health Alliance devices integration
+
+Copyright Technologies for Health and Well-being, http://www.tsbtecnologias.es/
+
+
+I. Included Software
+
+Software developed by TSB Company within the universAAL project.
+
+
+II. Used Software
+
+This product does not use additional software.
+
+
+III. License Summary
+- Apache License 2.0.
+
