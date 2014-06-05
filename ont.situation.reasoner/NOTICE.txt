@@ -1,0 +1,18 @@
+universAAL ontology Reasoning
+
+Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
+Fraunhofer Gesellschaft - Institut fuer Graphische Datenverarbeitung
+
+
+I. Included Software
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0
