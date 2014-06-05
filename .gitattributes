@@ -675,6 +675,22 @@ ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Vertic
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/VerticalLayout.java -text svneol=unset#text/plain
 ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/VisualRecommendation.java -text svneol=unset#text/plain
 ont.recommendations/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text svneol=unset#text/plain
+ont.security/ASL2.0.txt -text
+ont.security/NOTICE.txt -text
+ont.security/pom.xml -text
+ont.security/src/main/java/org/universAAL/ontology/SecurityActivator.java -text
+ont.security/src/main/java/org/universAAL/ontology/SecurityFactory.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/AuthenticationService.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/Credentials.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/DeviceBoundSession.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/LocationBoundSession.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/SecurityOntology.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/SecuritySubprofile.java -text svneol=unset#text/plain
+ont.security/src/main/java/org/universAAL/ontology/security/Session.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/SessionManagementService.java -text
+ont.security/src/main/java/org/universAAL/ontology/security/UserPasswordCredentials.java -text
+ont.security/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.security/src/test/resources/log4j.properties -text
 ont.situation.reasoner/ASL2.0.txt -text
 ont.situation.reasoner/NOTICE.txt -text
 ont.situation.reasoner/pom.xml -text
