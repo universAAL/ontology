@@ -1,0 +1,24 @@
+Lighting Ontology
+
+Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
+Fraunhofer Gesellschaft - Institut fuer Graphische Datenverarbeitung
+
+I. Included Software
+
+Software developed by Fraunhofer IGD within the PERSONA project is used as the initial version for further developments within the universAAL project.
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+
+III. License Summary
+- Apache License 2.0
+- Common Public License 1.0
