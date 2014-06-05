@@ -1,0 +1,21 @@
+Development notes for the ActivityHub Ontology in uAAL
+by Thomas Fuxreiter
+
+NOTE1: In the standard specification (ISO 11073-10471) the sensors are defined as enumeration objects.
+Each enum object has one or more types. Most of the specified sensor enums have just one type.
+E.g. fall sensor enum has just one type which is named "SENSOR_FALL".
+Wherelse environmental sensor enum has 4 types: SENSOR_SMOKE, SENSOR_CO, SENSOR_WATER and SENSOR_GAS.
+
+For the current implementation of the ActivityHub ontology I reduced the model to a flat list of sensors.
+Therefore fall sensor, smoke sensor and so on are side by side in the ontology model without taking care
+of the enum sensor objects defined in the standard.
+If necessary this should be upgraded in future.
+
+NOTE2: Generic sensor properties flags are defined for all activity hub sensors. If those flags have to be 
+considered in the ontology an intermediate class with those properties should be defined (name could be
+"ActivityHubSensor") which extends the class org.universAAL.ontology.phThing.Sensor. All other activity hub
+sensor classes should extend the new class furthermore; not the Sensor class directly.
+
+NOTE3: The ontology is designed according to the measurement ontology example from the uAAL ontology workshop
+in Darmstadt (Dec 2011)
+ 
