@@ -650,6 +650,31 @@ ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireMultiT
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireNextQuestionIT.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireQuestionsIT.java -text svneol=unset#text/plain
 ont.questionnaire/src/test/resources/log4j.properties -text
+ont.recommendations/ASL2.0.txt -text svneol=unset#text/plain
+ont.recommendations/NOTICE.txt -text svneol=unset#text/plain
+ont.recommendations/Recommendations.di -text
+ont.recommendations/Recommendations.notation -text
+ont.recommendations/Recommendations.uml -text svneol=unset#text/plain
+ont.recommendations/pom.xml -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/RecommendationsActivator.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/RecommendationsFactory.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Alignment.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/CSSRecommendation.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/GridLayout.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/HorizontalAlignment.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/HorizontalLayout.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Layout.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/MaximumSize.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/MinimumSize.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/PreferredSize.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/RecommendationsOntology.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/ScriptedRecommendation.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/Size.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/SizeUnit.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/VerticalAlignment.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/VerticalLayout.java -text svneol=unset#text/plain
+ont.recommendations/src/main/java/org/universAAL/ontology/recommendations/VisualRecommendation.java -text svneol=unset#text/plain
+ont.recommendations/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text svneol=unset#text/plain
 ont.situation.reasoner/ASL2.0.txt -text
 ont.situation.reasoner/NOTICE.txt -text
 ont.situation.reasoner/pom.xml -text

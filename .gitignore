@@ -132,6 +132,10 @@ ont.questionnaire/.project
 ont.questionnaire/.settings
 ont.questionnaire/target
 ont.questionnaire/uAAL.log
+ont.recommendations/.classpath
+ont.recommendations/.project
+ont.recommendations/.settings
+ont.recommendations/target
 ont.situation.reasoner/.classpath
 ont.situation.reasoner/.project
 ont.situation.reasoner/.settings
