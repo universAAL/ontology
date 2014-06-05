@@ -310,6 +310,27 @@ ont.languages/src/main/java/org/universAAL/ontology/language/LanguageOntology.ja
 ont.languages/src/main/resources/org/universAAL/ontology/impl/lang-table.dat -text
 ont.languages/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text svneol=unset#text/plain
 ont.languages/src/test/java/org/universAAL/ontology/test/FactoryTest.java -text svneol=unset#text/plain
+ont.lighting/ASL2.0.txt -text
+ont.lighting/NOTICE.txt -text
+ont.lighting/documentation/ont.lighting[!!-~]class[!!-~]diagram[!!-~]20.4.2011.png -text
+ont.lighting/pom.xml -text
+ont.lighting/src/main/java/org/universAAL/ontology/LightingActivator.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/LightingFactory.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/Beaming.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/BeamingSource.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeaming.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableBeamingSource.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableLightSource.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/BlinkableLighting.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/ElectricLight.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/FlamingLight.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/LightSource.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/LightType.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/Lighting.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/LightingOntology.java -text
+ont.lighting/src/main/java/org/universAAL/ontology/lighting/NaturalLight.java -text
+ont.lighting/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.lighting/src/test/resources/log4j.properties -text
 ont.measurement/ASL2.0.txt -text
 ont.measurement/Measurement.di -text
 ont.measurement/Measurement.jpg -text
