@@ -70,8 +70,11 @@ public class RoomFunction extends ManagedIndividual {
 
     public static final RoomFunction valueOf(String name) {
 	for (int i = 0; i <= 10; i++)
-	    if (names[i].equals(name))
-		return getLevelByOrder(i);
+	    if (names[i].equals(name)){
+//		return getLevelByOrder(i);
+		// getLevelByOrder can NPE if getInstances is still null
+		return getRoomFunctionByOrder(i);
+	    }
 	return null;
     }
 
@@ -79,6 +82,37 @@ public class RoomFunction extends ManagedIndividual {
 	OntClassInfo info = OntologyManagement.getInstance().getOntClassInfo(
 		MY_URI);
 	return info == null ? null : (RoomFunction) info.getInstances()[order];
+    }
+    
+    public static RoomFunction getRoomFunctionByOrder(int order){
+	switch (order) {
+	case BATHROOM:
+	    return BathRoom;
+	case CELLAR:
+	    return Cellar;
+	case GUESTROOM:
+	    return GuestRoom;
+	case GUESTWC:
+	    return GuestWC;
+	case HOBBYROOM:
+	    return HobbyRoom;
+	case KITCHEN:
+	    return Kitchen;
+	case LIVINGROOM:
+	    return LivingRoom;
+	case SLEEPINGROOM:
+	    return SleepingRoom;
+	case STORAGEROOM:
+	    return StorageRoom;
+	case STUDIO:
+	    return Studio;
+	case WORKROOM:
+	    return WorkRoom;
+	case WARDROBE:
+	    return Wardrobe;
+	default:
+	    return null;
+	}
     }
 
     /**
