@@ -1,0 +1,22 @@
+universAAL ontology dependability
+
+Ontology for universAAL platform for inclusion of reliability and fault tolerance 
+
+Copyright 2012-2014 Rubaiyat Sadat, USIG
+University of Siegen, http://www.uni-siegen.de
+
+
+I. Included Software
+Final version of artifact Dependability ontology by USIG within the universAAL project.
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0
+
+
