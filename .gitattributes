@@ -6792,6 +6792,45 @@ ont.profile.health-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/o
 ont.profile.health-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/TreatmentManagementService.java -text
 ont.profile.health-3.0.1-SNAPSHOT/src/test/java/org/universaal/ontology/test/BusTest.java -text
 ont.profile.health-3.0.1-SNAPSHOT/src/test/java/org/universaal/ontology/test/HealthOntologyIT.java -text
+ont.profile.health-3.1.1-SNAPSHOT/ASL2.0.txt -text svneol=unset#text/plain
+ont.profile.health-3.1.1-SNAPSHOT/HealthOntology.di -text
+ont.profile.health-3.1.1-SNAPSHOT/HealthOntology.notation -text
+ont.profile.health-3.1.1-SNAPSHOT/HealthOntology.uml -text
+ont.profile.health-3.1.1-SNAPSHOT/NOTICE.txt -text svneol=unset#text/plain
+ont.profile.health-3.1.1-SNAPSHOT/pom.xml -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/HealthActivator.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/HealthOntologyFactory.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/ActivityHeartRateRequirement.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/BloodPressureMeasurementTreatment.java -text svneol=unset#text/plain
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/BloodPressureRequirement.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/Diet.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/HealthProfile.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/HealthProfileOntology.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/HealthyHabitsAdoption.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/HeartRateMeasurementTreatment.java -text svneol=unset#text/plain
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/HeartRateRequirement.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/MeasuredPhysicalActivity.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/MeasurementRequirements.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/MotivationalStatusType.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/PerformedMeasurementSession.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/PerformedSession.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/PlannedSession.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/ReposeHeartRateRequirement.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/StatusType.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/TakeMeasurementActivity.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/Treatment.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/TreatmentPlanning.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/Walking.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/WeightMeasurementTreatment.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/WeightRequirement.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/DisplayTreatmentService.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/HealthService.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/PerformedSessionManagementService.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/PlannedSessionManagementService.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/ProfileManagementService.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/health/owl/services/TreatmentManagementService.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/test/java/org/universaal/ontology/test/BusTest.java -text
+ont.profile.health-3.1.1-SNAPSHOT/src/test/java/org/universaal/ontology/test/HealthOntologyIT.java -text
 ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/ASL2.0.txt -text
 ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/MITX.txt -text
 ont.profile.ui.mainmenu-1.2.1-SNAPSHOT/NOTICE.txt -text
