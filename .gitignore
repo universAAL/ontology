@@ -136,6 +136,10 @@ ont.recommendations/.classpath
 ont.recommendations/.project
 ont.recommendations/.settings
 ont.recommendations/target
+ont.security/.classpath
+ont.security/.project
+ont.security/.settings
+ont.security/target
 ont.situation.reasoner/.classpath
 ont.situation.reasoner/.project
 ont.situation.reasoner/.settings
