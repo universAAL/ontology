@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.2.0</version>
+    <version>3.2.1-SNAPSHOT</version>
     <relativePath>../ont.pom/pom.xml</relativePath>
   </parent>
   <artifactId>ont.situation.reasoner</artifactId>
-  <version>3.2.0</version>
+  <version>3.2.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Reasoning</name>
   <description>Ontology for the generic situation reasoner</description>
