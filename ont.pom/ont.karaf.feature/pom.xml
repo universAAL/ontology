@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.1.1-SNAPSHOT</version>
+    <version>3.2.0</version>
     <relativePath>../</relativePath>
   </parent>
   <artifactId>ont.karaf.feature</artifactId>
-  <version>3.1.1-SNAPSHOT</version>
+  <version>3.2.0</version>
   <name>universAAL Ontology Karaf Feature</name>
   <scm>
     <connection>${svn.base}/ont.pom/${project.artifactId}</connection>
