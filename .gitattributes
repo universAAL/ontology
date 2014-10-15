@@ -3023,6 +3023,17 @@ ont.device.extra-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/hom
 ont.device.extra-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/SirenActuator.java -text
 ont.device.extra-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
 ont.device.extra-3.0.1-SNAPSHOT/src/test/resources/log4j.properties -text
+ont.device.extra-3.1.1-SNAPSHOT/ASL2.0.txt -text
+ont.device.extra-3.1.1-SNAPSHOT/NOTICE.txt -text
+ont.device.extra-3.1.1-SNAPSHOT/pom.xml -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/DeviceActivator.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/DeviceFactory.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/CarpetSensor.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/DeviceOntology.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/Oven.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/SirenActuator.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/device/home/Strap.java -text
+ont.device.extra-3.1.1-SNAPSHOT/src/test/resources/log4j.properties -text
 ont.drools-2.0.4-SNAPSHOT/ASL2.0.txt -text
 ont.drools-2.0.4-SNAPSHOT/NOTICE.txt -text
 ont.drools-2.0.4-SNAPSHOT/pom.xml -text
