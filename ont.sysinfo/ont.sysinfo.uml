@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_u49Z4M3NEeKlm66fzEg6Vg" name="ont.sysinfo">
+    <ownedComment xmi:id="_u49Z4c3NEeKlm66fzEg6Vg" annotatedElement="_u49Z5s3NEeKlm66fzEg6Vg">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_u49Z4s3NEeKlm66fzEg6Vg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_u49Z483NEeKlm66fzEg6Vg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_u49Z5M3NEeKlm66fzEg6Vg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_u49Z5c3NEeKlm66fzEg6Vg">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_u49Z5s3NEeKlm66fzEg6Vg" name="org.universAAL.ontology.sysinfo">
+      <packagedElement xmi:type="uml:Class" xmi:id="_IxEnYM3OEeKlm66fzEg6Vg" name="System">
+        <ownedAttribute xmi:id="_ePl-cM3OEeKlm66fzEg6Vg" name="spaceJoined" type="_Kool8M3OEeKlm66fzEg6Vg" association="_ePmlgM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ePl-cc3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ePl-cs3OEeKlm66fzEg6Vg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ix9WYM3OEeKlm66fzEg6Vg" name="peerJoined" type="_MOBPYM3OEeKlm66fzEg6Vg" association="_ix99cM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ix9WYc3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ix9WYs3OEeKlm66fzEg6Vg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mCLJ8M3OEeKlm66fzEg6Vg" name="spaceChanged" type="_QDOmYM3OEeKlm66fzEg6Vg" association="_mCLxAM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mCLJ8c3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mCLJ8s3OEeKlm66fzEg6Vg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tfeB8M3OEeKlm66fzEg6Vg" name="spaceLost" type="_Kool8M3OEeKlm66fzEg6Vg" association="_tfepAM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tfeB8c3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tfeB8s3OEeKlm66fzEg6Vg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ws6OUM3OEeKlm66fzEg6Vg" name="peerLost" type="_MOBPYM3OEeKlm66fzEg6Vg" association="_ws61YM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ws6OUc3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ws6OUs3OEeKlm66fzEg6Vg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JsgU4M3OEeKlm66fzEg6Vg" name="Descriptor">
+        <ownedAttribute xmi:id="_VqvBcM3OEeKlm66fzEg6Vg" name="SerializedValue">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Kool8M3OEeKlm66fzEg6Vg" name="AALSpaceDescriptor">
+        <generalization xmi:id="_SkJD8M3OEeKlm66fzEg6Vg" general="_JsgU4M3OEeKlm66fzEg6Vg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MOBPYM3OEeKlm66fzEg6Vg" name="PeerCard">
+        <generalization xmi:id="_TE4ZgM3OEeKlm66fzEg6Vg" general="_JsgU4M3OEeKlm66fzEg6Vg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QDOmYM3OEeKlm66fzEg6Vg" name="AALSpaceStatus">
+        <generalization xmi:id="_TeRw8M3OEeKlm66fzEg6Vg" general="_JsgU4M3OEeKlm66fzEg6Vg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ePmlgM3OEeKlm66fzEg6Vg" name="spaceJoined" memberEnd="_ePmlgc3OEeKlm66fzEg6Vg _ePl-cM3OEeKlm66fzEg6Vg">
+        <ownedEnd xmi:id="_ePmlgc3OEeKlm66fzEg6Vg" name="system" type="_IxEnYM3OEeKlm66fzEg6Vg" association="_ePmlgM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ePmlgs3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ePmlg83OEeKlm66fzEg6Vg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ix99cM3OEeKlm66fzEg6Vg" name="peerJoined" memberEnd="_ix99cc3OEeKlm66fzEg6Vg _ix9WYM3OEeKlm66fzEg6Vg">
+        <ownedEnd xmi:id="_ix99cc3OEeKlm66fzEg6Vg" name="system" type="_IxEnYM3OEeKlm66fzEg6Vg" association="_ix99cM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ix99cs3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ix99c83OEeKlm66fzEg6Vg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mCLxAM3OEeKlm66fzEg6Vg" name="spaceChanged" memberEnd="_mCLxAc3OEeKlm66fzEg6Vg _mCLJ8M3OEeKlm66fzEg6Vg">
+        <ownedEnd xmi:id="_mCLxAc3OEeKlm66fzEg6Vg" name="system" type="_IxEnYM3OEeKlm66fzEg6Vg" association="_mCLxAM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mCLxAs3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mCLxA83OEeKlm66fzEg6Vg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tfepAM3OEeKlm66fzEg6Vg" name="spaceLost" memberEnd="_tfepAc3OEeKlm66fzEg6Vg _tfeB8M3OEeKlm66fzEg6Vg">
+        <ownedEnd xmi:id="_tfepAc3OEeKlm66fzEg6Vg" name="system" type="_IxEnYM3OEeKlm66fzEg6Vg" association="_tfepAM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tfepAs3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tfepA83OEeKlm66fzEg6Vg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ws61YM3OEeKlm66fzEg6Vg" name="peerLost" memberEnd="_ws61Yc3OEeKlm66fzEg6Vg _ws6OUM3OEeKlm66fzEg6Vg">
+        <ownedEnd xmi:id="_ws61Yc3OEeKlm66fzEg6Vg" name="system" type="_IxEnYM3OEeKlm66fzEg6Vg" association="_ws61YM3OEeKlm66fzEg6Vg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ws61Ys3OEeKlm66fzEg6Vg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ws61Y83OEeKlm66fzEg6Vg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_u49Z7c3NEeKlm66fzEg6Vg">
+      <eAnnotations xmi:id="_u49Z7s3NEeKlm66fzEg6Vg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_u49Z783NEeKlm66fzEg6Vg">
+      <eAnnotations xmi:id="_u49Z8M3NEeKlm66fzEg6Vg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_u49Z8c3NEeKlm66fzEg6Vg" defaultNamespace="http://ontology.universAAL.org/ont.sysinfo" base_Package="_u49Z5s3NEeKlm66fzEg6Vg" versionInfo="0.1.0-SNAPSHOT"/>
+  <OWL:datatypeProperty xmi:id="_VrJRIM3OEeKlm66fzEg6Vg" base_Property="_VqvBcM3OEeKlm66fzEg6Vg" isFunctional="true"/>
+</xmi:XMI>
