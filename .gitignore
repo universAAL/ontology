@@ -3,6 +3,11 @@ ont.activityhub/.project
 ont.activityhub/.settings
 ont.activityhub/target
 ont.activityhub/uAAL.log
+ont.av/.classpath
+ont.av/.project
+ont.av/.settings
+ont.av/target
+ont.av/uAAL.log
 ont.device/.classpath
 ont.device/.project
 ont.device/.settings
