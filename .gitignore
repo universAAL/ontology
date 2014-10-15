@@ -144,6 +144,10 @@ ont.situation.reasoner/.classpath
 ont.situation.reasoner/.project
 ont.situation.reasoner/.settings
 ont.situation.reasoner/target
+ont.sysinfo/.classpath
+ont.sysinfo/.project
+ont.sysinfo/.settings
+ont.sysinfo/target
 ont.unit/*.log
 ont.unit/.classpath
 ont.unit/.project
