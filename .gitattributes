@@ -590,6 +590,33 @@ ont.profile/src/main/java/org/universAAL/ontology/vcard/Voice.java -text
 ont.profile/src/main/java/org/universAAL/ontology/vcard/X400.java -text
 ont.profile/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.profile/src/test/resources/log4j.properties -text
+ont.questionnaire/ASL2.0.txt -text
+ont.questionnaire/NOTICE.txt -text
+ont.questionnaire/pom.xml -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/QuestionnaireActivator.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/QuestionnaireFactory.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/Answer.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/AnsweredQuestionnaire.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/ChoiceLabel.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/ConditionalQuestion.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/MultiChoiceQuestion.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/Question.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/QuestionWithMedia.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/Questionnaire.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/QuestionnaireOntology.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/QuestionnaireService.java -text
+ont.questionnaire/src/main/java/org/universAAL/ontology/questionnaire/SingleChoiceQuestion.java -text
+ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/QuestionnaireEnummerationsOntologyFactory.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/owl/PartsOfDay.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ennumerations/ontology/owl/QuestionnaireEnnumerationsOntology.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireAnswersIT.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireCompletenessIT.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireGeneralWorkingIT.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireMultiTriggerIT.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireNextQuestionIT.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/java/org/universAAL/ontology/test/QuestionnaireQuestionsIT.java -text svneol=unset#text/plain
+ont.questionnaire/src/test/resources/log4j.properties -text
 ont.unit/ASL2.0.txt -text
 ont.unit/NOTICE.txt -text
 ont.unit/Unit.di -text

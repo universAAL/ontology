@@ -118,6 +118,11 @@ ont.profile/.project
 ont.profile/.settings
 ont.profile/target
 ont.profile/uAAL.log
+ont.questionnaire/.classpath
+ont.questionnaire/.project
+ont.questionnaire/.settings
+ont.questionnaire/target
+ont.questionnaire/uAAL.log
 ont.unit/*.log
 ont.unit/.classpath
 ont.unit/.project
