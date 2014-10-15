@@ -65,6 +65,17 @@ ont.av/src/main/java/org/universAAL/ontology/av/streaming/VideoFormat.java -text
 ont.av/src/main/java/org/universAAL/ontology/av/streaming/VideoStream.java -text
 ont.av/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.av/src/test/resources/log4j.properties -text
+ont.che/ASL2.0.txt -text
+ont.che/LICENSE-CPL-JUnit.txt -text
+ont.che/NOTICE.txt -text
+ont.che/pom.xml -text
+ont.che/src/main/java/org/universAAL/ontology/ContextHistoryActivator.java -text
+ont.che/src/main/java/org/universAAL/ontology/ContextHistoryFactory.java -text
+ont.che/src/main/java/org/universAAL/ontology/che/ContextEvent.java -text
+ont.che/src/main/java/org/universAAL/ontology/che/ContextHistoryOntology.java -text
+ont.che/src/main/java/org/universAAL/ontology/che/ContextHistoryService.java -text
+ont.che/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.che/src/test/resources/log4j.properties -text
 ont.device/ASL2.0.txt -text
 ont.device/Device.di -text
 ont.device/Device.notation -text
