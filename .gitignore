@@ -97,6 +97,10 @@ ont.pom/ont.karaf.feature/.settings
 ont.pom/ont.karaf.feature/target
 ont.pom/target
 ont.pom/uAAL.log
+ont.profile.contact/.classpath
+ont.profile.contact/.project
+ont.profile.contact/.settings
+ont.profile.contact/target
 ont.profile/.classpath
 ont.profile/.project
 ont.profile/.settings
