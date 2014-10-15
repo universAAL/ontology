@@ -7938,6 +7938,21 @@ ont.sysinfo-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/PeerCar
 ont.sysinfo-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/SysinfoOntology.java -text
 ont.sysinfo-3.0.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/SystemInfo.java -text
 ont.sysinfo-3.0.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/ASL2.0.txt -text
+ont.sysinfo-3.1.1-SNAPSHOT/NOTICE.txt -text
+ont.sysinfo-3.1.1-SNAPSHOT/ont.sysinfo.di -text
+ont.sysinfo-3.1.1-SNAPSHOT/ont.sysinfo.notation -text
+ont.sysinfo-3.1.1-SNAPSHOT/ont.sysinfo.uml -text
+ont.sysinfo-3.1.1-SNAPSHOT/pom.xml -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/SysinfoActivator.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/SysinfoFactory.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/AALSpaceDescriptor.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/Descriptor.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/PeerCardDescriptor.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/SysinfoOntology.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/main/java/org/universAAL/ontology/sysinfo/SystemInfo.java -text
+ont.sysinfo-3.1.1-SNAPSHOT/src/test/java/org/universAAL/ontology/test/ArtifactIT.java -text
 ont.unit-1.1.4-SNAPSHOT/LICENSE.txt -text svneol=unset#text/plain
 ont.unit-1.1.4-SNAPSHOT/NOTICE.txt -text
 ont.unit-1.1.4-SNAPSHOT/Unit.di -text
