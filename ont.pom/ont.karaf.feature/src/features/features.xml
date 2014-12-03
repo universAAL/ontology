@@ -171,4 +171,9 @@
 		<feature>uAAL-Ont.PhWorld</feature>
 		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.X73/${ont.X73.version}</bundle>
 	</feature>
+	
+	<feature name="uAAL-Ont.ASOR" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.asor/${ont.asor.version}</bundle>
+	</feature>
 </features>
