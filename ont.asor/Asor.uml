@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/OWL/_8v6kUJ2UEeCA1PJ4jAflww/8 pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww">
+  <uml:Model xmi:id="_BFd6AFMjEeSpbY_c9WCv8w" name="Asor">
+    <ownedComment xmi:id="_BFd6AVMjEeSpbY_c9WCv8w" annotatedElement="_BFd6CVMjEeSpbY_c9WCv8w">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <packageImport xmi:id="_BFd6AlMjEeSpbY_c9WCv8w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_0huTAKFGEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_BFd6A1MjEeSpbY_c9WCv8w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.phThing.uml#_INViAKFHEeCPiYRKlVcMuQ"/>
+    </packageImport>
+    <packageImport xmi:id="_BFd6BFMjEeSpbY_c9WCv8w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_ar8DoPqREeCQQaPCMdH-vA"/>
+    </packageImport>
+    <packageImport xmi:id="_BFd6BVMjEeSpbY_c9WCv8w">
+      <importedPackage href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_U7uacGkcEeGIl7HiYaL9OA"/>
+    </packageImport>
+    <packageImport xmi:id="_BFd6BlMjEeSpbY_c9WCv8w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.unit.uml#_iTg3EEzlEeG4aIoxfVByDw"/>
+    </packageImport>
+    <packageImport xmi:id="_BFd6B1MjEeSpbY_c9WCv8w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.measurement.uml#__ImLAIn5EeGWy6MmckrVYA"/>
+    </packageImport>
+    <packageImport xmi:id="_BFd6CFMjEeSpbY_c9WCv8w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.device.uml#_UkOj0NJAEeGCrI2l36sLrg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BFd6CVMjEeSpbY_c9WCv8w" name="org.universAAL.ontology.asor">
+      <packagedElement xmi:type="uml:Class" xmi:id="_BFd6DFMjEeSpbY_c9WCv8w" name="Asor">
+        <generalization xmi:id="_BFd6DVMjEeSpbY_c9WCv8w">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_EVQHYFMxEeSpbY_c9WCv8w" name="supports" type="_F1YIoFhbEeSteIul4LjEDA" association="_EVSjoFMxEeSpbY_c9WCv8w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EVQHYVMxEeSpbY_c9WCv8w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EVQHYlMxEeSpbY_c9WCv8w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Oxt-4FM0EeSpbY_c9WCv8w" name="controls" type="_BFd6EFMjEeSpbY_c9WCv8w" association="_OxvNAFM0EeSpbY_c9WCv8w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oxt-4VM0EeSpbY_c9WCv8w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oxt-4lM0EeSpbY_c9WCv8w"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BFd6EFMjEeSpbY_c9WCv8w" name="Script">
+        <generalization xmi:id="_BFd6EVMjEeSpbY_c9WCv8w">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_br8ZoFM0EeSpbY_c9WCv8w" name="writtenIn" type="_3xe6oFhbEeSteIul4LjEDA" association="_br9nwFM0EeSpbY_c9WCv8w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_br8ZoVM0EeSpbY_c9WCv8w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_br8ZolM0EeSpbY_c9WCv8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_59hhwFM0EeSpbY_c9WCv8w" name="isRunning">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_1blGEGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_2vd04FM1EeSpbY_c9WCv8w" name="content">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_pmYAcFrEEeSteIul4LjEDA" name="isPersistent">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_1blGEGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cbY84Ft0EeSteIul4LjEDA" name="name">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EVSjoFMxEeSpbY_c9WCv8w" name="supports" memberEnd="_EVSjoVMxEeSpbY_c9WCv8w _EVQHYFMxEeSpbY_c9WCv8w">
+        <ownedEnd xmi:id="_EVSjoVMxEeSpbY_c9WCv8w" name="" type="_BFd6DFMjEeSpbY_c9WCv8w" association="_EVSjoFMxEeSpbY_c9WCv8w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EVSjolMxEeSpbY_c9WCv8w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EVSjo1MxEeSpbY_c9WCv8w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OxvNAFM0EeSpbY_c9WCv8w" name="controls" memberEnd="_OxvNAVM0EeSpbY_c9WCv8w _Oxt-4FM0EeSpbY_c9WCv8w">
+        <ownedEnd xmi:id="_OxvNAVM0EeSpbY_c9WCv8w" name="asor" type="_BFd6DFMjEeSpbY_c9WCv8w" association="_OxvNAFM0EeSpbY_c9WCv8w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OxvNAlM0EeSpbY_c9WCv8w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OxvNA1M0EeSpbY_c9WCv8w"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_br9nwFM0EeSpbY_c9WCv8w" name="writtenIn" memberEnd="_br9nwVM0EeSpbY_c9WCv8w _br8ZoFM0EeSpbY_c9WCv8w">
+        <ownedEnd xmi:id="_br9nwVM0EeSpbY_c9WCv8w" name="script" type="_BFd6EFMjEeSpbY_c9WCv8w" association="_br9nwFM0EeSpbY_c9WCv8w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_br9nwlM0EeSpbY_c9WCv8w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_br9nw1M0EeSpbY_c9WCv8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_F1YIoFhbEeSteIul4LjEDA" name="ScriptEngine">
+        <generalization xmi:id="_VPX_MFhgEeSteIul4LjEDA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_U3ljkFhbEeSteIul4LjEDA" name="name">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMCPwFhbEeSteIul4LjEDA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oL8JIFhbEeSteIul4LjEDA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_WbPusFhbEeSteIul4LjEDA" name="version">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o2eT4FhbEeSteIul4LjEDA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o2YNQFhbEeSteIul4LjEDA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZXUeQFhbEeSteIul4LjEDA" name="languageVersion">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p5hFQVhbEeSteIul4LjEDA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p5hFQFhbEeSteIul4LjEDA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_az04gFhbEeSteIul4LjEDA" name="mimeTypes">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkPdQVhbEeSteIul4LjEDA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qkPdQFhbEeSteIul4LjEDA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cKtL4FhbEeSteIul4LjEDA" name="fileExtensions">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMlPoFhbEeSteIul4LjEDA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMfJAFhbEeSteIul4LjEDA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_EhBIUFhcEeSteIul4LjEDA" name="languageClassifier" type="_3xe6oFhbEeSteIul4LjEDA" association="_EhDkkFhcEeSteIul4LjEDA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EhBIUVhcEeSteIul4LjEDA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EhBvYFhcEeSteIul4LjEDA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3xe6oFhbEeSteIul4LjEDA" name="LanguageClassifier">
+        <generalization xmi:id="_QM8AEFhgEeSteIul4LjEDA">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_H3_rMFhcEeSteIul4LjEDA" name="name">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qJUqwVh6EeSteIul4LjEDA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qJUqwFh6EeSteIul4LjEDA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0ZSOwFhmEeSteIul4LjEDA" name="scriptEngine" type="_F1YIoFhbEeSteIul4LjEDA" association="_0ZSOw1hmEeSteIul4LjEDA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ZSOwVhmEeSteIul4LjEDA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ZSOwlhmEeSteIul4LjEDA"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EhDkkFhcEeSteIul4LjEDA" name="hasLanguageClassifier" memberEnd="_EhDkkVhcEeSteIul4LjEDA _EhBIUFhcEeSteIul4LjEDA">
+        <ownedEnd xmi:id="_EhDkkVhcEeSteIul4LjEDA" name="scriptEngine" type="_F1YIoFhbEeSteIul4LjEDA" association="_EhDkkFhcEeSteIul4LjEDA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EhDkklhcEeSteIul4LjEDA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EhDkk1hcEeSteIul4LjEDA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_N6pKIFhcEeSteIul4LjEDA" name="JavaScript" clientDependency="_n0FtAFhfEeSteIul4LjEDA" classifier="_3xe6oFhbEeSteIul4LjEDA"/>
+      <packagedElement xmi:type="uml:Realization" xmi:id="_n0FtAFhfEeSteIul4LjEDA" name="" supplier="_3xe6oFhbEeSteIul4LjEDA" client="_N6pKIFhcEeSteIul4LjEDA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0ZSOw1hmEeSteIul4LjEDA" name="realizedBy" memberEnd="_0ZSOxFhmEeSteIul4LjEDA _0ZSOwFhmEeSteIul4LjEDA">
+        <ownedEnd xmi:id="_0ZSOxFhmEeSteIul4LjEDA" name="" type="_3xe6oFhbEeSteIul4LjEDA" association="_0ZSOw1hmEeSteIul4LjEDA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ZSOxVhmEeSteIul4LjEDA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ZSOxlhmEeSteIul4LjEDA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_BFd6ElMjEeSpbY_c9WCv8w">
+      <eAnnotations xmi:id="_BFd6E1MjEeSpbY_c9WCv8w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/OWL.profile.uml#_8wB5EJ2UEeCA1PJ4jAflww"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/OWL.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_BFd6FFMjEeSpbY_c9WCv8w">
+      <eAnnotations xmi:id="_BFd6FVMjEeSpbY_c9WCv8w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TwoUse_Profiles/RDF.profile.uml#_0R89QCqWEd6tAp0dWJ5sSg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TwoUse_Profiles/RDF.profile.uml#_TEtTYHGwEdyoJ7Xxsdx7ug"/>
+    </profileApplication>
+  </uml:Model>
+  <OWL:owlOntology xmi:id="_BFd6FlMjEeSpbY_c9WCv8w" defaultNamespace="http://ontology.universAAL.org/Asor" base_Package="_BFd6CVMjEeSpbY_c9WCv8w" versionInfo="0.1.0-SNAPSHOT"/>
+  <OWL:datatypeProperty xmi:id="_59tH8FM0EeSpbY_c9WCv8w" base_Property="_59hhwFM0EeSpbY_c9WCv8w" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_2vmXwFM1EeSpbY_c9WCv8w" base_Property="_2vd04FM1EeSpbY_c9WCv8w" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_U39-EFhbEeSteIul4LjEDA" base_Property="_U3ljkFhbEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_Wbb78FhbEeSteIul4LjEDA" base_Property="_WbPusFhbEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_ZXgrgFhbEeSteIul4LjEDA" base_Property="_ZXUeQFhbEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_a0BFwFhbEeSteIul4LjEDA" base_Property="_az04gFhbEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_cKzSgFhbEeSteIul4LjEDA" base_Property="_cKtL4FhbEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_H4NGkFhcEeSteIul4LjEDA" base_Property="_H3_rMFhcEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_pmwa8FrEEeSteIul4LjEDA" base_Property="_pmYAcFrEEeSteIul4LjEDA" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_cblKIFt0EeSteIul4LjEDA" base_Property="_cbY84Ft0EeSteIul4LjEDA" isFunctional="true"/>
+</xmi:XMI>
