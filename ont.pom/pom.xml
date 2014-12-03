@@ -27,6 +27,7 @@
   </developers>
   <modules>
     <module>../ont.activityhub</module>
+    <module>../ont.asor</module>
     <module>../ont.av</module>
     <module>../ont.che</module>
     <module>../ont.continuahealthmanager</module>
@@ -102,6 +103,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.activityhub</artifactId>
+        <version>3.2.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.asor</artifactId>
         <version>3.2.1-SNAPSHOT</version>
       </dependency>
       <dependency>
