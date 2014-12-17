@@ -18,6 +18,7 @@ package org.universAAL.ontology.healthmeasurement;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
+import org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation;
 import org.universAAL.ontology.healthmeasurement.owl.BloodPressure;
 import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement;
 import org.universAAL.ontology.healthmeasurement.owl.HeartRate;
@@ -40,6 +41,8 @@ public class HealthMeasurementFactory implements ResourceFactory {
 	    return new HeartRate(instanceURI);
 	case 8:
 	    return new HeartRateSignal(instanceURI);
+	case 9:
+	    return new BloodOxygenSaturation(instanceURI);
 
 	}
 	return null;
