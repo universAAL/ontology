@@ -317,6 +317,7 @@ ont.health.measurement/NOTICE.txt -text svneol=unset#text/plain
 ont.health.measurement/pom.xml -text
 ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/HealthMeasruementActivator.java -text
 ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/HealthMeasurementFactory.java -text
+ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/BloodOxygenSaturation.java -text
 ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/BloodPressure.java -text
 ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HealthMeasurement.java -text
 ont.health.measurement/src/main/java/org/universAAL/ontology/healthmeasurement/owl/HealthMeasurementOntology.java -text

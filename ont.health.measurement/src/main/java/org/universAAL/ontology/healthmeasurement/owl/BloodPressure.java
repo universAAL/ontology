@@ -54,11 +54,11 @@ public class BloodPressure extends HealthMeasurement {
     
     public void setDias(Measurement m){
 	if(m != null){
-	    changeProperty(PROP_SYSTOLIC, m);
+	    changeProperty(PROP_DIASTOLIC, m);
 	}
     }
     public Measurement getDias(){
-	return (Measurement) getProperty(PROP_SYSTOLIC);
+	return (Measurement) getProperty(PROP_DIASTOLIC);
     }
 
     public boolean isWellFormed() {

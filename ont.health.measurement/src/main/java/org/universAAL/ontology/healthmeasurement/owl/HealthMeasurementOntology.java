@@ -34,6 +34,7 @@ import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.User;
 import org.universAAL.ontology.unit.DividedUnit;
+import org.universAAL.ontology.unit.MeasurableDimension;
 import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.system.InternationalSystem;
 import org.universAAL.ontology.unit.system.TimeSystem;
@@ -72,6 +73,8 @@ public final class HealthMeasurementOntology extends Ontology {
 		HeartRate.MY_URI, factory, 7);
 	OntClassInfoSetup oci_HeartRateSignal = createNewOntClassInfo(
 		HeartRateSignal.MY_URI, factory, 8);
+	OntClassInfoSetup oci_BloodOxygenSat = createNewOntClassInfo(
+		BloodOxygenSaturation.MY_URI, factory, 9);
 
 	// ******* Add content to regular classes of the ontology ******* //
 
@@ -152,6 +155,16 @@ public final class HealthMeasurementOntology extends Ontology {
 	
 //	oci_HeartRate.addRestriction(MergedRestriction.getFixedValueRestriction(
 //			Measurement.PROP_HAS_UNIT, beatsPerMinute));
+	
+	// Blood Oxygen Sat
+	oci_BloodOxygenSat.setResourceComment("Blood Oxygen Saturation SpO2");
+	oci_BloodOxygenSat.setResourceLabel("BloodOxygenSaturation");
+	oci_BloodOxygenSat.addSuperClass(HealthMeasurement.MY_URI);
+	oci_BloodOxygenSat.addSuperClass(Measurement.MY_URI);
+	Unit spo2 = new Unit("spo2", "SpO2", "%SpO2",
+    		MeasurableDimension.Adiemnsional);
+	oci_BloodOxygenSat.addRestriction(MergedRestriction.getFixedValueRestriction(
+		Measurement.PROP_HAS_UNIT, spo2));
 
 	// Heart rate signal
 	oci_HeartRateSignal.setResourceComment("");
