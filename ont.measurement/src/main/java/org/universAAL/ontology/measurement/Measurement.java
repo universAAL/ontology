@@ -54,14 +54,11 @@ public class Measurement extends ManagedIndividual {
     }
 
     public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
+	return PROP_SERIALIZATION_FULL;
     }
 
     public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_ERROR)
-		&& hasProperty(PROP_HAS_UNIT) && hasProperty(PROP_HAS_PREFIX)
-		&& hasProperty(PROP_VALUE);
+	return true && hasProperty(PROP_VALUE);
     }
 
     public Object getValue() {
