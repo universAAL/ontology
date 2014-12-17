@@ -408,8 +408,11 @@ ont.personalhealthdevice/NOTICE.txt -text
 ont.personalhealthdevice/pom.xml -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/PersonalHealthDeviceActivator.java -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/PersonalHealthDeviceFactory.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodOxygenSatSensor.java -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMeasurement.java -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureMonitor.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/BloodPressureSensor.java -text
+ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/HeartRateSensor.java -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java -text
 ont.personalhealthdevice/src/main/java/org/universAAL/ontology/personalhealthdevice/WeighingScale.java -text
 ont.phWorld/ASL2.0.txt -text

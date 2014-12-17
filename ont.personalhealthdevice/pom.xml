@@ -45,6 +45,14 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.measurement</artifactId>
     </dependency>
+     <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.device</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.health.measurement</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

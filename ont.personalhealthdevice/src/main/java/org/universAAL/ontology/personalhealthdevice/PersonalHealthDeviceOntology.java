@@ -25,6 +25,12 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.PersonalHealthDeviceFactory;
+import org.universAAL.ontology.device.DeviceOntology;
+import org.universAAL.ontology.device.Sensor;
+import org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation;
+import org.universAAL.ontology.healthmeasurement.owl.BloodPressure;
+import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology;
+import org.universAAL.ontology.healthmeasurement.owl.HeartRate;
 import org.universAAL.ontology.measurement.Measurement;
 import org.universAAL.ontology.measurement.MeasurementOntology;
 import org.universAAL.ontology.phThing.Device;
@@ -53,6 +59,8 @@ public class PersonalHealthDeviceOntology extends Ontology {
 			+ "e.g. blood pressure monitor, weighing scale,...");
 	r.setResourceLabel("PersonalHealthDevice");
 	addImport(MeasurementOntology.NAMESPACE);
+	addImport(DeviceOntology.NAMESPACE);
+	addImport(HealthMeasurementOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 
@@ -105,6 +113,36 @@ public class PersonalHealthDeviceOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			WeighingScale.PROP_HAS_MEASURED_WEIGHT,
 			Measurement.MY_URI, 1, 1));
+	
+	// load BloodOxygenSat
+	oci = createNewOntClassInfo(BloodOxygenSatSensor.MY_URI, factory, 3);
+	oci.setResourceComment("The class of all blood oxygen sensors.");
+	oci.setResourceLabel("BloodOxygenSatSensor");
+	oci.addSuperClass(Sensor.MY_URI);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			Sensor.PROP_HAS_VALUE,
+			BloodOxygenSaturation.MY_URI, 1, 1));
+	
+	// load BloodPressure 2
+	oci = createNewOntClassInfo(BloodPressureSensor.MY_URI, factory, 4);
+	oci.setResourceComment("The class of all blood pressure sensors.");
+	oci.setResourceLabel("BloodPressureSensor");
+	oci.addSuperClass(Sensor.MY_URI);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			Sensor.PROP_HAS_VALUE,
+			BloodPressure.MY_URI, 1, 1));
+	
+	// load HeartRate
+	oci = createNewOntClassInfo(HeartRateSensor.MY_URI, factory, 5);
+	oci.setResourceComment("The class of all heart rate sensors.");
+	oci.setResourceLabel("HeartRateSensor");
+	oci.addSuperClass(Sensor.MY_URI);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			Sensor.PROP_HAS_VALUE,
+			HeartRate.MY_URI, 1, 1));
 
     }
 
