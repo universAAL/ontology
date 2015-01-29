@@ -38,6 +38,9 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ws6OUc3OEeKlm66fzEg6Vg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ws6OUs3OEeKlm66fzEg6Vg" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_N7DiwKbdEeSrSq_3V2gD2g" name="alive">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_1blGEGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_JsgU4M3OEeKlm66fzEg6Vg" name="Descriptor">
         <ownedAttribute xmi:id="_VqvBcM3OEeKlm66fzEg6Vg" name="SerializedValue">
@@ -99,4 +102,5 @@
   </uml:Model>
   <OWL:owlOntology xmi:id="_u49Z8c3NEeKlm66fzEg6Vg" defaultNamespace="http://ontology.universAAL.org/ont.sysinfo" base_Package="_u49Z5s3NEeKlm66fzEg6Vg" versionInfo="0.1.0-SNAPSHOT"/>
   <OWL:datatypeProperty xmi:id="_VrJRIM3OEeKlm66fzEg6Vg" base_Property="_VqvBcM3OEeKlm66fzEg6Vg" isFunctional="true"/>
+  <OWL:datatypeProperty xmi:id="_N82SgKbdEeSrSq_3V2gD2g" base_Property="_N7DiwKbdEeSrSq_3V2gD2g" isFunctional="true"/>
 </xmi:XMI>

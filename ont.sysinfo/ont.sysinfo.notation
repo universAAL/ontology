@@ -192,6 +192,17 @@
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_IxGcmM3OEeKlm66fzEg6Vg" type="5029"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_IxGcmc3OEeKlm66fzEg6Vg" type="7017">
+        <children xmi:type="notation:Shape" xmi:id="_N8lMwKbdEeSrSq_3V2gD2g" type="3012" fontName="Segoe UI" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N84uwKbdEeSrSq_3V2gD2g" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N85V0KbdEeSrSq_3V2gD2g" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N85V0abdEeSrSq_3V2gD2g" key="StereotypeList" value="OWL::datatypeProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N85V0qbdEeSrSq_3V2gD2g" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N85V06bdEeSrSq_3V2gD2g" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N85V1KbdEeSrSq_3V2gD2g" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="ont.sysinfo.uml#_N7DiwKbdEeSrSq_3V2gD2g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_N8lMwabdEeSrSq_3V2gD2g"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_IxGcms3OEeKlm66fzEg6Vg"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_IxGcm83OEeKlm66fzEg6Vg"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_IxGcnM3OEeKlm66fzEg6Vg"/>

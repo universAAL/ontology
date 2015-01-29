@@ -45,6 +45,8 @@ public class SystemInfo extends ManagedIndividual {
 	    + "spaceLost";
     public static final String PROP_PEER_LOST = SysinfoOntology.NAMESPACE
 	    + "peerLost";
+    public static final String PROP_ALIVE = SysinfoOntology.NAMESPACE
+	    + "alive";
 
     public SystemInfo() {
 	super();
@@ -109,6 +111,15 @@ public class SystemInfo extends ManagedIndividual {
     public void setPeerLost(PeerCardDescriptor newPropValue) {
 	if (newPropValue != null)
 	    changeProperty(PROP_PEER_LOST, newPropValue);
+    }
+    
+    public Boolean getAlive() {
+	return (Boolean) getProperty(PROP_ALIVE);
+    }
+
+    public void setAlive(Boolean alive) {
+	if (alive != null)
+	    changeProperty(PROP_ALIVE, alive);
     }
 
 }
