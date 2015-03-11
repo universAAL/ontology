@@ -51,6 +51,12 @@
 		<feature>uAAL-Ont.PhWorld</feature>
 		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.profile/${ont.profile.version}</bundle>
 	</feature>
+
+	<feature name="uAAL-Ont.SysInfo" description="The System Informtaion Ontology"
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.sysinfo/${ont.sysinfo.version}</bundle>
+	</feature>
 	
 	<feature name="uAAL-Ont.gesturePointing" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>

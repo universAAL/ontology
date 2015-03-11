@@ -110,6 +110,10 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.sysinfo</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.profile.contact</artifactId>
     </dependency>
     <dependency>
