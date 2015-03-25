@@ -130,9 +130,9 @@ public class RoomFunction extends ManagedIndividual {
      * @param name
      *            The function number. A null object is not allowed
      */
-    public RoomFunction(int Function) {
-	super();
-	this.order = Function;
+    public RoomFunction(int function) {
+	super(LocationOntology.NAMESPACE + names[function]);
+	this.order = function;
     }
 
     public String getClassURI() {
