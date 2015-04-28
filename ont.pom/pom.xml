@@ -63,20 +63,12 @@
     <module>ont.karaf.feature</module>
   </modules>
   <scm>
-    <connection>${svn.base}/${project.artifactId}</connection>
-    <developerConnection>${svn.base}/${project.artifactId}</developerConnection>
-    <url>${svn.base.url}${project.artifactId}</url>
+    <connection>scm:git:https://github.com/universAAL/ontology.git</connection>
+	<developerConnection>scm:git:git@github.com:universAAL/ontology.git</developerConnection>
   </scm>
-  <distributionManagement>
-    <site>
-      <id>depot.universaal.org</id>
-      <url>${uaal.site.url}ontology/ont.pom</url>
-    </site>
-  </distributionManagement>
   <properties>
     <nameMatchString>^universAAL Ontology .*</nameMatchString>
     <maven.compile.source>1.4</maven.compile.source>
-    <gforge.project.name>ontologies</gforge.project.name>
     <separatedGroupIds>org.universAAL.middleware</separatedGroupIds>
     <remoteOBR></remoteOBR>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
