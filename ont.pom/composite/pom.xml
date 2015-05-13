@@ -13,11 +13,6 @@
   <packaging>bundle</packaging>
   <name>universAAL Ontology Composite</name>
   <url></url>
-  <scm>
-    <connection>${svn.base}/ont.pom/composite</connection>
-    <developerConnection>${svn.base}/ont.pom/composite</developerConnection>
-    <url>${svn.base.url}ont.pom%2Fcomposite</url>
-  </scm>
   <dependencies>
     <dependency>
       <groupId>org.universAAL.support</groupId>

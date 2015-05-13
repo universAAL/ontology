@@ -11,11 +11,6 @@
   <artifactId>ont.karaf.feature</artifactId>
   <version>3.3.1-SNAPSHOT</version>
   <name>universAAL Ontology Karaf Feature</name>
-  <scm>
-    <connection>${svn.base}/ont.pom/${project.artifactId}</connection>
-    <developerConnection>${svn.base}/ont.pom/${project.artifactId}</developerConnection>
-    <url>${svn.base.url}%2Font.pom%2F${project.artifactId}</url>
-  </scm>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
   </properties>
