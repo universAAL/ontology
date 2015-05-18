@@ -28,6 +28,7 @@ import org.universAAL.ontology.phThing.Device;
  * 
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
+@Deprecated
 public class WeighingScale extends Device {
 
     public static final String MY_URI = PersonalHealthDeviceOntology.NAMESPACE

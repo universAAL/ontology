@@ -29,6 +29,7 @@ import org.universAAL.ontology.measurement.Measurement;
  * 
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
+@Deprecated
 public class BloodPressureMeasurement extends ManagedIndividual {
 
     public static final String MY_URI = PersonalHealthDeviceOntology.NAMESPACE
