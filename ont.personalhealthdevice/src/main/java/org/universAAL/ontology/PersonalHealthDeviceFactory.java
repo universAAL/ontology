@@ -23,11 +23,8 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.personalhealthdevice.BloodOxygenSatSensor;
-import org.universAAL.ontology.personalhealthdevice.BloodPressureMeasurement;
-import org.universAAL.ontology.personalhealthdevice.BloodPressureMonitor;
 import org.universAAL.ontology.personalhealthdevice.BloodPressureSensor;
 import org.universAAL.ontology.personalhealthdevice.HeartRateSensor;
-import org.universAAL.ontology.personalhealthdevice.WeighingScale;
 
 /**
  * Factory for PersonalHealthDevice Ontology.
@@ -45,17 +42,19 @@ public class PersonalHealthDeviceFactory implements ResourceFactory {
 	 * there
 	 */
 	switch (factoryIndex) {
+	/*
 	case 0:
 	    return new BloodPressureMeasurement(instanceURI);
 	case 1:
 	    return new BloodPressureMonitor(instanceURI);
 	case 2:
 	    return new WeighingScale(instanceURI);
-	case 3:
+	    */
+	case 0:
 	    return new BloodOxygenSatSensor(instanceURI);
-	case 4:
+	case 1:
 	    return new BloodPressureSensor(instanceURI);
-	case 5:
+	case 2:
 	    return new HeartRateSensor(instanceURI);
 	}
 

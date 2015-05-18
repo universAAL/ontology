@@ -31,9 +31,7 @@ import org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation;
 import org.universAAL.ontology.healthmeasurement.owl.BloodPressure;
 import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology;
 import org.universAAL.ontology.healthmeasurement.owl.HeartRate;
-import org.universAAL.ontology.measurement.Measurement;
 import org.universAAL.ontology.measurement.MeasurementOntology;
-import org.universAAL.ontology.phThing.Device;
 
 /**
  * The ontology represents the person-related health devices (Continua certified
@@ -63,8 +61,8 @@ public class PersonalHealthDeviceOntology extends Ontology {
 	addImport(HealthMeasurementOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
-
-	// load BloodPressureMeasurement
+	/*
+	// load BloodPressureMeasurement 
 	oci = createNewOntClassInfo(BloodPressureMeasurement.MY_URI, factory, 0);
 	oci
 		.setResourceComment("Measurement class for blood pressure monitors.");
@@ -89,7 +87,7 @@ public class PersonalHealthDeviceOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			BloodPressureMeasurement.PROP_HAS_MEASURED_HEARTRATE,
 			Measurement.MY_URI, 0, 1));
-
+	
 	// load BloodPressureMonitor
 	oci = createNewOntClassInfo(BloodPressureMonitor.MY_URI, factory, 1);
 	oci.setResourceComment("The class of all blood pressure monitors.");
@@ -101,7 +99,7 @@ public class PersonalHealthDeviceOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			BloodPressureMonitor.PROP_HAS_MEASUREMENT,
 			BloodPressureMeasurement.MY_URI, 1, 1));
-
+	
 	// load WeighingScale
 	oci = createNewOntClassInfo(WeighingScale.MY_URI, factory, 2);
 	oci.setResourceComment("The class of all weighing scales.");
@@ -113,9 +111,9 @@ public class PersonalHealthDeviceOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			WeighingScale.PROP_HAS_MEASURED_WEIGHT,
 			Measurement.MY_URI, 1, 1));
-	
+	*/
 	// load BloodOxygenSat
-	oci = createNewOntClassInfo(BloodOxygenSatSensor.MY_URI, factory, 3);
+	oci = createNewOntClassInfo(BloodOxygenSatSensor.MY_URI, factory, 0);
 	oci.setResourceComment("The class of all blood oxygen sensors.");
 	oci.setResourceLabel("BloodOxygenSatSensor");
 	oci.addSuperClass(Sensor.MY_URI);
@@ -125,7 +123,7 @@ public class PersonalHealthDeviceOntology extends Ontology {
 			BloodOxygenSaturation.MY_URI, 1, 1));
 	
 	// load BloodPressure 2
-	oci = createNewOntClassInfo(BloodPressureSensor.MY_URI, factory, 4);
+	oci = createNewOntClassInfo(BloodPressureSensor.MY_URI, factory, 1);
 	oci.setResourceComment("The class of all blood pressure sensors.");
 	oci.setResourceLabel("BloodPressureSensor");
 	oci.addSuperClass(Sensor.MY_URI);
@@ -135,7 +133,7 @@ public class PersonalHealthDeviceOntology extends Ontology {
 			BloodPressure.MY_URI, 1, 1));
 	
 	// load HeartRate
-	oci = createNewOntClassInfo(HeartRateSensor.MY_URI, factory, 5);
+	oci = createNewOntClassInfo(HeartRateSensor.MY_URI, factory, 2);
 	oci.setResourceComment("The class of all heart rate sensors.");
 	oci.setResourceLabel("HeartRateSensor");
 	oci.addSuperClass(Sensor.MY_URI);
