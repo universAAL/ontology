@@ -25,7 +25,7 @@ public class BloodPressure extends HealthMeasurement {
     public static final String PROP_SYSTOLIC = HealthMeasurementOntology.NAMESPACE
     	    + "systolicBloodPreassure";
     public static final String PROP_DIASTOLIC = HealthMeasurementOntology.NAMESPACE
-    	    + "diatolicBloodPreassure";
+    	    + "diastolicBloodPreassure";
 
     public BloodPressure() {
 	super();
