@@ -36,7 +36,7 @@ import org.universAAL.ontology.device.StatusValue;
 public class CarpetSensor extends Sensor {
 
     /** Class URI */
-    public static final String MY_URI = DeviceOntology.NAMESPACE
+    public static final String MY_URI = DeviceextraOntology.NAMESPACE
 	    + "CarpetSensor";
 
     public CarpetSensor() {

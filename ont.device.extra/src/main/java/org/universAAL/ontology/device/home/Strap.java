@@ -36,7 +36,7 @@ import org.universAAL.ontology.phThing.Device;
 public class Strap extends Device {
 
     /** Class URI */
-    public static final String MY_URI = DeviceOntology.NAMESPACE + "Strap";
+    public static final String MY_URI = DeviceextraOntology.NAMESPACE + "Strap";
 
     public Strap() {
     }
