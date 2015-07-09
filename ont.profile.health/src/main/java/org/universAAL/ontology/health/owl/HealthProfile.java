@@ -25,7 +25,6 @@ import java.util.List;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement;
-import org.universAAL.ontology.profile.AssistedPerson;
 import org.universAAL.ontology.profile.Gender;
 import org.universAAL.ontology.profile.SubProfile;
 
@@ -36,8 +35,6 @@ public class HealthProfile extends SubProfile {
 	    + "HealthProfile";
     public static final String PROP_HAS_TREATMENT = HealthProfileOntology.NAMESPACE
 	    + "hasTreatment";
-    public static final String PROP_IS_ASSIGNED_TO_AP = HealthProfileOntology.NAMESPACE
-	    + "isAssignedToAP";
     public static final String PROP_LAST_MEASUREMENTS = HealthProfileOntology.NAMESPACE
 	    + "lastMeasurements";
     public static final String PROP_BIRTH_DATE = HealthProfileOntology.NAMESPACE
@@ -78,11 +75,6 @@ public class HealthProfile extends SubProfile {
     }
 
     public int getPropSerializationType(String arg0) {
-	// privacy? asigned to doesn't need to be serialized fully
-	if (arg0.equals(PROP_IS_ASSIGNED_TO_AP)) {
-	   // BUG: seems serializer does not like ciclycal properties
-	    return PROP_SERIALIZATION_FULL;
-	}
 	if (arg0.startsWith(HealthProfileOntology.NAMESPACE)) {
 	    return PROP_SERIALIZATION_FULL;
 	} else {
@@ -102,14 +94,6 @@ public class HealthProfile extends SubProfile {
     }
 
     // GETTERS & SETTERS
-    public AssistedPerson getAssignedAssistedPerson() {
-	return (AssistedPerson) props.get(PROP_IS_ASSIGNED_TO_AP);
-    }
-
-    public void setAssignedAssistedPerson(AssistedPerson ap) {
-	if (ap != null)
-	    props.put(PROP_IS_ASSIGNED_TO_AP, ap);
-    }
 
     public Treatment[] getTreatments() {
 
@@ -243,13 +227,6 @@ public class HealthProfile extends SubProfile {
     }
 
     // OTHER METHODS
-    public void assignHealthProfileToAP(AssistedPerson ap) {
-	this.setAssignedAssistedPerson(ap);
-	// The assisted person becomes an assisted person with a health profile
-	// AssistedPersonWithHealthProfile apwhp = new
-	// AssistedPersonWithHealthProfile(this);
-    }
-
     public Gender getGender() {
 	return (Gender) props.get(PROP_GENDER);
     }
