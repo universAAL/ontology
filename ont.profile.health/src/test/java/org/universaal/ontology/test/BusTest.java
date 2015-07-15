@@ -41,11 +41,11 @@ public class BusTest extends BusTestCase {
     public void test() {
 	AssistedPerson ap = new AssistedPerson("testAP");
 	HealthProfile hp = new HealthProfile(ap.getURI() + "HealthSubprofile");
-	if (ap instanceof AssistedPerson) {
-	    hp.setAssignedAssistedPerson((AssistedPerson) ap);
-	    // Bug #378
-	    // hp.setAssignedAssistedPerson(new AssistedPerson(ap.getURI()));
-	}
+//	if (ap instanceof AssistedPerson) {
+//	    hp.setAssignedAssistedPerson((AssistedPerson) ap);
+//	    // Bug #378
+//	    // hp.setAssignedAssistedPerson(new AssistedPerson(ap.getURI()));
+//	}
 	UserProfile up = new AssistedPersonProfile("uriUserProfile");
 	up.setSubProfile(hp);
 	ap.setProfile(up);
