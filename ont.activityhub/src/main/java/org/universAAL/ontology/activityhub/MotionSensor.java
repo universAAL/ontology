@@ -62,11 +62,11 @@ public class MotionSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(MotionSensorEvent mse) {
-	props.put(PROP_MEASURED_VALUE, mse);
+	props.put(PROP_HAS_VALUE, mse);
     }
 
     public MotionSensorEvent getMeasuredvalue() {
-	return ((MotionSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((MotionSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     /**
@@ -78,7 +78,7 @@ public class MotionSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 

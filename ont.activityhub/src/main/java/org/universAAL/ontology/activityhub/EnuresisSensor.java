@@ -67,11 +67,11 @@ public class EnuresisSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(EnuresisSensorEvent event) {
-	props.put(PROP_MEASURED_VALUE, event);
+	props.put(PROP_HAS_VALUE, event);
     }
 
     public EnuresisSensorEvent getMeasuredvalue() {
-	return ((EnuresisSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((EnuresisSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     /**
@@ -83,7 +83,7 @@ public class EnuresisSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 

@@ -70,11 +70,11 @@ public class CoSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(EnvironmentalSensorEvent ese) {
-	props.put(PROP_MEASURED_VALUE, ese);
+	props.put(PROP_HAS_VALUE, ese);
     }
 
     public EnvironmentalSensorEvent getMeasuredvalue() {
-	return ((EnvironmentalSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((EnvironmentalSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     /**
@@ -86,7 +86,7 @@ public class CoSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 

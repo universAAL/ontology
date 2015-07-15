@@ -74,7 +74,7 @@ public abstract class ActivityHubSensor extends Sensor {
      * information.
      */
     public void setMeasuredValue(ActivityHubSensorEvent event) {
-	props.put(PROP_MEASURED_VALUE, event);
+	props.put(PROP_HAS_VALUE, event);
     }
 
     /* for testing return true */

@@ -67,11 +67,11 @@ public class MedicationDosageSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(MedicationDosageSensorEvent event) {
-	props.put(PROP_MEASURED_VALUE, event);
+	props.put(PROP_HAS_VALUE, event);
     }
 
     public MedicationDosageSensorEvent getMeasuredvalue() {
-	return ((MedicationDosageSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((MedicationDosageSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     /**
@@ -83,7 +83,7 @@ public class MedicationDosageSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 

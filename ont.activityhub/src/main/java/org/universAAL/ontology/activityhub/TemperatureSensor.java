@@ -68,11 +68,11 @@ public class TemperatureSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(TemperatureSensorEvent event) {
-	props.put(PROP_MEASURED_VALUE, event);
+	props.put(PROP_HAS_VALUE, event);
     }
 
     public TemperatureSensorEvent getMeasuredvalue() {
-	return ((TemperatureSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((TemperatureSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     /**
@@ -84,7 +84,7 @@ public class TemperatureSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 

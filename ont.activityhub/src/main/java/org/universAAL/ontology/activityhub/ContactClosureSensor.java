@@ -67,11 +67,11 @@ public class ContactClosureSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(ContactClosureSensorEvent event) {
-	props.put(PROP_MEASURED_VALUE, event);
+	props.put(PROP_HAS_VALUE, event);
     }
 
     public ContactClosureSensorEvent getMeasuredvalue() {
-	return ((ContactClosureSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((ContactClosureSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     public String getClassURI() {
@@ -79,7 +79,7 @@ public class ContactClosureSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 

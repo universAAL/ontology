@@ -70,11 +70,11 @@ public class UsageSensor extends ActivityHubSensor {
      * information.
      */
     public void setMeasuredValue(UsageSensorEvent event) {
-	props.put(PROP_MEASURED_VALUE, event);
+	props.put(PROP_HAS_VALUE, event);
     }
 
     public UsageSensorEvent getMeasuredvalue() {
-	return ((UsageSensorEvent) props.get(PROP_MEASURED_VALUE));
+	return ((UsageSensorEvent) props.get(PROP_HAS_VALUE));
     }
 
     /**
@@ -86,7 +86,7 @@ public class UsageSensor extends ActivityHubSensor {
     }
 
     public int getPropSerializationType(String propURI) {
-	return PROP_MEASURED_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
+	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
 		: super.getPropSerializationType(propURI);
     }
 
