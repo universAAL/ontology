@@ -122,7 +122,7 @@ public class TreatmentPlanning extends ManagedIndividual {
 	    props.put(PROP_RECURRENCE, recurrence);
     }
 
-    public void setPlannedSession(PerformedSession[] pSession) {
+    public void setPlannedSession(PlannedSession[] pSession) {
 	List propList = new ArrayList(pSession.length);
 	for (int i = 0; i < pSession.length; i++) {
 	    propList.add(pSession[i]);
