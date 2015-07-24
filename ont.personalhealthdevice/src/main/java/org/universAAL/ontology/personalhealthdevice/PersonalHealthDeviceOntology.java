@@ -1,6 +1,11 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
+	 
+     Copyright 2015 ITACA-SABIEN, http://www.tsb.upv.es
+     Instituto Tecnologico de Aplicaciones de Comunicacion 
+     Avanzadas - Grupo Tecnologias para la Salud y el 
+     Bienestar (SABIEN)
      
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
@@ -31,6 +36,7 @@ import org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation;
 import org.universAAL.ontology.healthmeasurement.owl.BloodPressure;
 import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology;
 import org.universAAL.ontology.healthmeasurement.owl.HeartRate;
+import org.universAAL.ontology.healthmeasurement.owl.PersonWeight;
 import org.universAAL.ontology.measurement.MeasurementOntology;
 
 /**
@@ -61,57 +67,7 @@ public class PersonalHealthDeviceOntology extends Ontology {
 	addImport(HealthMeasurementOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
-	/*
-	// load BloodPressureMeasurement 
-	oci = createNewOntClassInfo(BloodPressureMeasurement.MY_URI, factory, 0);
-	oci
-		.setResourceComment("Measurement class for blood pressure monitors.");
-	oci.setResourceLabel("BloodPressureMeasurement");
-	oci.addSuperClass(Device.MY_URI);
-	oci.addObjectProperty(BloodPressureMeasurement.PROP_HAS_MEASURED_BPSYS)
-		.setFunctional();
-	oci.addObjectProperty(BloodPressureMeasurement.PROP_HAS_MEASURED_BPDIA)
-		.setFunctional();
-	oci.addObjectProperty(
-		BloodPressureMeasurement.PROP_HAS_MEASURED_HEARTRATE)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			BloodPressureMeasurement.PROP_HAS_MEASURED_BPSYS,
-			Measurement.MY_URI, 1, 1));
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			BloodPressureMeasurement.PROP_HAS_MEASURED_BPDIA,
-			Measurement.MY_URI, 1, 1));
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			BloodPressureMeasurement.PROP_HAS_MEASURED_HEARTRATE,
-			Measurement.MY_URI, 0, 1));
 	
-	// load BloodPressureMonitor
-	oci = createNewOntClassInfo(BloodPressureMonitor.MY_URI, factory, 1);
-	oci.setResourceComment("The class of all blood pressure monitors.");
-	oci.setResourceLabel("BloodPressureMonitor");
-	oci.addSuperClass(Device.MY_URI);
-	oci.addObjectProperty(BloodPressureMonitor.PROP_HAS_MEASUREMENT)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			BloodPressureMonitor.PROP_HAS_MEASUREMENT,
-			BloodPressureMeasurement.MY_URI, 1, 1));
-	
-	// load WeighingScale
-	oci = createNewOntClassInfo(WeighingScale.MY_URI, factory, 2);
-	oci.setResourceComment("The class of all weighing scales.");
-	oci.setResourceLabel("WeighingScale");
-	oci.addSuperClass(Device.MY_URI);
-	oci.addObjectProperty(WeighingScale.PROP_HAS_MEASURED_WEIGHT)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			WeighingScale.PROP_HAS_MEASURED_WEIGHT,
-			Measurement.MY_URI, 1, 1));
-	*/
 	// load BloodOxygenSat
 	oci = createNewOntClassInfo(BloodOxygenSatSensor.MY_URI, factory, 0);
 	oci.setResourceComment("The class of all blood oxygen sensors.");
@@ -141,6 +97,18 @@ public class PersonalHealthDeviceOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			Sensor.PROP_HAS_VALUE,
 			HeartRate.MY_URI, 1, 1));
+	
+	// load WeighingScale
+	oci = createNewOntClassInfo(WeighingScale.MY_URI, factory, 3);
+	oci.setResourceComment("The class of all weighing scales.");
+	oci.setResourceLabel("WeighingScale");
+	oci.addSuperClass(Sensor.MY_URI);
+	oci.addObjectProperty(WeighingScale.PROP_HAS_VALUE)
+		.setFunctional();
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			WeighingScale.PROP_HAS_VALUE,
+			PersonWeight.MY_URI, 1, 1));
 
     }
 
