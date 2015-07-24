@@ -109,16 +109,17 @@
 		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.measurement/${ont.measurement.version}</bundle>
 	</feature>
 	
-	<feature name="uAAL-Ont.personalhealthdevice" version="${pom.version}" resolver='(obr)'>
-		<feature>uAAL-Ont.PhWorld</feature>
-		<feature>uAAL-Ont.Measurement</feature>
-		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.personalhealthdevice/${ont.personalhealthdevice.version}</bundle>
-	</feature>
-	
 	<feature name="uAAL-Ont.Health.Measurement" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>
 		<feature>uAAL-Ont.Measurement</feature>
 		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.health.measurement/${ont.health.measurement.version}</bundle>
+	</feature>
+
+	<feature name="uAAL-Ont.personalhealthdevice" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.PhWorld</feature>
+		<feature>uAAL-Ont.Measurement</feature>
+		<feature>uAAL-Ont.Health.Measurement</feature>
+		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.personalhealthdevice/${ont.personalhealthdevice.version}</bundle>
 	</feature>
 	
 	<feature name="uAAL-Ont.Health.Disease" version="${pom.version}" resolver='(obr)'>
