@@ -131,20 +131,33 @@ public final class HealthMeasurementOntology extends Ontology {
 	oci_BloodPressure.setResourceComment("");
 	oci_BloodPressure.setResourceLabel("BloodPressure");
 	oci_BloodPressure.addSuperClass(HealthMeasurement.MY_URI);
-	
+
+	Unit mmHg = new Unit("mmHg", "mm Hg", "mm Hg",
+		MeasurableDimension.Derived);
+
+	MergedRestriction diasR = MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			BloodPressure.PROP_DIASTOLIC, Measurement.MY_URI, 1, 1);
+	MergedRestriction sysR = MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			BloodPressure.PROP_SYSTOLIC, Measurement.MY_URI, 1, 1);
+	MergedRestriction unitR = MergedRestriction.getFixedValueRestriction(
+		Measurement.PROP_HAS_UNIT, mmHg);
+	MergedRestriction typeR = MergedRestriction.getAllValuesRestriction(
+		Measurement.PROP_VALUE, TypeMapper.getDatatypeURI(Float.class));
+
+	unitR.appendTo(diasR, new String[] { BloodPressure.PROP_DIASTOLIC, Measurement.PROP_HAS_UNIT });
+	typeR.appendTo(diasR, new String[] { BloodPressure.PROP_DIASTOLIC, Measurement.PROP_VALUE });
+
+	unitR.appendTo(sysR, new String[] { BloodPressure.PROP_SYSTOLIC, Measurement.PROP_HAS_UNIT });
+	typeR.appendTo(sysR, new String[] { BloodPressure.PROP_SYSTOLIC, Measurement.PROP_VALUE });
+
 	oci_BloodPressure.addObjectProperty(BloodPressure.PROP_SYSTOLIC);
-	oci_BloodPressure.addRestriction(
-			MergedRestriction.getAllValuesRestrictionWithCardinality(
-					BloodPressure.PROP_SYSTOLIC, Measurement.MY_URI, 1, 1));
+	oci_BloodPressure.addRestriction(sysR);
 
 	oci_BloodPressure.addObjectProperty(BloodPressure.PROP_DIASTOLIC);
-	oci_BloodPressure.addRestriction(
-			MergedRestriction.getAllValuesRestrictionWithCardinality(
-					BloodPressure.PROP_DIASTOLIC, Measurement.MY_URI, 1, 1));
+	oci_BloodPressure.addRestriction(diasR);
 	
-	//oci_BloodPressure.addRestriction()
-	//XXX: ADD sys and dia unit restiction
-
 	// Heart rate
 	oci_HeartRate.setResourceComment("");
 	oci_HeartRate.setResourceLabel("HeartRate");
@@ -152,9 +165,10 @@ public final class HealthMeasurementOntology extends Ontology {
 	oci_HeartRate.addSuperClass(Measurement.MY_URI);
 	Unit beatsPerMinute = new DividedUnit("BPM", Util.IND_UNIT_UNITY,
     		TimeSystem.IND_UNIT_TS_MINUTE);
-	
-//	oci_HeartRate.addRestriction(MergedRestriction.getFixedValueRestriction(
-//			Measurement.PROP_HAS_UNIT, beatsPerMinute));
+	oci_HeartRate.addRestriction(MergedRestriction.getFixedValueRestriction(
+			Measurement.PROP_HAS_UNIT, beatsPerMinute));
+	oci_HeartRate.addRestriction(MergedRestriction.getAllValuesRestriction(
+		Measurement.PROP_VALUE, TypeMapper.getDatatypeURI(Integer.class)));
 	
 	// Blood Oxygen Sat
 	oci_BloodOxygenSat.setResourceComment("Blood Oxygen Saturation SpO2");
