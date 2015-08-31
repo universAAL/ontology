@@ -1,6 +1,5 @@
 /*******************************************************************************
- * Copyright 2013 Universidad Politécnica de Madrid
- * Copyright 2013 Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
+ * Copyright 2015 2011 Universidad Politécnica de Madrid
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,38 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.xsd.Base64Binary;
+import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * User-Password type Credentials.
  * @author amedrano
  *
  */
-public class UserPasswordCredentials extends Password {
-
-
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "UserPasswordCredentials";
-    public static final String PROP_USERNAME = SecurityOntology.NAMESPACE
-    	    + "username";
+public abstract class PossessionFactor extends Factor {
+    public static final String MY_URI = SecurityOntology.NAMESPACE + "PossessionFactor";
         
 	
 	/**
 	 * Only for serializers.
 	 */
-	public UserPasswordCredentials() {
+	public PossessionFactor() {
 	    super();
 	}
 
 	/**
 	 * @param uri
 	 */
-	public UserPasswordCredentials(String uri) {
+	public PossessionFactor(String uri) {
 		super(uri);
 	}
-
 
 	/** {@ inheritDoc}	 */
 	public String getClassURI() {
@@ -54,28 +46,11 @@ public class UserPasswordCredentials extends Password {
 
 	/** {@ inheritDoc}	 */
 	public boolean isWellFormed() {
-		return hasProperty(PROP_PASSWORD)
-				&& hasProperty(PROP_USERNAME)
-				&& super.isWellFormed();
+		return super.isWellFormed();
 	}
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_PASSWORD)||propURI.equals(PROP_USERNAME)
-			||propURI.equals(PROP_PASSWORD_DIGEST)){
-			return PROP_SERIALIZATION_FULL;
-		}
 		return PROP_SERIALIZATION_UNDEFINED;
 	}
-
-	public String getUsername(){
-		return (String) getProperty(PROP_USERNAME);
-	}
-	
-	public void setUsername(String value){
-		if (value != null && !value.isEmpty()){
-			changeProperty(PROP_USERNAME, value);
-		}
-	}
-	
 }

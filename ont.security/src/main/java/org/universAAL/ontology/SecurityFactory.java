@@ -21,6 +21,8 @@ import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.security.AuthenticationService;
 import org.universAAL.ontology.security.DeviceBoundSession;
 import org.universAAL.ontology.security.LocationBoundSession;
+import org.universAAL.ontology.security.MultifactorCredentials;
+import org.universAAL.ontology.security.Password;
 import org.universAAL.ontology.security.SecuritySubprofile;
 import org.universAAL.ontology.security.SessionManagementService;
 import org.universAAL.ontology.security.UserPasswordCredentials;
@@ -47,6 +49,10 @@ public class SecurityFactory implements ResourceFactory {
 	    return new AuthenticationService(instanceURI);
 	case 5:
 	    return new SecuritySubprofile(instanceURI);
+	case 6:
+		return new MultifactorCredentials(instanceURI);
+	case 7:
+		return new Password(instanceURI);
 	}
 	return null;
     }

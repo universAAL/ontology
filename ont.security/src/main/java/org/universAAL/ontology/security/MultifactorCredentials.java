@@ -17,32 +17,36 @@
 
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.xsd.Base64Binary;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 
 /**
- * User-Password type Credentials.
+ * Multifactor type Credentials.
  * @author amedrano
  *
  */
-public class UserPasswordCredentials extends Password {
+public class MultifactorCredentials extends Credentials {
 
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "UserPasswordCredentials";
-    public static final String PROP_USERNAME = SecurityOntology.NAMESPACE
-    	    + "username";
+    public static final String MY_URI = SecurityOntology.NAMESPACE + "MultifactorCredentials";
+    public static final String PROP_FACTORS = SecurityOntology.NAMESPACE
+    	    + "FACTORS";
         
 	
 	/**
 	 * Only for serializers.
 	 */
-	public UserPasswordCredentials() {
+	public MultifactorCredentials() {
 	    super();
 	}
 
 	/**
 	 * @param uri
 	 */
-	public UserPasswordCredentials(String uri) {
+	public MultifactorCredentials(String uri) {
 		super(uri);
 	}
 
@@ -54,28 +58,47 @@ public class UserPasswordCredentials extends Password {
 
 	/** {@ inheritDoc}	 */
 	public boolean isWellFormed() {
-		return hasProperty(PROP_PASSWORD)
-				&& hasProperty(PROP_USERNAME)
-				&& super.isWellFormed();
+		return hasProperty(PROP_FACTORS) && super.isWellFormed();
 	}
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_PASSWORD)||propURI.equals(PROP_USERNAME)
-			||propURI.equals(PROP_PASSWORD_DIGEST)){
+		if (propURI.equals(PROP_FACTORS)){
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_UNDEFINED;
 	}
-
-	public String getUsername(){
-		return (String) getProperty(PROP_USERNAME);
-	}
 	
-	public void setUsername(String value){
-		if (value != null && !value.isEmpty()){
-			changeProperty(PROP_USERNAME, value);
+	public void addFactor(Factor f){
+		Object fs = getProperty(PROP_FACTORS);
+		if (fs == null){
+			fs=f;
 		}
+		else if (fs instanceof Collection){
+			((Collection)fs).add(fs);
+		}
+		else {
+			List nfs = new ArrayList();
+			nfs.add(fs);
+			nfs.add(f);
+			fs = nfs;
+		}
+		changeProperty(PROP_FACTORS, fs);
 	}
 	
+	public List getFactors(){
+		Object fs = getProperty(PROP_FACTORS);
+		if (fs == null){
+			return Collections.emptyList();
+		}
+		else if (fs instanceof List){
+			return (List)fs;
+		}
+		else {
+			List nfs = new ArrayList();
+			nfs.add(fs);
+			return nfs;
+		}
+
+	}
 }
