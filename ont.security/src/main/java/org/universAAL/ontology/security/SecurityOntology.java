@@ -98,9 +98,11 @@ public final class SecurityOntology extends Ontology {
 		OntClassInfoSetup oci_secProf = createNewOntClassInfo(
 				SecuritySubprofile.MY_URI, factory, 5);
 		OntClassInfoSetup oci_multFactorCred = createNewOntClassInfo(
-				MultifactorCredentials.MY_URI, factory, 7);
+				MultifactorCredentials.MY_URI, factory, 6);
 		OntClassInfoSetup oci_passwd = createNewOntClassInfo(Password.MY_URI,
 				factory, 7);
+		OntClassInfoSetup oci_otp = createNewOntClassInfo(OneTimePassword.MY_URI,
+				factory, 8);
 
 		// Credentials
 		oci_credentials.setResourceLabel("Credentials");
@@ -147,6 +149,14 @@ public final class SecurityOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						Password.PROP_PASSWORD_DIGEST,
 						TypeMapper.getDatatypeURI(String.class), 0, 1));
+		
+		//OneTimePassword
+		oci_otp.setResourceComment("A password that is valid for only one login session or transaction, on a computer system or other digital device.");
+		oci_otp.setResourceLabel("One Time Password");
+		oci_passwd.addSuperClass(PossessionFactor.MY_URI);
+		oci_passwd.addSuperClass(Password.MY_URI);
+		
+		
 		// XXX Password Digest should be an ontological class?
 
 		// UserPass

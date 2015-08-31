@@ -22,6 +22,7 @@ import org.universAAL.ontology.security.AuthenticationService;
 import org.universAAL.ontology.security.DeviceBoundSession;
 import org.universAAL.ontology.security.LocationBoundSession;
 import org.universAAL.ontology.security.MultifactorCredentials;
+import org.universAAL.ontology.security.OneTimePassword;
 import org.universAAL.ontology.security.Password;
 import org.universAAL.ontology.security.SecuritySubprofile;
 import org.universAAL.ontology.security.SessionManagementService;
@@ -53,6 +54,8 @@ public class SecurityFactory implements ResourceFactory {
 		return new MultifactorCredentials(instanceURI);
 	case 7:
 		return new Password(instanceURI);
+	case 8:
+		return new OneTimePassword(instanceURI);
 	}
 	return null;
     }
