@@ -80,8 +80,7 @@ public class HealthProfile extends SubProfile {
     public int getPropSerializationType(String arg0) {
 	// privacy? asigned to doesn't need to be serialized fully
 	if (arg0.equals(PROP_IS_ASSIGNED_TO_AP)) {
-	   // BUG: seems serializer does not like ciclycal properties
-	    return PROP_SERIALIZATION_FULL;
+	    return PROP_SERIALIZATION_REDUCED;
 	}
 	if (arg0.startsWith(HealthProfileOntology.NAMESPACE)) {
 	    return PROP_SERIALIZATION_FULL;
