@@ -534,6 +534,12 @@ public final class HealthProfileOntology extends Ontology {
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		HealthProfile.PROP_HAS_TREATMENT, Treatment.MY_URI));
 
+	oci.addObjectProperty(HealthProfile.PROP_IS_ASSIGNED_TO_AP);
+	oci.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			HealthProfile.PROP_IS_ASSIGNED_TO_AP,
+			AssistedPerson.MY_URI, 1, 1));
+
 	oci.addObjectProperty(HealthProfile.PROP_LAST_MEASUREMENTS);
 	oci
 		.addRestriction(MergedRestriction.getAllValuesRestriction(
