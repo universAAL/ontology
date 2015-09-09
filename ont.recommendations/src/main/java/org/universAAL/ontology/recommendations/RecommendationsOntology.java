@@ -156,6 +156,7 @@ public final class RecommendationsOntology extends Ontology {
 		
 		oci_CSS.setResourceComment("CSS description recommendation");
 		oci_CSS.setResourceLabel("CSSRecommendation");
+		oci_CSS.addSuperClass(ScriptedRecommendation.MY_URI);
 		oci_CSS.addRestriction(MergedRestriction.getFixedValueRestriction(
 				CSSRecommendation.PROP_LANGUAJE, CSSRecommendation.CSS_LANG));
 
