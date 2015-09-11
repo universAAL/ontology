@@ -153,8 +153,8 @@ public final class SecurityOntology extends Ontology {
 		//OneTimePassword
 		oci_otp.setResourceComment("A password that is valid for only one login session or transaction, on a computer system or other digital device.");
 		oci_otp.setResourceLabel("One Time Password");
-		oci_passwd.addSuperClass(PossessionFactor.MY_URI);
-		oci_passwd.addSuperClass(Password.MY_URI);
+		oci_otp.addSuperClass(PossessionFactor.MY_URI);
+		oci_otp.addSuperClass(Password.MY_URI);
 		
 		
 		// XXX Password Digest should be an ontological class?
