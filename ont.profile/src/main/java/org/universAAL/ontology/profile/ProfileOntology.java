@@ -32,6 +32,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.PrivateResource;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
@@ -158,6 +159,7 @@ public final class ProfileOntology extends Ontology {
 		.setResourceComment("A SubProfile, for setting additional characteristics");
 	oci.setResourceLabel("Sub Profile");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 
 	// HWSubProfile
 	oci = createNewOntClassInfo(HWSubProfile.MY_URI, factory, HWSUBPROF);
@@ -203,6 +205,7 @@ public final class ProfileOntology extends Ontology {
 	oci.setResourceComment("A Profile, for setting characteristics");
 	oci.setResourceLabel("Profile");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 	oci.addObjectProperty(Profile.PROP_HAS_SUB_PROFILE).setFunctional();
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Profile.PROP_HAS_SUB_PROFILE, SubProfile.MY_URI));
@@ -314,6 +317,7 @@ public final class ProfileOntology extends Ontology {
 	oci.setResourceComment("Identifies concepts that can have profiles");
 	oci.setResourceLabel("Profilable");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 	oci.addObjectProperty(Profilable.PROP_HAS_PROFILE);
 	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
 		Profilable.PROP_HAS_PROFILE, Profile.MY_URI));

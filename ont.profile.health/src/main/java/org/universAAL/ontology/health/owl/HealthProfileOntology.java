@@ -25,6 +25,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.PrivateResource;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
@@ -121,6 +122,7 @@ public final class HealthProfileOntology extends Ontology {
 		.setResourceComment("A planned session is a session that has been schedule so as to perform an assigned activity.");
 	oci.setResourceLabel("PlannedSession");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 
 	oci.addDatatypeProperty(PlannedSession.PROP_DATE).setFunctional();
 	oci.addRestriction(MergedRestriction
@@ -158,6 +160,7 @@ public final class HealthProfileOntology extends Ontology {
 		.setResourceComment("A performed session is a session that has been performed.");
 	oci.setResourceLabel("PerformedSession");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 
 	// - property from planned session
 	oci2.addObjectProperty(PlannedSession.PROP_PERFORMED).setFunctional();
@@ -202,6 +205,7 @@ public final class HealthProfileOntology extends Ontology {
 		.setResourceComment("This class describes the planning of the sessions that composes the treatment.");
 	oci.setResourceLabel("TreatmentPlanning");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 
 	oci.addDatatypeProperty(TreatmentPlanning.PROP_RECURRENCE)
 		.setFunctional();
@@ -243,11 +247,13 @@ public final class HealthProfileOntology extends Ontology {
 		.setResourceComment("This class describes a session that has been performed.");
 	oci.setResourceLabel("PerformedSession");
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 
 	// load PerformedMeasurementSession
 	oci = createNewOntClassInfo(PerformedMeasurementSession.MY_URI,
 		factory, 5);
 	oci.addSuperClass(PerformedSession.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 	oci
 		.setResourceComment("This class describes a session with a health measurement involved that has been performed.");
 	oci.setResourceLabel("PerformedSession");
@@ -272,6 +278,7 @@ public final class HealthProfileOntology extends Ontology {
 	// load MeasurementRequirements
 	oci = createNewOntClassInfo(MeasurementRequirements.MY_URI, factory, 2);
 	oci.addSuperClass(ManagedIndividual.MY_URI);
+	oci.addSuperClass(PrivateResource.MY_URI);
 	oci
 		.setResourceComment("This concept involves all the measurement types that are required in a treatment.");
 	oci.setResourceLabel("MeasurementRequirements");
@@ -399,6 +406,7 @@ public final class HealthProfileOntology extends Ontology {
 		.setResourceComment("This class describes the concept of treatment, that is the set of activities that an assisted person is suggested to do.");
 	oci_treatment.setResourceLabel("Treatment");
 	oci_treatment.addSuperClass(ManagedIndividual.MY_URI);
+	oci_treatment.addSuperClass(PrivateResource.MY_URI);
 
 	oci_treatment.addDatatypeProperty(Treatment.PROP_NAME);
 	oci_treatment.addRestriction(MergedRestriction

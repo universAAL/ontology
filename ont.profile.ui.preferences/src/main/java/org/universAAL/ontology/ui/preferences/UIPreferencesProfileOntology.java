@@ -23,6 +23,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.PrivateResource;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
@@ -185,6 +186,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_VisualPreferences.setResourceComment("");
 	oci_VisualPreferences.setResourceLabel("VisualPreferences");
 	oci_VisualPreferences.addSuperClass(ManagedIndividual.MY_URI);
+	oci_VisualPreferences.addSuperClass(PrivateResource.MY_URI);
 
 	oci_VisualPreferences.addObjectProperty(
 		VisualPreferences.PROP_BACKGROUND_COLOR).setFunctional();
@@ -285,6 +287,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_SystemMenuPreferences.setResourceComment("");
 	oci_SystemMenuPreferences.setResourceLabel("SystemMenuPreferences");
 	oci_SystemMenuPreferences.addSuperClass(ManagedIndividual.MY_URI);
+	oci_SystemMenuPreferences.addSuperClass(PrivateResource.MY_URI);
 	oci_SystemMenuPreferences.addObjectProperty(
 		SystemMenuPreferences.PROP_MAIN_MENU_CONFIGURATION)
 		.setFunctional();
@@ -328,6 +331,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_AccessMode.setResourceComment("");
 	oci_AccessMode.setResourceLabel("AccessMode");
 	oci_AccessMode.addSuperClass(ManagedIndividual.MY_URI);
+	oci_AccessMode.addSuperClass(PrivateResource.MY_URI);
 	oci_AccessMode.addObjectProperty(AccessMode.PROP_OLFACTORY_MODE_STATUS)
 		.setFunctional();
 	oci_AccessMode.addRestriction(MergedRestriction
@@ -366,6 +370,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_AlertPreferences.setResourceComment("");
 	oci_AlertPreferences.setResourceLabel("AlertPreferences");
 	oci_AlertPreferences.addSuperClass(ManagedIndividual.MY_URI);
+	oci_AlertPreferences.addSuperClass(PrivateResource.MY_URI);
 	oci_AlertPreferences.addObjectProperty(
 		AlertPreferences.PROP_ALERT_OPTION).setFunctional();
 	oci_AlertPreferences.addRestriction(MergedRestriction
@@ -378,6 +383,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 		.setResourceLabel("GeneralInteractionPreferences");
 	oci_GeneralInteractionPreferences
 		.addSuperClass(ManagedIndividual.MY_URI);
+	oci_GeneralInteractionPreferences.addSuperClass(PrivateResource.MY_URI);
 	oci_GeneralInteractionPreferences.addObjectProperty(
 		GeneralInteractionPreferences.PROP_SECONDARY_LANGUAGE)
 		.setFunctional();
@@ -421,6 +427,7 @@ public final class UIPreferencesProfileOntology extends Ontology {
 	oci_AuditoryPreferences.setResourceComment("");
 	oci_AuditoryPreferences.setResourceLabel("AuditoryPreferences");
 	oci_AuditoryPreferences.addSuperClass(ManagedIndividual.MY_URI);
+	oci_AuditoryPreferences.addSuperClass(PrivateResource.MY_URI);
 	oci_AuditoryPreferences.addObjectProperty(
 		AuditoryPreferences.PROP_SPEECH_RATE).setFunctional();
 	oci_AuditoryPreferences.addRestriction(MergedRestriction
