@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.3.1-SNAPSHOT</version>
+    <version>3.4.0</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.languages</artifactId>
-  <version>3.3.1-SNAPSHOT</version>
+  <version>3.4.0</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Languages</name>
   <description>Ontology for languages based on ISO 639 codes (http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)</description>

@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.3.1-SNAPSHOT</version>
+    <version>3.4.0</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.personalhealthdevice</artifactId>
-  <version>3.3.1-SNAPSHOT</version>
+  <version>3.4.0</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology for personal health devices</name>
   <description>Ontological representation of personal health devices (Continua certified devices), e.g. blood pressure monitor, weighing scale,...</description>
