@@ -100,7 +100,7 @@ public class Consequence extends ManagedIndividual {
 		  }
 }
 
-// Version 0.3.0-SNAPSHOT
+// Initial draft version
 /*
  * // In this method you must return the restrictions on the property you are //
  * asked for public static MergedRestriction
