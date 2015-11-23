@@ -31,7 +31,8 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.location.LocationOntology;
-
+import org.universAAL.ontology.measurement.Measurement;
+import org.universAAL.ontology.measurement.MeasurementOntology;
 import org.universAAL.ontology.phThing.Device;
 
 //import the factory for this ontology
@@ -56,6 +57,7 @@ public final class DeviceOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
+	addImport(MeasurementOntology.NAMESPACE);
 
 	// ******* Declaration of enumeration classes of the ontology ******* //
 
@@ -164,6 +166,18 @@ public final class DeviceOntology extends Ontology {
 			DoorController.MY_URI, factory, 43);
 	OntClassInfoSetup oci_DoorSensor = createNewOntClassInfo(
 			DoorSensor.MY_URI, factory, 44);
+	OntClassInfoSetup oci_CO2Sensor = createNewOntClassInfo(
+		CO2Sensor.MY_URI, factory, 45);
+	OntClassInfoSetup oci_EnvironmentMeter = createNewOntClassInfo(
+		EnvironmentMeter.MY_URI, factory, 46);
+	OntClassInfoSetup oci_CO2Meter = createNewOntClassInfo(CO2Meter.MY_URI,
+		factory, 47);
+	OntClassInfoSetup oci_COMeter = createNewOntClassInfo(COMeter.MY_URI,
+		factory, 48);
+	OntClassInfoSetup oci_GasMeter = createNewOntClassInfo(GasMeter.MY_URI,
+		factory, 49);
+	OntClassInfoSetup oci_SmokeMeter = createNewOntClassInfo(
+		SmokeMeter.MY_URI, factory, 50);
 
 	// ******* Add content to enumeration classes of the ontology ******* //
 
@@ -203,15 +217,15 @@ public final class DeviceOntology extends Ontology {
 		ValueType.state });
 
 	// ******* Add content to regular classes of the ontology ******* //
-	// oci_MeasuredEvent.setResourceComment("");
-	// oci_MeasuredEvent.setResourceLabel("MeasuredEvent");
-	// oci_MeasuredEvent.addSuperClass(ManagedIndividual.MY_URI);
-	// oci_MeasuredState.setResourceComment("");
-	// oci_MeasuredState.setResourceLabel("MeasuredState");
-	// oci_MeasuredState.addSuperClass(ManagedIndividual.MY_URI);
+
 	oci_COSensor.setResourceComment("");
 	oci_COSensor.setResourceLabel("COSensor");
 	oci_COSensor.addSuperClass(EnvironmentSensor.MY_URI);
+	
+	oci_CO2Sensor.setResourceComment("");
+	oci_CO2Sensor.setResourceLabel("CO2Sensor");
+	oci_CO2Sensor.addSuperClass(EnvironmentSensor.MY_URI);
+	
 	oci_WaterFlowActuator.setResourceComment("");
 	oci_WaterFlowActuator.setResourceLabel("WaterFlowActuator");
 	oci_WaterFlowActuator.addSuperClass(Actuator.MY_URI);
@@ -492,6 +506,7 @@ public final class DeviceOntology extends Ontology {
 	oci_GasSensor.setResourceComment("");
 	oci_GasSensor.setResourceLabel("GasSensor");
 	oci_GasSensor.addSuperClass(EnvironmentSensor.MY_URI);
+	
 	oci_EnvironmentSensor.setResourceComment("");
 	oci_EnvironmentSensor.setResourceLabel("EnvironmentSensor");
 	oci_EnvironmentSensor.addSuperClass(Sensor.MY_URI);
@@ -501,6 +516,32 @@ public final class DeviceOntology extends Ontology {
 		.getAllValuesRestrictionWithCardinality(
 			EnvironmentSensor.PROP_HAS_VALUE, StatusValue.MY_URI,
 			1, 1));
+	
+	oci_EnvironmentMeter.setResourceComment("");
+	oci_EnvironmentMeter.setResourceLabel("EnvironmentMeter");
+	oci_EnvironmentMeter.addSuperClass(Sensor.MY_URI);
+	oci_EnvironmentMeter.addObjectProperty(
+		EnvironmentMeter.PROP_HAS_VALUE).setFunctional();
+	oci_EnvironmentMeter.addRestriction(MergedRestriction
+		.getAllValuesRestrictionWithCardinality(
+			EnvironmentMeter.PROP_HAS_VALUE, Measurement.MY_URI,
+			1, 1));
+	
+	oci_GasMeter.setResourceComment("");
+	oci_GasMeter.setResourceLabel("GasMeter");
+	oci_GasMeter.addSuperClass(EnvironmentMeter.MY_URI);
+	
+	oci_SmokeMeter.setResourceComment("");
+	oci_SmokeMeter.setResourceLabel("SmokeMeter");
+	oci_SmokeMeter.addSuperClass(EnvironmentMeter.MY_URI);
+	
+	oci_COMeter.setResourceComment("");
+	oci_COMeter.setResourceLabel("COMeter");
+	oci_COMeter.addSuperClass(EnvironmentMeter.MY_URI);
+	
+	oci_CO2Meter.setResourceComment("");
+	oci_CO2Meter.setResourceLabel("CO2Meter");
+	oci_CO2Meter.addSuperClass(EnvironmentMeter.MY_URI);
 
 	oci_WindowSensor.setResourceComment("");
 	oci_WindowSensor.setResourceLabel("WindowSensor");
