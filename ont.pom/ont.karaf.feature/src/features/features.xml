@@ -91,6 +91,7 @@
 	
 	<feature name="uAAL-Ont.Device" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>
+		<feature>uAAL-Ont.Measurement</feature>
 		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.device/${ont.device.version}</bundle>
 	</feature>
 	
