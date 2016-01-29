@@ -35,6 +35,9 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.device.extra</artifactId>
     </dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.hvac</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.device</artifactId>

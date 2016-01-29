@@ -37,8 +37,9 @@
     <module>../ont.furniture</module>
     <module>../ont.gesture.pointing</module>
     <module>../ont.handgestures</module>
+    <module>../ont.handgestures</module>
     <module>../ont.health.disease</module>
-    <module>../ont.health.measurement</module>
+    <module>../ont.hvac</module>
     <module>../ont.impairment</module>
     <module>../ont.languages</module>
     <module>../ont.lighting</module>
@@ -240,6 +241,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.profile.health</artifactId>
+        <version>3.4.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.hvac</artifactId>
         <version>3.4.1-SNAPSHOT</version>
       </dependency>
       <dependency>
