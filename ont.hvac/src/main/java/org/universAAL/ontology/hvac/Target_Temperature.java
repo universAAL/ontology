@@ -21,7 +21,7 @@
  */
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.ontology.measurement.Measurement;
+
 
 public abstract class Target_Temperature extends Hvac {
 	
@@ -29,10 +29,12 @@ public abstract class Target_Temperature extends Hvac {
    
     public static final String PROP_HAS_TEMPERATURE = HvacOntology.NAMESPACE + "hasTemperature";
     
-//    public static final String PROP_TEMPARATURE_UNIT = HvacOntology.NAMESPACE + "temperatureUnit";
-// 
-//    public static final String PROP_TEMPARATURE_VALUE = HvacOntology.NAMESPACE + "temperatureValue";
-//    
+    public static final String PROP_TEMPERATURE_UNIT = HvacOntology.NAMESPACE + "temperatureUnit";
+ 
+    public static final String PROP_TARGET_TEMPERATURE_VALUE = HvacOntology.NAMESPACE + "targetTemperatureValue";
+    
+    public static final String PROP_CURRENT_TEMPERATURE_VALUE = HvacOntology.NAMESPACE + "currentTemperatureValue";
+    
     public Target_Temperature() {
 	
     	super();
@@ -52,20 +54,13 @@ public abstract class Target_Temperature extends Hvac {
     	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
     }
 
-//    public MeasurableDimension getTemperature() {
-//    	MeasurableDimension temperature = (MeasurableDimension) getProperty(PROP_HAS_TEMPERATURE);
-//   		return temperature.getmeasurableDimensionByOrder(4);
-//   	    }
-//
-//   	    public void setTemperature(int newPropValue) {
-//   		changeProperty(PROP_HAS_TEMPERATURE, new MeasurableDimension(newPropValue));
-//   	    }
-    public void setTemperature(Measurement t){
-    	if(t != null){
-    	    changeProperty(PROP_HAS_TEMPERATURE, t);
-    	}
-        }
-        public Measurement getTemperature(){
-    	return (Measurement) getProperty(PROP_HAS_TEMPERATURE);
-        }
+
+   public Float getCurrentTemperatureValue()
+   {
+	   return (Float)getProperty(PROP_CURRENT_TEMPERATURE_VALUE);
+   }
+   public boolean setTarget_Temperature_Value(Float targetTemperature){
+	   return changeProperty(PROP_TARGET_TEMPERATURE_VALUE, targetTemperature);
+	   
+   }
 }

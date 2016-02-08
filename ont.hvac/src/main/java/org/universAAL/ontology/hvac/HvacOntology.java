@@ -47,6 +47,7 @@ import org.universAAL.ontology.device.*;
 //import the factory for this ontology
 
 
+
 /**
  * @author AAL Studio: UML2Java transformation
  */
@@ -296,48 +297,36 @@ public final class HvacOntology extends Ontology {
 		oci_Target_Temperature.setResourceLabel("Target_Temperature");
 		oci_Target_Temperature.addSuperClass(Hvac.MY_URI);
 
-		Unit temperature = new Unit("temperature","temperature","temperature",MeasurableDimension.Temperature);
-
-		MergedRestriction temp1 = MergedRestriction
-			.getAllValuesRestrictionWithCardinality(
-					Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.MY_URI, 1, 1);
 		
-		MergedRestriction unitR = MergedRestriction.getFixedValueRestriction(
-			Measurement.PROP_HAS_UNIT, temperature);
-		MergedRestriction typeR = MergedRestriction.getAllValuesRestriction(
-			Measurement.PROP_VALUE, TypeMapper.getDatatypeURI(Float.class));
 
-		unitR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_HAS_UNIT });
-		typeR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_VALUE });
+		
+		MergedRestriction unitR = MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Target_Temperature.PROP_TEMPERATURE_UNIT,Unit.MY_URI, 1, 1);
+		MergedRestriction unitR2 = MergedRestriction.getFixedValueRestriction(
+				Target_Temperature.PROP_TEMPERATURE_UNIT,MeasurableDimension.Temperature);
+		
+		unitR2.appendTo(unitR, new String[] { Target_Temperature.PROP_TEMPERATURE_UNIT, Unit.PROP_DIMENSION });
+		
+		
+		
 
-		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_HAS_TEMPERATURE);
-		oci_Target_Temperature.addRestriction(temp1);
-	
-	
-	
+		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_TEMPERATURE_UNIT);
+		oci_Target_Temperature.addRestriction(unitR);
+		
+		
+		MergedRestriction cT = MergedRestriction.getAllValuesRestriction(
+				Target_Temperature.PROP_CURRENT_TEMPERATURE_VALUE, TypeMapper.getDatatypeURI(Float.class));
 
+		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_CURRENT_TEMPERATURE_VALUE);
+		oci_Target_Temperature.addRestriction(cT);
 	
-	// Target Temperature
-//	oci_Target_Temperature.setResourceComment("");
-//	oci_Target_Temperature.setResourceLabel("Target_Temperature");
-//	oci_Target_Temperature.addSuperClass(Hvac.MY_URI);
-//	
-//	Unit temperature = new Unit("temperature","temperature","temperature",MeasurableDimension.Temperature);
-//	
-//	MergedRestriction temp1 = MergedRestriction
-//			.getAllValuesRestrictionWithCardinality(
-//					Target_Temperature.PROP_TEMPARATURE_UNIT, Measurement.MY_URI, 1, 1);
-//	
-//	MergedRestriction unitR = MergedRestriction.getFixedValueRestriction(
-//			Measurement.PROP_HAS_UNIT, temperature);
-//		MergedRestriction typeR = MergedRestriction.getAllValuesRestriction(
-//			Measurement.PROP_VALUE, TypeMapper.getDatatypeURI(Float.class));
-//
-//		unitR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_HAS_UNIT });
-//		typeR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_VALUE });
-//
-//		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_HAS_TEMPERATURE);
-//		oci_Target_Temperature.addRestriction(temp1);
+		
+		MergedRestriction tT = MergedRestriction.getAllValuesRestriction(
+				Target_Temperature.PROP_TARGET_TEMPERATURE_VALUE, TypeMapper.getDatatypeURI(Float.class));
+		
+		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_TARGET_TEMPERATURE_VALUE);
+		oci_Target_Temperature.addRestriction(tT);
 	
     }
 }
