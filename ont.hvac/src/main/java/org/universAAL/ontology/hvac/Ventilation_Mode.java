@@ -23,7 +23,7 @@ package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 
-public class Ventilation_Mode extends ManagedIndividual {
+public class Ventilation_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Ventilation_Mode";
 
     public static final int NONAUTOMATIC = 0;

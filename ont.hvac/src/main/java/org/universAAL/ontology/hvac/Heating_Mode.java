@@ -21,9 +21,8 @@
  */
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
-public class Heating_Mode extends ManagedIndividual {
+public class Heating_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Heating_Mode";
 
     public static final int NONAUTOMATIC = 0;
@@ -83,7 +82,6 @@ public class Heating_Mode extends ManagedIndividual {
 
 	if (name.startsWith(HvacOntology.NAMESPACE))
 	    name = name.substring(HvacOntology.NAMESPACE.length());
-//NOSE SI ESTO ES NECESARIO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!1111
 
 	for (int i = NONAUTOMATIC; i <= WINTERMODE; i++)
 	    if (names[i].equals(name))

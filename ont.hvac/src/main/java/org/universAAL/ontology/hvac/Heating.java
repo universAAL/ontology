@@ -21,11 +21,12 @@
  */
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.ontology.hvac.DEVICE.StatusValue;
+import org.universAAL.ontology.hvac.StatusValue;
 
 public class Heating extends Target_Temperature {
     public static final String MY_URI = HvacOntology.NAMESPACE
 	    + "Heating";
+    public static final String PROP_HAS_HEATING_MODE = HvacOntology.NAMESPACE + "hasHeating_Mode";
 
     public Heating() {
 	super();
@@ -34,7 +35,6 @@ public class Heating extends Target_Temperature {
     public Heating(String uri) {
 	super(uri);
     }
-
     public String getClassURI() {
     	return MY_URI;
         }
@@ -44,15 +44,34 @@ public class Heating extends Target_Temperature {
         }
 
         public boolean isWellFormed() {
-    	return true && hasProperty(PROP_HAS_VALUE);
-        }
+        	
+        	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
 
-        public int getValue() {
-    	Integer i = (Integer) getProperty(PROP_HAS_VALUE);
-    	return (i == null) ? 0 : i.intValue();
         }
+       
+     
+       public Heating_Mode getHeating_Mode(){
+    	   return (Heating_Mode)getProperty(PROP_HAS_HEATING_MODE);
+       }
+       public boolean setMode(Heating_Mode Heating_Mode){
+    	   return changeProperty(PROP_HAS_HEATING_MODE, Heating_Mode);
+    	   
+       }
+       public Fan getFan(){
+    	   return (Fan)getProperty(PROP_HAS_FAN);
+       }
+       public boolean setFan(Fan fan){
+    	   return changeProperty(PROP_HAS_FAN, fan);
+    	   
+       }
+       public Swing getSwing(){
+    	   return (Swing)getProperty(PROP_HAS_SWING);
+       }
+       public boolean setSwing(Swing swing){
+    	   return changeProperty(PROP_HAS_SWING, swing);
+    	   
+       }
+      
 
-        public void setValue(int newPropValue) {
-    	changeProperty(PROP_HAS_VALUE, new Integer(newPropValue));
-        }
-    }
+
+}

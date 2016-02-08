@@ -28,17 +28,22 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.SomeValuesFromRestriction;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.device.DeviceOntology;
-import org.universAAL.ontology.hvac.DEVICE.Actuator;
+//import org.universAAL.ontology.healthmeasurement.owl.BloodPressure;
+//import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.measurement.Measurement;
 import org.universAAL.ontology.measurement.MeasurementOntology;
 import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.unit.MeasurableDimension;
+import org.universAAL.ontology.unit.Unit;
+import org.universAAL.ontology.unit.UnitOntology;
 import org.universAAL.ontology.HvacFactory;
-
+import org.universAAL.ontology.device.*;
 //import the factory for this ontology
 
 
@@ -57,14 +62,18 @@ public final class HvacOntology extends Ontology {
     public void create() {
 	Resource r = getInfo();
 	r.setResourceComment("The Collection of Hvac Ontology");
-	r.setResourceLabel("hvac");
+	r.setResourceLabel("Hvac");
 	addImport(DataRepOntology.NAMESPACE); 
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
 	addImport(MeasurementOntology.NAMESPACE);
 	addImport(DeviceOntology.NAMESPACE);
-
+	addImport(UnitOntology.NAMESPACE);
+    //////////////////////////////////////////////////////////////////////////////
 	// ******* Declaration of enumeration classes of the ontology ******* //
+	/////////////////////////////////////////////////////////////////////////////
+	
+	
 	OntClassInfoSetup oci_Air_Conditioning_Mode = createNewAbstractOntClassInfo(Air_Conditioning_Mode.MY_URI);
 	OntClassInfoSetup oci_Heating_Mode = createNewAbstractOntClassInfo(Heating_Mode.MY_URI);
 	OntClassInfoSetup oci_Level = createNewAbstractOntClassInfo(Level.MY_URI);
@@ -82,9 +91,9 @@ public final class HvacOntology extends Ontology {
 	
 	
 	
-
+    //////////////////////////////////////////////////////////////////////
 	// ******* Declaration of regular classes of the ontology ******* //
-	
+	//////////////////////////////////////////////////////////////////////
 
 	
 	OntClassInfoSetup oci_Air_Conditioning = createNewOntClassInfo(Air_Conditioning.MY_URI,
@@ -92,33 +101,39 @@ public final class HvacOntology extends Ontology {
 	OntClassInfoSetup oci_Heating = createNewOntClassInfo(Heating.MY_URI, factory, 1);
 	OntClassInfoSetup oci_Ventilation = createNewOntClassInfo(Ventilation.MY_URI, factory, 2);
 	
-
+	////////////////////////////////////////////////////////////////////(/////
 	// ******* Add content to enumeration classes of the ontology ******* //
-
-	oci_Air_Conditioning_Mode.setResourceComment("");
+	/////////////////////////////////////////////////////////////////////////////
+	
+	oci_Air_Conditioning_Mode.setResourceComment("The different modes of Air Conditioning that we can choose ");
 	oci_Air_Conditioning_Mode.setResourceLabel("Air_Conditioning_Mode");
 	oci_Air_Conditioning_Mode.toEnumeration(new ManagedIndividual[] {
 			Air_Conditioning_Mode.NonAutomatic,
 			Air_Conditioning_Mode.SleepMode,
 			Air_Conditioning_Mode.SummerMode});	
 	
-	oci_Level.setResourceComment("");
+	oci_Level.setResourceComment("The different levels of the properties of an Hvac");
 	oci_Level.setResourceLabel("Level");
 	oci_Level.toEnumeration(new ManagedIndividual[] {
 		Level.high,
 		Level.low,
 		Level.med});
 	
-	oci_Level.setResourceComment("");
+	oci_Level.setResourceComment("The Intensity of the air");
 	oci_Level.setResourceLabel("Fan");
 	oci_Level.toEnumeration(new ManagedIndividual[] {
 		Level.high,
 		Level.low,
 		Level.med});
 		
-
+	oci_Level.setResourceComment("Choose the mouvement of the air");
+	oci_Level.setResourceLabel("Swing");
+	oci_Level.toEnumeration(new ManagedIndividual[] {
+		Level.high,
+		Level.low,
+		Level.med});
 	
-	oci_StatusValue.setResourceComment("");
+	oci_StatusValue.setResourceComment("Indicates which is the state of the module");
 	oci_StatusValue.setResourceLabel("StatusValue");
 	oci_StatusValue.toEnumeration(new ManagedIndividual[] {
 		StatusValue.Activated, 
@@ -127,14 +142,14 @@ public final class HvacOntology extends Ontology {
 
 
 	
-	oci_Heating_Mode.setResourceComment("");
+	oci_Heating_Mode.setResourceComment("The different modes of Heating that we can choose");
 	oci_Heating_Mode.setResourceLabel("Heating_Mode");
 	oci_Heating_Mode.toEnumeration(new ManagedIndividual[] {
 			Heating_Mode.NonAutomatic,
 			Heating_Mode.SleepMode,
 			Heating_Mode.winterMode});
 	
-	oci_Ventilation_Mode.setResourceComment("");
+	oci_Ventilation_Mode.setResourceComment("The different modes of Ventilation that we can choose");
 	oci_Ventilation_Mode.setResourceLabel("Ventilation_Mode");
 	oci_Ventilation_Mode.toEnumeration(new ManagedIndividual[] {
 			
@@ -143,33 +158,186 @@ public final class HvacOntology extends Ontology {
 			Ventilation_Mode.Dry});
 
 		
-
+	//////////////////////////////////////////////////////////////////
 	// ******* Add content to regular classes of the ontology ******* //
-
+	/////////////////////////////////////////////////////////////////////
 	
 	
-	oci_Air_Conditioning.setResourceComment("");
+	/////AIR CONDITIONING
+	
+	oci_Air_Conditioning.setResourceComment("Air Conditioning");
 	oci_Air_Conditioning.setResourceLabel("Air_Conditioning");
 	oci_Air_Conditioning.addSuperClass(Target_Temperature.MY_URI);
+	
+//	oci_Air_Conditioning.addObjectProperty(
+//			Air_Conditioning.PROP_HAS_TEMPERATURE).setFunctional();
+//	oci_Air_Conditioning.addRestriction(MergedRestriction
+//			.getAllValuesRestrictionWithCardinality(
+//					Air_Conditioning.PROP_HAS_TEMPERATURE, StatusValue.MY_URI,
+//				1, 1));
+	
 	oci_Air_Conditioning.addObjectProperty(
-			Air_Conditioning.PROP_HAS_TEMPERATURE).setFunctional();
+			Air_Conditioning.PROP_HAS_FAN).setFunctional();
 	oci_Air_Conditioning.addRestriction(MergedRestriction
 			.getAllValuesRestrictionWithCardinality(
-					Air_Conditioning.PROP_HAS_TEMPERATURE, StatusValue.MY_URI,
-				1, 1));
+					Air_Conditioning.PROP_HAS_FAN, StatusValue.MY_URI,
+			    0, 1));
 	
+	oci_Air_Conditioning.addObjectProperty(
+			Air_Conditioning.PROP_HAS_AIR_CONDITIONING_MODE).setFunctional();
+	oci_Air_Conditioning.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Air_Conditioning.PROP_HAS_AIR_CONDITIONING_MODE, StatusValue.MY_URI,
+			    0, 3));
 	
-	oci_Heating.setResourceComment("");
+	oci_Air_Conditioning.addObjectProperty(
+			Air_Conditioning.PROP_HAS_SWING).setFunctional();
+	oci_Air_Conditioning.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Air_Conditioning.PROP_HAS_SWING, StatusValue.MY_URI,
+			    0, 3));
+	
+	oci_Air_Conditioning.addObjectProperty(
+			Air_Conditioning.PROP_HAS_TIMER).setFunctional();
+	oci_Air_Conditioning.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Air_Conditioning.PROP_HAS_TIMER, StatusValue.MY_URI,
+			    0, 1));
+	oci_Air_Conditioning.addObjectProperty(
+			Target_Temperature.PROP_HAS_TEMPERATURE).setFunctional();
+	oci_Air_Conditioning.addRestriction(MergedRestriction
+			.getFixedValueRestriction(Target_Temperature.PROP_HAS_TEMPERATURE, MeasurableDimension.Temperature));
+	
+	///// HEATING
+	
+	oci_Heating.setResourceComment("Heating");
 	oci_Heating.setResourceLabel("Heating");
 	oci_Heating.addSuperClass(Target_Temperature.MY_URI);
-
+	
+//	oci_Heating.addObjectProperty(
+//			Heating.PROP_HAS_TEMPERATURE).setFunctional();
+//	oci_Heating.addRestriction(MergedRestriction
+//			.getAllValuesRestrictionWithCardinality(
+//					Heating.PROP_HAS_TEMPERATURE, StatusValue.MY_URI,
+//				1, 1));
+	
+	oci_Heating.addObjectProperty(
+			Heating.PROP_HAS_FAN).setFunctional();
+	oci_Heating.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Heating.PROP_HAS_FAN, StatusValue.MY_URI,
+			    0, 1));
+	
+	oci_Heating.addObjectProperty(
+			Heating.PROP_HAS_HEATING_MODE).setFunctional();
+	oci_Heating.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Heating.PROP_HAS_HEATING_MODE, StatusValue.MY_URI,
+			    0, 3));
+	
+	oci_Heating.addObjectProperty(
+			Heating.PROP_HAS_SWING).setFunctional();
+	oci_Heating.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Heating.PROP_HAS_SWING, StatusValue.MY_URI,
+			    0, 3));
+	
+	oci_Heating.addObjectProperty(
+			Heating.PROP_HAS_TIMER).setFunctional();
+	oci_Heating.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Heating.PROP_HAS_TIMER, StatusValue.MY_URI,
+			    0, 1));
+	oci_Heating.addObjectProperty(
+			Target_Temperature.PROP_HAS_TEMPERATURE).setFunctional();
+	oci_Heating.addRestriction(MergedRestriction
+			.getFixedValueRestriction(Target_Temperature.PROP_HAS_TEMPERATURE, MeasurableDimension.Temperature));
+	
+	/////VENTILATION
+	
 	oci_Ventilation.setResourceComment("");
-	oci_Ventilation.setResourceLabel("Air_Conditioning");
-	oci_Ventilation.addSuperClass(Target_Temperature.MY_URI);
+	oci_Ventilation.setResourceLabel("Ventilation");
+	oci_Ventilation.addSuperClass(Hvac.MY_URI);
+	
+	
+	
+	oci_Ventilation.addObjectProperty(
+			Ventilation.PROP_HAS_FAN).setFunctional();
+	oci_Ventilation.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Ventilation.PROP_HAS_FAN, StatusValue.MY_URI,
+			    0, 1));
+	
+	oci_Ventilation.addObjectProperty(
+			Ventilation.PROP_HAS_VENTILATION_MODE).setFunctional();
+	oci_Ventilation.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Ventilation.PROP_HAS_VENTILATION_MODE, StatusValue.MY_URI,
+			    0, 3));
+	
+	oci_Ventilation.addObjectProperty(
+			Ventilation.PROP_HAS_SWING).setFunctional();
+	oci_Ventilation.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Ventilation.PROP_HAS_SWING, StatusValue.MY_URI,
+			    0, 3));
+	
+	oci_Ventilation.addObjectProperty(
+			Ventilation.PROP_HAS_TIMER).setFunctional();
+	oci_Ventilation.addRestriction(MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Ventilation.PROP_HAS_TIMER, StatusValue.MY_URI,
+			    0, 1));
+
+
+	
+	// Target Temperature
+		oci_Target_Temperature.setResourceComment("");
+		oci_Target_Temperature.setResourceLabel("Target_Temperature");
+		oci_Target_Temperature.addSuperClass(Hvac.MY_URI);
+
+		Unit temperature = new Unit("temperature","temperature","temperature",MeasurableDimension.Temperature);
+
+		MergedRestriction temp1 = MergedRestriction
+			.getAllValuesRestrictionWithCardinality(
+					Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.MY_URI, 1, 1);
+		
+		MergedRestriction unitR = MergedRestriction.getFixedValueRestriction(
+			Measurement.PROP_HAS_UNIT, temperature);
+		MergedRestriction typeR = MergedRestriction.getAllValuesRestriction(
+			Measurement.PROP_VALUE, TypeMapper.getDatatypeURI(Float.class));
+
+		unitR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_HAS_UNIT });
+		typeR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_VALUE });
+
+		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_HAS_TEMPERATURE);
+		oci_Target_Temperature.addRestriction(temp1);
+	
+	
 	
 
-
-
-
+	
+	// Target Temperature
+//	oci_Target_Temperature.setResourceComment("");
+//	oci_Target_Temperature.setResourceLabel("Target_Temperature");
+//	oci_Target_Temperature.addSuperClass(Hvac.MY_URI);
+//	
+//	Unit temperature = new Unit("temperature","temperature","temperature",MeasurableDimension.Temperature);
+//	
+//	MergedRestriction temp1 = MergedRestriction
+//			.getAllValuesRestrictionWithCardinality(
+//					Target_Temperature.PROP_TEMPARATURE_UNIT, Measurement.MY_URI, 1, 1);
+//	
+//	MergedRestriction unitR = MergedRestriction.getFixedValueRestriction(
+//			Measurement.PROP_HAS_UNIT, temperature);
+//		MergedRestriction typeR = MergedRestriction.getAllValuesRestriction(
+//			Measurement.PROP_VALUE, TypeMapper.getDatatypeURI(Float.class));
+//
+//		unitR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_HAS_UNIT });
+//		typeR.appendTo(temp1, new String[] { Target_Temperature.PROP_HAS_TEMPERATURE, Measurement.PROP_VALUE });
+//
+//		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_HAS_TEMPERATURE);
+//		oci_Target_Temperature.addRestriction(temp1);
+	
     }
 }

@@ -31,7 +31,11 @@ public class Mode extends ManagedIndividual {
   
     protected static final String[] tipo= {"Air_Conditioning_Mode","Heating_Mode","Ventilation_Mode"}; 
 
-    public String getClassURI() {
+    public Mode(String names) {
+		// TODO Auto-generated constructor stub// esto parece raro
+	}
+
+	public String getClassURI() {
 	return MY_URI;
     }
 
@@ -39,9 +43,9 @@ public class Mode extends ManagedIndividual {
 	return PROP_SERIALIZATION_FULL;
     }
 
-    public boolean isWellFormed() {
-	return true ;
-    }
+//    public boolean isWellFormed() {
+//	return true ;
+//    }
 
 //    public StatusValue getValue() {
 //	return super.StatusValue ;

@@ -25,7 +25,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 //import org.universAAL.ontology.device.*;
 import org.universAAL.ontology.hvac.*;
-import org.universAAL.*;
+
 
 public class HvacFactory implements ResourceFactory {
 
@@ -40,8 +40,7 @@ public class HvacFactory implements ResourceFactory {
 	    return new Heating(instanceURI);
 	case 2:
 	    return new Ventilation(instanceURI);
-
-	}
+		}
 	return null;
     }
 }

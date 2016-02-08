@@ -22,7 +22,7 @@
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-public class Level extends ValueHvac {
+public class Level extends Hvac {
 //public class Level extends ManagedIndividual {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Level";
 

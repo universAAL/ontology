@@ -62,7 +62,7 @@ public class MeasurableDimension extends ManagedIndividual {
 
     private int order;
 
-    private MeasurableDimension(int order) {
+    public MeasurableDimension(int order) {
 	super(UnitOntology.NAMESPACE + names[order]);
 	this.order = order;
     }

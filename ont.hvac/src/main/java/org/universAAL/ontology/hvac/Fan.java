@@ -44,15 +44,6 @@ public Fan() {
     }
 
     public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
-    }
-
-    public Fan getFan() {
-	return (Fan) getProperty(PROP_HAS_VALUE);
-    }
-
-    public void setFan(Fan newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_HAS_VALUE, newPropValue);
+	return true ;
     }
 }

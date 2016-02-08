@@ -44,15 +44,15 @@ public Swing() {
     }
 
     public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
+	return true ;
     }
 
-    public Swing getSwing() {
-	return (Swing) getProperty(PROP_HAS_VALUE);
-    }
-
-    public void setSwing(Swing newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_HAS_VALUE, newPropValue);
-    }
+//    public Swing getSwing() {
+//	return (Swing) getProperty(PROP_HAS_VALUE);
+//    }
+//
+//    public void setSwing(Swing newPropValue) {
+//	if (newPropValue != null)
+//	    changeProperty(PROP_HAS_VALUE, newPropValue);
+//    }
 }

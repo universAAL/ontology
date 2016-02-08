@@ -21,10 +21,13 @@
  */
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.ontology.hvac.StatusValue;
-import org.universAAL.ontology.device.*;
+import org.springframework.osgi.compendium.internal.cm.UpdateStrategy;
+
+
 public class Air_Conditioning extends Target_Temperature {
     public static final String MY_URI = HvacOntology.NAMESPACE+ "Air_Conditioning";
+    public static final String PROP_HAS_AIR_CONDITIONING_MODE = HvacOntology.NAMESPACE + "hasAir_Conditioning_Mode";
+
 
     public Air_Conditioning() {
     	super();
@@ -43,15 +46,33 @@ public class Air_Conditioning extends Target_Temperature {
         }
 
         public boolean isWellFormed() {
-    	return true && hasProperty(PROP_HAS_VALUE);
-        }
+        	
+        	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
 
-        public int getValue() {
-    	Integer i = (Integer) getProperty(PROP_HAS_VALUE);
-    	return (i == null) ? 0 : i.intValue();
         }
-
-        public void setValue(int newPropValue) {
-    	changeProperty(PROP_HAS_VALUE, new Integer(newPropValue));
-        }
-    }
+       
+     
+       public Air_Conditioning_Mode getAir_Conditioning_Mode(){
+    	   return (Air_Conditioning_Mode)getProperty(PROP_HAS_AIR_CONDITIONING_MODE);
+       }
+       public boolean setMode(Air_Conditioning_Mode air_conditioning_Mode){
+    	   return changeProperty(PROP_HAS_AIR_CONDITIONING_MODE, air_conditioning_Mode);
+    	   
+       }
+       public Fan getFan(){
+    	   return (Fan)getProperty(PROP_HAS_FAN);
+       }
+       public boolean setFan(Fan fan){
+    	   return changeProperty(PROP_HAS_FAN, fan);
+    	   
+       }
+       public Swing getSwing(){
+    	   return (Swing)getProperty(PROP_HAS_SWING);
+       }
+       public boolean setSwing(Swing swing){
+    	   return changeProperty(PROP_HAS_SWING, swing);
+    	   
+       }
+      
+       
+}
