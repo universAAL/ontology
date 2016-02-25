@@ -7,7 +7,6 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
-//import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.hvac.HvacOntology;
 
 public class HvacActivator implements ModuleActivator {
