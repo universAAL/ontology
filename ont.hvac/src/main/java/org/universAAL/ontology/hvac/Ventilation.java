@@ -1,8 +1,16 @@
+/*
+	Copyright 2015 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
+ */
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.ontology.hvac.StatusValue;
 import org.universAAL.ontology.hvac.Fan;
 
+/**
+ * @author Ricardo
+ * Description: Its the class for Ventilation systems and his properties.
+ */
 public class Ventilation extends Hvac {
 	public static final String MY_URI = HvacOntology.NAMESPACE
 		    + "Ventilation";

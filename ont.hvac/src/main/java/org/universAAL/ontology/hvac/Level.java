@@ -1,29 +1,17 @@
 /*
-	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
-	Instituto Tecnologico de Aplicaciones de Comunicacion 
-	Avanzadas - Grupo Tecnologias para la Salud y el 
-	Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
-	information regarding copyright ownership
-	
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-	
-	  http://www.apache.org/licenses/LICENSE-2.0
-	
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+	Copyright 2015 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
  */
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+
+
+/**
+ * @author Ricardo
+ * Description: Level is used for set the intensity of fan and swing
+ */
 public class Level extends Hvac {
-//public class Level extends ManagedIndividual {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Level";
 
     public static final int HIGH = 2;
@@ -31,13 +19,13 @@ public class Level extends Hvac {
     public static final int LOW = 0;
     
     protected static final String[] names = { "high", "med",
-	    "low" };// antes era private
+	    "low" };
 
     public static final Level high = new Level(HIGH);
     public static final Level med = new Level(MED);
     public static final Level low = new Level(LOW);
 
-    protected static int order;//antes era private
+    protected static int order;
 
     protected Level(int order) {
 	super(HvacOntology.NAMESPACE + names[order]);

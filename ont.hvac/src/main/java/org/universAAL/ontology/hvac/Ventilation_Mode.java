@@ -1,31 +1,25 @@
 /*
-	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
-	Instituto Tecnologico de Aplicaciones de Comunicacion 
-	Avanzadas - Grupo Tecnologias para la Salud y el 
-	Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
-	information regarding copyright ownership
-	
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-	
-	  http://www.apache.org/licenses/LICENSE-2.0
-	
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+	Copyright 2015 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
  */
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-
+/**
+ * @author Ricardo
+ * Description: Ventilation_Mode is a type of HVAC mode only for Ventilation systems in which user can find three modes.
+ */
 public class Ventilation_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Ventilation_Mode";
 
+    /**
+     * @author Ricardo
+     * Description: 
+     * NonAutomatic: its a mode in which the user sets the temperature that wants.
+     * SleepMode: its an automatic mode that turn off the hvac system after a few hours .
+     * Dry: its a mode of dehumidification
+.
+     */
     public static final int NONAUTOMATIC = 0;
     public static final int SLEEPMODE = 1;
     public static final int DRY = 2;
@@ -83,7 +77,7 @@ public class Ventilation_Mode extends Mode {
 
 	if (name.startsWith(HvacOntology.NAMESPACE))
 	    name = name.substring(HvacOntology.NAMESPACE.length());
-//NOSE SI ESTO ES NECESARIO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!1111
+
 
 	for (int i = NONAUTOMATIC; i <= DRY; i++)
 	    if (names[i].equals(name))

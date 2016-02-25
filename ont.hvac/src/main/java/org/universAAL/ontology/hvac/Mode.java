@@ -1,29 +1,16 @@
 /*
-	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
-	Instituto Tecnologico de Aplicaciones de Comunicacion 
-	Avanzadas - Grupo Tecnologias para la Salud y el 
-	Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
-	information regarding copyright ownership
-	
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
-	
-	  http://www.apache.org/licenses/LICENSE-2.0
-	
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+	Copyright 2015 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
  */
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.ontology.hvac.StatusValue;
 
+/**
+ * @author Ricardo
+ * Description: A class for include the different modes of hvac
+ */
 public class Mode extends ManagedIndividual {
     public static final String MY_URI = HvacOntology.NAMESPACE
 	    + "Mode";
@@ -32,7 +19,6 @@ public class Mode extends ManagedIndividual {
     protected static final String[] tipo= {"Air_Conditioning_Mode","Heating_Mode","Ventilation_Mode"}; 
 
     public Mode(String names) {
-		// TODO Auto-generated constructor stub// esto parece raro
 	}
 
 	public String getClassURI() {
@@ -43,13 +29,7 @@ public class Mode extends ManagedIndividual {
 	return PROP_SERIALIZATION_FULL;
     }
 
-//    public boolean isWellFormed() {
-//	return true ;
-//    }
 
-//    public StatusValue getValue() {
-//	return super.StatusValue ;
-//    }
 
     
 }

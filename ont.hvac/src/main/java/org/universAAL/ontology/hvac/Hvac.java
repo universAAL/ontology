@@ -1,4 +1,7 @@
-
+/*
+	Copyright 2015 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
+ */
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
@@ -19,13 +22,11 @@ import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.HvacFactory;
 import org.universAAL.ontology.device.*;
 import org.universAAL.ontology.unit.*;
+
 /**
- * Represents the class of physical manufactured things that have some
- * capability. It adds no new property to physical things but just provides
- * means for explicit distinction of certain physical things as devices.
- * 
- * @author 
- * 
+ * @author Ricardo
+ * Description: Hvac means Heather,Ventilation and Air Conditioning systems,
+ * in this class are defined the different properties that can find in any hvac system
  */
 public class Hvac extends Device {
 
