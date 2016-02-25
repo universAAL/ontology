@@ -1,10 +1,8 @@
-universAAL ontology Profiling
+universAAL ontology Heating Ventilation and Air Conditioning
 
-Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
-Instituto Tecnologico de Aplicaciones de Comunicacion 
-Avanzadas - Grupo Tecnologias para la Salud y el 
-Bienestar (TSB)
 
+Copyright 2015 UPM, http://www.upm.es/
+Universidad Politécnica de Madrid
 
 I. Included Software
 
