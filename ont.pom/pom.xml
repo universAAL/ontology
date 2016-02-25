@@ -39,6 +39,7 @@
     <module>../ont.handgestures</module>
     <module>../ont.handgestures</module>
     <module>../ont.health.disease</module>
+    <module>../ont.health.measurement</module>
     <module>../ont.hvac</module>
     <module>../ont.impairment</module>
     <module>../ont.languages</module>
