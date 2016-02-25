@@ -304,7 +304,7 @@ public final class HvacOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						Target_Temperature.PROP_TEMPERATURE_UNIT,Unit.MY_URI, 1, 1);
 		MergedRestriction unitR2 = MergedRestriction.getFixedValueRestriction(
-				Target_Temperature.PROP_TEMPERATURE_UNIT,MeasurableDimension.Temperature);
+				Unit.PROP_DIMENSION,MeasurableDimension.Temperature);
 		
 		unitR2.appendTo(unitR, new String[] { Target_Temperature.PROP_TEMPERATURE_UNIT, Unit.PROP_DIMENSION });
 		
