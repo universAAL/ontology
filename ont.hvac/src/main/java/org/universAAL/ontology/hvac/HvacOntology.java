@@ -28,8 +28,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.measurement.Measurement;
-import org.universAAL.ontology.measurement.MeasurementOntology;
+
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.unit.MeasurableDimension;
 import org.universAAL.ontology.unit.Unit;
@@ -58,7 +57,6 @@ public final class HvacOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE); 
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
-	addImport(MeasurementOntology.NAMESPACE);
 	addImport(DeviceOntology.NAMESPACE);
 	addImport(UnitOntology.NAMESPACE);
     //////////////////////////////////////////////////////////////////////////////

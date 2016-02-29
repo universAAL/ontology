@@ -31,14 +31,6 @@
       <artifactId>ont.phWorld</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.profile</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.measurement</artifactId>
-    </dependency>
-    <dependency>
     	<groupId>org.universAAL.ontology</groupId>
     	<artifactId>ont.unit</artifactId>
     </dependency>
