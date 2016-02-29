@@ -45,7 +45,7 @@ public class Air_Conditioning extends Target_Temperature {
 
         public boolean isWellFormed() {
         	
-        	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
+        	return true && hasProperty(PROP_HAS_STATUSVALUE);
 
         }
        
@@ -57,20 +57,6 @@ public class Air_Conditioning extends Target_Temperature {
     	   return changeProperty(PROP_HAS_AIR_CONDITIONING_MODE, air_conditioning_Mode);
     	   
        }
-       public Fan getFan(){
-    	   return (Fan)getProperty(PROP_HAS_FAN);
-       }
-       public boolean setFan(Fan fan){
-    	   return changeProperty(PROP_HAS_FAN, fan);
-    	   
-       }
-       public Swing getSwing(){
-    	   return (Swing)getProperty(PROP_HAS_SWING);
-       }
-       public boolean setSwing(Swing swing){
-    	   return changeProperty(PROP_HAS_SWING, swing);
-    	   
-       }
-      
+  
        
 }

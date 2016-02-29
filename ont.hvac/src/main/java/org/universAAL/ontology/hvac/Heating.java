@@ -15,7 +15,7 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.ontology.hvac.StatusValue;
+import org.universAAL.middleware.owl.supply.LevelRating;
 /**
  * @author Ricardo
  * Description: Its the class for Heating and his properties.
@@ -42,7 +42,7 @@ public class Heating extends Target_Temperature {
 
         public boolean isWellFormed() {
         	
-        	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
+        	return true && hasProperty(PROP_HAS_STATUSVALUE);
 
         }
        
@@ -54,20 +54,7 @@ public class Heating extends Target_Temperature {
     	   return changeProperty(PROP_HAS_HEATING_MODE, Heating_Mode);
     	   
        }
-       public Fan getFan(){
-    	   return (Fan)getProperty(PROP_HAS_FAN);
-       }
-       public boolean setFan(Fan fan){
-    	   return changeProperty(PROP_HAS_FAN, fan);
-    	   
-       }
-       public Swing getSwing(){
-    	   return (Swing)getProperty(PROP_HAS_SWING);
-       }
-       public boolean setSwing(Swing swing){
-    	   return changeProperty(PROP_HAS_SWING, swing);
-    	   
-       }
+     
       
 
 

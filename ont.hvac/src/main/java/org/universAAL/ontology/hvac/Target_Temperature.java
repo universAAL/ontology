@@ -15,6 +15,8 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
+import org.universAAL.middleware.owl.supply.LevelRating;
+
 /**
  * @author Ricardo
  * Description: Target Temperature includes the air conditioning and heating, and their different properties
@@ -25,7 +27,7 @@ public abstract class Target_Temperature extends Hvac {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Target_Temperature";
    
     
-    public static final String PROP_HAS_TEMPERATURE = HvacOntology.NAMESPACE + "hasTemperature";
+    //public static final String PROP_HAS_TEMPERATURE = HvacOntology.NAMESPACE + "hasTemperature";
     
     // this property is for indicate the unit temperature, Celsius, Degrees....
     public static final String PROP_TEMPERATURE_UNIT = HvacOntology.NAMESPACE + "temperatureUnit";
@@ -51,7 +53,7 @@ public abstract class Target_Temperature extends Hvac {
   
 
     public boolean isWellFormed() {
-    	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
+    	return true && hasProperty(PROP_HAS_STATUSVALUE);
     }
 
 
@@ -61,6 +63,20 @@ public abstract class Target_Temperature extends Hvac {
    }
    public boolean setTarget_Temperature_Value(Float targetTemperature){
 	   return changeProperty(PROP_TARGET_TEMPERATURE_VALUE, targetTemperature);
+	   
+   }
+   public LevelRating getFan(){
+	   return (LevelRating)getProperty(PROP_HAS_FAN);
+   }
+   public boolean setFan(LevelRating fan){
+	   return changeProperty(PROP_HAS_FAN, fan);
+	   
+   }
+   public LevelRating getSwing(){
+	   return (LevelRating)getProperty(PROP_HAS_SWING);
+   }
+   public boolean setSwing(LevelRating swing){
+	   return changeProperty(PROP_HAS_SWING, swing);
 	   
    }
 }

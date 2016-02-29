@@ -16,7 +16,6 @@
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.hvac.StatusValue;
 
 /**
  * @author Ricardo

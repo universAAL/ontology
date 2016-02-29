@@ -15,8 +15,9 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.ontology.hvac.StatusValue;
-import org.universAAL.ontology.hvac.Fan;
+import org.universAAL.middleware.owl.supply.LevelRating;
+
+
 
 /**
  * @author Ricardo
@@ -45,7 +46,7 @@ public class Ventilation extends Hvac {
 
 	        public boolean isWellFormed() {
 	        	
-	        	return true && hasProperty(PROP_HAS_STATUSVALUE) && hasProperty(PROP_HAS_TEMPERATURE);
+	        	return true ;
 
 	        }
 	       
@@ -57,17 +58,17 @@ public class Ventilation extends Hvac {
 	    	   return changeProperty(PROP_HAS_MODE, air_conditioning_Mode);
 	    	   
 	       }
-	       public Fan getFan(){
-	    	   return (Fan)getProperty(PROP_HAS_FAN);
+	       public LevelRating getFan(){
+	    	   return (LevelRating)getProperty(PROP_HAS_FAN);
 	       }
-	       public boolean setFan(Fan fan){
+	       public boolean setFan(LevelRating fan){
 	    	   return changeProperty(PROP_HAS_FAN, fan);
 	    	   
 	       }
-	       public Swing getSwing(){
-	    	   return (Swing)getProperty(PROP_HAS_SWING);
+	       public LevelRating getSwing(){
+	    	   return (LevelRating)getProperty(PROP_HAS_SWING);
 	       }
-	       public boolean setSwing(Swing swing){
+	       public boolean setSwing(LevelRating swing){
 	    	   return changeProperty(PROP_HAS_SWING, swing);
 	    	   
 	       }
