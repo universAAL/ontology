@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ricardo/ontologies/2015/10/untitled-ontology-34"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ricardo/ontologies/2015/10/untitled-ontology-34">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AirConditioing_MODE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air_Conditioning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HVAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heating_MODE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LEVEL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StatusValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target_Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Units"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventilating_MODE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventilation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatusValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSwing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Activated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Celsius_Degrees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HIGH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LOW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MED"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minutes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoActivated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NonAutomatic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SleepMode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SummerMode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WinterMode"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AirConditioing_MODE"/>
+        <Class IRI="#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Conditioning"/>
+        <Class IRI="#Target_Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Conditioning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFan"/>
+            <Class IRI="#Fan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Conditioning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMode"/>
+            <Class IRI="#AirConditioing_MODE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Conditioning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSwing"/>
+            <Class IRI="#Swing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Conditioning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimer"/>
+            <Class IRI="#Timer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLevel"/>
+            <Class IRI="#LEVEL"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HVAC"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStatusValue"/>
+            <Class IRI="#StatusValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <Class IRI="#Target_Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFan"/>
+            <Class IRI="#Fan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMode"/>
+            <Class IRI="#Heating_MODE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSwing"/>
+            <Class IRI="#Swing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimer"/>
+            <Class IRI="#Timer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating_MODE"/>
+        <Class IRI="#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mode"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStatusValue"/>
+            <Class IRI="#StatusValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLevel"/>
+            <Class IRI="#LEVEL"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStatusValue"/>
+            <Class IRI="#StatusValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target_Temperature"/>
+        <Class IRI="#HVAC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target_Temperature"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTemperature"/>
+            <Class IRI="#Units"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStatusValue"/>
+            <Class IRI="#StatusValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timer"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasUnits"/>
+            <Class IRI="#Units"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilating_MODE"/>
+        <Class IRI="#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilation"/>
+        <Class IRI="#HVAC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFan"/>
+            <Class IRI="#Fan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMode"/>
+            <Class IRI="#Ventilating_MODE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSwing"/>
+            <Class IRI="#Swing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventilation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTimer"/>
+            <Class IRI="#Timer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#StatusValue"/>
+        <NamedIndividual IRI="#Activated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMode"/>
+            <Class IRI="#Mode"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Activated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Units"/>
+        <NamedIndividual IRI="#Celsius_Degrees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LEVEL"/>
+        <NamedIndividual IRI="#HIGH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LEVEL"/>
+        <NamedIndividual IRI="#LOW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LEVEL"/>
+        <NamedIndividual IRI="#MED"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Timer"/>
+        <NamedIndividual IRI="#Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Units"/>
+        <NamedIndividual IRI="#Minutes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StatusValue"/>
+        <NamedIndividual IRI="#NoActivated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LEVEL"/>
+        <NamedIndividual IRI="#NoCondition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StatusValue"/>
+        <NamedIndividual IRI="#NoCondition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirConditioing_MODE"/>
+        <NamedIndividual IRI="#NonAutomatic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Heating_MODE"/>
+        <NamedIndividual IRI="#NonAutomatic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirConditioing_MODE"/>
+        <NamedIndividual IRI="#SleepMode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Heating_MODE"/>
+        <NamedIndividual IRI="#SleepMode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirConditioing_MODE"/>
+        <NamedIndividual IRI="#SummerMode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Heating_MODE"/>
+        <NamedIndividual IRI="#WinterMode"/>
+    </ClassAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
