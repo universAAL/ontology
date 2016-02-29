@@ -49,7 +49,7 @@ public class Hvac extends Device {
 
     public static final String PROP_HAS_MODE = HvacOntology.NAMESPACE + "hasMode";
 
-    public static final String PROP_HAS_STATUSVALUE = HvacOntology.NAMESPACE + "hasStatusValue";
+    public static final String PROP_HAS_STATUSVALUE = DeviceOntology.NAMESPACE + "hasStatusValue";
 
     public static final String PROP_HAS_SWING = HvacOntology.NAMESPACE + "hasSwing";
     
@@ -60,7 +60,7 @@ public class Hvac extends Device {
     
     public static final String PROP_HAS_UNITS = HvacOntology.NAMESPACE + "hasUnits";
 
-
+ 
 
 
     public Hvac() {
