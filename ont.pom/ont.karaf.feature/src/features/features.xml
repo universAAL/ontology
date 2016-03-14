@@ -186,7 +186,7 @@
 	</feature>
 	
 	<feature name="uAAL-Ont.HVAC" version="${pom.version}" resolver='(obr)'>
-		<feature>uAAL-Ont.PhWorld</feature>
+		<feature>uAAL-Ont.Device</feature>
         <feature>uAAL-Ont.Unit</feature>
 		<bundle start-level='63' start='true'>mvn:org.universAAL.ontology/ont.hvac/${ont.hvac.version}</bundle>
 	</feature>

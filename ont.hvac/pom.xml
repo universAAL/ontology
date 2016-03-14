@@ -27,10 +27,6 @@
       <artifactId>mw.bus.service.core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld</artifactId>
-    </dependency>
-    <dependency>
     	<groupId>org.universAAL.ontology</groupId>
     	<artifactId>ont.unit</artifactId>
     </dependency>
