@@ -15,8 +15,6 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.springframework.osgi.compendium.internal.cm.UpdateStrategy;
-
 
 /**
  * @author Ricardo
