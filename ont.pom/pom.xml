@@ -37,7 +37,6 @@
     <module>../ont.furniture</module>
     <module>../ont.gesture.pointing</module>
     <module>../ont.handgestures</module>
-    <module>../ont.handgestures</module>
     <module>../ont.health.disease</module>
     <module>../ont.health.measurement</module>
     <module>../ont.hvac</module>
