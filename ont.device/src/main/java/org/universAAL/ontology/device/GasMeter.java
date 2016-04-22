@@ -22,7 +22,7 @@
 package org.universAAL.ontology.device;
 
 public class GasMeter extends EnvironmentMeter {
-    public static final String MY_URI = DeviceOntology.NAMESPACE + "GasSensor";
+    public static final String MY_URI = DeviceOntology.NAMESPACE + "GasMeter";
 
     public GasMeter() {
 	super();

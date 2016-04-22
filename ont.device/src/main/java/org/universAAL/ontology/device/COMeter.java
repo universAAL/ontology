@@ -22,7 +22,7 @@
 package org.universAAL.ontology.device;
 
 public class COMeter extends EnvironmentMeter {
-    public static final String MY_URI = DeviceOntology.NAMESPACE + "COSensor";
+    public static final String MY_URI = DeviceOntology.NAMESPACE + "COMeter";
 
     public COMeter() {
 	super();

@@ -23,7 +23,7 @@ package org.universAAL.ontology.device;
 
 public class SmokeMeter extends EnvironmentMeter {
     public static final String MY_URI = DeviceOntology.NAMESPACE
-	    + "SmokeSensor";
+	    + "SmokeMeter";
 
     public SmokeMeter() {
 	super();
