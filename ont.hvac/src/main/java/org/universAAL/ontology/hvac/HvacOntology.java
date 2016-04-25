@@ -311,14 +311,17 @@ public final class HvacOntology extends Ontology {
 		MergedRestriction cT = MergedRestriction.getAllValuesRestriction(
 				Target_Temperature.PROP_CURRENT_TEMPERATURE_VALUE, TypeMapper.getDatatypeURI(Float.class));
 
-		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_CURRENT_TEMPERATURE_VALUE);
+		//oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_CURRENT_TEMPERATURE_VALUE);
+		oci_Target_Temperature.addDatatypeProperty(Target_Temperature.PROP_CURRENT_TEMPERATURE_VALUE);
+
 		oci_Target_Temperature.addRestriction(cT);
-	
 		
 		MergedRestriction tT = MergedRestriction.getAllValuesRestriction(
 				Target_Temperature.PROP_TARGET_TEMPERATURE_VALUE, TypeMapper.getDatatypeURI(Float.class));
 		
-		oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_TARGET_TEMPERATURE_VALUE);
+		//oci_Target_Temperature.addObjectProperty(Target_Temperature.PROP_TARGET_TEMPERATURE_VALUE);
+		oci_Target_Temperature.addDatatypeProperty(Target_Temperature.PROP_TARGET_TEMPERATURE_VALUE);
+
 		oci_Target_Temperature.addRestriction(tT);
 	
     }
