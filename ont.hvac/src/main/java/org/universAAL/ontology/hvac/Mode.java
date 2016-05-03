@@ -18,28 +18,36 @@ package org.universAAL.ontology.hvac;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Description: A class for include the different modes of hvac, include
+ *              air conditioning mode, heating mode and ventilation mode 
  * @author Ricardo
- * Description: A class for include the different modes of hvac
  */
 public class Mode extends ManagedIndividual {
-    public static final String MY_URI = HvacOntology.NAMESPACE
-	    + "Mode";
+	public static final String MY_URI = HvacOntology.NAMESPACE + "Mode";
 
-  
-    protected static final String[] tipo= {"Air_Conditioning_Mode","Heating_Mode","Ventilation_Mode"}; 
+	protected static final String[] tipo = { "Air_Conditioning_Mode",
+			"Heating_Mode", "Ventilation_Mode" };
 
-    public Mode(String names) {
+	public Mode() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Mode(String uriPrefix, int numProps) {
+		super(uriPrefix, numProps);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Mode(String names) {
+		super(names);
 	}
 
 	public String getClassURI() {
-	return MY_URI;
-    }
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-
-
-    
 }

@@ -17,8 +17,8 @@ package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
 /**
- * @author Ricardo
  * Description: Its the class for Heating and his properties.
+ * @author Ricardo
  */
 public class Heating extends Target_Temperature {
     public static final String MY_URI = HvacOntology.NAMESPACE

@@ -18,17 +18,16 @@ package org.universAAL.ontology.hvac;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
+ * Description: Air_Conditioning_Mode is a type of HVAC mode
+ *              only for Air Conditioning in which user can find three modes.
  * @author Ricardo
- * Description: Air_Conditioning_Mode is a type of HVAC mode only for Air Conditioning in which user can find three modes.
  */
 public class Air_Conditioning_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Air_Conditioning_Mode";
-    /**
-     * @author Ricardo
-     * Description: 
-     * NonAutomatic: its a mode in which the user sets the temperature that wants.
+    /** 
+     * NonAutomatic: its a mode in which the user sets the temperature that wants and throws cold air.
      * SleepMode: its an automatic mode that turn off the hvac system after a few hours .
-     * SummerMode: its a mode that blows cold air insted of hot air.
+     * SummerMode: its a mode of Air Conditioning that throws cold air.
      */
     public static final int NONAUTOMATIC = 0;
     public static final int SLEEPMODE = 1;

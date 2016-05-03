@@ -20,8 +20,8 @@ import org.universAAL.middleware.owl.supply.LevelRating;
 
 
 /**
- * @author Ricardo
  * Description: Its the class for Ventilation systems and his properties.
+ * @author Ricardo
  */
 public class Ventilation extends Hvac {
 	public static final String MY_URI = HvacOntology.NAMESPACE
