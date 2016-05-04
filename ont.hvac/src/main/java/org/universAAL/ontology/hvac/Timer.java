@@ -16,7 +16,8 @@
 package org.universAAL.ontology.hvac;
 
 /**
- * Its necessary to make another ontology for Timer instead of this class
+ * Its necessary to make another ontology for Timer instead of this class.
+ * TODO: Remove this class when the appropriate ontology is developed.
  */
 public class Timer {
 

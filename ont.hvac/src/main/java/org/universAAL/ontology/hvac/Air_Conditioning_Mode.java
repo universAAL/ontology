@@ -15,29 +15,37 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-
 /**
- * Description: Air_Conditioning_Mode is a type of HVAC mode
- *              only for Air Conditioning in which user can find three modes.
+ * Air_Conditioning_Mode is a type of mode only for {@link Air_Conditioning} in which user can find three modes.
+ * <dl>
+ * 	<dt>NonAutomatic</dt> <dd> its a mode in which the user sets the temperature that (s)he wants.</dd>
+ * 	<dt>SleepMode</dt> <dd> its an automatic mode that turns off the {@link Air_Conditioning} system after a few hours.</dd>
+ * 	<dt>SummerMode</dt> <dd> its a mode that produces cold air.</dd>
+ * </dl>
  * @author Ricardo
  */
 public class Air_Conditioning_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Air_Conditioning_Mode";
-    /** 
-     * NonAutomatic: its a mode in which the user sets the temperature that wants and throws cold air.
-     * SleepMode: its an automatic mode that turn off the hvac system after a few hours .
-     * SummerMode: its a mode of Air Conditioning that throws cold air.
-     */
+    
     public static final int NONAUTOMATIC = 0;
     public static final int SLEEPMODE = 1;
     public static final int SUMMERMODE = 2;
    
     private static final String[] names = { "NonAutomatic", "SleepMode",
 	    "SummerMode" };
-
+ 
+    /**
+     * A mode in which the user sets the temperature that (s)he wants.
+     */
     public static final Air_Conditioning_Mode NonAutomatic = new Air_Conditioning_Mode(NONAUTOMATIC);
+    /**
+     * An automatic mode that turns off the {@link Air_Conditioning} system after a few hours .
+     */
     public static final Air_Conditioning_Mode SleepMode = new Air_Conditioning_Mode(SLEEPMODE);
+    
+    /**
+     * A mode that produces cold air.
+     */
     public static final Air_Conditioning_Mode SummerMode = new Air_Conditioning_Mode(SUMMERMODE);
 
     private int order;

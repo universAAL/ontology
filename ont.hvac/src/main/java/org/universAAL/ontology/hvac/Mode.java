@@ -18,8 +18,10 @@ package org.universAAL.ontology.hvac;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * Description: A class for include the different modes of hvac, include
- *              air conditioning mode, heating mode and ventilation mode 
+ * Superclass for the different modes of HVAC, include
+ * {@link Air_Conditioning_Mode}, {@link Heating_Mode} and
+ * {@link Ventilation_Mode}.
+ * 
  * @author Ricardo
  */
 public class Mode extends ManagedIndividual {
@@ -30,12 +32,10 @@ public class Mode extends ManagedIndividual {
 
 	public Mode() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Mode(String uriPrefix, int numProps) {
 		super(uriPrefix, numProps);
-		// TODO Auto-generated constructor stub
 	}
 
 	public Mode(String names) {

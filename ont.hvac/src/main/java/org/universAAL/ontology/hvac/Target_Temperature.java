@@ -18,8 +18,7 @@ package org.universAAL.ontology.hvac;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
 /**
- * Description: Target Temperature includes the air conditioning
- *              and heating, and their different properties.
+ * A type of HVAC device that is capable of reading the temperature and react according to a target temperature.
  * @author Ricardo 
  */
 

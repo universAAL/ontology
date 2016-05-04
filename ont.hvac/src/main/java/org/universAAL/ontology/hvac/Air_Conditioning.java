@@ -16,7 +16,7 @@
 package org.universAAL.ontology.hvac;
 
 /**
- * Description: Its the class for Air_Conditioning and his properties.
+ * Class for All Air Conditioning systems. Where an Air Conditioning is defined as a system that is capable of cooling the air in a room.
  * @author Ricardo
  */
 public class Air_Conditioning extends Target_Temperature {

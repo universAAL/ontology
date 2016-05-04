@@ -17,7 +17,9 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
-import org.universAAL.ontology.hvac.*;
+import org.universAAL.ontology.hvac.Air_Conditioning;
+import org.universAAL.ontology.hvac.Heating;
+import org.universAAL.ontology.hvac.Ventilation;
 
 
 public class HvacFactory implements ResourceFactory {

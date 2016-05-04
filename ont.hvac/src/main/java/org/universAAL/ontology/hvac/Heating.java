@@ -15,9 +15,8 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.middleware.owl.supply.LevelRating;
 /**
- * Description: Its the class for Heating and his properties.
+ * Class for Heating systems. Where heating systems are systems capable of heating the air in a room. 
  * @author Ricardo
  */
 public class Heating extends Target_Temperature {

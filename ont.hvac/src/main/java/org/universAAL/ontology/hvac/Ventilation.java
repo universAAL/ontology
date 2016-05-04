@@ -20,7 +20,7 @@ import org.universAAL.middleware.owl.supply.LevelRating;
 
 
 /**
- * Description: Its the class for Ventilation systems and his properties.
+ * Class for all Ventilation systems. Where ventilation is any system that is capable of moving the air in a room.
  * @author Ricardo
  */
 public class Ventilation extends Hvac {

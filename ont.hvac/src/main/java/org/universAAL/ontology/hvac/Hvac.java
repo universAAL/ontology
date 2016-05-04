@@ -16,57 +16,54 @@
 package org.universAAL.ontology.hvac;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
-import org.universAAL.middleware.*;
-import org.universAAL.middleware.owl.DataRepOntology;
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.owl.MergedRestriction;
-import org.universAAL.middleware.owl.OntClassInfoSetup;
-import org.universAAL.middleware.owl.Ontology;
-import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.device.DeviceOntology;
-import org.universAAL.ontology.location.LocationOntology;
-
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.HvacFactory;
-import org.universAAL.ontology.device.*;
-import org.universAAL.ontology.unit.*;
 
 /**
- *  Description: Hvac means Heather,Ventilation 
- *               and air conditioning systems, in this class are defined the different
- *               properties that can find in any hvac system.
+ *  HVAC stands for Heather,Ventilation 
+ *               and Air Conditioning, in this class are defined the different
+ *               properties that can find in any {@link Hvac} system.   
  *  @author Ricardo
  */
 public class Hvac extends Device {
 
-	/**
-	 * Definition of the different properties hasFan: has ventilation function
-	 * hasLevel: the level is use to show the intensity of some properties like
-	 * fan or swing. status_value: the status of a device, on or off hasSwing:
-	 * its a property of moving air hasTimer: not implemented yet hasUnits:set
-	 * the units of the magnitudes
-	 */
-
 	public static final String MY_URI = HvacOntology.NAMESPACE + "Hvac";
 
+	/**
+	 * Has ventilation function.
+	 */
 	public static final String PROP_HAS_FAN = HvacOntology.NAMESPACE + "hasFan";
 
+	/**
+	 * The level is use to show the intensity of some properties like
+	 * fan or swing.
+	 */
 	public static final String PROP_HAS_LEVEL = LevelRating.MY_URI + "hasLevel";
 
 	public static final String PROP_HAS_MODE = HvacOntology.NAMESPACE
 			+ "hasMode";
 
+	/**
+	 * The status of a device, on or off.
+	 */
 	public static final String PROP_HAS_STATUSVALUE = DeviceOntology.NAMESPACE
 			+ "hasStatusValue";
 
+	/**
+	 * The setting to change the direction of the air.
+	 */
 	public static final String PROP_HAS_SWING = HvacOntology.NAMESPACE
 			+ "hasSwing";
 
+	/**
+	 * The timer settings to switch on or off. Not implemented yet.
+	 */
 	public static final String PROP_HAS_TIMER = HvacOntology.NAMESPACE
 			+ "hasTimer";
 
+	/**
+	 * The type of units used to set temperatures.
+	 */
 	public static final String PROP_HAS_UNITS = HvacOntology.NAMESPACE
 			+ "hasUnits";
 

@@ -15,22 +15,25 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
+
 /**
-* Description: Ventilation_Mode is a type of HVAC mode only for Ventilation 
-*              systems in which user can find three modes.
-* @author Ricardo.
-*/
+ * A type of HVAC mode only for {@link Ventilation} systems in which user can
+ * find three modes: 
+ * <dl>
+ * <dt>NonAutomatic</dt>
+ * <dd>its a mode in which the user sets the ventilation mode is On,
+       also in many hvac system this mode is known as "Fan Mode".</dd>
+ * <dt>SleepMode</dt>
+ * <dd>its an automatic mode that turns off the system after a few hours.</dd>
+ * <dt>Dry</dt>
+ * <dd>enables dehumidifier technology.</dd>
+ * </dl>
+ * 
+ * @author Ricardo.
+ */
 public class Ventilation_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Ventilation_Mode";
 
-    /**
-     * Description: 
-     * NonAutomatic: its a mode in which the user sets the ventilation mode is On,
-     *  also in many hvac system this mode is known as "Fan Mode".
-     * SleepMode: its an automatic mode that turn off the hvac system after a few hours .
-     * Dry: its a mode of dehumidification.
-     */
     public static final int NONAUTOMATIC = 0;
     public static final int SLEEPMODE = 1;
     public static final int DRY = 2;

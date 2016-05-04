@@ -16,16 +16,17 @@
 package org.universAAL.ontology.hvac;
 
 /**
- * Description: Heating_Mode is a type of HVAC mode only for Heating in which user can find three modes.
+ * A type of mode only for {@link Heating} in which user can find three modes.
+ * <dl>
+ *  <dt>NonAutomatic</dt><dd>its a mode in which the user sets the temperature that (s)he wants.</dd>
+ *  <dt>SleepMode</dt><dd>its an automatic mode that turns off the system after a few hours.</dd>
+ *  <dt>WinterMode</dt><dd>its a mode that heats the air.</dd>
+ * </dl>
  * @author Ricardo
  */
 public class Heating_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Heating_Mode";
-    /**
-     * NonAutomatic: its a mode in which the user sets the temperature that wants and throws hot air.
-     * SleepMode: its an automatic mode that turn off the hvac system after a few hours .
-     * WinterMode: its a mode of heating that throws hot air .
-     */
+
     public static final int NONAUTOMATIC = 0;
     public static final int SLEEPMODE = 1;
     public static final int WINTERMODE = 2;
@@ -33,8 +34,17 @@ public class Heating_Mode extends Mode {
     private static final String[] names = { "NonAutomatic", "SleepMode",
 	    "WinterMode" };
 
+    /**
+     * The user sets the temperature that (s)he wants.
+     */
     public static final Heating_Mode NonAutomatic = new Heating_Mode(NONAUTOMATIC);
+    /**
+     * Turns off the system after a few hours.
+     */
     public static final Heating_Mode SleepMode = new Heating_Mode(SLEEPMODE);
+    /**
+     * Heats the air.
+     */
     public static final Heating_Mode winterMode = new Heating_Mode(WINTERMODE);
 
     private int order;

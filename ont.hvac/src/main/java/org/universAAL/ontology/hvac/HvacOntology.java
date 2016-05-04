@@ -15,28 +15,25 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-import org.universAAL.middleware.*;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
-import org.universAAL.middleware.owl.SomeValuesFromRestriction;
 import org.universAAL.middleware.owl.supply.LevelRating;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
+import org.universAAL.ontology.HvacFactory;
 import org.universAAL.ontology.device.DeviceOntology;
+import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.location.LocationOntology;
-
-import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.unit.MeasurableDimension;
 import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
-import org.universAAL.ontology.HvacFactory;
-import org.universAAL.ontology.device.*;
 
 /**
+ * HVAC (Heating, Ventilation and Air Conditioning Ontology.
  * @author Ricardo
  */
 public final class HvacOntology extends Ontology {
@@ -50,7 +47,7 @@ public final class HvacOntology extends Ontology {
 
 	public void create() {
 		Resource r = getInfo();
-		r.setResourceComment("The Collection of Hvac Ontology");
+		r.setResourceComment("The Collection of HVAC Concepts");
 		r.setResourceLabel("Hvac");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
@@ -61,11 +58,8 @@ public final class HvacOntology extends Ontology {
 		// ******* Declaration of enumeration classes of the ontology ******* //
 		// ///////////////////////////////////////////////////////////////////////////
 
-		OntClassInfoSetup oci_LevelRating = createNewAbstractOntClassInfo(LevelRating.MY_URI);
-
 		OntClassInfoSetup oci_Air_Conditioning_Mode = createNewAbstractOntClassInfo(Air_Conditioning_Mode.MY_URI);
 		OntClassInfoSetup oci_Heating_Mode = createNewAbstractOntClassInfo(Heating_Mode.MY_URI);
-		OntClassInfoSetup oci_StatusValue = createNewAbstractOntClassInfo(StatusValue.MY_URI);
 		OntClassInfoSetup oci_Ventilation_Mode = createNewAbstractOntClassInfo(Ventilation_Mode.MY_URI);
 
 		OntClassInfoSetup oci_Mode = createNewAbstractOntClassInfo(Mode.MY_URI);
@@ -94,6 +88,9 @@ public final class HvacOntology extends Ontology {
 				Air_Conditioning_Mode.NonAutomatic,
 				Air_Conditioning_Mode.SleepMode,
 				Air_Conditioning_Mode.SummerMode });
+		//TODO add resource labels to all enumeration instances
+		// Air_Conditioning_Mode.NonAutomatic.setResourceLabel("NonAutomatic Heating Mode");
+		// Air_Conditioning_Mode.NonAutomatic.setResourceComment("<same as Javadoc>");
 
 		oci_Heating_Mode
 				.setResourceComment("The different modes of Heating that we can choose");
@@ -116,8 +113,8 @@ public final class HvacOntology extends Ontology {
 
 		// ///AIR CONDITIONING
 
-		oci_Air_Conditioning.setResourceComment("Air Conditioning");
-		oci_Air_Conditioning.setResourceLabel("Air_Conditioning");
+		oci_Air_Conditioning.setResourceComment("System that is acapable of cooling the air in a room.");
+		oci_Air_Conditioning.setResourceLabel("Air Conditioning");
 		oci_Air_Conditioning.addSuperClass(Target_Temperature.MY_URI);
 
 		oci_Air_Conditioning.addObjectProperty(Air_Conditioning.PROP_HAS_FAN)
@@ -152,7 +149,7 @@ public final class HvacOntology extends Ontology {
 
 		// /// HEATING
 
-		oci_Heating.setResourceComment("Heating");
+		oci_Heating.setResourceComment("System that is capable of heating the air in a room.");
 		oci_Heating.setResourceLabel("Heating");
 		oci_Heating.addSuperClass(Target_Temperature.MY_URI);
 
@@ -181,7 +178,7 @@ public final class HvacOntology extends Ontology {
 
 		// ///VENTILATION
 
-		oci_Ventilation.setResourceComment("");
+		oci_Ventilation.setResourceComment("System that is capable of moving the air in a room");
 		oci_Ventilation.setResourceLabel("Ventilation");
 		oci_Ventilation.addSuperClass(Hvac.MY_URI);
 
@@ -212,8 +209,8 @@ public final class HvacOntology extends Ontology {
 						Ventilation.PROP_HAS_TIMER, StatusValue.MY_URI, 0, 1));
 
 		// Target Temperature
-		oci_Target_Temperature.setResourceComment("");
-		oci_Target_Temperature.setResourceLabel("Target_Temperature");
+		oci_Target_Temperature.setResourceComment("System that is capable of keeping a room at a targeted temperature.");
+		oci_Target_Temperature.setResourceLabel("Target Temperature");
 		oci_Target_Temperature.addSuperClass(Hvac.MY_URI);
 
 		MergedRestriction unitR = MergedRestriction
