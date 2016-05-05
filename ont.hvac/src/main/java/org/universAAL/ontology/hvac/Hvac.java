@@ -20,10 +20,10 @@ import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.phThing.Device;
 
 /**
- *  HVAC stands for Heather,Ventilation 
- *               and Air Conditioning, in this class are defined the different
- *               properties that can find in any {@link Hvac} system.   
- *  @author Ricardo
+ * HVAC stands for Heather,Ventilation and Air Conditioning, in this class are
+ * defined the different properties that can find in any {@link Hvac} system.
+ * 
+ * @author Ricardo
  */
 public class Hvac extends Device {
 
@@ -33,14 +33,6 @@ public class Hvac extends Device {
 	 * Has ventilation function.
 	 */
 	public static final String PROP_HAS_FAN = HvacOntology.NAMESPACE + "hasFan";
-
-	/**
-	 * The level is use to show the intensity of some properties like
-	 * fan or swing.
-	 */
-	public static final String PROP_HAS_LEVEL = LevelRating.MY_URI + "hasLevel";
-
-
 
 	/**
 	 * The status of a device, on or off.
@@ -53,9 +45,6 @@ public class Hvac extends Device {
 	 */
 	public static final String PROP_HAS_SWING = HvacOntology.NAMESPACE
 			+ "hasSwing";
-
-	
-	
 
 	public Hvac() {
 		super();
