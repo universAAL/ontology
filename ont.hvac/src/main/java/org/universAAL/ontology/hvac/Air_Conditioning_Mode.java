@@ -18,9 +18,8 @@ package org.universAAL.ontology.hvac;
 /**
  * Air_Conditioning_Mode is a type of mode only for {@link Air_Conditioning} in which user can find three modes.
  * <dl>
- * 	<dt>NonAutomatic</dt> <dd> its a mode in which the user sets the temperature that (s)he wants.</dd>
- * 	<dt>SleepMode</dt> <dd> its an automatic mode that turns off the {@link Air_Conditioning} system after a few hours.</dd>
- * 	<dt>SummerMode</dt> <dd> its a mode that produces cold air.</dd>
+ * 	<dt>Automatic</dt> <dd> its a mode in which the user sets the temperature that (s)he wants.</dd>
+ * 	<dt>Cool</dt> <dd> its a mode that produces cold air.</dd>
  * </dl>
  * @author Ricardo
  */

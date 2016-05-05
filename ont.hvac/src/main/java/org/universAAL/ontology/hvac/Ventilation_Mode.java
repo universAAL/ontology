@@ -20,11 +20,10 @@ package org.universAAL.ontology.hvac;
  * A type of HVAC mode only for {@link Ventilation} systems in which user can
  * find three modes: 
  * <dl>
- * <dt>NonAutomatic</dt>
+ * <dt>Fan</dt>
  * <dd>its a mode in which the user sets the ventilation mode is On,
        also in many hvac system this mode is known as "Fan Mode".</dd>
- * <dt>SleepMode</dt>
- * <dd>its an automatic mode that turns off the system after a few hours.</dd>
+ 
  * <dt>Dry</dt>
  * <dd>enables dehumidifier technology.</dd>
  * </dl>

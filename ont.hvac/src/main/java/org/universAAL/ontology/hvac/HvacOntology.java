@@ -93,11 +93,10 @@ public final class HvacOntology extends Ontology {
 		// ******* Add content to enumeration classes of the ontology ******* //
 		// ///////////////////////////////////////////////////////////////////////////
 
-		//TODO add resource labels to all enumeration instances
-				// Air_Conditioning_Mode.Automatic.setResourceLabel("Automatic Air Conditioning Mode");
-				// Air_Conditioning_Mode.Automatic.setResourceComment("<same as Javadoc>");
-				// Air_Conditioning_Mode.Cool.setResourceLabel(" Air Conditioning Cool Mode");
-				// Air_Conditioning_Mode.Cool.setResourceComment("<same as Javadoc>");
+				 Air_Conditioning_Mode.Automatic.setResourceLabel("Automatic Air Conditioning Mode");
+				 Air_Conditioning_Mode.Automatic.setResourceComment("its a mode in which the user sets the temperature that (s)he wants");
+				 Air_Conditioning_Mode.Cool.setResourceLabel(" Air Conditioning Cool Mode");
+				 Air_Conditioning_Mode.Cool.setResourceComment("its a mode that produces cold air");
 		
 		oci_Air_Conditioning_Mode
 				.setResourceComment("The different modes of Air Conditioning that we can choose ");
@@ -105,11 +104,11 @@ public final class HvacOntology extends Ontology {
 		oci_Air_Conditioning_Mode.toEnumeration(new ManagedIndividual[] {
 				Air_Conditioning_Mode.Automatic,
 				Air_Conditioning_Mode.Cool });
-		//TODO add resource labels to all enumeration instances
-		// Heating_Mode.Automatic.setResourceLabel("Automatic Heating Mode");
-		// Heating_Mode.Automatic.setResourceComment("<same as Javadoc>");
-		// Heating_Mode.Heat.setResourceLabel("Heating Mode");
-		// Heating_Mode.Heat.setResourceComment("<same as Javadoc>");
+		
+		   Heating_Mode.Automatic.setResourceLabel("Automatic Heating Mode");
+		   Heating_Mode.Automatic.setResourceComment("its a mode in which the user sets the temperature that (s)he wants");
+		   Heating_Mode.heat.setResourceLabel("Heat Mode");
+		   Heating_Mode.heat.setResourceComment("its a mode that heats the air");
 
 		oci_Heating_Mode
 				.setResourceComment("The different modes of Heating that we can choose");
@@ -118,10 +117,11 @@ public final class HvacOntology extends Ontology {
 				Heating_Mode.Automatic,
 				Heating_Mode.heat });
 		
-		// Ventilation_Mode.Fan.setResourceLabel("Automatic Ventilation Mode");
-				// Ventilation_Mode.Fan.setResourceComment("<same as Javadoc>");
-				// Ventilation_Mode.Dry.setResourceLabel("Dry Mode");
-				// Ventilation_Mode.Dry.setResourceComment("<same as Javadoc>");
+		         Ventilation_Mode.Fan.setResourceLabel("Automatic Ventilation Mode");
+				 Ventilation_Mode.Fan.setResourceComment("its a mode in which the user sets the ventilation mode is On,"
+				 		+ "also in many hvac system this mode is known as Fan Mode ");
+				 Ventilation_Mode.Dry.setResourceLabel("Dry Mode");
+				 Ventilation_Mode.Dry.setResourceComment("enables dehumidifier technology");
 		oci_Ventilation_Mode
 				.setResourceComment("The different modes of Ventilation that we can choose");
 		oci_Ventilation_Mode.setResourceLabel("Ventilation_Mode");
@@ -163,12 +163,7 @@ public final class HvacOntology extends Ontology {
 						Air_Conditioning.PROP_HAS_SWING, LevelRating.MY_URI, 0,
 						3));
 
-		oci_Air_Conditioning.addObjectProperty(Air_Conditioning.PROP_HAS_TIMER)
-				.setFunctional();
-		oci_Air_Conditioning.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(
-						Air_Conditioning.PROP_HAS_TIMER, StatusValue.MY_URI, 0,
-						1));
+		
 
 		// /// HEATING
 
@@ -194,11 +189,7 @@ public final class HvacOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(Heating.PROP_HAS_SWING,
 						LevelRating.MY_URI, 0, 1));
 
-		oci_Heating.addObjectProperty(Heating.PROP_HAS_TIMER).setFunctional();
-		oci_Heating.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(Heating.PROP_HAS_TIMER,
-						StatusValue.MY_URI, 0, 1));
-
+	
 		// ///VENTILATION
 
 		oci_Ventilation.setResourceComment("System that is capable of moving the air in a room");
@@ -225,11 +216,7 @@ public final class HvacOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						Ventilation.PROP_HAS_SWING, LevelRating.MY_URI, 0, 3));
 
-		oci_Ventilation.addObjectProperty(Ventilation.PROP_HAS_TIMER)
-				.setFunctional();
-		oci_Ventilation.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(
-						Ventilation.PROP_HAS_TIMER, StatusValue.MY_URI, 0, 1));
+	
 
 		// Target Temperature
 		oci_Target_Temperature.setResourceComment("System that is capable of keeping a room at a targeted temperature.");

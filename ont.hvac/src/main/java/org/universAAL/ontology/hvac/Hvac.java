@@ -40,8 +40,7 @@ public class Hvac extends Device {
 	 */
 	public static final String PROP_HAS_LEVEL = LevelRating.MY_URI + "hasLevel";
 
-	public static final String PROP_HAS_MODE = HvacOntology.NAMESPACE
-			+ "hasMode";
+
 
 	/**
 	 * The status of a device, on or off.
@@ -55,17 +54,8 @@ public class Hvac extends Device {
 	public static final String PROP_HAS_SWING = HvacOntology.NAMESPACE
 			+ "hasSwing";
 
-	/**
-	 * The timer settings to switch on or off. Not implemented yet.
-	 */
-	public static final String PROP_HAS_TIMER = HvacOntology.NAMESPACE
-			+ "hasTimer";
-
-	/**
-	 * The type of units used to set temperatures.
-	 */
-	public static final String PROP_HAS_UNITS = HvacOntology.NAMESPACE
-			+ "hasUnits";
+	
+	
 
 	public Hvac() {
 		super();

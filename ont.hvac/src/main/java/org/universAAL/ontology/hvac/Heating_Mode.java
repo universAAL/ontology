@@ -18,9 +18,8 @@ package org.universAAL.ontology.hvac;
 /**
  * A type of mode only for {@link Heating} in which user can find three modes.
  * <dl>
- *  <dt>NonAutomatic</dt><dd>its a mode in which the user sets the temperature that (s)he wants.</dd>
- *  <dt>SleepMode</dt><dd>its an automatic mode that turns off the system after a few hours.</dd>
- *  <dt>WinterMode</dt><dd>its a mode that heats the air.</dd>
+ *  <dt>Automatic</dt><dd>its a mode in which the user sets the temperature that (s)he wants.</dd>
+ *  <dt>Heat</dt><dd>its a mode that heats the air.</dd>
  * </dl>
  * @author Ricardo
  */
