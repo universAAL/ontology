@@ -54,8 +54,8 @@ public class Ventilation extends Hvac {
 	       public Ventilation_Mode getVentilation_Mode(){
 	    	   return (Ventilation_Mode)getProperty(PROP_HAS_VENTILATION_MODE);
 	       }
-	       public boolean setMode(Air_Conditioning_Mode air_conditioning_Mode){
-	    	   return changeProperty(PROP_HAS_MODE, air_conditioning_Mode);
+	       public boolean setMode(Ventilation_Mode ventilation_Mode){
+	    	   return changeProperty(PROP_HAS_VENTILATION_MODE, ventilation_Mode);
 	    	   
 	       }
 	       public LevelRating getFan(){
