@@ -34,15 +34,12 @@ package org.universAAL.ontology.hvac;
 public class Ventilation_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Ventilation_Mode";
 
-    public static final int NONAUTOMATIC = 0;
-    public static final int SLEEPMODE = 1;
-    public static final int DRY = 2;
+    public static final int FAN = 0;
+    public static final int DRY = 1;
 
-    private static final String[] names = { "NonAutomatic", "SleepMode",
-	    "Dry" };
+    private static final String[] names = { "Fan","Dry" };
 
-    public static final Ventilation_Mode NonAutomatic = new Ventilation_Mode(NONAUTOMATIC);
-    public static final Ventilation_Mode SleepMode = new Ventilation_Mode(SLEEPMODE);
+    public static final Ventilation_Mode Fan = new Ventilation_Mode(FAN);
     public static final Ventilation_Mode Dry = new Ventilation_Mode(DRY);
 
     private int order;
@@ -74,10 +71,9 @@ public class Ventilation_Mode extends Mode {
 
     public static Ventilation_Mode getVentilation_ModeByOrder(int order) {
 	switch (order) {
-	case NONAUTOMATIC:
-	    return NonAutomatic;
-	case SLEEPMODE:
-	    return SleepMode;
+	case FAN:
+	    return Fan;
+	
 	case DRY:
 	    return Dry;
 	default:
@@ -93,7 +89,7 @@ public class Ventilation_Mode extends Mode {
 	    name = name.substring(HvacOntology.NAMESPACE.length());
 
 
-	for (int i = NONAUTOMATIC; i <= DRY; i++)
+	for (int i = FAN; i <= DRY; i++)
 	    if (names[i].equals(name))
 		return getVentilation_ModeByOrder(i);
 

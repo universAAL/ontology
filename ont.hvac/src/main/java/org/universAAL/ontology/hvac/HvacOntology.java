@@ -28,6 +28,7 @@ import org.universAAL.ontology.HvacFactory;
 import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.location.LocationOntology;
+import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.unit.MeasurableDimension;
 import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
@@ -61,6 +62,7 @@ public final class HvacOntology extends Ontology {
 		OntClassInfoSetup oci_Air_Conditioning_Mode = createNewAbstractOntClassInfo(Air_Conditioning_Mode.MY_URI);
 		OntClassInfoSetup oci_Heating_Mode = createNewAbstractOntClassInfo(Heating_Mode.MY_URI);
 		OntClassInfoSetup oci_Ventilation_Mode = createNewAbstractOntClassInfo(Ventilation_Mode.MY_URI);
+		OntClassInfoSetup oci_Hvac = createNewAbstractOntClassInfo(Hvac.MY_URI);
 
 		OntClassInfoSetup oci_Mode = createNewAbstractOntClassInfo(Mode.MY_URI);
 
@@ -76,35 +78,56 @@ public final class HvacOntology extends Ontology {
 				factory, 1);
 		OntClassInfoSetup oci_Ventilation = createNewOntClassInfo(
 				Ventilation.MY_URI, factory, 2);
-
+		// //////////////////////////////////////////////////////////////////(/////
+		// ******* Add content to abstract classes of the ontology ******* //
+		// ///////////////////////////////////////////////////////////////////////////
+		oci_Hvac.setResourceComment("Heating, Air Conditioning and Ventilation Systems");
+		oci_Hvac.setResourceLabel("Hvac");
+		oci_Hvac.addSuperClass(Device.MY_URI);
+		
+		oci_Mode.setResourceComment("The diffents modes of Hvac Systems");
+		oci_Mode.setResourceLabel("Mode");
+		oci_Mode.addSuperClass(ManagedIndividual.MY_URI);
+		
 		// //////////////////////////////////////////////////////////////////(/////
 		// ******* Add content to enumeration classes of the ontology ******* //
 		// ///////////////////////////////////////////////////////////////////////////
 
+		//TODO add resource labels to all enumeration instances
+				// Air_Conditioning_Mode.Automatic.setResourceLabel("Automatic Air Conditioning Mode");
+				// Air_Conditioning_Mode.Automatic.setResourceComment("<same as Javadoc>");
+				// Air_Conditioning_Mode.Cool.setResourceLabel(" Air Conditioning Cool Mode");
+				// Air_Conditioning_Mode.Cool.setResourceComment("<same as Javadoc>");
+		
 		oci_Air_Conditioning_Mode
 				.setResourceComment("The different modes of Air Conditioning that we can choose ");
 		oci_Air_Conditioning_Mode.setResourceLabel("Air_Conditioning_Mode");
 		oci_Air_Conditioning_Mode.toEnumeration(new ManagedIndividual[] {
-				Air_Conditioning_Mode.NonAutomatic,
-				Air_Conditioning_Mode.SleepMode,
-				Air_Conditioning_Mode.SummerMode });
+				Air_Conditioning_Mode.Automatic,
+				Air_Conditioning_Mode.Cool });
 		//TODO add resource labels to all enumeration instances
-		// Air_Conditioning_Mode.NonAutomatic.setResourceLabel("NonAutomatic Heating Mode");
-		// Air_Conditioning_Mode.NonAutomatic.setResourceComment("<same as Javadoc>");
+		// Heating_Mode.Automatic.setResourceLabel("Automatic Heating Mode");
+		// Heating_Mode.Automatic.setResourceComment("<same as Javadoc>");
+		// Heating_Mode.Heat.setResourceLabel("Heating Mode");
+		// Heating_Mode.Heat.setResourceComment("<same as Javadoc>");
 
 		oci_Heating_Mode
 				.setResourceComment("The different modes of Heating that we can choose");
 		oci_Heating_Mode.setResourceLabel("Heating_Mode");
 		oci_Heating_Mode.toEnumeration(new ManagedIndividual[] {
-				Heating_Mode.NonAutomatic, Heating_Mode.SleepMode,
-				Heating_Mode.winterMode });
-
+				Heating_Mode.Automatic,
+				Heating_Mode.heat });
+		
+		// Ventilation_Mode.Fan.setResourceLabel("Automatic Ventilation Mode");
+				// Ventilation_Mode.Fan.setResourceComment("<same as Javadoc>");
+				// Ventilation_Mode.Dry.setResourceLabel("Dry Mode");
+				// Ventilation_Mode.Dry.setResourceComment("<same as Javadoc>");
 		oci_Ventilation_Mode
 				.setResourceComment("The different modes of Ventilation that we can choose");
 		oci_Ventilation_Mode.setResourceLabel("Ventilation_Mode");
 		oci_Ventilation_Mode.toEnumeration(new ManagedIndividual[] {
 
-		Ventilation_Mode.NonAutomatic, Ventilation_Mode.SleepMode,
+		Ventilation_Mode.Fan, 
 				Ventilation_Mode.Dry });
 
 		// ////////////////////////////////////////////////////////////////

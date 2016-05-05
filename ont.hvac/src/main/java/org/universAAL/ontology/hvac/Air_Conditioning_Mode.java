@@ -27,26 +27,22 @@ package org.universAAL.ontology.hvac;
 public class Air_Conditioning_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Air_Conditioning_Mode";
     
-    public static final int NONAUTOMATIC = 0;
-    public static final int SLEEPMODE = 1;
-    public static final int SUMMERMODE = 2;
+    public static final int AUTOMATIC = 0;
+    public static final int COOL = 1;
    
-    private static final String[] names = { "NonAutomatic", "SleepMode",
-	    "SummerMode" };
+    private static final String[] names = { "Automatic", 
+	    "Cool" };
  
     /**
      * A mode in which the user sets the temperature that (s)he wants.
      */
-    public static final Air_Conditioning_Mode NonAutomatic = new Air_Conditioning_Mode(NONAUTOMATIC);
-    /**
-     * An automatic mode that turns off the {@link Air_Conditioning} system after a few hours .
-     */
-    public static final Air_Conditioning_Mode SleepMode = new Air_Conditioning_Mode(SLEEPMODE);
+    public static final Air_Conditioning_Mode Automatic = new Air_Conditioning_Mode(AUTOMATIC);
+    
     
     /**
      * A mode that produces cold air.
      */
-    public static final Air_Conditioning_Mode SummerMode = new Air_Conditioning_Mode(SUMMERMODE);
+    public static final Air_Conditioning_Mode Cool = new Air_Conditioning_Mode(COOL);
 
     private int order;
 
@@ -77,12 +73,11 @@ public class Air_Conditioning_Mode extends Mode {
 
     public static Air_Conditioning_Mode getAir_Conditioning_ModeByOrder(int order) {
 	switch (order) {
-	case NONAUTOMATIC:
-	    return NonAutomatic;
-	case SLEEPMODE:
-	    return SleepMode;
-	case SUMMERMODE:
-	    return SummerMode;
+	case AUTOMATIC:
+	    return Automatic;
+	
+	case COOL:
+	    return Cool;
 	default:
 	    return null;
 	}
@@ -96,7 +91,7 @@ public class Air_Conditioning_Mode extends Mode {
 	    name = name.substring(HvacOntology.NAMESPACE.length());
 
 
-	for (int i = NONAUTOMATIC; i <= SUMMERMODE; i++)
+	for (int i = AUTOMATIC; i <= COOL; i++)
 	    if (names[i].equals(name))
 		return getAir_Conditioning_ModeByOrder(i);
 

@@ -27,25 +27,21 @@ package org.universAAL.ontology.hvac;
 public class Heating_Mode extends Mode {
     public static final String MY_URI = HvacOntology.NAMESPACE + "Heating_Mode";
 
-    public static final int NONAUTOMATIC = 0;
-    public static final int SLEEPMODE = 1;
-    public static final int WINTERMODE = 2;
+    public static final int AUTOMATIC = 0;
+    public static final int Heat = 1;
 
-    private static final String[] names = { "NonAutomatic", "SleepMode",
-	    "WinterMode" };
+    private static final String[] names = { "Automatic", 
+	    "Heat" };
 
     /**
      * The user sets the temperature that (s)he wants.
      */
-    public static final Heating_Mode NonAutomatic = new Heating_Mode(NONAUTOMATIC);
-    /**
-     * Turns off the system after a few hours.
-     */
-    public static final Heating_Mode SleepMode = new Heating_Mode(SLEEPMODE);
+    public static final Heating_Mode Automatic = new Heating_Mode(AUTOMATIC);
+    
     /**
      * Heats the air.
      */
-    public static final Heating_Mode winterMode = new Heating_Mode(WINTERMODE);
+    public static final Heating_Mode heat = new Heating_Mode(Heat);
 
     private int order;
 
@@ -76,12 +72,10 @@ public class Heating_Mode extends Mode {
 
     public static Heating_Mode getHeating_ModeByOrder(int order) {
 	switch (order) {
-	case NONAUTOMATIC:
-	    return NonAutomatic;
-	case SLEEPMODE:
-	    return SleepMode;
-	case WINTERMODE:
-	    return winterMode;
+	case AUTOMATIC:
+	    return Automatic;
+	case Heat:
+	    return heat;
 	default:
 	    return null;
 	}
@@ -94,7 +88,7 @@ public class Heating_Mode extends Mode {
 	if (name.startsWith(HvacOntology.NAMESPACE))
 	    name = name.substring(HvacOntology.NAMESPACE.length());
 
-	for (int i = NONAUTOMATIC; i <= WINTERMODE; i++)
+	for (int i = AUTOMATIC; i <= Heat; i++)
 	    if (names[i].equals(name))
 		return getHeating_ModeByOrder(i);
 
