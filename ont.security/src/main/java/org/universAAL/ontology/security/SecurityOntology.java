@@ -109,6 +109,7 @@ public final class SecurityOntology extends Ontology {
 				factory, 8);
 		OntClassInfoSetup oci_role = createNewOntClassInfo(Role.MY_URI, factory, 9);
 		OntClassInfoSetup oci_AccessRight = createNewOntClassInfo(AccessRight.MY_URI, factory, 10);
+		OntClassInfoSetup oci_authorizationService = createNewOntClassInfo(AuthorizationService.MY_URI, factory, 11);
 		
 
 		// Credentials
@@ -285,7 +286,7 @@ public final class SecurityOntology extends Ontology {
 		 */
 		// Authentication Service
 		oci_authService
-				.setResourceComment("Service to Athenticate a User Given some credentials.");
+				.setResourceComment("Service to Authenticate a User Given some credentials.");
 		oci_authService.setResourceLabel("Authentication Service");
 		oci_authService.addSuperClass(Service.MY_URI);
 		oci_authService
@@ -300,6 +301,21 @@ public final class SecurityOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						AuthenticationService.PROP_AUTHENTICATED_USER,
 						User.MY_URI, 0, 1));
+		
+		// Authorization Service
+		oci_authorizationService.setResourceComment("Service to Authorise a User Given a specific acces to an Asset.");
+		oci_authorizationService.setResourceLabel("Authorisation Service");
+		oci_authorizationService.addSuperClass(Service.MY_URI);
+		oci_authorizationService.addObjectProperty(AuthorizationService.PROP_CHALLENGER_USER);
+		oci_authorizationService.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						AuthorizationService.PROP_CHALLENGER_USER,
+						User.MY_URI, 1, 1));
+		oci_authorizationService.addObjectProperty(AuthorizationService.PROP_ASSET_ACCESS);
+		oci_authorizationService.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						AuthorizationService.PROP_ASSET_ACCESS,
+						Asset.MY_URI, 1, 1));
 
 		// Session Service
 		oci_sessionService

@@ -20,6 +20,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.security.AccessRight;
 import org.universAAL.ontology.security.AuthenticationService;
+import org.universAAL.ontology.security.AuthorizationService;
 import org.universAAL.ontology.security.DeviceBoundSession;
 import org.universAAL.ontology.security.LocationBoundSession;
 import org.universAAL.ontology.security.MultifactorCredentials;
@@ -62,6 +63,8 @@ public class SecurityFactory implements ResourceFactory {
 		return new Role(instanceURI);
 	case 10:
 		return new AccessRight(instanceURI);
+	case 11:
+		return new AuthorizationService(instanceURI);
 	}
 	return null;
     }
