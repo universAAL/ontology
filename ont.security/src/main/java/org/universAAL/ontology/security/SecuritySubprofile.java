@@ -34,6 +34,7 @@ public class SecuritySubprofile extends SubProfile {
     public static final String MY_URI = SecurityOntology.NAMESPACE + "SecuritySubprofile";
     
     public static final String PROP_CREDENTIALS = SecurityOntology.NAMESPACE + "associatedCredentials";
+    public static final String PROP_ROLES = SecurityOntology.NAMESPACE + "hasRoles";
 	    
 	
 	/**

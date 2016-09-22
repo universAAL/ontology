@@ -18,12 +18,14 @@ package org.universAAL.ontology;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
+import org.universAAL.ontology.security.AccessRight;
 import org.universAAL.ontology.security.AuthenticationService;
 import org.universAAL.ontology.security.DeviceBoundSession;
 import org.universAAL.ontology.security.LocationBoundSession;
 import org.universAAL.ontology.security.MultifactorCredentials;
 import org.universAAL.ontology.security.OneTimePassword;
 import org.universAAL.ontology.security.Password;
+import org.universAAL.ontology.security.Role;
 import org.universAAL.ontology.security.SecuritySubprofile;
 import org.universAAL.ontology.security.SessionManagementService;
 import org.universAAL.ontology.security.UserPasswordCredentials;
@@ -56,6 +58,10 @@ public class SecurityFactory implements ResourceFactory {
 		return new Password(instanceURI);
 	case 8:
 		return new OneTimePassword(instanceURI);
+	case 9:
+		return new Role(instanceURI);
+	case 10:
+		return new AccessRight(instanceURI);
 	}
 	return null;
     }

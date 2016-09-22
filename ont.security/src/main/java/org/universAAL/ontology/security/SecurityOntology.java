@@ -84,7 +84,11 @@ public final class SecurityOntology extends Ontology {
 		oci_InherenceF.setResourceComment("These are factors associated with the user, and are usually biometric methods," +
 				" including fingerprint readers, retina scanners or voice recognition.");
 		oci_InherenceF.setResourceLabel("Inherence Factor");
+		
+		OntClassInfoSetup oci_asset = createNewAbstractOntClassInfo(Asset.MY_URI);
 
+		OntClassInfoSetup oci_accessType = createNewAbstractOntClassInfo(AccessType.MY_URI);
+		
 		OntClassInfoSetup oci_userPass = createNewOntClassInfo(
 				UserPasswordCredentials.MY_URI, factory, 0);
 		OntClassInfoSetup oci_devSession = createNewOntClassInfo(
@@ -103,6 +107,9 @@ public final class SecurityOntology extends Ontology {
 				factory, 7);
 		OntClassInfoSetup oci_otp = createNewOntClassInfo(OneTimePassword.MY_URI,
 				factory, 8);
+		OntClassInfoSetup oci_role = createNewOntClassInfo(Role.MY_URI, factory, 9);
+		OntClassInfoSetup oci_AccessRight = createNewOntClassInfo(AccessRight.MY_URI, factory, 10);
+		
 
 		// Credentials
 		oci_credentials.setResourceLabel("Credentials");
@@ -171,6 +178,49 @@ public final class SecurityOntology extends Ontology {
 						UserPasswordCredentials.PROP_USERNAME,
 						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
+		/*
+		 * Authorisation
+		 */
+		
+		//Asset
+		oci_asset.addSuperClass(ManagedIndividual.MY_URI);
+		oci_asset.setResourceLabel("Asset");
+		oci_asset.setResourceComment("Mark a class or an instance as a security Asset to be access through the authorisation service");
+		oci_asset.addObjectProperty(Asset.PROP_HAS_DEFAULT_ACCESS);
+		oci_asset.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Asset.PROP_HAS_DEFAULT_ACCESS, AccessRight.MY_URI, 0, 1));
+		
+		//Role
+		oci_role.addSuperClass(ManagedIndividual.MY_URI);
+		oci_role.setResourceLabel("Role");
+		oci_role.setResourceComment("Security role containing all the access rights to different Assets");
+		oci_role.addObjectProperty(Role.PROP_SUB_ROLES);
+		oci_role.addRestriction(MergedRestriction.getAllValuesRestriction(Role.PROP_SUB_ROLES,Role.MY_URI));
+		oci_role.addObjectProperty(Role.PROP_HAS_ACCESS_RIGHTS);
+		oci_role.addRestriction(MergedRestriction.getAllValuesRestriction(Role.PROP_HAS_ACCESS_RIGHTS, AccessRight.MY_URI));
+		
+		//Access Type
+		oci_accessType.setResourceLabel("Access Type");
+		oci_accessType.setResourceComment("The different Access Types, Read, Write (change or add), delete (remove).");
+		oci_accessType.toEnumeration(new ManagedIndividual[]{
+				AccessType.read,
+				AccessType.change,
+				AccessType.add,
+				AccessType.remove});
+		
+		//Access Right
+		oci_AccessRight.addSuperClass(ManagedIndividual.MY_URI);
+		oci_AccessRight.setResourceLabel("Access Right");
+		oci_AccessRight.setResourceComment("Access Right describes the type of access right to a specific (or generic) class (or instance) of Asset(s).");
+		oci_AccessRight.addObjectProperty(AccessRight.PROP_ACCESS_TYPE);
+		oci_AccessRight.addRestriction(MergedRestriction.getAllValuesRestriction(AccessRight.PROP_ACCESS_TYPE, AccessType.MY_URI));
+		oci_AccessRight.addObjectProperty(AccessRight.PROP_ACCESS_TO);
+		//TODO PROP_ACCESS_TO should be restricted to a TypeExpression, which should be in turn relevant only to Asset type. Cardinality should be 1, 1.
+		//oci_AccessRight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AccessRight.PROP_ACCESS_TO, TypeExpression., 1, 1));
+		
+		/*
+		 * Sessions
+		 */
+		
 		// DeviceBoundSession
 		oci_devSession
 				.setResourceComment("Session bounded to a single device.");
@@ -205,6 +255,9 @@ public final class SecurityOntology extends Ontology {
 		oci_secProf.addObjectProperty(SecuritySubprofile.PROP_CREDENTIALS);
 		oci_secProf.addRestriction(MergedRestriction.getAllValuesRestriction(
 				SecuritySubprofile.PROP_CREDENTIALS, Credentials.MY_URI));
+		
+		
+		
 
 		/*
 		 * Extensions provided
