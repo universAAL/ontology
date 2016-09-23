@@ -3,8 +3,6 @@ package org.universAAL.ontology.cryptographic;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
-
 
 /**
  * Ontological representation of AsymmetricEncryption in the cryptographic ontology. 

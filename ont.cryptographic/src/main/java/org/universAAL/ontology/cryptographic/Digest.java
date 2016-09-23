@@ -1,6 +1,5 @@
 package org.universAAL.ontology.cryptographic;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 
 /**

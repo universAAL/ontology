@@ -3,108 +3,26 @@
   <parent>
     <artifactId>ont.pom</artifactId>
     <groupId>org.universAAL.ontology</groupId>
-    <version>3.0.0</version>
+    <version>3.4.1-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
-  <groupId>org.universAAL.ontology</groupId>
+  
   <artifactId>ont.cryptographic</artifactId>
   <version>3.4.1-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+
   <name>Cryptographic Ontology</name>
+  
   <dependencies>
     <dependency>
       <groupId>org.universAAL.support</groupId>
       <artifactId>itests</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.osgi</groupId>
-      <artifactId>org.osgi.core</artifactId>
-      <version>4.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.middleware</groupId>
-      <artifactId>mw.data.serialization.core</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.universAAL.middleware</groupId>
-      <artifactId>mw.container.xfaces.core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.middleware</groupId>
-      <artifactId>mw.bus.service.core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.phWorld</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.device</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.unit</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.measurement</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.coode.owlapi</groupId>
-      <artifactId>owlapi</artifactId>
-      <version>3.3</version>
-    </dependency>
   </dependencies>
-  <repositories>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>central</id>
-      <name>Central Maven Repository</name>
-      <url>http://repo1.maven.org/maven2</url>
-    </repository>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </snapshots>
-      <id>apache-snapshots</id>
-      <name>Apache Snapshots</name>
-      <url>http://people.apache.org/repo/m2-snapshot-repository</url>
-    </repository>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>uaal</id>
-      <name>universAAL Repositories</name>
-      <url>http://depot.universaal.org/maven-repo/releases/</url>
-    </repository>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <id>uaal-snapshots</id>
-      <name>universAAL Snapshot Repositories</name>
-      <url>http://depot.universaal.org/maven-repo/snapshots/</url>
-    </repository>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>uaal-thirdparty</id>
-      <name>universAAL Third Party Repositories</name>
-      <url>http://depot.universaal.org/maven-repo/thirdparty/</url>
-    </repository>
-  </repositories>
+ 
   <build>
     <plugins>
       <plugin>

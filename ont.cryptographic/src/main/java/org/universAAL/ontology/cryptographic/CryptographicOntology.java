@@ -1,29 +1,18 @@
 
 package org.universAAL.ontology.cryptographic;
 
-import org.universAAL.middleware.owl.IntRestriction;
-import org.universAAL.middleware.owl.FloatRestriction;
-import org.universAAL.middleware.owl.DoubleRestriction;
-import org.universAAL.middleware.owl.LongRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
-import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.service.owl.ServiceBusOntology;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.phThing.PhThingOntology;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.space.SpaceOntology;
-
-import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.rdf.Resource;
-
-
-//import the factory for this ontology
+import org.universAAL.middleware.rdf.TypeMapper;
+import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.middleware.service.owl.ServiceBusOntology;
+import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.CryptographicFactory;
+//import the factory for this ontology
 
 
 /**
@@ -47,10 +36,6 @@ public final class CryptographicOntology extends Ontology {
     r.setResourceLabel("cryptographic");
     addImport(DataRepOntology.NAMESPACE);
     addImport(ServiceBusOntology.NAMESPACE);
-    addImport(LocationOntology.NAMESPACE);
-    addImport(PhThingOntology.NAMESPACE);
-    addImport(ShapeOntology.NAMESPACE);
-    addImport(SpaceOntology.NAMESPACE);
     // TODO: Add any additionally imported ontologies here
     
 
@@ -77,28 +62,28 @@ public final class CryptographicOntology extends Ontology {
 
     // ******* Add content to enumeration classes of the ontology ******* //
 
-    oci_ChainMode.setResourceComment("");
-    oci_ChainMode.setResourceLabel("ChainMode");
+    oci_ChainMode.setResourceComment("The mode types for chained block symmetric encryption.");
+    oci_ChainMode.setResourceLabel("Chain Mode");
     oci_ChainMode.toEnumeration(new ManagedIndividual[] {
        ChainMode.Enc, ChainMode.Dec });
 
 
     // ******* Add content to regular classes of the ontology ******* //
-    oci_CryptographicTechnique.setResourceComment("");
-    oci_CryptographicTechnique.setResourceLabel("CryptographicTechnique");
+    oci_CryptographicTechnique.setResourceComment("All the cryptographic techniques.");
+    oci_CryptographicTechnique.setResourceLabel("Cryptographic Technique");
     oci_CryptographicTechnique.addSuperClass(ManagedIndividual.MY_URI); 
 
     oci_SimpleBlockEncryption.setResourceComment("");
-    oci_SimpleBlockEncryption.setResourceLabel("SimpleBlockEncryption");
+    oci_SimpleBlockEncryption.setResourceLabel("Simple Block Encryption");
     oci_SimpleBlockEncryption.addSuperClass(BlockEncryption.MY_URI); 
 
-    oci_SignedResource.setResourceComment("");
-    oci_SignedResource.setResourceLabel("SignedResource");
+    oci_SignedResource.setResourceComment("A wrapper that includes a digital signature and the metainformation to validate.");
+    oci_SignedResource.setResourceLabel("Signed Resource");
     oci_SignedResource.addSuperClass(ManagedIndividual.MY_URI); 
     oci_SignedResource.addDatatypeProperty(SignedResource.PROP_SIGNATURE).setFunctional();
     oci_SignedResource.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignedResource.PROP_SIGNATURE, 
-          TypeMapper.getDatatypeURI(String.class), 1, -1));
+          TypeMapper.getDatatypeURI(Base64Binary.class), 1, -1));
     oci_SignedResource.addObjectProperty(SignedResource.PROP_ASYMMETRIC).setFunctional();
     oci_SignedResource.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignedResource.PROP_ASYMMETRIC, 
@@ -112,23 +97,23 @@ public final class CryptographicOntology extends Ontology {
       .getAllValuesRestrictionWithCardinality(SignedResource.PROP_DIGEST, 
           Digest.MY_URI, 1, 1));
 
-    oci_SimpleKey.setResourceComment("");
-    oci_SimpleKey.setResourceLabel("SimpleKey");
+    oci_SimpleKey.setResourceComment("A simple Key used to (de)cypher symmetrically text.");
+    oci_SimpleKey.setResourceLabel("Simple Key");
     oci_SimpleKey.addSuperClass(EncryptionKey.MY_URI); 
     oci_SimpleKey.addDatatypeProperty(SimpleKey.PROP_KEY_TEXT).setFunctional();
     oci_SimpleKey.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SimpleKey.PROP_KEY_TEXT, 
-          TypeMapper.getDatatypeURI(String.class), 1, 1));
+          TypeMapper.getDatatypeURI(Base64Binary.class), 1, 1));
 
-    oci_Digest.setResourceComment("");
+    oci_Digest.setResourceComment("A cryptographic hash function.");
     oci_Digest.setResourceLabel("Digest");
     oci_Digest.addSuperClass(CryptographicTechnique.MY_URI); 
 
-    oci_CryptograpichService.setResourceComment("");
-    oci_CryptograpichService.setResourceLabel("CryptograpichService");
+    oci_CryptograpichService.setResourceComment("All types of Cryptographic serives.");
+    oci_CryptograpichService.setResourceLabel("Cryptograpich Service");
     oci_CryptograpichService.addSuperClass(Service.MY_URI); 
 
-    oci_Encryption.setResourceComment("");
+    oci_Encryption.setResourceComment("Encodes messages or information in such a way that only authorized parties can read it.");
     oci_Encryption.setResourceLabel("Encryption");
     oci_Encryption.addSuperClass(CryptographicTechnique.MY_URI); 
     oci_Encryption.addObjectProperty(Encryption.PROP_KEY).setFunctional();
@@ -136,7 +121,7 @@ public final class CryptographicOntology extends Ontology {
        	EncryptionKey.MY_URI));
 
     oci_ChainedBlockEncryption.setResourceComment("");
-    oci_ChainedBlockEncryption.setResourceLabel("ChainedBlockEncryption");
+    oci_ChainedBlockEncryption.setResourceLabel("Chained Block Encryption");
     oci_ChainedBlockEncryption.addSuperClass(BlockEncryption.MY_URI); 
     oci_ChainedBlockEncryption.addObjectProperty(ChainedBlockEncryption.PROP_CHAIN_MODE).setFunctional();
       	oci_ChainedBlockEncryption.addRestriction(MergedRestriction.getAllValuesRestriction(ChainedBlockEncryption.PROP_CHAIN_MODE,  
@@ -146,57 +131,58 @@ public final class CryptographicOntology extends Ontology {
       .getAllValuesRestrictionWithCardinality(ChainedBlockEncryption.PROP_SIMPLE, 
           SimpleBlockEncryption.MY_URI, 1, 1));
 
-    oci_AsymmetricEncryption.setResourceComment("");
-    oci_AsymmetricEncryption.setResourceLabel("AsymmetricEncryption");
+    oci_AsymmetricEncryption.setResourceComment("Any cryptographic system that uses pairs of keys.");
+    oci_AsymmetricEncryption.setResourceLabel("Asymmetric Encryption");
     oci_AsymmetricEncryption.addSuperClass(Encryption.MY_URI); 
     oci_AsymmetricEncryption.addObjectProperty(AsymmetricEncryption.PROP_KEY_RING).setFunctional();
       	oci_AsymmetricEncryption.addRestriction(MergedRestriction.getAllValuesRestriction(AsymmetricEncryption.PROP_KEY_RING,  
        	KeyRing.MY_URI));
 
     oci_KeyExchange.setResourceComment("");
-    oci_KeyExchange.setResourceLabel("KeyExchange");
+    oci_KeyExchange.setResourceLabel("Key Exchange");
     oci_KeyExchange.addSuperClass(CryptographicTechnique.MY_URI); 
 
     oci_StreamEncryption.setResourceComment("");
-    oci_StreamEncryption.setResourceLabel("StreamEncryption");
+    oci_StreamEncryption.setResourceLabel("Stream Encryption");
     oci_StreamEncryption.addSuperClass(SymetricEncryption.MY_URI); 
     oci_StreamEncryption.addDatatypeProperty(StreamEncryption.PROP_INITIALIZATION_VECTOR).setFunctional();
-    oci_StreamEncryption.addRestriction(MergedRestriction.getCardinalityRestriction(StreamEncryption.PROP_INITIALIZATION_VECTOR, 1, 1));
+    oci_StreamEncryption.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+    		StreamEncryption.PROP_INITIALIZATION_VECTOR,TypeMapper.getDatatypeURI(Base64Binary.class), 1, 1));
 
     oci_BlockEncryption.setResourceComment("");
-    oci_BlockEncryption.setResourceLabel("BlockEncryption");
+    oci_BlockEncryption.setResourceLabel("Block Encryption");
     oci_BlockEncryption.addSuperClass(SymetricEncryption.MY_URI); 
     oci_BlockEncryption.addDatatypeProperty(BlockEncryption.PROP_BLOCK_LENGTH).setFunctional();
     oci_BlockEncryption.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(BlockEncryption.PROP_BLOCK_LENGTH, 
           TypeMapper.getDatatypeURI(Integer.class), 1, 1));
 
-    oci_EncryptionKey.setResourceComment("");
-    oci_EncryptionKey.setResourceLabel("EncryptionKey");
+    oci_EncryptionKey.setResourceComment("Key used to (de)cypher messages.");
+    oci_EncryptionKey.setResourceLabel("Encryption Key");
     oci_EncryptionKey.addSuperClass(ManagedIndividual.MY_URI); 
 
-    oci_KeyRing.setResourceComment("");
-    oci_KeyRing.setResourceLabel("KeyRing");
+    oci_KeyRing.setResourceComment("A placeholder for key pairs (public and private keys).");
+    oci_KeyRing.setResourceLabel("Key Ring");
     oci_KeyRing.addSuperClass(EncryptionKey.MY_URI); 
     oci_KeyRing.addDatatypeProperty(KeyRing.PROP_PRIVATE_KEY).setFunctional();
     oci_KeyRing.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(KeyRing.PROP_PRIVATE_KEY, 
-          TypeMapper.getDatatypeURI(String.class), 0, 1));
+          TypeMapper.getDatatypeURI(Base64Binary.class), 0, 1));
     oci_KeyRing.addObjectProperty(KeyRing.PROP_CERTIFICATION_AUTHORITY).setFunctional();
       	oci_KeyRing.addRestriction(MergedRestriction.getAllValuesRestriction(KeyRing.PROP_CERTIFICATION_AUTHORITY,  
        	CertificationAuthority.MY_URI));
     oci_KeyRing.addDatatypeProperty(KeyRing.PROP_PUBLIC_KEY).setFunctional();
     oci_KeyRing.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(KeyRing.PROP_PUBLIC_KEY, 
-          TypeMapper.getDatatypeURI(String.class), 0, 1));
+          TypeMapper.getDatatypeURI(Base64Binary.class), 0, 1));
 
-    oci_CertificationAuthority.setResourceComment("");
-    oci_CertificationAuthority.setResourceLabel("CertificationAuthority");
+    oci_CertificationAuthority.setResourceComment("An entity that issues digital certificates.");
+    oci_CertificationAuthority.setResourceLabel("Certification Authority");
     oci_CertificationAuthority.addSuperClass(KeyRing.MY_URI); 
     oci_CertificationAuthority.addSuperClass(SignedResource.MY_URI); 
 
-    oci_SymetricEncryption.setResourceComment("");
-    oci_SymetricEncryption.setResourceLabel("SymetricEncryption");
+    oci_SymetricEncryption.setResourceComment("Encryption algorithms that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext.");
+    oci_SymetricEncryption.setResourceLabel("Symetric Encryption");
     oci_SymetricEncryption.addSuperClass(Encryption.MY_URI); 
     oci_SymetricEncryption.addObjectProperty(SymetricEncryption.PROP_SIMPLE_KEY).setFunctional();
     oci_SymetricEncryption.addRestriction(MergedRestriction
