@@ -31,25 +31,25 @@
           <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
         </generalization>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_iaPc0IDMEeaYibeoVv-bYw" name="CryptographicTechnique">
+      <packagedElement xmi:type="uml:Class" xmi:id="_iaPc0IDMEeaYibeoVv-bYw" name="CryptographicTechnique" isAbstract="true">
         <generalization xmi:id="_iaPc0YDMEeaYibeoVv-bYw">
           <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
         </generalization>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_FTIHMIDNEeaYibeoVv-bYw" name="Encryption">
+      <packagedElement xmi:type="uml:Class" xmi:id="_FTIHMIDNEeaYibeoVv-bYw" name="Encryption" isAbstract="true">
         <generalization xmi:id="_FTUUcIDNEeaYibeoVv-bYw" general="_iaPc0IDMEeaYibeoVv-bYw"/>
         <ownedAttribute xmi:id="_46C1MIDNEeaYibeoVv-bYw" name="key" type="_VlHvAIDNEeaYibeoVv-bYw" association="_46I70IDNEeaYibeoVv-bYw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_46C1MYDNEeaYibeoVv-bYw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_46C1MoDNEeaYibeoVv-bYw"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Kngx8IDNEeaYibeoVv-bYw" name="Digest">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Kngx8IDNEeaYibeoVv-bYw" name="Digest" isAbstract="true">
         <generalization xmi:id="_Kns_MIDNEeaYibeoVv-bYw" general="_iaPc0IDMEeaYibeoVv-bYw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_NSrXsIDNEeaYibeoVv-bYw" name="KeyExchange">
+      <packagedElement xmi:type="uml:Class" xmi:id="_NSrXsIDNEeaYibeoVv-bYw" name="KeyExchange" isAbstract="true">
         <generalization xmi:id="_NSxeUIDNEeaYibeoVv-bYw" general="_iaPc0IDMEeaYibeoVv-bYw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_VlHvAIDNEeaYibeoVv-bYw" name="Key">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VlHvAIDNEeaYibeoVv-bYw" name="EncryptionKey" isAbstract="true">
         <generalization xmi:id="_VlT8QIDNEeaYibeoVv-bYw">
           <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
         </generalization>
@@ -60,14 +60,14 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_46I704DNEeaYibeoVv-bYw" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_D0DEoIDOEeaYibeoVv-bYw" name="Symetric">
+      <packagedElement xmi:type="uml:Class" xmi:id="_D0DEoIDOEeaYibeoVv-bYw" name="SymetricEncryption" isAbstract="true">
         <generalization xmi:id="_HFaHsIDOEeaYibeoVv-bYw" general="_FTIHMIDNEeaYibeoVv-bYw"/>
         <ownedAttribute xmi:id="_QLZb0IDOEeaYibeoVv-bYw" name="simpleKey" type="_MY3lYIDOEeaYibeoVv-bYw" association="_QLZb04DOEeaYibeoVv-bYw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QLZb0YDOEeaYibeoVv-bYw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QLZb0oDOEeaYibeoVv-bYw"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_E5YVAIDOEeaYibeoVv-bYw" name="Asymmetric">
+      <packagedElement xmi:type="uml:Class" xmi:id="_E5YVAIDOEeaYibeoVv-bYw" name="AsymmetricEncryption" isAbstract="true">
         <generalization xmi:id="_Hl1UMIDOEeaYibeoVv-bYw" general="_FTIHMIDNEeaYibeoVv-bYw"/>
         <ownedAttribute xmi:id="_UAalkIDOEeaYibeoVv-bYw" name="keyRing" type="_N73pMIDOEeaYibeoVv-bYw" association="_UAalk4DOEeaYibeoVv-bYw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UAalkYDOEeaYibeoVv-bYw" value="*"/>
@@ -140,20 +140,20 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5SXKYoDUEeaYibeoVv-bYw" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_zwv4wIDQEeaYibeoVv-bYw" name="Block">
+      <packagedElement xmi:type="uml:Class" xmi:id="_zwv4wIDQEeaYibeoVv-bYw" name="BlockEncryption" isAbstract="true">
         <generalization xmi:id="_20Pe8IDQEeaYibeoVv-bYw" general="_D0DEoIDOEeaYibeoVv-bYw"/>
         <ownedAttribute xmi:id="_4dJWcIDQEeaYibeoVv-bYw" name="blockLength">
           <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_0N0ScGkeEeGXyoAu4GMQ6g"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_1pvasIDQEeaYibeoVv-bYw" name="Stream">
+      <packagedElement xmi:type="uml:Class" xmi:id="_1pvasIDQEeaYibeoVv-bYw" name="StreamEncryption" isAbstract="true">
         <generalization xmi:id="_3L5J8IDQEeaYibeoVv-bYw" general="_D0DEoIDOEeaYibeoVv-bYw"/>
         <ownedAttribute xmi:id="_CORSQIDREeaYibeoVv-bYw" name="initializationVector"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_LaiNgIDREeaYibeoVv-bYw" name="Simple">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LaiNgIDREeaYibeoVv-bYw" name="SimpleBlockEncryption" isAbstract="true">
         <generalization xmi:id="_QlczMIDREeaYibeoVv-bYw" general="_zwv4wIDQEeaYibeoVv-bYw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_R1-m8IDREeaYibeoVv-bYw" name="Chained">
+      <packagedElement xmi:type="uml:Class" xmi:id="_R1-m8IDREeaYibeoVv-bYw" name="ChainedBlockEncryption" isAbstract="true">
         <generalization xmi:id="_TvnCEIDREeaYibeoVv-bYw" general="_zwv4wIDQEeaYibeoVv-bYw"/>
         <ownedAttribute xmi:id="_UPjtcIDREeaYibeoVv-bYw" name="simple" type="_LaiNgIDREeaYibeoVv-bYw" association="_UPjtc4DREeaYibeoVv-bYw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UPjtcYDREeaYibeoVv-bYw" value="1"/>
@@ -171,8 +171,8 @@
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_WzBvwIDREeaYibeoVv-bYw" name="ChainMode">
-        <ownedLiteral xmi:id="_YBREgIDREeaYibeoVv-bYw" name="E"/>
-        <ownedLiteral xmi:id="_YpIVwIDREeaYibeoVv-bYw" name="D"/>
+        <ownedLiteral xmi:id="_YBREgIDREeaYibeoVv-bYw" name="Enc"/>
+        <ownedLiteral xmi:id="_YpIVwIDREeaYibeoVv-bYw" name="Dec"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Z1O8g4DREeaYibeoVv-bYw" name="mode" memberEnd="_Z1O8hIDREeaYibeoVv-bYw _Z1O8gIDREeaYibeoVv-bYw">
         <ownedEnd xmi:id="_Z1O8hIDREeaYibeoVv-bYw" name="chained" type="_R1-m8IDREeaYibeoVv-bYw" association="_Z1O8g4DREeaYibeoVv-bYw">
