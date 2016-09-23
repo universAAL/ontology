@@ -16,6 +16,7 @@
 package org.universAAL.ontology.security;
 
 import org.universAAL.middleware.xsd.Base64Binary;
+import org.universAAL.ontology.cryptographic.Digest;
 
 /**
  * @author amedrano
@@ -66,8 +67,8 @@ public class Password extends KnowledgeFactor {
 	public Base64Binary getPassword(){
 		return (Base64Binary) getProperty(PROP_PASSWORD);
 	}
-	public String getDigestAlgorithm(){
-		return (String) getProperty(PROP_PASSWORD_DIGEST);
+	public Digest getDigestAlgorithm(){
+		return (Digest) getProperty(PROP_PASSWORD_DIGEST);
 	}
 	
 	public void setpassword(Base64Binary value){
@@ -76,7 +77,7 @@ public class Password extends KnowledgeFactor {
 		}
 	}
 	
-	public void setDigestAlgorithm(String value){
+	public void setDigestAlgorithm(Digest value){
 		if (value != null ){
 			changeProperty(PROP_PASSWORD_DIGEST, value);
 		}
