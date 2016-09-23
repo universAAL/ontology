@@ -31,6 +31,7 @@
     <module>../ont.av</module>
     <module>../ont.che</module>
     <module>../ont.continuahealthmanager</module>
+    <module>../ont.cryptographic</module>
     <module>../ont.dependability</module>
     <module>../ont.device</module>
     <module>../ont.drools</module>
@@ -271,6 +272,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.drools</artifactId>
+        <version>3.4.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.cryptographic</artifactId>
         <version>3.4.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
