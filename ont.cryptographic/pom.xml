@@ -13,6 +13,28 @@
   <name>Cryptographic Ontology</name>
   <description>The Cryptographic Ontology, ofering a base model of cryptograpich algorithms, techniques and services</description>
 
+  <licenses>
+  	<license>
+  		<name>Apache Software License 2.0</name>
+  		<url>https://www.apache.org/licenses/LICENSE-2.0</url>	
+  	</license>
+  </licenses>
+  
+  <developers>
+  	<developer>
+  		<name>Alejandro Medrano Gil</name>
+  		<organization>UPM</organization>
+  		<email>amedrano@lst.tfo.upm.es</email>
+  		<organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
+  	</developer>
+  	<developer>
+  		<name>Miguel Paramo Castrillo</name>
+  		<organization>UPM</organization>
+  		<email>mparamo@lst.tfo.upm.es</email>
+  		<organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
+  	</developer>
+  </developers>
+  
   <dependencies>
     <dependency>
       <groupId>org.universAAL.support</groupId>
