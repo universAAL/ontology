@@ -28,6 +28,8 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.SecurityFactory;
+import org.universAAL.ontology.cryptographic.CryptographicOntology;
+import org.universAAL.ontology.cryptographic.Digest;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.ProfileOntology;
@@ -60,16 +62,19 @@ public final class SecurityOntology extends Ontology {
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(LocationOntology.NAMESPACE);
 		addImport(ProfileOntology.NAMESPACE);
+		addImport(CryptographicOntology.NAMESPACE);
 
 		OntClassInfoSetup oci_credentials = createNewAbstractOntClassInfo(Credentials.MY_URI);
 		OntClassInfoSetup oci_session = createNewAbstractOntClassInfo(Session.MY_URI);
 		OntClassInfoSetup oci_Factor = createNewAbstractOntClassInfo(Factor.MY_URI);
 		oci_Factor.addSuperClass(ManagedIndividual.MY_URI);
+		
 		OntClassInfoSetup oci_KnowledgeF = createNewAbstractOntClassInfo(KnowledgeFactor.MY_URI);
 		oci_KnowledgeF.addSuperClass(Factor.MY_URI);
 		oci_KnowledgeF
 				.setResourceComment("the user is required to prove knowledge of a secret in order to authenticate, for example a password.");
 		oci_KnowledgeF.setResourceLabel("Knowledge Factor");
+		
 		OntClassInfoSetup oci_PossessionF = createNewAbstractOntClassInfo(PossessionFactor.MY_URI);
 		oci_PossessionF.addSuperClass(Factor.MY_URI);
 		oci_PossessionF
@@ -79,6 +84,7 @@ public final class SecurityOntology extends Ontology {
 						"key embodies a secret which is shared between the lock and the key, and the same " +
 						"principle underlies possession factor authentication in computer systems.");
 		oci_PossessionF.setResourceLabel("Possession Factor");
+		
 		OntClassInfoSetup oci_InherenceF = createNewAbstractOntClassInfo(InherenceFactor.MY_URI);
 		oci_InherenceF.addSuperClass(Factor.MY_URI);
 		oci_InherenceF.setResourceComment("These are factors associated with the user, and are usually biometric methods," +
@@ -151,12 +157,12 @@ public final class SecurityOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(Password.PROP_PASSWORD,
 						TypeMapper.getDatatypeURI(Base64Binary.class), 1, 1));
 
-		oci_passwd.addDatatypeProperty(Password.PROP_PASSWORD_DIGEST)
+		oci_passwd.addObjectProperty(Password.PROP_PASSWORD_DIGEST)
 				.setFunctional();
 		oci_passwd.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						Password.PROP_PASSWORD_DIGEST,
-						TypeMapper.getDatatypeURI(String.class), 0, 1));
+						Digest.MY_URI, 0, 1));
 		
 		//OneTimePassword
 		oci_otp.setResourceComment("A password that is valid for only one login session or transaction, on a computer system or other digital device.");
