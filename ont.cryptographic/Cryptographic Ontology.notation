@@ -648,7 +648,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WzBvwoDREeaYibeoVv-bYw" x="1400" y="605"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_mosbEIDMEeaYibeoVv-bYw"/>
-    <element xmi:type="uml:Package" href="Cryptographic%20Ontology.uml#_iaPcyYDMEeaYibeoVv-bYw"/>
+    <element xmi:type="uml:Model" href="Cryptographic%20Ontology.uml#_iaPcwIDMEeaYibeoVv-bYw"/>
     <edges xmi:type="notation:Connector" xmi:id="_FXCW0IDNEeaYibeoVv-bYw" type="4002" source="_FTON0IDNEeaYibeoVv-bYw" target="_mosa4oDMEeaYibeoVv-bYw" lineColor="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_FXCW04DNEeaYibeoVv-bYw" type="6007">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_FXCW1IDNEeaYibeoVv-bYw" y="40"/>

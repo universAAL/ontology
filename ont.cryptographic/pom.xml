@@ -9,9 +9,10 @@
   
   <artifactId>ont.cryptographic</artifactId>
   <version>3.4.1-SNAPSHOT</version>
-
+  <packaging>bundle</packaging>
   <name>Cryptographic Ontology</name>
-  
+  <description>The Cryptographic Ontology, ofering a base model of cryptograpich algorithms, techniques and services</description>
+
   <dependencies>
     <dependency>
       <groupId>org.universAAL.support</groupId>
@@ -20,6 +21,10 @@
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.service.core</artifactId>
     </dependency>
   </dependencies>
  

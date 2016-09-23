@@ -26,7 +26,7 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.device.uml#_UkOj0NJAEeGCrI2l36sLrg"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_iaPcyYDMEeaYibeoVv-bYw" name="org.universAAL.ontology.cryptographic">
-      <packagedElement xmi:type="uml:Class" xmi:id="_iaPczIDMEeaYibeoVv-bYw" name="CryptograpichService">
+      <packagedElement xmi:type="uml:Class" xmi:id="_iaPczIDMEeaYibeoVv-bYw" name="CryptographicService">
         <generalization xmi:id="_iaPczYDMEeaYibeoVv-bYw">
           <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.service.owl.uml#_utGr4PqREeCQQaPCMdH-vA"/>
         </generalization>
@@ -148,7 +148,9 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_1pvasIDQEeaYibeoVv-bYw" name="StreamEncryption" isAbstract="true">
         <generalization xmi:id="_3L5J8IDQEeaYibeoVv-bYw" general="_D0DEoIDOEeaYibeoVv-bYw"/>
-        <ownedAttribute xmi:id="_CORSQIDREeaYibeoVv-bYw" name="initializationVector"/>
+        <ownedAttribute xmi:id="_CORSQIDREeaYibeoVv-bYw" name="initializationVector">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_LaiNgIDREeaYibeoVv-bYw" name="SimpleBlockEncryption" isAbstract="true">
         <generalization xmi:id="_QlczMIDREeaYibeoVv-bYw" general="_zwv4wIDQEeaYibeoVv-bYw"/>
@@ -192,129 +194,129 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5SXKZoDUEeaYibeoVv-bYw" value="1"/>
         </ownedEnd>
       </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ZFr5cIDSEeaYibeoVv-bYw" name="EncryptionService">
-      <generalization xmi:id="_kM0l8IDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
-      <ownedAttribute xmi:id="_2q9VMIDSEeaYibeoVv-bYw" name="encryptedResource" type="_mN67AIDSEeaYibeoVv-bYw" association="_2q9VM4DSEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2q9VMYDSEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2q9VMoDSEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_69T7MIDSEeaYibeoVv-bYw" name="encryption" type="_FTIHMIDNEeaYibeoVv-bYw" association="_69T7M4DSEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_69T7MYDSEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_69T7MoDSEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_HJSI0IDTEeaYibeoVv-bYw" name="key" type="_VlHvAIDNEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HJSI0YDTEeaYibeoVv-bYw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HJSI0oDTEeaYibeoVv-bYw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_hWh40IDTEeaYibeoVv-bYw" name="encrypts">
-        <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_M0LU4NIKEeKw_dHjReEqbg"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_aksOEIDSEeaYibeoVv-bYw" name="SignAndVerifyService">
-      <generalization xmi:id="_kfqCYIDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
-      <ownedAttribute xmi:id="_slgSsIDTEeaYibeoVv-bYw" name="verificationResult">
-        <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_1blGEGkeEeGXyoAu4GMQ6g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_xBmDgIDTEeaYibeoVv-bYw" name="sign">
-        <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_M0LU4NIKEeKw_dHjReEqbg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BvZdkIDUEeaYibeoVv-bYw" name="asymmetric" type="_E5YVAIDOEeaYibeoVv-bYw" association="_BvZdk4DUEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BvZdkYDUEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BvZdkoDUEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_DgVPsIDUEeaYibeoVv-bYw" name="digest" type="_Kngx8IDNEeaYibeoVv-bYw" association="_DgVPs4DUEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DgVPsYDUEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DgVPsoDUEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_HFweQIDUEeaYibeoVv-bYw" name="keyRing" type="_N73pMIDOEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HFweQYDUEeaYibeoVv-bYw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HFweQoDUEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Ly3GkIDUEeaYibeoVv-bYw" name="signedResource" type="_vLryIIDQEeaYibeoVv-bYw" association="_Ly3Gk4DUEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GkYDUEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GkoDUEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_cb4ZMIDSEeaYibeoVv-bYw" name="DigestService">
-      <generalization xmi:id="_kxmuAIDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
-      <ownedAttribute xmi:id="_gGQ44IDVEeaYibeoVv-bYw" name="digest" type="_Kngx8IDNEeaYibeoVv-bYw" association="_gGQ444DVEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gGQ44YDVEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gGQ44oDVEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_k7NOkIDVEeaYibeoVv-bYw" name="digestedText">
-        <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_oAMpkIDVEeaYibeoVv-bYw" name="resourceToDigest">
-        <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_M0LU4NIKEeKw_dHjReEqbg"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_mN67AIDSEeaYibeoVv-bYw" name="EncryptedResource">
-      <generalization xmi:id="_pKzi4IDSEeaYibeoVv-bYw">
-        <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
-      </generalization>
-      <ownedAttribute xmi:id="_9gGoEIDSEeaYibeoVv-bYw" name="encryption" type="_FTIHMIDNEeaYibeoVv-bYw" association="_9gGoE4DSEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9gGoEYDSEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9gGoEoDSEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BbXjwIDTEeaYibeoVv-bYw" name="CypheredText">
-        <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_uQitoIDSEeaYibeoVv-bYw" name="MultidestinationEncryptedResource">
-      <generalization xmi:id="_w3BnsIDSEeaYibeoVv-bYw" general="_mN67AIDSEeaYibeoVv-bYw"/>
-      <ownedAttribute xmi:id="_JiW5AIDTEeaYibeoVv-bYw" name="key" type="_VlHvAIDNEeaYibeoVv-bYw" association="_JiW5A4DTEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiW5AYDTEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiW5AoDTEeaYibeoVv-bYw" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_2q9VM4DSEeaYibeoVv-bYw" name="decrypts" memberEnd="_2q9VNIDSEeaYibeoVv-bYw _2q9VMIDSEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_2q9VNIDSEeaYibeoVv-bYw" name="encryptionService" type="_ZFr5cIDSEeaYibeoVv-bYw" association="_2q9VM4DSEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2q9VNYDSEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2q9VNoDSEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_69T7M4DSEeaYibeoVv-bYw" name="usingMethod" memberEnd="_69T7NIDSEeaYibeoVv-bYw _69T7MIDSEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_69T7NIDSEeaYibeoVv-bYw" name="encryptionService" type="_ZFr5cIDSEeaYibeoVv-bYw" association="_69T7M4DSEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_69T7NYDSEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_69T7NoDSEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_9gGoE4DSEeaYibeoVv-bYw" name="encryptedWith" memberEnd="_9gGoFIDSEeaYibeoVv-bYw _9gGoEIDSEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_9gGoFIDSEeaYibeoVv-bYw" name="encryptedResource" type="_mN67AIDSEeaYibeoVv-bYw" association="_9gGoE4DSEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9gGoFYDSEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9gGoFoDSEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_JiW5A4DTEeaYibeoVv-bYw" name="destinationKeys" memberEnd="_JiW5BIDTEeaYibeoVv-bYw _JiW5AIDTEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_JiW5BIDTEeaYibeoVv-bYw" name="multidestinationEncryptedResource" type="_uQitoIDSEeaYibeoVv-bYw" association="_JiW5A4DTEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiW5BYDTEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiW5BoDTEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BvZdk4DUEeaYibeoVv-bYw" name="usingEncryptionMethod" memberEnd="_BvZdlIDUEeaYibeoVv-bYw _BvZdkIDUEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_BvZdlIDUEeaYibeoVv-bYw" name="signAndVerifyService" type="_aksOEIDSEeaYibeoVv-bYw" association="_BvZdk4DUEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BvZdlYDUEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BvZdloDUEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_DgVPs4DUEeaYibeoVv-bYw" name="usignDigestMethod" memberEnd="_DgVPtIDUEeaYibeoVv-bYw _DgVPsIDUEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_DgVPtIDUEeaYibeoVv-bYw" name="signAndVerifyService" type="_aksOEIDSEeaYibeoVv-bYw" association="_DgVPs4DUEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DgVPtYDUEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DgVPtoDUEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Ly3Gk4DUEeaYibeoVv-bYw" name="verifies" memberEnd="_Ly3GlIDUEeaYibeoVv-bYw _Ly3GkIDUEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_Ly3GlIDUEeaYibeoVv-bYw" name="signAndVerifyService" type="_aksOEIDSEeaYibeoVv-bYw" association="_Ly3Gk4DUEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GlYDUEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GloDUEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_gGQ444DVEeaYibeoVv-bYw" name="usingDigestMethod" memberEnd="_gGQ45IDVEeaYibeoVv-bYw _gGQ44IDVEeaYibeoVv-bYw">
-      <ownedEnd xmi:id="_gGQ45IDVEeaYibeoVv-bYw" name="digestService" type="_cb4ZMIDSEeaYibeoVv-bYw" association="_gGQ444DVEeaYibeoVv-bYw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gGQ45YDVEeaYibeoVv-bYw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gGQ45oDVEeaYibeoVv-bYw" value="1"/>
-      </ownedEnd>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZFr5cIDSEeaYibeoVv-bYw" name="EncryptionService">
+        <generalization xmi:id="_kM0l8IDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
+        <ownedAttribute xmi:id="_2q9VMIDSEeaYibeoVv-bYw" name="encryptedResource" type="_mN67AIDSEeaYibeoVv-bYw" association="_2q9VM4DSEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2q9VMYDSEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2q9VMoDSEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_69T7MIDSEeaYibeoVv-bYw" name="encryption" type="_FTIHMIDNEeaYibeoVv-bYw" association="_69T7M4DSEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_69T7MYDSEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_69T7MoDSEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HJSI0IDTEeaYibeoVv-bYw" name="key" type="_VlHvAIDNEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HJSI0YDTEeaYibeoVv-bYw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HJSI0oDTEeaYibeoVv-bYw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hWh40IDTEeaYibeoVv-bYw" name="encrypts">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_M0LU4NIKEeKw_dHjReEqbg"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2q9VM4DSEeaYibeoVv-bYw" name="decrypts" memberEnd="_2q9VNIDSEeaYibeoVv-bYw _2q9VMIDSEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_2q9VNIDSEeaYibeoVv-bYw" name="encryptionService" type="_ZFr5cIDSEeaYibeoVv-bYw" association="_2q9VM4DSEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2q9VNYDSEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2q9VNoDSEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uQitoIDSEeaYibeoVv-bYw" name="MultidestinationEncryptedResource">
+        <generalization xmi:id="_w3BnsIDSEeaYibeoVv-bYw" general="_mN67AIDSEeaYibeoVv-bYw"/>
+        <ownedAttribute xmi:id="_JiW5AIDTEeaYibeoVv-bYw" name="key" type="_VlHvAIDNEeaYibeoVv-bYw" association="_JiW5A4DTEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiW5AYDTEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiW5AoDTEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JiW5A4DTEeaYibeoVv-bYw" name="destinationKeys" memberEnd="_JiW5BIDTEeaYibeoVv-bYw _JiW5AIDTEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_JiW5BIDTEeaYibeoVv-bYw" name="multidestinationEncryptedResource" type="_uQitoIDSEeaYibeoVv-bYw" association="_JiW5A4DTEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiW5BYDTEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiW5BoDTEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cb4ZMIDSEeaYibeoVv-bYw" name="DigestService">
+        <generalization xmi:id="_kxmuAIDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
+        <ownedAttribute xmi:id="_gGQ44IDVEeaYibeoVv-bYw" name="digest" type="_Kngx8IDNEeaYibeoVv-bYw" association="_gGQ444DVEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gGQ44YDVEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gGQ44oDVEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_k7NOkIDVEeaYibeoVv-bYw" name="digestedText">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_oAMpkIDVEeaYibeoVv-bYw" name="resourceToDigest">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_M0LU4NIKEeKw_dHjReEqbg"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ly3Gk4DUEeaYibeoVv-bYw" name="verifies" memberEnd="_Ly3GlIDUEeaYibeoVv-bYw _Ly3GkIDUEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_Ly3GlIDUEeaYibeoVv-bYw" name="signAndVerifyService" type="_aksOEIDSEeaYibeoVv-bYw" association="_Ly3Gk4DUEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GlYDUEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GloDUEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_69T7M4DSEeaYibeoVv-bYw" name="usingMethod" memberEnd="_69T7NIDSEeaYibeoVv-bYw _69T7MIDSEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_69T7NIDSEeaYibeoVv-bYw" name="encryptionService" type="_ZFr5cIDSEeaYibeoVv-bYw" association="_69T7M4DSEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_69T7NYDSEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_69T7NoDSEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mN67AIDSEeaYibeoVv-bYw" name="EncryptedResource">
+        <generalization xmi:id="_pKzi4IDSEeaYibeoVv-bYw">
+          <general xmi:type="uml:Class" href="pathmap://AAL_ONTOLOGIES/org.universaal.middleware.owl.uml#_7clzYKFGEeCPiYRKlVcMuQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_9gGoEIDSEeaYibeoVv-bYw" name="encryption" type="_FTIHMIDNEeaYibeoVv-bYw" association="_9gGoE4DSEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9gGoEYDSEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9gGoEoDSEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_BbXjwIDTEeaYibeoVv-bYw" name="CypheredText">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_2boN0GkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_BvZdk4DUEeaYibeoVv-bYw" name="usingEncryptionMethod" memberEnd="_BvZdlIDUEeaYibeoVv-bYw _BvZdkIDUEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_BvZdlIDUEeaYibeoVv-bYw" name="signAndVerifyService" type="_aksOEIDSEeaYibeoVv-bYw" association="_BvZdk4DUEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BvZdlYDUEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BvZdloDUEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_9gGoE4DSEeaYibeoVv-bYw" name="encryptedWith" memberEnd="_9gGoFIDSEeaYibeoVv-bYw _9gGoEIDSEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_9gGoFIDSEeaYibeoVv-bYw" name="encryptedResource" type="_mN67AIDSEeaYibeoVv-bYw" association="_9gGoE4DSEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9gGoFYDSEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9gGoFoDSEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gGQ444DVEeaYibeoVv-bYw" name="usingDigestMethod" memberEnd="_gGQ45IDVEeaYibeoVv-bYw _gGQ44IDVEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_gGQ45IDVEeaYibeoVv-bYw" name="digestService" type="_cb4ZMIDSEeaYibeoVv-bYw" association="_gGQ444DVEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gGQ45YDVEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gGQ45oDVEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DgVPs4DUEeaYibeoVv-bYw" name="usignDigestMethod" memberEnd="_DgVPtIDUEeaYibeoVv-bYw _DgVPsIDUEeaYibeoVv-bYw">
+        <ownedEnd xmi:id="_DgVPtIDUEeaYibeoVv-bYw" name="signAndVerifyService" type="_aksOEIDSEeaYibeoVv-bYw" association="_DgVPs4DUEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DgVPtYDUEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DgVPtoDUEeaYibeoVv-bYw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aksOEIDSEeaYibeoVv-bYw" name="SignAndVerifyService">
+        <generalization xmi:id="_kfqCYIDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
+        <ownedAttribute xmi:id="_slgSsIDTEeaYibeoVv-bYw" name="verificationResult">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_1blGEGkeEeGXyoAu4GMQ6g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_xBmDgIDTEeaYibeoVv-bYw" name="sign">
+          <type xmi:type="uml:DataType" href="pathmap://AAL_ONTOLOGIES/org.universaal.ontology.datatypes.uml#_M0LU4NIKEeKw_dHjReEqbg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_BvZdkIDUEeaYibeoVv-bYw" name="asymmetric" type="_E5YVAIDOEeaYibeoVv-bYw" association="_BvZdk4DUEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BvZdkYDUEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BvZdkoDUEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DgVPsIDUEeaYibeoVv-bYw" name="digest" type="_Kngx8IDNEeaYibeoVv-bYw" association="_DgVPs4DUEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DgVPsYDUEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DgVPsoDUEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HFweQIDUEeaYibeoVv-bYw" name="keyRing" type="_N73pMIDOEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HFweQYDUEeaYibeoVv-bYw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HFweQoDUEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ly3GkIDUEeaYibeoVv-bYw" name="signedResource" type="_vLryIIDQEeaYibeoVv-bYw" association="_Ly3Gk4DUEeaYibeoVv-bYw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GkYDUEeaYibeoVv-bYw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GkoDUEeaYibeoVv-bYw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_iaPc0oDMEeaYibeoVv-bYw">
       <eAnnotations xmi:id="_iaPc04DMEeaYibeoVv-bYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
