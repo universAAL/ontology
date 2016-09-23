@@ -30,6 +30,7 @@ import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.SecurityFactory;
 import org.universAAL.ontology.cryptographic.CryptographicOntology;
 import org.universAAL.ontology.cryptographic.Digest;
+import org.universAAL.ontology.cryptographic.SignedResource;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.ProfileOntology;
@@ -116,6 +117,7 @@ public final class SecurityOntology extends Ontology {
 		OntClassInfoSetup oci_role = createNewOntClassInfo(Role.MY_URI, factory, 9);
 		OntClassInfoSetup oci_AccessRight = createNewOntClassInfo(AccessRight.MY_URI, factory, 10);
 		OntClassInfoSetup oci_authorizationService = createNewOntClassInfo(AuthorizationService.MY_URI, factory, 11);
+		OntClassInfoSetup oci_delegationForm = createNewOntClassInfo(DelegationForm.MY_URI, factory,12);
 		
 
 		// Credentials
@@ -169,9 +171,6 @@ public final class SecurityOntology extends Ontology {
 		oci_otp.setResourceLabel("One Time Password");
 		oci_otp.addSuperClass(PossessionFactor.MY_URI);
 		oci_otp.addSuperClass(Password.MY_URI);
-		
-		
-		// XXX Password Digest should be an ontological class?
 
 		// UserPass
 		oci_userPass.setResourceComment("Authentication by User password.");
@@ -225,6 +224,18 @@ public final class SecurityOntology extends Ontology {
 		//oci_AccessRight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AccessRight.PROP_ACCESS_TO, TypeExpression., 1, 1));
 		
 		/*
+		 * Delegation
+		 */
+		oci_delegationForm.addSuperClass(SignedResource.MY_URI);
+		oci_delegationForm.setResourceLabel("Delegation Form");
+		oci_delegationForm.setResourceComment("Delegation Form is a SignedResource, signed by the Authoriser enabling the Delegate to perform some Competences in the form of Roles.");
+		oci_delegationForm.addObjectProperty(DelegationForm.PROP_AUTHORISER);
+		oci_delegationForm.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DelegationForm.PROP_AUTHORISER, User.MY_URI, 1, 1));
+		oci_delegationForm.addObjectProperty(DelegationForm.PROP_DELEGATE);
+		oci_delegationForm.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DelegationForm.PROP_DELEGATE, User.MY_URI, 1, 1));
+		oci_delegationForm.addObjectProperty(DelegationForm.PROP_DELEGATED_COMPETENCES);
+		oci_delegationForm.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DelegationForm.PROP_DELEGATED_COMPETENCES, Role.MY_URI, 1, -1));
+		/*
 		 * Sessions
 		 */
 		
@@ -262,9 +273,12 @@ public final class SecurityOntology extends Ontology {
 		oci_secProf.addObjectProperty(SecuritySubprofile.PROP_CREDENTIALS);
 		oci_secProf.addRestriction(MergedRestriction.getAllValuesRestriction(
 				SecuritySubprofile.PROP_CREDENTIALS, Credentials.MY_URI));
-		
-		
-		
+		oci_secProf.addObjectProperty(SecuritySubprofile.PROP_ROLES);
+		oci_secProf.addRestriction(MergedRestriction.getAllValuesRestriction(
+				SecuritySubprofile.PROP_ROLES, Role.MY_URI));
+		oci_secProf.addObjectProperty(SecuritySubprofile.PROP_DELEGATED_FORMS);
+		oci_secProf.addRestriction(MergedRestriction.getAllValuesRestriction(
+				SecuritySubprofile.PROP_DELEGATED_FORMS, DelegationForm.MY_URI));
 
 		/*
 		 * Extensions provided

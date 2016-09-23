@@ -35,6 +35,8 @@ public class SecuritySubprofile extends SubProfile {
     
     public static final String PROP_CREDENTIALS = SecurityOntology.NAMESPACE + "associatedCredentials";
     public static final String PROP_ROLES = SecurityOntology.NAMESPACE + "hasRoles";
+
+	public static final String PROP_DELEGATED_FORMS = SecurityOntology.NAMESPACE + "hasDelegationForms";;
 	    
 	
 	/**
