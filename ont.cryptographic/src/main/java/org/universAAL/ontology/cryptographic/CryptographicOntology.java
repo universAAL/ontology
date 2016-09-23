@@ -4,6 +4,7 @@ package org.universAAL.ontology.cryptographic;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
+import org.universAAL.middleware.owl.ObjectPropertySetup;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
@@ -62,7 +63,7 @@ public final class CryptographicOntology extends Ontology {
     OntClassInfoSetup oci_CryptograpichService = createNewOntClassInfo(CryptographicService.MY_URI, factory, 8);
     OntClassInfoSetup oci_StreamEncryption = createNewAbstractOntClassInfo(StreamEncryption.MY_URI);
     OntClassInfoSetup oci_KeyExchange = createNewAbstractOntClassInfo(KeyExchange.MY_URI);
-    OntClassInfoSetup oci_SymetricEncryption = createNewAbstractOntClassInfo(SymetricEncryption.MY_URI);
+    OntClassInfoSetup oci_SymmetricEncryption = createNewAbstractOntClassInfo(SymmetricEncryption.MY_URI);
     OntClassInfoSetup oci_SignAndVerifyService = createNewOntClassInfo(SignAndVerifyService.MY_URI, factory, 9);
     OntClassInfoSetup oci_Encryption = createNewAbstractOntClassInfo(Encryption.MY_URI);
 
@@ -117,13 +118,15 @@ public final class CryptographicOntology extends Ontology {
     oci_AsymmetricEncryption.setResourceComment("Any cryptographic system that uses pairs of keys.");
     oci_AsymmetricEncryption.setResourceLabel("Asymmetric Encryption");
     oci_AsymmetricEncryption.addSuperClass(Encryption.MY_URI); 
-    oci_AsymmetricEncryption.addObjectProperty(AsymmetricEncryption.PROP_KEY_RING).setFunctional();
+    ObjectPropertySetup akey = oci_AsymmetricEncryption.addObjectProperty(AsymmetricEncryption.PROP_KEY_RING);
+    akey.setFunctional();
+    akey.addSuperProperty(Encryption.PROP_KEY);
     oci_AsymmetricEncryption.addRestriction(MergedRestriction.getAllValuesRestriction(AsymmetricEncryption.PROP_KEY_RING,  
     		KeyRing.MY_URI));
 
     oci_BlockEncryption.setResourceComment("");
     oci_BlockEncryption.setResourceLabel("Block Encryption");
-    oci_BlockEncryption.addSuperClass(SymetricEncryption.MY_URI); 
+    oci_BlockEncryption.addSuperClass(SymmetricEncryption.MY_URI); 
     oci_BlockEncryption.addDatatypeProperty(BlockEncryption.PROP_BLOCK_LENGTH).setFunctional();
     oci_BlockEncryption.addRestriction(MergedRestriction
     		.getAllValuesRestrictionWithCardinality(BlockEncryption.PROP_BLOCK_LENGTH, 
@@ -227,7 +230,7 @@ public final class CryptographicOntology extends Ontology {
 
     oci_StreamEncryption.setResourceComment("");
     oci_StreamEncryption.setResourceLabel("Stream Encryption");
-    oci_StreamEncryption.addSuperClass(SymetricEncryption.MY_URI); 
+    oci_StreamEncryption.addSuperClass(SymmetricEncryption.MY_URI); 
     oci_StreamEncryption.addDatatypeProperty(StreamEncryption.PROP_INITIALIZATION_VECTOR).setFunctional();
     oci_StreamEncryption.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
     		StreamEncryption.PROP_INITIALIZATION_VECTOR,TypeMapper.getDatatypeURI(Base64Binary.class), 1, 1));
@@ -236,12 +239,14 @@ public final class CryptographicOntology extends Ontology {
     oci_KeyExchange.setResourceLabel("Key Exchange");
     oci_KeyExchange.addSuperClass(CryptographicTechnique.MY_URI); 
 
-    oci_SymetricEncryption.setResourceComment("Algorithms for cryptography that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext.");
-    oci_SymetricEncryption.setResourceLabel("Symetric Encryption");
-    oci_SymetricEncryption.addSuperClass(Encryption.MY_URI); 
-    oci_SymetricEncryption.addObjectProperty(SymetricEncryption.PROP_SIMPLE_KEY).setFunctional();
-    oci_SymetricEncryption.addRestriction(MergedRestriction
-      .getAllValuesRestrictionWithCardinality(SymetricEncryption.PROP_SIMPLE_KEY, 
+    oci_SymmetricEncryption.setResourceComment("Algorithms for cryptography that use the same cryptographic keys for both encryption of plaintext and decryption of ciphertext.");
+    oci_SymmetricEncryption.setResourceLabel("Symmetric Encryption");
+    oci_SymmetricEncryption.addSuperClass(Encryption.MY_URI); 
+    ObjectPropertySetup skey = oci_SymmetricEncryption.addObjectProperty(SymmetricEncryption.PROP_SIMPLE_KEY);
+    skey.setFunctional();
+    skey.addSuperProperty(Encryption.PROP_KEY);
+    oci_SymmetricEncryption.addRestriction(MergedRestriction
+      .getAllValuesRestrictionWithCardinality(SymmetricEncryption.PROP_SIMPLE_KEY, 
           SimpleKey.MY_URI, 0, 1));
 
     oci_SignAndVerifyService.setResourceComment("Service to sign or verify signatures of RDF resources.");
@@ -254,7 +259,7 @@ public final class CryptographicOntology extends Ontology {
     oci_SignAndVerifyService.addObjectProperty(SignAndVerifyService.PROP_SIGNED_RESOURCE).setFunctional();
     oci_SignAndVerifyService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignAndVerifyService.PROP_SIGNED_RESOURCE, 
-          SignedResource.MY_URI, 1, 1));
+          SignedResource.MY_URI, 1, -1));
     oci_SignAndVerifyService.addObjectProperty(SignAndVerifyService.PROP_ASYMMETRIC).setFunctional();
     oci_SignAndVerifyService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignAndVerifyService.PROP_ASYMMETRIC, 

@@ -313,8 +313,8 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HFweQoDUEeaYibeoVv-bYw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Ly3GkIDUEeaYibeoVv-bYw" name="signedResource" type="_vLryIIDQEeaYibeoVv-bYw" association="_Ly3Gk4DUEeaYibeoVv-bYw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GkYDUEeaYibeoVv-bYw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GkoDUEeaYibeoVv-bYw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GkYDUEeaYibeoVv-bYw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GkoDUEeaYibeoVv-bYw"/>
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
