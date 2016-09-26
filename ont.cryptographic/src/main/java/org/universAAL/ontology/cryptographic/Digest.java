@@ -30,7 +30,6 @@ public abstract class Digest extends CryptographicTechnique {
   public static final String MY_URI = CryptographicOntology.NAMESPACE
     + "Digest";
 
-
   public Digest () {
     super();
   }

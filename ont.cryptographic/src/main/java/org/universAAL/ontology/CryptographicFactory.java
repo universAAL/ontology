@@ -27,6 +27,8 @@ import org.universAAL.ontology.cryptographic.MultidestinationEncryptedResource;
 import org.universAAL.ontology.cryptographic.SignAndVerifyService;
 import org.universAAL.ontology.cryptographic.SignedResource;
 import org.universAAL.ontology.cryptographic.SimpleKey;
+import org.universAAL.ontology.cryptographic.digest.MessageDigest;
+import org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm;
 
 public class CryptographicFactory implements ResourceFactory {
 
@@ -54,7 +56,10 @@ public class CryptographicFactory implements ResourceFactory {
        return new CryptographicService(instanceURI);
      case 9:
        return new SignAndVerifyService(instanceURI);
-
+     case 10:
+    	 return new MessageDigest(instanceURI);
+     case 11:
+    	 return new SecureHashAlgorithm(instanceURI);
 	}
 	return null;
   }

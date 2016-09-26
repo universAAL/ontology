@@ -35,7 +35,10 @@ public class DigestList extends TestCase {
 			System.out.println(providers[i]);
 			Set ks = providers[i].keySet();
 			for (Iterator j = ks.iterator(); j.hasNext();) {
-				System.out.println("\t" + j.next());
+				String s = j.next().toString();
+				if (s.contains("MessageDigest")) {
+					System.out.println("\t" + s);
+				}
 				
 			}
 		}

@@ -27,7 +27,9 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.CryptographicFactory;
+import org.universAAL.ontology.cryptographic.digest.MessageDigest;
 //import the factory for this ontology
+import org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm;
 
 
 /**
@@ -80,6 +82,10 @@ public final class CryptographicOntology extends Ontology {
     OntClassInfoSetup oci_SymmetricEncryption = createNewAbstractOntClassInfo(SymmetricEncryption.MY_URI);
     OntClassInfoSetup oci_SignAndVerifyService = createNewOntClassInfo(SignAndVerifyService.MY_URI, factory, 9);
     OntClassInfoSetup oci_Encryption = createNewAbstractOntClassInfo(Encryption.MY_URI);
+    
+
+    OntClassInfoSetup oci_messageDigest = createNewOntClassInfo(MessageDigest.MY_URI, factory, 10);
+    OntClassInfoSetup oci_SecureHashAlgorithm = createNewOntClassInfo(SecureHashAlgorithm.MY_URI, factory, 11);
 
     // ******* Add content to enumeration classes of the ontology ******* //
 
@@ -297,6 +303,22 @@ public final class CryptographicOntology extends Ontology {
     oci_Encryption.addObjectProperty(Encryption.PROP_KEY).setFunctional();
       	oci_Encryption.addRestriction(MergedRestriction.getAllValuesRestriction(Encryption.PROP_KEY,  
        	EncryptionKey.MY_URI));
+      	
+    oci_messageDigest.setResourceComment("All Message Digest (MDx) disgest algorithms.");
+    oci_messageDigest.setResourceLabel("Message Digest (MDx)");
+    oci_messageDigest.addSuperClass(Digest.MY_URI);
+    oci_messageDigest.addInstance(MessageDigest.IND_MD2);
+    oci_messageDigest.addInstance(MessageDigest.IND_MD5);
+    //XXX add more MDx algorithms as they are implemented in Java
+    
+    oci_SecureHashAlgorithm.setResourceComment("All Secure Hash algorithm types.");
+    oci_SecureHashAlgorithm.setResourceLabel("Secure Hash Algorithm (SHA)");
+    oci_SecureHashAlgorithm.addSuperClass(Digest.MY_URI);
+    oci_SecureHashAlgorithm.addInstance(SecureHashAlgorithm.IND_SHA);
+    oci_SecureHashAlgorithm.addInstance(SecureHashAlgorithm.IND_SHA256);
+    oci_SecureHashAlgorithm.addInstance(SecureHashAlgorithm.IND_SHA384);
+    oci_SecureHashAlgorithm.addInstance(SecureHashAlgorithm.IND_SHA512);
+    //XXX add more SHA algorithms as they are implemented in Java
 
   }
 }
