@@ -18,6 +18,8 @@ package org.universAAL.ontology.security;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.universAAL.ontology.cryptographic.SignedResource;
+
 /**
  * Delegation Form is a {@link SignedResource}, signed by the {@link DelegationForm#PROP_AUTHORISER Authoriser}
  * enabling the {@link DelegationForm#PROP_DELEGATE Delegate} to perform some {@link DelegationForm#PROP_DELEGATED_COMPETENCES Competences}
