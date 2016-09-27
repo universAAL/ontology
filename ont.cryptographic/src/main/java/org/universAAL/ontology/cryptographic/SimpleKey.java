@@ -15,6 +15,8 @@
  ******************************************************************************/
 package org.universAAL.ontology.cryptographic;
 
+import org.universAAL.middleware.xsd.Base64Binary;
+
 
 
 /**
@@ -31,6 +33,9 @@ public class SimpleKey extends EncryptionKey {
     + "SimpleKey";
   public static final String PROP_KEY_TEXT = CryptographicOntology.NAMESPACE
     + "keyText";
+  
+  public static final String PROP_KEY_LENGTH = CryptographicOntology.NAMESPACE
+		    + "keyLength";
 
 
   public SimpleKey () {
@@ -56,13 +61,17 @@ public class SimpleKey extends EncryptionKey {
       && hasProperty(PROP_KEY_TEXT);
   }
 
-  public String getKeyText() {
-    return (String)getProperty(PROP_KEY_TEXT);
+  public Base64Binary getKeyText() {
+    return (Base64Binary)getProperty(PROP_KEY_TEXT);
   }		
 
-  public void setKeyText(String newPropValue) {
-    if (newPropValue != null)
+  public void setKeyText(Base64Binary newPropValue) {
+    if (newPropValue != null )
       changeProperty(PROP_KEY_TEXT, newPropValue);
   }		
+  
+  public Integer getKeyLength(){
+	  return (Integer) getProperty(PROP_KEY_LENGTH);	  
+  }
 
 }

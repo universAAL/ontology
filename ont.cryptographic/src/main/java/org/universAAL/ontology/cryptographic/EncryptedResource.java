@@ -16,6 +16,7 @@
 package org.universAAL.ontology.cryptographic;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.xsd.Base64Binary;
 
 
 /**
@@ -71,11 +72,11 @@ public class EncryptedResource extends ManagedIndividual {
       changeProperty(PROP_ENCRYPTION, newPropValue);
   }		
 
-  public String getCypheredText() {
-    return (String)getProperty(PROP_CYPHERED_TEXT);
+  public Base64Binary getCypheredText() {
+    return (Base64Binary)getProperty(PROP_CYPHERED_TEXT);
   }		
 
-  public void setCypheredText(String newPropValue) {
+  public void setCypheredText(Base64Binary newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_CYPHERED_TEXT, newPropValue);
   }		

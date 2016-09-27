@@ -16,6 +16,7 @@
 package org.universAAL.ontology.cryptographic;
 
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.xsd.Base64Binary;
 
 
 /**
@@ -76,11 +77,11 @@ public class DigestService extends CryptographicService {
       changeProperty(PROP_DIGEST_METHOD, newPropValue);
   }		
 
-  public String getDigestedText() {
-    return (String)getProperty(PROP_DIGESTED_TEXT);
+  public Base64Binary getDigestedText() {
+    return (Base64Binary)getProperty(PROP_DIGESTED_TEXT);
   }		
 
-  public void setDigestedText(String newPropValue) {
+  public void setDigestedText(Base64Binary newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_DIGESTED_TEXT, newPropValue);
   }		

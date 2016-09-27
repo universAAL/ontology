@@ -29,6 +29,9 @@ import org.universAAL.ontology.cryptographic.SignedResource;
 import org.universAAL.ontology.cryptographic.SimpleKey;
 import org.universAAL.ontology.cryptographic.digest.MessageDigest;
 import org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm;
+import org.universAAL.ontology.cryptographic.symmetric.AES;
+import org.universAAL.ontology.cryptographic.symmetric.Blowfish;
+import org.universAAL.ontology.cryptographic.symmetric.DES;
 
 public class CryptographicFactory implements ResourceFactory {
 
@@ -60,6 +63,12 @@ public class CryptographicFactory implements ResourceFactory {
     	 return new MessageDigest(instanceURI);
      case 11:
     	 return new SecureHashAlgorithm(instanceURI);
+     case 12:
+    	 return new AES(AES.SINGLETON_URI); //SINGLETON INSTANCE: always the same.
+     case 13:
+    	 return new Blowfish(Blowfish.SINGLETON_URI); //SINGLETON INSTANCE: always the same.
+     case 14:
+    	 return new DES(DES.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
 	}
 	return null;
   }

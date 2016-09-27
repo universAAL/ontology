@@ -18,6 +18,8 @@ package org.universAAL.ontology.cryptographic;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.universAAL.middleware.xsd.Base64Binary;
+
 
 /**
  * Ontological representation of KeyRing in the cryptographic ontology. 
@@ -68,20 +70,20 @@ public class KeyRing extends EncryptionKey {
       && hasProperty(PROP_PUBLIC_KEY);
   }
 
-  public String getPublicKey() {
-    return (String)getProperty(PROP_PUBLIC_KEY);
+  public Base64Binary getPublicKey() {
+    return (Base64Binary)getProperty(PROP_PUBLIC_KEY);
   }		
 
-  public void setPublicKey(String newPropValue) {
+  public void setPublicKey(Base64Binary newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_PUBLIC_KEY, newPropValue);
   }		
 
-  public String getPrivateKey() {
-    return (String)getProperty(PROP_PRIVATE_KEY);
+  public Base64Binary getPrivateKey() {
+    return (Base64Binary)getProperty(PROP_PRIVATE_KEY);
   }		
 
-  public void setPrivateKey(String newPropValue) {
+  public void setPrivateKey(Base64Binary newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_PRIVATE_KEY, newPropValue);
   }		

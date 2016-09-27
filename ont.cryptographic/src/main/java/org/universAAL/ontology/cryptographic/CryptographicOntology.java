@@ -16,11 +16,15 @@
 package org.universAAL.ontology.cryptographic;
 
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.HasValueRestriction;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.ObjectPropertySetup;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.TypeExpression;
+import org.universAAL.middleware.owl.Union;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
@@ -28,8 +32,11 @@ import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.CryptographicFactory;
 import org.universAAL.ontology.cryptographic.digest.MessageDigest;
-//import the factory for this ontology
 import org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm;
+import org.universAAL.ontology.cryptographic.symmetric.AES;
+import org.universAAL.ontology.cryptographic.symmetric.Blowfish;
+import org.universAAL.ontology.cryptographic.symmetric.DES;
+//import the factory for this ontology
 
 
 /**
@@ -320,5 +327,45 @@ public final class CryptographicOntology extends Ontology {
     oci_SecureHashAlgorithm.addInstance(SecureHashAlgorithm.IND_SHA512);
     //XXX add more SHA algorithms as they are implemented in Java
 
+    /*
+     * Symmetric algorithms
+     */    
+    
+    // AES
+    OntClassInfoSetup oci_aes = createNewOntClassInfo(AES.MY_URI, factory, 12);
+    oci_aes.addSuperClass(SimpleBlockEncryption.MY_URI);
+    MergedRestriction keymr = MergedRestriction.getAllValuesRestrictionWithCardinality(SymmetricEncryption.PROP_SIMPLE_KEY, SimpleKey.MY_URI, 0, 1);
+    TypeExpression possibleKeyLengths = new Union();
+    ((Union)possibleKeyLengths).addType(new HasValueRestriction(SimpleKey.PROP_KEY_LENGTH, new Integer(128)));
+    ((Union)possibleKeyLengths).addType(new HasValueRestriction(SimpleKey.PROP_KEY_LENGTH, new Integer(192)));
+    ((Union)possibleKeyLengths).addType(new HasValueRestriction(SimpleKey.PROP_KEY_LENGTH, new Integer(256)));
+    MergedRestriction keylengthmr = MergedRestriction.getAllValuesRestrictionWithCardinality(SimpleKey.PROP_KEY_LENGTH,possibleKeyLengths,1,1);
+    keylengthmr.appendTo(keymr, new String[]{SymmetricEncryption.PROP_SIMPLE_KEY,SimpleKey.PROP_KEY_LENGTH});
+    oci_aes.addRestriction(keymr);
+    // TO BE TESTED!
+    // TODO use length restriction on SimpleKey.PROP_KEY_TEXT
+    oci_aes.addRestriction(MergedRestriction.getFixedValueRestriction(BlockEncryption.PROP_BLOCK_LENGTH, new Integer(128)));
+    
+    // Blowfish
+    OntClassInfoSetup oci_blowfish = createNewOntClassInfo(Blowfish.MY_URI, factory, 13);
+    oci_blowfish.addSuperClass(SimpleBlockEncryption.MY_URI);
+     keymr = MergedRestriction.getAllValuesRestrictionWithCardinality(SymmetricEncryption.PROP_SIMPLE_KEY, SimpleKey.MY_URI, 0, 1);
+    possibleKeyLengths = new IntRestriction(32, true, 448, true);
+    keylengthmr = MergedRestriction.getAllValuesRestrictionWithCardinality(SimpleKey.PROP_KEY_LENGTH,possibleKeyLengths,1,1);
+    keylengthmr.appendTo(keymr, new String[]{SymmetricEncryption.PROP_SIMPLE_KEY,SimpleKey.PROP_KEY_LENGTH});
+    oci_blowfish.addRestriction(keymr);
+    // TODO use length restriction on SimpleKey.PROP_KEY_TEXT
+    oci_blowfish.addRestriction(MergedRestriction.getFixedValueRestriction(BlockEncryption.PROP_BLOCK_LENGTH, new Integer(64)));
+    
+    // DES
+    OntClassInfoSetup oci_des = createNewOntClassInfo(DES.MY_URI, factory, 14);
+    oci_des.addSuperClass(SimpleBlockEncryption.MY_URI);
+    keymr = MergedRestriction.getAllValuesRestrictionWithCardinality(SymmetricEncryption.PROP_SIMPLE_KEY, SimpleKey.MY_URI, 0, 1);
+    keylengthmr = MergedRestriction.getFixedValueRestriction(SimpleKey.PROP_KEY_LENGTH, new Integer(56));
+    keylengthmr.appendTo(keymr, new String[]{SymmetricEncryption.PROP_SIMPLE_KEY,SimpleKey.PROP_KEY_LENGTH});
+    oci_des.addRestriction(keymr);
+    // TODO use length restriction on SimpleKey.PROP_KEY_TEXT
+    oci_des.addRestriction(MergedRestriction.getFixedValueRestriction(BlockEncryption.PROP_BLOCK_LENGTH, new Integer(64)));
+    
   }
 }

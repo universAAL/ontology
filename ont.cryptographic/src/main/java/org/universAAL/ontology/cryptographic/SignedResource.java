@@ -20,6 +20,7 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.xsd.Base64Binary;
 
 
 /**
@@ -76,16 +77,16 @@ public class SignedResource extends ManagedIndividual {
       && hasProperty(PROP_DIGEST);
   }
 
-  public String[] getSignature() {
+  public Base64Binary[] getSignature() {
     Object propList = getProperty(PROP_SIGNATURE);
     if (propList instanceof List)
-      return (String[]) ((List) propList).toArray(new String[0]);
+      return (Base64Binary[]) ((List) propList).toArray(new String[0]);
     else if (propList != null)
-      return new String[] {(String)propList}; // Handle special case of a single item not contained in a list
-    return new String[0];
+      return new Base64Binary[] {(Base64Binary)propList}; // Handle special case of a single item not contained in a list
+    return new Base64Binary[0];
   }
 
-  public void addSignature(String newValue) {
+  public void addSignature(Base64Binary newValue) {
     Object propList = getProperty(PROP_SIGNATURE);
     List newList;
     if (propList instanceof List)
@@ -100,7 +101,7 @@ public class SignedResource extends ManagedIndividual {
   }
   
 
-  public void setSignature(String[] propertyValue) {
+  public void setSignature(Base64Binary[] propertyValue) {
     List propList = new ArrayList(propertyValue.length);
     for (int i = 0; i < propertyValue.length; i++) {
       propList.add(propertyValue[i]);
