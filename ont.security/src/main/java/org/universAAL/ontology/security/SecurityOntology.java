@@ -284,6 +284,7 @@ public final class SecurityOntology extends Ontology {
 				.setResourceComment("Profile storing credentials, Roles, AcessRights and any security concept for a given profilable.");
 		oci_secProf.setResourceLabel("Security Profile");
 		oci_secProf.addSuperClass(SubProfile.MY_URI);
+		oci_secProf.addSuperClass(Anonymizable.MY_URI);
 		oci_secProf.addObjectProperty(SecuritySubprofile.PROP_CREDENTIALS);
 		oci_secProf.addRestriction(MergedRestriction.getAllValuesRestriction(
 				SecuritySubprofile.PROP_CREDENTIALS, Credentials.MY_URI));
