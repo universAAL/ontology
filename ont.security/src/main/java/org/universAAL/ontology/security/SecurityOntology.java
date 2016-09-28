@@ -36,6 +36,7 @@ import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.User;
+import org.universAAL.ontology.profile.UserProfile;
 
 /**
  * @author eandgrg
@@ -95,6 +96,19 @@ public final class SecurityOntology extends Ontology {
 		OntClassInfoSetup oci_asset = createNewAbstractOntClassInfo(Asset.MY_URI);
 
 		OntClassInfoSetup oci_accessType = createNewAbstractOntClassInfo(AccessType.MY_URI);
+
+		OntClassInfoSetup oci_anonymizable = createNewAbstractOntClassInfo(Anonymizable.MY_URI);
+		oci_anonymizable.addSuperClass(ManagedIndividual.MY_URI);
+		oci_anonymizable.setResourceLabel("Anonymizable");
+		oci_anonymizable.setResourceComment("Any anonymizable resource should be subclass of this class to enable the anonymization service to encrypt the property reference");
+		oci_anonymizable.addObjectProperty(Anonymizable.PROP_ANNONYMOUS_RESOURCE);
+		
+		/*
+		 * Extension of profiling ontology to automatically allow for subprofiles to be anonymizable
+		 */
+		OntClassInfoSetup oci_up = extendExistingOntClassInfo(UserProfile.MY_URI);
+		oci_up.addSuperClass(Anonymizable.MY_URI);
+		//((OntClassInfo)oci_up.getInfo()).getDeclaredProperty(UserProfile.PROP_HAS_SUB_PROFILE)
 		
 		OntClassInfoSetup oci_userPass = createNewOntClassInfo(
 				UserPasswordCredentials.MY_URI, factory, 0);
