@@ -15,9 +15,6 @@
  ******************************************************************************/
 package org.universAAL.ontology.cryptographic;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.universAAL.middleware.rdf.Resource;
 
 
@@ -36,9 +33,7 @@ public class EncryptionService extends CryptographicService {
   public static final String PROP_ENCRYPTED_RESOURCE = CryptographicOntology.NAMESPACE
     + "encryptedResource";
   public static final String PROP_ENCRYPTION = CryptographicOntology.NAMESPACE
-    + "encryption";
-  public static final String PROP_KEY = CryptographicOntology.NAMESPACE
-    + "key";
+    + "encryptionMethod";
   public static final String PROP_ENCRYPTS = CryptographicOntology.NAMESPACE
     + "encrypts";
 
@@ -60,8 +55,6 @@ public class EncryptionService extends CryptographicService {
       return PROP_SERIALIZATION_FULL;
     if (PROP_ENCRYPTION.equals(propURI))
       return PROP_SERIALIZATION_FULL;
-    if (PROP_KEY.equals(propURI))
-      return PROP_SERIALIZATION_FULL;
     if (PROP_ENCRYPTS.equals(propURI))
       return PROP_SERIALIZATION_FULL;
     return super.getPropSerializationType(propURI);
@@ -71,7 +64,6 @@ public class EncryptionService extends CryptographicService {
 	return super.isWellFormed() 
       && hasProperty(PROP_ENCRYPTED_RESOURCE)
       && hasProperty(PROP_ENCRYPTION)
-      && hasProperty(PROP_KEY)
       && hasProperty(PROP_ENCRYPTS);
   }
 
@@ -92,38 +84,6 @@ public class EncryptionService extends CryptographicService {
     if (newPropValue != null)
       changeProperty(PROP_ENCRYPTION, newPropValue);
   }		
-
-  public EncryptionKey[] getKey() {
-    Object propList = getProperty(PROP_KEY);
-    if (propList instanceof List)
-      return (EncryptionKey[]) ((List) propList).toArray(new EncryptionKey[0]);
-    else if (propList != null)
-      return new EncryptionKey[] {(EncryptionKey)propList}; // Handle special case of a single item not contained in a list
-    return new EncryptionKey[0];
-  }
-
-  public void addKey(EncryptionKey newValue) {
-    Object propList = getProperty(PROP_KEY);
-    List newList;
-    if (propList instanceof List)
-      newList = (List)propList;
-    else {
-      newList = new ArrayList();
-      if (propList != null)
-        newList.add(propList); // Handle special case of a single previous item not contained in a list
-    }
-    newList.add(newValue);
-    changeProperty(PROP_KEY, newList);
-  }
-  
-
-  public void setKey(EncryptionKey[] propertyValue) {
-    List propList = new ArrayList(propertyValue.length);
-    for (int i = 0; i < propertyValue.length; i++) {
-      propList.add(propertyValue[i]);
-    }
-    changeProperty(PROP_KEY, propList);
-  }
 
   public Resource getEncrypts() {
     return (Resource)getProperty(PROP_ENCRYPTS);

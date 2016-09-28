@@ -32,7 +32,7 @@ public class EncryptedResource extends ManagedIndividual {
   public static final String MY_URI = CryptographicOntology.NAMESPACE
     + "EncryptedResource";
   public static final String PROP_ENCRYPTION = CryptographicOntology.NAMESPACE
-    + "encryption";
+    + "encryptionMethod";
   public static final String PROP_CYPHERED_TEXT = CryptographicOntology.NAMESPACE
     + "CypheredText";
 

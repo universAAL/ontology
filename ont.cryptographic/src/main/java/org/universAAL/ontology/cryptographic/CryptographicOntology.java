@@ -203,9 +203,6 @@ public final class CryptographicOntology extends Ontology {
     oci_EncryptionService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(EncryptionService.PROP_ENCRYPTION, 
           Encryption.MY_URI, 1, 1));
-    oci_EncryptionService.addObjectProperty(EncryptionService.PROP_KEY).setFunctional();
-      	oci_EncryptionService.addRestriction(MergedRestriction.getAllValuesRestriction(EncryptionService.PROP_KEY,  
-       	EncryptionKey.MY_URI));
     oci_EncryptionService.addObjectProperty(EncryptionService.PROP_ENCRYPTS).setFunctional();
     oci_EncryptionService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(EncryptionService.PROP_ENCRYPTS, 
