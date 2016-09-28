@@ -15,6 +15,10 @@
  ******************************************************************************/
 package org.universAAL.ontology.cryptographic;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 
 
 /**
@@ -29,8 +33,8 @@ package org.universAAL.ontology.cryptographic;
 public class MultidestinationEncryptedResource extends EncryptedResource {
   public static final String MY_URI = CryptographicOntology.NAMESPACE
     + "MultidestinationEncryptedResource";
-  public static final String PROP_KEY = CryptographicOntology.NAMESPACE
-    + "key";
+  public static final String PROP_DESTINATARIES = CryptographicOntology.NAMESPACE
+    + "destinataries";
 
 
   public MultidestinationEncryptedResource () {
@@ -46,23 +50,41 @@ public class MultidestinationEncryptedResource extends EncryptedResource {
   }
   
   public int getPropSerializationType(String propURI) {
-    if (PROP_KEY.equals(propURI))
+    if (PROP_DESTINATARIES.equals(propURI))
       return PROP_SERIALIZATION_FULL;
     return super.getPropSerializationType(propURI);
   } 
 
   public boolean isWellFormed() {
 	return super.isWellFormed() 
-      && hasProperty(PROP_KEY);
+      && hasProperty(PROP_DESTINATARIES);
   }
-
-  public EncryptionKey getKey() {
-    return (EncryptionKey)getProperty(PROP_KEY);
-  }		
-
-  public void setKey(EncryptionKey newPropValue) {
-    if (newPropValue != null)
-      changeProperty(PROP_KEY, newPropValue);
-  }		
+	
+  public void addDestinatary(DestinataryEncryptedSessionKey desk) {
+	Object current = getProperty(PROP_DESTINATARIES);
+	if (current == null){
+		setProperty(PROP_DESTINATARIES, desk);
+	}else if (current instanceof DestinataryEncryptedSessionKey) {
+		ArrayList ndesk = new ArrayList();
+		ndesk.add(current);
+		ndesk.add(desk);
+		changeProperty(PROP_DESTINATARIES, ndesk);
+	}else if (current instanceof List){
+		((List)current).add(desk);
+		changeProperty(PROP_DESTINATARIES, current);
+	}
+  }
+  
+  public List getDestinataries() {
+	  Object current = getProperty(PROP_DESTINATARIES);
+		if (current instanceof DestinataryEncryptedSessionKey) {
+			ArrayList ndesk = new ArrayList();
+			ndesk.add(current);
+			return ndesk;
+		}else if (current instanceof List){
+			return (List) current;
+		}
+		return Collections.EMPTY_LIST;
+  }
 
 }

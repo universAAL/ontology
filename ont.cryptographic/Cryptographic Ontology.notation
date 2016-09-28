@@ -1192,38 +1192,6 @@
       <element xmi:type="uml:Class" href="Cryptographic%20Ontology.uml#_FTIHMIDNEeaYibeoVv-bYw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6J6IUYDSEeaYibeoVv-bYw" x="390" y="265"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_GeQ14IDTEeaYibeoVv-bYw" type="2008" fontName="Segoe UI" lineColor="0">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GeQ14oDTEeaYibeoVv-bYw" source="ShadowFigure">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GeQ144DTEeaYibeoVv-bYw" key="ShadowFigure_Value" value="false"/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GeQ15IDTEeaYibeoVv-bYw" source="displayNameLabelIcon">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GeQ15YDTEeaYibeoVv-bYw" key="displayNameLabelIcon_value" value="false"/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GeQ15oDTEeaYibeoVv-bYw" source="QualifiedName">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GeQ154DTEeaYibeoVv-bYw" key="QualifiedNameDepth" value="1000"/>
-      </eAnnotations>
-      <children xmi:type="notation:DecorationNode" xmi:id="_GeQ16IDTEeaYibeoVv-bYw" type="5029"/>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_GeQ16YDTEeaYibeoVv-bYw" type="7017">
-        <styles xmi:type="notation:TitleStyle" xmi:id="_GeQ16oDTEeaYibeoVv-bYw"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_GeQ164DTEeaYibeoVv-bYw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_GeQ17IDTEeaYibeoVv-bYw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GeQ17YDTEeaYibeoVv-bYw"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_GeQ17oDTEeaYibeoVv-bYw" type="7018">
-        <styles xmi:type="notation:TitleStyle" xmi:id="_GeQ174DTEeaYibeoVv-bYw"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_GeQ18IDTEeaYibeoVv-bYw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_GeQ18YDTEeaYibeoVv-bYw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GeQ18oDTEeaYibeoVv-bYw"/>
-      </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_GeQ184DTEeaYibeoVv-bYw" type="7019">
-        <styles xmi:type="notation:TitleStyle" xmi:id="_GeQ19IDTEeaYibeoVv-bYw"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_GeQ19YDTEeaYibeoVv-bYw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_GeQ19oDTEeaYibeoVv-bYw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GeQ194DTEeaYibeoVv-bYw"/>
-      </children>
-      <element xmi:type="uml:Class" href="Cryptographic%20Ontology.uml#_VlHvAIDNEeaYibeoVv-bYw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GeQ14YDTEeaYibeoVv-bYw" x="35" y="580"/>
-    </children>
     <children xmi:type="notation:Shape" xmi:id="_7edD8IDTEeaYibeoVv-bYw" type="2008" fontName="Segoe UI" lineColor="0">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7edD8oDTEeaYibeoVv-bYw" source="ShadowFigure">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7edD84DTEeaYibeoVv-bYw" key="ShadowFigure_Value" value="false"/>
@@ -1342,6 +1310,38 @@
       <element xmi:type="uml:Class" href="Cryptographic%20Ontology.uml#_vLryIIDQEeaYibeoVv-bYw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LKlloYDUEeaYibeoVv-bYw" x="765" y="560"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_JHvvgIWHEeacyskiaDLAMg" type="2008" fontName="Segoe UI" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JHvvgoWHEeacyskiaDLAMg" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JHvvg4WHEeacyskiaDLAMg" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JHvvhIWHEeacyskiaDLAMg" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JHvvhYWHEeacyskiaDLAMg" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JHvvhoWHEeacyskiaDLAMg" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JHvvh4WHEeacyskiaDLAMg" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_JHvviIWHEeacyskiaDLAMg" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JHvviYWHEeacyskiaDLAMg" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JHvvioWHEeacyskiaDLAMg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JHvvi4WHEeacyskiaDLAMg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JHvvjIWHEeacyskiaDLAMg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JHvvjYWHEeacyskiaDLAMg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JHvvjoWHEeacyskiaDLAMg" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JHvvj4WHEeacyskiaDLAMg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JHvvkIWHEeacyskiaDLAMg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JHvvkYWHEeacyskiaDLAMg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JHvvkoWHEeacyskiaDLAMg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JHvvk4WHEeacyskiaDLAMg" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JHvvlIWHEeacyskiaDLAMg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JHvvlYWHEeacyskiaDLAMg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JHvvloWHEeacyskiaDLAMg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JHvvl4WHEeacyskiaDLAMg"/>
+      </children>
+      <element xmi:type="uml:Class" href="Cryptographic%20Ontology.uml#_JHjiQIWHEeacyskiaDLAMg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JHvvgYWHEeacyskiaDLAMg" x="-15" y="570"/>
+    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_-XQH8YDREeaYibeoVv-bYw"/>
     <element xmi:type="uml:Model" href="Cryptographic%20Ontology.uml#_iaPcwIDMEeaYibeoVv-bYw"/>
     <edges xmi:type="notation:Connector" xmi:id="_kNIH8IDSEeaYibeoVv-bYw" type="4002" source="_ZF4GsIDSEeaYibeoVv-bYw" target="___79AIDREeaYibeoVv-bYw" lineColor="0">
@@ -1447,29 +1447,6 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_9gS1UYDSEeaYibeoVv-bYw" fontName="Segoe UI"/>
       <element xmi:type="uml:Association" href="Cryptographic%20Ontology.uml#_9gGoE4DSEeaYibeoVv-bYw"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9gS1UoDSEeaYibeoVv-bYw" points="[51, -14, -158, 26]$[207, -90, -2, -50]"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_JijGQIDTEeaYibeoVv-bYw" type="4001" source="_uQ1BgIDSEeaYibeoVv-bYw" target="_GeQ14IDTEeaYibeoVv-bYw" lineColor="0">
-      <children xmi:type="notation:DecorationNode" xmi:id="_JijGQ4DTEeaYibeoVv-bYw" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_JijGRIDTEeaYibeoVv-bYw" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_JijGRYDTEeaYibeoVv-bYw" type="6002">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_JijGRoDTEeaYibeoVv-bYw" y="18"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_JijGR4DTEeaYibeoVv-bYw" visible="false" type="6003">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_JijGSIDTEeaYibeoVv-bYw" y="-20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_JijGSYDTEeaYibeoVv-bYw" visible="false" type="6005">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_JijGSoDTEeaYibeoVv-bYw" y="20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_JijGS4DTEeaYibeoVv-bYw" type="6033">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_JijGTIDTEeaYibeoVv-bYw" y="20"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_JijGTYDTEeaYibeoVv-bYw" type="6034">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_JijGToDTEeaYibeoVv-bYw" y="-20"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_JijGQYDTEeaYibeoVv-bYw" fontName="Segoe UI"/>
-      <element xmi:type="uml:Association" href="Cryptographic%20Ontology.uml#_JiW5A4DTEeaYibeoVv-bYw"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JijGQoDTEeaYibeoVv-bYw" points="[16, -50, -32, 140]$[98, -185, 50, 5]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_BvrxcIDUEeaYibeoVv-bYw" type="4001" source="_ak4bUIDSEeaYibeoVv-bYw" target="_7edD8IDTEeaYibeoVv-bYw" lineColor="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_Bvrxc4DUEeaYibeoVv-bYw" type="6001">
@@ -1615,6 +1592,38 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gGdGIoDVEeaYibeoVv-bYw" points="[-15, 61, 30, -130]$[-34, 176, 11, -15]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gHH0gIDVEeaYibeoVv-bYw" id="(0.17,0.39)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gHH0gYDVEeaYibeoVv-bYw" id="(0.77,0.15)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_K_n3IIWHEeacyskiaDLAMg" type="4002" source="_JHvvgIWHEeacyskiaDLAMg" target="_mOTVgIDSEeaYibeoVv-bYw" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_K_n3I4WHEeacyskiaDLAMg" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_K_n3JIWHEeacyskiaDLAMg" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_K_n3IYWHEeacyskiaDLAMg" fontName="Segoe UI"/>
+      <element xmi:type="uml:Generalization" href="Cryptographic%20Ontology.uml#_K3_lIIWHEeacyskiaDLAMg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_n3IoWHEeacyskiaDLAMg" points="[30, -30, -151, 93]$[104, -173, -77, -50]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LAARoIWHEeacyskiaDLAMg" id="(0.8117647058823529,0.3)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_LiDOwIWHEeacyskiaDLAMg" type="4001" source="_uQ1BgIDSEeaYibeoVv-bYw" target="_JHvvgIWHEeacyskiaDLAMg" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LiDOw4WHEeacyskiaDLAMg" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LiDOxIWHEeacyskiaDLAMg" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LiDOxYWHEeacyskiaDLAMg" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LiDOxoWHEeacyskiaDLAMg" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LiDOx4WHEeacyskiaDLAMg" visible="false" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LiDOyIWHEeacyskiaDLAMg" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LiDOyYWHEeacyskiaDLAMg" visible="false" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LiDOyoWHEeacyskiaDLAMg" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LiDOy4WHEeacyskiaDLAMg" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LiDOzIWHEeacyskiaDLAMg" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LiDOzYWHEeacyskiaDLAMg" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LiDOzoWHEeacyskiaDLAMg" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_LiDOwYWHEeacyskiaDLAMg" fontName="Segoe UI"/>
+      <element xmi:type="uml:Association" href="Cryptographic%20Ontology.uml#_Lh9II4WHEeacyskiaDLAMg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LiDOwoWHEeacyskiaDLAMg" points="[-94, 5, 127, -8]$[-306, 13, -85, 0]"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

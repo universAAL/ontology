@@ -19,6 +19,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.cryptographic.CertificationAuthority;
 import org.universAAL.ontology.cryptographic.CryptographicService;
+import org.universAAL.ontology.cryptographic.DestinataryEncryptedSessionKey;
 import org.universAAL.ontology.cryptographic.DigestService;
 import org.universAAL.ontology.cryptographic.EncryptedResource;
 import org.universAAL.ontology.cryptographic.EncryptionService;
@@ -75,6 +76,8 @@ public class CryptographicFactory implements ResourceFactory {
     	 return new RSA(RSA.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
      case 16:
     	 return new RSA(DSA.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
+     case 17:
+    	 return new DestinataryEncryptedSessionKey(instanceURI);
 	}
 	return null;
   }

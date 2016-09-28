@@ -95,6 +95,7 @@ public final class CryptographicOntology extends Ontology {
 
     OntClassInfoSetup oci_messageDigest = createNewOntClassInfo(MessageDigest.MY_URI, factory, 10);
     OntClassInfoSetup oci_SecureHashAlgorithm = createNewOntClassInfo(SecureHashAlgorithm.MY_URI, factory, 11);
+    OntClassInfoSetup oci_DESK = createNewOntClassInfo(DestinataryEncryptedSessionKey.MY_URI, factory, 17);
 
     // ******* Add content to enumeration classes of the ontology ******* //
 
@@ -172,10 +173,10 @@ public final class CryptographicOntology extends Ontology {
     oci_MultidestinationEncryptedResource.setResourceComment("An encrypted resource which has different destinataries.");
     oci_MultidestinationEncryptedResource.setResourceLabel("Multidestination Encrypted Resource");
     oci_MultidestinationEncryptedResource.addSuperClass(EncryptedResource.MY_URI); 
-    oci_MultidestinationEncryptedResource.addObjectProperty(MultidestinationEncryptedResource.PROP_KEY).setFunctional();
+    oci_MultidestinationEncryptedResource.addObjectProperty(MultidestinationEncryptedResource.PROP_DESTINATARIES).setFunctional();
     oci_MultidestinationEncryptedResource.addRestriction(MergedRestriction
-      .getAllValuesRestriction(MultidestinationEncryptedResource.PROP_KEY, 
-          EncryptionKey.MY_URI));
+      .getAllValuesRestriction(MultidestinationEncryptedResource.PROP_DESTINATARIES, 
+          DestinataryEncryptedSessionKey.MY_URI));
 
     oci_EncryptionKey.setResourceComment("Key used to (de)cypher messages.");
     oci_EncryptionKey.setResourceLabel("Encryption Key");
@@ -309,6 +310,15 @@ public final class CryptographicOntology extends Ontology {
     oci_Encryption.addObjectProperty(Encryption.PROP_KEY).setFunctional();
       	oci_Encryption.addRestriction(MergedRestriction.getAllValuesRestriction(Encryption.PROP_KEY,  
        	EncryptionKey.MY_URI));
+      	
+    oci_DESK.setResourceComment("A structure to hold the encrypted session key for a particular destinatary.");
+    oci_DESK.setResourceLabel("Destinatary Encrypted Session Key");
+    oci_DESK.addSuperClass(EncryptedResource.MY_URI);
+      	
+      	
+      	/*
+      	 * Digest algorithms
+      	 */
       	
     oci_messageDigest.setResourceComment("All Message Digest (MDx) disgest algorithms.");
     oci_messageDigest.setResourceLabel("Message Digest (MDx)");

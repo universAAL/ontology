@@ -220,16 +220,10 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_uQitoIDSEeaYibeoVv-bYw" name="MultidestinationEncryptedResource">
         <generalization xmi:id="_w3BnsIDSEeaYibeoVv-bYw" general="_mN67AIDSEeaYibeoVv-bYw"/>
-        <ownedAttribute xmi:id="_JiW5AIDTEeaYibeoVv-bYw" name="key" type="_VlHvAIDNEeaYibeoVv-bYw" association="_JiW5A4DTEeaYibeoVv-bYw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiW5AYDTEeaYibeoVv-bYw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiW5AoDTEeaYibeoVv-bYw" value="1"/>
+        <ownedAttribute xmi:id="_Lh9IIIWHEeacyskiaDLAMg" name="" type="_JHjiQIWHEeacyskiaDLAMg" association="_Lh9II4WHEeacyskiaDLAMg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lh9IIYWHEeacyskiaDLAMg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lh9IIoWHEeacyskiaDLAMg"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_JiW5A4DTEeaYibeoVv-bYw" name="destinationKeys" memberEnd="_JiW5BIDTEeaYibeoVv-bYw _JiW5AIDTEeaYibeoVv-bYw">
-        <ownedEnd xmi:id="_JiW5BIDTEeaYibeoVv-bYw" name="multidestinationEncryptedResource" type="_uQitoIDSEeaYibeoVv-bYw" association="_JiW5A4DTEeaYibeoVv-bYw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiW5BYDTEeaYibeoVv-bYw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiW5BoDTEeaYibeoVv-bYw" value="1"/>
-        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_cb4ZMIDSEeaYibeoVv-bYw" name="DigestService">
         <generalization xmi:id="_kxmuAIDSEeaYibeoVv-bYw" general="_iaPczIDMEeaYibeoVv-bYw"/>
@@ -316,6 +310,15 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ly3GkYDUEeaYibeoVv-bYw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ly3GkoDUEeaYibeoVv-bYw"/>
         </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Lh9II4WHEeacyskiaDLAMg" name="destinataries" memberEnd="_Lh9IJIWHEeacyskiaDLAMg _Lh9IIIWHEeacyskiaDLAMg">
+        <ownedEnd xmi:id="_Lh9IJIWHEeacyskiaDLAMg" name="" type="_uQitoIDSEeaYibeoVv-bYw" association="_Lh9II4WHEeacyskiaDLAMg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lh9IJYWHEeacyskiaDLAMg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lh9IJoWHEeacyskiaDLAMg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JHjiQIWHEeacyskiaDLAMg" name="DestinataryEncryptedSessionKey">
+        <generalization xmi:id="_K3_lIIWHEeacyskiaDLAMg" general="_mN67AIDSEeaYibeoVv-bYw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_iaPc0oDMEeaYibeoVv-bYw">
