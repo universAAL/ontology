@@ -27,6 +27,8 @@ import org.universAAL.ontology.cryptographic.MultidestinationEncryptedResource;
 import org.universAAL.ontology.cryptographic.SignAndVerifyService;
 import org.universAAL.ontology.cryptographic.SignedResource;
 import org.universAAL.ontology.cryptographic.SimpleKey;
+import org.universAAL.ontology.cryptographic.asymmetric.DSA;
+import org.universAAL.ontology.cryptographic.asymmetric.RSA;
 import org.universAAL.ontology.cryptographic.digest.MessageDigest;
 import org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm;
 import org.universAAL.ontology.cryptographic.symmetric.AES;
@@ -69,6 +71,10 @@ public class CryptographicFactory implements ResourceFactory {
     	 return new Blowfish(Blowfish.SINGLETON_URI); //SINGLETON INSTANCE: always the same.
      case 14:
     	 return new DES(DES.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
+     case 15:
+    	 return new RSA(RSA.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
+     case 16:
+    	 return new RSA(DSA.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
 	}
 	return null;
   }

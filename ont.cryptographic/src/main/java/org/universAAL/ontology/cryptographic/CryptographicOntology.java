@@ -31,6 +31,8 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.CryptographicFactory;
+import org.universAAL.ontology.cryptographic.asymmetric.DSA;
+import org.universAAL.ontology.cryptographic.asymmetric.RSA;
 import org.universAAL.ontology.cryptographic.digest.MessageDigest;
 import org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm;
 import org.universAAL.ontology.cryptographic.symmetric.AES;
@@ -367,5 +369,16 @@ public final class CryptographicOntology extends Ontology {
     // TODO use length restriction on SimpleKey.PROP_KEY_TEXT
     oci_des.addRestriction(MergedRestriction.getFixedValueRestriction(BlockEncryption.PROP_BLOCK_LENGTH, new Integer(64)));
     
+    /*
+     * Asymmetric algorithms
+     */
+    //DSA
+    OntClassInfoSetup oci_dsa = createNewOntClassInfo(DSA.MY_URI, factory, 15);
+    oci_dsa.addSuperClass(AsymmetricEncryption.MY_URI);
+    oci_dsa.setResourceLabel("RSA");
+
+    //RSA
+    OntClassInfoSetup oci_rsa = createNewOntClassInfo(RSA.MY_URI, factory, 16);
+    oci_rsa.setResourceLabel("RSA");
   }
 }
