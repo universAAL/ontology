@@ -28,6 +28,7 @@ import org.universAAL.ontology.security.MultifactorCredentials;
 import org.universAAL.ontology.security.OneTimePassword;
 import org.universAAL.ontology.security.Password;
 import org.universAAL.ontology.security.Role;
+import org.universAAL.ontology.security.RoleManagementService;
 import org.universAAL.ontology.security.SecuritySubprofile;
 import org.universAAL.ontology.security.SessionManagementService;
 import org.universAAL.ontology.security.UserPasswordCredentials;
@@ -68,6 +69,8 @@ public class SecurityFactory implements ResourceFactory {
 		return new AuthorizationService(instanceURI);
 	case 12:
 		return new DelegationForm(instanceURI);
+	case 13:
+		return new RoleManagementService(instanceURI);
 	}
 	return null;
     }
