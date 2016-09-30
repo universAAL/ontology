@@ -100,5 +100,38 @@ public class SecuritySubprofile extends SubProfile {
 		changeProperty(PROP_CREDENTIALS, a);
 	    }
 	}
+
+	public void addrole(Role r) {
+		if (r == null)
+			return;
+		Object p = getProperty(PROP_ROLES);
+		ArrayList a = new ArrayList();
+		if (p instanceof List){
+			a.addAll((List)p);
+		} 
+		else if (p instanceof Role){
+			a.add(p);
+		}
+		if (a.isEmpty()){
+			changeProperty(PROP_ROLES, r);
+		} else {
+			a.add(r);
+			changeProperty(PROP_ROLES, a);
+		}
+
+	}
+	
+	public List getRoles(){
+	    Object p = getProperty(PROP_ROLES);
+	    if (p instanceof List){
+		return (List) p;
+	    } 
+	    else if (p instanceof Role){
+		ArrayList a = new ArrayList();
+		a.add(p);
+		return a;
+	    }
+	    return Collections.emptyList();
+	}
 	
 }

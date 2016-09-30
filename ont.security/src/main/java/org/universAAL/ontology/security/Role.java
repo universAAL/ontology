@@ -111,6 +111,20 @@ public class Role extends ManagedIndividual {
 		}
 	}
 	
+	public void removeAccessRight(AccessRight ar) {
+		Object current = getProperty(PROP_HAS_ACCESS_RIGHTS);
+		if (current==null){
+			return;
+		}
+		else if (current instanceof Role && current.equals(ar)){
+			changeProperty(PROP_HAS_ACCESS_RIGHTS, null);
+		}
+		else if (current instanceof List){
+			((List) current).remove(ar);
+			changeProperty(PROP_HAS_ACCESS_RIGHTS, current);
+		}
+	}
+
 	public void addSubRole(Role subrole){
 		Object current = getProperty(PROP_SUB_ROLES);
 		if (current==null){
@@ -127,5 +141,19 @@ public class Role extends ManagedIndividual {
 			changeProperty(PROP_SUB_ROLES, current);
 		}
 		
+	}
+	
+	public void removeSubRole(Role subrole){
+		Object current = getProperty(PROP_SUB_ROLES);
+		if (current==null){
+			return;
+		}
+		else if (current instanceof Role && current.equals(subrole)){
+			changeProperty(PROP_SUB_ROLES, null);
+		}
+		else if (current instanceof List){
+			((List) current).remove(subrole);
+			changeProperty(PROP_SUB_ROLES, current);
+		}
 	}
 }
