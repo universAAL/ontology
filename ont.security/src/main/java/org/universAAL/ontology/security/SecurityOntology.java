@@ -30,6 +30,7 @@ import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.SecurityFactory;
 import org.universAAL.ontology.cryptographic.CryptographicOntology;
 import org.universAAL.ontology.cryptographic.Digest;
+import org.universAAL.ontology.cryptographic.KeyRing;
 import org.universAAL.ontology.cryptographic.SignedResource;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
@@ -199,6 +200,10 @@ public final class SecurityOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						UserPasswordCredentials.PROP_USERNAME,
 						TypeMapper.getDatatypeURI(String.class), 1, 1));
+		
+		//keyring as credentials
+		OntClassInfoSetup oci_keyring = extendExistingOntClassInfo(KeyRing.MY_URI);
+		oci_keyring.addSuperClass(PossessionFactor.MY_URI);
 
 		/*
 		 * Authorisation
