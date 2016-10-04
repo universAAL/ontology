@@ -33,9 +33,6 @@ public class SimpleKey extends EncryptionKey {
     + "SimpleKey";
   public static final String PROP_KEY_TEXT = CryptographicOntology.NAMESPACE
     + "keyText";
-  
-  public static final String PROP_KEY_LENGTH = CryptographicOntology.NAMESPACE
-		    + "keyLength";
 
 
   public SimpleKey () {
@@ -69,9 +66,5 @@ public class SimpleKey extends EncryptionKey {
     if (newPropValue != null )
       changeProperty(PROP_KEY_TEXT, newPropValue);
   }		
-  
-  public Integer getKeyLength(){
-	  return (Integer) getProperty(PROP_KEY_LENGTH);	  
-  }
 
 }

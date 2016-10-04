@@ -30,7 +30,9 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 public abstract class EncryptionKey extends ManagedIndividual {
   public static final String MY_URI = CryptographicOntology.NAMESPACE
     + "EncryptionKey";
-
+  
+  public static final String PROP_KEY_LENGTH = CryptographicOntology.NAMESPACE
+		    + "keyLength";
 
   public EncryptionKey () {
     super();
@@ -51,5 +53,8 @@ public abstract class EncryptionKey extends ManagedIndividual {
   public boolean isWellFormed() {
 	return super.isWellFormed() ;
   }
-
+  
+  public Integer getKeyLength(){
+	  return (Integer) getProperty(PROP_KEY_LENGTH);	  
+  }
 }
