@@ -17,7 +17,6 @@
 
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Location bound Session, a session that is only valid within a location.

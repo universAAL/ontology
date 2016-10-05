@@ -49,6 +49,10 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.hvac</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.impairment</artifactId>
     </dependency>
     <dependency>
@@ -146,6 +150,10 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.drools</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.cryptographic</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>

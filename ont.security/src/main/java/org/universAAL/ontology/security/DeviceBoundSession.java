@@ -17,7 +17,6 @@
 
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Device Bound Session, a session that is only valid for a specific device. 

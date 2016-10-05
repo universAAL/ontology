@@ -24,6 +24,8 @@ public class Util {
 
     public static final Unit IND_UNIT_UNITY = new Unit("unity", "Unity", "1",
 			MeasurableDimension.Adiemnsional);
+    public static final Unit IND_UNIT_PERCENT = new Unit("percent", "Percent", "%",
+			MeasurableDimension.Adiemnsional);
     public static final Unit IND_UNIT_HERTZ = new DividedUnit("hertz", IND_UNIT_UNITY,
     		InternationalSystem.IND_UNIT_SI_SECOND);
     public static final Unit IND_UNIT_VOLT = new DividedUnit(

@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>ont.pom</artifactId>
+    <groupId>org.universAAL.ontology</groupId>
+    <version>3.4.1-SNAPSHOT</version>
+    <relativePath>../ont.pom</relativePath>
+  </parent>
+  
+  <artifactId>ont.cryptographic</artifactId>
+  <version>3.4.1-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>Cryptographic Ontology</name>
+  <description>The Cryptographic Ontology, ofering a base model of cryptograpich algorithms, techniques and services</description>
+
+  <licenses>
+  	<license>
+  		<name>Apache Software License 2.0</name>
+  		<url>https://www.apache.org/licenses/LICENSE-2.0</url>	
+  	</license>
+  </licenses>
+  
+  <developers>
+  	<developer>
+  		<name>Alejandro Medrano Gil</name>
+  		<organization>UPM</organization>
+  		<email>amedrano@lst.tfo.upm.es</email>
+  		<organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
+  	</developer>
+  	<developer>
+  		<name>Miguel Paramo Castrillo</name>
+  		<organization>UPM</organization>
+  		<email>mparamo@lst.tfo.upm.es</email>
+  		<organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
+  	</developer>
+  </developers>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.universAAL.support</groupId>
+      <artifactId>itests</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.data.representation.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.service.core</artifactId>
+    </dependency>
+  </dependencies>
+ 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.name}</Bundle-Name>
+            <Bundle-Description>${project.description}</Bundle-Description>
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.universAAL.ontology.cryptographic, org.universAAL.ontology.cryptographic.*</Export-Package>
+            <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

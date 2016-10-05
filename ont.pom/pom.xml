@@ -31,6 +31,7 @@
     <module>../ont.av</module>
     <module>../ont.che</module>
     <module>../ont.continuahealthmanager</module>
+    <module>../ont.cryptographic</module>
     <module>../ont.dependability</module>
     <module>../ont.device</module>
     <module>../ont.drools</module>
@@ -39,6 +40,7 @@
     <module>../ont.handgestures</module>
     <module>../ont.health.disease</module>
     <module>../ont.health.measurement</module>
+    <module>../ont.hvac</module>
     <module>../ont.impairment</module>
     <module>../ont.languages</module>
     <module>../ont.lighting</module>
@@ -244,6 +246,11 @@
       </dependency>
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.hvac</artifactId>
+        <version>3.4.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.recommendations</artifactId>
         <version>3.4.1-SNAPSHOT</version>
       </dependency>
@@ -265,6 +272,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.drools</artifactId>
+        <version>3.4.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.cryptographic</artifactId>
         <version>3.4.1-SNAPSHOT</version>
       </dependency>
     </dependencies>

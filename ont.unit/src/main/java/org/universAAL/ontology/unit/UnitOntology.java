@@ -303,6 +303,7 @@ public final class UnitOntology extends Ontology {
 	oci_Prefix.addInstance(BinarySystem.IND_PREFIX_BS_YOBI);
 
 	oci_Unit.addInstance(Util.IND_UNIT_UNITY);
+	oci_Unit.addInstance(Util.IND_UNIT_PERCENT);
 	oci_DividedUnit.addInstance(Util.IND_UNIT_HERTZ);
 	oci_DividedUnit.addInstance(Util.IND_UNIT_VOLT);
     }

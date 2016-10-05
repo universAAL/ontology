@@ -1,4 +1,4 @@
-universAAL ontology security conepts and services.
+universAAL ontology security concepts and services.
 
 Copyright 2013 Universidad Politécnica de Madrid http://www.upm.es
  				Life Supporting Technologies

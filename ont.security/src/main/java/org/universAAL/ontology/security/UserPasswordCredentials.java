@@ -17,7 +17,6 @@
 
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.xsd.Base64Binary;
 
 /**
  * User-Password type Credentials.

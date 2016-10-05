@@ -15,7 +15,6 @@
  ******************************************************************************/
 package org.universAAL.ontology.security;
 
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * @author amedrano

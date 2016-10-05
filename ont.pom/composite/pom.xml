@@ -51,6 +51,10 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.hvac</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.furniture</artifactId>
     </dependency>
     <dependency>
@@ -156,6 +160,10 @@
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.sysinfo</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.cryptographic</artifactId>
     </dependency>
   </dependencies>
   <build>

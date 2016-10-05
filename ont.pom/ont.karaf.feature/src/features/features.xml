@@ -29,6 +29,12 @@
 		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.unit/${ont.unit.version}</bundle>
 	</feature>
 	
+	<feature name="uAAL-Ont.Cryptographic" description="The Unit Sistem."
+		version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-MW</feature>
+		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.cryptographic/${ont.cryptographic.version}</bundle>
+	</feature>
+	
 	<feature name="uAAL-Ont.Languages" description= "List of All Human Languages."
 		version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-MW</feature>
@@ -91,6 +97,7 @@
 	
 	<feature name="uAAL-Ont.Device" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.Profile</feature>
+		<feature>uAAL-Ont.Measurement</feature>
 		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.device/${ont.device.version}</bundle>
 	</feature>
 	
@@ -182,5 +189,11 @@
 	<feature name="uAAL-Ont.ASOR" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-MW</feature>
 		<bundle start-level='60' start='true'>mvn:org.universAAL.ontology/ont.asor/${ont.asor.version}</bundle>
+	</feature>
+	
+	<feature name="uAAL-Ont.HVAC" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Device</feature>
+        <feature>uAAL-Ont.Unit</feature>
+		<bundle start-level='63' start='true'>mvn:org.universAAL.ontology/ont.hvac/${ont.hvac.version}</bundle>
 	</feature>
 </features>
