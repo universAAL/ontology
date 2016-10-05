@@ -21,6 +21,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.TypeExpression;
+import org.universAAL.middleware.owl.TypeURI;
 import org.universAAL.middleware.owl.supply.AbsLocation;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
@@ -248,6 +250,7 @@ public final class SecurityOntology extends Ontology {
 		 * Delegation
 		 */
 		oci_delegationForm.addSuperClass(SignedResource.MY_URI);
+		oci_delegationForm.addSuperClass(Asset.MY_URI);
 		oci_delegationForm.setResourceLabel("Delegation Form");
 		oci_delegationForm.setResourceComment("Delegation Form is a SignedResource, signed by the Authoriser enabling the Delegate to perform some Competences in the form of Roles.");
 		oci_delegationForm.addObjectProperty(DelegationForm.PROP_AUTHORISER);
@@ -256,6 +259,13 @@ public final class SecurityOntology extends Ontology {
 		oci_delegationForm.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DelegationForm.PROP_DELEGATE, User.MY_URI, 1, 1));
 		oci_delegationForm.addObjectProperty(DelegationForm.PROP_DELEGATED_COMPETENCES);
 		oci_delegationForm.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DelegationForm.PROP_DELEGATED_COMPETENCES, Role.MY_URI, 1, -1));
+		//Default AccessRight on DelegationForm
+		AccessRight ddfar = new AccessRight(NAMESPACE+"defaultAllReadDelegationForm");
+		ddfar.addAccessType(AccessType.read);
+		TypeExpression te = new TypeURI(DelegationForm.MY_URI, false);
+		ddfar.setAccessTo(te);
+		oci_delegationForm.addRestriction(MergedRestriction.getFixedValueRestriction(Asset.PROP_HAS_DEFAULT_ACCESS, ddfar));
+		
 		/*
 		 * Sessions
 		 */
