@@ -64,7 +64,7 @@ public class AccessRight extends ManagedIndividual {
 	public void addAccessType(AccessType at){
 		Object o = getProperty(PROP_ACCESS_TYPE);
 		if (o == null){
-			setProperty(PROP_ACCESS_TYPE, at);
+			changeProperty(PROP_ACCESS_TYPE, at);
 		}else if (o instanceof AccessType){
 			ArrayList n = new ArrayList();
 			n.add(o);
@@ -79,7 +79,7 @@ public class AccessRight extends ManagedIndividual {
 	public void removeAccessType(AccessType at){
 		Object o = getProperty(PROP_ACCESS_TYPE);
 		if (o == null){
-			setProperty(PROP_ACCESS_TYPE, at);
+			changeProperty(PROP_ACCESS_TYPE, at);
 		}else if (o instanceof AccessType && o.equals(at)){
 			changeProperty(PROP_ACCESS_TYPE, null);
 		}else if (o instanceof List){

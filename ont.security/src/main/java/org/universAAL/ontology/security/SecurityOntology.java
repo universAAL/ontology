@@ -262,11 +262,11 @@ public final class SecurityOntology extends Ontology {
 		oci_delegationForm.addObjectProperty(DelegationForm.PROP_DELEGATED_COMPETENCES);
 		oci_delegationForm.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DelegationForm.PROP_DELEGATED_COMPETENCES, Role.MY_URI, 1, -1));
 		//Default AccessRight on DelegationForm
-		AccessRight ddfar = new AccessRight(NAMESPACE+"defaultAllReadDelegationForm");
-		ddfar.addAccessType(AccessType.read);
-		TypeExpression te = new TypeURI(DelegationForm.MY_URI, false);
-		ddfar.setAccessTo(te);
-		oci_delegationForm.addRestriction(MergedRestriction.getFixedValueRestriction(Asset.PROP_HAS_DEFAULT_ACCESS, ddfar));
+//		AccessRight ddfar = new AccessRight(NAMESPACE+"defaultAllReadDelegationForm");
+//		ddfar.addAccessType(AccessType.read);
+//		TypeExpression te = new TypeURI(DelegationForm.MY_URI, false);
+//		ddfar.setAccessTo(te);
+//		oci_delegationForm.addRestriction(MergedRestriction.getFixedValueRestriction(Asset.PROP_HAS_DEFAULT_ACCESS, ddfar));
 		
 		/*
 		 * Sessions

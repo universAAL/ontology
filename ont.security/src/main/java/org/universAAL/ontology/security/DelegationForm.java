@@ -18,6 +18,8 @@ package org.universAAL.ontology.security;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.universAAL.middleware.owl.TypeExpression;
+import org.universAAL.middleware.owl.TypeURI;
 import org.universAAL.ontology.cryptographic.SignedResource;
 
 /**
@@ -50,12 +52,22 @@ public class DelegationForm extends SignedResource {
 	 */
 	public DelegationForm(String uri) {
 		super(uri);
+		addDefaultAccessRight();
 	}
 
 	/**{@inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	}
+	
+	private void addDefaultAccessRight(){
+		AccessRight ddfar = new AccessRight(SecurityOntology.NAMESPACE+"defaultAllReadDelegationForm");
+		ddfar.addAccessType(AccessType.read);
+		TypeExpression te = new TypeURI(DelegationForm.MY_URI, false);
+		ddfar.setAccessTo(te);
+		setProperty(Asset.PROP_HAS_DEFAULT_ACCESS, ddfar);
+	}
+	
 
 	/**{@inheritDoc} */
 	public String getClassURI() {
