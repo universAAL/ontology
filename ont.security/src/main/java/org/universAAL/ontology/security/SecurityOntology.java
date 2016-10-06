@@ -30,6 +30,7 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.xsd.Base64Binary;
 import org.universAAL.ontology.SecurityFactory;
+import org.universAAL.ontology.cryptographic.AsymmetricEncryption;
 import org.universAAL.ontology.cryptographic.CryptographicOntology;
 import org.universAAL.ontology.cryptographic.Digest;
 import org.universAAL.ontology.cryptographic.KeyRing;
@@ -137,6 +138,7 @@ public final class SecurityOntology extends Ontology {
 		OntClassInfoSetup oci_delegationForm = createNewOntClassInfo(DelegationForm.MY_URI, factory,12);
 		OntClassInfoSetup oci_roleMngService = createNewOntClassInfo(
 				RoleManagementService.MY_URI, factory, 13);
+		OntClassInfoSetup oci_anonymizationService = createNewOntClassInfo(AnonymizationService.MY_URI, factory, 14);
 		
 
 		// Credentials
@@ -374,6 +376,15 @@ public final class SecurityOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						AuthorizationService.PROP_ASSET_ACCESS,
 						Asset.MY_URI, 1, 1));
+		
+		//Anonymization Service
+		oci_anonymizationService.setResourceComment("Service To (de)anonymize references to objects");
+		oci_anonymizationService.setResourceLabel("Anonymization Service");
+		oci_anonymizationService.addSuperClass(Service.MY_URI);
+		oci_anonymizationService.addObjectProperty(AnonymizationService.PROP_ANONYMIZABLE);
+		oci_anonymizationService.addRestriction(MergedRestriction.getAllValuesRestriction(AnonymizationService.PROP_ANONYMIZABLE, Anonymizable.MY_URI));
+		oci_anonymizationService.addObjectProperty(AnonymizationService.PROP_ASYMMETRIC_ENCRYPTION);
+		oci_anonymizationService.addRestriction(MergedRestriction.getAllValuesRestriction(AnonymizationService.PROP_ASYMMETRIC_ENCRYPTION, AsymmetricEncryption.MY_URI));
 
 		// Session Service
 		oci_sessionService
