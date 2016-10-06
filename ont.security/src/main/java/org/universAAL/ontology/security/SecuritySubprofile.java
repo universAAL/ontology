@@ -21,7 +21,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.universAAL.middleware.owl.Intersection;
+import org.universAAL.middleware.owl.MergedRestriction;
+import org.universAAL.middleware.owl.TypeURI;
 import org.universAAL.ontology.profile.SubProfile;
+import org.universAAL.ontology.profile.User;
 
 /**
  * Security Subprofile to store Credentials, Roles, AccessRights ...
@@ -134,4 +138,26 @@ public class SecuritySubprofile extends SubProfile {
 	    return Collections.emptyList();
 	}
 	
+	
+	/**
+	 * Generate Skeleton Roles to be added when creating new SecuritySubProfiles.
+	 */
+	public void initialiseDefaultRolesForUser(User u){
+		Role delegationRole = new Role();
+		delegationRole.setResourceLabel("Delegation Role");
+		delegationRole.setResourceComment("Enables managing Delegation Forms issued by user: " + u.getURI());
+		AccessRight dar = new AccessRight();
+		dar.addAccessType(AccessType.read); //already granted by default access
+		dar.addAccessType(AccessType.change);
+		dar.addAccessType(AccessType.add);
+		dar.addAccessType(AccessType.remove);
+		
+		Intersection te = new Intersection();
+		te.addType(new TypeURI(DelegationForm.MY_URI, false));
+		te.addType(MergedRestriction.getFixedValueRestriction(DelegationForm.PROP_AUTHORISER, u));
+		
+		dar.setAccessTo(te);
+		delegationRole.addAccessRight(dar);
+		addrole(delegationRole);
+	}
 }
