@@ -144,6 +144,8 @@ public final class CryptographicOntology extends Ontology {
     oci_KeyRing.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(KeyRing.PROP_PUBLIC_KEY, 
           TypeMapper.getDatatypeURI(Base64Binary.class), 0, 1));
+    oci_KeyRing.addObjectProperty(KeyRing.PROP_ASYMMETRIC);
+    oci_KeyRing.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(KeyRing.PROP_ASYMMETRIC, AsymmetricEncryption.MY_URI, 0, 1));
 
     oci_AsymmetricEncryption.setResourceComment("Any cryptographic system that uses pairs of keys.");
     oci_AsymmetricEncryption.setResourceLabel("Asymmetric Encryption");

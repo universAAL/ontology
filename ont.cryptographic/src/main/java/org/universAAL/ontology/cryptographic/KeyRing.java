@@ -40,6 +40,8 @@ public class KeyRing extends EncryptionKey {
   public static final String PROP_PUBLIC_KEY = CryptographicOntology.NAMESPACE
     + "publicKey";
 
+  public static final String PROP_ASYMMETRIC = CryptographicOntology.NAMESPACE
+		    + "usedWithAsymetricMethod";
 
   public KeyRing () {
     super();
@@ -118,6 +120,14 @@ public class KeyRing extends EncryptionKey {
       propList.add(propertyValue[i]);
     }
     changeProperty(PROP_CERTIFICATION_AUTHORITY, propList);
+  }
+  
+  public AsymmetricEncryption getAsymmetric(){
+	  return (AsymmetricEncryption) getProperty(PROP_ASYMMETRIC);
+  }
+  
+  public void setAsymmetric(AsymmetricEncryption ae){
+	  changeProperty(PROP_ASYMMETRIC, ae);
   }
 
 }
