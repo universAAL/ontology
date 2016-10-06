@@ -67,15 +67,15 @@ public class CryptographicFactory implements ResourceFactory {
      case 11:
     	 return new SecureHashAlgorithm(instanceURI);
      case 12:
-    	 return new AES(AES.SINGLETON_URI); //SINGLETON INSTANCE: always the same.
+    	 return new AES(instanceURI); 
      case 13:
-    	 return new Blowfish(Blowfish.SINGLETON_URI); //SINGLETON INSTANCE: always the same.
+    	 return new Blowfish(instanceURI); 
      case 14:
-    	 return new DES(DES.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
+    	 return new DES(instanceURI);
      case 15:
-    	 return new RSA(RSA.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
+    	 return new RSA(instanceURI);
      case 16:
-    	 return new RSA(DSA.SINGLETON_URI);//SINGLETON INSTANCE: always the same.
+    	 return new DSA(instanceURI);
      case 17:
     	 return new DestinataryEncryptedSessionKey(instanceURI);
 	}

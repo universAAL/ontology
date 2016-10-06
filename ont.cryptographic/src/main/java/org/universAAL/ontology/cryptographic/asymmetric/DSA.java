@@ -25,8 +25,6 @@ import org.universAAL.ontology.cryptographic.CryptographicOntology;
 public class DSA extends AsymmetricEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "DSA";
-	
-	public static final String SINGLETON_URI = CryptographicOntology.NAMESPACE + "dsa";
 
 	/**
 	 * 
