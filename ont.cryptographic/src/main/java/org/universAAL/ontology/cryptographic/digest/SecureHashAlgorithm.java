@@ -26,10 +26,10 @@ public class SecureHashAlgorithm extends Digest {
 	
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "SecureHashAlgorithm";
 	
-	public static final MessageDigest IND_SHA = new MessageDigest(CryptographicOntology.NAMESPACE + "sha");
-	public static final MessageDigest IND_SHA256 = new MessageDigest(CryptographicOntology.NAMESPACE + "sha-256");
-	public static final MessageDigest IND_SHA384 = new MessageDigest(CryptographicOntology.NAMESPACE + "sha-384");
-	public static final MessageDigest IND_SHA512 = new MessageDigest(CryptographicOntology.NAMESPACE + "sha-512");
+	public static final SecureHashAlgorithm IND_SHA = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha");
+	public static final SecureHashAlgorithm IND_SHA256 = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha-256");
+	public static final SecureHashAlgorithm IND_SHA384 = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha-384");
+	public static final SecureHashAlgorithm IND_SHA512 = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha-512");
 	
 	/**
 	 * 
