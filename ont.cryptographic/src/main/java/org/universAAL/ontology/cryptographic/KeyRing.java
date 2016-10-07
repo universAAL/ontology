@@ -77,7 +77,6 @@ public class KeyRing extends EncryptionKey {
   }		
 
   public void setPublicKey(Base64Binary newPropValue) {
-    if (newPropValue != null)
       changeProperty(PROP_PUBLIC_KEY, newPropValue);
   }		
 
@@ -86,7 +85,6 @@ public class KeyRing extends EncryptionKey {
   }		
 
   public void setPrivateKey(Base64Binary newPropValue) {
-    if (newPropValue != null)
       changeProperty(PROP_PRIVATE_KEY, newPropValue);
   }		
 
