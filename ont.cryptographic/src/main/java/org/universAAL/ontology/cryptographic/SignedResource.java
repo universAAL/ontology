@@ -112,6 +112,10 @@ public class SignedResource extends ManagedIndividual {
     }
     changeProperty(PROP_SIGNATURE, propList);
   }
+  
+  public void setSignature(List propertyValue) {
+     changeProperty(PROP_SIGNATURE, propertyValue);
+    }
 
   public Resource getSignedResource() {
     return (Resource)getProperty(PROP_SIGNED_RESOURCE);
