@@ -385,12 +385,13 @@ public final class CryptographicOntology extends Ontology {
      */
     //RSA
     OntClassInfoSetup oci_rsa = createNewOntClassInfo(RSA.MY_URI, factory, 15);
+    oci_rsa.addSuperClass(AsymmetricEncryption.MY_URI);
     oci_rsa.setResourceLabel("RSA");
     
     //DSA
     OntClassInfoSetup oci_dsa = createNewOntClassInfo(DSA.MY_URI, factory, 16);
     oci_dsa.addSuperClass(AsymmetricEncryption.MY_URI);
-    oci_dsa.setResourceLabel("RSA");
+    oci_dsa.setResourceLabel("DSA");
 
   }
 }
