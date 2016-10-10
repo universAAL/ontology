@@ -92,6 +92,7 @@ public final class CryptographicOntology extends Ontology {
     OntClassInfoSetup oci_SignAndVerifyService = createNewOntClassInfo(SignAndVerifyService.MY_URI, factory, 9);
     OntClassInfoSetup oci_Encryption = createNewAbstractOntClassInfo(Encryption.MY_URI);
     
+    //TODO: ADD HybridEncryption concept (subclass of both SymmetricEncryption and AsymmetricEncryption
 
     OntClassInfoSetup oci_messageDigest = createNewOntClassInfo(MessageDigest.MY_URI, factory, 10);
     OntClassInfoSetup oci_SecureHashAlgorithm = createNewOntClassInfo(SecureHashAlgorithm.MY_URI, factory, 11);
