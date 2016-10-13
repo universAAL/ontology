@@ -86,6 +86,7 @@
 	</feature>
 	
 	<feature name="uAAL-Ont.Security" version="${pom.version}" resolver='(obr)'>
+		<feature>uAAL-Ont.Cryptographic</feature>
 		<feature>uAAL-Ont.Profile</feature>
 		<bundle start-level='62' start='true'>mvn:org.universAAL.ontology/ont.security/${ont.security.version}</bundle>
 	</feature>
