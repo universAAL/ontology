@@ -22,8 +22,10 @@ import java.util.Collections;
 import java.util.List;
 
 import org.universAAL.middleware.owl.Intersection;
+import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.TypeURI;
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.User;
 
@@ -78,7 +80,7 @@ public class SecuritySubprofile extends SubProfile {
 	    if (p instanceof List){
 		return (List) p;
 	    } 
-	    else if (p instanceof Credentials){
+	    else if (p != null){
 		ArrayList a = new ArrayList();
 		a.add(p);
 		return a;
@@ -86,7 +88,7 @@ public class SecuritySubprofile extends SubProfile {
 	    return Collections.emptyList();
 	}
 	
-	public void addCredential(Credentials cred){
+	public void addCredential(Resource cred){
 	    if (cred == null)
 		return;
 	    Object p = getProperty(PROP_CREDENTIALS);
@@ -94,7 +96,7 @@ public class SecuritySubprofile extends SubProfile {
 	    if (p instanceof List){
 		a.addAll((List)p);
 	    } 
-	    else if (p instanceof Credentials){
+	    else if (p != null){
 		a.add(p);
 	    }
 	    if (a.isEmpty()){
