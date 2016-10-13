@@ -52,7 +52,7 @@ public class DelegationForm extends SignedResource {
 	 */
 	public DelegationForm(String uri) {
 		super(uri);
-		addDefaultAccessRight();
+		//addDefaultAccessRight(); //TODO: how to enforce this by default without breaking the Ont.create?
 	}
 
 	/**{@inheritDoc} */

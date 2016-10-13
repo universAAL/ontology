@@ -56,7 +56,10 @@ public class LocationBoundSession extends Session {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_UNDEFINED;
+		if (propURI.equals(PROP_BOUNDED_LOCATION)) {
+			return PROP_SERIALIZATION_REDUCED;
+		}
+		return super.getPropSerializationType(propURI);
 	}
 
 }

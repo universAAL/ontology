@@ -110,7 +110,7 @@ public final class CryptographicOntology extends Ontology {
     oci_DigestService.setResourceComment("");
     oci_DigestService.setResourceLabel("Digest Service");
     oci_DigestService.addSuperClass(CryptographicService.MY_URI); 
-    oci_DigestService.addObjectProperty(DigestService.PROP_RESOURCE_TO_DIGEST).setFunctional();
+    oci_DigestService.addDatatypeProperty(DigestService.PROP_RESOURCE_TO_DIGEST).setFunctional();
     oci_DigestService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(DigestService.PROP_RESOURCE_TO_DIGEST, 
           TypeMapper.getDatatypeURI(Resource.class), 1, 1));
@@ -209,7 +209,7 @@ public final class CryptographicOntology extends Ontology {
     oci_EncryptionService.addRestriction(MergedRestriction
       .getAllValuesRestriction(EncryptionService.PROP_ENCRYPTION, 
           Encryption.MY_URI));
-    oci_EncryptionService.addObjectProperty(EncryptionService.PROP_ENCRYPTS).setFunctional();
+    oci_EncryptionService.addDatatypeProperty(EncryptionService.PROP_ENCRYPTS).setFunctional();
     oci_EncryptionService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(EncryptionService.PROP_ENCRYPTS, 
           TypeMapper.getDatatypeURI(Resource.class), 1, 1));
@@ -225,7 +225,7 @@ public final class CryptographicOntology extends Ontology {
     oci_SignedResource.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignedResource.PROP_ASYMMETRIC, 
           AsymmetricEncryption.MY_URI, 1, 1));
-    oci_SignedResource.addObjectProperty(SignedResource.PROP_SIGNED_RESOURCE).setFunctional();
+    oci_SignedResource.addDatatypeProperty(SignedResource.PROP_SIGNED_RESOURCE).setFunctional();
     oci_SignedResource.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignedResource.PROP_SIGNED_RESOURCE, 
           TypeMapper.getDatatypeURI(Resource.class), 1, 1));
@@ -284,7 +284,7 @@ public final class CryptographicOntology extends Ontology {
     oci_SignAndVerifyService.setResourceComment("Service to sign or verify signatures of RDF resources.");
     oci_SignAndVerifyService.setResourceLabel("Sign And Verify Service");
     oci_SignAndVerifyService.addSuperClass(CryptographicService.MY_URI); 
-    oci_SignAndVerifyService.addObjectProperty(SignAndVerifyService.PROP_SIGN).setFunctional();
+    oci_SignAndVerifyService.addDatatypeProperty(SignAndVerifyService.PROP_SIGN).setFunctional();
     oci_SignAndVerifyService.addRestriction(MergedRestriction
       .getAllValuesRestrictionWithCardinality(SignAndVerifyService.PROP_SIGN, 
           TypeMapper.getDatatypeURI(Resource.class), 1, 1));

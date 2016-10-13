@@ -56,7 +56,10 @@ public class DeviceBoundSession extends Session {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_UNDEFINED;
+		if (propURI.equals(PROP_BOUNDED_DEVICE))
+			return PROP_SERIALIZATION_REDUCED;
+		else
+			return super.getPropSerializationType(propURI);
 	}
 
 }

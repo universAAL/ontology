@@ -59,7 +59,7 @@ public class AnonymizationService extends Service {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_ANONYMIZABLE)){
+		if (propURI.equals(PROP_ANONYMIZABLE) || propURI.equals(PROP_ASYMMETRIC_ENCRYPTION)){
 			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);
