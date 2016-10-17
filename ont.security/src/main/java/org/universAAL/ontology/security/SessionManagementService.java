@@ -73,7 +73,7 @@ public class SessionManagementService extends Service {
 		if (propURI.equals(PROP_USER)){
 			return PROP_SERIALIZATION_FULL;
 		}
-		return PROP_SERIALIZATION_UNDEFINED;
+		return super.getPropSerializationType(propURI);
 	}
 
 	/*

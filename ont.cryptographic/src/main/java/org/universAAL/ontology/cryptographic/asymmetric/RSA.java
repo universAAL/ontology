@@ -26,7 +26,6 @@ public class RSA extends AsymmetricEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "RSA";
 	
-	public static final String SINGLETON_URI = CryptographicOntology.NAMESPACE + "rsa";
 
 	/**
 	 * 

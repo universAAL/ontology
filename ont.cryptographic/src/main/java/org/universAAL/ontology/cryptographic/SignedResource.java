@@ -16,6 +16,7 @@
 package org.universAAL.ontology.cryptographic;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -77,13 +78,16 @@ public class SignedResource extends ManagedIndividual {
       && hasProperty(PROP_DIGEST);
   }
 
-  public Base64Binary[] getSignature() {
+  public List getSignature() {
     Object propList = getProperty(PROP_SIGNATURE);
     if (propList instanceof List)
-      return (Base64Binary[]) ((List) propList).toArray(new String[0]);
-    else if (propList != null)
-      return new Base64Binary[] {(Base64Binary)propList}; // Handle special case of a single item not contained in a list
-    return new Base64Binary[0];
+      return (List) propList;
+    else if (propList != null){
+    	ArrayList l = new ArrayList();
+    	l.add(propList);
+      return l; 
+    }
+    return Collections.EMPTY_LIST;
   }
 
   public void addSignature(Base64Binary newValue) {
@@ -108,6 +112,10 @@ public class SignedResource extends ManagedIndividual {
     }
     changeProperty(PROP_SIGNATURE, propList);
   }
+  
+  public void setSignature(List propertyValue) {
+     changeProperty(PROP_SIGNATURE, propertyValue);
+    }
 
   public Resource getSignedResource() {
     return (Resource)getProperty(PROP_SIGNED_RESOURCE);

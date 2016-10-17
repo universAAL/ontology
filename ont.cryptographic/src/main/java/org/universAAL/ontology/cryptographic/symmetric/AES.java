@@ -26,7 +26,6 @@ public class AES extends SimpleBlockEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "AES";
 	
-	public static final String SINGLETON_URI = CryptographicOntology.NAMESPACE + "aes";
 	/**
 	 * 
 	 */

@@ -17,29 +17,32 @@
 
 package org.universAAL.ontology.security;
 
+import org.universAAL.middleware.service.owl.Service;
 
 /**
- * Location bound Session, a session that is only valid within a location.
+ * Service Description for Authentication.
+ * Authenticator mechanisms should provide profiles for this service
  * @author amedrano
  *
  */
-public class LocationBoundSession extends Session {
+public class AnonymizationService extends Service {
 
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "LocationBoundedSession";
-    public static final String PROP_BOUNDED_LOCATION = SecurityOntology.NAMESPACE + "locationBound";
+    public static final String MY_URI = SecurityOntology.NAMESPACE + "AnonymizationService";
+    public static final String PROP_ANONYMIZABLE = SecurityOntology.NAMESPACE + "anonymizableResource";
+    public static final String PROP_ASYMMETRIC_ENCRYPTION = SecurityOntology.NAMESPACE + "asymmetricEncryption to use";
 	
 	/**
 	 * Only for serializers.
 	 */
-	public LocationBoundSession() {
+	public AnonymizationService() {
 	    super();
 	}
 
 	/**
 	 * @param uri
 	 */
-	public LocationBoundSession(String uri) {
+	public AnonymizationService(String uri) {
 		super(uri);
 	}
 
@@ -56,8 +59,8 @@ public class LocationBoundSession extends Session {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_BOUNDED_LOCATION)) {
-			return PROP_SERIALIZATION_REDUCED;
+		if (propURI.equals(PROP_ANONYMIZABLE) || propURI.equals(PROP_ASYMMETRIC_ENCRYPTION)){
+			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);
 	}
