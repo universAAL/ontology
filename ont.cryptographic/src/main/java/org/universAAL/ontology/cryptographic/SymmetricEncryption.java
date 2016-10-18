@@ -67,7 +67,10 @@ public abstract class SymmetricEncryption extends Encryption {
 
   /**{@inheritDoc} */
   public EncryptionKey[] getKey() {
-	  return new EncryptionKey[]{getSimpleKey()};
+	  if (hasProperty(PROP_SIMPLE_KEY))
+		  return new EncryptionKey[]{getSimpleKey()};
+	  else
+		  return null;
   }
 
   /**{@inheritDoc} */
