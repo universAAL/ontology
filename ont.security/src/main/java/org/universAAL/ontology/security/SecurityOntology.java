@@ -99,11 +99,12 @@ public final class SecurityOntology extends Ontology {
 
 		OntClassInfoSetup oci_accessType = createNewAbstractOntClassInfo(AccessType.MY_URI);
 
-		OntClassInfoSetup oci_anonymizable = createNewAbstractOntClassInfo(Anonymizable.MY_URI);
+//		OntClassInfoSetup oci_anonymizable = createNewAbstractOntClassInfo(Anonymizable.MY_URI);
+		OntClassInfoSetup oci_anonymizable = createNewOntClassInfo(Anonymizable.MY_URI, factory, 15);
 		oci_anonymizable.addSuperClass(ManagedIndividual.MY_URI);
 		oci_anonymizable.setResourceLabel("Anonymizable");
 		oci_anonymizable.setResourceComment("Any anonymizable resource should be subclass of this class to enable the anonymization service to encrypt the property reference");
-		oci_anonymizable.addObjectProperty(Anonymizable.PROP_ANNONYMOUS_RESOURCE);
+		oci_anonymizable.addObjectProperty(Anonymizable.PROP_ANNONYMOUS_RESOURCE).setFunctional();
 		
 		/*
 		 * Extension of profiling ontology to automatically allow for subprofiles to be anonymizable
@@ -379,9 +380,9 @@ public final class SecurityOntology extends Ontology {
 		oci_anonymizationService.setResourceComment("Service To (de)anonymize references to objects");
 		oci_anonymizationService.setResourceLabel("Anonymization Service");
 		oci_anonymizationService.addSuperClass(Service.MY_URI);
-		oci_anonymizationService.addObjectProperty(AnonymizationService.PROP_ANONYMIZABLE);
+		oci_anonymizationService.addObjectProperty(AnonymizationService.PROP_ANONYMIZABLE).setFunctional();
 		oci_anonymizationService.addRestriction(MergedRestriction.getAllValuesRestriction(AnonymizationService.PROP_ANONYMIZABLE, Anonymizable.MY_URI));
-		oci_anonymizationService.addObjectProperty(AnonymizationService.PROP_ASYMMETRIC_ENCRYPTION);
+		oci_anonymizationService.addObjectProperty(AnonymizationService.PROP_ASYMMETRIC_ENCRYPTION).setFunctional();
 		oci_anonymizationService.addRestriction(MergedRestriction.getAllValuesRestriction(AnonymizationService.PROP_ASYMMETRIC_ENCRYPTION, AsymmetricEncryption.MY_URI));
 
 		// Session Service

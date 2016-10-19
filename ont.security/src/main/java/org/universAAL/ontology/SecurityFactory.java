@@ -19,6 +19,7 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.security.AccessRight;
+import org.universAAL.ontology.security.Anonymizable;
 import org.universAAL.ontology.security.AnonymizationService;
 import org.universAAL.ontology.security.AuthenticationService;
 import org.universAAL.ontology.security.AuthorizationService;
@@ -74,6 +75,8 @@ public class SecurityFactory implements ResourceFactory {
 		return new RoleManagementService(instanceURI);
 	case 14:
 		return new AnonymizationService(instanceURI);
+	case 15:
+		return new Anonymizable(instanceURI);
 	}
 	return null;
     }
