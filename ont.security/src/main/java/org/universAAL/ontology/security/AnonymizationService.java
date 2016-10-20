@@ -30,7 +30,7 @@ public class AnonymizationService extends Service {
 
     public static final String MY_URI = SecurityOntology.NAMESPACE + "AnonymizationService";
     public static final String PROP_ANONYMIZABLE = SecurityOntology.NAMESPACE + "anonymizableResource";
-    public static final String PROP_ASYMMETRIC_ENCRYPTION = SecurityOntology.NAMESPACE + "asymmetricEncryption to use";
+    public static final String PROP_ASYMMETRIC_ENCRYPTION = SecurityOntology.NAMESPACE + "asymmetricEncryptionToUse";
 	
 	/**
 	 * Only for serializers.

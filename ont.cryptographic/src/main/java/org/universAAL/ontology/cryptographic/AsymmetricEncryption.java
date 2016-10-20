@@ -67,6 +67,11 @@ public abstract class AsymmetricEncryption extends Encryption {
     return new KeyRing[0];
   }
 
+  /**{@inheritDoc} */
+  public EncryptionKey[] getKey() {
+	  return getKeyRing();
+  }
+
   public void addKeyRing(KeyRing newValue) {
     Object propList = getProperty(PROP_KEY_RING);
     List newList;
@@ -82,12 +87,22 @@ public abstract class AsymmetricEncryption extends Encryption {
   }
   
 
-  public void setKeyRing(KeyRing[] propertyValue) {
+  /**{@inheritDoc} */
+  public void addKey(EncryptionKey newValue) {
+	  addKeyRing((KeyRing) newValue);
+  }
+
+public void setKeyRing(KeyRing[] propertyValue) {
     List propList = new ArrayList(propertyValue.length);
     for (int i = 0; i < propertyValue.length; i++) {
       propList.add(propertyValue[i]);
     }
     changeProperty(PROP_KEY_RING, propList);
+  }
+
+/**{@inheritDoc} */
+  public void setKey(EncryptionKey[] propertyValue) {
+	  setKeyRing((KeyRing[]) propertyValue);
   }
 
 }

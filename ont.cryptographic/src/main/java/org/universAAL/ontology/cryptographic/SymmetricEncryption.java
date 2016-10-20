@@ -63,6 +63,24 @@ public abstract class SymmetricEncryption extends Encryption {
   public void setSimpleKey(SimpleKey newPropValue) {
     if (newPropValue != null)
       changeProperty(PROP_SIMPLE_KEY, newPropValue);
+  }
+
+  /**{@inheritDoc} */
+  public EncryptionKey[] getKey() {
+	  if (hasProperty(PROP_SIMPLE_KEY))
+		  return new EncryptionKey[]{getSimpleKey()};
+	  else
+		  return null;
+  }
+
+  /**{@inheritDoc} */
+  public void addKey(EncryptionKey newValue) {
+	  setSimpleKey((SimpleKey) newValue);
+  }
+
+  /**{@inheritDoc} */
+  public void setKey(EncryptionKey[] propertyValue) {
+	  setSimpleKey((SimpleKey) propertyValue[0]);
   }		
 
 }

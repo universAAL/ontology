@@ -25,6 +25,9 @@
  */
 package org.universAAL.ontology.profile;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
@@ -65,17 +68,40 @@ public class Profile extends ManagedIndividual {
     public int getPropSerializationType(String propURI) {
 	return PROP_SERIALIZATION_FULL;
     }
-
-    public void setSubProfile(SubProfile value) {
-	super.setProperty(PROP_HAS_SUB_PROFILE, value);
-    }
-
-    public SubProfile getSubProfile() {
-	return (SubProfile) props.get(PROP_HAS_SUB_PROFILE);
-    }
     
     public boolean isClosedCollection(String propURI) {
 	return false;
+    }
+    
+    public SubProfile[] getSubProfile() {
+	Object propList = getProperty(PROP_HAS_SUB_PROFILE);
+	if (propList instanceof List)
+	    return (SubProfile[]) ((List) propList).toArray(new SubProfile[0]);
+	else if (propList != null)
+	    return new SubProfile[] { (SubProfile) propList };
+	return new SubProfile[0];
+    }
+
+    public void addSubProfile(SubProfile newValue) {
+	Object propList = getProperty(PROP_HAS_SUB_PROFILE);
+	List newList;
+	if (propList instanceof List)
+	    newList = (List) propList;
+	else {
+	    newList = new ArrayList();
+	    if (propList != null)
+		newList.add(propList);
+	}
+	newList.add(newValue);
+	changeProperty(PROP_HAS_SUB_PROFILE, newList);
+    }
+	  
+    public void setSubProfile(SubProfile[] propertyValue) {
+	List propList = new ArrayList(propertyValue.length);
+	for (int i = 0; i < propertyValue.length; i++) {
+	    propList.add(propertyValue[i]);
+	}
+	changeProperty(PROP_HAS_SUB_PROFILE, propList);
     }
 
 }

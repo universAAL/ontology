@@ -34,7 +34,6 @@ public class Anonymizable extends ManagedIndividual {
 	 * 
 	 */
 	public Anonymizable() {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -42,7 +41,11 @@ public class Anonymizable extends ManagedIndividual {
 	 */
 	public Anonymizable(String uri) {
 		super(uri);
-		// TODO Auto-generated constructor stub
+	}
+
+	/**{@inheritDoc} */
+	public String getClassURI() {
+		return MY_URI;
 	}
 
 	/**
