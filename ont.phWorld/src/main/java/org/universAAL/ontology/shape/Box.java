@@ -97,30 +97,30 @@ public class Box extends Shape3D {
 	    CoordinateSystem system) {
 	super(uri, system);
 	props.put(PROP_WIDTH, new Double(width));
-	props.put(PROP_HEIGHT, new Double(depth));
-	props.put(PROP_DEPTH, new Double(height));
+	props.put(PROP_HEIGHT, new Double(height));
+	props.put(PROP_DEPTH, new Double(depth));
     }
 
     public Box(double width, double height, double depth,
 	    CoordinateSystem system) {
 	super(system);
 	props.put(PROP_WIDTH, new Double(width));
-	props.put(PROP_HEIGHT, new Double(depth));
-	props.put(PROP_DEPTH, new Double(height));
+	props.put(PROP_HEIGHT, new Double(height));
+	props.put(PROP_DEPTH, new Double(depth));
     }
 
     public Box(String uri, double width, double height, double depth) {
 	super(uri);
 	props.put(PROP_WIDTH, new Double(width));
-	props.put(PROP_HEIGHT, new Double(depth));
-	props.put(PROP_DEPTH, new Double(height));
+	props.put(PROP_HEIGHT, new Double(height));
+	props.put(PROP_DEPTH, new Double(depth));
     }
 
     public Box(double width, double height, double depth) {
 	super();
 	props.put(PROP_WIDTH, new Double(width));
-	props.put(PROP_HEIGHT, new Double(depth));
-	props.put(PROP_DEPTH, new Double(height));
+	props.put(PROP_HEIGHT, new Double(height));
+	props.put(PROP_DEPTH, new Double(depth));
     }
 
     public String getClassURI() {
