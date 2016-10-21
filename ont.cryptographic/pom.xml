@@ -10,8 +10,8 @@
   <artifactId>ont.cryptographic</artifactId>
   <version>3.4.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>Cryptographic Ontology</name>
-  <description>The Cryptographic Ontology, ofering a base model of cryptograpich algorithms, techniques and services</description>
+  <name>universAAL Ontology Cryptographic</name>
+  <description>The Cryptographic Ontology, offering a base model of cryptograpic algorithms, techniques and services</description>
 
   <licenses>
   	<license>
