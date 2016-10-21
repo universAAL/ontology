@@ -47,7 +47,7 @@ public class BusTest extends BusTestCase {
 //	    // hp.setAssignedAssistedPerson(new AssistedPerson(ap.getURI()));
 //	}
 	UserProfile up = new AssistedPersonProfile("uriUserProfile");
-	up.setSubProfile(hp);
+	up.setSubProfile(new HealthProfile[] {hp});
 	ap.setProfile(up);
 	
 	
