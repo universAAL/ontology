@@ -23,6 +23,7 @@ import org.universAAL.ontology.security.Anonymizable;
 import org.universAAL.ontology.security.AnonymizationService;
 import org.universAAL.ontology.security.AuthenticationService;
 import org.universAAL.ontology.security.AuthorizationService;
+import org.universAAL.ontology.security.Credentials;
 import org.universAAL.ontology.security.DelegationForm;
 import org.universAAL.ontology.security.DeviceBoundSession;
 import org.universAAL.ontology.security.LocationBoundSession;
@@ -77,6 +78,8 @@ public class SecurityFactory implements ResourceFactory {
 		return new AnonymizationService(instanceURI);
 	case 15:
 		return new Anonymizable(instanceURI);
+	case 16:
+		return new Credentials(instanceURI);
 	}
 	return null;
     }

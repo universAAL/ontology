@@ -68,7 +68,8 @@ public final class SecurityOntology extends Ontology {
 		addImport(ProfileOntology.NAMESPACE);
 		addImport(CryptographicOntology.NAMESPACE);
 
-		OntClassInfoSetup oci_credentials = createNewAbstractOntClassInfo(Credentials.MY_URI);
+//		OntClassInfoSetup oci_credentials = createNewAbstractOntClassInfo(Credentials.MY_URI);
+		OntClassInfoSetup oci_credentials = createNewOntClassInfo(Credentials.MY_URI,factory,16);
 		OntClassInfoSetup oci_session = createNewAbstractOntClassInfo(Session.MY_URI);
 		OntClassInfoSetup oci_Factor = createNewAbstractOntClassInfo(Factor.MY_URI);
 		oci_Factor.addSuperClass(ManagedIndividual.MY_URI);
