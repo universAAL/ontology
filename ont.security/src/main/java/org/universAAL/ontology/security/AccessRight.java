@@ -20,6 +20,7 @@ import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.TypeExpression;
+import org.universAAL.middleware.rdf.Resource;
 
 /**
  * @author amedrano
@@ -61,6 +62,14 @@ public class AccessRight extends ManagedIndividual {
 		return PROP_SERIALIZATION_FULL;
 	}
 	
+	/** {@inheritDoc} */
+	public boolean setProperty(String propURI, Object value) {
+		if (propURI.equals(PROP_ACCESS_TO) && value != null){
+			((Resource)value).literal();
+		}
+		return super.setProperty(propURI, value);
+	}
+
 	public void addAccessType(AccessType at){
 		Object o = getProperty(PROP_ACCESS_TYPE);
 		if (o == null){
