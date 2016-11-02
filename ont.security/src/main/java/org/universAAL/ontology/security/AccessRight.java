@@ -15,13 +15,10 @@
  ******************************************************************************/
 package org.universAAL.ontology.security;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.TypeExpression;
-import org.universAAL.middleware.rdf.ClosedCollection;
+import org.universAAL.middleware.rdf.OpenCollection;
 import org.universAAL.middleware.rdf.Resource;
 
 /**
@@ -73,12 +70,12 @@ public class AccessRight extends ManagedIndividual {
 	}
 
 	public void addAccessType(AccessType at){
-		ClosedCollection cc = new ClosedCollection();
+		OpenCollection cc = new OpenCollection();
 		Object o = getProperty(PROP_ACCESS_TYPE);
 		if (o == null){
 			cc.add(at);
-		}else if (o instanceof ClosedCollection){
-			cc.addAll((ClosedCollection) o);
+		}else if (o instanceof OpenCollection){
+			cc.addAll((OpenCollection) o);
 			cc.add(at);
 		}
 		changeProperty(PROP_ACCESS_TYPE, cc);
@@ -87,7 +84,7 @@ public class AccessRight extends ManagedIndividual {
 	public void removeAccessType(AccessType at){
 		Object o = getProperty(PROP_ACCESS_TYPE);
 		if (o != null){
-			((ClosedCollection) o).remove(at);
+			((OpenCollection) o).remove(at);
 			changeProperty(PROP_ACCESS_TYPE, o);
 		}
 	}
