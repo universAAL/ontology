@@ -16,10 +16,12 @@
 package org.universAAL.ontology.security;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.TypeExpression;
+import org.universAAL.middleware.rdf.ClosedCollection;
 import org.universAAL.middleware.rdf.Resource;
 
 /**
@@ -71,28 +73,21 @@ public class AccessRight extends ManagedIndividual {
 	}
 
 	public void addAccessType(AccessType at){
+		ClosedCollection cc = new ClosedCollection();
 		Object o = getProperty(PROP_ACCESS_TYPE);
 		if (o == null){
-			changeProperty(PROP_ACCESS_TYPE, at);
-		}else if (o instanceof AccessType){
-			ArrayList n = new ArrayList();
-			n.add(o);
-			n.add(at);
-			changeProperty(PROP_ACCESS_TYPE, n);
-		}else if (o instanceof List){
-			((List)o).add(at);
-			changeProperty(PROP_ACCESS_TYPE, o);
+			cc.add(at);
+		}else if (o instanceof ClosedCollection){
+			cc.addAll((ClosedCollection) o);
+			cc.add(at);
 		}
+		changeProperty(PROP_ACCESS_TYPE, cc);
 	}
 	
 	public void removeAccessType(AccessType at){
 		Object o = getProperty(PROP_ACCESS_TYPE);
-		if (o == null){
-			changeProperty(PROP_ACCESS_TYPE, at);
-		}else if (o instanceof AccessType && o.equals(at)){
-			changeProperty(PROP_ACCESS_TYPE, null);
-		}else if (o instanceof List){
-			((List)o).remove(at);
+		if (o != null){
+			((ClosedCollection) o).remove(at);
 			changeProperty(PROP_ACCESS_TYPE, o);
 		}
 	}
