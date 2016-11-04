@@ -31,6 +31,11 @@
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.bus.ui.core</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.junit</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

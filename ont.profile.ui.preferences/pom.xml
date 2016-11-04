@@ -39,6 +39,11 @@ adaptability and accessibility in e-learning, education and training ??Access fo
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.languages</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.junit</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
