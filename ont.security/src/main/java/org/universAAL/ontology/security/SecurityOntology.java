@@ -243,7 +243,7 @@ public final class SecurityOntology extends Ontology {
 		oci_AccessRight.setResourceLabel("Access Right");
 		oci_AccessRight.setResourceComment("Access Right describes the type of access right to a specific (or generic) class (or instance) of Asset(s).");
 		oci_AccessRight.addObjectProperty(AccessRight.PROP_ACCESS_TYPE);
-		oci_AccessRight.addRestriction(MergedRestriction.getAllValuesRestriction(AccessRight.PROP_ACCESS_TYPE, AccessType.MY_URI));
+		oci_AccessRight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AccessRight.PROP_ACCESS_TYPE, AccessType.MY_URI,1,4));
 		oci_AccessRight.addObjectProperty(AccessRight.PROP_ACCESS_TO);
 		//TODO PROP_ACCESS_TO should be restricted to a TypeExpression, which should be in turn relevant only to Asset type. Cardinality should be 1, 1.
 		//oci_AccessRight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(AccessRight.PROP_ACCESS_TO, TypeExpression., 1, 1));
