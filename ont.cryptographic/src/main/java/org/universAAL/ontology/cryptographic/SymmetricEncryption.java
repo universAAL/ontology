@@ -47,7 +47,7 @@ public abstract class SymmetricEncryption extends Encryption {
   
   public int getPropSerializationType(String propURI) {
     if (PROP_SIMPLE_KEY.equals(propURI))
-      return PROP_SERIALIZATION_OPTIONAL;
+      return PROP_SERIALIZATION_FULL;
     return super.getPropSerializationType(propURI);
   } 
 

@@ -49,7 +49,7 @@ public abstract class AsymmetricEncryption extends Encryption {
   
   public int getPropSerializationType(String propURI) {
     if (PROP_KEY_RING.equals(propURI))
-      return PROP_SERIALIZATION_OPTIONAL;
+      return PROP_SERIALIZATION_FULL;
     return super.getPropSerializationType(propURI);
   } 
 
