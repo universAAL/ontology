@@ -11,6 +11,7 @@
   <artifactId>ont.karaf.feature</artifactId>
   <version>3.4.1-SNAPSHOT</version>
   <name>universAAL Ontology Karaf Feature</name>
+  <packaging>pom</packaging>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
   </properties>
