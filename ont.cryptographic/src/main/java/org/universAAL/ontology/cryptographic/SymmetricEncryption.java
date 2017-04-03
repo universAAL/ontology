@@ -70,7 +70,7 @@ public abstract class SymmetricEncryption extends Encryption {
 	  if (hasProperty(PROP_SIMPLE_KEY))
 		  return new EncryptionKey[]{getSimpleKey()};
 	  else
-		  return null;
+		  return new EncryptionKey[0];
   }
 
   /**{@inheritDoc} */
