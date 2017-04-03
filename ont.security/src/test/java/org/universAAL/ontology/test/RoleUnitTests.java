@@ -17,6 +17,7 @@ package org.universAAL.ontology.test;
 
 import org.universAAL.middleware.bus.junit.BusTestCase;
 import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.ontology.cryptographic.CryptographicOntology;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.ProfileOntology;
@@ -41,6 +42,7 @@ public class RoleUnitTests extends BusTestCase {
 		OntologyManagement.getInstance().register(mc, new PhThingOntology());
 		OntologyManagement.getInstance().register(mc, new VCardOntology());
 		OntologyManagement.getInstance().register(mc, new ProfileOntology());
+		OntologyManagement.getInstance().register(mc, new CryptographicOntology());
 		OntologyManagement.getInstance().register(mc, new SecurityOntology());
 	    }
 
