@@ -29,7 +29,9 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.PhThingFactory;
 import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.shape.Shape;
+import org.universAAL.ontology.shape.ShapeOntology;
 
 /**
  * 
@@ -53,6 +55,8 @@ public class PhThingOntology extends Ontology {
 		+ "which defines the most general concepts from the physical "
 		+ "world as opposed to the virtual realm.");
 	r.setResourceLabel("Physical Things");
+	addImport(LocationOntology.NAMESPACE);
+	addImport(ShapeOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 

@@ -26,6 +26,8 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.SpaceFactory;
 import org.universAAL.ontology.location.Location;
+import org.universAAL.ontology.location.LocationOntology;
+import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 /**
@@ -51,6 +53,9 @@ public class SpaceOntology extends Ontology {
 		+ "world as opposed to the virtual realm.");
 	r.setResourceLabel("AAL Space Configuration");
 
+	addImport(LocationOntology.NAMESPACE);
+	addImport(PhThingOntology.NAMESPACE);
+	
 	OntClassInfoSetup oci;
 
 	// load SpaceConfigurationService

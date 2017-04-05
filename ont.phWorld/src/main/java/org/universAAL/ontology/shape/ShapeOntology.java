@@ -26,6 +26,7 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.ontology.ShapeFactory;
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.location.position.CoordinateSystem;
 import org.universAAL.ontology.location.position.Point;
 
@@ -52,6 +53,8 @@ public class ShapeOntology extends Ontology {
 		+ "world as opposed to the virtual realm.");
 	r.setResourceLabel("Shapes");
 
+	addImport(LocationOntology.NAMESPACE);
+	
 	OntClassInfoSetup oci;
 
 	// load Shape
