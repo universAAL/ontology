@@ -99,8 +99,8 @@ public final class MeasurementOntology extends Ontology {
 	oci_Signal.setResourceComment("Generic representation of a signal, as a collection of meausurements separted by an interval");
 	oci_Signal.addSuperClass(Measurement.MY_URI);
 	
-	oci_Signal.addObjectProperty(Signal.PROP_MEASUREMENTS).setFunctional();
-	oci_Signal.addDatatypeProperty(Signal.PROP_MEASUREMENT_INTERVAL).setFunctional();
+	oci_Signal.addObjectProperty(Signal.PROP_MEASUREMENTS);
+	oci_Signal.addObjectProperty(Signal.PROP_MEASUREMENT_INTERVAL).setFunctional();
 	
 	oci_Signal.addRestriction(MergedRestriction
 			.getAllValuesRestrictionWithCardinality(Signal.PROP_MEASUREMENT_INTERVAL,
