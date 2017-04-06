@@ -38,9 +38,11 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.ProfileFactory;
+import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.location.Place;
 import org.universAAL.ontology.location.outdoor.City;
 import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.phThing.PhysicalThing;
 import org.universAAL.ontology.profile.service.ProfilingEditorService;
 import org.universAAL.ontology.profile.service.ProfilingService;
@@ -94,6 +96,9 @@ public final class ProfileOntology extends Ontology {
 	r.setResourceLabel("Profile");
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
+	addImport(LocationOntology.NAMESPACE);
+	addImport(PhThingOntology.NAMESPACE);
+	addImport(VCardOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 

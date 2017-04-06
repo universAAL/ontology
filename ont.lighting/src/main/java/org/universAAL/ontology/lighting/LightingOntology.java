@@ -33,6 +33,7 @@ import org.universAAL.ontology.LightingFactory;
 import org.universAAL.ontology.location.Location;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.phThing.PhThingOntology;
 
 /**
  * 
@@ -57,6 +58,7 @@ public final class LightingOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
+	addImport(PhThingOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 

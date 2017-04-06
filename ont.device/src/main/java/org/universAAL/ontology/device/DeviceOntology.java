@@ -34,6 +34,7 @@ import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.measurement.Measurement;
 import org.universAAL.ontology.measurement.MeasurementOntology;
 import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.phThing.PhThingOntology;
 
 //import the factory for this ontology
 import org.universAAL.ontology.DeviceFactory;
@@ -58,6 +59,7 @@ public final class DeviceOntology extends Ontology {
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
 	addImport(MeasurementOntology.NAMESPACE);
+	addImport(PhThingOntology.NAMESPACE);
 
 	// ******* Declaration of enumeration classes of the ontology ******* //
 

@@ -30,6 +30,7 @@ import org.universAAL.ontology.activityhub.*;
 import org.universAAL.ontology.activityhub.ext.*;
 import org.universAAL.ontology.activityhub.factory.ActivityHubFactory;
 import org.universAAL.ontology.device.Actuator;
+import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.device.Sensor;
 
 /**
@@ -59,7 +60,7 @@ public class ActivityHubOntology extends Ontology {
 	// r.serializesAsXMLLiteral();
 
 	/* is planned to be mandatory for OWL import/export */
-	// addImport(PhThingOntology.NAMESPACE);
+	addImport(DeviceOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 
