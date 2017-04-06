@@ -30,9 +30,9 @@ public class UnitConversionService extends Service {
     public static final String PROP_TO_UNIT = UnitOntology.NAMESPACE
     	    + "toUnit";
     public static final String PROP_FROM_PREFIX = UnitOntology.NAMESPACE
-    	    + "valueInFromUnit";
+    	    + "prefixInFromUnit";
     public static final String PROP_TO_PREFIX = UnitOntology.NAMESPACE
-    	    + "valueInToUnit";
+    	    + "prefixInToUnit";
     public static final String PROP_FROM_VALUE = UnitOntology.NAMESPACE
     	    + "valueInFromUnit";
     public static final String PROP_TO_VALUE = UnitOntology.NAMESPACE

@@ -1,15 +1,10 @@
 package test.integration;
 
-import org.universAAL.middleware.bus.junit.BusTestCase;
-import org.universAAL.ontology.UnitActivator;
+import org.universAAL.middleware.bus.junit.OntTestCase;
 
-public class MyTest extends BusTestCase {
-
-    protected void setUp() throws Exception {
-	super.setUp();
-	new UnitActivator().start(mc);
-    }
+public class MyTest extends OntTestCase {
 
     public void test() {
+    	generateOntFiles4MyProy();
     }
 }
