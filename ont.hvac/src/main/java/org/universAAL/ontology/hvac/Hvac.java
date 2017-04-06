@@ -25,7 +25,7 @@ import org.universAAL.ontology.phThing.Device;
  * 
  * @author Ricardo
  */
-public class Hvac extends Device {
+public abstract class Hvac extends Device {
 
 	public static final String MY_URI = HvacOntology.NAMESPACE + "Hvac";
 

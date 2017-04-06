@@ -40,7 +40,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * @author Alvaro Fides
  * @author Peter Wolf
  */
-public class Profile extends ManagedIndividual {
+public abstract class Profile extends ManagedIndividual {
 
     /** Class URI */
     public static final String MY_URI = ProfileOntology.NAMESPACE + "Profile";
