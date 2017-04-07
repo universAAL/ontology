@@ -27,6 +27,7 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.UIMainMenuProfileFactory;
 import org.universAAL.ontology.profile.Profile;
+import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.User;
 import org.universAAL.ontology.profile.UserProfile;
@@ -39,7 +40,7 @@ public final class MenuProfileOntology extends Ontology {
     public static final String PROP_UI_MAINMENU_PROFILE = Profile.PROP_HAS_SUB_PROFILE
 	    + "hasUIMainMenu";
 
-    public static final User defaultUser = new User(NAMESPACE + "defaultUser");
+    public static User defaultUser ;
 
     public MenuProfileOntology() {
 	super(NAMESPACE);
@@ -51,7 +52,10 @@ public final class MenuProfileOntology extends Ontology {
 		.setResourceComment("A profile describing the main menu shown by the user interaction framework.");
 	r.setResourceLabel("UI Main Menu Profile");
 	addImport(DataRepOntology.NAMESPACE);
+	addImport(ProfileOntology.NAMESPACE);
 
+	defaultUser = new User(NAMESPACE + "defaultUser");
+	
 	// ******* Declaration of regular classes of the ontology ******* //
 	OntClassInfoSetup oci;
 
