@@ -15,36 +15,16 @@
  ******************************************************************************/
 package org.universAAL.ontology.test;
 
-import org.universAAL.middleware.bus.junit.BusTestCase;
-import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.cryptographic.CryptographicOntology;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.phThing.PhThingOntology;
-import org.universAAL.ontology.profile.ProfileOntology;
+import org.universAAL.middleware.bus.junit.OntTestCase;
 import org.universAAL.ontology.security.AccessRight;
 import org.universAAL.ontology.security.Role;
-import org.universAAL.ontology.security.SecurityOntology;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.vcard.VCardOntology;
 
 /**
  * @author amedrano
  *
  */
-public class RoleUnitTests extends BusTestCase {
+public class RoleUnitTest extends OntTestCase {
 
-
-	protected void setUp() throws Exception {
-		super.setUp();
-
-		OntologyManagement.getInstance().register(mc, new LocationOntology());
-		OntologyManagement.getInstance().register(mc, new ShapeOntology());
-		OntologyManagement.getInstance().register(mc, new PhThingOntology());
-		OntologyManagement.getInstance().register(mc, new VCardOntology());
-		OntologyManagement.getInstance().register(mc, new ProfileOntology());
-		OntologyManagement.getInstance().register(mc, new CryptographicOntology());
-		OntologyManagement.getInstance().register(mc, new SecurityOntology());
-	    }
 
 	public void test() {
 		Role role = new Role("test1");

@@ -19,10 +19,6 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
@@ -41,6 +37,11 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+    </dependency>
+    <dependency>
+       <groupId>org.universAAL.middleware</groupId>
+       <artifactId>mw.bus.junit</artifactId>
+       <scope>test</scope>
     </dependency>
   </dependencies>
   <build>

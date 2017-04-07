@@ -45,6 +45,11 @@
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.profile</artifactId>
     </dependency>
+    <dependency>
+       <groupId>org.universAAL.middleware</groupId>
+       <artifactId>mw.bus.junit</artifactId>
+       <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

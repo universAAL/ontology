@@ -1,42 +1,14 @@
 package org.universaal.ontology.test;
 
-import org.universAAL.middleware.bus.junit.BusTestCase;
-import org.universAAL.middleware.owl.OntologyManagement;
+import org.universAAL.middleware.bus.junit.OntTestCase;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.util.ResourceComparator;
-import org.universAAL.ontology.disease.owl.DiseaseOntology;
 import org.universAAL.ontology.health.owl.HealthProfile;
-import org.universAAL.ontology.health.owl.HealthProfileOntology;
-import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology;
-import org.universAAL.ontology.location.LocationOntology;
-import org.universAAL.ontology.measurement.MeasurementOntology;
-import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.profile.AssistedPerson;
 import org.universAAL.ontology.profile.AssistedPersonProfile;
-import org.universAAL.ontology.profile.ProfileOntology;
 import org.universAAL.ontology.profile.UserProfile;
-import org.universAAL.ontology.shape.ShapeOntology;
-import org.universAAL.ontology.unit.UnitOntology;
-import org.universAAL.ontology.vcard.VCardOntology;
 
-public class BusTest extends BusTestCase {
-
-    protected void setUp() throws Exception {
-	super.setUp();
-
-	OntologyManagement.getInstance().register(mc, new LocationOntology());
-	OntologyManagement.getInstance().register(mc, new ShapeOntology());
-	OntologyManagement.getInstance().register(mc, new PhThingOntology());
-	OntologyManagement.getInstance().register(mc, new VCardOntology());
-	OntologyManagement.getInstance().register(mc, new ProfileOntology());
-	OntologyManagement.getInstance().register(mc, new UnitOntology());
-	OntologyManagement.getInstance().register(mc, new MeasurementOntology());
-	OntologyManagement.getInstance().register(mc,
-		new HealthMeasurementOntology());
-	OntologyManagement.getInstance().register(mc, new DiseaseOntology());
-	OntologyManagement.getInstance().register(mc,
-		new HealthProfileOntology());
-    }
+public class BusTest extends OntTestCase {
 
     public void test() {
 	AssistedPerson ap = new AssistedPerson("testAP");
@@ -63,4 +35,8 @@ public class BusTest extends BusTestCase {
 	
 	assertTrue((new ResourceComparator()).areEqual(hp, r));
     }
+    
+    public void testWriter() {
+    	generateOntFiles4MyProy();
+	}
 }
