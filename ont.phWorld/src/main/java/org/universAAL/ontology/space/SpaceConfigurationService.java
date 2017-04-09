@@ -55,8 +55,8 @@ public class SpaceConfigurationService extends Service {
      * (java.lang.String)
      */
     public int getPropSerializationType(String propURI) {
-	return (PROP_MANAGED_LOCATIONS.equals(propURI)) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
+	return (PROP_MANAGED_LOCATIONS.equals(propURI) || PROP_MANAGED_PHYSICAL_THINGS.equals(propURI))
+		? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
     }
 
     public boolean isWellFormed() {
