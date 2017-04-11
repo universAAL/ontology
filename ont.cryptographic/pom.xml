@@ -1,45 +1,39 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>ont.pom</artifactId>
     <groupId>org.universAAL.ontology</groupId>
+    <artifactId>ont.pom</artifactId>
     <version>3.4.1-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
-  
   <artifactId>ont.cryptographic</artifactId>
   <version>3.4.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Cryptographic</name>
   <description>The Cryptographic Ontology, offering a base model of cryptograpic algorithms, techniques and services</description>
-
   <licenses>
-  	<license>
-  		<name>Apache Software License 2.0</name>
-  		<url>https://www.apache.org/licenses/LICENSE-2.0</url>	
-  	</license>
+    <license>
+      <name>Apache Software License 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
   </licenses>
-  
   <developers>
-  	<developer>
-  		<name>Alejandro Medrano Gil</name>
-  		<organization>UPM</organization>
-  		<email>amedrano@lst.tfo.upm.es</email>
-  		<organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
-  	</developer>
-  	<developer>
-  		<name>Miguel Paramo Castrillo</name>
-  		<organization>UPM</organization>
-  		<email>mparamo@lst.tfo.upm.es</email>
-  		<organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
-  	</developer>
+    <developer>
+      <name>Alejandro Medrano Gil</name>
+      <email>amedrano@lst.tfo.upm.es</email>
+      <organization>UPM</organization>
+      <organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
+    </developer>
+    <developer>
+      <name>Miguel Paramo Castrillo</name>
+      <email>mparamo@lst.tfo.upm.es</email>
+      <organization>UPM</organization>
+      <organizationUrl>http://www.lst.tfo.upm.es</organizationUrl>
+    </developer>
   </developers>
-  
   <dependencies>
-    <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
@@ -54,7 +48,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
- 
   <build>
     <plugins>
       <plugin>

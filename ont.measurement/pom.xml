@@ -15,10 +15,6 @@
   <description>The ontology defining the most general concepts dealing with measurement.</description>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>

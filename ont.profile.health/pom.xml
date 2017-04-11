@@ -15,10 +15,6 @@
   <description>Health Profile</description>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.bus.junit</artifactId>
       <scope>test</scope>

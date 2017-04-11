@@ -16,10 +16,6 @@
 adaptability and accessibility in e-learning, education and training ??Access for all? personal needs and preferences for digital delivery)</description>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>

@@ -15,10 +15,6 @@
   <description>The Collection of Hvac Ontology</description>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
@@ -27,12 +23,12 @@
       <artifactId>mw.bus.service.core</artifactId>
     </dependency>
     <dependency>
-    	<groupId>org.universAAL.ontology</groupId>
-    	<artifactId>ont.unit</artifactId>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.unit</artifactId>
     </dependency>
     <dependency>
-    	<groupId>org.universAAL.ontology</groupId>
-    	<artifactId>ont.device</artifactId>
+      <groupId>org.universAAL.ontology</groupId>
+      <artifactId>ont.device</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>

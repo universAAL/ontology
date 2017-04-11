@@ -16,10 +16,6 @@
   <url></url>
   <dependencies>
     <dependency>
-      <groupId>org.universAAL.support</groupId>
-      <artifactId>itests</artifactId>
-    </dependency>
-    <dependency>
       <groupId>jp.go.ipa</groupId>
       <artifactId>jgcl</artifactId>
       <version>1.0</version>
