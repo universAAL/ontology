@@ -27,6 +27,7 @@
 // Package
 package org.universAAL.ontology.continua;
 
+import org.universAAL.middleware.rdf.Resource;
 // Imports
 import org.universAAL.middleware.service.owl.Service;
 
@@ -55,4 +56,9 @@ public class ContinuaHealthManager extends Service {
 	return MY_URI;
     }
 
+    public int getPropSerializationType(String propURI) {
+	if (PROP_HAS_CONTINUA_DEVICE.equals(propURI) || PROP_HAS_NOT_CONTINUA_DEVICE.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
+    }
 }
