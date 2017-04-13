@@ -19,6 +19,7 @@
  */
 package org.universAAL.ontology.drools;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.DroolsReasoningOntology;
 
@@ -44,4 +45,10 @@ public class DroolsReasoning extends Service {
 	return MY_URI;
     }
 
+    public int getPropSerializationType(String propURI) {
+	if (PROP_KNOWS_FACTS.equals(propURI) || PROP_KNOWS_RULES.equals(propURI)
+		|| PROP_PRODUCES_CONSEQUENCES.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
+    }
 }
