@@ -17,6 +17,7 @@
 
 package org.universAAL.ontology.health.owl.services;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.health.owl.HealthProfileOntology;
 
 /**
@@ -55,8 +56,9 @@ public class PlannedSessionManagementService extends HealthService {
 
     /** {@inheritDoc} */
     public int getPropSerializationType(String propURI) {
-	return PROP_MANAGES_SESSION.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
+	if (PROP_MANAGES_SESSION.equals(propURI) || PROP_ASSOCIATED_TREATMENT.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
     }
 
     /** {@inheritDoc} */

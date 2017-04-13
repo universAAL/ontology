@@ -15,6 +15,7 @@
  ******************************************************************************/
 package org.universAAL.ontology.health.owl.services;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.health.owl.HealthProfileOntology;
 
@@ -65,8 +66,9 @@ public class DisplayTreatmentService extends Service {
 
     /** {@inheritDoc} */
     public int getPropSerializationType(String propURI) {
-	return PROP_TREATMENT.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
+	if (PROP_AFFECTED_USER.equals(propURI) || PROP_TREATMENT.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
     }
 
     /** {@inheritDoc} */

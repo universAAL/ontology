@@ -20,6 +20,7 @@
 
 package org.universAAL.ontology.health.owl.services;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.health.owl.HealthProfileOntology;
 
 /**
@@ -62,8 +63,10 @@ public class TreatmentManagementService extends HealthService {
 
     /** {@inheritDoc} */
     public int getPropSerializationType(String propURI) {
-	return PROP_MANAGES_TREATMENT.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
+	if (PROP_MANAGES_TREATMENT.equals(propURI) || PROP_TIMESTAMP_FROM.equals(propURI)
+		|| PROP_TIMESTAMP_TO.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
     }
 
     /** {@inheritDoc} */

@@ -20,6 +20,7 @@
 
 package org.universAAL.ontology.health.owl.services;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.health.owl.HealthProfileOntology;
 
@@ -59,4 +60,9 @@ public class HealthService extends Service {
 	return true;
     }
 
+    public int getPropSerializationType(String propURI) {
+	if (PROP_ASSISTED_USER.equals(propURI) || PROP_ASSISTED_USER_PROFILE.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
+    }
 }
