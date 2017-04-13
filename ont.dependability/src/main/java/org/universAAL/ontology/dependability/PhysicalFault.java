@@ -16,11 +16,6 @@ package org.universAAL.ontology.dependability;
  * @author <a href="mailto:abu.sadat@uni-siegen.de">Rubaiyat Sadat</a>
  *	       ©2012
  */
-import java.util.Hashtable;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class PhysicalFault extends Fault {
     public static final String MY_URI = DependabilityOntology.NAMESPACE
