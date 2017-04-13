@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.rdf.Resource;
 
 public class ValueFault extends Fault {
     public static final String MY_URI = DependabilityOntology.NAMESPACE
@@ -40,9 +41,10 @@ public class ValueFault extends Fault {
 	return MY_URI;
     }
 
-    public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
+    public int getPropSerializationType(String propURI) {
+	if (PROP_VALUE.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
     }
 
     public boolean isWellFormed() {

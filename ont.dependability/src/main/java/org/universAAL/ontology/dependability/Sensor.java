@@ -20,6 +20,7 @@ import java.util.Hashtable;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.phThing.Device;
 
 public class Sensor extends Device {
@@ -40,9 +41,10 @@ public class Sensor extends Device {
 	return MY_URI;
     }
 
-    public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
+    public int getPropSerializationType(String propURI) {
+	if (PROP_SYMPTOM.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return super.getPropSerializationType(propURI);
     }
 
     public boolean isWellFormed() {

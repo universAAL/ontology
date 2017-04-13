@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.rdf.Resource;
 
 public class ErrorDetector extends ManagedIndividual {
     public static final String MY_URI = DependabilityOntology.NAMESPACE
@@ -42,9 +43,10 @@ public class ErrorDetector extends ManagedIndividual {
 	return MY_URI;
     }
 
-    public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
+    public int getPropSerializationType(String propURI) {
+	if (PROP_FAULT.equals(propURI) || PROP_SYMPTOM.equals(propURI))
+	    return Resource.PROP_SERIALIZATION_FULL;
+	return Resource.PROP_SERIALIZATION_UNDEFINED;
     }
 
     public boolean isWellFormed() {

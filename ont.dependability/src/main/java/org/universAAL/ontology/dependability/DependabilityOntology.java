@@ -27,7 +27,7 @@ import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
-
+import org.universAAL.ontology.phThing.PhThingOntology;
 //import the factory for this ontology
 import org.universAAL.ontology.DependabilityFactory;
 
@@ -50,6 +50,7 @@ public final class DependabilityOntology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
+	addImport(PhThingOntology.NAMESPACE);
 
 	// ******* Declaration of regular classes of the ontology ******* //
 	OntClassInfoSetup oci_Symptom = createNewOntClassInfo(Symptom.MY_URI,
@@ -114,6 +115,7 @@ public final class DependabilityOntology extends Ontology {
 	// ******* Add content to regular classes of the ontology ******* //
 	oci_Symptom.setResourceComment("");
 	oci_Symptom.setResourceLabel("Symptom");
+	oci_Symptom.addSuperClass(ManagedIndividual.MY_URI);
 	oci_Symptom.addObjectProperty(Symptom.PROP_ERROR_DETECTOR)
 		.setFunctional();
 	oci_Symptom
