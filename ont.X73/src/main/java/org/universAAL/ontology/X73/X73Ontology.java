@@ -32,6 +32,7 @@ import org.universAAL.ontology.X73Factory;
 import org.universAAL.ontology.location.LocationOntology;
 
 import org.universAAL.ontology.phThing.Device;
+import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.service.owl.Service;
 
@@ -56,6 +57,7 @@ public final class X73Ontology extends Ontology {
 	addImport(DataRepOntology.NAMESPACE);
 	addImport(ServiceBusOntology.NAMESPACE);
 	addImport(LocationOntology.NAMESPACE);
+	addImport(PhThingOntology.NAMESPACE);
 
 	// ******* Declaration of regular classes of the ontology ******* //
 	OntClassInfoSetup oci_WeighingScale = createNewOntClassInfo(
