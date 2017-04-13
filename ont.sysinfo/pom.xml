@@ -54,7 +54,7 @@
             <Bundle-Name>${project.name}</Bundle-Name>
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Export-Package>org.universAAL.ontology.sysinfo, org.universAAL.ontology.sysinfo.*</Export-Package>
+            <Export-Package>org.universAAL.ontology.sysinfo</Export-Package>
             <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
           </instructions>
         </configuration>
