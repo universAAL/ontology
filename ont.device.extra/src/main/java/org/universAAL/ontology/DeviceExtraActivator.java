@@ -24,15 +24,15 @@ package org.universAAL.ontology;
 import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.container.ModuleActivator;
 import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.device.home.DeviceextraOntology;
+import org.universAAL.ontology.device.home.DeviceExtraOntology;
 
 /**
  * @author alfiva
  * 
  */
-public class DeviceextraActivator implements ModuleActivator {
+public class DeviceExtraActivator implements ModuleActivator {
 
-    private DeviceextraOntology deviceextraOntology = new DeviceextraOntology();
+    private DeviceExtraOntology deviceextraOntology = new DeviceExtraOntology();
 
     /*
      * (non-Javadoc)

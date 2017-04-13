@@ -25,7 +25,7 @@ import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
-import org.universAAL.ontology.DeviceextraFactory;
+import org.universAAL.ontology.DeviceExtraFactory;
 import org.universAAL.ontology.device.Actuator;
 import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.device.Sensor;
@@ -38,17 +38,17 @@ import org.universAAL.ontology.phThing.Device;
  * @author alfiva
  * 
  */
-public class DeviceextraOntology extends Ontology {
+public class DeviceExtraOntology extends Ontology {
 
     public static final String NAMESPACE = "http://ontology.universAAL.org/DeviceExtra.owl#";
 
-    private static DeviceextraFactory factory = new DeviceextraFactory();
+    private static DeviceExtraFactory factory = new DeviceExtraFactory();
 
-    public DeviceextraOntology(String ontURI) {
+    public DeviceExtraOntology(String ontURI) {
 	super(ontURI);
     }
 
-    public DeviceextraOntology() {
+    public DeviceExtraOntology() {
 	super(NAMESPACE);
     }
 

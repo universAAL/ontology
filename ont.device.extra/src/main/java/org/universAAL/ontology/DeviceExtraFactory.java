@@ -31,7 +31,7 @@ import org.universAAL.ontology.device.home.*;
  * @author alfiva
  * 
  */
-public class DeviceextraFactory implements ResourceFactory {
+public class DeviceExtraFactory implements ResourceFactory {
 
     public Resource createInstance(String classURI, String instanceURI,
 	    int factoryIndex) {

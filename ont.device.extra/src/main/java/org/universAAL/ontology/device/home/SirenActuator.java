@@ -36,7 +36,7 @@ import org.universAAL.ontology.device.StatusValue;
 public class SirenActuator extends Actuator {
 
     /** Class URI */
-    public static final String MY_URI = DeviceextraOntology.NAMESPACE
+    public static final String MY_URI = DeviceExtraOntology.NAMESPACE
 	    + "SirenActuator";
 
     public SirenActuator() {

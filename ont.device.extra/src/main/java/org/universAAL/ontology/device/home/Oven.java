@@ -34,7 +34,7 @@ import org.universAAL.ontology.device.StatusValue;
 public class Oven extends Actuator {
 
     /** Class URI */
-    public static final String MY_URI = DeviceextraOntology.NAMESPACE + "Oven";
+    public static final String MY_URI = DeviceExtraOntology.NAMESPACE + "Oven";
 
     public Oven() {
 	super();
