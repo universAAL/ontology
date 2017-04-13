@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.DroolsReasoningOntology;
 import org.universAAL.ontology.drools.ConsequenceProperty;
 
 //If you are making a concept that does not inherit from any other you just extend ManagedIndividual

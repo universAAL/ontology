@@ -21,7 +21,6 @@ package org.universAAL.ontology.drools;
 
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.DroolsReasoningOntology;
 
 public class DroolsReasoning extends Service {
 

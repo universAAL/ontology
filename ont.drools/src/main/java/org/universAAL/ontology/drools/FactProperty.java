@@ -20,7 +20,6 @@
 package org.universAAL.ontology.drools;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.DroolsReasoningOntology;
 
 /**
  * Key-Value pair defining a fact property.

@@ -23,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.DroolsReasoningOntology;
 import org.universAAL.ontology.drools.FactProperty;
 
 public class Fact extends ManagedIndividual {

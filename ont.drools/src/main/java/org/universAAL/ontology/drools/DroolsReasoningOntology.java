@@ -17,7 +17,7 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-package org.universAAL.ontology;
+package org.universAAL.ontology.drools;
 
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
@@ -27,12 +27,7 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
-import org.universAAL.ontology.drools.Consequence;
-import org.universAAL.ontology.drools.ConsequenceProperty;
-import org.universAAL.ontology.drools.DroolsReasoning;
-import org.universAAL.ontology.drools.Fact;
-import org.universAAL.ontology.drools.FactProperty;
-import org.universAAL.ontology.drools.Rule;
+import org.universAAL.ontology.DroolsReasoningFactory;
 
 public class DroolsReasoningOntology extends Ontology {
 
