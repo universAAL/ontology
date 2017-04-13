@@ -27,10 +27,10 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.DeviceextraFactory;
 import org.universAAL.ontology.device.Actuator;
+import org.universAAL.ontology.device.DeviceOntology;
 import org.universAAL.ontology.device.Sensor;
 import org.universAAL.ontology.device.StatusValue;
 import org.universAAL.ontology.phThing.Device;
-import org.universAAL.ontology.phThing.PhThingOntology;
 
 /**
  * The Ontology for Extra Devices.
@@ -56,7 +56,7 @@ public class DeviceextraOntology extends Ontology {
 	Resource r = getInfo();
 	r.setResourceComment("Ontology for extra devices");
 	r.setResourceLabel("Device extra");
-	addImport(PhThingOntology.NAMESPACE);
+	addImport(DeviceOntology.NAMESPACE);
 
 	OntClassInfoSetup oci;
 
