@@ -42,7 +42,7 @@
             <Bundle-Name>${project.name}</Bundle-Name>
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Export-Package>org.universAAL.ontology.asor, org.universAAL.ontology.asor.*</Export-Package>
+            <Export-Package>org.universAAL.ontology.asor</Export-Package>
             <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
           </instructions>
         </configuration>
