@@ -75,7 +75,7 @@ public class FurnitureType extends ManagedIndividual {
 
     /** Creates a FurnitureType object. */
     public FurnitureType(int Function) {
-	super();
+	super(FurnitureOntology.NAMESPACE + names[Function]);
 	this.order = Function;
     }
 
