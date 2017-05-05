@@ -25,7 +25,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * @author eandgrg
  * 
  */
-public class Language extends ManagedIndividual {
+public abstract class Language extends ManagedIndividual {
     public static final String MY_URI = LanguageOntology.NAMESPACE + "Language";
     public static final String PROP_ENGLISH_LABEL = LanguageOntology.NAMESPACE
 	    + "englishLabel";
