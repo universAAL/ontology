@@ -35,7 +35,7 @@ package org.universAAL.ontology.recommendations;
  * @see PreferredSize
  * @see MaximumSize
  */
-public class Size extends VisualRecommendation {
+public abstract class Size extends VisualRecommendation {
   public static final String MY_URI = RecommendationsOntology.NAMESPACE
     + "Size";
   public static final String PROP_HORIZONTAL = RecommendationsOntology.NAMESPACE
