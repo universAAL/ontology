@@ -33,6 +33,7 @@ import org.universAAL.ontology.security.Password;
 import org.universAAL.ontology.security.Role;
 import org.universAAL.ontology.security.RoleManagementService;
 import org.universAAL.ontology.security.SecuritySubprofile;
+import org.universAAL.ontology.security.Session;
 import org.universAAL.ontology.security.SessionManagementService;
 import org.universAAL.ontology.security.UserPasswordCredentials;
 
@@ -80,6 +81,8 @@ public class SecurityFactory implements ResourceFactory {
 		return new Anonymizable(instanceURI);
 	case 16:
 		return new Credentials(instanceURI);
+	case 17:
+		return new Session(instanceURI);
 	}
 	return null;
     }

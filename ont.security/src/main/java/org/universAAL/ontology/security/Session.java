@@ -64,7 +64,7 @@ public class Session extends ManagedIndividual {
 
 	/** {@ inheritDoc}	 */
 	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_UNDEFINED;
+		return PROP_SERIALIZATION_FULL;
 	}
 
 	public XMLGregorianCalendar getExpirationDate(){
