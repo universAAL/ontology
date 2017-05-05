@@ -62,8 +62,8 @@ public class HealthOntologyFactory implements ResourceFactory {
 	    return new PerformedMeasurementSession(instanceURI);
 	case 8:
 	    return new HeartRateRequirement(instanceURI);
-	case 9:
-	    return new TakeMeasurementActivity(instanceURI);
+//	case 9:
+//	    return new TakeMeasurementActivity(instanceURI);
 	case 11:
 	    return new TreatmentPlanning(instanceURI);
 	case 12:

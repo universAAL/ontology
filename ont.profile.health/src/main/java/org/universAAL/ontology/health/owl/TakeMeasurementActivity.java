@@ -20,7 +20,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.universAAL.ontology.profile.AssistedPersonProfile;
 import org.universAAL.ontology.profile.Caregiver;
 
-public class TakeMeasurementActivity extends Treatment {
+public abstract class TakeMeasurementActivity extends Treatment {
 
     // NAMESPACE & PROPERTIES
     public static final String MY_URI = HealthProfileOntology.NAMESPACE
