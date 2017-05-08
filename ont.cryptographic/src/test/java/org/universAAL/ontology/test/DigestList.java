@@ -20,15 +20,13 @@ import java.security.Security;
 import java.util.Iterator;
 import java.util.Set;
 
-import junit.framework.TestCase;
-
 /**
  * @author amedrano
  *
  */
-public class DigestList extends TestCase {
+public class DigestList {
     
-    public void testprintall(){
+	public static void main(String[] args) {
 		Provider[] providers = Security.getProviders();
 		
 		for (int i = 0; i < providers.length; i++) {

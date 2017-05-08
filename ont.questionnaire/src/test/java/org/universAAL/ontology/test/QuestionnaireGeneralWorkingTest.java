@@ -26,6 +26,7 @@ package org.universAAL.ontology.test;
  * @author mdelafuente
  *
  */
+import org.junit.Ignore;
 import org.junit.Test;
 import org.universAAL.ennumerations.ontology.owl.PartsOfDay;
 import org.universAAL.middleware.bus.junit.OntTestCase;
@@ -111,7 +112,7 @@ public class QuestionnaireGeneralWorkingTest extends OntTestCase {
 
     }
 
-    @Test
+    @Ignore
     /**
      * The following test prints the full questionnaire.
      */
