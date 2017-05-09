@@ -24,14 +24,14 @@ public class BusTest extends OntTestCase {
 	
 	
 	
-	System.out.println(hp.toStringRecursive());
+	//System.out.println(hp.toStringRecursive());
 
 	String serialized = serialize(hp);
-	System.out.println(serialized);
+	//System.out.println(serialized);
 	Resource r = (Resource) deserialize(serialized);
 	assertTrue(r != null);
 
-	System.out.println(r.toStringRecursive());
+	//System.out.println(r.toStringRecursive());
 	
 	assertTrue((new ResourceComparator()).areEqual(hp, r));
     }
