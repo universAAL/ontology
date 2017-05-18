@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology Recommendations - Checkstyle report</title>
+    <link>http://ontology/ont.recommendations/</link>
+    <description>universAAL Ontology Recommendations - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 18,
+             Errors: 208,
+             Warnings: 46,
+             Infos: 380
+      </title>
+            <link>http://ontology/ont.recommendations//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.recommendations//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.VerticalAlignment.java">org/universAAL/ontology/recommendations/VerticalAlignment.java</a>
+                </td>
+                <td>
+                  26
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.PreferredSize.java">org/universAAL/ontology/recommendations/PreferredSize.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsFactory.java">org/universAAL/ontology/RecommendationsFactory.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Alignment.java">org/universAAL/ontology/recommendations/Alignment.java</a>
+                </td>
+                <td>
+                  18
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.HorizontalLayout.java">org/universAAL/ontology/recommendations/HorizontalLayout.java</a>
+                </td>
+                <td>
+                  18
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.ScriptedRecommendation.java">org/universAAL/ontology/recommendations/ScriptedRecommendation.java</a>
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.VisualRecommendation.java">org/universAAL/ontology/recommendations/VisualRecommendation.java</a>
+                </td>
+                <td>
+                  23
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.VerticalLayout.java">org/universAAL/ontology/recommendations/VerticalLayout.java</a>
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.GridLayout.java">org/universAAL/ontology/recommendations/GridLayout.java</a>
+                </td>
+                <td>
+                  36
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.SizeUnit.java">org/universAAL/ontology/recommendations/SizeUnit.java</a>
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.HorizontalAlignment.java">org/universAAL/ontology/recommendations/HorizontalAlignment.java</a>
+                </td>
+                <td>
+                  27
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.RecommendationsOntology.java">org/universAAL/ontology/recommendations/RecommendationsOntology.java</a>
+                </td>
+                <td>
+                  62
+                </td>
+                <td>
+                  21
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Size.java">org/universAAL/ontology/recommendations/Size.java</a>
+                </td>
+                <td>
+                  32
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsActivator.java">org/universAAL/ontology/RecommendationsActivator.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.MaximumSize.java">org/universAAL/ontology/recommendations/MaximumSize.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.CSSRecommendation.java">org/universAAL/ontology/recommendations/CSSRecommendation.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Layout.java">org/universAAL/ontology/recommendations/Layout.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.MinimumSize.java">org/universAAL/ontology/recommendations/MinimumSize.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

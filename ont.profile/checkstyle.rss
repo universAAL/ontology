@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology Profiling - Checkstyle report</title>
+    <link>http://ontology/ont.profile/</link>
+    <description>universAAL Ontology Profiling - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 Instituto Tecnologico de Aplicaciones de Comunicacion Avanzadas - Grupo Tecnologias para la Salud y el Bienestar (TSB)
+	Forschungszentrum Informatik FZI
+	Fraunhofer-Gesellschaft - Institute of Computer Graphics Research</copyright>
+    <item>
+      <title>File: 47,
+             Errors: 631,
+             Warnings: 20,
+             Infos: 606
+      </title>
+            <link>http://ontology/ont.profile//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.profile//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Internet.java">org/universAAL/ontology/vcard/Internet.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.BBS.java">org/universAAL/ontology/vcard/BBS.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Caregiver.java">org/universAAL/ontology/profile/Caregiver.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Organization.java">org/universAAL/ontology/vcard/Organization.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Voice.java">org/universAAL/ontology/vcard/Voice.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.PCS.java">org/universAAL/ontology/vcard/PCS.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.HRSubProfile.java">org/universAAL/ontology/profile/HRSubProfile.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.ProfileActivator.java">org/universAAL/ontology/ProfileActivator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.VCardFactory.java">org/universAAL/ontology/VCardFactory.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALService.java">org/universAAL/ontology/profile/AALService.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Profilable.java">org/universAAL/ontology/profile/Profilable.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.HWSubProfile.java">org/universAAL/ontology/profile/HWSubProfile.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.ProfileOntology.java">org/universAAL/ontology/profile/ProfileOntology.java</a>
+                </td>
+                <td>
+                  28
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  24
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.service.ProfilingEditorService.java">org/universAAL/ontology/profile/service/ProfilingEditorService.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AssistedPersonProfile.java">org/universAAL/ontology/profile/AssistedPersonProfile.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.UserProfile.java">org/universAAL/ontology/profile/UserProfile.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Property.java">org/universAAL/ontology/profile/Property.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Video.java">org/universAAL/ontology/vcard/Video.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALSpaceProfile.java">org/universAAL/ontology/profile/AALSpaceProfile.java</a>
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Pager.java">org/universAAL/ontology/vcard/Pager.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Modem.java">org/universAAL/ontology/vcard/Modem.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.SubProfile.java">org/universAAL/ontology/profile/SubProfile.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.VCard.java">org/universAAL/ontology/vcard/VCard.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.ConnectionDetails.java">org/universAAL/ontology/profile/ConnectionDetails.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Email.java">org/universAAL/ontology/vcard/Email.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.CaregiverProfile.java">org/universAAL/ontology/profile/CaregiverProfile.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AssistedPerson.java">org/universAAL/ontology/profile/AssistedPerson.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Cell.java">org/universAAL/ontology/vcard/Cell.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Tel.java">org/universAAL/ontology/vcard/Tel.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALServiceProfile.java">org/universAAL/ontology/profile/AALServiceProfile.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Gender.java">org/universAAL/ontology/profile/Gender.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.ProfileFactory.java">org/universAAL/ontology/ProfileFactory.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Profile.java">org/universAAL/ontology/profile/Profile.java</a>
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.service.ProfilingService.java">org/universAAL/ontology/profile/service/ProfilingService.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.User.java">org/universAAL/ontology/profile/User.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Msg.java">org/universAAL/ontology/vcard/Msg.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.X400.java">org/universAAL/ontology/vcard/X400.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.ISDN.java">org/universAAL/ontology/vcard/ISDN.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Name.java">org/universAAL/ontology/vcard/Name.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALSpace.java">org/universAAL/ontology/profile/AALSpace.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.OntologyEntry.java">org/universAAL/ontology/profile/OntologyEntry.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Requirement.java">org/universAAL/ontology/profile/Requirement.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Car.java">org/universAAL/ontology/vcard/Car.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.PersonalInformationSubprofile.java">org/universAAL/ontology/profile/PersonalInformationSubprofile.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  27
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALAppSubProfile.java">org/universAAL/ontology/profile/AALAppSubProfile.java</a>
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Fax.java">org/universAAL/ontology/vcard/Fax.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.VCardOntology.java">org/universAAL/ontology/vcard/VCardOntology.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

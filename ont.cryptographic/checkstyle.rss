@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology Cryptographic - Checkstyle report</title>
+    <link>http://ontology/ont.cryptographic/</link>
+    <description>universAAL Ontology Cryptographic - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 33,
+             Errors: 428,
+             Warnings: 160,
+             Infos: 799
+      </title>
+            <link>http://ontology/ont.cryptographic//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.cryptographic//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.CertificationAuthority.java">org/universAAL/ontology/cryptographic/CertificationAuthority.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.MultidestinationEncryptedResource.java">org/universAAL/ontology/cryptographic/MultidestinationEncryptedResource.java</a>
+                </td>
+                <td>
+                  30
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.CryptographicService.java">org/universAAL/ontology/cryptographic/CryptographicService.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.SimpleKey.java">org/universAAL/ontology/cryptographic/SimpleKey.java</a>
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.SymmetricEncryption.java">org/universAAL/ontology/cryptographic/SymmetricEncryption.java</a>
+                </td>
+                <td>
+                  22
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.ChainedBlockEncryption.java">org/universAAL/ontology/cryptographic/ChainedBlockEncryption.java</a>
+                </td>
+                <td>
+                  27
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.KeyExchange.java">org/universAAL/ontology/cryptographic/KeyExchange.java</a>
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.CryptographicActivator.java">org/universAAL/ontology/CryptographicActivator.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.Encryption.java">org/universAAL/ontology/cryptographic/Encryption.java</a>
+                </td>
+                <td>
+                  22
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.SimpleBlockEncryption.java">org/universAAL/ontology/cryptographic/SimpleBlockEncryption.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.DestinataryEncryptedSessionKey.java">org/universAAL/ontology/cryptographic/DestinataryEncryptedSessionKey.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.KeyRing.java">org/universAAL/ontology/cryptographic/KeyRing.java</a>
+                </td>
+                <td>
+                  38
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  31
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.BlockEncryption.java">org/universAAL/ontology/cryptographic/BlockEncryption.java</a>
+                </td>
+                <td>
+                  18
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.EncryptedResource.java">org/universAAL/ontology/cryptographic/EncryptedResource.java</a>
+                </td>
+                <td>
+                  25
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.CryptographicOntology.java">org/universAAL/ontology/cryptographic/CryptographicOntology.java</a>
+                </td>
+                <td>
+                  195
+                </td>
+                <td>
+                  54
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.SignedResource.java">org/universAAL/ontology/cryptographic/SignedResource.java</a>
+                </td>
+                <td>
+                  37
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  33
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.ChainMode.java">org/universAAL/ontology/cryptographic/ChainMode.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.symmetric.Blowfish.java">org/universAAL/ontology/cryptographic/symmetric/Blowfish.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.asymmetric.RSA.java">org/universAAL/ontology/cryptographic/asymmetric/RSA.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.Digest.java">org/universAAL/ontology/cryptographic/Digest.java</a>
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.digest.MessageDigest.java">org/universAAL/ontology/cryptographic/digest/MessageDigest.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.EncryptionKey.java">org/universAAL/ontology/cryptographic/EncryptionKey.java</a>
+                </td>
+                <td>
+                  19
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.CryptographicTechnique.java">org/universAAL/ontology/cryptographic/CryptographicTechnique.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.DigestService.java">org/universAAL/ontology/cryptographic/DigestService.java</a>
+                </td>
+                <td>
+                  30
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  24
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm.java">org/universAAL/ontology/cryptographic/digest/SecureHashAlgorithm.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.CryptographicFactory.java">org/universAAL/ontology/CryptographicFactory.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.symmetric.AES.java">org/universAAL/ontology/cryptographic/symmetric/AES.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.SignAndVerifyService.java">org/universAAL/ontology/cryptographic/SignAndVerifyService.java</a>
+                </td>
+                <td>
+                  44
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.asymmetric.DSA.java">org/universAAL/ontology/cryptographic/asymmetric/DSA.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.StreamEncryption.java">org/universAAL/ontology/cryptographic/StreamEncryption.java</a>
+                </td>
+                <td>
+                  21
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.symmetric.DES.java">org/universAAL/ontology/cryptographic/symmetric/DES.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.AsymmetricEncryption.java">org/universAAL/ontology/cryptographic/AsymmetricEncryption.java</a>
+                </td>
+                <td>
+                  25
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.cryptographic//checkstyle.html#org.universAAL.ontology.cryptographic.EncryptionService.java">org/universAAL/ontology/cryptographic/EncryptionService.java</a>
+                </td>
+                <td>
+                  29
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  24
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

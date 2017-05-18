@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.7796610169491526" branch-rate="0.6666666666666666" lines-covered="46" lines-valid="59" branches-covered="2" branches-valid="3" complexity="1.3333333333333333" version="2.1.1" timestamp="1495151373778">
+	<sources>
+		<source>--source</source>
+		<source>/home/travis/build/universAAL/ontology/ont.profile.contact/src/main/java</source>
+	</sources>
+	<packages>
+		<package name="org.universAAL.ontology.profile" line-rate="0.36363636363636365" branch-rate="0.6666666666666666" complexity="2.3333333333333335">
+			<classes>
+				<class name="org.universAAL.ontology.profile.ContactActivator" filename="org/universAAL/ontology/profile/ContactActivator.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="23" hits="0" branch="false"/>
+								<line number="25" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="start" signature="(Lorg/universAAL/middleware/container/ModuleContext;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="28" hits="0" branch="false"/>
+								<line number="29" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="stop" signature="(Lorg/universAAL/middleware/container/ModuleContext;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="0" branch="false"/>
+								<line number="33" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="23" hits="0" branch="false"/>
+						<line number="25" hits="0" branch="false"/>
+						<line number="28" hits="0" branch="false"/>
+						<line number="29" hits="0" branch="false"/>
+						<line number="32" hits="0" branch="false"/>
+						<line number="33" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.profile.ContactFactory" filename="org/universAAL/ontology/profile/ContactFactory.java" line-rate="0.8" branch-rate="0.6666666666666666" complexity="5.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="23" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="createInstance" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/middleware/rdf/Resource;" line-rate="0.75" branch-rate="0.6666666666666666" complexity="0">
+							<lines>
+								<line number="28" hits="4" branch="true" condition-coverage="66% (2/3)">
+									<conditions>
+										<condition number="0" type="switch" coverage="66%"/>
+									</conditions>
+								</line>
+								<line number="30" hits="2" branch="false"/>
+								<line number="32" hits="2" branch="false"/>
+								<line number="35" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="23" hits="1" branch="false"/>
+						<line number="28" hits="4" branch="true" condition-coverage="66% (2/3)">
+							<conditions>
+								<condition number="0" type="switch" coverage="66%"/>
+							</conditions>
+						</line>
+						<line number="30" hits="2" branch="false"/>
+						<line number="32" hits="2" branch="false"/>
+						<line number="35" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="org.universAAL.ontology.profile.contact" line-rate="0.875" branch-rate="1.0" complexity="1.0833333333333333">
+			<classes>
+				<class name="org.universAAL.ontology.profile.contact.ContactListSubProfile" filename="org/universAAL/ontology/profile/contact/ContactListSubProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="0" branch="false"/>
+								<line number="28" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="31" hits="2" branch="false"/>
+								<line number="32" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="35" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="43" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="27" hits="0" branch="false"/>
+						<line number="28" hits="0" branch="false"/>
+						<line number="31" hits="2" branch="false"/>
+						<line number="32" hits="2" branch="false"/>
+						<line number="35" hits="4" branch="false"/>
+						<line number="39" hits="1" branch="false"/>
+						<line number="43" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.profile.contact.ContactManagementService" filename="org/universAAL/ontology/profile/contact/ContactManagementService.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.2">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="29" hits="0" branch="false"/>
+								<line number="30" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="33" hits="2" branch="false"/>
+								<line number="34" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="37" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="41" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="45" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="29" hits="0" branch="false"/>
+						<line number="30" hits="0" branch="false"/>
+						<line number="33" hits="2" branch="false"/>
+						<line number="34" hits="2" branch="false"/>
+						<line number="37" hits="6" branch="false"/>
+						<line number="41" hits="5" branch="false"/>
+						<line number="45" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.profile.contact.ContactOntology" filename="org/universAAL/ontology/profile/contact/ContactOntology.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="38" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="42" hits="3" branch="false"/>
+								<line number="43" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="create" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="46" hits="3" branch="false"/>
+								<line number="47" hits="3" branch="false"/>
+								<line number="48" hits="3" branch="false"/>
+								<line number="49" hits="3" branch="false"/>
+								<line number="50" hits="3" branch="false"/>
+								<line number="51" hits="3" branch="false"/>
+								<line number="52" hits="3" branch="false"/>
+								<line number="55" hits="3" branch="false"/>
+								<line number="57" hits="3" branch="false"/>
+								<line number="61" hits="3" branch="false"/>
+								<line number="62" hits="3" branch="false"/>
+								<line number="63" hits="3" branch="false"/>
+								<line number="64" hits="3" branch="false"/>
+								<line number="65" hits="3" branch="false"/>
+								<line number="66" hits="3" branch="false"/>
+								<line number="68" hits="3" branch="false"/>
+								<line number="69" hits="3" branch="false"/>
+								<line number="70" hits="3" branch="false"/>
+								<line number="71" hits="3" branch="false"/>
+								<line number="74" hits="3" branch="false"/>
+								<line number="75" hits="3" branch="false"/>
+								<line number="76" hits="6" branch="false"/>
+								<line number="77" hits="3" branch="false"/>
+								<line number="81" hits="3" branch="false"/>
+								<line number="82" hits="3" branch="false"/>
+								<line number="83" hits="3" branch="false"/>
+								<line number="84" hits="3" branch="false"/>
+								<line number="85" hits="3" branch="false"/>
+								<line number="86" hits="6" branch="false"/>
+								<line number="87" hits="3" branch="false"/>
+								<line number="89" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="38" hits="1" branch="false"/>
+						<line number="42" hits="3" branch="false"/>
+						<line number="43" hits="3" branch="false"/>
+						<line number="46" hits="3" branch="false"/>
+						<line number="47" hits="3" branch="false"/>
+						<line number="48" hits="3" branch="false"/>
+						<line number="49" hits="3" branch="false"/>
+						<line number="50" hits="3" branch="false"/>
+						<line number="51" hits="3" branch="false"/>
+						<line number="52" hits="3" branch="false"/>
+						<line number="55" hits="3" branch="false"/>
+						<line number="57" hits="3" branch="false"/>
+						<line number="61" hits="3" branch="false"/>
+						<line number="62" hits="3" branch="false"/>
+						<line number="63" hits="3" branch="false"/>
+						<line number="64" hits="3" branch="false"/>
+						<line number="65" hits="3" branch="false"/>
+						<line number="66" hits="3" branch="false"/>
+						<line number="68" hits="3" branch="false"/>
+						<line number="69" hits="3" branch="false"/>
+						<line number="70" hits="3" branch="false"/>
+						<line number="71" hits="3" branch="false"/>
+						<line number="74" hits="3" branch="false"/>
+						<line number="75" hits="3" branch="false"/>
+						<line number="76" hits="6" branch="false"/>
+						<line number="77" hits="3" branch="false"/>
+						<line number="81" hits="3" branch="false"/>
+						<line number="82" hits="3" branch="false"/>
+						<line number="83" hits="3" branch="false"/>
+						<line number="84" hits="3" branch="false"/>
+						<line number="85" hits="3" branch="false"/>
+						<line number="86" hits="6" branch="false"/>
+						<line number="87" hits="3" branch="false"/>
+						<line number="89" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>

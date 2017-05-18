@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology Measurement - Checkstyle report</title>
+    <link>http://ontology/ont.measurement/</link>
+    <description>universAAL Ontology Measurement - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 7,
+             Errors: 84,
+             Warnings: 16,
+             Infos: 67
+      </title>
+            <link>http://ontology/ont.measurement//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.measurement//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.MeasurementFactory.java">org/universAAL/ontology/MeasurementFactory.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.Measurement.java">org/universAAL/ontology/measurement/Measurement.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  32
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.MeasurementOntology.java">org/universAAL/ontology/measurement/MeasurementOntology.java</a>
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.MeanSquareError.java">org/universAAL/ontology/measurement/MeanSquareError.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.Signal.java">org/universAAL/ontology/measurement/Signal.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.MeasurementActivator.java">org/universAAL/ontology/MeasurementActivator.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.MeasurementError.java">org/universAAL/ontology/measurement/MeasurementError.java</a>
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

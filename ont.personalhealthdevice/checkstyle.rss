@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology for personal health devices - Checkstyle report</title>
+    <link></link>
+    <description>universAAL Ontology for personal health devices - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 Austrian Institute of Technology (AIT)</copyright>
+    <item>
+      <title>File: 7,
+             Errors: 61,
+             Warnings: 5,
+             Infos: 81
+      </title>
+            <link>/checkstyle.html</link>
+      <description>
+        <p>Click <a href="/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.BloodOxygenSatSensor.java">org/universAAL/ontology/personalhealthdevice/BloodOxygenSatSensor.java</a>
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.WeighingScale.java">org/universAAL/ontology/personalhealthdevice/WeighingScale.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.PersonalHealthDeviceFactory.java">org/universAAL/ontology/PersonalHealthDeviceFactory.java</a>
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.BloodPressureSensor.java">org/universAAL/ontology/personalhealthdevice/BloodPressureSensor.java</a>
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology.java">org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.HeartRateSensor.java">org/universAAL/ontology/personalhealthdevice/HeartRateSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.PersonalHealthDeviceActivator.java">org/universAAL/ontology/PersonalHealthDeviceActivator.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

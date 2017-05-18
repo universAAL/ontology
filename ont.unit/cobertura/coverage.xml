@@ -1,0 +1,2171 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.7320490367775832" branch-rate="0.28125" lines-covered="418" lines-valid="571" branches-covered="36" branches-valid="128" complexity="1.8807339449541285" version="2.1.1" timestamp="1495151182437">
+	<sources>
+		<source>--source</source>
+		<source>/home/travis/build/universAAL/ontology/ont.unit/src/main/java</source>
+	</sources>
+	<packages>
+		<package name="org.universAAL.ontology" line-rate="0.5625" branch-rate="0.875" complexity="5.666666666666667">
+			<classes>
+				<class name="org.universAAL.ontology.UnitActivator" filename="org/universAAL/ontology/UnitActivator.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="23" hits="0" branch="false"/>
+								<line number="25" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="start" signature="(Lorg/universAAL/middleware/container/ModuleContext;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="28" hits="0" branch="false"/>
+								<line number="29" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="stop" signature="(Lorg/universAAL/middleware/container/ModuleContext;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="0" branch="false"/>
+								<line number="33" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="23" hits="0" branch="false"/>
+						<line number="25" hits="0" branch="false"/>
+						<line number="28" hits="0" branch="false"/>
+						<line number="29" hits="0" branch="false"/>
+						<line number="32" hits="0" branch="false"/>
+						<line number="33" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.UnitFactory" filename="org/universAAL/ontology/UnitFactory.java" line-rate="0.9" branch-rate="0.875" complexity="15.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="28" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="createInstance" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/middleware/rdf/Resource;" line-rate="0.8888888888888888" branch-rate="0.875" complexity="0">
+							<lines>
+								<line number="32" hits="14" branch="true" condition-coverage="87% (7/8)">
+									<conditions>
+										<condition number="0" type="switch" coverage="87%"/>
+									</conditions>
+								</line>
+								<line number="34" hits="2" branch="false"/>
+								<line number="36" hits="2" branch="false"/>
+								<line number="38" hits="2" branch="false"/>
+								<line number="40" hits="2" branch="false"/>
+								<line number="42" hits="2" branch="false"/>
+								<line number="44" hits="2" branch="false"/>
+								<line number="46" hits="2" branch="false"/>
+								<line number="48" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="28" hits="1" branch="false"/>
+						<line number="32" hits="14" branch="true" condition-coverage="87% (7/8)">
+							<conditions>
+								<condition number="0" type="switch" coverage="87%"/>
+							</conditions>
+						</line>
+						<line number="34" hits="2" branch="false"/>
+						<line number="36" hits="2" branch="false"/>
+						<line number="38" hits="2" branch="false"/>
+						<line number="40" hits="2" branch="false"/>
+						<line number="42" hits="2" branch="false"/>
+						<line number="44" hits="2" branch="false"/>
+						<line number="46" hits="2" branch="false"/>
+						<line number="48" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="org.universAAL.ontology.unit" line-rate="0.6997792494481236" branch-rate="0.24166666666666667" complexity="1.872340425531915">
+			<classes>
+				<class name="org.universAAL.ontology.unit.DerivedUnit" filename="org/universAAL/ontology/unit/DerivedUnit.java" line-rate="0.64" branch-rate="0.5" complexity="1.25">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="26" hits="0" branch="false"/>
+								<line number="27" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="30" hits="4" branch="false"/>
+								<line number="31" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="6" branch="false"/>
+								<line number="40" hits="6" branch="false"/>
+								<line number="41" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="1" branch="false"/>
+								<line number="45" hits="1" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+								<line number="47" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Lorg/universAAL/ontology/unit/Unit;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="34" hits="0" branch="false"/>
+								<line number="35" hits="0" branch="false"/>
+								<line number="36" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getBasePrefix" signature="()Lorg/universAAL/ontology/unit/Prefix;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="71" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getBaseUnit" signature="()Lorg/universAAL/ontology/unit/Unit;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="62" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="50" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="54" hits="39" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="58" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setBasePrefix" signature="(Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="75" hits="1" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="76" hits="1" branch="false"/>
+								<line number="77" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="setBaseUnit" signature="(Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="66" hits="7" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="67" hits="7" branch="false"/>
+								<line number="68" hits="7" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="26" hits="0" branch="false"/>
+						<line number="27" hits="0" branch="false"/>
+						<line number="30" hits="4" branch="false"/>
+						<line number="31" hits="4" branch="false"/>
+						<line number="34" hits="0" branch="false"/>
+						<line number="35" hits="0" branch="false"/>
+						<line number="36" hits="0" branch="false"/>
+						<line number="39" hits="6" branch="false"/>
+						<line number="40" hits="6" branch="false"/>
+						<line number="41" hits="6" branch="false"/>
+						<line number="44" hits="1" branch="false"/>
+						<line number="45" hits="1" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+						<line number="47" hits="1" branch="false"/>
+						<line number="50" hits="0" branch="false"/>
+						<line number="54" hits="39" branch="false"/>
+						<line number="58" hits="0" branch="false"/>
+						<line number="62" hits="0" branch="false"/>
+						<line number="66" hits="7" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="67" hits="7" branch="false"/>
+						<line number="68" hits="7" branch="false"/>
+						<line number="71" hits="0" branch="false"/>
+						<line number="75" hits="1" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="76" hits="1" branch="false"/>
+						<line number="77" hits="1" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.DividedUnit" filename="org/universAAL/ontology/unit/DividedUnit.java" line-rate="0.4" branch-rate="0.1" complexity="1.5384615384615385">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="26" hits="0" branch="false"/>
+								<line number="27" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="30" hits="2" branch="false"/>
+								<line number="31" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="1" branch="false"/>
+								<line number="40" hits="1" branch="false"/>
+								<line number="41" hits="1" branch="false"/>
+								<line number="42" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Prefix;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="45" hits="0" branch="false"/>
+								<line number="46" hits="0" branch="false"/>
+								<line number="47" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="34" hits="1" branch="false"/>
+								<line number="35" hits="1" branch="false"/>
+								<line number="36" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="58" hits="10" branch="false"/>
+							</lines>
+						</method>
+						<method name="getDividedBy" signature="()Lorg/universAAL/ontology/unit/Unit;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="70" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getDividedByPrefix" signature="()Lorg/universAAL/ontology/unit/Prefix;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="79" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="62" hits="15" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSymbol" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="88" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="90" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="91" hits="0" branch="false"/>
+								<line number="93" hits="0" branch="false"/>
+								<line number="95" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="96" hits="0" branch="false"/>
+								<line number="97" hits="0" branch="false"/>
+								<line number="99" hits="0" branch="false"/>
+								<line number="101" hits="0" branch="false"/>
+								<line number="103" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="66" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setDividedBy" signature="(Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="74" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="75" hits="2" branch="false"/>
+								<line number="76" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="setDividedByPrefix" signature="(Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="83" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="84" hits="0" branch="false"/>
+								<line number="85" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="26" hits="0" branch="false"/>
+						<line number="27" hits="0" branch="false"/>
+						<line number="30" hits="2" branch="false"/>
+						<line number="31" hits="2" branch="false"/>
+						<line number="34" hits="1" branch="false"/>
+						<line number="35" hits="1" branch="false"/>
+						<line number="36" hits="1" branch="false"/>
+						<line number="39" hits="1" branch="false"/>
+						<line number="40" hits="1" branch="false"/>
+						<line number="41" hits="1" branch="false"/>
+						<line number="42" hits="1" branch="false"/>
+						<line number="45" hits="0" branch="false"/>
+						<line number="46" hits="0" branch="false"/>
+						<line number="47" hits="0" branch="false"/>
+						<line number="58" hits="10" branch="false"/>
+						<line number="62" hits="15" branch="false"/>
+						<line number="66" hits="0" branch="false"/>
+						<line number="70" hits="0" branch="false"/>
+						<line number="74" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="75" hits="2" branch="false"/>
+						<line number="76" hits="2" branch="false"/>
+						<line number="79" hits="0" branch="false"/>
+						<line number="83" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="84" hits="0" branch="false"/>
+						<line number="85" hits="0" branch="false"/>
+						<line number="88" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="90" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="91" hits="0" branch="false"/>
+						<line number="93" hits="0" branch="false"/>
+						<line number="95" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="96" hits="0" branch="false"/>
+						<line number="97" hits="0" branch="false"/>
+						<line number="99" hits="0" branch="false"/>
+						<line number="101" hits="0" branch="false"/>
+						<line number="103" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.MeasurableDimension" filename="org/universAAL/ontology/unit/MeasurableDimension.java" line-rate="0.42857142857142855" branch-rate="0.08333333333333333" complexity="4.222222222222222">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="36" hits="1" branch="false"/>
+								<line number="40" hits="1" branch="false"/>
+								<line number="42" hits="1" branch="false"/>
+								<line number="44" hits="1" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+								<line number="48" hits="1" branch="false"/>
+								<line number="50" hits="1" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="54" hits="1" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="58" hits="1" branch="false"/>
+								<line number="60" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(I)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="66" hits="11" branch="false"/>
+								<line number="67" hits="11" branch="false"/>
+								<line number="68" hits="11" branch="false"/>
+							</lines>
+						</method>
+						<method name="equals" signature="(Ljava/lang/Object;)Z" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="118" hits="352" branch="true" condition-coverage="50% (2/4)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+										<condition number="1" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="87" hits="22" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="71" hits="11" branch="false"/>
+							</lines>
+						</method>
+						<method name="getmeasurableDimensionByOrder" signature="(I)Lorg/universAAL/ontology/unit/MeasurableDimension;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="91" hits="0" branch="true" condition-coverage="0% (0/12)">
+									<conditions>
+										<condition number="0" type="switch" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="93" hits="0" branch="false"/>
+								<line number="95" hits="0" branch="false"/>
+								<line number="97" hits="0" branch="false"/>
+								<line number="99" hits="0" branch="false"/>
+								<line number="101" hits="0" branch="false"/>
+								<line number="103" hits="0" branch="false"/>
+								<line number="105" hits="0" branch="false"/>
+								<line number="107" hits="0" branch="false"/>
+								<line number="109" hits="0" branch="false"/>
+								<line number="111" hits="0" branch="false"/>
+								<line number="113" hits="0" branch="false"/>
+								<line number="115" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="75" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="name" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="79" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="ord" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="83" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="valueOf" signature="(Ljava/lang/String;)Lorg/universAAL/ontology/unit/MeasurableDimension;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="123" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="124" hits="0" branch="false"/>
+								<line number="126" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="127" hits="0" branch="false"/>
+								<line number="129" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="130" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="131" hits="0" branch="false"/>
+								<line number="133" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="36" hits="1" branch="false"/>
+						<line number="40" hits="1" branch="false"/>
+						<line number="42" hits="1" branch="false"/>
+						<line number="44" hits="1" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+						<line number="48" hits="1" branch="false"/>
+						<line number="50" hits="1" branch="false"/>
+						<line number="52" hits="1" branch="false"/>
+						<line number="54" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="58" hits="1" branch="false"/>
+						<line number="60" hits="1" branch="false"/>
+						<line number="66" hits="11" branch="false"/>
+						<line number="67" hits="11" branch="false"/>
+						<line number="68" hits="11" branch="false"/>
+						<line number="71" hits="11" branch="false"/>
+						<line number="75" hits="0" branch="false"/>
+						<line number="79" hits="0" branch="false"/>
+						<line number="83" hits="0" branch="false"/>
+						<line number="87" hits="22" branch="false"/>
+						<line number="91" hits="0" branch="true" condition-coverage="0% (0/12)">
+							<conditions>
+								<condition number="0" type="switch" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="93" hits="0" branch="false"/>
+						<line number="95" hits="0" branch="false"/>
+						<line number="97" hits="0" branch="false"/>
+						<line number="99" hits="0" branch="false"/>
+						<line number="101" hits="0" branch="false"/>
+						<line number="103" hits="0" branch="false"/>
+						<line number="105" hits="0" branch="false"/>
+						<line number="107" hits="0" branch="false"/>
+						<line number="109" hits="0" branch="false"/>
+						<line number="111" hits="0" branch="false"/>
+						<line number="113" hits="0" branch="false"/>
+						<line number="115" hits="0" branch="false"/>
+						<line number="118" hits="352" branch="true" condition-coverage="50% (2/4)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+								<condition number="1" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="123" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="124" hits="0" branch="false"/>
+						<line number="126" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="127" hits="0" branch="false"/>
+						<line number="129" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="130" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="131" hits="0" branch="false"/>
+						<line number="133" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.MultipliedUnit" filename="org/universAAL/ontology/unit/MultipliedUnit.java" line-rate="0.34210526315789475" branch-rate="0.1" complexity="1.5">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="0" branch="false"/>
+								<line number="28" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="31" hits="2" branch="false"/>
+								<line number="32" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Prefix;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="45" hits="1" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+								<line number="47" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Prefix;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="51" hits="0" branch="false"/>
+								<line number="52" hits="0" branch="false"/>
+								<line number="53" hits="0" branch="false"/>
+								<line number="54" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="40" hits="4" branch="false"/>
+								<line number="41" hits="4" branch="false"/>
+								<line number="42" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Lorg/universAAL/ontology/unit/Unit;Lorg/universAAL/ontology/unit/Unit;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="35" hits="0" branch="false"/>
+								<line number="36" hits="0" branch="false"/>
+								<line number="37" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="57" hits="9" branch="false"/>
+							</lines>
+						</method>
+						<method name="getMultipliedBy" signature="()Lorg/universAAL/ontology/unit/Unit;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="69" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getMultipliedByPrefix" signature="()Lorg/universAAL/ontology/unit/Prefix;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="78" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="61" hits="24" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSymbol" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="87" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="89" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="90" hits="0" branch="false"/>
+								<line number="92" hits="0" branch="false"/>
+								<line number="94" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="95" hits="0" branch="false"/>
+								<line number="96" hits="0" branch="false"/>
+								<line number="98" hits="0" branch="false"/>
+								<line number="100" hits="0" branch="false"/>
+								<line number="102" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="65" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setMultipliedBy" signature="(Lorg/universAAL/ontology/unit/Unit;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="73" hits="5" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="74" hits="5" branch="false"/>
+								<line number="75" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="setMultipliedByPrefix" signature="(Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="82" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="83" hits="0" branch="false"/>
+								<line number="84" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="27" hits="0" branch="false"/>
+						<line number="28" hits="0" branch="false"/>
+						<line number="31" hits="2" branch="false"/>
+						<line number="32" hits="2" branch="false"/>
+						<line number="35" hits="0" branch="false"/>
+						<line number="36" hits="0" branch="false"/>
+						<line number="37" hits="0" branch="false"/>
+						<line number="40" hits="4" branch="false"/>
+						<line number="41" hits="4" branch="false"/>
+						<line number="42" hits="4" branch="false"/>
+						<line number="45" hits="1" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+						<line number="47" hits="1" branch="false"/>
+						<line number="51" hits="0" branch="false"/>
+						<line number="52" hits="0" branch="false"/>
+						<line number="53" hits="0" branch="false"/>
+						<line number="54" hits="0" branch="false"/>
+						<line number="57" hits="9" branch="false"/>
+						<line number="61" hits="24" branch="false"/>
+						<line number="65" hits="0" branch="false"/>
+						<line number="69" hits="0" branch="false"/>
+						<line number="73" hits="5" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="74" hits="5" branch="false"/>
+						<line number="75" hits="5" branch="false"/>
+						<line number="78" hits="0" branch="false"/>
+						<line number="82" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="83" hits="0" branch="false"/>
+						<line number="84" hits="0" branch="false"/>
+						<line number="87" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="89" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="90" hits="0" branch="false"/>
+						<line number="92" hits="0" branch="false"/>
+						<line number="94" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="95" hits="0" branch="false"/>
+						<line number="96" hits="0" branch="false"/>
+						<line number="98" hits="0" branch="false"/>
+						<line number="100" hits="0" branch="false"/>
+						<line number="102" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.Prefix" filename="org/universAAL/ontology/unit/Prefix.java" line-rate="0.7333333333333333" branch-rate="0.25" complexity="1.5714285714285714">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="28" hits="0" branch="false"/>
+								<line number="29" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="2" branch="false"/>
+								<line number="33" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="36" hits="28" branch="false"/>
+								<line number="37" hits="28" branch="false"/>
+								<line number="38" hits="28" branch="false"/>
+								<line number="39" hits="28" branch="false"/>
+								<line number="40" hits="28" branch="false"/>
+								<line number="41" hits="28" branch="false"/>
+							</lines>
+						</method>
+						<method name="getBase" signature="()Ljava/lang/Integer;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="84" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="88" branch="false"/>
+							</lines>
+						</method>
+						<method name="getName" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="57" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPower" signature="()Ljava/lang/Integer;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="66" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="48" hits="3920" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSymbol" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="75" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="52" hits="0" branch="true" condition-coverage="0% (0/4)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+										<condition number="1" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="53" hits="0" branch="true" condition-coverage="0% (0/4)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+										<condition number="1" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+							</lines>
+						</method>
+						<method name="setBase" signature="(Ljava/lang/Integer;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="88" hits="28" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="89" hits="28" branch="false"/>
+								<line number="90" hits="28" branch="false"/>
+							</lines>
+						</method>
+						<method name="setName" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="61" hits="28" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="62" hits="28" branch="false"/>
+								<line number="63" hits="28" branch="false"/>
+							</lines>
+						</method>
+						<method name="setPower" signature="(Ljava/lang/Integer;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="70" hits="28" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="71" hits="28" branch="false"/>
+								<line number="72" hits="28" branch="false"/>
+							</lines>
+						</method>
+						<method name="setSymbol" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="79" hits="28" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="80" hits="28" branch="false"/>
+								<line number="81" hits="28" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="28" hits="0" branch="false"/>
+						<line number="29" hits="0" branch="false"/>
+						<line number="32" hits="2" branch="false"/>
+						<line number="33" hits="2" branch="false"/>
+						<line number="36" hits="28" branch="false"/>
+						<line number="37" hits="28" branch="false"/>
+						<line number="38" hits="28" branch="false"/>
+						<line number="39" hits="28" branch="false"/>
+						<line number="40" hits="28" branch="false"/>
+						<line number="41" hits="28" branch="false"/>
+						<line number="44" hits="88" branch="false"/>
+						<line number="48" hits="3920" branch="false"/>
+						<line number="52" hits="0" branch="true" condition-coverage="0% (0/4)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+								<condition number="1" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="53" hits="0" branch="true" condition-coverage="0% (0/4)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+								<condition number="1" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="57" hits="0" branch="false"/>
+						<line number="61" hits="28" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="62" hits="28" branch="false"/>
+						<line number="63" hits="28" branch="false"/>
+						<line number="66" hits="0" branch="false"/>
+						<line number="70" hits="28" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="71" hits="28" branch="false"/>
+						<line number="72" hits="28" branch="false"/>
+						<line number="75" hits="0" branch="false"/>
+						<line number="79" hits="28" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="80" hits="28" branch="false"/>
+						<line number="81" hits="28" branch="false"/>
+						<line number="84" hits="0" branch="false"/>
+						<line number="88" hits="28" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="89" hits="28" branch="false"/>
+						<line number="90" hits="28" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.Unit" filename="org/universAAL/ontology/unit/Unit.java" line-rate="0.7894736842105263" branch-rate="0.4444444444444444" complexity="1.6666666666666667">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="30" hits="0" branch="false"/>
+								<line number="31" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="34" hits="13" branch="false"/>
+								<line number="35" hits="13" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/universAAL/ontology/unit/MeasurableDimension;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="2" branch="false"/>
+								<line number="40" hits="2" branch="false"/>
+								<line number="41" hits="2" branch="false"/>
+								<line number="42" hits="2" branch="false"/>
+								<line number="43" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/universAAL/ontology/unit/MeasurableDimension;Lorg/universAAL/ontology/unit/UnitSystem;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="47" hits="19" branch="false"/>
+								<line number="48" hits="19" branch="false"/>
+								<line number="49" hits="19" branch="false"/>
+								<line number="50" hits="19" branch="false"/>
+								<line number="51" hits="19" branch="false"/>
+								<line number="52" hits="19" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="55" hits="68" branch="false"/>
+							</lines>
+						</method>
+						<method name="getDimension" signature="()Lorg/universAAL/ontology/unit/MeasurableDimension;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="90" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getName" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="72" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="59" hits="1702" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="60" hits="1701" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="61" hits="534" branch="false"/>
+								<line number="63" hits="1168" branch="false"/>
+							</lines>
+						</method>
+						<method name="getSymbol" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="81" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getUnitSystem" signature="()Lorg/universAAL/ontology/unit/UnitSystem;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="99" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="67" hits="0" branch="true" condition-coverage="0% (0/4)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+										<condition number="1" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="68" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+							</lines>
+						</method>
+						<method name="setDimension" signature="(Lorg/universAAL/ontology/unit/MeasurableDimension;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="94" hits="21" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="95" hits="21" branch="false"/>
+								<line number="96" hits="21" branch="false"/>
+							</lines>
+						</method>
+						<method name="setName" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="76" hits="21" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="77" hits="21" branch="false"/>
+								<line number="78" hits="21" branch="false"/>
+							</lines>
+						</method>
+						<method name="setSymbol" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="85" hits="22" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="86" hits="22" branch="false"/>
+								<line number="87" hits="22" branch="false"/>
+							</lines>
+						</method>
+						<method name="setUnitSystem" signature="(Lorg/universAAL/ontology/unit/UnitSystem;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="103" hits="19" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="104" hits="19" branch="false"/>
+								<line number="105" hits="19" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="30" hits="0" branch="false"/>
+						<line number="31" hits="0" branch="false"/>
+						<line number="34" hits="13" branch="false"/>
+						<line number="35" hits="13" branch="false"/>
+						<line number="39" hits="2" branch="false"/>
+						<line number="40" hits="2" branch="false"/>
+						<line number="41" hits="2" branch="false"/>
+						<line number="42" hits="2" branch="false"/>
+						<line number="43" hits="2" branch="false"/>
+						<line number="47" hits="19" branch="false"/>
+						<line number="48" hits="19" branch="false"/>
+						<line number="49" hits="19" branch="false"/>
+						<line number="50" hits="19" branch="false"/>
+						<line number="51" hits="19" branch="false"/>
+						<line number="52" hits="19" branch="false"/>
+						<line number="55" hits="68" branch="false"/>
+						<line number="59" hits="1702" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="60" hits="1701" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="61" hits="534" branch="false"/>
+						<line number="63" hits="1168" branch="false"/>
+						<line number="67" hits="0" branch="true" condition-coverage="0% (0/4)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+								<condition number="1" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="68" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="72" hits="0" branch="false"/>
+						<line number="76" hits="21" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="77" hits="21" branch="false"/>
+						<line number="78" hits="21" branch="false"/>
+						<line number="81" hits="0" branch="false"/>
+						<line number="85" hits="22" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="86" hits="22" branch="false"/>
+						<line number="87" hits="22" branch="false"/>
+						<line number="90" hits="0" branch="false"/>
+						<line number="94" hits="21" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="95" hits="21" branch="false"/>
+						<line number="96" hits="21" branch="false"/>
+						<line number="99" hits="0" branch="false"/>
+						<line number="103" hits="19" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="104" hits="19" branch="false"/>
+						<line number="105" hits="19" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.UnitOntology" filename="org/universAAL/ontology/unit/UnitOntology.java" line-rate="0.9787234042553191" branch-rate="0.5" complexity="1.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="40" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="1" branch="false"/>
+								<line number="45" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="class$" signature="(Ljava/lang/String;)Ljava/lang/Class;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="118" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="create" signature="()V" line-rate="0.9782608695652174" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="48" hits="1" branch="false"/>
+								<line number="49" hits="1" branch="false"/>
+								<line number="50" hits="1" branch="false"/>
+								<line number="51" hits="1" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="59" hits="1" branch="false"/>
+								<line number="61" hits="1" branch="false"/>
+								<line number="63" hits="1" branch="false"/>
+								<line number="65" hits="1" branch="false"/>
+								<line number="67" hits="1" branch="false"/>
+								<line number="69" hits="1" branch="false"/>
+								<line number="70" hits="1" branch="false"/>
+								<line number="72" hits="1" branch="false"/>
+								<line number="73" hits="1" branch="false"/>
+								<line number="77" hits="1" branch="false"/>
+								<line number="78" hits="1" branch="false"/>
+								<line number="79" hits="1" branch="false"/>
+								<line number="80" hits="1" branch="false"/>
+								<line number="90" hits="1" branch="false"/>
+								<line number="91" hits="1" branch="false"/>
+								<line number="92" hits="1" branch="false"/>
+								<line number="93" hits="1" branch="false"/>
+								<line number="94" hits="1" branch="false"/>
+								<line number="95" hits="1" branch="false"/>
+								<line number="96" hits="2" branch="false"/>
+								<line number="97" hits="1" branch="false"/>
+								<line number="99" hits="1" branch="false"/>
+								<line number="100" hits="1" branch="false"/>
+								<line number="101" hits="1" branch="false"/>
+								<line number="102" hits="1" branch="false"/>
+								<line number="103" hits="1" branch="false"/>
+								<line number="107" hits="1" branch="false"/>
+								<line number="108" hits="1" branch="false"/>
+								<line number="109" hits="1" branch="false"/>
+								<line number="110" hits="1" branch="false"/>
+								<line number="111" hits="1" branch="false"/>
+								<line number="112" hits="2" branch="false"/>
+								<line number="113" hits="1" branch="false"/>
+								<line number="115" hits="1" branch="false"/>
+								<line number="116" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="117" hits="1" branch="false"/>
+								<line number="120" hits="1" branch="false"/>
+								<line number="121" hits="1" branch="false"/>
+								<line number="122" hits="2" branch="false"/>
+								<line number="123" hits="1" branch="false"/>
+								<line number="126" hits="1" branch="false"/>
+								<line number="127" hits="1" branch="false"/>
+								<line number="128" hits="1" branch="false"/>
+								<line number="129" hits="1" branch="false"/>
+								<line number="130" hits="1" branch="false"/>
+								<line number="131" hits="1" branch="false"/>
+								<line number="134" hits="1" branch="false"/>
+								<line number="135" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="136" hits="1" branch="false"/>
+								<line number="137" hits="0" branch="false"/>
+								<line number="139" hits="1" branch="false"/>
+								<line number="140" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="141" hits="1" branch="false"/>
+								<line number="142" hits="0" branch="false"/>
+								<line number="144" hits="1" branch="false"/>
+								<line number="145" hits="2" branch="false"/>
+								<line number="146" hits="1" branch="false"/>
+								<line number="149" hits="1" branch="false"/>
+								<line number="150" hits="1" branch="false"/>
+								<line number="151" hits="1" branch="false"/>
+								<line number="152" hits="1" branch="false"/>
+								<line number="153" hits="1" branch="false"/>
+								<line number="154" hits="2" branch="false"/>
+								<line number="155" hits="1" branch="false"/>
+								<line number="157" hits="2" branch="false"/>
+								<line number="158" hits="1" branch="false"/>
+								<line number="160" hits="1" branch="false"/>
+								<line number="161" hits="1" branch="false"/>
+								<line number="162" hits="2" branch="false"/>
+								<line number="163" hits="1" branch="false"/>
+								<line number="166" hits="1" branch="false"/>
+								<line number="167" hits="1" branch="false"/>
+								<line number="168" hits="1" branch="false"/>
+								<line number="169" hits="1" branch="false"/>
+								<line number="170" hits="1" branch="false"/>
+								<line number="171" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="172" hits="1" branch="false"/>
+								<line number="173" hits="0" branch="false"/>
+								<line number="175" hits="1" branch="false"/>
+								<line number="176" hits="1" branch="false"/>
+								<line number="179" hits="1" branch="false"/>
+								<line number="180" hits="1" branch="false"/>
+								<line number="183" hits="1" branch="false"/>
+								<line number="184" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="185" hits="1" branch="false"/>
+								<line number="186" hits="0" branch="false"/>
+								<line number="188" hits="1" branch="false"/>
+								<line number="189" hits="1" branch="false"/>
+								<line number="190" hits="1" branch="false"/>
+								<line number="191" hits="1" branch="false"/>
+								<line number="192" hits="1" branch="false"/>
+								<line number="193" hits="1" branch="false"/>
+								<line number="194" hits="2" branch="false"/>
+								<line number="195" hits="1" branch="false"/>
+								<line number="197" hits="1" branch="false"/>
+								<line number="198" hits="1" branch="false"/>
+								<line number="199" hits="2" branch="false"/>
+								<line number="200" hits="1" branch="false"/>
+								<line number="204" hits="1" branch="false"/>
+								<line number="205" hits="1" branch="false"/>
+								<line number="206" hits="1" branch="false"/>
+								<line number="207" hits="1" branch="false"/>
+								<line number="208" hits="1" branch="false"/>
+								<line number="209" hits="1" branch="false"/>
+								<line number="210" hits="1" branch="false"/>
+								<line number="214" hits="1" branch="false"/>
+								<line number="215" hits="1" branch="false"/>
+								<line number="216" hits="1" branch="false"/>
+								<line number="217" hits="1" branch="false"/>
+								<line number="218" hits="1" branch="false"/>
+								<line number="219" hits="1" branch="false"/>
+								<line number="221" hits="1" branch="false"/>
+								<line number="222" hits="1" branch="false"/>
+								<line number="223" hits="1" branch="false"/>
+								<line number="225" hits="1" branch="false"/>
+								<line number="226" hits="1" branch="false"/>
+								<line number="227" hits="1" branch="false"/>
+								<line number="229" hits="1" branch="false"/>
+								<line number="230" hits="1" branch="false"/>
+								<line number="231" hits="1" branch="false"/>
+								<line number="233" hits="1" branch="false"/>
+								<line number="237" hits="1" branch="false"/>
+								<line number="246" hits="1" branch="false"/>
+								<line number="248" hits="1" branch="false"/>
+								<line number="249" hits="1" branch="false"/>
+								<line number="250" hits="1" branch="false"/>
+								<line number="251" hits="1" branch="false"/>
+								<line number="252" hits="1" branch="false"/>
+								<line number="253" hits="1" branch="false"/>
+								<line number="254" hits="1" branch="false"/>
+								<line number="256" hits="1" branch="false"/>
+								<line number="257" hits="1" branch="false"/>
+								<line number="258" hits="1" branch="false"/>
+								<line number="259" hits="1" branch="false"/>
+								<line number="260" hits="1" branch="false"/>
+								<line number="261" hits="1" branch="false"/>
+								<line number="262" hits="1" branch="false"/>
+								<line number="263" hits="1" branch="false"/>
+								<line number="264" hits="1" branch="false"/>
+								<line number="265" hits="1" branch="false"/>
+								<line number="266" hits="1" branch="false"/>
+								<line number="267" hits="1" branch="false"/>
+								<line number="268" hits="1" branch="false"/>
+								<line number="269" hits="1" branch="false"/>
+								<line number="270" hits="1" branch="false"/>
+								<line number="271" hits="1" branch="false"/>
+								<line number="272" hits="1" branch="false"/>
+								<line number="273" hits="1" branch="false"/>
+								<line number="274" hits="1" branch="false"/>
+								<line number="275" hits="1" branch="false"/>
+								<line number="277" hits="1" branch="false"/>
+								<line number="279" hits="1" branch="false"/>
+								<line number="280" hits="1" branch="false"/>
+								<line number="281" hits="1" branch="false"/>
+								<line number="282" hits="1" branch="false"/>
+								<line number="283" hits="1" branch="false"/>
+								<line number="284" hits="1" branch="false"/>
+								<line number="285" hits="1" branch="false"/>
+								<line number="286" hits="1" branch="false"/>
+								<line number="287" hits="1" branch="false"/>
+								<line number="288" hits="1" branch="false"/>
+								<line number="289" hits="1" branch="false"/>
+								<line number="291" hits="1" branch="false"/>
+								<line number="293" hits="1" branch="false"/>
+								<line number="294" hits="1" branch="false"/>
+								<line number="296" hits="1" branch="false"/>
+								<line number="297" hits="1" branch="false"/>
+								<line number="298" hits="1" branch="false"/>
+								<line number="299" hits="1" branch="false"/>
+								<line number="300" hits="1" branch="false"/>
+								<line number="301" hits="1" branch="false"/>
+								<line number="302" hits="1" branch="false"/>
+								<line number="303" hits="1" branch="false"/>
+								<line number="305" hits="1" branch="false"/>
+								<line number="306" hits="1" branch="false"/>
+								<line number="307" hits="1" branch="false"/>
+								<line number="308" hits="1" branch="false"/>
+								<line number="309" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="40" hits="1" branch="false"/>
+						<line number="44" hits="1" branch="false"/>
+						<line number="45" hits="1" branch="false"/>
+						<line number="48" hits="1" branch="false"/>
+						<line number="49" hits="1" branch="false"/>
+						<line number="50" hits="1" branch="false"/>
+						<line number="51" hits="1" branch="false"/>
+						<line number="52" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="59" hits="1" branch="false"/>
+						<line number="61" hits="1" branch="false"/>
+						<line number="63" hits="1" branch="false"/>
+						<line number="65" hits="1" branch="false"/>
+						<line number="67" hits="1" branch="false"/>
+						<line number="69" hits="1" branch="false"/>
+						<line number="70" hits="1" branch="false"/>
+						<line number="72" hits="1" branch="false"/>
+						<line number="73" hits="1" branch="false"/>
+						<line number="77" hits="1" branch="false"/>
+						<line number="78" hits="1" branch="false"/>
+						<line number="79" hits="1" branch="false"/>
+						<line number="80" hits="1" branch="false"/>
+						<line number="90" hits="1" branch="false"/>
+						<line number="91" hits="1" branch="false"/>
+						<line number="92" hits="1" branch="false"/>
+						<line number="93" hits="1" branch="false"/>
+						<line number="94" hits="1" branch="false"/>
+						<line number="95" hits="1" branch="false"/>
+						<line number="96" hits="2" branch="false"/>
+						<line number="97" hits="1" branch="false"/>
+						<line number="99" hits="1" branch="false"/>
+						<line number="100" hits="1" branch="false"/>
+						<line number="101" hits="1" branch="false"/>
+						<line number="102" hits="1" branch="false"/>
+						<line number="103" hits="1" branch="false"/>
+						<line number="107" hits="1" branch="false"/>
+						<line number="108" hits="1" branch="false"/>
+						<line number="109" hits="1" branch="false"/>
+						<line number="110" hits="1" branch="false"/>
+						<line number="111" hits="1" branch="false"/>
+						<line number="112" hits="2" branch="false"/>
+						<line number="113" hits="1" branch="false"/>
+						<line number="115" hits="1" branch="false"/>
+						<line number="116" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="117" hits="1" branch="false"/>
+						<line number="118" hits="2" branch="false"/>
+						<line number="120" hits="1" branch="false"/>
+						<line number="121" hits="1" branch="false"/>
+						<line number="122" hits="2" branch="false"/>
+						<line number="123" hits="1" branch="false"/>
+						<line number="126" hits="1" branch="false"/>
+						<line number="127" hits="1" branch="false"/>
+						<line number="128" hits="1" branch="false"/>
+						<line number="129" hits="1" branch="false"/>
+						<line number="130" hits="1" branch="false"/>
+						<line number="131" hits="1" branch="false"/>
+						<line number="134" hits="1" branch="false"/>
+						<line number="135" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="136" hits="1" branch="false"/>
+						<line number="137" hits="0" branch="false"/>
+						<line number="139" hits="1" branch="false"/>
+						<line number="140" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="141" hits="1" branch="false"/>
+						<line number="142" hits="0" branch="false"/>
+						<line number="144" hits="1" branch="false"/>
+						<line number="145" hits="2" branch="false"/>
+						<line number="146" hits="1" branch="false"/>
+						<line number="149" hits="1" branch="false"/>
+						<line number="150" hits="1" branch="false"/>
+						<line number="151" hits="1" branch="false"/>
+						<line number="152" hits="1" branch="false"/>
+						<line number="153" hits="1" branch="false"/>
+						<line number="154" hits="2" branch="false"/>
+						<line number="155" hits="1" branch="false"/>
+						<line number="157" hits="2" branch="false"/>
+						<line number="158" hits="1" branch="false"/>
+						<line number="160" hits="1" branch="false"/>
+						<line number="161" hits="1" branch="false"/>
+						<line number="162" hits="2" branch="false"/>
+						<line number="163" hits="1" branch="false"/>
+						<line number="166" hits="1" branch="false"/>
+						<line number="167" hits="1" branch="false"/>
+						<line number="168" hits="1" branch="false"/>
+						<line number="169" hits="1" branch="false"/>
+						<line number="170" hits="1" branch="false"/>
+						<line number="171" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="172" hits="1" branch="false"/>
+						<line number="173" hits="0" branch="false"/>
+						<line number="175" hits="1" branch="false"/>
+						<line number="176" hits="1" branch="false"/>
+						<line number="179" hits="1" branch="false"/>
+						<line number="180" hits="1" branch="false"/>
+						<line number="183" hits="1" branch="false"/>
+						<line number="184" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="185" hits="1" branch="false"/>
+						<line number="186" hits="0" branch="false"/>
+						<line number="188" hits="1" branch="false"/>
+						<line number="189" hits="1" branch="false"/>
+						<line number="190" hits="1" branch="false"/>
+						<line number="191" hits="1" branch="false"/>
+						<line number="192" hits="1" branch="false"/>
+						<line number="193" hits="1" branch="false"/>
+						<line number="194" hits="2" branch="false"/>
+						<line number="195" hits="1" branch="false"/>
+						<line number="197" hits="1" branch="false"/>
+						<line number="198" hits="1" branch="false"/>
+						<line number="199" hits="2" branch="false"/>
+						<line number="200" hits="1" branch="false"/>
+						<line number="204" hits="1" branch="false"/>
+						<line number="205" hits="1" branch="false"/>
+						<line number="206" hits="1" branch="false"/>
+						<line number="207" hits="1" branch="false"/>
+						<line number="208" hits="1" branch="false"/>
+						<line number="209" hits="1" branch="false"/>
+						<line number="210" hits="1" branch="false"/>
+						<line number="214" hits="1" branch="false"/>
+						<line number="215" hits="1" branch="false"/>
+						<line number="216" hits="1" branch="false"/>
+						<line number="217" hits="1" branch="false"/>
+						<line number="218" hits="1" branch="false"/>
+						<line number="219" hits="1" branch="false"/>
+						<line number="221" hits="1" branch="false"/>
+						<line number="222" hits="1" branch="false"/>
+						<line number="223" hits="1" branch="false"/>
+						<line number="225" hits="1" branch="false"/>
+						<line number="226" hits="1" branch="false"/>
+						<line number="227" hits="1" branch="false"/>
+						<line number="229" hits="1" branch="false"/>
+						<line number="230" hits="1" branch="false"/>
+						<line number="231" hits="1" branch="false"/>
+						<line number="233" hits="1" branch="false"/>
+						<line number="237" hits="1" branch="false"/>
+						<line number="246" hits="1" branch="false"/>
+						<line number="248" hits="1" branch="false"/>
+						<line number="249" hits="1" branch="false"/>
+						<line number="250" hits="1" branch="false"/>
+						<line number="251" hits="1" branch="false"/>
+						<line number="252" hits="1" branch="false"/>
+						<line number="253" hits="1" branch="false"/>
+						<line number="254" hits="1" branch="false"/>
+						<line number="256" hits="1" branch="false"/>
+						<line number="257" hits="1" branch="false"/>
+						<line number="258" hits="1" branch="false"/>
+						<line number="259" hits="1" branch="false"/>
+						<line number="260" hits="1" branch="false"/>
+						<line number="261" hits="1" branch="false"/>
+						<line number="262" hits="1" branch="false"/>
+						<line number="263" hits="1" branch="false"/>
+						<line number="264" hits="1" branch="false"/>
+						<line number="265" hits="1" branch="false"/>
+						<line number="266" hits="1" branch="false"/>
+						<line number="267" hits="1" branch="false"/>
+						<line number="268" hits="1" branch="false"/>
+						<line number="269" hits="1" branch="false"/>
+						<line number="270" hits="1" branch="false"/>
+						<line number="271" hits="1" branch="false"/>
+						<line number="272" hits="1" branch="false"/>
+						<line number="273" hits="1" branch="false"/>
+						<line number="274" hits="1" branch="false"/>
+						<line number="275" hits="1" branch="false"/>
+						<line number="277" hits="1" branch="false"/>
+						<line number="279" hits="1" branch="false"/>
+						<line number="280" hits="1" branch="false"/>
+						<line number="281" hits="1" branch="false"/>
+						<line number="282" hits="1" branch="false"/>
+						<line number="283" hits="1" branch="false"/>
+						<line number="284" hits="1" branch="false"/>
+						<line number="285" hits="1" branch="false"/>
+						<line number="286" hits="1" branch="false"/>
+						<line number="287" hits="1" branch="false"/>
+						<line number="288" hits="1" branch="false"/>
+						<line number="289" hits="1" branch="false"/>
+						<line number="291" hits="1" branch="false"/>
+						<line number="293" hits="1" branch="false"/>
+						<line number="294" hits="1" branch="false"/>
+						<line number="296" hits="1" branch="false"/>
+						<line number="297" hits="1" branch="false"/>
+						<line number="298" hits="1" branch="false"/>
+						<line number="299" hits="1" branch="false"/>
+						<line number="300" hits="1" branch="false"/>
+						<line number="301" hits="1" branch="false"/>
+						<line number="302" hits="1" branch="false"/>
+						<line number="303" hits="1" branch="false"/>
+						<line number="305" hits="1" branch="false"/>
+						<line number="306" hits="1" branch="false"/>
+						<line number="307" hits="1" branch="false"/>
+						<line number="308" hits="1" branch="false"/>
+						<line number="309" hits="1" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.UnitSystem" filename="org/universAAL/ontology/unit/UnitSystem.java" line-rate="0.3508771929824561" branch-rate="0.21428571428571427" complexity="2.2">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="31" hits="0" branch="false"/>
+								<line number="32" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="35" hits="5" branch="false"/>
+								<line number="36" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="0" branch="false"/>
+								<line number="40" hits="0" branch="false"/>
+								<line number="41" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="addPrefixes" signature="(Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="0.8888888888888888" branch-rate="0.75" complexity="0">
+							<lines>
+								<line number="109" hits="28" branch="false"/>
+								<line number="111" hits="28" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="112" hits="26" branch="false"/>
+								<line number="114" hits="2" branch="false"/>
+								<line number="115" hits="2" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="117" hits="0" branch="false"/>
+								<line number="119" hits="28" branch="false"/>
+								<line number="120" hits="28" branch="false"/>
+								<line number="121" hits="28" branch="false"/>
+							</lines>
+						</method>
+						<method name="addUnits" signature="(Lorg/universAAL/ontology/unit/Unit;)V" line-rate="0.8888888888888888" branch-rate="0.75" complexity="0">
+							<lines>
+								<line number="76" hits="20" branch="false"/>
+								<line number="78" hits="20" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="79" hits="17" branch="false"/>
+								<line number="81" hits="3" branch="false"/>
+								<line number="82" hits="3" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="84" hits="0" branch="false"/>
+								<line number="86" hits="20" branch="false"/>
+								<line number="87" hits="20" branch="false"/>
+								<line number="88" hits="20" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="13" branch="false"/>
+							</lines>
+						</method>
+						<method name="getName" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="57" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPrefixes" signature="()[Lorg/universAAL/ontology/unit/Prefix;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="99" hits="0" branch="false"/>
+								<line number="100" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="101" hits="0" branch="false"/>
+								<line number="102" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="104" hits="0" branch="false"/>
+								<line number="105" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="48" hits="129" branch="false"/>
+							</lines>
+						</method>
+						<method name="getUnits" signature="()[Lorg/universAAL/ontology/unit/Unit;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="66" hits="0" branch="false"/>
+								<line number="67" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="68" hits="0" branch="false"/>
+								<line number="69" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="71" hits="0" branch="false"/>
+								<line number="72" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="52" hits="0" branch="true" condition-coverage="0% (0/4)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+										<condition number="1" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="53" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+							</lines>
+						</method>
+						<method name="setName" signature="(Ljava/lang/String;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="61" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="62" hits="0" branch="false"/>
+								<line number="63" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setPrefixes" signature="(Ljava/util/ArrayList;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="133" hits="0" branch="false"/>
+								<line number="134" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setPrefixes" signature="([Lorg/universAAL/ontology/unit/Prefix;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="124" hits="0" branch="false"/>
+								<line number="125" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="126" hits="0" branch="false"/>
+								<line number="128" hits="0" branch="false"/>
+								<line number="129" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setUnits" signature="([Lorg/universAAL/ontology/unit/Unit;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="91" hits="0" branch="false"/>
+								<line number="92" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="93" hits="0" branch="false"/>
+								<line number="95" hits="0" branch="false"/>
+								<line number="96" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="31" hits="0" branch="false"/>
+						<line number="32" hits="0" branch="false"/>
+						<line number="35" hits="5" branch="false"/>
+						<line number="36" hits="5" branch="false"/>
+						<line number="39" hits="0" branch="false"/>
+						<line number="40" hits="0" branch="false"/>
+						<line number="41" hits="0" branch="false"/>
+						<line number="44" hits="13" branch="false"/>
+						<line number="48" hits="129" branch="false"/>
+						<line number="52" hits="0" branch="true" condition-coverage="0% (0/4)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+								<condition number="1" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="53" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="57" hits="0" branch="false"/>
+						<line number="61" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="62" hits="0" branch="false"/>
+						<line number="63" hits="0" branch="false"/>
+						<line number="66" hits="0" branch="false"/>
+						<line number="67" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="68" hits="0" branch="false"/>
+						<line number="69" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="71" hits="0" branch="false"/>
+						<line number="72" hits="0" branch="false"/>
+						<line number="76" hits="20" branch="false"/>
+						<line number="78" hits="20" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="79" hits="17" branch="false"/>
+						<line number="81" hits="3" branch="false"/>
+						<line number="82" hits="3" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="84" hits="0" branch="false"/>
+						<line number="86" hits="20" branch="false"/>
+						<line number="87" hits="20" branch="false"/>
+						<line number="88" hits="20" branch="false"/>
+						<line number="91" hits="0" branch="false"/>
+						<line number="92" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="93" hits="0" branch="false"/>
+						<line number="95" hits="0" branch="false"/>
+						<line number="96" hits="0" branch="false"/>
+						<line number="99" hits="0" branch="false"/>
+						<line number="100" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="101" hits="0" branch="false"/>
+						<line number="102" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="104" hits="0" branch="false"/>
+						<line number="105" hits="0" branch="false"/>
+						<line number="109" hits="28" branch="false"/>
+						<line number="111" hits="28" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="112" hits="26" branch="false"/>
+						<line number="114" hits="2" branch="false"/>
+						<line number="115" hits="2" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="117" hits="0" branch="false"/>
+						<line number="119" hits="28" branch="false"/>
+						<line number="120" hits="28" branch="false"/>
+						<line number="121" hits="28" branch="false"/>
+						<line number="124" hits="0" branch="false"/>
+						<line number="125" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="126" hits="0" branch="false"/>
+						<line number="128" hits="0" branch="false"/>
+						<line number="129" hits="0" branch="false"/>
+						<line number="133" hits="0" branch="false"/>
+						<line number="134" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="org.universAAL.ontology.unit.services" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="org.universAAL.ontology.unit.services.UnitConversionService" filename="org/universAAL/ontology/unit/services/UnitConversionService.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="0" branch="false"/>
+								<line number="45" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="51" hits="2" branch="false"/>
+								<line number="52" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="55" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="59" hits="9" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="63" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="44" hits="0" branch="false"/>
+						<line number="45" hits="0" branch="false"/>
+						<line number="51" hits="2" branch="false"/>
+						<line number="52" hits="2" branch="false"/>
+						<line number="55" hits="6" branch="false"/>
+						<line number="59" hits="9" branch="false"/>
+						<line number="63" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.services.UnitService" filename="org/universAAL/ontology/unit/services/UnitService.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="0" branch="false"/>
+								<line number="28" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="31" hits="2" branch="false"/>
+								<line number="32" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="35" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="43" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="27" hits="0" branch="false"/>
+						<line number="28" hits="0" branch="false"/>
+						<line number="31" hits="2" branch="false"/>
+						<line number="32" hits="2" branch="false"/>
+						<line number="35" hits="6" branch="false"/>
+						<line number="39" hits="4" branch="false"/>
+						<line number="43" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="org.universAAL.ontology.unit.system" line-rate="0.9545454545454546" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="org.universAAL.ontology.unit.system.BinarySystem" filename="org/universAAL/ontology/unit/system/BinarySystem.java" line-rate="0.9444444444444444" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="26" hits="1" branch="false"/>
+								<line number="27" hits="1" branch="false"/>
+								<line number="29" hits="1" branch="false"/>
+								<line number="31" hits="1" branch="false"/>
+								<line number="32" hits="1" branch="false"/>
+								<line number="33" hits="1" branch="false"/>
+								<line number="34" hits="1" branch="false"/>
+								<line number="35" hits="1" branch="false"/>
+								<line number="36" hits="1" branch="false"/>
+								<line number="37" hits="1" branch="false"/>
+								<line number="38" hits="1" branch="false"/>
+								<line number="41" hits="1" branch="false"/>
+								<line number="42" hits="1" branch="false"/>
+								<line number="43" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="24" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="newBinaryPrefix" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/ontology/unit/Prefix;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="46" hits="8" branch="false"/>
+								<line number="47" hits="8" branch="false"/>
+								<line number="48" hits="8" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="24" hits="0" branch="false"/>
+						<line number="26" hits="1" branch="false"/>
+						<line number="27" hits="1" branch="false"/>
+						<line number="29" hits="1" branch="false"/>
+						<line number="31" hits="1" branch="false"/>
+						<line number="32" hits="1" branch="false"/>
+						<line number="33" hits="1" branch="false"/>
+						<line number="34" hits="1" branch="false"/>
+						<line number="35" hits="1" branch="false"/>
+						<line number="36" hits="1" branch="false"/>
+						<line number="37" hits="1" branch="false"/>
+						<line number="38" hits="1" branch="false"/>
+						<line number="41" hits="1" branch="false"/>
+						<line number="42" hits="1" branch="false"/>
+						<line number="43" hits="1" branch="false"/>
+						<line number="46" hits="8" branch="false"/>
+						<line number="47" hits="8" branch="false"/>
+						<line number="48" hits="8" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.system.InternationalSystem" filename="org/universAAL/ontology/unit/system/InternationalSystem.java" line-rate="0.975" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="29" hits="1" branch="false"/>
+								<line number="31" hits="1" branch="false"/>
+								<line number="33" hits="1" branch="false"/>
+								<line number="35" hits="1" branch="false"/>
+								<line number="37" hits="1" branch="false"/>
+								<line number="39" hits="1" branch="false"/>
+								<line number="41" hits="1" branch="false"/>
+								<line number="43" hits="1" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+								<line number="47" hits="1" branch="false"/>
+								<line number="48" hits="1" branch="false"/>
+								<line number="49" hits="1" branch="false"/>
+								<line number="50" hits="1" branch="false"/>
+								<line number="51" hits="1" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="53" hits="1" branch="false"/>
+								<line number="54" hits="1" branch="false"/>
+								<line number="55" hits="1" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="57" hits="1" branch="false"/>
+								<line number="58" hits="1" branch="false"/>
+								<line number="59" hits="1" branch="false"/>
+								<line number="60" hits="1" branch="false"/>
+								<line number="61" hits="1" branch="false"/>
+								<line number="62" hits="1" branch="false"/>
+								<line number="63" hits="1" branch="false"/>
+								<line number="64" hits="1" branch="false"/>
+								<line number="65" hits="1" branch="false"/>
+								<line number="68" hits="1" branch="false"/>
+								<line number="69" hits="1" branch="false"/>
+								<line number="70" hits="1" branch="false"/>
+								<line number="71" hits="1" branch="false"/>
+								<line number="72" hits="1" branch="false"/>
+								<line number="73" hits="1" branch="false"/>
+								<line number="74" hits="1" branch="false"/>
+								<line number="75" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="24" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="newDecimalPrefix" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/ontology/unit/Prefix;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="78" hits="20" branch="false"/>
+								<line number="79" hits="20" branch="false"/>
+								<line number="80" hits="20" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="24" hits="0" branch="false"/>
+						<line number="29" hits="1" branch="false"/>
+						<line number="31" hits="1" branch="false"/>
+						<line number="33" hits="1" branch="false"/>
+						<line number="35" hits="1" branch="false"/>
+						<line number="37" hits="1" branch="false"/>
+						<line number="39" hits="1" branch="false"/>
+						<line number="41" hits="1" branch="false"/>
+						<line number="43" hits="1" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+						<line number="47" hits="1" branch="false"/>
+						<line number="48" hits="1" branch="false"/>
+						<line number="49" hits="1" branch="false"/>
+						<line number="50" hits="1" branch="false"/>
+						<line number="51" hits="1" branch="false"/>
+						<line number="52" hits="1" branch="false"/>
+						<line number="53" hits="1" branch="false"/>
+						<line number="54" hits="1" branch="false"/>
+						<line number="55" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="57" hits="1" branch="false"/>
+						<line number="58" hits="1" branch="false"/>
+						<line number="59" hits="1" branch="false"/>
+						<line number="60" hits="1" branch="false"/>
+						<line number="61" hits="1" branch="false"/>
+						<line number="62" hits="1" branch="false"/>
+						<line number="63" hits="1" branch="false"/>
+						<line number="64" hits="1" branch="false"/>
+						<line number="65" hits="1" branch="false"/>
+						<line number="68" hits="1" branch="false"/>
+						<line number="69" hits="1" branch="false"/>
+						<line number="70" hits="1" branch="false"/>
+						<line number="71" hits="1" branch="false"/>
+						<line number="72" hits="1" branch="false"/>
+						<line number="73" hits="1" branch="false"/>
+						<line number="74" hits="1" branch="false"/>
+						<line number="75" hits="1" branch="false"/>
+						<line number="78" hits="20" branch="false"/>
+						<line number="79" hits="20" branch="false"/>
+						<line number="80" hits="20" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.system.TimeSystem" filename="org/universAAL/ontology/unit/system/TimeSystem.java" line-rate="0.96" branch-rate="1.0" complexity="0.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="1" branch="false"/>
+								<line number="35" hits="1" branch="false"/>
+								<line number="36" hits="1" branch="false"/>
+								<line number="38" hits="1" branch="false"/>
+								<line number="40" hits="1" branch="false"/>
+								<line number="42" hits="1" branch="false"/>
+								<line number="44" hits="1" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+								<line number="48" hits="1" branch="false"/>
+								<line number="50" hits="1" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="54" hits="1" branch="false"/>
+								<line number="59" hits="1" branch="false"/>
+								<line number="60" hits="1" branch="false"/>
+								<line number="61" hits="1" branch="false"/>
+								<line number="62" hits="1" branch="false"/>
+								<line number="63" hits="1" branch="false"/>
+								<line number="64" hits="1" branch="false"/>
+								<line number="65" hits="1" branch="false"/>
+								<line number="66" hits="1" branch="false"/>
+								<line number="67" hits="1" branch="false"/>
+								<line number="68" hits="1" branch="false"/>
+								<line number="69" hits="1" branch="false"/>
+								<line number="70" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="27" hits="0" branch="false"/>
+						<line number="32" hits="1" branch="false"/>
+						<line number="35" hits="1" branch="false"/>
+						<line number="36" hits="1" branch="false"/>
+						<line number="38" hits="1" branch="false"/>
+						<line number="40" hits="1" branch="false"/>
+						<line number="42" hits="1" branch="false"/>
+						<line number="44" hits="1" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+						<line number="48" hits="1" branch="false"/>
+						<line number="50" hits="1" branch="false"/>
+						<line number="52" hits="1" branch="false"/>
+						<line number="54" hits="1" branch="false"/>
+						<line number="59" hits="1" branch="false"/>
+						<line number="60" hits="1" branch="false"/>
+						<line number="61" hits="1" branch="false"/>
+						<line number="62" hits="1" branch="false"/>
+						<line number="63" hits="1" branch="false"/>
+						<line number="64" hits="1" branch="false"/>
+						<line number="65" hits="1" branch="false"/>
+						<line number="66" hits="1" branch="false"/>
+						<line number="67" hits="1" branch="false"/>
+						<line number="68" hits="1" branch="false"/>
+						<line number="69" hits="1" branch="false"/>
+						<line number="70" hits="1" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.unit.system.Util" filename="org/universAAL/ontology/unit/system/Util.java" line-rate="0.8" branch-rate="1.0" complexity="0.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="25" hits="1" branch="false"/>
+								<line number="27" hits="1" branch="false"/>
+								<line number="29" hits="1" branch="false"/>
+								<line number="31" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="23" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="23" hits="0" branch="false"/>
+						<line number="25" hits="1" branch="false"/>
+						<line number="27" hits="1" branch="false"/>
+						<line number="29" hits="1" branch="false"/>
+						<line number="31" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>

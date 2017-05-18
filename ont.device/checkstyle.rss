@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology Devices - Checkstyle report</title>
+    <link>http://ontology/ont.device/</link>
+    <description>universAAL Ontology Devices - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 62,
+             Errors: 831,
+             Warnings: 298,
+             Infos: 711
+      </title>
+            <link>http://ontology/ont.device//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.device//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.WaterFlowSensor.java">org/universAAL/ontology/device/WaterFlowSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.EnvironmentSensor.java">org/universAAL/ontology/device/EnvironmentSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.LightActuator.java">org/universAAL/ontology/device/LightActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.WaterFlowActuator.java">org/universAAL/ontology/device/WaterFlowActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.Actuator.java">org/universAAL/ontology/device/Actuator.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.CO2Sensor.java">org/universAAL/ontology/device/CO2Sensor.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.TemperatureLevelSensor.java">org/universAAL/ontology/device/TemperatureLevelSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DimmerSensor.java">org/universAAL/ontology/device/DimmerSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.HumiditySensor.java">org/universAAL/ontology/device/HumiditySensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.DeviceActivator.java">org/universAAL/ontology/DeviceActivator.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ExitValue.java">org/universAAL/ontology/device/ExitValue.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DoorSensor.java">org/universAAL/ontology/device/DoorSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.Sensor.java">org/universAAL/ontology/device/Sensor.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.WaterFlowController.java">org/universAAL/ontology/device/WaterFlowController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.BlindController.java">org/universAAL/ontology/device/BlindController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DosageSensor.java">org/universAAL/ontology/device/DosageSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.FloodSensor.java">org/universAAL/ontology/device/FloodSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.LightController.java">org/universAAL/ontology/device/LightController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.StatusValue.java">org/universAAL/ontology/device/StatusValue.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.EnuresisSensor.java">org/universAAL/ontology/device/EnuresisSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SwitchController.java">org/universAAL/ontology/device/SwitchController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ValueType.java">org/universAAL/ontology/device/ValueType.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DoorController.java">org/universAAL/ontology/device/DoorController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.COMeter.java">org/universAAL/ontology/device/COMeter.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.WindowController.java">org/universAAL/ontology/device/WindowController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.CurtainController.java">org/universAAL/ontology/device/CurtainController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DimmerController.java">org/universAAL/ontology/device/DimmerController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.BlindActuator.java">org/universAAL/ontology/device/BlindActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SmokeMeter.java">org/universAAL/ontology/device/SmokeMeter.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.TemperatureLevelValue.java">org/universAAL/ontology/device/TemperatureLevelValue.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.HeaterActuator.java">org/universAAL/ontology/device/HeaterActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DimmerActuator.java">org/universAAL/ontology/device/DimmerActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.CurtainActuator.java">org/universAAL/ontology/device/CurtainActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DeviceOntology.java">org/universAAL/ontology/device/DeviceOntology.java</a>
+                </td>
+                <td>
+                  35
+                </td>
+                <td>
+                  106
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DoorActuator.java">org/universAAL/ontology/device/DoorActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.GasMeter.java">org/universAAL/ontology/device/GasMeter.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.FallSensor.java">org/universAAL/ontology/device/FallSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.COSensor.java">org/universAAL/ontology/device/COSensor.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.GlassBreakSensor.java">org/universAAL/ontology/device/GlassBreakSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.HeaterSensor.java">org/universAAL/ontology/device/HeaterSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.PresenceSensor.java">org/universAAL/ontology/device/PresenceSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.CurtainSensor.java">org/universAAL/ontology/device/CurtainSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.DeviceFactory.java">org/universAAL/ontology/DeviceFactory.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  48
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ValueDevice.java">org/universAAL/ontology/device/ValueDevice.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ContactSensor.java">org/universAAL/ontology/device/ContactSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.BlindSensor.java">org/universAAL/ontology/device/BlindSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SmokeSensor.java">org/universAAL/ontology/device/SmokeSensor.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ExitSensor.java">org/universAAL/ontology/device/ExitSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.TemperatureSensor.java">org/universAAL/ontology/device/TemperatureSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SwitchActuator.java">org/universAAL/ontology/device/SwitchActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.HeaterController.java">org/universAAL/ontology/device/HeaterController.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.MotionSensor.java">org/universAAL/ontology/device/MotionSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SwitchSensor.java">org/universAAL/ontology/device/SwitchSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.CO2Meter.java">org/universAAL/ontology/device/CO2Meter.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.LightSensor.java">org/universAAL/ontology/device/LightSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.PanicButtonSensor.java">org/universAAL/ontology/device/PanicButtonSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.MotionValue.java">org/universAAL/ontology/device/MotionValue.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.WindowSensor.java">org/universAAL/ontology/device/WindowSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.WindowActuator.java">org/universAAL/ontology/device/WindowActuator.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.GasSensor.java">org/universAAL/ontology/device/GasSensor.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DosageValue.java">org/universAAL/ontology/device/DosageValue.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.EnvironmentMeter.java">org/universAAL/ontology/device/EnvironmentMeter.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="c130701" href="./AALSpaceDescriptor.html" title="org.universAAL.ontology.sysinfo.AALSpaceDescriptor" alt="" coords="15,209,158,234"/>
+<area shape="rect" id="node1" href="./AALSpaceDescriptor.html" title="&lt;TABLE&gt;" alt="" coords="5,197,168,245"/>
+<area shape="rect" id="c130703" href="./PeerCardDescriptor.html" title="org.universAAL.ontology.sysinfo.PeerCardDescriptor" alt="" coords="203,209,339,234"/>
+<area shape="rect" id="node2" href="./PeerCardDescriptor.html" title="&lt;TABLE&gt;" alt="" coords="192,197,349,245"/>
+<area shape="rect" id="c130704" href="./Descriptor.html" title="org.universAAL.ontology.sysinfo.Descriptor" alt="" coords="230,113,311,138"/>
+<area shape="rect" id="node3" href="./Descriptor.html" title="&lt;TABLE&gt;" alt="" coords="220,101,321,149"/>
+<area shape="rect" id="c130705" href="./AALSpaceStatusDescriptor.html" title="org.universAAL.ontology.sysinfo.AALSpaceStatusDescriptor" alt="" coords="384,209,565,234"/>
+<area shape="rect" id="node4" href="./AALSpaceStatusDescriptor.html" title="&lt;TABLE&gt;" alt="" coords="373,197,576,245"/>
+<area shape="rect" id="c130707" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="206,17,335,42"/>
+<area shape="rect" id="node7" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="196,5,345,53"/>
+</map>

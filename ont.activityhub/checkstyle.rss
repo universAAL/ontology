@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology for ISO 11073-10471 Sensors - Checkstyle report</title>
+    <link></link>
+    <description>universAAL Ontology for ISO 11073-10471 Sensors - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 35,
+             Errors: 557,
+             Warnings: 159,
+             Infos: 396
+      </title>
+            <link>/checkstyle.html</link>
+      <description>
+        <p>Click <a href="/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PropertyExitSensor.java">org/universAAL/ontology/activityhub/PropertyExitSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MedicationDosageSensor.java">org/universAAL/ontology/activityhub/MedicationDosageSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.EnuresisSensor.java">org/universAAL/ontology/activityhub/EnuresisSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.FallSensorEvent.java">org/universAAL/ontology/activityhub/FallSensorEvent.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.UsageSensor.java">org/universAAL/ontology/activityhub/UsageSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.SmokeSensor.java">org/universAAL/ontology/activityhub/SmokeSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.ActivityHubOntology.java">org/universAAL/ontology/ActivityHubOntology.java</a>
+                </td>
+                <td>
+                  19
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.EnvironmentalSensorEvent.java">org/universAAL/ontology/activityhub/EnvironmentalSensorEvent.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.GasSensor.java">org/universAAL/ontology/activityhub/GasSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.factory.ActivityHubFactory.java">org/universAAL/ontology/activityhub/factory/ActivityHubFactory.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.SwitchSensor.java">org/universAAL/ontology/activityhub/SwitchSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PropertyExitSensorEvent.java">org/universAAL/ontology/activityhub/PropertyExitSensorEvent.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ActivityHubSensor.java">org/universAAL/ontology/activityhub/ActivityHubSensor.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator.java">org/universAAL/ontology/activityhub/ext/AdaptorPlugActuator.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.util.ActivityHubSensorType.java">org/universAAL/ontology/activityhub/util/ActivityHubSensorType.java</a>
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.Activator.java">org/universAAL/ontology/activityhub/Activator.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.TemperatureSensor.java">org/universAAL/ontology/activityhub/TemperatureSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ActivityHub.java">org/universAAL/ontology/activityhub/ActivityHub.java</a>
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ContactClosureSensorEvent.java">org/universAAL/ontology/activityhub/ContactClosureSensorEvent.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.FallSensor.java">org/universAAL/ontology/activityhub/FallSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MotionSensor.java">org/universAAL/ontology/activityhub/MotionSensor.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PersSensor.java">org/universAAL/ontology/activityhub/PersSensor.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MotionSensorEvent.java">org/universAAL/ontology/activityhub/MotionSensorEvent.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.EnuresisSensorEvent.java">org/universAAL/ontology/activityhub/EnuresisSensorEvent.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.WaterSensor.java">org/universAAL/ontology/activityhub/WaterSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.TemperatureSensorEvent.java">org/universAAL/ontology/activityhub/TemperatureSensorEvent.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ActivityHubSensorEvent.java">org/universAAL/ontology/activityhub/ActivityHubSensorEvent.java</a>
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.CoSensor.java">org/universAAL/ontology/activityhub/CoSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ContactClosureSensor.java">org/universAAL/ontology/activityhub/ContactClosureSensor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.UsageSensorEvent.java">org/universAAL/ontology/activityhub/UsageSensorEvent.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.factory.ActivityHubEventFactory.java">org/universAAL/ontology/activityhub/factory/ActivityHubEventFactory.java</a>
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.SwitchSensorEvent.java">org/universAAL/ontology/activityhub/SwitchSensorEvent.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PersSensorEvent.java">org/universAAL/ontology/activityhub/PersSensorEvent.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ext.AdaptorPlugActuatorEvent.java">org/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MedicationDosageSensorEvent.java">org/universAAL/ontology/activityhub/MedicationDosageSensorEvent.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

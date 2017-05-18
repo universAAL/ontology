@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="c132009" href="./Device.html" title="org.universAAL.ontology.phThing.Device" alt="" coords="675,113,736,138"/>
+<area shape="rect" id="node1" href="./Device.html" title="&lt;TABLE&gt;" alt="" coords="664,101,747,149"/>
+<area shape="rect" id="c132106" href="../device/ValueDevice.html" title="org.universAAL.ontology.device.ValueDevice" alt="" coords="15,209,110,234"/>
+<area shape="rect" id="node3" href="../device/ValueDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,197,120,245"/>
+<area shape="rect" id="c132150" href="../av/device/VideoCamera.html" title="org.universAAL.ontology.av.device.VideoCamera" alt="" coords="154,209,254,234"/>
+<area shape="rect" id="node4" href="../av/device/VideoCamera.html" title="&lt;TABLE&gt;" alt="" coords="144,197,264,245"/>
+<area shape="rect" id="c132151" href="../av/device/Microphone.html" title="org.universAAL.ontology.av.device.Microphone" alt="" coords="299,209,387,234"/>
+<area shape="rect" id="node5" href="../av/device/Microphone.html" title="&lt;TABLE&gt;" alt="" coords="288,197,397,245"/>
+<area shape="rect" id="c132152" href="../av/device/LoudSpeaker.html" title="org.universAAL.ontology.av.device.LoudSpeaker" alt="" coords="431,209,529,234"/>
+<area shape="rect" id="node6" href="../av/device/LoudSpeaker.html" title="&lt;TABLE&gt;" alt="" coords="421,197,539,245"/>
+<area shape="rect" id="c132233" href="../dependability/Sensor.html" title="org.universAAL.ontology.dependability.Sensor" alt="" coords="573,209,635,234"/>
+<area shape="rect" id="node7" href="../dependability/Sensor.html" title="&lt;TABLE&gt;" alt="" coords="563,197,645,245"/>
+<area shape="rect" id="c132336" href="../hvac/Hvac.html" title="org.universAAL.ontology.hvac.Hvac" alt="" coords="679,209,731,234"/>
+<area shape="rect" id="node8" href="../hvac/Hvac.html" title="&lt;TABLE&gt;" alt="" coords="669,197,741,245"/>
+<area shape="rect" id="c132363" href="../lighting/LightSource.html" title="org.universAAL.ontology.lighting.LightSource" alt="" coords="775,209,865,234"/>
+<area shape="rect" id="node9" href="../lighting/LightSource.html" title="&lt;TABLE&gt;" alt="" coords="765,197,875,245"/>
+<area shape="rect" id="c132365" href="../multimedia/Stereoset.html" title="org.universAAL.ontology.multimedia.Stereoset" alt="" coords="909,209,987,234"/>
+<area shape="rect" id="node10" href="../multimedia/Stereoset.html" title="&lt;TABLE&gt;" alt="" coords="899,197,997,245"/>
+<area shape="rect" id="c132367" href="../multimedia/TV.html" title="org.universAAL.ontology.multimedia.TV" alt="" coords="1039,209,1076,234"/>
+<area shape="rect" id="node11" href="../multimedia/TV.html" title="&lt;TABLE&gt;" alt="" coords="1021,197,1093,245"/>
+<area shape="rect" id="c132455" href="../X73/MDS.html" title="org.universAAL.ontology.X73.MDS" alt="" coords="1128,209,1179,234"/>
+<area shape="rect" id="node12" href="../X73/MDS.html" title="&lt;TABLE&gt;" alt="" coords="1117,197,1189,245"/>
+<area shape="rect" id="c132465" href="../device/home/Strap.html" title="org.universAAL.ontology.device.home.Strap" alt="" coords="1223,209,1275,234"/>
+<area shape="rect" id="node13" href="../device/home/Strap.html" title="&lt;TABLE&gt;" alt="" coords="1213,197,1285,245"/>
+<area shape="rect" id="c132010" href="./PhysicalThing.html" title="org.universAAL.ontology.phThing.PhysicalThing" alt="" coords="654,17,757,42"/>
+<area shape="rect" id="node2" href="./PhysicalThing.html" title="&lt;TABLE&gt;" alt="" coords="644,5,767,53"/>
+</map>

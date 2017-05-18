@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology HVAC - Checkstyle report</title>
+    <link>http://ontology/ont.hvac/</link>
+    <description>universAAL Ontology HVAC - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 12,
+             Errors: 145,
+             Warnings: 60,
+             Infos: 241
+      </title>
+            <link>http://ontology/ont.hvac//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.hvac//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.HvacActivator.java">org/universAAL/ontology/HvacActivator.java</a>
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Heating_Mode.java">org/universAAL/ontology/hvac/Heating_Mode.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Air_Conditioning.java">org/universAAL/ontology/hvac/Air_Conditioning.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Air_Conditioning_Mode.java">org/universAAL/ontology/hvac/Air_Conditioning_Mode.java</a>
+                </td>
+                <td>
+                  23
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Mode.java">org/universAAL/ontology/hvac/Mode.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Target_Temperature.java">org/universAAL/ontology/hvac/Target_Temperature.java</a>
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Ventilation.java">org/universAAL/ontology/hvac/Ventilation.java</a>
+                </td>
+                <td>
+                  33
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.HvacFactory.java">org/universAAL/ontology/HvacFactory.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Hvac.java">org/universAAL/ontology/hvac/Hvac.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Ventilation_Mode.java">org/universAAL/ontology/hvac/Ventilation_Mode.java</a>
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Heating.java">org/universAAL/ontology/hvac/Heating.java</a>
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.HvacOntology.java">org/universAAL/ontology/hvac/HvacOntology.java</a>
+                </td>
+                <td>
+                  73
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

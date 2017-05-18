@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology x73 devices - Checkstyle report</title>
+    <link>http://ontology/ont.X73/</link>
+    <description>universAAL Ontology x73 devices - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2012 - 2017 Austrian Institute of Technology (AIT)</copyright>
+    <item>
+      <title>File: 15,
+             Errors: 259,
+             Warnings: 72,
+             Infos: 138
+      </title>
+            <link>http://ontology/ont.X73//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.X73//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.WeighingScale.java">org/universAAL/ontology/X73/WeighingScale.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.MDS.java">org/universAAL/ontology/X73/MDS.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73Factory.java">org/universAAL/ontology/X73Factory.java</a>
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.Pulse.java">org/universAAL/ontology/X73/Pulse.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureDia.java">org/universAAL/ontology/X73/BloodPressureDia.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.X73.java">org/universAAL/ontology/X73/X73.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.compoundBasicNuValue.java">org/universAAL/ontology/X73/compoundBasicNuValue.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BodyWeight.java">org/universAAL/ontology/X73/BodyWeight.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.SystemModel.java">org/universAAL/ontology/X73/SystemModel.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.AbsoluteTimeStamp.java">org/universAAL/ontology/X73/AbsoluteTimeStamp.java</a>
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  50
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureMonitor.java">org/universAAL/ontology/X73/BloodPressureMonitor.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.MDSAttribute.java">org/universAAL/ontology/X73/MDSAttribute.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  30
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureSys.java">org/universAAL/ontology/X73/BloodPressureSys.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.X73Ontology.java">org/universAAL/ontology/X73/X73Ontology.java</a>
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  19
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73Activator.java">org/universAAL/ontology/X73Activator.java</a>
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

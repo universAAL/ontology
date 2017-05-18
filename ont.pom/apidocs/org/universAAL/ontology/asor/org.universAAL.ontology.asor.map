@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="c11068" href="./Asor.html" title="org.universAAL.ontology.asor.Asor" alt="" coords="17,17,65,42"/>
+<area shape="rect" id="node1" href="./Asor.html" title="&lt;TABLE&gt;" alt="" coords="5,5,77,53"/>
+<area shape="rect" id="c11069" href="./AsorOntology.html" title="org.universAAL.ontology.asor.AsorOntology" alt="" coords="111,17,211,42"/>
+<area shape="rect" id="node2" href="./AsorOntology.html" title="&lt;TABLE&gt;" alt="" coords="101,5,221,53"/>
+<area shape="rect" id="c11070" href="./ScriptEngine.html" title="org.universAAL.ontology.asor.ScriptEngine" alt="" coords="255,17,350,42"/>
+<area shape="rect" id="node3" href="./ScriptEngine.html" title="&lt;TABLE&gt;" alt="" coords="245,5,360,53"/>
+<area shape="rect" id="c11071" href="./LanguageClassifier.html" title="org.universAAL.ontology.asor.LanguageClassifier" alt="" coords="394,17,526,42"/>
+<area shape="rect" id="node4" href="./LanguageClassifier.html" title="&lt;TABLE&gt;" alt="" coords="384,5,536,53"/>
+<area shape="rect" id="c11072" href="./Script.html" title="org.universAAL.ontology.asor.Script" alt="" coords="570,17,625,42"/>
+<area shape="rect" id="node5" href="./Script.html" title="&lt;TABLE&gt;" alt="" coords="560,5,635,53"/>
+</map>

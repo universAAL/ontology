@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="c370835" href="./AssistedPersonProfile.html" title="org.universAAL.ontology.profile.AssistedPersonProfile" alt="" coords="16,209,165,234"/>
+<area shape="rect" id="node1" href="./AssistedPersonProfile.html" title="&lt;TABLE&gt;" alt="" coords="5,197,176,245"/>
+<area shape="rect" id="c370849" href="./Profile.html" title="org.universAAL.ontology.profile.Profile" alt="" coords="150,17,207,42"/>
+<area shape="rect" id="node2" href="./Profile.html" title="&lt;TABLE&gt;" alt="" coords="140,5,217,53"/>
+<area shape="rect" id="c370850" href="./UserProfile.html" title="org.universAAL.ontology.profile.UserProfile" alt="" coords="136,113,221,138"/>
+<area shape="rect" id="node3" href="./UserProfile.html" title="&lt;TABLE&gt;" alt="" coords="125,101,232,149"/>
+<area shape="rect" id="c370851" href="./CaregiverProfile.html" title="org.universAAL.ontology.profile.CaregiverProfile" alt="" coords="210,209,323,234"/>
+<area shape="rect" id="node4" href="./CaregiverProfile.html" title="&lt;TABLE&gt;" alt="" coords="200,197,333,245"/>
+</map>

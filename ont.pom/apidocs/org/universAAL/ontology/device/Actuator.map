@@ -1,0 +1,30 @@
+<map id="G" name="G">
+<area shape="rect" id="c53760" href="./LightActuator.html" title="org.universAAL.ontology.device.LightActuator" alt="" coords="15,209,113,234"/>
+<area shape="rect" id="node1" href="./LightActuator.html" title="&lt;TABLE&gt;" alt="" coords="5,197,123,245"/>
+<area shape="rect" id="c53766" href="./HeaterActuator.html" title="org.universAAL.ontology.device.HeaterActuator" alt="" coords="157,209,267,234"/>
+<area shape="rect" id="node2" href="./HeaterActuator.html" title="&lt;TABLE&gt;" alt="" coords="147,197,277,245"/>
+<area shape="rect" id="c53767" href="./BlindActuator.html" title="org.universAAL.ontology.device.BlindActuator" alt="" coords="312,209,411,234"/>
+<area shape="rect" id="node3" href="./BlindActuator.html" title="&lt;TABLE&gt;" alt="" coords="301,197,421,245"/>
+<area shape="rect" id="c53769" href="./SwitchActuator.html" title="org.universAAL.ontology.device.SwitchActuator" alt="" coords="456,209,565,234"/>
+<area shape="rect" id="node4" href="./SwitchActuator.html" title="&lt;TABLE&gt;" alt="" coords="445,197,576,245"/>
+<area shape="rect" id="c53772" href="./DimmerActuator.html" title="org.universAAL.ontology.device.DimmerActuator" alt="" coords="610,209,726,234"/>
+<area shape="rect" id="node5" href="./DimmerActuator.html" title="&lt;TABLE&gt;" alt="" coords="600,197,736,245"/>
+<area shape="rect" id="c53774" href="./WindowActuator.html" title="org.universAAL.ontology.device.WindowActuator" alt="" coords="771,209,888,234"/>
+<area shape="rect" id="node6" href="./WindowActuator.html" title="&lt;TABLE&gt;" alt="" coords="760,197,899,245"/>
+<area shape="rect" id="c53777" href="./CurtainActuator.html" title="org.universAAL.ontology.device.CurtainActuator" alt="" coords="933,209,1045,234"/>
+<area shape="rect" id="node7" href="./CurtainActuator.html" title="&lt;TABLE&gt;" alt="" coords="923,197,1056,245"/>
+<area shape="rect" id="c53788" href="./DoorActuator.html" title="org.universAAL.ontology.device.DoorActuator" alt="" coords="1090,209,1187,234"/>
+<area shape="rect" id="node8" href="./DoorActuator.html" title="&lt;TABLE&gt;" alt="" coords="1080,197,1197,245"/>
+<area shape="rect" id="c53795" href="./ValueDevice.html" title="org.universAAL.ontology.device.ValueDevice" alt="" coords="862,17,957,42"/>
+<area shape="rect" id="node9" href="./ValueDevice.html" title="&lt;TABLE&gt;" alt="" coords="852,5,967,53"/>
+<area shape="rect" id="c53796" href="./Actuator.html" title="org.universAAL.ontology.device.Actuator" alt="" coords="875,113,944,138"/>
+<area shape="rect" id="node10" href="./Actuator.html" title="&lt;TABLE&gt;" alt="" coords="864,101,955,149"/>
+<area shape="rect" id="c53797" href="./WaterFlowActuator.html" title="org.universAAL.ontology.device.WaterFlowActuator" alt="" coords="1232,209,1365,234"/>
+<area shape="rect" id="node11" href="./WaterFlowActuator.html" title="&lt;TABLE&gt;" alt="" coords="1221,197,1376,245"/>
+<area shape="rect" id="c53828" href="../activityhub/ext/AdaptorPlugActuator.html" title="org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator" alt="" coords="1411,209,1552,234"/>
+<area shape="rect" id="node12" href="../activityhub/ext/AdaptorPlugActuator.html" title="&lt;TABLE&gt;" alt="" coords="1400,197,1563,245"/>
+<area shape="rect" id="c54151" href="./home/SirenActuator.html" title="org.universAAL.ontology.device.home.SirenActuator" alt="" coords="1597,209,1697,234"/>
+<area shape="rect" id="node13" href="./home/SirenActuator.html" title="&lt;TABLE&gt;" alt="" coords="1587,197,1707,245"/>
+<area shape="rect" id="c54155" href="./home/Oven.html" title="org.universAAL.ontology.device.home.Oven" alt="" coords="1741,209,1793,234"/>
+<area shape="rect" id="node14" href="./home/Oven.html" title="&lt;TABLE&gt;" alt="" coords="1731,197,1803,245"/>
+</map>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>universAAL Ontology User Interaction Preferences Profile - Checkstyle report</title>
+    <link>http://ontology/ont.profile.ui.preferences/</link>
+    <description>universAAL Ontology User Interaction Preferences Profile - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 universAAL Consortium</copyright>
+    <item>
+      <title>File: 23,
+             Errors: 551,
+             Warnings: 199,
+             Infos: 392
+      </title>
+            <link>http://ontology/ont.profile.ui.preferences//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.UIPreferencesProfileActivator.java">org/universAAL/ontology/UIPreferencesProfileActivator.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.ColorType.java">org/universAAL/ontology/ui/preferences/ColorType.java</a>
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  22
+                </td>
+                <td>
+                  45
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.SystemMenuPreferences.java">org/universAAL/ontology/ui/preferences/SystemMenuPreferences.java</a>
+                </td>
+                <td>
+                  25
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.service.UIPreferencesService.java">org/universAAL/ontology/ui/preferences/service/UIPreferencesService.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.GeneralInteractionPreferences.java">org/universAAL/ontology/ui/preferences/GeneralInteractionPreferences.java</a>
+                </td>
+                <td>
+                  19
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.PendingDialogsBuilderType.java">org/universAAL/ontology/ui/preferences/PendingDialogsBuilderType.java</a>
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.UIPreferencesProfileFactory.java">org/universAAL/ontology/UIPreferencesProfileFactory.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Status.java">org/universAAL/ontology/ui/preferences/Status.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.ContentDensityType.java">org/universAAL/ontology/ui/preferences/ContentDensityType.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.MainMenuConfigurationType.java">org/universAAL/ontology/ui/preferences/MainMenuConfigurationType.java</a>
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Size.java">org/universAAL/ontology/ui/preferences/Size.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AuditoryPreferences.java">org/universAAL/ontology/ui/preferences/AuditoryPreferences.java</a>
+                </td>
+                <td>
+                  49
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  24
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Intensity.java">org/universAAL/ontology/ui/preferences/Intensity.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.VoiceGender.java">org/universAAL/ontology/ui/preferences/VoiceGender.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.UIPreferencesProfileOntology.java">org/universAAL/ontology/ui/preferences/UIPreferencesProfileOntology.java</a>
+                </td>
+                <td>
+                  31
+                </td>
+                <td>
+                  25
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.WindowLayoutType.java">org/universAAL/ontology/ui/preferences/WindowLayoutType.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.GenericFontFamily.java">org/universAAL/ontology/ui/preferences/GenericFontFamily.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  24
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AccessMode.java">org/universAAL/ontology/ui/preferences/AccessMode.java</a>
+                </td>
+                <td>
+                  19
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.UIPreferencesSubProfile.java">org/universAAL/ontology/ui/preferences/UIPreferencesSubProfile.java</a>
+                </td>
+                <td>
+                  23
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AlertType.java">org/universAAL/ontology/ui/preferences/AlertType.java</a>
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.PendingMessageBuilderType.java">org/universAAL/ontology/ui/preferences/PendingMessageBuilderType.java</a>
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AlertPreferences.java">org/universAAL/ontology/ui/preferences/AlertPreferences.java</a>
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.VisualPreferences.java">org/universAAL/ontology/ui/preferences/VisualPreferences.java</a>
+                </td>
+                <td>
+                  37
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  81
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

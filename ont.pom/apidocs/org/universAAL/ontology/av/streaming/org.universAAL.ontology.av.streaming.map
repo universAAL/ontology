@@ -1,0 +1,24 @@
+<map id="G" name="G">
+<area shape="rect" id="c13488" href="./AudioFile.html" title="org.universAAL.ontology.av.streaming.AudioFile" alt="" coords="16,17,91,42"/>
+<area shape="rect" id="node1" href="./AudioFile.html" title="&lt;TABLE&gt;" alt="" coords="5,5,101,53"/>
+<area shape="rect" id="c13489" href="./VideoStream.html" title="org.universAAL.ontology.av.streaming.VideoStream" alt="" coords="48,113,144,138"/>
+<area shape="rect" id="node2" href="./VideoStream.html" title="&lt;TABLE&gt;" alt="" coords="37,101,155,149"/>
+<area shape="rect" id="c13490" href="./AudioCompression.html" title="org.universAAL.ontology.av.streaming.AudioCompression" alt="" coords="331,113,461,138"/>
+<area shape="rect" id="node3" href="./AudioCompression.html" title="&lt;TABLE&gt;" alt="" coords="320,101,472,149"/>
+<area shape="rect" id="c13491" href="./AudioFormat.html" title="org.universAAL.ontology.av.streaming.AudioFormat" alt="" coords="682,113,777,138"/>
+<area shape="rect" id="node4" href="./AudioFormat.html" title="&lt;TABLE&gt;" alt="" coords="672,101,787,149"/>
+<area shape="rect" id="c13492" href="./Stream.html" title="org.universAAL.ontology.av.streaming.Stream" alt="" coords="135,17,198,42"/>
+<area shape="rect" id="node5" href="./Stream.html" title="&lt;TABLE&gt;" alt="" coords="125,5,208,53"/>
+<area shape="rect" id="c13493" href="./AudioStream.html" title="org.universAAL.ontology.av.streaming.AudioStream" alt="" coords="189,113,285,138"/>
+<area shape="rect" id="node6" href="./AudioStream.html" title="&lt;TABLE&gt;" alt="" coords="179,101,296,149"/>
+<area shape="rect" id="c13494" href="./VideoFormat.html" title="org.universAAL.ontology.av.streaming.VideoFormat" alt="" coords="821,113,915,138"/>
+<area shape="rect" id="node7" href="./VideoFormat.html" title="&lt;TABLE&gt;" alt="" coords="811,101,925,149"/>
+<area shape="rect" id="c13495" href="./EndPoint.html" title="org.universAAL.ontology.av.streaming.EndPoint" alt="" coords="874,17,947,42"/>
+<area shape="rect" id="node8" href="./EndPoint.html" title="&lt;TABLE&gt;" alt="" coords="864,5,957,53"/>
+<area shape="rect" id="c13496" href="./Format.html" title="org.universAAL.ontology.av.streaming.Format" alt="" coords="768,17,829,42"/>
+<area shape="rect" id="node9" href="./Format.html" title="&lt;TABLE&gt;" alt="" coords="757,5,840,53"/>
+<area shape="rect" id="c13497" href="./Compression.html" title="org.universAAL.ontology.av.streaming.Compression" alt="" coords="435,17,533,42"/>
+<area shape="rect" id="node10" href="./Compression.html" title="&lt;TABLE&gt;" alt="" coords="425,5,543,53"/>
+<area shape="rect" id="c13498" href="./VideoCompression.html" title="org.universAAL.ontology.av.streaming.VideoCompression" alt="" coords="507,113,637,138"/>
+<area shape="rect" id="node11" href="./VideoCompression.html" title="&lt;TABLE&gt;" alt="" coords="496,101,648,149"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c271552" href="./PerformedMeasurementSession.html" title="org.universAAL.ontology.health.owl.PerformedMeasurementSession" alt="" coords="15,209,222,234"/>
+<area shape="rect" id="node1" href="./PerformedMeasurementSession.html" title="&lt;TABLE&gt;" alt="" coords="5,197,232,245"/>
+<area shape="rect" id="c271563" href="./PerformedSession.html" title="org.universAAL.ontology.health.owl.PerformedSession" alt="" coords="55,113,183,138"/>
+<area shape="rect" id="node2" href="./PerformedSession.html" title="&lt;TABLE&gt;" alt="" coords="44,101,193,149"/>
+<area shape="rect" id="c271678" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="54,17,183,42"/>
+<area shape="rect" id="node4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="44,5,193,53"/>
+</map>

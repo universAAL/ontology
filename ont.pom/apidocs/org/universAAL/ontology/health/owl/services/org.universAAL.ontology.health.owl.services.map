@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="c31793" href="./DisplayTreatmentService.html" title="org.universAAL.ontology.health.owl.services.DisplayTreatmentService" alt="" coords="245,17,413,42"/>
+<area shape="rect" id="node1" href="./DisplayTreatmentService.html" title="&lt;TABLE&gt;" alt="" coords="235,5,424,53"/>
+<area shape="rect" id="c31794" href="./PlannedSessionManagementService.html" title="org.universAAL.ontology.health.owl.services.PlannedSessionManagementService" alt="" coords="15,113,249,138"/>
+<area shape="rect" id="node2" href="./PlannedSessionManagementService.html" title="&lt;TABLE&gt;" alt="" coords="5,101,259,149"/>
+<area shape="rect" id="c31795" href="./ProfileManagementService.html" title="org.universAAL.ontology.health.owl.services.ProfileManagementService" alt="" coords="293,113,470,138"/>
+<area shape="rect" id="node3" href="./ProfileManagementService.html" title="&lt;TABLE&gt;" alt="" coords="283,101,480,149"/>
+<area shape="rect" id="c31796" href="./PerformedSessionManagementService.html" title="org.universAAL.ontology.health.owl.services.PerformedSessionManagementService" alt="" coords="514,113,761,138"/>
+<area shape="rect" id="node4" href="./PerformedSessionManagementService.html" title="&lt;TABLE&gt;" alt="" coords="504,101,771,149"/>
+<area shape="rect" id="c31797" href="./TreatmentManagementService.html" title="org.universAAL.ontology.health.owl.services.TreatmentManagementService" alt="" coords="805,113,1003,138"/>
+<area shape="rect" id="node5" href="./TreatmentManagementService.html" title="&lt;TABLE&gt;" alt="" coords="795,101,1013,149"/>
+<area shape="rect" id="c31798" href="./HealthService.html" title="org.universAAL.ontology.health.owl.services.HealthService" alt="" coords="458,17,561,42"/>
+<area shape="rect" id="node6" href="./HealthService.html" title="&lt;TABLE&gt;" alt="" coords="448,5,571,53"/>
+</map>

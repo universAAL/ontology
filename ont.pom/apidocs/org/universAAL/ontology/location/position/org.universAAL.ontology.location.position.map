@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c3101" href="./OriginedMetric.html" title="org.universAAL.ontology.location.position.OriginedMetric" alt="" coords="27,113,133,138"/>
+<area shape="rect" id="node1" href="./OriginedMetric.html" title="&lt;TABLE&gt;" alt="" coords="17,101,143,149"/>
+<area shape="rect" id="c3102" href="./CoordinateSystem.html" title="org.universAAL.ontology.location.position.CoordinateSystem" alt="" coords="15,17,145,42"/>
+<area shape="rect" id="node2" href="./CoordinateSystem.html" title="&lt;TABLE&gt;" alt="" coords="5,5,155,53"/>
+<area shape="rect" id="c3103" href="./Point.html" title="org.universAAL.ontology.location.position.Point" alt="" coords="189,17,240,42"/>
+<area shape="rect" id="node3" href="./Point.html" title="&lt;TABLE&gt;" alt="" coords="179,5,251,53"/>
+</map>

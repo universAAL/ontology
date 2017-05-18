@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="c6751" href="./TimeSystem.html" title="org.universAAL.ontology.unit.system.TimeSystem" alt="" coords="15,17,110,42"/>
+<area shape="rect" id="node1" href="./TimeSystem.html" title="&lt;TABLE&gt;" alt="" coords="5,5,120,53"/>
+<area shape="rect" id="c6752" href="./Util.html" title="org.universAAL.ontology.unit.system.Util" alt="" coords="159,17,201,42"/>
+<area shape="rect" id="node2" href="./Util.html" title="&lt;TABLE&gt;" alt="" coords="144,5,216,53"/>
+<area shape="rect" id="c6753" href="./BinarySystem.html" title="org.universAAL.ontology.unit.system.BinarySystem" alt="" coords="250,17,353,42"/>
+<area shape="rect" id="node3" href="./BinarySystem.html" title="&lt;TABLE&gt;" alt="" coords="240,5,363,53"/>
+<area shape="rect" id="c6754" href="./InternationalSystem.html" title="org.universAAL.ontology.unit.system.InternationalSystem" alt="" coords="397,17,534,42"/>
+<area shape="rect" id="node4" href="./InternationalSystem.html" title="&lt;TABLE&gt;" alt="" coords="387,5,544,53"/>
+</map>
