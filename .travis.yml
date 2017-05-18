@@ -20,7 +20,7 @@ addons:
       - graphviz
 
 before_install:
- - cd pom
+ - cd ont.pom
  - (curl -s https://raw.githubusercontent.com/universAAL/platform/master/uAAL.pom/src/scripts/settings.xml) > settings.xml
  - cp settings.xml $HOME/.m2/settings.xml
  - (curl -s https://raw.githubusercontent.com/universAAL/platform/master/uAAL.pom/src/scripts/ci.sh) > ci.sh
