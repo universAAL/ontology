@@ -82,6 +82,8 @@ public class ProfileFactory implements ResourceFactory {
 	    return new ProfilingService(instanceURI);
 	case ProfileOntology.PROFEDITSERV:
 	    return new ProfilingEditorService(instanceURI);
+	case ProfileOntology.SUBPROFILE:
+	    return new SubProfile(instanceURI);
 	}
 	return null;
     }

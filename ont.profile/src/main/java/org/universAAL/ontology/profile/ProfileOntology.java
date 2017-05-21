@@ -82,6 +82,7 @@ public final class ProfileOntology extends Ontology {
     public static final int CARE = 17;
     public static final int PROFSERV = 18;
     public static final int PROFEDITSERV = 19;
+    public static final int SUBPROFILE = 20;
 
     public ProfileOntology() {
 	super(NAMESPACE);
@@ -159,11 +160,9 @@ public final class ProfileOntology extends Ontology {
 			.getDatatypeURI(String.class)));
 
 	// SubProfile
-	oci = createNewAbstractOntClassInfo(SubProfile.MY_URI);
-	oci
-		.setResourceComment("A SubProfile, for setting additional characteristics");
+	oci = createNewOntClassInfo(SubProfile.MY_URI, factory, SUBPROFILE);
+	oci.setResourceComment("A SubProfile, for setting additional characteristics");
 	oci.setResourceLabel("Sub Profile");
-	oci.addSuperClass(ManagedIndividual.MY_URI);
 	oci.addSuperClass(PrivateResource.MY_URI);
 
 	// HWSubProfile
