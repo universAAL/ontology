@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5714285714285714" branch-rate="0.16822429906542055" lines-covered="172" lines-valid="301" branches-covered="18" branches-valid="107" complexity="2.050632911392405" version="2.1.1" timestamp="1495727037809">
+<coverage line-rate="0.5714285714285714" branch-rate="0.16822429906542055" lines-covered="172" lines-valid="301" branches-covered="18" branches-valid="107" complexity="2.050632911392405" version="2.1.1" timestamp="1495750668196">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.lighting/src/main/java</source>
 		<source>--source</source>
