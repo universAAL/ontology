@@ -5,6 +5,8 @@ sudo: false
 cache:
   directories:
     - ~/.m2
+before_cache:
+  - rm -rf ~/.m2/repository/org/universAAL
 
 branches: 
  only:
