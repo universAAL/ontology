@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5161451502092311" branch-rate="0.25670821888865414" lines-covered="8264" lines-valid="16011" branches-covered="1215" branches-valid="4733" complexity="1.8541922793213672" version="2.1.1" timestamp="1495534315609">
+<coverage line-rate="0.5161451502092311" branch-rate="0.25670821888865414" lines-covered="8264" lines-valid="16011" branches-covered="1215" branches-valid="4733" complexity="1.8541922793213672" version="2.1.1" timestamp="1495727174447">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.activityhub/src/main/java</source>
 		<source>/home/travis/build/universAAL/ontology/ont.handgestures/src/main/java</source>
@@ -47112,21 +47112,21 @@
 						</method>
 						<method name="getAnswerContent" signature="()[Ljava/lang/Object;" line-rate="1.0" branch-rate="0.75" complexity="0">
 							<lines>
-								<line number="118" hits="156" branch="false"/>
-								<line number="119" hits="156" branch="true" condition-coverage="100% (2/2)">
+								<line number="118" hits="159" branch="false"/>
+								<line number="119" hits="159" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
 								<line number="120" hits="61" branch="false"/>
-								<line number="122" hits="95" branch="false"/>
-								<line number="123" hits="95" branch="true" condition-coverage="50% (1/2)">
+								<line number="122" hits="98" branch="false"/>
+								<line number="123" hits="98" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="124" hits="95" branch="false"/>
-								<line number="125" hits="95" branch="false"/>
+								<line number="124" hits="98" branch="false"/>
+								<line number="125" hits="98" branch="false"/>
 							</lines>
 						</method>
 						<method name="getAssociatedQuestion" signature="()Lorg/universAAL/ontology/questionnaire/Question;" line-rate="1.0" branch-rate="1.0" complexity="0">
@@ -47248,21 +47248,21 @@
 						</line>
 						<line number="106" hits="90" branch="false"/>
 						<line number="107" hits="90" branch="false"/>
-						<line number="118" hits="156" branch="false"/>
-						<line number="119" hits="156" branch="true" condition-coverage="100% (2/2)">
+						<line number="118" hits="159" branch="false"/>
+						<line number="119" hits="159" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
 						<line number="120" hits="61" branch="false"/>
-						<line number="122" hits="95" branch="false"/>
-						<line number="123" hits="95" branch="true" condition-coverage="50% (1/2)">
+						<line number="122" hits="98" branch="false"/>
+						<line number="123" hits="98" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="124" hits="95" branch="false"/>
-						<line number="125" hits="95" branch="false"/>
+						<line number="124" hits="98" branch="false"/>
+						<line number="125" hits="98" branch="false"/>
 						<line number="138" hits="71" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
@@ -47510,8 +47510,8 @@
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="494" hits="34" branch="false"/>
-								<line number="495" hits="34" branch="true" condition-coverage="50% (1/2)">
+								<line number="494" hits="37" branch="false"/>
+								<line number="495" hits="37" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -47988,8 +47988,8 @@
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="494" hits="34" branch="false"/>
-						<line number="495" hits="34" branch="true" condition-coverage="50% (1/2)">
+						<line number="494" hits="37" branch="false"/>
+						<line number="495" hits="37" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -48296,21 +48296,21 @@
 						</method>
 						<method name="getTriggerAnswer" signature="()[Ljava/lang/Object;" line-rate="1.0" branch-rate="0.75" complexity="0">
 							<lines>
-								<line number="242" hits="43" branch="false"/>
-								<line number="243" hits="43" branch="true" condition-coverage="100% (2/2)">
+								<line number="242" hits="46" branch="false"/>
+								<line number="243" hits="46" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
 								<line number="244" hits="1" branch="false"/>
-								<line number="246" hits="42" branch="false"/>
-								<line number="247" hits="42" branch="true" condition-coverage="50% (1/2)">
+								<line number="246" hits="45" branch="false"/>
+								<line number="247" hits="45" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="248" hits="42" branch="false"/>
-								<line number="249" hits="42" branch="false"/>
+								<line number="248" hits="45" branch="false"/>
+								<line number="249" hits="45" branch="false"/>
 							</lines>
 						</method>
 						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -48445,21 +48445,21 @@
 						</line>
 						<line number="228" hits="134" branch="false"/>
 						<line number="229" hits="134" branch="false"/>
-						<line number="242" hits="43" branch="false"/>
-						<line number="243" hits="43" branch="true" condition-coverage="100% (2/2)">
+						<line number="242" hits="46" branch="false"/>
+						<line number="243" hits="46" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
 						<line number="244" hits="1" branch="false"/>
-						<line number="246" hits="42" branch="false"/>
-						<line number="247" hits="42" branch="true" condition-coverage="50% (1/2)">
+						<line number="246" hits="45" branch="false"/>
+						<line number="247" hits="45" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="248" hits="42" branch="false"/>
-						<line number="249" hits="42" branch="false"/>
+						<line number="248" hits="45" branch="false"/>
+						<line number="249" hits="45" branch="false"/>
 						<line number="264" hits="4" branch="false"/>
 						<line number="265" hits="12" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
