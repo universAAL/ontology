@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5679012345679012" branch-rate="0.25" lines-covered="46" lines-valid="81" branches-covered="3" branches-valid="12" complexity="1.4782608695652173" version="2.1.1" timestamp="1495750584925">
+<coverage line-rate="0.5679012345679012" branch-rate="0.25" lines-covered="46" lines-valid="81" branches-covered="3" branches-valid="12" complexity="1.4782608695652173" version="2.1.1" timestamp="1495932178844">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.furniture/src/main/java</source>
 		<source>--source</source>
@@ -48,24 +48,24 @@
 						</method>
 						<method name="createInstance" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/middleware/rdf/Resource;" line-rate="0.6666666666666666" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="36" hits="6" branch="true" condition-coverage="50% (1/2)">
+								<line number="36" hits="2" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="switch" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="38" hits="6" branch="false"/>
+								<line number="38" hits="2" branch="false"/>
 								<line number="41" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
 						<line number="31" hits="1" branch="false"/>
-						<line number="36" hits="6" branch="true" condition-coverage="50% (1/2)">
+						<line number="36" hits="2" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="switch" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="38" hits="6" branch="false"/>
+						<line number="38" hits="2" branch="false"/>
 						<line number="41" hits="0" branch="false"/>
 					</lines>
 				</class>
@@ -83,8 +83,8 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="43" hits="6" branch="false"/>
-								<line number="44" hits="6" branch="false"/>
+								<line number="43" hits="2" branch="false"/>
+								<line number="44" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/universAAL/ontology/furniture/FurnitureType;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -110,7 +110,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="12" branch="false"/>
+								<line number="58" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getFurnitureType" signature="()Lorg/universAAL/ontology/furniture/FurnitureType;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -120,18 +120,18 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.6" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="80" hits="3" branch="true" condition-coverage="50% (1/2)">
+								<line number="80" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
 								<line number="81" hits="0" branch="false"/>
-								<line number="82" hits="3" branch="true" condition-coverage="50% (1/2)">
+								<line number="82" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="83" hits="3" branch="false"/>
+								<line number="83" hits="1" branch="false"/>
 								<line number="85" hits="0" branch="false"/>
 							</lines>
 						</method>
@@ -156,8 +156,8 @@
 					<lines>
 						<line number="39" hits="0" branch="false"/>
 						<line number="40" hits="0" branch="false"/>
-						<line number="43" hits="6" branch="false"/>
-						<line number="44" hits="6" branch="false"/>
+						<line number="43" hits="2" branch="false"/>
+						<line number="44" hits="2" branch="false"/>
 						<line number="47" hits="0" branch="false"/>
 						<line number="48" hits="0" branch="false"/>
 						<line number="49" hits="0" branch="false"/>
@@ -165,7 +165,7 @@
 						<line number="53" hits="0" branch="false"/>
 						<line number="54" hits="0" branch="false"/>
 						<line number="55" hits="0" branch="false"/>
-						<line number="58" hits="12" branch="false"/>
+						<line number="58" hits="4" branch="false"/>
 						<line number="62" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
 						<line number="70" hits="0" branch="true" condition-coverage="0% (0/2)">
@@ -178,18 +178,18 @@
 						<line number="73" hits="0" branch="false"/>
 						<line number="76" hits="0" branch="false"/>
 						<line number="77" hits="0" branch="false"/>
-						<line number="80" hits="3" branch="true" condition-coverage="50% (1/2)">
+						<line number="80" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
 						<line number="81" hits="0" branch="false"/>
-						<line number="82" hits="3" branch="true" condition-coverage="50% (1/2)">
+						<line number="82" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="83" hits="3" branch="false"/>
+						<line number="83" hits="1" branch="false"/>
 						<line number="85" hits="0" branch="false"/>
 					</lines>
 				</class>
@@ -202,59 +202,59 @@
 						</method>
 						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="46" hits="3" branch="false"/>
-								<line number="47" hits="3" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+								<line number="47" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="create" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="50" hits="3" branch="false"/>
-								<line number="51" hits="3" branch="false"/>
-								<line number="52" hits="3" branch="false"/>
-								<line number="53" hits="3" branch="false"/>
-								<line number="54" hits="3" branch="false"/>
-								<line number="55" hits="3" branch="false"/>
-								<line number="56" hits="3" branch="false"/>
-								<line number="61" hits="3" branch="false"/>
-								<line number="62" hits="3" branch="false"/>
-								<line number="63" hits="3" branch="false"/>
-								<line number="64" hits="3" branch="false"/>
-								<line number="65" hits="3" branch="false"/>
-								<line number="70" hits="3" branch="false"/>
-								<line number="71" hits="3" branch="false"/>
-								<line number="72" hits="3" branch="false"/>
-								<line number="73" hits="3" branch="false"/>
-								<line number="74" hits="3" branch="false"/>
-								<line number="75" hits="6" branch="false"/>
-								<line number="76" hits="3" branch="false"/>
-								<line number="79" hits="3" branch="false"/>
+								<line number="50" hits="1" branch="false"/>
+								<line number="51" hits="1" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="53" hits="1" branch="false"/>
+								<line number="54" hits="1" branch="false"/>
+								<line number="55" hits="1" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="61" hits="1" branch="false"/>
+								<line number="62" hits="1" branch="false"/>
+								<line number="63" hits="1" branch="false"/>
+								<line number="64" hits="1" branch="false"/>
+								<line number="65" hits="1" branch="false"/>
+								<line number="70" hits="1" branch="false"/>
+								<line number="71" hits="1" branch="false"/>
+								<line number="72" hits="1" branch="false"/>
+								<line number="73" hits="1" branch="false"/>
+								<line number="74" hits="1" branch="false"/>
+								<line number="75" hits="2" branch="false"/>
+								<line number="76" hits="1" branch="false"/>
+								<line number="79" hits="1" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
 						<line number="40" hits="1" branch="false"/>
-						<line number="46" hits="3" branch="false"/>
-						<line number="47" hits="3" branch="false"/>
-						<line number="50" hits="3" branch="false"/>
-						<line number="51" hits="3" branch="false"/>
-						<line number="52" hits="3" branch="false"/>
-						<line number="53" hits="3" branch="false"/>
-						<line number="54" hits="3" branch="false"/>
-						<line number="55" hits="3" branch="false"/>
-						<line number="56" hits="3" branch="false"/>
-						<line number="61" hits="3" branch="false"/>
-						<line number="62" hits="3" branch="false"/>
-						<line number="63" hits="3" branch="false"/>
-						<line number="64" hits="3" branch="false"/>
-						<line number="65" hits="3" branch="false"/>
-						<line number="70" hits="3" branch="false"/>
-						<line number="71" hits="3" branch="false"/>
-						<line number="72" hits="3" branch="false"/>
-						<line number="73" hits="3" branch="false"/>
-						<line number="74" hits="3" branch="false"/>
-						<line number="75" hits="6" branch="false"/>
-						<line number="76" hits="3" branch="false"/>
-						<line number="79" hits="3" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+						<line number="47" hits="1" branch="false"/>
+						<line number="50" hits="1" branch="false"/>
+						<line number="51" hits="1" branch="false"/>
+						<line number="52" hits="1" branch="false"/>
+						<line number="53" hits="1" branch="false"/>
+						<line number="54" hits="1" branch="false"/>
+						<line number="55" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="61" hits="1" branch="false"/>
+						<line number="62" hits="1" branch="false"/>
+						<line number="63" hits="1" branch="false"/>
+						<line number="64" hits="1" branch="false"/>
+						<line number="65" hits="1" branch="false"/>
+						<line number="70" hits="1" branch="false"/>
+						<line number="71" hits="1" branch="false"/>
+						<line number="72" hits="1" branch="false"/>
+						<line number="73" hits="1" branch="false"/>
+						<line number="74" hits="1" branch="false"/>
+						<line number="75" hits="2" branch="false"/>
+						<line number="76" hits="1" branch="false"/>
+						<line number="79" hits="1" branch="false"/>
 					</lines>
 				</class>
 				<class name="org.universAAL.ontology.furniture.FurnitureType" filename="org/universAAL/ontology/furniture/FurnitureType.java" line-rate="0.6086956521739131" branch-rate="0.0" complexity="1.375">
@@ -287,7 +287,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="83" hits="28" branch="false"/>
+								<line number="83" hits="14" branch="false"/>
 							</lines>
 						</method>
 						<method name="getLevelByOrder" signature="(I)Lorg/universAAL/ontology/furniture/FurnitureType;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -355,7 +355,7 @@
 						<line number="78" hits="7" branch="false"/>
 						<line number="79" hits="7" branch="false"/>
 						<line number="80" hits="7" branch="false"/>
-						<line number="83" hits="28" branch="false"/>
+						<line number="83" hits="14" branch="false"/>
 						<line number="87" hits="0" branch="false"/>
 						<line number="91" hits="0" branch="false"/>
 						<line number="95" hits="7" branch="false"/>

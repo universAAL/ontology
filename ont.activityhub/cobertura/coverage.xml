@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5253164556962026" branch-rate="0.15458937198067632" lines-covered="415" lines-valid="790" branches-covered="32" branches-valid="207" complexity="1.884" version="2.1.1" timestamp="1495750513221">
+<coverage line-rate="0.5253164556962026" branch-rate="0.15458937198067632" lines-covered="415" lines-valid="790" branches-covered="32" branches-valid="207" complexity="1.884" version="2.1.1" timestamp="1495932106993">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.activityhub/src/main/java</source>
 		<source>--source</source>
@@ -18,429 +18,429 @@
 						</method>
 						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="52" hits="4" branch="false"/>
-								<line number="53" hits="4" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="53" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="create" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="56" hits="4" branch="false"/>
-								<line number="57" hits="4" branch="false"/>
-								<line number="59" hits="4" branch="false"/>
-								<line number="63" hits="4" branch="false"/>
-								<line number="74" hits="4" branch="false"/>
-								<line number="75" hits="4" branch="false"/>
-								<line number="76" hits="4" branch="false"/>
-								<line number="77" hits="4" branch="false"/>
-								<line number="78" hits="4" branch="false"/>
-								<line number="83" hits="4" branch="false"/>
-								<line number="84" hits="4" branch="false"/>
-								<line number="85" hits="4" branch="false"/>
-								<line number="86" hits="4" branch="false"/>
-								<line number="96" hits="4" branch="false"/>
-								<line number="97" hits="4" branch="false"/>
-								<line number="105" hits="4" branch="false"/>
-								<line number="106" hits="4" branch="false"/>
-								<line number="107" hits="4" branch="false"/>
-								<line number="108" hits="4" branch="false"/>
-								<line number="109" hits="4" branch="false"/>
-								<line number="114" hits="4" branch="false"/>
-								<line number="115" hits="4" branch="false"/>
-								<line number="116" hits="4" branch="false"/>
-								<line number="117" hits="4" branch="false"/>
-								<line number="123" hits="4" branch="false"/>
-								<line number="124" hits="4" branch="false"/>
-								<line number="132" hits="4" branch="false"/>
-								<line number="133" hits="4" branch="false"/>
-								<line number="134" hits="4" branch="false"/>
-								<line number="135" hits="4" branch="false"/>
-								<line number="136" hits="4" branch="false"/>
-								<line number="137" hits="4" branch="false"/>
-								<line number="142" hits="4" branch="false"/>
-								<line number="143" hits="4" branch="false"/>
-								<line number="144" hits="4" branch="false"/>
-								<line number="145" hits="4" branch="false"/>
-								<line number="151" hits="4" branch="false"/>
-								<line number="152" hits="4" branch="false"/>
-								<line number="161" hits="4" branch="false"/>
-								<line number="162" hits="4" branch="false"/>
-								<line number="163" hits="4" branch="false"/>
-								<line number="164" hits="4" branch="false"/>
-								<line number="165" hits="4" branch="false"/>
-								<line number="166" hits="4" branch="false"/>
-								<line number="171" hits="4" branch="false"/>
-								<line number="172" hits="4" branch="false"/>
-								<line number="173" hits="4" branch="false"/>
-								<line number="174" hits="4" branch="false"/>
-								<line number="180" hits="4" branch="false"/>
-								<line number="181" hits="4" branch="false"/>
-								<line number="189" hits="4" branch="false"/>
-								<line number="190" hits="4" branch="false"/>
-								<line number="191" hits="4" branch="false"/>
-								<line number="192" hits="4" branch="false"/>
-								<line number="193" hits="4" branch="false"/>
-								<line number="194" hits="4" branch="false"/>
-								<line number="199" hits="4" branch="false"/>
-								<line number="200" hits="4" branch="false"/>
-								<line number="201" hits="4" branch="false"/>
-								<line number="202" hits="4" branch="false"/>
-								<line number="208" hits="4" branch="false"/>
-								<line number="209" hits="4" branch="false"/>
-								<line number="218" hits="4" branch="false"/>
-								<line number="219" hits="4" branch="false"/>
-								<line number="220" hits="4" branch="false"/>
-								<line number="221" hits="4" branch="false"/>
-								<line number="222" hits="4" branch="false"/>
-								<line number="223" hits="4" branch="false"/>
-								<line number="228" hits="4" branch="false"/>
-								<line number="229" hits="4" branch="false"/>
-								<line number="230" hits="4" branch="false"/>
-								<line number="231" hits="4" branch="false"/>
-								<line number="237" hits="4" branch="false"/>
-								<line number="238" hits="4" branch="false"/>
-								<line number="239" hits="4" branch="false"/>
-								<line number="248" hits="4" branch="false"/>
-								<line number="249" hits="4" branch="false"/>
-								<line number="250" hits="4" branch="false"/>
-								<line number="251" hits="4" branch="false"/>
-								<line number="252" hits="4" branch="false"/>
-								<line number="259" hits="4" branch="false"/>
-								<line number="260" hits="4" branch="false"/>
-								<line number="261" hits="4" branch="false"/>
-								<line number="262" hits="4" branch="false"/>
-								<line number="268" hits="4" branch="false"/>
-								<line number="269" hits="4" branch="false"/>
-								<line number="277" hits="4" branch="false"/>
-								<line number="278" hits="4" branch="false"/>
-								<line number="279" hits="4" branch="false"/>
-								<line number="280" hits="4" branch="false"/>
-								<line number="281" hits="4" branch="false"/>
-								<line number="282" hits="4" branch="false"/>
-								<line number="288" hits="4" branch="false"/>
-								<line number="289" hits="4" branch="false"/>
-								<line number="290" hits="4" branch="false"/>
-								<line number="291" hits="4" branch="false"/>
-								<line number="297" hits="4" branch="false"/>
-								<line number="298" hits="4" branch="false"/>
-								<line number="299" hits="4" branch="false"/>
-								<line number="308" hits="4" branch="false"/>
-								<line number="309" hits="4" branch="false"/>
-								<line number="310" hits="4" branch="false"/>
-								<line number="311" hits="4" branch="false"/>
-								<line number="312" hits="4" branch="false"/>
-								<line number="317" hits="4" branch="false"/>
-								<line number="318" hits="4" branch="false"/>
-								<line number="319" hits="4" branch="false"/>
-								<line number="320" hits="4" branch="false"/>
-								<line number="326" hits="4" branch="false"/>
-								<line number="327" hits="4" branch="false"/>
-								<line number="328" hits="4" branch="false"/>
-								<line number="329" hits="4" branch="false"/>
-								<line number="338" hits="4" branch="false"/>
-								<line number="339" hits="4" branch="false"/>
-								<line number="340" hits="4" branch="false"/>
-								<line number="341" hits="4" branch="false"/>
-								<line number="342" hits="4" branch="false"/>
-								<line number="343" hits="4" branch="false"/>
-								<line number="349" hits="4" branch="false"/>
-								<line number="350" hits="4" branch="false"/>
-								<line number="351" hits="4" branch="false"/>
-								<line number="352" hits="4" branch="false"/>
-								<line number="358" hits="4" branch="false"/>
-								<line number="359" hits="4" branch="false"/>
-								<line number="360" hits="4" branch="false"/>
-								<line number="369" hits="4" branch="false"/>
-								<line number="370" hits="4" branch="false"/>
-								<line number="371" hits="4" branch="false"/>
-								<line number="372" hits="4" branch="false"/>
-								<line number="373" hits="4" branch="false"/>
-								<line number="381" hits="4" branch="false"/>
-								<line number="382" hits="4" branch="false"/>
-								<line number="383" hits="4" branch="false"/>
-								<line number="384" hits="4" branch="false"/>
-								<line number="390" hits="4" branch="false"/>
-								<line number="391" hits="4" branch="false"/>
-								<line number="399" hits="4" branch="false"/>
-								<line number="400" hits="4" branch="false"/>
-								<line number="401" hits="4" branch="false"/>
-								<line number="402" hits="4" branch="false"/>
-								<line number="403" hits="4" branch="false"/>
-								<line number="408" hits="4" branch="false"/>
-								<line number="409" hits="4" branch="false"/>
-								<line number="410" hits="4" branch="false"/>
-								<line number="411" hits="4" branch="false"/>
-								<line number="417" hits="4" branch="false"/>
-								<line number="418" hits="4" branch="false"/>
-								<line number="426" hits="4" branch="false"/>
-								<line number="427" hits="4" branch="false"/>
-								<line number="428" hits="4" branch="false"/>
-								<line number="429" hits="4" branch="false"/>
-								<line number="430" hits="4" branch="false"/>
-								<line number="431" hits="4" branch="false"/>
-								<line number="437" hits="4" branch="false"/>
-								<line number="438" hits="4" branch="false"/>
-								<line number="439" hits="4" branch="false"/>
-								<line number="440" hits="4" branch="false"/>
-								<line number="446" hits="4" branch="false"/>
-								<line number="447" hits="4" branch="false"/>
-								<line number="448" hits="4" branch="false"/>
-								<line number="457" hits="4" branch="false"/>
-								<line number="458" hits="4" branch="false"/>
-								<line number="459" hits="4" branch="false"/>
-								<line number="460" hits="4" branch="false"/>
-								<line number="461" hits="4" branch="false"/>
-								<line number="468" hits="4" branch="false"/>
-								<line number="469" hits="4" branch="false"/>
-								<line number="470" hits="4" branch="false"/>
-								<line number="471" hits="4" branch="false"/>
-								<line number="477" hits="4" branch="false"/>
-								<line number="478" hits="4" branch="false"/>
-								<line number="479" hits="4" branch="false"/>
-								<line number="490" hits="4" branch="false"/>
-								<line number="491" hits="4" branch="false"/>
-								<line number="492" hits="4" branch="false"/>
-								<line number="493" hits="4" branch="false"/>
-								<line number="494" hits="4" branch="false"/>
-								<line number="495" hits="4" branch="false"/>
-								<line number="500" hits="4" branch="false"/>
-								<line number="501" hits="4" branch="false"/>
-								<line number="502" hits="4" branch="false"/>
-								<line number="503" hits="4" branch="false"/>
-								<line number="504" hits="4" branch="false"/>
-								<line number="510" hits="4" branch="false"/>
-								<line number="511" hits="4" branch="false"/>
-								<line number="518" hits="4" branch="false"/>
-								<line number="519" hits="4" branch="false"/>
-								<line number="520" hits="4" branch="false"/>
-								<line number="521" hits="4" branch="false"/>
-								<line number="522" hits="4" branch="false"/>
-								<line number="525" hits="4" branch="false"/>
-								<line number="526" hits="4" branch="false"/>
-								<line number="527" hits="4" branch="false"/>
-								<line number="528" hits="4" branch="false"/>
-								<line number="534" hits="4" branch="false"/>
-								<line number="535" hits="8" branch="false"/>
-								<line number="536" hits="4" branch="false"/>
-								<line number="542" hits="4" branch="false"/>
-								<line number="543" hits="4" branch="false"/>
-								<line number="544" hits="4" branch="false"/>
-								<line number="545" hits="4" branch="false"/>
-								<line number="546" hits="4" branch="false"/>
-								<line number="552" hits="4" branch="false"/>
-								<line number="553" hits="4" branch="false"/>
-								<line number="556" hits="4" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="57" hits="1" branch="false"/>
+								<line number="59" hits="1" branch="false"/>
+								<line number="63" hits="1" branch="false"/>
+								<line number="74" hits="1" branch="false"/>
+								<line number="75" hits="1" branch="false"/>
+								<line number="76" hits="1" branch="false"/>
+								<line number="77" hits="1" branch="false"/>
+								<line number="78" hits="1" branch="false"/>
+								<line number="83" hits="1" branch="false"/>
+								<line number="84" hits="1" branch="false"/>
+								<line number="85" hits="1" branch="false"/>
+								<line number="86" hits="1" branch="false"/>
+								<line number="96" hits="1" branch="false"/>
+								<line number="97" hits="1" branch="false"/>
+								<line number="105" hits="1" branch="false"/>
+								<line number="106" hits="1" branch="false"/>
+								<line number="107" hits="1" branch="false"/>
+								<line number="108" hits="1" branch="false"/>
+								<line number="109" hits="1" branch="false"/>
+								<line number="114" hits="1" branch="false"/>
+								<line number="115" hits="1" branch="false"/>
+								<line number="116" hits="1" branch="false"/>
+								<line number="117" hits="1" branch="false"/>
+								<line number="123" hits="1" branch="false"/>
+								<line number="124" hits="1" branch="false"/>
+								<line number="132" hits="1" branch="false"/>
+								<line number="133" hits="1" branch="false"/>
+								<line number="134" hits="1" branch="false"/>
+								<line number="135" hits="1" branch="false"/>
+								<line number="136" hits="1" branch="false"/>
+								<line number="137" hits="1" branch="false"/>
+								<line number="142" hits="1" branch="false"/>
+								<line number="143" hits="1" branch="false"/>
+								<line number="144" hits="1" branch="false"/>
+								<line number="145" hits="1" branch="false"/>
+								<line number="151" hits="1" branch="false"/>
+								<line number="152" hits="1" branch="false"/>
+								<line number="161" hits="1" branch="false"/>
+								<line number="162" hits="1" branch="false"/>
+								<line number="163" hits="1" branch="false"/>
+								<line number="164" hits="1" branch="false"/>
+								<line number="165" hits="1" branch="false"/>
+								<line number="166" hits="1" branch="false"/>
+								<line number="171" hits="1" branch="false"/>
+								<line number="172" hits="1" branch="false"/>
+								<line number="173" hits="1" branch="false"/>
+								<line number="174" hits="1" branch="false"/>
+								<line number="180" hits="1" branch="false"/>
+								<line number="181" hits="1" branch="false"/>
+								<line number="189" hits="1" branch="false"/>
+								<line number="190" hits="1" branch="false"/>
+								<line number="191" hits="1" branch="false"/>
+								<line number="192" hits="1" branch="false"/>
+								<line number="193" hits="1" branch="false"/>
+								<line number="194" hits="1" branch="false"/>
+								<line number="199" hits="1" branch="false"/>
+								<line number="200" hits="1" branch="false"/>
+								<line number="201" hits="1" branch="false"/>
+								<line number="202" hits="1" branch="false"/>
+								<line number="208" hits="1" branch="false"/>
+								<line number="209" hits="1" branch="false"/>
+								<line number="218" hits="1" branch="false"/>
+								<line number="219" hits="1" branch="false"/>
+								<line number="220" hits="1" branch="false"/>
+								<line number="221" hits="1" branch="false"/>
+								<line number="222" hits="1" branch="false"/>
+								<line number="223" hits="1" branch="false"/>
+								<line number="228" hits="1" branch="false"/>
+								<line number="229" hits="1" branch="false"/>
+								<line number="230" hits="1" branch="false"/>
+								<line number="231" hits="1" branch="false"/>
+								<line number="237" hits="1" branch="false"/>
+								<line number="238" hits="1" branch="false"/>
+								<line number="239" hits="1" branch="false"/>
+								<line number="248" hits="1" branch="false"/>
+								<line number="249" hits="1" branch="false"/>
+								<line number="250" hits="1" branch="false"/>
+								<line number="251" hits="1" branch="false"/>
+								<line number="252" hits="1" branch="false"/>
+								<line number="259" hits="1" branch="false"/>
+								<line number="260" hits="1" branch="false"/>
+								<line number="261" hits="1" branch="false"/>
+								<line number="262" hits="1" branch="false"/>
+								<line number="268" hits="1" branch="false"/>
+								<line number="269" hits="1" branch="false"/>
+								<line number="277" hits="1" branch="false"/>
+								<line number="278" hits="1" branch="false"/>
+								<line number="279" hits="1" branch="false"/>
+								<line number="280" hits="1" branch="false"/>
+								<line number="281" hits="1" branch="false"/>
+								<line number="282" hits="1" branch="false"/>
+								<line number="288" hits="1" branch="false"/>
+								<line number="289" hits="1" branch="false"/>
+								<line number="290" hits="1" branch="false"/>
+								<line number="291" hits="1" branch="false"/>
+								<line number="297" hits="1" branch="false"/>
+								<line number="298" hits="1" branch="false"/>
+								<line number="299" hits="1" branch="false"/>
+								<line number="308" hits="1" branch="false"/>
+								<line number="309" hits="1" branch="false"/>
+								<line number="310" hits="1" branch="false"/>
+								<line number="311" hits="1" branch="false"/>
+								<line number="312" hits="1" branch="false"/>
+								<line number="317" hits="1" branch="false"/>
+								<line number="318" hits="1" branch="false"/>
+								<line number="319" hits="1" branch="false"/>
+								<line number="320" hits="1" branch="false"/>
+								<line number="326" hits="1" branch="false"/>
+								<line number="327" hits="1" branch="false"/>
+								<line number="328" hits="1" branch="false"/>
+								<line number="329" hits="1" branch="false"/>
+								<line number="338" hits="1" branch="false"/>
+								<line number="339" hits="1" branch="false"/>
+								<line number="340" hits="1" branch="false"/>
+								<line number="341" hits="1" branch="false"/>
+								<line number="342" hits="1" branch="false"/>
+								<line number="343" hits="1" branch="false"/>
+								<line number="349" hits="1" branch="false"/>
+								<line number="350" hits="1" branch="false"/>
+								<line number="351" hits="1" branch="false"/>
+								<line number="352" hits="1" branch="false"/>
+								<line number="358" hits="1" branch="false"/>
+								<line number="359" hits="1" branch="false"/>
+								<line number="360" hits="1" branch="false"/>
+								<line number="369" hits="1" branch="false"/>
+								<line number="370" hits="1" branch="false"/>
+								<line number="371" hits="1" branch="false"/>
+								<line number="372" hits="1" branch="false"/>
+								<line number="373" hits="1" branch="false"/>
+								<line number="381" hits="1" branch="false"/>
+								<line number="382" hits="1" branch="false"/>
+								<line number="383" hits="1" branch="false"/>
+								<line number="384" hits="1" branch="false"/>
+								<line number="390" hits="1" branch="false"/>
+								<line number="391" hits="1" branch="false"/>
+								<line number="399" hits="1" branch="false"/>
+								<line number="400" hits="1" branch="false"/>
+								<line number="401" hits="1" branch="false"/>
+								<line number="402" hits="1" branch="false"/>
+								<line number="403" hits="1" branch="false"/>
+								<line number="408" hits="1" branch="false"/>
+								<line number="409" hits="1" branch="false"/>
+								<line number="410" hits="1" branch="false"/>
+								<line number="411" hits="1" branch="false"/>
+								<line number="417" hits="1" branch="false"/>
+								<line number="418" hits="1" branch="false"/>
+								<line number="426" hits="1" branch="false"/>
+								<line number="427" hits="1" branch="false"/>
+								<line number="428" hits="1" branch="false"/>
+								<line number="429" hits="1" branch="false"/>
+								<line number="430" hits="1" branch="false"/>
+								<line number="431" hits="1" branch="false"/>
+								<line number="437" hits="1" branch="false"/>
+								<line number="438" hits="1" branch="false"/>
+								<line number="439" hits="1" branch="false"/>
+								<line number="440" hits="1" branch="false"/>
+								<line number="446" hits="1" branch="false"/>
+								<line number="447" hits="1" branch="false"/>
+								<line number="448" hits="1" branch="false"/>
+								<line number="457" hits="1" branch="false"/>
+								<line number="458" hits="1" branch="false"/>
+								<line number="459" hits="1" branch="false"/>
+								<line number="460" hits="1" branch="false"/>
+								<line number="461" hits="1" branch="false"/>
+								<line number="468" hits="1" branch="false"/>
+								<line number="469" hits="1" branch="false"/>
+								<line number="470" hits="1" branch="false"/>
+								<line number="471" hits="1" branch="false"/>
+								<line number="477" hits="1" branch="false"/>
+								<line number="478" hits="1" branch="false"/>
+								<line number="479" hits="1" branch="false"/>
+								<line number="490" hits="1" branch="false"/>
+								<line number="491" hits="1" branch="false"/>
+								<line number="492" hits="1" branch="false"/>
+								<line number="493" hits="1" branch="false"/>
+								<line number="494" hits="1" branch="false"/>
+								<line number="495" hits="1" branch="false"/>
+								<line number="500" hits="1" branch="false"/>
+								<line number="501" hits="1" branch="false"/>
+								<line number="502" hits="1" branch="false"/>
+								<line number="503" hits="1" branch="false"/>
+								<line number="504" hits="1" branch="false"/>
+								<line number="510" hits="1" branch="false"/>
+								<line number="511" hits="1" branch="false"/>
+								<line number="518" hits="1" branch="false"/>
+								<line number="519" hits="1" branch="false"/>
+								<line number="520" hits="1" branch="false"/>
+								<line number="521" hits="1" branch="false"/>
+								<line number="522" hits="1" branch="false"/>
+								<line number="525" hits="1" branch="false"/>
+								<line number="526" hits="1" branch="false"/>
+								<line number="527" hits="1" branch="false"/>
+								<line number="528" hits="1" branch="false"/>
+								<line number="534" hits="1" branch="false"/>
+								<line number="535" hits="2" branch="false"/>
+								<line number="536" hits="1" branch="false"/>
+								<line number="542" hits="1" branch="false"/>
+								<line number="543" hits="1" branch="false"/>
+								<line number="544" hits="1" branch="false"/>
+								<line number="545" hits="1" branch="false"/>
+								<line number="546" hits="1" branch="false"/>
+								<line number="552" hits="1" branch="false"/>
+								<line number="553" hits="1" branch="false"/>
+								<line number="556" hits="1" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
 						<line number="49" hits="1" branch="false"/>
-						<line number="52" hits="4" branch="false"/>
-						<line number="53" hits="4" branch="false"/>
-						<line number="56" hits="4" branch="false"/>
-						<line number="57" hits="4" branch="false"/>
-						<line number="59" hits="4" branch="false"/>
-						<line number="63" hits="4" branch="false"/>
-						<line number="74" hits="4" branch="false"/>
-						<line number="75" hits="4" branch="false"/>
-						<line number="76" hits="4" branch="false"/>
-						<line number="77" hits="4" branch="false"/>
-						<line number="78" hits="4" branch="false"/>
-						<line number="83" hits="4" branch="false"/>
-						<line number="84" hits="4" branch="false"/>
-						<line number="85" hits="4" branch="false"/>
-						<line number="86" hits="4" branch="false"/>
-						<line number="96" hits="4" branch="false"/>
-						<line number="97" hits="4" branch="false"/>
-						<line number="105" hits="4" branch="false"/>
-						<line number="106" hits="4" branch="false"/>
-						<line number="107" hits="4" branch="false"/>
-						<line number="108" hits="4" branch="false"/>
-						<line number="109" hits="4" branch="false"/>
-						<line number="114" hits="4" branch="false"/>
-						<line number="115" hits="4" branch="false"/>
-						<line number="116" hits="4" branch="false"/>
-						<line number="117" hits="4" branch="false"/>
-						<line number="123" hits="4" branch="false"/>
-						<line number="124" hits="4" branch="false"/>
-						<line number="132" hits="4" branch="false"/>
-						<line number="133" hits="4" branch="false"/>
-						<line number="134" hits="4" branch="false"/>
-						<line number="135" hits="4" branch="false"/>
-						<line number="136" hits="4" branch="false"/>
-						<line number="137" hits="4" branch="false"/>
-						<line number="142" hits="4" branch="false"/>
-						<line number="143" hits="4" branch="false"/>
-						<line number="144" hits="4" branch="false"/>
-						<line number="145" hits="4" branch="false"/>
-						<line number="151" hits="4" branch="false"/>
-						<line number="152" hits="4" branch="false"/>
-						<line number="161" hits="4" branch="false"/>
-						<line number="162" hits="4" branch="false"/>
-						<line number="163" hits="4" branch="false"/>
-						<line number="164" hits="4" branch="false"/>
-						<line number="165" hits="4" branch="false"/>
-						<line number="166" hits="4" branch="false"/>
-						<line number="171" hits="4" branch="false"/>
-						<line number="172" hits="4" branch="false"/>
-						<line number="173" hits="4" branch="false"/>
-						<line number="174" hits="4" branch="false"/>
-						<line number="180" hits="4" branch="false"/>
-						<line number="181" hits="4" branch="false"/>
-						<line number="189" hits="4" branch="false"/>
-						<line number="190" hits="4" branch="false"/>
-						<line number="191" hits="4" branch="false"/>
-						<line number="192" hits="4" branch="false"/>
-						<line number="193" hits="4" branch="false"/>
-						<line number="194" hits="4" branch="false"/>
-						<line number="199" hits="4" branch="false"/>
-						<line number="200" hits="4" branch="false"/>
-						<line number="201" hits="4" branch="false"/>
-						<line number="202" hits="4" branch="false"/>
-						<line number="208" hits="4" branch="false"/>
-						<line number="209" hits="4" branch="false"/>
-						<line number="218" hits="4" branch="false"/>
-						<line number="219" hits="4" branch="false"/>
-						<line number="220" hits="4" branch="false"/>
-						<line number="221" hits="4" branch="false"/>
-						<line number="222" hits="4" branch="false"/>
-						<line number="223" hits="4" branch="false"/>
-						<line number="228" hits="4" branch="false"/>
-						<line number="229" hits="4" branch="false"/>
-						<line number="230" hits="4" branch="false"/>
-						<line number="231" hits="4" branch="false"/>
-						<line number="237" hits="4" branch="false"/>
-						<line number="238" hits="4" branch="false"/>
-						<line number="239" hits="4" branch="false"/>
-						<line number="248" hits="4" branch="false"/>
-						<line number="249" hits="4" branch="false"/>
-						<line number="250" hits="4" branch="false"/>
-						<line number="251" hits="4" branch="false"/>
-						<line number="252" hits="4" branch="false"/>
-						<line number="259" hits="4" branch="false"/>
-						<line number="260" hits="4" branch="false"/>
-						<line number="261" hits="4" branch="false"/>
-						<line number="262" hits="4" branch="false"/>
-						<line number="268" hits="4" branch="false"/>
-						<line number="269" hits="4" branch="false"/>
-						<line number="277" hits="4" branch="false"/>
-						<line number="278" hits="4" branch="false"/>
-						<line number="279" hits="4" branch="false"/>
-						<line number="280" hits="4" branch="false"/>
-						<line number="281" hits="4" branch="false"/>
-						<line number="282" hits="4" branch="false"/>
-						<line number="288" hits="4" branch="false"/>
-						<line number="289" hits="4" branch="false"/>
-						<line number="290" hits="4" branch="false"/>
-						<line number="291" hits="4" branch="false"/>
-						<line number="297" hits="4" branch="false"/>
-						<line number="298" hits="4" branch="false"/>
-						<line number="299" hits="4" branch="false"/>
-						<line number="308" hits="4" branch="false"/>
-						<line number="309" hits="4" branch="false"/>
-						<line number="310" hits="4" branch="false"/>
-						<line number="311" hits="4" branch="false"/>
-						<line number="312" hits="4" branch="false"/>
-						<line number="317" hits="4" branch="false"/>
-						<line number="318" hits="4" branch="false"/>
-						<line number="319" hits="4" branch="false"/>
-						<line number="320" hits="4" branch="false"/>
-						<line number="326" hits="4" branch="false"/>
-						<line number="327" hits="4" branch="false"/>
-						<line number="328" hits="4" branch="false"/>
-						<line number="329" hits="4" branch="false"/>
-						<line number="338" hits="4" branch="false"/>
-						<line number="339" hits="4" branch="false"/>
-						<line number="340" hits="4" branch="false"/>
-						<line number="341" hits="4" branch="false"/>
-						<line number="342" hits="4" branch="false"/>
-						<line number="343" hits="4" branch="false"/>
-						<line number="349" hits="4" branch="false"/>
-						<line number="350" hits="4" branch="false"/>
-						<line number="351" hits="4" branch="false"/>
-						<line number="352" hits="4" branch="false"/>
-						<line number="358" hits="4" branch="false"/>
-						<line number="359" hits="4" branch="false"/>
-						<line number="360" hits="4" branch="false"/>
-						<line number="369" hits="4" branch="false"/>
-						<line number="370" hits="4" branch="false"/>
-						<line number="371" hits="4" branch="false"/>
-						<line number="372" hits="4" branch="false"/>
-						<line number="373" hits="4" branch="false"/>
-						<line number="381" hits="4" branch="false"/>
-						<line number="382" hits="4" branch="false"/>
-						<line number="383" hits="4" branch="false"/>
-						<line number="384" hits="4" branch="false"/>
-						<line number="390" hits="4" branch="false"/>
-						<line number="391" hits="4" branch="false"/>
-						<line number="399" hits="4" branch="false"/>
-						<line number="400" hits="4" branch="false"/>
-						<line number="401" hits="4" branch="false"/>
-						<line number="402" hits="4" branch="false"/>
-						<line number="403" hits="4" branch="false"/>
-						<line number="408" hits="4" branch="false"/>
-						<line number="409" hits="4" branch="false"/>
-						<line number="410" hits="4" branch="false"/>
-						<line number="411" hits="4" branch="false"/>
-						<line number="417" hits="4" branch="false"/>
-						<line number="418" hits="4" branch="false"/>
-						<line number="426" hits="4" branch="false"/>
-						<line number="427" hits="4" branch="false"/>
-						<line number="428" hits="4" branch="false"/>
-						<line number="429" hits="4" branch="false"/>
-						<line number="430" hits="4" branch="false"/>
-						<line number="431" hits="4" branch="false"/>
-						<line number="437" hits="4" branch="false"/>
-						<line number="438" hits="4" branch="false"/>
-						<line number="439" hits="4" branch="false"/>
-						<line number="440" hits="4" branch="false"/>
-						<line number="446" hits="4" branch="false"/>
-						<line number="447" hits="4" branch="false"/>
-						<line number="448" hits="4" branch="false"/>
-						<line number="457" hits="4" branch="false"/>
-						<line number="458" hits="4" branch="false"/>
-						<line number="459" hits="4" branch="false"/>
-						<line number="460" hits="4" branch="false"/>
-						<line number="461" hits="4" branch="false"/>
-						<line number="468" hits="4" branch="false"/>
-						<line number="469" hits="4" branch="false"/>
-						<line number="470" hits="4" branch="false"/>
-						<line number="471" hits="4" branch="false"/>
-						<line number="477" hits="4" branch="false"/>
-						<line number="478" hits="4" branch="false"/>
-						<line number="479" hits="4" branch="false"/>
-						<line number="490" hits="4" branch="false"/>
-						<line number="491" hits="4" branch="false"/>
-						<line number="492" hits="4" branch="false"/>
-						<line number="493" hits="4" branch="false"/>
-						<line number="494" hits="4" branch="false"/>
-						<line number="495" hits="4" branch="false"/>
-						<line number="500" hits="4" branch="false"/>
-						<line number="501" hits="4" branch="false"/>
-						<line number="502" hits="4" branch="false"/>
-						<line number="503" hits="4" branch="false"/>
-						<line number="504" hits="4" branch="false"/>
-						<line number="510" hits="4" branch="false"/>
-						<line number="511" hits="4" branch="false"/>
-						<line number="518" hits="4" branch="false"/>
-						<line number="519" hits="4" branch="false"/>
-						<line number="520" hits="4" branch="false"/>
-						<line number="521" hits="4" branch="false"/>
-						<line number="522" hits="4" branch="false"/>
-						<line number="525" hits="4" branch="false"/>
-						<line number="526" hits="4" branch="false"/>
-						<line number="527" hits="4" branch="false"/>
-						<line number="528" hits="4" branch="false"/>
-						<line number="534" hits="4" branch="false"/>
-						<line number="535" hits="8" branch="false"/>
-						<line number="536" hits="4" branch="false"/>
-						<line number="542" hits="4" branch="false"/>
-						<line number="543" hits="4" branch="false"/>
-						<line number="544" hits="4" branch="false"/>
-						<line number="545" hits="4" branch="false"/>
-						<line number="546" hits="4" branch="false"/>
-						<line number="552" hits="4" branch="false"/>
-						<line number="553" hits="4" branch="false"/>
-						<line number="556" hits="4" branch="false"/>
+						<line number="52" hits="1" branch="false"/>
+						<line number="53" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="57" hits="1" branch="false"/>
+						<line number="59" hits="1" branch="false"/>
+						<line number="63" hits="1" branch="false"/>
+						<line number="74" hits="1" branch="false"/>
+						<line number="75" hits="1" branch="false"/>
+						<line number="76" hits="1" branch="false"/>
+						<line number="77" hits="1" branch="false"/>
+						<line number="78" hits="1" branch="false"/>
+						<line number="83" hits="1" branch="false"/>
+						<line number="84" hits="1" branch="false"/>
+						<line number="85" hits="1" branch="false"/>
+						<line number="86" hits="1" branch="false"/>
+						<line number="96" hits="1" branch="false"/>
+						<line number="97" hits="1" branch="false"/>
+						<line number="105" hits="1" branch="false"/>
+						<line number="106" hits="1" branch="false"/>
+						<line number="107" hits="1" branch="false"/>
+						<line number="108" hits="1" branch="false"/>
+						<line number="109" hits="1" branch="false"/>
+						<line number="114" hits="1" branch="false"/>
+						<line number="115" hits="1" branch="false"/>
+						<line number="116" hits="1" branch="false"/>
+						<line number="117" hits="1" branch="false"/>
+						<line number="123" hits="1" branch="false"/>
+						<line number="124" hits="1" branch="false"/>
+						<line number="132" hits="1" branch="false"/>
+						<line number="133" hits="1" branch="false"/>
+						<line number="134" hits="1" branch="false"/>
+						<line number="135" hits="1" branch="false"/>
+						<line number="136" hits="1" branch="false"/>
+						<line number="137" hits="1" branch="false"/>
+						<line number="142" hits="1" branch="false"/>
+						<line number="143" hits="1" branch="false"/>
+						<line number="144" hits="1" branch="false"/>
+						<line number="145" hits="1" branch="false"/>
+						<line number="151" hits="1" branch="false"/>
+						<line number="152" hits="1" branch="false"/>
+						<line number="161" hits="1" branch="false"/>
+						<line number="162" hits="1" branch="false"/>
+						<line number="163" hits="1" branch="false"/>
+						<line number="164" hits="1" branch="false"/>
+						<line number="165" hits="1" branch="false"/>
+						<line number="166" hits="1" branch="false"/>
+						<line number="171" hits="1" branch="false"/>
+						<line number="172" hits="1" branch="false"/>
+						<line number="173" hits="1" branch="false"/>
+						<line number="174" hits="1" branch="false"/>
+						<line number="180" hits="1" branch="false"/>
+						<line number="181" hits="1" branch="false"/>
+						<line number="189" hits="1" branch="false"/>
+						<line number="190" hits="1" branch="false"/>
+						<line number="191" hits="1" branch="false"/>
+						<line number="192" hits="1" branch="false"/>
+						<line number="193" hits="1" branch="false"/>
+						<line number="194" hits="1" branch="false"/>
+						<line number="199" hits="1" branch="false"/>
+						<line number="200" hits="1" branch="false"/>
+						<line number="201" hits="1" branch="false"/>
+						<line number="202" hits="1" branch="false"/>
+						<line number="208" hits="1" branch="false"/>
+						<line number="209" hits="1" branch="false"/>
+						<line number="218" hits="1" branch="false"/>
+						<line number="219" hits="1" branch="false"/>
+						<line number="220" hits="1" branch="false"/>
+						<line number="221" hits="1" branch="false"/>
+						<line number="222" hits="1" branch="false"/>
+						<line number="223" hits="1" branch="false"/>
+						<line number="228" hits="1" branch="false"/>
+						<line number="229" hits="1" branch="false"/>
+						<line number="230" hits="1" branch="false"/>
+						<line number="231" hits="1" branch="false"/>
+						<line number="237" hits="1" branch="false"/>
+						<line number="238" hits="1" branch="false"/>
+						<line number="239" hits="1" branch="false"/>
+						<line number="248" hits="1" branch="false"/>
+						<line number="249" hits="1" branch="false"/>
+						<line number="250" hits="1" branch="false"/>
+						<line number="251" hits="1" branch="false"/>
+						<line number="252" hits="1" branch="false"/>
+						<line number="259" hits="1" branch="false"/>
+						<line number="260" hits="1" branch="false"/>
+						<line number="261" hits="1" branch="false"/>
+						<line number="262" hits="1" branch="false"/>
+						<line number="268" hits="1" branch="false"/>
+						<line number="269" hits="1" branch="false"/>
+						<line number="277" hits="1" branch="false"/>
+						<line number="278" hits="1" branch="false"/>
+						<line number="279" hits="1" branch="false"/>
+						<line number="280" hits="1" branch="false"/>
+						<line number="281" hits="1" branch="false"/>
+						<line number="282" hits="1" branch="false"/>
+						<line number="288" hits="1" branch="false"/>
+						<line number="289" hits="1" branch="false"/>
+						<line number="290" hits="1" branch="false"/>
+						<line number="291" hits="1" branch="false"/>
+						<line number="297" hits="1" branch="false"/>
+						<line number="298" hits="1" branch="false"/>
+						<line number="299" hits="1" branch="false"/>
+						<line number="308" hits="1" branch="false"/>
+						<line number="309" hits="1" branch="false"/>
+						<line number="310" hits="1" branch="false"/>
+						<line number="311" hits="1" branch="false"/>
+						<line number="312" hits="1" branch="false"/>
+						<line number="317" hits="1" branch="false"/>
+						<line number="318" hits="1" branch="false"/>
+						<line number="319" hits="1" branch="false"/>
+						<line number="320" hits="1" branch="false"/>
+						<line number="326" hits="1" branch="false"/>
+						<line number="327" hits="1" branch="false"/>
+						<line number="328" hits="1" branch="false"/>
+						<line number="329" hits="1" branch="false"/>
+						<line number="338" hits="1" branch="false"/>
+						<line number="339" hits="1" branch="false"/>
+						<line number="340" hits="1" branch="false"/>
+						<line number="341" hits="1" branch="false"/>
+						<line number="342" hits="1" branch="false"/>
+						<line number="343" hits="1" branch="false"/>
+						<line number="349" hits="1" branch="false"/>
+						<line number="350" hits="1" branch="false"/>
+						<line number="351" hits="1" branch="false"/>
+						<line number="352" hits="1" branch="false"/>
+						<line number="358" hits="1" branch="false"/>
+						<line number="359" hits="1" branch="false"/>
+						<line number="360" hits="1" branch="false"/>
+						<line number="369" hits="1" branch="false"/>
+						<line number="370" hits="1" branch="false"/>
+						<line number="371" hits="1" branch="false"/>
+						<line number="372" hits="1" branch="false"/>
+						<line number="373" hits="1" branch="false"/>
+						<line number="381" hits="1" branch="false"/>
+						<line number="382" hits="1" branch="false"/>
+						<line number="383" hits="1" branch="false"/>
+						<line number="384" hits="1" branch="false"/>
+						<line number="390" hits="1" branch="false"/>
+						<line number="391" hits="1" branch="false"/>
+						<line number="399" hits="1" branch="false"/>
+						<line number="400" hits="1" branch="false"/>
+						<line number="401" hits="1" branch="false"/>
+						<line number="402" hits="1" branch="false"/>
+						<line number="403" hits="1" branch="false"/>
+						<line number="408" hits="1" branch="false"/>
+						<line number="409" hits="1" branch="false"/>
+						<line number="410" hits="1" branch="false"/>
+						<line number="411" hits="1" branch="false"/>
+						<line number="417" hits="1" branch="false"/>
+						<line number="418" hits="1" branch="false"/>
+						<line number="426" hits="1" branch="false"/>
+						<line number="427" hits="1" branch="false"/>
+						<line number="428" hits="1" branch="false"/>
+						<line number="429" hits="1" branch="false"/>
+						<line number="430" hits="1" branch="false"/>
+						<line number="431" hits="1" branch="false"/>
+						<line number="437" hits="1" branch="false"/>
+						<line number="438" hits="1" branch="false"/>
+						<line number="439" hits="1" branch="false"/>
+						<line number="440" hits="1" branch="false"/>
+						<line number="446" hits="1" branch="false"/>
+						<line number="447" hits="1" branch="false"/>
+						<line number="448" hits="1" branch="false"/>
+						<line number="457" hits="1" branch="false"/>
+						<line number="458" hits="1" branch="false"/>
+						<line number="459" hits="1" branch="false"/>
+						<line number="460" hits="1" branch="false"/>
+						<line number="461" hits="1" branch="false"/>
+						<line number="468" hits="1" branch="false"/>
+						<line number="469" hits="1" branch="false"/>
+						<line number="470" hits="1" branch="false"/>
+						<line number="471" hits="1" branch="false"/>
+						<line number="477" hits="1" branch="false"/>
+						<line number="478" hits="1" branch="false"/>
+						<line number="479" hits="1" branch="false"/>
+						<line number="490" hits="1" branch="false"/>
+						<line number="491" hits="1" branch="false"/>
+						<line number="492" hits="1" branch="false"/>
+						<line number="493" hits="1" branch="false"/>
+						<line number="494" hits="1" branch="false"/>
+						<line number="495" hits="1" branch="false"/>
+						<line number="500" hits="1" branch="false"/>
+						<line number="501" hits="1" branch="false"/>
+						<line number="502" hits="1" branch="false"/>
+						<line number="503" hits="1" branch="false"/>
+						<line number="504" hits="1" branch="false"/>
+						<line number="510" hits="1" branch="false"/>
+						<line number="511" hits="1" branch="false"/>
+						<line number="518" hits="1" branch="false"/>
+						<line number="519" hits="1" branch="false"/>
+						<line number="520" hits="1" branch="false"/>
+						<line number="521" hits="1" branch="false"/>
+						<line number="522" hits="1" branch="false"/>
+						<line number="525" hits="1" branch="false"/>
+						<line number="526" hits="1" branch="false"/>
+						<line number="527" hits="1" branch="false"/>
+						<line number="528" hits="1" branch="false"/>
+						<line number="534" hits="1" branch="false"/>
+						<line number="535" hits="2" branch="false"/>
+						<line number="536" hits="1" branch="false"/>
+						<line number="542" hits="1" branch="false"/>
+						<line number="543" hits="1" branch="false"/>
+						<line number="544" hits="1" branch="false"/>
+						<line number="545" hits="1" branch="false"/>
+						<line number="546" hits="1" branch="false"/>
+						<line number="552" hits="1" branch="false"/>
+						<line number="553" hits="1" branch="false"/>
+						<line number="556" hits="1" branch="false"/>
 					</lines>
 				</class>
 			</classes>
@@ -487,23 +487,23 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="48" hits="8" branch="false"/>
-								<line number="49" hits="8" branch="false"/>
+								<line number="48" hits="2" branch="false"/>
+								<line number="49" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="52" hits="24" branch="false"/>
+								<line number="52" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="63" hits="16" branch="true" condition-coverage="100% (2/2)">
+								<line number="63" hits="4" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="64" hits="12" branch="false"/>
+								<line number="64" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -515,15 +515,15 @@
 					<lines>
 						<line number="44" hits="0" branch="false"/>
 						<line number="45" hits="0" branch="false"/>
-						<line number="48" hits="8" branch="false"/>
-						<line number="49" hits="8" branch="false"/>
-						<line number="52" hits="24" branch="false"/>
-						<line number="63" hits="16" branch="true" condition-coverage="100% (2/2)">
+						<line number="48" hits="2" branch="false"/>
+						<line number="49" hits="2" branch="false"/>
+						<line number="52" hits="6" branch="false"/>
+						<line number="63" hits="4" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="64" hits="12" branch="false"/>
+						<line number="64" hits="3" branch="false"/>
 						<line number="68" hits="0" branch="false"/>
 					</lines>
 				</class>
@@ -537,8 +537,8 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="91" hits="112" branch="false"/>
-								<line number="92" hits="112" branch="false"/>
+								<line number="91" hits="28" branch="false"/>
+								<line number="92" hits="28" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -571,8 +571,8 @@
 						<line number="83" hits="0" branch="false"/>
 						<line number="87" hits="0" branch="false"/>
 						<line number="88" hits="0" branch="false"/>
-						<line number="91" hits="112" branch="false"/>
-						<line number="92" hits="112" branch="false"/>
+						<line number="91" hits="28" branch="false"/>
+						<line number="92" hits="28" branch="false"/>
 					</lines>
 				</class>
 				<class name="org.universAAL.ontology.activityhub.ActivityHubSensorEvent" filename="org/universAAL/ontology/activityhub/ActivityHubSensorEvent.java" line-rate="0.2857142857142857" branch-rate="1.0" complexity="1.0">
@@ -625,13 +625,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="61" hits="8" branch="false"/>
-								<line number="62" hits="8" branch="false"/>
+								<line number="61" hits="2" branch="false"/>
+								<line number="62" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="85" hits="16" branch="false"/>
+								<line number="85" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/EnvironmentalSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -641,7 +641,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="89" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="89" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -669,13 +669,13 @@
 					<lines>
 						<line number="53" hits="0" branch="false"/>
 						<line number="55" hits="0" branch="false"/>
-						<line number="61" hits="8" branch="false"/>
-						<line number="62" hits="8" branch="false"/>
+						<line number="61" hits="2" branch="false"/>
+						<line number="62" hits="2" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
 						<line number="77" hits="0" branch="false"/>
-						<line number="85" hits="16" branch="false"/>
-						<line number="89" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="85" hits="4" branch="false"/>
+						<line number="89" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -695,13 +695,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="8" branch="false"/>
-								<line number="59" hits="8" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
+								<line number="59" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="78" hits="16" branch="false"/>
+								<line number="78" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/ContactClosureSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -711,7 +711,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="82" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="82" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -739,13 +739,13 @@
 					<lines>
 						<line number="50" hits="0" branch="false"/>
 						<line number="52" hits="0" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
-						<line number="59" hits="8" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
+						<line number="59" hits="2" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
-						<line number="78" hits="16" branch="false"/>
-						<line number="82" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="78" hits="4" branch="false"/>
+						<line number="82" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -781,7 +781,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="95" hits="15" branch="false"/>
+								<line number="95" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/ContactClosureSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -890,7 +890,7 @@
 						</line>
 						<line number="89" hits="0" branch="false"/>
 						<line number="91" hits="0" branch="false"/>
-						<line number="95" hits="15" branch="false"/>
+						<line number="95" hits="6" branch="false"/>
 						<line number="100" hits="3" branch="false"/>
 						<line number="104" hits="0" branch="false"/>
 						<line number="108" hits="0" branch="false"/>
@@ -907,13 +907,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="8" branch="false"/>
-								<line number="59" hits="8" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
+								<line number="59" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="82" hits="16" branch="false"/>
+								<line number="82" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/EnuresisSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -923,7 +923,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="86" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="86" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -951,13 +951,13 @@
 					<lines>
 						<line number="50" hits="0" branch="false"/>
 						<line number="52" hits="0" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
-						<line number="59" hits="8" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
+						<line number="59" hits="2" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
-						<line number="82" hits="16" branch="false"/>
-						<line number="86" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="82" hits="4" branch="false"/>
+						<line number="86" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -992,7 +992,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="90" hits="10" branch="false"/>
+								<line number="90" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/EnuresisSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -1098,7 +1098,7 @@
 						</line>
 						<line number="84" hits="0" branch="false"/>
 						<line number="86" hits="0" branch="false"/>
-						<line number="90" hits="10" branch="false"/>
+						<line number="90" hits="4" branch="false"/>
 						<line number="95" hits="2" branch="false"/>
 						<line number="99" hits="0" branch="false"/>
 						<line number="103" hits="0" branch="false"/>
@@ -1130,7 +1130,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="93" hits="10" branch="false"/>
+								<line number="93" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/EnvironmentalSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -1236,7 +1236,7 @@
 						</line>
 						<line number="87" hits="0" branch="false"/>
 						<line number="89" hits="0" branch="false"/>
-						<line number="93" hits="10" branch="false"/>
+						<line number="93" hits="4" branch="false"/>
 						<line number="98" hits="2" branch="false"/>
 						<line number="102" hits="0" branch="false"/>
 						<line number="106" hits="0" branch="false"/>
@@ -1253,13 +1253,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="57" hits="8" branch="false"/>
-								<line number="58" hits="8" branch="false"/>
+								<line number="57" hits="2" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="81" hits="16" branch="false"/>
+								<line number="81" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/FallSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1269,7 +1269,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="85" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="85" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -1297,13 +1297,13 @@
 					<lines>
 						<line number="49" hits="0" branch="false"/>
 						<line number="51" hits="0" branch="false"/>
-						<line number="57" hits="8" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
+						<line number="57" hits="2" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
 						<line number="69" hits="0" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
-						<line number="81" hits="16" branch="false"/>
-						<line number="85" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="81" hits="4" branch="false"/>
+						<line number="85" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -1338,7 +1338,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="89" hits="10" branch="false"/>
+								<line number="89" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/FallSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -1444,7 +1444,7 @@
 						</line>
 						<line number="83" hits="0" branch="false"/>
 						<line number="85" hits="0" branch="false"/>
-						<line number="89" hits="10" branch="false"/>
+						<line number="89" hits="4" branch="false"/>
 						<line number="94" hits="2" branch="false"/>
 						<line number="98" hits="0" branch="false"/>
 						<line number="102" hits="0" branch="false"/>
@@ -1461,13 +1461,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="60" hits="8" branch="false"/>
-								<line number="61" hits="8" branch="false"/>
+								<line number="60" hits="2" branch="false"/>
+								<line number="61" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="84" hits="16" branch="false"/>
+								<line number="84" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/EnvironmentalSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1477,7 +1477,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="88" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="88" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -1505,13 +1505,13 @@
 					<lines>
 						<line number="52" hits="0" branch="false"/>
 						<line number="54" hits="0" branch="false"/>
-						<line number="60" hits="8" branch="false"/>
-						<line number="61" hits="8" branch="false"/>
+						<line number="60" hits="2" branch="false"/>
+						<line number="61" hits="2" branch="false"/>
 						<line number="72" hits="0" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
 						<line number="76" hits="0" branch="false"/>
-						<line number="84" hits="16" branch="false"/>
-						<line number="88" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="84" hits="4" branch="false"/>
+						<line number="88" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -1531,13 +1531,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="8" branch="false"/>
-								<line number="59" hits="8" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
+								<line number="59" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="82" hits="16" branch="false"/>
+								<line number="82" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/MedicationDosageSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1547,7 +1547,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="86" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="86" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -1575,13 +1575,13 @@
 					<lines>
 						<line number="50" hits="0" branch="false"/>
 						<line number="52" hits="0" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
-						<line number="59" hits="8" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
+						<line number="59" hits="2" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
-						<line number="82" hits="16" branch="false"/>
-						<line number="86" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="82" hits="4" branch="false"/>
+						<line number="86" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -1617,7 +1617,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="95" hits="15" branch="false"/>
+								<line number="95" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/MedicationDosageSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -1726,7 +1726,7 @@
 						</line>
 						<line number="89" hits="0" branch="false"/>
 						<line number="91" hits="0" branch="false"/>
-						<line number="95" hits="15" branch="false"/>
+						<line number="95" hits="6" branch="false"/>
 						<line number="100" hits="3" branch="false"/>
 						<line number="104" hits="0" branch="false"/>
 						<line number="108" hits="0" branch="false"/>
@@ -1743,13 +1743,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="53" hits="8" branch="false"/>
-								<line number="54" hits="8" branch="false"/>
+								<line number="53" hits="2" branch="false"/>
+								<line number="54" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="77" hits="16" branch="false"/>
+								<line number="77" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/MotionSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1759,7 +1759,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="81" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="81" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -1787,13 +1787,13 @@
 					<lines>
 						<line number="48" hits="0" branch="false"/>
 						<line number="50" hits="0" branch="false"/>
-						<line number="53" hits="8" branch="false"/>
-						<line number="54" hits="8" branch="false"/>
+						<line number="53" hits="2" branch="false"/>
+						<line number="54" hits="2" branch="false"/>
 						<line number="65" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
 						<line number="69" hits="0" branch="false"/>
-						<line number="77" hits="16" branch="false"/>
-						<line number="81" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="77" hits="4" branch="false"/>
+						<line number="81" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -1830,7 +1830,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="105" hits="20" branch="false"/>
+								<line number="105" hits="8" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/MotionSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -1942,7 +1942,7 @@
 						</line>
 						<line number="99" hits="0" branch="false"/>
 						<line number="101" hits="0" branch="false"/>
-						<line number="105" hits="20" branch="false"/>
+						<line number="105" hits="8" branch="false"/>
 						<line number="110" hits="4" branch="false"/>
 						<line number="114" hits="0" branch="false"/>
 						<line number="118" hits="0" branch="false"/>
@@ -1959,13 +1959,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="8" branch="false"/>
-								<line number="59" hits="8" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
+								<line number="59" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="82" hits="16" branch="false"/>
+								<line number="82" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/PersSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1975,7 +1975,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="86" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="86" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -2003,13 +2003,13 @@
 					<lines>
 						<line number="50" hits="0" branch="false"/>
 						<line number="52" hits="0" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
-						<line number="59" hits="8" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
+						<line number="59" hits="2" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
-						<line number="82" hits="16" branch="false"/>
-						<line number="86" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="82" hits="4" branch="false"/>
+						<line number="86" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -2044,7 +2044,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="90" hits="10" branch="false"/>
+								<line number="90" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/PersSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -2150,7 +2150,7 @@
 						</line>
 						<line number="84" hits="0" branch="false"/>
 						<line number="86" hits="0" branch="false"/>
-						<line number="90" hits="10" branch="false"/>
+						<line number="90" hits="4" branch="false"/>
 						<line number="95" hits="2" branch="false"/>
 						<line number="99" hits="0" branch="false"/>
 						<line number="103" hits="0" branch="false"/>
@@ -2167,13 +2167,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="59" hits="8" branch="false"/>
-								<line number="60" hits="8" branch="false"/>
+								<line number="59" hits="2" branch="false"/>
+								<line number="60" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="83" hits="16" branch="false"/>
+								<line number="83" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/PropertyExitSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2183,7 +2183,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="87" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="87" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -2211,13 +2211,13 @@
 					<lines>
 						<line number="51" hits="0" branch="false"/>
 						<line number="53" hits="0" branch="false"/>
-						<line number="59" hits="8" branch="false"/>
-						<line number="60" hits="8" branch="false"/>
+						<line number="59" hits="2" branch="false"/>
+						<line number="60" hits="2" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="72" hits="0" branch="false"/>
 						<line number="75" hits="0" branch="false"/>
-						<line number="83" hits="16" branch="false"/>
-						<line number="87" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="83" hits="4" branch="false"/>
+						<line number="87" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -2253,7 +2253,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="96" hits="15" branch="false"/>
+								<line number="96" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/PropertyExitSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -2362,7 +2362,7 @@
 						</line>
 						<line number="90" hits="0" branch="false"/>
 						<line number="92" hits="0" branch="false"/>
-						<line number="96" hits="15" branch="false"/>
+						<line number="96" hits="6" branch="false"/>
 						<line number="101" hits="3" branch="false"/>
 						<line number="105" hits="0" branch="false"/>
 						<line number="109" hits="0" branch="false"/>
@@ -2379,13 +2379,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="60" hits="8" branch="false"/>
-								<line number="61" hits="8" branch="false"/>
+								<line number="60" hits="2" branch="false"/>
+								<line number="61" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="84" hits="16" branch="false"/>
+								<line number="84" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/EnvironmentalSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2395,7 +2395,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="88" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="88" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -2423,13 +2423,13 @@
 					<lines>
 						<line number="52" hits="0" branch="false"/>
 						<line number="54" hits="0" branch="false"/>
-						<line number="60" hits="8" branch="false"/>
-						<line number="61" hits="8" branch="false"/>
+						<line number="60" hits="2" branch="false"/>
+						<line number="61" hits="2" branch="false"/>
 						<line number="72" hits="0" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
 						<line number="76" hits="0" branch="false"/>
-						<line number="84" hits="16" branch="false"/>
-						<line number="88" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="84" hits="4" branch="false"/>
+						<line number="88" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -2449,13 +2449,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="57" hits="8" branch="false"/>
-								<line number="58" hits="8" branch="false"/>
+								<line number="57" hits="2" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="81" hits="16" branch="false"/>
+								<line number="81" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/SwitchSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2465,7 +2465,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="85" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="85" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -2493,13 +2493,13 @@
 					<lines>
 						<line number="49" hits="0" branch="false"/>
 						<line number="51" hits="0" branch="false"/>
-						<line number="57" hits="8" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
+						<line number="57" hits="2" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
 						<line number="69" hits="0" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
-						<line number="81" hits="16" branch="false"/>
-						<line number="85" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="81" hits="4" branch="false"/>
+						<line number="85" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -2535,7 +2535,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="94" hits="15" branch="false"/>
+								<line number="94" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/SwitchSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -2644,7 +2644,7 @@
 						</line>
 						<line number="88" hits="0" branch="false"/>
 						<line number="90" hits="0" branch="false"/>
-						<line number="94" hits="15" branch="false"/>
+						<line number="94" hits="6" branch="false"/>
 						<line number="99" hits="3" branch="false"/>
 						<line number="103" hits="0" branch="false"/>
 						<line number="107" hits="0" branch="false"/>
@@ -2661,13 +2661,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="59" hits="8" branch="false"/>
-								<line number="60" hits="8" branch="false"/>
+								<line number="59" hits="2" branch="false"/>
+								<line number="60" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="83" hits="16" branch="false"/>
+								<line number="83" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/TemperatureSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2677,7 +2677,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="87" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="87" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -2705,13 +2705,13 @@
 					<lines>
 						<line number="51" hits="0" branch="false"/>
 						<line number="53" hits="0" branch="false"/>
-						<line number="59" hits="8" branch="false"/>
-						<line number="60" hits="8" branch="false"/>
+						<line number="59" hits="2" branch="false"/>
+						<line number="60" hits="2" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="72" hits="0" branch="false"/>
 						<line number="75" hits="0" branch="false"/>
-						<line number="83" hits="16" branch="false"/>
-						<line number="87" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="83" hits="4" branch="false"/>
+						<line number="87" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -2748,7 +2748,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="101" hits="20" branch="false"/>
+								<line number="101" hits="8" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/TemperatureSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -2860,7 +2860,7 @@
 						</line>
 						<line number="95" hits="0" branch="false"/>
 						<line number="97" hits="0" branch="false"/>
-						<line number="101" hits="20" branch="false"/>
+						<line number="101" hits="8" branch="false"/>
 						<line number="106" hits="4" branch="false"/>
 						<line number="110" hits="0" branch="false"/>
 						<line number="114" hits="0" branch="false"/>
@@ -2877,13 +2877,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="61" hits="8" branch="false"/>
-								<line number="62" hits="8" branch="false"/>
+								<line number="61" hits="2" branch="false"/>
+								<line number="62" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="85" hits="16" branch="false"/>
+								<line number="85" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/UsageSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2893,7 +2893,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="89" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="89" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -2921,13 +2921,13 @@
 					<lines>
 						<line number="53" hits="0" branch="false"/>
 						<line number="55" hits="0" branch="false"/>
-						<line number="61" hits="8" branch="false"/>
-						<line number="62" hits="8" branch="false"/>
+						<line number="61" hits="2" branch="false"/>
+						<line number="62" hits="2" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
 						<line number="74" hits="0" branch="false"/>
 						<line number="77" hits="0" branch="false"/>
-						<line number="85" hits="16" branch="false"/>
-						<line number="89" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="85" hits="4" branch="false"/>
+						<line number="89" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -2966,7 +2966,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="114" hits="30" branch="false"/>
+								<line number="114" hits="12" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/UsageSensorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -3084,7 +3084,7 @@
 						</line>
 						<line number="108" hits="0" branch="false"/>
 						<line number="110" hits="0" branch="false"/>
-						<line number="114" hits="30" branch="false"/>
+						<line number="114" hits="12" branch="false"/>
 						<line number="119" hits="6" branch="false"/>
 						<line number="123" hits="0" branch="false"/>
 						<line number="127" hits="0" branch="false"/>
@@ -3101,13 +3101,13 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="60" hits="8" branch="false"/>
-								<line number="61" hits="8" branch="false"/>
+								<line number="60" hits="2" branch="false"/>
+								<line number="61" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="84" hits="16" branch="false"/>
+								<line number="84" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getMeasuredvalue" signature="()Lorg/universAAL/ontology/activityhub/EnvironmentalSensorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -3117,7 +3117,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="88" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="88" hits="1" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 									</conditions>
@@ -3145,13 +3145,13 @@
 					<lines>
 						<line number="52" hits="0" branch="false"/>
 						<line number="54" hits="0" branch="false"/>
-						<line number="60" hits="8" branch="false"/>
-						<line number="61" hits="8" branch="false"/>
+						<line number="60" hits="2" branch="false"/>
+						<line number="61" hits="2" branch="false"/>
 						<line number="72" hits="0" branch="false"/>
 						<line number="73" hits="0" branch="false"/>
 						<line number="76" hits="0" branch="false"/>
-						<line number="84" hits="16" branch="false"/>
-						<line number="88" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="84" hits="4" branch="false"/>
+						<line number="88" hits="1" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 							</conditions>
@@ -3175,18 +3175,18 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="48" hits="8" branch="false"/>
-								<line number="49" hits="8" branch="false"/>
+								<line number="48" hits="2" branch="false"/>
+								<line number="49" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="72" hits="16" branch="false"/>
+								<line number="72" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="77" hits="4" branch="false"/>
+								<line number="77" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="getStatus" signature="()Lorg/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent;" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -3209,13 +3209,13 @@
 					<lines>
 						<line number="44" hits="0" branch="false"/>
 						<line number="45" hits="0" branch="false"/>
-						<line number="48" hits="8" branch="false"/>
-						<line number="49" hits="8" branch="false"/>
+						<line number="48" hits="2" branch="false"/>
+						<line number="49" hits="2" branch="false"/>
 						<line number="60" hits="0" branch="false"/>
 						<line number="61" hits="0" branch="false"/>
 						<line number="64" hits="0" branch="false"/>
-						<line number="72" hits="16" branch="false"/>
-						<line number="77" hits="4" branch="false"/>
+						<line number="72" hits="4" branch="false"/>
+						<line number="77" hits="1" branch="false"/>
 						<line number="81" hits="0" branch="false"/>
 					</lines>
 				</class>
@@ -3244,7 +3244,7 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="90" hits="10" branch="false"/>
+								<line number="90" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getEventByOrder" signature="(I)Lorg/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -3350,7 +3350,7 @@
 						</line>
 						<line number="84" hits="0" branch="false"/>
 						<line number="86" hits="0" branch="false"/>
-						<line number="90" hits="10" branch="false"/>
+						<line number="90" hits="4" branch="false"/>
 						<line number="95" hits="2" branch="false"/>
 						<line number="99" hits="0" branch="false"/>
 						<line number="103" hits="0" branch="false"/>
@@ -3428,54 +3428,54 @@
 						</method>
 						<method name="createInstance" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/middleware/rdf/Resource;" line-rate="0.9444444444444444" branch-rate="0.9411764705882353" complexity="0">
 							<lines>
-								<line number="44" hits="128" branch="true" condition-coverage="94% (16/17)">
+								<line number="44" hits="32" branch="true" condition-coverage="94% (16/17)">
 									<conditions>
 										<condition number="0" type="switch" coverage="94%"/>
 									</conditions>
 								</line>
-								<line number="46" hits="8" branch="false"/>
-								<line number="52" hits="8" branch="false"/>
-								<line number="54" hits="8" branch="false"/>
-								<line number="56" hits="8" branch="false"/>
-								<line number="58" hits="8" branch="false"/>
-								<line number="60" hits="8" branch="false"/>
-								<line number="62" hits="8" branch="false"/>
-								<line number="64" hits="8" branch="false"/>
-								<line number="66" hits="8" branch="false"/>
-								<line number="68" hits="8" branch="false"/>
-								<line number="70" hits="8" branch="false"/>
-								<line number="72" hits="8" branch="false"/>
-								<line number="74" hits="8" branch="false"/>
-								<line number="76" hits="8" branch="false"/>
-								<line number="78" hits="8" branch="false"/>
-								<line number="80" hits="8" branch="false"/>
+								<line number="46" hits="2" branch="false"/>
+								<line number="52" hits="2" branch="false"/>
+								<line number="54" hits="2" branch="false"/>
+								<line number="56" hits="2" branch="false"/>
+								<line number="58" hits="2" branch="false"/>
+								<line number="60" hits="2" branch="false"/>
+								<line number="62" hits="2" branch="false"/>
+								<line number="64" hits="2" branch="false"/>
+								<line number="66" hits="2" branch="false"/>
+								<line number="68" hits="2" branch="false"/>
+								<line number="70" hits="2" branch="false"/>
+								<line number="72" hits="2" branch="false"/>
+								<line number="74" hits="2" branch="false"/>
+								<line number="76" hits="2" branch="false"/>
+								<line number="78" hits="2" branch="false"/>
+								<line number="80" hits="2" branch="false"/>
 								<line number="83" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
 						<line number="35" hits="1" branch="false"/>
-						<line number="44" hits="128" branch="true" condition-coverage="94% (16/17)">
+						<line number="44" hits="32" branch="true" condition-coverage="94% (16/17)">
 							<conditions>
 								<condition number="0" type="switch" coverage="94%"/>
 							</conditions>
 						</line>
-						<line number="46" hits="8" branch="false"/>
-						<line number="52" hits="8" branch="false"/>
-						<line number="54" hits="8" branch="false"/>
-						<line number="56" hits="8" branch="false"/>
-						<line number="58" hits="8" branch="false"/>
-						<line number="60" hits="8" branch="false"/>
-						<line number="62" hits="8" branch="false"/>
-						<line number="64" hits="8" branch="false"/>
-						<line number="66" hits="8" branch="false"/>
-						<line number="68" hits="8" branch="false"/>
-						<line number="70" hits="8" branch="false"/>
-						<line number="72" hits="8" branch="false"/>
-						<line number="74" hits="8" branch="false"/>
-						<line number="76" hits="8" branch="false"/>
-						<line number="78" hits="8" branch="false"/>
-						<line number="80" hits="8" branch="false"/>
+						<line number="46" hits="2" branch="false"/>
+						<line number="52" hits="2" branch="false"/>
+						<line number="54" hits="2" branch="false"/>
+						<line number="56" hits="2" branch="false"/>
+						<line number="58" hits="2" branch="false"/>
+						<line number="60" hits="2" branch="false"/>
+						<line number="62" hits="2" branch="false"/>
+						<line number="64" hits="2" branch="false"/>
+						<line number="66" hits="2" branch="false"/>
+						<line number="68" hits="2" branch="false"/>
+						<line number="70" hits="2" branch="false"/>
+						<line number="72" hits="2" branch="false"/>
+						<line number="74" hits="2" branch="false"/>
+						<line number="76" hits="2" branch="false"/>
+						<line number="78" hits="2" branch="false"/>
+						<line number="80" hits="2" branch="false"/>
 						<line number="83" hits="0" branch="false"/>
 					</lines>
 				</class>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.29120245870149825" branch-rate="0.1713325867861142" lines-covered="758" lines-valid="2603" branches-covered="153" branches-valid="893" complexity="2.167883211678832" version="2.1.1" timestamp="1495750469146">
+<coverage line-rate="0.29120245870149825" branch-rate="0.1713325867861142" lines-covered="758" lines-valid="2603" branches-covered="153" branches-valid="893" complexity="2.167883211678832" version="2.1.1" timestamp="1495932067901">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.phWorld/src/main/java</source>
@@ -240,24 +240,24 @@
 						</method>
 						<method name="createInstance" signature="(Ljava/lang/String;Ljava/lang/String;I)Lorg/universAAL/middleware/rdf/Resource;" line-rate="0.6666666666666666" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="31" hits="4" branch="true" condition-coverage="50% (1/2)">
+								<line number="31" hits="6" branch="true" condition-coverage="50% (1/2)">
 									<conditions>
 										<condition number="0" type="switch" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="33" hits="4" branch="false"/>
+								<line number="33" hits="6" branch="false"/>
 								<line number="36" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
 						<line number="26" hits="1" branch="false"/>
-						<line number="31" hits="4" branch="true" condition-coverage="50% (1/2)">
+						<line number="31" hits="6" branch="true" condition-coverage="50% (1/2)">
 							<conditions>
 								<condition number="0" type="switch" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="33" hits="4" branch="false"/>
+						<line number="33" hits="6" branch="false"/>
 						<line number="36" hits="0" branch="false"/>
 					</lines>
 				</class>
@@ -10909,24 +10909,24 @@
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="43" hits="4" branch="false"/>
-								<line number="44" hits="4" branch="false"/>
+								<line number="43" hits="6" branch="false"/>
+								<line number="44" hits="6" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="47" hits="12" branch="false"/>
+								<line number="47" hits="18" branch="false"/>
 							</lines>
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="10" branch="true" condition-coverage="100% (4/4)">
+								<line number="58" hits="15" branch="true" condition-coverage="100% (4/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 										<condition number="1" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
-								<line number="59" hits="6" branch="false"/>
+								<line number="59" hits="9" branch="false"/>
 							</lines>
 						</method>
 						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -10938,16 +10938,16 @@
 					<lines>
 						<line number="39" hits="0" branch="false"/>
 						<line number="40" hits="0" branch="false"/>
-						<line number="43" hits="4" branch="false"/>
-						<line number="44" hits="4" branch="false"/>
-						<line number="47" hits="12" branch="false"/>
-						<line number="58" hits="10" branch="true" condition-coverage="100% (4/4)">
+						<line number="43" hits="6" branch="false"/>
+						<line number="44" hits="6" branch="false"/>
+						<line number="47" hits="18" branch="false"/>
+						<line number="58" hits="15" branch="true" condition-coverage="100% (4/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 								<condition number="1" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
-						<line number="59" hits="6" branch="false"/>
+						<line number="59" hits="9" branch="false"/>
 						<line number="63" hits="0" branch="false"/>
 					</lines>
 				</class>
@@ -10980,7 +10980,7 @@
 								<line number="71" hits="3" branch="false"/>
 								<line number="72" hits="3" branch="false"/>
 								<line number="73" hits="3" branch="false"/>
-								<line number="76" hits="2" branch="false"/>
+								<line number="76" hits="3" branch="false"/>
 							</lines>
 						</method>
 					</methods>
@@ -11002,7 +11002,7 @@
 						<line number="71" hits="3" branch="false"/>
 						<line number="72" hits="3" branch="false"/>
 						<line number="73" hits="3" branch="false"/>
-						<line number="76" hits="2" branch="false"/>
+						<line number="76" hits="3" branch="false"/>
 					</lines>
 				</class>
 			</classes>

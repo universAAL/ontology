@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.4845814977973568" branch-rate="0.024464831804281346" lines-covered="440" lines-valid="908" branches-covered="8" branches-valid="327" complexity="2.0970464135021096" version="2.1.1" timestamp="1495750724960">
+<coverage line-rate="0.4977973568281938" branch-rate="0.024464831804281346" lines-covered="452" lines-valid="908" branches-covered="8" branches-valid="327" complexity="2.0970464135021096" version="2.1.1" timestamp="1495932309740">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.profile.ui.preferences/src/main/java</source>
@@ -87,7 +87,7 @@
 				</class>
 			</classes>
 		</package>
-		<package name="org.universAAL.ontology.ui.preferences" line-rate="0.4824462061155153" branch-rate="0.0" complexity="2.0655021834061134">
+		<package name="org.universAAL.ontology.ui.preferences" line-rate="0.4960362400906002" branch-rate="0.0" complexity="2.0655021834061134">
 			<classes>
 				<class name="org.universAAL.ontology.ui.preferences.AccessMode" filename="org/universAAL/ontology/ui/preferences/AccessMode.java" line-rate="0.12903225806451613" branch-rate="0.0" complexity="1.6666666666666667">
 					<methods>
@@ -361,7 +361,7 @@
 						<line number="67" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.AlertType" filename="org/universAAL/ontology/ui/preferences/AlertType.java" line-rate="0.2962962962962963" branch-rate="0.0" complexity="2.3333333333333335">
+				<class name="org.universAAL.ontology.ui.preferences.AlertType" filename="org/universAAL/ontology/ui/preferences/AlertType.java" line-rate="0.3333333333333333" branch-rate="0.0" complexity="2.3333333333333335">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -396,9 +396,9 @@
 								<line number="80" hits="6" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="51" hits="0" branch="false"/>
+								<line number="51" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -459,7 +459,7 @@
 						<line number="42" hits="3" branch="false"/>
 						<line number="43" hits="3" branch="false"/>
 						<line number="44" hits="3" branch="false"/>
-						<line number="51" hits="0" branch="false"/>
+						<line number="51" hits="3" branch="false"/>
 						<line number="60" hits="0" branch="false"/>
 						<line number="64" hits="0" branch="false"/>
 						<line number="68" hits="0" branch="false"/>
@@ -727,7 +727,7 @@
 						<line number="227" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.ColorType" filename="org/universAAL/ontology/ui/preferences/ColorType.java" line-rate="0.39622641509433965" branch-rate="0.0" complexity="5.222222222222222">
+				<class name="org.universAAL.ontology.ui.preferences.ColorType" filename="org/universAAL/ontology/ui/preferences/ColorType.java" line-rate="0.41509433962264153" branch-rate="0.0" complexity="5.222222222222222">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -788,9 +788,9 @@
 								<line number="135" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="74" hits="0" branch="false"/>
+								<line number="74" hits="16" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -864,7 +864,7 @@
 						<line number="69" hits="16" branch="false"/>
 						<line number="70" hits="16" branch="false"/>
 						<line number="71" hits="16" branch="false"/>
-						<line number="74" hits="0" branch="false"/>
+						<line number="74" hits="16" branch="false"/>
 						<line number="78" hits="0" branch="false"/>
 						<line number="82" hits="0" branch="false"/>
 						<line number="86" hits="0" branch="false"/>
@@ -919,7 +919,7 @@
 						<line number="151" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.ContentDensityType" filename="org/universAAL/ontology/ui/preferences/ContentDensityType.java" line-rate="0.28" branch-rate="0.0" complexity="2.111111111111111">
+				<class name="org.universAAL.ontology.ui.preferences.ContentDensityType" filename="org/universAAL/ontology/ui/preferences/ContentDensityType.java" line-rate="0.32" branch-rate="0.0" complexity="2.111111111111111">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -952,9 +952,9 @@
 								<line number="88" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="49" hits="0" branch="false"/>
+								<line number="49" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1014,7 +1014,7 @@
 						<line number="40" hits="2" branch="false"/>
 						<line number="41" hits="2" branch="false"/>
 						<line number="42" hits="2" branch="false"/>
-						<line number="49" hits="0" branch="false"/>
+						<line number="49" hits="2" branch="false"/>
 						<line number="58" hits="0" branch="false"/>
 						<line number="62" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
@@ -1263,7 +1263,7 @@
 						<line number="117" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.GenericFontFamily" filename="org/universAAL/ontology/ui/preferences/GenericFontFamily.java" line-rate="0.3225806451612903" branch-rate="0.0" complexity="2.7777777777777777">
+				<class name="org.universAAL.ontology.ui.preferences.GenericFontFamily" filename="org/universAAL/ontology/ui/preferences/GenericFontFamily.java" line-rate="0.3548387096774194" branch-rate="0.0" complexity="2.7777777777777777">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -1302,9 +1302,9 @@
 								<line number="103" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="58" hits="0" branch="false"/>
+								<line number="58" hits="5" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1367,7 +1367,7 @@
 						<line number="49" hits="5" branch="false"/>
 						<line number="50" hits="5" branch="false"/>
 						<line number="51" hits="5" branch="false"/>
-						<line number="58" hits="0" branch="false"/>
+						<line number="58" hits="5" branch="false"/>
 						<line number="67" hits="0" branch="false"/>
 						<line number="71" hits="0" branch="false"/>
 						<line number="75" hits="0" branch="false"/>
@@ -1411,7 +1411,7 @@
 						<line number="119" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.Intensity" filename="org/universAAL/ontology/ui/preferences/Intensity.java" line-rate="0.2962962962962963" branch-rate="0.0" complexity="2.3333333333333335">
+				<class name="org.universAAL.ontology.ui.preferences.Intensity" filename="org/universAAL/ontology/ui/preferences/Intensity.java" line-rate="0.3333333333333333" branch-rate="0.0" complexity="2.3333333333333335">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -1446,9 +1446,9 @@
 								<line number="90" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="49" hits="0" branch="false"/>
+								<line number="49" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1509,7 +1509,7 @@
 						<line number="40" hits="3" branch="false"/>
 						<line number="41" hits="3" branch="false"/>
 						<line number="42" hits="3" branch="false"/>
-						<line number="49" hits="0" branch="false"/>
+						<line number="49" hits="3" branch="false"/>
 						<line number="58" hits="0" branch="false"/>
 						<line number="62" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
@@ -1551,7 +1551,7 @@
 						<line number="106" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.MainMenuConfigurationType" filename="org/universAAL/ontology/ui/preferences/MainMenuConfigurationType.java" line-rate="0.2962962962962963" branch-rate="0.0" complexity="2.3333333333333335">
+				<class name="org.universAAL.ontology.ui.preferences.MainMenuConfigurationType" filename="org/universAAL/ontology/ui/preferences/MainMenuConfigurationType.java" line-rate="0.3333333333333333" branch-rate="0.0" complexity="2.3333333333333335">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -1586,9 +1586,9 @@
 								<line number="95" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="53" hits="0" branch="false"/>
+								<line number="53" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1649,7 +1649,7 @@
 						<line number="44" hits="3" branch="false"/>
 						<line number="45" hits="3" branch="false"/>
 						<line number="46" hits="3" branch="false"/>
-						<line number="53" hits="0" branch="false"/>
+						<line number="53" hits="3" branch="false"/>
 						<line number="62" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
 						<line number="70" hits="0" branch="false"/>
@@ -1691,7 +1691,7 @@
 						<line number="111" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.PendingDialogsBuilderType" filename="org/universAAL/ontology/ui/preferences/PendingDialogsBuilderType.java" line-rate="0.28" branch-rate="0.0" complexity="2.111111111111111">
+				<class name="org.universAAL.ontology.ui.preferences.PendingDialogsBuilderType" filename="org/universAAL/ontology/ui/preferences/PendingDialogsBuilderType.java" line-rate="0.32" branch-rate="0.0" complexity="2.111111111111111">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -1724,9 +1724,9 @@
 								<line number="89" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="49" hits="0" branch="false"/>
+								<line number="49" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1786,7 +1786,7 @@
 						<line number="40" hits="2" branch="false"/>
 						<line number="41" hits="2" branch="false"/>
 						<line number="42" hits="2" branch="false"/>
-						<line number="49" hits="0" branch="false"/>
+						<line number="49" hits="2" branch="false"/>
 						<line number="58" hits="0" branch="false"/>
 						<line number="62" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
@@ -1827,7 +1827,7 @@
 						<line number="105" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.PendingMessageBuilderType" filename="org/universAAL/ontology/ui/preferences/PendingMessageBuilderType.java" line-rate="0.2608695652173913" branch-rate="0.0" complexity="1.8888888888888888">
+				<class name="org.universAAL.ontology.ui.preferences.PendingMessageBuilderType" filename="org/universAAL/ontology/ui/preferences/PendingMessageBuilderType.java" line-rate="0.30434782608695654" branch-rate="0.0" complexity="1.8888888888888888">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -1858,9 +1858,9 @@
 								<line number="84" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="46" hits="0" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -1919,7 +1919,7 @@
 						<line number="37" hits="1" branch="false"/>
 						<line number="38" hits="1" branch="false"/>
 						<line number="39" hits="1" branch="false"/>
-						<line number="46" hits="0" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
 						<line number="55" hits="0" branch="false"/>
 						<line number="59" hits="0" branch="false"/>
 						<line number="63" hits="0" branch="false"/>
@@ -1959,7 +1959,7 @@
 						<line number="100" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.Size" filename="org/universAAL/ontology/ui/preferences/Size.java" line-rate="0.2962962962962963" branch-rate="0.0" complexity="2.3333333333333335">
+				<class name="org.universAAL.ontology.ui.preferences.Size" filename="org/universAAL/ontology/ui/preferences/Size.java" line-rate="0.3333333333333333" branch-rate="0.0" complexity="2.3333333333333335">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -1981,9 +1981,9 @@
 								<line number="78" hits="6" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="49" hits="0" branch="false"/>
+								<line number="49" hits="3" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2057,7 +2057,7 @@
 						<line number="40" hits="3" branch="false"/>
 						<line number="41" hits="3" branch="false"/>
 						<line number="42" hits="3" branch="false"/>
-						<line number="49" hits="0" branch="false"/>
+						<line number="49" hits="3" branch="false"/>
 						<line number="58" hits="0" branch="false"/>
 						<line number="62" hits="0" branch="false"/>
 						<line number="66" hits="0" branch="false"/>
@@ -2099,7 +2099,7 @@
 						<line number="106" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.Status" filename="org/universAAL/ontology/ui/preferences/Status.java" line-rate="0.28" branch-rate="0.0" complexity="2.111111111111111">
+				<class name="org.universAAL.ontology.ui.preferences.Status" filename="org/universAAL/ontology/ui/preferences/Status.java" line-rate="0.32" branch-rate="0.0" complexity="2.111111111111111">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -2120,9 +2120,9 @@
 								<line number="76" hits="4" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="47" hits="0" branch="false"/>
+								<line number="47" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -2194,7 +2194,7 @@
 						<line number="38" hits="2" branch="false"/>
 						<line number="39" hits="2" branch="false"/>
 						<line number="40" hits="2" branch="false"/>
-						<line number="47" hits="0" branch="false"/>
+						<line number="47" hits="2" branch="false"/>
 						<line number="56" hits="0" branch="false"/>
 						<line number="60" hits="0" branch="false"/>
 						<line number="64" hits="0" branch="false"/>
@@ -3797,7 +3797,7 @@
 						<line number="224" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.VoiceGender" filename="org/universAAL/ontology/ui/preferences/VoiceGender.java" line-rate="0.28" branch-rate="0.0" complexity="2.111111111111111">
+				<class name="org.universAAL.ontology.ui.preferences.VoiceGender" filename="org/universAAL/ontology/ui/preferences/VoiceGender.java" line-rate="0.32" branch-rate="0.0" complexity="2.111111111111111">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -3830,9 +3830,9 @@
 								<line number="86" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="47" hits="0" branch="false"/>
+								<line number="47" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -3892,7 +3892,7 @@
 						<line number="38" hits="2" branch="false"/>
 						<line number="39" hits="2" branch="false"/>
 						<line number="40" hits="2" branch="false"/>
-						<line number="47" hits="0" branch="false"/>
+						<line number="47" hits="2" branch="false"/>
 						<line number="56" hits="0" branch="false"/>
 						<line number="60" hits="0" branch="false"/>
 						<line number="64" hits="0" branch="false"/>
@@ -3933,7 +3933,7 @@
 						<line number="102" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.ui.preferences.WindowLayoutType" filename="org/universAAL/ontology/ui/preferences/WindowLayoutType.java" line-rate="0.28" branch-rate="0.0" complexity="2.111111111111111">
+				<class name="org.universAAL.ontology.ui.preferences.WindowLayoutType" filename="org/universAAL/ontology/ui/preferences/WindowLayoutType.java" line-rate="0.32" branch-rate="0.0" complexity="2.111111111111111">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -3954,9 +3954,9 @@
 								<line number="76" hits="4" branch="false"/>
 							</lines>
 						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="47" hits="0" branch="false"/>
+								<line number="47" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getSize" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -4028,7 +4028,7 @@
 						<line number="38" hits="2" branch="false"/>
 						<line number="39" hits="2" branch="false"/>
 						<line number="40" hits="2" branch="false"/>
-						<line number="47" hits="0" branch="false"/>
+						<line number="47" hits="2" branch="false"/>
 						<line number="56" hits="0" branch="false"/>
 						<line number="60" hits="0" branch="false"/>
 						<line number="64" hits="0" branch="false"/>
