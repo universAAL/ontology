@@ -196,7 +196,7 @@
         </dependency>
         <dependency>
           <groupId>org.universAAL.middleware</groupId>
-          <artifactId>mw.data.serialization.osgi</artifactId>
+          <artifactId>mw.data.serialization.turtle.osgi</artifactId>
           <scope>compile</scope>
         </dependency>
       </dependencies>
