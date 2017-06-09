@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 15,
              Errors: 259,
-             Warnings: 72,
-             Infos: 138
+             Warnings: 30,
+             Infos: 60
       </title>
             <link>http://ontology/ont.X73//checkstyle.html</link>
       <description>
@@ -49,10 +49,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.WeighingScale.java">org/universAAL/ontology/X73/WeighingScale.java</a>
                 </td>
                 <td>
-                  10
+                  5
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   15
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.MDS.java">org/universAAL/ontology/X73/MDS.java</a>
                 </td>
                 <td>
-                  11
+                  4
                 </td>
                 <td>
-                  4
+                  1
                 </td>
                 <td>
                   25
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73Factory.java">org/universAAL/ontology/X73Factory.java</a>
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
-                  8
+                  1
                 </td>
                 <td>
                   3
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.Pulse.java">org/universAAL/ontology/X73/Pulse.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   0
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureDia.java">org/universAAL/ontology/X73/BloodPressureDia.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   0
@@ -119,10 +119,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.X73.java">org/universAAL/ontology/X73/X73.java</a>
                 </td>
                 <td>
-                  8
+                  4
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   15
@@ -133,10 +133,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.compoundBasicNuValue.java">org/universAAL/ontology/X73/compoundBasicNuValue.java</a>
                 </td>
                 <td>
-                  10
+                  4
                 </td>
                 <td>
-                  11
+                  8
                 </td>
                 <td>
                   25
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BodyWeight.java">org/universAAL/ontology/X73/BodyWeight.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   0
@@ -161,10 +161,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.SystemModel.java">org/universAAL/ontology/X73/SystemModel.java</a>
                 </td>
                 <td>
-                  9
+                  4
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   20
@@ -175,10 +175,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.AbsoluteTimeStamp.java">org/universAAL/ontology/X73/AbsoluteTimeStamp.java</a>
                 </td>
                 <td>
-                  15
+                  4
                 </td>
                 <td>
-                  10
+                  2
                 </td>
                 <td>
                   50
@@ -189,10 +189,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureMonitor.java">org/universAAL/ontology/X73/BloodPressureMonitor.java</a>
                 </td>
                 <td>
-                  12
+                  5
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
                   25
@@ -203,10 +203,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.MDSAttribute.java">org/universAAL/ontology/X73/MDSAttribute.java</a>
                 </td>
                 <td>
-                  14
+                  4
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
                   30
@@ -217,7 +217,7 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureSys.java">org/universAAL/ontology/X73/BloodPressureSys.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   0
@@ -231,10 +231,10 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.X73Ontology.java">org/universAAL/ontology/X73/X73Ontology.java</a>
                 </td>
                 <td>
-                  6
+                  2
                 </td>
                 <td>
-                  19
+                  12
                 </td>
                 <td>
                   4
@@ -245,7 +245,7 @@ under the License.
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73Activator.java">org/universAAL/ontology/X73Activator.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   1

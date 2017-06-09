@@ -131,7 +131,7 @@
 <td>org.universAAL.ontology.reasoner.Persistent.setPersistent(boolean) invokes inefficient Boolean constructor; use Boolean.valueOf(...) instead</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_BOOLEAN_CTOR">DM_BOOLEAN_CTOR</a></td>
-<td>67</td>
+<td>65</td>
 <td>Medium</td></tr></table></div><a name="org.universAAL.ontology.reasoner.Query"></a>
 <div class="section">
 <h3><a name="org.universAAL.ontology.reasoner.Query"></a>org.universAAL.ontology.reasoner.Query</h3>
@@ -146,13 +146,13 @@
 <td>org.universAAL.ontology.reasoner.Query defines equals(Query) method but not equals(Object)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_SELF_NO_OBJECT">EQ_SELF_NO_OBJECT</a></td>
-<td>109</td>
+<td>106</td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Comparison of String objects using == or != in org.universAAL.ontology.reasoner.Query.equals(Query) </td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#ES_COMPARING_STRINGS_WITH_EQ">ES_COMPARING_STRINGS_WITH_EQ</a></td>
-<td>118</td>
+<td>114</td>
 <td>Medium</td></tr></table></div><a name="org.universAAL.ontology.reasoner.Rule"></a>
 <div class="section">
 <h3><a name="org.universAAL.ontology.reasoner.Rule"></a>org.universAAL.ontology.reasoner.Rule</h3>
@@ -167,7 +167,7 @@
 <td>org.universAAL.ontology.reasoner.Rule defines equals(Rule) method but not equals(Object)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_SELF_NO_OBJECT">EQ_SELF_NO_OBJECT</a></td>
-<td>80</td>
+<td>78</td>
 <td>Medium</td></tr></table></div><a name="org.universAAL.ontology.reasoner.Situation"></a>
 <div class="section">
 <h3><a name="org.universAAL.ontology.reasoner.Situation"></a>org.universAAL.ontology.reasoner.Situation</h3>
@@ -182,19 +182,19 @@
 <td>org.universAAL.ontology.reasoner.Situation defines equals(Situation) method but not equals(Object)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_SELF_NO_OBJECT">EQ_SELF_NO_OBJECT</a></td>
-<td>94</td>
+<td>90</td>
 <td>Medium</td></tr>
 <tr class="b">
 <td>Comparison of String objects using == or != in org.universAAL.ontology.reasoner.Situation.equals(Situation) </td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#ES_COMPARING_STRINGS_WITH_EQ">ES_COMPARING_STRINGS_WITH_EQ</a></td>
-<td>95</td>
+<td>91</td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Comparison of String objects using == or != in org.universAAL.ontology.reasoner.Situation.equals(Situation) </td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#ES_COMPARING_STRINGS_WITH_EQ">ES_COMPARING_STRINGS_WITH_EQ</a></td>
-<td>97</td>
+<td>93</td>
 <td>Medium</td></tr></table></div><a name="org.universAAL.ontology.reasoner.util.ElementModel"></a>
 <div class="section">
 <h3><a name="org.universAAL.ontology.reasoner.util.ElementModel"></a>org.universAAL.ontology.reasoner.util.ElementModel</h3>
@@ -209,43 +209,43 @@
 <td>instanceof will always return true for all non-null values in org.universAAL.ontology.reasoner.util.ElementModel.add(Resource), since all org.universAAL.ontology.reasoner.Persistent are instances of org.universAAL.ontology.reasoner.Persistent</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_VACUOUS_INSTANCEOF">BC_VACUOUS_INSTANCEOF</a></td>
-<td>199</td>
+<td>197</td>
 <td>Medium</td></tr>
 <tr class="b">
 <td>instanceof will always return true for all non-null values in org.universAAL.ontology.reasoner.util.ElementModel.remove(Resource), since all org.universAAL.ontology.reasoner.Persistent are instances of org.universAAL.ontology.reasoner.Persistent</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_VACUOUS_INSTANCEOF">BC_VACUOUS_INSTANCEOF</a></td>
-<td>212</td>
+<td>209</td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Found reliance on default encoding in org.universAAL.ontology.reasoner.util.ElementModel.load(File): new java.io.FileReader(File)</td>
 <td>I18N</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_DEFAULT_ENCODING">DM_DEFAULT_ENCODING</a></td>
-<td>169</td>
+<td>167</td>
 <td>High</td></tr>
 <tr class="b">
 <td>Found reliance on default encoding in org.universAAL.ontology.reasoner.util.ElementModel.saveObject(Resource, File): new java.io.FileWriter(File, boolean)</td>
 <td>I18N</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_DEFAULT_ENCODING">DM_DEFAULT_ENCODING</a></td>
-<td>139</td>
+<td>137</td>
 <td>High</td></tr>
 <tr class="a">
 <td>Possible null pointer dereference in org.universAAL.ontology.reasoner.util.ElementModel.loadElements() due to return value of called method</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE</a></td>
-<td>160</td>
+<td>158</td>
 <td>Medium</td></tr>
 <tr class="b">
 <td>Exceptional return value of java.io.File.mkdirs() ignored in new org.universAAL.ontology.reasoner.util.ElementModel(Class, MessageContentSerializer, String)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE</a></td>
-<td>110</td>
+<td>109</td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Exceptional return value of java.io.File.delete() ignored in org.universAAL.ontology.reasoner.util.ElementModel.remove(Resource)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE</a></td>
-<td>219</td>
+<td>215</td>
 <td>Medium</td></tr></table></div>
       </div>
     </div>

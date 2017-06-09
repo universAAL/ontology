@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 9,
              Errors: 179,
-             Warnings: 63,
-             Infos: 152
+             Warnings: 15,
+             Infos: 62
       </title>
             <link>http://ontology/ont.situation.reasoner//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.Persistent.java">org/universAAL/ontology/reasoner/Persistent.java</a>
                 </td>
                 <td>
-                  13
+                  6
                 </td>
                 <td>
                   1
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.ReasoningOntology.java">org/universAAL/ontology/reasoner/ReasoningOntology.java</a>
                 </td>
                 <td>
-                  10
+                  6
                 </td>
                 <td>
-                  6
+                  5
                 </td>
                 <td>
                   4
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.ReasoningService.java">org/universAAL/ontology/reasoner/ReasoningService.java</a>
                 </td>
                 <td>
-                  18
+                  6
                 </td>
                 <td>
-                  13
+                  1
                 </td>
                 <td>
                   31
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.ReasoningFactory.java">org/universAAL/ontology/ReasoningFactory.java</a>
                 </td>
                 <td>
-                  10
+                  6
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   3
@@ -105,10 +105,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.Situation.java">org/universAAL/ontology/reasoner/Situation.java</a>
                 </td>
                 <td>
-                  22
+                  6
                 </td>
                 <td>
-                  4
+                  1
                 </td>
                 <td>
                   30
@@ -119,10 +119,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.util.ElementModel.java">org/universAAL/ontology/reasoner/util/ElementModel.java</a>
                 </td>
                 <td>
-                  25
+                  11
                 </td>
                 <td>
-                  24
+                  2
                 </td>
                 <td>
                   30
@@ -133,10 +133,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.Query.java">org/universAAL/ontology/reasoner/Query.java</a>
                 </td>
                 <td>
-                  25
+                  6
                 </td>
                 <td>
-                  8
+                  1
                 </td>
                 <td>
                   33
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.ReasoningActivator.java">org/universAAL/ontology/ReasoningActivator.java</a>
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
                   2
@@ -161,10 +161,10 @@ under the License.
                   <a href="http://ontology/ont.situation.reasoner//checkstyle.html#org.universAAL.ontology.reasoner.Rule.java">org/universAAL/ontology/reasoner/Rule.java</a>
                 </td>
                 <td>
-                  17
+                  6
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   25

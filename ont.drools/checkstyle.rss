@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 9,
              Errors: 130,
-             Warnings: 11,
-             Infos: 164
+             Warnings: 4,
+             Infos: 72
       </title>
             <link>http://ontology/ont.drools//checkstyle.html</link>
       <description>
@@ -49,10 +49,10 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.DroolsReasoningFactory.java">org/universAAL/ontology/DroolsReasoningFactory.java</a>
                 </td>
                 <td>
-                  10
+                  5
                 </td>
                 <td>
-                  4
+                  1
                 </td>
                 <td>
                   3
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.ConsequenceProperty.java">org/universAAL/ontology/drools/ConsequenceProperty.java</a>
                 </td>
                 <td>
-                  16
+                  5
                 </td>
                 <td>
                   0
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.Rule.java">org/universAAL/ontology/drools/Rule.java</a>
                 </td>
                 <td>
-                  15
+                  7
                 </td>
                 <td>
                   1
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.DroolsReasoningOntology.java">org/universAAL/ontology/drools/DroolsReasoningOntology.java</a>
                 </td>
                 <td>
-                  32
+                  6
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   7
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.Fact.java">org/universAAL/ontology/drools/Fact.java</a>
                 </td>
                 <td>
-                  15
+                  6
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.FactProperty.java">org/universAAL/ontology/drools/FactProperty.java</a>
                 </td>
                 <td>
-                  16
+                  7
                 </td>
                 <td>
                   0
@@ -133,7 +133,7 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.Consequence.java">org/universAAL/ontology/drools/Consequence.java</a>
                 </td>
                 <td>
-                  40
+                  26
                 </td>
                 <td>
                   1
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.Activator.java">org/universAAL/ontology/Activator.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   1
@@ -161,10 +161,10 @@ under the License.
                   <a href="http://ontology/ont.drools//checkstyle.html#org.universAAL.ontology.drools.DroolsReasoning.java">org/universAAL/ontology/drools/DroolsReasoning.java</a>
                 </td>
                 <td>
-                  12
+                  5
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   11

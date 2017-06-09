@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 60,
-             Warnings: 18,
-             Infos: 59
+             Warnings: 12,
+             Infos: 32
       </title>
             <link>http://ontology/ont.furniture//checkstyle.html</link>
       <description>
@@ -49,10 +49,10 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.furniture.Furniture.java">org/universAAL/ontology/furniture/Furniture.java</a>
                 </td>
                 <td>
-                  17
+                  7
                 </td>
                 <td>
-                  4
+                  1
                 </td>
                 <td>
                   18
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.FurnitureFactory.java">org/universAAL/ontology/FurnitureFactory.java</a>
                 </td>
                 <td>
-                  11
+                  7
                 </td>
                 <td>
                   1
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.furniture.FurnitureType.java">org/universAAL/ontology/furniture/FurnitureType.java</a>
                 </td>
                 <td>
-                  13
+                  6
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
                   29
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.FurnitureActivator.java">org/universAAL/ontology/FurnitureActivator.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.furniture.FurnitureOntology.java">org/universAAL/ontology/furniture/FurnitureOntology.java</a>
                 </td>
                 <td>
-                  10
+                  7
                 </td>
                 <td>
                   0

@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 48,
-             Warnings: 7,
-             Infos: 48
+             Warnings: 3,
+             Infos: 20
       </title>
             <link>http://ontology/ont.multimedia//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.MultimediaFactory.java">org/universAAL/ontology/MultimediaFactory.java</a>
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
                   1
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.multimedia.MultimediaOntology.java">org/universAAL/ontology/multimedia/MultimediaOntology.java</a>
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   1
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.multimedia.TV.java">org/universAAL/ontology/multimedia/TV.java</a>
                 </td>
                 <td>
-                  19
+                  10
                 </td>
                 <td>
-                  2
+                  0
                 </td>
                 <td>
                   18
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.multimedia.Stereoset.java">org/universAAL/ontology/multimedia/Stereoset.java</a>
                 </td>
                 <td>
-                  18
+                  8
                 </td>
                 <td>
-                  2
+                  0
                 </td>
                 <td>
                   18
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.MultimediaActivator.java">org/universAAL/ontology/MultimediaActivator.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   1

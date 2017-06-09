@@ -28,8 +28,8 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 79,
-             Warnings: 25,
-             Infos: 115
+             Warnings: 4,
+             Infos: 71
       </title>
             <link>http://ontology/ont.che//checkstyle.html</link>
       <description>
@@ -50,7 +50,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.ContextHistoryFactory.java">org/universAAL/ontology/ContextHistoryFactory.java</a>
                 </td>
                 <td>
-                  14
+                  10
                 </td>
                 <td>
                   1
@@ -64,10 +64,10 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.che.ContextHistoryService.java">org/universAAL/ontology/che/ContextHistoryService.java</a>
                 </td>
                 <td>
-                  19
+                  12
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   15
@@ -78,7 +78,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.ContextHistoryActivator.java">org/universAAL/ontology/ContextHistoryActivator.java</a>
                 </td>
                 <td>
-                  10
+                  7
                 </td>
                 <td>
                   1
@@ -92,10 +92,10 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.che.ContextEvent.java">org/universAAL/ontology/che/ContextEvent.java</a>
                 </td>
                 <td>
-                  54
+                  31
                 </td>
                 <td>
-                  21
+                  2
                 </td>
                 <td>
                   54
@@ -106,10 +106,10 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.che.ContextHistoryOntology.java">org/universAAL/ontology/che/ContextHistoryOntology.java</a>
                 </td>
                 <td>
-                  18
+                  11
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   2

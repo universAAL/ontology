@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 8,
              Errors: 94,
-             Warnings: 21,
-             Infos: 117
+             Warnings: 10,
+             Infos: 71
       </title>
             <link>http://ontology/ont.sysinfo//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.AALSpaceDescriptor.java">org/universAAL/ontology/sysinfo/AALSpaceDescriptor.java</a>
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
                   1
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SysinfoOntology.java">org/universAAL/ontology/sysinfo/SysinfoOntology.java</a>
                 </td>
                 <td>
-                  20
+                  9
                 </td>
                 <td>
-                  7
+                  5
                 </td>
                 <td>
                   4
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SystemInfo.java">org/universAAL/ontology/sysinfo/SystemInfo.java</a>
                 </td>
                 <td>
-                  20
+                  9
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   39
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.SysinfoFactory.java">org/universAAL/ontology/SysinfoFactory.java</a>
                 </td>
                 <td>
-                  12
+                  8
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   3
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.AALSpaceStatusDescriptor.java">org/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor.java</a>
                 </td>
                 <td>
-                  13
+                  9
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.SysinfoActivator.java">org/universAAL/ontology/SysinfoActivator.java</a>
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
                   2
@@ -133,7 +133,7 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.PeerCardDescriptor.java">org/universAAL/ontology/sysinfo/PeerCardDescriptor.java</a>
                 </td>
                 <td>
-                  14
+                  9
                 </td>
                 <td>
                   0
@@ -147,10 +147,10 @@ under the License.
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.Descriptor.java">org/universAAL/ontology/sysinfo/Descriptor.java</a>
                 </td>
                 <td>
-                  14
+                  9
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   14

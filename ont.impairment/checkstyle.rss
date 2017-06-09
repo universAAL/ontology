@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 12,
              Errors: 75,
-             Warnings: 15,
-             Infos: 121
+             Warnings: 3,
+             Infos: 82
       </title>
             <link>http://ontology/ont.impairment//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.SpeakingImpairment.java">org/universAAL/ontology/impairment/SpeakingImpairment.java</a>
                 </td>
                 <td>
-                  11
+                  8
                 </td>
                 <td>
                   0
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.Astigmatism.java">org/universAAL/ontology/impairment/Astigmatism.java</a>
                 </td>
                 <td>
-                  10
+                  8
                 </td>
                 <td>
                   1
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.PhysicalImpairment.java">org/universAAL/ontology/impairment/PhysicalImpairment.java</a>
                 </td>
                 <td>
-                  11
+                  8
                 </td>
                 <td>
                   0
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.SightImpairment.java">org/universAAL/ontology/impairment/SightImpairment.java</a>
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
                   0
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.ColorBlindness.java">org/universAAL/ontology/impairment/ColorBlindness.java</a>
                 </td>
                 <td>
-                  10
+                  8
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.ImpairmentActivator.java">org/universAAL/ontology/ImpairmentActivator.java</a>
                 </td>
                 <td>
-                  9
+                  6
                 </td>
                 <td>
                   1
@@ -133,7 +133,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.HearingImpairment.java">org/universAAL/ontology/impairment/HearingImpairment.java</a>
                 </td>
                 <td>
-                  11
+                  8
                 </td>
                 <td>
                   0
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.NearSightedness.java">org/universAAL/ontology/impairment/NearSightedness.java</a>
                 </td>
                 <td>
-                  10
+                  8
                 </td>
                 <td>
                   0
@@ -161,7 +161,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.FarSightedness.java">org/universAAL/ontology/impairment/FarSightedness.java</a>
                 </td>
                 <td>
-                  10
+                  8
                 </td>
                 <td>
                   0
@@ -175,10 +175,10 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.ImpairmentOntology.java">org/universAAL/ontology/impairment/ImpairmentOntology.java</a>
                 </td>
                 <td>
-                  12
+                  2
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   4
@@ -189,7 +189,7 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.LightSensitivity.java">org/universAAL/ontology/impairment/LightSensitivity.java</a>
                 </td>
                 <td>
-                  10
+                  8
                 </td>
                 <td>
                   0
@@ -203,10 +203,10 @@ under the License.
                   <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.ImpairmentFactory.java">org/universAAL/ontology/ImpairmentFactory.java</a>
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
-                  7
+                  1
                 </td>
                 <td>
                   2

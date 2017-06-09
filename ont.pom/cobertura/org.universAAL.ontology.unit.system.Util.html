@@ -64,56 +64,30 @@
 <tr>  <td class="numLineCover">&nbsp;23</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<span class="keyword">public</span> <span class="keyword">class</span> Util {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;24</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;25</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_UNITY = <span class="keyword">new</span> Unit(<span class="string">"unity"</span>, <span class="string">"Unity"</span>, <span class="string">"1"</span>,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;26</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                        MeasurableDimension.Adiemnsional);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;27</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_PERCENT = <span class="keyword">new</span> Unit(<span class="string">"percent"</span>, <span class="string">"Percent"</span>, <span class="string">"%"</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;25</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_UNITY = <span class="keyword">new</span> Unit(<span class="string">"unity"</span>, <span class="string">"Unity"</span>, <span class="string">"1"</span>, MeasurableDimension.Adiemnsional);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;26</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_PERCENT = <span class="keyword">new</span> Unit(<span class="string">"percent"</span>, <span class="string">"Percent"</span>, <span class="string">"%"</span>, MeasurableDimension.Adiemnsional);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;27</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_HERTZ = <span class="keyword">new</span> DividedUnit(<span class="string">"hertz"</span>, IND_UNIT_UNITY,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;28</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                        MeasurableDimension.Adiemnsional);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;29</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_HERTZ = <span class="keyword">new</span> DividedUnit(<span class="string">"hertz"</span>, IND_UNIT_UNITY,</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                        InternationalSystem.IND_UNIT_SI_SECOND);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;29</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_VOLT = <span class="keyword">new</span> DividedUnit(<span class="string">"volt"</span>, <span class="string">"V"</span>,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;30</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                    InternationalSystem.IND_UNIT_SI_SECOND);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Unit IND_UNIT_VOLT = <span class="keyword">new</span> DividedUnit(</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">new</span> MultipliedUnit(<span class="string">"kg*m2"</span>, InternationalSystem.IND_UNIT_SI_GRAM, InternationalSystem.IND_PREFIX_SI_KILO,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;31</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                        <span class="keyword">new</span> MultipliedUnit(<span class="string">"m2"</span>, InternationalSystem.IND_UNIT_SI_METER,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;32</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                    <span class="string">"volt"</span>,</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                                                        InternationalSystem.IND_UNIT_SI_METER)),</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;33</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                    <span class="string">"V"</span>,</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">new</span> MultipliedUnit(<span class="string">"A*S3"</span>, InternationalSystem.IND_UNIT_SI_AMPERE,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;34</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">new</span> MultipliedUnit(<span class="string">"kg*m2"</span>,</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                                        <span class="keyword">new</span> MultipliedUnit(<span class="string">"S3"</span>, InternationalSystem.IND_UNIT_SI_SECOND, <span class="keyword">new</span> MultipliedUnit(<span class="string">"s2"</span>,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;35</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                            InternationalSystem.IND_UNIT_SI_GRAM,</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                                                        InternationalSystem.IND_UNIT_SI_SECOND, InternationalSystem.IND_UNIT_SI_SECOND))));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;36</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                            InternationalSystem.IND_PREFIX_SI_KILO,</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;37</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                            <span class="keyword">new</span> MultipliedUnit(<span class="string">"m2"</span>,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;38</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                                    InternationalSystem.IND_UNIT_SI_METER,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;39</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                                    InternationalSystem.IND_UNIT_SI_METER)),</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;40</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">new</span> MultipliedUnit(</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;41</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                            <span class="string">"A*S3"</span>,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;42</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                            InternationalSystem.IND_UNIT_SI_AMPERE,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;43</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                            <span class="keyword">new</span> MultipliedUnit(<span class="string">"S3"</span>,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;44</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                                    InternationalSystem.IND_UNIT_SI_SECOND,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;45</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                                    <span class="keyword">new</span> MultipliedUnit(<span class="string">"s2"</span>,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;46</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                                            InternationalSystem.IND_UNIT_SI_SECOND,</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;47</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                                            InternationalSystem.IND_UNIT_SI_SECOND))));</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;48</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;49</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;50</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 5/28/17 12:46 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/9/17 3:56 AM.</div>
 </body>
 </html>

@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 24,
              Errors: 290,
-             Warnings: 87,
-             Infos: 195
+             Warnings: 36,
+             Infos: 78
       </title>
             <link>http://ontology/ont.health.disease//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.Neoplasms.java">org/universAAL/ontology/ICD10Diseases/owl/Neoplasms.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HeartFailure.java">org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/HeartFailure.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease.java">org/universAAL/ontology/ICD10Diseases/owl/RespiratorySystemDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.DiseaseFactory.java">org/universAAL/ontology/disease/DiseaseFactory.java</a>
                 </td>
                 <td>
-                  12
+                  3
                 </td>
                 <td>
-                  17
+                  1
                 </td>
                 <td>
                   3
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease.java">org/universAAL/ontology/ICD10Diseases/owl/DigestiveSystemDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -119,10 +119,10 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Disease.java">org/universAAL/ontology/disease/owl/Disease.java</a>
                 </td>
                 <td>
-                  16
+                  3
                 </td>
                 <td>
-                  10
+                  1
                 </td>
                 <td>
                   57
@@ -133,7 +133,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Sympthom.java">org/universAAL/ontology/disease/owl/Sympthom.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease.java">org/universAAL/ontology/ICD10Diseases/owl/CertainInfectiousParasiticDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   1
@@ -161,7 +161,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease.java">org/universAAL/ontology/ICD10Diseases/owl/CirculatorySystemDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -175,7 +175,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder.java">org/universAAL/ontology/ICD10Diseases/owl/MentalDisorder.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -189,7 +189,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.DiseaseActivator.java">org/universAAL/ontology/disease/DiseaseActivator.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   1
@@ -203,7 +203,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Pronostic.java">org/universAAL/ontology/disease/owl/Pronostic.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -217,7 +217,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.IschemicHeartDisease.java">org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/IschemicHeartDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -231,7 +231,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Patogeny.java">org/universAAL/ontology/disease/owl/Patogeny.java</a>
                 </td>
                 <td>
-                  7
+                  3
                 </td>
                 <td>
                   0
@@ -245,7 +245,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.OtherCirculatorySystemDisease.java">org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/OtherCirculatorySystemDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -259,7 +259,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease.java">org/universAAL/ontology/ICD10Diseases/owl/NervousSystemDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -273,7 +273,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Diagnostic.java">org/universAAL/ontology/disease/owl/Diagnostic.java</a>
                 </td>
                 <td>
-                  8
+                  5
                 </td>
                 <td>
                   1
@@ -287,10 +287,10 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.DiseaseSeverityStatus.java">org/universAAL/ontology/disease/owl/DiseaseSeverityStatus.java</a>
                 </td>
                 <td>
-                  16
+                  4
                 </td>
                 <td>
-                  10
+                  5
                 </td>
                 <td>
                   20
@@ -301,7 +301,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Epidemiology.java">org/universAAL/ontology/disease/owl/Epidemiology.java</a>
                 </td>
                 <td>
-                  7
+                  3
                 </td>
                 <td>
                   0
@@ -315,7 +315,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.Etiology.java">org/universAAL/ontology/disease/owl/Etiology.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0
@@ -329,7 +329,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.AcuteRheumaticFever.java">org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   1
@@ -343,10 +343,10 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.DiseaseTimeEvolvingStatus.java">org/universAAL/ontology/disease/owl/DiseaseTimeEvolvingStatus.java</a>
                 </td>
                 <td>
-                  16
+                  3
                 </td>
                 <td>
-                  9
+                  4
                 </td>
                 <td>
                   18
@@ -357,10 +357,10 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.disease.owl.DiseaseOntology.java">org/universAAL/ontology/disease/owl/DiseaseOntology.java</a>
                 </td>
                 <td>
-                  17
+                  6
                 </td>
                 <td>
-                  37
+                  21
                 </td>
                 <td>
                   4
@@ -371,7 +371,7 @@ under the License.
                   <a href="http://ontology/ont.health.disease//checkstyle.html#org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HypertensiveDisease.java">org/universAAL/ontology/ICD10CirculatorySystemDiseases/owl/HypertensiveDisease.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   0

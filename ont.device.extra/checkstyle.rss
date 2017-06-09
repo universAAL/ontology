@@ -28,8 +28,8 @@ under the License.
     <item>
       <title>File: 7,
              Errors: 61,
-             Warnings: 11,
-             Infos: 91
+             Warnings: 6,
+             Infos: 64
       </title>
             <link>http://ontology/ont.device.extra//checkstyle.html</link>
       <description>
@@ -50,7 +50,7 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.DeviceExtraActivator.java">org/universAAL/ontology/DeviceExtraActivator.java</a>
                 </td>
                 <td>
-                  13
+                  10
                 </td>
                 <td>
                   1
@@ -64,10 +64,10 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.device.home.Oven.java">org/universAAL/ontology/device/home/Oven.java</a>
                 </td>
                 <td>
-                  13
+                  8
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   13
@@ -78,10 +78,10 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.device.home.DeviceExtraOntology.java">org/universAAL/ontology/device/home/DeviceExtraOntology.java</a>
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   6
@@ -92,10 +92,10 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.device.home.CarpetSensor.java">org/universAAL/ontology/device/home/CarpetSensor.java</a>
                 </td>
                 <td>
-                  14
+                  9
                 </td>
                 <td>
-                  3
+                  2
                 </td>
                 <td>
                   13
@@ -106,10 +106,10 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.device.home.SirenActuator.java">org/universAAL/ontology/device/home/SirenActuator.java</a>
                 </td>
                 <td>
-                  13
+                  9
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   13
@@ -120,10 +120,10 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.DeviceExtraFactory.java">org/universAAL/ontology/DeviceExtraFactory.java</a>
                 </td>
                 <td>
-                  14
+                  10
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   2
@@ -134,7 +134,7 @@ under the License.
                   <a href="http://ontology/ont.device.extra//checkstyle.html#org.universAAL.ontology.device.home.Strap.java">org/universAAL/ontology/device/home/Strap.java</a>
                 </td>
                 <td>
-                  12
+                  9
                 </td>
                 <td>
                   0

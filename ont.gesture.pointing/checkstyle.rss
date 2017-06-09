@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 3,
              Errors: 52,
-             Warnings: 27,
-             Infos: 55
+             Warnings: 2,
+             Infos: 20
       </title>
             <link>http://ontology/ont.gesture.pointing//checkstyle.html</link>
       <description>
@@ -49,10 +49,10 @@ under the License.
                   <a href="http://ontology/ont.gesture.pointing//checkstyle.html#org.universAAL.ontology.gesture.pointing.GestureRecognition.java">org/universAAL/ontology/gesture/pointing/GestureRecognition.java</a>
                 </td>
                 <td>
-                  20
+                  8
                 </td>
                 <td>
-                  10
+                  1
                 </td>
                 <td>
                   21
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.gesture.pointing//checkstyle.html#org.universAAL.ontology.gesture.pointing.PointingGestureInSpace.java">org/universAAL/ontology/gesture/pointing/PointingGestureInSpace.java</a>
                 </td>
                 <td>
-                  25
+                  5
                 </td>
                 <td>
-                  16
+                  0
                 </td>
                 <td>
                   28
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.gesture.pointing//checkstyle.html#org.universAAL.ontology.GesturePointingActivator.java">org/universAAL/ontology/GesturePointingActivator.java</a>
                 </td>
                 <td>
-                  10
+                  7
                 </td>
                 <td>
                   1

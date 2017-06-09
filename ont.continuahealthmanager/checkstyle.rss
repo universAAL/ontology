@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 52,
-             Warnings: 4,
-             Infos: 45
+             Warnings: 3,
+             Infos: 15
       </title>
             <link>http://ontology/ont.continuahealthmanager//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.continuahealthmanager//checkstyle.html#org.universAAL.ontology.continua.ContinuaHealthManagerOntology.java">org/universAAL/ontology/continua/ContinuaHealthManagerOntology.java</a>
                 </td>
                 <td>
-                  9
+                  3
                 </td>
                 <td>
                   0
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.continuahealthmanager//checkstyle.html#org.universAAL.ontology.continua.ContinuaHealthManager.java">org/universAAL/ontology/continua/ContinuaHealthManager.java</a>
                 </td>
                 <td>
-                  9
+                  3
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   10
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.continuahealthmanager//checkstyle.html#org.universAAL.ontology.continua.ContinuaHealthDevice.java">org/universAAL/ontology/continua/ContinuaHealthDevice.java</a>
                 </td>
                 <td>
-                  14
+                  3
                 </td>
                 <td>
                   1
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.continuahealthmanager//checkstyle.html#org.universAAL.ontology.ContinuaHealthManagerActivator.java">org/universAAL/ontology/ContinuaHealthManagerActivator.java</a>
                 </td>
                 <td>
-                  6
+                  3
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.continuahealthmanager//checkstyle.html#org.universAAL.ontology.ContinuaHealthManagerFactory.java">org/universAAL/ontology/ContinuaHealthManagerFactory.java</a>
                 </td>
                 <td>
-                  7
+                  3
                 </td>
                 <td>
                   1

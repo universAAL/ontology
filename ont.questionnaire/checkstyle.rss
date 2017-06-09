@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 13,
              Errors: 374,
-             Warnings: 65,
-             Infos: 477
+             Warnings: 11,
+             Infos: 180
       </title>
             <link>http://ontology/ont.questionnaire//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.QuestionnaireActivator.java">org/universAAL/ontology/QuestionnaireActivator.java</a>
                 </td>
                 <td>
-                  7
+                  4
                 </td>
                 <td>
                   1
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.QuestionWithMedia.java">org/universAAL/ontology/questionnaire/QuestionWithMedia.java</a>
                 </td>
                 <td>
-                  34
+                  13
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   29
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.Answer.java">org/universAAL/ontology/questionnaire/Answer.java</a>
                 </td>
                 <td>
-                  29
+                  17
                 </td>
                 <td>
-                  9
+                  3
                 </td>
                 <td>
                   29
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.AnsweredQuestionnaire.java">org/universAAL/ontology/questionnaire/AnsweredQuestionnaire.java</a>
                 </td>
                 <td>
-                  65
+                  33
                 </td>
                 <td>
-                  12
+                  1
                 </td>
                 <td>
                   53
@@ -105,10 +105,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.QuestionnaireOntology.java">org/universAAL/ontology/questionnaire/QuestionnaireOntology.java</a>
                 </td>
                 <td>
-                  25
+                  10
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   4
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.MultiChoiceQuestion.java">org/universAAL/ontology/questionnaire/MultiChoiceQuestion.java</a>
                 </td>
                 <td>
-                  18
+                  8
                 </td>
                 <td>
                   0
@@ -133,10 +133,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.QuestionnaireFactory.java">org/universAAL/ontology/QuestionnaireFactory.java</a>
                 </td>
                 <td>
-                  8
+                  4
                 </td>
                 <td>
-                  7
+                  1
                 </td>
                 <td>
                   3
@@ -147,10 +147,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.Questionnaire.java">org/universAAL/ontology/questionnaire/Questionnaire.java</a>
                 </td>
                 <td>
-                  120
+                  26
                 </td>
                 <td>
-                  15
+                  2
                 </td>
                 <td>
                   83
@@ -161,10 +161,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.Question.java">org/universAAL/ontology/questionnaire/Question.java</a>
                 </td>
                 <td>
-                  51
+                  22
                 </td>
                 <td>
-                  7
+                  1
                 </td>
                 <td>
                   50
@@ -175,10 +175,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.ConditionalQuestion.java">org/universAAL/ontology/questionnaire/ConditionalQuestion.java</a>
                 </td>
                 <td>
-                  67
+                  16
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   51
@@ -189,10 +189,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.QuestionnaireService.java">org/universAAL/ontology/questionnaire/QuestionnaireService.java</a>
                 </td>
                 <td>
-                  14
+                  7
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   12
@@ -203,7 +203,7 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.SingleChoiceQuestion.java">org/universAAL/ontology/questionnaire/SingleChoiceQuestion.java</a>
                 </td>
                 <td>
-                  21
+                  9
                 </td>
                 <td>
                   0
@@ -217,10 +217,10 @@ under the License.
                   <a href="http://ontology/ont.questionnaire//checkstyle.html#org.universAAL.ontology.questionnaire.ChoiceLabel.java">org/universAAL/ontology/questionnaire/ChoiceLabel.java</a>
                 </td>
                 <td>
-                  18
+                  11
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   18

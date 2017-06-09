@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 45,
-             Warnings: 13,
-             Infos: 50
+             Warnings: 5,
+             Infos: 18
       </title>
             <link>http://ontology/ont.languages//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.LanguageActivator.java">org/universAAL/ontology/LanguageActivator.java</a>
                 </td>
                 <td>
-                  7
+                  4
                 </td>
                 <td>
                   1
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.LanguageFactory.java">org/universAAL/ontology/LanguageFactory.java</a>
                 </td>
                 <td>
-                  9
+                  4
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   4
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.language.Language.java">org/universAAL/ontology/language/Language.java</a>
                 </td>
                 <td>
-                  10
+                  4
                 </td>
                 <td>
-                  5
+                  2
                 </td>
                 <td>
                   24
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.language.LanguageImpl.java">org/universAAL/ontology/language/LanguageImpl.java</a>
                 </td>
                 <td>
-                  11
+                  2
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   6
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.language.LanguageOntology.java">org/universAAL/ontology/language/LanguageOntology.java</a>
                 </td>
                 <td>
-                  13
+                  4
                 </td>
                 <td>
                   1

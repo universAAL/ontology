@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 7,
              Errors: 142,
-             Warnings: 62,
-             Infos: 106
+             Warnings: 9,
+             Infos: 42
       </title>
             <link>http://ontology/ont.asor//checkstyle.html</link>
       <description>
@@ -49,10 +49,10 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.asor.Asor.java">org/universAAL/ontology/asor/Asor.java</a>
                 </td>
                 <td>
-                  15
+                  6
                 </td>
                 <td>
-                  11
+                  1
                 </td>
                 <td>
                   23
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.AsorFactory.java">org/universAAL/ontology/AsorFactory.java</a>
                 </td>
                 <td>
-                  9
+                  5
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   3
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.asor.Script.java">org/universAAL/ontology/asor/Script.java</a>
                 </td>
                 <td>
-                  16
+                  7
                 </td>
                 <td>
-                  10
+                  0
                 </td>
                 <td>
                   36
@@ -91,10 +91,10 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.asor.LanguageClassifier.java">org/universAAL/ontology/asor/LanguageClassifier.java</a>
                 </td>
                 <td>
-                  16
+                  6
                 </td>
                 <td>
-                  11
+                  1
                 </td>
                 <td>
                   24
@@ -105,10 +105,10 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.asor.AsorOntology.java">org/universAAL/ontology/asor/AsorOntology.java</a>
                 </td>
                 <td>
-                  8
+                  6
                 </td>
                 <td>
-                  5
+                  4
                 </td>
                 <td>
                   4
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.AsorActivator.java">org/universAAL/ontology/AsorActivator.java</a>
                 </td>
                 <td>
-                  9
+                  6
                 </td>
                 <td>
                   2
@@ -133,10 +133,10 @@ under the License.
                   <a href="http://ontology/ont.asor//checkstyle.html#org.universAAL.ontology.asor.ScriptEngine.java">org/universAAL/ontology/asor/ScriptEngine.java</a>
                 </td>
                 <td>
-                  33
+                  6
                 </td>
                 <td>
-                  21
+                  0
                 </td>
                 <td>
                   45

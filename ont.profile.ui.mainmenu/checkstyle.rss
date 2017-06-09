@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 59,
-             Warnings: 20,
-             Infos: 66
+             Warnings: 3,
+             Infos: 32
       </title>
             <link>http://ontology/ont.profile.ui.mainmenu//checkstyle.html</link>
       <description>
@@ -49,10 +49,10 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.profile.ui.mainmenu.MenuEntry.java">org/universAAL/ontology/profile/ui/mainmenu/MenuEntry.java</a>
                 </td>
                 <td>
-                  18
+                  7
                 </td>
                 <td>
-                  12
+                  1
                 </td>
                 <td>
                   25
@@ -63,10 +63,10 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.profile.ui.mainmenu.MenuProfile.java">org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java</a>
                 </td>
                 <td>
-                  15
+                  6
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   15
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.UIMainMenuProfileActivator.java">org/universAAL/ontology/UIMainMenuProfileActivator.java</a>
                 </td>
                 <td>
-                  9
+                  6
                 </td>
                 <td>
                   1
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.UIMainMenuProfileFactory.java">org/universAAL/ontology/UIMainMenuProfileFactory.java</a>
                 </td>
                 <td>
-                  10
+                  6
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.profile.ui.mainmenu.MenuProfileOntology.java">org/universAAL/ontology/profile/ui/mainmenu/MenuProfileOntology.java</a>
                 </td>
                 <td>
-                  14
+                  7
                 </td>
                 <td>
                   0

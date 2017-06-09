@@ -27,8 +27,8 @@ under the License.
     <item>
       <title>File: 18,
              Errors: 208,
-             Warnings: 46,
-             Infos: 380
+             Warnings: 23,
+             Infos: 103
       </title>
             <link>http://ontology/ont.recommendations//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.VerticalAlignment.java">org/universAAL/ontology/recommendations/VerticalAlignment.java</a>
                 </td>
                 <td>
-                  26
+                  12
                 </td>
                 <td>
                   0
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.PreferredSize.java">org/universAAL/ontology/recommendations/PreferredSize.java</a>
                 </td>
                 <td>
-                  11
+                  3
                 </td>
                 <td>
                   0
@@ -77,10 +77,10 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsFactory.java">org/universAAL/ontology/RecommendationsFactory.java</a>
                 </td>
                 <td>
-                  8
+                  3
                 </td>
                 <td>
-                  7
+                  1
                 </td>
                 <td>
                   3
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Alignment.java">org/universAAL/ontology/recommendations/Alignment.java</a>
                 </td>
                 <td>
-                  18
+                  4
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.HorizontalLayout.java">org/universAAL/ontology/recommendations/HorizontalLayout.java</a>
                 </td>
                 <td>
-                  18
+                  7
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.ScriptedRecommendation.java">org/universAAL/ontology/recommendations/ScriptedRecommendation.java</a>
                 </td>
                 <td>
-                  20
+                  5
                 </td>
                 <td>
                   0
@@ -133,10 +133,10 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.VisualRecommendation.java">org/universAAL/ontology/recommendations/VisualRecommendation.java</a>
                 </td>
                 <td>
-                  23
+                  6
                 </td>
                 <td>
-                  2
+                  0
                 </td>
                 <td>
                   14
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.VerticalLayout.java">org/universAAL/ontology/recommendations/VerticalLayout.java</a>
                 </td>
                 <td>
-                  17
+                  7
                 </td>
                 <td>
                   0
@@ -161,7 +161,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.GridLayout.java">org/universAAL/ontology/recommendations/GridLayout.java</a>
                 </td>
                 <td>
-                  36
+                  6
                 </td>
                 <td>
                   0
@@ -175,10 +175,10 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.SizeUnit.java">org/universAAL/ontology/recommendations/SizeUnit.java</a>
                 </td>
                 <td>
-                  20
+                  5
                 </td>
                 <td>
-                  9
+                  4
                 </td>
                 <td>
                   19
@@ -189,7 +189,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.HorizontalAlignment.java">org/universAAL/ontology/recommendations/HorizontalAlignment.java</a>
                 </td>
                 <td>
-                  27
+                  12
                 </td>
                 <td>
                   0
@@ -203,10 +203,10 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.RecommendationsOntology.java">org/universAAL/ontology/recommendations/RecommendationsOntology.java</a>
                 </td>
                 <td>
-                  62
+                  4
                 </td>
                 <td>
-                  21
+                  15
                 </td>
                 <td>
                   4
@@ -217,10 +217,10 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Size.java">org/universAAL/ontology/recommendations/Size.java</a>
                 </td>
                 <td>
-                  32
+                  5
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   25
@@ -231,7 +231,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsActivator.java">org/universAAL/ontology/RecommendationsActivator.java</a>
                 </td>
                 <td>
-                  8
+                  3
                 </td>
                 <td>
                   2
@@ -245,7 +245,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.MaximumSize.java">org/universAAL/ontology/recommendations/MaximumSize.java</a>
                 </td>
                 <td>
-                  14
+                  6
                 </td>
                 <td>
                   0
@@ -259,7 +259,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.CSSRecommendation.java">org/universAAL/ontology/recommendations/CSSRecommendation.java</a>
                 </td>
                 <td>
-                  11
+                  5
                 </td>
                 <td>
                   0
@@ -273,7 +273,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Layout.java">org/universAAL/ontology/recommendations/Layout.java</a>
                 </td>
                 <td>
-                  16
+                  4
                 </td>
                 <td>
                   0
@@ -287,7 +287,7 @@ under the License.
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.MinimumSize.java">org/universAAL/ontology/recommendations/MinimumSize.java</a>
                 </td>
                 <td>
-                  13
+                  6
                 </td>
                 <td>
                   0
