@@ -38,47 +38,46 @@ import org.universAAL.ontology.cryptographic.symmetric.DES;
 
 public class CryptographicFactory implements ResourceFactory {
 
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-  public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
-
-	switch (factoryIndex) {
-     case 0:
-       return new DigestService(instanceURI);
-     case 1:
-       return new SimpleKey(instanceURI);
-     case 2:
-       return new KeyRing(instanceURI);
-     case 3:
-       return new MultidestinationEncryptedResource(instanceURI);
-     case 4:
-       return new EncryptionService(instanceURI);
-     case 5:
-       return new SignedResource(instanceURI);
-     case 6:
-       return new CertificationAuthority(instanceURI);
-     case 7:
-       return new EncryptedResource(instanceURI);
-     case 8:
-       return new CryptographicService(instanceURI);
-     case 9:
-       return new SignAndVerifyService(instanceURI);
-     case 10:
-    	 return new MessageDigest(instanceURI);
-     case 11:
-    	 return new SecureHashAlgorithm(instanceURI);
-     case 12:
-    	 return new AES(instanceURI); 
-     case 13:
-    	 return new Blowfish(instanceURI); 
-     case 14:
-    	 return new DES(instanceURI);
-     case 15:
-    	 return new RSA(instanceURI);
-     case 16:
-    	 return new DSA(instanceURI);
-     case 17:
-    	 return new DestinataryEncryptedSessionKey(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new DigestService(instanceURI);
+		case 1:
+			return new SimpleKey(instanceURI);
+		case 2:
+			return new KeyRing(instanceURI);
+		case 3:
+			return new MultidestinationEncryptedResource(instanceURI);
+		case 4:
+			return new EncryptionService(instanceURI);
+		case 5:
+			return new SignedResource(instanceURI);
+		case 6:
+			return new CertificationAuthority(instanceURI);
+		case 7:
+			return new EncryptedResource(instanceURI);
+		case 8:
+			return new CryptographicService(instanceURI);
+		case 9:
+			return new SignAndVerifyService(instanceURI);
+		case 10:
+			return new MessageDigest(instanceURI);
+		case 11:
+			return new SecureHashAlgorithm(instanceURI);
+		case 12:
+			return new AES(instanceURI);
+		case 13:
+			return new Blowfish(instanceURI);
+		case 14:
+			return new DES(instanceURI);
+		case 15:
+			return new RSA(instanceURI);
+		case 16:
+			return new DSA(instanceURI);
+		case 17:
+			return new DestinataryEncryptedSessionKey(instanceURI);
+		}
+		return null;
 	}
-	return null;
-  }
 }

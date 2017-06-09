@@ -31,46 +31,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class CityQuarter extends OutdoorPlace {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "CityQuarter";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "CityQuarter";
 
-    /**
-     * Creates a CityQuarter object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public CityQuarter(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a CityQuarter object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public CityQuarter(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a CityQuarter object
-     */
-    public CityQuarter() {
-	super();
-    }
+	/**
+	 * Creates a CityQuarter object
+	 */
+	public CityQuarter() {
+		super();
+	}
 
-    /**
-     * Creates a CityQuarter object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public CityQuarter(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a CityQuarter object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public CityQuarter(String uri, String name) {
+		super(uri, name);
+	}
 
-    public CityQuarter(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public CityQuarter(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public CityQuarter(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public CityQuarter(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

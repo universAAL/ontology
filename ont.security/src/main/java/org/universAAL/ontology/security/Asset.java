@@ -22,8 +22,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  *
  */
 public class Asset extends ManagedIndividual {
-	 public static final String MY_URI = SecurityOntology.NAMESPACE + "Asset";
-	 public static final String PROP_HAS_DEFAULT_ACCESS = SecurityOntology.NAMESPACE + "hasDefaultAccess";
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "Asset";
+	public static final String PROP_HAS_DEFAULT_ACCESS = SecurityOntology.NAMESPACE + "hasDefaultAccess";
 
 	/**
 	 * 
@@ -46,12 +46,12 @@ public class Asset extends ManagedIndividual {
 		super(uriPrefix, numProps);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

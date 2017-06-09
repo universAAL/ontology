@@ -34,48 +34,43 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
  */
 public class PerformedSessionManagementService extends HealthService {
 
-    // NAMESPACE & PROPERTIES
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "SessionManagementService";
+	// NAMESPACE & PROPERTIES
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "SessionManagementService";
 
-    public static final String PROP_MANAGES_SESSION = HealthProfileOntology.NAMESPACE
-	    + "managesSession";
-    public static final String PROP_ASSOCIATED_TREATMENT = HealthProfileOntology.NAMESPACE
-	    + "sessionsTreatment";
+	public static final String PROP_MANAGES_SESSION = HealthProfileOntology.NAMESPACE + "managesSession";
+	public static final String PROP_ASSOCIATED_TREATMENT = HealthProfileOntology.NAMESPACE + "sessionsTreatment";
 
-    public static final String PROP_TIMESTAMP_FROM = HealthProfileOntology.NAMESPACE
-	    + "sessionsFrom";
-    public static final String PROP_TIMESTAMP_TO = HealthProfileOntology.NAMESPACE
-	    + "sessionsTo";
+	public static final String PROP_TIMESTAMP_FROM = HealthProfileOntology.NAMESPACE + "sessionsFrom";
+	public static final String PROP_TIMESTAMP_TO = HealthProfileOntology.NAMESPACE + "sessionsTo";
 
-    // CONSTRUCTORS
-    public PerformedSessionManagementService() {
-	super();
-    }
+	// CONSTRUCTORS
+	public PerformedSessionManagementService() {
+		super();
+	}
 
-    public PerformedSessionManagementService(String uri) {
-	super(uri);
-    }
+	public PerformedSessionManagementService(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	if (PROP_MANAGES_SESSION.equals(propURI) || PROP_ASSOCIATED_TREATMENT.equals(propURI)
-		|| PROP_TIMESTAMP_FROM.equals(propURI) || PROP_TIMESTAMP_TO.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 * (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		if (PROP_MANAGES_SESSION.equals(propURI) || PROP_ASSOCIATED_TREATMENT.equals(propURI)
+				|| PROP_TIMESTAMP_FROM.equals(propURI) || PROP_TIMESTAMP_TO.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

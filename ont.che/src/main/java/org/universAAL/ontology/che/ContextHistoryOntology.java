@@ -43,144 +43,124 @@ import org.universAAL.ontology.ContextHistoryFactory;
  */
 public class ContextHistoryOntology extends Ontology {
 
-    /**
-     * Factory for serialization.
-     */
-    private static ContextHistoryFactory factory = new ContextHistoryFactory();
+	/**
+	 * Factory for serialization.
+	 */
+	private static ContextHistoryFactory factory = new ContextHistoryFactory();
 
-    /**
-     * Ontology domain namespace.
-     */
-    public static final String NAMESPACE = "http://ontology.universAAL.org/ContextHistory.owl#";
+	/**
+	 * Ontology domain namespace.
+	 */
+	public static final String NAMESPACE = "http://ontology.universAAL.org/ContextHistory.owl#";
 
-    /**
-     * Main constructor.
-     * 
-     * @param ontURI
-     *            Domain namespace
-     */
-    public ContextHistoryOntology(String ontURI) {
-	super(ontURI);
-    }
+	/**
+	 * Main constructor.
+	 * 
+	 * @param ontURI
+	 *            Domain namespace
+	 */
+	public ContextHistoryOntology(String ontURI) {
+		super(ontURI);
+	}
 
-    /**
-     * Constructor that automatically sets namespace.
-     */
-    public ContextHistoryOntology() {
-	super(NAMESPACE);
-    }
+	/**
+	 * Constructor that automatically sets namespace.
+	 */
+	public ContextHistoryOntology() {
+		super(NAMESPACE);
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.Ontology#create()
-     */
-    public void create() {
-	Resource r = getInfo();
-	r
-		.setResourceComment("The ontology defining the CHE concepts and services");
-	r.setResourceLabel("CHE");
-	addImport(DataRepOntology.NAMESPACE);
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.Ontology#create()
+	 */
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("The ontology defining the CHE concepts and services");
+		r.setResourceLabel("CHE");
+		addImport(DataRepOntology.NAMESPACE);
 
-	OntClassInfoSetup oci;
+		OntClassInfoSetup oci;
 
-	// load ContextEvent______________
-	oci = createNewOntClassInfo(ContextEvent.MY_URI, factory, 0);
-	oci
-		.setResourceComment("Replicates ContextEvent as a ManagedIndividual");
-	oci.setResourceLabel("Context Event (CHE)");
-	oci.addSuperClass(ManagedIndividual.MY_URI);
+		// load ContextEvent______________
+		oci = createNewOntClassInfo(ContextEvent.MY_URI, factory, 0);
+		oci.setResourceComment("Replicates ContextEvent as a ManagedIndividual");
+		oci.setResourceLabel("Context Event (CHE)");
+		oci.addSuperClass(ManagedIndividual.MY_URI);
 
-	oci.addObjectProperty(ContextEvent.PROP_RDF_SUBJECT).setFunctional();
-	// oci.addRestriction(MergedRestriction
-	// .getAllValuesRestrictionWithCardinality(
-	// ContextEvent.PROP_RDF_SUBJECT, Resource.MY_URI, 0, 1));
+		oci.addObjectProperty(ContextEvent.PROP_RDF_SUBJECT).setFunctional();
+		// oci.addRestriction(MergedRestriction
+		// .getAllValuesRestrictionWithCardinality(
+		// ContextEvent.PROP_RDF_SUBJECT, Resource.MY_URI, 0, 1));
 
-	oci.addObjectProperty(ContextEvent.PROP_RDF_PREDICATE).setFunctional();
-	// oci.addRestriction(MergedRestriction
-	// .getAllValuesRestrictionWithCardinality(
-	// ContextEvent.PROP_RDF_PREDICATE, Property.MY_URI, 0, 1));
+		oci.addObjectProperty(ContextEvent.PROP_RDF_PREDICATE).setFunctional();
+		// oci.addRestriction(MergedRestriction
+		// .getAllValuesRestrictionWithCardinality(
+		// ContextEvent.PROP_RDF_PREDICATE, Property.MY_URI, 0, 1));
 
-	oci.addObjectProperty(ContextEvent.PROP_RDF_OBJECT).setFunctional();
-	// oci.addRestriction(MergedRestriction
-	// .getAllValuesRestrictionWithCardinality(
-	// ContextEvent.PROP_RDF_OBJECT, Resource.MY_URI, 0, 1));
+		oci.addObjectProperty(ContextEvent.PROP_RDF_OBJECT).setFunctional();
+		// oci.addRestriction(MergedRestriction
+		// .getAllValuesRestrictionWithCardinality(
+		// ContextEvent.PROP_RDF_OBJECT, Resource.MY_URI, 0, 1));
 
-	oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_TIMESTAMP)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			ContextEvent.PROP_CONTEXT_TIMESTAMP, TypeMapper
-				.getDatatypeURI(Long.class), 0, 1));
+		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_TIMESTAMP).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ContextEvent.PROP_CONTEXT_TIMESTAMP,
+				TypeMapper.getDatatypeURI(Long.class), 0, 1));
 
-	oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_EXPIRATION_TIME)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			ContextEvent.PROP_CONTEXT_EXPIRATION_TIME, TypeMapper
-				.getDatatypeURI(Long.class), 0, 1));
+		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_EXPIRATION_TIME).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+				ContextEvent.PROP_CONTEXT_EXPIRATION_TIME, TypeMapper.getDatatypeURI(Long.class), 0, 1));
 
-	oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_CONFIDENCE)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			ContextEvent.PROP_CONTEXT_CONFIDENCE,
-			new LongRestriction(Long.valueOf(0), true, Long
-				.valueOf(100), true), 0, 1));
+		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_CONFIDENCE).setFunctional();
+		oci.addRestriction(
+				MergedRestriction.getAllValuesRestrictionWithCardinality(ContextEvent.PROP_CONTEXT_CONFIDENCE,
+						new LongRestriction(Long.valueOf(0), true, Long.valueOf(100), true), 0, 1));
 
-	oci.addObjectProperty(ContextEvent.PROP_CONTEXT_PROVIDER)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			ContextEvent.PROP_CONTEXT_PROVIDER,
-			ContextProvider.MY_URI, 0, 1));
+		oci.addObjectProperty(ContextEvent.PROP_CONTEXT_PROVIDER).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ContextEvent.PROP_CONTEXT_PROVIDER,
+				ContextProvider.MY_URI, 0, 1));
 
-	// load ContextHistoryService_________
-	oci = createNewOntClassInfo(ContextHistoryService.MY_URI, factory, 1);
-	oci
-		.setResourceComment("The class of services managing Context Events in CHE");
-	oci.setResourceLabel("Context History Services");
-	oci.addSuperClass(Service.MY_URI);
+		// load ContextHistoryService_________
+		oci = createNewOntClassInfo(ContextHistoryService.MY_URI, factory, 1);
+		oci.setResourceComment("The class of services managing Context Events in CHE");
+		oci.setResourceLabel("Context History Services");
+		oci.addSuperClass(Service.MY_URI);
 
-	oci.addObjectProperty(ContextHistoryService.PROP_MANAGES);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_MANAGES, ContextEvent.MY_URI));
+		oci.addObjectProperty(ContextHistoryService.PROP_MANAGES);
+		oci.addRestriction(
+				MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_MANAGES, ContextEvent.MY_URI));
 
-	oci.addDatatypeProperty(ContextHistoryService.PROP_PROCESSES);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_PROCESSES, TypeMapper
-			.getDatatypeURI(String.class)));
+		oci.addDatatypeProperty(ContextHistoryService.PROP_PROCESSES);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_PROCESSES,
+				TypeMapper.getDatatypeURI(String.class)));
 
-	oci.addDatatypeProperty(ContextHistoryService.PROP_TIMESTAMP_FROM);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_TIMESTAMP_FROM, TypeMapper
-			.getDatatypeURI(Long.class)));
+		oci.addDatatypeProperty(ContextHistoryService.PROP_TIMESTAMP_FROM);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_TIMESTAMP_FROM,
+				TypeMapper.getDatatypeURI(Long.class)));
 
-	oci.addDatatypeProperty(ContextHistoryService.PROP_TIMESTAMP_TO);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_TIMESTAMP_TO, TypeMapper
-			.getDatatypeURI(Long.class)));
+		oci.addDatatypeProperty(ContextHistoryService.PROP_TIMESTAMP_TO);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_TIMESTAMP_TO,
+				TypeMapper.getDatatypeURI(Long.class)));
 
-	oci.addDatatypeProperty(ContextHistoryService.PROP_DURATION_FROM);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_DURATION_FROM, TypeMapper
-			.getDatatypeURI(Duration.class)));
+		oci.addDatatypeProperty(ContextHistoryService.PROP_DURATION_FROM);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_DURATION_FROM,
+				TypeMapper.getDatatypeURI(Duration.class)));
 
-	oci.addDatatypeProperty(ContextHistoryService.PROP_DURATION_TO);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_DURATION_TO, TypeMapper
-			.getDatatypeURI(Duration.class)));
+		oci.addDatatypeProperty(ContextHistoryService.PROP_DURATION_TO);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_DURATION_TO,
+				TypeMapper.getDatatypeURI(Duration.class)));
 
-	oci.addDatatypeProperty(ContextHistoryService.PROP_RETURNS);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		ContextHistoryService.PROP_RETURNS, TypeMapper
-			.getDatatypeURI(String.class)));
-	//
-	// // Load ProvidedServices
-	// oci = createNewOntClassInfo(ContextHistoryServices.MY_URI, factory,
-	// 2);
-	// oci.setResourceComment("The specific services provided by CHE itself");
-	// oci.setResourceLabel("Context History Services");
-	// oci.addSuperClass(ContextHistoryService.MY_URI);
-    }
+		oci.addDatatypeProperty(ContextHistoryService.PROP_RETURNS);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_RETURNS,
+				TypeMapper.getDatatypeURI(String.class)));
+		//
+		// // Load ProvidedServices
+		// oci = createNewOntClassInfo(ContextHistoryServices.MY_URI, factory,
+		// 2);
+		// oci.setResourceComment("The specific services provided by CHE
+		// itself");
+		// oci.setResourceLabel("Context History Services");
+		// oci.addSuperClass(ContextHistoryService.MY_URI);
+	}
 }

@@ -29,99 +29,95 @@ import org.universAAL.middleware.rdf.UnmodifiableResourceList;
 
 public class MenuEntry extends ManagedIndividual {
 
-    public static final String MY_URI = MenuProfileOntology.NAMESPACE
-	    + "MenuEntry";
-    public static final String PROP_VENDOR = MenuProfileOntology.NAMESPACE
-	    + "hasVendor";
-    public static final String PROP_SERVICE_CLASS = MenuProfileOntology.NAMESPACE
-	    + "hasServiceClass";
-    public static final String PROP_PATH = MenuProfileOntology.NAMESPACE
-	    + "hasPath";
+	public static final String MY_URI = MenuProfileOntology.NAMESPACE + "MenuEntry";
+	public static final String PROP_VENDOR = MenuProfileOntology.NAMESPACE + "hasVendor";
+	public static final String PROP_SERVICE_CLASS = MenuProfileOntology.NAMESPACE + "hasServiceClass";
+	public static final String PROP_PATH = MenuProfileOntology.NAMESPACE + "hasPath";
 
-    public MenuEntry(String uri) {
-	super(uri);
-    }
-
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return Resource.PROP_SERIALIZATION_FULL;
-    }
-
-    public Resource getVendor() {
-	return (Resource) getProperty(PROP_VENDOR);
-    }
-
-    public void setVendor(Resource vendor) {
-	if (vendor != null)
-	    setProperty(PROP_VENDOR, vendor);
-    }
-
-    public Resource getServiceClass() {
-	return (Resource) getProperty(PROP_SERVICE_CLASS);
-    }
-
-    public void setServiceClass(Resource serviceClass) {
-	if (serviceClass != null)
-	    setProperty(PROP_SERVICE_CLASS, serviceClass);
-    }
-
-    public List getPath() {
-	Object o = getProperty(PROP_PATH);
-	if (o == null)
-	    return new ArrayList();
-	if (o instanceof List)
-	    return new UnmodifiableResourceList((List) o);
-	if (o instanceof Resource) {
-	    ArrayList al = new ArrayList();
-	    al.add((Resource)o);
-	    return new UnmodifiableResourceList(al);
+	public MenuEntry(String uri) {
+		super(uri);
 	}
-	return null;
-    }
 
-    /**
-     * Set the path for this menu entry in the main menu. The path is a list of
-     * {@link Resource}s. Each Resource corresponds to a subfolder, the last
-     * element in the list is the name of the menu entry (the name of the
-     * application). Each Resource should have a non-anonymous URI that can be
-     * used to find translations of this folder/menu entry name in different
-     * languages. A default language can be set as label of the Resource.
-     * 
-     * @param path
-     */
-    public void setPath(Resource[] path) {
-	if (path == null || path.length == 0)
-	    return;
-	List l = new ArrayList();
-	Collections.addAll(l, path);
-	setProperty(PROP_PATH, l);
-    }
-
-    public boolean isEquivalent(MenuEntry e) {
-	if (e == null)
-	    return false;
-
-	if (!testEquivalent(getVendor(), e.getVendor()))
-	    return false;
-	if (!testEquivalent(getServiceClass(), e.getServiceClass()))
-	    return false;
-	return true;
-    }
-
-    private boolean testEquivalent(Object o1, Object o2) {
-	if (o1 == null) {
-	    if (o2 != null)
-		return false;
-	} else {
-	    if (o2 == null)
-		return false;
-	    else if (!o1.equals(o2))
-		return false;
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
 	}
-	return true;
-    }
+
+	public int getPropSerializationType(String propURI) {
+		return Resource.PROP_SERIALIZATION_FULL;
+	}
+
+	public Resource getVendor() {
+		return (Resource) getProperty(PROP_VENDOR);
+	}
+
+	public void setVendor(Resource vendor) {
+		if (vendor != null)
+			setProperty(PROP_VENDOR, vendor);
+	}
+
+	public Resource getServiceClass() {
+		return (Resource) getProperty(PROP_SERVICE_CLASS);
+	}
+
+	public void setServiceClass(Resource serviceClass) {
+		if (serviceClass != null)
+			setProperty(PROP_SERVICE_CLASS, serviceClass);
+	}
+
+	public List getPath() {
+		Object o = getProperty(PROP_PATH);
+		if (o == null)
+			return new ArrayList();
+		if (o instanceof List)
+			return new UnmodifiableResourceList((List) o);
+		if (o instanceof Resource) {
+			ArrayList al = new ArrayList();
+			al.add((Resource) o);
+			return new UnmodifiableResourceList(al);
+		}
+		return null;
+	}
+
+	/**
+	 * Set the path for this menu entry in the main menu. The path is a list of
+	 * {@link Resource}s. Each Resource corresponds to a subfolder, the last
+	 * element in the list is the name of the menu entry (the name of the
+	 * application). Each Resource should have a non-anonymous URI that can be
+	 * used to find translations of this folder/menu entry name in different
+	 * languages. A default language can be set as label of the Resource.
+	 * 
+	 * @param path
+	 */
+	public void setPath(Resource[] path) {
+		if (path == null || path.length == 0)
+			return;
+		List l = new ArrayList();
+		Collections.addAll(l, path);
+		setProperty(PROP_PATH, l);
+	}
+
+	public boolean isEquivalent(MenuEntry e) {
+		if (e == null)
+			return false;
+
+		if (!testEquivalent(getVendor(), e.getVendor()))
+			return false;
+		if (!testEquivalent(getServiceClass(), e.getServiceClass()))
+			return false;
+		return true;
+	}
+
+	private boolean testEquivalent(Object o1, Object o2) {
+		if (o1 == null) {
+			if (o2 != null)
+				return false;
+		} else {
+			if (o2 == null)
+				return false;
+			else if (!o1.equals(o2))
+				return false;
+		}
+		return true;
+	}
 }

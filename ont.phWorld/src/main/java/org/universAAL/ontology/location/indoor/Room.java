@@ -31,78 +31,78 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Room extends HomeArea {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "Room";
-    public static final String PROP_ROOM_FUNCTION = LocationOntology.NAMESPACE + "roomFunction";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "Room";
+	public static final String PROP_ROOM_FUNCTION = LocationOntology.NAMESPACE + "roomFunction";
 
-    /**
-     * Creates a Room object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Room(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a Room object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Room(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a Room object
-     */
-    public Room() {
-	super();
-    }
+	/**
+	 * Creates a Room object
+	 */
+	public Room() {
+		super();
+	}
 
-    /**
-     * Creates a StairWay object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param func
-     *            the function of the room.
-     */
-    public Room(String uri, RoomFunction func) {
-	super(uri);
-	props.put(PROP_ROOM_FUNCTION, func);
-    }
+	/**
+	 * Creates a StairWay object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param func
+	 *            the function of the room.
+	 */
+	public Room(String uri, RoomFunction func) {
+		super(uri);
+		props.put(PROP_ROOM_FUNCTION, func);
+	}
 
-    public Room(RoomFunction func) {
-	super();
-	props.put(PROP_ROOM_FUNCTION, func);
-    }
+	public Room(RoomFunction func) {
+		super();
+		props.put(PROP_ROOM_FUNCTION, func);
+	}
 
-    public Room(String uri, String name, RoomFunction func, Shape shape) {
-	super(uri, name, shape);
-	props.put(PROP_ROOM_FUNCTION, func);
-    }
+	public Room(String uri, String name, RoomFunction func, Shape shape) {
+		super(uri, name, shape);
+		props.put(PROP_ROOM_FUNCTION, func);
+	}
 
-    public Room(String uri, RoomFunction func, Shape shape) {
-	super(uri, shape);
-	props.put(PROP_ROOM_FUNCTION, func);
-    }
+	public Room(String uri, RoomFunction func, Shape shape) {
+		super(uri, shape);
+		props.put(PROP_ROOM_FUNCTION, func);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public RoomFunction getRoomFunction() {
-	return (RoomFunction) props.get(PROP_ROOM_FUNCTION);
-    }
+	public RoomFunction getRoomFunction() {
+		return (RoomFunction) props.get(PROP_ROOM_FUNCTION);
+	}
 
-    public void setRoomFunction(RoomFunction function) {
-	if (function == null)
-	    throw new IllegalArgumentException();
-	props.put(PROP_ROOM_FUNCTION, function);
-    }
+	public void setRoomFunction(RoomFunction function) {
+		if (function == null)
+			throw new IllegalArgumentException();
+		props.put(PROP_ROOM_FUNCTION, function);
+	}
 
-    public void clearRoomFunction() {
-	props.remove(PROP_ROOM_FUNCTION);
-    }
+	public void clearRoomFunction() {
+		props.remove(PROP_ROOM_FUNCTION);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
-	    return super.getPropSerializationType(propURI);
-	if (PROP_ROOM_FUNCTION.equals(propURI))
-	    return PROP_SERIALIZATION_REDUCED;
+	public int getPropSerializationType(String propURI) {
+		if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+			return super.getPropSerializationType(propURI);
+		if (PROP_ROOM_FUNCTION.equals(propURI))
+			return PROP_SERIALIZATION_REDUCED;
 
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 }

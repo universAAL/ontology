@@ -31,46 +31,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class StairCase extends IndoorPlace {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "StairCase";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "StairCase";
 
-    /**
-     * Creates a StairCase object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public StairCase(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a StairCase object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public StairCase(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a StairCase object
-     */
-    public StairCase() {
-	super();
-    }
+	/**
+	 * Creates a StairCase object
+	 */
+	public StairCase() {
+		super();
+	}
 
-    /**
-     * Creates a StairCase object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public StairCase(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a StairCase object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public StairCase(String uri, String name) {
+		super(uri, name);
+	}
 
-    public StairCase(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public StairCase(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public StairCase(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public StairCase(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

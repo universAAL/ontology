@@ -26,15 +26,15 @@ import org.universAAL.ontology.profile.ui.mainmenu.MenuProfileOntology;
 
 public class UIMainMenuProfileActivator implements ModuleActivator {
 
-    private MenuProfileOntology ontology = new MenuProfileOntology();
-    public static ModuleContext context;
+	private MenuProfileOntology ontology = new MenuProfileOntology();
+	public static ModuleContext context;
 
-    public void start(ModuleContext mc) throws Exception {
-	UIMainMenuProfileActivator.context = mc;
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		UIMainMenuProfileActivator.context = mc;
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 }

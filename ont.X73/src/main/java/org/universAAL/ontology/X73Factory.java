@@ -35,32 +35,31 @@ import org.universAAL.ontology.X73.compoundBasicNuValue;
 
 public class X73Factory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new WeighingScale(instanceURI);
-	case 1:
-	    return new compoundBasicNuValue(instanceURI);
-	case 2:
-	    return new BodyWeight(instanceURI);
-	case 3:
-	    return new SystemModel(instanceURI);
-	case 4:
-	    return new BloodPressureSys(instanceURI);
-	case 5:
-	    return new BloodPressureDia(instanceURI);
-	case 6:
-	    return new AbsoluteTimeStamp(instanceURI);
-	case 7:
-	    return new X73(instanceURI);
-	case 8:
-	    return new BloodPressureMonitor(instanceURI);
-	case 9:
-	    return new Pulse(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new WeighingScale(instanceURI);
+		case 1:
+			return new compoundBasicNuValue(instanceURI);
+		case 2:
+			return new BodyWeight(instanceURI);
+		case 3:
+			return new SystemModel(instanceURI);
+		case 4:
+			return new BloodPressureSys(instanceURI);
+		case 5:
+			return new BloodPressureDia(instanceURI);
+		case 6:
+			return new AbsoluteTimeStamp(instanceURI);
+		case 7:
+			return new X73(instanceURI);
+		case 8:
+			return new BloodPressureMonitor(instanceURI);
+		case 9:
+			return new Pulse(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

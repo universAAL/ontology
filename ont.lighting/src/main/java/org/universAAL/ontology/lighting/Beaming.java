@@ -29,14 +29,14 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class Beaming extends Lighting {
-    public static final String MY_URI = LightingOntology.NAMESPACE + "Beaming";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "Beaming";
 
-    public Beaming(String uri) {
-	super(uri);
-    }
+	public Beaming(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

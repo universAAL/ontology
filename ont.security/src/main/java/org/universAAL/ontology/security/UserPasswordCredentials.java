@@ -17,25 +17,22 @@
 
 package org.universAAL.ontology.security;
 
-
 /**
  * User-Password type Credentials.
+ * 
  * @author amedrano
  *
  */
 public class UserPasswordCredentials extends Password {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "UserPasswordCredentials";
+	public static final String PROP_USERNAME = SecurityOntology.NAMESPACE + "username";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "UserPasswordCredentials";
-    public static final String PROP_USERNAME = SecurityOntology.NAMESPACE
-    	    + "username";
-        
-	
 	/**
 	 * Only for serializers.
 	 */
 	public UserPasswordCredentials() {
-	    super();
+		super();
 	}
 
 	/**
@@ -45,36 +42,32 @@ public class UserPasswordCredentials extends Password {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
-		return hasProperty(PROP_PASSWORD)
-				&& hasProperty(PROP_USERNAME)
-				&& super.isWellFormed();
+		return hasProperty(PROP_PASSWORD) && hasProperty(PROP_USERNAME) && super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_PASSWORD)||propURI.equals(PROP_USERNAME)
-			||propURI.equals(PROP_PASSWORD_DIGEST)){
+		if (propURI.equals(PROP_PASSWORD) || propURI.equals(PROP_USERNAME) || propURI.equals(PROP_PASSWORD_DIGEST)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_UNDEFINED;
 	}
 
-	public String getUsername(){
+	public String getUsername() {
 		return (String) getProperty(PROP_USERNAME);
 	}
-	
-	public void setUsername(String value){
-		if (value != null && !value.isEmpty()){
+
+	public void setUsername(String value) {
+		if (value != null && !value.isEmpty()) {
 			changeProperty(PROP_USERNAME, value);
 		}
 	}
-	
+
 }

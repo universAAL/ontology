@@ -16,45 +16,44 @@
 package org.universAAL.ontology.hvac;
 
 /**
- * Class for Heating systems. Where heating systems are systems capable of heating the air in a room. 
+ * Class for Heating systems. Where heating systems are systems capable of
+ * heating the air in a room.
+ * 
  * @author Ricardo
  */
 public class Heating extends Target_Temperature {
-    public static final String MY_URI = HvacOntology.NAMESPACE
-	    + "Heating";
-    public static final String PROP_HAS_HEATING_MODE = HvacOntology.NAMESPACE + "hasHeating_Mode";
+	public static final String MY_URI = HvacOntology.NAMESPACE + "Heating";
+	public static final String PROP_HAS_HEATING_MODE = HvacOntology.NAMESPACE + "hasHeating_Mode";
 
-    public Heating() {
-	super();
-    }
+	public Heating() {
+		super();
+	}
 
-    public Heating(String uri) {
-	super(uri);
-    }
-    public String getClassURI() {
-    	return MY_URI;
-        }
+	public Heating(String uri) {
+		super(uri);
+	}
 
-        public int getPropSerializationType(String arg0) {
-    	return PROP_SERIALIZATION_FULL;
-        }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-        public boolean isWellFormed() {
-        	
-        	return true && hasProperty(PROP_HAS_STATUSVALUE);
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-        }
-       
-     
-       public Heating_Mode getHeating_Mode(){
-    	   return (Heating_Mode)getProperty(PROP_HAS_HEATING_MODE);
-       }
-       public boolean setMode(Heating_Mode Heating_Mode){
-    	   return changeProperty(PROP_HAS_HEATING_MODE, Heating_Mode);
-    	   
-       }
-     
-      
+	public boolean isWellFormed() {
 
+		return true && hasProperty(PROP_HAS_STATUSVALUE);
+
+	}
+
+	public Heating_Mode getHeating_Mode() {
+		return (Heating_Mode) getProperty(PROP_HAS_HEATING_MODE);
+	}
+
+	public boolean setMode(Heating_Mode Heating_Mode) {
+		return changeProperty(PROP_HAS_HEATING_MODE, Heating_Mode);
+
+	}
 
 }

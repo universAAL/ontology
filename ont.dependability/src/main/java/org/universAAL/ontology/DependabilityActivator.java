@@ -28,16 +28,16 @@ import org.universAAL.ontology.dependability.*;
 
 public class DependabilityActivator implements ModuleActivator {
 
-    static ModuleContext context = null;
+	static ModuleContext context = null;
 
-    DependabilityOntology _dependabilityontology = new DependabilityOntology();
+	DependabilityOntology _dependabilityontology = new DependabilityOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	DependabilityActivator.context = mc;
-	OntologyManagement.getInstance().register(mc, _dependabilityontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		DependabilityActivator.context = mc;
+		OntologyManagement.getInstance().register(mc, _dependabilityontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, _dependabilityontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, _dependabilityontology);
+	}
 }

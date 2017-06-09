@@ -39,65 +39,63 @@ import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
  */
 public class PersSensor extends ActivityHubSensor {
 
-    public static final String MY_URI = ActivityHubOntology.NAMESPACE
-	    + "PersSensor";
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "PersSensor";
 
-    public static final int MY_SENSOR_TYPE = ActivityHubSensorType.PersSensor;
+	public static final int MY_SENSOR_TYPE = ActivityHubSensorType.PersSensor;
 
-    /**
+	/**
 	 * 
 	 */
-    public PersSensor() {
-	// super();
-    }
+	public PersSensor() {
+		// super();
+	}
 
-    /**
-     * @param uri
-     */
-    public PersSensor(String uri) {
-	super(uri);
-    }
+	/**
+	 * @param uri
+	 */
+	public PersSensor(String uri) {
+		super(uri);
+	}
 
-    /**
-     * From Resource class: The properties denote the RDF triples of this
-     * resource, realized as Hashtable. The RDF subject is this Resource itself,
-     * the key of the Hashtable is the RDF predicate and the value of the
-     * Hashtable is the RDF object, which can be a literal or another resource.
-     * See {@link #setProperty(String propURI, Object value)} for more
-     * information.
-     */
-    public void setMeasuredValue(PersSensorEvent event) {
-	props.put(PROP_HAS_VALUE, event);
-    }
+	/**
+	 * From Resource class: The properties denote the RDF triples of this
+	 * resource, realized as Hashtable. The RDF subject is this Resource itself,
+	 * the key of the Hashtable is the RDF predicate and the value of the
+	 * Hashtable is the RDF object, which can be a literal or another resource.
+	 * See {@link #setProperty(String propURI, Object value)} for more
+	 * information.
+	 */
+	public void setMeasuredValue(PersSensorEvent event) {
+		props.put(PROP_HAS_VALUE, event);
+	}
 
-    public PersSensorEvent getMeasuredvalue() {
-	return ((PersSensorEvent) props.get(PROP_HAS_VALUE));
-    }
+	public PersSensorEvent getMeasuredvalue() {
+		return ((PersSensorEvent) props.get(PROP_HAS_VALUE));
+	}
 
-    /**
-     * @see org.universAAL.ontology.phThing.Sensor#getClassURI()
-     * @return Ontology namespace for this class
-     */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/**
+	 * @see org.universAAL.ontology.phThing.Sensor#getClassURI()
+	 * @return Ontology namespace for this class
+	 */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_HAS_VALUE.equals(propURI) ? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.ontology.activityhub.ActivityHubSensor#getSensorType()
-     */
-    public int getSensorType() {
-	return MY_SENSOR_TYPE;
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.ontology.activityhub.ActivityHubSensor#getSensorType()
+	 */
+	public int getSensorType() {
+		return MY_SENSOR_TYPE;
+	}
 }

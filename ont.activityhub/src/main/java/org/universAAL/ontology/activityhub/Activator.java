@@ -26,17 +26,17 @@ import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.ActivityHubOntology;
 
 /**
- * Bundle activator.
- * Registers the ActivityHub Ontology in the universAAL ontology manager.
+ * Bundle activator. Registers the ActivityHub Ontology in the universAAL
+ * ontology manager.
  *
  * @author Thomas Fuxreiter
  */
 public class Activator implements ModuleActivator {
 
 	ActivityHubOntology activityHubOntology = new ActivityHubOntology();
-	
+
 	public void start(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().register(mc, activityHubOntology);		
+		OntologyManagement.getInstance().register(mc, activityHubOntology);
 	}
 
 	public void stop(ModuleContext mc) throws Exception {

@@ -35,28 +35,27 @@ import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
  */
 public class UIPreferencesProfileFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new VisualPreferences(instanceURI);
-	case 1:
-	    return new SystemMenuPreferences(instanceURI);
-	case 2:
-	    return new AccessMode(instanceURI);
-	case 3:
-	    return new AlertPreferences(instanceURI);
-	case 4:
-	    return new GeneralInteractionPreferences(instanceURI);
-	case 5:
-	    return new AuditoryPreferences(instanceURI);
-	case 6:
-	    return new UIPreferencesSubProfile(instanceURI);
-	case 7:
-	    return new UIPreferencesService(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new VisualPreferences(instanceURI);
+		case 1:
+			return new SystemMenuPreferences(instanceURI);
+		case 2:
+			return new AccessMode(instanceURI);
+		case 3:
+			return new AlertPreferences(instanceURI);
+		case 4:
+			return new GeneralInteractionPreferences(instanceURI);
+		case 5:
+			return new AuditoryPreferences(instanceURI);
+		case 6:
+			return new UIPreferencesSubProfile(instanceURI);
+		case 7:
+			return new UIPreferencesService(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

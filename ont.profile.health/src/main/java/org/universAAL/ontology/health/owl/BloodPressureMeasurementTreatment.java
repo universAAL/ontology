@@ -22,59 +22,56 @@ import org.universAAL.ontology.profile.Caregiver;
 
 public class BloodPressureMeasurementTreatment extends TakeMeasurementActivity {
 
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "BloodPreasureMeasurementTreatment";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "BloodPreasureMeasurementTreatment";
 
-    public BloodPressureMeasurementTreatment() {
-	super();
-    }
+	public BloodPressureMeasurementTreatment() {
+		super();
+	}
 
-    public BloodPressureMeasurementTreatment(String uri) {
-	super(uri);
-    }
+	public BloodPressureMeasurementTreatment(String uri) {
+		super(uri);
+	}
 
-    public BloodPressureMeasurementTreatment(AssistedPersonProfile assistedPerson,
-	    Caregiver caregiver, String tname, String description,
-	    XMLGregorianCalendar stDt, String diseaseURI, BloodPressureRequirement wr) {
-	super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public BloodPressureMeasurementTreatment(AssistedPersonProfile assistedPerson, Caregiver caregiver, String tname,
+			String description, XMLGregorianCalendar stDt, String diseaseURI, BloodPressureRequirement wr) {
+		super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public BloodPressureMeasurementTreatment(AssistedPersonProfile assistedPerson,
-	    Caregiver caregiver, String tname, TreatmentPlanning tp,
-	    String description, String diseaseURI, BloodPressureRequirement wr) {
-	super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public BloodPressureMeasurementTreatment(AssistedPersonProfile assistedPerson, Caregiver caregiver, String tname,
+			TreatmentPlanning tp, String description, String diseaseURI, BloodPressureRequirement wr) {
+		super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public BloodPressureMeasurementTreatment(String tname, String description,
-	    String diseaseURI, BloodPressureRequirement wr) {
-	super(tname, description, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public BloodPressureMeasurementTreatment(String tname, String description, String diseaseURI,
+			BloodPressureRequirement wr) {
+		super(tname, description, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public BloodPressureMeasurementTreatment(String tname, String description,
-	    XMLGregorianCalendar stDt, String diseaseURI, BloodPressureRequirement wr) {
-	super(tname, description, stDt, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public BloodPressureMeasurementTreatment(String tname, String description, XMLGregorianCalendar stDt,
+			String diseaseURI, BloodPressureRequirement wr) {
+		super(tname, description, stDt, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public BloodPressureMeasurementTreatment(String tname, String description,
-	    TreatmentPlanning tp, String diseaseURI, BloodPressureRequirement wr) {
-	super(tname, description, tp, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public BloodPressureMeasurementTreatment(String tname, String description, TreatmentPlanning tp, String diseaseURI,
+			BloodPressureRequirement wr) {
+		super(tname, description, tp, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
 }

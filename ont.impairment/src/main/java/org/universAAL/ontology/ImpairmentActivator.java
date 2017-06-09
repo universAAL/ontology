@@ -29,13 +29,13 @@ import org.universAAL.ontology.impairment.ImpairmentOntology;
  */
 public class ImpairmentActivator implements ModuleActivator {
 
-    private ImpairmentOntology ont = new ImpairmentOntology();
+	private ImpairmentOntology ont = new ImpairmentOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ont);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ont);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ont);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ont);
+	}
 }

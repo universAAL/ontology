@@ -4,7 +4,7 @@ import org.universAAL.itests.IntegrationTest;
 
 public class ArtifactIT extends IntegrationTest {
 
-    public void testComposite() {
-	logAllBundles();
-    }
+	public void testComposite() {
+		logAllBundles();
+	}
 }

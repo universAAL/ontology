@@ -19,93 +19,92 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * The different Access types for {@link AccessRight}s.
+ * 
  * @author amedrano
  */
 public class AccessType extends ManagedIndividual {
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "AccessType";
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "AccessType";
 
-    public static final int READ = 0;
-    public static final int CHANGE = 1;
-    public static final int ADD = 2;
-    public static final int REMOVE = 3;
+	public static final int READ = 0;
+	public static final int CHANGE = 1;
+	public static final int ADD = 2;
+	public static final int REMOVE = 3;
 
+	private static final String[] names = { "Read", "Change", "Add", "Remove" };
 
-    private static final String[] names = { "Read", 
-	    "Change","Add","Remove" };
+	/**
+	 * Read Only Access.
+	 */
+	public static final AccessType read = new AccessType(READ);
 
-    /**
-     * Read Only Access.
-     */
-    public static final AccessType read = new AccessType(READ);
-    
-    /**
-     * Change Access.
-     */
-    public static final AccessType change = new AccessType(CHANGE);
-    
-    /**
-     * Add Access.
-     */
-    public static final AccessType add = new AccessType(ADD);
-    
-    /**
-     * Remove, Delete Access.
-     */
-    public static final AccessType remove = new AccessType(REMOVE);
+	/**
+	 * Change Access.
+	 */
+	public static final AccessType change = new AccessType(CHANGE);
 
-    private int order;
+	/**
+	 * Add Access.
+	 */
+	public static final AccessType add = new AccessType(ADD);
 
-    private AccessType(int order) {
-	super(SecurityOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
+	/**
+	 * Remove, Delete Access.
+	 */
+	public static final AccessType remove = new AccessType(REMOVE);
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+	private int order;
 
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String name() {
-	return names[order];
-    }
-
-    public int ord() {
-	return order;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static AccessType getAccessTypeByOrder(int order) {
-	switch (order) {
-	case READ:
-	    return read;
-	case CHANGE:
-	    return change;
-	case ADD:
-		return add;
-	case REMOVE:
-		return remove;
-	default:
-	    return null;
+	private AccessType(int order) {
+		super(SecurityOntology.NAMESPACE + names[order]);
+		this.order = order;
 	}
-    }
 
-    public static final AccessType valueOf(String name) {
-	if (name == null)
-	    return null;
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-	if (name.startsWith(SecurityOntology.NAMESPACE))
-	    name = name.substring(SecurityOntology.NAMESPACE.length());
+	public boolean isWellFormed() {
+		return true;
+	}
 
-	for (int i = 0; i <= 3; i++)
-	    if (names[i].equals(name))
-		return getAccessTypeByOrder(i);
+	public String name() {
+		return names[order];
+	}
 
-	return null;
-    }
+	public int ord() {
+		return order;
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public static AccessType getAccessTypeByOrder(int order) {
+		switch (order) {
+		case READ:
+			return read;
+		case CHANGE:
+			return change;
+		case ADD:
+			return add;
+		case REMOVE:
+			return remove;
+		default:
+			return null;
+		}
+	}
+
+	public static final AccessType valueOf(String name) {
+		if (name == null)
+			return null;
+
+		if (name.startsWith(SecurityOntology.NAMESPACE))
+			name = name.substring(SecurityOntology.NAMESPACE.length());
+
+		for (int i = 0; i <= 3; i++)
+			if (names[i].equals(name))
+				return getAccessTypeByOrder(i);
+
+		return null;
+	}
 }

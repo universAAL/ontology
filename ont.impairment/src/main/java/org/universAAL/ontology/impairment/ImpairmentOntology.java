@@ -34,88 +34,78 @@ import org.universAAL.ontology.ImpairmentFactory;
 
 public final class ImpairmentOntology extends Ontology {
 
-    private static ImpairmentFactory factory = new ImpairmentFactory();
+	private static ImpairmentFactory factory = new ImpairmentFactory();
 
-    public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-	    + "Impairment.owl#";
+	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Impairment.owl#";
 
-    public ImpairmentOntology() {
-	super(NAMESPACE);
-    }
+	public ImpairmentOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r
-		.setResourceComment("The ontology describing Impairment a user may have.");
-	r.setResourceLabel("Impairment");
-	addImport(DataRepOntology.NAMESPACE);
-	addImport(ImpairmentOntology.NAMESPACE);
-	addImport(UIBusOntology.NAMESPACE);
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("The ontology describing Impairment a user may have.");
+		r.setResourceLabel("Impairment");
+		addImport(DataRepOntology.NAMESPACE);
+		addImport(ImpairmentOntology.NAMESPACE);
+		addImport(UIBusOntology.NAMESPACE);
 
-	OntClassInfoSetup oci;
+		OntClassInfoSetup oci;
 
-	// load SightImpairment
-	oci = createNewOntClassInfo(SightImpairment.MY_URI, factory, 0);
-	oci
-		.setResourceComment("Represents the level of the user's difficulty in seeing GUI-based system output.");
-	oci.setResourceLabel("Sight Impairment");
-	oci.addSuperClass(AccessImpairment.MY_URI);
+		// load SightImpairment
+		oci = createNewOntClassInfo(SightImpairment.MY_URI, factory, 0);
+		oci.setResourceComment("Represents the level of the user's difficulty in seeing GUI-based system output.");
+		oci.setResourceLabel("Sight Impairment");
+		oci.addSuperClass(AccessImpairment.MY_URI);
 
-	// load FarSightedness
-	oci = createNewOntClassInfo(FarSightedness.MY_URI, factory, 1);
-	oci
-		.setResourceComment("Represents the level of the user's farsightedness.");
-	oci.setResourceLabel("Farsightedness");
-	oci.addSuperClass(SightImpairment.MY_URI);
+		// load FarSightedness
+		oci = createNewOntClassInfo(FarSightedness.MY_URI, factory, 1);
+		oci.setResourceComment("Represents the level of the user's farsightedness.");
+		oci.setResourceLabel("Farsightedness");
+		oci.addSuperClass(SightImpairment.MY_URI);
 
-	// load SpeakingImpairment
-	oci = createNewOntClassInfo(SpeakingImpairment.MY_URI, factory, 2);
-	oci
-		.setResourceComment("Represents the level of the user's difficulty in speaking.");
-	oci.setResourceLabel("Speaking Impairment");
-	oci.addSuperClass(AccessImpairment.MY_URI);
+		// load SpeakingImpairment
+		oci = createNewOntClassInfo(SpeakingImpairment.MY_URI, factory, 2);
+		oci.setResourceComment("Represents the level of the user's difficulty in speaking.");
+		oci.setResourceLabel("Speaking Impairment");
+		oci.addSuperClass(AccessImpairment.MY_URI);
 
-	// load HearingImpairment
-	oci = createNewOntClassInfo(HearingImpairment.MY_URI, factory, 3);
-	oci
-		.setResourceComment("Represents the level of the user's difficulty in hearing voice-based system output.");
-	oci.setResourceLabel("Hearing Impairment");
-	oci.addSuperClass(AccessImpairment.MY_URI);
+		// load HearingImpairment
+		oci = createNewOntClassInfo(HearingImpairment.MY_URI, factory, 3);
+		oci.setResourceComment("Represents the level of the user's difficulty in hearing voice-based system output.");
+		oci.setResourceLabel("Hearing Impairment");
+		oci.addSuperClass(AccessImpairment.MY_URI);
 
-	// load ColorBlindness
-	oci = createNewOntClassInfo(ColorBlindness.MY_URI, factory, 4);
-	oci
-		.setResourceComment("Represents the level of the user's color-blindness.");
-	oci.setResourceLabel("ColorBlindness");
-	oci.addSuperClass(SightImpairment.MY_URI);
+		// load ColorBlindness
+		oci = createNewOntClassInfo(ColorBlindness.MY_URI, factory, 4);
+		oci.setResourceComment("Represents the level of the user's color-blindness.");
+		oci.setResourceLabel("ColorBlindness");
+		oci.addSuperClass(SightImpairment.MY_URI);
 
-	// load NearSightedness
-	oci = createNewOntClassInfo(NearSightedness.MY_URI, factory, 5);
-	oci
-		.setResourceComment("Represents the level of the user's nearsightedness.");
-	oci.setResourceLabel("Nearsightedness");
-	oci.addSuperClass(SightImpairment.MY_URI);
+		// load NearSightedness
+		oci = createNewOntClassInfo(NearSightedness.MY_URI, factory, 5);
+		oci.setResourceComment("Represents the level of the user's nearsightedness.");
+		oci.setResourceLabel("Nearsightedness");
+		oci.addSuperClass(SightImpairment.MY_URI);
 
-	// load Astigmatism
-	oci = createNewOntClassInfo(Astigmatism.MY_URI, factory, 6);
-	oci
-		.setResourceComment("Represents the level of the user's astigmatism.");
-	oci.setResourceLabel("Astigmatism");
-	oci.addSuperClass(SightImpairment.MY_URI);
+		// load Astigmatism
+		oci = createNewOntClassInfo(Astigmatism.MY_URI, factory, 6);
+		oci.setResourceComment("Represents the level of the user's astigmatism.");
+		oci.setResourceLabel("Astigmatism");
+		oci.addSuperClass(SightImpairment.MY_URI);
 
-	// load PhysicalImpairment
-	oci = createNewOntClassInfo(PhysicalImpairment.MY_URI, factory, 7);
-	oci
-		.setResourceComment("Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.");
-	oci.setResourceLabel("Physical Impairment");
-	oci.addSuperClass(AccessImpairment.MY_URI);
+		// load PhysicalImpairment
+		oci = createNewOntClassInfo(PhysicalImpairment.MY_URI, factory, 7);
+		oci.setResourceComment(
+				"Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.");
+		oci.setResourceLabel("Physical Impairment");
+		oci.addSuperClass(AccessImpairment.MY_URI);
 
-	// load LightSensitivity
-	oci = createNewOntClassInfo(LightSensitivity.MY_URI, factory, 8);
-	oci
-		.setResourceComment("Represents the level of the user's light-sensitivity.");
-	oci.setResourceLabel("LightSensitivity");
-	oci.addSuperClass(SightImpairment.MY_URI);
+		// load LightSensitivity
+		oci = createNewOntClassInfo(LightSensitivity.MY_URI, factory, 8);
+		oci.setResourceComment("Represents the level of the user's light-sensitivity.");
+		oci.setResourceLabel("LightSensitivity");
+		oci.addSuperClass(SightImpairment.MY_URI);
 
-    }
+	}
 }

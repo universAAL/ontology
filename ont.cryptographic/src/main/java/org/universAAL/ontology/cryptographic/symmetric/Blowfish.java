@@ -25,7 +25,7 @@ import org.universAAL.ontology.cryptographic.SimpleBlockEncryption;
 public class Blowfish extends SimpleBlockEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "Blowfish";
-	
+
 	/**
 	 * 
 	 */
@@ -38,8 +38,8 @@ public class Blowfish extends SimpleBlockEncryption {
 	public Blowfish(String uri) {
 		super(uri);
 	}
-	
-	/**{@inheritDoc} */
+
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

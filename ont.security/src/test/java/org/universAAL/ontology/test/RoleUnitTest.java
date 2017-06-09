@@ -25,7 +25,6 @@ import org.universAAL.ontology.security.Role;
  */
 public class RoleUnitTest extends OntTestCase {
 
-
 	public void test() {
 		Role role = new Role("test1");
 		assertEquals(0, role.getAllAccessRights().size());
@@ -35,21 +34,21 @@ public class RoleUnitTest extends OntTestCase {
 		role.addAccessRight(ar);
 		ar = new AccessRight("testar2");
 		assertEquals(2, role.getAllAccessRights().size());
-		
+
 		Role role2 = new Role("rol2");
 		role.addSubRole(role2);
 		assertEquals(2, role.getAllAccessRights().size());
 		role2.addAccessRight(new AccessRight("testar4r2"));
 		assertEquals(3, role.getAllAccessRights().size());
-		
+
 		Role role3 = new Role("rol3");
 		role.addSubRole(role3);
 		role2.addAccessRight(new AccessRight("testar4r3"));
 		assertEquals(4, role.getAllAccessRights().size());
-		
+
 		role3.addSubRole(role);
 		role2.addSubRole(role3);
 		assertEquals(4, role.getAllAccessRights().size());
-		
+
 	}
 }

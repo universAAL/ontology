@@ -27,21 +27,20 @@ package org.universAAL.ontology.phThing;
  * 
  */
 public class PhysicalContainer extends PhysicalThing {
-    public static final String MY_URI = PhThingOntology.NAMESPACE
-	    + "PhysicalContainer";
+	public static final String MY_URI = PhThingOntology.NAMESPACE + "PhysicalContainer";
 
-    public PhysicalContainer() {
-    }
+	public PhysicalContainer() {
+	}
 
-    public PhysicalContainer(String uri) {
-	super(uri);
-    }
+	public PhysicalContainer(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

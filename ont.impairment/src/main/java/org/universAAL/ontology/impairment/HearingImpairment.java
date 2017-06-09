@@ -35,33 +35,32 @@ import org.universAAL.middleware.ui.owl.AccessImpairment;
  * @author Carsten Stockloew
  */
 public class HearingImpairment extends AccessImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "HearingImpairment";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "HearingImpairment";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public HearingImpairment() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public HearingImpairment() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public HearingImpairment(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public HearingImpairment(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public void setImpairment(LevelRating rating) {
-	props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
-    }
+	public void setImpairment(LevelRating rating) {
+		props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
+	}
 
-    public String toString() {
-	return "Hearing Impairment: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Hearing Impairment: " + this.getImpaimentLevel().name();
+	}
 }

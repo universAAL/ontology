@@ -21,40 +21,38 @@ import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement;
 
 public class PerformedMeasurementSession extends PerformedSession {
 
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "PerformedMeasurementSession";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "PerformedMeasurementSession";
 
-    public static final String PROP_HAS_HEALTH_MEASUREMENT = HealthProfileOntology.NAMESPACE
-	    + "hasMeasurement";
+	public static final String PROP_HAS_HEALTH_MEASUREMENT = HealthProfileOntology.NAMESPACE + "hasMeasurement";
 
-    public PerformedMeasurementSession() {
-	super();
-    }
+	public PerformedMeasurementSession() {
+		super();
+	}
 
-    public PerformedMeasurementSession(String uri) {
-	super(uri);
-    }
+	public PerformedMeasurementSession(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true && props.containsKey(PROP_HAS_HEALTH_MEASUREMENT);
-    }
+	public boolean isWellFormed() {
+		return true && props.containsKey(PROP_HAS_HEALTH_MEASUREMENT);
+	}
 
-    // GETTERS & SETTERS
-    public HealthMeasurement getHealthMeasurement() {
-	return (HealthMeasurement) props.get(PROP_HAS_HEALTH_MEASUREMENT);
-    }
+	// GETTERS & SETTERS
+	public HealthMeasurement getHealthMeasurement() {
+		return (HealthMeasurement) props.get(PROP_HAS_HEALTH_MEASUREMENT);
+	}
 
-    public void setHealthMeasurement(HealthMeasurement hMeasurement) {
-	if (hMeasurement != null)
-	    props.put(PROP_HAS_HEALTH_MEASUREMENT, hMeasurement);
-    }
+	public void setHealthMeasurement(HealthMeasurement hMeasurement) {
+		if (hMeasurement != null)
+			props.put(PROP_HAS_HEALTH_MEASUREMENT, hMeasurement);
+	}
 
 }

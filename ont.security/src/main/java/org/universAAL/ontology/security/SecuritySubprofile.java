@@ -31,25 +31,24 @@ import org.universAAL.ontology.profile.User;
 
 /**
  * Security Subprofile to store Credentials, Roles, AccessRights ...
+ * 
  * @author amedrano
  *
  */
 public class SecuritySubprofile extends SubProfile {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "SecuritySubprofile";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "SecuritySubprofile";
-    
-    public static final String PROP_CREDENTIALS = SecurityOntology.NAMESPACE + "associatedCredentials";
-    public static final String PROP_ROLES = SecurityOntology.NAMESPACE + "hasRoles";
+	public static final String PROP_CREDENTIALS = SecurityOntology.NAMESPACE + "associatedCredentials";
+	public static final String PROP_ROLES = SecurityOntology.NAMESPACE + "hasRoles";
 
 	public static final String PROP_DELEGATED_FORMS = SecurityOntology.NAMESPACE + "hasDelegationForms";;
-	    
-	
+
 	/**
 	 * Only for serializers.
 	 */
 	public SecuritySubprofile() {
-	    super();
+		super();
 	}
 
 	/**
@@ -59,52 +58,49 @@ public class SecuritySubprofile extends SubProfile {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	}
 
-	public List getCredentials(){
-	    Object p = getProperty(PROP_CREDENTIALS);
-	    if (p instanceof List){
-		return (List) p;
-	    } 
-	    else if (p != null){
-		ArrayList a = new ArrayList();
-		a.add(p);
-		return a;
-	    }
-	    return Collections.emptyList();
+	public List getCredentials() {
+		Object p = getProperty(PROP_CREDENTIALS);
+		if (p instanceof List) {
+			return (List) p;
+		} else if (p != null) {
+			ArrayList a = new ArrayList();
+			a.add(p);
+			return a;
+		}
+		return Collections.emptyList();
 	}
-	
-	public void addCredential(Resource cred){
-	    if (cred == null)
-		return;
-	    Object p = getProperty(PROP_CREDENTIALS);
-	    ArrayList a = new ArrayList();
-	    if (p instanceof List){
-		a.addAll((List)p);
-	    } 
-	    else if (p != null){
-		a.add(p);
-	    }
-	    if (a.isEmpty()){
-		changeProperty(PROP_CREDENTIALS, cred);
-	    } else {
-		a.add(cred);
-		changeProperty(PROP_CREDENTIALS, a);
-	    }
+
+	public void addCredential(Resource cred) {
+		if (cred == null)
+			return;
+		Object p = getProperty(PROP_CREDENTIALS);
+		ArrayList a = new ArrayList();
+		if (p instanceof List) {
+			a.addAll((List) p);
+		} else if (p != null) {
+			a.add(p);
+		}
+		if (a.isEmpty()) {
+			changeProperty(PROP_CREDENTIALS, cred);
+		} else {
+			a.add(cred);
+			changeProperty(PROP_CREDENTIALS, a);
+		}
 	}
 
 	public void addrole(Role r) {
@@ -112,13 +108,12 @@ public class SecuritySubprofile extends SubProfile {
 			return;
 		Object p = getProperty(PROP_ROLES);
 		ArrayList a = new ArrayList();
-		if (p instanceof List){
-			a.addAll((List)p);
-		} 
-		else if (p instanceof Role){
+		if (p instanceof List) {
+			a.addAll((List) p);
+		} else if (p instanceof Role) {
 			a.add(p);
 		}
-		if (a.isEmpty()){
+		if (a.isEmpty()) {
 			changeProperty(PROP_ROLES, r);
 		} else {
 			a.add(r);
@@ -126,38 +121,37 @@ public class SecuritySubprofile extends SubProfile {
 		}
 
 	}
-	
-	public List getRoles(){
-	    Object p = getProperty(PROP_ROLES);
-	    if (p instanceof List){
-		return (List) p;
-	    } 
-	    else if (p instanceof Role){
-		ArrayList a = new ArrayList();
-		a.add(p);
-		return a;
-	    }
-	    return Collections.emptyList();
+
+	public List getRoles() {
+		Object p = getProperty(PROP_ROLES);
+		if (p instanceof List) {
+			return (List) p;
+		} else if (p instanceof Role) {
+			ArrayList a = new ArrayList();
+			a.add(p);
+			return a;
+		}
+		return Collections.emptyList();
 	}
-	
-	
+
 	/**
-	 * Generate Skeleton Roles to be added when creating new SecuritySubProfiles.
+	 * Generate Skeleton Roles to be added when creating new
+	 * SecuritySubProfiles.
 	 */
-	public void initialiseDefaultRolesForUser(User u){
+	public void initialiseDefaultRolesForUser(User u) {
 		Role delegationRole = new Role();
 		delegationRole.setResourceLabel("Delegation Role");
 		delegationRole.setResourceComment("Enables managing Delegation Forms issued by user: " + u.getURI());
 		AccessRight dar = new AccessRight();
-		dar.addAccessType(AccessType.read); //already granted by default access
+		dar.addAccessType(AccessType.read); // already granted by default access
 		dar.addAccessType(AccessType.change);
 		dar.addAccessType(AccessType.add);
 		dar.addAccessType(AccessType.remove);
-		
+
 		Intersection te = new Intersection();
 		te.addType(new TypeURI(DelegationForm.MY_URI, false));
 		te.addType(MergedRestriction.getFixedValueRestriction(DelegationForm.PROP_AUTHORISER, u));
-		
+
 		dar.setAccessTo(te);
 		delegationRole.addAccessRight(dar);
 		addrole(delegationRole);

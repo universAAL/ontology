@@ -29,26 +29,26 @@ import org.universAAL.ontology.space.SpaceOntology;
 
 public class PhWorldActivator implements ModuleActivator {
 
-    private LocationOntology locationOntology = new LocationOntology();
-    private PhThingOntology phThingOntology = new PhThingOntology();
-    private ShapeOntology shapeOntology = new ShapeOntology();
-    private SpaceOntology spaceOntology = new SpaceOntology();
+	private LocationOntology locationOntology = new LocationOntology();
+	private PhThingOntology phThingOntology = new PhThingOntology();
+	private ShapeOntology shapeOntology = new ShapeOntology();
+	private SpaceOntology spaceOntology = new SpaceOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	// register all ontologies
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(mc, locationOntology);
-	om.register(mc, shapeOntology);
-	om.register(mc, phThingOntology);
-	om.register(mc, spaceOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		// register all ontologies
+		OntologyManagement om = OntologyManagement.getInstance();
+		om.register(mc, locationOntology);
+		om.register(mc, shapeOntology);
+		om.register(mc, phThingOntology);
+		om.register(mc, spaceOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	// unregister all ontologies
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(mc, locationOntology);
-	om.unregister(mc, spaceOntology);
-	om.unregister(mc, phThingOntology);
-	om.unregister(mc, shapeOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		// unregister all ontologies
+		OntologyManagement om = OntologyManagement.getInstance();
+		om.unregister(mc, locationOntology);
+		om.unregister(mc, spaceOntology);
+		om.unregister(mc, phThingOntology);
+		om.unregister(mc, shapeOntology);
+	}
 }

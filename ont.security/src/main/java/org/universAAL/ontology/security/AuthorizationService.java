@@ -20,23 +20,23 @@ package org.universAAL.ontology.security;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
- * Service Description for Authorisadtion.
- * Authorisation will check the authenticated user against its AccessRights over a specific Asset.
+ * Service Description for Authorisadtion. Authorisation will check the
+ * authenticated user against its AccessRights over a specific Asset.
+ * 
  * @author amedrano
  *
  */
 public class AuthorizationService extends Service {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "AuthorizationService";
+	public static final String PROP_ASSET_ACCESS = SecurityOntology.NAMESPACE + "accessedAsset";
+	public static final String PROP_CHALLENGER_USER = SecurityOntology.NAMESPACE + "challengerUser";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "AuthorizationService";
-    public static final String PROP_ASSET_ACCESS = SecurityOntology.NAMESPACE + "accessedAsset";
-    public static final String PROP_CHALLENGER_USER = SecurityOntology.NAMESPACE + "challengerUser";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public AuthorizationService() {
-	    super();
+		super();
 	}
 
 	/**
@@ -46,20 +46,19 @@ public class AuthorizationService extends Service {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_ASSET_ACCESS)|| propURI.equals(PROP_CHALLENGER_USER)){
+		if (propURI.equals(PROP_ASSET_ACCESS) || propURI.equals(PROP_CHALLENGER_USER)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);

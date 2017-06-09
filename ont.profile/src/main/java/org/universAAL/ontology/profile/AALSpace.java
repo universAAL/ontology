@@ -40,49 +40,49 @@ import org.universAAL.ontology.location.Place;
 
 public class AALSpace extends Place {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE + "AALSpace";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALSpace";
 
-    protected AALSpace() {
-	super();
-    }
-
-    public AALSpace(String uri) {
-	super(uri);
-    }
-
-    public boolean isWellFormed() {
-	if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AALSpaceProfile);
+	protected AALSpace() {
+		super();
 	}
-	return false;
-    }
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public AALSpace(String uri) {
+		super(uri);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public boolean isWellFormed() {
+		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
+			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AALSpaceProfile);
+		}
+		return false;
+	}
 
-    /**
-     * Sets the value for the AAL Space Profile of this AAL Space
-     * 
-     * @param value
-     *            The Profile to set
-     */
-    public void setProfile(AALSpaceProfile value) {
-	setProperty(Profilable.PROP_HAS_PROFILE, value);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * Gets the value of the AAL Space Profile of this AAL Space
-     * 
-     * @return The Profile of the AAL Space
-     */
-    public AALSpaceProfile getProfile() {
-	return (AALSpaceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	/**
+	 * Sets the value for the AAL Space Profile of this AAL Space
+	 * 
+	 * @param value
+	 *            The Profile to set
+	 */
+	public void setProfile(AALSpaceProfile value) {
+		setProperty(Profilable.PROP_HAS_PROFILE, value);
+	}
+
+	/**
+	 * Gets the value of the AAL Space Profile of this AAL Space
+	 * 
+	 * @return The Profile of the AAL Space
+	 */
+	public AALSpaceProfile getProfile() {
+		return (AALSpaceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+	}
 
 }

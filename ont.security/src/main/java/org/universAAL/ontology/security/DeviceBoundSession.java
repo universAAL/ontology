@@ -17,23 +17,22 @@
 
 package org.universAAL.ontology.security;
 
-
 /**
- * Device Bound Session, a session that is only valid for a specific device. 
+ * Device Bound Session, a session that is only valid for a specific device.
+ * 
  * @author amedrano
  *
  */
 public class DeviceBoundSession extends Session {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "DeviceBoundedSession";
+	public static final String PROP_BOUNDED_DEVICE = SecurityOntology.NAMESPACE + "deviceBound";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "DeviceBoundedSession";
-    public static final String PROP_BOUNDED_DEVICE = SecurityOntology.NAMESPACE + "deviceBound";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public DeviceBoundSession() {
-	    super();
+		super();
 	}
 
 	/**
@@ -43,18 +42,17 @@ public class DeviceBoundSession extends Session {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		if (propURI.equals(PROP_BOUNDED_DEVICE))
 			return PROP_SERIALIZATION_REDUCED;

@@ -33,36 +33,36 @@ import org.universAAL.ontology.device.StatusValue;
  */
 public class Oven extends Actuator {
 
-    /** Class URI */
-    public static final String MY_URI = DeviceExtraOntology.NAMESPACE + "Oven";
+	/** Class URI */
+	public static final String MY_URI = DeviceExtraOntology.NAMESPACE + "Oven";
 
-    public Oven() {
-	super();
-    }
+	public Oven() {
+		super();
+	}
 
-    public Oven(String uri) {
-	super(uri);
-    }
+	public Oven(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_HAS_VALUE);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
-    
-    public StatusValue getValue() {
-	return (StatusValue) getProperty(PROP_HAS_VALUE);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public void setValue(StatusValue newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_HAS_VALUE, newPropValue);
-    }
+	public StatusValue getValue() {
+		return (StatusValue) getProperty(PROP_HAS_VALUE);
+	}
+
+	public void setValue(StatusValue newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_HAS_VALUE, newPropValue);
+	}
 
 }

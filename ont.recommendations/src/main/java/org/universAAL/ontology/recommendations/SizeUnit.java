@@ -23,11 +23,13 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  * Possible options are:
  * 
- *<ul>
- *<li> <b>absolute</b> Absolute size expressed in pixels.
- *<li> <b>screenRelative</b> Size expressed in percentage over the overall screen size. 
- *<li> <b>parentRelative</b> Size is expressed in percentage over the size of the parent container.
- *</ul>
+ * <ul>
+ * <li><b>absolute</b> Absolute size expressed in pixels.
+ * <li><b>screenRelative</b> Size expressed in percentage over the overall
+ * screen size.
+ * <li><b>parentRelative</b> Size is expressed in percentage over the size of
+ * the parent container.
+ * </ul>
  * 
  * 
  * @author amedrano
@@ -38,8 +40,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  */
 public class SizeUnit extends ManagedIndividual {
 
-	public static final String MY_URI = RecommendationsOntology.NAMESPACE
-			+ "SizeUnit";
+	public static final String MY_URI = RecommendationsOntology.NAMESPACE + "SizeUnit";
 
 	public static final int ABOSLUTE_PIXELS = 0;
 	public static final int RELATIVE_SCREEN = 1;

@@ -22,13 +22,13 @@ import org.universAAL.ontology.hvac.HvacOntology;
 
 public class HvacActivator implements ModuleActivator {
 
-    private HvacOntology HvacOntology = new HvacOntology();
+	private HvacOntology HvacOntology = new HvacOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, HvacOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, HvacOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, HvacOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, HvacOntology);
+	}
 }

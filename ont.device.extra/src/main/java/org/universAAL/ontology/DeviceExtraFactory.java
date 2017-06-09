@@ -33,18 +33,17 @@ import org.universAAL.ontology.device.home.*;
  */
 public class DeviceExtraFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
-	switch (factoryIndex) {
-	case 0:
-	    return new CarpetSensor(instanceURI);
-	case 1:
-	    return new Oven(instanceURI);
-	case 2:
-	    return new SirenActuator(instanceURI);
-	case 3:
-	    return new Strap(instanceURI);
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+		switch (factoryIndex) {
+		case 0:
+			return new CarpetSensor(instanceURI);
+		case 1:
+			return new Oven(instanceURI);
+		case 2:
+			return new SirenActuator(instanceURI);
+		case 3:
+			return new Strap(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 }

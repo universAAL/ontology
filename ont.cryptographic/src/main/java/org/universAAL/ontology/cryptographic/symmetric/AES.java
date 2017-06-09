@@ -25,7 +25,7 @@ import org.universAAL.ontology.cryptographic.SimpleBlockEncryption;
 public class AES extends SimpleBlockEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "AES";
-	
+
 	/**
 	 * 
 	 */
@@ -38,8 +38,8 @@ public class AES extends SimpleBlockEncryption {
 	public AES(String uri) {
 		super(uri);
 	}
-	
-	/**{@inheritDoc} */
+
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

@@ -33,61 +33,60 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class AudioFormat extends Format {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "audioFormat";
-    public static final String PROP_CHANNELS = AVOntology.NAMESPACE + "channels";
-    public static final String PROP_SAMPLES_PER_SECOND = AVOntology.NAMESPACE + "samplesPerSecond";
-    public static final String PROP_BITS_PER_SAMPLE = AVOntology.NAMESPACE + "bitsPerSample";
-    public static final String PROP_BIG_ENDIAN = AVOntology.NAMESPACE + "bigEndian";
-    public static final String PROP_SIGNED = AVOntology.NAMESPACE + "signed";
+	public static final String MY_URI = AVOntology.NAMESPACE + "audioFormat";
+	public static final String PROP_CHANNELS = AVOntology.NAMESPACE + "channels";
+	public static final String PROP_SAMPLES_PER_SECOND = AVOntology.NAMESPACE + "samplesPerSecond";
+	public static final String PROP_BITS_PER_SAMPLE = AVOntology.NAMESPACE + "bitsPerSample";
+	public static final String PROP_BIG_ENDIAN = AVOntology.NAMESPACE + "bigEndian";
+	public static final String PROP_SIGNED = AVOntology.NAMESPACE + "signed";
 
-    /**
-     * the default constructor
-     */
-    public AudioFormat(AudioCompression encoding, int channels,
-	    int samplesPerSecond, int bitsPerSample, boolean bigEndian,
-	    boolean signed) {
-	super();
-	setProperty(PROP_ENCODING, encoding);
-	setProperty(PROP_CHANNELS, new Integer(channels));
-	setProperty(PROP_SAMPLES_PER_SECOND, new Integer(samplesPerSecond));
-	setProperty(PROP_BITS_PER_SAMPLE, new Integer(bitsPerSample));
-	setProperty(PROP_BIG_ENDIAN, Boolean.valueOf(bigEndian));
-	setProperty(PROP_SIGNED, Boolean.valueOf(signed));
-    }
+	/**
+	 * the default constructor
+	 */
+	public AudioFormat(AudioCompression encoding, int channels, int samplesPerSecond, int bitsPerSample,
+			boolean bigEndian, boolean signed) {
+		super();
+		setProperty(PROP_ENCODING, encoding);
+		setProperty(PROP_CHANNELS, new Integer(channels));
+		setProperty(PROP_SAMPLES_PER_SECOND, new Integer(samplesPerSecond));
+		setProperty(PROP_BITS_PER_SAMPLE, new Integer(bitsPerSample));
+		setProperty(PROP_BIG_ENDIAN, Boolean.valueOf(bigEndian));
+		setProperty(PROP_SIGNED, Boolean.valueOf(signed));
+	}
 
-    public AudioFormat(String uri) {
-	super(uri);
-    }
+	public AudioFormat(String uri) {
+		super(uri);
+	}
 
-    public AudioFormat() {
-	super();
-    }
+	public AudioFormat() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getChannels() {
-	return ((Integer) getProperty(PROP_CHANNELS)).intValue();
-    }
+	public int getChannels() {
+		return ((Integer) getProperty(PROP_CHANNELS)).intValue();
+	}
 
-    public int getSamplesPerSecond() {
-	return ((Integer) getProperty(PROP_SAMPLES_PER_SECOND)).intValue();
-    }
+	public int getSamplesPerSecond() {
+		return ((Integer) getProperty(PROP_SAMPLES_PER_SECOND)).intValue();
+	}
 
-    public int getBitsPerSample() {
-	return ((Integer) getProperty(PROP_BITS_PER_SAMPLE)).intValue();
-    }
+	public int getBitsPerSample() {
+		return ((Integer) getProperty(PROP_BITS_PER_SAMPLE)).intValue();
+	}
 
-    public boolean isBigEndian() {
-	return ((Boolean) getProperty(PROP_BIG_ENDIAN)).booleanValue();
-    }
+	public boolean isBigEndian() {
+		return ((Boolean) getProperty(PROP_BIG_ENDIAN)).booleanValue();
+	}
 
-    public boolean isSigned() {
-	return ((Boolean) getProperty(PROP_SIGNED)).booleanValue();
-    }
+	public boolean isSigned() {
+		return ((Boolean) getProperty(PROP_SIGNED)).booleanValue();
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

@@ -27,38 +27,35 @@ import org.universAAL.middleware.service.owl.Service;
  */
 
 public class HandGestureService extends Service {
-    public static final String MY_URI = HandgesturesOntology.NAMESPACE
-	    + "HandGestureService";
-    public static final String PROP_PROP_CONTROLS = HandgesturesOntology.NAMESPACE
-	    + "propControls";
+	public static final String MY_URI = HandgesturesOntology.NAMESPACE + "HandGestureService";
+	public static final String PROP_PROP_CONTROLS = HandgesturesOntology.NAMESPACE + "propControls";
 
-    public HandGestureService() {
-	super();
-    }
+	public HandGestureService() {
+		super();
+	}
 
-    public HandGestureService(String uri) {
-	super(uri);
-    }
+	public HandGestureService(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return propURI == PROP_PROP_CONTROLS ? PROP_SERIALIZATION_FULL : super
-		.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		return propURI == PROP_PROP_CONTROLS ? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_PROP_CONTROLS);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_PROP_CONTROLS);
+	}
 
-    public String getPropControls() {
-	return (String) getProperty(PROP_PROP_CONTROLS);
-    }
+	public String getPropControls() {
+		return (String) getProperty(PROP_PROP_CONTROLS);
+	}
 
-    public void setPropControls(String newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_PROP_CONTROLS, newPropValue);
-    }
+	public void setPropControls(String newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_PROP_CONTROLS, newPropValue);
+	}
 }

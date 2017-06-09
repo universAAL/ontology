@@ -35,36 +35,35 @@ import org.universAAL.ontology.device.StatusValue;
  */
 public class CarpetSensor extends Sensor {
 
-    /** Class URI */
-    public static final String MY_URI = DeviceExtraOntology.NAMESPACE
-	    + "CarpetSensor";
+	/** Class URI */
+	public static final String MY_URI = DeviceExtraOntology.NAMESPACE + "CarpetSensor";
 
-    public CarpetSensor() {
-    }
+	public CarpetSensor() {
+	}
 
-    public CarpetSensor(String uri) {
-	super(uri);
-    }
+	public CarpetSensor(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
-    
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public StatusValue getValue() {
-	return (StatusValue) getProperty(PROP_HAS_VALUE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_HAS_VALUE);
+	}
 
-    public void setValue(StatusValue newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_HAS_VALUE, newPropValue);
-    }
+	public StatusValue getValue() {
+		return (StatusValue) getProperty(PROP_HAS_VALUE);
+	}
+
+	public void setValue(StatusValue newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_HAS_VALUE, newPropValue);
+	}
 
 }

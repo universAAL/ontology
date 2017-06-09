@@ -37,32 +37,31 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class SubProfile extends ManagedIndividual {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "SubProfile";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "SubProfile";
 
-    protected SubProfile() {
-	super();
-    }
+	protected SubProfile() {
+		super();
+	}
 
-    public SubProfile(String uri) {
-	super(uri);
-    }
+	public SubProfile(String uri) {
+		super(uri);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
-    
-    public boolean isClosedCollection(String propURI) {
-	return false;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isClosedCollection(String propURI) {
+		return false;
+	}
 
 }

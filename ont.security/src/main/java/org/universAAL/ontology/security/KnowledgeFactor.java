@@ -20,14 +20,13 @@ package org.universAAL.ontology.security;
  *
  */
 public abstract class KnowledgeFactor extends Factor {
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "KnowledgeFactor";
-        
-	
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "KnowledgeFactor";
+
 	/**
 	 * Only for serializers.
 	 */
 	public KnowledgeFactor() {
-	    super();
+		super();
 	}
 
 	/**
@@ -37,17 +36,17 @@ public abstract class KnowledgeFactor extends Factor {
 		super(uri);
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_UNDEFINED;
 	}

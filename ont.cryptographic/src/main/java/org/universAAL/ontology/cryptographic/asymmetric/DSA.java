@@ -38,7 +38,8 @@ public class DSA extends AsymmetricEncryption {
 	public DSA(String uri) {
 		super(uri);
 	}
-	/**{@inheritDoc} */
+
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

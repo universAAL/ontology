@@ -37,28 +37,26 @@ import org.universAAL.ontology.profile.ProfileOntology;
  * @author Carsten Stockloew
  */
 public class ProfilingEditorService extends Service {
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "ProfilingEditorService";
-    public static final String PROP_CONTROLS = ProfileOntology.NAMESPACE
-	    + "editorControls";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "ProfilingEditorService";
+	public static final String PROP_CONTROLS = ProfileOntology.NAMESPACE + "editorControls";
 
-    public ProfilingEditorService(String uri) {
-	super(uri);
-    }
+	public ProfilingEditorService(String uri) {
+		super(uri);
+	}
 
-    public ProfilingEditorService() {
-	super();
-    }
+	public ProfilingEditorService() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

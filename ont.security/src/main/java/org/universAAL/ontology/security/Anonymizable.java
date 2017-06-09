@@ -18,7 +18,8 @@ package org.universAAL.ontology.security;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * Any anonymizable resource should be subclass of this class to enable the anonymization service to encrypt the 
+ * Any anonymizable resource should be subclass of this class to enable the
+ * anonymization service to encrypt the
  * {@link Anonymizable#PROP_ANNONYMOUS_RESOURCE} property reference.
  * 
  * @author amedrano
@@ -27,8 +28,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 public class Anonymizable extends ManagedIndividual {
 
 	public static final String MY_URI = SecurityOntology.NAMESPACE + "Anonymizable";
-	
-	public  static final String PROP_ANNONYMOUS_RESOURCE = SecurityOntology.NAMESPACE + "anonymisedResource";
+
+	public static final String PROP_ANNONYMOUS_RESOURCE = SecurityOntology.NAMESPACE + "anonymisedResource";
 
 	/**
 	 * 
@@ -43,7 +44,7 @@ public class Anonymizable extends ManagedIndividual {
 		super(uri);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
@@ -56,9 +57,9 @@ public class Anonymizable extends ManagedIndividual {
 		super(uriPrefix, numProps);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public int getPropSerializationType(String arg0) {
-		if (arg0.equals(PROP_ANNONYMOUS_RESOURCE)){
+		if (arg0.equals(PROP_ANNONYMOUS_RESOURCE)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_REDUCED;

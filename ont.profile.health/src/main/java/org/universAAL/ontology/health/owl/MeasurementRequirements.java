@@ -20,47 +20,44 @@ import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement;
 import org.universAAL.ontology.measurement.Measurement;
 
 public class MeasurementRequirements extends ManagedIndividual {
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "MeasurementRequirements";
-    public static final String PROP_MAX_VALUE_ALLOWED = HealthProfileOntology.NAMESPACE
-	    + "maxValueAllowed";
-    public static final String PROP_MIN_VALUE_ALLOWED = HealthProfileOntology.NAMESPACE
-	    + "minValueAllowed";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "MeasurementRequirements";
+	public static final String PROP_MAX_VALUE_ALLOWED = HealthProfileOntology.NAMESPACE + "maxValueAllowed";
+	public static final String PROP_MIN_VALUE_ALLOWED = HealthProfileOntology.NAMESPACE + "minValueAllowed";
 
-    public MeasurementRequirements() {
-	super();
-    }
+	public MeasurementRequirements() {
+		super();
+	}
 
-    public MeasurementRequirements(String uri) {
-	super(uri);
-    }
+	public MeasurementRequirements(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public HealthMeasurement getMaxValueAllowed() {
-    	return  (HealthMeasurement) props.get(PROP_MAX_VALUE_ALLOWED);
-    }
+	public HealthMeasurement getMaxValueAllowed() {
+		return (HealthMeasurement) props.get(PROP_MAX_VALUE_ALLOWED);
+	}
 
-    public boolean setMaxValueAllowed(HealthMeasurement maxValue) {
-    	return changeProperty(PROP_MAX_VALUE_ALLOWED, maxValue);
-    }
+	public boolean setMaxValueAllowed(HealthMeasurement maxValue) {
+		return changeProperty(PROP_MAX_VALUE_ALLOWED, maxValue);
+	}
 
-    public HealthMeasurement getMinValueAllowed() {
-	 return (HealthMeasurement) getProperty(PROP_MIN_VALUE_ALLOWED);
-    }
+	public HealthMeasurement getMinValueAllowed() {
+		return (HealthMeasurement) getProperty(PROP_MIN_VALUE_ALLOWED);
+	}
 
-    public boolean setMinValueAllowed(HealthMeasurement minValue) {
-    	return changeProperty(PROP_MIN_VALUE_ALLOWED, minValue);
-    }
+	public boolean setMinValueAllowed(HealthMeasurement minValue) {
+		return changeProperty(PROP_MIN_VALUE_ALLOWED, minValue);
+	}
 
 }

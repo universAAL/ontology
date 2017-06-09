@@ -33,22 +33,22 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class VideoStream extends Stream {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "VideoStream";
+	public static final String MY_URI = AVOntology.NAMESPACE + "VideoStream";
 
-    /** default constructor */
-    public VideoStream() {
-	super();
-    }
+	/** default constructor */
+	public VideoStream() {
+		super();
+	}
 
-    public VideoStream(String uri) {
-	super(uri);
-    }
+	public VideoStream(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

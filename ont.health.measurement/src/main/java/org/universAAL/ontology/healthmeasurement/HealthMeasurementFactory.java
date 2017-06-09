@@ -27,24 +27,23 @@ import org.universAAL.ontology.healthmeasurement.owl.PersonWeight;
 
 public class HealthMeasurementFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new HealthMeasurement(instanceURI);
-	case 3:
-	    return new PersonWeight(instanceURI);
-	case 6:
-	    return new BloodPressure(instanceURI);
-	case 7:
-	    return new HeartRate(instanceURI);
-	case 8:
-	    return new HeartRateSignal(instanceURI);
-	case 9:
-	    return new BloodOxygenSaturation(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new HealthMeasurement(instanceURI);
+		case 3:
+			return new PersonWeight(instanceURI);
+		case 6:
+			return new BloodPressure(instanceURI);
+		case 7:
+			return new HeartRate(instanceURI);
+		case 8:
+			return new HeartRateSignal(instanceURI);
+		case 9:
+			return new BloodOxygenSaturation(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

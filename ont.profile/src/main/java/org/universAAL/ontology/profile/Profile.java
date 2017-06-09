@@ -42,66 +42,65 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  */
 public abstract class Profile extends ManagedIndividual {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE + "Profile";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "Profile";
 
-    /** http://ontology.universAAL.org/Profile.owl#hasSubProfile */
-    public static final String PROP_HAS_SUB_PROFILE = ProfileOntology.NAMESPACE
-	    + "hasSubProfile";
+	/** http://ontology.universAAL.org/Profile.owl#hasSubProfile */
+	public static final String PROP_HAS_SUB_PROFILE = ProfileOntology.NAMESPACE + "hasSubProfile";
 
-    protected Profile() {
-	super();
-    }
-
-    public Profile(String uri) {
-	super(uri);
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
-    
-    public boolean isClosedCollection(String propURI) {
-	return false;
-    }
-    
-    public SubProfile[] getSubProfile() {
-	Object propList = getProperty(PROP_HAS_SUB_PROFILE);
-	if (propList instanceof List)
-	    return (SubProfile[]) ((List) propList).toArray(new SubProfile[0]);
-	else if (propList != null)
-	    return new SubProfile[] { (SubProfile) propList };
-	return new SubProfile[0];
-    }
-
-    public void addSubProfile(SubProfile newValue) {
-	Object propList = getProperty(PROP_HAS_SUB_PROFILE);
-	List newList;
-	if (propList instanceof List)
-	    newList = (List) propList;
-	else {
-	    newList = new ArrayList();
-	    if (propList != null)
-		newList.add(propList);
+	protected Profile() {
+		super();
 	}
-	newList.add(newValue);
-	changeProperty(PROP_HAS_SUB_PROFILE, newList);
-    }
-	  
-    public void setSubProfile(SubProfile[] propertyValue) {
-	List propList = new ArrayList(propertyValue.length);
-	for (int i = 0; i < propertyValue.length; i++) {
-	    propList.add(propertyValue[i]);
+
+	public Profile(String uri) {
+		super(uri);
 	}
-	changeProperty(PROP_HAS_SUB_PROFILE, propList);
-    }
+
+	public boolean isWellFormed() {
+		return true;
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isClosedCollection(String propURI) {
+		return false;
+	}
+
+	public SubProfile[] getSubProfile() {
+		Object propList = getProperty(PROP_HAS_SUB_PROFILE);
+		if (propList instanceof List)
+			return (SubProfile[]) ((List) propList).toArray(new SubProfile[0]);
+		else if (propList != null)
+			return new SubProfile[] { (SubProfile) propList };
+		return new SubProfile[0];
+	}
+
+	public void addSubProfile(SubProfile newValue) {
+		Object propList = getProperty(PROP_HAS_SUB_PROFILE);
+		List newList;
+		if (propList instanceof List)
+			newList = (List) propList;
+		else {
+			newList = new ArrayList();
+			if (propList != null)
+				newList.add(propList);
+		}
+		newList.add(newValue);
+		changeProperty(PROP_HAS_SUB_PROFILE, newList);
+	}
+
+	public void setSubProfile(SubProfile[] propertyValue) {
+		List propList = new ArrayList(propertyValue.length);
+		for (int i = 0; i < propertyValue.length; i++) {
+			propList.add(propertyValue[i]);
+		}
+		changeProperty(PROP_HAS_SUB_PROFILE, propList);
+	}
 
 }

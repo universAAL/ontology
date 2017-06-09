@@ -17,23 +17,22 @@
 
 package org.universAAL.ontology.security;
 
-
 /**
  * Location bound Session, a session that is only valid within a location.
+ * 
  * @author amedrano
  *
  */
 public class LocationBoundSession extends Session {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "LocationBoundedSession";
+	public static final String PROP_BOUNDED_LOCATION = SecurityOntology.NAMESPACE + "locationBound";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "LocationBoundedSession";
-    public static final String PROP_BOUNDED_LOCATION = SecurityOntology.NAMESPACE + "locationBound";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public LocationBoundSession() {
-	    super();
+		super();
 	}
 
 	/**
@@ -43,18 +42,17 @@ public class LocationBoundSession extends Session {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		if (propURI.equals(PROP_BOUNDED_LOCATION)) {
 			return PROP_SERIALIZATION_REDUCED;

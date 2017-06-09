@@ -36,37 +36,36 @@ import org.universAAL.middleware.ui.owl.AccessImpairment;
  * @author Carsten Stockloew
  */
 public class SightImpairment extends AccessImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "SightImpairment";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "SightImpairment";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public SightImpairment() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public SightImpairment() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public SightImpairment(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public SightImpairment(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public void setImpairment(LevelRating rating) {
-	props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
-    }
+	public void setImpairment(LevelRating rating) {
+		props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
+	}
 
-    public static SightImpairment loadInstance() {
-	return new SightImpairment(LevelRating.none);
-    }
+	public static SightImpairment loadInstance() {
+		return new SightImpairment(LevelRating.none);
+	}
 
-    public String toString() {
-	return "Sight Imapirment: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Sight Imapirment: " + this.getImpaimentLevel().name();
+	}
 }

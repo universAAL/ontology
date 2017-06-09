@@ -27,25 +27,25 @@ import java.util.List;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class BodyWeight extends MDSAttribute {
-    public static final String MY_URI = X73Ontology.NAMESPACE + "BodyWeight";
+	public static final String MY_URI = X73Ontology.NAMESPACE + "BodyWeight";
 
-    public BodyWeight() {
-	super();
-    }
+	public BodyWeight() {
+		super();
+	}
 
-    public BodyWeight(String uri) {
-	super(uri);
-    }
+	public BodyWeight(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		return super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

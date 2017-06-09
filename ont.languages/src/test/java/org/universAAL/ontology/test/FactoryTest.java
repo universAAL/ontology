@@ -34,16 +34,16 @@ import org.universAAL.ontology.language.LanguageOntology;
  *
  */
 public class FactoryTest extends TestCase {
-	
-	public void setUp(){
+
+	public void setUp() {
 		OntologyManagement.getInstance().register(null, new DataRepOntology());
 		OntologyManagement.getInstance().register(null, new LanguageOntology());
 	}
 
-	public void test1(){
+	public void test1() {
 		assertNotNull(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
 		LanguageFactory lf = new LanguageFactory(getClass().getClassLoader().getResource(LanguageOntology.LANG_TABLE));
-		assertNotNull(lf.createInstance(LanguageOntology.NAMESPACE+"Albanian", Resource.generateAnonURI(),5));
+		assertNotNull(lf.createInstance(LanguageOntology.NAMESPACE + "Albanian", Resource.generateAnonURI(), 5));
 		Set allLang = OntologyManagement.getInstance().getNamedSubClasses(Language.MY_URI, true, false);
 		allLang = new TreeSet(allLang);
 		assertTrue(allLang.size() > 0);
@@ -55,5 +55,5 @@ public class FactoryTest extends TestCase {
 		}
 		System.out.println("that makes: " + allLang.size() + " languages compatible with uAAL.");
 	}
-	
+
 }

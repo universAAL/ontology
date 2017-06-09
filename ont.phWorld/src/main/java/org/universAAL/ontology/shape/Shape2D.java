@@ -33,34 +33,34 @@ import org.universAAL.ontology.location.position.CoordinateSystem;
 
 public abstract class Shape2D extends Shape {
 
-    public static final String MY_URI = ShapeOntology.NAMESPACE + "Shape2D";
+	public static final String MY_URI = ShapeOntology.NAMESPACE + "Shape2D";
 
-    /**
-     * Creates a Shape object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Shape2D(String uri, CoordinateSystem system) {
-	super(uri, system);
-    }
+	/**
+	 * Creates a Shape object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Shape2D(String uri, CoordinateSystem system) {
+		super(uri, system);
+	}
 
-    /**
-     * Creates a Shape object
-     */
-    public Shape2D(CoordinateSystem system) {
-	super(system);
-    }
+	/**
+	 * Creates a Shape object
+	 */
+	public Shape2D(CoordinateSystem system) {
+		super(system);
+	}
 
-    public Shape2D() {
-	super();
-    }
+	public Shape2D() {
+		super();
+	}
 
-    public Shape2D(String uri) {
-	super(uri);
-    }
+	public Shape2D(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

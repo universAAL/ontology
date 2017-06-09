@@ -26,13 +26,13 @@ import org.universAAL.ontology.lighting.LightingOntology;
 
 public class LightingActivator implements ModuleActivator {
 
-    private LightingOntology lightingOntology = new LightingOntology();
+	private LightingOntology lightingOntology = new LightingOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, lightingOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, lightingOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, lightingOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, lightingOntology);
+	}
 }

@@ -34,38 +34,38 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class EndPoint extends ManagedIndividual {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "EndPoint";
-    public static final String PROP_IP = AVOntology.NAMESPACE + "ip";
-    public static final String PROP_TCP_PORT = AVOntology.NAMESPACE + "tcpPort";
+	public static final String MY_URI = AVOntology.NAMESPACE + "EndPoint";
+	public static final String PROP_IP = AVOntology.NAMESPACE + "ip";
+	public static final String PROP_TCP_PORT = AVOntology.NAMESPACE + "tcpPort";
 
-    /** Default constructor */
-    public EndPoint() {
-    }
+	/** Default constructor */
+	public EndPoint() {
+	}
 
-    /**
-     * This is a constructor to build an EndPoint with a special IP and TCP port
-     * 
-     * @param ip
-     * @param port
-     */
-    public EndPoint(String ip, int port) {
-	setProperty(EndPoint.PROP_IP, ip);
-	setProperty(EndPoint.PROP_TCP_PORT, new Integer(port));
-    }
+	/**
+	 * This is a constructor to build an EndPoint with a special IP and TCP port
+	 * 
+	 * @param ip
+	 * @param port
+	 */
+	public EndPoint(String ip, int port) {
+		setProperty(EndPoint.PROP_IP, ip);
+		setProperty(EndPoint.PROP_TCP_PORT, new Integer(port));
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public String getIP() {
-	return (String) getProperty(PROP_IP);
-    }
+	public String getIP() {
+		return (String) getProperty(PROP_IP);
+	}
 
-    public int getPort() {
-	return ((Integer) getProperty(PROP_TCP_PORT)).intValue();
-    }
+	public int getPort() {
+		return ((Integer) getProperty(PROP_TCP_PORT)).intValue();
+	}
 }

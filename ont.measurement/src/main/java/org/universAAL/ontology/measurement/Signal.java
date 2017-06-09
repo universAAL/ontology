@@ -21,81 +21,76 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Signal extends Measurement {
-    public static final String MY_URI = MeasurementOntology.NAMESPACE
-	    + "Signal";
-    public static final String PROP_MEASUREMENTS = MeasurementOntology.NAMESPACE
-	    + "measurement";
-    public static final String PROP_MEASUREMENT_INTERVAL = MeasurementOntology.NAMESPACE
-	    + "measurementInterval";
+	public static final String MY_URI = MeasurementOntology.NAMESPACE + "Signal";
+	public static final String PROP_MEASUREMENTS = MeasurementOntology.NAMESPACE + "measurement";
+	public static final String PROP_MEASUREMENT_INTERVAL = MeasurementOntology.NAMESPACE + "measurementInterval";
 
-    public Signal() {
-	super();
-    }
+	public Signal() {
+		super();
+	}
 
-    public Signal(String uri) {
-	super(uri);
-    }
+	public Signal(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true 
-		&& hasProperty(PROP_MEASUREMENT_INTERVAL);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_MEASUREMENT_INTERVAL);
+	}
 
-    // GETTERS & SETTERS
+	// GETTERS & SETTERS
 
 	public Measurement getMeasurementInterval() {
 		return (Measurement) getProperty(PROP_MEASUREMENT_INTERVAL);
 	}
-	
-    public void setMeasurementInterval(Measurement interval) {
-	if (interval != null)
-	    setProperty(PROP_MEASUREMENT_INTERVAL, interval);
-    }
 
-    public Object[] getArray() {
-
-	Object propList = props.get(PROP_MEASUREMENTS);
-	if (propList instanceof List) {
-	    return (Object[]) ((List) propList)
-		    .toArray(new Object[0]);
-	} else {
-	    List returnList = new ArrayList();
-	    if (propList != null)
-		returnList.add((Object) propList);
-	    return (Object[]) returnList.toArray(new Object[0]);
+	public void setMeasurementInterval(Measurement interval) {
+		if (interval != null)
+			setProperty(PROP_MEASUREMENT_INTERVAL, interval);
 	}
-    }
 
-    public void setArray(Object[] array) {
-    	List propList = new ArrayList(array.length);
-    	for (int i = 0; i < array.length; i++) {
-    		propList.add(array[i]);
-    	}
-    	props.put(PROP_MEASUREMENTS, propList);
-    }
+	public Object[] getArray() {
 
-    public void addValue(Object newValue) {
-	Object propList = props.get(PROP_MEASUREMENTS);
-	if (propList instanceof List) {
-	    List list = (List) propList;
-	    list.add(newValue);
-	    props.put(PROP_MEASUREMENTS, list);
-//	} else if (propList == null) {
-//	    props.put(PROP_MEASUREMENTS, newValue);
-	} else {
-	    List list = new ArrayList();
-	    list.add((Measurement) propList);
-	    list.add(newValue);
-	    props.put(PROP_MEASUREMENTS, list);
+		Object propList = props.get(PROP_MEASUREMENTS);
+		if (propList instanceof List) {
+			return (Object[]) ((List) propList).toArray(new Object[0]);
+		} else {
+			List returnList = new ArrayList();
+			if (propList != null)
+				returnList.add((Object) propList);
+			return (Object[]) returnList.toArray(new Object[0]);
+		}
 	}
-    }
+
+	public void setArray(Object[] array) {
+		List propList = new ArrayList(array.length);
+		for (int i = 0; i < array.length; i++) {
+			propList.add(array[i]);
+		}
+		props.put(PROP_MEASUREMENTS, propList);
+	}
+
+	public void addValue(Object newValue) {
+		Object propList = props.get(PROP_MEASUREMENTS);
+		if (propList instanceof List) {
+			List list = (List) propList;
+			list.add(newValue);
+			props.put(PROP_MEASUREMENTS, list);
+			// } else if (propList == null) {
+			// props.put(PROP_MEASUREMENTS, newValue);
+		} else {
+			List list = new ArrayList();
+			list.add((Measurement) propList);
+			list.add(newValue);
+			props.put(PROP_MEASUREMENTS, list);
+		}
+	}
 
 }

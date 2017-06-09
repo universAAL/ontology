@@ -29,89 +29,83 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class ElectricLight extends LightType {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "ElectricLight";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "ElectricLight";
 
-    public static final int CARBON_ARC_LAMP = 0;
-    public static final int DISCHARGE_LAMP = 1;
-    public static final int FLUORESCENT_LAMP = 2;
-    public static final int HALOGEN_LAMP = 3;
-    public static final int LED_LAMP = 4;
-    public static final int LIGHT_BULB = 5;
+	public static final int CARBON_ARC_LAMP = 0;
+	public static final int DISCHARGE_LAMP = 1;
+	public static final int FLUORESCENT_LAMP = 2;
+	public static final int HALOGEN_LAMP = 3;
+	public static final int LED_LAMP = 4;
+	public static final int LIGHT_BULB = 5;
 
-    private static final String[] names = { "carbon_arc_lamp",
-	    "discharge_lamp", "fluorescent_lamp", "halogen_lamp", "led_lamp",
-	    "light_bulb" };
+	private static final String[] names = { "carbon_arc_lamp", "discharge_lamp", "fluorescent_lamp", "halogen_lamp",
+			"led_lamp", "light_bulb" };
 
-    public static final ElectricLight carbonArcLamp = new ElectricLight(
-	    CARBON_ARC_LAMP);
-    public static final ElectricLight dischargeLamp = new ElectricLight(
-	    DISCHARGE_LAMP);
-    public static final ElectricLight fluorescentLamp = new ElectricLight(
-	    FLUORESCENT_LAMP);
-    public static final ElectricLight halogenLamp = new ElectricLight(
-	    HALOGEN_LAMP);
-    public static final ElectricLight ledLamp = new ElectricLight(LED_LAMP);
-    public static final ElectricLight lightBulb = new ElectricLight(LIGHT_BULB);
+	public static final ElectricLight carbonArcLamp = new ElectricLight(CARBON_ARC_LAMP);
+	public static final ElectricLight dischargeLamp = new ElectricLight(DISCHARGE_LAMP);
+	public static final ElectricLight fluorescentLamp = new ElectricLight(FLUORESCENT_LAMP);
+	public static final ElectricLight halogenLamp = new ElectricLight(HALOGEN_LAMP);
+	public static final ElectricLight ledLamp = new ElectricLight(LED_LAMP);
+	public static final ElectricLight lightBulb = new ElectricLight(LIGHT_BULB);
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static ElectricLight getElectricLightByOrder(int order) {
-	switch (order) {
-	case CARBON_ARC_LAMP:
-	    return carbonArcLamp;
-	case DISCHARGE_LAMP:
-	    return dischargeLamp;
-	case FLUORESCENT_LAMP:
-	    return fluorescentLamp;
-	case HALOGEN_LAMP:
-	    return halogenLamp;
-	case LED_LAMP:
-	    return ledLamp;
-	case LIGHT_BULB:
-	    return lightBulb;
-	default:
-	    return null;
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
 	}
-    }
 
-    public static final ElectricLight valueOf(String name) {
-	if (name == null)
-	    return null;
+	public static ElectricLight getElectricLightByOrder(int order) {
+		switch (order) {
+		case CARBON_ARC_LAMP:
+			return carbonArcLamp;
+		case DISCHARGE_LAMP:
+			return dischargeLamp;
+		case FLUORESCENT_LAMP:
+			return fluorescentLamp;
+		case HALOGEN_LAMP:
+			return halogenLamp;
+		case LED_LAMP:
+			return ledLamp;
+		case LIGHT_BULB:
+			return lightBulb;
+		default:
+			return null;
+		}
+	}
 
-	if (name.startsWith(LightingOntology.NAMESPACE))
-	    name = name.substring(LightingOntology.NAMESPACE.length());
+	public static final ElectricLight valueOf(String name) {
+		if (name == null)
+			return null;
 
-	for (int i = CARBON_ARC_LAMP; i <= LIGHT_BULB; i++)
-	    if (names[i].equals(name))
-		return getElectricLightByOrder(i);
+		if (name.startsWith(LightingOntology.NAMESPACE))
+			name = name.substring(LightingOntology.NAMESPACE.length());
 
-	return null;
-    }
+		for (int i = CARBON_ARC_LAMP; i <= LIGHT_BULB; i++)
+			if (names[i].equals(name))
+				return getElectricLightByOrder(i);
 
-    private int order;
+		return null;
+	}
 
-    private ElectricLight(int order) {
-	super(LightingOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
+	private int order;
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+	private ElectricLight(int order) {
+		super(LightingOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 }

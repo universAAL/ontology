@@ -29,75 +29,75 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class NaturalLight extends LightType {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "NaturalLight";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "NaturalLight";
 
-    public static final int MOON_SHINE = 0;
-    public static final int SUN_SHINE = 1;
+	public static final int MOON_SHINE = 0;
+	public static final int SUN_SHINE = 1;
 
-    private static final String[] names = { "moon_shine", "sun_shine" };
+	private static final String[] names = { "moon_shine", "sun_shine" };
 
-    public static final NaturalLight moonShine = new NaturalLight(MOON_SHINE);
-    public static final NaturalLight sunShine = new NaturalLight(SUN_SHINE);
+	public static final NaturalLight moonShine = new NaturalLight(MOON_SHINE);
+	public static final NaturalLight sunShine = new NaturalLight(SUN_SHINE);
 
-    // public static void init() throws UnsupportedOperationException {
-    // if (moonShine != null || sunShine != null)
-    // throw new
-    // UnsupportedOperationException("NaturalLight has already been initialised.");
-    // moonShine = new NaturalLight(MOON_SHINE);
-    // sunShine = new NaturalLight(SUN_SHINE);
-    // }
+	// public static void init() throws UnsupportedOperationException {
+	// if (moonShine != null || sunShine != null)
+	// throw new
+	// UnsupportedOperationException("NaturalLight has already been
+	// initialised.");
+	// moonShine = new NaturalLight(MOON_SHINE);
+	// sunShine = new NaturalLight(SUN_SHINE);
+	// }
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static NaturalLight getNaturalLightByOrder(int order) {
-	switch (order) {
-	case MOON_SHINE:
-	    return moonShine;
-	case SUN_SHINE:
-	    return sunShine;
-	default:
-	    return null;
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
 	}
-    }
 
-    public static final NaturalLight valueOf(String name) {
-	if (name == null)
-	    return null;
+	public static NaturalLight getNaturalLightByOrder(int order) {
+		switch (order) {
+		case MOON_SHINE:
+			return moonShine;
+		case SUN_SHINE:
+			return sunShine;
+		default:
+			return null;
+		}
+	}
 
-	if (name.startsWith(LightingOntology.NAMESPACE))
-	    name = name.substring(LightingOntology.NAMESPACE.length());
+	public static final NaturalLight valueOf(String name) {
+		if (name == null)
+			return null;
 
-	for (int i = MOON_SHINE; i <= SUN_SHINE; i++)
-	    if (names[i].equals(name))
-		return getNaturalLightByOrder(i);
+		if (name.startsWith(LightingOntology.NAMESPACE))
+			name = name.substring(LightingOntology.NAMESPACE.length());
 
-	return null;
-    }
+		for (int i = MOON_SHINE; i <= SUN_SHINE; i++)
+			if (names[i].equals(name))
+				return getNaturalLightByOrder(i);
 
-    private int order = 0;
+		return null;
+	}
 
-    private NaturalLight(int order) {
-	super(LightingOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
+	private int order = 0;
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+	private NaturalLight(int order) {
+		super(LightingOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 }

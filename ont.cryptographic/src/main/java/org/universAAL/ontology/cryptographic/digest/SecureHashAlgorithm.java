@@ -23,14 +23,17 @@ import org.universAAL.ontology.cryptographic.Digest;
  *
  */
 public class SecureHashAlgorithm extends Digest {
-	
+
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "SecureHashAlgorithm";
-	
+
 	public static final SecureHashAlgorithm IND_SHA = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha");
-	public static final SecureHashAlgorithm IND_SHA256 = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha-256");
-	public static final SecureHashAlgorithm IND_SHA384 = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha-384");
-	public static final SecureHashAlgorithm IND_SHA512 = new SecureHashAlgorithm(CryptographicOntology.NAMESPACE + "sha-512");
-	
+	public static final SecureHashAlgorithm IND_SHA256 = new SecureHashAlgorithm(
+			CryptographicOntology.NAMESPACE + "sha-256");
+	public static final SecureHashAlgorithm IND_SHA384 = new SecureHashAlgorithm(
+			CryptographicOntology.NAMESPACE + "sha-384");
+	public static final SecureHashAlgorithm IND_SHA512 = new SecureHashAlgorithm(
+			CryptographicOntology.NAMESPACE + "sha-512");
+
 	/**
 	 * 
 	 */
@@ -44,7 +47,7 @@ public class SecureHashAlgorithm extends Digest {
 		super(uri);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

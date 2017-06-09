@@ -23,20 +23,14 @@ import org.universAAL.ontology.unit.UnitOntology;
  *
  */
 public class UnitConversionService extends Service {
-	
+
 	public static final String MY_URI = UnitOntology.NAMESPACE + "UnitConversionService";
-    public static final String PROP_FROM_UNIT = UnitOntology.NAMESPACE
-	    + "fromUnit";
-    public static final String PROP_TO_UNIT = UnitOntology.NAMESPACE
-    	    + "toUnit";
-    public static final String PROP_FROM_PREFIX = UnitOntology.NAMESPACE
-    	    + "prefixInFromUnit";
-    public static final String PROP_TO_PREFIX = UnitOntology.NAMESPACE
-    	    + "prefixInToUnit";
-    public static final String PROP_FROM_VALUE = UnitOntology.NAMESPACE
-    	    + "valueInFromUnit";
-    public static final String PROP_TO_VALUE = UnitOntology.NAMESPACE
-    	    + "valueInToUnit";
+	public static final String PROP_FROM_UNIT = UnitOntology.NAMESPACE + "fromUnit";
+	public static final String PROP_TO_UNIT = UnitOntology.NAMESPACE + "toUnit";
+	public static final String PROP_FROM_PREFIX = UnitOntology.NAMESPACE + "prefixInFromUnit";
+	public static final String PROP_TO_PREFIX = UnitOntology.NAMESPACE + "prefixInToUnit";
+	public static final String PROP_FROM_VALUE = UnitOntology.NAMESPACE + "valueInFromUnit";
+	public static final String PROP_TO_VALUE = UnitOntology.NAMESPACE + "valueInToUnit";
 
 	/**
 	 * 
@@ -50,7 +44,7 @@ public class UnitConversionService extends Service {
 	public UnitConversionService(String uri) {
 		super(uri);
 	}
-	
+
 	public String getClassURI() {
 		return MY_URI;
 	}

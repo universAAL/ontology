@@ -31,57 +31,55 @@ import org.universAAL.ontology.shape.Shape;
  * @author Carsten Stockloew
  */
 public class Furniture extends PhysicalThing {
-    public static final String MY_URI = FurnitureOntology.NAMESPACE
-	    + "Furniture";
-    public static final String PROP_FURNITURE_TYPE = FurnitureOntology.NAMESPACE
-	    + "FurnitureType";
+	public static final String MY_URI = FurnitureOntology.NAMESPACE + "Furniture";
+	public static final String PROP_FURNITURE_TYPE = FurnitureOntology.NAMESPACE + "FurnitureType";
 
-    public Furniture() {
-    }
+	public Furniture() {
+	}
 
-    public Furniture(String uri) {
-	super(uri);
-    }
+	public Furniture(String uri) {
+		super(uri);
+	}
 
-    public Furniture(String uri, FurnitureType type) {
-	super(uri);
-	setFurnitureType(type);
-    }
+	public Furniture(String uri, FurnitureType type) {
+		super(uri);
+		setFurnitureType(type);
+	}
 
-    public Furniture(String uri, FurnitureType type, Shape shape) {
-	super(uri);
-	setShape(shape);
-	setFurnitureType(type);
-    }
+	public Furniture(String uri, FurnitureType type, Shape shape) {
+		super(uri);
+		setShape(shape);
+		setFurnitureType(type);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public FurnitureType getFurnitureType() {
-	return (FurnitureType) props.get(PROP_FURNITURE_TYPE);
-    }
+	public FurnitureType getFurnitureType() {
+		return (FurnitureType) props.get(PROP_FURNITURE_TYPE);
+	}
 
-    public void setFurnitureType(FurnitureType function) {
-	if (function == null)
-	    throw new IllegalArgumentException();
-	props.put(PROP_FURNITURE_TYPE, function);
-    }
+	public void setFurnitureType(FurnitureType function) {
+		if (function == null)
+			throw new IllegalArgumentException();
+		props.put(PROP_FURNITURE_TYPE, function);
+	}
 
-    public void clearFurnitureType() {
-	props.remove(PROP_FURNITURE_TYPE);
-    }
+	public void clearFurnitureType() {
+		props.remove(PROP_FURNITURE_TYPE);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
-	    return super.getPropSerializationType(propURI);
-	if (PROP_FURNITURE_TYPE.equals(propURI))
-	    return PROP_SERIALIZATION_REDUCED;
+	public int getPropSerializationType(String propURI) {
+		if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+			return super.getPropSerializationType(propURI);
+		if (PROP_FURNITURE_TYPE.equals(propURI))
+			return PROP_SERIALIZATION_REDUCED;
 
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 }

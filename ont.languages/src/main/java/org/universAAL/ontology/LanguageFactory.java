@@ -35,53 +35,45 @@ import org.universAAL.ontology.language.LanguageImpl;
  */
 public class LanguageFactory implements ResourceFactory {
 
-    public LanguageFactory(URL dataURL) {
-	tableURL = dataURL;
-    }
-
-    private URL tableURL;
-
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
-	try {
-	    BufferedReader br = new BufferedReader(new InputStreamReader(
-		    tableURL.openStream(), Charset.forName("UTF-8")));
-	    int line = 0;
-	    String ll = "";
-	    while (line != factoryIndex + 1 && (ll = br.readLine()) != null) {
-		line++;
-	    }
-	    br.close();
-	    if (ll != null) {
-		String[] props = ll.split("\\|");
-		if (props.length >= 4) {
-		    /*
-		     * FIXME DIRTY TRICK to get over the init() in
-		     * ManagedIndividual
-		     */
-		    LanguageImpl.tempURI = classURI;
-		    return new LanguageImpl(instanceURI, props[1], props[2],
-			    props[3]);
-		} else {
-		    LogUtils.logError(LanguageActivator.context,
-			    LanguageFactory.class, "createInstance",
-			    "No element found for classURI " + classURI
-				    + ", instanceURI " + instanceURI
-				    + ", factoryIndex: " + factoryIndex
-				    + ": props.length too small.");
-		}
-	    } else {
-		LogUtils.logError(LanguageActivator.context,
-			LanguageFactory.class, "createInstance",
-			"No element found for classURI " + classURI
-				+ ", instanceURI " + instanceURI
-				+ ", factoryIndex: " + factoryIndex
-				+ ": index too big, line not found.");
-	    }
-
-	} catch (Exception e) {
-	    e.printStackTrace();
+	public LanguageFactory(URL dataURL) {
+		tableURL = dataURL;
 	}
-	return null;
-    }
+
+	private URL tableURL;
+
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+		try {
+			BufferedReader br = new BufferedReader(
+					new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
+			int line = 0;
+			String ll = "";
+			while (line != factoryIndex + 1 && (ll = br.readLine()) != null) {
+				line++;
+			}
+			br.close();
+			if (ll != null) {
+				String[] props = ll.split("\\|");
+				if (props.length >= 4) {
+					/*
+					 * FIXME DIRTY TRICK to get over the init() in
+					 * ManagedIndividual
+					 */
+					LanguageImpl.tempURI = classURI;
+					return new LanguageImpl(instanceURI, props[1], props[2], props[3]);
+				} else {
+					LogUtils.logError(LanguageActivator.context, LanguageFactory.class, "createInstance",
+							"No element found for classURI " + classURI + ", instanceURI " + instanceURI
+									+ ", factoryIndex: " + factoryIndex + ": props.length too small.");
+				}
+			} else {
+				LogUtils.logError(LanguageActivator.context, LanguageFactory.class, "createInstance",
+						"No element found for classURI " + classURI + ", instanceURI " + instanceURI
+								+ ", factoryIndex: " + factoryIndex + ": index too big, line not found.");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }

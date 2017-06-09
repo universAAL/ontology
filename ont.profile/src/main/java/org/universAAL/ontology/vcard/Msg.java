@@ -23,25 +23,25 @@
 package org.universAAL.ontology.vcard;
 
 public class Msg extends Tel {
-    public static final String MY_URI = VCardOntology.NAMESPACE + "Msg";
+	public static final String MY_URI = VCardOntology.NAMESPACE + "Msg";
 
-    public Msg() {
-	super();
-    }
+	public Msg() {
+		super();
+	}
 
-    public Msg(String uri) {
-	super(uri);
-    }
+	public Msg(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

@@ -33,54 +33,52 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 // Main class
 public class ContinuaHealthDevice extends ManagedIndividual {
 
-    // Attributes
+	// Attributes
 
-    public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE + "Fact";
-    public static final String PROP_HAS_MAC = ContinuaHealthManagerOntology.NAMESPACE + "hasMAC";
-    public static final String PROP_HAS_DATA_TYPE = ContinuaHealthManagerOntology.NAMESPACE
-    		+ "hasDataType";
+	public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE + "Fact";
+	public static final String PROP_HAS_MAC = ContinuaHealthManagerOntology.NAMESPACE + "hasMAC";
+	public static final String PROP_HAS_DATA_TYPE = ContinuaHealthManagerOntology.NAMESPACE + "hasDataType";
 
+	// Constructor
+	public ContinuaHealthDevice() {
+	}
 
-    // Constructor
-    public ContinuaHealthDevice() {
-    }
+	public ContinuaHealthDevice(String uri) {
+		super(uri);
+	}
 
-    public ContinuaHealthDevice(String uri) {
-	super(uri);
-    }
+	public ContinuaHealthDevice(String uri, String mac, String dataType) {
+		super(uri);
+		setMAC(mac);
+		setDataType(dataType);
+	}
 
-    public ContinuaHealthDevice(String uri, String mac, String dataType) {
-	super(uri);
-	setMAC(mac);
-	setDataType(dataType);
-    }
+	// Methods
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    // Methods
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public String getMAC() {
+		return (String) props.get(PROP_HAS_MAC);
+	}
 
-    public String getMAC() {
-	return (String) props.get(PROP_HAS_MAC);
-    }
+	public void setMAC(String str) {
+		props.put(PROP_HAS_MAC, str);
+	}
 
-    public void setMAC(String str) {
-	props.put(PROP_HAS_MAC, str);
-    }
+	public String getDataType() {
+		return (String) props.get(PROP_HAS_DATA_TYPE);
+	}
 
-    public String getDataType() {
-	return (String) props.get(PROP_HAS_DATA_TYPE);
-    }
+	public void setDataType(String str) {
+		props.put(PROP_HAS_DATA_TYPE, str);
+	}
 
-    public void setDataType(String str) {
-	props.put(PROP_HAS_DATA_TYPE, str);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

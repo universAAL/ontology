@@ -44,65 +44,64 @@ import org.universAAL.ontology.health.owl.services.TreatmentManagementService;
 
 public class HealthOntologyFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new BloodPressureRequirement(instanceURI);
-	case 1:
-	    return new MeasuredPhysicalActivity(instanceURI);
-	case 2:
-	    return new MeasurementRequirements(instanceURI);
-	case 3:
-	    return new WeightRequirement(instanceURI);
-	case 4:
-	    return new PlannedSession(instanceURI);
-	case 5:
-	    return new PerformedMeasurementSession(instanceURI);
-	case 8:
-	    return new HeartRateRequirement(instanceURI);
-//	case 9:
-//	    return new TakeMeasurementActivity(instanceURI);
-	case 11:
-	    return new TreatmentPlanning(instanceURI);
-	case 12:
-	    return new HealthProfile(instanceURI);
-	case 13:
-	    return new PerformedSession(instanceURI);
-	case 14:
-//	    return new DiastolicBloodPressureRequirement(instanceURI);
-	case 15:
-//	    return new SystolicBloodPressureRequirement(instanceURI);
-	case 16:
-	    return new ActivityHeartRateRequirement(instanceURI);
-	case 17:
-	    return new ReposeHeartRateRequirement(instanceURI);
-	case 20:
-	    return new PerformedSessionManagementService(instanceURI);
-	case 32:
-	    return new Diet(instanceURI);
-	case 33:
-	    return new WeightMeasurementTreatment(instanceURI);
-	case 34:
-	    return new Walking(instanceURI);
-	case 35:
-	    return new BloodPressureMeasurementTreatment(instanceURI);
-	case 36:
-	    return new HeartRateMeasurementTreatment(instanceURI);
-	case 41:
-	    return new HealthService(instanceURI);
-	case 42:
-	    return new TreatmentManagementService(instanceURI);
-	case 43:
-	    return new PlannedSessionManagementService(instanceURI);
-	case 44:
-	    return new PerformedSessionManagementService(instanceURI);
-	case 45:
-	    return new ProfileManagementService(instanceURI);
-	case 46:
-	    return new DisplayTreatmentService(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new BloodPressureRequirement(instanceURI);
+		case 1:
+			return new MeasuredPhysicalActivity(instanceURI);
+		case 2:
+			return new MeasurementRequirements(instanceURI);
+		case 3:
+			return new WeightRequirement(instanceURI);
+		case 4:
+			return new PlannedSession(instanceURI);
+		case 5:
+			return new PerformedMeasurementSession(instanceURI);
+		case 8:
+			return new HeartRateRequirement(instanceURI);
+		// case 9:
+		// return new TakeMeasurementActivity(instanceURI);
+		case 11:
+			return new TreatmentPlanning(instanceURI);
+		case 12:
+			return new HealthProfile(instanceURI);
+		case 13:
+			return new PerformedSession(instanceURI);
+		case 14:
+			// return new DiastolicBloodPressureRequirement(instanceURI);
+		case 15:
+			// return new SystolicBloodPressureRequirement(instanceURI);
+		case 16:
+			return new ActivityHeartRateRequirement(instanceURI);
+		case 17:
+			return new ReposeHeartRateRequirement(instanceURI);
+		case 20:
+			return new PerformedSessionManagementService(instanceURI);
+		case 32:
+			return new Diet(instanceURI);
+		case 33:
+			return new WeightMeasurementTreatment(instanceURI);
+		case 34:
+			return new Walking(instanceURI);
+		case 35:
+			return new BloodPressureMeasurementTreatment(instanceURI);
+		case 36:
+			return new HeartRateMeasurementTreatment(instanceURI);
+		case 41:
+			return new HealthService(instanceURI);
+		case 42:
+			return new TreatmentManagementService(instanceURI);
+		case 43:
+			return new PlannedSessionManagementService(instanceURI);
+		case 44:
+			return new PerformedSessionManagementService(instanceURI);
+		case 45:
+			return new ProfileManagementService(instanceURI);
+		case 46:
+			return new DisplayTreatmentService(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 }

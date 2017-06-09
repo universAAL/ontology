@@ -30,21 +30,21 @@ import org.universAAL.ontology.drools.Rule;
 
 public class DroolsReasoningFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
-	switch (factoryIndex) {
-	case 0:
-	    return new Consequence(instanceURI);
-	case 1:
-	    return new Fact(instanceURI);
-	case 2:
-	    return new Rule(instanceURI);
-	case 3:
-	    return new FactProperty(instanceURI);
-	case 4:
-	    return new ConsequenceProperty(instanceURI);
-	case 5:
-	    return new DroolsReasoning(instanceURI);
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+		switch (factoryIndex) {
+		case 0:
+			return new Consequence(instanceURI);
+		case 1:
+			return new Fact(instanceURI);
+		case 2:
+			return new Rule(instanceURI);
+		case 3:
+			return new FactProperty(instanceURI);
+		case 4:
+			return new ConsequenceProperty(instanceURI);
+		case 5:
+			return new DroolsReasoning(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 }

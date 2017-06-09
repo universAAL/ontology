@@ -34,24 +34,24 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public abstract class Stream extends ManagedIndividual {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "Stream";
-    public static final String PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
-    public static final String PROP_HAS_ENDPOINT = AVOntology.NAMESPACE + "hasEndPoint";
+	public static final String MY_URI = AVOntology.NAMESPACE + "Stream";
+	public static final String PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
+	public static final String PROP_HAS_ENDPOINT = AVOntology.NAMESPACE + "hasEndPoint";
 
-    /** default constructor */
-    public Stream() {
-	super();
-    }
+	/** default constructor */
+	public Stream() {
+		super();
+	}
 
-    public Stream(String uri) {
-	super(uri);
-    }
+	public Stream(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

@@ -47,69 +47,58 @@ import org.universAAL.ontology.measurement.MeasurementOntology;
  */
 public class PersonalHealthDeviceOntology extends Ontology {
 
-    private static PersonalHealthDeviceFactory factory = new PersonalHealthDeviceFactory();
+	private static PersonalHealthDeviceFactory factory = new PersonalHealthDeviceFactory();
 
-    public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-	    + "PersonalHealthDevice.owl#";
+	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "PersonalHealthDevice.owl#";
 
-    public PersonalHealthDeviceOntology() {
-	super(NAMESPACE);
-    }
+	public PersonalHealthDeviceOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r
-		.setResourceComment("Ontology for person-related health devices (Continua certified devices) "
-			+ "e.g. blood pressure monitor, weighing scale,...");
-	r.setResourceLabel("PersonalHealthDevice");
-	addImport(MeasurementOntology.NAMESPACE);
-	addImport(DeviceOntology.NAMESPACE);
-	addImport(HealthMeasurementOntology.NAMESPACE);
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("Ontology for person-related health devices (Continua certified devices) "
+				+ "e.g. blood pressure monitor, weighing scale,...");
+		r.setResourceLabel("PersonalHealthDevice");
+		addImport(MeasurementOntology.NAMESPACE);
+		addImport(DeviceOntology.NAMESPACE);
+		addImport(HealthMeasurementOntology.NAMESPACE);
 
-	OntClassInfoSetup oci;
-	
-	// load BloodOxygenSat
-	oci = createNewOntClassInfo(BloodOxygenSatSensor.MY_URI, factory, 0);
-	oci.setResourceComment("The class of all blood oxygen sensors.");
-	oci.setResourceLabel("BloodOxygenSatSensor");
-	oci.addSuperClass(Sensor.MY_URI);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Sensor.PROP_HAS_VALUE,
-			BloodOxygenSaturation.MY_URI, 1, 1));
-	
-	// load BloodPressure 2
-	oci = createNewOntClassInfo(BloodPressureSensor.MY_URI, factory, 1);
-	oci.setResourceComment("The class of all blood pressure sensors.");
-	oci.setResourceLabel("BloodPressureSensor");
-	oci.addSuperClass(Sensor.MY_URI);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Sensor.PROP_HAS_VALUE,
-			BloodPressure.MY_URI, 1, 1));
-	
-	// load HeartRate
-	oci = createNewOntClassInfo(HeartRateSensor.MY_URI, factory, 2);
-	oci.setResourceComment("The class of all heart rate sensors.");
-	oci.setResourceLabel("HeartRateSensor");
-	oci.addSuperClass(Sensor.MY_URI);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Sensor.PROP_HAS_VALUE,
-			HeartRate.MY_URI, 1, 1));
-	
-	// load WeighingScale
-	oci = createNewOntClassInfo(WeighingScale.MY_URI, factory, 3);
-	oci.setResourceComment("The class of all weighing scales.");
-	oci.setResourceLabel("WeighingScale");
-	oci.addSuperClass(Sensor.MY_URI);
-	oci.addObjectProperty(WeighingScale.PROP_HAS_VALUE)
-		.setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			WeighingScale.PROP_HAS_VALUE,
-			PersonWeight.MY_URI, 1, 1));
+		OntClassInfoSetup oci;
 
-    }
+		// load BloodOxygenSat
+		oci = createNewOntClassInfo(BloodOxygenSatSensor.MY_URI, factory, 0);
+		oci.setResourceComment("The class of all blood oxygen sensors.");
+		oci.setResourceLabel("BloodOxygenSatSensor");
+		oci.addSuperClass(Sensor.MY_URI);
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Sensor.PROP_HAS_VALUE,
+				BloodOxygenSaturation.MY_URI, 1, 1));
+
+		// load BloodPressure 2
+		oci = createNewOntClassInfo(BloodPressureSensor.MY_URI, factory, 1);
+		oci.setResourceComment("The class of all blood pressure sensors.");
+		oci.setResourceLabel("BloodPressureSensor");
+		oci.addSuperClass(Sensor.MY_URI);
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Sensor.PROP_HAS_VALUE,
+				BloodPressure.MY_URI, 1, 1));
+
+		// load HeartRate
+		oci = createNewOntClassInfo(HeartRateSensor.MY_URI, factory, 2);
+		oci.setResourceComment("The class of all heart rate sensors.");
+		oci.setResourceLabel("HeartRateSensor");
+		oci.addSuperClass(Sensor.MY_URI);
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Sensor.PROP_HAS_VALUE,
+				HeartRate.MY_URI, 1, 1));
+
+		// load WeighingScale
+		oci = createNewOntClassInfo(WeighingScale.MY_URI, factory, 3);
+		oci.setResourceComment("The class of all weighing scales.");
+		oci.setResourceLabel("WeighingScale");
+		oci.addSuperClass(Sensor.MY_URI);
+		oci.addObjectProperty(WeighingScale.PROP_HAS_VALUE).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(WeighingScale.PROP_HAS_VALUE,
+				PersonWeight.MY_URI, 1, 1));
+
+	}
 
 }

@@ -1,26 +1,25 @@
 package org.universAAL.ontology.healthmeasurement.owl;
 
 public class BloodOxygenSaturation extends HealthMeasurement {
-    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-	    + "BloodOxygenSaturation";
-    
-    public BloodOxygenSaturation() {
-	super();
-    }
+	public static final String MY_URI = HealthMeasurementOntology.NAMESPACE + "BloodOxygenSaturation";
 
-    public BloodOxygenSaturation(String uri) {
-	super(uri);
-    }
+	public BloodOxygenSaturation() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public BloodOxygenSaturation(String uri) {
+		super(uri);
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isWellFormed() {
+		return true;
+	}
 }

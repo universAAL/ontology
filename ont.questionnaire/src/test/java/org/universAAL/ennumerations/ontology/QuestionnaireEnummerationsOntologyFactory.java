@@ -20,12 +20,10 @@ package org.universAAL.ennumerations.ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 
-public class QuestionnaireEnummerationsOntologyFactory implements
-	ResourceFactory {
+public class QuestionnaireEnummerationsOntologyFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	return null;
-    }
+		return null;
+	}
 }

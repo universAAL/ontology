@@ -37,122 +37,119 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Polyhedron extends Shape3D {
 
-    public static final String MY_URI = ShapeOntology.NAMESPACE + "Polyhedron";
+	public static final String MY_URI = ShapeOntology.NAMESPACE + "Polyhedron";
 
-    public static final String PROP_FACES = ShapeOntology.NAMESPACE + "Faces";
+	public static final String PROP_FACES = ShapeOntology.NAMESPACE + "Faces";
 
-
-    /**
-     * Creates a Polygon object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Polyhedron(String uri) {
-	super(uri);
-    }
-
-    /**
-     * Creates a Polygon object
-     */
-    public Polyhedron() {
-	super();
-    }
-
-    /**
-     * Creates a Polygon object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param faces
-     *            an array of all faces
-     */
-    public Polyhedron(String uri, Polygon[] faces) {
-	super(uri);
-	setFaces(faces);
-    }
-
-    public Polyhedron(Polygon[] faces) {
-	super();
-	setFaces(faces);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public Polygon[] getFaces() {
-	Object[] o = ((Vector) props.get(PROP_FACES)).toArray();
-	Polygon p[] = new Polygon[o.length];
-	for (int i = 0; i < o.length; i++)
-	    p[i] = (Polygon) o[i];
-	return p;
-    }
-
-    public void setFaces(Polygon[] faces) {
-	if (faces == null)
-	    throw new IllegalArgumentException();
-	if (faces.length < 4)
-	    throw new IllegalArgumentException("Not enough faces");
-	Vector vmapper = new Vector();
-	for (int i = 0; i < faces.length; i++) {
-	    faces[i].castTo3D();
-	    vmapper.add(faces[i]);
+	/**
+	 * Creates a Polygon object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Polyhedron(String uri) {
+		super(uri);
 	}
-	props.put(PROP_FACES, vmapper);
-    }
 
-    public int getPropSerializationType(String propURI) {
-	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
-	    return super.getPropSerializationType(propURI);
-	if (PROP_FACES.equals(propURI))
-	    return PROP_SERIALIZATION_REDUCED;
-
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public float getDistanceTo(Point other) {
-	if (other == null)
-	    throw new IllegalArgumentException();
-	float dist = Float.MAX_VALUE;
-	Polygon[] faces = getFaces();
-	for (int i = 0; i < faces.length; i++) {
-	    float curdist;
-	    if ((curdist = faces[i].getDistanceTo(other)) < dist)
-		dist = curdist;
+	/**
+	 * Creates a Polygon object
+	 */
+	public Polyhedron() {
+		super();
 	}
-	return dist;
-    }
 
-    protected Shape computeBoundingVolume() {
-	Polygon[] faces = getFaces();
-	double max[] = { Double.MAX_VALUE, Double.MIN_VALUE, Double.MAX_VALUE,
-		Double.MIN_VALUE, Double.MAX_VALUE, Double.MIN_VALUE };
-	for (int i = 0; i < faces.length; i++) {
-	    Box curBox = (Box) faces[i].getBoundingVolume();
-	    Point center = curBox.getCenter();
-	    if (max[0] > center.getX() - curBox.getWidth() / 2d)
-		max[0] = center.getX() - curBox.getWidth() / 2d;
-	    if (max[1] < center.getX() + curBox.getWidth() / 2d)
-		max[1] = center.getX() + curBox.getWidth() / 2d;
-	    if (max[2] > center.getY() - curBox.getDepth() / 2d)
-		max[2] = center.getY() - curBox.getDepth() / 2d;
-	    if (max[3] < center.getY() + curBox.getDepth() / 2d)
-		max[3] = center.getY() + curBox.getDepth() / 2d;
-	    if (max[4] > center.getZ() - curBox.getHeight() / 2d)
-		max[4] = center.getZ() - curBox.getHeight() / 2d;
-	    if (max[5] < center.getZ() + curBox.getHeight() / 2d)
-		max[5] = center.getZ() + curBox.getHeight() / 2d;
+	/**
+	 * Creates a Polygon object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param faces
+	 *            an array of all faces
+	 */
+	public Polyhedron(String uri, Polygon[] faces) {
+		super(uri);
+		setFaces(faces);
 	}
-	return new Box(max[1] - max[0], max[3] - max[2], max[5] - max[4],
-		new OriginedMetric((float) (max[0] + (max[1] - max[0]) / 2f),
-			(float) (max[2] + (max[3] - max[2]) / 2f),
-			(float) (max[4] + (max[5] - max[4]) / 2f),
-			(Place) getCenter().getContainingLocation()));
-    }
 
-    public boolean contains(Point p) {
-	// TODO
-	return false;
-    }
+	public Polyhedron(Polygon[] faces) {
+		super();
+		setFaces(faces);
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public Polygon[] getFaces() {
+		Object[] o = ((Vector) props.get(PROP_FACES)).toArray();
+		Polygon p[] = new Polygon[o.length];
+		for (int i = 0; i < o.length; i++)
+			p[i] = (Polygon) o[i];
+		return p;
+	}
+
+	public void setFaces(Polygon[] faces) {
+		if (faces == null)
+			throw new IllegalArgumentException();
+		if (faces.length < 4)
+			throw new IllegalArgumentException("Not enough faces");
+		Vector vmapper = new Vector();
+		for (int i = 0; i < faces.length; i++) {
+			faces[i].castTo3D();
+			vmapper.add(faces[i]);
+		}
+		props.put(PROP_FACES, vmapper);
+	}
+
+	public int getPropSerializationType(String propURI) {
+		if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+			return super.getPropSerializationType(propURI);
+		if (PROP_FACES.equals(propURI))
+			return PROP_SERIALIZATION_REDUCED;
+
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
+
+	public float getDistanceTo(Point other) {
+		if (other == null)
+			throw new IllegalArgumentException();
+		float dist = Float.MAX_VALUE;
+		Polygon[] faces = getFaces();
+		for (int i = 0; i < faces.length; i++) {
+			float curdist;
+			if ((curdist = faces[i].getDistanceTo(other)) < dist)
+				dist = curdist;
+		}
+		return dist;
+	}
+
+	protected Shape computeBoundingVolume() {
+		Polygon[] faces = getFaces();
+		double max[] = { Double.MAX_VALUE, Double.MIN_VALUE, Double.MAX_VALUE, Double.MIN_VALUE, Double.MAX_VALUE,
+				Double.MIN_VALUE };
+		for (int i = 0; i < faces.length; i++) {
+			Box curBox = (Box) faces[i].getBoundingVolume();
+			Point center = curBox.getCenter();
+			if (max[0] > center.getX() - curBox.getWidth() / 2d)
+				max[0] = center.getX() - curBox.getWidth() / 2d;
+			if (max[1] < center.getX() + curBox.getWidth() / 2d)
+				max[1] = center.getX() + curBox.getWidth() / 2d;
+			if (max[2] > center.getY() - curBox.getDepth() / 2d)
+				max[2] = center.getY() - curBox.getDepth() / 2d;
+			if (max[3] < center.getY() + curBox.getDepth() / 2d)
+				max[3] = center.getY() + curBox.getDepth() / 2d;
+			if (max[4] > center.getZ() - curBox.getHeight() / 2d)
+				max[4] = center.getZ() - curBox.getHeight() / 2d;
+			if (max[5] < center.getZ() + curBox.getHeight() / 2d)
+				max[5] = center.getZ() + curBox.getHeight() / 2d;
+		}
+		return new Box(max[1] - max[0], max[3] - max[2], max[5] - max[4],
+				new OriginedMetric((float) (max[0] + (max[1] - max[0]) / 2f), (float) (max[2] + (max[3] - max[2]) / 2f),
+						(float) (max[4] + (max[5] - max[4]) / 2f), (Place) getCenter().getContainingLocation()));
+	}
+
+	public boolean contains(Point p) {
+		// TODO
+		return false;
+	}
 }

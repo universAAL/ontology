@@ -18,89 +18,83 @@ package org.universAAL.ontology.unit;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class Unit extends ManagedIndividual {
-    public static final String MY_URI = UnitOntology.NAMESPACE + "Unit";
-    public static final String PROP_UNIT_SYSTEM = UnitOntology.NAMESPACE
-	    + "unitSystem";
-    public static final String PROP_NAME = UnitOntology.NAMESPACE + "name";
-    public static final String PROP_SYMBOL = UnitOntology.NAMESPACE + "symbol";
-    public static final String PROP_DIMENSION = UnitOntology.NAMESPACE
-	    + "dimension";
+	public static final String MY_URI = UnitOntology.NAMESPACE + "Unit";
+	public static final String PROP_UNIT_SYSTEM = UnitOntology.NAMESPACE + "unitSystem";
+	public static final String PROP_NAME = UnitOntology.NAMESPACE + "name";
+	public static final String PROP_SYMBOL = UnitOntology.NAMESPACE + "symbol";
+	public static final String PROP_DIMENSION = UnitOntology.NAMESPACE + "dimension";
 
-    public Unit() {
-	super();
-    }
-
-    public Unit(String uri) {
-	super(uri);
-    }
-
-    public Unit(String uri, String name, String symbol,
-	    MeasurableDimension dimension) {
-	super(uri);
-	setName(name);
-	setSymbol(symbol);
-	setDimension(dimension);
-    }
-
-    public Unit(String uri, String name, String symbol,
-	    MeasurableDimension dimension, UnitSystem us) {
-	super(uri);
-	setName(name);
-	setSymbol(symbol);
-	setDimension(dimension);
-	setUnitSystem(us);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String arg0) {
-	if (arg0.equals(PROP_UNIT_SYSTEM)
-		|| arg0.equals(PROP_DIMENSION)){
-	    return PROP_SERIALIZATION_REDUCED;
+	public Unit() {
+		super();
 	}
-	return PROP_SERIALIZATION_FULL;
-    }
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_NAME) && hasProperty(PROP_SYMBOL)
-		&& hasProperty(PROP_DIMENSION);
-    }
+	public Unit(String uri) {
+		super(uri);
+	}
 
-    public String getName() {
-	return (String) getProperty(PROP_NAME);
-    }
+	public Unit(String uri, String name, String symbol, MeasurableDimension dimension) {
+		super(uri);
+		setName(name);
+		setSymbol(symbol);
+		setDimension(dimension);
+	}
 
-    private void setName(String newPropValue) {
-	if (newPropValue != null)
-	    props.put(PROP_NAME, newPropValue);
-    }
+	public Unit(String uri, String name, String symbol, MeasurableDimension dimension, UnitSystem us) {
+		super(uri);
+		setName(name);
+		setSymbol(symbol);
+		setDimension(dimension);
+		setUnitSystem(us);
+	}
 
-    public String getSymbol() {
-	return (String) getProperty(PROP_SYMBOL);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    protected void setSymbol(String newPropValue) {
-	if (newPropValue != null)
-	    props.put(PROP_SYMBOL, newPropValue);
-    }
+	public int getPropSerializationType(String arg0) {
+		if (arg0.equals(PROP_UNIT_SYSTEM) || arg0.equals(PROP_DIMENSION)) {
+			return PROP_SERIALIZATION_REDUCED;
+		}
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public MeasurableDimension getDimension() {
-	return (MeasurableDimension) getProperty(PROP_DIMENSION);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_NAME) && hasProperty(PROP_SYMBOL) && hasProperty(PROP_DIMENSION);
+	}
 
-    private void setDimension(MeasurableDimension newPropValue) {
-	if (newPropValue != null)
-	    props.put(PROP_DIMENSION, newPropValue);
-    }
+	public String getName() {
+		return (String) getProperty(PROP_NAME);
+	}
 
-    public UnitSystem getUnitSystem() {
-	return (UnitSystem) getProperty(PROP_UNIT_SYSTEM);
-    }
+	private void setName(String newPropValue) {
+		if (newPropValue != null)
+			props.put(PROP_NAME, newPropValue);
+	}
 
-    private void setUnitSystem(UnitSystem newPropValue) {
-	if (newPropValue != null)
-	    props.put(PROP_DIMENSION, newPropValue);
-    }
+	public String getSymbol() {
+		return (String) getProperty(PROP_SYMBOL);
+	}
+
+	protected void setSymbol(String newPropValue) {
+		if (newPropValue != null)
+			props.put(PROP_SYMBOL, newPropValue);
+	}
+
+	public MeasurableDimension getDimension() {
+		return (MeasurableDimension) getProperty(PROP_DIMENSION);
+	}
+
+	private void setDimension(MeasurableDimension newPropValue) {
+		if (newPropValue != null)
+			props.put(PROP_DIMENSION, newPropValue);
+	}
+
+	public UnitSystem getUnitSystem() {
+		return (UnitSystem) getProperty(PROP_UNIT_SYSTEM);
+	}
+
+	private void setUnitSystem(UnitSystem newPropValue) {
+		if (newPropValue != null)
+			props.put(PROP_DIMENSION, newPropValue);
+	}
 }

@@ -23,25 +23,25 @@
 package org.universAAL.ontology.vcard;
 
 public class Cell extends Tel {
-    public static final String MY_URI = VCardOntology.NAMESPACE + "Cell";
+	public static final String MY_URI = VCardOntology.NAMESPACE + "Cell";
 
-    public Cell() {
-	super();
-    }
+	public Cell() {
+		super();
+	}
 
-    public Cell(String uri) {
-	super(uri);
-    }
+	public Cell(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

@@ -40,72 +40,63 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class DeviceExtraOntology extends Ontology {
 
-    public static final String NAMESPACE = "http://ontology.universAAL.org/DeviceExtra.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/DeviceExtra.owl#";
 
-    private static DeviceExtraFactory factory = new DeviceExtraFactory();
+	private static DeviceExtraFactory factory = new DeviceExtraFactory();
 
-    public DeviceExtraOntology(String ontURI) {
-	super(ontURI);
-    }
+	public DeviceExtraOntology(String ontURI) {
+		super(ontURI);
+	}
 
-    public DeviceExtraOntology() {
-	super(NAMESPACE);
-    }
+	public DeviceExtraOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r.setResourceComment("Ontology for extra devices");
-	r.setResourceLabel("Device extra");
-	addImport(DeviceOntology.NAMESPACE);
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("Ontology for extra devices");
+		r.setResourceLabel("Device extra");
+		addImport(DeviceOntology.NAMESPACE);
 
-	OntClassInfoSetup oci;
+		OntClassInfoSetup oci;
 
-	oci = extendExistingOntClassInfo(Device.MY_URI);
-	oci = extendExistingOntClassInfo(Sensor.MY_URI);
-	oci = extendExistingOntClassInfo(Actuator.MY_URI);
+		oci = extendExistingOntClassInfo(Device.MY_URI);
+		oci = extendExistingOntClassInfo(Sensor.MY_URI);
+		oci = extendExistingOntClassInfo(Actuator.MY_URI);
 
-	// CarpetSensor
-	oci = createNewOntClassInfo(CarpetSensor.MY_URI, factory, 0);
-	oci.setResourceComment("A Carpet Presence Detector Device");
-	oci.setResourceLabel("Carpet Presence Detector");
-	oci.addSuperClass(Sensor.MY_URI);
-	oci.addObjectProperty(
-		CarpetSensor.PROP_HAS_VALUE).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			CarpetSensor.PROP_HAS_VALUE, StatusValue.MY_URI,
-			1, 1));
+		// CarpetSensor
+		oci = createNewOntClassInfo(CarpetSensor.MY_URI, factory, 0);
+		oci.setResourceComment("A Carpet Presence Detector Device");
+		oci.setResourceLabel("Carpet Presence Detector");
+		oci.addSuperClass(Sensor.MY_URI);
+		oci.addObjectProperty(CarpetSensor.PROP_HAS_VALUE).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(CarpetSensor.PROP_HAS_VALUE,
+				StatusValue.MY_URI, 1, 1));
 
-	// Oven
-	oci = createNewOntClassInfo(Oven.MY_URI, factory, 1);
-	oci.setResourceComment("The class of all Ovens.");
-	oci.setResourceLabel("Oven");
-	oci.addSuperClass(Actuator.MY_URI);
-	oci.addObjectProperty(
-		Oven.PROP_HAS_VALUE).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Oven.PROP_HAS_VALUE, StatusValue.MY_URI,
-			1, 1));
+		// Oven
+		oci = createNewOntClassInfo(Oven.MY_URI, factory, 1);
+		oci.setResourceComment("The class of all Ovens.");
+		oci.setResourceLabel("Oven");
+		oci.addSuperClass(Actuator.MY_URI);
+		oci.addObjectProperty(Oven.PROP_HAS_VALUE).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Oven.PROP_HAS_VALUE,
+				StatusValue.MY_URI, 1, 1));
 
-	// SirenActuator
-	oci = createNewOntClassInfo(SirenActuator.MY_URI, factory, 2);
-	oci.setResourceComment("An Acoustic Siren Actuator");
-	oci.setResourceLabel("Siren Actuator");
-	oci.addSuperClass(Actuator.MY_URI);
-	oci.addObjectProperty(
-		SirenActuator.PROP_HAS_VALUE).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			SirenActuator.PROP_HAS_VALUE, StatusValue.MY_URI,
-			1, 1));
+		// SirenActuator
+		oci = createNewOntClassInfo(SirenActuator.MY_URI, factory, 2);
+		oci.setResourceComment("An Acoustic Siren Actuator");
+		oci.setResourceLabel("Siren Actuator");
+		oci.addSuperClass(Actuator.MY_URI);
+		oci.addObjectProperty(SirenActuator.PROP_HAS_VALUE).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SirenActuator.PROP_HAS_VALUE,
+				StatusValue.MY_URI, 1, 1));
 
-	// Strap
-	oci = createNewOntClassInfo(Strap.MY_URI, factory, 3);
-	oci.setResourceComment("A Strap Device");
-	oci.setResourceLabel("Strap");
-	oci.addSuperClass(Device.MY_URI);
+		// Strap
+		oci = createNewOntClassInfo(Strap.MY_URI, factory, 3);
+		oci.setResourceComment("A Strap Device");
+		oci.setResourceLabel("Strap");
+		oci.addSuperClass(Device.MY_URI);
 
-    }
+	}
 
 }

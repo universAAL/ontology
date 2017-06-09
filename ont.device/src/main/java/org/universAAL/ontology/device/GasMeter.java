@@ -22,25 +22,25 @@
 package org.universAAL.ontology.device;
 
 public class GasMeter extends EnvironmentMeter {
-    public static final String MY_URI = DeviceOntology.NAMESPACE + "GasMeter";
+	public static final String MY_URI = DeviceOntology.NAMESPACE + "GasMeter";
 
-    public GasMeter() {
-	super();
-    }
+	public GasMeter() {
+		super();
+	}
 
-    public GasMeter(String uri) {
-	super(uri);
-    }
+	public GasMeter(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

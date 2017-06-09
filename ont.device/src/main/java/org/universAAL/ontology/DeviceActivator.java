@@ -28,13 +28,13 @@ import org.universAAL.ontology.device.DeviceOntology;
 
 public class DeviceActivator implements ModuleActivator {
 
-    private DeviceOntology ontD = new DeviceOntology();
+	private DeviceOntology ontD = new DeviceOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontD);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontD);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontD);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontD);
+	}
 }

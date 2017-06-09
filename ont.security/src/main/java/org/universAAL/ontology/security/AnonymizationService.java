@@ -20,23 +20,23 @@ package org.universAAL.ontology.security;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
- * Service Description for Authentication.
- * Authenticator mechanisms should provide profiles for this service
+ * Service Description for Authentication. Authenticator mechanisms should
+ * provide profiles for this service
+ * 
  * @author amedrano
  *
  */
 public class AnonymizationService extends Service {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "AnonymizationService";
+	public static final String PROP_ANONYMIZABLE = SecurityOntology.NAMESPACE + "anonymizableResource";
+	public static final String PROP_ASYMMETRIC_ENCRYPTION = SecurityOntology.NAMESPACE + "asymmetricEncryptionToUse";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "AnonymizationService";
-    public static final String PROP_ANONYMIZABLE = SecurityOntology.NAMESPACE + "anonymizableResource";
-    public static final String PROP_ASYMMETRIC_ENCRYPTION = SecurityOntology.NAMESPACE + "asymmetricEncryptionToUse";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public AnonymizationService() {
-	    super();
+		super();
 	}
 
 	/**
@@ -46,20 +46,19 @@ public class AnonymizationService extends Service {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_ANONYMIZABLE) || propURI.equals(PROP_ASYMMETRIC_ENCRYPTION)){
+		if (propURI.equals(PROP_ANONYMIZABLE) || propURI.equals(PROP_ASYMMETRIC_ENCRYPTION)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);

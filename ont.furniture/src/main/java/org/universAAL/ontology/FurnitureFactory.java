@@ -30,14 +30,13 @@ import org.universAAL.ontology.furniture.Furniture;
  */
 public class FurnitureFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new Furniture(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new Furniture(instanceURI);
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

@@ -35,28 +35,27 @@ package org.universAAL.ontology.profile;
 
 public class AssistedPersonProfile extends UserProfile {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "AssistedPersonProfile";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AssistedPersonProfile";
 
-    protected AssistedPersonProfile() {
-	super();
-    }
+	protected AssistedPersonProfile() {
+		super();
+	}
 
-    public AssistedPersonProfile(String uri) {
-	super(uri);
-    }
+	public AssistedPersonProfile(String uri) {
+		super(uri);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
 }

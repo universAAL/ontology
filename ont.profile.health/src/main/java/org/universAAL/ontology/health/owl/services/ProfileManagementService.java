@@ -26,32 +26,31 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
  */
 public class ProfileManagementService extends HealthService {
 
-    // NAMESPACE & PROPERTIES
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "HealthProfileManagementService";
+	// NAMESPACE & PROPERTIES
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "HealthProfileManagementService";
 
-    // CONSTRUCTORS
-    public ProfileManagementService() {
-	super();
-    }
+	// CONSTRUCTORS
+	public ProfileManagementService() {
+		super();
+	}
 
-    public ProfileManagementService(String uri) {
-	super(uri);
-    }
+	public ProfileManagementService(String uri) {
+		super(uri);
+	}
 
-    /** {@inheritDoc} */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** {@inheritDoc} */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /** {@inheritDoc} */
-    public int getPropSerializationType(String propURI) {
-	return PROP_ASSISTED_USER_PROFILE.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
-    }
+	/** {@inheritDoc} */
+	public int getPropSerializationType(String propURI) {
+		return PROP_ASSISTED_USER_PROFILE.equals(propURI) ? PROP_SERIALIZATION_FULL
+				: super.getPropSerializationType(propURI);
+	}
 
-    /** {@inheritDoc} */
-    public boolean isWellFormed() {
-	return true;
-    }
+	/** {@inheritDoc} */
+	public boolean isWellFormed() {
+		return true;
+	}
 }

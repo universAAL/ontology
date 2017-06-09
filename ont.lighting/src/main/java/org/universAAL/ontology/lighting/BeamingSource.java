@@ -32,65 +32,59 @@ import org.universAAL.ontology.location.Location;
  * 
  */
 public class BeamingSource extends LightSource {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "BeamingSource";
-    public static final String PROP_BEAMING_DIRECTION = LightingOntology.NAMESPACE
-	    + "beamingDirection";
-    public static final String PROP_TARGET_SURFACE = LightingOntology.NAMESPACE
-	    + "targetSurface";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "BeamingSource";
+	public static final String PROP_BEAMING_DIRECTION = LightingOntology.NAMESPACE + "beamingDirection";
+	public static final String PROP_TARGET_SURFACE = LightingOntology.NAMESPACE + "targetSurface";
 
-    public BeamingSource() {
-	super();
-    }
+	public BeamingSource() {
+		super();
+	}
 
-    public BeamingSource(String uri) {
-	super(uri);
-    }
+	public BeamingSource(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public BeamingSource(String uri, LightType type, Location loc,
-	    Location directedTo, Location targetSurface) {
-	super(uri, type, loc);
-	if (directedTo == null && targetSurface == null)
-	    throw new IllegalArgumentException();
-	if (directedTo != null)
-	    props.put(PROP_BEAMING_DIRECTION, directedTo);
-	if (targetSurface != null)
-	    props.put(PROP_TARGET_SURFACE, targetSurface);
-    }
+	public BeamingSource(String uri, LightType type, Location loc, Location directedTo, Location targetSurface) {
+		super(uri, type, loc);
+		if (directedTo == null && targetSurface == null)
+			throw new IllegalArgumentException();
+		if (directedTo != null)
+			props.put(PROP_BEAMING_DIRECTION, directedTo);
+		if (targetSurface != null)
+			props.put(PROP_TARGET_SURFACE, targetSurface);
+	}
 
-    public Location getBeamingDirection() {
-	return (Location) props.get(PROP_BEAMING_DIRECTION);
-    }
+	public Location getBeamingDirection() {
+		return (Location) props.get(PROP_BEAMING_DIRECTION);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return (PROP_BEAMING_DIRECTION.equals(propURI) || PROP_TARGET_SURFACE
-		.equals(propURI)) ? PROP_SERIALIZATION_REDUCED : super
-		.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		return (PROP_BEAMING_DIRECTION.equals(propURI) || PROP_TARGET_SURFACE.equals(propURI))
+				? PROP_SERIALIZATION_REDUCED : super.getPropSerializationType(propURI);
+	}
 
-    public Location getTargetSurface() {
-	return (Location) props.get(PROP_BEAMING_DIRECTION);
-    }
+	public Location getTargetSurface() {
+		return (Location) props.get(PROP_BEAMING_DIRECTION);
+	}
 
-    public boolean isWellFormed() {
-	return (props.containsKey(PROP_BEAMING_DIRECTION) || props
-		.containsKey(PROP_TARGET_SURFACE))
-		&& super.isWellFormed();
-    }
+	public boolean isWellFormed() {
+		return (props.containsKey(PROP_BEAMING_DIRECTION) || props.containsKey(PROP_TARGET_SURFACE))
+				&& super.isWellFormed();
+	}
 
-    public void setBeamingDirection(Location directedTo) {
-	if (directedTo != null)
-	    props.put(PROP_BEAMING_DIRECTION, directedTo);
-    }
+	public void setBeamingDirection(Location directedTo) {
+		if (directedTo != null)
+			props.put(PROP_BEAMING_DIRECTION, directedTo);
+	}
 
-    public void setTargetSurface(Location targetSurface) {
-	if (targetSurface != null)
-	    props.put(PROP_BEAMING_DIRECTION, targetSurface);
-    }
+	public void setTargetSurface(Location targetSurface) {
+		if (targetSurface != null)
+			props.put(PROP_BEAMING_DIRECTION, targetSurface);
+	}
 
 }

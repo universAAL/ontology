@@ -28,45 +28,41 @@ import org.universAAL.middleware.service.owl.Service;
  */
 public class QuestionnaireService extends Service {
 
-    // NAMESPACE & PROPERTIES
-    public static final String MY_URI = QuestionnaireOntology.NAMESPACE
-	    + "QuestionnaireService";
+	// NAMESPACE & PROPERTIES
+	public static final String MY_URI = QuestionnaireOntology.NAMESPACE + "QuestionnaireService";
 
-    public static final String PROP_PROPOSED_QUESTIONNAIRE = QuestionnaireOntology.NAMESPACE
-	    + "proposedQuestionnaire";
-    public static final String PROP_TARGET_USER = QuestionnaireOntology.NAMESPACE
-	    + "targetUser";
-    public static final String PROP_GENERATES_ANSWERED_QUESTIONNAIRE = QuestionnaireOntology.NAMESPACE
-	    + "generatesAnsweredQuestionnaire";
+	public static final String PROP_PROPOSED_QUESTIONNAIRE = QuestionnaireOntology.NAMESPACE + "proposedQuestionnaire";
+	public static final String PROP_TARGET_USER = QuestionnaireOntology.NAMESPACE + "targetUser";
+	public static final String PROP_GENERATES_ANSWERED_QUESTIONNAIRE = QuestionnaireOntology.NAMESPACE
+			+ "generatesAnsweredQuestionnaire";
 
-    // CONSTRUCTORS
-    public QuestionnaireService() {
-	super();
-    }
+	// CONSTRUCTORS
+	public QuestionnaireService() {
+		super();
+	}
 
-    public QuestionnaireService(String uri) {
-	super(uri);
-    }
+	public QuestionnaireService(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_TARGET_USER.equals(propURI)
-		|| PROP_GENERATES_ANSWERED_QUESTIONNAIRE.equals(propURI)
-		|| PROP_PROPOSED_QUESTIONNAIRE.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 * (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_TARGET_USER.equals(propURI) || PROP_GENERATES_ANSWERED_QUESTIONNAIRE.equals(propURI)
+				|| PROP_PROPOSED_QUESTIONNAIRE.equals(propURI) ? PROP_SERIALIZATION_FULL
+						: super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

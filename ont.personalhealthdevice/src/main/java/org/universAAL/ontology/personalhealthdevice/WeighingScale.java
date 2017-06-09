@@ -26,30 +26,29 @@ import org.universAAL.ontology.healthmeasurement.owl.HeartRate;
 import org.universAAL.ontology.healthmeasurement.owl.PersonWeight;
 
 public class WeighingScale extends Sensor {
-    public static final String MY_URI = PersonalHealthDeviceOntology.NAMESPACE
-	    + "WeighingScale";
+	public static final String MY_URI = PersonalHealthDeviceOntology.NAMESPACE + "WeighingScale";
 
-    public WeighingScale() {
-	super();
-    }
+	public WeighingScale() {
+		super();
+	}
 
-    public WeighingScale(String uri) {
-	super(uri);
-    }
+	public WeighingScale(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public void setValue(PersonWeight w) {
-	setProperty(PROP_HAS_VALUE, w);
-    }
+	public void setValue(PersonWeight w) {
+		setProperty(PROP_HAS_VALUE, w);
+	}
 
-    public HeartRate getValue() {
-	return (HeartRate) getProperty(PROP_HAS_VALUE);
-    }
+	public HeartRate getValue() {
+		return (HeartRate) getProperty(PROP_HAS_VALUE);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

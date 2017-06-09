@@ -36,16 +36,16 @@ import org.universAAL.ontology.vcard.VCardOntology;
  */
 public class ProfileActivator implements ModuleActivator {
 
-    private VCardOntology ontV = new VCardOntology();
-    private ProfileOntology ontP = new ProfileOntology();
+	private VCardOntology ontV = new VCardOntology();
+	private ProfileOntology ontP = new ProfileOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontV);
-	OntologyManagement.getInstance().register(mc, ontP);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontV);
+		OntologyManagement.getInstance().register(mc, ontP);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontP);
-	OntologyManagement.getInstance().unregister(mc, ontV);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontP);
+		OntologyManagement.getInstance().unregister(mc, ontV);
+	}
 }

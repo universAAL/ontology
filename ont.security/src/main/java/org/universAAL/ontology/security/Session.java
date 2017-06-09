@@ -23,25 +23,24 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Upper Session concept.
+ * 
  * @author amedrano
  *
  */
 public class Session extends ManagedIndividual {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "Session";
+	public static final String PROP_EXPIRATION = SecurityOntology.NAMESPACE + "validUntil";
+	public static final String PROP_BOUND_TO = SecurityOntology.NAMESPACE + "boundTo";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "Session";
-    public static final String PROP_EXPIRATION = SecurityOntology.NAMESPACE
-    	    + "validUntil";
-    public static final String PROP_BOUND_TO = SecurityOntology.NAMESPACE
-    	    + "boundTo";
-    
-    public static final String INSTANCE_INVALID_SESSION = SecurityOntology.NAMESPACE + "invalidSession";
-    public static ManagedIndividual invalid = new Session(INSTANCE_INVALID_SESSION);
+	public static final String INSTANCE_INVALID_SESSION = SecurityOntology.NAMESPACE + "invalidSession";
+	public static ManagedIndividual invalid = new Session(INSTANCE_INVALID_SESSION);
+
 	/**
 	 * Only for serializers.
 	 */
 	public Session() {
-	    super();
+		super();
 	}
 
 	/**
@@ -51,30 +50,29 @@ public class Session extends ManagedIndividual {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	}
 
-	public XMLGregorianCalendar getExpirationDate(){
-		return (XMLGregorianCalendar) getProperty(PROP_EXPIRATION); 
+	public XMLGregorianCalendar getExpirationDate() {
+		return (XMLGregorianCalendar) getProperty(PROP_EXPIRATION);
 	}
-	
-	public void setExpiration(XMLGregorianCalendar date){
+
+	public void setExpiration(XMLGregorianCalendar date) {
 		if (date != null) {
 			changeProperty(PROP_EXPIRATION, date);
 		}
 	}
-	
+
 }

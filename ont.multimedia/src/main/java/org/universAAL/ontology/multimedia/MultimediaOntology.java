@@ -37,54 +37,46 @@ import org.universAAL.ontology.phThing.PhThingOntology;
 
 public final class MultimediaOntology extends Ontology {
 
-    private static MultimediaFactory factory = new MultimediaFactory();
+	private static MultimediaFactory factory = new MultimediaFactory();
 
-    public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-	    + "Multimedia.owl#";
+	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Multimedia.owl#";
 
-    public MultimediaOntology() {
-	super(NAMESPACE);
-    }
+	public MultimediaOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r
-		.setResourceComment("Ontology for multimedia devices, displays and equipment.");
-	r.setResourceLabel("Multimedia");
-	addImport(DataRepOntology.NAMESPACE);
-	addImport(ServiceBusOntology.NAMESPACE);
-	addImport(PhThingOntology.NAMESPACE);
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("Ontology for multimedia devices, displays and equipment.");
+		r.setResourceLabel("Multimedia");
+		addImport(DataRepOntology.NAMESPACE);
+		addImport(ServiceBusOntology.NAMESPACE);
+		addImport(PhThingOntology.NAMESPACE);
 
-	OntClassInfoSetup oci;
+		OntClassInfoSetup oci;
 
-	// load TV
-	oci = createNewOntClassInfo(TV.MY_URI, factory, 0);
-	oci.setResourceComment("The class of all TVs.");
-	oci.setResourceLabel("TV");
-	oci.addSuperClass(Device.MY_URI);
-	oci.addDatatypeProperty(TV.PROP_IS_ON_PROG).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(TV.PROP_IS_ON_PROG,
-			TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
-	oci.addDatatypeProperty(TV.PROP_IS_ON_COMM).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(TV.PROP_IS_ON_COMM,
-			TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		// load TV
+		oci = createNewOntClassInfo(TV.MY_URI, factory, 0);
+		oci.setResourceComment("The class of all TVs.");
+		oci.setResourceLabel("TV");
+		oci.addSuperClass(Device.MY_URI);
+		oci.addDatatypeProperty(TV.PROP_IS_ON_PROG).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(TV.PROP_IS_ON_PROG,
+				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci.addDatatypeProperty(TV.PROP_IS_ON_COMM).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(TV.PROP_IS_ON_COMM,
+				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
 
-	// load Stereoset
-	oci = createNewOntClassInfo(Stereoset.MY_URI, factory, 1);
-	oci.setResourceComment("The class of all Stereosets.");
-	oci.setResourceLabel("Stereoset");
-	oci.addSuperClass(Device.MY_URI);
-	oci.addDatatypeProperty(Stereoset.PROP_IS_ON_PROG).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Stereoset.PROP_IS_ON_PROG, TypeMapper
-				.getDatatypeURI(Boolean.class), 1, 1));
-	oci.addDatatypeProperty(Stereoset.PROP_IS_ON_COMM).setFunctional();
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Stereoset.PROP_IS_ON_COMM, TypeMapper
-				.getDatatypeURI(Boolean.class), 1, 1));
-    }
+		// load Stereoset
+		oci = createNewOntClassInfo(Stereoset.MY_URI, factory, 1);
+		oci.setResourceComment("The class of all Stereosets.");
+		oci.setResourceLabel("Stereoset");
+		oci.addSuperClass(Device.MY_URI);
+		oci.addDatatypeProperty(Stereoset.PROP_IS_ON_PROG).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Stereoset.PROP_IS_ON_PROG,
+				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci.addDatatypeProperty(Stereoset.PROP_IS_ON_COMM).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Stereoset.PROP_IS_ON_COMM,
+				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+	}
 }

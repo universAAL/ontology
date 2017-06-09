@@ -35,28 +35,27 @@ package org.universAAL.ontology.profile;
 
 public class CaregiverProfile extends UserProfile {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "CaregiverProfile";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "CaregiverProfile";
 
-    protected CaregiverProfile() {
-	super();
-    }
+	protected CaregiverProfile() {
+		super();
+	}
 
-    public CaregiverProfile(String uri) {
-	super(uri);
-    }
+	public CaregiverProfile(String uri) {
+		super(uri);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
 }

@@ -32,119 +32,113 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  */
 public class PointingGestureInSpace extends GestureRecognition {
 
-    public static final String MY_URI = GESTURE_RECOGNITION_NAMESPACE + "PointingGestureInSpace";
-    public static final String PROP_ADDRESSED_THINGS = GESTURE_RECOGNITION_NAMESPACE
-    		+ "addressedThings";
-    public static final String PROP_TIMESTAMP = GESTURE_RECOGNITION_NAMESPACE + "timeStamp";
-    public static final String PROP_INTERACTING_ARM = GESTURE_RECOGNITION_NAMESPACE + "interactingArm";
+	public static final String MY_URI = GESTURE_RECOGNITION_NAMESPACE + "PointingGestureInSpace";
+	public static final String PROP_ADDRESSED_THINGS = GESTURE_RECOGNITION_NAMESPACE + "addressedThings";
+	public static final String PROP_TIMESTAMP = GESTURE_RECOGNITION_NAMESPACE + "timeStamp";
+	public static final String PROP_INTERACTING_ARM = GESTURE_RECOGNITION_NAMESPACE + "interactingArm";
 
-    public static final int INTERACTING_ARM_UNKNOWN = 0;
-    public static final int INTERACTING_ARM_LEFT = 1;
-    public static final int INTERACTING_ARM_RIGHT = 2;
+	public static final int INTERACTING_ARM_UNKNOWN = 0;
+	public static final int INTERACTING_ARM_LEFT = 1;
+	public static final int INTERACTING_ARM_RIGHT = 2;
 
-    public PointingGestureInSpace() {
-	super(GESTURE_TYPE_POINTING);
-    }
+	public PointingGestureInSpace() {
+		super(GESTURE_TYPE_POINTING);
+	}
 
-    public PointingGestureInSpace(PhysicalThing[] addressedThings) {
-	super(GESTURE_TYPE_POINTING);
-	if (!setAddressedThings(addressedThings))
-	    throw new IllegalArgumentException("No addressed things specified!");
-    }
+	public PointingGestureInSpace(PhysicalThing[] addressedThings) {
+		super(GESTURE_TYPE_POINTING);
+		if (!setAddressedThings(addressedThings))
+			throw new IllegalArgumentException("No addressed things specified!");
+	}
 
-    public PointingGestureInSpace(PhysicalThing[] addressedThings,
-	    long timestamp) {
-	super(GESTURE_TYPE_POINTING);
-	if (!setAddressedThings(addressedThings))
-	    throw new IllegalArgumentException("No addressed things specified!");
-	setTimeStamp(timestamp);
-    }
+	public PointingGestureInSpace(PhysicalThing[] addressedThings, long timestamp) {
+		super(GESTURE_TYPE_POINTING);
+		if (!setAddressedThings(addressedThings))
+			throw new IllegalArgumentException("No addressed things specified!");
+		setTimeStamp(timestamp);
+	}
 
-    public static MergedRestriction getClassRestrictionsOnProperty(
-	    String propURI) {
-	if (propURI == null)
-	    return null;
-	if (propURI.equals(PROP_ADDRESSED_THINGS))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
-		    propURI, PhysicalThing.MY_URI, 1, 0);
-	if (propURI.equals(PROP_TIMESTAMP))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
-		    propURI, TypeMapper.getDatatypeURI(Long.class), 1, 0);
+	public static MergedRestriction getClassRestrictionsOnProperty(String propURI) {
+		if (propURI == null)
+			return null;
+		if (propURI.equals(PROP_ADDRESSED_THINGS))
+			return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI, PhysicalThing.MY_URI, 1, 0);
+		if (propURI.equals(PROP_TIMESTAMP))
+			return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
+					TypeMapper.getDatatypeURI(Long.class), 1, 0);
 
-	return GestureRecognition.getClassRestrictionsOnProperty(propURI);
-    }
+		return GestureRecognition.getClassRestrictionsOnProperty(propURI);
+	}
 
-    public static String getRDFSComment() {
-	return "Assuming that pointing gesture in space is equivalent to addressing physical things in that space,"
-		+ "represents the result of interpreting such a gesture by providing a list of addressed things.";
-    }
+	public static String getRDFSComment() {
+		return "Assuming that pointing gesture in space is equivalent to addressing physical things in that space,"
+				+ "represents the result of interpreting such a gesture by providing a list of addressed things.";
+	}
 
-    public static String getRDFSLabel() {
-	return "Pointing Gesture";
-    }
+	public static String getRDFSLabel() {
+		return "Pointing Gesture";
+	}
 
-    public static String[] getStandardPropertyURIs() {
-	String[] inherited = GestureRecognition.getStandardPropertyURIs();
-	String[] toReturn = new String[inherited.length + 3];
-	for (int i = 0; i < inherited.length; i++)
-	    toReturn[i] = inherited[i];
-	toReturn[inherited.length] = PROP_ADDRESSED_THINGS;
-	toReturn[inherited.length + 1] = PROP_TIMESTAMP;
-	toReturn[inherited.length + 2] = PROP_INTERACTING_ARM;
-	return toReturn;
-    }
+	public static String[] getStandardPropertyURIs() {
+		String[] inherited = GestureRecognition.getStandardPropertyURIs();
+		String[] toReturn = new String[inherited.length + 3];
+		for (int i = 0; i < inherited.length; i++)
+			toReturn[i] = inherited[i];
+		toReturn[inherited.length] = PROP_ADDRESSED_THINGS;
+		toReturn[inherited.length + 1] = PROP_TIMESTAMP;
+		toReturn[inherited.length + 2] = PROP_INTERACTING_ARM;
+		return toReturn;
+	}
 
-    public boolean setAddressedThings(PhysicalThing[] addressedThings) {
-	if (addressedThings == null || addressedThings.length == 0
-		|| props.containsKey(PROP_ADDRESSED_THINGS))
-	    return false;
-	ArrayList al = new ArrayList(addressedThings.length);
-	for (int i = 0; i < addressedThings.length; i++)
-	    if (addressedThings[i] != null && !al.contains(addressedThings[i]))
-		al.add(addressedThings[i]);
-	if (al.isEmpty())
-	    return false;
-	props.put(PROP_ADDRESSED_THINGS, al);
-	return true;
-    }
+	public boolean setAddressedThings(PhysicalThing[] addressedThings) {
+		if (addressedThings == null || addressedThings.length == 0 || props.containsKey(PROP_ADDRESSED_THINGS))
+			return false;
+		ArrayList al = new ArrayList(addressedThings.length);
+		for (int i = 0; i < addressedThings.length; i++)
+			if (addressedThings[i] != null && !al.contains(addressedThings[i]))
+				al.add(addressedThings[i]);
+		if (al.isEmpty())
+			return false;
+		props.put(PROP_ADDRESSED_THINGS, al);
+		return true;
+	}
 
-    public PhysicalThing[] getAddressedThings() {
-	Object o = props.get(PROP_ADDRESSED_THINGS);
-	if (o instanceof PhysicalThing)
-	    return new PhysicalThing[] { (PhysicalThing) o };
-	if (o instanceof List)
-	    return (PhysicalThing[]) ((List) o)
-		    .toArray(new PhysicalThing[((List) o).size()]);
-	return null;
-    }
+	public PhysicalThing[] getAddressedThings() {
+		Object o = props.get(PROP_ADDRESSED_THINGS);
+		if (o instanceof PhysicalThing)
+			return new PhysicalThing[] { (PhysicalThing) o };
+		if (o instanceof List)
+			return (PhysicalThing[]) ((List) o).toArray(new PhysicalThing[((List) o).size()]);
+		return null;
+	}
 
-    /**
-     * @see org.persona.ontology.GestureRecognition#getPropSerializationType(java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_ADDRESSED_THINGS.equals(propURI) ? PROP_SERIALIZATION_REDUCED
-		: super.getPropSerializationType(propURI);
-    }
+	/**
+	 * @see org.persona.ontology.GestureRecognition#getPropSerializationType(java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_ADDRESSED_THINGS.equals(propURI) ? PROP_SERIALIZATION_REDUCED
+				: super.getPropSerializationType(propURI);
+	}
 
-    private void setTimeStamp(long timestamp) {
-	setProperty(PROP_TIMESTAMP, new Long(timestamp));
-    }
+	private void setTimeStamp(long timestamp) {
+		setProperty(PROP_TIMESTAMP, new Long(timestamp));
+	}
 
-    public long getTimeStamp() {
-	Long timestamp = (Long) getProperty(PROP_TIMESTAMP);
-	if (timestamp == null)
-	    return 0;
-	return timestamp.longValue();
-    }
+	public long getTimeStamp() {
+		Long timestamp = (Long) getProperty(PROP_TIMESTAMP);
+		if (timestamp == null)
+			return 0;
+		return timestamp.longValue();
+	}
 
-    public void setInteractingArm(int interactingArm) {
-	setProperty(PROP_INTERACTING_ARM, new Integer(interactingArm));
-    }
+	public void setInteractingArm(int interactingArm) {
+		setProperty(PROP_INTERACTING_ARM, new Integer(interactingArm));
+	}
 
-    public int getInteractingArm() {
-	Integer interactingArm = (Integer) getProperty(PROP_INTERACTING_ARM);
-	if (interactingArm == null)
-	    return INTERACTING_ARM_UNKNOWN;
-	return interactingArm.intValue();
-    }
+	public int getInteractingArm() {
+		Integer interactingArm = (Integer) getProperty(PROP_INTERACTING_ARM);
+		if (interactingArm == null)
+			return INTERACTING_ARM_UNKNOWN;
+		return interactingArm.intValue();
+	}
 }

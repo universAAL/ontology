@@ -24,95 +24,87 @@ import org.universAAL.middleware.ui.owl.Preference;
 import org.universAAL.ontology.language.Language;
 
 public class GeneralInteractionPreferences extends Preference {
-    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-	    + "GeneralInteractionPreferences";
-    public static final String PROP_SECONDARY_LANGUAGE = UIPreferencesProfileOntology.NAMESPACE
-	    + "secondaryLanguage";
-    public static final String PROP_PREFERRED_MODALITY = UIPreferencesProfileOntology.NAMESPACE
-	    + "preferredModality";
-    public static final String PROP_CONTENT_DENSITY = UIPreferencesProfileOntology.NAMESPACE
-	    + "contentDensity";
-    public static final String PROP_SECONDARY_MODALITY = UIPreferencesProfileOntology.NAMESPACE
-	    + "secondaryModality";
-    public static final String PROP_PREFERRED_LANGUAGE = UIPreferencesProfileOntology.NAMESPACE
-	    + "preferredLanguage";
+	public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE + "GeneralInteractionPreferences";
+	public static final String PROP_SECONDARY_LANGUAGE = UIPreferencesProfileOntology.NAMESPACE + "secondaryLanguage";
+	public static final String PROP_PREFERRED_MODALITY = UIPreferencesProfileOntology.NAMESPACE + "preferredModality";
+	public static final String PROP_CONTENT_DENSITY = UIPreferencesProfileOntology.NAMESPACE + "contentDensity";
+	public static final String PROP_SECONDARY_MODALITY = UIPreferencesProfileOntology.NAMESPACE + "secondaryModality";
+	public static final String PROP_PREFERRED_LANGUAGE = UIPreferencesProfileOntology.NAMESPACE + "preferredLanguage";
 
-    public GeneralInteractionPreferences() {
-	super();
-    }
+	public GeneralInteractionPreferences() {
+		super();
+	}
 
-    public GeneralInteractionPreferences(String uri) {
-	super(uri);
-    }
+	public GeneralInteractionPreferences(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     *      (java.lang.String)
-     */
-    public int getPropSerializationType(String arg0) {
-	return Resource.PROP_SERIALIZATION_FULL;
-    }
+	/**
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 *      (java.lang.String)
+	 */
+	public int getPropSerializationType(String arg0) {
+		return Resource.PROP_SERIALIZATION_FULL;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_SECONDARY_LANGUAGE)
-		&& hasProperty(PROP_PREFERRED_MODALITY)
-		&& hasProperty(PROP_CONTENT_DENSITY)
-		&& hasProperty(PROP_SECONDARY_MODALITY)
-		&& hasProperty(PROP_PREFERRED_LANGUAGE);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+	 */
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_SECONDARY_LANGUAGE) && hasProperty(PROP_PREFERRED_MODALITY)
+				&& hasProperty(PROP_CONTENT_DENSITY) && hasProperty(PROP_SECONDARY_MODALITY)
+				&& hasProperty(PROP_PREFERRED_LANGUAGE);
+	}
 
-    public Modality getPreferredModality() {
-	return (Modality) getProperty(PROP_PREFERRED_MODALITY);
-    }
+	public Modality getPreferredModality() {
+		return (Modality) getProperty(PROP_PREFERRED_MODALITY);
+	}
 
-    public void setPreferredModality(Modality newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_PREFERRED_MODALITY, newPropValue);
-    }
+	public void setPreferredModality(Modality newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_PREFERRED_MODALITY, newPropValue);
+	}
 
-    public Modality getSecondaryModality() {
-	return (Modality) getProperty(PROP_SECONDARY_MODALITY);
-    }
+	public Modality getSecondaryModality() {
+		return (Modality) getProperty(PROP_SECONDARY_MODALITY);
+	}
 
-    public void setSecondaryModality(Modality newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_SECONDARY_MODALITY, newPropValue);
-    }
+	public void setSecondaryModality(Modality newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_SECONDARY_MODALITY, newPropValue);
+	}
 
-    public Language getPreferredLanguage() {
-	return (Language) getProperty(PROP_PREFERRED_LANGUAGE);
-    }
+	public Language getPreferredLanguage() {
+		return (Language) getProperty(PROP_PREFERRED_LANGUAGE);
+	}
 
-    public void setPreferredLanguage(Language newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_PREFERRED_LANGUAGE, newPropValue);
-    }
+	public void setPreferredLanguage(Language newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_PREFERRED_LANGUAGE, newPropValue);
+	}
 
-    public Language getSecondaryLanguage() {
-	return (Language) getProperty(PROP_SECONDARY_LANGUAGE);
-    }
+	public Language getSecondaryLanguage() {
+		return (Language) getProperty(PROP_SECONDARY_LANGUAGE);
+	}
 
-    public void setSecondaryLanguage(Language newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_SECONDARY_LANGUAGE, newPropValue);
-    }
+	public void setSecondaryLanguage(Language newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_SECONDARY_LANGUAGE, newPropValue);
+	}
 
-    public ContentDensityType getContentDensity() {
-	return (ContentDensityType) getProperty(PROP_CONTENT_DENSITY);
-    }
+	public ContentDensityType getContentDensity() {
+		return (ContentDensityType) getProperty(PROP_CONTENT_DENSITY);
+	}
 
-    public void setContentDensity(ContentDensityType newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_CONTENT_DENSITY, newPropValue);
-    }
+	public void setContentDensity(ContentDensityType newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_CONTENT_DENSITY, newPropValue);
+	}
 }

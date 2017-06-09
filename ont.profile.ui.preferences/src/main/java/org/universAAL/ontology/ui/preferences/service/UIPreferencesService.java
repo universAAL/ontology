@@ -30,41 +30,39 @@ import org.universAAL.ontology.ui.preferences.UIPreferencesProfileOntology;
  */
 public class UIPreferencesService extends Service {
 
-    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-	    + "UIPreferencesService";
+	public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE + "UIPreferencesService";
 
-    public static final String PROP_CONTROLS = UIPreferencesProfileOntology.NAMESPACE
-	    + "controls";
+	public static final String PROP_CONTROLS = UIPreferencesProfileOntology.NAMESPACE + "controls";
 
-    public UIPreferencesService(String uri) {
-	super(uri);
-    }
+	public UIPreferencesService(String uri) {
+		super(uri);
+	}
 
-    public UIPreferencesService() {
-	super();
-    }
+	public UIPreferencesService() {
+		super();
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI()
-     */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI()
+	 */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * @see org.universAAL.middleware.service.owl.Service#getPropSerializationType
-     *      (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	/**
+	 * @see org.universAAL.middleware.service.owl.Service#getPropSerializationType
+	 *      (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    /**
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
-    public boolean isWellFormed() {
-	return true;
-    }
+	/**
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+	 */
+	public boolean isWellFormed() {
+		return true;
+	}
 }

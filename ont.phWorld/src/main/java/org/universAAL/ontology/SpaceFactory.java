@@ -25,14 +25,13 @@ import org.universAAL.ontology.space.SpaceConfigurationService;
 
 public class SpaceFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new SpaceConfigurationService(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new SpaceConfigurationService(instanceURI);
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

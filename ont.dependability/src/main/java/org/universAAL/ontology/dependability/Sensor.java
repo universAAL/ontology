@@ -21,39 +21,37 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.ontology.phThing.Device;
 
 public class Sensor extends Device {
-    public static final String MY_URI = DependabilityOntology.NAMESPACE
-	    + "Sensor";
-    public static final String PROP_SYMPTOM = DependabilityOntology.NAMESPACE
-	    + "symptom";
+	public static final String MY_URI = DependabilityOntology.NAMESPACE + "Sensor";
+	public static final String PROP_SYMPTOM = DependabilityOntology.NAMESPACE + "symptom";
 
-    public Sensor() {
-	super();
-    }
+	public Sensor() {
+		super();
+	}
 
-    public Sensor(String uri) {
-	super(uri);
-    }
+	public Sensor(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_SYMPTOM.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_SYMPTOM.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_SYMPTOM);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_SYMPTOM);
+	}
 
-    public Symptom getSymptom() {
-	return (Symptom) getProperty(PROP_SYMPTOM);
-    }
+	public Symptom getSymptom() {
+		return (Symptom) getProperty(PROP_SYMPTOM);
+	}
 
-    public void setSymptom(Symptom newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_SYMPTOM, newPropValue);
-    }
+	public void setSymptom(Symptom newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_SYMPTOM, newPropValue);
+	}
 }

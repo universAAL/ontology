@@ -34,35 +34,33 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  */
 public class Profilable extends ManagedIndividual {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "Profilable";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "Profilable";
 
-    public static final String PROP_HAS_PROFILE = ProfileOntology.NAMESPACE
-	    + "hasProfile";
+	public static final String PROP_HAS_PROFILE = ProfileOntology.NAMESPACE + "hasProfile";
 
-    protected Profilable() {
-	super();
-    }
+	protected Profilable() {
+		super();
+	}
 
-    public Profilable(String uri) {
-	super(uri);
-    }
+	public Profilable(String uri) {
+		super(uri);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isClosedCollection(String propURI) {
-	return false;
-    }
+	public boolean isClosedCollection(String propURI) {
+		return false;
+	}
 
 }

@@ -26,13 +26,13 @@ import org.universAAL.ontology.furniture.FurnitureOntology;
 
 public class FurnitureActivator implements ModuleActivator {
 
-    private FurnitureOntology furnitureOntology = new FurnitureOntology();
+	private FurnitureOntology furnitureOntology = new FurnitureOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, furnitureOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, furnitureOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, furnitureOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, furnitureOntology);
+	}
 }

@@ -21,60 +21,55 @@ package org.universAAL.ontology.handgestures;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class HandGestures extends ManagedIndividual {
-    public static final String MY_URI = HandgesturesOntology.NAMESPACE
-	    + "HandGestures";
-    public static final String PROP_USER = HandgesturesOntology.NAMESPACE
-	    + "user";
-    public static final String PROP_TIMESTAMP = HandgesturesOntology.NAMESPACE
-	    + "timestamp";
-    public static final String PROP_GESTURE_TYPE = HandgesturesOntology.NAMESPACE
-	    + "gestureType";
+	public static final String MY_URI = HandgesturesOntology.NAMESPACE + "HandGestures";
+	public static final String PROP_USER = HandgesturesOntology.NAMESPACE + "user";
+	public static final String PROP_TIMESTAMP = HandgesturesOntology.NAMESPACE + "timestamp";
+	public static final String PROP_GESTURE_TYPE = HandgesturesOntology.NAMESPACE + "gestureType";
 
-    public HandGestures() {
-	super();
-    }
+	public HandGestures() {
+		super();
+	}
 
-    public HandGestures(String uri) {
-	super(uri);
-    }
+	public HandGestures(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_USER) && hasProperty(PROP_TIMESTAMP)
-		&& hasProperty(PROP_GESTURE_TYPE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_USER) && hasProperty(PROP_TIMESTAMP) && hasProperty(PROP_GESTURE_TYPE);
+	}
 
-    public HandGestureType getGestureType() {
-	return (HandGestureType) getProperty(PROP_GESTURE_TYPE);
-    }
+	public HandGestureType getGestureType() {
+		return (HandGestureType) getProperty(PROP_GESTURE_TYPE);
+	}
 
-    public void setGestureType(HandGestureType newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_GESTURE_TYPE, newPropValue);
-    }
+	public void setGestureType(HandGestureType newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_GESTURE_TYPE, newPropValue);
+	}
 
-    public String getUser() {
-	return (String) getProperty(PROP_USER);
-    }
+	public String getUser() {
+		return (String) getProperty(PROP_USER);
+	}
 
-    public void setUser(String newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_USER, newPropValue);
-    }
+	public void setUser(String newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_USER, newPropValue);
+	}
 
-    public String getTimestamp() {
-	return (String) getProperty(PROP_TIMESTAMP);
-    }
+	public String getTimestamp() {
+		return (String) getProperty(PROP_TIMESTAMP);
+	}
 
-    public void setTimestamp(String newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_TIMESTAMP, newPropValue);
-    }
+	public void setTimestamp(String newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_TIMESTAMP, newPropValue);
+	}
 }

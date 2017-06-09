@@ -20,23 +20,23 @@ package org.universAAL.ontology.security;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
- * Service Description for Authentication.
- * Authenticator mechanisms should provide profiles for this service
+ * Service Description for Authentication. Authenticator mechanisms should
+ * provide profiles for this service
+ * 
  * @author amedrano
  *
  */
 public class AuthenticationService extends Service {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "AuthenticationService";
+	public static final String PROP_GIVEN_CREDENTIALS = SecurityOntology.NAMESPACE + "givenCredentials";
+	public static final String PROP_AUTHENTICATED_USER = SecurityOntology.NAMESPACE + "authenticatedUser";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "AuthenticationService";
-    public static final String PROP_GIVEN_CREDENTIALS = SecurityOntology.NAMESPACE + "givenCredentials";
-    public static final String PROP_AUTHENTICATED_USER = SecurityOntology.NAMESPACE + "authenticatedUser";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public AuthenticationService() {
-	    super();
+		super();
 	}
 
 	/**
@@ -46,20 +46,19 @@ public class AuthenticationService extends Service {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_AUTHENTICATED_USER)|| propURI.equals(PROP_GIVEN_CREDENTIALS)){
+		if (propURI.equals(PROP_AUTHENTICATED_USER) || propURI.equals(PROP_GIVEN_CREDENTIALS)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);

@@ -26,9 +26,10 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  *
  */
 public class Role extends ManagedIndividual {
-	 public static final String MY_URI = SecurityOntology.NAMESPACE + "Role";
-	 public static final String PROP_SUB_ROLES = SecurityOntology.NAMESPACE + "includesRoles";
-	 public static final String PROP_HAS_ACCESS_RIGHTS = SecurityOntology.NAMESPACE + "hasAccessRights";
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "Role";
+	public static final String PROP_SUB_ROLES = SecurityOntology.NAMESPACE + "includesRoles";
+	public static final String PROP_HAS_ACCESS_RIGHTS = SecurityOntology.NAMESPACE + "hasAccessRights";
+
 	/**
 	 * 
 	 */
@@ -50,39 +51,39 @@ public class Role extends ManagedIndividual {
 		super(uriPrefix, numProps);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	}
-	
-	public List getAllAccessRights(){
+
+	public List getAllAccessRights() {
 		return getAllAccessRights(new ArrayList());
 	}
 
-	private List getAllAccessRights(List visited){
+	private List getAllAccessRights(List visited) {
 		visited.add(this);
 		ArrayList result = new ArrayList();
-		
+
 		Object directAR = getProperty(PROP_HAS_ACCESS_RIGHTS);
-		if (directAR instanceof AccessRight){
+		if (directAR instanceof AccessRight) {
 			result.add(directAR);
 		}
-		if (directAR instanceof List){
+		if (directAR instanceof List) {
 			for (Iterator i = ((List) directAR).iterator(); i.hasNext();) {
 				Object ar = (Object) i.next();
 				result.add(ar);
 			}
 		}
 		Object subRole = getProperty(PROP_SUB_ROLES);
-		if (subRole instanceof Role && !visited.contains(subRole)){
-			result.addAll(((Role)subRole).getAllAccessRights(visited));
+		if (subRole instanceof Role && !visited.contains(subRole)) {
+			result.addAll(((Role) subRole).getAllAccessRights(visited));
 		}
-		if (subRole instanceof List){
+		if (subRole instanceof List) {
 			for (Iterator i = ((List) subRole).iterator(); i.hasNext();) {
 				Object sr = (Object) i.next();
 				if (!visited.contains(sr)) {
@@ -90,68 +91,60 @@ public class Role extends ManagedIndividual {
 				}
 			}
 		}
-		
+
 		return result;
 	}
-	
-	public void addAccessRight(AccessRight ar){
+
+	public void addAccessRight(AccessRight ar) {
 		Object current = getProperty(PROP_HAS_ACCESS_RIGHTS);
-		if (current == null){
+		if (current == null) {
 			setProperty(PROP_HAS_ACCESS_RIGHTS, ar);
-		}
-		else if (current instanceof AccessRight){
+		} else if (current instanceof AccessRight) {
 			ArrayList nar = new ArrayList();
 			nar.add(current);
 			nar.add(ar);
 			changeProperty(PROP_HAS_ACCESS_RIGHTS, nar);
-		}
-		else if (current instanceof List){
+		} else if (current instanceof List) {
 			((List) current).add(ar);
 			changeProperty(PROP_HAS_ACCESS_RIGHTS, current);
 		}
 	}
-	
+
 	public void removeAccessRight(AccessRight ar) {
 		Object current = getProperty(PROP_HAS_ACCESS_RIGHTS);
-		if (current==null){
+		if (current == null) {
 			return;
-		}
-		else if (current instanceof Role && current.equals(ar)){
+		} else if (current instanceof Role && current.equals(ar)) {
 			changeProperty(PROP_HAS_ACCESS_RIGHTS, null);
-		}
-		else if (current instanceof List){
+		} else if (current instanceof List) {
 			((List) current).remove(ar);
 			changeProperty(PROP_HAS_ACCESS_RIGHTS, current);
 		}
 	}
 
-	public void addSubRole(Role subrole){
+	public void addSubRole(Role subrole) {
 		Object current = getProperty(PROP_SUB_ROLES);
-		if (current==null){
+		if (current == null) {
 			setProperty(PROP_SUB_ROLES, subrole);
-		}
-		else if (current instanceof Role){
+		} else if (current instanceof Role) {
 			ArrayList nsr = new ArrayList();
 			nsr.add(current);
 			nsr.add(subrole);
 			changeProperty(PROP_SUB_ROLES, nsr);
-		}
-		else if (current instanceof List){
+		} else if (current instanceof List) {
 			((List) current).add(subrole);
 			changeProperty(PROP_SUB_ROLES, current);
 		}
-		
+
 	}
-	
-	public void removeSubRole(Role subrole){
+
+	public void removeSubRole(Role subrole) {
 		Object current = getProperty(PROP_SUB_ROLES);
-		if (current==null){
+		if (current == null) {
 			return;
-		}
-		else if (current instanceof Role && current.equals(subrole)){
+		} else if (current instanceof Role && current.equals(subrole)) {
 			changeProperty(PROP_SUB_ROLES, null);
-		}
-		else if (current instanceof List){
+		} else if (current instanceof List) {
 			((List) current).remove(subrole);
 			changeProperty(PROP_SUB_ROLES, current);
 		}

@@ -27,8 +27,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 public class Mode extends ManagedIndividual {
 	public static final String MY_URI = HvacOntology.NAMESPACE + "Mode";
 
-	protected static final String[] tipo = { "Air_Conditioning_Mode",
-			"Heating_Mode", "Ventilation_Mode" };
+	protected static final String[] tipo = { "Air_Conditioning_Mode", "Heating_Mode", "Ventilation_Mode" };
 
 	public Mode() {
 		super();

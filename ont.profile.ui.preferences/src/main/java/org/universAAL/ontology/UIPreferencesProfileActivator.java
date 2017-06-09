@@ -29,20 +29,20 @@ import org.universAAL.ontology.ui.preferences.UIPreferencesProfileOntology;
  */
 public class UIPreferencesProfileActivator implements ModuleActivator {
 
-    public static ModuleContext context;
+	public static ModuleContext context;
 
-    UIPreferencesProfileOntology uipreferencesontology = new UIPreferencesProfileOntology();
+	UIPreferencesProfileOntology uipreferencesontology = new UIPreferencesProfileOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	UIPreferencesProfileActivator.context = mc;
-	OntologyManagement.getInstance().register(mc, uipreferencesontology);
+	public void start(ModuleContext mc) throws Exception {
+		UIPreferencesProfileActivator.context = mc;
+		OntologyManagement.getInstance().register(mc, uipreferencesontology);
 
-    }
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
+	public void stop(ModuleContext mc) throws Exception {
 
-	OntologyManagement.getInstance().unregister(mc, uipreferencesontology);
+		OntologyManagement.getInstance().unregister(mc, uipreferencesontology);
 
-    }
+	}
 
 }

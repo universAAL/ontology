@@ -26,13 +26,13 @@ import org.universAAL.ontology.av.AVOntology;
 
 public class AVActivator implements ModuleActivator {
 
-    private AVOntology ont = new AVOntology();
+	private AVOntology ont = new AVOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ont);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ont);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ont);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ont);
+	}
 }

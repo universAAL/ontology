@@ -33,46 +33,46 @@ import org.universAAL.ontology.shape.Shape;
 
 public class Way extends Place {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "Way";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "Way";
 
-    /**
-     * Creates a Way object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Way(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a Way object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Way(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a Way object
-     */
-    public Way() {
-	super();
-    }
+	/**
+	 * Creates a Way object
+	 */
+	public Way() {
+		super();
+	}
 
-    /**
-     * Creates a Way object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The way name. A null object is not allowed
-     */
-    public Way(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a Way object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The way name. A null object is not allowed
+	 */
+	public Way(String uri, String name) {
+		super(uri, name);
+	}
 
-    public Way(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public Way(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public Way(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public Way(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

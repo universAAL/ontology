@@ -38,30 +38,29 @@ import org.universAAL.ontology.impairment.SpeakingImpairment;
 
 public class ImpairmentFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new SightImpairment();
-	case 1:
-	    return new FarSightedness();
-	case 2:
-	    return new SpeakingImpairment();
-	case 3:
-	    return new HearingImpairment();
-	case 4:
-	    return new ColorBlindness();
-	case 5:
-	    return new NearSightedness();
-	case 6:
-	    return new Astigmatism();
-	case 7:
-	    return new PhysicalImpairment();
-	case 8:
-	    return new LightSensitivity();
+		switch (factoryIndex) {
+		case 0:
+			return new SightImpairment();
+		case 1:
+			return new FarSightedness();
+		case 2:
+			return new SpeakingImpairment();
+		case 3:
+			return new HearingImpairment();
+		case 4:
+			return new ColorBlindness();
+		case 5:
+			return new NearSightedness();
+		case 6:
+			return new Astigmatism();
+		case 7:
+			return new PhysicalImpairment();
+		case 8:
+			return new LightSensitivity();
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

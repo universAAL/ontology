@@ -31,36 +31,34 @@ import org.universAAL.middleware.service.owl.Service;
  * 
  */
 public class Lighting extends Service {
-    public static final String MY_URI = LightingOntology.NAMESPACE + "Lighting";
-    public static final String PROP_CONTROLS = LightingOntology.NAMESPACE
-	    + "controls";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "Lighting";
+	public static final String PROP_CONTROLS = LightingOntology.NAMESPACE + "controls";
 
-    public Lighting() {
-	super();
-    }
+	public Lighting() {
+		super();
+	}
 
-    public Lighting(String uri) {
-	super(uri);
-    }
+	public Lighting(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL : super
-		.getPropSerializationType(propURI);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 * (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

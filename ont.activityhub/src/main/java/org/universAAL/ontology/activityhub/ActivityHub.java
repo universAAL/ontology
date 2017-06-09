@@ -34,37 +34,34 @@ import org.universAAL.ontology.ActivityHubOntology;
  */
 public class ActivityHub extends Service {
 
-    public static final String MY_URI = ActivityHubOntology.NAMESPACE
-	    + "ActivityHub";
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "ActivityHub";
 
-    public static final String PROP_CONTROLS = ActivityHubOntology.NAMESPACE
-	    + "controls";
+	public static final String PROP_CONTROLS = ActivityHubOntology.NAMESPACE + "controls";
 
-    public ActivityHub() {
-	super();
-    }
+	public ActivityHub() {
+		super();
+	}
 
-    public ActivityHub(String uri) {
-	super(uri);
-    }
+	public ActivityHub(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL : super
-		.getPropSerializationType(propURI);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 * (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

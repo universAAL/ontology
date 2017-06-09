@@ -30,13 +30,13 @@ import org.universAAL.ontology.handgestures.HandgesturesOntology;
  */
 public class HandGesturesActivator implements ModuleActivator {
 
-    HandgesturesOntology _handgesturesontology = new HandgesturesOntology();
+	HandgesturesOntology _handgesturesontology = new HandgesturesOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, _handgesturesontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, _handgesturesontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, _handgesturesontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, _handgesturesontology);
+	}
 }

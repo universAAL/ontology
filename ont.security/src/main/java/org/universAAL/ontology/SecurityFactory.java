@@ -43,47 +43,46 @@ import org.universAAL.ontology.security.UserPasswordCredentials;
  */
 public class SecurityFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new UserPasswordCredentials(instanceURI);
-	case 1:
-	    return new DeviceBoundSession(instanceURI);
-	case 2:
-	    return new LocationBoundSession(instanceURI);
-	case 3:
-	    return new SessionManagementService(instanceURI);
-	case 4: 
-	    return new AuthenticationService(instanceURI);
-	case 5:
-	    return new SecuritySubprofile(instanceURI);
-	case 6:
-		return new MultifactorCredentials(instanceURI);
-	case 7:
-		return new Password(instanceURI);
-	case 8:
-		return new OneTimePassword(instanceURI);
-	case 9:
-		return new Role(instanceURI);
-	case 10:
-		return new AccessRight(instanceURI);
-	case 11:
-		return new AuthorizationService(instanceURI);
-	case 12:
-		return new DelegationForm(instanceURI);
-	case 13:
-		return new RoleManagementService(instanceURI);
-	case 14:
-		return new AnonymizationService(instanceURI);
-	case 15:
-		return new Anonymizable(instanceURI);
-	case 16:
-		return new Credentials(instanceURI);
-	case 17:
-		return new Session(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new UserPasswordCredentials(instanceURI);
+		case 1:
+			return new DeviceBoundSession(instanceURI);
+		case 2:
+			return new LocationBoundSession(instanceURI);
+		case 3:
+			return new SessionManagementService(instanceURI);
+		case 4:
+			return new AuthenticationService(instanceURI);
+		case 5:
+			return new SecuritySubprofile(instanceURI);
+		case 6:
+			return new MultifactorCredentials(instanceURI);
+		case 7:
+			return new Password(instanceURI);
+		case 8:
+			return new OneTimePassword(instanceURI);
+		case 9:
+			return new Role(instanceURI);
+		case 10:
+			return new AccessRight(instanceURI);
+		case 11:
+			return new AuthorizationService(instanceURI);
+		case 12:
+			return new DelegationForm(instanceURI);
+		case 13:
+			return new RoleManagementService(instanceURI);
+		case 14:
+			return new AnonymizationService(instanceURI);
+		case 15:
+			return new Anonymizable(instanceURI);
+		case 16:
+			return new Credentials(instanceURI);
+		case 17:
+			return new Session(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 }

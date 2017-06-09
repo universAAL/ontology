@@ -27,13 +27,13 @@ import org.universAAL.ontology.security.SecurityOntology;
  */
 public class SecurityActivator implements ModuleActivator {
 
-    private SecurityOntology ontology = new SecurityOntology();
+	private SecurityOntology ontology = new SecurityOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 }

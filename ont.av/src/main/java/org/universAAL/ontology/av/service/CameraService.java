@@ -33,25 +33,25 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class CameraService extends Service {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "CameraService";
-    public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
-    public static final String PROP_DELIVERS = AVOntology.NAMESPACE + "delivers";
+	public static final String MY_URI = AVOntology.NAMESPACE + "CameraService";
+	public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
+	public static final String PROP_DELIVERS = AVOntology.NAMESPACE + "delivers";
 
-    /** default constructor */
-    public CameraService() {
-	super();
-    }
+	/** default constructor */
+	public CameraService() {
+		super();
+	}
 
-    public CameraService(String uri) {
-	super(uri);
-    }
+	public CameraService(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    // perhaps other settings
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	// perhaps other settings
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

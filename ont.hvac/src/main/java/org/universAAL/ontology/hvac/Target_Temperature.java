@@ -18,23 +18,21 @@ package org.universAAL.ontology.hvac;
 import org.universAAL.middleware.owl.supply.LevelRating;
 
 /**
- * A type of HVAC device that is capable of reading the temperature and react according to a target temperature.
- * @author Ricardo 
+ * A type of HVAC device that is capable of reading the temperature and react
+ * according to a target temperature.
+ * 
+ * @author Ricardo
  */
 
 public abstract class Target_Temperature extends Hvac {
 
-	public static final String MY_URI = HvacOntology.NAMESPACE
-			+ "Target_Temperature";
+	public static final String MY_URI = HvacOntology.NAMESPACE + "Target_Temperature";
 
-	public static final String PROP_TEMPERATURE_UNIT = HvacOntology.NAMESPACE
-			+ "temperatureUnit";
+	public static final String PROP_TEMPERATURE_UNIT = HvacOntology.NAMESPACE + "temperatureUnit";
 
-	public static final String PROP_TARGET_TEMPERATURE_VALUE = HvacOntology.NAMESPACE
-			+ "targetTemperatureValue";
+	public static final String PROP_TARGET_TEMPERATURE_VALUE = HvacOntology.NAMESPACE + "targetTemperatureValue";
 
-	public static final String PROP_CURRENT_TEMPERATURE_VALUE = HvacOntology.NAMESPACE
-			+ "currentTemperatureValue";
+	public static final String PROP_CURRENT_TEMPERATURE_VALUE = HvacOntology.NAMESPACE + "currentTemperatureValue";
 
 	public Target_Temperature() {
 

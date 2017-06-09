@@ -26,15 +26,14 @@ import org.universAAL.ontology.profile.ui.mainmenu.MenuProfile;
 
 public class UIMainMenuProfileFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new MenuProfile(instanceURI);
-	case 1:
-	    return new MenuEntry(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new MenuProfile(instanceURI);
+		case 1:
+			return new MenuEntry(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 }

@@ -15,20 +15,18 @@
  ******************************************************************************/
 package org.universAAL.ontology.security;
 
-
 /**
  * @author amedrano
  *
  */
 public abstract class PossessionFactor extends Factor {
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "PossessionFactor";
-        
-	
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "PossessionFactor";
+
 	/**
 	 * Only for serializers.
 	 */
 	public PossessionFactor() {
-	    super();
+		super();
 	}
 
 	/**
@@ -38,17 +36,17 @@ public abstract class PossessionFactor extends Factor {
 		super(uri);
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_UNDEFINED;
 	}

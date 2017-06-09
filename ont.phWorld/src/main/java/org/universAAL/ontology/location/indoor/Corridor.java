@@ -31,47 +31,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Corridor extends HomeArea {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "Corridor";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "Corridor";
 
+	/**
+	 * Creates a Corridor object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Corridor(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a Corridor object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Corridor(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a Corridor object
+	 */
+	public Corridor() {
+		super();
+	}
 
-    /**
-     * Creates a Corridor object
-     */
-    public Corridor() {
-	super();
-    }
+	/**
+	 * Creates a Corridor object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public Corridor(String uri, String name) {
+		super(uri, name);
+	}
 
-    /**
-     * Creates a Corridor object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public Corridor(String uri, String name) {
-	super(uri, name);
-    }
+	public Corridor(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public Corridor(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public Corridor(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public Corridor(String uri, Shape shape) {
-	super(uri, shape);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

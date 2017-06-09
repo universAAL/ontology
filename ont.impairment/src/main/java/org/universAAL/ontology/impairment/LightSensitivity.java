@@ -34,29 +34,28 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * @author Carsten Stockloew
  */
 public class LightSensitivity extends SightImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "LightSensitivity";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "LightSensitivity";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public LightSensitivity() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public LightSensitivity() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public LightSensitivity(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public LightSensitivity(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String toString() {
-	return "Light Sensitivity: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Light Sensitivity: " + this.getImpaimentLevel().name();
+	}
 }

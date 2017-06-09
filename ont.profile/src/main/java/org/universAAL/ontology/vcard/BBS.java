@@ -23,25 +23,25 @@
 package org.universAAL.ontology.vcard;
 
 public class BBS extends Tel {
-    public static final String MY_URI = VCardOntology.NAMESPACE + "BBS";
+	public static final String MY_URI = VCardOntology.NAMESPACE + "BBS";
 
-    public BBS() {
-	super();
-    }
+	public BBS() {
+		super();
+	}
 
-    public BBS(String uri) {
-	super(uri);
-    }
+	public BBS(String uri) {
+		super(uri);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

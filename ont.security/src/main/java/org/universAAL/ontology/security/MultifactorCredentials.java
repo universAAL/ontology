@@ -22,25 +22,22 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-
 /**
  * Multifactor type Credentials.
+ * 
  * @author amedrano
  *
  */
 public class MultifactorCredentials extends Credentials {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "MultifactorCredentials";
+	public static final String PROP_FACTORS = SecurityOntology.NAMESPACE + "FACTORS";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "MultifactorCredentials";
-    public static final String PROP_FACTORS = SecurityOntology.NAMESPACE
-    	    + "FACTORS";
-        
-	
 	/**
 	 * Only for serializers.
 	 */
 	public MultifactorCredentials() {
-	    super();
+		super();
 	}
 
 	/**
@@ -50,34 +47,31 @@ public class MultifactorCredentials extends Credentials {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return hasProperty(PROP_FACTORS) && super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_FACTORS)){
+		if (propURI.equals(PROP_FACTORS)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return PROP_SERIALIZATION_UNDEFINED;
 	}
-	
-	public void addFactor(Factor f){
+
+	public void addFactor(Factor f) {
 		Object fs = getProperty(PROP_FACTORS);
-		if (fs == null){
-			fs=f;
-		}
-		else if (fs instanceof Collection){
-			((Collection)fs).add(fs);
-		}
-		else {
+		if (fs == null) {
+			fs = f;
+		} else if (fs instanceof Collection) {
+			((Collection) fs).add(fs);
+		} else {
 			List nfs = new ArrayList();
 			nfs.add(fs);
 			nfs.add(f);
@@ -85,16 +79,14 @@ public class MultifactorCredentials extends Credentials {
 		}
 		changeProperty(PROP_FACTORS, fs);
 	}
-	
-	public List getFactors(){
+
+	public List getFactors() {
 		Object fs = getProperty(PROP_FACTORS);
-		if (fs == null){
+		if (fs == null) {
 			return Collections.emptyList();
-		}
-		else if (fs instanceof List){
-			return (List)fs;
-		}
-		else {
+		} else if (fs instanceof List) {
+			return (List) fs;
+		} else {
 			List nfs = new ArrayList();
 			nfs.add(fs);
 			return nfs;

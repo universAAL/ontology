@@ -22,35 +22,34 @@
 package org.universAAL.ontology.device;
 
 public class DosageSensor extends Sensor {
-    public static final String MY_URI = DeviceOntology.NAMESPACE
-	    + "DosageSensor";
+	public static final String MY_URI = DeviceOntology.NAMESPACE + "DosageSensor";
 
-    public DosageSensor() {
-	super();
-    }
+	public DosageSensor() {
+		super();
+	}
 
-    public DosageSensor(String uri) {
-	super(uri);
-    }
+	public DosageSensor(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_HAS_VALUE);
+	}
 
-    public DosageValue getDosageValue() {
-	return (DosageValue) getProperty(PROP_HAS_VALUE);
-    }
+	public DosageValue getDosageValue() {
+		return (DosageValue) getProperty(PROP_HAS_VALUE);
+	}
 
-    public void setDosageValue(DosageValue newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_HAS_VALUE, newPropValue);
-    }
+	public void setDosageValue(DosageValue newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_HAS_VALUE, newPropValue);
+	}
 }

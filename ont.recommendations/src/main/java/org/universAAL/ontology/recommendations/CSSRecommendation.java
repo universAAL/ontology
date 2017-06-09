@@ -19,26 +19,25 @@ package org.universAAL.ontology.recommendations;
 import org.universAAL.middleware.ui.rdf.FormControl;
 
 /**
- * CSS Recommendation is the scripting recommendation in CSS. 
- * To be used in the furture by Hanlders, the idea is to provide the class 
- * and styles for each {@link FormControl}.
+ * CSS Recommendation is the scripting recommendation in CSS. To be used in the
+ * furture by Hanlders, the idea is to provide the class and styles for each
+ * {@link FormControl}.
  * 
  * @author amedrano
  * 
  */
 public class CSSRecommendation extends ScriptedRecommendation {
-	  /**
-	 * 
-	 */
+	/**
+	* 
+	*/
 	public static final String CSS_LANG = "text/css";
-	public static final String MY_URI = RecommendationsOntology.NAMESPACE
-			    + "CSSScriptRecommendation";
-	  
+	public static final String MY_URI = RecommendationsOntology.NAMESPACE + "CSSScriptRecommendation";
+
 	/**
 	 * 
 	 */
 	public CSSRecommendation() {
-//		changeProperty(PROP_LANGUAJE, CSS_LANG);
+		// changeProperty(PROP_LANGUAJE, CSS_LANG);
 	}
 
 	/**
@@ -46,7 +45,7 @@ public class CSSRecommendation extends ScriptedRecommendation {
 	 */
 	public CSSRecommendation(String uri) {
 		super(uri);
-//		changeProperty(PROP_LANGUAJE, CSS_LANG);
+		// changeProperty(PROP_LANGUAJE, CSS_LANG);
 	}
 
 	public String getClassURI() {

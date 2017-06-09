@@ -34,25 +34,24 @@ import org.universAAL.ontology.personalhealthdevice.WeighingScale;
  */
 public class PersonalHealthDeviceFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
-	/*
-	 * General comment for this implementation: we assume that this method
-	 * is only called by the static method Resource.getResource() => we
-	 * assume that the case of registered named resources is already handled
-	 * there
-	 */
-	switch (factoryIndex) {
-	case 0:
-	    return new BloodOxygenSatSensor(instanceURI);
-	case 1:
-	    return new BloodPressureSensor(instanceURI);
-	case 2:
-	    return new HeartRateSensor(instanceURI);
-	case 3:
-	    return new WeighingScale(instanceURI);
-	}
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+		/*
+		 * General comment for this implementation: we assume that this method
+		 * is only called by the static method Resource.getResource() => we
+		 * assume that the case of registered named resources is already handled
+		 * there
+		 */
+		switch (factoryIndex) {
+		case 0:
+			return new BloodOxygenSatSensor(instanceURI);
+		case 1:
+			return new BloodPressureSensor(instanceURI);
+		case 2:
+			return new HeartRateSensor(instanceURI);
+		case 3:
+			return new WeighingScale(instanceURI);
+		}
 
-	return null;
-    }
+		return null;
+	}
 }

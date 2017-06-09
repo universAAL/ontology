@@ -17,8 +17,8 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
  *//**
- * 
- */
+	* 
+	*/
 package org.universAAL.ontology.impairment;
 
 import org.universAAL.middleware.owl.supply.LevelRating;
@@ -33,29 +33,28 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * @author Carsten Stockloew
  */
 public class ColorBlindness extends SightImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "ColorBlindness";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "ColorBlindness";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public ColorBlindness() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public ColorBlindness() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public ColorBlindness(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public ColorBlindness(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String toString() {
-	return "Colorblindness: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Colorblindness: " + this.getImpaimentLevel().name();
+	}
 }

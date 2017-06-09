@@ -37,74 +37,71 @@ import org.universAAL.ontology.activityhub.ActivityHubSensorEvent;
  * @author Thomas Fuxreiter
  */
 public class AdaptorPlugActuatorEvent extends ActivityHubSensorEvent {
-    public static final String MY_URI = ActivityHubOntology.NAMESPACE
-	    + "AdaptorPlugActuatorEvent";
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "AdaptorPlugActuatorEvent";
 
-    public static final int POWER_ON = 0;
-    public static final int POWER_OFF = 1;
+	public static final int POWER_ON = 0;
+	public static final int POWER_OFF = 1;
 
-    private static final String[] names = { "power_on", "power_off" };
+	private static final String[] names = { "power_on", "power_off" };
 
-    public static final AdaptorPlugActuatorEvent power_on = new AdaptorPlugActuatorEvent(
-	    POWER_ON);
-    public static final AdaptorPlugActuatorEvent power_off = new AdaptorPlugActuatorEvent(
-	    POWER_OFF);
+	public static final AdaptorPlugActuatorEvent power_on = new AdaptorPlugActuatorEvent(POWER_ON);
+	public static final AdaptorPlugActuatorEvent power_off = new AdaptorPlugActuatorEvent(POWER_OFF);
 
-    private int order = 0;
+	private int order = 0;
 
-    public AdaptorPlugActuatorEvent(String uri) {
-	super(uri);
-    }
-
-    private AdaptorPlugActuatorEvent(int order) {
-	super(ActivityHubOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public static AdaptorPlugActuatorEvent getEventByOrder(int order) {
-	switch (order) {
-	case POWER_ON:
-	    return power_on;
-	case POWER_OFF:
-	    return power_off;
-	default:
-	    return null;
+	public AdaptorPlugActuatorEvent(String uri) {
+		super(uri);
 	}
-    }
 
-    public static final AdaptorPlugActuatorEvent valueOf(String name) {
-	if (name == null)
-	    return null;
+	private AdaptorPlugActuatorEvent(int order) {
+		super(ActivityHubOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-	if (name.startsWith(ActivityHubOntology.NAMESPACE))
-	    name = name.substring(ActivityHubOntology.NAMESPACE.length());
+	public static AdaptorPlugActuatorEvent getEventByOrder(int order) {
+		switch (order) {
+		case POWER_ON:
+			return power_on;
+		case POWER_OFF:
+			return power_off;
+		default:
+			return null;
+		}
+	}
 
-	for (int i = POWER_ON; i <= POWER_OFF; i++)
-	    if (names[i].equals(name))
-		return getEventByOrder(i);
+	public static final AdaptorPlugActuatorEvent valueOf(String name) {
+		if (name == null)
+			return null;
 
-	return null;
-    }
+		if (name.startsWith(ActivityHubOntology.NAMESPACE))
+			name = name.substring(ActivityHubOntology.NAMESPACE.length());
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+		for (int i = POWER_ON; i <= POWER_OFF; i++)
+			if (names[i].equals(name))
+				return getEventByOrder(i);
 
-    public int getPropSerializationType(String arg0) {
-	/* This class has no property */
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return null;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public int getPropSerializationType(String arg0) {
+		/* This class has no property */
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
+
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 
 }

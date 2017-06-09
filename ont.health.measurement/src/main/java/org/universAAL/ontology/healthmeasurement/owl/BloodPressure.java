@@ -20,48 +20,47 @@ package org.universAAL.ontology.healthmeasurement.owl;
 import org.universAAL.ontology.measurement.Measurement;
 
 public class BloodPressure extends HealthMeasurement {
-    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-	    + "BloodPressure";
-    public static final String PROP_SYSTOLIC = HealthMeasurementOntology.NAMESPACE
-    	    + "systolicBloodPreassure";
-    public static final String PROP_DIASTOLIC = HealthMeasurementOntology.NAMESPACE
-    	    + "diastolicBloodPreassure";
+	public static final String MY_URI = HealthMeasurementOntology.NAMESPACE + "BloodPressure";
+	public static final String PROP_SYSTOLIC = HealthMeasurementOntology.NAMESPACE + "systolicBloodPreassure";
+	public static final String PROP_DIASTOLIC = HealthMeasurementOntology.NAMESPACE + "diastolicBloodPreassure";
 
-    public BloodPressure() {
-	super();
-    }
-
-    public BloodPressure(String uri) {
-	super(uri);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
-    
-    public void setSyst(Measurement m){
-	if(m != null){
-	    changeProperty(PROP_SYSTOLIC, m);
+	public BloodPressure() {
+		super();
 	}
-    }
-    public Measurement getSyst(){
-	return (Measurement) getProperty(PROP_SYSTOLIC);
-    }
-    
-    public void setDias(Measurement m){
-	if(m != null){
-	    changeProperty(PROP_DIASTOLIC, m);
-	}
-    }
-    public Measurement getDias(){
-	return (Measurement) getProperty(PROP_DIASTOLIC);
-    }
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public BloodPressure(String uri) {
+		super(uri);
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public void setSyst(Measurement m) {
+		if (m != null) {
+			changeProperty(PROP_SYSTOLIC, m);
+		}
+	}
+
+	public Measurement getSyst() {
+		return (Measurement) getProperty(PROP_SYSTOLIC);
+	}
+
+	public void setDias(Measurement m) {
+		if (m != null) {
+			changeProperty(PROP_DIASTOLIC, m);
+		}
+	}
+
+	public Measurement getDias() {
+		return (Measurement) getProperty(PROP_DIASTOLIC);
+	}
+
+	public boolean isWellFormed() {
+		return true;
+	}
 }

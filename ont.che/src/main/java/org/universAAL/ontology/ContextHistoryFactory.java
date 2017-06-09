@@ -34,22 +34,21 @@ import org.universAAL.ontology.che.ContextHistoryService;
  */
 public class ContextHistoryFactory implements ResourceFactory {
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.rdf.impl.ResourceFactoryImpl#createInstance
-     * (java.lang.String, java.lang.String, int)
-     */
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
-	switch (factoryIndex) {
-	case 0:
-	    return new ContextEvent(instanceURI);
-	case 1:
-	    return new ContextHistoryService(instanceURI);
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.rdf.impl.ResourceFactoryImpl#createInstance
+	 * (java.lang.String, java.lang.String, int)
+	 */
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+		switch (factoryIndex) {
+		case 0:
+			return new ContextEvent(instanceURI);
+		case 1:
+			return new ContextHistoryService(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 
 }

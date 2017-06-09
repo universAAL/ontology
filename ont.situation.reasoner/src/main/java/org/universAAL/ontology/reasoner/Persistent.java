@@ -22,48 +22,46 @@ package org.universAAL.ontology.reasoner;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public abstract class Persistent extends ManagedIndividual {
-    public static final String MY_URI = ReasoningOntology.NAMESPACE
-	    + "Persistent";
-    public static final String PROP_PERSISTENT = ReasoningOntology.NAMESPACE
-	    + "saveIt";
+	public static final String MY_URI = ReasoningOntology.NAMESPACE + "Persistent";
+	public static final String PROP_PERSISTENT = ReasoningOntology.NAMESPACE + "saveIt";
 
-    public Persistent() {
-	super();
-	setPersistent(true);
-    }
+	public Persistent() {
+		super();
+		setPersistent(true);
+	}
 
-    public Persistent(String uri) {
-	super(uri);
-	setPersistent(true);
-    }
+	public Persistent(String uri) {
+		super(uri);
+		setPersistent(true);
+	}
 
-    public Persistent(boolean saveIt) {
-	this();
-	setPersistent(saveIt);
-    }
+	public Persistent(boolean saveIt) {
+		this();
+		setPersistent(saveIt);
+	}
 
-    public Persistent(String uri, boolean saveIt) {
-	this(uri);
-	setPersistent(saveIt);
-    }
+	public Persistent(String uri, boolean saveIt) {
+		this(uri);
+		setPersistent(saveIt);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return hasProperty(PROP_PERSISTENT);
-    }
+	public boolean isWellFormed() {
+		return hasProperty(PROP_PERSISTENT);
+	}
 
-    public boolean isPersistent() {
-	return ((Boolean) getProperty(PROP_PERSISTENT)).booleanValue();
-    }
+	public boolean isPersistent() {
+		return ((Boolean) getProperty(PROP_PERSISTENT)).booleanValue();
+	}
 
-    public void setPersistent(boolean saveIt) {
-	props.put(PROP_PERSISTENT, new Boolean(saveIt));
-    }
+	public void setPersistent(boolean saveIt) {
+		props.put(PROP_PERSISTENT, new Boolean(saveIt));
+	}
 }

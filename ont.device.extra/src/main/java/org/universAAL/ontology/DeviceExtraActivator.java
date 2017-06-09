@@ -32,28 +32,28 @@ import org.universAAL.ontology.device.home.DeviceExtraOntology;
  */
 public class DeviceExtraActivator implements ModuleActivator {
 
-    private DeviceExtraOntology deviceextraOntology = new DeviceExtraOntology();
+	private DeviceExtraOntology deviceextraOntology = new DeviceExtraOntology();
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext
-     * )
-     */
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.register(mc, deviceextraOntology);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext
+	 * )
+	 */
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement om = OntologyManagement.getInstance();
+		om.register(mc, deviceextraOntology);
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
-     */
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement om = OntologyManagement.getInstance();
-	om.unregister(mc, deviceextraOntology);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+	 */
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement om = OntologyManagement.getInstance();
+		om.unregister(mc, deviceextraOntology);
+	}
 }

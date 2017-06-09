@@ -33,65 +33,54 @@ import org.universAAL.middleware.service.owl.Service;
  * 
  */
 public class ContextHistoryService extends Service {
-    public static final String MY_URI = ContextHistoryOntology.NAMESPACE
-	    + "ContextHistoryService";
-    public static final String PROP_MANAGES = ContextHistoryOntology.NAMESPACE
-	    + "manages";
-    public static final String PROP_PROCESSES = ContextHistoryOntology.NAMESPACE
-	    + "processes";
-    public static final String PROP_RETURNS = ContextHistoryOntology.NAMESPACE
-	    + "returns";
-    public static final String PROP_TIMESTAMP_FROM = ContextHistoryOntology.NAMESPACE
-	    + "timestampFrom";
-    public static final String PROP_TIMESTAMP_TO = ContextHistoryOntology.NAMESPACE
-	    + "timestampTo";
-    public static final String PROP_DURATION_FROM = ContextHistoryOntology.NAMESPACE
-	    + "durationFrom";
-    public static final String PROP_DURATION_TO = ContextHistoryOntology.NAMESPACE
-	    + "durationTo";
+	public static final String MY_URI = ContextHistoryOntology.NAMESPACE + "ContextHistoryService";
+	public static final String PROP_MANAGES = ContextHistoryOntology.NAMESPACE + "manages";
+	public static final String PROP_PROCESSES = ContextHistoryOntology.NAMESPACE + "processes";
+	public static final String PROP_RETURNS = ContextHistoryOntology.NAMESPACE + "returns";
+	public static final String PROP_TIMESTAMP_FROM = ContextHistoryOntology.NAMESPACE + "timestampFrom";
+	public static final String PROP_TIMESTAMP_TO = ContextHistoryOntology.NAMESPACE + "timestampTo";
+	public static final String PROP_DURATION_FROM = ContextHistoryOntology.NAMESPACE + "durationFrom";
+	public static final String PROP_DURATION_TO = ContextHistoryOntology.NAMESPACE + "durationTo";
 
-    /**
-     * Main constructor.
-     * 
-     * @param uri
-     *            URI
-     */
-    public ContextHistoryService(String uri) {
-	super(uri);
-    }
+	/**
+	 * Main constructor.
+	 * 
+	 * @param uri
+	 *            URI
+	 */
+	public ContextHistoryService(String uri) {
+		super(uri);
+	}
 
-    public ContextHistoryService() {
-	super();
-    }
+	public ContextHistoryService() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.service.owl.Service#getPropSerializationType
-     * (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_MANAGES.equals(propURI) || PROP_PROCESSES.equals(propURI)
-		|| PROP_RETURNS.equals(propURI)
-		|| PROP_TIMESTAMP_FROM.equals(propURI)
-		|| PROP_TIMESTAMP_TO.equals(propURI)
-		|| PROP_DURATION_FROM.equals(propURI)
-		|| PROP_DURATION_TO.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.service.owl.Service#getPropSerializationType
+	 * (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_MANAGES.equals(propURI) || PROP_PROCESSES.equals(propURI) || PROP_RETURNS.equals(propURI)
+				|| PROP_TIMESTAMP_FROM.equals(propURI) || PROP_TIMESTAMP_TO.equals(propURI)
+				|| PROP_DURATION_FROM.equals(propURI) || PROP_DURATION_TO.equals(propURI) ? PROP_SERIALIZATION_FULL
+						: super.getPropSerializationType(propURI);
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
-    public boolean isWellFormed() {
-	return true;
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+	 */
+	public boolean isWellFormed() {
+		return true;
+	}
 
 }

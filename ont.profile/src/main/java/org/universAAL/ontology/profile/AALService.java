@@ -37,50 +37,49 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class AALService extends ManagedIndividual {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "AALService";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALService";
 
-    protected AALService() {
-	super();
-    }
-
-    public AALService(String uri) {
-	super(uri);
-    }
-
-    public boolean isWellFormed() {
-	if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AALServiceProfile);
+	protected AALService() {
+		super();
 	}
-	return false;
-    }
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public AALService(String uri) {
+		super(uri);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public boolean isWellFormed() {
+		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
+			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AALServiceProfile);
+		}
+		return false;
+	}
 
-    /**
-     * Sets the value for the AAL Service Profile of this AAL Service
-     * 
-     * @param value
-     *            The Profile to set
-     */
-    public void setProfile(AALServiceProfile value) {
-	setProperty(Profilable.PROP_HAS_PROFILE, value);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * Gets the value of the AAL Service Profile of this AAL Service
-     * 
-     * @return The Profile of the AAL Space
-     */
-    public AALServiceProfile getProfile() {
-	return (AALServiceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	/**
+	 * Sets the value for the AAL Service Profile of this AAL Service
+	 * 
+	 * @param value
+	 *            The Profile to set
+	 */
+	public void setProfile(AALServiceProfile value) {
+		setProperty(Profilable.PROP_HAS_PROFILE, value);
+	}
+
+	/**
+	 * Gets the value of the AAL Service Profile of this AAL Service
+	 * 
+	 * @return The Profile of the AAL Space
+	 */
+	public AALServiceProfile getProfile() {
+		return (AALServiceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+	}
 
 }

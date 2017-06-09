@@ -23,13 +23,13 @@ import org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology;
 
 public class HealthMeasurementActivator implements ModuleActivator {
 
-    HealthMeasurementOntology ontology = new HealthMeasurementOntology();
+	HealthMeasurementOntology ontology = new HealthMeasurementOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 }

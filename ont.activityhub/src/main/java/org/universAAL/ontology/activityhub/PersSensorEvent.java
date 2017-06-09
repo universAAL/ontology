@@ -36,74 +36,70 @@ import org.universAAL.ontology.ActivityHubOntology;
  * 
  */
 public class PersSensorEvent extends ActivityHubSensorEvent {
-    public static final String MY_URI = ActivityHubOntology.NAMESPACE
-	    + "PersSensorEvent";
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "PersSensorEvent";
 
-    public static final int PERS_ACTIVATED = 0;
-    public static final int NO_CONDITION_DETECTED = 1;
+	public static final int PERS_ACTIVATED = 0;
+	public static final int NO_CONDITION_DETECTED = 1;
 
-    private static final String[] names = { "pers_activated",
-	    "no_condition_detected" };
+	private static final String[] names = { "pers_activated", "no_condition_detected" };
 
-    public static final PersSensorEvent pers_activated = new PersSensorEvent(
-	    PERS_ACTIVATED);
-    public static final PersSensorEvent no_condition_detected = new PersSensorEvent(
-	    NO_CONDITION_DETECTED);
+	public static final PersSensorEvent pers_activated = new PersSensorEvent(PERS_ACTIVATED);
+	public static final PersSensorEvent no_condition_detected = new PersSensorEvent(NO_CONDITION_DETECTED);
 
-    private int order = 0;
+	private int order = 0;
 
-    public PersSensorEvent(String uri) {
-	super(uri);
-    }
-
-    private PersSensorEvent(int order) {
-	super(ActivityHubOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public static PersSensorEvent getEventByOrder(int order) {
-	switch (order) {
-	case PERS_ACTIVATED:
-	    return pers_activated;
-	case NO_CONDITION_DETECTED:
-	    return no_condition_detected;
-	default:
-	    return null;
+	public PersSensorEvent(String uri) {
+		super(uri);
 	}
-    }
 
-    public static final PersSensorEvent valueOf(String name) {
-	if (name == null)
-	    return null;
+	private PersSensorEvent(int order) {
+		super(ActivityHubOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-	if (name.startsWith(ActivityHubOntology.NAMESPACE))
-	    name = name.substring(ActivityHubOntology.NAMESPACE.length());
+	public static PersSensorEvent getEventByOrder(int order) {
+		switch (order) {
+		case PERS_ACTIVATED:
+			return pers_activated;
+		case NO_CONDITION_DETECTED:
+			return no_condition_detected;
+		default:
+			return null;
+		}
+	}
 
-	for (int i = PERS_ACTIVATED; i <= NO_CONDITION_DETECTED; i++)
-	    if (names[i].equals(name))
-		return getEventByOrder(i);
+	public static final PersSensorEvent valueOf(String name) {
+		if (name == null)
+			return null;
 
-	return null;
-    }
+		if (name.startsWith(ActivityHubOntology.NAMESPACE))
+			name = name.substring(ActivityHubOntology.NAMESPACE.length());
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+		for (int i = PERS_ACTIVATED; i <= NO_CONDITION_DETECTED; i++)
+			if (names[i].equals(name))
+				return getEventByOrder(i);
 
-    public int getPropSerializationType(String arg0) {
-	/* This class has no property */
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return null;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public int getPropSerializationType(String arg0) {
+		/* This class has no property */
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
+
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 }

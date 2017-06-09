@@ -36,74 +36,70 @@ import org.universAAL.ontology.ActivityHubOntology;
  * 
  */
 public class EnuresisSensorEvent extends ActivityHubSensorEvent {
-    public static final String MY_URI = ActivityHubOntology.NAMESPACE
-	    + "EnuresisSensorEvent";
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "EnuresisSensorEvent";
 
-    public static final int ENURESIS_DETECTED = 0;
-    public static final int NO_CONDITION_DETECTED = 1;
+	public static final int ENURESIS_DETECTED = 0;
+	public static final int NO_CONDITION_DETECTED = 1;
 
-    private static final String[] names = { "enuresis_detected",
-	    "no_condition_detected" };
+	private static final String[] names = { "enuresis_detected", "no_condition_detected" };
 
-    public static final EnuresisSensorEvent enuresis_detected = new EnuresisSensorEvent(
-	    ENURESIS_DETECTED);
-    public static final EnuresisSensorEvent no_condition_detected = new EnuresisSensorEvent(
-	    NO_CONDITION_DETECTED);
+	public static final EnuresisSensorEvent enuresis_detected = new EnuresisSensorEvent(ENURESIS_DETECTED);
+	public static final EnuresisSensorEvent no_condition_detected = new EnuresisSensorEvent(NO_CONDITION_DETECTED);
 
-    private int order = 0;
+	private int order = 0;
 
-    public EnuresisSensorEvent(String uri) {
-	super(uri);
-    }
-
-    private EnuresisSensorEvent(int order) {
-	super(ActivityHubOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public static EnuresisSensorEvent getEventByOrder(int order) {
-	switch (order) {
-	case ENURESIS_DETECTED:
-	    return enuresis_detected;
-	case NO_CONDITION_DETECTED:
-	    return no_condition_detected;
-	default:
-	    return null;
+	public EnuresisSensorEvent(String uri) {
+		super(uri);
 	}
-    }
 
-    public static final EnuresisSensorEvent valueOf(String name) {
-	if (name == null)
-	    return null;
+	private EnuresisSensorEvent(int order) {
+		super(ActivityHubOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-	if (name.startsWith(ActivityHubOntology.NAMESPACE))
-	    name = name.substring(ActivityHubOntology.NAMESPACE.length());
+	public static EnuresisSensorEvent getEventByOrder(int order) {
+		switch (order) {
+		case ENURESIS_DETECTED:
+			return enuresis_detected;
+		case NO_CONDITION_DETECTED:
+			return no_condition_detected;
+		default:
+			return null;
+		}
+	}
 
-	for (int i = ENURESIS_DETECTED; i <= NO_CONDITION_DETECTED; i++)
-	    if (names[i].equals(name))
-		return getEventByOrder(i);
+	public static final EnuresisSensorEvent valueOf(String name) {
+		if (name == null)
+			return null;
 
-	return null;
-    }
+		if (name.startsWith(ActivityHubOntology.NAMESPACE))
+			name = name.substring(ActivityHubOntology.NAMESPACE.length());
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+		for (int i = ENURESIS_DETECTED; i <= NO_CONDITION_DETECTED; i++)
+			if (names[i].equals(name))
+				return getEventByOrder(i);
 
-    public int getPropSerializationType(String arg0) {
-	/* This class has no property */
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return null;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public int getPropSerializationType(String arg0) {
+		/* This class has no property */
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
+
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 }

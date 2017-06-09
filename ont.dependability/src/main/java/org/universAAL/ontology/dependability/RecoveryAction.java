@@ -1,4 +1,5 @@
 package org.universAAL.ontology.dependability;
+
 /**Copyright [2011-2014] [University of Siegen, Embedded System Instiute]
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,27 +20,26 @@ package org.universAAL.ontology.dependability;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class RecoveryAction extends ManagedIndividual {
-    public static final String MY_URI = DependabilityOntology.NAMESPACE
-	    + "RecoveryAction";
+	public static final String MY_URI = DependabilityOntology.NAMESPACE + "RecoveryAction";
 
-    public RecoveryAction() {
-	super();
-    }
+	public RecoveryAction() {
+		super();
+	}
 
-    public RecoveryAction(String uri) {
-	super(uri);
-    }
+	public RecoveryAction(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	// TODO Implement or if for Device subclasses: remove
-	return 0;
-    }
+	public int getPropSerializationType(String arg0) {
+		// TODO Implement or if for Device subclasses: remove
+		return 0;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

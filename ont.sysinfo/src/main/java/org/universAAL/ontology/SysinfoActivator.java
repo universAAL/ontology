@@ -29,13 +29,13 @@ import org.universAAL.ontology.sysinfo.*;
 
 public class SysinfoActivator implements ModuleActivator {
 
-    SysinfoOntology _sysinfoOntology = new SysinfoOntology();
+	SysinfoOntology _sysinfoOntology = new SysinfoOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, _sysinfoOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, _sysinfoOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, _sysinfoOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, _sysinfoOntology);
+	}
 }

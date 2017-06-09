@@ -27,25 +27,24 @@ import org.universAAL.ontology.unit.services.UnitService;
 
 public class UnitFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
-	switch (factoryIndex) {
-	case 1:
-	    return new Unit(instanceURI);
-	case 2:
-	    return new UnitSystem(instanceURI);
-	case 3:
-	    return new Prefix(instanceURI);
-	case 4:
-	    return new MultipliedUnit(instanceURI);
-	case 5:
-	    return new DividedUnit(instanceURI);
-	case 6:
-	    return new UnitService(instanceURI);
-	case 7:
-		return new UnitConversionService(instanceURI);
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+		switch (factoryIndex) {
+		case 1:
+			return new Unit(instanceURI);
+		case 2:
+			return new UnitSystem(instanceURI);
+		case 3:
+			return new Prefix(instanceURI);
+		case 4:
+			return new MultipliedUnit(instanceURI);
+		case 5:
+			return new DividedUnit(instanceURI);
+		case 6:
+			return new UnitService(instanceURI);
+		case 7:
+			return new UnitConversionService(instanceURI);
+		}
+		return null;
 	}
-	return null;
-    }
 
 }

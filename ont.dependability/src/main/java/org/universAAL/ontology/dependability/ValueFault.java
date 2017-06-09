@@ -1,4 +1,5 @@
 package org.universAAL.ontology.dependability;
+
 /**Copyright [2011-2014] [University of Siegen, Embedded System Instiute]
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,39 +20,37 @@ package org.universAAL.ontology.dependability;
 import org.universAAL.middleware.rdf.Resource;
 
 public class ValueFault extends Fault {
-    public static final String MY_URI = DependabilityOntology.NAMESPACE
-	    + "ValueFault";
-    public static final String PROP_VALUE = DependabilityOntology.NAMESPACE
-	    + "value";
+	public static final String MY_URI = DependabilityOntology.NAMESPACE + "ValueFault";
+	public static final String PROP_VALUE = DependabilityOntology.NAMESPACE + "value";
 
-    public ValueFault() {
-	super();
-    }
+	public ValueFault() {
+		super();
+	}
 
-    public ValueFault(String uri) {
-	super(uri);
-    }
+	public ValueFault(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_VALUE.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_VALUE.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_VALUE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_VALUE);
+	}
 
-    public Double getValue() {
-	return (Double) getProperty(PROP_VALUE);
-    }
+	public Double getValue() {
+		return (Double) getProperty(PROP_VALUE);
+	}
 
-    public void setValue(Double newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_VALUE, newPropValue);
-    }
+	public void setValue(Double newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_VALUE, newPropValue);
+	}
 }

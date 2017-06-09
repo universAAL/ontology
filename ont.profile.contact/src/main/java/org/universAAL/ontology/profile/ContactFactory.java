@@ -22,16 +22,15 @@ import org.universAAL.ontology.profile.contact.ContactManagementService;
 
 public class ContactFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new ContactManagementService(instanceURI);
-	case 1:
-	    return new ContactListSubProfile(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new ContactManagementService(instanceURI);
+		case 1:
+			return new ContactListSubProfile(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

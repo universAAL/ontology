@@ -34,29 +34,28 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * @author Carsten Stockloew
  */
 public class Astigmatism extends SightImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "Astigmatism";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "Astigmatism";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public Astigmatism() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public Astigmatism() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public Astigmatism(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public Astigmatism(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String toString() {
-	return "Astigmatism: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Astigmatism: " + this.getImpaimentLevel().name();
+	}
 }

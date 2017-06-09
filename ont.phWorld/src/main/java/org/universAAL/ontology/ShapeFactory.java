@@ -36,36 +36,35 @@ import org.universAAL.ontology.shape.Triangle;
 
 public class ShapeFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new Box(instanceURI);
-	case 1:
-	    return new Ellipse(instanceURI);
-	case 2:
-	    return new Circle(instanceURI);
-	case 3:
-	    return new Line(instanceURI);
-	case 4:
-	    return new LineSegment(instanceURI);
-	case 5:
-	    return new ConeSegment(instanceURI);
-	case 6:
-	    return new Polygon(instanceURI);
-	case 7:
-	    return new Triangle(instanceURI);
-	case 8:
-	    return new Sphere(instanceURI);
-	case 9:
-	    return new QuasiCylinder(instanceURI);
-	case 10:
-	    return new Polyhedron(instanceURI);
-	case 11:
-	    return new MergedShape(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new Box(instanceURI);
+		case 1:
+			return new Ellipse(instanceURI);
+		case 2:
+			return new Circle(instanceURI);
+		case 3:
+			return new Line(instanceURI);
+		case 4:
+			return new LineSegment(instanceURI);
+		case 5:
+			return new ConeSegment(instanceURI);
+		case 6:
+			return new Polygon(instanceURI);
+		case 7:
+			return new Triangle(instanceURI);
+		case 8:
+			return new Sphere(instanceURI);
+		case 9:
+			return new QuasiCylinder(instanceURI);
+		case 10:
+			return new Polyhedron(instanceURI);
+		case 11:
+			return new MergedShape(instanceURI);
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

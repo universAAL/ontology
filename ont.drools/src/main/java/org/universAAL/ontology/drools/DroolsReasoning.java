@@ -24,30 +24,30 @@ import org.universAAL.middleware.service.owl.Service;
 
 public class DroolsReasoning extends Service {
 
-    public static final String MY_URI = DroolsReasoningOntology.NAMESPACE + "DroolsReasoningService";
+	public static final String MY_URI = DroolsReasoningOntology.NAMESPACE + "DroolsReasoningService";
 
-    public static final String PROP_KNOWS_FACTS = DroolsReasoningOntology.NAMESPACE + "knowsFacts";
-    public static final String PROP_KNOWS_RULES = DroolsReasoningOntology.NAMESPACE + "knowsRules";
-    public static final String PROP_PRODUCES_CONSEQUENCES = DroolsReasoningOntology.NAMESPACE + "producesConsequences";
-    // public static final String PROP_RECEIVES_CONTEXT_EVENTS =
-    // "receivesContextEvents";
+	public static final String PROP_KNOWS_FACTS = DroolsReasoningOntology.NAMESPACE + "knowsFacts";
+	public static final String PROP_KNOWS_RULES = DroolsReasoningOntology.NAMESPACE + "knowsRules";
+	public static final String PROP_PRODUCES_CONSEQUENCES = DroolsReasoningOntology.NAMESPACE + "producesConsequences";
+	// public static final String PROP_RECEIVES_CONTEXT_EVENTS =
+	// "receivesContextEvents";
 
-    public DroolsReasoning(String instanceURI) {
-	super(instanceURI);
-    }
+	public DroolsReasoning(String instanceURI) {
+		super(instanceURI);
+	}
 
-    public DroolsReasoning() {
-	super();
-    }
+	public DroolsReasoning() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_KNOWS_FACTS.equals(propURI) || PROP_KNOWS_RULES.equals(propURI)
-		|| PROP_PRODUCES_CONSEQUENCES.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_KNOWS_FACTS.equals(propURI) || PROP_KNOWS_RULES.equals(propURI)
+				|| PROP_PRODUCES_CONSEQUENCES.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 }

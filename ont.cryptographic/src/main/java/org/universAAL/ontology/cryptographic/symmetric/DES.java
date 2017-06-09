@@ -25,7 +25,7 @@ import org.universAAL.ontology.cryptographic.SimpleBlockEncryption;
 public class DES extends SimpleBlockEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "DES";
-	
+
 	/**
 	 * 
 	 */
@@ -38,8 +38,8 @@ public class DES extends SimpleBlockEncryption {
 	public DES(String uri) {
 		super(uri);
 	}
-	
-	/**{@inheritDoc} */
+
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

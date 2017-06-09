@@ -51,66 +51,65 @@ import org.universAAL.ontology.location.position.Point;
 
 public class LocationFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new Location(instanceURI);
-	case 1:
-	    return new Place(instanceURI);
-	case 2:
-	    return new Way(instanceURI);
-	case 3:
-	    return new Address(instanceURI);
-	case 4:
-	    return new MailBox(instanceURI);
-	case 5:
-	    return new PhysicalAddress(instanceURI);
-	case 6:
-	    return new BuildingLevel(instanceURI);
-	case 7:
-	    return new HomeArea(instanceURI);
-	case 8:
-	    return new Home(instanceURI);
-	case 9:
-	    return new Corridor(instanceURI);
-	case 10:
-	    return new EntranceHall(instanceURI);
-	case 11:
-	    return new Hall(instanceURI);
-	case 12:
-	    return new StairCase(instanceURI);
-	case 13:
-	    return new Room(instanceURI);
-	case 14:
-	    return new StairWay(instanceURI);
-	case 15:
-	    return new OutdoorPlace(instanceURI);
-	case 16:
-	    return new State(instanceURI);
-	case 17:
-	    return new Region(instanceURI);
-	case 18:
-	    return new Country(instanceURI);
-	case 19:
-	    return new City(instanceURI);
-	case 20:
-	    return new CityPlace(instanceURI);
-	case 21:
-	    return new CityQuarter(instanceURI);
-	case 22:
-	    return new Building(instanceURI);
-	case 23:
-	    return new CityRegion(instanceURI);
-	case 24:
-	    return new CoordinateSystem(instanceURI);
-	case 25:
-	    return new OriginedMetric(instanceURI);
-	case 26:
-	    return new Point(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new Location(instanceURI);
+		case 1:
+			return new Place(instanceURI);
+		case 2:
+			return new Way(instanceURI);
+		case 3:
+			return new Address(instanceURI);
+		case 4:
+			return new MailBox(instanceURI);
+		case 5:
+			return new PhysicalAddress(instanceURI);
+		case 6:
+			return new BuildingLevel(instanceURI);
+		case 7:
+			return new HomeArea(instanceURI);
+		case 8:
+			return new Home(instanceURI);
+		case 9:
+			return new Corridor(instanceURI);
+		case 10:
+			return new EntranceHall(instanceURI);
+		case 11:
+			return new Hall(instanceURI);
+		case 12:
+			return new StairCase(instanceURI);
+		case 13:
+			return new Room(instanceURI);
+		case 14:
+			return new StairWay(instanceURI);
+		case 15:
+			return new OutdoorPlace(instanceURI);
+		case 16:
+			return new State(instanceURI);
+		case 17:
+			return new Region(instanceURI);
+		case 18:
+			return new Country(instanceURI);
+		case 19:
+			return new City(instanceURI);
+		case 20:
+			return new CityPlace(instanceURI);
+		case 21:
+			return new CityQuarter(instanceURI);
+		case 22:
+			return new Building(instanceURI);
+		case 23:
+			return new CityRegion(instanceURI);
+		case 24:
+			return new CoordinateSystem(instanceURI);
+		case 25:
+			return new OriginedMetric(instanceURI);
+		case 26:
+			return new Point(instanceURI);
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

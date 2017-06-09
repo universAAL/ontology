@@ -22,59 +22,55 @@ import org.universAAL.ontology.profile.Caregiver;
 
 public class HeartRateMeasurementTreatment extends TakeMeasurementActivity {
 
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "HeartRateMeasurementTreatment";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "HeartRateMeasurementTreatment";
 
-    public HeartRateMeasurementTreatment() {
-	super();
-    }
+	public HeartRateMeasurementTreatment() {
+		super();
+	}
 
-    public HeartRateMeasurementTreatment(String uri) {
-	super(uri);
-    }
+	public HeartRateMeasurementTreatment(String uri) {
+		super(uri);
+	}
 
-    public HeartRateMeasurementTreatment(AssistedPersonProfile assistedPerson,
-	    Caregiver caregiver, String tname, String description,
-	    XMLGregorianCalendar stDt, String diseaseURI, HeartRateRequirement wr) {
-	super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public HeartRateMeasurementTreatment(AssistedPersonProfile assistedPerson, Caregiver caregiver, String tname,
+			String description, XMLGregorianCalendar stDt, String diseaseURI, HeartRateRequirement wr) {
+		super(assistedPerson, caregiver, tname, description, stDt, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public HeartRateMeasurementTreatment(AssistedPersonProfile assistedPerson,
-	    Caregiver caregiver, String tname, TreatmentPlanning tp,
-	    String description, String diseaseURI, HeartRateRequirement wr) {
-	super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public HeartRateMeasurementTreatment(AssistedPersonProfile assistedPerson, Caregiver caregiver, String tname,
+			TreatmentPlanning tp, String description, String diseaseURI, HeartRateRequirement wr) {
+		super(assistedPerson, caregiver, tname, tp, description, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public HeartRateMeasurementTreatment(String tname, String description,
-	    String diseaseURI, HeartRateRequirement wr) {
-	super(tname, description, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public HeartRateMeasurementTreatment(String tname, String description, String diseaseURI, HeartRateRequirement wr) {
+		super(tname, description, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public HeartRateMeasurementTreatment(String tname, String description,
-	    XMLGregorianCalendar stDt, String diseaseURI, HeartRateRequirement wr) {
-	super(tname, description, stDt, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public HeartRateMeasurementTreatment(String tname, String description, XMLGregorianCalendar stDt, String diseaseURI,
+			HeartRateRequirement wr) {
+		super(tname, description, stDt, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public HeartRateMeasurementTreatment(String tname, String description,
-	    TreatmentPlanning tp, String diseaseURI, HeartRateRequirement wr) {
-	super(tname, description, tp, diseaseURI);
-	this.setMeasurementRequirements(wr);
-    }
+	public HeartRateMeasurementTreatment(String tname, String description, TreatmentPlanning tp, String diseaseURI,
+			HeartRateRequirement wr) {
+		super(tname, description, tp, diseaseURI);
+		this.setMeasurementRequirements(wr);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
 }

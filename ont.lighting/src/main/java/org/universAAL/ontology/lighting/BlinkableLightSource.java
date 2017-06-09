@@ -32,38 +32,36 @@ import org.universAAL.ontology.location.Location;
  * 
  */
 public class BlinkableLightSource extends LightSource {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "BlinkableLightSource";
-    public static final String PROP_BLINKING_STATE = LightingOntology.NAMESPACE
-	    + "blinkingState";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "BlinkableLightSource";
+	public static final String PROP_BLINKING_STATE = LightingOntology.NAMESPACE + "blinkingState";
 
-    public BlinkableLightSource() {
-	super();
-    }
+	public BlinkableLightSource() {
+		super();
+	}
 
-    public BlinkableLightSource(String uri) {
-	super(uri);
-    }
+	public BlinkableLightSource(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public BlinkableLightSource(String uri, LightType type, Location loc) {
-	super(uri, type, loc);
-	props.put(PROP_BLINKING_STATE, Boolean.FALSE);
-    }
+	public BlinkableLightSource(String uri, LightType type, Location loc) {
+		super(uri, type, loc);
+		props.put(PROP_BLINKING_STATE, Boolean.FALSE);
+	}
 
-    public boolean isBlinking() {
-	return ((Boolean) props.get(PROP_BLINKING_STATE)).booleanValue();
-    }
+	public boolean isBlinking() {
+		return ((Boolean) props.get(PROP_BLINKING_STATE)).booleanValue();
+	}
 
-    public boolean isWellFormed() {
-	return props.containsKey(PROP_BLINKING_STATE) && super.isWellFormed();
-    }
+	public boolean isWellFormed() {
+		return props.containsKey(PROP_BLINKING_STATE) && super.isWellFormed();
+	}
 
-    public void setBlinkingState(boolean state) {
-	props.put(PROP_BLINKING_STATE, Boolean.valueOf(state));
-    }
+	public void setBlinkingState(boolean state) {
+		props.put(PROP_BLINKING_STATE, Boolean.valueOf(state));
+	}
 }

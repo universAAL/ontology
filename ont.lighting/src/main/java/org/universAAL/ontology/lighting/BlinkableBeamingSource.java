@@ -32,40 +32,36 @@ import org.universAAL.ontology.location.Location;
  * 
  */
 public class BlinkableBeamingSource extends BeamingSource {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "BlinkableBeamingSource";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "BlinkableBeamingSource";
 
-    public BlinkableBeamingSource() {
-	super();
-    }
+	public BlinkableBeamingSource() {
+		super();
+	}
 
-    public BlinkableBeamingSource(String uri) {
-	super(uri);
-    }
+	public BlinkableBeamingSource(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public BlinkableBeamingSource(String uri, LightType type, Location loc,
-	    Location directedTo, Location targetSurface) {
-	super(uri, type, loc, directedTo, targetSurface);
-	props.put(BlinkableLightSource.PROP_BLINKING_STATE, Boolean.FALSE);
-    }
+	public BlinkableBeamingSource(String uri, LightType type, Location loc, Location directedTo,
+			Location targetSurface) {
+		super(uri, type, loc, directedTo, targetSurface);
+		props.put(BlinkableLightSource.PROP_BLINKING_STATE, Boolean.FALSE);
+	}
 
-    public boolean isBlinking() {
-	return ((Boolean) props.get(BlinkableLightSource.PROP_BLINKING_STATE))
-		.booleanValue();
-    }
+	public boolean isBlinking() {
+		return ((Boolean) props.get(BlinkableLightSource.PROP_BLINKING_STATE)).booleanValue();
+	}
 
-    public boolean isWellFormed() {
-	return props.containsKey(BlinkableLightSource.PROP_BLINKING_STATE)
-		&& super.isWellFormed();
-    }
+	public boolean isWellFormed() {
+		return props.containsKey(BlinkableLightSource.PROP_BLINKING_STATE) && super.isWellFormed();
+	}
 
-    public void setBlinkingState(boolean state) {
-	props.put(BlinkableLightSource.PROP_BLINKING_STATE, Boolean
-		.valueOf(state));
-    }
+	public void setBlinkingState(boolean state) {
+		props.put(BlinkableLightSource.PROP_BLINKING_STATE, Boolean.valueOf(state));
+	}
 }

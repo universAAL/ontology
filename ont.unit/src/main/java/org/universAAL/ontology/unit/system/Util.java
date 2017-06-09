@@ -22,29 +22,16 @@ import org.universAAL.ontology.unit.Unit;
 
 public class Util {
 
-    public static final Unit IND_UNIT_UNITY = new Unit("unity", "Unity", "1",
-			MeasurableDimension.Adiemnsional);
-    public static final Unit IND_UNIT_PERCENT = new Unit("percent", "Percent", "%",
-			MeasurableDimension.Adiemnsional);
-    public static final Unit IND_UNIT_HERTZ = new DividedUnit("hertz", IND_UNIT_UNITY,
-    		InternationalSystem.IND_UNIT_SI_SECOND);
-    public static final Unit IND_UNIT_VOLT = new DividedUnit(
-    		"volt",
-    		"V",
-    		new MultipliedUnit("kg*m2",
-    			InternationalSystem.IND_UNIT_SI_GRAM,
-    			InternationalSystem.IND_PREFIX_SI_KILO,
-    			new MultipliedUnit("m2",
-    				InternationalSystem.IND_UNIT_SI_METER,
-    				InternationalSystem.IND_UNIT_SI_METER)),
-    		new MultipliedUnit(
-    			"A*S3",
-    			InternationalSystem.IND_UNIT_SI_AMPERE,
-    			new MultipliedUnit("S3",
-    				InternationalSystem.IND_UNIT_SI_SECOND,
-    				new MultipliedUnit("s2",
-    					InternationalSystem.IND_UNIT_SI_SECOND,
-    					InternationalSystem.IND_UNIT_SI_SECOND))));
-
+	public static final Unit IND_UNIT_UNITY = new Unit("unity", "Unity", "1", MeasurableDimension.Adiemnsional);
+	public static final Unit IND_UNIT_PERCENT = new Unit("percent", "Percent", "%", MeasurableDimension.Adiemnsional);
+	public static final Unit IND_UNIT_HERTZ = new DividedUnit("hertz", IND_UNIT_UNITY,
+			InternationalSystem.IND_UNIT_SI_SECOND);
+	public static final Unit IND_UNIT_VOLT = new DividedUnit("volt", "V",
+			new MultipliedUnit("kg*m2", InternationalSystem.IND_UNIT_SI_GRAM, InternationalSystem.IND_PREFIX_SI_KILO,
+					new MultipliedUnit("m2", InternationalSystem.IND_UNIT_SI_METER,
+							InternationalSystem.IND_UNIT_SI_METER)),
+			new MultipliedUnit("A*S3", InternationalSystem.IND_UNIT_SI_AMPERE,
+					new MultipliedUnit("S3", InternationalSystem.IND_UNIT_SI_SECOND, new MultipliedUnit("s2",
+							InternationalSystem.IND_UNIT_SI_SECOND, InternationalSystem.IND_UNIT_SI_SECOND))));
 
 }

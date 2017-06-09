@@ -31,47 +31,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class BuildingLevel extends IndoorPlace {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "BuildingLevel";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "BuildingLevel";
 
+	/**
+	 * Creates a BuildingLevel object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public BuildingLevel(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a BuildingLevel object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public BuildingLevel(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a BuildingLevel object
+	 */
+	public BuildingLevel() {
+		super();
+	}
 
-    /**
-     * Creates a BuildingLevel object
-     */
-    public BuildingLevel() {
-	super();
-    }
+	/**
+	 * Creates a BuildingLevel object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public BuildingLevel(String uri, String name) {
+		super(uri, name);
+	}
 
-    /**
-     * Creates a BuildingLevel object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public BuildingLevel(String uri, String name) {
-	super(uri, name);
-    }
+	public BuildingLevel(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public BuildingLevel(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public BuildingLevel(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public BuildingLevel(String uri, Shape shape) {
-	super(uri, shape);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

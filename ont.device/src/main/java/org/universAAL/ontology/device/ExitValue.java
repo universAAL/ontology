@@ -24,70 +24,69 @@ package org.universAAL.ontology.device;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class ExitValue extends ManagedIndividual {
-    public static final String MY_URI = DeviceOntology.NAMESPACE + "ExitValue";
+	public static final String MY_URI = DeviceOntology.NAMESPACE + "ExitValue";
 
-    public static final int EXIT = 0;
-    public static final int DOOR_LEFT_OPEN = 1;
-    public static final int NO_CONDITION = 2;
+	public static final int EXIT = 0;
+	public static final int DOOR_LEFT_OPEN = 1;
+	public static final int NO_CONDITION = 2;
 
-    private static final String[] names = { "Exit", "DoorLeftOpen",
-	    "NoCondition" };
+	private static final String[] names = { "Exit", "DoorLeftOpen", "NoCondition" };
 
-    public static final ExitValue Exit = new ExitValue(EXIT);
-    public static final ExitValue DoorLeftOpen = new ExitValue(DOOR_LEFT_OPEN);
-    public static final ExitValue NoCondition = new ExitValue(NO_CONDITION);
+	public static final ExitValue Exit = new ExitValue(EXIT);
+	public static final ExitValue DoorLeftOpen = new ExitValue(DOOR_LEFT_OPEN);
+	public static final ExitValue NoCondition = new ExitValue(NO_CONDITION);
 
-    private int order;
+	private int order;
 
-    private ExitValue(int order) {
-	super(DeviceOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String name() {
-	return names[order];
-    }
-
-    public int ord() {
-	return order;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static ExitValue getExitValueByOrder(int order) {
-	switch (order) {
-	case EXIT:
-	    return Exit;
-	case DOOR_LEFT_OPEN:
-	    return DoorLeftOpen;
-	case NO_CONDITION:
-	    return NoCondition;
-	default:
-	    return null;
+	private ExitValue(int order) {
+		super(DeviceOntology.NAMESPACE + names[order]);
+		this.order = order;
 	}
-    }
 
-    public static final ExitValue valueOf(String name) {
-	if (name == null)
-	    return null;
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-	if (name.startsWith(DeviceOntology.NAMESPACE))
-	    name = name.substring(DeviceOntology.NAMESPACE.length());
+	public boolean isWellFormed() {
+		return true;
+	}
 
-	for (int i = EXIT; i <= NO_CONDITION; i++)
-	    if (names[i].equals(name))
-		return getExitValueByOrder(i);
+	public String name() {
+		return names[order];
+	}
 
-	return null;
-    }
+	public int ord() {
+		return order;
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public static ExitValue getExitValueByOrder(int order) {
+		switch (order) {
+		case EXIT:
+			return Exit;
+		case DOOR_LEFT_OPEN:
+			return DoorLeftOpen;
+		case NO_CONDITION:
+			return NoCondition;
+		default:
+			return null;
+		}
+	}
+
+	public static final ExitValue valueOf(String name) {
+		if (name == null)
+			return null;
+
+		if (name.startsWith(DeviceOntology.NAMESPACE))
+			name = name.substring(DeviceOntology.NAMESPACE.length());
+
+		for (int i = EXIT; i <= NO_CONDITION; i++)
+			if (names[i].equals(name))
+				return getExitValueByOrder(i);
+
+		return null;
+	}
 }

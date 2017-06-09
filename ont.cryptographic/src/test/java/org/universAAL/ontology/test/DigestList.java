@@ -25,10 +25,10 @@ import java.util.Set;
  *
  */
 public class DigestList {
-    
+
 	public static void main(String[] args) {
 		Provider[] providers = Security.getProviders();
-		
+
 		for (int i = 0; i < providers.length; i++) {
 			System.out.println(providers[i]);
 			Set ks = providers[i].keySet();
@@ -37,8 +37,8 @@ public class DigestList {
 				if (s.contains("MessageDigest")) {
 					System.out.println("\t" + s);
 				}
-				
+
 			}
 		}
-    }
+	}
 }

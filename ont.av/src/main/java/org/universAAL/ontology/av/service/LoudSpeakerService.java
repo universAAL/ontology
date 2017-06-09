@@ -33,29 +33,27 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class LoudSpeakerService extends Service {
 
-    // customizing necessary!!!!
-    public static final String MY_URI = AVOntology.NAMESPACE + "LoudSpeakerService";
-    public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
-    public static final String PROP_HAS_TO_BROADCAST_AUDIO_FILE = AVOntology.NAMESPACE
-    		+ "broadcastsAudioFile";
-    public static final String PROP_HAS_TO_BROADCAST_AUDIO_STREAM = AVOntology.NAMESPACE
-    		+ "broadcastsAudioStream";
+	// customizing necessary!!!!
+	public static final String MY_URI = AVOntology.NAMESPACE + "LoudSpeakerService";
+	public static final String PROP_CONTROLS = AVOntology.NAMESPACE + "controls";
+	public static final String PROP_HAS_TO_BROADCAST_AUDIO_FILE = AVOntology.NAMESPACE + "broadcastsAudioFile";
+	public static final String PROP_HAS_TO_BROADCAST_AUDIO_STREAM = AVOntology.NAMESPACE + "broadcastsAudioStream";
 
-    /** default constructor */
-    public LoudSpeakerService() {
-	super();
-    }
+	/** default constructor */
+	public LoudSpeakerService() {
+		super();
+	}
 
-    public LoudSpeakerService(String uri) {
-	super(uri);
-    }
+	public LoudSpeakerService(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    // perhaps other settings
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	// perhaps other settings
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

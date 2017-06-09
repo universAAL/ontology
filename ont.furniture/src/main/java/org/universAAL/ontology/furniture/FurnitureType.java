@@ -30,68 +30,65 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  */
 public class FurnitureType extends ManagedIndividual {
 
-    public static final String MY_URI = FurnitureOntology.NAMESPACE
-	    + "FurnitureType";
+	public static final String MY_URI = FurnitureOntology.NAMESPACE + "FurnitureType";
 
-    public static final int CHAIR = 0;
-    public static final int TABLE = 1;
-    public static final int SHELF = 2;
-    public static final int LOCKER = 3;
-    public static final int SOFA = 4;
-    public static final int BED = 5;
-    public static final int OTHER = 6;
+	public static final int CHAIR = 0;
+	public static final int TABLE = 1;
+	public static final int SHELF = 2;
+	public static final int LOCKER = 3;
+	public static final int SOFA = 4;
+	public static final int BED = 5;
+	public static final int OTHER = 6;
 
-    private int order;
+	private int order;
 
-    private static final String[] names = { "Chair", "Table", "Shelf",
-	    "Locker", "Sofa", "Bed", "Other" };
+	private static final String[] names = { "Chair", "Table", "Shelf", "Locker", "Sofa", "Bed", "Other" };
 
-    public static final FurnitureType Chair = new FurnitureType(CHAIR);
-    public static final FurnitureType Table = new FurnitureType(TABLE);
-    public static final FurnitureType Shelf = new FurnitureType(SHELF);
-    public static final FurnitureType Locker = new FurnitureType(LOCKER);
-    public static final FurnitureType Sofa = new FurnitureType(SOFA);
-    public static final FurnitureType Bed = new FurnitureType(BED);
-    public static final FurnitureType Other = new FurnitureType(OTHER);
+	public static final FurnitureType Chair = new FurnitureType(CHAIR);
+	public static final FurnitureType Table = new FurnitureType(TABLE);
+	public static final FurnitureType Shelf = new FurnitureType(SHELF);
+	public static final FurnitureType Locker = new FurnitureType(LOCKER);
+	public static final FurnitureType Sofa = new FurnitureType(SOFA);
+	public static final FurnitureType Bed = new FurnitureType(BED);
+	public static final FurnitureType Other = new FurnitureType(OTHER);
 
-    private static FurnitureType[] members = new FurnitureType[] { Chair,
-	    Table, Shelf, Locker, Sofa, Bed, Other };
+	private static FurnitureType[] members = new FurnitureType[] { Chair, Table, Shelf, Locker, Sofa, Bed, Other };
 
-    public static final FurnitureType valueOf(String name) {
-	for (int i = 0; i <= 10; i++)
-	    if (names[i].equals(name))
-		return getLevelByOrder(i);
-	return null;
-    }
+	public static final FurnitureType valueOf(String name) {
+		for (int i = 0; i <= 10; i++)
+			if (names[i].equals(name))
+				return getLevelByOrder(i);
+		return null;
+	}
 
-    public static FurnitureType getLevelByOrder(int order) {
-	return members[order];
-    }
+	public static FurnitureType getLevelByOrder(int order) {
+		return members[order];
+	}
 
-    /** Creates a FurnitureType object. */
-    public FurnitureType() {
-	super();
-    }
+	/** Creates a FurnitureType object. */
+	public FurnitureType() {
+		super();
+	}
 
-    /** Creates a FurnitureType object. */
-    public FurnitureType(int Function) {
-	super(FurnitureOntology.NAMESPACE + names[Function]);
-	this.order = Function;
-    }
+	/** Creates a FurnitureType object. */
+	public FurnitureType(int Function) {
+		super(FurnitureOntology.NAMESPACE + names[Function]);
+		this.order = Function;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public String name() {
+		return names[order];
+	}
 
-    public int ord() {
-	return order;
-    }
+	public int ord() {
+		return order;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 }

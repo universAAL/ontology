@@ -37,14 +37,12 @@ public abstract class Hvac extends Device {
 	/**
 	 * The status of a device, on or off.
 	 */
-	public static final String PROP_HAS_STATUSVALUE = DeviceOntology.NAMESPACE
-			+ "hasStatusValue";
+	public static final String PROP_HAS_STATUSVALUE = DeviceOntology.NAMESPACE + "hasStatusValue";
 
 	/**
 	 * The setting to change the direction of the air.
 	 */
-	public static final String PROP_HAS_SWING = HvacOntology.NAMESPACE
-			+ "hasSwing";
+	public static final String PROP_HAS_SWING = HvacOntology.NAMESPACE + "hasSwing";
 
 	public Hvac() {
 		super();

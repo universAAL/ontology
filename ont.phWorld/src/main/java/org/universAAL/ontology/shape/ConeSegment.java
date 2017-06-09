@@ -40,206 +40,194 @@ import org.universAAL.ontology.location.position.Point;
 
 public class ConeSegment extends LineSegment {
 
-    public static final String MY_URI = ShapeOntology.NAMESPACE + "ConeSegment";
-    public static final String PROP_RADIUS_START = ShapeOntology.NAMESPACE + "RadiusStart";
-    public static final String PROP_RADIUS_END = ShapeOntology.NAMESPACE + "RadiusEnd";
+	public static final String MY_URI = ShapeOntology.NAMESPACE + "ConeSegment";
+	public static final String PROP_RADIUS_START = ShapeOntology.NAMESPACE + "RadiusStart";
+	public static final String PROP_RADIUS_END = ShapeOntology.NAMESPACE + "RadiusEnd";
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_RADIUS_START.equals(propURI)
-		|| PROP_RADIUS_END.equals(propURI))
-	    return PROP_SERIALIZATION_REDUCED;
-	return super.getPropSerializationType(propURI);
+	public int getPropSerializationType(String propURI) {
+		if (PROP_RADIUS_START.equals(propURI) || PROP_RADIUS_END.equals(propURI))
+			return PROP_SERIALIZATION_REDUCED;
+		return super.getPropSerializationType(propURI);
 
-    }
-
-    /**
-     * Creates a LineSegment object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public ConeSegment(String uri) {
-	super(uri);
-    }
-
-    /**
-     * Creates a LineSegment object
-     */
-    public ConeSegment() {
-	super();
-    }
-
-    public ConeSegment(String uri, Point start, Point end, float radius_start,
-	    float radius_end) {
-	super((uri == null || uri.lastIndexOf('#') > 0) ? uri
-		: Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri, start, end);
-	setRadiusStart(radius_start);
-	setRadiusEnd(radius_end);
-    }
-
-    public ConeSegment(Point start, Point end, float radius_start,
-	    float radius_end) {
-	super(start, end);
-	setRadiusStart(radius_start);
-	setRadiusEnd(radius_end);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public float getRadiusStart() {
-	return ((Float) props.get(PROP_RADIUS_START)).floatValue();
-    }
-
-    public void setRadiusStart(float radius) {
-	props.put(PROP_RADIUS_START, new Float(radius));
-    }
-
-    public float getRadiusEnd() {
-	return ((Float) props.get(PROP_RADIUS_END)).floatValue();
-    }
-
-    public void setRadiusEnd(float radius) {
-	props.put(PROP_RADIUS_END, new Float(radius));
-    }
-
-    public Point getStart() {
-	return getPoints()[0];
-    }
-
-    public Point getEnd() {
-	return getPoints()[1];
-    }
-
-    public float getDistanceTo(Point point) {
-	if (point == null)
-	    throw new IllegalArgumentException();
-	CoordinateSystem common = CoordinateSystem.findCommonParentSystem(point
-		.getCoordinateSystem(), this.getLocalCoordinateSystem());
-	double[] a = getStart().getInHigherCoordinateSystem(common)
-		.get3DCoordinates();
-	double[] b = getEnd().getInHigherCoordinateSystem(common)
-		.get3DCoordinates();
-	JgclPoint3D c = new JgclCartesianPoint3D(point
-		.getInHigherCoordinateSystem(common).get3DCoordinates());
-	JgclPoint3D jgcla = new JgclCartesianPoint3D(a), jgclb = new JgclCartesianPoint3D(
-		b);
-	JgclPointOnCurve3D[] proj = (new JgclLine3D(jgcla, jgclb)
-		.projectFrom(c));
-	float dist = Float.MAX_VALUE;
-	for (int i = 0; i < proj.length; i++) {
-	    double curdist;
-	    float t = getT(proj[i], jgcla, jgclb);
-	    if ((curdist = proj[i].distance(c) - radiusAt(t)) < dist)
-		dist = (float) curdist;
 	}
-	return dist;
-    }
 
-    private float getT(JgclPoint3D p, JgclPoint3D a, JgclPoint3D b) {
-	double dista = Math.abs(p.distance(a));
-	double distb = Math.abs(p.distance(b));
-	return (float) ((1.0f / (dista + distb)) * dista);
-    }
+	/**
+	 * Creates a LineSegment object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public ConeSegment(String uri) {
+		super(uri);
+	}
 
-    public float getDistanceTo(Shape shape) {
-	if (shape == null)
-	    throw new IllegalArgumentException();
-	if (shape instanceof Sphere) {
-	    float dist = getDistanceTo(((Sphere) shape).getCenter());
-	    dist -= ((Sphere) shape).getRadius();
-	    if (dist < 0)
-		return Point.INTERSECTING;
-	    else
+	/**
+	 * Creates a LineSegment object
+	 */
+	public ConeSegment() {
+		super();
+	}
+
+	public ConeSegment(String uri, Point start, Point end, float radius_start, float radius_end) {
+		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri, start,
+				end);
+		setRadiusStart(radius_start);
+		setRadiusEnd(radius_end);
+	}
+
+	public ConeSegment(Point start, Point end, float radius_start, float radius_end) {
+		super(start, end);
+		setRadiusStart(radius_start);
+		setRadiusEnd(radius_end);
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public float getRadiusStart() {
+		return ((Float) props.get(PROP_RADIUS_START)).floatValue();
+	}
+
+	public void setRadiusStart(float radius) {
+		props.put(PROP_RADIUS_START, new Float(radius));
+	}
+
+	public float getRadiusEnd() {
+		return ((Float) props.get(PROP_RADIUS_END)).floatValue();
+	}
+
+	public void setRadiusEnd(float radius) {
+		props.put(PROP_RADIUS_END, new Float(radius));
+	}
+
+	public Point getStart() {
+		return getPoints()[0];
+	}
+
+	public Point getEnd() {
+		return getPoints()[1];
+	}
+
+	public float getDistanceTo(Point point) {
+		if (point == null)
+			throw new IllegalArgumentException();
+		CoordinateSystem common = CoordinateSystem.findCommonParentSystem(point.getCoordinateSystem(),
+				this.getLocalCoordinateSystem());
+		double[] a = getStart().getInHigherCoordinateSystem(common).get3DCoordinates();
+		double[] b = getEnd().getInHigherCoordinateSystem(common).get3DCoordinates();
+		JgclPoint3D c = new JgclCartesianPoint3D(point.getInHigherCoordinateSystem(common).get3DCoordinates());
+		JgclPoint3D jgcla = new JgclCartesianPoint3D(a), jgclb = new JgclCartesianPoint3D(b);
+		JgclPointOnCurve3D[] proj = (new JgclLine3D(jgcla, jgclb).projectFrom(c));
+		float dist = Float.MAX_VALUE;
+		for (int i = 0; i < proj.length; i++) {
+			double curdist;
+			float t = getT(proj[i], jgcla, jgclb);
+			if ((curdist = proj[i].distance(c) - radiusAt(t)) < dist)
+				dist = (float) curdist;
+		}
 		return dist;
 	}
-	if (shape instanceof Box) {
-	    Point start = getStart();
-	    Point end = getEnd();
-	    Point dir = new Point(end.getX() - start.getX(), end.getY()
-		    - start.getY(), end.getZ() - start.getZ(), start
-		    .getCoordinateSystem());
-	    return distanceRay(start, dir, (Box) shape, 0, 1);
+
+	private float getT(JgclPoint3D p, JgclPoint3D a, JgclPoint3D b) {
+		double dista = Math.abs(p.distance(a));
+		double distb = Math.abs(p.distance(b));
+		return (float) ((1.0f / (dista + distb)) * dista);
 	}
-	return Point.NOT_COMPUTABLE_DISTANCE;
-    }
 
-    /**
-     * Cone radius at position t
-     * 
-     * @param t
-     *            a value between 0 and 1
-     * @return
-     */
-    private float radiusAt(float t) {
-	float rs = getRadiusStart();
-	float re = getRadiusEnd();
-	return rs + (re - rs) * t;
-    }
+	public float getDistanceTo(Shape shape) {
+		if (shape == null)
+			throw new IllegalArgumentException();
+		if (shape instanceof Sphere) {
+			float dist = getDistanceTo(((Sphere) shape).getCenter());
+			dist -= ((Sphere) shape).getRadius();
+			if (dist < 0)
+				return Point.INTERSECTING;
+			else
+				return dist;
+		}
+		if (shape instanceof Box) {
+			Point start = getStart();
+			Point end = getEnd();
+			Point dir = new Point(end.getX() - start.getX(), end.getY() - start.getY(), end.getZ() - start.getZ(),
+					start.getCoordinateSystem());
+			return distanceRay(start, dir, (Box) shape, 0, 1);
+		}
+		return Point.NOT_COMPUTABLE_DISTANCE;
+	}
 
-    private float distanceRay(Point start, Point dir, Box box, float minDir,
-	    float maxDir) {
+	/**
+	 * Cone radius at position t
+	 * 
+	 * @param t
+	 *            a value between 0 and 1
+	 * @return
+	 */
+	private float radiusAt(float t) {
+		float rs = getRadiusStart();
+		float re = getRadiusEnd();
+		return rs + (re - rs) * t;
+	}
 
-	CoordinateSystem common = CoordinateSystem.findCommonParentSystem(start
-		.getCoordinateSystem(), box.getLocalCoordinateSystem());
-	dir = dir.getInHigherCoordinateSystem(common);
-	start = start.getInHigherCoordinateSystem(common);
+	private float distanceRay(Point start, Point dir, Box box, float minDir, float maxDir) {
 
-	Point invDir = new Point((float) (1f / dir.getX()), (float) (1f / dir
-		.getY()), (float) (1f / dir.getZ()), new CoordinateSystem());
+		CoordinateSystem common = CoordinateSystem.findCommonParentSystem(start.getCoordinateSystem(),
+				box.getLocalCoordinateSystem());
+		dir = dir.getInHigherCoordinateSystem(common);
+		start = start.getInHigherCoordinateSystem(common);
 
-	boolean signDirX = invDir.getX() < 0;
-	boolean signDirY = invDir.getY() < 0;
-	boolean signDirZ = invDir.getZ() < 0;
+		Point invDir = new Point((float) (1f / dir.getX()), (float) (1f / dir.getY()), (float) (1f / dir.getZ()),
+				new CoordinateSystem());
 
-	Point center = box.getCenter().getInHigherCoordinateSystem(common);
+		boolean signDirX = invDir.getX() < 0;
+		boolean signDirY = invDir.getY() < 0;
+		boolean signDirZ = invDir.getZ() < 0;
 
-	// TODO: is the association between width, depth, height and x,y,z right
-	// at this place?
-	double[] min = { center.getX() - box.getWidth() / 2f,
-		center.getY() - box.getDepth() / 2f,
-		center.getZ() - box.getHeight() / 2f };
-	double[] max = { center.getX() + box.getWidth() / 2f,
-		center.getY() + box.getDepth() / 2f,
-		center.getZ() + box.getHeight() / 2f };
+		Point center = box.getCenter().getInHigherCoordinateSystem(common);
 
-	double[] bbox;
-	bbox = signDirX ? max : min;
-	double tmin = (bbox[0] - start.getX()) * invDir.getX();
-	bbox = signDirX ? min : max;
-	double tmax = (bbox[0] - start.getX()) * invDir.getX();
+		// TODO: is the association between width, depth, height and x,y,z right
+		// at this place?
+		double[] min = { center.getX() - box.getWidth() / 2f, center.getY() - box.getDepth() / 2f,
+				center.getZ() - box.getHeight() / 2f };
+		double[] max = { center.getX() + box.getWidth() / 2f, center.getY() + box.getDepth() / 2f,
+				center.getZ() + box.getHeight() / 2f };
 
-	bbox = signDirY ? max : min;
-	double tymin = (bbox[1] - start.getY()) * invDir.getY();
-	bbox = signDirY ? min : max;
-	double tymax = (bbox[1] - start.getY()) * invDir.getY();
+		double[] bbox;
+		bbox = signDirX ? max : min;
+		double tmin = (bbox[0] - start.getX()) * invDir.getX();
+		bbox = signDirX ? min : max;
+		double tmax = (bbox[0] - start.getX()) * invDir.getX();
 
-	if (tymin > tmin)
-	    tmin = tymin;
-	if (tymax < tmax)
-	    tmax = tymax;
+		bbox = signDirY ? max : min;
+		double tymin = (bbox[1] - start.getY()) * invDir.getY();
+		bbox = signDirY ? min : max;
+		double tymax = (bbox[1] - start.getY()) * invDir.getY();
 
-	bbox = signDirZ ? max : min;
-	double tzmin = (bbox[2] - start.getZ()) * invDir.getZ();
-	bbox = signDirZ ? min : max;
-	double tzmax = (bbox[2] - start.getZ()) * invDir.getZ();
+		if (tymin > tmin)
+			tmin = tymin;
+		if (tymax < tmax)
+			tmax = tymax;
 
-	if (tzmin > tmin)
-	    tmin = tzmin;
-	if (tzmax < tmax)
-	    tmax = tzmax;
-	if ((tmin < maxDir) && (tmax > minDir))
-	    return Point.INTERSECTING;
+		bbox = signDirZ ? max : min;
+		double tzmin = (bbox[2] - start.getZ()) * invDir.getZ();
+		bbox = signDirZ ? min : max;
+		double tzmax = (bbox[2] - start.getZ()) * invDir.getZ();
 
-	double pt[] = { tmin * dir.getX(), tmin * dir.getY(), tmin * dir.getZ() };
+		if (tzmin > tmin)
+			tmin = tzmin;
+		if (tzmax < tmax)
+			tmax = tzmax;
+		if ((tmin < maxDir) && (tmax > minDir))
+			return Point.INTERSECTING;
 
-	//
-	float dist = (float) (Math.sqrt(Math.pow(pt[0], 2) + Math.pow(pt[1], 2)
-		+ Math.pow(pt[2], 2)) - radiusAt((float) tmin));
+		double pt[] = { tmin * dir.getX(), tmin * dir.getY(), tmin * dir.getZ() };
 
-	if (dist < 0)
-	    return Point.INTERSECTING;
-	return dist;
-    }
+		//
+		float dist = (float) (Math.sqrt(Math.pow(pt[0], 2) + Math.pow(pt[1], 2) + Math.pow(pt[2], 2))
+				- radiusAt((float) tmin));
+
+		if (dist < 0)
+			return Point.INTERSECTING;
+		return dist;
+	}
 }

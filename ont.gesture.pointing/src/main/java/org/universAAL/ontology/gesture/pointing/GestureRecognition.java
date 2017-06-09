@@ -29,81 +29,76 @@ import org.universAAL.ontology.profile.User;
  * 
  */
 public abstract class GestureRecognition extends ManagedIndividual {
-    public static final String GESTURE_RECOGNITION_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/GestureRecognition.owl#";
+	public static final String GESTURE_RECOGNITION_NAMESPACE = "http://ontology.persona.ima.igd.fhg.de/GestureRecognition.owl#";
 
-    public static final String MY_URI = GESTURE_RECOGNITION_NAMESPACE + "GestureRecognition";
-    public static final String PROP_SUBJECT_USER = GESTURE_RECOGNITION_NAMESPACE + "subjectUser";
-    public static final String PROP_GESTURE_TYPE = GESTURE_RECOGNITION_NAMESPACE + "gestureType";
+	public static final String MY_URI = GESTURE_RECOGNITION_NAMESPACE + "GestureRecognition";
+	public static final String PROP_SUBJECT_USER = GESTURE_RECOGNITION_NAMESPACE + "subjectUser";
+	public static final String PROP_GESTURE_TYPE = GESTURE_RECOGNITION_NAMESPACE + "gestureType";
 
-    public static final int GESTURE_TYPE_COMMAND = 0;
-    public static final int GESTURE_TYPE_POINTING = 1;
+	public static final int GESTURE_TYPE_COMMAND = 0;
+	public static final int GESTURE_TYPE_POINTING = 1;
 
-    public static MergedRestriction getClassRestrictionsOnProperty(
-	    String propURI) {
-	if (propURI == null)
-	    return null;
+	public static MergedRestriction getClassRestrictionsOnProperty(String propURI) {
+		if (propURI == null)
+			return null;
 
-	if (propURI.equals(PROP_GESTURE_TYPE))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
-		    propURI, new Enumeration(new Integer[] { new Integer(0),
-			    new Integer(1) }), 1, 1);
+		if (propURI.equals(PROP_GESTURE_TYPE))
+			return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI,
+					new Enumeration(new Integer[] { new Integer(0), new Integer(1) }), 1, 1);
 
-	if (propURI.equals(PROP_SUBJECT_USER))
-	    return MergedRestriction.getAllValuesRestrictionWithCardinality(
-		    propURI, User.MY_URI, 1, 0);
+		if (propURI.equals(PROP_SUBJECT_USER))
+			return MergedRestriction.getAllValuesRestrictionWithCardinality(propURI, User.MY_URI, 1, 0);
 
-	return null;// ManagedIndividual.getClassRestrictionsOnProperty(propURI);
-    }
+		return null;// ManagedIndividual.getClassRestrictionsOnProperty(propURI);
+	}
 
-    public static String getRDFSComment() {
-	return "Represents the info about recognized gestures of users.";
-    }
+	public static String getRDFSComment() {
+		return "Represents the info about recognized gestures of users.";
+	}
 
-    public static String getRDFSLabel() {
-	return "Recognized Gesture";
-    }
+	public static String getRDFSLabel() {
+		return "Recognized Gesture";
+	}
 
-    public static String[] getStandardPropertyURIs() {
-	return new String[] { PROP_GESTURE_TYPE, PROP_SUBJECT_USER };
-    }
+	public static String[] getStandardPropertyURIs() {
+		return new String[] { PROP_GESTURE_TYPE, PROP_SUBJECT_USER };
+	}
 
-    public GestureRecognition() {
-	super();
-    }
+	public GestureRecognition() {
+		super();
+	}
 
-    public GestureRecognition(int gestureType) {
-	super();
-	if (gestureType == GESTURE_TYPE_COMMAND
-		|| gestureType == GESTURE_TYPE_POINTING)
-	    props.put(PROP_GESTURE_TYPE, new Integer(gestureType));
-	else
-	    throw new IllegalArgumentException("Illegal gesture type!");
-    }
+	public GestureRecognition(int gestureType) {
+		super();
+		if (gestureType == GESTURE_TYPE_COMMAND || gestureType == GESTURE_TYPE_POINTING)
+			props.put(PROP_GESTURE_TYPE, new Integer(gestureType));
+		else
+			throw new IllegalArgumentException("Illegal gesture type!");
+	}
 
-    /**
-     * Returns the non-negative int value of gesture type if it is set, -1
-     * otherwise.
-     */
-    public int getGestureType() {
-	Object o = props.get(PROP_GESTURE_TYPE);
-	return (o instanceof Integer) ? ((Integer) o).intValue() : -1;
-    }
+	/**
+	 * Returns the non-negative int value of gesture type if it is set, -1
+	 * otherwise.
+	 */
+	public int getGestureType() {
+		Object o = props.get(PROP_GESTURE_TYPE);
+		return (o instanceof Integer) ? ((Integer) o).intValue() : -1;
+	}
 
-    /**
-     * @see org.persona.ontology.ManagedIndividual#getPropSerializationType(java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_GESTURE_TYPE.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: PROP_SUBJECT_USER.equals(propURI) ? PROP_SERIALIZATION_REDUCED
-			: PROP_SERIALIZATION_UNDEFINED;
-    }
+	/**
+	 * @see org.persona.ontology.ManagedIndividual#getPropSerializationType(java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_GESTURE_TYPE.equals(propURI) ? PROP_SERIALIZATION_FULL
+				: PROP_SUBJECT_USER.equals(propURI) ? PROP_SERIALIZATION_REDUCED : PROP_SERIALIZATION_UNDEFINED;
+	}
 
-    public User getSubjectUser() {
-	return (User) props.get(PROP_SUBJECT_USER);
-    }
+	public User getSubjectUser() {
+		return (User) props.get(PROP_SUBJECT_USER);
+	}
 
-    public void setSubjectUser(User user) {
-	if (user != null && !props.containsKey(PROP_SUBJECT_USER))
-	    props.put(PROP_SUBJECT_USER, user);
-    }
+	public void setSubjectUser(User user) {
+		if (user != null && !props.containsKey(PROP_SUBJECT_USER))
+			props.put(PROP_SUBJECT_USER, user);
+	}
 }

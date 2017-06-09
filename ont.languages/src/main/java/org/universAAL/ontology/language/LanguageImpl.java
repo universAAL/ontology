@@ -16,7 +16,6 @@
 
 package org.universAAL.ontology.language;
 
-
 /**
  * @author amedrano
  * 
@@ -24,26 +23,24 @@ package org.universAAL.ontology.language;
 public final class LanguageImpl extends Language {
 
 	public static String tempURI;
-	
+
 	private String uri;
 
-	public LanguageImpl(String uri, String name, String nativeName,
-			String code) {
+	public LanguageImpl(String uri, String name, String nativeName, String code) {
 		super(uri);
 		props.put(Language.PROP_ENGLISH_LABEL, name);
 		props.put(Language.PROP_NATIVE_LABEL, nativeName);
 		props.put(Language.PROP_ISO639CODE, code);
 		uri = LanguageOntology.NAMESPACE + LanguageOntology.getURIFromLabel(getEnglishLabel());
-		
+
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		if (uri != null)
-			return uri ;
+			return uri;
 		else
 			return tempURI;
 	}
-
 
 }

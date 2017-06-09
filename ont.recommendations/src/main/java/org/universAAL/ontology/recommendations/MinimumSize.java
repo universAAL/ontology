@@ -19,26 +19,32 @@ package org.universAAL.ontology.recommendations;
 import org.universAAL.middleware.ui.rdf.FormControl;
 
 /**
- * Used to tell Handlers an element is supposed to be bigger than certain dimensions.
- * The code:
+ * Used to tell Handlers an element is supposed to be bigger than certain
+ * dimensions. The code:
+ * 
  * <pre>
  * <code> 
  * {@link FormControl} f = ...;
  * f.addAppearanceRecommendation(new MinimumSize(100,100, SizeUnit.absolute));
- * </code></pre>
- * will set the minimum size of the component to be a square 100 pixels wide and 100 pixels high -
+ * </code>
+ * </pre>
+ * 
+ * will set the minimum size of the component to be a square 100 pixels wide and
+ * 100 pixels high -
+ * 
  * @author amedrano
  * @see SizeUnit
  *
  */
 public class MinimumSize extends Size {
 
-	  public static final String MY_URI = RecommendationsOntology.NAMESPACE
-			    + "MinmumSize";
+	public static final String MY_URI = RecommendationsOntology.NAMESPACE + "MinmumSize";
+
 	/**
 	 * 
 	 */
-	public MinimumSize() {}
+	public MinimumSize() {
+	}
 
 	/**
 	 * @param width
@@ -56,8 +62,7 @@ public class MinimumSize extends Size {
 		super(uri);
 	}
 
-	
-	  public String getClassURI() {
-		    return MY_URI;
-		  }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

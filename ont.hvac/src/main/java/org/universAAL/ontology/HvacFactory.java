@@ -21,21 +21,19 @@ import org.universAAL.ontology.hvac.Air_Conditioning;
 import org.universAAL.ontology.hvac.Heating;
 import org.universAAL.ontology.hvac.Ventilation;
 
-
 public class HvacFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
+		switch (factoryIndex) {
 
-	case 0:
-	    return new Air_Conditioning(instanceURI);  
-	case 1:
-	    return new Heating(instanceURI);
-	case 2:
-	    return new Ventilation(instanceURI);
+		case 0:
+			return new Air_Conditioning(instanceURI);
+		case 1:
+			return new Heating(instanceURI);
+		case 2:
+			return new Ventilation(instanceURI);
 		}
-	return null;
-    }
+		return null;
+	}
 }

@@ -26,23 +26,21 @@ import org.universAAL.ontology.reasoner.ReasoningService;
 import org.universAAL.ontology.reasoner.Rule;
 import org.universAAL.ontology.reasoner.Situation;
 
-
 public class ReasoningFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new Situation(instanceURI);
-	case 1:
-	    return new Query(instanceURI);
-	case 2:
-	    return new Rule(instanceURI);
-	case 3:
-	    return new ReasoningService(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new Situation(instanceURI);
+		case 1:
+			return new Query(instanceURI);
+		case 2:
+			return new Rule(instanceURI);
+		case 3:
+			return new ReasoningService(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

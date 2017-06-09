@@ -22,15 +22,15 @@ import org.universAAL.ontology.disease.owl.DiseaseOntology;
 
 public class DiseaseActivator implements ModuleActivator {
 
-    static ModuleContext context = null;
-    DiseaseOntology ontology = new DiseaseOntology();
+	static ModuleContext context = null;
+	DiseaseOntology ontology = new DiseaseOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	context = mc;
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		context = mc;
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 }

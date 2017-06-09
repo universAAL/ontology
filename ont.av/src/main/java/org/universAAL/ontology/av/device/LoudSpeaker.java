@@ -38,52 +38,46 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class LoudSpeaker extends Device {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "LoudSpeaker";
-    public static final String PROP_VOLUME = AVOntology.NAMESPACE + "volume";
-    public static final String PROP_EFFECTIVE_POWER_IN_WATT = AVOntology.NAMESPACE
-    		+ "effectivePowerInWatt";
-    public static final String PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandWidthInHz";
-    public static final String PROP_IS_MUSIC_COMPATIBLE = AVOntology.NAMESPACE + "isMusicCompatible";
-    public static final String PROP_UPPER_BOUND = AVOntology.NAMESPACE + "upperBound";
-    public static final String PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
+	public static final String MY_URI = AVOntology.NAMESPACE + "LoudSpeaker";
+	public static final String PROP_VOLUME = AVOntology.NAMESPACE + "volume";
+	public static final String PROP_EFFECTIVE_POWER_IN_WATT = AVOntology.NAMESPACE + "effectivePowerInWatt";
+	public static final String PROP_BANDWIDTH_IN_HZ = AVOntology.NAMESPACE + "bandWidthInHz";
+	public static final String PROP_IS_MUSIC_COMPATIBLE = AVOntology.NAMESPACE + "isMusicCompatible";
+	public static final String PROP_UPPER_BOUND = AVOntology.NAMESPACE + "upperBound";
+	public static final String PROP_IS_MUTED = AVOntology.NAMESPACE + "isMuted";
 
+	/** The default constructor */
+	public LoudSpeaker() {
+		super();
+	}
 
-    /** The default constructor */
-    public LoudSpeaker() {
-	super();
-    }
+	/**
+	 * this constructor is needed for constructing loudspeakers with a special
+	 * URI as parameter for the case that an existing loudspeaker has to be
+	 * initialized by the database for example
+	 */
+	public LoudSpeaker(String uri) {
+		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri);
+	}
 
-    /**
-     * this constructor is needed for constructing loudspeakers with a special
-     * URI as parameter for the case that an existing loudspeaker has to be
-     * initialized by the database for example
-     */
-    public LoudSpeaker(String uri) {
-	super((uri == null || uri.lastIndexOf('#') > 0) ? uri
-		: Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri);
-    }
+	/**
+	 * numProps is a dummy parameter this constructor is needed for constructing
+	 * microphones with an unique URI
+	 */
+	public LoudSpeaker(int numProps) {
+		super(AVOntology.NAMESPACE, numProps);
+	}
 
-    /**
-     * numProps is a dummy parameter this constructor is needed for constructing
-     * microphones with an unique URI
-     */
-    public LoudSpeaker(int numProps) {
-	super(AVOntology.NAMESPACE, numProps);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    // TODO: uncompleted!!!
-    public int getPropSerializationType(String propURI) {
-	if (PROP_VOLUME.equals(propURI)
-		|| PROP_EFFECTIVE_POWER_IN_WATT.equals(propURI)
-		|| PROP_BANDWIDTH_IN_HZ.equals(propURI)
-		|| PROP_IS_MUSIC_COMPATIBLE.equals(propURI)
-		|| PROP_UPPER_BOUND.equals(propURI)
-		|| PROP_IS_MUTED.equals(propURI))
-	    return PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	// TODO: uncompleted!!!
+	public int getPropSerializationType(String propURI) {
+		if (PROP_VOLUME.equals(propURI) || PROP_EFFECTIVE_POWER_IN_WATT.equals(propURI)
+				|| PROP_BANDWIDTH_IN_HZ.equals(propURI) || PROP_IS_MUSIC_COMPATIBLE.equals(propURI)
+				|| PROP_UPPER_BOUND.equals(propURI) || PROP_IS_MUTED.equals(propURI))
+			return PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 }

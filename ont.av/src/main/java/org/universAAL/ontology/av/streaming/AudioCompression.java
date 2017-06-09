@@ -32,91 +32,87 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class AudioCompression extends Compression {
 
-    public static final String MY_URI = AVOntology.NAMESPACE
-	    + "AudioCompression";
+	public static final String MY_URI = AVOntology.NAMESPACE + "AudioCompression";
 
-    /*
-     * to add a type, following actions are necessary: add the order as public
-     * integer attribute add the name to the array of names add the internal
-     * representation of the type as public AudioCompression attribute
-     */
-    public static final int PCM = 0;
-    public static final int MPEG_1_AUDIO_LAYER_3 = 1;
-    public static final int OGG_Vorbis = 2;
+	/*
+	 * to add a type, following actions are necessary: add the order as public
+	 * integer attribute add the name to the array of names add the internal
+	 * representation of the type as public AudioCompression attribute
+	 */
+	public static final int PCM = 0;
+	public static final int MPEG_1_AUDIO_LAYER_3 = 1;
+	public static final int OGG_Vorbis = 2;
 
-    // array with compression names
-    private static final String[] names = { "pcm", "MPEG-1AudioLayer3",
-	    "OGGVorbis" };
+	// array with compression names
+	private static final String[] names = { "pcm", "MPEG-1AudioLayer3", "OGGVorbis" };
 
-    // the different compressions
-    public static final AudioCompression pcm = new AudioCompression(PCM);
-    public static final AudioCompression mpeg1AudioLayer3 = new AudioCompression(
-	    MPEG_1_AUDIO_LAYER_3);
-    public static final AudioCompression oggVorbis = new AudioCompression(
-	    OGG_Vorbis);
+	// the different compressions
+	public static final AudioCompression pcm = new AudioCompression(PCM);
+	public static final AudioCompression mpeg1AudioLayer3 = new AudioCompression(MPEG_1_AUDIO_LAYER_3);
+	public static final AudioCompression oggVorbis = new AudioCompression(OGG_Vorbis);
 
-    /**
-     * 
-     * @param order
-     * @return an audio compression concerning to th order
-     */
-    public static AudioCompression getCompressionByOrder(int order) {
-	switch (order) {
-	case PCM:
-	    return pcm;
-	case MPEG_1_AUDIO_LAYER_3:
-	    return mpeg1AudioLayer3;
-	case OGG_Vorbis:
-	    return oggVorbis;
-	default:
-	    return null;
+	/**
+	 * 
+	 * @param order
+	 * @return an audio compression concerning to th order
+	 */
+	public static AudioCompression getCompressionByOrder(int order) {
+		switch (order) {
+		case PCM:
+			return pcm;
+		case MPEG_1_AUDIO_LAYER_3:
+			return mpeg1AudioLayer3;
+		case OGG_Vorbis:
+			return oggVorbis;
+		default:
+			return null;
+		}
 	}
-    }
 
-    /**
-     * 
-     * @param name
-     * @return an audio compression concerning to the name
-     * 
-     */
-    public static final AudioCompression valueOf(String name) {
-	if (name == null)
-	    return null;
+	/**
+	 * 
+	 * @param name
+	 * @return an audio compression concerning to the name
+	 * 
+	 */
+	public static final AudioCompression valueOf(String name) {
+		if (name == null)
+			return null;
 
-	if (name.startsWith(AVOntology.NAMESPACE))
-	    name = name.substring(AVOntology.NAMESPACE.length());
+		if (name.startsWith(AVOntology.NAMESPACE))
+			name = name.substring(AVOntology.NAMESPACE.length());
 
-	for (int i = MPEG_1_AUDIO_LAYER_3; i <= names.length; i++)
-	    if (names[i].equals(name))
-		return getCompressionByOrder(i);
-	return null;
-    }
+		for (int i = MPEG_1_AUDIO_LAYER_3; i <= names.length; i++)
+			if (names[i].equals(name))
+				return getCompressionByOrder(i);
+		return null;
+	}
 
-    private int order;
+	private int order;
 
-    private AudioCompression(int order) {
-	super(AVOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
+	private AudioCompression(int order) {
+		super(AVOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public String name() {
+		return names[order];
+	}
 
-    public int ord() {
-	return order;
-    }
+	public int ord() {
+		return order;
+	}
 
-    public boolean setProperty(String propURI, Object o) {
-	// do nothing
-	return false;
-    }
+	public boolean setProperty(String propURI, Object o) {
+		// do nothing
+		return false;
+	}
 }

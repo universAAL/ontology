@@ -26,134 +26,129 @@ import org.universAAL.middleware.service.owl.Service;
 
 @SuppressWarnings("unchecked")
 public class ReasoningService extends Service {
-    public static final String MY_URI = ReasoningOntology.NAMESPACE
-	    + "ReasoningService";
-    public static final String PROP_SITUATIONS = ReasoningOntology.NAMESPACE
-	    + "situation";
-    public static final String PROP_QUERIES = ReasoningOntology.NAMESPACE
-	    + "query";
-    public static final String PROP_RULES = ReasoningOntology.NAMESPACE
-	    + "rules";
+	public static final String MY_URI = ReasoningOntology.NAMESPACE + "ReasoningService";
+	public static final String PROP_SITUATIONS = ReasoningOntology.NAMESPACE + "situation";
+	public static final String PROP_QUERIES = ReasoningOntology.NAMESPACE + "query";
+	public static final String PROP_RULES = ReasoningOntology.NAMESPACE + "rules";
 
-    public ReasoningService() {
-	super();
-    }
-
-    public ReasoningService(String uri) {
-	super(uri);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_SITUATIONS)
-		&& hasProperty(PROP_QUERIES) && hasProperty(PROP_RULES);
-    }
-
-    public Query[] getQuery() {
-	Object propList = getProperty(PROP_QUERIES);
-	if (propList instanceof List)
-	    return (Query[]) ((List) propList).toArray(new Query[0]);
-	else if (propList != null)
-	    return new Query[] { (Query) propList }; // Handle special case of a
-	// single item not
-	// contained in a list
-	return new Query[0];
-    }
-
-    public void addQuery(Query newValue) {
-	Object propList = getProperty(PROP_QUERIES);
-	List newList;
-	if (propList instanceof List)
-	    newList = (List) propList;
-	else {
-	    newList = new ArrayList();
-	    if (propList != null)
-		newList.add(propList); // Handle special case of a single
-	    // previous item not contained in a list
+	public ReasoningService() {
+		super();
 	}
-	newList.add(newValue);
-	changeProperty(PROP_QUERIES, newList);
-    }
 
-    public void setQuery(Query[] propertyValue) {
-	List propList = new ArrayList(propertyValue.length);
-	for (int i = 0; i < propertyValue.length; i++) {
-	    propList.add(propertyValue[i]);
+	public ReasoningService(String uri) {
+		super(uri);
 	}
-	changeProperty(PROP_QUERIES, propList);
-    }
 
-    public Rule[] getRule() {
-	Object propList = getProperty(PROP_RULES);
-	if (propList instanceof List)
-	    return (Rule[]) ((List) propList).toArray(new Rule[0]);
-	else if (propList != null)
-	    return new Rule[] { (Rule) propList }; // Handle special case of a
-	// single item not contained
-	// in a list
-	return new Rule[0];
-    }
-
-    public void addRule(Rule newValue) {
-	Object propList = getProperty(PROP_RULES);
-	List newList;
-	if (propList instanceof List)
-	    newList = (List) propList;
-	else {
-	    newList = new ArrayList();
-	    if (propList != null)
-		newList.add(propList); // Handle special case of a single
-	    // previous item not contained in a list
+	public String getClassURI() {
+		return MY_URI;
 	}
-	newList.add(newValue);
-	changeProperty(PROP_RULES, newList);
-    }
 
-    public void setRule(Rule[] propertyValue) {
-	List propList = new ArrayList(propertyValue.length);
-	for (int i = 0; i < propertyValue.length; i++) {
-	    propList.add(propertyValue[i]);
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
 	}
-	changeProperty(PROP_RULES, propList);
-    }
 
-    public Situation[] getSituation() {
-	Object propList = getProperty(PROP_SITUATIONS);
-	if (propList instanceof List)
-	    return (Situation[]) ((List) propList).toArray(new Situation[0]);
-	else if (propList != null)
-	    return new Situation[] { (Situation) propList };
-	// Handle special case of a single item not contained in a list
-	return new Situation[0];
-    }
-
-    public void addSituation(Situation newValue) {
-	Object propList = getProperty(PROP_SITUATIONS);
-	List newList;
-	if (propList instanceof List)
-	    newList = (List) propList;
-	else {
-	    newList = new ArrayList();
-	    if (propList != null)
-		newList.add(propList); // Handle special case of a single
-	    // previous item not contained in a list
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_SITUATIONS) && hasProperty(PROP_QUERIES) && hasProperty(PROP_RULES);
 	}
-	newList.add(newValue);
-	changeProperty(PROP_SITUATIONS, newList);
-    }
 
-    public void setSituation(Situation[] propertyValue) {
-	List propList = new ArrayList(propertyValue.length);
-	for (int i = 0; i < propertyValue.length; i++) {
-	    propList.add(propertyValue[i]);
+	public Query[] getQuery() {
+		Object propList = getProperty(PROP_QUERIES);
+		if (propList instanceof List)
+			return (Query[]) ((List) propList).toArray(new Query[0]);
+		else if (propList != null)
+			return new Query[] { (Query) propList }; // Handle special case of a
+		// single item not
+		// contained in a list
+		return new Query[0];
 	}
-	changeProperty(PROP_SITUATIONS, propList);
-    }
+
+	public void addQuery(Query newValue) {
+		Object propList = getProperty(PROP_QUERIES);
+		List newList;
+		if (propList instanceof List)
+			newList = (List) propList;
+		else {
+			newList = new ArrayList();
+			if (propList != null)
+				newList.add(propList); // Handle special case of a single
+			// previous item not contained in a list
+		}
+		newList.add(newValue);
+		changeProperty(PROP_QUERIES, newList);
+	}
+
+	public void setQuery(Query[] propertyValue) {
+		List propList = new ArrayList(propertyValue.length);
+		for (int i = 0; i < propertyValue.length; i++) {
+			propList.add(propertyValue[i]);
+		}
+		changeProperty(PROP_QUERIES, propList);
+	}
+
+	public Rule[] getRule() {
+		Object propList = getProperty(PROP_RULES);
+		if (propList instanceof List)
+			return (Rule[]) ((List) propList).toArray(new Rule[0]);
+		else if (propList != null)
+			return new Rule[] { (Rule) propList }; // Handle special case of a
+		// single item not contained
+		// in a list
+		return new Rule[0];
+	}
+
+	public void addRule(Rule newValue) {
+		Object propList = getProperty(PROP_RULES);
+		List newList;
+		if (propList instanceof List)
+			newList = (List) propList;
+		else {
+			newList = new ArrayList();
+			if (propList != null)
+				newList.add(propList); // Handle special case of a single
+			// previous item not contained in a list
+		}
+		newList.add(newValue);
+		changeProperty(PROP_RULES, newList);
+	}
+
+	public void setRule(Rule[] propertyValue) {
+		List propList = new ArrayList(propertyValue.length);
+		for (int i = 0; i < propertyValue.length; i++) {
+			propList.add(propertyValue[i]);
+		}
+		changeProperty(PROP_RULES, propList);
+	}
+
+	public Situation[] getSituation() {
+		Object propList = getProperty(PROP_SITUATIONS);
+		if (propList instanceof List)
+			return (Situation[]) ((List) propList).toArray(new Situation[0]);
+		else if (propList != null)
+			return new Situation[] { (Situation) propList };
+		// Handle special case of a single item not contained in a list
+		return new Situation[0];
+	}
+
+	public void addSituation(Situation newValue) {
+		Object propList = getProperty(PROP_SITUATIONS);
+		List newList;
+		if (propList instanceof List)
+			newList = (List) propList;
+		else {
+			newList = new ArrayList();
+			if (propList != null)
+				newList.add(propList); // Handle special case of a single
+			// previous item not contained in a list
+		}
+		newList.add(newValue);
+		changeProperty(PROP_SITUATIONS, newList);
+	}
+
+	public void setSituation(Situation[] propertyValue) {
+		List propList = new ArrayList(propertyValue.length);
+		for (int i = 0; i < propertyValue.length; i++) {
+			propList.add(propertyValue[i]);
+		}
+		changeProperty(PROP_SITUATIONS, propList);
+	}
 }

@@ -33,27 +33,27 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public abstract class Format extends ManagedIndividual {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "format";
-    public static final String PROP_ENCODING = AVOntology.NAMESPACE + "encoding";
+	public static final String MY_URI = AVOntology.NAMESPACE + "format";
+	public static final String PROP_ENCODING = AVOntology.NAMESPACE + "encoding";
 
-    /** The default constructor */
-    public Format() {
-	super();
-    }
+	/** The default constructor */
+	public Format() {
+		super();
+	}
 
-    public Format(String uri) {
-	super(uri);
-    }
+	public Format(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public Compression getCompression() {
-	return (Compression) getProperty(PROP_ENCODING);
-    }
+	public Compression getCompression() {
+		return (Compression) getProperty(PROP_ENCODING);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

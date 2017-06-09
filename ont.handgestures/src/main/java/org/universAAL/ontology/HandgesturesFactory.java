@@ -31,16 +31,15 @@ import org.universAAL.ontology.handgestures.HandGestures;
  */
 public class HandgesturesFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new HandGestures(instanceURI);
-	case 1:
-	    return new HandGestureService(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new HandGestures(instanceURI);
+		case 1:
+			return new HandGestureService(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

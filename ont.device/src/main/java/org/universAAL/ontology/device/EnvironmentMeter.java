@@ -24,35 +24,34 @@ package org.universAAL.ontology.device;
 import org.universAAL.ontology.measurement.Measurement;
 
 public class EnvironmentMeter extends Sensor {
-    public static final String MY_URI = DeviceOntology.NAMESPACE
-	    + "EnvironmentMeter";
+	public static final String MY_URI = DeviceOntology.NAMESPACE + "EnvironmentMeter";
 
-    public EnvironmentMeter() {
-	super();
-    }
+	public EnvironmentMeter() {
+		super();
+	}
 
-    public EnvironmentMeter(String uri) {
-	super(uri);
-    }
+	public EnvironmentMeter(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_HAS_VALUE);
+	}
 
-    public Measurement getValue() {
-	return (Measurement) getProperty(PROP_HAS_VALUE);
-    }
+	public Measurement getValue() {
+		return (Measurement) getProperty(PROP_HAS_VALUE);
+	}
 
-    public void setValue(Measurement newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_HAS_VALUE, newPropValue);
-    }
+	public void setValue(Measurement newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_HAS_VALUE, newPropValue);
+	}
 }

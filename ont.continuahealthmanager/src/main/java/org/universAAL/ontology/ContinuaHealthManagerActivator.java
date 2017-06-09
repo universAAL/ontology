@@ -36,18 +36,18 @@ import org.universAAL.ontology.continua.ContinuaHealthManagerOntology;
 // Main class
 public class ContinuaHealthManagerActivator implements ModuleActivator {
 
-    // Attributes
-    ContinuaHealthManagerOntology cho = new ContinuaHealthManagerOntology();
+	// Attributes
+	ContinuaHealthManagerOntology cho = new ContinuaHealthManagerOntology();
 
-    // Methods
+	// Methods
 
-    /** Start */
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, cho);
-    }
+	/** Start */
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, cho);
+	}
 
-    /** Stop */
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, cho);
-    }
+	/** Stop */
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, cho);
+	}
 }

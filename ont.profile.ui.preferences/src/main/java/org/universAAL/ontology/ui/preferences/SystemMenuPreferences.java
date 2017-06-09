@@ -22,95 +22,92 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Preference;
 
 public class SystemMenuPreferences extends Preference {
-    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-	    + "SystemMenuPreferences";
-    public static final String PROP_MAIN_MENU_CONFIGURATION = UIPreferencesProfileOntology.NAMESPACE
-	    + "mainMenuConfiguration";
-    public static final String PROP_UIREQUEST_PERSISTANCE = UIPreferencesProfileOntology.NAMESPACE
-	    + "uiRequestPersistance";
-    public static final String PROP_PENDING_DIALOG_BUILDER = UIPreferencesProfileOntology.NAMESPACE
-	    + "pendingDialogBuilder";
-    public static final String PROP_PENDING_MESSAGE_BUILDER = UIPreferencesProfileOntology.NAMESPACE
-	    + "pendingMessageBuilder";
-    public static final String PROP_SEARCH_FEATURE_IS_FIRST = UIPreferencesProfileOntology.NAMESPACE
-	    + "searchFeatureIsFirst";
+	public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE + "SystemMenuPreferences";
+	public static final String PROP_MAIN_MENU_CONFIGURATION = UIPreferencesProfileOntology.NAMESPACE
+			+ "mainMenuConfiguration";
+	public static final String PROP_UIREQUEST_PERSISTANCE = UIPreferencesProfileOntology.NAMESPACE
+			+ "uiRequestPersistance";
+	public static final String PROP_PENDING_DIALOG_BUILDER = UIPreferencesProfileOntology.NAMESPACE
+			+ "pendingDialogBuilder";
+	public static final String PROP_PENDING_MESSAGE_BUILDER = UIPreferencesProfileOntology.NAMESPACE
+			+ "pendingMessageBuilder";
+	public static final String PROP_SEARCH_FEATURE_IS_FIRST = UIPreferencesProfileOntology.NAMESPACE
+			+ "searchFeatureIsFirst";
 
-    public SystemMenuPreferences() {
-	super();
-    }
+	public SystemMenuPreferences() {
+		super();
+	}
 
-    public SystemMenuPreferences(String uri) {
-	super(uri);
-    }
+	public SystemMenuPreferences(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     *      (java.lang.String)
-     */
-    public int getPropSerializationType(String arg0) {
-	return Resource.PROP_SERIALIZATION_FULL;
-    }
+	/**
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 *      (java.lang.String)
+	 */
+	public int getPropSerializationType(String arg0) {
+		return Resource.PROP_SERIALIZATION_FULL;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_MAIN_MENU_CONFIGURATION)
-		&& hasProperty(PROP_UIREQUEST_PERSISTANCE)
-		&& hasProperty(PROP_PENDING_DIALOG_BUILDER)
-		&& hasProperty(PROP_PENDING_MESSAGE_BUILDER)
-		&& hasProperty(PROP_SEARCH_FEATURE_IS_FIRST);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+	 */
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_MAIN_MENU_CONFIGURATION) && hasProperty(PROP_UIREQUEST_PERSISTANCE)
+				&& hasProperty(PROP_PENDING_DIALOG_BUILDER) && hasProperty(PROP_PENDING_MESSAGE_BUILDER)
+				&& hasProperty(PROP_SEARCH_FEATURE_IS_FIRST);
+	}
 
-    public MainMenuConfigurationType getMainMenuConfiguration() {
-	return (MainMenuConfigurationType) getProperty(PROP_MAIN_MENU_CONFIGURATION);
-    }
+	public MainMenuConfigurationType getMainMenuConfiguration() {
+		return (MainMenuConfigurationType) getProperty(PROP_MAIN_MENU_CONFIGURATION);
+	}
 
-    public void setMainMenuConfiguration(MainMenuConfigurationType newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_MAIN_MENU_CONFIGURATION, newPropValue);
-    }
+	public void setMainMenuConfiguration(MainMenuConfigurationType newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_MAIN_MENU_CONFIGURATION, newPropValue);
+	}
 
-    public Status getUIRequestPersistance() {
-	return (Status) getProperty(PROP_UIREQUEST_PERSISTANCE);
-    }
+	public Status getUIRequestPersistance() {
+		return (Status) getProperty(PROP_UIREQUEST_PERSISTANCE);
+	}
 
-    public void setUIRequestPersistance(Status newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_UIREQUEST_PERSISTANCE, newPropValue);
-    }
+	public void setUIRequestPersistance(Status newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_UIREQUEST_PERSISTANCE, newPropValue);
+	}
 
-    public Status getSearchFeatureIsFirst() {
-	return (Status) getProperty(PROP_SEARCH_FEATURE_IS_FIRST);
-    }
+	public Status getSearchFeatureIsFirst() {
+		return (Status) getProperty(PROP_SEARCH_FEATURE_IS_FIRST);
+	}
 
-    public void setSearchFeatureIsFirst(Status newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_SEARCH_FEATURE_IS_FIRST, newPropValue);
-    }
+	public void setSearchFeatureIsFirst(Status newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_SEARCH_FEATURE_IS_FIRST, newPropValue);
+	}
 
-    public PendingMessageBuilderType getPendingMessageBuilder() {
-	return (PendingMessageBuilderType) getProperty(PROP_PENDING_MESSAGE_BUILDER);
-    }
+	public PendingMessageBuilderType getPendingMessageBuilder() {
+		return (PendingMessageBuilderType) getProperty(PROP_PENDING_MESSAGE_BUILDER);
+	}
 
-    public void setPendingMessageBuilder(PendingMessageBuilderType newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_PENDING_MESSAGE_BUILDER, newPropValue);
-    }
+	public void setPendingMessageBuilder(PendingMessageBuilderType newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_PENDING_MESSAGE_BUILDER, newPropValue);
+	}
 
-    public PendingDialogsBuilderType getPendingDialogBuilder() {
-	return (PendingDialogsBuilderType) getProperty(PROP_PENDING_DIALOG_BUILDER);
-    }
+	public PendingDialogsBuilderType getPendingDialogBuilder() {
+		return (PendingDialogsBuilderType) getProperty(PROP_PENDING_DIALOG_BUILDER);
+	}
 
-    public void setPendingDialogBuilder(PendingDialogsBuilderType newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_PENDING_DIALOG_BUILDER, newPropValue);
-    }
+	public void setPendingDialogBuilder(PendingDialogsBuilderType newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_PENDING_DIALOG_BUILDER, newPropValue);
+	}
 }

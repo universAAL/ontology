@@ -32,29 +32,26 @@ import org.universAAL.middleware.service.owl.Service;
  * @author alfiva
  */
 public class DeviceService extends Service {
-    public static final String MY_URI = PhThingOntology.NAMESPACE
-	    + "DeviceService";
-    public static final String PROP_CONTROLS = PhThingOntology.NAMESPACE
-	    + "controls";
+	public static final String MY_URI = PhThingOntology.NAMESPACE + "DeviceService";
+	public static final String PROP_CONTROLS = PhThingOntology.NAMESPACE + "controls";
 
-    public DeviceService(String uri) {
-	super(uri);
-    }
+	public DeviceService(String uri) {
+		super(uri);
+	}
 
-    public DeviceService() {
-	super();
-    }
+	public DeviceService() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL
-		: super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_CONTROLS.equals(propURI) ? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

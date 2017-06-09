@@ -16,27 +16,26 @@
 package org.universAAL.ontology.health.owl;
 
 public class WeightRequirement extends MeasurementRequirements {
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "WeightMeasurement";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "WeightMeasurement";
 
-    public WeightRequirement() {
-	super();
-    }
+	public WeightRequirement() {
+		super();
+	}
 
-    public WeightRequirement(String uri) {
-	super(uri);
-    }
+	public WeightRequirement(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
 }

@@ -23,13 +23,13 @@ import org.universAAL.ontology.questionnaire.QuestionnaireOntology;
 
 public class QuestionnaireActivator implements ModuleActivator {
 
-    private QuestionnaireOntology ontology = new QuestionnaireOntology();
+	private QuestionnaireOntology ontology = new QuestionnaireOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 }

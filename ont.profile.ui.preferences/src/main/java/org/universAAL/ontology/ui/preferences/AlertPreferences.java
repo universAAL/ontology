@@ -22,47 +22,45 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Preference;
 
 public class AlertPreferences extends Preference {
-    public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE
-	    + "AlertPreferences";
-    public static final String PROP_ALERT_OPTION = UIPreferencesProfileOntology.NAMESPACE
-	    + "alertOption";
+	public static final String MY_URI = UIPreferencesProfileOntology.NAMESPACE + "AlertPreferences";
+	public static final String PROP_ALERT_OPTION = UIPreferencesProfileOntology.NAMESPACE + "alertOption";
 
-    public AlertPreferences() {
-	super();
-    }
+	public AlertPreferences() {
+		super();
+	}
 
-    public AlertPreferences(String uri) {
-	super(uri);
-    }
+	public AlertPreferences(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     *      (java.lang.String)
-     */
-    public int getPropSerializationType(String arg0) {
-	return Resource.PROP_SERIALIZATION_FULL;
-    }
+	/**
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 *      (java.lang.String)
+	 */
+	public int getPropSerializationType(String arg0) {
+		return Resource.PROP_SERIALIZATION_FULL;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
-     */
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_ALERT_OPTION);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
+	 */
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_ALERT_OPTION);
+	}
 
-    public AlertType getAlertOption() {
-	return (AlertType) getProperty(PROP_ALERT_OPTION);
-    }
+	public AlertType getAlertOption() {
+		return (AlertType) getProperty(PROP_ALERT_OPTION);
+	}
 
-    public void setAlertOption(AlertType newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_ALERT_OPTION, newPropValue);
-    }
+	public void setAlertOption(AlertType newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_ALERT_OPTION, newPropValue);
+	}
 }

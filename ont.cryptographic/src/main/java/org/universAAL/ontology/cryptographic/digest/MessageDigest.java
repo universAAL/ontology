@@ -25,10 +25,10 @@ import org.universAAL.ontology.cryptographic.Digest;
 public class MessageDigest extends Digest {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "MessageDigest";
-	
+
 	public static final MessageDigest IND_MD5 = new MessageDigest(CryptographicOntology.NAMESPACE + "md5");
 	public static final MessageDigest IND_MD2 = new MessageDigest(CryptographicOntology.NAMESPACE + "md2");
-	
+
 	/**
 	 * 
 	 */
@@ -42,11 +42,9 @@ public class MessageDigest extends Digest {
 		super(uri);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
-	
-	
 
 }

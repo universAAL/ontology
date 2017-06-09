@@ -18,79 +18,81 @@ package org.universAAL.ontology.hvac;
 /**
  * A type of mode only for {@link Heating} in which user can find three modes.
  * <dl>
- *  <dt>Automatic</dt><dd>its a mode in which the user sets the temperature that (s)he wants.</dd>
- *  <dt>Heat</dt><dd>its a mode that heats the air.</dd>
+ * <dt>Automatic</dt>
+ * <dd>its a mode in which the user sets the temperature that (s)he wants.</dd>
+ * <dt>Heat</dt>
+ * <dd>its a mode that heats the air.</dd>
  * </dl>
+ * 
  * @author Ricardo
  */
 public class Heating_Mode extends Mode {
-    public static final String MY_URI = HvacOntology.NAMESPACE + "Heating_Mode";
+	public static final String MY_URI = HvacOntology.NAMESPACE + "Heating_Mode";
 
-    public static final int AUTOMATIC = 0;
-    public static final int Heat = 1;
+	public static final int AUTOMATIC = 0;
+	public static final int Heat = 1;
 
-    private static final String[] names = { "Automatic", 
-	    "Heat" };
+	private static final String[] names = { "Automatic", "Heat" };
 
-    /**
-     * The user sets the temperature that (s)he wants.
-     */
-    public static final Heating_Mode Automatic = new Heating_Mode(AUTOMATIC);
-    
-    /**
-     * Heats the air.
-     */
-    public static final Heating_Mode heat = new Heating_Mode(Heat);
+	/**
+	 * The user sets the temperature that (s)he wants.
+	 */
+	public static final Heating_Mode Automatic = new Heating_Mode(AUTOMATIC);
 
-    private int order;
+	/**
+	 * Heats the air.
+	 */
+	public static final Heating_Mode heat = new Heating_Mode(Heat);
 
-    private Heating_Mode(int order) {
-	super(HvacOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
+	private int order;
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String name() {
-	return names[order];
-    }
-
-    public int ord() {
-	return order;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static Heating_Mode getHeating_ModeByOrder(int order) {
-	switch (order) {
-	case AUTOMATIC:
-	    return Automatic;
-	case Heat:
-	    return heat;
-	default:
-	    return null;
+	private Heating_Mode(int order) {
+		super(HvacOntology.NAMESPACE + names[order]);
+		this.order = order;
 	}
-    }
 
-    public static final Heating_Mode valueOf(String name) {
-	if (name == null)
-	    return null;
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-	if (name.startsWith(HvacOntology.NAMESPACE))
-	    name = name.substring(HvacOntology.NAMESPACE.length());
+	public boolean isWellFormed() {
+		return true;
+	}
 
-	for (int i = AUTOMATIC; i <= Heat; i++)
-	    if (names[i].equals(name))
-		return getHeating_ModeByOrder(i);
+	public String name() {
+		return names[order];
+	}
 
-	return null;
-    }
+	public int ord() {
+		return order;
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public static Heating_Mode getHeating_ModeByOrder(int order) {
+		switch (order) {
+		case AUTOMATIC:
+			return Automatic;
+		case Heat:
+			return heat;
+		default:
+			return null;
+		}
+	}
+
+	public static final Heating_Mode valueOf(String name) {
+		if (name == null)
+			return null;
+
+		if (name.startsWith(HvacOntology.NAMESPACE))
+			name = name.substring(HvacOntology.NAMESPACE.length());
+
+		for (int i = AUTOMATIC; i <= Heat; i++)
+			if (names[i].equals(name))
+				return getHeating_ModeByOrder(i);
+
+		return null;
+	}
 }

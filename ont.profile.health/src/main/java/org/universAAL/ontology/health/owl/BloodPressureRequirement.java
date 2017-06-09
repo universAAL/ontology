@@ -16,27 +16,26 @@
 package org.universAAL.ontology.health.owl;
 
 public class BloodPressureRequirement extends MeasurementRequirements {
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "BloodPressureMeasurement";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "BloodPressureMeasurement";
 
-    public BloodPressureRequirement() {
-	super();
-    }
+	public BloodPressureRequirement() {
+		super();
+	}
 
-    public BloodPressureRequirement(String uri) {
-	super(uri);
-    }
+	public BloodPressureRequirement(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
 }

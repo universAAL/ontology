@@ -32,93 +32,86 @@ import org.universAAL.ontology.ActivityHubOntology;
  * motion detected delayed (optional) - tamper detected (optional) - no
  * condition detected (optional)
  * 
- * TODO: the standard says:
- * "the tamper flag may be additionally set at any time" means together with a
- * motion-detected or motion-detected-delayed event.
+ * TODO: the standard says: "the tamper flag may be additionally set at any
+ * time" means together with a motion-detected or motion-detected-delayed event.
  * 
  * @author Thomas Fuxreiter
  */
 public class MotionSensorEvent extends ActivityHubSensorEvent {
 
-    public static final String MY_URI = ActivityHubOntology.NAMESPACE
-	    + "MotionSensorEvent";
+	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "MotionSensorEvent";
 
-    public static final int MOTION_DETECTED = 0;
-    public static final int MOTION_DETECTED_DELAYED = 1;
-    public static final int TAMPER_DETECTED = 2;
-    public static final int NO_CONDITION_DETECTED = 3;
+	public static final int MOTION_DETECTED = 0;
+	public static final int MOTION_DETECTED_DELAYED = 1;
+	public static final int TAMPER_DETECTED = 2;
+	public static final int NO_CONDITION_DETECTED = 3;
 
-    private static final String[] names = { "motion_detected",
-	    "motion_detected_delayed", "tamper_detected",
-	    "no_condition_detected" };
+	private static final String[] names = { "motion_detected", "motion_detected_delayed", "tamper_detected",
+			"no_condition_detected" };
 
-    public static final MotionSensorEvent motion_detected = new MotionSensorEvent(
-	    MOTION_DETECTED);
-    public static final MotionSensorEvent motion_detected_delayed = new MotionSensorEvent(
-	    MOTION_DETECTED_DELAYED);
-    public static final MotionSensorEvent tamper_detected = new MotionSensorEvent(
-	    TAMPER_DETECTED);
-    public static final MotionSensorEvent no_condition_detected = new MotionSensorEvent(
-	    NO_CONDITION_DETECTED);
+	public static final MotionSensorEvent motion_detected = new MotionSensorEvent(MOTION_DETECTED);
+	public static final MotionSensorEvent motion_detected_delayed = new MotionSensorEvent(MOTION_DETECTED_DELAYED);
+	public static final MotionSensorEvent tamper_detected = new MotionSensorEvent(TAMPER_DETECTED);
+	public static final MotionSensorEvent no_condition_detected = new MotionSensorEvent(NO_CONDITION_DETECTED);
 
-    private int order = 0;
+	private int order = 0;
 
-    public MotionSensorEvent(String uri) {
-	super(uri);
-    }
-
-    private MotionSensorEvent(int order) {
-	super(ActivityHubOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public static MotionSensorEvent getEventByOrder(int order) {
-	switch (order) {
-	case MOTION_DETECTED:
-	    return motion_detected;
-	case MOTION_DETECTED_DELAYED:
-	    return motion_detected_delayed;
-	case TAMPER_DETECTED:
-	    return tamper_detected;
-	case NO_CONDITION_DETECTED:
-	    return no_condition_detected;
-	default:
-	    return null;
+	public MotionSensorEvent(String uri) {
+		super(uri);
 	}
-    }
 
-    public static final MotionSensorEvent valueOf(String name) {
-	if (name == null)
-	    return null;
+	private MotionSensorEvent(int order) {
+		super(ActivityHubOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-	if (name.startsWith(ActivityHubOntology.NAMESPACE))
-	    name = name.substring(ActivityHubOntology.NAMESPACE.length());
+	public static MotionSensorEvent getEventByOrder(int order) {
+		switch (order) {
+		case MOTION_DETECTED:
+			return motion_detected;
+		case MOTION_DETECTED_DELAYED:
+			return motion_detected_delayed;
+		case TAMPER_DETECTED:
+			return tamper_detected;
+		case NO_CONDITION_DETECTED:
+			return no_condition_detected;
+		default:
+			return null;
+		}
+	}
 
-	for (int i = MOTION_DETECTED; i <= NO_CONDITION_DETECTED; i++)
-	    if (names[i].equals(name))
-		return getEventByOrder(i);
+	public static final MotionSensorEvent valueOf(String name) {
+		if (name == null)
+			return null;
 
-	return null;
-    }
+		if (name.startsWith(ActivityHubOntology.NAMESPACE))
+			name = name.substring(ActivityHubOntology.NAMESPACE.length());
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+		for (int i = MOTION_DETECTED; i <= NO_CONDITION_DETECTED; i++)
+			if (names[i].equals(name))
+				return getEventByOrder(i);
 
-    public int getPropSerializationType(String arg0) {
-	/* This class has no property */
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return null;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public int getPropSerializationType(String arg0) {
+		/* This class has no property */
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
+
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 }

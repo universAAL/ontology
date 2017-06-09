@@ -32,22 +32,22 @@ import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.User;
 
 /**
- * Service Description for checking validity of {@link Session}s.
- * only the session manager should implement profiles for this service.
+ * Service Description for checking validity of {@link Session}s. only the
+ * session manager should implement profiles for this service.
+ * 
  * @author amedrano
  *
  */
 public class SessionManagementService extends Service {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "SessionService";
+	public static final String PROP_USER = SecurityOntology.NAMESPACE + "managesSessionsFor";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "SessionService";
-    public static final String PROP_USER = SecurityOntology.NAMESPACE + "managesSessionsFor";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public SessionManagementService() {
-	    super();
+		super();
 	}
 
 	/**
@@ -57,20 +57,19 @@ public class SessionManagementService extends Service {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_USER)){
+		if (propURI.equals(PROP_USER)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);
@@ -79,60 +78,75 @@ public class SessionManagementService extends Service {
 	/*
 	 * Helper Methods
 	 */
-	
+
 	/**
-	 * Check whether the given {@link User} has a valid session in the given {@link Device}.
-	 * This check is only bound to the time it is call, session may not be valid in near future.
-	 * @param mc needed to make the Service call.
-	 * @param u the user to be checked
-	 * @param d the device where the user might have a session.
-	 * @return true if and only if the user should be considered to have a valid session (at the moment of the invocation).
+	 * Check whether the given {@link User} has a valid session in the given
+	 * {@link Device}. This check is only bound to the time it is call, session
+	 * may not be valid in near future.
+	 * 
+	 * @param mc
+	 *            needed to make the Service call.
+	 * @param u
+	 *            the user to be checked
+	 * @param d
+	 *            the device where the user might have a session.
+	 * @return true if and only if the user should be considered to have a valid
+	 *         session (at the moment of the invocation).
 	 */
-	public static boolean hasUserValidSession(ModuleContext mc, User u, Device d){
-	    ServiceRequest sreq = new ServiceRequest();
-	    String usrsOut = SecurityOntology.NAMESPACE + "usersOut";
-	    sreq.addRequiredOutput(usrsOut , new String[]{PROP_USER});
-	    sreq.addValueFilter(new String[]{PROP_USER},  u);
-	    sreq.addValueFilter(new String[]{PROP_USER, SecurityOntology.PROP_SESSION, DeviceBoundSession.PROP_BOUNDED_DEVICE},  d);
-	    ServiceResponse sres = new DefaultServiceCaller(mc).call(sreq);
-	    if (sres == null || !sres.getCallStatus().equals(CallStatus.succeeded)){
-		//By default assume there is no session.
-		return false;
-	    }
-	    List users = sres.getOutput(usrsOut, true);
-	    boolean found = false;
-	    Iterator it = users.iterator();
-	    while (!found && it.hasNext()) {
-		found = ((Resource)it.next()).getURI().equals(u.getURI());
-	    }
-	    return found;
+	public static boolean hasUserValidSession(ModuleContext mc, User u, Device d) {
+		ServiceRequest sreq = new ServiceRequest();
+		String usrsOut = SecurityOntology.NAMESPACE + "usersOut";
+		sreq.addRequiredOutput(usrsOut, new String[] { PROP_USER });
+		sreq.addValueFilter(new String[] { PROP_USER }, u);
+		sreq.addValueFilter(
+				new String[] { PROP_USER, SecurityOntology.PROP_SESSION, DeviceBoundSession.PROP_BOUNDED_DEVICE }, d);
+		ServiceResponse sres = new DefaultServiceCaller(mc).call(sreq);
+		if (sres == null || !sres.getCallStatus().equals(CallStatus.succeeded)) {
+			// By default assume there is no session.
+			return false;
+		}
+		List users = sres.getOutput(usrsOut, true);
+		boolean found = false;
+		Iterator it = users.iterator();
+		while (!found && it.hasNext()) {
+			found = ((Resource) it.next()).getURI().equals(u.getURI());
+		}
+		return found;
 	}
-	
+
 	/**
-	 * Check whether the given {@link User} has a valid session in the given {@link Location}.
-	 * This check is only bound to the time it is call, session may not be valid in near future.
-	 * @param mc needed to make the Service call.
-	 * @param u the user to be checked
-	 * @param l the location where the user might have a session.
-	 * @return true if and only if the user should be considered to have a valid session (at the moment of the invocation).
+	 * Check whether the given {@link User} has a valid session in the given
+	 * {@link Location}. This check is only bound to the time it is call,
+	 * session may not be valid in near future.
+	 * 
+	 * @param mc
+	 *            needed to make the Service call.
+	 * @param u
+	 *            the user to be checked
+	 * @param l
+	 *            the location where the user might have a session.
+	 * @return true if and only if the user should be considered to have a valid
+	 *         session (at the moment of the invocation).
 	 */
-	public static boolean hasUserValidSession(ModuleContext mc, User u, Location l){
-	    ServiceRequest sreq = new ServiceRequest();
-	    String usrsOut = SecurityOntology.NAMESPACE + "usersOut";
-	    sreq.addRequiredOutput(usrsOut , new String[]{PROP_USER});
-	    sreq.addValueFilter(new String[]{PROP_USER},  u);
-	    sreq.addValueFilter(new String[]{PROP_USER, SecurityOntology.PROP_SESSION, LocationBoundSession.PROP_BOUNDED_LOCATION},  l);
-	    ServiceResponse sres = new DefaultServiceCaller(mc).call(sreq);
-	    if (sres == null || !sres.getCallStatus().equals(CallStatus.succeeded)){
-		//By default assume there is no session.
-		return false;
-	    }
-	    List users = sres.getOutput(usrsOut, true);
-	    boolean found = false;
-	    Iterator it = users.iterator();
-	    while (!found && it.hasNext()) {
-		found = ((Resource)it.next()).getURI().equals(u.getURI());
-	    }
-	    return found;
+	public static boolean hasUserValidSession(ModuleContext mc, User u, Location l) {
+		ServiceRequest sreq = new ServiceRequest();
+		String usrsOut = SecurityOntology.NAMESPACE + "usersOut";
+		sreq.addRequiredOutput(usrsOut, new String[] { PROP_USER });
+		sreq.addValueFilter(new String[] { PROP_USER }, u);
+		sreq.addValueFilter(
+				new String[] { PROP_USER, SecurityOntology.PROP_SESSION, LocationBoundSession.PROP_BOUNDED_LOCATION },
+				l);
+		ServiceResponse sres = new DefaultServiceCaller(mc).call(sreq);
+		if (sres == null || !sres.getCallStatus().equals(CallStatus.succeeded)) {
+			// By default assume there is no session.
+			return false;
+		}
+		List users = sres.getOutput(usrsOut, true);
+		boolean found = false;
+		Iterator it = users.iterator();
+		while (!found && it.hasNext()) {
+			found = ((Resource) it.next()).getURI().equals(u.getURI());
+		}
+		return found;
 	}
 }

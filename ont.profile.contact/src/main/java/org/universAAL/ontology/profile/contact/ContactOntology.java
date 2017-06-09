@@ -35,56 +35,45 @@ import org.universAAL.ontology.vcard.VCardOntology;
  */
 public final class ContactOntology extends Ontology {
 
-    private static ContactFactory factory = new ContactFactory();
-    public static final String NAMESPACE = "http://ontology.universAAL.org/profile.contact.owl#";
+	private static ContactFactory factory = new ContactFactory();
+	public static final String NAMESPACE = "http://ontology.universAAL.org/profile.contact.owl#";
 
-    public ContactOntology() {
-	super(NAMESPACE);
-    }
+	public ContactOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r.setResourceComment("");
-	r.setResourceLabel("contact");
-	addImport(DataRepOntology.NAMESPACE);
-	addImport(ServiceBusOntology.NAMESPACE);
-	addImport(ProfileOntology.NAMESPACE);
-	addImport(VCardOntology.NAMESPACE);
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("");
+		r.setResourceLabel("contact");
+		addImport(DataRepOntology.NAMESPACE);
+		addImport(ServiceBusOntology.NAMESPACE);
+		addImport(ProfileOntology.NAMESPACE);
+		addImport(VCardOntology.NAMESPACE);
 
-	// ******* Declaration of regular classes of the ontology ******* //
-	OntClassInfoSetup oci_ContactManagementService = createNewOntClassInfo(
-		ContactManagementService.MY_URI, factory, 0);
-	OntClassInfoSetup oci_ContactListSubProfile = createNewOntClassInfo(
-		ContactListSubProfile.MY_URI, factory, 1);
+		// ******* Declaration of regular classes of the ontology ******* //
+		OntClassInfoSetup oci_ContactManagementService = createNewOntClassInfo(ContactManagementService.MY_URI, factory,
+				0);
+		OntClassInfoSetup oci_ContactListSubProfile = createNewOntClassInfo(ContactListSubProfile.MY_URI, factory, 1);
 
-	// ******* Add content to regular classes of the ontology ******* //
-	oci_ContactManagementService
-		.setResourceComment("The service to add edit remove or other operations over contact list.");
-	oci_ContactManagementService
-		.setResourceLabel("ContactManagementService");
-	oci_ContactManagementService.addSuperClass(Service.MY_URI);
-	oci_ContactManagementService.addObjectProperty(
-		ContactManagementService.PROP_MANAGES_CONTACT_LIST_SUB_PROFILE)
-		.setFunctional();
-	oci_ContactManagementService
-		.addRestriction(MergedRestriction
-			.getAllValuesRestrictionWithCardinality(
-				ContactManagementService.PROP_MANAGES_CONTACT_LIST_SUB_PROFILE,
-				ContactListSubProfile.MY_URI, 1, 1));
-	oci_ContactManagementService.addObjectProperty(
-		ContactManagementService.PROP_CONTACT).setFunctional();
-	oci_ContactManagementService.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			ContactManagementService.PROP_CONTACT,
-			ContactListSubProfile.MY_URI, 1, 1));
+		// ******* Add content to regular classes of the ontology ******* //
+		oci_ContactManagementService
+				.setResourceComment("The service to add edit remove or other operations over contact list.");
+		oci_ContactManagementService.setResourceLabel("ContactManagementService");
+		oci_ContactManagementService.addSuperClass(Service.MY_URI);
+		oci_ContactManagementService.addObjectProperty(ContactManagementService.PROP_MANAGES_CONTACT_LIST_SUB_PROFILE)
+				.setFunctional();
+		oci_ContactManagementService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+				ContactManagementService.PROP_MANAGES_CONTACT_LIST_SUB_PROFILE, ContactListSubProfile.MY_URI, 1, 1));
+		oci_ContactManagementService.addObjectProperty(ContactManagementService.PROP_CONTACT).setFunctional();
+		oci_ContactManagementService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+				ContactManagementService.PROP_CONTACT, ContactListSubProfile.MY_URI, 1, 1));
 
-	oci_ContactListSubProfile.setResourceComment("The contact list");
-	oci_ContactListSubProfile.setResourceLabel("ContactListSubProfile");
-	oci_ContactListSubProfile.addSuperClass(SubProfile.MY_URI);
-	oci_ContactListSubProfile.addObjectProperty(
-		ContactListSubProfile.PROP_CONTACT_LIST).setFunctional();
-	oci_ContactListSubProfile.addRestriction(MergedRestriction
-		.getAllValuesRestriction(
-			ContactListSubProfile.PROP_CONTACT_LIST, PersonalInformationSubprofile.MY_URI));
-    }
+		oci_ContactListSubProfile.setResourceComment("The contact list");
+		oci_ContactListSubProfile.setResourceLabel("ContactListSubProfile");
+		oci_ContactListSubProfile.addSuperClass(SubProfile.MY_URI);
+		oci_ContactListSubProfile.addObjectProperty(ContactListSubProfile.PROP_CONTACT_LIST).setFunctional();
+		oci_ContactListSubProfile.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContactListSubProfile.PROP_CONTACT_LIST, PersonalInformationSubprofile.MY_URI));
+	}
 }

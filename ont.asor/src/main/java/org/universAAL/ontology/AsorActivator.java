@@ -26,13 +26,13 @@ import org.universAAL.ontology.asor.*;
 
 public class AsorActivator implements ModuleActivator {
 
-    AsorOntology _asorOntology = new AsorOntology();
+	AsorOntology _asorOntology = new AsorOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, _asorOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, _asorOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, _asorOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, _asorOntology);
+	}
 }

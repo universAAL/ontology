@@ -31,16 +31,15 @@ import org.universAAL.ontology.multimedia.Stereoset;
 
 public class MultimediaFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new TV(instanceURI);
-	case 1:
-	    return new Stereoset(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new TV(instanceURI);
+		case 1:
+			return new Stereoset(instanceURI);
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

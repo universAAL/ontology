@@ -34,39 +34,39 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class AudioFile extends ManagedIndividual {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "AudioFile";
-    public static final String PROP_HAS_URL = AVOntology.NAMESPACE + "hasURL";
-    // content type should be replaced by format
-    public static final String PROP_HAS_CONTENT_TYPE = AVOntology.NAMESPACE + "hasContentType";
-    public static final String PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
+	public static final String MY_URI = AVOntology.NAMESPACE + "AudioFile";
+	public static final String PROP_HAS_URL = AVOntology.NAMESPACE + "hasURL";
+	// content type should be replaced by format
+	public static final String PROP_HAS_CONTENT_TYPE = AVOntology.NAMESPACE + "hasContentType";
+	public static final String PROP_HAS_FORMAT = AVOntology.NAMESPACE + "hasFormat";
 
-    /** The default constructor */
-    public AudioFile() {
-	super();
-    }
+	/** The default constructor */
+	public AudioFile() {
+		super();
+	}
 
-    public AudioFile(String uri) {
-	super(uri);
-    }
+	public AudioFile(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public String getURL() {
-	Object obj = getProperty(PROP_HAS_URL);
-	if (obj instanceof String)
-	    return (String) obj;
-	return null;
-    }
+	public String getURL() {
+		Object obj = getProperty(PROP_HAS_URL);
+		if (obj instanceof String)
+			return (String) obj;
+		return null;
+	}
 
-    // TODO: perhaps it is better, if the parameter is checked for URL
-    // conventions
-    public void setURL(String URL) {
-	setProperty(PROP_HAS_URL, URL);
-    }
+	// TODO: perhaps it is better, if the parameter is checked for URL
+	// conventions
+	public void setURL(String URL) {
+		setProperty(PROP_HAS_URL, URL);
+	}
 }

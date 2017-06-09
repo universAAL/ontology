@@ -16,14 +16,14 @@
 package org.universAAL.ontology.hvac;
 
 /**
- * Class for All Air Conditioning systems. Where an Air Conditioning is defined as a system that is capable of cooling the air in a room.
+ * Class for All Air Conditioning systems. Where an Air Conditioning is defined
+ * as a system that is capable of cooling the air in a room.
+ * 
  * @author Ricardo
  */
 public class Air_Conditioning extends Target_Temperature {
-	public static final String MY_URI = HvacOntology.NAMESPACE
-			+ "Air_Conditioning";
-	public static final String PROP_HAS_AIR_CONDITIONING_MODE = HvacOntology.NAMESPACE
-			+ "hasAir_Conditioning_Mode";
+	public static final String MY_URI = HvacOntology.NAMESPACE + "Air_Conditioning";
+	public static final String PROP_HAS_AIR_CONDITIONING_MODE = HvacOntology.NAMESPACE + "hasAir_Conditioning_Mode";
 
 	public Air_Conditioning() {
 		super();
@@ -52,8 +52,7 @@ public class Air_Conditioning extends Target_Temperature {
 	}
 
 	public boolean setMode(Air_Conditioning_Mode air_conditioning_Mode) {
-		return changeProperty(PROP_HAS_AIR_CONDITIONING_MODE,
-				air_conditioning_Mode);
+		return changeProperty(PROP_HAS_AIR_CONDITIONING_MODE, air_conditioning_Mode);
 
 	}
 

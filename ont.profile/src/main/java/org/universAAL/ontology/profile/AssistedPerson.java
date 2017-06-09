@@ -35,57 +35,56 @@ package org.universAAL.ontology.profile;
 
 public class AssistedPerson extends User {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "AssistedPerson";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AssistedPerson";
 
-    /**
-     * Because there is no multiple inhertiance in Java, we copy this property
-     * from Profilable (although the methods here still use
-     * Profilable.PROP_HAS_PROFILE).
-     */
-    public static final String PROP_HAS_PROFILE = Profilable.PROP_HAS_PROFILE;
+	/**
+	 * Because there is no multiple inhertiance in Java, we copy this property
+	 * from Profilable (although the methods here still use
+	 * Profilable.PROP_HAS_PROFILE).
+	 */
+	public static final String PROP_HAS_PROFILE = Profilable.PROP_HAS_PROFILE;
 
-    protected AssistedPerson() {
-	super();
-    }
-
-    public AssistedPerson(String uri) {
-	super(uri);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public boolean isWellFormed() {
-	if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AssistedPersonProfile);
+	protected AssistedPerson() {
+		super();
 	}
-	return false;
-    }
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public AssistedPerson(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Sets the value for the Assisted Person Profile of this Assisted Person
-     * 
-     * @param value
-     *            The Profile to set
-     */
-    public void setProfile(AssistedPersonProfile value) {
-	setProperty(Profilable.PROP_HAS_PROFILE, value);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * Gets the value of the Assisted Person Profile of this Assisted Person
-     * 
-     * @return The Profile of the Assisted Person
-     */
-    public AssistedPersonProfile getAPProfile() {
-	return (AssistedPersonProfile) getProperty(Profilable.PROP_HAS_PROFILE);
-    }
+	public boolean isWellFormed() {
+		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
+			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AssistedPersonProfile);
+		}
+		return false;
+	}
+
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	/**
+	 * Sets the value for the Assisted Person Profile of this Assisted Person
+	 * 
+	 * @param value
+	 *            The Profile to set
+	 */
+	public void setProfile(AssistedPersonProfile value) {
+		setProperty(Profilable.PROP_HAS_PROFILE, value);
+	}
+
+	/**
+	 * Gets the value of the Assisted Person Profile of this Assisted Person
+	 * 
+	 * @return The Profile of the Assisted Person
+	 */
+	public AssistedPersonProfile getAPProfile() {
+		return (AssistedPersonProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+	}
 
 }

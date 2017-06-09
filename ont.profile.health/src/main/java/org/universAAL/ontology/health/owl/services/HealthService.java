@@ -31,38 +31,35 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
  */
 public class HealthService extends Service {
 
-    // NAMESPACE & PROPERTIES
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "HealthService";
+	// NAMESPACE & PROPERTIES
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "HealthService";
 
-    public static final String PROP_ASSISTED_USER = HealthProfileOntology.NAMESPACE
-	    + "assistedPerson";
+	public static final String PROP_ASSISTED_USER = HealthProfileOntology.NAMESPACE + "assistedPerson";
 
-    public static final String PROP_ASSISTED_USER_PROFILE = HealthProfileOntology.NAMESPACE
-	    + "healthProfile";
+	public static final String PROP_ASSISTED_USER_PROFILE = HealthProfileOntology.NAMESPACE + "healthProfile";
 
-    // CONSTRUCTORS
-    public HealthService() {
-	super();
-    }
+	// CONSTRUCTORS
+	public HealthService() {
+		super();
+	}
 
-    public HealthService(String uri) {
-	super(uri);
-    }
+	public HealthService(String uri) {
+		super(uri);
+	}
 
-    /** {@inheritDoc} */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** {@inheritDoc} */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /** {@inheritDoc} */
-    public boolean isWellFormed() {
-	return true;
-    }
+	/** {@inheritDoc} */
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_ASSISTED_USER.equals(propURI) || PROP_ASSISTED_USER_PROFILE.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_ASSISTED_USER.equals(propURI) || PROP_ASSISTED_USER_PROFILE.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 }

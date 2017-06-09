@@ -41,36 +41,35 @@ import org.universAAL.ontology.av.streaming.VideoStream;
  */
 public class AVFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new LoudSpeaker(instanceURI);
-	case 1:
-	    return new Microphone(instanceURI);
-	case 2:
-	    return new AudioFormat(instanceURI);
-	case 3:
-	    return new VideoFormat(instanceURI);
-	case 4:
-	    return new EndPoint();
-	case 5:
-	    return new AudioFile(instanceURI);
-	case 6:
-	    return new AudioStream(instanceURI);
-	case 7:
-	    return new VideoStream(instanceURI);
-	case 8:
-	    return new VideoCamera(instanceURI);
-	case 9:
-	    return new CameraService(instanceURI);
-	case 10:
-	    return new LoudSpeakerService(instanceURI);
-	case 11:
-	    return new MicrophoneService(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new LoudSpeaker(instanceURI);
+		case 1:
+			return new Microphone(instanceURI);
+		case 2:
+			return new AudioFormat(instanceURI);
+		case 3:
+			return new VideoFormat(instanceURI);
+		case 4:
+			return new EndPoint();
+		case 5:
+			return new AudioFile(instanceURI);
+		case 6:
+			return new AudioStream(instanceURI);
+		case 7:
+			return new VideoStream(instanceURI);
+		case 8:
+			return new VideoCamera(instanceURI);
+		case 9:
+			return new CameraService(instanceURI);
+		case 10:
+			return new LoudSpeakerService(instanceURI);
+		case 11:
+			return new MicrophoneService(instanceURI);
+		}
+
+		return null;
 	}
-
-	return null;
-    }
 }

@@ -31,46 +31,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class City extends OutdoorPlace {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "City";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "City";
 
-    /**
-     * Creates a City object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public City(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a City object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public City(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a City object
-     */
-    public City() {
-	super();
-    }
+	/**
+	 * Creates a City object
+	 */
+	public City() {
+		super();
+	}
 
-    /**
-     * Creates a City object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public City(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a City object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public City(String uri, String name) {
+		super(uri, name);
+	}
 
-    public City(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public City(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public City(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public City(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

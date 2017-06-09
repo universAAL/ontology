@@ -23,25 +23,25 @@
 package org.universAAL.ontology.vcard;
 
 public class Fax extends Tel {
-    public static final String MY_URI = VCardOntology.NAMESPACE + "Fax";
+	public static final String MY_URI = VCardOntology.NAMESPACE + "Fax";
 
-    public Fax() {
-	super();
-    }
+	public Fax() {
+		super();
+	}
 
-    public Fax(String uri) {
-	super(uri);
-    }
+	public Fax(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

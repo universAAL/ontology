@@ -22,13 +22,13 @@ import org.universAAL.ontology.unit.UnitOntology;
 
 public class UnitActivator implements ModuleActivator {
 
-    private UnitOntology ontology = new UnitOntology();
+	private UnitOntology ontology = new UnitOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 }

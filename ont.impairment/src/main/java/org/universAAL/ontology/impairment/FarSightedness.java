@@ -34,33 +34,32 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * @author Carsten Stockloew
  */
 public class FarSightedness extends SightImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "FarSightedness";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "FarSightedness";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public FarSightedness() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public FarSightedness() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public FarSightedness(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public FarSightedness(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public static SightImpairment loadInstance() {
-	return new FarSightedness(LevelRating.none);
-    }
+	public static SightImpairment loadInstance() {
+		return new FarSightedness(LevelRating.none);
+	}
 
-    public String toString() {
-	return "Farsightedness: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Farsightedness: " + this.getImpaimentLevel().name();
+	}
 }

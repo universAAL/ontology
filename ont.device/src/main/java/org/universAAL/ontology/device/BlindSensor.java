@@ -22,35 +22,34 @@
 package org.universAAL.ontology.device;
 
 public class BlindSensor extends Sensor {
-    public static final String MY_URI = DeviceOntology.NAMESPACE
-	    + "BlindSensor";
+	public static final String MY_URI = DeviceOntology.NAMESPACE + "BlindSensor";
 
-    public BlindSensor() {
-	super();
-    }
+	public BlindSensor() {
+		super();
+	}
 
-    public BlindSensor(String uri) {
-	super(uri);
-    }
+	public BlindSensor(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_HAS_VALUE);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_HAS_VALUE);
+	}
 
-    public int getValue() {
-	Integer i = (Integer) getProperty(PROP_HAS_VALUE);
-	return (i == null) ? 0 : i.intValue();
-    }
+	public int getValue() {
+		Integer i = (Integer) getProperty(PROP_HAS_VALUE);
+		return (i == null) ? 0 : i.intValue();
+	}
 
-    public void setValue(int newPropValue) {
-	changeProperty(PROP_HAS_VALUE, new Integer(newPropValue));
-    }
+	public void setValue(int newPropValue) {
+		changeProperty(PROP_HAS_VALUE, new Integer(newPropValue));
+	}
 }

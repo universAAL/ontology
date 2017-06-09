@@ -29,73 +29,70 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class FlamingLight extends LightType {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "FlamingLight";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "FlamingLight";
 
-    public static final int CANDLE_LIGHT = 0;
-    public static final int GAS_LAMP = 1;
-    public static final int OIL_LAMP = 2;
+	public static final int CANDLE_LIGHT = 0;
+	public static final int GAS_LAMP = 1;
+	public static final int OIL_LAMP = 2;
 
-    private static final String[] names = { "candle_light", "gas_lamp",
-	    "oil_lamp" };
+	private static final String[] names = { "candle_light", "gas_lamp", "oil_lamp" };
 
-    public static final FlamingLight candleLight = new FlamingLight(
-	    CANDLE_LIGHT);
-    public static final FlamingLight gasLamp = new FlamingLight(GAS_LAMP);
-    public static final FlamingLight oilLamp = new FlamingLight(OIL_LAMP);
+	public static final FlamingLight candleLight = new FlamingLight(CANDLE_LIGHT);
+	public static final FlamingLight gasLamp = new FlamingLight(GAS_LAMP);
+	public static final FlamingLight oilLamp = new FlamingLight(OIL_LAMP);
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static FlamingLight getFlamingLightByOrder(int order) {
-	switch (order) {
-	case CANDLE_LIGHT:
-	    return candleLight;
-	case GAS_LAMP:
-	    return gasLamp;
-	case OIL_LAMP:
-	    return oilLamp;
-	default:
-	    return null;
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
 	}
-    }
 
-    public static final FlamingLight valueOf(String name) {
-	if (name == null)
-	    return null;
+	public static FlamingLight getFlamingLightByOrder(int order) {
+		switch (order) {
+		case CANDLE_LIGHT:
+			return candleLight;
+		case GAS_LAMP:
+			return gasLamp;
+		case OIL_LAMP:
+			return oilLamp;
+		default:
+			return null;
+		}
+	}
 
-	if (name.startsWith(LightingOntology.NAMESPACE))
-	    name = name.substring(LightingOntology.NAMESPACE.length());
+	public static final FlamingLight valueOf(String name) {
+		if (name == null)
+			return null;
 
-	for (int i = CANDLE_LIGHT; i <= OIL_LAMP; i++)
-	    if (names[i].equals(name))
-		return getFlamingLightByOrder(i);
+		if (name.startsWith(LightingOntology.NAMESPACE))
+			name = name.substring(LightingOntology.NAMESPACE.length());
 
-	return null;
-    }
+		for (int i = CANDLE_LIGHT; i <= OIL_LAMP; i++)
+			if (names[i].equals(name))
+				return getFlamingLightByOrder(i);
 
-    private int order;
+		return null;
+	}
 
-    private FlamingLight(int order) {
-	super(LightingOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
+	private int order;
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+	private FlamingLight(int order) {
+		super(LightingOntology.NAMESPACE + names[order]);
+		this.order = order;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-    public String name() {
-	return names[order];
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public int ord() {
-	return order;
-    }
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
 }

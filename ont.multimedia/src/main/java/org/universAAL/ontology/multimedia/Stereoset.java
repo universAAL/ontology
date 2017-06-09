@@ -32,63 +32,62 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class Stereoset extends Device {
 
-    public static final String MY_URI = MultimediaOntology.NAMESPACE + "Stereoset";
-    public static final String PROP_IS_ON_PROG = MultimediaOntology.NAMESPACE + "isOnProg";
-    public static final String PROP_IS_ON_COMM = MultimediaOntology.NAMESPACE + "isOnComm";
+	public static final String MY_URI = MultimediaOntology.NAMESPACE + "Stereoset";
+	public static final String PROP_IS_ON_PROG = MultimediaOntology.NAMESPACE + "isOnProg";
+	public static final String PROP_IS_ON_COMM = MultimediaOntology.NAMESPACE + "isOnComm";
 
-    public Stereoset() {
-	super();
-    }
+	public Stereoset() {
+		super();
+	}
 
-    public Stereoset(String uri) {
-	super(uri);
-    }
+	public Stereoset(String uri) {
+		super(uri);
+	}
 
-    public Stereoset(String uri, Boolean isOnProg, Boolean isOnComm) {
-	super(uri);
+	public Stereoset(String uri, Boolean isOnProg, Boolean isOnComm) {
+		super(uri);
 
-	if ((isOnProg == null) || (isOnComm == null))
-	    throw new IllegalArgumentException();
+		if ((isOnProg == null) || (isOnComm == null))
+			throw new IllegalArgumentException();
 
-	props.put(PROP_IS_ON_PROG, isOnProg);
-	props.put(PROP_IS_ON_COMM, isOnComm);
-    }
+		props.put(PROP_IS_ON_PROG, isOnProg);
+		props.put(PROP_IS_ON_COMM, isOnComm);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public Boolean isOnComm() {
-	return (Boolean) props.get(PROP_IS_ON_COMM);
-    }
+	public Boolean isOnComm() {
+		return (Boolean) props.get(PROP_IS_ON_COMM);
+	}
 
-    public Boolean isOnProg() {
-	return (Boolean) props.get(PROP_IS_ON_PROG);
-    }
+	public Boolean isOnProg() {
+		return (Boolean) props.get(PROP_IS_ON_PROG);
+	}
 
-    public void setOnProg(Boolean b) {
-	if (b != null)
-	    props.put(PROP_IS_ON_PROG, b);
-    }
+	public void setOnProg(Boolean b) {
+		if (b != null)
+			props.put(PROP_IS_ON_PROG, b);
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
-     * lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.persona.ontology.ManagedIndividual#getPropSerializationType(java.
+	 * lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see org.persona.ontology.ManagedIndividual#isWellFormed()
-     */
-    public boolean isWellFormed() {
-	return props.containsKey(PROP_IS_ON_PROG)
-		&& props.containsKey(PROP_IS_ON_COMM);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.persona.ontology.ManagedIndividual#isWellFormed()
+	 */
+	public boolean isWellFormed() {
+		return props.containsKey(PROP_IS_ON_PROG) && props.containsKey(PROP_IS_ON_COMM);
+	}
 }

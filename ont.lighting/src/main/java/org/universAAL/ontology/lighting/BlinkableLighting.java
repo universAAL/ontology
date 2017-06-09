@@ -29,15 +29,14 @@ package org.universAAL.ontology.lighting;
  * 
  */
 public class BlinkableLighting extends Lighting {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "BlinkableLighting";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "BlinkableLighting";
 
-    public BlinkableLighting(String uri) {
-	super(uri);
-    }
+	public BlinkableLighting(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

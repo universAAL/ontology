@@ -29,71 +29,71 @@ import org.universAAL.ontology.drools.ConsequenceProperty;
 //Otherwise you extend the concept class you inherit from
 public class Consequence extends ManagedIndividual {
 
-    public static final String MY_URI = DroolsReasoningOntology.NAMESPACE + "Consequence";
+	public static final String MY_URI = DroolsReasoningOntology.NAMESPACE + "Consequence";
 
-    public static final String PROP_HAS_IDENTIFIER = DroolsReasoningOntology.NAMESPACE + "hasIdentifier";
-    public static final String PROP_HAS_PROPERTIES = DroolsReasoningOntology.NAMESPACE + "hasProperties";
+	public static final String PROP_HAS_IDENTIFIER = DroolsReasoningOntology.NAMESPACE + "hasIdentifier";
+	public static final String PROP_HAS_PROPERTIES = DroolsReasoningOntology.NAMESPACE + "hasProperties";
 
-    public Consequence() {
-	// TODO Auto-generated constructor stub
-    }
-
-    public Consequence(String uri) {
-	super(uri);
-    }
-
-    public int getPropSerializationType(String propURI) {
-	// TODO Discriminate how important is the serialisation of every
-	// property.
-	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean isWellFormed() {
-	// TODO Consequence isWellFormed
-	return super.isWellFormed();
-    }
-
-    public String getIdentifier() {
-	return (String) props.get(PROP_HAS_IDENTIFIER);
-    }
-
-    public void setIdentifier(String id) {
-	props.put(PROP_HAS_IDENTIFIER, id);
-    }
-
-    public ConsequenceProperty[] getProperties() {
-	Object propList = props.get(PROP_HAS_PROPERTIES);
-	if (propList instanceof List) {
-	    return (ConsequenceProperty[]) ((List) propList).toArray(new ConsequenceProperty[0]);
-	} else {
-	    List returnList = new ArrayList();
-	    if (propList != null) {
-		returnList.add((ConsequenceProperty) propList);
-	    }
-	    return (ConsequenceProperty[]) returnList.toArray(new ConsequenceProperty[0]);
-
+	public Consequence() {
+		// TODO Auto-generated constructor stub
 	}
-    }
 
-    public void addProperty(String uri, String key, String value) {
-	Object propList = props.get(PROP_HAS_PROPERTIES);
-	if (propList instanceof List) {
-	    List auxList = (List) propList;
-	    auxList.add(new ConsequenceProperty(uri, key, value));
-	    props.put(PROP_HAS_PROPERTIES, auxList);
-	} else if (propList == null) {
-	    props.put(PROP_HAS_PROPERTIES, new ConsequenceProperty(uri, key, value));
-	} else {
-	    List auxList = new ArrayList();
-	    auxList.add((ConsequenceProperty) propList);
-	    auxList.add(new ConsequenceProperty(uri, key, value));
-	    props.put(PROP_HAS_PROPERTIES, auxList);
+	public Consequence(String uri) {
+		super(uri);
 	}
-    }
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public int getPropSerializationType(String propURI) {
+		// TODO Discriminate how important is the serialisation of every
+		// property.
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isWellFormed() {
+		// TODO Consequence isWellFormed
+		return super.isWellFormed();
+	}
+
+	public String getIdentifier() {
+		return (String) props.get(PROP_HAS_IDENTIFIER);
+	}
+
+	public void setIdentifier(String id) {
+		props.put(PROP_HAS_IDENTIFIER, id);
+	}
+
+	public ConsequenceProperty[] getProperties() {
+		Object propList = props.get(PROP_HAS_PROPERTIES);
+		if (propList instanceof List) {
+			return (ConsequenceProperty[]) ((List) propList).toArray(new ConsequenceProperty[0]);
+		} else {
+			List returnList = new ArrayList();
+			if (propList != null) {
+				returnList.add((ConsequenceProperty) propList);
+			}
+			return (ConsequenceProperty[]) returnList.toArray(new ConsequenceProperty[0]);
+
+		}
+	}
+
+	public void addProperty(String uri, String key, String value) {
+		Object propList = props.get(PROP_HAS_PROPERTIES);
+		if (propList instanceof List) {
+			List auxList = (List) propList;
+			auxList.add(new ConsequenceProperty(uri, key, value));
+			props.put(PROP_HAS_PROPERTIES, auxList);
+		} else if (propList == null) {
+			props.put(PROP_HAS_PROPERTIES, new ConsequenceProperty(uri, key, value));
+		} else {
+			List auxList = new ArrayList();
+			auxList.add((ConsequenceProperty) propList);
+			auxList.add(new ConsequenceProperty(uri, key, value));
+			props.put(PROP_HAS_PROPERTIES, auxList);
+		}
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
 }
 
 // Initial draft version

@@ -15,21 +15,19 @@
  ******************************************************************************/
 package org.universAAL.ontology.security;
 
-
 /**
  * @author amedrano
  *
  */
 public class OneTimePassword extends Password {
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "SMSOneTimePassword";
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "SMSOneTimePassword";
 
-	
 	/**
 	 * Only for serializers.
 	 */
 	public OneTimePassword() {
-	    super();
+		super();
 	}
 
 	/**
@@ -39,17 +37,17 @@ public class OneTimePassword extends Password {
 		super(uri);
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return super.getPropSerializationType(propURI);
 	}

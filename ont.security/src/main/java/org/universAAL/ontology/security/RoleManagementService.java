@@ -20,22 +20,22 @@ package org.universAAL.ontology.security;
 import org.universAAL.middleware.service.owl.Service;
 
 /**
- * Service Description for Authorisadtion.
- * Authorisation will check the authenticated user against its AccessRights over a specific Asset.
+ * Service Description for Authorisadtion. Authorisation will check the
+ * authenticated user against its AccessRights over a specific Asset.
+ * 
  * @author amedrano
  *
  */
 public class RoleManagementService extends Service {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "RoleManagementService";
+	public static final String PROP_ROLE = SecurityOntology.NAMESPACE + "managesRole";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "RoleManagementService";
-    public static final String PROP_ROLE = SecurityOntology.NAMESPACE + "managesRole";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public RoleManagementService() {
-	    super();
+		super();
 	}
 
 	/**
@@ -45,20 +45,19 @@ public class RoleManagementService extends Service {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
-		if (propURI.equals(PROP_ROLE)){
+		if (propURI.equals(PROP_ROLE)) {
 			return PROP_SERIALIZATION_FULL;
 		}
 		return super.getPropSerializationType(propURI);

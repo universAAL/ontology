@@ -21,50 +21,47 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
 
 public class ErrorDetector extends ManagedIndividual {
-    public static final String MY_URI = DependabilityOntology.NAMESPACE
-	    + "ErrorDetector";
-    public static final String PROP_FAULT = DependabilityOntology.NAMESPACE
-	    + "fault";
-    public static final String PROP_SYMPTOM = DependabilityOntology.NAMESPACE
-	    + "symptom";
+	public static final String MY_URI = DependabilityOntology.NAMESPACE + "ErrorDetector";
+	public static final String PROP_FAULT = DependabilityOntology.NAMESPACE + "fault";
+	public static final String PROP_SYMPTOM = DependabilityOntology.NAMESPACE + "symptom";
 
-    public ErrorDetector() {
-	super();
-    }
+	public ErrorDetector() {
+		super();
+	}
 
-    public ErrorDetector(String uri) {
-	super(uri);
-    }
+	public ErrorDetector(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_FAULT.equals(propURI) || PROP_SYMPTOM.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return Resource.PROP_SERIALIZATION_UNDEFINED;
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_FAULT.equals(propURI) || PROP_SYMPTOM.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return Resource.PROP_SERIALIZATION_UNDEFINED;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_FAULT) && hasProperty(PROP_SYMPTOM);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_FAULT) && hasProperty(PROP_SYMPTOM);
+	}
 
-    public Symptom getSymptom() {
-	return (Symptom) getProperty(PROP_SYMPTOM);
-    }
+	public Symptom getSymptom() {
+		return (Symptom) getProperty(PROP_SYMPTOM);
+	}
 
-    public void setSymptom(Symptom newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_SYMPTOM, newPropValue);
-    }
+	public void setSymptom(Symptom newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_SYMPTOM, newPropValue);
+	}
 
-    public Fault getFault() {
-	return (Fault) getProperty(PROP_FAULT);
-    }
+	public Fault getFault() {
+		return (Fault) getProperty(PROP_FAULT);
+	}
 
-    public void setFault(Fault newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_FAULT, newPropValue);
-    }
+	public void setFault(Fault newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_FAULT, newPropValue);
+	}
 }

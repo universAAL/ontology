@@ -35,33 +35,32 @@ import org.universAAL.middleware.ui.owl.AccessImpairment;
  * @author Carsten Stockloew
  */
 public class PhysicalImpairment extends AccessImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "PhysicalImpairment";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "PhysicalImpairment";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public PhysicalImpairment() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public PhysicalImpairment() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public PhysicalImpairment(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public PhysicalImpairment(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public void setImpairment(LevelRating rating) {
-	props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
-    }
+	public void setImpairment(LevelRating rating) {
+		props.put(AccessImpairment.PROP_IMPAIRMENT_LEVEL, rating);
+	}
 
-    public String toString() {
-	return "Physical Impairment: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Physical Impairment: " + this.getImpaimentLevel().name();
+	}
 }

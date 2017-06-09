@@ -33,15 +33,13 @@ import org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology
  */
 public class PersonalHealthDeviceActivator implements ModuleActivator {
 
-    PersonalHealthDeviceOntology personalHealthDeviceOntology = new PersonalHealthDeviceOntology();
+	PersonalHealthDeviceOntology personalHealthDeviceOntology = new PersonalHealthDeviceOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc,
-		personalHealthDeviceOntology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, personalHealthDeviceOntology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc,
-		personalHealthDeviceOntology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, personalHealthDeviceOntology);
+	}
 }

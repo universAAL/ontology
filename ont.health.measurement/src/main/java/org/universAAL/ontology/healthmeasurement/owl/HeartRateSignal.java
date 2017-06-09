@@ -25,76 +25,77 @@ import javax.xml.datatype.Duration;
 import org.universAAL.ontology.measurement.Signal;
 
 public class HeartRateSignal extends Signal {
-    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-	    + "HeartRateSignal";
-    public static final String PROP_IS_COMPOSED_BY = HealthMeasurementOntology.NAMESPACE
-	    + "isComposedBy";
-    public static final String PROP_INTERVAL = HealthMeasurementOntology.NAMESPACE
-	    + "PROP_INTERVAL";// eliminar, porque ya la tiene signal.
+	public static final String MY_URI = HealthMeasurementOntology.NAMESPACE + "HeartRateSignal";
+	public static final String PROP_IS_COMPOSED_BY = HealthMeasurementOntology.NAMESPACE + "isComposedBy";
+	public static final String PROP_INTERVAL = HealthMeasurementOntology.NAMESPACE + "PROP_INTERVAL";// eliminar,
+																										// porque
+																										// ya
+																										// la
+																										// tiene
+																										// signal.
 
-    public HeartRateSignal() {
-	super();
-    }
-
-    public HeartRateSignal(String uri) {
-	super(uri);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
-
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_IS_COMPOSED_BY)
-		&& hasProperty(PROP_INTERVAL);
-    }
-
-    public HeartRate[] getIsComposedBy() {
-	Object propList = getProperty(PROP_IS_COMPOSED_BY);
-	if (propList instanceof List)
-	    return (HeartRate[]) ((List) propList).toArray(new HeartRate[0]);
-	else if (propList != null)
-	    return new HeartRate[] { (HeartRate) propList }; // Handle special
-	// case of a single
-	// item not
-	// contained in a
-	// list
-	return new HeartRate[0];
-    }
-
-    public void addIsComposedBy(HeartRate newValue) {
-	Object propList = getProperty(PROP_IS_COMPOSED_BY);
-	List newList;
-	if (propList instanceof List)
-	    newList = (List) propList;
-	else {
-	    newList = new ArrayList();
-	    if (propList != null)
-		newList.add(propList); // Handle special case of a single
-	    // previous item not contained in a list
+	public HeartRateSignal() {
+		super();
 	}
-	newList.add(newValue);
-	setProperty(PROP_IS_COMPOSED_BY, newList);
-    }
 
-    public void setIsComposedBy(HeartRate[] propertyValue) {
-	List propList = new ArrayList(propertyValue.length);
-	for (int i = 0; i < propertyValue.length; i++) {
-	    propList.add(propertyValue[i]);
+	public HeartRateSignal(String uri) {
+		super(uri);
 	}
-	setProperty(PROP_IS_COMPOSED_BY, propList);
-    }
 
-    public Duration getPROP_INTERVAL() {
-	return (Duration) getProperty(PROP_INTERVAL);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public void setPROP_INTERVAL(Duration duration) {
-	if (duration != null)
-	    setProperty(PROP_INTERVAL, duration);
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_IS_COMPOSED_BY) && hasProperty(PROP_INTERVAL);
+	}
+
+	public HeartRate[] getIsComposedBy() {
+		Object propList = getProperty(PROP_IS_COMPOSED_BY);
+		if (propList instanceof List)
+			return (HeartRate[]) ((List) propList).toArray(new HeartRate[0]);
+		else if (propList != null)
+			return new HeartRate[] { (HeartRate) propList }; // Handle special
+		// case of a single
+		// item not
+		// contained in a
+		// list
+		return new HeartRate[0];
+	}
+
+	public void addIsComposedBy(HeartRate newValue) {
+		Object propList = getProperty(PROP_IS_COMPOSED_BY);
+		List newList;
+		if (propList instanceof List)
+			newList = (List) propList;
+		else {
+			newList = new ArrayList();
+			if (propList != null)
+				newList.add(propList); // Handle special case of a single
+			// previous item not contained in a list
+		}
+		newList.add(newValue);
+		setProperty(PROP_IS_COMPOSED_BY, newList);
+	}
+
+	public void setIsComposedBy(HeartRate[] propertyValue) {
+		List propList = new ArrayList(propertyValue.length);
+		for (int i = 0; i < propertyValue.length; i++) {
+			propList.add(propertyValue[i]);
+		}
+		setProperty(PROP_IS_COMPOSED_BY, propList);
+	}
+
+	public Duration getPROP_INTERVAL() {
+		return (Duration) getProperty(PROP_INTERVAL);
+	}
+
+	public void setPROP_INTERVAL(Duration duration) {
+		if (duration != null)
+			setProperty(PROP_INTERVAL, duration);
+	}
 }

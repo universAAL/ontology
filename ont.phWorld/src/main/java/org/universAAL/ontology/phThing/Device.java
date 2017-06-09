@@ -32,36 +32,35 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  */
 public class Device extends PhysicalThing {
 
-    public static final String MY_URI = PhThingOntology.NAMESPACE + "Device";
+	public static final String MY_URI = PhThingOntology.NAMESPACE + "Device";
 
-    public static final String PROP_BATTERY_LEVEL = PhThingOntology.NAMESPACE
-	    + "batteryLevel";
+	public static final String PROP_BATTERY_LEVEL = PhThingOntology.NAMESPACE + "batteryLevel";
 
-    public Device() {
-	super();
-    }
+	public Device() {
+		super();
+	}
 
-    public Device(String uri) {
-	super(uri);
-    }
+	public Device(String uri) {
+		super(uri);
+	}
 
-    public Device(String uriPrefix, int numProps) {
-	super(uriPrefix, numProps);
-    }
+	public Device(String uriPrefix, int numProps) {
+		super(uriPrefix, numProps);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public LevelRating getBatteryLevel() {
-	return (LevelRating) props.get(PROP_BATTERY_LEVEL);
-    }
+	public LevelRating getBatteryLevel() {
+		return (LevelRating) props.get(PROP_BATTERY_LEVEL);
+	}
 
-    public void setBatteryLevel(LevelRating value) {
-	props.put(PROP_BATTERY_LEVEL, value);
-    }
+	public void setBatteryLevel(LevelRating value) {
+		props.put(PROP_BATTERY_LEVEL, value);
+	}
 }

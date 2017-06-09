@@ -23,17 +23,15 @@ import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.recommendations.RecommendationsOntology;
 
-
 public class RecommendationsActivator implements ModuleActivator {
 
-  RecommendationsOntology _recommendationsOntology = new RecommendationsOntology();
+	RecommendationsOntology _recommendationsOntology = new RecommendationsOntology();
 
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, _recommendationsOntology);
+	}
 
-  public void start(ModuleContext mc) throws Exception {
-    OntologyManagement.getInstance().register(mc, _recommendationsOntology);
-  }
-
-  public void stop(ModuleContext mc) throws Exception {
-    OntologyManagement.getInstance().unregister(mc, _recommendationsOntology);
-  }
-}	
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, _recommendationsOntology);
+	}
+}

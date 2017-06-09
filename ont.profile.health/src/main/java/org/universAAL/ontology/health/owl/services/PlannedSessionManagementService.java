@@ -30,40 +30,37 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
  */
 public class PlannedSessionManagementService extends HealthService {
 
-    // NAMESPACE & PROPERTIES
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "SessionManagementService";
+	// NAMESPACE & PROPERTIES
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "SessionManagementService";
 
-    public static final String PROP_MANAGES_SESSION = HealthProfileOntology.NAMESPACE
-	    + "managesSession";
+	public static final String PROP_MANAGES_SESSION = HealthProfileOntology.NAMESPACE + "managesSession";
 
-    public static final String PROP_ASSOCIATED_TREATMENT = HealthProfileOntology.NAMESPACE
-	    + "plannedSessionsTreatment";
+	public static final String PROP_ASSOCIATED_TREATMENT = HealthProfileOntology.NAMESPACE + "plannedSessionsTreatment";
 
-    // CONSTRUCTORS
-    public PlannedSessionManagementService() {
-	super();
-    }
+	// CONSTRUCTORS
+	public PlannedSessionManagementService() {
+		super();
+	}
 
-    public PlannedSessionManagementService(String uri) {
-	super(uri);
-    }
+	public PlannedSessionManagementService(String uri) {
+		super(uri);
+	}
 
-    /** {@inheritDoc} */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** {@inheritDoc} */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /** {@inheritDoc} */
-    public int getPropSerializationType(String propURI) {
-	if (PROP_MANAGES_SESSION.equals(propURI) || PROP_ASSOCIATED_TREATMENT.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	/** {@inheritDoc} */
+	public int getPropSerializationType(String propURI) {
+		if (PROP_MANAGES_SESSION.equals(propURI) || PROP_ASSOCIATED_TREATMENT.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 
-    /** {@inheritDoc} */
-    public boolean isWellFormed() {
-	return true;
-    }
+	/** {@inheritDoc} */
+	public boolean isWellFormed() {
+		return true;
+	}
 
 }

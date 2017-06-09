@@ -18,90 +18,81 @@ package org.universAAL.ontology.health.owl;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class MotivationalStatusType extends ManagedIndividual {
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "MotivationalStatusType";
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "MotivationalStatusType";
 
-    public static final int PRECONTEMPLATION = 0;
-    public static final int CONTEMPLATION = 1;
-    public static final int ACTION = 2;
-    public static final int MAINTENANCE = 3;
-    public static final int UNDEFINED = 4;
+	public static final int PRECONTEMPLATION = 0;
+	public static final int CONTEMPLATION = 1;
+	public static final int ACTION = 2;
+	public static final int MAINTENANCE = 3;
+	public static final int UNDEFINED = 4;
 
-    private static final String[] names = { "precontemplation",
-	    "contemplation", "action", "maintenance", "undefined" };
+	private static final String[] names = { "precontemplation", "contemplation", "action", "maintenance", "undefined" };
 
-    public static final MotivationalStatusType precontemplation = new MotivationalStatusType(
-	    PRECONTEMPLATION);
-    public static final MotivationalStatusType contemplation = new MotivationalStatusType(
-	    CONTEMPLATION);
-    public static final MotivationalStatusType action = new MotivationalStatusType(
-	    ACTION);
-    public static final MotivationalStatusType maintenance = new MotivationalStatusType(
-	    MAINTENANCE);
-    public static final MotivationalStatusType undefined = new MotivationalStatusType(
-	    UNDEFINED);
+	public static final MotivationalStatusType precontemplation = new MotivationalStatusType(PRECONTEMPLATION);
+	public static final MotivationalStatusType contemplation = new MotivationalStatusType(CONTEMPLATION);
+	public static final MotivationalStatusType action = new MotivationalStatusType(ACTION);
+	public static final MotivationalStatusType maintenance = new MotivationalStatusType(MAINTENANCE);
+	public static final MotivationalStatusType undefined = new MotivationalStatusType(UNDEFINED);
 
-    private int order;
+	private int order;
 
-    private MotivationalStatusType(int order) {
-	super(HealthProfileOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String name() {
-	return names[order];
-    }
-
-    public int ord() {
-	return order;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static MotivationalStatusType getMotivationalStatusTypeByOrder(
-	    int order) {
-	switch (order) {
-	case PRECONTEMPLATION:
-	    return precontemplation;
-	case CONTEMPLATION:
-	    return contemplation;
-	case ACTION:
-	    return action;
-	case MAINTENANCE:
-	    return maintenance;
-	case UNDEFINED:
-	    return undefined;
-	default:
-	    return null;
+	private MotivationalStatusType(int order) {
+		super(HealthProfileOntology.NAMESPACE + names[order]);
+		this.order = order;
 	}
-    }
 
-    public boolean equals(Object other) {
-		return other instanceof MotivationalStatusType
-				&& ((MotivationalStatusType)other).order == order;
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
+
+	public boolean isWellFormed() {
+		return true;
+	}
+
+	public String name() {
+		return names[order];
+	}
+
+	public int ord() {
+		return order;
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public static MotivationalStatusType getMotivationalStatusTypeByOrder(int order) {
+		switch (order) {
+		case PRECONTEMPLATION:
+			return precontemplation;
+		case CONTEMPLATION:
+			return contemplation;
+		case ACTION:
+			return action;
+		case MAINTENANCE:
+			return maintenance;
+		case UNDEFINED:
+			return undefined;
+		default:
+			return null;
+		}
+	}
+
+	public boolean equals(Object other) {
+		return other instanceof MotivationalStatusType && ((MotivationalStatusType) other).order == order;
 	}
 
 	public static final MotivationalStatusType valueOf(String name) {
-	if (name == null)
-	    return null;
+		if (name == null)
+			return null;
 
-	if (name.startsWith(HealthProfileOntology.NAMESPACE))
-	    name = name.substring(HealthProfileOntology.NAMESPACE.length());
+		if (name.startsWith(HealthProfileOntology.NAMESPACE))
+			name = name.substring(HealthProfileOntology.NAMESPACE.length());
 
-	for (int i = PRECONTEMPLATION; i <= UNDEFINED; i++)
-	    if (names[i].equals(name))
-		return getMotivationalStatusTypeByOrder(i);
+		for (int i = PRECONTEMPLATION; i <= UNDEFINED; i++)
+			if (names[i].equals(name))
+				return getMotivationalStatusTypeByOrder(i);
 
-	return null;
-    }
+		return null;
+	}
 }

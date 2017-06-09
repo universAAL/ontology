@@ -37,41 +37,37 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  */
 public class SpaceOntology extends Ontology {
 
-    public static final String NAMESPACE = "http://ontology.universAAL.org/SpaceConfiguration.owl#";;
+	public static final String NAMESPACE = "http://ontology.universAAL.org/SpaceConfiguration.owl#";;
 
-    private static SpaceFactory factory = new SpaceFactory();
+	private static SpaceFactory factory = new SpaceFactory();
 
-    public SpaceOntology() {
-	super(NAMESPACE);
-    }
+	public SpaceOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r.setResourceComment("Ontology for AAL Space Configuration. "
-		+ "It is part of the Physical World upper ontology concept, "
-		+ "which defines the most general concepts from the physical "
-		+ "world as opposed to the virtual realm.");
-	r.setResourceLabel("AAL Space Configuration");
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment(
+				"Ontology for AAL Space Configuration. " + "It is part of the Physical World upper ontology concept, "
+						+ "which defines the most general concepts from the physical "
+						+ "world as opposed to the virtual realm.");
+		r.setResourceLabel("AAL Space Configuration");
 
-	addImport(LocationOntology.NAMESPACE);
-	addImport(PhThingOntology.NAMESPACE);
-	
-	OntClassInfoSetup oci;
+		addImport(LocationOntology.NAMESPACE);
+		addImport(PhThingOntology.NAMESPACE);
 
-	// load SpaceConfigurationService
-	oci = createNewOntClassInfo(SpaceConfigurationService.MY_URI, factory,
-		0);
-	oci.setResourceComment("The class of services controlling locations.");
-	oci.setResourceLabel("SpaceConfigurationService");
-	oci.addSuperClass(Service.MY_URI);
-	oci.addObjectProperty(SpaceConfigurationService.PROP_MANAGED_LOCATIONS);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		SpaceConfigurationService.PROP_MANAGED_LOCATIONS,
-		Location.MY_URI));
-	oci
-		.addObjectProperty(SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS);
-	oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-		SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS,
-		PhysicalThing.MY_URI));
-    }
+		OntClassInfoSetup oci;
+
+		// load SpaceConfigurationService
+		oci = createNewOntClassInfo(SpaceConfigurationService.MY_URI, factory, 0);
+		oci.setResourceComment("The class of services controlling locations.");
+		oci.setResourceLabel("SpaceConfigurationService");
+		oci.addSuperClass(Service.MY_URI);
+		oci.addObjectProperty(SpaceConfigurationService.PROP_MANAGED_LOCATIONS);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(SpaceConfigurationService.PROP_MANAGED_LOCATIONS,
+				Location.MY_URI));
+		oci.addObjectProperty(SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS);
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestriction(SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS, PhysicalThing.MY_URI));
+	}
 }

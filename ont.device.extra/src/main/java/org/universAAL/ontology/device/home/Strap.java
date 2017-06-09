@@ -35,26 +35,26 @@ import org.universAAL.ontology.phThing.Device;
  */
 public class Strap extends Device {
 
-    /** Class URI */
-    public static final String MY_URI = DeviceExtraOntology.NAMESPACE + "Strap";
+	/** Class URI */
+	public static final String MY_URI = DeviceExtraOntology.NAMESPACE + "Strap";
 
-    public Strap() {
-    }
+	public Strap() {
+	}
 
-    public Strap(String uri) {
-	super(uri);
-    }
+	public Strap(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
 }

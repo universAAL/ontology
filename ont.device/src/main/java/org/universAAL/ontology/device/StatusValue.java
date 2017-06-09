@@ -24,72 +24,69 @@ package org.universAAL.ontology.device;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class StatusValue extends ManagedIndividual {
-    public static final String MY_URI = DeviceOntology.NAMESPACE
-	    + "StatusValue";
+	public static final String MY_URI = DeviceOntology.NAMESPACE + "StatusValue";
 
-    public static final int ACTIVATED = 0;
-    public static final int NOT_ACTIVATED = 1;
-    public static final int NO_CONDITION = 2;
+	public static final int ACTIVATED = 0;
+	public static final int NOT_ACTIVATED = 1;
+	public static final int NO_CONDITION = 2;
 
-    private static final String[] names = { "Activated", "NotActivated",
-	    "NoCondition" };
+	private static final String[] names = { "Activated", "NotActivated", "NoCondition" };
 
-    public static final StatusValue Activated = new StatusValue(ACTIVATED);
-    public static final StatusValue NotActivated = new StatusValue(
-	    NOT_ACTIVATED);
-    public static final StatusValue NoCondition = new StatusValue(NO_CONDITION);
+	public static final StatusValue Activated = new StatusValue(ACTIVATED);
+	public static final StatusValue NotActivated = new StatusValue(NOT_ACTIVATED);
+	public static final StatusValue NoCondition = new StatusValue(NO_CONDITION);
 
-    private int order;
+	private int order;
 
-    private StatusValue(int order) {
-	super(DeviceOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String name() {
-	return names[order];
-    }
-
-    public int ord() {
-	return order;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static StatusValue getStatusValueByOrder(int order) {
-	switch (order) {
-	case ACTIVATED:
-	    return Activated;
-	case NOT_ACTIVATED:
-	    return NotActivated;
-	case NO_CONDITION:
-	    return NoCondition;
-	default:
-	    return null;
+	private StatusValue(int order) {
+		super(DeviceOntology.NAMESPACE + names[order]);
+		this.order = order;
 	}
-    }
 
-    public static final StatusValue valueOf(String name) {
-	if (name == null)
-	    return null;
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-	if (name.startsWith(DeviceOntology.NAMESPACE))
-	    name = name.substring(DeviceOntology.NAMESPACE.length());
+	public boolean isWellFormed() {
+		return true;
+	}
 
-	for (int i = ACTIVATED; i <= NO_CONDITION; i++)
-	    if (names[i].equals(name))
-		return getStatusValueByOrder(i);
+	public String name() {
+		return names[order];
+	}
 
-	return null;
-    }
+	public int ord() {
+		return order;
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public static StatusValue getStatusValueByOrder(int order) {
+		switch (order) {
+		case ACTIVATED:
+			return Activated;
+		case NOT_ACTIVATED:
+			return NotActivated;
+		case NO_CONDITION:
+			return NoCondition;
+		default:
+			return null;
+		}
+	}
+
+	public static final StatusValue valueOf(String name) {
+		if (name == null)
+			return null;
+
+		if (name.startsWith(DeviceOntology.NAMESPACE))
+			name = name.substring(DeviceOntology.NAMESPACE.length());
+
+		for (int i = ACTIVATED; i <= NO_CONDITION; i++)
+			if (names[i].equals(name))
+				return getStatusValueByOrder(i);
+
+		return null;
+	}
 }

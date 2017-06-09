@@ -35,61 +35,61 @@ import org.universAAL.ontology.location.position.Point;
 
 public class Triangle extends Polygon {
 
-    public static final String MY_URI = ShapeOntology.NAMESPACE + "Triangle";
+	public static final String MY_URI = ShapeOntology.NAMESPACE + "Triangle";
 
-    /**
-     * Creates a Triangle object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Triangle(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a Triangle object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Triangle(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a Polygon object
-     */
-    public Triangle() {
-	super();
-    }
+	/**
+	 * Creates a Polygon object
+	 */
+	public Triangle() {
+		super();
+	}
 
-    /**
-     * Creates a triangle object. All vertices have to be in the same coordinate
-     * system
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param verts
-     *            an array of all vertices in counter clockwise order
-     */
-    public Triangle(String uri, Point[] verts) {
-	super(uri);
-	setVertices(verts);
-	checkValid();
-	setLocalCoordinateSystem(verts[0].getCoordinateSystem());
-    }
+	/**
+	 * Creates a triangle object. All vertices have to be in the same coordinate
+	 * system
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param verts
+	 *            an array of all vertices in counter clockwise order
+	 */
+	public Triangle(String uri, Point[] verts) {
+		super(uri);
+		setVertices(verts);
+		checkValid();
+		setLocalCoordinateSystem(verts[0].getCoordinateSystem());
+	}
 
-    public Triangle(Point[] verts) {
-	super();
-	setVertices(verts);
-	checkValid();
-	setLocalCoordinateSystem(verts[0].getCoordinateSystem());
-    }
+	public Triangle(Point[] verts) {
+		super();
+		setVertices(verts);
+		checkValid();
+		setLocalCoordinateSystem(verts[0].getCoordinateSystem());
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public void setVertices(Point[] verts) {
-	if (verts == null)
-	    throw new IllegalArgumentException();
-	if (verts.length != 3)
-	    throw new IllegalArgumentException("Must have 3 vertices");
-	Vector vmapper = new Vector();
-	for (int i = 0; i < verts.length; i++)
-	    vmapper.add(verts[i]);
-	props.put(PROP_VERTICES, vmapper);
-	checkValid();
-    }
+	public void setVertices(Point[] verts) {
+		if (verts == null)
+			throw new IllegalArgumentException();
+		if (verts.length != 3)
+			throw new IllegalArgumentException("Must have 3 vertices");
+		Vector vmapper = new Vector();
+		for (int i = 0; i < verts.length; i++)
+			vmapper.add(verts[i]);
+		props.put(PROP_VERTICES, vmapper);
+		checkValid();
+	}
 }

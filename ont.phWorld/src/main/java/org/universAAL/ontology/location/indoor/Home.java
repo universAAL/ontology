@@ -31,46 +31,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public class Home extends IndoorPlace {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "Home";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "Home";
 
-    /**
-     * Creates a Home object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Home(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a Home object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Home(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a Home object
-     */
-    public Home() {
-	super();
-    }
+	/**
+	 * Creates a Home object
+	 */
+	public Home() {
+		super();
+	}
 
-    /**
-     * Creates a Home object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public Home(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a Home object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public Home(String uri, String name) {
+		super(uri, name);
+	}
 
-    public Home(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public Home(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public Home(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public Home(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

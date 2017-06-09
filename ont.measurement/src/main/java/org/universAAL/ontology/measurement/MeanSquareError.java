@@ -22,22 +22,21 @@ package org.universAAL.ontology.measurement;
  * 
  */
 public class MeanSquareError extends MeasurementError {
-    public static final String MY_URI = MeasurementOntology.NAMESPACE
-	    + "MeanSquareError";
+	public static final String MY_URI = MeasurementOntology.NAMESPACE + "MeanSquareError";
 
-    public MeanSquareError() {
-	super();
-    }
+	public MeanSquareError() {
+		super();
+	}
 
-    public MeanSquareError(String uri) {
-	super(uri);
-    }
+	public MeanSquareError(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

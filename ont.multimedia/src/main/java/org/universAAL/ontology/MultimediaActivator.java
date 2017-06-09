@@ -25,13 +25,13 @@ import org.universAAL.ontology.multimedia.MultimediaOntology;
 
 public class MultimediaActivator implements ModuleActivator {
 
-    private MultimediaOntology ont = new MultimediaOntology();
+	private MultimediaOntology ont = new MultimediaOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ont);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ont);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ont);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ont);
+	}
 }

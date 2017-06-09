@@ -33,21 +33,21 @@ import org.universAAL.ontology.av.AVOntology;
  */
 public class AudioStream extends Stream {
 
-    public static final String MY_URI = AVOntology.NAMESPACE + "AudioStream";
+	public static final String MY_URI = AVOntology.NAMESPACE + "AudioStream";
 
-    public AudioStream() {
-	super();
-    }
+	public AudioStream() {
+		super();
+	}
 
-    public AudioStream(String uri) {
-	super(uri);
-    }
+	public AudioStream(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 }

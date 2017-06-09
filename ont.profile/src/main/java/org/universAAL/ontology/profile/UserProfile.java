@@ -38,30 +38,29 @@ package org.universAAL.ontology.profile;
  */
 public class UserProfile extends Profile {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "UserProfile";
-    public static final String PROP_HAS_PERSONAL_INFO_SUBPROFILE = ProfileOntology.NAMESPACE
-	    + "hasPersonalInfoSubprofile";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "UserProfile";
+	public static final String PROP_HAS_PERSONAL_INFO_SUBPROFILE = ProfileOntology.NAMESPACE
+			+ "hasPersonalInfoSubprofile";
 
-    protected UserProfile() {
-	super();
-    }
+	protected UserProfile() {
+		super();
+	}
 
-    public UserProfile(String uri) {
-	super(uri);
-    }
+	public UserProfile(String uri) {
+		super(uri);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
 }

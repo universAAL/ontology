@@ -34,72 +34,71 @@ import org.universAAL.ontology.shape.Shape;
 
 public class CityRegion extends OutdoorPlace {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "CityRegion";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "CityRegion";
 
-    public static final String PROP_HAS_ZIP_CODE = LocationOntology.NAMESPACE
-	    + "hasZIPCode";
+	public static final String PROP_HAS_ZIP_CODE = LocationOntology.NAMESPACE + "hasZIPCode";
 
-    /**
-     * Creates a CityRegion object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public CityRegion(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a CityRegion object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public CityRegion(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a CityRegion object
-     */
-    public CityRegion() {
-	super();
-    }
+	/**
+	 * Creates a CityRegion object
+	 */
+	public CityRegion() {
+		super();
+	}
 
-    /**
-     * Creates a CityRegion object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public CityRegion(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a CityRegion object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public CityRegion(String uri, String name) {
+		super(uri, name);
+	}
 
-    public CityRegion(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public CityRegion(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public CityRegion(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public CityRegion(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String getZIPCode() {
-	return (String) props.get(PROP_HAS_ZIP_CODE);
-    }
+	public String getZIPCode() {
+		return (String) props.get(PROP_HAS_ZIP_CODE);
+	}
 
-    public void setZIPCode(String zipcode) {
-	if (zipcode == null)
-	    throw new IllegalArgumentException();
-	props.put(PROP_HAS_ZIP_CODE, zipcode);
-    }
+	public void setZIPCode(String zipcode) {
+		if (zipcode == null)
+			throw new IllegalArgumentException();
+		props.put(PROP_HAS_ZIP_CODE, zipcode);
+	}
 
-    public void removeShape() {
-	props.remove(PROP_HAS_ZIP_CODE);
-    }
+	public void removeShape() {
+		props.remove(PROP_HAS_ZIP_CODE);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
-	    return super.getPropSerializationType(propURI);
-	if (PROP_HAS_ZIP_CODE.equals(propURI))
-	    return PROP_SERIALIZATION_REDUCED;
+	public int getPropSerializationType(String propURI) {
+		if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+			return super.getPropSerializationType(propURI);
+		if (PROP_HAS_ZIP_CODE.equals(propURI))
+			return PROP_SERIALIZATION_REDUCED;
 
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 }

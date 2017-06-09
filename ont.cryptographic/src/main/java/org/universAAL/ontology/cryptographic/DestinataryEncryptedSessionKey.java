@@ -23,7 +23,7 @@ package org.universAAL.ontology.cryptographic;
 public class DestinataryEncryptedSessionKey extends EncryptedResource {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "DestinataryEncryptedSessionKey";
-	
+
 	/**
 	 * 
 	 */
@@ -37,7 +37,7 @@ public class DestinataryEncryptedSessionKey extends EncryptedResource {
 		super(uri);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

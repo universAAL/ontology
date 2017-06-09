@@ -34,29 +34,28 @@ import org.universAAL.middleware.owl.supply.LevelRating;
  * @author Carsten Stockloew
  */
 public class NearSightedness extends SightImpairment {
-    public static final String MY_URI = ImpairmentOntology.NAMESPACE
-	    + "NearSightedness";
+	public static final String MY_URI = ImpairmentOntology.NAMESPACE + "NearSightedness";
 
-    /**
-     * The constructor for (de-)serializers.
-     */
-    public NearSightedness() {
-	super();
-    }
+	/**
+	 * The constructor for (de-)serializers.
+	 */
+	public NearSightedness() {
+		super();
+	}
 
-    /**
-     * The constructor for use by applications.
-     */
-    public NearSightedness(LevelRating impairmentLevel) {
-	super(impairmentLevel);
-    }
+	/**
+	 * The constructor for use by applications.
+	 */
+	public NearSightedness(LevelRating impairmentLevel) {
+		super(impairmentLevel);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public String toString() {
-	return "Nearsightedness: " + this.getImpaimentLevel().name();
-    }
+	public String toString() {
+		return "Nearsightedness: " + this.getImpaimentLevel().name();
+	}
 }

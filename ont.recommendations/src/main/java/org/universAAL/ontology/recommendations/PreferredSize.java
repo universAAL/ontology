@@ -26,12 +26,13 @@ import org.universAAL.middleware.ui.UIHandler;
  */
 public class PreferredSize extends Size {
 
-	  public static final String MY_URI = RecommendationsOntology.NAMESPACE
-			    + "PreferredSize";
+	public static final String MY_URI = RecommendationsOntology.NAMESPACE + "PreferredSize";
+
 	/**
 	 * 
 	 */
-	public PreferredSize() {}
+	public PreferredSize() {
+	}
 
 	/**
 	 * @param width
@@ -49,8 +50,7 @@ public class PreferredSize extends Size {
 		super(uri);
 	}
 
-	
-	  public String getClassURI() {
-		    return MY_URI;
-		  }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

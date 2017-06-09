@@ -34,43 +34,39 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
  */
 public class TreatmentManagementService extends HealthService {
 
-    // NAMESPACE & PROPERTIES
-    public static final String MY_URI = HealthProfileOntology.NAMESPACE
-	    + "TreatmentManagementService";
+	// NAMESPACE & PROPERTIES
+	public static final String MY_URI = HealthProfileOntology.NAMESPACE + "TreatmentManagementService";
 
-    public static final String PROP_MANAGES_TREATMENT = HealthProfileOntology.NAMESPACE
-	    + "managesTreatments";
+	public static final String PROP_MANAGES_TREATMENT = HealthProfileOntology.NAMESPACE + "managesTreatments";
 
-    // Filtering between timestamps
-    public static final String PROP_TIMESTAMP_FROM = HealthProfileOntology.NAMESPACE
-	    + "listsTreatmentsTimestampFrom";
-    public static final String PROP_TIMESTAMP_TO = HealthProfileOntology.NAMESPACE
-	    + "listsTreatmentsTimestampTo";
+	// Filtering between timestamps
+	public static final String PROP_TIMESTAMP_FROM = HealthProfileOntology.NAMESPACE + "listsTreatmentsTimestampFrom";
+	public static final String PROP_TIMESTAMP_TO = HealthProfileOntology.NAMESPACE + "listsTreatmentsTimestampTo";
 
-    // CONSTRUCTORS
-    public TreatmentManagementService() {
-	super();
-    }
+	// CONSTRUCTORS
+	public TreatmentManagementService() {
+		super();
+	}
 
-    public TreatmentManagementService(String uri) {
-	super(uri);
-    }
+	public TreatmentManagementService(String uri) {
+		super(uri);
+	}
 
-    /** {@inheritDoc} */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** {@inheritDoc} */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /** {@inheritDoc} */
-    public int getPropSerializationType(String propURI) {
-	if (PROP_MANAGES_TREATMENT.equals(propURI) || PROP_TIMESTAMP_FROM.equals(propURI)
-		|| PROP_TIMESTAMP_TO.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	/** {@inheritDoc} */
+	public int getPropSerializationType(String propURI) {
+		if (PROP_MANAGES_TREATMENT.equals(propURI) || PROP_TIMESTAMP_FROM.equals(propURI)
+				|| PROP_TIMESTAMP_TO.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 
-    /** {@inheritDoc} */
-    public boolean isWellFormed() {
-	return true;
-    }
+	/** {@inheritDoc} */
+	public boolean isWellFormed() {
+		return true;
+	}
 }

@@ -32,29 +32,28 @@ import org.universAAL.ontology.recommendations.VerticalLayout;
 
 public class RecommendationsFactory implements ResourceFactory {
 
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-  public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
-
-	switch (factoryIndex) {
-     case 0:
-       return new VerticalLayout(instanceURI);
-     case 1:
-       return new HorizontalLayout(instanceURI);
-     case 2:
-       return new HorizontalAlignment(instanceURI);
-     case 3:
-       return new GridLayout(instanceURI);
-     case 4:
-       return new VerticalAlignment(instanceURI);
-     case 5:
-    	 return new MaximumSize(instanceURI);
-     case 6:
-    	 return new MinimumSize(instanceURI);
-     case 7:
-    	 return new PreferredSize(instanceURI);
-     case 8:
-    	 return new CSSRecommendation(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new VerticalLayout(instanceURI);
+		case 1:
+			return new HorizontalLayout(instanceURI);
+		case 2:
+			return new HorizontalAlignment(instanceURI);
+		case 3:
+			return new GridLayout(instanceURI);
+		case 4:
+			return new VerticalAlignment(instanceURI);
+		case 5:
+			return new MaximumSize(instanceURI);
+		case 6:
+			return new MinimumSize(instanceURI);
+		case 7:
+			return new PreferredSize(instanceURI);
+		case 8:
+			return new CSSRecommendation(instanceURI);
+		}
+		return null;
 	}
-	return null;
-  }
 }

@@ -22,14 +22,14 @@ import org.universAAL.ontology.health.owl.HealthProfileOntology;
 
 public class HealthActivator implements ModuleActivator {
 
-    HealthProfileOntology ontology = new HealthProfileOntology();
+	HealthProfileOntology ontology = new HealthProfileOntology();
 
-    public void start(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().register(mc, ontology);
-    }
+	public void start(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().register(mc, ontology);
+	}
 
-    public void stop(ModuleContext mc) throws Exception {
-	OntologyManagement.getInstance().unregister(mc, ontology);
-    }
+	public void stop(ModuleContext mc) throws Exception {
+		OntologyManagement.getInstance().unregister(mc, ontology);
+	}
 
 }

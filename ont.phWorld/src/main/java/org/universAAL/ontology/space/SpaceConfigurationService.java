@@ -28,38 +28,35 @@ import org.universAAL.middleware.service.owl.Service;
  * 
  */
 public class SpaceConfigurationService extends Service {
-    public static final String MY_URI = SpaceOntology.NAMESPACE
-    		+ "locationConfigurationService";
-    public static final String PROP_MANAGED_LOCATIONS = SpaceOntology.NAMESPACE
-    		+ "managedLocations";
-    public static final String PROP_MANAGED_PHYSICAL_THINGS = SpaceOntology.NAMESPACE
-    		+ "managedPhysicalThings";
+	public static final String MY_URI = SpaceOntology.NAMESPACE + "locationConfigurationService";
+	public static final String PROP_MANAGED_LOCATIONS = SpaceOntology.NAMESPACE + "managedLocations";
+	public static final String PROP_MANAGED_PHYSICAL_THINGS = SpaceOntology.NAMESPACE + "managedPhysicalThings";
 
-    public SpaceConfigurationService() {
-	super();
-    }
+	public SpaceConfigurationService() {
+		super();
+	}
 
-    public SpaceConfigurationService(String uri) {
-	super(uri);
-    }
+	public SpaceConfigurationService(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see
-     * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
-     * (java.lang.String)
-     */
-    public int getPropSerializationType(String propURI) {
-	return (PROP_MANAGED_LOCATIONS.equals(propURI) || PROP_MANAGED_PHYSICAL_THINGS.equals(propURI))
-		? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
-    }
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
+	 * (java.lang.String)
+	 */
+	public int getPropSerializationType(String propURI) {
+		return (PROP_MANAGED_LOCATIONS.equals(propURI) || PROP_MANAGED_PHYSICAL_THINGS.equals(propURI))
+				? PROP_SERIALIZATION_FULL : super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

@@ -15,15 +15,14 @@
  ******************************************************************************/
 package org.universAAL.ontology.hvac;
 
-
 /**
  * A type of HVAC mode only for {@link Ventilation} systems in which user can
- * find three modes: 
+ * find three modes:
  * <dl>
  * <dt>Fan</dt>
- * <dd>its a mode in which the user sets the ventilation mode is On,
-       also in many hvac system this mode is known as "Fan Mode".</dd>
- 
+ * <dd>its a mode in which the user sets the ventilation mode is On, also in
+ * many hvac system this mode is known as "Fan Mode".</dd>
+ * 
  * <dt>Dry</dt>
  * <dd>enables dehumidifier technology.</dd>
  * </dl>
@@ -31,67 +30,66 @@ package org.universAAL.ontology.hvac;
  * @author Ricardo.
  */
 public class Ventilation_Mode extends Mode {
-    public static final String MY_URI = HvacOntology.NAMESPACE + "Ventilation_Mode";
+	public static final String MY_URI = HvacOntology.NAMESPACE + "Ventilation_Mode";
 
-    public static final int FAN = 0;
-    public static final int DRY = 1;
+	public static final int FAN = 0;
+	public static final int DRY = 1;
 
-    private static final String[] names = { "Fan","Dry" };
+	private static final String[] names = { "Fan", "Dry" };
 
-    public static final Ventilation_Mode Fan = new Ventilation_Mode(FAN);
-    public static final Ventilation_Mode Dry = new Ventilation_Mode(DRY);
+	public static final Ventilation_Mode Fan = new Ventilation_Mode(FAN);
+	public static final Ventilation_Mode Dry = new Ventilation_Mode(DRY);
 
-    private int order;
+	private int order;
 
-    private Ventilation_Mode(int order) {
-	super(HvacOntology.NAMESPACE + names[order]);
-	this.order = order;
-    }
-
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
-
-    public boolean isWellFormed() {
-	return true;
-    }
-
-    public String name() {
-	return names[order];
-    }
-
-    public int ord() {
-	return order;
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public static Ventilation_Mode getVentilation_ModeByOrder(int order) {
-	switch (order) {
-	case FAN:
-	    return Fan;
-	
-	case DRY:
-	    return Dry;
-	default:
-	    return null;
+	private Ventilation_Mode(int order) {
+		super(HvacOntology.NAMESPACE + names[order]);
+		this.order = order;
 	}
-    }
 
-    public static final Ventilation_Mode valueOf(String name) {
-	if (name == null)
-	    return null;
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 
-	if (name.startsWith(HvacOntology.NAMESPACE))
-	    name = name.substring(HvacOntology.NAMESPACE.length());
+	public boolean isWellFormed() {
+		return true;
+	}
 
+	public String name() {
+		return names[order];
+	}
 
-	for (int i = FAN; i <= DRY; i++)
-	    if (names[i].equals(name))
-		return getVentilation_ModeByOrder(i);
+	public int ord() {
+		return order;
+	}
 
-	return null;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public static Ventilation_Mode getVentilation_ModeByOrder(int order) {
+		switch (order) {
+		case FAN:
+			return Fan;
+
+		case DRY:
+			return Dry;
+		default:
+			return null;
+		}
+	}
+
+	public static final Ventilation_Mode valueOf(String name) {
+		if (name == null)
+			return null;
+
+		if (name.startsWith(HvacOntology.NAMESPACE))
+			name = name.substring(HvacOntology.NAMESPACE.length());
+
+		for (int i = FAN; i <= DRY; i++)
+			if (names[i].equals(name))
+				return getVentilation_ModeByOrder(i);
+
+		return null;
+	}
 }

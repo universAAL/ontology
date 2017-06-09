@@ -1,4 +1,5 @@
 package org.universAAL.ontology.dependability;
+
 /**Copyright [2011-2014] [University of Siegen, Embedded System Instiute]
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,39 +20,37 @@ package org.universAAL.ontology.dependability;
 import org.universAAL.middleware.rdf.Resource;
 
 public class TimingFault extends Fault {
-    public static final String MY_URI = DependabilityOntology.NAMESPACE
-	    + "TimingFault";
-    public static final String PROP_TIME_THRESHOLD = DependabilityOntology.NAMESPACE
-	    + "timeThreshold";
+	public static final String MY_URI = DependabilityOntology.NAMESPACE + "TimingFault";
+	public static final String PROP_TIME_THRESHOLD = DependabilityOntology.NAMESPACE + "timeThreshold";
 
-    public TimingFault() {
-	super();
-    }
+	public TimingFault() {
+		super();
+	}
 
-    public TimingFault(String uri) {
-	super(uri);
-    }
+	public TimingFault(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_TIME_THRESHOLD.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_TIME_THRESHOLD.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_TIME_THRESHOLD);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_TIME_THRESHOLD);
+	}
 
-    public Double getTimeThreshold() {
-	return (Double) getProperty(PROP_TIME_THRESHOLD);
-    }
+	public Double getTimeThreshold() {
+		return (Double) getProperty(PROP_TIME_THRESHOLD);
+	}
 
-    public void setTimeThreshold(Double newPropValue) {
-	if (newPropValue != null)
-	    changeProperty(PROP_TIME_THRESHOLD, newPropValue);
-    }
+	public void setTimeThreshold(Double newPropValue) {
+		if (newPropValue != null)
+			changeProperty(PROP_TIME_THRESHOLD, newPropValue);
+	}
 }

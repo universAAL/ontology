@@ -32,15 +32,14 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * 
  */
 public abstract class LightType extends ManagedIndividual {
-    public static final String MY_URI = LightingOntology.NAMESPACE
-	    + "LightType";
+	public static final String MY_URI = LightingOntology.NAMESPACE + "LightType";
 
-    protected LightType(String uri) {
-	super(uri);
-    }
+	protected LightType(String uri) {
+		super(uri);
+	}
 
-    /** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** @see org.universAAL.middleware.owl.ManagedIndividual#getClassURI() */
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

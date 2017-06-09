@@ -5,24 +5,23 @@ import org.universAAL.middleware.container.ModuleContext;
 import org.universAAL.middleware.owl.OntologyManagement;
 
 public class Activator implements ModuleActivator {
-    
-    public static ModuleContext mc;
 
-    public void start(ModuleContext mc) throws Exception {
-	Activator.mc = mc;
-	
-	OntologyManagement om = OntologyManagement.getInstance();
-	String uris[] = om.getOntoloyURIs();
+	public static ModuleContext mc;
 
-	for (int i = 0; i < uris.length; i++) {
-	    System.out.println("-- Serializing ontology: " + i + ":\t"
-		    + uris[i]);
-	    OwlOWLCreator.doit(om.getOntology(uris[i]));
+	public void start(ModuleContext mc) throws Exception {
+		Activator.mc = mc;
+
+		OntologyManagement om = OntologyManagement.getInstance();
+		String uris[] = om.getOntoloyURIs();
+
+		for (int i = 0; i < uris.length; i++) {
+			System.out.println("-- Serializing ontology: " + i + ":\t" + uris[i]);
+			OwlOWLCreator.doit(om.getOntology(uris[i]));
+		}
+
+		System.out.println("--DONE--");
 	}
-	
-	System.out.println("--DONE--");
-    }
 
-    public void stop(ModuleContext mc) throws Exception {
-    }
+	public void stop(ModuleContext mc) throws Exception {
+	}
 }

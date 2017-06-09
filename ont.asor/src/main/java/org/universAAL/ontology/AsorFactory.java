@@ -29,20 +29,19 @@ import org.universAAL.ontology.asor.LanguageClassifier;
 
 public class AsorFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new Script(instanceURI);
-	case 1:
-	    return new Asor(instanceURI);
-	case 2:
-	    return new ScriptEngine(instanceURI);
-	case 3:
-	    return new LanguageClassifier(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new Script(instanceURI);
+		case 1:
+			return new Asor(instanceURI);
+		case 2:
+			return new ScriptEngine(instanceURI);
+		case 3:
+			return new LanguageClassifier(instanceURI);
 
+		}
+		return null;
 	}
-	return null;
-    }
 }

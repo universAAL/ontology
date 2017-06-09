@@ -20,21 +20,21 @@ package org.universAAL.ontology.security;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * Upper Credentials information Concept.
- * This class should be extended for each type of credentials.
+ * Upper Credentials information Concept. This class should be extended for each
+ * type of credentials.
+ * 
  * @author amedrano
  *
  */
 public class Credentials extends ManagedIndividual {
 
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "Credentials";
 
-    public static final String MY_URI = SecurityOntology.NAMESPACE + "Credentials";
-	
 	/**
 	 * Only for serializers.
 	 */
 	public Credentials() {
-	    super();
+		super();
 	}
 
 	/**
@@ -44,18 +44,17 @@ public class Credentials extends ManagedIndividual {
 		super(uri);
 	}
 
-
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public boolean isWellFormed() {
 		return super.isWellFormed();
 	}
 
-	/** {@ inheritDoc}	 */
+	/** {@ inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_UNDEFINED;
 	}

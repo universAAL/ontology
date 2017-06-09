@@ -34,31 +34,29 @@ import org.universAAL.middleware.service.owl.Service;
 // Main class
 public class ContinuaHealthManager extends Service {
 
-    // Attributes
-    public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE
-	    + "ContinuaHealthManagerService";
-    public static final String PROP_HAS_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE
-	    + "hasContinuaDevice";
-    public static final String PROP_HAS_NOT_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE
-	    + "hasNotContinuaDevice";
+	// Attributes
+	public static final String MY_URI = ContinuaHealthManagerOntology.NAMESPACE + "ContinuaHealthManagerService";
+	public static final String PROP_HAS_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE + "hasContinuaDevice";
+	public static final String PROP_HAS_NOT_CONTINUA_DEVICE = ContinuaHealthManagerOntology.NAMESPACE
+			+ "hasNotContinuaDevice";
 
-    // Constructor
-    public ContinuaHealthManager(String instanceURI) {
-	super(instanceURI);
-    }
+	// Constructor
+	public ContinuaHealthManager(String instanceURI) {
+		super(instanceURI);
+	}
 
-    public ContinuaHealthManager() {
-	super();
-    }
+	public ContinuaHealthManager() {
+		super();
+	}
 
-    // Methods
-    public String getClassURI() {
-	return MY_URI;
-    }
+	// Methods
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (PROP_HAS_CONTINUA_DEVICE.equals(propURI) || PROP_HAS_NOT_CONTINUA_DEVICE.equals(propURI))
-	    return Resource.PROP_SERIALIZATION_FULL;
-	return super.getPropSerializationType(propURI);
-    }
+	public int getPropSerializationType(String propURI) {
+		if (PROP_HAS_CONTINUA_DEVICE.equals(propURI) || PROP_HAS_NOT_CONTINUA_DEVICE.equals(propURI))
+			return Resource.PROP_SERIALIZATION_FULL;
+		return super.getPropSerializationType(propURI);
+	}
 }

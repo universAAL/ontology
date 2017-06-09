@@ -29,9 +29,9 @@ import org.universAAL.middleware.rdf.Resource;
  *
  */
 public class AccessRight extends ManagedIndividual {
-	 public static final String MY_URI = SecurityOntology.NAMESPACE + "AccessRight";
-	 public static final String PROP_ACCESS_TYPE = SecurityOntology.NAMESPACE + "hasAccessType";
-	 public static final String PROP_ACCESS_TO = SecurityOntology.NAMESPACE + "hasAccessTo";
+	public static final String MY_URI = SecurityOntology.NAMESPACE + "AccessRight";
+	public static final String PROP_ACCESS_TYPE = SecurityOntology.NAMESPACE + "hasAccessType";
+	public static final String PROP_ACCESS_TO = SecurityOntology.NAMESPACE + "hasAccessTo";
 
 	/**
 	 * 
@@ -54,46 +54,46 @@ public class AccessRight extends ManagedIndividual {
 		super(uriPrefix, numProps);
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	/**{@inheritDoc} */
+	/** {@inheritDoc} */
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
 	}
-	
+
 	/** {@inheritDoc} */
 	public boolean setProperty(String propURI, Object value) {
-		if (propURI.equals(PROP_ACCESS_TO) && value != null){
-			((Resource)value).literal();
+		if (propURI.equals(PROP_ACCESS_TO) && value != null) {
+			((Resource) value).literal();
 		}
 		return super.setProperty(propURI, value);
 	}
 
-	public void addAccessType(AccessType at){
+	public void addAccessType(AccessType at) {
 		ClosedCollection cc = new ClosedCollection();
 		Object o = getProperty(PROP_ACCESS_TYPE);
-		if (o == null){
+		if (o == null) {
 			cc.add(at);
-		}else if (o instanceof ClosedCollection){
+		} else if (o instanceof ClosedCollection) {
 			cc.addAll((ClosedCollection) o);
 			cc.add(at);
 		}
 		changeProperty(PROP_ACCESS_TYPE, cc);
 	}
-	
-	public void removeAccessType(AccessType at){
+
+	public void removeAccessType(AccessType at) {
 		Object o = getProperty(PROP_ACCESS_TYPE);
-		if (o != null){
+		if (o != null) {
 			((ClosedCollection) o).remove(at);
 			changeProperty(PROP_ACCESS_TYPE, o);
 		}
 	}
 
-	public void setAccessTo(TypeExpression te){
+	public void setAccessTo(TypeExpression te) {
 		changeProperty(PROP_ACCESS_TO, te);
 	}
-	
+
 }

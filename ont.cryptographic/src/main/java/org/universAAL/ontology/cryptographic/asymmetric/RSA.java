@@ -25,7 +25,6 @@ import org.universAAL.ontology.cryptographic.CryptographicOntology;
 public class RSA extends AsymmetricEncryption {
 
 	public static final String MY_URI = CryptographicOntology.NAMESPACE + "RSA";
-	
 
 	/**
 	 * 
@@ -39,7 +38,8 @@ public class RSA extends AsymmetricEncryption {
 	public RSA(String uri) {
 		super(uri);
 	}
-	/**{@inheritDoc} */
+
+	/** {@inheritDoc} */
 	public String getClassURI() {
 		return MY_URI;
 	}

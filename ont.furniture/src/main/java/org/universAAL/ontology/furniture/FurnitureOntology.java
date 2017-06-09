@@ -37,44 +37,39 @@ import org.universAAL.ontology.phThing.PhysicalThing;
  */
 public class FurnitureOntology extends Ontology {
 
-    private static FurnitureFactory factory = new FurnitureFactory();
+	private static FurnitureFactory factory = new FurnitureFactory();
 
-    public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX
-	    + "Furniture.owl#";
+	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Furniture.owl#";
 
-    public FurnitureOntology() {
-	super(NAMESPACE);
-    }
+	public FurnitureOntology() {
+		super(NAMESPACE);
+	}
 
-    public void create() {
-	Resource r = getInfo();
-	r
-		.setResourceComment("An ontology for describing furnitures in a home envinment.");
-	r.setResourceLabel("Furniture");
-	addImport(DataRepOntology.NAMESPACE);
-	addImport(ServiceBusOntology.NAMESPACE);
-	addImport(PhThingOntology.NAMESPACE);
+	public void create() {
+		Resource r = getInfo();
+		r.setResourceComment("An ontology for describing furnitures in a home envinment.");
+		r.setResourceLabel("Furniture");
+		addImport(DataRepOntology.NAMESPACE);
+		addImport(ServiceBusOntology.NAMESPACE);
+		addImport(PhThingOntology.NAMESPACE);
 
-	OntClassInfoSetup oci;
+		OntClassInfoSetup oci;
 
-	// load FurnitureType
-	oci = createNewAbstractOntClassInfo(FurnitureType.MY_URI);
-	oci.setResourceComment("Describes the type of a furniture.");
-	oci.setResourceLabel("Furniture Type");
-	oci.addSuperClass(ManagedIndividual.MY_URI);
-	oci.toEnumeration(new ManagedIndividual[] { FurnitureType.Chair,
-		FurnitureType.Table, FurnitureType.Shelf, FurnitureType.Locker,
-		FurnitureType.Sofa, FurnitureType.Bed, FurnitureType.Other });
+		// load FurnitureType
+		oci = createNewAbstractOntClassInfo(FurnitureType.MY_URI);
+		oci.setResourceComment("Describes the type of a furniture.");
+		oci.setResourceLabel("Furniture Type");
+		oci.addSuperClass(ManagedIndividual.MY_URI);
+		oci.toEnumeration(new ManagedIndividual[] { FurnitureType.Chair, FurnitureType.Table, FurnitureType.Shelf,
+				FurnitureType.Locker, FurnitureType.Sofa, FurnitureType.Bed, FurnitureType.Other });
 
-	// load Furniture
-	oci = createNewOntClassInfo(Furniture.MY_URI, factory, 0);
-	oci.setResourceComment("A furniture");
-	oci.setResourceLabel("Furniture");
-	oci.addSuperClass(PhysicalThing.MY_URI);
-	oci.addObjectProperty(Furniture.PROP_FURNITURE_TYPE);
-	oci.addRestriction(MergedRestriction
-		.getAllValuesRestrictionWithCardinality(
-			Furniture.PROP_FURNITURE_TYPE, FurnitureType.MY_URI, 0,
-			1));
-    }
+		// load Furniture
+		oci = createNewOntClassInfo(Furniture.MY_URI, factory, 0);
+		oci.setResourceComment("A furniture");
+		oci.setResourceLabel("Furniture");
+		oci.addSuperClass(PhysicalThing.MY_URI);
+		oci.addObjectProperty(Furniture.PROP_FURNITURE_TYPE);
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Furniture.PROP_FURNITURE_TYPE,
+				FurnitureType.MY_URI, 0, 1));
+	}
 }

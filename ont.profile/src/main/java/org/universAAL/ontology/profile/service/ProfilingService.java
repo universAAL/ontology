@@ -37,28 +37,26 @@ import org.universAAL.ontology.profile.ProfileOntology;
  * @author Carsten Stockloew
  */
 public class ProfilingService extends Service {
-    public static final String MY_URI = ProfileOntology.NAMESPACE
-	    + "ProfilingService";
-    public static final String PROP_CONTROLS = ProfileOntology.NAMESPACE
-	    + "controls";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "ProfilingService";
+	public static final String PROP_CONTROLS = ProfileOntology.NAMESPACE + "controls";
 
-    public ProfilingService(String uri) {
-	super(uri);
-    }
+	public ProfilingService(String uri) {
+		super(uri);
+	}
 
-    public ProfilingService() {
-	super();
-    }
+	public ProfilingService() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

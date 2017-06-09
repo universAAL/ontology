@@ -34,46 +34,46 @@ import org.universAAL.ontology.shape.Shape;
  */
 public abstract class IndoorPlace extends Place {
 
-    public static final String MY_URI = LocationOntology.NAMESPACE + "IndoorPlace";
+	public static final String MY_URI = LocationOntology.NAMESPACE + "IndoorPlace";
 
-    /**
-     * Creates a IndoorPlace object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public IndoorPlace(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a IndoorPlace object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public IndoorPlace(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a IndoorPlace object
-     */
-    public IndoorPlace() {
-	super();
-    }
+	/**
+	 * Creates a IndoorPlace object
+	 */
+	public IndoorPlace() {
+		super();
+	}
 
-    /**
-     * Creates a IndoorPlace object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param name
-     *            The place name. A null object is not allowed
-     */
-    public IndoorPlace(String uri, String name) {
-	super(uri, name);
-    }
+	/**
+	 * Creates a IndoorPlace object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param name
+	 *            The place name. A null object is not allowed
+	 */
+	public IndoorPlace(String uri, String name) {
+		super(uri, name);
+	}
 
-    public IndoorPlace(String uri, String name, Shape shape) {
-	super(uri, name, shape);
-    }
+	public IndoorPlace(String uri, String name, Shape shape) {
+		super(uri, name, shape);
+	}
 
-    public IndoorPlace(String uri, Shape shape) {
-	super(uri, shape);
-    }
+	public IndoorPlace(String uri, Shape shape) {
+		super(uri, shape);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 }

@@ -22,70 +22,65 @@ import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.profile.User;
 
 public class HealthMeasurement extends ManagedIndividual {
-    public static final String MY_URI = HealthMeasurementOntology.NAMESPACE
-	    + "HealthMeasurement";
-    public static final String PROP_OBTAINED_BY = HealthMeasurementOntology.NAMESPACE
-	    + "obtainedFrom";
-    public static final String PROP_MEASURED_FROM = HealthMeasurementOntology.NAMESPACE
-	    + "measuredBy";
-    public static final String PROP_NAME = HealthMeasurementOntology.NAMESPACE
-    		+ "name";
-    public static final String PROP_DESCIPTION = HealthMeasurementOntology.NAMESPACE
-    		+ "description";
-    public HealthMeasurement() {
-	super();
-    }
+	public static final String MY_URI = HealthMeasurementOntology.NAMESPACE + "HealthMeasurement";
+	public static final String PROP_OBTAINED_BY = HealthMeasurementOntology.NAMESPACE + "obtainedFrom";
+	public static final String PROP_MEASURED_FROM = HealthMeasurementOntology.NAMESPACE + "measuredBy";
+	public static final String PROP_NAME = HealthMeasurementOntology.NAMESPACE + "name";
+	public static final String PROP_DESCIPTION = HealthMeasurementOntology.NAMESPACE + "description";
 
-    public HealthMeasurement(String uri) {
-	super(uri);
-    }
+	public HealthMeasurement() {
+		super();
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public HealthMeasurement(String uri) {
+		super(uri);
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_OBTAINED_BY)
-		&& hasProperty(PROP_MEASURED_FROM);
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public User getObtainedBy() {
-	return (User) getProperty(PROP_OBTAINED_BY);
-    }
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_OBTAINED_BY) && hasProperty(PROP_MEASURED_FROM);
+	}
 
-    public void setObtainedBy(User newPropValue) {
-	if (newPropValue != null)
-	    setProperty(PROP_OBTAINED_BY, newPropValue);
-    }
+	public User getObtainedBy() {
+		return (User) getProperty(PROP_OBTAINED_BY);
+	}
 
-    public String getName() {
-	return (String) getProperty(PROP_NAME);
-    }
+	public void setObtainedBy(User newPropValue) {
+		if (newPropValue != null)
+			setProperty(PROP_OBTAINED_BY, newPropValue);
+	}
 
-    public void setName(String newPropValue) {
-	if (newPropValue != null)
-	    setProperty(PROP_NAME, newPropValue);
-    }
-    
-    public Device getMeasuredFrom() {
-    	return (Device) getProperty(PROP_MEASURED_FROM);
-    }
+	public String getName() {
+		return (String) getProperty(PROP_NAME);
+	}
 
-    public void setMeasuredFrom(Device newPropValue) {
-    	if (newPropValue != null)
-    		setProperty(PROP_MEASURED_FROM, newPropValue);
-    }
+	public void setName(String newPropValue) {
+		if (newPropValue != null)
+			setProperty(PROP_NAME, newPropValue);
+	}
 
-    public String getDescription() {
-    	return (String) getProperty(PROP_DESCIPTION);
-    }
+	public Device getMeasuredFrom() {
+		return (Device) getProperty(PROP_MEASURED_FROM);
+	}
 
-    public void setDescription(String newPropValue) {
-    	if (newPropValue != null)
-    		setProperty(PROP_DESCIPTION, newPropValue);
-    }
+	public void setMeasuredFrom(Device newPropValue) {
+		if (newPropValue != null)
+			setProperty(PROP_MEASURED_FROM, newPropValue);
+	}
+
+	public String getDescription() {
+		return (String) getProperty(PROP_DESCIPTION);
+	}
+
+	public void setDescription(String newPropValue) {
+		if (newPropValue != null)
+			setProperty(PROP_DESCIPTION, newPropValue);
+	}
 }

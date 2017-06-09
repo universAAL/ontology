@@ -28,21 +28,20 @@ import org.universAAL.ontology.phThing.PhysicalThing;
 
 public class PhThingFactory implements ResourceFactory {
 
-    public Resource createInstance(String classURI, String instanceURI,
-	    int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	switch (factoryIndex) {
-	case 0:
-	    return new PhysicalThing(instanceURI);
-	case 1:
-	    return new Device(instanceURI);
-	case 3:
-	    return new DeviceService(instanceURI);
-	case 4:
-	    return new PhysicalContainer(instanceURI);
+		switch (factoryIndex) {
+		case 0:
+			return new PhysicalThing(instanceURI);
+		case 1:
+			return new Device(instanceURI);
+		case 3:
+			return new DeviceService(instanceURI);
+		case 4:
+			return new PhysicalContainer(instanceURI);
+		}
+		// legacy: Actuator, sensor and such return null. They are in ont.device
+		// now.
+		return null;
 	}
-	// legacy: Actuator, sensor and such return null. They are in ont.device
-	// now.
-	return null;
-    }
 }

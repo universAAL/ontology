@@ -35,56 +35,56 @@ package org.universAAL.ontology.profile;
 
 public class Caregiver extends User {
 
-    /** Class URI */
-    public static final String MY_URI = ProfileOntology.NAMESPACE + "Caregiver";
+	/** Class URI */
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "Caregiver";
 
-    /**
-     * Because there is no multiple inhertiance in Java, we copy this property
-     * from Profilable (although the methods here still use
-     * Profilable.PROP_HAS_PROFILE).
-     */
-    public static final String PROP_HAS_PROFILE = Profilable.PROP_HAS_PROFILE;
+	/**
+	 * Because there is no multiple inhertiance in Java, we copy this property
+	 * from Profilable (although the methods here still use
+	 * Profilable.PROP_HAS_PROFILE).
+	 */
+	public static final String PROP_HAS_PROFILE = Profilable.PROP_HAS_PROFILE;
 
-    protected Caregiver() {
-	super();
-    }
-
-    public Caregiver(String uri) {
-	super(uri);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public boolean isWellFormed() {
-	if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-	    return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof CaregiverProfile);
+	protected Caregiver() {
+		super();
 	}
-	return false;
-    }
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public Caregiver(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Sets the value for the Caregiver Profile of this Caregiver
-     * 
-     * @param value
-     *            The Profile to set
-     */
-    public void setProfile(CaregiverProfile value) {
-	setProperty(Profilable.PROP_HAS_PROFILE, value);
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * Gets the value of the Caregiver Profile of this Caregiver
-     * 
-     * @return The Profile of the Caregiver
-     */
-    public CaregiverProfile getCaregiverProfile() {
-	return (CaregiverProfile) getProperty(Profilable.PROP_HAS_PROFILE);
-    }
+	public boolean isWellFormed() {
+		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
+			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof CaregiverProfile);
+		}
+		return false;
+	}
+
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	/**
+	 * Sets the value for the Caregiver Profile of this Caregiver
+	 * 
+	 * @param value
+	 *            The Profile to set
+	 */
+	public void setProfile(CaregiverProfile value) {
+		setProperty(Profilable.PROP_HAS_PROFILE, value);
+	}
+
+	/**
+	 * Gets the value of the Caregiver Profile of this Caregiver
+	 * 
+	 * @return The Profile of the Caregiver
+	 */
+	public CaregiverProfile getCaregiverProfile() {
+		return (CaregiverProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+	}
 
 }

@@ -10,33 +10,31 @@ import org.universAAL.ontology.profile.UserProfile;
 
 public class BusTest extends OntTestCase {
 
-    public void test() {
-	AssistedPerson ap = new AssistedPerson("testAP");
-	HealthProfile hp = new HealthProfile(ap.getURI() + "HealthSubprofile");
-//	if (ap instanceof AssistedPerson) {
-//	    hp.setAssignedAssistedPerson((AssistedPerson) ap);
-//	    // Bug #378
-//	    // hp.setAssignedAssistedPerson(new AssistedPerson(ap.getURI()));
-//	}
-	UserProfile up = new AssistedPersonProfile("uriUserProfile");
-	up.setSubProfile(new HealthProfile[] {hp});
-	ap.setProfile(up);
-	
-	
-	
-	//System.out.println(hp.toStringRecursive());
+	public void test() {
+		AssistedPerson ap = new AssistedPerson("testAP");
+		HealthProfile hp = new HealthProfile(ap.getURI() + "HealthSubprofile");
+		// if (ap instanceof AssistedPerson) {
+		// hp.setAssignedAssistedPerson((AssistedPerson) ap);
+		// // Bug #378
+		// // hp.setAssignedAssistedPerson(new AssistedPerson(ap.getURI()));
+		// }
+		UserProfile up = new AssistedPersonProfile("uriUserProfile");
+		up.setSubProfile(new HealthProfile[] { hp });
+		ap.setProfile(up);
 
-	String serialized = serialize(hp);
-	//System.out.println(serialized);
-	Resource r = (Resource) deserialize(serialized);
-	assertTrue(r != null);
+		// System.out.println(hp.toStringRecursive());
 
-	//System.out.println(r.toStringRecursive());
-	
-	assertTrue((new ResourceComparator()).areEqual(hp, r));
-    }
-    
-    public void testWriter() {
-    	generateOntFiles4MyProy();
+		String serialized = serialize(hp);
+		// System.out.println(serialized);
+		Resource r = (Resource) deserialize(serialized);
+		assertTrue(r != null);
+
+		// System.out.println(r.toStringRecursive());
+
+		assertTrue((new ResourceComparator()).areEqual(hp, r));
+	}
+
+	public void testWriter() {
+		generateOntFiles4MyProy();
 	}
 }

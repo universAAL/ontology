@@ -25,33 +25,33 @@ package org.universAAL.ontology.vcard;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class VCard extends ManagedIndividual {
-    public static final String MY_URI = VCardOntology.NAMESPACE + "VCard";
-    public static final String PROP_BDAY = VCardOntology.NAMESPACE + "bday";
-    public static final String PROP_EMAIL = VCardOntology.NAMESPACE + "email";
-    public static final String PROP_FN = VCardOntology.NAMESPACE + "fn";
-    public static final String PROP_N = VCardOntology.NAMESPACE + "n";
-    public static final String PROP_ORG = VCardOntology.NAMESPACE + "org";
-    public static final String PROP_PHOTO = VCardOntology.NAMESPACE + "photo";
-    public static final String PROP_TEL = VCardOntology.NAMESPACE + "tel";
-    public static final String PROP_URL = VCardOntology.NAMESPACE + "url";
+	public static final String MY_URI = VCardOntology.NAMESPACE + "VCard";
+	public static final String PROP_BDAY = VCardOntology.NAMESPACE + "bday";
+	public static final String PROP_EMAIL = VCardOntology.NAMESPACE + "email";
+	public static final String PROP_FN = VCardOntology.NAMESPACE + "fn";
+	public static final String PROP_N = VCardOntology.NAMESPACE + "n";
+	public static final String PROP_ORG = VCardOntology.NAMESPACE + "org";
+	public static final String PROP_PHOTO = VCardOntology.NAMESPACE + "photo";
+	public static final String PROP_TEL = VCardOntology.NAMESPACE + "tel";
+	public static final String PROP_URL = VCardOntology.NAMESPACE + "url";
 
-    public VCard() {
-	super();
-    }
+	public VCard() {
+		super();
+	}
 
-    public VCard(String uri) {
-	super(uri);
-    }
+	public VCard(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String propURI) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String propURI) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

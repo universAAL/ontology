@@ -33,83 +33,82 @@ import org.universAAL.ontology.location.position.Point;
 
 public class MergedShape extends BooleanShape {
 
-    public static final String MY_URI = ShapeOntology.NAMESPACE + "MergedShape";
+	public static final String MY_URI = ShapeOntology.NAMESPACE + "MergedShape";
 
-    public MergedShape(String uri) {
-	super(uri);
-    }
-
-    public MergedShape(Shape[] shapes) {
-	super();
-	setShapes(shapes);
-    }
-
-    public MergedShape(String uri, Shape[] shapes) {
-	super(uri);
-	setShapes(shapes);
-    }
-
-    public String getClassURI() {
-	return MY_URI;
-    }
-
-    public float getDistanceTo(Point other) {
-	if (other == null)
-	    throw new IllegalArgumentException();
-	float dist = Float.MAX_VALUE;
-	Shape[] shapes = getShapes();
-	for (int i = 0; i < shapes.length; i++) {
-	    float curdist;
-	    if ((curdist = shapes[i].getDistanceTo(other)) < dist)
-		dist = curdist;
+	public MergedShape(String uri) {
+		super(uri);
 	}
-	return dist;
-    }
 
-    public Point getCenter() {
-	Shape[] shapes = getShapes();
-	float[] center = { 0, 0, 0 };
-	for (int i = 0; i < shapes.length; i++) {
-	    double[] c = shapes[i].getCenter().get3DCoordinates();
-	    center[0] += c[0];
-	    center[1] += c[1];
-	    center[2] += c[2];
+	public MergedShape(Shape[] shapes) {
+		super();
+		setShapes(shapes);
 	}
-	center[0] /= shapes.length;
-	center[1] /= shapes.length;
-	center[2] /= shapes.length;
-	return new Point(center[0], center[1], center[2], shapes[0].getCenter()
-		.getCoordinateSystem());
-    }
 
-    protected Shape computeBoundingVolume() {
-	Shape[] shapes = getShapes();
-	Shape[] bounds = new Shape[shapes.length];
-	for (int i = 0; i < shapes.length; i++) {
-	    bounds[i] = shapes[i].getBoundingVolume();
+	public MergedShape(String uri, Shape[] shapes) {
+		super(uri);
+		setShapes(shapes);
 	}
-	Shape vol = new MergedShape(bounds);
-	setBoundingVolume(vol);
-	return vol;
-    }
 
-    public boolean intersects(Point base, Point dir) {
-	BooleanShape vol = (BooleanShape) getBoundingVolume();
-	Shape[] shapes = vol.getShapes();
-	for (int i = 0; i < shapes.length; i++) {
-	    if (shapes[i].intersects(base, dir))
-		return true;
+	public String getClassURI() {
+		return MY_URI;
 	}
-	return false;
-    }
 
-    public boolean contains(Point p) {
-	BooleanShape vol = (BooleanShape) getBoundingVolume();
-	Shape[] shapes = vol.getShapes();
-	for (int i = 0; i < shapes.length; i++) {
-	    if (shapes[i].contains(p))
-		return true;
+	public float getDistanceTo(Point other) {
+		if (other == null)
+			throw new IllegalArgumentException();
+		float dist = Float.MAX_VALUE;
+		Shape[] shapes = getShapes();
+		for (int i = 0; i < shapes.length; i++) {
+			float curdist;
+			if ((curdist = shapes[i].getDistanceTo(other)) < dist)
+				dist = curdist;
+		}
+		return dist;
 	}
-	return false;
-    }
+
+	public Point getCenter() {
+		Shape[] shapes = getShapes();
+		float[] center = { 0, 0, 0 };
+		for (int i = 0; i < shapes.length; i++) {
+			double[] c = shapes[i].getCenter().get3DCoordinates();
+			center[0] += c[0];
+			center[1] += c[1];
+			center[2] += c[2];
+		}
+		center[0] /= shapes.length;
+		center[1] /= shapes.length;
+		center[2] /= shapes.length;
+		return new Point(center[0], center[1], center[2], shapes[0].getCenter().getCoordinateSystem());
+	}
+
+	protected Shape computeBoundingVolume() {
+		Shape[] shapes = getShapes();
+		Shape[] bounds = new Shape[shapes.length];
+		for (int i = 0; i < shapes.length; i++) {
+			bounds[i] = shapes[i].getBoundingVolume();
+		}
+		Shape vol = new MergedShape(bounds);
+		setBoundingVolume(vol);
+		return vol;
+	}
+
+	public boolean intersects(Point base, Point dir) {
+		BooleanShape vol = (BooleanShape) getBoundingVolume();
+		Shape[] shapes = vol.getShapes();
+		for (int i = 0; i < shapes.length; i++) {
+			if (shapes[i].intersects(base, dir))
+				return true;
+		}
+		return false;
+	}
+
+	public boolean contains(Point p) {
+		BooleanShape vol = (BooleanShape) getBoundingVolume();
+		Shape[] shapes = vol.getShapes();
+		for (int i = 0; i < shapes.length; i++) {
+			if (shapes[i].contains(p))
+				return true;
+		}
+		return false;
+	}
 }

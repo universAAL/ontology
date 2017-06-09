@@ -34,104 +34,104 @@ import org.universAAL.ontology.location.position.Point;
 
 public abstract class Shape3D extends Shape {
 
-    public static final String MY_URI = ShapeOntology.NAMESPACE + "Shape3D";
+	public static final String MY_URI = ShapeOntology.NAMESPACE + "Shape3D";
 
-    public static final String PROP_2D_REPRESENTATION = ShapeOntology.NAMESPACE + "2DReperesentation";
+	public static final String PROP_2D_REPRESENTATION = ShapeOntology.NAMESPACE + "2DReperesentation";
 
-    /**
-     * Creates a Shape object
-     * 
-     * @param uri
-     *            the object URI
-     */
-    public Shape3D(String uri) {
-	super(uri);
-    }
+	/**
+	 * Creates a Shape object
+	 * 
+	 * @param uri
+	 *            the object URI
+	 */
+	public Shape3D(String uri) {
+		super(uri);
+	}
 
-    /**
-     * Creates a Shape object
-     */
-    public Shape3D() {
-	super();
-    }
+	/**
+	 * Creates a Shape object
+	 */
+	public Shape3D() {
+		super();
+	}
 
-    /**
-     * Creates a Shape object
-     * 
-     * @param uri
-     *            this value can also be a null object
-     * @param pointRep
-     *            The place name. A null object is not allowed
-     * @param system
-     *            the local coordinate system
-     */
-    public Shape3D(String uri, Point pointRep, CoordinateSystem system) {
-	super(uri, pointRep, system);
-    }
+	/**
+	 * Creates a Shape object
+	 * 
+	 * @param uri
+	 *            this value can also be a null object
+	 * @param pointRep
+	 *            The place name. A null object is not allowed
+	 * @param system
+	 *            the local coordinate system
+	 */
+	public Shape3D(String uri, Point pointRep, CoordinateSystem system) {
+		super(uri, pointRep, system);
+	}
 
-    /**
-     * Creates a Shape object
-     * 
-     * @param pointRep
-     *            a single point representing the shape
-     * @param system
-     *            the local coordinate system
-     */
-    public Shape3D(Point pointRep, CoordinateSystem system) {
-	super(pointRep, system);
-    }
+	/**
+	 * Creates a Shape object
+	 * 
+	 * @param pointRep
+	 *            a single point representing the shape
+	 * @param system
+	 *            the local coordinate system
+	 */
+	public Shape3D(Point pointRep, CoordinateSystem system) {
+		super(pointRep, system);
+	}
 
-    /**
-     * Creates a Shape object
-     * 
-     * @param system
-     *            the local coordinate system
-     */
-    public Shape3D(CoordinateSystem system) {
-	super(system);
-    }
+	/**
+	 * Creates a Shape object
+	 * 
+	 * @param system
+	 *            the local coordinate system
+	 */
+	public Shape3D(CoordinateSystem system) {
+		super(system);
+	}
 
-    /**
-     * Creates a Shape object
-     * 
-     * @param uri
-     *            identifier for the shape
-     * @param system
-     *            the local coordinate system
-     */
-    public Shape3D(String uri, CoordinateSystem system) {
-	super(uri, system);
-    }
+	/**
+	 * Creates a Shape object
+	 * 
+	 * @param uri
+	 *            identifier for the shape
+	 * @param system
+	 *            the local coordinate system
+	 */
+	public Shape3D(String uri, CoordinateSystem system) {
+		super(uri, system);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /**
-     * @return a projected 2d representation of the object, if the property was
-     *         set
-     */
-    public Shape2D get2DRepresentation() {
-	Shape2D p = (Shape2D) props.get(PROP_2D_REPRESENTATION);
-	return p;
-    }
+	/**
+	 * @return a projected 2d representation of the object, if the property was
+	 *         set
+	 */
+	public Shape2D get2DRepresentation() {
+		Shape2D p = (Shape2D) props.get(PROP_2D_REPRESENTATION);
+		return p;
+	}
 
-    public void set2DRepresentation(Shape2D shape) {
-	if (shape == null)
-	    throw new IllegalArgumentException();
-	props.put(PROP_2D_REPRESENTATION, shape);
-    }
+	public void set2DRepresentation(Shape2D shape) {
+		if (shape == null)
+			throw new IllegalArgumentException();
+		props.put(PROP_2D_REPRESENTATION, shape);
+	}
 
-    public void remove2DRepresentation() {
-	props.remove(PROP_2D_REPRESENTATION);
-    }
+	public void remove2DRepresentation() {
+		props.remove(PROP_2D_REPRESENTATION);
+	}
 
-    public int getPropSerializationType(String propURI) {
-	if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
-	    return super.getPropSerializationType(propURI);
-	if (PROP_2D_REPRESENTATION.equals(propURI))
-	    return PROP_SERIALIZATION_REDUCED;
+	public int getPropSerializationType(String propURI) {
+		if (super.getPropSerializationType(propURI) != PROP_SERIALIZATION_OPTIONAL)
+			return super.getPropSerializationType(propURI);
+		if (PROP_2D_REPRESENTATION.equals(propURI))
+			return PROP_SERIALIZATION_REDUCED;
 
-	return PROP_SERIALIZATION_OPTIONAL;
-    }
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
 }

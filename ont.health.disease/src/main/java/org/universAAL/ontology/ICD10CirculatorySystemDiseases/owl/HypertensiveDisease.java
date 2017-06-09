@@ -19,26 +19,25 @@ import org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease;
 import org.universAAL.ontology.disease.owl.DiseaseOntology;
 
 public class HypertensiveDisease extends CirculatorySystemDisease {
-    public static final String MY_URI = DiseaseOntology.NAMESPACE
-	    + "HypertensiveDisease";
+	public static final String MY_URI = DiseaseOntology.NAMESPACE + "HypertensiveDisease";
 
-    public HypertensiveDisease() {
-	super();
-    }
+	public HypertensiveDisease() {
+		super();
+	}
 
-    public HypertensiveDisease(String uri) {
-	super(uri);
-    }
+	public HypertensiveDisease(String uri) {
+		super(uri);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return true;
-    }
+	public boolean isWellFormed() {
+		return true;
+	}
 }

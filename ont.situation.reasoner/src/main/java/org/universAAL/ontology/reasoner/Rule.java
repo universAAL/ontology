@@ -20,73 +20,68 @@
 package org.universAAL.ontology.reasoner;
 
 public class Rule extends Persistent {
-    public static final String MY_URI = ReasoningOntology.NAMESPACE + "Rule";
-    public static final String PROP_SITUATION = ReasoningOntology.NAMESPACE
-	    + "ruleSituation";
-    public static final String PROP_QUERY = ReasoningOntology.NAMESPACE
-	    + "ruleQuery";
+	public static final String MY_URI = ReasoningOntology.NAMESPACE + "Rule";
+	public static final String PROP_SITUATION = ReasoningOntology.NAMESPACE + "ruleSituation";
+	public static final String PROP_QUERY = ReasoningOntology.NAMESPACE + "ruleQuery";
 
-    public Rule() {
-	super();
-    }
+	public Rule() {
+		super();
+	}
 
-    public Rule(String uri) {
-	super(uri);
-    }
+	public Rule(String uri) {
+		super(uri);
+	}
 
-    public Rule(Situation situation, Query query) {
-	this();
-	setSituation(situation);
-	setQuery(query);
-    }
+	public Rule(Situation situation, Query query) {
+		this();
+		setSituation(situation);
+		setQuery(query);
+	}
 
-    public Rule(String uri, Situation situation, Query query) {
-	this(uri);
-	setSituation(situation);
-	setQuery(query);
-    }
+	public Rule(String uri, Situation situation, Query query) {
+		this(uri);
+		setSituation(situation);
+		setQuery(query);
+	}
 
-    public String getClassURI() {
-	return MY_URI;
-    }
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    public boolean isWellFormed() {
-	return hasProperty(PROP_SITUATION) && hasProperty(PROP_QUERY);
-    }
+	public boolean isWellFormed() {
+		return hasProperty(PROP_SITUATION) && hasProperty(PROP_QUERY);
+	}
 
-    public Query getQuery() {
-	return (Query) getProperty(PROP_QUERY);
-    }
+	public Query getQuery() {
+		return (Query) getProperty(PROP_QUERY);
+	}
 
-    public void setQuery(Query query) {
-	if (query != null)
-	    props.put(PROP_QUERY, query);
-    }
+	public void setQuery(Query query) {
+		if (query != null)
+			props.put(PROP_QUERY, query);
+	}
 
-    public Situation getSituation() {
-	return (Situation) getProperty(PROP_SITUATION);
-    }
+	public Situation getSituation() {
+		return (Situation) getProperty(PROP_SITUATION);
+	}
 
-    public void setSituation(Situation situation) {
-	if (situation != null)
-	    props.put(PROP_SITUATION, situation);
-    }
+	public void setSituation(Situation situation) {
+		if (situation != null)
+			props.put(PROP_SITUATION, situation);
+	}
 
-    public boolean equals(Rule rule) {
-	return (rule.getSituation() == getSituation() || rule.getSituation()
-		.equals(getSituation()))
-		&& (rule.getQuery() == getQuery() || rule.getQuery().equals(
-			getQuery()));
-    }
+	public boolean equals(Rule rule) {
+		return (rule.getSituation() == getSituation() || rule.getSituation().equals(getSituation()))
+				&& (rule.getQuery() == getQuery() || rule.getQuery().equals(getQuery()));
+	}
 
-    @Override
-    public String toString() {
-	return "<html>" + getURI() + ":<br>Situation: "
-		+ getSituation().getURI() + "<br>Query: " + getQuery().getURI()
-		+ "</html>";
-    }
+	@Override
+	public String toString() {
+		return "<html>" + getURI() + ":<br>Situation: " + getSituation().getURI() + "<br>Query: " + getQuery().getURI()
+				+ "</html>";
+	}
 }
