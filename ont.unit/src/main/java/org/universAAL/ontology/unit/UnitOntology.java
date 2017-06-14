@@ -28,6 +28,7 @@ import org.universAAL.ontology.UnitFactory;
 import org.universAAL.ontology.unit.services.UnitConversionService;
 import org.universAAL.ontology.unit.services.UnitService;
 import org.universAAL.ontology.unit.system.BinarySystem;
+import org.universAAL.ontology.unit.system.ColourSpace;
 import org.universAAL.ontology.unit.system.InternationalSystem;
 import org.universAAL.ontology.unit.system.TimeSystem;
 import org.universAAL.ontology.unit.system.Util;
@@ -73,7 +74,7 @@ public final class UnitOntology extends Ontology {
 				MeasurableDimension.Mass, MeasurableDimension.Time, MeasurableDimension.Current,
 				MeasurableDimension.Temperature, MeasurableDimension.Luminance, MeasurableDimension.SubstanceAmmount,
 				MeasurableDimension.Adiemnsional, MeasurableDimension.ComputerStorage, MeasurableDimension.Derived,
-				MeasurableDimension.Currency });
+				MeasurableDimension.Currency, MeasurableDimension.Colour });
 
 		// ******* Add content to regular classes of the ontology ******* //
 		oci_DividedUnit.setResourceComment("Any Unit that is derived by dividing one unit by another");
@@ -259,5 +260,12 @@ public final class UnitOntology extends Ontology {
 		oci_Unit.addInstance(Util.IND_UNIT_PERCENT);
 		oci_DividedUnit.addInstance(Util.IND_UNIT_HERTZ);
 		oci_DividedUnit.addInstance(Util.IND_UNIT_VOLT);
+		
+		oci_Unit.addInstance(ColourSpace.IND_UNIT_RGB);
+		oci_Unit.addInstance(ColourSpace.IND_UNIT_CMYK);
+		oci_Unit.addInstance(ColourSpace.IND_UNIT_HSV);
+		oci_Unit.addInstance(ColourSpace.IND_UNIT_LAMBDA);
+		oci_Unit.addInstance(ColourSpace.IND_UNIT_COLOUR_TEMPERATURE);
+
 	}
 }
