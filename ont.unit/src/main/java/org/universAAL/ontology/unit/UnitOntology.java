@@ -73,7 +73,7 @@ public final class UnitOntology extends Ontology {
 				MeasurableDimension.Mass, MeasurableDimension.Time, MeasurableDimension.Current,
 				MeasurableDimension.Temperature, MeasurableDimension.Luminance, MeasurableDimension.SubstanceAmmount,
 				MeasurableDimension.Adiemnsional, MeasurableDimension.ComputerStorage, MeasurableDimension.Derived,
-				MeasurableDimension.Currency });
+				MeasurableDimension.Currency, MeasurableDimension.Rotational });
 
 		// ******* Add content to regular classes of the ontology ******* //
 		oci_DividedUnit.setResourceComment("Any Unit that is derived by dividing one unit by another");

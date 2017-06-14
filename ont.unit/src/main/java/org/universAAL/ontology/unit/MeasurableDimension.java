@@ -31,9 +31,10 @@ public class MeasurableDimension extends ManagedIndividual {
 	public static final int _COMPUTER_STORAGE = 8;
 	public static final int _DERIVED = 9;
 	public static final int _CURRENCY = 10;
+	public static final int _ROTATION = 11;
 
 	private static final String[] names = { "Length", "Mass", "Time", "Current", "Temperature", "Luminance",
-			"SubstanceAmmount", "Adiemnsional", "ComputerStorage", "Derived", "Currency" };
+			"SubstanceAmmount", "Adiemnsional", "ComputerStorage", "Derived", "Currency", "Rotation" };
 
 	public static final MeasurableDimension Length = new MeasurableDimension(_LENGTH);
 	public static final MeasurableDimension Mass = new MeasurableDimension(_MASS);
@@ -46,6 +47,7 @@ public class MeasurableDimension extends ManagedIndividual {
 	public static final MeasurableDimension ComputerStorage = new MeasurableDimension(_COMPUTER_STORAGE);
 	public static final MeasurableDimension Derived = new MeasurableDimension(_DERIVED);
 	public static final MeasurableDimension Currency = new MeasurableDimension(_CURRENCY);
+	public static final MeasurableDimension Rotational = new MeasurableDimension(_ROTATION);
 
 	private int order;
 
