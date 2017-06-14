@@ -262,6 +262,7 @@ public final class UnitOntology extends Ontology {
 		oci_DividedUnit.addInstance(Util.IND_UNIT_VOLT);
 		
 		oci_Unit.addInstance(ColourSpace.IND_UNIT_RGB);
+		oci_Unit.addInstance(ColourSpace.IND_UNIT_WEB_COLOR);
 		oci_Unit.addInstance(ColourSpace.IND_UNIT_CMYK);
 		oci_Unit.addInstance(ColourSpace.IND_UNIT_HSV);
 		oci_Unit.addInstance(ColourSpace.IND_UNIT_LAMBDA);

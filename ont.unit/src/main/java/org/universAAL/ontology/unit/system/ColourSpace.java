@@ -30,6 +30,8 @@ public class ColourSpace extends UnitSystem {
 	
 	// units
 	public static final Unit IND_UNIT_RGB = new Unit("rgb", "Red Green Blue", "RGB", MeasurableDimension.Colour);
+	public static final Unit IND_UNIT_WEB_COLOR = new Unit("web_color", "X11 color names", "", MeasurableDimension.Colour); 
+	//TODO add full webcolor to RGB conversion table.
 	public static final Unit IND_UNIT_CMYK  = new Unit("cmyk", "Cyan, Magenta, Yellow, and Key", "CMYK ", MeasurableDimension.Colour);
 	public static final Unit IND_UNIT_HSV   = new Unit("hsv", "Hue Saturation Value", "HSV", MeasurableDimension.Colour);
 	public static final Unit IND_UNIT_LAMBDA   = new Unit("wavelength", "Wavelength", "λ", MeasurableDimension.Colour);
