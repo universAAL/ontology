@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2017 universAAL Consortium</copyright>
     <item>
       <title>File: 16,
-             Errors: 294,
-             Warnings: 44,
-             Infos: 50
+             Errors: 298,
+             Warnings: 46,
+             Infos: 51
       </title>
             <link>http://ontology/ont.unit//checkstyle.html</link>
       <description>
@@ -178,10 +178,10 @@ under the License.
                   3
                 </td>
                 <td>
-                  24
+                  26
                 </td>
                 <td>
-                  36
+                  38
                 </td>
               </tr>
                           <tr>
@@ -203,13 +203,13 @@ under the License.
                   <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.unit.system.Util.java">org/universAAL/ontology/unit/system/Util.java</a>
                 </td>
                 <td>
-                  3
+                  4
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  6
+                  8
                 </td>
               </tr>
                           <tr>
