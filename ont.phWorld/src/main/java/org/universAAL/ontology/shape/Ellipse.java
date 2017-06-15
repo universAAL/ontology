@@ -42,8 +42,8 @@ public class Ellipse extends Shape2D {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "Ellipse";
 
-	public static final String PROP_MINOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MinorAxisLength";
-	public static final String PROP_MAJOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "MajorAxisLength";
+	public static final String PROP_MINOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "minorAxisLength";
+	public static final String PROP_MAJOR_AXIS_LENGTH = ShapeOntology.NAMESPACE + "majorAxisLength";
 
 	public Ellipse(String uri) {
 		super(uri);

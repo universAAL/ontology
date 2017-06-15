@@ -28,7 +28,7 @@ import org.universAAL.middleware.service.owl.Service;
  * 
  */
 public class SpaceConfigurationService extends Service {
-	public static final String MY_URI = SpaceOntology.NAMESPACE + "locationConfigurationService";
+	public static final String MY_URI = SpaceOntology.NAMESPACE + "LocationConfigurationService";
 	public static final String PROP_MANAGED_LOCATIONS = SpaceOntology.NAMESPACE + "managedLocations";
 	public static final String PROP_MANAGED_PHYSICAL_THINGS = SpaceOntology.NAMESPACE + "managedPhysicalThings";
 

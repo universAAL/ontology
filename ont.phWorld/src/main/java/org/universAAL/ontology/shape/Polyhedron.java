@@ -39,7 +39,7 @@ public class Polyhedron extends Shape3D {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "Polyhedron";
 
-	public static final String PROP_FACES = ShapeOntology.NAMESPACE + "Faces";
+	public static final String PROP_FACES = ShapeOntology.NAMESPACE + "faces";
 
 	/**
 	 * Creates a Polygon object

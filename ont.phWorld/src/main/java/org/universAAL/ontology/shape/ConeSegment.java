@@ -41,8 +41,8 @@ import org.universAAL.ontology.location.position.Point;
 public class ConeSegment extends LineSegment {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "ConeSegment";
-	public static final String PROP_RADIUS_START = ShapeOntology.NAMESPACE + "RadiusStart";
-	public static final String PROP_RADIUS_END = ShapeOntology.NAMESPACE + "RadiusEnd";
+	public static final String PROP_RADIUS_START = ShapeOntology.NAMESPACE + "radiusStart";
+	public static final String PROP_RADIUS_END = ShapeOntology.NAMESPACE + "radiusEnd";
 
 	public int getPropSerializationType(String propURI) {
 		if (PROP_RADIUS_START.equals(propURI) || PROP_RADIUS_END.equals(propURI))

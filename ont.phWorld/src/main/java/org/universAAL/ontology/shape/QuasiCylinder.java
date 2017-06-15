@@ -37,8 +37,8 @@ public class QuasiCylinder extends Shape3D {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "QuasiCylinder";
 
-	public static final String PROP_HEAD = ShapeOntology.NAMESPACE + "Head";
-	public static final String PROP_FOOT = ShapeOntology.NAMESPACE + "Foot";
+	public static final String PROP_HEAD = ShapeOntology.NAMESPACE + "head";
+	public static final String PROP_FOOT = ShapeOntology.NAMESPACE + "foot";
 
 	/**
 	 * Creates a Shape object

@@ -38,9 +38,9 @@ public class Box extends Shape3D {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "Box";
 
-	public static final String PROP_WIDTH = ShapeOntology.NAMESPACE + "Width";
-	public static final String PROP_HEIGHT = ShapeOntology.NAMESPACE + "Height";
-	public static final String PROP_DEPTH = ShapeOntology.NAMESPACE + "Depth";
+	public static final String PROP_WIDTH = ShapeOntology.NAMESPACE + "width";
+	public static final String PROP_HEIGHT = ShapeOntology.NAMESPACE + "height";
+	public static final String PROP_DEPTH = ShapeOntology.NAMESPACE + "depth";
 
 	/**
 	 * assumes the given coordinate system to be centered at the lower left

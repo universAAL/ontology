@@ -41,7 +41,7 @@ public class Polygon extends Shape3D {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "Polygon";
 
-	public static final String PROP_VERTICES = ShapeOntology.NAMESPACE + "Vertices";
+	public static final String PROP_VERTICES = ShapeOntology.NAMESPACE + "vertices";
 
 	/**
 	 * Creates a Polygon object
