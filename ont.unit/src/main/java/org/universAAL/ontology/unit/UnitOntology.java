@@ -38,7 +38,7 @@ import org.universAAL.ontology.unit.system.Util;
 public final class UnitOntology extends Ontology {
 
 	private static UnitFactory factory = new UnitFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/Unit.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/Unit.owl#";
 
 	public UnitOntology() {
 		super(NAMESPACE);

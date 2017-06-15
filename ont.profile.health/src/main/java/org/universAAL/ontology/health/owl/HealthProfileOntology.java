@@ -59,7 +59,7 @@ import org.universAAL.ontology.profile.User;
 public final class HealthProfileOntology extends Ontology {
 
 	private static HealthOntologyFactory factory = new HealthOntologyFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/Health.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/Health.owl#";
 
 	public static final String PROP_HAS_HEALTH_PROFILE = HealthProfileOntology.NAMESPACE + "hasHealthProfile";
 	public static final String PROP_PRESCRIBES_TREATMENT = HealthProfileOntology.NAMESPACE + "prescribesTreatment";

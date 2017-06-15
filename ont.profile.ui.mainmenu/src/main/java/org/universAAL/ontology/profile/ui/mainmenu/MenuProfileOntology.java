@@ -35,7 +35,7 @@ import org.universAAL.ontology.profile.UserProfile;
 public final class MenuProfileOntology extends Ontology {
 
 	private static UIMainMenuProfileFactory factory = new UIMainMenuProfileFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/UIMainMenuProfile.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/UIMainMenuProfile.owl#";
 
 	public static final String PROP_UI_MAINMENU_PROFILE = Profile.PROP_HAS_SUB_PROFILE + "hasUIMainMenu";
 

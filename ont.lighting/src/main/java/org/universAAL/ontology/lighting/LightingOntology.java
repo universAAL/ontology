@@ -44,7 +44,7 @@ public final class LightingOntology extends Ontology {
 
 	private static LightingFactory factory = new LightingFactory();;
 
-	public static final String NAMESPACE = "http://ontology.universaal.org/Lighting.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/Lighting.owl#";
 
 	public LightingOntology() {
 		super(NAMESPACE);

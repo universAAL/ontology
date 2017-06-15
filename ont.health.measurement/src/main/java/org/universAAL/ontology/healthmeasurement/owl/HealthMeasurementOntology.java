@@ -46,7 +46,7 @@ import org.universAAL.ontology.unit.system.Util;
 public final class HealthMeasurementOntology extends Ontology {
 
 	private static HealthMeasurementFactory factory = new HealthMeasurementFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/HealthMeasurement.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/HealthMeasurement.owl#";
 
 	public HealthMeasurementOntology() {
 		super(NAMESPACE);
