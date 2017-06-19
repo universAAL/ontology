@@ -34,4 +34,6 @@ public class Util {
 					new MultipliedUnit("S3", InternationalSystem.IND_UNIT_SI_SECOND, new MultipliedUnit("s2",
 							InternationalSystem.IND_UNIT_SI_SECOND, InternationalSystem.IND_UNIT_SI_SECOND))));
 
+	public static final Unit IND_UNIT_DEGREE = new Unit("acrdegree", "Degrees of Arc", "°", MeasurableDimension.Rotational);
+	public static final Unit IND_UNIT_RADIAN = new Unit("radian", "Radian", "rad", MeasurableDimension.Rotational);
 }

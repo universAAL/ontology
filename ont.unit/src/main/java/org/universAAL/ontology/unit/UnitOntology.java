@@ -39,7 +39,7 @@ import org.universAAL.ontology.unit.system.Util;
 public final class UnitOntology extends Ontology {
 
 	private static UnitFactory factory = new UnitFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/Unit.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/Unit.owl#";
 
 	public UnitOntology() {
 		super(NAMESPACE);
@@ -74,7 +74,8 @@ public final class UnitOntology extends Ontology {
 				MeasurableDimension.Mass, MeasurableDimension.Time, MeasurableDimension.Current,
 				MeasurableDimension.Temperature, MeasurableDimension.Luminance, MeasurableDimension.SubstanceAmmount,
 				MeasurableDimension.Adiemnsional, MeasurableDimension.ComputerStorage, MeasurableDimension.Derived,
-				MeasurableDimension.Currency, MeasurableDimension.Colour });
+				MeasurableDimension.Currency, MeasurableDimension.Rotational });
+				MeasurableDimension.Colour });
 
 		// ******* Add content to regular classes of the ontology ******* //
 		oci_DividedUnit.setResourceComment("Any Unit that is derived by dividing one unit by another");

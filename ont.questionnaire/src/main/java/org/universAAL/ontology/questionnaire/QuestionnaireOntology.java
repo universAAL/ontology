@@ -39,7 +39,7 @@ import org.universAAL.ontology.profile.User;
 public final class QuestionnaireOntology extends Ontology {
 
 	private static QuestionnaireFactory factory = new QuestionnaireFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/Questionnaire.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/Questionnaire.owl#";
 
 	public QuestionnaireOntology() {
 		super(NAMESPACE);

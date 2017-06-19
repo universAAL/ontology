@@ -44,7 +44,7 @@ import org.universAAL.ontology.ui.preferences.service.UIPreferencesService;
 public final class UIPreferencesProfileOntology extends Ontology {
 
 	private static UIPreferencesProfileFactory factory = new UIPreferencesProfileFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/InteractionPreferencesProfile.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/InteractionPreferencesProfile.owl#";
 
 	// Extend UserProfile
 	public static final String PROP_INTERACTION_PREF_PROFILE = Profile.PROP_HAS_SUB_PROFILE + "UIPreferences";

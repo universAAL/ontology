@@ -28,7 +28,7 @@ import org.universAAL.ontology.profile.ProfileOntology;
 public class QuestionnaireEnnumerationsOntology extends Ontology {
 
 	private static QuestionnaireEnummerationsOntologyFactory factory = new QuestionnaireEnummerationsOntologyFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/QuestionnaireEnnumerationsOntology#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/QuestionnaireEnnumerationsOntology#";
 
 	public QuestionnaireEnnumerationsOntology() {
 		super(NAMESPACE);

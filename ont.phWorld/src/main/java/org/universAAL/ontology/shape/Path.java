@@ -41,7 +41,7 @@ public abstract class Path extends Shape3D {
 
 	public static final String MY_URI = ShapeOntology.NAMESPACE + "Path";
 
-	public static final String PROP_POINTS = ShapeOntology.NAMESPACE + "Points";
+	public static final String PROP_POINTS = ShapeOntology.NAMESPACE + "points";
 
 	/**
 	 * Creates a Path object

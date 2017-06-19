@@ -38,7 +38,7 @@ import org.universAAL.ontology.location.LocationOntology;
 public final class HandgesturesOntology extends Ontology {
 
 	private static HandgesturesFactory factory = new HandgesturesFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/HandGestures.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/HandGestures.owl#";
 
 	public HandgesturesOntology() {
 		super(NAMESPACE);

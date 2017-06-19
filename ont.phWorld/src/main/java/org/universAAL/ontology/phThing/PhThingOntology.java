@@ -40,7 +40,7 @@ import org.universAAL.ontology.shape.ShapeOntology;
  */
 public class PhThingOntology extends Ontology {
 
-	public static final String NAMESPACE = "http://ontology.universaal.org/PhThing.owl#";;
+	public static final String NAMESPACE = "http://ontology.universAAL.org/PhThing.owl#";;
 
 	private static PhThingFactory factory = new PhThingFactory();
 

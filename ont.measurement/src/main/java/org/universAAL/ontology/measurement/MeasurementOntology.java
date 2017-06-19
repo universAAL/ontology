@@ -32,7 +32,7 @@ import org.universAAL.ontology.unit.UnitOntology;
 public final class MeasurementOntology extends Ontology {
 
 	private static MeasurementFactory factory = new MeasurementFactory();
-	public static final String NAMESPACE = "http://ontology.universaal.org/Measurement.owl#";
+	public static final String NAMESPACE = "http://ontology.universAAL.org/Measurement.owl#";
 
 	public MeasurementOntology() {
 		super(NAMESPACE);
