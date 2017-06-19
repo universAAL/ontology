@@ -720,7 +720,7 @@ public final class DeviceOntology extends Ontology {
 		oci_ColorLightActuator.addRestriction(MergedRestriction
 				.getAllValuesRestriction(ColorLightActuator.PROP_COLOR_UNIT,
 						new HasValueRestriction(Unit.PROP_DIMENSION,
-								MeasurableDimension.Colour)));
+								MeasurableDimension.Color)));
 
 	}
 }

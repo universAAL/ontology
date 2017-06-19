@@ -28,7 +28,7 @@ import org.universAAL.ontology.UnitFactory;
 import org.universAAL.ontology.unit.services.UnitConversionService;
 import org.universAAL.ontology.unit.services.UnitService;
 import org.universAAL.ontology.unit.system.BinarySystem;
-import org.universAAL.ontology.unit.system.ColourSpace;
+import org.universAAL.ontology.unit.system.ColorSpace;
 import org.universAAL.ontology.unit.system.InternationalSystem;
 import org.universAAL.ontology.unit.system.TimeSystem;
 import org.universAAL.ontology.unit.system.Util;
@@ -57,108 +57,150 @@ public final class UnitOntology extends Ontology {
 		OntClassInfoSetup oci_measurableDimension = createNewAbstractOntClassInfo(MeasurableDimension.MY_URI);
 
 		// ******* Declaration of regular classes of the ontology ******* //
-		OntClassInfoSetup oci_Unit = createNewOntClassInfo(Unit.MY_URI, factory, 1);
-		OntClassInfoSetup oci_UnitSystem = createNewOntClassInfo(UnitSystem.MY_URI, factory, 2);
-		OntClassInfoSetup oci_Prefix = createNewOntClassInfo(Prefix.MY_URI, factory, 3);
-		OntClassInfoSetup oci_MultipliedUnit = createNewOntClassInfo(MultipliedUnit.MY_URI, factory, 4);
-		OntClassInfoSetup oci_DividedUnit = createNewOntClassInfo(DividedUnit.MY_URI, factory, 5);
+		OntClassInfoSetup oci_Unit = createNewOntClassInfo(Unit.MY_URI,
+				factory, 1);
+		OntClassInfoSetup oci_UnitSystem = createNewOntClassInfo(
+				UnitSystem.MY_URI, factory, 2);
+		OntClassInfoSetup oci_Prefix = createNewOntClassInfo(Prefix.MY_URI,
+				factory, 3);
+		OntClassInfoSetup oci_MultipliedUnit = createNewOntClassInfo(
+				MultipliedUnit.MY_URI, factory, 4);
+		OntClassInfoSetup oci_DividedUnit = createNewOntClassInfo(
+				DividedUnit.MY_URI, factory, 5);
 		OntClassInfoSetup oci_DerivedUnit = createNewAbstractOntClassInfo(DerivedUnit.MY_URI);
-		OntClassInfoSetup oci_UnitService = createNewOntClassInfo(UnitService.MY_URI, factory, 6);
-		OntClassInfoSetup oci_UnitConversionService = createNewOntClassInfo(UnitConversionService.MY_URI, factory, 7);
+		OntClassInfoSetup oci_UnitService = createNewOntClassInfo(
+				UnitService.MY_URI, factory, 6);
+		OntClassInfoSetup oci_UnitConversionService = createNewOntClassInfo(
+				UnitConversionService.MY_URI, factory, 7);
 
 		// ******* Add content to enumeration classes of the ontology ******* //
 
-		oci_measurableDimension.setResourceComment("List of all measurable dimensions");
+		oci_measurableDimension
+				.setResourceComment("List of all measurable dimensions");
 		oci_measurableDimension.setResourceLabel("MeasurableDimension");
-		oci_measurableDimension.toEnumeration(new ManagedIndividual[] { MeasurableDimension.Length,
-				MeasurableDimension.Mass, MeasurableDimension.Time, MeasurableDimension.Current,
-				MeasurableDimension.Temperature, MeasurableDimension.Luminance, MeasurableDimension.SubstanceAmmount,
-				MeasurableDimension.Adiemnsional, MeasurableDimension.ComputerStorage, MeasurableDimension.Derived,
-				MeasurableDimension.Currency, MeasurableDimension.Rotational });
-				MeasurableDimension.Colour });
+		oci_measurableDimension.toEnumeration(new ManagedIndividual[] {
+				MeasurableDimension.Length, MeasurableDimension.Mass,
+				MeasurableDimension.Time, MeasurableDimension.Current,
+				MeasurableDimension.Temperature, MeasurableDimension.Luminance,
+				MeasurableDimension.SubstanceAmmount,
+				MeasurableDimension.Adiemnsional,
+				MeasurableDimension.ComputerStorage,
+				MeasurableDimension.Derived, MeasurableDimension.Currency,
+				MeasurableDimension.Rotational, MeasurableDimension.Color });
 
 		// ******* Add content to regular classes of the ontology ******* //
-		oci_DividedUnit.setResourceComment("Any Unit that is derived by dividing one unit by another");
+		oci_DividedUnit
+				.setResourceComment("Any Unit that is derived by dividing one unit by another");
 		oci_DividedUnit.setResourceLabel("DividedUnit");
 		oci_DividedUnit.addSuperClass(DerivedUnit.MY_URI);
-		oci_DividedUnit.addObjectProperty(DividedUnit.PROP_DIVIDED_BY).setFunctional();
+		oci_DividedUnit.addObjectProperty(DividedUnit.PROP_DIVIDED_BY)
+				.setFunctional();
 		oci_DividedUnit.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(DividedUnit.PROP_DIVIDED_BY, Unit.MY_URI, 1, 1));
-		oci_DividedUnit.addObjectProperty(DividedUnit.PROP_DIVIDED_BY_PREFIX).setFunctional();
-		oci_DividedUnit.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(DividedUnit.PROP_DIVIDED_BY_PREFIX, Prefix.MY_URI, 0, 1));
+				.getAllValuesRestrictionWithCardinality(
+						DividedUnit.PROP_DIVIDED_BY, Unit.MY_URI, 1, 1));
+		oci_DividedUnit.addObjectProperty(DividedUnit.PROP_DIVIDED_BY_PREFIX)
+				.setFunctional();
+		oci_DividedUnit
+				.addRestriction(MergedRestriction
+						.getAllValuesRestrictionWithCardinality(
+								DividedUnit.PROP_DIVIDED_BY_PREFIX,
+								Prefix.MY_URI, 0, 1));
 
-		oci_UnitSystem.setResourceComment("A unit System is a collection of units and prefixes");
+		oci_UnitSystem
+				.setResourceComment("A unit System is a collection of units and prefixes");
 		oci_UnitSystem.setResourceLabel("UnitSystem");
 		oci_UnitSystem.addSuperClass(ManagedIndividual.MY_URI);
 		oci_UnitSystem.addObjectProperty(UnitSystem.PROP_UNITS).setFunctional();
-		oci_UnitSystem.addRestriction(MergedRestriction.getAllValuesRestriction(UnitSystem.PROP_UNITS, Unit.MY_URI));
+		oci_UnitSystem.addRestriction(MergedRestriction
+				.getAllValuesRestriction(UnitSystem.PROP_UNITS, Unit.MY_URI));
 
 		oci_UnitSystem.addDatatypeProperty(UnitSystem.PROP_NAME);
-		oci_UnitSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(UnitSystem.PROP_NAME,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_UnitSystem.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(UnitSystem.PROP_NAME,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-		oci_UnitSystem.addObjectProperty(UnitSystem.PROP_PREFIXES).setFunctional();
-		oci_UnitSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(UnitSystem.PROP_PREFIXES,
-				Prefix.MY_URI, 1, 1));
+		oci_UnitSystem.addObjectProperty(UnitSystem.PROP_PREFIXES)
+				.setFunctional();
+		oci_UnitSystem.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						UnitSystem.PROP_PREFIXES, Prefix.MY_URI, 1, 1));
 
 		oci_Unit.setResourceComment("A unit of measurement is a definite magnitude of a physical quantity");
 		oci_Unit.setResourceLabel("Unit");
 		oci_Unit.addSuperClass(ManagedIndividual.MY_URI);
 		oci_Unit.addObjectProperty(Unit.PROP_UNIT_SYSTEM).setFunctional();
-		oci_Unit.addRestriction(MergedRestriction.getAllValuesRestriction(Unit.PROP_UNIT_SYSTEM, UnitSystem.MY_URI));
+		oci_Unit.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Unit.PROP_UNIT_SYSTEM, UnitSystem.MY_URI));
 
 		oci_Unit.addDatatypeProperty(Unit.PROP_NAME);
-		oci_Unit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Unit.PROP_NAME,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Unit.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Unit.PROP_NAME,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci_Unit.addDatatypeProperty(Unit.PROP_SYMBOL);
-		oci_Unit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Unit.PROP_SYMBOL,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Unit.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Unit.PROP_SYMBOL,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci_Unit.addObjectProperty(Unit.PROP_DIMENSION).setFunctional();
-		oci_Unit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Unit.PROP_DIMENSION,
-				MeasurableDimension.MY_URI, 1, 1));
+		oci_Unit.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Unit.PROP_DIMENSION,
+						MeasurableDimension.MY_URI, 1, 1));
 
 		oci_DerivedUnit.setResourceComment("Any unit based upon other units");
 		oci_DerivedUnit.setResourceLabel("DerivedUnit");
 		oci_DerivedUnit.addSuperClass(Unit.MY_URI);
-		oci_DerivedUnit.addObjectProperty(DerivedUnit.PROP_BASE_UNIT).setFunctional();
+		oci_DerivedUnit.addObjectProperty(DerivedUnit.PROP_BASE_UNIT)
+				.setFunctional();
 		oci_DerivedUnit.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(DerivedUnit.PROP_BASE_UNIT, Unit.MY_URI, 1, 1));
-		oci_DerivedUnit.addRestriction(
-				MergedRestriction.getFixedValueRestriction(DerivedUnit.PROP_DIMENSION, MeasurableDimension.Derived));
-		oci_DerivedUnit.addObjectProperty(DerivedUnit.PROP_BASE_PREFIX).setFunctional();
+				.getAllValuesRestrictionWithCardinality(
+						DerivedUnit.PROP_BASE_UNIT, Unit.MY_URI, 1, 1));
 		oci_DerivedUnit.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(DerivedUnit.PROP_BASE_PREFIX, Prefix.MY_URI, 0, 1));
+				.getFixedValueRestriction(DerivedUnit.PROP_DIMENSION,
+						MeasurableDimension.Derived));
+		oci_DerivedUnit.addObjectProperty(DerivedUnit.PROP_BASE_PREFIX)
+				.setFunctional();
+		oci_DerivedUnit.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						DerivedUnit.PROP_BASE_PREFIX, Prefix.MY_URI, 0, 1));
 
-		oci_Prefix.setResourceComment(
-				"A symbol that placed in front of the unit modifies by a sacalar factor the value of the unit");
+		oci_Prefix
+				.setResourceComment("A symbol that placed in front of the unit modifies by a sacalar factor the value of the unit");
 		oci_Prefix.setResourceLabel("Prefix");
 		oci_Prefix.addSuperClass(ManagedIndividual.MY_URI);
 		oci_Prefix.addDatatypeProperty(Prefix.PROP_NAME);
-		oci_Prefix.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Prefix.PROP_NAME,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Prefix.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Prefix.PROP_NAME,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci_Prefix.addDatatypeProperty(Prefix.PROP_POWER);
-		oci_Prefix.addRestriction(MergedRestriction.getCardinalityRestriction(Prefix.PROP_POWER, 1, 1));
+		oci_Prefix.addRestriction(MergedRestriction.getCardinalityRestriction(
+				Prefix.PROP_POWER, 1, 1));
 
 		oci_Prefix.addDatatypeProperty(Prefix.PROP_BASE);
-		oci_Prefix.addRestriction(MergedRestriction.getCardinalityRestriction(Prefix.PROP_BASE, 1, 1));
+		oci_Prefix.addRestriction(MergedRestriction.getCardinalityRestriction(
+				Prefix.PROP_BASE, 1, 1));
 
 		oci_Prefix.addDatatypeProperty(Prefix.PROP_SYMBOL);
-		oci_Prefix.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Prefix.PROP_SYMBOL,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Prefix.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Prefix.PROP_SYMBOL,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-		oci_MultipliedUnit.setResourceComment("Any Unit that is derived by multiplying one unit by another");
+		oci_MultipliedUnit
+				.setResourceComment("Any Unit that is derived by multiplying one unit by another");
 		oci_MultipliedUnit.setResourceLabel("MultipliedUnit");
 		oci_MultipliedUnit.addSuperClass(DerivedUnit.MY_URI);
-		oci_MultipliedUnit.addObjectProperty(MultipliedUnit.PROP_MULTIPLIED_BY).setFunctional();
+		oci_MultipliedUnit.addObjectProperty(MultipliedUnit.PROP_MULTIPLIED_BY)
+				.setFunctional();
 		oci_MultipliedUnit.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(MultipliedUnit.PROP_MULTIPLIED_BY, Unit.MY_URI, 1, 1));
-		oci_MultipliedUnit.addObjectProperty(MultipliedUnit.PROP_MULTIPLIED_BY_PREFIX).setFunctional();
+				.getAllValuesRestrictionWithCardinality(
+						MultipliedUnit.PROP_MULTIPLIED_BY, Unit.MY_URI, 1, 1));
+		oci_MultipliedUnit.addObjectProperty(
+				MultipliedUnit.PROP_MULTIPLIED_BY_PREFIX).setFunctional();
 		oci_MultipliedUnit.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(MultipliedUnit.PROP_MULTIPLIED_BY_PREFIX, Prefix.MY_URI, 0, 1));
+				.getAllValuesRestrictionWithCardinality(
+						MultipliedUnit.PROP_MULTIPLIED_BY_PREFIX,
+						Prefix.MY_URI, 0, 1));
 
 		oci_UnitService
 				.setResourceComment("Root service concept that allows providing services that handle Unit operations");
@@ -166,29 +208,41 @@ public final class UnitOntology extends Ontology {
 		oci_UnitService.addSuperClass(Service.MY_URI);
 		oci_UnitService.addObjectProperty(UnitService.PROP_CONTROLS);
 		oci_UnitService
-				.addRestriction(MergedRestriction.getAllValuesRestriction(UnitService.PROP_CONTROLS, Unit.MY_URI));
+				.addRestriction(MergedRestriction.getAllValuesRestriction(
+						UnitService.PROP_CONTROLS, Unit.MY_URI));
 
-		oci_UnitConversionService.setResourceComment("Service for Unit conversion operations");
+		oci_UnitConversionService
+				.setResourceComment("Service for Unit conversion operations");
 		oci_UnitConversionService.setResourceLabel("UnitConversionService");
 		oci_UnitConversionService.addSuperClass(Service.MY_URI);
-		oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_FROM_UNIT);
-		oci_UnitConversionService.addRestriction(
-				MergedRestriction.getAllValuesRestriction(UnitConversionService.PROP_FROM_UNIT, Unit.MY_URI));
-		oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_TO_UNIT);
-		oci_UnitConversionService.addRestriction(
-				MergedRestriction.getAllValuesRestriction(UnitConversionService.PROP_TO_UNIT, Unit.MY_URI));
-		oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_FROM_PREFIX);
-		oci_UnitConversionService.addRestriction(
-				MergedRestriction.getAllValuesRestriction(UnitConversionService.PROP_FROM_PREFIX, Prefix.MY_URI));
-		oci_UnitConversionService.addObjectProperty(UnitConversionService.PROP_TO_PREFIX);
-		oci_UnitConversionService.addRestriction(
-				MergedRestriction.getAllValuesRestriction(UnitConversionService.PROP_TO_PREFIX, Prefix.MY_URI));
-		oci_UnitConversionService.addDatatypeProperty(UnitConversionService.PROP_FROM_VALUE).setFunctional();
+		oci_UnitConversionService
+				.addObjectProperty(UnitConversionService.PROP_FROM_UNIT);
+		oci_UnitConversionService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(UnitConversionService.PROP_FROM_UNIT,
+						Unit.MY_URI));
+		oci_UnitConversionService
+				.addObjectProperty(UnitConversionService.PROP_TO_UNIT);
+		oci_UnitConversionService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(UnitConversionService.PROP_TO_UNIT,
+						Unit.MY_URI));
+		oci_UnitConversionService
+				.addObjectProperty(UnitConversionService.PROP_FROM_PREFIX);
+		oci_UnitConversionService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(
+						UnitConversionService.PROP_FROM_PREFIX, Prefix.MY_URI));
+		oci_UnitConversionService
+				.addObjectProperty(UnitConversionService.PROP_TO_PREFIX);
+		oci_UnitConversionService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(UnitConversionService.PROP_TO_PREFIX,
+						Prefix.MY_URI));
+		oci_UnitConversionService.addDatatypeProperty(
+				UnitConversionService.PROP_FROM_VALUE).setFunctional();
 		// oci_UnitConversionService
 		// .addRestriction(MergedRestriction.getAllValuesRestriction(
 		// UnitConversionService.PROP_FROM_VALUE,
 		// TypeMapper.getDatatypeURI(Double.class)));
-		oci_UnitConversionService.addDatatypeProperty(UnitConversionService.PROP_TO_VALUE).setFunctional();
+		oci_UnitConversionService.addDatatypeProperty(
+				UnitConversionService.PROP_TO_VALUE).setFunctional();
 		// oci_UnitConversionService
 		// .addRestriction(MergedRestriction.getAllValuesRestriction(
 		// UnitConversionService.PROP_TO_VALUE,
@@ -261,13 +315,13 @@ public final class UnitOntology extends Ontology {
 		oci_Unit.addInstance(Util.IND_UNIT_PERCENT);
 		oci_DividedUnit.addInstance(Util.IND_UNIT_HERTZ);
 		oci_DividedUnit.addInstance(Util.IND_UNIT_VOLT);
-		
-		oci_Unit.addInstance(ColourSpace.IND_UNIT_RGB);
-		oci_Unit.addInstance(ColourSpace.IND_UNIT_WEB_COLOR);
-		oci_Unit.addInstance(ColourSpace.IND_UNIT_CMYK);
-		oci_Unit.addInstance(ColourSpace.IND_UNIT_HSV);
-		oci_Unit.addInstance(ColourSpace.IND_UNIT_LAMBDA);
-		oci_Unit.addInstance(ColourSpace.IND_UNIT_COLOUR_TEMPERATURE);
+
+		oci_Unit.addInstance(ColorSpace.IND_UNIT_RGB);
+		oci_Unit.addInstance(ColorSpace.IND_UNIT_WEB_COLOR);
+		oci_Unit.addInstance(ColorSpace.IND_UNIT_CMYK);
+		oci_Unit.addInstance(ColorSpace.IND_UNIT_HSV);
+		oci_Unit.addInstance(ColorSpace.IND_UNIT_LAMBDA);
+		oci_Unit.addInstance(ColorSpace.IND_UNIT_COLOR_TEMPERATURE);
 
 	}
 }
