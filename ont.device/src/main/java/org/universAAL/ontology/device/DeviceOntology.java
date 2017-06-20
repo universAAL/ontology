@@ -185,6 +185,8 @@ public final class DeviceOntology extends Ontology {
 				SmokeMeter.MY_URI, factory, 50);
 		OntClassInfoSetup oci_ColorLightActuator = createNewOntClassInfo(
 				ColorLightActuator.MY_URI, factory, 51);
+		OntClassInfoSetup oci_ColorLightController = createNewOntClassInfo(
+				ColorLightActuator.MY_URI, factory, 52);
 
 		// ******* Add content to enumeration classes of the ontology ******* //
 
@@ -722,5 +724,10 @@ public final class DeviceOntology extends Ontology {
 						new HasValueRestriction(Unit.PROP_DIMENSION,
 								MeasurableDimension.Color)));
 
+		oci_ColorLightController
+				.setResourceComment("Colored Light Controller, The value of the color is set accordingly to the color unit.");
+		oci_ColorLightController.setResourceLabel("ColoredLightController");
+		oci_ColorLightController.addSuperClass(ColorLightActuator.MY_URI);
+		oci_ColorLightController.addSuperClass(LightSensor.MY_URI);
 	}
 }
