@@ -84,7 +84,7 @@ public class VideoCamera extends Device {
 	}
 
 	public VideoCamera(String uri) {
-		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri);
+		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.MIDDLEWARE_LOCAL_ID_PREFIX + uri);
 	}
 
 	/**
@@ -92,7 +92,7 @@ public class VideoCamera extends Device {
 	 * video cameras with an unique URI
 	 */
 	public VideoCamera(int numProps) {
-		super(Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + "camera", numProps);
+		super(Constants.MIDDLEWARE_LOCAL_ID_PREFIX + "camera", numProps);
 	}
 
 	public String getClassURI() {

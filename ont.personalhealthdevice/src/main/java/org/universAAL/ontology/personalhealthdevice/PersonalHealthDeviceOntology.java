@@ -49,7 +49,7 @@ public class PersonalHealthDeviceOntology extends Ontology {
 
 	private static PersonalHealthDeviceFactory factory = new PersonalHealthDeviceFactory();
 
-	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "PersonalHealthDevice.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "PersonalHealthDevice.owl#";
 
 	public PersonalHealthDeviceOntology() {
 		super(NAMESPACE);

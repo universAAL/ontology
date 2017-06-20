@@ -59,7 +59,7 @@ public final class ProfileOntology extends Ontology {
 
 	private static ProfileFactory factory = new ProfileFactory();
 
-	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Profile.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "Profile.owl#";
 
 	public static final int PROP = 0;
 	public static final int REQ = 1;

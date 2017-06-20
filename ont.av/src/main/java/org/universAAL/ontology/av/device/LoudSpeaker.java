@@ -57,7 +57,7 @@ public class LoudSpeaker extends Device {
 	 * initialized by the database for example
 	 */
 	public LoudSpeaker(String uri) {
-		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri);
+		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.MIDDLEWARE_LOCAL_ID_PREFIX + uri);
 	}
 
 	/**

@@ -131,7 +131,7 @@ public class PhysicalThing extends ManagedIndividual {
 	// TODO: what is the real meaning of the coordinates?
 	public void setLocationRelativeToCorner(Location o, float x, float y, float z) {
 		if (o != null) {
-			Place place = new Place(Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + this.getLocalName() + "_place",
+			Place place = new Place(Constants.MIDDLEWARE_LOCAL_ID_PREFIX + this.getLocalName() + "_place",
 					this.getShape());
 
 			if (o instanceof Place) {

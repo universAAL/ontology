@@ -43,7 +43,7 @@ public final class LanguageOntology extends Ontology {
 
 	public static final String LANG_TABLE = "org/universAAL/ontology/impl/lang-table.dat";
 	private static LanguageFactory factory;
-	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Language.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "Language.owl#";
 
 	public LanguageOntology() {
 		super(NAMESPACE);
