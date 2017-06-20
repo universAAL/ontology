@@ -55,7 +55,7 @@ import org.universAAL.middleware.rdf.Resource;
  * 
  */
 public class ContextEvent extends ManagedIndividual {
-	public static final String uAAL_CONTEXT_NAMESPACE = uAAL_NAMESPACE_PREFIX + "Context.owl#";
+	public static final String uAAL_CONTEXT_NAMESPACE = NAMESPACE_PREFIX + "Context.owl#";
 	public static final String MY_URI = uAAL_CONTEXT_NAMESPACE + "ContextEventCHE2";
 	public static final String CONTEXT_EVENT_URI_PREFIX = "urn:org.universAAL.middleware.context.rdf:ContextEvent#";
 	public static final String LOCAL_NAME_SUBJECT = "subjectCHE2";

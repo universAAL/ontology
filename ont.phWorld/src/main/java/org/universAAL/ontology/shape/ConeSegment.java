@@ -69,7 +69,7 @@ public class ConeSegment extends LineSegment {
 	}
 
 	public ConeSegment(String uri, Point start, Point end, float radius_start, float radius_end) {
-		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.uAAL_MIDDLEWARE_LOCAL_ID_PREFIX + uri, start,
+		super((uri == null || uri.lastIndexOf('#') > 0) ? uri : Constants.MIDDLEWARE_LOCAL_ID_PREFIX + uri, start,
 				end);
 		setRadiusStart(radius_start);
 		setRadiusEnd(radius_end);

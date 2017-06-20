@@ -39,7 +39,7 @@ public class FurnitureOntology extends Ontology {
 
 	private static FurnitureFactory factory = new FurnitureFactory();
 
-	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Furniture.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "Furniture.owl#";
 
 	public FurnitureOntology() {
 		super(NAMESPACE);

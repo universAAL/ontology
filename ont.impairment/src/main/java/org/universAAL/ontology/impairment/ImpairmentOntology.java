@@ -36,7 +36,7 @@ public final class ImpairmentOntology extends Ontology {
 
 	private static ImpairmentFactory factory = new ImpairmentFactory();
 
-	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "Impairment.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "Impairment.owl#";
 
 	public ImpairmentOntology() {
 		super(NAMESPACE);

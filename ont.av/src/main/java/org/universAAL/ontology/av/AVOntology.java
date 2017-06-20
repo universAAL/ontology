@@ -62,7 +62,7 @@ public class AVOntology extends Ontology {
 
 	private static AVFactory factory = new AVFactory();
 
-	public static final String NAMESPACE = Resource.uAAL_NAMESPACE_PREFIX + "av.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "av.owl#";
 
 	public AVOntology() {
 		super(NAMESPACE);
