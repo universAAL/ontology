@@ -21,43 +21,39 @@ package org.universAAL.ontology.device;
  */
 public class ColorLightActuator extends LightActuator {
 
-    public static final String MY_URI = DeviceOntology.NAMESPACE
-	    + "ColorLightActuator";
+	public static final String MY_URI = DeviceOntology.NAMESPACE
+			+ "ColorLightActuator";
 
-    public static final String PROP_COLOR = DeviceOntology.NAMESPACE
-	    + "colorValue";
-    public static final String PROP_COLOR_UNIT = DeviceOntology.NAMESPACE
-	    + "colorUnit";
+	public static final String PROP_COLOR = DeviceOntology.NAMESPACE
+			+ "colorValue";
 
-    /**
+	/**
      * 
      */
-    public ColorLightActuator() {
-	super();
-    }
+	public ColorLightActuator() {
+		super();
+	}
 
-    /**
-     * @param uri
-     */
-    public ColorLightActuator(String uri) {
-	super(uri);
-    }
+	/**
+	 * @param uri
+	 */
+	public ColorLightActuator(String uri) {
+		super(uri);
+	}
 
-    /** {@inheritDoc} */
-    public String getClassURI() {
-	return MY_URI;
-    }
+	/** {@inheritDoc} */
+	public String getClassURI() {
+		return MY_URI;
+	}
 
-    /** {@inheritDoc} */
-    public int getPropSerializationType(String arg0) {
-	return PROP_SERIALIZATION_FULL;
-    }
+	/** {@inheritDoc} */
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
 
-    /** {@inheritDoc} */
-    public boolean isWellFormed() {
-	return true && hasProperty(PROP_COLOR_UNIT);
-    }
-
-    // TODO setters and getters for different colors.
+	/** {@inheritDoc} */
+	public boolean isWellFormed() {
+		return true && hasProperty(PROP_COLOR);
+	}
 
 }

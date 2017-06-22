@@ -23,7 +23,6 @@
 package org.universAAL.ontology.device;
 
 import org.universAAL.middleware.owl.DataRepOntology;
-import org.universAAL.middleware.owl.HasValueRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -37,8 +36,7 @@ import org.universAAL.ontology.measurement.Measurement;
 import org.universAAL.ontology.measurement.MeasurementOntology;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.PhThingOntology;
-import org.universAAL.ontology.unit.MeasurableDimension;
-import org.universAAL.ontology.unit.Unit;
+import org.universAAL.ontology.unit.color.ColorModel;
 
 //import the factory for this ontology
 
@@ -709,20 +707,11 @@ public final class DeviceOntology extends Ontology {
 				.setResourceComment("Colored Light Actuator, The value of the color is set accordingly to the color unit.");
 		oci_ColorLightActuator.setResourceLabel("ColoredLightActuator");
 		oci_ColorLightActuator.addSuperClass(LightActuator.MY_URI);
-		oci_ColorLightActuator.addDatatypeProperty(
-				ColorLightActuator.PROP_COLOR).setFunctional();
-		// Does not restrict further as it is probably an array of numbers and
-		// each may vary from unit to unit
-		oci_ColorLightActuator
-				.addObjectProperty(ColorLightActuator.PROP_COLOR_UNIT);
+		oci_ColorLightActuator.addObjectProperty(ColorLightActuator.PROP_COLOR)
+				.setFunctional();
 		oci_ColorLightActuator.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(
-						ColorLightActuator.PROP_COLOR_UNIT, Unit.MY_URI, 1, 1));
-		// the unit must be a color unit.
-		oci_ColorLightActuator.addRestriction(MergedRestriction
-				.getAllValuesRestriction(ColorLightActuator.PROP_COLOR_UNIT,
-						new HasValueRestriction(Unit.PROP_DIMENSION,
-								MeasurableDimension.Color)));
+				.getAllValuesRestriction(ColorLightActuator.MY_URI,
+						ColorModel.MY_URI));
 
 		oci_ColorLightController
 				.setResourceComment("Colored Light Controller, The value of the color is set accordingly to the color unit.");
