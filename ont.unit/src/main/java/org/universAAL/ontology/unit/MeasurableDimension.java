@@ -18,7 +18,8 @@ package org.universAAL.ontology.unit;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class MeasurableDimension extends ManagedIndividual {
-	public static final String MY_URI = UnitOntology.NAMESPACE + "MeasurableDimension";
+	public static final String MY_URI = UnitOntology.NAMESPACE
+			+ "MeasurableDimension";
 
 	public static final int _LENGTH = 0;
 	public static final int _MASS = 1;
@@ -33,21 +34,35 @@ public class MeasurableDimension extends ManagedIndividual {
 	public static final int _CURRENCY = 10;
 	public static final int _ROTATION = 11;
 
-	private static final String[] names = { "Length", "Mass", "Time", "Current", "Temperature", "Luminance",
-			"SubstanceAmmount", "Adiemnsional", "ComputerStorage", "Derived", "Currency", "Rotation" };
+	private static final String[] names = { "Length", "Mass", "Time",
+			"Current", "Temperature", "Luminance", "SubstanceAmmount",
+			"Adiemnsional", "ComputerStorage", "Derived", "Currency",
+			"Rotation" };
 
-	public static final MeasurableDimension Length = new MeasurableDimension(_LENGTH);
-	public static final MeasurableDimension Mass = new MeasurableDimension(_MASS);
-	public static final MeasurableDimension Time = new MeasurableDimension(_TIME);
-	public static final MeasurableDimension Current = new MeasurableDimension(_CURRENT);
-	public static final MeasurableDimension Temperature = new MeasurableDimension(_TEMPERATURE);
-	public static final MeasurableDimension Luminance = new MeasurableDimension(_LUMINANCE);
-	public static final MeasurableDimension SubstanceAmmount = new MeasurableDimension(_SUBSTANCE_AMMOUNT);
-	public static final MeasurableDimension Adiemnsional = new MeasurableDimension(_ADIEMNSIONAL);
-	public static final MeasurableDimension ComputerStorage = new MeasurableDimension(_COMPUTER_STORAGE);
-	public static final MeasurableDimension Derived = new MeasurableDimension(_DERIVED);
-	public static final MeasurableDimension Currency = new MeasurableDimension(_CURRENCY);
-	public static final MeasurableDimension Rotational = new MeasurableDimension(_ROTATION);
+	public static final MeasurableDimension Length = new MeasurableDimension(
+			_LENGTH);
+	public static final MeasurableDimension Mass = new MeasurableDimension(
+			_MASS);
+	public static final MeasurableDimension Time = new MeasurableDimension(
+			_TIME);
+	public static final MeasurableDimension Current = new MeasurableDimension(
+			_CURRENT);
+	public static final MeasurableDimension Temperature = new MeasurableDimension(
+			_TEMPERATURE);
+	public static final MeasurableDimension Luminance = new MeasurableDimension(
+			_LUMINANCE);
+	public static final MeasurableDimension SubstanceAmmount = new MeasurableDimension(
+			_SUBSTANCE_AMMOUNT);
+	public static final MeasurableDimension Adiemnsional = new MeasurableDimension(
+			_ADIEMNSIONAL);
+	public static final MeasurableDimension ComputerStorage = new MeasurableDimension(
+			_COMPUTER_STORAGE);
+	public static final MeasurableDimension Derived = new MeasurableDimension(
+			_DERIVED);
+	public static final MeasurableDimension Currency = new MeasurableDimension(
+			_CURRENCY);
+	public static final MeasurableDimension Rotational = new MeasurableDimension(
+			_ROTATION);
 
 	private int order;
 
@@ -100,13 +115,16 @@ public class MeasurableDimension extends ManagedIndividual {
 			return Derived;
 		case _CURRENCY:
 			return Currency;
+		case _ROTATION:
+			return Rotational;
 		default:
 			return null;
 		}
 	}
 
 	public boolean equals(Object other) {
-		return other instanceof MeasurableDimension && ((MeasurableDimension) other).order == order;
+		return other instanceof MeasurableDimension
+				&& ((MeasurableDimension) other).order == order;
 	}
 
 	public static final MeasurableDimension valueOf(String name) {
