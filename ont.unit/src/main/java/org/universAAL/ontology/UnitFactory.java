@@ -22,12 +22,17 @@ import org.universAAL.ontology.unit.MultipliedUnit;
 import org.universAAL.ontology.unit.Prefix;
 import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitSystem;
+import org.universAAL.ontology.unit.color.CMYKColorModel;
+import org.universAAL.ontology.unit.color.ColorTemperature;
+import org.universAAL.ontology.unit.color.HSVColorModel;
+import org.universAAL.ontology.unit.color.RGBColorModel;
 import org.universAAL.ontology.unit.services.UnitConversionService;
 import org.universAAL.ontology.unit.services.UnitService;
 
 public class UnitFactory implements ResourceFactory {
 
-	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+	public Resource createInstance(String classURI, String instanceURI,
+			int factoryIndex) {
 		switch (factoryIndex) {
 		case 1:
 			return new Unit(instanceURI);
@@ -43,8 +48,15 @@ public class UnitFactory implements ResourceFactory {
 			return new UnitService(instanceURI);
 		case 7:
 			return new UnitConversionService(instanceURI);
+		case 8:
+			return new RGBColorModel(instanceURI);
+		case 9:
+			return new HSVColorModel(instanceURI);
+		case 10:
+			return new CMYKColorModel(instanceURI);
+		case 11:
+			return new ColorTemperature(instanceURI);
 		}
 		return null;
 	}
-
 }

@@ -13,41 +13,54 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package org.universAAL.ontology.unit.system;
+package org.universAAL.ontology.unit.color;
 
 import org.universAAL.ontology.unit.MeasurableDimension;
 import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
-import org.universAAL.ontology.unit.UnitSystem;
 
 /**
  * @author amedrano
  * 
  */
-public class ColorSpace extends UnitSystem {
+public class ColorTemperature extends ColorModel {
 
-	public static final UnitSystem IND_COLOR_SPACE = new UnitSystem(
-			UnitOntology.NAMESPACE + "colorSpaces");
-
-	// units
-	public static final Unit IND_UNIT_RGB = new Unit("rgb", "Red Green Blue",
-			"RGB", MeasurableDimension.Color);
-
-	public static final Unit IND_UNIT_WEB_COLOR = new Unit("web_color",
-			"X11 color names", "", MeasurableDimension.Color);
-
-	// TODO add full webcolor to RGB conversion table.
-	public static final Unit IND_UNIT_CMYK = new Unit("cmyk",
-			"Cyan, Magenta, Yellow, and Key", "CMYK ",
-			MeasurableDimension.Color);
-
-	public static final Unit IND_UNIT_HSV = new Unit("hsv",
-			"Hue Saturation Value", "HSV", MeasurableDimension.Color);
-
-	public static final Unit IND_UNIT_LAMBDA = new Unit("wavelength",
-			"Wavelength", "λ", MeasurableDimension.Color);
+	public static final String MY_URI = UnitOntology.NAMESPACE
+			+ "ColorTemperature";
+	public static final String PROP_DEGREES = UnitOntology.NAMESPACE
+			+ "degrees";
 
 	public static final Unit IND_UNIT_COLOR_TEMPERATURE = new Unit(
 			"color_temp", "Color Temperature", "K", MeasurableDimension.Color);
 
+	/**
+	 * 
+	 */
+	public ColorTemperature() {
+	}
+
+	/**
+	 * @param uri
+	 */
+	public ColorTemperature(String uri) {
+		super(uri);
+	}
+
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_FULL;
+	}
+
+	public boolean isWellFormed() {
+		return super.isWellFormed() && hasProperty(PROP_DEGREES);
+	}
+
+	public static ColorTemperature constructRGBColor(int k) {
+		ColorTemperature cm = new ColorTemperature();
+		cm.setProperty(PROP_DEGREES, Integer.valueOf(k));
+		return cm;
+	}
 }

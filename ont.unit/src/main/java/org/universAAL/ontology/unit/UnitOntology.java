@@ -15,20 +15,27 @@
  ******************************************************************************/
 package org.universAAL.ontology.unit;
 
+import org.universAAL.middleware.owl.AllValuesFromRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
+import org.universAAL.middleware.owl.HasValueRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
+import org.universAAL.middleware.owl.TypeURI;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.UnitFactory;
+import org.universAAL.ontology.unit.color.CMYKColorModel;
+import org.universAAL.ontology.unit.color.ColorModel;
+import org.universAAL.ontology.unit.color.ColorTemperature;
+import org.universAAL.ontology.unit.color.HSVColorModel;
+import org.universAAL.ontology.unit.color.RGBColorModel;
 import org.universAAL.ontology.unit.services.UnitConversionService;
 import org.universAAL.ontology.unit.services.UnitService;
 import org.universAAL.ontology.unit.system.BinarySystem;
-import org.universAAL.ontology.unit.system.ColorSpace;
 import org.universAAL.ontology.unit.system.InternationalSystem;
 import org.universAAL.ontology.unit.system.TimeSystem;
 import org.universAAL.ontology.unit.system.Util;
@@ -56,6 +63,10 @@ public final class UnitOntology extends Ontology {
 
 		OntClassInfoSetup oci_measurableDimension = createNewAbstractOntClassInfo(MeasurableDimension.MY_URI);
 
+		// ******* Declaration of enumeration classes of the ontology ******* //
+
+		OntClassInfoSetup oci_ColorModel = createNewAbstractOntClassInfo(ColorModel.MY_URI);
+
 		// ******* Declaration of regular classes of the ontology ******* //
 		OntClassInfoSetup oci_Unit = createNewOntClassInfo(Unit.MY_URI,
 				factory, 1);
@@ -72,6 +83,14 @@ public final class UnitOntology extends Ontology {
 				UnitService.MY_URI, factory, 6);
 		OntClassInfoSetup oci_UnitConversionService = createNewOntClassInfo(
 				UnitConversionService.MY_URI, factory, 7);
+		OntClassInfoSetup oci_RGBColorModel = createNewOntClassInfo(
+				RGBColorModel.MY_URI, factory, 8);
+		OntClassInfoSetup oci_HSVColorModel = createNewOntClassInfo(
+				HSVColorModel.MY_URI, factory, 9);
+		OntClassInfoSetup oci_CMYKColorModel = createNewOntClassInfo(
+				CMYKColorModel.MY_URI, factory, 10);
+		OntClassInfoSetup oci_ColorTemp = createNewOntClassInfo(
+				ColorTemperature.MY_URI, factory, 11);
 
 		// ******* Add content to enumeration classes of the ontology ******* //
 
@@ -316,12 +335,84 @@ public final class UnitOntology extends Ontology {
 		oci_DividedUnit.addInstance(Util.IND_UNIT_HERTZ);
 		oci_DividedUnit.addInstance(Util.IND_UNIT_VOLT);
 
-		oci_Unit.addInstance(ColorSpace.IND_UNIT_RGB);
-		oci_Unit.addInstance(ColorSpace.IND_UNIT_WEB_COLOR);
-		oci_Unit.addInstance(ColorSpace.IND_UNIT_CMYK);
-		oci_Unit.addInstance(ColorSpace.IND_UNIT_HSV);
-		oci_Unit.addInstance(ColorSpace.IND_UNIT_LAMBDA);
-		oci_Unit.addInstance(ColorSpace.IND_UNIT_COLOR_TEMPERATURE);
+		// Color stuff
 
+		oci_ColorModel.setResourceLabel("Color Model");
+		oci_ColorModel
+				.setResourceComment("An abstract mathematical model describing the way colors can be represented as tuples of numbers.");
+		oci_ColorModel.addSuperClass(ManagedIndividual.MY_URI);
+		oci_ColorModel.addObjectProperty(ColorModel.PROP_COLOR_UNIT);
+
+		MergedRestriction crest = new MergedRestriction(
+				ColorModel.PROP_COLOR_UNIT);
+		// it is a unit
+		crest.addRestriction(new AllValuesFromRestriction(
+				ColorModel.PROP_COLOR_UNIT, new TypeURI(Unit.MY_URI, false)));
+		// mandatory, 1
+		crest.addRestriction(MergedRestriction.getCardinalityRestriction(
+				ColorModel.PROP_COLOR_UNIT, 1, 1));
+		// which measured dimension is Color
+		crest.addRestriction(new AllValuesFromRestriction(
+				ColorModel.PROP_COLOR_UNIT, new HasValueRestriction(
+						Unit.PROP_DIMENSION, MeasurableDimension.Color)));
+
+		oci_ColorModel.addRestriction(crest);
+
+		oci_RGBColorModel.setResourceLabel("RGB Color Model");
+		oci_RGBColorModel
+				.setResourceComment("An additive color model in which red, green and blue light are added"
+						+ " together in various ways to reproduce a broad array of colors.");
+		oci_RGBColorModel.addSuperClass(ColorModel.MY_URI);
+		oci_RGBColorModel.addDatatypeProperty(RGBColorModel.PROP_RED);
+		oci_RGBColorModel.addDatatypeProperty(RGBColorModel.PROP_BLUE);
+		oci_RGBColorModel.addDatatypeProperty(RGBColorModel.PROP_GREEN);
+		// TODO restrict datatype properties to numeric?
+		oci_RGBColorModel.addInstance(RGBColorModel.IND_UNIT_RGB);
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
+						RGBColorModel.IND_UNIT_RGB));
+
+		oci_HSVColorModel.setResourceLabel("HSV Color Model");
+		oci_HSVColorModel
+				.setResourceComment("HSV stands for hue, saturation, and value,"
+						+ " a common cylindrical-coordinate representations of points"
+						+ " in an RGB color model.");
+		oci_HSVColorModel.addSuperClass(ColorModel.MY_URI);
+		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_HUE);
+		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_SATURATION);
+		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_VALUE);
+		// TODO restrict datatype properties to numeric?
+		oci_HSVColorModel.addInstance(HSVColorModel.IND_UNIT_HSV);
+		oci_HSVColorModel.addRestriction(MergedRestriction
+				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
+						HSVColorModel.IND_UNIT_HSV));
+
+		oci_CMYKColorModel.setResourceLabel("CMYK Color Model");
+		oci_CMYKColorModel.setResourceComment("The CMYK color model is a"
+				+ " subtractive color model, used in color printing, and is "
+				+ "also used to describe the printing process itself.");
+		oci_CMYKColorModel.addSuperClass(ColorModel.MY_URI);
+		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_CYAN);
+		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_MAGENTA);
+		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_YELLOW);
+		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_BLACK);
+		// TODO restrict datatype properties to numeric?
+		oci_CMYKColorModel.addInstance(CMYKColorModel.IND_UNIT_CMYK);
+		oci_CMYKColorModel.addRestriction(MergedRestriction
+				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
+						CMYKColorModel.IND_UNIT_CMYK));
+
+		oci_ColorTemp.setResourceLabel("Color Temperature");
+		oci_ColorTemp
+				.setResourceComment("The color temperature of a light source "
+						+ "is the temperature of an ideal black-body radiator that "
+						+ "radiates light of a color comparable to that of the light source.");
+		oci_ColorTemp.addSuperClass(ColorModel.MY_URI);
+		oci_ColorTemp.addDatatypeProperty(ColorTemperature.PROP_DEGREES);
+		// TODO restrict datatype properties to numeric?
+		oci_ColorTemp.addInstance(ColorTemperature.IND_UNIT_COLOR_TEMPERATURE);
+		oci_ColorTemp.addRestriction(MergedRestriction
+				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
+						ColorTemperature.IND_UNIT_COLOR_TEMPERATURE));
 	}
 }
