@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.7271062271062271" branch-rate="0.28125" lines-covered="397" lines-valid="546" branches-covered="36" branches-valid="128" complexity="1.8807339449541285" version="2.1.1" timestamp="1497734970432">
+<coverage line-rate="0.7257769652650823" branch-rate="0.27906976744186046" lines-covered="397" lines-valid="547" branches-covered="36" branches-valid="129" complexity="1.8990825688073394" version="2.1.1" timestamp="1498177000522">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.unit/src/main/java</source>
@@ -83,7 +83,7 @@
 				</class>
 			</classes>
 		</package>
-		<package name="org.universAAL.ontology.unit" line-rate="0.6901408450704225" branch-rate="0.24166666666666667" complexity="1.872340425531915">
+		<package name="org.universAAL.ontology.unit" line-rate="0.6885245901639344" branch-rate="0.2396694214876033" complexity="1.8936170212765957">
 			<classes>
 				<class name="org.universAAL.ontology.unit.DerivedUnit" filename="org/universAAL/ontology/unit/DerivedUnit.java" line-rate="0.64" branch-rate="0.5" complexity="1.25">
 					<methods>
@@ -371,35 +371,35 @@
 						<line number="100" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.unit.MeasurableDimension" filename="org/universAAL/ontology/unit/MeasurableDimension.java" line-rate="0.4418604651162791" branch-rate="0.08333333333333333" complexity="4.222222222222222">
+				<class name="org.universAAL.ontology.unit.MeasurableDimension" filename="org/universAAL/ontology/unit/MeasurableDimension.java" line-rate="0.4318181818181818" branch-rate="0.08" complexity="4.444444444444445">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="36" hits="1" branch="false"/>
-								<line number="39" hits="1" branch="false"/>
-								<line number="40" hits="1" branch="false"/>
-								<line number="41" hits="1" branch="false"/>
+								<line number="37" hits="1" branch="false"/>
 								<line number="42" hits="1" branch="false"/>
-								<line number="43" hits="1" branch="false"/>
 								<line number="44" hits="1" branch="false"/>
-								<line number="45" hits="1" branch="false"/>
 								<line number="46" hits="1" branch="false"/>
-								<line number="47" hits="1" branch="false"/>
 								<line number="48" hits="1" branch="false"/>
-								<line number="49" hits="1" branch="false"/>
 								<line number="50" hits="1" branch="false"/>
+								<line number="52" hits="1" branch="false"/>
+								<line number="54" hits="1" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="58" hits="1" branch="false"/>
+								<line number="60" hits="1" branch="false"/>
+								<line number="62" hits="1" branch="false"/>
+								<line number="64" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="&lt;init&gt;" signature="(I)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="55" hits="12" branch="false"/>
-								<line number="56" hits="12" branch="false"/>
-								<line number="57" hits="12" branch="false"/>
+								<line number="70" hits="12" branch="false"/>
+								<line number="71" hits="12" branch="false"/>
+								<line number="72" hits="12" branch="false"/>
 							</lines>
 						</method>
 						<method name="equals" signature="(Ljava/lang/Object;)Z" line-rate="1.0" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="109" hits="379" branch="true" condition-coverage="50% (2/4)">
+								<line number="126" hits="379" branch="true" condition-coverage="50% (2/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="50%"/>
 										<condition number="1" type="jump" coverage="50%"/>
@@ -409,148 +409,150 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="76" hits="24" branch="false"/>
+								<line number="91" hits="24" branch="false"/>
 							</lines>
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="60" hits="12" branch="false"/>
+								<line number="75" hits="12" branch="false"/>
 							</lines>
 						</method>
 						<method name="getmeasurableDimensionByOrder" signature="(I)Lorg/universAAL/ontology/unit/MeasurableDimension;" line-rate="0.0" branch-rate="0.0" complexity="0">
 							<lines>
-								<line number="80" hits="0" branch="true" condition-coverage="0% (0/12)">
+								<line number="95" hits="0" branch="true" condition-coverage="0% (0/13)">
 									<conditions>
 										<condition number="0" type="switch" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="82" hits="0" branch="false"/>
-								<line number="84" hits="0" branch="false"/>
-								<line number="86" hits="0" branch="false"/>
-								<line number="88" hits="0" branch="false"/>
-								<line number="90" hits="0" branch="false"/>
-								<line number="92" hits="0" branch="false"/>
-								<line number="94" hits="0" branch="false"/>
-								<line number="96" hits="0" branch="false"/>
-								<line number="98" hits="0" branch="false"/>
-								<line number="100" hits="0" branch="false"/>
-								<line number="102" hits="0" branch="false"/>
-								<line number="104" hits="0" branch="false"/>
+								<line number="97" hits="0" branch="false"/>
+								<line number="99" hits="0" branch="false"/>
+								<line number="101" hits="0" branch="false"/>
+								<line number="103" hits="0" branch="false"/>
+								<line number="105" hits="0" branch="false"/>
+								<line number="107" hits="0" branch="false"/>
+								<line number="109" hits="0" branch="false"/>
+								<line number="111" hits="0" branch="false"/>
+								<line number="113" hits="0" branch="false"/>
+								<line number="115" hits="0" branch="false"/>
+								<line number="117" hits="0" branch="false"/>
+								<line number="119" hits="0" branch="false"/>
+								<line number="121" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="64" hits="0" branch="false"/>
+								<line number="79" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="name" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="68" hits="0" branch="false"/>
+								<line number="83" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="ord" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="72" hits="0" branch="false"/>
+								<line number="87" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="valueOf" signature="(Ljava/lang/String;)Lorg/universAAL/ontology/unit/MeasurableDimension;" line-rate="0.0" branch-rate="0.0" complexity="0">
 							<lines>
-								<line number="113" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="131" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="114" hits="0" branch="false"/>
-								<line number="116" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="132" hits="0" branch="false"/>
+								<line number="134" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="117" hits="0" branch="false"/>
-								<line number="119" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="135" hits="0" branch="false"/>
+								<line number="137" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="120" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="138" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
 								</line>
-								<line number="121" hits="0" branch="false"/>
-								<line number="123" hits="0" branch="false"/>
+								<line number="139" hits="0" branch="false"/>
+								<line number="141" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="36" hits="1" branch="false"/>
-						<line number="39" hits="1" branch="false"/>
-						<line number="40" hits="1" branch="false"/>
-						<line number="41" hits="1" branch="false"/>
+						<line number="37" hits="1" branch="false"/>
 						<line number="42" hits="1" branch="false"/>
-						<line number="43" hits="1" branch="false"/>
 						<line number="44" hits="1" branch="false"/>
-						<line number="45" hits="1" branch="false"/>
 						<line number="46" hits="1" branch="false"/>
-						<line number="47" hits="1" branch="false"/>
 						<line number="48" hits="1" branch="false"/>
-						<line number="49" hits="1" branch="false"/>
 						<line number="50" hits="1" branch="false"/>
-						<line number="55" hits="12" branch="false"/>
-						<line number="56" hits="12" branch="false"/>
-						<line number="57" hits="12" branch="false"/>
-						<line number="60" hits="12" branch="false"/>
-						<line number="64" hits="0" branch="false"/>
-						<line number="68" hits="0" branch="false"/>
-						<line number="72" hits="0" branch="false"/>
-						<line number="76" hits="24" branch="false"/>
-						<line number="80" hits="0" branch="true" condition-coverage="0% (0/12)">
+						<line number="52" hits="1" branch="false"/>
+						<line number="54" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="58" hits="1" branch="false"/>
+						<line number="60" hits="1" branch="false"/>
+						<line number="62" hits="1" branch="false"/>
+						<line number="64" hits="1" branch="false"/>
+						<line number="70" hits="12" branch="false"/>
+						<line number="71" hits="12" branch="false"/>
+						<line number="72" hits="12" branch="false"/>
+						<line number="75" hits="12" branch="false"/>
+						<line number="79" hits="0" branch="false"/>
+						<line number="83" hits="0" branch="false"/>
+						<line number="87" hits="0" branch="false"/>
+						<line number="91" hits="24" branch="false"/>
+						<line number="95" hits="0" branch="true" condition-coverage="0% (0/13)">
 							<conditions>
 								<condition number="0" type="switch" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="82" hits="0" branch="false"/>
-						<line number="84" hits="0" branch="false"/>
-						<line number="86" hits="0" branch="false"/>
-						<line number="88" hits="0" branch="false"/>
-						<line number="90" hits="0" branch="false"/>
-						<line number="92" hits="0" branch="false"/>
-						<line number="94" hits="0" branch="false"/>
-						<line number="96" hits="0" branch="false"/>
-						<line number="98" hits="0" branch="false"/>
-						<line number="100" hits="0" branch="false"/>
-						<line number="102" hits="0" branch="false"/>
-						<line number="104" hits="0" branch="false"/>
-						<line number="109" hits="379" branch="true" condition-coverage="50% (2/4)">
+						<line number="97" hits="0" branch="false"/>
+						<line number="99" hits="0" branch="false"/>
+						<line number="101" hits="0" branch="false"/>
+						<line number="103" hits="0" branch="false"/>
+						<line number="105" hits="0" branch="false"/>
+						<line number="107" hits="0" branch="false"/>
+						<line number="109" hits="0" branch="false"/>
+						<line number="111" hits="0" branch="false"/>
+						<line number="113" hits="0" branch="false"/>
+						<line number="115" hits="0" branch="false"/>
+						<line number="117" hits="0" branch="false"/>
+						<line number="119" hits="0" branch="false"/>
+						<line number="121" hits="0" branch="false"/>
+						<line number="126" hits="379" branch="true" condition-coverage="50% (2/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="50%"/>
 								<condition number="1" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="113" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="131" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="114" hits="0" branch="false"/>
-						<line number="116" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="132" hits="0" branch="false"/>
+						<line number="134" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="117" hits="0" branch="false"/>
-						<line number="119" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="135" hits="0" branch="false"/>
+						<line number="137" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="120" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="138" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>
 						</line>
-						<line number="121" hits="0" branch="false"/>
-						<line number="123" hits="0" branch="false"/>
+						<line number="139" hits="0" branch="false"/>
+						<line number="141" hits="0" branch="false"/>
 					</lines>
 				</class>
 				<class name="org.universAAL.ontology.unit.MultipliedUnit" filename="org/universAAL/ontology/unit/MultipliedUnit.java" line-rate="0.35135135135135137" branch-rate="0.1" complexity="1.5">
