@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="c143755" href="./DiseaseActivator.html" title="org.universAAL.ontology.disease.DiseaseActivator" alt="" coords="15,118,137,143"/>
+<area shape="rect" id="c141347" href="./DiseaseActivator.html" title="org.universAAL.ontology.disease.DiseaseActivator" alt="" coords="15,118,137,143"/>
 <area shape="rect" id="node1" href="./DiseaseActivator.html" title="&lt;TABLE&gt;" alt="" coords="5,107,147,155"/>
-<area shape="rect" id="c143961" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="org.universAAL.middleware.container.ModuleActivator" alt="" coords="19,11,133,53"/>
+<area shape="rect" id="c141553" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="org.universAAL.middleware.container.ModuleActivator" alt="" coords="19,11,133,53"/>
 <area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="&lt;TABLE&gt;" alt="" coords="8,6,144,58"/>
 </map>

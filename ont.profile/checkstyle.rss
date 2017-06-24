@@ -90,6 +90,34 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.SpaceProfile.java">org/universAAL/ontology/profile/SpaceProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AppSubProfile.java">org/universAAL/ontology/profile/AppSubProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Organization.java">org/universAAL/ontology/vcard/Organization.java</a>
                 </td>
                 <td>
@@ -170,20 +198,6 @@ under the License.
                 </td>
                 <td>
                   3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALService.java">org/universAAL/ontology/profile/AALService.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
                 </td>
               </tr>
                           <tr>
@@ -300,20 +314,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALSpaceProfile.java">org/universAAL/ontology/profile/AALSpaceProfile.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  16
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.Pager.java">org/universAAL/ontology/vcard/Pager.java</a>
                 </td>
                 <td>
@@ -412,6 +412,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AppService.java">org/universAAL/ontology/profile/AppService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AssistedPerson.java">org/universAAL/ontology/profile/AssistedPerson.java</a>
                 </td>
                 <td>
@@ -450,20 +464,6 @@ under the License.
                 </td>
                 <td>
                   11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALServiceProfile.java">org/universAAL/ontology/profile/AALServiceProfile.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
                 </td>
               </tr>
                           <tr>
@@ -566,6 +566,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.Space.java">org/universAAL/ontology/profile/Space.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.vcard.ISDN.java">org/universAAL/ontology/vcard/ISDN.java</a>
                 </td>
                 <td>
@@ -590,20 +604,6 @@ under the License.
                 </td>
                 <td>
                   15
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALSpace.java">org/universAAL/ontology/profile/AALSpace.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
                 </td>
               </tr>
                           <tr>
@@ -650,6 +650,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AppServiceProfile.java">org/universAAL/ontology/profile/AppServiceProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.PersonalInformationSubprofile.java">org/universAAL/ontology/profile/PersonalInformationSubprofile.java</a>
                 </td>
                 <td>
@@ -660,20 +674,6 @@ under the License.
                 </td>
                 <td>
                   27
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.profile//checkstyle.html#org.universAAL.ontology.profile.AALAppSubProfile.java">org/universAAL/ontology/profile/AALAppSubProfile.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  23
                 </td>
               </tr>
                           <tr>

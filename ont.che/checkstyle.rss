@@ -28,7 +28,7 @@ under the License.
     <item>
       <title>File: 5,
              Errors: 79,
-             Warnings: 4,
+             Warnings: 3,
              Infos: 0
       </title>
             <link>http://ontology/ont.che//checkstyle.html</link>
@@ -95,7 +95,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   54

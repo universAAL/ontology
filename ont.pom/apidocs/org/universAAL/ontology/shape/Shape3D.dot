@@ -10,66 +10,66 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.shape.Sphere
-	c321795 [label=<<table title="org.universAAL.ontology.shape.Sphere" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sphere.html">
+	c319387 [label=<<table title="org.universAAL.ontology.shape.Sphere" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sphere.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Sphere </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Sphere.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Polyhedron
-	c321797 [label=<<table title="org.universAAL.ontology.shape.Polyhedron" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Polyhedron.html">
+	c319389 [label=<<table title="org.universAAL.ontology.shape.Polyhedron" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Polyhedron.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Polyhedron </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Polyhedron.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Polygon
-	c321798 [label=<<table title="org.universAAL.ontology.shape.Polygon" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Polygon.html">
+	c319390 [label=<<table title="org.universAAL.ontology.shape.Polygon" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Polygon.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Polygon </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Polygon.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Path
-	c321800 [label=<<table title="org.universAAL.ontology.shape.Path" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Path.html">
+	c319392 [label=<<table title="org.universAAL.ontology.shape.Path" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Path.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Path </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Path.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Box
-	c321804 [label=<<table title="org.universAAL.ontology.shape.Box" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Box.html">
+	c319396 [label=<<table title="org.universAAL.ontology.shape.Box" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Box.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Box </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Box.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Shape3D
-	c321807 [label=<<table title="org.universAAL.ontology.shape.Shape3D" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Shape3D.html">
+	c319399 [label=<<table title="org.universAAL.ontology.shape.Shape3D" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Shape3D.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Shape3D </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Shape3D.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.QuasiCylinder
-	c321808 [label=<<table title="org.universAAL.ontology.shape.QuasiCylinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuasiCylinder.html">
+	c319400 [label=<<table title="org.universAAL.ontology.shape.QuasiCylinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuasiCylinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> QuasiCylinder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./QuasiCylinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Shape
-	c321809 [label=<<table title="org.universAAL.ontology.shape.Shape" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shape.html">
+	c319401 [label=<<table title="org.universAAL.ontology.shape.Shape" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shape.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Shape </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Shape.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.shape.Sphere extends org.universAAL.ontology.shape.Shape3D
-	c321807:p -> c321795:p [dir=back,arrowtail=empty];
+	c319399:p -> c319387:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Polyhedron extends org.universAAL.ontology.shape.Shape3D
-	c321807:p -> c321797:p [dir=back,arrowtail=empty];
+	c319399:p -> c319389:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Polygon extends org.universAAL.ontology.shape.Shape3D
-	c321807:p -> c321798:p [dir=back,arrowtail=empty];
+	c319399:p -> c319390:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Path extends org.universAAL.ontology.shape.Shape3D
-	c321807:p -> c321800:p [dir=back,arrowtail=empty];
+	c319399:p -> c319392:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Box extends org.universAAL.ontology.shape.Shape3D
-	c321807:p -> c321804:p [dir=back,arrowtail=empty];
+	c319399:p -> c319396:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Shape3D extends org.universAAL.ontology.shape.Shape
-	c321809:p -> c321807:p [dir=back,arrowtail=empty];
+	c319401:p -> c319399:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.QuasiCylinder extends org.universAAL.ontology.shape.Shape3D
-	c321807:p -> c321808:p [dir=back,arrowtail=empty];
+	c319399:p -> c319400:p [dir=back,arrowtail=empty];
 }
 

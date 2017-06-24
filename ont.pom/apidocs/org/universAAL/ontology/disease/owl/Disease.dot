@@ -10,71 +10,71 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease
-	c143145 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/RespiratorySystemDisease.html">
+	c140737 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/RespiratorySystemDisease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RespiratorySystemDisease </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/RespiratorySystemDisease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease
-	c143146 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/DigestiveSystemDisease.html">
+	c140738 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/DigestiveSystemDisease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DigestiveSystemDisease </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/DigestiveSystemDisease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease
-	c143147 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/NervousSystemDisease.html">
+	c140739 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/NervousSystemDisease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NervousSystemDisease </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/NervousSystemDisease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease
-	c143148 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/CirculatorySystemDisease.html">
+	c140740 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/CirculatorySystemDisease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CirculatorySystemDisease </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/CirculatorySystemDisease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease
-	c143149 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/CertainInfectiousParasiticDisease.html">
+	c140741 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/CertainInfectiousParasiticDisease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CertainInfectiousParasiticDisease </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/CertainInfectiousParasiticDisease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ICD10Diseases.owl.Neoplasms
-	c143150 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.Neoplasms" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/Neoplasms.html">
+	c140742 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.Neoplasms" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/Neoplasms.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Neoplasms </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/Neoplasms.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder
-	c143151 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/MentalDisorder.html">
+	c140743 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ICD10Diseases/owl/MentalDisorder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MentalDisorder </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../ICD10Diseases/owl/MentalDisorder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Disease
-	c143163 [label=<<table title="org.universAAL.ontology.disease.owl.Disease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Disease.html">
+	c140755 [label=<<table title="org.universAAL.ontology.disease.owl.Disease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Disease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Disease </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Disease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143145:p [dir=back,arrowtail=empty];
+	c140755:p -> c140737:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143146:p [dir=back,arrowtail=empty];
+	c140755:p -> c140738:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143147:p [dir=back,arrowtail=empty];
+	c140755:p -> c140739:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143148:p [dir=back,arrowtail=empty];
+	c140755:p -> c140740:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143149:p [dir=back,arrowtail=empty];
+	c140755:p -> c140741:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.ICD10Diseases.owl.Neoplasms extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143150:p [dir=back,arrowtail=empty];
+	c140755:p -> c140742:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder extends org.universAAL.ontology.disease.owl.Disease
-	c143163:p -> c143151:p [dir=back,arrowtail=empty];
+	c140755:p -> c140743:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.disease.owl.Disease extends org.universAAL.middleware.owl.ManagedIndividual
-	c143358:p -> c143163:p [dir=back,arrowtail=empty];
+	c140950:p -> c140755:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c143358 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c140950 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

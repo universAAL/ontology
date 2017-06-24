@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c192634" href="./Walking.html" title="org.universAAL.ontology.health.owl.Walking" alt="" coords="15,209,83,234"/>
+<area shape="rect" id="c190226" href="./Walking.html" title="org.universAAL.ontology.health.owl.Walking" alt="" coords="15,209,83,234"/>
 <area shape="rect" id="node1" href="./Walking.html" title="&lt;TABLE&gt;" alt="" coords="5,197,93,245"/>
-<area shape="rect" id="c192643" href="./Diet.html" title="org.universAAL.ontology.health.owl.Diet" alt="" coords="131,209,176,234"/>
+<area shape="rect" id="c190235" href="./Diet.html" title="org.universAAL.ontology.health.owl.Diet" alt="" coords="131,209,176,234"/>
 <area shape="rect" id="node2" href="./Diet.html" title="&lt;TABLE&gt;" alt="" coords="117,197,189,245"/>
-<area shape="rect" id="c192645" href="./HealthyHabitsAdoption.html" title="org.universAAL.ontology.health.owl.HealthyHabitsAdoption" alt="" coords="24,113,179,138"/>
+<area shape="rect" id="c190237" href="./HealthyHabitsAdoption.html" title="org.universAAL.ontology.health.owl.HealthyHabitsAdoption" alt="" coords="24,113,179,138"/>
 <area shape="rect" id="node3" href="./HealthyHabitsAdoption.html" title="&lt;TABLE&gt;" alt="" coords="13,101,189,149"/>
-<area shape="rect" id="c192654" href="./Treatment.html" title="org.universAAL.ontology.health.owl.Treatment" alt="" coords="61,17,141,42"/>
+<area shape="rect" id="c190246" href="./Treatment.html" title="org.universAAL.ontology.health.owl.Treatment" alt="" coords="61,17,141,42"/>
 <area shape="rect" id="node4" href="./Treatment.html" title="&lt;TABLE&gt;" alt="" coords="51,5,152,53"/>
 </map>

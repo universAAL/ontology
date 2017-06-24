@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c227803" href="./ConeSegment.html" title="org.universAAL.ontology.shape.ConeSegment" alt="" coords="16,209,120,234"/>
+<area shape="rect" id="c225395" href="./ConeSegment.html" title="org.universAAL.ontology.shape.ConeSegment" alt="" coords="16,209,120,234"/>
 <area shape="rect" id="node1" href="./ConeSegment.html" title="&lt;TABLE&gt;" alt="" coords="5,197,131,245"/>
-<area shape="rect" id="c227812" href="./Line.html" title="org.universAAL.ontology.shape.Line" alt="" coords="45,17,91,42"/>
+<area shape="rect" id="c225404" href="./Line.html" title="org.universAAL.ontology.shape.Line" alt="" coords="45,17,91,42"/>
 <area shape="rect" id="node2" href="./Line.html" title="&lt;TABLE&gt;" alt="" coords="32,5,104,53"/>
-<area shape="rect" id="c227813" href="./LineSegment.html" title="org.universAAL.ontology.shape.LineSegment" alt="" coords="19,113,117,138"/>
+<area shape="rect" id="c225405" href="./LineSegment.html" title="org.universAAL.ontology.shape.LineSegment" alt="" coords="19,113,117,138"/>
 <area shape="rect" id="node3" href="./LineSegment.html" title="&lt;TABLE&gt;" alt="" coords="9,101,127,149"/>
 </map>

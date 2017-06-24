@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.phThing.Device
-	c230815 [label=<<table title="org.universAAL.ontology.phThing.Device" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../phThing/Device.html">
+	c228407 [label=<<table title="org.universAAL.ontology.phThing.Device" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../phThing/Device.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Device </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../phThing/Device.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.av.device.LoudSpeaker
-	c230958 [label=<<table title="org.universAAL.ontology.av.device.LoudSpeaker" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LoudSpeaker.html">
+	c228550 [label=<<table title="org.universAAL.ontology.av.device.LoudSpeaker" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LoudSpeaker.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LoudSpeaker </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LoudSpeaker.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.av.device.LoudSpeaker extends org.universAAL.ontology.phThing.Device
-	c230815:p -> c230958:p [dir=back,arrowtail=empty];
+	c228407:p -> c228550:p [dir=back,arrowtail=empty];
 }
 

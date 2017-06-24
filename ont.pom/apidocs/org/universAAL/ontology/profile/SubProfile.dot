@@ -16,23 +16,23 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./PersonalInformationSubprofile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.HWSubProfile
-	c342512 [label=<<table title="org.universAAL.ontology.profile.HWSubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HWSubProfile.html">
+	c342511 [label=<<table title="org.universAAL.ontology.profile.HWSubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HWSubProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HWSubProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HWSubProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.HRSubProfile
-	c342517 [label=<<table title="org.universAAL.ontology.profile.HRSubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HRSubProfile.html">
+	c342515 [label=<<table title="org.universAAL.ontology.profile.HRSubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HRSubProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HRSubProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HRSubProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.profile.AALAppSubProfile
-	c342525 [label=<<table title="org.universAAL.ontology.profile.AALAppSubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AALAppSubProfile.html">
+	// org.universAAL.ontology.profile.AppSubProfile
+	c342523 [label=<<table title="org.universAAL.ontology.profile.AppSubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AppSubProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> AALAppSubProfile </td></tr>
+<tr><td align="center" balign="center"> AppSubProfile </td></tr>
 		</table></td></tr>
-		</table>>, URL="./AALAppSubProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./AppSubProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.SubProfile
 	c342528 [label=<<table title="org.universAAL.ontology.profile.SubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SubProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -66,11 +66,11 @@ digraph G {
 	//org.universAAL.ontology.profile.PersonalInformationSubprofile extends org.universAAL.ontology.profile.SubProfile
 	c342528:p -> c342510:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.HWSubProfile extends org.universAAL.ontology.profile.SubProfile
-	c342528:p -> c342512:p [dir=back,arrowtail=empty];
+	c342528:p -> c342511:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.HRSubProfile extends org.universAAL.ontology.profile.SubProfile
-	c342528:p -> c342517:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.profile.AALAppSubProfile extends org.universAAL.ontology.profile.SubProfile
-	c342528:p -> c342525:p [dir=back,arrowtail=empty];
+	c342528:p -> c342515:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.profile.AppSubProfile extends org.universAAL.ontology.profile.SubProfile
+	c342528:p -> c342523:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.SubProfile extends org.universAAL.middleware.owl.ManagedIndividual
 	c342777:p -> c342528:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.health.owl.HealthProfile extends org.universAAL.ontology.profile.SubProfile

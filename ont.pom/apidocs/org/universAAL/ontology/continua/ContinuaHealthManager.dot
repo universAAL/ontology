@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.continua.ContinuaHealthManager
-	c115903 [label=<<table title="org.universAAL.ontology.continua.ContinuaHealthManager" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContinuaHealthManager.html">
+	c113495 [label=<<table title="org.universAAL.ontology.continua.ContinuaHealthManager" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContinuaHealthManager.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ContinuaHealthManager </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContinuaHealthManager.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.continua.ContinuaHealthManager extends org.universAAL.middleware.service.owl.Service
-	c116245:p -> c115903:p [dir=back,arrowtail=empty];
+	c113837:p -> c113495:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.service.owl.Service
-	c116245 [label=<<table title="org.universAAL.middleware.service.owl.Service" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/service/owl/Service.html">
+	c113837 [label=<<table title="org.universAAL.middleware.service.owl.Service" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/service/owl/Service.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Service </font></td></tr>
 		</table></td></tr>

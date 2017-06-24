@@ -27,7 +27,7 @@ under the License.
     <item>
       <title>File: 602,
              Errors: 8847,
-             Warnings: 841,
+             Warnings: 840,
              Infos: 168
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
@@ -606,6 +606,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.SpaceProfile.java">org/universAAL/ontology/profile/SpaceProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.disease.owl.Disease.java">org/universAAL/ontology/disease/owl/Disease.java</a>
                 </td>
                 <td>
@@ -710,7 +724,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   54
@@ -868,6 +882,20 @@ under the License.
                 </td>
                 <td>
                   9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AppService.java">org/universAAL/ontology/profile/AppService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
                 </td>
               </tr>
                           <tr>
@@ -1180,6 +1208,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.sysinfo.SpaceStatusDescriptor.java">org/universAAL/ontology/sysinfo/SpaceStatusDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.ProfileOntology.java">org/universAAL/ontology/profile/ProfileOntology.java</a>
                 </td>
                 <td>
@@ -1358,20 +1400,6 @@ under the License.
                 </td>
                 <td>
                   10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.sysinfo.AALSpaceDescriptor.java">org/universAAL/ontology/sysinfo/AALSpaceDescriptor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  9
                 </td>
               </tr>
                           <tr>
@@ -2034,6 +2062,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.sysinfo.SpaceDescriptor.java">org/universAAL/ontology/sysinfo/SpaceDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.contact.ContactOntology.java">org/universAAL/ontology/profile/contact/ContactOntology.java</a>
                 </td>
                 <td>
@@ -2128,20 +2170,6 @@ under the License.
                 </td>
                 <td>
                   6
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AALServiceProfile.java">org/universAAL/ontology/profile/AALServiceProfile.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
                 </td>
               </tr>
                           <tr>
@@ -2380,20 +2408,6 @@ under the License.
                 </td>
                 <td>
                   10
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AALSpace.java">org/universAAL/ontology/profile/AALSpace.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
                 </td>
               </tr>
                           <tr>
@@ -3504,20 +3518,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AALSpaceProfile.java">org/universAAL/ontology/profile/AALSpaceProfile.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  16
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.asor.Asor.java">org/universAAL/ontology/asor/Asor.java</a>
                 </td>
                 <td>
@@ -4484,20 +4484,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AALAppSubProfile.java">org/universAAL/ontology/profile/AALAppSubProfile.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  23
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.outdoor.CityQuarter.java">org/universAAL/ontology/location/outdoor/CityQuarter.java</a>
                 </td>
                 <td>
@@ -4602,7 +4588,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   14
@@ -5292,6 +5278,20 @@ under the License.
                 </td>
                 <td>
                   15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.Space.java">org/universAAL/ontology/profile/Space.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
                 </td>
               </tr>
                           <tr>
@@ -7424,20 +7424,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AALService.java">org/universAAL/ontology/profile/AALService.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.health.HealthActivator.java">org/universAAL/ontology/health/HealthActivator.java</a>
                 </td>
                 <td>
@@ -7448,20 +7434,6 @@ under the License.
                 </td>
                 <td>
                   7
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.sysinfo.AALSpaceStatusDescriptor.java">org/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  9
                 </td>
               </tr>
                           <tr>
@@ -7998,6 +7970,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AppSubProfile.java">org/universAAL/ontology/profile/AppSubProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.indoor.Corridor.java">org/universAAL/ontology/location/indoor/Corridor.java</a>
                 </td>
                 <td>
@@ -8414,6 +8400,20 @@ under the License.
                 </td>
                 <td>
                   12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.profile.AppServiceProfile.java">org/universAAL/ontology/profile/AppServiceProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
                 </td>
               </tr>
                           <tr>

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.profile.AssistedPersonProfile
-	c370835 [label=<<table title="org.universAAL.ontology.profile.AssistedPersonProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssistedPersonProfile.html">
+	c370833 [label=<<table title="org.universAAL.ontology.profile.AssistedPersonProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssistedPersonProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AssistedPersonProfile </td></tr>
 		</table></td></tr>
@@ -34,7 +34,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./CaregiverProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.AssistedPersonProfile extends org.universAAL.ontology.profile.UserProfile
-	c370850:p -> c370835:p [dir=back,arrowtail=empty];
+	c370850:p -> c370833:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.UserProfile extends org.universAAL.ontology.profile.Profile
 	c370849:p -> c370850:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.CaregiverProfile extends org.universAAL.ontology.profile.UserProfile

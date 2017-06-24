@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c160971" href="./GasSensor.html" title="org.universAAL.ontology.device.GasSensor" alt="" coords="16,209,101,234"/>
+<area shape="rect" id="c158563" href="./GasSensor.html" title="org.universAAL.ontology.device.GasSensor" alt="" coords="16,209,101,234"/>
 <area shape="rect" id="node1" href="./GasSensor.html" title="&lt;TABLE&gt;" alt="" coords="5,197,112,245"/>
-<area shape="rect" id="c161001" href="./SmokeSensor.html" title="org.universAAL.ontology.device.SmokeSensor" alt="" coords="146,209,249,234"/>
+<area shape="rect" id="c158593" href="./SmokeSensor.html" title="org.universAAL.ontology.device.SmokeSensor" alt="" coords="146,209,249,234"/>
 <area shape="rect" id="node2" href="./SmokeSensor.html" title="&lt;TABLE&gt;" alt="" coords="136,197,259,245"/>
-<area shape="rect" id="c161011" href="./COSensor.html" title="org.universAAL.ontology.device.COSensor" alt="" coords="293,209,374,234"/>
+<area shape="rect" id="c158603" href="./COSensor.html" title="org.universAAL.ontology.device.COSensor" alt="" coords="293,209,374,234"/>
 <area shape="rect" id="node3" href="./COSensor.html" title="&lt;TABLE&gt;" alt="" coords="283,197,384,245"/>
-<area shape="rect" id="c161019" href="./EnvironmentSensor.html" title="org.universAAL.ontology.device.EnvironmentSensor" alt="" coords="198,113,333,138"/>
+<area shape="rect" id="c158611" href="./EnvironmentSensor.html" title="org.universAAL.ontology.device.EnvironmentSensor" alt="" coords="198,113,333,138"/>
 <area shape="rect" id="node4" href="./EnvironmentSensor.html" title="&lt;TABLE&gt;" alt="" coords="188,101,343,149"/>
-<area shape="rect" id="c161020" href="./CO2Sensor.html" title="org.universAAL.ontology.device.CO2Sensor" alt="" coords="418,209,507,234"/>
+<area shape="rect" id="c158612" href="./CO2Sensor.html" title="org.universAAL.ontology.device.CO2Sensor" alt="" coords="418,209,507,234"/>
 <area shape="rect" id="node5" href="./CO2Sensor.html" title="&lt;TABLE&gt;" alt="" coords="408,197,517,245"/>
-<area shape="rect" id="c161021" href="./Sensor.html" title="org.universAAL.ontology.device.Sensor" alt="" coords="235,17,296,42"/>
+<area shape="rect" id="c158613" href="./Sensor.html" title="org.universAAL.ontology.device.Sensor" alt="" coords="235,17,296,42"/>
 <area shape="rect" id="node6" href="./Sensor.html" title="&lt;TABLE&gt;" alt="" coords="224,5,307,53"/>
 </map>

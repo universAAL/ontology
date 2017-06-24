@@ -10,50 +10,50 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.device.CO2Meter
-	c160367 [label=<<table title="org.universAAL.ontology.device.CO2Meter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CO2Meter.html">
+	c157959 [label=<<table title="org.universAAL.ontology.device.CO2Meter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CO2Meter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CO2Meter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CO2Meter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.SmokeMeter
-	c160392 [label=<<table title="org.universAAL.ontology.device.SmokeMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SmokeMeter.html">
+	c157984 [label=<<table title="org.universAAL.ontology.device.SmokeMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SmokeMeter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SmokeMeter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SmokeMeter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.COMeter
-	c160408 [label=<<table title="org.universAAL.ontology.device.COMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./COMeter.html">
+	c158000 [label=<<table title="org.universAAL.ontology.device.COMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./COMeter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> COMeter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./COMeter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.EnvironmentMeter
-	c160413 [label=<<table title="org.universAAL.ontology.device.EnvironmentMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EnvironmentMeter.html">
+	c158005 [label=<<table title="org.universAAL.ontology.device.EnvironmentMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EnvironmentMeter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EnvironmentMeter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EnvironmentMeter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.GasMeter
-	c160414 [label=<<table title="org.universAAL.ontology.device.GasMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GasMeter.html">
+	c158006 [label=<<table title="org.universAAL.ontology.device.GasMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GasMeter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GasMeter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GasMeter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.Sensor
-	c160419 [label=<<table title="org.universAAL.ontology.device.Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sensor.html">
+	c158011 [label=<<table title="org.universAAL.ontology.device.Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Sensor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Sensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.device.CO2Meter extends org.universAAL.ontology.device.EnvironmentMeter
-	c160413:p -> c160367:p [dir=back,arrowtail=empty];
+	c158005:p -> c157959:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.SmokeMeter extends org.universAAL.ontology.device.EnvironmentMeter
-	c160413:p -> c160392:p [dir=back,arrowtail=empty];
+	c158005:p -> c157984:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.COMeter extends org.universAAL.ontology.device.EnvironmentMeter
-	c160413:p -> c160408:p [dir=back,arrowtail=empty];
+	c158005:p -> c158000:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.EnvironmentMeter extends org.universAAL.ontology.device.Sensor
-	c160419:p -> c160413:p [dir=back,arrowtail=empty];
+	c158011:p -> c158005:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.GasMeter extends org.universAAL.ontology.device.EnvironmentMeter
-	c160413:p -> c160414:p [dir=back,arrowtail=empty];
+	c158005:p -> c158006:p [dir=back,arrowtail=empty];
 }
 

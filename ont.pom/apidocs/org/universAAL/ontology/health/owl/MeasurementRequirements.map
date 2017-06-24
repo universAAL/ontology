@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c240225" href="./BloodPressureRequirement.html" title="org.universAAL.ontology.health.owl.BloodPressureRequirement" alt="" coords="15,209,195,234"/>
+<area shape="rect" id="c237817" href="./BloodPressureRequirement.html" title="org.universAAL.ontology.health.owl.BloodPressureRequirement" alt="" coords="15,209,195,234"/>
 <area shape="rect" id="node1" href="./BloodPressureRequirement.html" title="&lt;TABLE&gt;" alt="" coords="5,197,205,245"/>
-<area shape="rect" id="c240227" href="./WeightRequirement.html" title="org.universAAL.ontology.health.owl.WeightRequirement" alt="" coords="240,209,376,234"/>
+<area shape="rect" id="c237819" href="./WeightRequirement.html" title="org.universAAL.ontology.health.owl.WeightRequirement" alt="" coords="240,209,376,234"/>
 <area shape="rect" id="node2" href="./WeightRequirement.html" title="&lt;TABLE&gt;" alt="" coords="229,197,387,245"/>
-<area shape="rect" id="c240235" href="./HeartRateRequirement.html" title="org.universAAL.ontology.health.owl.HeartRateRequirement" alt="" coords="421,209,576,234"/>
+<area shape="rect" id="c237827" href="./HeartRateRequirement.html" title="org.universAAL.ontology.health.owl.HeartRateRequirement" alt="" coords="421,209,576,234"/>
 <area shape="rect" id="node3" href="./HeartRateRequirement.html" title="&lt;TABLE&gt;" alt="" coords="411,197,587,245"/>
-<area shape="rect" id="c240238" href="./MeasurementRequirements.html" title="org.universAAL.ontology.health.owl.MeasurementRequirements" alt="" coords="217,113,399,138"/>
+<area shape="rect" id="c237830" href="./MeasurementRequirements.html" title="org.universAAL.ontology.health.owl.MeasurementRequirements" alt="" coords="217,113,399,138"/>
 <area shape="rect" id="node4" href="./MeasurementRequirements.html" title="&lt;TABLE&gt;" alt="" coords="207,101,409,149"/>
-<area shape="rect" id="c240358" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="243,17,373,42"/>
+<area shape="rect" id="c237950" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="243,17,373,42"/>
 <area shape="rect" id="node8" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="233,5,383,53"/>
 </map>

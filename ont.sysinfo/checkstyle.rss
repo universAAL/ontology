@@ -46,20 +46,6 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.AALSpaceDescriptor.java">org/universAAL/ontology/sysinfo/AALSpaceDescriptor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  9
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SysinfoOntology.java">org/universAAL/ontology/sysinfo/SysinfoOntology.java</a>
                 </td>
                 <td>
@@ -102,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.AALSpaceStatusDescriptor.java">org/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor.java</a>
+                  <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SpaceDescriptor.java">org/universAAL/ontology/sysinfo/SpaceDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -130,6 +116,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SpaceStatusDescriptor.java">org/universAAL/ontology/sysinfo/SpaceStatusDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.PeerCardDescriptor.java">org/universAAL/ontology/sysinfo/PeerCardDescriptor.java</a>
                 </td>
                 <td>
@@ -150,7 +150,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   14

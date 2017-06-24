@@ -16,28 +16,28 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../phThing/PhysicalThing.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.AssistedPerson
-	c369630 [label=<<table title="org.universAAL.ontology.profile.AssistedPerson" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssistedPerson.html">
+	c369628 [label=<<table title="org.universAAL.ontology.profile.AssistedPerson" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssistedPerson.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AssistedPerson </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AssistedPerson.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.User
-	c369634 [label=<<table title="org.universAAL.ontology.profile.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./User.html">
+	c369632 [label=<<table title="org.universAAL.ontology.profile.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./User.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> User </td></tr>
 		</table></td></tr>
 		</table>>, URL="./User.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.Caregiver
-	c369635 [label=<<table title="org.universAAL.ontology.profile.Caregiver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Caregiver.html">
+	c369633 [label=<<table title="org.universAAL.ontology.profile.Caregiver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Caregiver.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Caregiver </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Caregiver.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.AssistedPerson extends org.universAAL.ontology.profile.User
-	c369634:p -> c369630:p [dir=back,arrowtail=empty];
+	c369632:p -> c369628:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.User extends org.universAAL.ontology.phThing.PhysicalThing
-	c369389:p -> c369634:p [dir=back,arrowtail=empty];
+	c369389:p -> c369632:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.Caregiver extends org.universAAL.ontology.profile.User
-	c369634:p -> c369635:p [dir=back,arrowtail=empty];
+	c369632:p -> c369633:p [dir=back,arrowtail=empty];
 }
 
