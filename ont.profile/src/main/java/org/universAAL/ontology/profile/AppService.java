@@ -64,7 +64,7 @@ public class AppService extends ManagedIndividual {
 	}
 
 	/**
-	 * Sets the value for the AAL Service Profile of this AAL Service
+	 * Sets the value for the Service Profile of this Service
 	 *
 	 * @param value
 	 *            The Profile to set
@@ -74,9 +74,9 @@ public class AppService extends ManagedIndividual {
 	}
 
 	/**
-	 * Gets the value of the AAL Service Profile of this AAL Service
+	 * Gets the value of the Service Profile of this Service
 	 *
-	 * @return The Profile of the AAL Space
+	 * @return The Profile of the Space
 	 */
 	public AppServiceProfile getProfile() {
 		return (AppServiceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
