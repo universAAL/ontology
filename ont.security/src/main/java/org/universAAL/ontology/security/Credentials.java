@@ -22,7 +22,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 /**
  * Upper Credentials information Concept. This class should be extended for each
  * type of credentials.
- * 
+ *
  * @author amedrano
  *
  */

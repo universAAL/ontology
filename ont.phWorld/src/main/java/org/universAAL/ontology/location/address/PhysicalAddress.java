@@ -1,21 +1,21 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
+
 	Copyright 2008-2010 ITACA-TSB, http://www.tsb.upv.es
-        Instituto Tecnologico de Aplicaciones de Comunicacion 
-        Avanzadas - Grupo Tecnologias para la Salud y el 
+        Instituto Tecnologico de Aplicaciones de Comunicacion
+        Avanzadas - Grupo Tecnologias para la Salud y el
         Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -35,9 +35,9 @@ import org.universAAL.ontology.location.LocationOntology;
  * included in this class are the mandatory ones for representing an ontological
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
- * 
+ *
  * @author alfiva
- * 
+ *
  */
 public class PhysicalAddress extends Address {
 
@@ -59,7 +59,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Creates a PhysicalAddress object
-	 * 
+	 *
 	 * @param uri
 	 *            the object URI
 	 */
@@ -89,7 +89,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Gets the Building value of the Address
-	 * 
+	 *
 	 * @return The Building value
 	 */
 	public String getBuildingID() {
@@ -98,7 +98,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Sets the Building value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -108,7 +108,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Gets the Hall value of the Address
-	 * 
+	 *
 	 * @return The Hall value
 	 */
 	public String getHallID() {
@@ -117,7 +117,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Sets the Hall value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -127,7 +127,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Gets the Floor value of the Address
-	 * 
+	 *
 	 * @return The Floor value
 	 */
 	public String getFloorID() {
@@ -136,7 +136,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Sets the Floor value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -146,7 +146,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Gets the Door value of the Address
-	 * 
+	 *
 	 * @return The Door value
 	 */
 	public String getDoorID() {
@@ -155,7 +155,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Sets the Door value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -165,7 +165,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Gets the Desk value of the Address
-	 * 
+	 *
 	 * @return The Desk value
 	 */
 	public String getDeskID() {
@@ -174,7 +174,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Sets the Desk value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -184,7 +184,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Gets the Office value of the Address
-	 * 
+	 *
 	 * @return The Office value
 	 */
 	public String getOfficeID() {
@@ -193,7 +193,7 @@ public class PhysicalAddress extends Address {
 
 	/**
 	 * Sets the Office value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */

@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -28,9 +28,9 @@ import org.universAAL.ontology.shape.Shape;
 
 /**
  * Represents the class of physical things that are supposed to have a location.
- * 
+ *
  * @author mtazari
- * 
+ *
  */
 public class PhysicalThing extends ManagedIndividual {
 	public static final String MY_URI = PhThingOntology.NAMESPACE + "PhysicalThing";
@@ -71,7 +71,7 @@ public class PhysicalThing extends ManagedIndividual {
 	 * the location can be represented in its reduced form. As the class has no
 	 * other property, for all other input, we return
 	 * {@link ManagedIndividual#PROP_SERIALIZATION_OPTIONAL}.
-	 * 
+	 *
 	 * @see ManagedIndividual#getPropSerializationType(String).
 	 */
 	public int getPropSerializationType(String propURI) {
@@ -88,13 +88,13 @@ public class PhysicalThing extends ManagedIndividual {
 	}
 
 	/**
-	 * 
+	 *
 	 * Defines, that the PhysicalThing is located in location o at point x,y,z
 	 * Warning: This does not set the PROP_PHYSICAL_LOCATION property to o, but
 	 * to an new anon place, that is "contained in" the given location Note: the
 	 * coordinates are defining the center of the PhysicalThing relative to the
 	 * center of the containing location
-	 * 
+	 *
 	 * @param o
 	 *            the location
 	 * @param x
@@ -115,13 +115,13 @@ public class PhysicalThing extends ManagedIndividual {
 	}
 
 	/**
-	 * 
+	 *
 	 * Defines, that the PhysicalThing is located in location o at point x,y,z
 	 * Warning: This does not set the PROP_PHYSICAL_LOCATION property to o, but
 	 * to a new anon place, that is "contained in" the given location Note: the
 	 * coordinates are defining center of the PhysicalThing relative to the
 	 * lower, left corner of the containing location, assuming its a box
-	 * 
+	 *
 	 * @param o
 	 *            the location
 	 * @param x
@@ -151,13 +151,13 @@ public class PhysicalThing extends ManagedIndividual {
 	}
 
 	/**
-	 * 
+	 *
 	 * Defines, that the PhysicalThing is located in location o at point x,y,z
 	 * Warning: This does not set the PROP_PHYSICAL_LOCATION property to o, but
 	 * to an new anon place, that is "contained in" the given location Note: the
 	 * coordinates are defining corner of the PhysicalThing relative to the
 	 * lower, left corner of the containing location, assuming its a box
-	 * 
+	 *
 	 * @param o
 	 *            the location
 	 * @param x

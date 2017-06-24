@@ -19,7 +19,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * @author amedrano
- * 
+ *
  */
 public abstract class Factor extends ManagedIndividual {
 	public static final String MY_URI = SecurityOntology.NAMESPACE + "Factor";

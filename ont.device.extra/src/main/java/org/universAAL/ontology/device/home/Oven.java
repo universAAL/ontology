@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2010 R&S Info, http://www.rsinfo.eu
-	R&S INFO s.r.l. 
-	
-	See the NOTICE file distributed with this work for additional 
+	R&S INFO s.r.l.
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,9 +27,9 @@ import org.universAAL.ontology.device.StatusValue;
  * class are the mandatory ones for representing an ontological concept in Java
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
- * 
+ *
  * @author amoretti
- * 
+ *
  */
 public class Oven extends Actuator {
 

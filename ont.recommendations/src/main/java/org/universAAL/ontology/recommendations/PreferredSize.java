@@ -20,7 +20,7 @@ import org.universAAL.middleware.ui.UIHandler;
 
 /**
  * Used to tell {@link UIHandler}s the optimal size an element should have.
- * 
+ *
  * @author amedrano
  * @see SizeUnit
  */
@@ -29,7 +29,7 @@ public class PreferredSize extends Size {
 	public static final String MY_URI = RecommendationsOntology.NAMESPACE + "PreferredSize";
 
 	/**
-	 * 
+	 *
 	 */
 	public PreferredSize() {
 	}

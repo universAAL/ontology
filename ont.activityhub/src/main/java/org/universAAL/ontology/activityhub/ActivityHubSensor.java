@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -26,9 +26,9 @@ import org.universAAL.ontology.device.Sensor;
 /**
  * Ontological representation of an activity hub sensor concept, to be extended
  * by different sensor types.
- * 
+ *
  * @author Thomas Fuxreiter
- * 
+ *
  */
 public abstract class ActivityHubSensor extends Sensor {
 

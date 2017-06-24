@@ -23,7 +23,7 @@ import org.universAAL.ontology.security.SecurityOntology;
 
 /**
  * @author amedrano
- * 
+ *
  */
 public class SecurityActivator implements ModuleActivator {
 

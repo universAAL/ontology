@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -27,9 +27,9 @@ import org.universAAL.ontology.ActivityHubOntology;
  * Ontological SERVICE that handles activity hub devices. Methods included in
  * this class are the mandatory ones for representing an ontological service in
  * Java classes for uAAL.
- * 
+ *
  * Built according to the uAAL lighting service example.
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class ActivityHub extends Service {
@@ -52,7 +52,7 @@ public class ActivityHub extends Service {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * org.universAAL.middleware.owl.ManagedIndividual#getPropSerializationType
 	 * (java.lang.String)

@@ -1,21 +1,21 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
+
 	Copyright 2008-2010 ITACA-TSB, http://www.tsb.upv.es
-        Instituto Tecnologico de Aplicaciones de Comunicacion 
-        Avanzadas - Grupo Tecnologias para la Salud y el 
+        Instituto Tecnologico de Aplicaciones de Comunicacion
+        Avanzadas - Grupo Tecnologias para la Salud y el
         Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -39,9 +39,9 @@ import org.universAAL.ontology.location.outdoor.State;
  * recommended to use one of its subclasses. Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
  * for uAAL. Usually it includes getters and setters for most of its properties.
- * 
+ *
  * @author alfiva
- * 
+ *
  */
 public class Address extends ManagedIndividual {
 
@@ -64,7 +64,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Creates a Address object
-	 * 
+	 *
 	 * @param uri
 	 *            the object URI
 	 */
@@ -88,7 +88,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the Region value of the Address
-	 * 
+	 *
 	 * @return The Region value
 	 */
 	public Region getRegion() {
@@ -97,7 +97,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the Region value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -107,7 +107,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the Country value of the Address
-	 * 
+	 *
 	 * @return The Country value
 	 */
 	public Country getCountry() {
@@ -116,7 +116,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the Country value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -126,7 +126,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the State value of the Address
-	 * 
+	 *
 	 * @return The State value
 	 */
 	public State getState() {
@@ -135,7 +135,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the State value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -145,7 +145,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the City value of the Address
-	 * 
+	 *
 	 * @return The City value
 	 */
 	public City getCity() {
@@ -154,7 +154,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the City value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -164,7 +164,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the CityQuarter value of the Address
-	 * 
+	 *
 	 * @return The CityQuarter value
 	 */
 	public CityQuarter getCityQuarter() {
@@ -173,7 +173,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the CityQuarter value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -183,7 +183,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the CityRegion value of the Address
-	 * 
+	 *
 	 * @return The CityRegion value
 	 */
 	public CityRegion getCityRegion() {
@@ -192,7 +192,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the CityRegion value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -202,7 +202,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the CityPlace value of the Address
-	 * 
+	 *
 	 * @return The CityPlace value
 	 */
 	public CityPlace getCityPlace() {
@@ -211,7 +211,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the CityPlace value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -221,7 +221,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the PostalCode value of the Address
-	 * 
+	 *
 	 * @return The PostalCode value
 	 */
 	public String getPostalCode() {
@@ -230,7 +230,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the PostalCode value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -240,7 +240,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Gets the External Address value of the Address
-	 * 
+	 *
 	 * @return The External Address value
 	 */
 	public String getExtAddress() {
@@ -249,7 +249,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Sets the ExternalAddress value of the Address
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */
@@ -259,7 +259,7 @@ public class Address extends ManagedIndividual {
 
 	/**
 	 * Returns a printable summary of the Address with all its values.
-	 * 
+	 *
 	 * @return A string with the Address values. May have several lines.
 	 */
 	public String toReadableString() {

@@ -1,13 +1,13 @@
 /*******************************************************************************
- * Copyright 2012 UPM, http://www.upm.es 
+ * Copyright 2012 UPM, http://www.upm.es
  Universidad Politécnica de Madrid
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -24,9 +24,9 @@ import java.util.List;
  * its associated methods. A conditional question is a question that only is
  * shown to the user when he/she has given a specific answer (trigger answer) to
  * a specific previous question.
- * 
+ *
  * @author mdelafuente
- * 
+ *
  */
 public class ConditionalQuestion extends Question {
 
@@ -48,7 +48,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * A conditional question can be implemented with the question wording, the
 	 * trigger answer, the associated question and the answer type
-	 * 
+	 *
 	 * @param qWording
 	 * @param triggerAnswer
 	 * @param dependingQuestion
@@ -66,7 +66,7 @@ public class ConditionalQuestion extends Question {
 	 * A conditional question can be implemented with the question wording, the
 	 * trigger answer, the associated question, the choices given and the answer
 	 * type
-	 * 
+	 *
 	 * @param qWording
 	 * @param triggerAnswer
 	 * @param dependingQuestion
@@ -88,7 +88,7 @@ public class ConditionalQuestion extends Question {
 	 * A conditional question can be implemented with the question wording, the
 	 * trigger answer, the associated question, the choices given, the answer
 	 * type and the associated correct answer.
-	 * 
+	 *
 	 * @param qWording
 	 * @param triggerAnswer
 	 * @param dependingQuestion
@@ -112,7 +112,7 @@ public class ConditionalQuestion extends Question {
 	 * A conditional question can be implemented with the question wording, the
 	 * trigger answer, the associated question, the choices given, the answer
 	 * type and the set of correct answers associated.
-	 * 
+	 *
 	 * @param qWording
 	 * @param triggerAnswer
 	 * @param dependingQuestion
@@ -136,7 +136,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * The following constructors are the same as the previous ones, but with
 	 * the trigger answer as a set of objects
-	 * 
+	 *
 	 */
 
 	public ConditionalQuestion(String qWording, Object[] triggerAnswer, Question dependingQuestion, String answerType) {
@@ -197,7 +197,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * The following method gets the question to which the Conditional Question
 	 * is related to.
-	 * 
+	 *
 	 * @return question ({@link Question})
 	 * @see Question
 	 */
@@ -208,7 +208,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * The following method sets the question to which the Conditional Question
 	 * is related to.
-	 * 
+	 *
 	 * @param dependingQuestion
 	 *            ({@link Question})
 	 * @see Question
@@ -221,7 +221,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * The following method gets the trigger that fires the Conditional Question
 	 * based on an answer given by the user.
-	 * 
+	 *
 	 * @return question ({@link Question})
 	 * @see Question
 	 * @see Answer
@@ -243,7 +243,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * The following method sets the triggers that fires the Conditional
 	 * Question based on an answer given by the user.
-	 * 
+	 *
 	 * @param question
 	 *            ({@link Question})
 	 * @see Question
@@ -261,7 +261,7 @@ public class ConditionalQuestion extends Question {
 	/**
 	 * The following method sets the trigger that fires the Conditional Question
 	 * based on an answer given by the user.
-	 * 
+	 *
 	 * @param question
 	 *            ({@link Question})
 	 * @see Question

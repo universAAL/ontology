@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -30,9 +30,9 @@ import org.universAAL.ontology.location.LocationOntology;
  * system. Methods included in this class are the mandatory ones for
  * representing an ontological concept in Java classes for uAAL. Usually it
  * includes getters and setters for most of its properties.
- * 
+ *
  * @author chwirth
- * 
+ *
  */
 
 public class Point extends Location {
@@ -67,7 +67,7 @@ public class Point extends Location {
 
 	/**
 	 * Point constructor.
-	 * 
+	 *
 	 * @param uri
 	 *            The ontological object URI
 	 * @param x
@@ -102,7 +102,7 @@ public class Point extends Location {
 
 	/**
 	 * Point constructor.
-	 * 
+	 *
 	 * @param uri
 	 *            The ontological object URI
 	 * @param x
@@ -133,7 +133,7 @@ public class Point extends Location {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return the double array {x, y, z}.If the point z property is missing the
 	 *         method assumes that it is zero.
 	 */
@@ -233,7 +233,7 @@ public class Point extends Location {
 	}
 
 	/**
-	 * 
+	 *
 	 * Get the distance between 2 points represented using longitude/latitude
 	 * pairs
 	 */
@@ -269,7 +269,7 @@ public class Point extends Location {
 	 * if the point is in a OriginedMetric, the point will be transformed to the
 	 * next higher system A 2d point gets transformed to a 3d point, because all
 	 * non local coordinate systems are 3d
-	 * 
+	 *
 	 * @return the point
 	 */
 	public Point getInHigherCoordinateSystem() {
@@ -316,7 +316,7 @@ public class Point extends Location {
 	 * if the point is in a OriginedMetric, the point will be transformed to the
 	 * given higher system A 2d point gets transformed to a 3d point, because
 	 * all non local coordinate systems are 3d
-	 * 
+	 *
 	 * @param system
 	 *            the target system
 	 * @return the point or null if the target system is not part of the higher
@@ -338,7 +338,7 @@ public class Point extends Location {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return true, if the point is defined by only two values
 	 */
 	public boolean is2D() {

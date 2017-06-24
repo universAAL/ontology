@@ -22,7 +22,7 @@ import org.universAAL.middleware.service.owl.Service;
 /**
  * Service Description for Authorisadtion. Authorisation will check the
  * authenticated user against its AccessRights over a specific Asset.
- * 
+ *
  * @author amedrano
  *
  */

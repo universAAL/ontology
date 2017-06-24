@@ -19,7 +19,7 @@ package org.universAAL.ontology.security;
 
 /**
  * User-Password type Credentials.
- * 
+ *
  * @author amedrano
  *
  */

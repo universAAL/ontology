@@ -1,26 +1,26 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
  */
-/** 
+/**
  * Superclass for all locations that are defined according to the physical world ontology.
  * New implementations need to be added to the Activator.loadClasses() list.
- * 
+ *
  */
 package org.universAAL.ontology.location;
 
@@ -37,7 +37,7 @@ import org.universAAL.middleware.owl.supply.AbsLocation;
  * included in this class are the mandatory ones for representing an ontological
  * concept in Java classes for uAAL. Usually it includes getters and setters for
  * most of its properties.
- * 
+ *
  * @author chwirth
  */
 public class Location extends AbsLocation {
@@ -73,7 +73,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Creates a new Location object
-	 * 
+	 *
 	 * @param uri
 	 *            The Location instance URI
 	 * @param name
@@ -93,7 +93,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Add a new Location in the given property list
-	 * 
+	 *
 	 * @param propURI
 	 *            the property
 	 * @param location
@@ -119,7 +119,7 @@ public class Location extends AbsLocation {
 	/**
 	 * Sets a property. Ensures that the given property is of a valid type (List
 	 * or non-List).
-	 * 
+	 *
 	 * @see org.universAAL.middleware.owl.ManagedIndividual#setProperty(java.lang
 	 *      .String, java.lang.Object)
 	 */
@@ -141,7 +141,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Returns an array of all Locations that are value of the given property
-	 * 
+	 *
 	 * @param propURI
 	 * @return
 	 */
@@ -154,7 +154,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Removes a Location value in a value list of the given property
-	 * 
+	 *
 	 * @param propURI
 	 * @param location
 	 *            The location to remove, must not be null.
@@ -177,7 +177,7 @@ public class Location extends AbsLocation {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return The value of "is adjacent to" property. If the property is not
 	 *         present a null object is returned.
 	 */
@@ -187,7 +187,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Set the "is adjacent to" attribute.
-	 * 
+	 *
 	 * @param location
 	 *            A null value is not admitted.
 	 */
@@ -199,7 +199,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * removes a location from the "is adjacent to" attribute.
-	 * 
+	 *
 	 */
 	public void removeAdjacentLocation(Location location) {
 		if (location == null)
@@ -215,7 +215,7 @@ public class Location extends AbsLocation {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return The value of "is connected to" property. If the property is not
 	 *         present a null object is returned.
 	 */
@@ -225,7 +225,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Adds a value to the "is connected to" attribute.
-	 * 
+	 *
 	 * @param location
 	 *            A null value is not admitted.
 	 */
@@ -237,7 +237,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * removes a location from the "is connected to" attribute.
-	 * 
+	 *
 	 */
 	public void removeConnectedLocation(Location location) {
 		if (location == null)
@@ -254,7 +254,7 @@ public class Location extends AbsLocation {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return The value of "contains" property. If the property is not present
 	 *         a null object is returned.
 	 */
@@ -265,7 +265,7 @@ public class Location extends AbsLocation {
 	/**
 	 * Adds a value to the "contains" attribute. it also sets the
 	 * location.containedBy property if not set.
-	 * 
+	 *
 	 * @param location
 	 *            A null value is not admitted.
 	 */
@@ -280,7 +280,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * removes a location from the "contains" attribute.
-	 * 
+	 *
 	 */
 	public void removeContainedLocation(Location location) {
 		if (location == null)
@@ -297,7 +297,7 @@ public class Location extends AbsLocation {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return The value of "is contained in" property. If the property is not
 	 *         present a null object is returned.
 	 */
@@ -307,7 +307,7 @@ public class Location extends AbsLocation {
 
 	/**
 	 * Sets the "is contained in" attribute.
-	 * 
+	 *
 	 * @param location
 	 *            A null value is not admitted.
 	 */

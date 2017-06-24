@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -36,7 +36,7 @@ import org.universAAL.ontology.device.Sensor;
 /**
  * The ontology represents the sensors specified in ISO 11073 - Part 10471
  * (Independent living activity hub)
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class ActivityHubOntology extends Ontology {

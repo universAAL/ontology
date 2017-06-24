@@ -1,16 +1,16 @@
-/*	
+/*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -43,9 +43,9 @@ import org.universAAL.ontology.reasoner.Persistent;
  * provides the basic methods to hold object of type P during runtime and
  * save/load them from the file-system using the capabilities of the middlewares
  * serializer.
- * 
+ *
  * @author amarinc
- * 
+ *
  * @param <P>
  *            Class the be managed. Need to be a sibling of Persistent
  */
@@ -59,7 +59,7 @@ public class ElementModel<P extends Resource> {
 	 * random integer. This is to make nearly sure that their is no filename
 	 * twice on one site and avoid a complicated file-name managing at the other
 	 * side.
-	 * 
+	 *
 	 * @return Postfix with date and random number
 	 */
 	private static String getFilePostfix() {
@@ -93,7 +93,7 @@ public class ElementModel<P extends Resource> {
 
 	/**
 	 * Creates a new model to manage objects of type P
-	 * 
+	 *
 	 * @param elementClass
 	 *            Class object of type P
 	 * @param serializer

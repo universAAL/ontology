@@ -19,7 +19,7 @@ package org.universAAL.ontology.security;
 
 /**
  * Location bound Session, a session that is only valid within a location.
- * 
+ *
  * @author amedrano
  *
  */

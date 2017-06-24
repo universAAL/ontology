@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -32,9 +32,9 @@ import org.universAAL.ontology.shape.Shape;
  * class are the mandatory ones for representing an ontological concept in Java
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
- * 
+ *
  * @author chwirth
- * 
+ *
  */
 
 public class Place extends Location {
@@ -47,7 +47,7 @@ public class Place extends Location {
 
 	/**
 	 * Creates a Place object
-	 * 
+	 *
 	 * @param uri
 	 *            the object URI
 	 */
@@ -64,7 +64,7 @@ public class Place extends Location {
 
 	/**
 	 * Creates a Place object
-	 * 
+	 *
 	 * @param uri
 	 *            this value can also be a null object
 	 * @param name
@@ -76,7 +76,7 @@ public class Place extends Location {
 
 	/**
 	 * Creates a Place object
-	 * 
+	 *
 	 * @param uri
 	 *            this value can also be a null object
 	 * @param name
@@ -96,7 +96,7 @@ public class Place extends Location {
 
 	/**
 	 * for interal use only
-	 * 
+	 *
 	 * @param shape
 	 */
 	public Place(Shape shape) {
@@ -106,7 +106,7 @@ public class Place extends Location {
 
 	/**
 	 * Creates a Place object
-	 * 
+	 *
 	 * @param uri
 	 *            this value can also be a null object
 	 * @param shape
@@ -137,7 +137,7 @@ public class Place extends Location {
 	/**
 	 * this is a simple setter method of the property location_of_physical_thing
 	 * of the location
-	 * 
+	 *
 	 * @param pt
 	 */
 	public void setPhysicalThingofLocation(PhysicalThing pt) {
@@ -157,13 +157,13 @@ public class Place extends Location {
 	/**
 	 * This method calculates the distance between a Place object and a Location
 	 * object.
-	 * 
-	 * 
+	 *
+	 *
 	 * @param other
 	 *            the Location object
 	 * @return a float value which provides information about the distance
 	 *         between the Place object and the Location Object
-	 * 
+	 *
 	 */
 	public float getDistanceTo(Location other) {
 		if (other == null || !(other instanceof Location))
@@ -187,7 +187,7 @@ public class Place extends Location {
 	/**
 	 * returns the smallest, contained place that contains the given point does
 	 * not consider overlapping Places
-	 * 
+	 *
 	 * @param p
 	 * @return the smallest containing place or null if the point is not
 	 *         contained
@@ -224,7 +224,7 @@ public class Place extends Location {
 
 	/**
 	 * Sets the place this place is contained in, originated at the given point
-	 * 
+	 *
 	 * @param place
 	 *            must have a shape
 	 * @param x
@@ -243,7 +243,7 @@ public class Place extends Location {
 
 	/**
 	 * Adds a place this place contains, originated at the given point
-	 * 
+	 *
 	 * @param place
 	 *            must have a shape
 	 * @param x
@@ -264,7 +264,7 @@ public class Place extends Location {
 	/**
 	 * Adds a place this place contains, originated at the given point. The
 	 * origin is not the center of the object, but the lower, left corner
-	 * 
+	 *
 	 * @param place
 	 *            must have a box shape
 	 * @param x
@@ -294,7 +294,7 @@ public class Place extends Location {
 
 	/**
 	 * Gets the Address value
-	 * 
+	 *
 	 * @return The Address value
 	 */
 	public Address getAddress() {
@@ -303,7 +303,7 @@ public class Place extends Location {
 
 	/**
 	 * Sets the Address value
-	 * 
+	 *
 	 * @param reg
 	 *            The value to set
 	 */

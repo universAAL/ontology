@@ -31,7 +31,7 @@ import org.universAAL.ontology.phThing.PhThingOntology;
 
 /**
  * The Ontology.
- * 
+ *
  * @author Carsten Stockloew
  */
 

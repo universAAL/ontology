@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -27,11 +27,11 @@ import org.universAAL.ontology.ActivityHubOntology;
  * Part 10471 (Independent living activity hub), edition 2010-05-01 Methods
  * included in this class are the mandatory ones for representing an ontological
  * enumeration in Java classes for uAAL.
- * 
+ *
  * Specific sensor events (from standard specification): - high temperature
  * detected - low temperature detected - rate of change too fast (optional) - no
  * condition detected (optional)
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class TemperatureSensorEvent extends ActivityHubSensorEvent {

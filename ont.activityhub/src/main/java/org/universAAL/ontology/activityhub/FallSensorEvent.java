@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -27,12 +27,12 @@ import org.universAAL.ontology.ActivityHubOntology;
  * 10471 (Independent living activity hub). Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
  * for uAAL. Usually it includes getters and setters for most of its properties.
- * 
+ *
  * Specific sensor events (from standard specification): - fall detected - no
  * condition detected (optional)
- * 
+ *
  * @author Thomas Fuxreiter
- * 
+ *
  */
 public class FallSensorEvent extends ActivityHubSensorEvent {
 	public static final String MY_URI = ActivityHubOntology.NAMESPACE + "FallSensorEvent";

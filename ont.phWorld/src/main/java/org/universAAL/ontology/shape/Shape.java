@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -39,9 +39,9 @@ import org.universAAL.ontology.location.position.Point;
  * class are the mandatory ones for representing an ontological concept in Java
  * classes for uAAL. Usually it includes getters and setters for most of its
  * properties.
- * 
+ *
  * @author chwirth
- * 
+ *
  */
 
 public abstract class Shape extends ManagedIndividual {
@@ -54,7 +54,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * Creates a Shape object
-	 * 
+	 *
 	 * @param uri
 	 *            the object URI
 	 */
@@ -71,7 +71,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * Creates a Shape object
-	 * 
+	 *
 	 * @param uri
 	 *            this value can also be a null object
 	 * @param pointRep
@@ -87,7 +87,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * Creates a Shape object
-	 * 
+	 *
 	 * @param pointRep
 	 *            a (optional) single point Represenation
 	 * @param system
@@ -101,7 +101,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * Creates a Shape object
-	 * 
+	 *
 	 * @param uri
 	 *            the universal identifier
 	 * @param system
@@ -114,7 +114,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * Creates a Shape object
-	 * 
+	 *
 	 * @param system
 	 *            The local coordinate system, normally a OriginedMetric
 	 */
@@ -130,7 +130,7 @@ public abstract class Shape extends ManagedIndividual {
 	/**
 	 * if no explicit point representation was set, the center of the shape is
 	 * returned
-	 * 
+	 *
 	 * @return
 	 */
 	public Point getPointRepresentation() {
@@ -143,7 +143,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * returns the centerpoint of the object
-	 * 
+	 *
 	 * @return the centerpoint
 	 */
 	public Point getCenter() {
@@ -155,7 +155,7 @@ public abstract class Shape extends ManagedIndividual {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param shape
 	 * @return
 	 */
@@ -178,7 +178,7 @@ public abstract class Shape extends ManagedIndividual {
 	 * Implementation Note: The points have to be transformed to a common
 	 * coordinate system via CoordinateSystem.findCommonCoordinateSystem and
 	 * getInHigherCoordinateSystem(commonSystem)
-	 * 
+	 *
 	 * @param p
 	 * @return the distance as positiv value or Point.NO_COMPUTABLE_DISTANCE or
 	 *         Point.INTERSECTING
@@ -215,7 +215,7 @@ public abstract class Shape extends ManagedIndividual {
 	/**
 	 * Returns the bounding volume of this Shape3D. If no volume was set, a
 	 * minimal axis aligned bounding box or sphere will be returned.
-	 * 
+	 *
 	 * @return the shape object representing the bounding volume
 	 */
 	public Shape getBoundingVolume() {
@@ -228,7 +228,7 @@ public abstract class Shape extends ManagedIndividual {
 	/**
 	 * Implementation Note: Must compute and set bounding sphere or box as
 	 * PROP_BOUNDING_VOLUME
-	 * 
+	 *
 	 * @return the bounding volume
 	 */
 	protected abstract Shape computeBoundingVolume();
@@ -237,7 +237,7 @@ public abstract class Shape extends ManagedIndividual {
 	 * Sets an explicit bounding volume, disabling the automated bounding volume
 	 * calculation If an other Shape than a Sphere or Box should be used, the
 	 * ray intersection method in Shape has to be extended
-	 * 
+	 *
 	 * @param shape
 	 *            FHSphere or a Box
 	 */
@@ -254,7 +254,7 @@ public abstract class Shape extends ManagedIndividual {
 	/**
 	 * Calculates the intersection of an ray with the bounding volume of the
 	 * shape
-	 * 
+	 *
 	 * @param base
 	 *            the base of the ray
 	 * @param dir
@@ -301,7 +301,7 @@ public abstract class Shape extends ManagedIndividual {
 
 	/**
 	 * returns if the given point is within the shape
-	 * 
+	 *
 	 * @param p
 	 * @return
 	 */

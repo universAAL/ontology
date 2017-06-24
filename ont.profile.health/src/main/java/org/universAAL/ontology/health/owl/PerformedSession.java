@@ -3,13 +3,13 @@
  *
  * OCO Source Materials
  * � Copyright IBM Corp. 2011
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -71,7 +71,7 @@ public class PerformedSession extends ManagedIndividual {
 	/*
 	 * public XMLGregorianCalendar getDate() { return
 	 * (XMLGregorianCalendar)props.get(PROP_DATE); }
-	 * 
+	 *
 	 * public void setDate(XMLGregorianCalendar date) { if(date != null)
 	 * props.put(PROP_DATE, date); }
 	 */

@@ -1,13 +1,13 @@
 /*******************************************************************************
- * Copyright 2012 UPM, http://www.upm.es 
+ * Copyright 2012 UPM, http://www.upm.es
  Universidad Politécnica de Madrid
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,9 +26,9 @@ import org.universAAL.middleware.ui.rdf.MediaObject;
  * This class describes the concept of Questionnaire, its properties and its
  * associated methods. A questionnaire is a composition of questions and
  * answers, given by an examined user.
- * 
+ *
  * @author mdelafuente
- * 
+ *
  */
 // NAMESPACE & PROPERTIES
 public class Questionnaire extends ManagedIndividual {
@@ -96,7 +96,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * The following method gets the questions associated to a questionnaire.
 	 * For more intuitive use, the method's name has been changed from
 	 * "getHasQuestion" to "getQuestions"
-	 * 
+	 *
 	 * @return Question[] ({@link Question})
 	 * @see Questionnaire
 	 * @see Question
@@ -117,7 +117,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * The following method sets the questions associated to a questionnaire.
 	 * For more intuitive use, the method's name has been changed from
 	 * "setHasQuestion" to "setQuestions"
-	 * 
+	 *
 	 * @param questions
 	 *            , the array of questions that composes the questionnaire
 	 * @see Question
@@ -132,7 +132,7 @@ public class Questionnaire extends ManagedIndividual {
 
 	/**
 	 * The following method sets the question associated to a questionnaire.
-	 * 
+	 *
 	 * @param question
 	 *            , the array of questions that composes the questionnaire
 	 * @see Question
@@ -155,7 +155,7 @@ public class Questionnaire extends ManagedIndividual {
 
 	/**
 	 * The following method gets the name of a questionnaire
-	 * 
+	 *
 	 * @return the questionnaire's name ({@link String})
 	 */
 	public String getName() {
@@ -164,7 +164,7 @@ public class Questionnaire extends ManagedIndividual {
 
 	/**
 	 * The following method sets the name of a questionnaire
-	 * 
+	 *
 	 * @param name
 	 *            , the questionnaire's name ({@link String})
 	 */
@@ -175,7 +175,7 @@ public class Questionnaire extends ManagedIndividual {
 
 	/**
 	 * The following method gets the description of a questionnaire
-	 * 
+	 *
 	 * @return the questionnaire's name ({@link String})
 	 */
 	public String getDescription() {
@@ -184,7 +184,7 @@ public class Questionnaire extends ManagedIndividual {
 
 	/**
 	 * The following method sets the name of a questionnaire
-	 * 
+	 *
 	 * @param qDescription
 	 *            , the questionnaire's name ({@link String})
 	 */
@@ -196,7 +196,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method checks if the questions within a questionnaire are
 	 * ordered.
-	 * 
+	 *
 	 * @return true if the questions are ordered
 	 * @return false if the questions are NOT ordered
 	 */
@@ -208,7 +208,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method sets if the questions within a questionnaire are
 	 * ordered or not.
-	 * 
+	 *
 	 * @param isOrdered
 	 *            (true if the questions are ordered, false if not)
 	 */
@@ -221,7 +221,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method calculates the number of questions within a
 	 * questionnaire.
-	 * 
+	 *
 	 * @return number of questions ({@link integer})
 	 */
 	public int getNumberOfTotalQuestions() {
@@ -233,7 +233,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method checks if the questionnaire contains
 	 * ConditionalQuestions.
-	 * 
+	 *
 	 * @return true if the questionnaire contains conditional questions
 	 * @return false if the questionnaire doesn't contain conditional questions
 	 * @see ConditionalQuestion
@@ -252,7 +252,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method checks if the questionnaire contains
 	 * MultiChoiceQuestions
-	 * 
+	 *
 	 * @return true if the questionnaire contains multi-choice questions
 	 * @return false if the questionnaire doesn't contain multi-choice questions
 	 * @see MultiChoiceQuestion
@@ -270,7 +270,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method checks if the questionnaire contains
 	 * SingleChoiceQuestions
-	 * 
+	 *
 	 * @return true if the questionnaire contains single-choice questions
 	 * @return false if the questionnaire doesn't contain single-choice
 	 *         questions
@@ -289,7 +289,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method checks if the questionnaire contains
 	 * QuestionWithMedia
-	 * 
+	 *
 	 * @return true if the questionnaire contains questions with media
 	 * @return false if the questionnaire doesn't contain questions with media
 	 * @see QuestionWithMedia
@@ -307,7 +307,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method returns all the ConditionalChoiceQuestions within a
 	 * questionnaire.
-	 * 
+	 *
 	 * @return the set of conditional-choice questions
 	 * @return null if there is not ConditionalQuestions in the questionnaire
 	 * @see ConditionalChoiceQuestion
@@ -336,7 +336,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * The following method returns all the MultiChoiceQuestions within a
 	 * questionnaire. Although a conditional question can be itself also a
 	 * multi-choice or single-choice question, we consider them separately.
-	 * 
+	 *
 	 * @return the set of multi-choice questions
 	 * @return null if there is not MultiChoiceQuestions in the questionnaire
 	 * @see MultiChoiceQuestion
@@ -363,7 +363,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * The following method returns all the SingleChoiceQuestions within a
 	 * questionnaire. Although a conditional question can be itself also a
 	 * multi-choice or single-choice question, we consider them separately.
-	 * 
+	 *
 	 * @return the set of single-choice questions
 	 * @return null if there is not SingleChoiceQuestions in the questionnaire
 	 * @see SingleChoiceQuestion
@@ -391,7 +391,7 @@ public class Questionnaire extends ManagedIndividual {
 	 * The following method returns all the QuestionWithMedia within a
 	 * questionnaire. Although a question with media can be itself also a
 	 * multi-choice or single-choice question, we consider them separately.
-	 * 
+	 *
 	 * @return the set of questions with media
 	 * @return null if there is not QuestionWithMedia in the questionnaire
 	 * @see QuestionWithMedia
@@ -417,7 +417,7 @@ public class Questionnaire extends ManagedIndividual {
 	/**
 	 * The following method gets the number of type of question, within the
 	 * questionnaire.
-	 * 
+	 *
 	 * @param uri
 	 *            , that indicates whether the question is MultiChoice,
 	 *            SingleChoice, Conditional or WithImage
@@ -551,7 +551,7 @@ public class Questionnaire extends ManagedIndividual {
 
 	/**
 	 * The following method parses to String a questionnaire
-	 * 
+	 *
 	 * @return the questionnaire as a String.
 	 * @see Question
 	 */

@@ -1,13 +1,13 @@
 /*******************************************************************************
- * Copyright 2012 UPM, http://www.upm.es 
+ * Copyright 2012 UPM, http://www.upm.es
  Universidad Politécnica de Madrid
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,7 +23,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 /**
  * This class describes the concept of Question, its properties and its
  * associated methods.
- * 
+ *
  * @author mdelafuente
  */
 
@@ -49,7 +49,7 @@ public abstract class Question extends ManagedIndividual {
 	/**
 	 * A Question can be implemented with the question wording and the answer
 	 * type if there is not a correct answer for the question.
-	 * 
+	 *
 	 * @param qWording
 	 * @param hasCorrectAnswer
 	 * @param answerType
@@ -64,7 +64,7 @@ public abstract class Question extends ManagedIndividual {
 	/**
 	 * A Question can be implemented with the question wording, the answer type
 	 * and the possible choices, when a correct answer is not specified
-	 * 
+	 *
 	 * @param qWording
 	 * @param answerType
 	 * @param choices
@@ -80,7 +80,7 @@ public abstract class Question extends ManagedIndividual {
 	/**
 	 * A Question can be implemented with the question wording, the answer type,
 	 * and the possible choices, when a correct answer is given.
-	 * 
+	 *
 	 * @param qWording
 	 * @param hasCorrectAnswer
 	 * @param correctAnswer
@@ -98,7 +98,7 @@ public abstract class Question extends ManagedIndividual {
 	/**
 	 * A Question can be implemented with the question wording, the answer type,
 	 * and the possible choices, when a set of correct answers is given.
-	 * 
+	 *
 	 * @param qWording
 	 * @param correctAnswer
 	 * @param answerType
@@ -130,7 +130,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method gets the question wording
-	 * 
+	 *
 	 * @return question wording ({@link String})
 	 */
 	public String getQuestionWording() {
@@ -139,7 +139,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method sets the question wording
-	 * 
+	 *
 	 * @param qWording
 	 *            , the question wording ({@link String})
 	 */
@@ -151,7 +151,7 @@ public abstract class Question extends ManagedIndividual {
 	/**
 	 * The following method checks whether a question has or not a correct
 	 * answer.
-	 * 
+	 *
 	 * @return true if the question has a correct answer
 	 * @return false if the question has NOT a correct answer
 	 */
@@ -162,7 +162,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method sets whether a question has or not a correct answer.
-	 * 
+	 *
 	 * @param correctAnswer
 	 *            ({@link boolean}) true if the question has a correct answer,
 	 *            false if not.
@@ -173,7 +173,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method gets the correct answer associated to a question.
-	 * 
+	 *
 	 * @return correctAnswer ({@link Object})
 	 * @see Answer
 	 */
@@ -193,7 +193,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method sets the correct answers associated to a question.
-	 * 
+	 *
 	 * @param correctAnswers
 	 *            ({@link Object})
 	 * @see Answer
@@ -208,7 +208,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method sets the correct answer associated to a question.
-	 * 
+	 *
 	 * @param correctAnswer
 	 *            ({@link Object})
 	 * @see Answer
@@ -231,7 +231,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method gets the answer type associated to a question.
-	 * 
+	 *
 	 * @return answer type URI ({@link String})
 	 */
 
@@ -250,7 +250,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method sets the answer type associated to a question.
-	 * 
+	 *
 	 * @param answerType
 	 *            , the URI of the answer type ({@link String})
 	 */
@@ -277,7 +277,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method returns the choices of a question
-	 * 
+	 *
 	 * @return choices ({@link ChoiceLabel})
 	 * @see ChoiceLabel
 	 */
@@ -295,7 +295,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method set the choices of a question
-	 * 
+	 *
 	 * @param choices
 	 *            ({@link ChoiceLabel})
 	 * @see ChoiceLabel
@@ -313,7 +313,7 @@ public abstract class Question extends ManagedIndividual {
 	/**
 	 * The following method returns the number of questions associated to a
 	 * question
-	 * 
+	 *
 	 * @return number of questions ({@link integer})
 	 */
 	public int getNumberOfChoices() {
@@ -324,7 +324,7 @@ public abstract class Question extends ManagedIndividual {
 
 	/**
 	 * The following method gets the label associated to a choice.
-	 * 
+	 *
 	 * @param choice
 	 *            ({@link Object})
 	 * @return label ({@link String})

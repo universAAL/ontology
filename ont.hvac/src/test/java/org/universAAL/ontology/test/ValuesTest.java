@@ -8,9 +8,9 @@ import org.universAAL.ontology.device.StatusValue;
 
 /**
  * Here developer's of this artifact should code their integration tests.
- * 
+ *
  * @author rotgier
- * 
+ *
  */
 public class ValuesTest extends OntTestCase {
 

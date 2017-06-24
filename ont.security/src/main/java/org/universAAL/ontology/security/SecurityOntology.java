@@ -42,7 +42,7 @@ import org.universAAL.ontology.profile.UserProfile;
 
 /**
  * @author eandgrg
- * 
+ *
  */
 public final class SecurityOntology extends Ontology {
 

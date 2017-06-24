@@ -39,7 +39,7 @@ import org.universAAL.ontology.security.UserPasswordCredentials;
 
 /**
  * @author amedrano
- * 
+ *
  */
 public class SecurityFactory implements ResourceFactory {
 

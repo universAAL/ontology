@@ -32,7 +32,7 @@ import org.universAAL.ontology.impairment.SpeakingImpairment;
 
 /**
  * The factory for instantiating objects of the ontology classes.
- * 
+ *
  * @author Carsten Stockloew
  */
 
