@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5691056910569106" branch-rate="0.2916666666666667" lines-covered="70" lines-valid="123" branches-covered="7" branches-valid="24" complexity="1.3863636363636365" version="2.1.1" timestamp="1498293831242">
+<coverage line-rate="0.5691056910569106" branch-rate="0.2916666666666667" lines-covered="70" lines-valid="123" branches-covered="7" branches-valid="24" complexity="1.3863636363636365" version="2.1.1" timestamp="1498335280302">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.sysinfo/src/main/java</source>
 		<source>--source</source>
@@ -81,86 +81,6 @@
 		</package>
 		<package name="org.universAAL.ontology.sysinfo" line-rate="0.5779816513761468" branch-rate="0.1111111111111111" complexity="1.170731707317073">
 			<classes>
-				<class name="org.universAAL.ontology.sysinfo.AALSpaceDescriptor" filename="org/universAAL/ontology/sysinfo/AALSpaceDescriptor.java" line-rate="0.42857142857142855" branch-rate="1.0" complexity="1.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="38" hits="0" branch="false"/>
-								<line number="39" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="42" hits="2" branch="false"/>
-								<line number="43" hits="2" branch="false"/>
-							</lines>
-						</method>
-						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="46" hits="4" branch="false"/>
-							</lines>
-						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="50" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="54" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="38" hits="0" branch="false"/>
-						<line number="39" hits="0" branch="false"/>
-						<line number="42" hits="2" branch="false"/>
-						<line number="43" hits="2" branch="false"/>
-						<line number="46" hits="4" branch="false"/>
-						<line number="50" hits="0" branch="false"/>
-						<line number="54" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="org.universAAL.ontology.sysinfo.AALSpaceStatusDescriptor" filename="org/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor.java" line-rate="0.42857142857142855" branch-rate="1.0" complexity="1.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="38" hits="0" branch="false"/>
-								<line number="39" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="42" hits="2" branch="false"/>
-								<line number="43" hits="2" branch="false"/>
-							</lines>
-						</method>
-						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="46" hits="4" branch="false"/>
-							</lines>
-						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="50" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="54" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="38" hits="0" branch="false"/>
-						<line number="39" hits="0" branch="false"/>
-						<line number="42" hits="2" branch="false"/>
-						<line number="43" hits="2" branch="false"/>
-						<line number="46" hits="4" branch="false"/>
-						<line number="50" hits="0" branch="false"/>
-						<line number="54" hits="0" branch="false"/>
-					</lines>
-				</class>
 				<class name="org.universAAL.ontology.sysinfo.Descriptor" filename="org/universAAL/ontology/sysinfo/Descriptor.java" line-rate="0.36363636363636365" branch-rate="0.0" complexity="1.1428571428571428">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
@@ -226,6 +146,86 @@
 					</lines>
 				</class>
 				<class name="org.universAAL.ontology.sysinfo.PeerCardDescriptor" filename="org/universAAL/ontology/sysinfo/PeerCardDescriptor.java" line-rate="0.42857142857142855" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="38" hits="0" branch="false"/>
+								<line number="39" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="42" hits="2" branch="false"/>
+								<line number="43" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="46" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="50" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="54" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="38" hits="0" branch="false"/>
+						<line number="39" hits="0" branch="false"/>
+						<line number="42" hits="2" branch="false"/>
+						<line number="43" hits="2" branch="false"/>
+						<line number="46" hits="4" branch="false"/>
+						<line number="50" hits="0" branch="false"/>
+						<line number="54" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.sysinfo.SpaceDescriptor" filename="org/universAAL/ontology/sysinfo/SpaceDescriptor.java" line-rate="0.42857142857142855" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="38" hits="0" branch="false"/>
+								<line number="39" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="42" hits="2" branch="false"/>
+								<line number="43" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="46" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="50" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="54" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="38" hits="0" branch="false"/>
+						<line number="39" hits="0" branch="false"/>
+						<line number="42" hits="2" branch="false"/>
+						<line number="43" hits="2" branch="false"/>
+						<line number="46" hits="4" branch="false"/>
+						<line number="50" hits="0" branch="false"/>
+						<line number="54" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.sysinfo.SpaceStatusDescriptor" filename="org/universAAL/ontology/sysinfo/SpaceStatusDescriptor.java" line-rate="0.42857142857142855" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -434,17 +434,17 @@
 								<line number="58" hits="6" branch="false"/>
 							</lines>
 						</method>
-						<method name="getSpaceChanged" signature="()Lorg/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor;" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getSpaceChanged" signature="()Lorg/universAAL/ontology/sysinfo/SpaceStatusDescriptor;" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
 								<line number="84" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getSpaceJoined" signature="()Lorg/universAAL/ontology/sysinfo/AALSpaceDescriptor;" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getSpaceJoined" signature="()Lorg/universAAL/ontology/sysinfo/SpaceDescriptor;" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
 								<line number="66" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="getSpaceLost" signature="()Lorg/universAAL/ontology/sysinfo/AALSpaceDescriptor;" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getSpaceLost" signature="()Lorg/universAAL/ontology/sysinfo/SpaceDescriptor;" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
 								<line number="93" hits="0" branch="false"/>
 							</lines>
@@ -487,7 +487,7 @@
 								<line number="108" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="setSpaceChanged" signature="(Lorg/universAAL/ontology/sysinfo/AALSpaceStatusDescriptor;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+						<method name="setSpaceChanged" signature="(Lorg/universAAL/ontology/sysinfo/SpaceStatusDescriptor;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
 							<lines>
 								<line number="88" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
@@ -498,7 +498,7 @@
 								<line number="90" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="setSpaceJoined" signature="(Lorg/universAAL/ontology/sysinfo/AALSpaceDescriptor;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+						<method name="setSpaceJoined" signature="(Lorg/universAAL/ontology/sysinfo/SpaceDescriptor;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
 							<lines>
 								<line number="70" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
@@ -509,7 +509,7 @@
 								<line number="72" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="setSpaceLost" signature="(Lorg/universAAL/ontology/sysinfo/AALSpaceDescriptor;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+						<method name="setSpaceLost" signature="(Lorg/universAAL/ontology/sysinfo/SpaceDescriptor;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
 							<lines>
 								<line number="97" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>

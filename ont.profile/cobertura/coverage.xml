@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.6777408637873754" branch-rate="0.5242718446601942" lines-covered="612" lines-valid="903" branches-covered="108" branches-valid="206" complexity="1.4522821576763485" version="2.1.1" timestamp="1498293604809">
+<coverage line-rate="0.6777408637873754" branch-rate="0.5242718446601942" lines-covered="612" lines-valid="903" branches-covered="108" branches-valid="206" complexity="1.4522821576763485" version="2.1.1" timestamp="1498335055752">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.profile/src/main/java</source>
@@ -183,47 +183,7 @@
 		</package>
 		<package name="org.universAAL.ontology.profile" line-rate="0.6632653061224489" branch-rate="0.40816326530612246" complexity="1.2313432835820894">
 			<classes>
-				<class name="org.universAAL.ontology.profile.AALAppSubProfile" filename="org/universAAL/ontology/profile/AALAppSubProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="43" hits="0" branch="false"/>
-								<line number="44" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="47" hits="2" branch="false"/>
-								<line number="48" hits="2" branch="false"/>
-							</lines>
-						</method>
-						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="51" hits="4" branch="false"/>
-							</lines>
-						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="59" hits="13" branch="false"/>
-							</lines>
-						</method>
-						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="55" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="43" hits="0" branch="false"/>
-						<line number="44" hits="0" branch="false"/>
-						<line number="47" hits="2" branch="false"/>
-						<line number="48" hits="2" branch="false"/>
-						<line number="51" hits="4" branch="false"/>
-						<line number="55" hits="0" branch="false"/>
-						<line number="59" hits="13" branch="false"/>
-					</lines>
-				</class>
-				<class name="org.universAAL.ontology.profile.AALService" filename="org/universAAL/ontology/profile/AALService.java" line-rate="0.25" branch-rate="0.0" complexity="1.2857142857142858">
+				<class name="org.universAAL.ontology.profile.AppService" filename="org/universAAL/ontology/profile/AppService.java" line-rate="0.25" branch-rate="0.0" complexity="1.2857142857142858">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -242,7 +202,7 @@
 								<line number="59" hits="4" branch="false"/>
 							</lines>
 						</method>
-						<method name="getProfile" signature="()Lorg/universAAL/ontology/profile/AALServiceProfile;" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getProfile" signature="()Lorg/universAAL/ontology/profile/AppServiceProfile;" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
 								<line number="82" hits="0" branch="false"/>
 							</lines>
@@ -263,7 +223,7 @@
 								<line number="55" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="setProfile" signature="(Lorg/universAAL/ontology/profile/AALServiceProfile;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="setProfile" signature="(Lorg/universAAL/ontology/profile/AppServiceProfile;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
 								<line number="73" hits="0" branch="false"/>
 								<line number="74" hits="0" branch="false"/>
@@ -289,7 +249,7 @@
 						<line number="82" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.profile.AALServiceProfile" filename="org/universAAL/ontology/profile/AALServiceProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
+				<class name="org.universAAL.ontology.profile.AppServiceProfile" filename="org/universAAL/ontology/profile/AppServiceProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -329,110 +289,44 @@
 						<line number="71" hits="11" branch="false"/>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.profile.AALSpace" filename="org/universAAL/ontology/profile/AALSpace.java" line-rate="0.25" branch-rate="0.0" complexity="1.2857142857142858">
+				<class name="org.universAAL.ontology.profile.AppSubProfile" filename="org/universAAL/ontology/profile/AppSubProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="47" hits="0" branch="false"/>
-								<line number="48" hits="0" branch="false"/>
+								<line number="43" hits="0" branch="false"/>
+								<line number="44" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="51" hits="2" branch="false"/>
-								<line number="52" hits="2" branch="false"/>
+								<line number="47" hits="2" branch="false"/>
+								<line number="48" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="62" hits="4" branch="false"/>
-							</lines>
-						</method>
-						<method name="getProfile" signature="()Lorg/universAAL/ontology/profile/AALSpaceProfile;" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="85" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="66" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
-							<lines>
-								<line number="55" hits="0" branch="true" condition-coverage="0% (0/2)">
-									<conditions>
-										<condition number="0" type="jump" coverage="0%"/>
-									</conditions>
-								</line>
-								<line number="56" hits="0" branch="false"/>
-								<line number="58" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="setProfile" signature="(Lorg/universAAL/ontology/profile/AALSpaceProfile;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="76" hits="0" branch="false"/>
-								<line number="77" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="47" hits="0" branch="false"/>
-						<line number="48" hits="0" branch="false"/>
-						<line number="51" hits="2" branch="false"/>
-						<line number="52" hits="2" branch="false"/>
-						<line number="55" hits="0" branch="true" condition-coverage="0% (0/2)">
-							<conditions>
-								<condition number="0" type="jump" coverage="0%"/>
-							</conditions>
-						</line>
-						<line number="56" hits="0" branch="false"/>
-						<line number="58" hits="0" branch="false"/>
-						<line number="62" hits="4" branch="false"/>
-						<line number="66" hits="0" branch="false"/>
-						<line number="76" hits="0" branch="false"/>
-						<line number="77" hits="0" branch="false"/>
-						<line number="85" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="org.universAAL.ontology.profile.AALSpaceProfile" filename="org/universAAL/ontology/profile/AALSpaceProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="49" hits="0" branch="false"/>
-								<line number="50" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="53" hits="2" branch="false"/>
-								<line number="54" hits="2" branch="false"/>
-							</lines>
-						</method>
-						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
-							<lines>
-								<line number="57" hits="4" branch="false"/>
+								<line number="51" hits="4" branch="false"/>
 							</lines>
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="65" hits="6" branch="false"/>
+								<line number="59" hits="13" branch="false"/>
 							</lines>
 						</method>
 						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="61" hits="0" branch="false"/>
+								<line number="55" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="49" hits="0" branch="false"/>
-						<line number="50" hits="0" branch="false"/>
-						<line number="53" hits="2" branch="false"/>
-						<line number="54" hits="2" branch="false"/>
-						<line number="57" hits="4" branch="false"/>
-						<line number="61" hits="0" branch="false"/>
-						<line number="65" hits="6" branch="false"/>
+						<line number="43" hits="0" branch="false"/>
+						<line number="44" hits="0" branch="false"/>
+						<line number="47" hits="2" branch="false"/>
+						<line number="48" hits="2" branch="false"/>
+						<line number="51" hits="4" branch="false"/>
+						<line number="55" hits="0" branch="false"/>
+						<line number="59" hits="13" branch="false"/>
 					</lines>
 				</class>
 				<class name="org.universAAL.ontology.profile.AssistedPerson" filename="org/universAAL/ontology/profile/AssistedPerson.java" line-rate="0.25" branch-rate="0.0" complexity="1.2857142857142858">
@@ -2467,6 +2361,112 @@
 						<line number="47" hits="4" branch="false"/>
 						<line number="51" hits="0" branch="false"/>
 						<line number="55" hits="7" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.profile.Space" filename="org/universAAL/ontology/profile/Space.java" line-rate="0.25" branch-rate="0.0" complexity="1.2857142857142858">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="47" hits="0" branch="false"/>
+								<line number="48" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="51" hits="2" branch="false"/>
+								<line number="52" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="62" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getProfile" signature="()Lorg/universAAL/ontology/profile/SpaceProfile;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="85" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="66" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="55" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="56" hits="0" branch="false"/>
+								<line number="58" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setProfile" signature="(Lorg/universAAL/ontology/profile/SpaceProfile;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="76" hits="0" branch="false"/>
+								<line number="77" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="47" hits="0" branch="false"/>
+						<line number="48" hits="0" branch="false"/>
+						<line number="51" hits="2" branch="false"/>
+						<line number="52" hits="2" branch="false"/>
+						<line number="55" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="56" hits="0" branch="false"/>
+						<line number="58" hits="0" branch="false"/>
+						<line number="62" hits="4" branch="false"/>
+						<line number="66" hits="0" branch="false"/>
+						<line number="76" hits="0" branch="false"/>
+						<line number="77" hits="0" branch="false"/>
+						<line number="85" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="org.universAAL.ontology.profile.SpaceProfile" filename="org/universAAL/ontology/profile/SpaceProfile.java" line-rate="0.5714285714285714" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="49" hits="0" branch="false"/>
+								<line number="50" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="53" hits="2" branch="false"/>
+								<line number="54" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="57" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="65" hits="6" branch="false"/>
+							</lines>
+						</method>
+						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="61" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="49" hits="0" branch="false"/>
+						<line number="50" hits="0" branch="false"/>
+						<line number="53" hits="2" branch="false"/>
+						<line number="54" hits="2" branch="false"/>
+						<line number="57" hits="4" branch="false"/>
+						<line number="61" hits="0" branch="false"/>
+						<line number="65" hits="6" branch="false"/>
 					</lines>
 				</class>
 				<class name="org.universAAL.ontology.profile.SubProfile" filename="org/universAAL/ontology/profile/SubProfile.java" line-rate="0.375" branch-rate="1.0" complexity="1.0">
