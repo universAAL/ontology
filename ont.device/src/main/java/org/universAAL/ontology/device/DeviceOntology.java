@@ -40,7 +40,7 @@ import org.universAAL.ontology.phThing.PhThingOntology;
 import org.universAAL.ontology.DeviceFactory;
 
 /**
- * @author AAL Studio: UML2Java transformation
+ * @author universAAL Studio: UML2Java transformation
  */
 public final class DeviceOntology extends Ontology {
 

@@ -29,28 +29,28 @@ package org.universAAL.ontology.profile;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * Ontology class representing an AAL Service
+ * Ontology class representing an Service
  *
  * @author Peter Wolf
  * @author Alvaro Fides
  */
 
-public class AALService extends ManagedIndividual {
+public class AppService extends ManagedIndividual {
 
 	/** Class URI */
-	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALService";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AppService";
 
-	protected AALService() {
+	protected AppService() {
 		super();
 	}
 
-	public AALService(String uri) {
+	public AppService(String uri) {
 		super(uri);
 	}
 
 	public boolean isWellFormed() {
 		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AALServiceProfile);
+			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AppServiceProfile);
 		}
 		return false;
 	}
@@ -69,7 +69,7 @@ public class AALService extends ManagedIndividual {
 	 * @param value
 	 *            The Profile to set
 	 */
-	public void setProfile(AALServiceProfile value) {
+	public void setProfile(AppServiceProfile value) {
 		setProperty(Profilable.PROP_HAS_PROFILE, value);
 	}
 
@@ -78,8 +78,8 @@ public class AALService extends ManagedIndividual {
 	 *
 	 * @return The Profile of the AAL Space
 	 */
-	public AALServiceProfile getProfile() {
-		return (AALServiceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
+	public AppServiceProfile getProfile() {
+		return (AppServiceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
 	}
 
 }

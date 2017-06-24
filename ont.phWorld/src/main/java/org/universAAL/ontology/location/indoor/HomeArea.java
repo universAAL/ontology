@@ -25,7 +25,7 @@ import org.universAAL.ontology.shape.Shape;
 /**
  * Ontological representation of a delimited area within a house (do not mistake
  * with the house itself). Methods included in this class are the mandatory ones
- * for representing an ontological concept in Java classes for uAAL. Usually it
+ * for representing an ontological concept in Java classes for universAAL. Usually it
  * includes getters and setters for most of its properties.
  *
  */

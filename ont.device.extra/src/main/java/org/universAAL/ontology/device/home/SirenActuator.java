@@ -27,7 +27,7 @@ import org.universAAL.ontology.device.StatusValue;
 /**
  * Ontological representation of a siren that can be sounded. Methods included
  * in this class are the mandatory ones for representing an ontological concept
- * in Java classes for uAAL. Usually it includes getters and setters for most of
+ * in Java classes for universAAL. Usually it includes getters and setters for most of
  * its properties.
  *
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>

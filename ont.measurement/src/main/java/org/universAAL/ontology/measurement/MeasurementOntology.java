@@ -27,7 +27,7 @@ import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
 
 /**
- * @author AAL Studio: UML2Java transformation
+ * @author universAAL Studio: UML2Java transformation
  */
 public final class MeasurementOntology extends Ontology {
 

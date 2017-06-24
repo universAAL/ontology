@@ -26,7 +26,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  * Ontological enumeration of switch sensor events according to ISO 11073 - Part
  * 10471 (Independent living activity hub). Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
- * for uAAL. Usually it includes getters and setters for most of its properties.
+ * for universAAL. Usually it includes getters and setters for most of its properties.
  *
  * Specific sensor events (from standard specification): - switch on - switch
  * off - no condition detected (optional)

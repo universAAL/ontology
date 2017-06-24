@@ -29,7 +29,7 @@ import org.universAAL.ontology.activityhub.ActivityHubSensorEvent;
  * living activity hub). This class is an independent extension to the standard.
  *
  * Methods included in this class are the mandatory ones for representing an
- * ontological concept in Java classes for uAAL. Usually it includes getters and
+ * ontological concept in Java classes for universAAL. Usually it includes getters and
  * setters for most of its properties.
  *
  * Specific actuator actions: - power on - power off

@@ -24,7 +24,7 @@ import org.universAAL.middleware.service.owl.Service;
 /**
  * Ontological service that handles the arrangement of locations and physical
  * things in a specific space. Methods included in this class are the mandatory
- * ones for representing an ontological service in Java classes for uAAL.
+ * ones for representing an ontological service in Java classes for universAAL.
  *
  */
 public class SpaceConfigurationService extends Service {

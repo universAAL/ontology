@@ -69,7 +69,7 @@ public class PhThingOntology extends Ontology {
 		// load PhysicalThing
 		oci = createNewOntClassInfo(PhysicalThing.MY_URI, factory, 0);
 		oci.setResourceComment(
-				"The root class for all physical things in the uAAL ontology. Physical things have a location");
+				"The root class for all physical things in the universAAL ontology. Physical things have a location");
 		oci.setResourceLabel("Physical Thing");
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 		oci.addObjectProperty(PhysicalThing.PROP_CARRIED_BY).setFunctional();
@@ -96,7 +96,7 @@ public class PhThingOntology extends Ontology {
 
 		// load Device
 		oci = createNewOntClassInfo(Device.MY_URI, factory, 1);
-		oci.setResourceComment("The root class for all devices in the uAAL ontology.");
+		oci.setResourceComment("The root class for all devices in the universAAL ontology.");
 		oci.setResourceLabel("Device");
 		oci.addSuperClass(PhysicalThing.MY_URI);
 		oci.addObjectProperty(Device.PROP_BATTERY_LEVEL).setFunctional();

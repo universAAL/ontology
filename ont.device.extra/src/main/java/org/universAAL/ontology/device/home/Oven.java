@@ -25,7 +25,7 @@ import org.universAAL.ontology.device.StatusValue;
 /**
  * Ontological representation of an oven appliance. Methods included in this
  * class are the mandatory ones for representing an ontological concept in Java
- * classes for uAAL. Usually it includes getters and setters for most of its
+ * classes for universAAL. Usually it includes getters and setters for most of its
  * properties.
  *
  * @author amoretti

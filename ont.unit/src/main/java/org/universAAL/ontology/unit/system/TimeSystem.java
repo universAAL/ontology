@@ -47,7 +47,7 @@ public class TimeSystem {
 			IND_TS);
 	public static final Unit IND_UNIT_TS_MILENIUM = new Unit("melenium", "Milenium", "milenium",
 			MeasurableDimension.Time, IND_TS);
-	// YES uAAL will need this! as its rule will last milenia! MUAhahaha
+	// YES universAAL will need this! as its rule will last milenia! MUAhahaha
 
 	static {
 		IND_TS.addUnits(IND_UNIT_TS_SECOND);

@@ -25,7 +25,7 @@ import org.universAAL.ontology.location.Location;
 /**
  * Ontological representation of a blinkable and beaming light source. Methods
  * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * concept in Java classes for universAAL. Usually it includes getters and setters for
  * most of its properties.
  *
  * @author mtazari

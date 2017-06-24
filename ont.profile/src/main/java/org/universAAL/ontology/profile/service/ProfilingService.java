@@ -31,7 +31,7 @@ import org.universAAL.ontology.profile.ProfileOntology;
 /**
  * Ontological generic service that handles profile-related information. Methods
  * included in this class are the mandatory ones for representing an ontological
- * service in Java classes for uAAL.
+ * service in Java classes for universAAL.
  *
  * @author Kostas Aagnantis
  * @author Carsten Stockloew

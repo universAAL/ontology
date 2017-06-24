@@ -54,7 +54,7 @@ import org.universAAL.ontology.profile.SubProfile;
 import org.universAAL.ontology.profile.User;
 
 /**
- * @author AAL Studio
+ * @author universAAL Studio
  */
 public final class HealthProfileOntology extends Ontology {
 

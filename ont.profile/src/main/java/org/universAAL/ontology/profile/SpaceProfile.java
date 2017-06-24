@@ -26,63 +26,43 @@
 
 package org.universAAL.ontology.profile;
 
-import org.universAAL.ontology.location.Place;
-
-//import org.universAAL.ontology.profile.AALSpaceProfile;
-//import org.universAAL.ontology.profile.Profile;
-
 /**
- * Ontology class representing an AAL Space
+ * Ontology class representing an Space Profile
  *
  * @author Peter Wolf
  * @author Alvaro Fides
  */
 
-public class AALSpace extends Place {
+public class SpaceProfile extends Profile {
 
 	/** Class URI */
-	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALSpace";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "SpaceProfile";
+	public static final String PROP_INSTALLED_HARDWARE = ProfileOntology.NAMESPACE + "hasInstalledHardware";
+	public static final String PROP_INSTALLED_SERVICES = ProfileOntology.NAMESPACE + "hasInstalledServices";
+	public static final String PROP_SPACE_CONNECTION_DETAILS = ProfileOntology.NAMESPACE + "hasSpaceConnectionDetails";
+	public static final String PROP_USTORE_CONNECTION_DETAILS = ProfileOntology.NAMESPACE
+			+ "hasUStoreConnectionDetails";
+	public static final String PROP_INSTALLED_ONTOLOGIES = ProfileOntology.NAMESPACE + "hasInstalledOntologies";
+	public static final String PROP_SPACE_OWNER = ProfileOntology.NAMESPACE + "spaceOwnedBy";
 
-	protected AALSpace() {
+	protected SpaceProfile() {
 		super();
 	}
 
-	public AALSpace(String uri) {
+	public SpaceProfile(String uri) {
 		super(uri);
-	}
-
-	public boolean isWellFormed() {
-		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
-			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof AALSpaceProfile);
-		}
-		return false;
 	}
 
 	public String getClassURI() {
 		return MY_URI;
 	}
 
+	public boolean isWellFormed() {
+		return true;
+	}
+
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
-	}
-
-	/**
-	 * Sets the value for the AAL Space Profile of this AAL Space
-	 *
-	 * @param value
-	 *            The Profile to set
-	 */
-	public void setProfile(AALSpaceProfile value) {
-		setProperty(Profilable.PROP_HAS_PROFILE, value);
-	}
-
-	/**
-	 * Gets the value of the AAL Space Profile of this AAL Space
-	 *
-	 * @return The Profile of the AAL Space
-	 */
-	public AALSpaceProfile getProfile() {
-		return (AALSpaceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
 	}
 
 }

@@ -33,7 +33,7 @@ import org.universAAL.ontology.location.LocationOntology;
  * Ontological representation of a Physical Address. It is used when the address
  * represents a physical entity that can be placed in the world. Methods
  * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * concept in Java classes for universAAL. Usually it includes getters and setters for
  * most of its properties.
  *
  * @author alfiva

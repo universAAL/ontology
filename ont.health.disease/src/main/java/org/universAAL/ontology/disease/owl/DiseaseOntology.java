@@ -39,7 +39,7 @@ import org.universAAL.ontology.disease.DiseaseFactory;
 import org.universAAL.ontology.location.LocationOntology;
 
 /**
- * @author AAL Studio
+ * @author universAAL Studio
  */
 public final class DiseaseOntology extends Ontology {
 

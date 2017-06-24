@@ -24,7 +24,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 /**
  * Ontological enumeration of possible furniture types. Methods included in this
  * class are the mandatory ones for representing an ontological enumeration in
- * Java classes for uAAL.
+ * Java classes for universAAL.
  *
  * @author Carsten Stockloew
  */

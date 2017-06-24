@@ -25,7 +25,7 @@ import org.universAAL.ontology.av.AVOntology;
 /**
  * Ontological enumeration of different audio compression algorithms. Methods
  * included in this class are the mandatory ones for representing an ontological
- * enumeration in Java classes for uAAL.
+ * enumeration in Java classes for universAAL.
  *
  * @author climberg
  * @author Carsten Stockloew

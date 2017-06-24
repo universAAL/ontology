@@ -26,43 +26,63 @@
 
 package org.universAAL.ontology.profile;
 
+import org.universAAL.ontology.location.Place;
+
+//import org.universAAL.ontology.profile.SpaceProfile;
+//import org.universAAL.ontology.profile.Profile;
+
 /**
- * Ontology class representing an AAL Space Profile
+ * Ontology class representing an Space
  *
  * @author Peter Wolf
  * @author Alvaro Fides
  */
 
-public class AALSpaceProfile extends Profile {
+public class Space extends Place {
 
 	/** Class URI */
-	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALSpaceProfile";
-	public static final String PROP_INSTALLED_HARDWARE = ProfileOntology.NAMESPACE + "hasInstalledHardware";
-	public static final String PROP_INSTALLED_SERVICES = ProfileOntology.NAMESPACE + "hasInstalledServices";
-	public static final String PROP_SPACE_CONNECTION_DETAILS = ProfileOntology.NAMESPACE + "hasSpaceConnectionDetails";
-	public static final String PROP_USTORE_CONNECTION_DETAILS = ProfileOntology.NAMESPACE
-			+ "hasUStoreConnectionDetails";
-	public static final String PROP_INSTALLED_ONTOLOGIES = ProfileOntology.NAMESPACE + "hasInstalledOntologies";
-	public static final String PROP_SPACE_OWNER = ProfileOntology.NAMESPACE + "spaceOwnedBy";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "Space";
 
-	protected AALSpaceProfile() {
+	protected Space() {
 		super();
 	}
 
-	public AALSpaceProfile(String uri) {
+	public Space(String uri) {
 		super(uri);
+	}
+
+	public boolean isWellFormed() {
+		if (getProperty(Profilable.PROP_HAS_PROFILE) != null) {
+			return (getProperty(Profilable.PROP_HAS_PROFILE) instanceof SpaceProfile);
+		}
+		return false;
 	}
 
 	public String getClassURI() {
 		return MY_URI;
 	}
 
-	public boolean isWellFormed() {
-		return true;
-	}
-
 	public int getPropSerializationType(String propURI) {
 		return PROP_SERIALIZATION_FULL;
+	}
+
+	/**
+	 * Sets the value for the Space Profile of this Space
+	 *
+	 * @param value
+	 *            The Profile to set
+	 */
+	public void setProfile(SpaceProfile value) {
+		setProperty(Profilable.PROP_HAS_PROFILE, value);
+	}
+
+	/**
+	 * Gets the value of the Space Profile of this Space
+	 *
+	 * @return The Profile of the Space
+	 */
+	public SpaceProfile getProfile() {
+		return (SpaceProfile) getProperty(Profilable.PROP_HAS_PROFILE);
 	}
 
 }

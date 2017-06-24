@@ -23,7 +23,7 @@ package org.universAAL.ontology.lighting;
 /**
  * Ontological enumeration of possible flaming light types. Methods included in
  * this class are the mandatory ones for representing an ontological enumeration
- * in Java classes for uAAL.
+ * in Java classes for universAAL.
  *
  * @author mtazari
  *

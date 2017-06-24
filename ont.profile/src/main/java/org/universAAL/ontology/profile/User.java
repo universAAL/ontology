@@ -30,7 +30,7 @@ import org.universAAL.ontology.phThing.PhysicalThing;
 /**
  * Ontological representation of a person that is a user of the system. Methods
  * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * concept in Java classes for universAAL. Usually it includes getters and setters for
  * most of its properties.
  *
  * @author Carsten Stockloew

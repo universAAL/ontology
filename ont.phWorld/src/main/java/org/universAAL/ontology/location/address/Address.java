@@ -38,7 +38,7 @@ import org.universAAL.ontology.location.outdoor.State;
  * Ontological representation of an Address. It can be used on its own but it is
  * recommended to use one of its subclasses. Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
- * for uAAL. Usually it includes getters and setters for most of its properties.
+ * for universAAL. Usually it includes getters and setters for most of its properties.
  *
  * @author alfiva
  *

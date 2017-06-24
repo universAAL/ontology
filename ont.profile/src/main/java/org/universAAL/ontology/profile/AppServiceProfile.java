@@ -27,16 +27,16 @@
 package org.universAAL.ontology.profile;
 
 /**
- * Ontology class representing an AAL Service Profile
+ * Ontology class representing an Service Profile
  *
  * @author Peter Wolf
  * @author Alvaro Fides
  */
 
-public class AALServiceProfile extends Profile {
+public class AppServiceProfile extends Profile {
 
 	/** Class URI */
-	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALServiceProfile";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AppServiceProfile";
 	public static final String PROP_APPLICATION_SUBPROFILE = ProfileOntology.NAMESPACE + "hasApplicationSubprofile";
 	public static final String PROP_CERTIFICATE = ProfileOntology.NAMESPACE + "hasCertificate";
 	public static final String PROP_CHARGING_MODEL = ProfileOntology.NAMESPACE + "hasChargingModel";
@@ -51,11 +51,11 @@ public class AALServiceProfile extends Profile {
 	public static final String PROP_SLA = ProfileOntology.NAMESPACE + "hasServiceLevelAgreement";
 	public static final String PROP_SERVICE_OWNER = ProfileOntology.NAMESPACE + "serviceOwnedBy";
 
-	protected AALServiceProfile() {
+	protected AppServiceProfile() {
 		super();
 	}
 
-	public AALServiceProfile(String uri) {
+	public AppServiceProfile(String uri) {
 		super(uri);
 	}
 

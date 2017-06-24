@@ -26,9 +26,9 @@ import org.universAAL.ontology.ActivityHubOntology;
 /**
  * Ontological SERVICE that handles activity hub devices. Methods included in
  * this class are the mandatory ones for representing an ontological service in
- * Java classes for uAAL.
+ * Java classes for universAAL.
  *
- * Built according to the uAAL lighting service example.
+ * Built according to the universAAL lighting service example.
  *
  * @author Thomas Fuxreiter
  */

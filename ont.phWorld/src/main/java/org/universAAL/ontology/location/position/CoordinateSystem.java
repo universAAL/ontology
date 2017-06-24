@@ -27,7 +27,7 @@ import org.universAAL.ontology.location.LocationOntology;
 /**
  * Ontological representation of a geometric location coordinates system.
  * Methods included in this class are the mandatory ones for representing an
- * ontological concept in Java classes for uAAL. Usually it includes getters and
+ * ontological concept in Java classes for universAAL. Usually it includes getters and
  * setters for most of its properties.
  *
  */

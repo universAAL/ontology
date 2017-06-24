@@ -24,7 +24,7 @@ import org.universAAL.ontology.shape.Shape;
 /**
  * Ontological representation of a way, which is a physical embodiment of a
  * path. Methods included in this class are the mandatory ones for representing
- * an ontological concept in Java classes for uAAL. Usually it includes getters
+ * an ontological concept in Java classes for universAAL. Usually it includes getters
  * and setters for most of its properties.
  *
  * @author chwirth

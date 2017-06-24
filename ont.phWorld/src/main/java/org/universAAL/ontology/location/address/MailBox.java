@@ -31,7 +31,7 @@ import org.universAAL.ontology.location.LocationOntology;
  * represents an entity that has no physical representation and/or only has a
  * mail box in a post office, not corresponding to its actual location. Methods
  * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * concept in Java classes for universAAL. Usually it includes getters and setters for
  * most of its properties.
  *
  * @author alfiva

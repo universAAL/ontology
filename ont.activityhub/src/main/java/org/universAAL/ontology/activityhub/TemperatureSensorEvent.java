@@ -26,7 +26,7 @@ import org.universAAL.ontology.ActivityHubOntology;
  * Ontological enumeration of temperature sensor events according to ISO 11073 -
  * Part 10471 (Independent living activity hub), edition 2010-05-01 Methods
  * included in this class are the mandatory ones for representing an ontological
- * enumeration in Java classes for uAAL.
+ * enumeration in Java classes for universAAL.
  *
  * Specific sensor events (from standard specification): - high temperature
  * detected - low temperature detected - rate of change too fast (optional) - no

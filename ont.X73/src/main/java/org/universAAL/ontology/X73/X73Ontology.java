@@ -39,7 +39,7 @@ import org.universAAL.middleware.service.owl.Service;
 //import the factory for this ontology
 
 /**
- * @author AAL Studio: UML2Java transformation
+ * @author universAAL Studio: UML2Java transformation
  */
 public final class X73Ontology extends Ontology {
 

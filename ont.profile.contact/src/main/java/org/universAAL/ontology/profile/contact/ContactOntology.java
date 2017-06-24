@@ -31,7 +31,7 @@ import org.universAAL.ontology.vcard.VCardOntology;
 //import the factory for this ontology
 
 /**
- * @author AAL Studio: UML2Java transformation
+ * @author universAAL Studio: UML2Java transformation
  */
 public final class ContactOntology extends Ontology {
 

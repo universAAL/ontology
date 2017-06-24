@@ -34,7 +34,7 @@ import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.ontology.ReasoningFactory;
 
 /**
- * @author AAL Studio: UML2Java transformation
+ * @author universAAL Studio: UML2Java transformation
  */
 public final class ReasoningOntology extends Ontology {
 

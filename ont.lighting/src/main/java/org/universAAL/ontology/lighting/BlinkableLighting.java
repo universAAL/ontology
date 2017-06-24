@@ -23,7 +23,7 @@ package org.universAAL.ontology.lighting;
 /**
  * Ontological service that handles blinkable light sources. Methods included in
  * this class are the mandatory ones for representing an ontological service in
- * Java classes for uAAL.
+ * Java classes for universAAL.
  *
  * @author mtazari
  *

@@ -26,7 +26,7 @@ import org.universAAL.ontology.av.AVOntology;
 /**
  * Ontological service that handles loudspeakers. Methods included in this class
  * are the mandatory ones for representing an ontological service in Java
- * classes for uAAL.
+ * classes for universAAL.
  *
  * @author climberg
  * @author Carsten Stockloew

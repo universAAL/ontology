@@ -26,7 +26,7 @@ import org.universAAL.ontology.phThing.Device;
 /**
  * Ontological representation of any device that can be attached to a person by
  * a strap. Methods included in this class are the mandatory ones for
- * representing an ontological concept in Java classes for uAAL. Currently this
+ * representing an ontological concept in Java classes for universAAL. Currently this
  * concept is just a placehodler and does not contain getters nor setters of its
  * own, as it has no specific properties.
  *

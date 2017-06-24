@@ -21,9 +21,9 @@
  */
 package org.universAAL.ontology.profile;
 
-public class AALAppSubProfile extends SubProfile {
+public class AppSubProfile extends SubProfile {
 
-	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALAppSubProfile";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AppSubProfile";
 
 	public static final String PROP_ARTIFACT_FILE_URL = ProfileOntology.NAMESPACE + "hasArtifactFileID";
 	public static final String PROP_ARTIFACT_ID = ProfileOntology.NAMESPACE + "hasArtifactID";
@@ -39,11 +39,11 @@ public class AALAppSubProfile extends SubProfile {
 	public static final String PROP_APP_PROPERTIES = ProfileOntology.NAMESPACE + "hasAppProperties";
 	public static final String PROP_REALIZED_ONTOLOGIES = ProfileOntology.NAMESPACE + "hasRealizedOntologies";
 
-	protected AALAppSubProfile() {
+	protected AppSubProfile() {
 		super();
 	}
 
-	public AALAppSubProfile(String uri) {
+	public AppSubProfile(String uri) {
 		super(uri);
 	}
 

@@ -27,7 +27,7 @@ import org.universAAL.ontology.location.LocationOntology;
 /**
  * Ontological enumeration of possible functions of a room in a house. Methods
  * included in this class are the mandatory ones for representing an ontological
- * enumeration in Java classes for uAAL.
+ * enumeration in Java classes for universAAL.
  *
  */
 public class RoomFunction extends ManagedIndividual {

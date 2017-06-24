@@ -48,10 +48,10 @@ public class SpaceOntology extends Ontology {
 	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment(
-				"Ontology for AAL Space Configuration. " + "It is part of the Physical World upper ontology concept, "
+				"Ontology for Space Configuration. " + "It is part of the Physical World upper ontology concept, "
 						+ "which defines the most general concepts from the physical "
 						+ "world as opposed to the virtual realm.");
-		r.setResourceLabel("AAL Space Configuration");
+		r.setResourceLabel("Space Configuration");
 
 		addImport(LocationOntology.NAMESPACE);
 		addImport(PhThingOntology.NAMESPACE);

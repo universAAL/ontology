@@ -41,7 +41,7 @@ import org.universAAL.ontology.unit.system.TimeSystem;
 import org.universAAL.ontology.unit.system.Util;
 
 /**
- * @author AAL Studio
+ * @author universAAL Studio
  */
 public final class HealthMeasurementOntology extends Ontology {
 

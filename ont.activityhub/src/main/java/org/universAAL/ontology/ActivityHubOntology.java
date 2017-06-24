@@ -43,8 +43,8 @@ public class ActivityHubOntology extends Ontology {
 
 	public static final String NAMESPACE = "http://ontology.universAAL.org/ActivityHub.owl#";
 
-	// Resource.uAAL_VOCABULARY_NAMESPACE;
-	// Resource.uAAL_NAMESPACE_PREFIX + "ActivityHub.owl#";
+	// Resource.VOCABULARY_NAMESPACE;
+	// Resource.NAMESPACE_PREFIX + "ActivityHub.owl#";
 
 	private static ActivityHubFactory factory = new ActivityHubFactory();
 

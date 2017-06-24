@@ -27,7 +27,7 @@ import org.universAAL.middleware.service.owl.Service;
 /**
  * Ontological service that controls any HW device. Methods included in this
  * class are the mandatory ones for representing an ontological service in Java
- * classes for uAAL.
+ * classes for universAAL.
  *
  * @author alfiva
  */
