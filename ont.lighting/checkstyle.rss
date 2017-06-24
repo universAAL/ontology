@@ -28,7 +28,7 @@ under the License.
       <title>File: 15,
              Errors: 169,
              Warnings: 17,
-             Infos: 104
+             Infos: 0
       </title>
             <link>/checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.BlinkableLighting.java">org/universAAL/ontology/lighting/BlinkableLighting.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -63,7 +63,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.BeamingSource.java">org/universAAL/ontology/lighting/BeamingSource.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -77,7 +77,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.NaturalLight.java">org/universAAL/ontology/lighting/NaturalLight.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   3
@@ -91,7 +91,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.Beaming.java">org/universAAL/ontology/lighting/Beaming.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.BlinkableBeaming.java">org/universAAL/ontology/lighting/BlinkableBeaming.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.LightType.java">org/universAAL/ontology/lighting/LightType.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -133,7 +133,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.BlinkableLightSource.java">org/universAAL/ontology/lighting/BlinkableLightSource.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -147,7 +147,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.LightSource.java">org/universAAL/ontology/lighting/LightSource.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -161,7 +161,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.ElectricLight.java">org/universAAL/ontology/lighting/ElectricLight.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   7
@@ -175,7 +175,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.BlinkableBeamingSource.java">org/universAAL/ontology/lighting/BlinkableBeamingSource.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -189,7 +189,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.FlamingLight.java">org/universAAL/ontology/lighting/FlamingLight.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   4
@@ -203,7 +203,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.LightingOntology.java">org/universAAL/ontology/lighting/LightingOntology.java</a>
                 </td>
                 <td>
-                  8
+                  0
                 </td>
                 <td>
                   0
@@ -217,7 +217,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.LightingActivator.java">org/universAAL/ontology/LightingActivator.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -231,7 +231,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.LightingFactory.java">org/universAAL/ontology/LightingFactory.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   1
@@ -245,7 +245,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.lighting.Lighting.java">org/universAAL/ontology/lighting/Lighting.java</a>
                 </td>
                 <td>
-                  8
+                  0
                 </td>
                 <td>
                   0

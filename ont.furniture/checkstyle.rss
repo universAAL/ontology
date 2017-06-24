@@ -28,7 +28,7 @@ under the License.
       <title>File: 5,
              Errors: 60,
              Warnings: 12,
-             Infos: 32
+             Infos: 0
       </title>
             <link>http://ontology/ont.furniture//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.furniture.Furniture.java">org/universAAL/ontology/furniture/Furniture.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   1
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.FurnitureFactory.java">org/universAAL/ontology/FurnitureFactory.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   1
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.furniture.FurnitureType.java">org/universAAL/ontology/furniture/FurnitureType.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   9
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.FurnitureActivator.java">org/universAAL/ontology/FurnitureActivator.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.furniture//checkstyle.html#org.universAAL.ontology.furniture.FurnitureOntology.java">org/universAAL/ontology/furniture/FurnitureOntology.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0

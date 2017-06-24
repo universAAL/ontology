@@ -28,7 +28,7 @@ under the License.
       <title>File: 5,
              Errors: 45,
              Warnings: 5,
-             Infos: 18
+             Infos: 1
       </title>
             <link>http://ontology/ont.languages//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.LanguageActivator.java">org/universAAL/ontology/LanguageActivator.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   1
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.LanguageFactory.java">org/universAAL/ontology/LanguageFactory.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   1
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.language.Language.java">org/universAAL/ontology/language/Language.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   2
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.language.LanguageImpl.java">org/universAAL/ontology/language/LanguageImpl.java</a>
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   0
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.languages//checkstyle.html#org.universAAL.ontology.language.LanguageOntology.java">org/universAAL/ontology/language/LanguageOntology.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   1

@@ -29,7 +29,7 @@ under the License.
       <title>File: 5,
              Errors: 79,
              Warnings: 4,
-             Infos: 71
+             Infos: 0
       </title>
             <link>http://ontology/ont.che//checkstyle.html</link>
       <description>
@@ -50,7 +50,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.ContextHistoryFactory.java">org/universAAL/ontology/ContextHistoryFactory.java</a>
                 </td>
                 <td>
-                  10
+                  0
                 </td>
                 <td>
                   1
@@ -64,7 +64,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.che.ContextHistoryService.java">org/universAAL/ontology/che/ContextHistoryService.java</a>
                 </td>
                 <td>
-                  12
+                  0
                 </td>
                 <td>
                   0
@@ -78,7 +78,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.ContextHistoryActivator.java">org/universAAL/ontology/ContextHistoryActivator.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   1
@@ -92,7 +92,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.che.ContextEvent.java">org/universAAL/ontology/che/ContextEvent.java</a>
                 </td>
                 <td>
-                  31
+                  0
                 </td>
                 <td>
                   2
@@ -106,7 +106,7 @@ under the License.
                   <a href="http://ontology/ont.che//checkstyle.html#org.universAAL.ontology.che.ContextHistoryOntology.java">org/universAAL/ontology/che/ContextHistoryOntology.java</a>
                 </td>
                 <td>
-                  11
+                  0
                 </td>
                 <td>
                   0

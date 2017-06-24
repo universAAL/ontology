@@ -28,7 +28,7 @@ under the License.
       <title>File: 23,
              Errors: 551,
              Warnings: 87,
-             Infos: 146
+             Infos: 2
       </title>
             <link>http://ontology/ont.profile.ui.preferences//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.UIPreferencesProfileActivator.java">org/universAAL/ontology/UIPreferencesProfileActivator.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.ColorType.java">org/universAAL/ontology/ui/preferences/ColorType.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   17
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.SystemMenuPreferences.java">org/universAAL/ontology/ui/preferences/SystemMenuPreferences.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.service.UIPreferencesService.java">org/universAAL/ontology/ui/preferences/service/UIPreferencesService.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   1
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.GeneralInteractionPreferences.java">org/universAAL/ontology/ui/preferences/GeneralInteractionPreferences.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.PendingDialogsBuilderType.java">org/universAAL/ontology/ui/preferences/PendingDialogsBuilderType.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   3
@@ -133,7 +133,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.UIPreferencesProfileFactory.java">org/universAAL/ontology/UIPreferencesProfileFactory.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Status.java">org/universAAL/ontology/ui/preferences/Status.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   3
@@ -161,7 +161,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.ContentDensityType.java">org/universAAL/ontology/ui/preferences/ContentDensityType.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   3
@@ -175,7 +175,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.MainMenuConfigurationType.java">org/universAAL/ontology/ui/preferences/MainMenuConfigurationType.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   4
@@ -189,7 +189,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Size.java">org/universAAL/ontology/ui/preferences/Size.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   4
@@ -203,7 +203,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AuditoryPreferences.java">org/universAAL/ontology/ui/preferences/AuditoryPreferences.java</a>
                 </td>
                 <td>
-                  34
+                  0
                 </td>
                 <td>
                   1
@@ -217,7 +217,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Intensity.java">org/universAAL/ontology/ui/preferences/Intensity.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   4
@@ -231,7 +231,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.VoiceGender.java">org/universAAL/ontology/ui/preferences/VoiceGender.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   3
@@ -245,7 +245,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.UIPreferencesProfileOntology.java">org/universAAL/ontology/ui/preferences/UIPreferencesProfileOntology.java</a>
                 </td>
                 <td>
-                  7
+                  2
                 </td>
                 <td>
                   20
@@ -259,7 +259,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.WindowLayoutType.java">org/universAAL/ontology/ui/preferences/WindowLayoutType.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   3
@@ -273,7 +273,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.GenericFontFamily.java">org/universAAL/ontology/ui/preferences/GenericFontFamily.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   6
@@ -287,7 +287,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AccessMode.java">org/universAAL/ontology/ui/preferences/AccessMode.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   2
@@ -301,7 +301,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.UIPreferencesSubProfile.java">org/universAAL/ontology/ui/preferences/UIPreferencesSubProfile.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -315,7 +315,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AlertType.java">org/universAAL/ontology/ui/preferences/AlertType.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   4
@@ -329,7 +329,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.PendingMessageBuilderType.java">org/universAAL/ontology/ui/preferences/PendingMessageBuilderType.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   2
@@ -343,7 +343,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AlertPreferences.java">org/universAAL/ontology/ui/preferences/AlertPreferences.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1
@@ -357,7 +357,7 @@ under the License.
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.VisualPreferences.java">org/universAAL/ontology/ui/preferences/VisualPreferences.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   1

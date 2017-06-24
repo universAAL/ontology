@@ -28,7 +28,7 @@ under the License.
       <title>File: 35,
              Errors: 557,
              Warnings: 71,
-             Infos: 163
+             Infos: 6
       </title>
             <link>/checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PropertyExitSensor.java">org/universAAL/ontology/activityhub/PropertyExitSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -63,7 +63,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MedicationDosageSensor.java">org/universAAL/ontology/activityhub/MedicationDosageSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -77,7 +77,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.EnuresisSensor.java">org/universAAL/ontology/activityhub/EnuresisSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -91,7 +91,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.FallSensorEvent.java">org/universAAL/ontology/activityhub/FallSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   3
@@ -105,7 +105,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.UsageSensor.java">org/universAAL/ontology/activityhub/UsageSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.SmokeSensor.java">org/universAAL/ontology/activityhub/SmokeSensor.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -133,7 +133,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.ActivityHubOntology.java">org/universAAL/ontology/ActivityHubOntology.java</a>
                 </td>
                 <td>
-                  5
+                  3
                 </td>
                 <td>
                   1
@@ -147,7 +147,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.EnvironmentalSensorEvent.java">org/universAAL/ontology/activityhub/EnvironmentalSensorEvent.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   3
@@ -161,7 +161,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.GasSensor.java">org/universAAL/ontology/activityhub/GasSensor.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -175,7 +175,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.factory.ActivityHubFactory.java">org/universAAL/ontology/activityhub/factory/ActivityHubFactory.java</a>
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   1
@@ -189,7 +189,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.SwitchSensor.java">org/universAAL/ontology/activityhub/SwitchSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -203,7 +203,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PropertyExitSensorEvent.java">org/universAAL/ontology/activityhub/PropertyExitSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   4
@@ -217,7 +217,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ActivityHubSensor.java">org/universAAL/ontology/activityhub/ActivityHubSensor.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   0
@@ -231,7 +231,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator.java">org/universAAL/ontology/activityhub/ext/AdaptorPlugActuator.java</a>
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
                   1
@@ -245,7 +245,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.util.ActivityHubSensorType.java">org/universAAL/ontology/activityhub/util/ActivityHubSensorType.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   17
@@ -259,7 +259,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.Activator.java">org/universAAL/ontology/activityhub/Activator.java</a>
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   1
@@ -273,7 +273,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.TemperatureSensor.java">org/universAAL/ontology/activityhub/TemperatureSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -287,7 +287,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ActivityHub.java">org/universAAL/ontology/activityhub/ActivityHub.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   0
@@ -301,7 +301,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ContactClosureSensorEvent.java">org/universAAL/ontology/activityhub/ContactClosureSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   4
@@ -315,7 +315,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.FallSensor.java">org/universAAL/ontology/activityhub/FallSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -329,7 +329,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MotionSensor.java">org/universAAL/ontology/activityhub/MotionSensor.java</a>
                 </td>
                 <td>
-                  5
+                  0
                 </td>
                 <td>
                   0
@@ -343,7 +343,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PersSensor.java">org/universAAL/ontology/activityhub/PersSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -357,7 +357,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MotionSensorEvent.java">org/universAAL/ontology/activityhub/MotionSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   5
@@ -371,7 +371,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.EnuresisSensorEvent.java">org/universAAL/ontology/activityhub/EnuresisSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   3
@@ -385,7 +385,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.WaterSensor.java">org/universAAL/ontology/activityhub/WaterSensor.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -399,7 +399,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.TemperatureSensorEvent.java">org/universAAL/ontology/activityhub/TemperatureSensorEvent.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   5
@@ -413,7 +413,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ActivityHubSensorEvent.java">org/universAAL/ontology/activityhub/ActivityHubSensorEvent.java</a>
                 </td>
                 <td>
-                  2
+                  0
                 </td>
                 <td>
                   0
@@ -427,7 +427,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.CoSensor.java">org/universAAL/ontology/activityhub/CoSensor.java</a>
                 </td>
                 <td>
-                  7
+                  0
                 </td>
                 <td>
                   0
@@ -441,7 +441,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ContactClosureSensor.java">org/universAAL/ontology/activityhub/ContactClosureSensor.java</a>
                 </td>
                 <td>
-                  6
+                  0
                 </td>
                 <td>
                   0
@@ -455,7 +455,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.UsageSensorEvent.java">org/universAAL/ontology/activityhub/UsageSensorEvent.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   7
@@ -469,7 +469,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.factory.ActivityHubEventFactory.java">org/universAAL/ontology/activityhub/factory/ActivityHubEventFactory.java</a>
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   2
@@ -483,7 +483,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.SwitchSensorEvent.java">org/universAAL/ontology/activityhub/SwitchSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   4
@@ -497,7 +497,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.PersSensorEvent.java">org/universAAL/ontology/activityhub/PersSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   3
@@ -511,7 +511,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.ext.AdaptorPlugActuatorEvent.java">org/universAAL/ontology/activityhub/ext/AdaptorPlugActuatorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   3
@@ -525,7 +525,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.activityhub.MedicationDosageSensorEvent.java">org/universAAL/ontology/activityhub/MedicationDosageSensorEvent.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   4

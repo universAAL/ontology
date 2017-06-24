@@ -28,7 +28,7 @@ under the License.
       <title>File: 9,
              Errors: 116,
              Warnings: 13,
-             Infos: 32
+             Infos: 2
       </title>
             <link>http://ontology/ont.health.measurement//checkstyle.html</link>
       <description>
@@ -49,7 +49,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement.java">org/universAAL/ontology/healthmeasurement/owl/HealthMeasurement.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   1
@@ -63,7 +63,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.HealthMeasurementActivator.java">org/universAAL/ontology/healthmeasurement/HealthMeasurementActivator.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   1
@@ -91,7 +91,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology.java">org/universAAL/ontology/healthmeasurement/owl/HealthMeasurementOntology.java</a>
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
                   6
@@ -105,7 +105,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.owl.PersonWeight.java">org/universAAL/ontology/healthmeasurement/owl/PersonWeight.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   0
@@ -119,7 +119,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.owl.BloodPressure.java">org/universAAL/ontology/healthmeasurement/owl/BloodPressure.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   0
@@ -133,7 +133,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.owl.HeartRate.java">org/universAAL/ontology/healthmeasurement/owl/HeartRate.java</a>
                 </td>
                 <td>
-                  4
+                  0
                 </td>
                 <td>
                   0
@@ -147,7 +147,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal.java">org/universAAL/ontology/healthmeasurement/owl/HeartRateSignal.java</a>
                 </td>
                 <td>
-                  5
+                  1
                 </td>
                 <td>
                   3
@@ -161,7 +161,7 @@ under the License.
                   <a href="http://ontology/ont.health.measurement//checkstyle.html#org.universAAL.ontology.healthmeasurement.HealthMeasurementFactory.java">org/universAAL/ontology/healthmeasurement/HealthMeasurementFactory.java</a>
                 </td>
                 <td>
-                  3
+                  0
                 </td>
                 <td>
                   1
