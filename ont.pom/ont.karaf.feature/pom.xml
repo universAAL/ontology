@@ -21,7 +21,7 @@
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
-      <artifactId>ont.asor</artifactId>
+      <artifactId>ont.orchestration</artifactId>
     </dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>

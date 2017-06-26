@@ -19,20 +19,28 @@
  */
 package org.universAAL.ontology;
 
-import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.ModuleActivator;
-import org.universAAL.middleware.owl.OntologyManagement;
-import org.universAAL.ontology.asor.*;
+import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.rdf.ResourceFactory;
+import org.universAAL.ontology.orchestration.LanguageClassifier;
+import org.universAAL.ontology.orchestration.Orchestrator;
+import org.universAAL.ontology.orchestration.Script;
+import org.universAAL.ontology.orchestration.ScriptEngine;
 
-public class AsorActivator implements ModuleActivator {
+public class OrchestrationFactory implements ResourceFactory {
 
-	AsorOntology _asorOntology = new AsorOntology();
+	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 
-	public void start(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().register(mc, _asorOntology);
-	}
+		switch (factoryIndex) {
+		case 0:
+			return new Script(instanceURI);
+		case 1:
+			return new Orchestrator(instanceURI);
+		case 2:
+			return new ScriptEngine(instanceURI);
+		case 3:
+			return new LanguageClassifier(instanceURI);
 
-	public void stop(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().unregister(mc, _asorOntology);
+		}
+		return null;
 	}
 }

@@ -8,10 +8,10 @@
     <version>3.4.1-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
-  <artifactId>ont.asor</artifactId>
+  <artifactId>ont.orchestration</artifactId>
   <version>3.4.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <name>universAAL Ontology ASOR</name>
+  <name>universAAL Ontology Orchestration</name>
   <dependencies>
     <dependency>
       <groupId>org.universAAL.middleware</groupId>
@@ -42,7 +42,7 @@
             <Bundle-Name>${project.name}</Bundle-Name>
             <Bundle-Description>${project.description}</Bundle-Description>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Export-Package>org.universAAL.ontology.asor</Export-Package>
+            <Export-Package>org.universAAL.ontology.orchestration</Export-Package>
             <Private-Package>org.universAAL.ontology;-split-package:=first</Private-Package>
           </instructions>
         </configuration>
