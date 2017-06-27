@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>3.4.2-SNAPSHOT</version>
     <relativePath>../ont.pom</relativePath>
   </parent>
   <artifactId>ont.orchestration</artifactId>
-  <version>3.4.1-SNAPSHOT</version>
+  <version>3.4.2-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Orchestration</name>
   <dependencies>
@@ -26,9 +26,9 @@
       <artifactId>mw.bus.service.core</artifactId>
     </dependency>
     <dependency>
-       <groupId>org.universAAL.middleware</groupId>
-       <artifactId>mw.bus.junit</artifactId>
-       <scope>test</scope>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.junit</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>

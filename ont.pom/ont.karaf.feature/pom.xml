@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>3.4.2-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
   <artifactId>ont.karaf.feature</artifactId>
-  <version>3.4.1-SNAPSHOT</version>
+  <version>3.4.2-SNAPSHOT</version>
   <name>universAAL Ontology Karaf Feature</name>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>

@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>3.4.2-SNAPSHOT</version>
     <relativePath>../ont.pom/pom.xml</relativePath>
   </parent>
   <artifactId>ont.situation.reasoner</artifactId>
-  <version>3.4.1-SNAPSHOT</version>
+  <version>3.4.2-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>universAAL Ontology Reasoning</name>
   <description>Ontology for the generic situation reasoner</description>
@@ -36,9 +36,9 @@
       <artifactId>mw.bus.context.core</artifactId>
     </dependency>
     <dependency>
-       <groupId>org.universAAL.middleware</groupId>
-       <artifactId>mw.bus.junit</artifactId>
-       <scope>test</scope>
+      <groupId>org.universAAL.middleware</groupId>
+      <artifactId>mw.bus.junit</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
