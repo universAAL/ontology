@@ -30,7 +30,7 @@ public class CMYKColorModel extends ColorModel {
 	public static final String PROP_CYAN = UnitOntology.NAMESPACE + "cyan";
 	public static final String PROP_MAGENTA = UnitOntology.NAMESPACE
 			+ "magenta";
-	public static final String PROP_YELLOW = UnitOntology.NAMESPACE + "Yellow";
+	public static final String PROP_YELLOW = UnitOntology.NAMESPACE + "yellow";
 	public static final String PROP_BLACK = UnitOntology.NAMESPACE + "black";
 
 	public static final Unit IND_UNIT_CMYK = new Unit("cmyk",

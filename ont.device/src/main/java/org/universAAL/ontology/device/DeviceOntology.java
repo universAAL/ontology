@@ -710,7 +710,7 @@ public final class DeviceOntology extends Ontology {
 		oci_ColorLightActuator.addObjectProperty(ColorLightActuator.PROP_COLOR)
 				.setFunctional();
 		oci_ColorLightActuator.addRestriction(MergedRestriction
-				.getAllValuesRestriction(ColorLightActuator.MY_URI,
+				.getAllValuesRestriction(ColorLightActuator.PROP_COLOR,
 						ColorModel.MY_URI));
 
 		oci_ColorLightController

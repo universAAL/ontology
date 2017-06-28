@@ -18,6 +18,7 @@ package org.universAAL.ontology.unit;
 import org.universAAL.middleware.owl.AllValuesFromRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.HasValueRestriction;
+import org.universAAL.middleware.owl.IntRestriction;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -366,7 +367,17 @@ public final class UnitOntology extends Ontology {
 		oci_RGBColorModel.addDatatypeProperty(RGBColorModel.PROP_RED);
 		oci_RGBColorModel.addDatatypeProperty(RGBColorModel.PROP_BLUE);
 		oci_RGBColorModel.addDatatypeProperty(RGBColorModel.PROP_GREEN);
-		// TODO restrict datatype properties to numeric?
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(RGBColorModel.PROP_RED,
+						new IntRestriction(0, true, 255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						RGBColorModel.PROP_BLUE, new IntRestriction(0, true,
+								255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						RGBColorModel.PROP_GREEN, new IntRestriction(0, true,
+								255, true), 1, 1));
 		oci_RGBColorModel.addInstance(RGBColorModel.IND_UNIT_RGB);
 		oci_RGBColorModel.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
@@ -381,7 +392,17 @@ public final class UnitOntology extends Ontology {
 		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_HUE);
 		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_SATURATION);
 		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_VALUE);
-		// TODO restrict datatype properties to numeric?
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(HSVColorModel.PROP_HUE,
+						new IntRestriction(0, true, 255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						HSVColorModel.PROP_SATURATION, new IntRestriction(0,
+								true, 255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						HSVColorModel.PROP_VALUE, new IntRestriction(0, true,
+								255, true), 1, 1));
 		oci_HSVColorModel.addInstance(HSVColorModel.IND_UNIT_HSV);
 		oci_HSVColorModel.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
@@ -396,7 +417,22 @@ public final class UnitOntology extends Ontology {
 		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_MAGENTA);
 		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_YELLOW);
 		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_BLACK);
-		// TODO restrict datatype properties to numeric?
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						CMYKColorModel.PROP_CYAN, new IntRestriction(0, true,
+								255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						CMYKColorModel.PROP_MAGENTA, new IntRestriction(0,
+								true, 255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						CMYKColorModel.PROP_YELLOW, new IntRestriction(0, true,
+								255, true), 1, 1));
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						CMYKColorModel.PROP_BLACK, new IntRestriction(0, true,
+								255, true), 1, 1));
 		oci_CMYKColorModel.addInstance(CMYKColorModel.IND_UNIT_CMYK);
 		oci_CMYKColorModel.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
@@ -409,7 +445,10 @@ public final class UnitOntology extends Ontology {
 						+ "radiates light of a color comparable to that of the light source.");
 		oci_ColorTemp.addSuperClass(ColorModel.MY_URI);
 		oci_ColorTemp.addDatatypeProperty(ColorTemperature.PROP_DEGREES);
-		// TODO restrict datatype properties to numeric?
+		oci_RGBColorModel.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ColorTemperature.PROP_DEGREES,
+						TypeMapper.getDatatypeURI(Integer.class), 1, 1));
 		oci_ColorTemp.addInstance(ColorTemperature.IND_UNIT_COLOR_TEMPERATURE);
 		oci_ColorTemp.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
