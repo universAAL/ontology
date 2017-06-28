@@ -17,8 +17,10 @@ package org.universAAL.ontology.unit;
 
 public abstract class DerivedUnit extends Unit {
 	public static final String MY_URI = UnitOntology.NAMESPACE + "DerivedUnit";
-	public static final String PROP_BASE_UNIT = UnitOntology.NAMESPACE + "baseUnit";
-	public static final String PROP_BASE_PREFIX = UnitOntology.NAMESPACE + "basePrefix";
+	public static final String PROP_BASE_UNIT = UnitOntology.NAMESPACE
+			+ "baseUnit";
+	public static final String PROP_BASE_PREFIX = UnitOntology.NAMESPACE
+			+ "basePrefix";
 
 	public DerivedUnit() {
 		super();
@@ -33,13 +35,13 @@ public abstract class DerivedUnit extends Unit {
 		setBaseUnit(baseUnit);
 	}
 
-	public DerivedUnit(String uri, Unit baseUnit) {
-		super(uri);
+	public DerivedUnit(String uriPostfix, Unit baseUnit) {
+		super(UnitOntology.NAMESPACE + uriPostfix);
 		setBaseUnit(baseUnit);
 	}
 
-	public DerivedUnit(String uri, Unit baseUnit, Prefix basePrefix) {
-		super(uri);
+	public DerivedUnit(String uriPostfix, Unit baseUnit, Prefix basePrefix) {
+		super(UnitOntology.NAMESPACE + uriPostfix);
 		setBaseUnit(baseUnit);
 		setBasePrefix(basePrefix);
 	}

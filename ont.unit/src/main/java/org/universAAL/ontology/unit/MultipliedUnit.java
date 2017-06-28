@@ -33,18 +33,18 @@ public class MultipliedUnit extends DerivedUnit {
 		setMultipliedBy(mult);
 	}
 
-	public MultipliedUnit(String uri, Unit base, Unit mult) {
-		super(uri, base);
+	public MultipliedUnit(String uriPostfix, Unit base, Unit mult) {
+		super(uriPostfix, base);
 		setMultipliedBy(mult);
 	}
 
-	public MultipliedUnit(String uri, Unit base, Prefix basePrefix, Unit mult) {
-		super(uri, base, basePrefix);
+	public MultipliedUnit(String uriPostfix, Unit base, Prefix basePrefix, Unit mult) {
+		super(uriPostfix, base, basePrefix);
 		setMultipliedBy(mult);
 	}
 
-	public MultipliedUnit(String uri, Unit base, Prefix basePrefix, Unit mult, Prefix multPrefix) {
-		super(uri, base, basePrefix);
+	public MultipliedUnit(String uriPostfix, Unit base, Prefix basePrefix, Unit mult, Prefix multPrefix) {
+		super(uriPostfix, base, basePrefix);
 		setMultipliedBy(mult);
 		setMultipliedByPrefix(multPrefix);
 	}

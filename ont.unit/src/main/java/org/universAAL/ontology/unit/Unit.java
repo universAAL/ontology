@@ -19,10 +19,12 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 public class Unit extends ManagedIndividual {
 	public static final String MY_URI = UnitOntology.NAMESPACE + "Unit";
-	public static final String PROP_UNIT_SYSTEM = UnitOntology.NAMESPACE + "unitSystem";
+	public static final String PROP_UNIT_SYSTEM = UnitOntology.NAMESPACE
+			+ "unitSystem";
 	public static final String PROP_NAME = UnitOntology.NAMESPACE + "name";
 	public static final String PROP_SYMBOL = UnitOntology.NAMESPACE + "symbol";
-	public static final String PROP_DIMENSION = UnitOntology.NAMESPACE + "dimension";
+	public static final String PROP_DIMENSION = UnitOntology.NAMESPACE
+			+ "dimension";
 
 	public Unit() {
 		super();
@@ -32,15 +34,17 @@ public class Unit extends ManagedIndividual {
 		super(uri);
 	}
 
-	public Unit(String uri, String name, String symbol, MeasurableDimension dimension) {
-		super(uri);
+	public Unit(String uriPostfix, String name, String symbol,
+			MeasurableDimension dimension) {
+		super(UnitOntology.NAMESPACE + uriPostfix);
 		setName(name);
 		setSymbol(symbol);
 		setDimension(dimension);
 	}
 
-	public Unit(String uri, String name, String symbol, MeasurableDimension dimension, UnitSystem us) {
-		super(uri);
+	public Unit(String uriPostfix, String name, String symbol,
+			MeasurableDimension dimension, UnitSystem us) {
+		super(UnitOntology.NAMESPACE + uriPostfix);
 		setName(name);
 		setSymbol(symbol);
 		setDimension(dimension);
@@ -59,7 +63,8 @@ public class Unit extends ManagedIndividual {
 	}
 
 	public boolean isWellFormed() {
-		return true && hasProperty(PROP_NAME) && hasProperty(PROP_SYMBOL) && hasProperty(PROP_DIMENSION);
+		return true && hasProperty(PROP_NAME) && hasProperty(PROP_SYMBOL)
+				&& hasProperty(PROP_DIMENSION);
 	}
 
 	public String getName() {
