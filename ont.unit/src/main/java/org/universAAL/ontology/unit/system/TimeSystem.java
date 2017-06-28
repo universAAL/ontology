@@ -1,12 +1,12 @@
 /*******************************************************************************
  * Copyright 2013 UPM - Universidad Politécnica de Madrid
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -47,7 +47,7 @@ public class TimeSystem {
 			IND_TS);
 	public static final Unit IND_UNIT_TS_MILENIUM = new Unit("melenium", "Milenium", "milenium",
 			MeasurableDimension.Time, IND_TS);
-	// YES uAAL will need this! as its rule will last milenia! MUAhahaha
+	// YES universAAL will need this! as its rule will last milenia! MUAhahaha
 
 	static {
 		IND_TS.addUnits(IND_UNIT_TS_SECOND);

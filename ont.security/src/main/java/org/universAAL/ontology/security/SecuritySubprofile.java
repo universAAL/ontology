@@ -31,7 +31,7 @@ import org.universAAL.ontology.profile.User;
 
 /**
  * Security Subprofile to store Credentials, Roles, AccessRights ...
- * 
+ *
  * @author amedrano
  *
  */

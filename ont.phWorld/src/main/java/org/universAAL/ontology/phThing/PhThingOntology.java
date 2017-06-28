@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -34,9 +34,9 @@ import org.universAAL.ontology.shape.Shape;
 import org.universAAL.ontology.shape.ShapeOntology;
 
 /**
- * 
+ *
  * @author Carsten Stockloew
- * 
+ *
  */
 public class PhThingOntology extends Ontology {
 
@@ -69,7 +69,7 @@ public class PhThingOntology extends Ontology {
 		// load PhysicalThing
 		oci = createNewOntClassInfo(PhysicalThing.MY_URI, factory, 0);
 		oci.setResourceComment(
-				"The root class for all physical things in the uAAL ontology. Physical things have a location");
+				"The root class for all physical things in the universAAL ontology. Physical things have a location");
 		oci.setResourceLabel("Physical Thing");
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 		oci.addObjectProperty(PhysicalThing.PROP_CARRIED_BY).setFunctional();
@@ -96,7 +96,7 @@ public class PhThingOntology extends Ontology {
 
 		// load Device
 		oci = createNewOntClassInfo(Device.MY_URI, factory, 1);
-		oci.setResourceComment("The root class for all devices in the uAAL ontology.");
+		oci.setResourceComment("The root class for all devices in the universAAL ontology.");
 		oci.setResourceLabel("Device");
 		oci.addSuperClass(PhysicalThing.MY_URI);
 		oci.addObjectProperty(Device.PROP_BATTERY_LEVEL).setFunctional();

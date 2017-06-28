@@ -22,7 +22,7 @@ import org.universAAL.middleware.service.owl.Service;
 /**
  * Service Description for Authentication. Authenticator mechanisms should
  * provide profiles for this service
- * 
+ *
  * @author amedrano
  *
  */

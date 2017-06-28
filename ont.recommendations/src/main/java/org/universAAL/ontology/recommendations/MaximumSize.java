@@ -21,17 +21,17 @@ import org.universAAL.middleware.ui.rdf.FormControl;
 /**
  * Used to tell Handlers an element is not supposed to exeed certain dimensions.
  * The code:
- * 
+ *
  * <pre>
- * <code> 
+ * <code>
  * {@link FormControl} f = ...;
  * f.addAppearanceRecommendation(new MaximumSize(100,33, SizeUnit.screenRelative));
  * </code>
  * </pre>
- * 
+ *
  * will set the maximum size of the component to be 100% of the screen wide, and
  * 33% of the screen's height high-
- * 
+ *
  * @author amedrano
  * @see SizeUnit
  *
@@ -41,7 +41,7 @@ public class MaximumSize extends Size {
 	public static final String MY_URI = RecommendationsOntology.NAMESPACE + "MaximumSize";
 
 	/**
-	 * 
+	 *
 	 */
 	public MaximumSize() {
 	}

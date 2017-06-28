@@ -1,10 +1,10 @@
 /*
  Copyright 2008-2011 ITACA-TSB, http://www.tsb.upv.es
- Instituto Tecnologico de Aplicaciones de Comunicacion 
- Avanzadas - Grupo Tecnologias para la Salud y el 
+ Instituto Tecnologico de Aplicaciones de Comunicacion
+ Avanzadas - Grupo Tecnologias para la Salud y el
  Bienestar (TSB)
 
- See the NOTICE file distributed with this work for additional 
+ See the NOTICE file distributed with this work for additional
  information regarding copyright ownership
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,8 +27,8 @@ import org.universAAL.middleware.service.owl.Service;
 /**
  * Ontological service that controls any HW device. Methods included in this
  * class are the mandatory ones for representing an ontological service in Java
- * classes for uAAL.
- * 
+ * classes for universAAL.
+ *
  * @author alfiva
  */
 public class DeviceService extends Service {

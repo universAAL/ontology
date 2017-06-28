@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,11 +27,11 @@ import org.universAAL.ontology.location.position.Point;
 /**
  * Ontological representation of a tri-dimensional box shape. Methods included
  * in this class are the mandatory ones for representing an ontological concept
- * in Java classes for uAAL. Usually it includes getters and setters for most of
+ * in Java classes for universAAL. Usually it includes getters and setters for most of
  * its properties.
- * 
+ *
  * @author chwirth
- * 
+ *
  */
 
 public class Box extends Shape3D {
@@ -46,7 +46,7 @@ public class Box extends Shape3D {
 	 * assumes the given coordinate system to be centered at the lower left
 	 * corner of the object, not the center. Note: the coordinate system will be
 	 * modified !
-	 * 
+	 *
 	 * @param uri
 	 * @param width
 	 * @param height
@@ -66,7 +66,7 @@ public class Box extends Shape3D {
 	 * assumes the given coordinate system to be centered at the lower left
 	 * corner of the object, not the center. Note: the coordinate system will be
 	 * modified !
-	 * 
+	 *
 	 * @param uri
 	 * @param width
 	 * @param height
@@ -155,7 +155,7 @@ public class Box extends Shape3D {
 
 	/**
 	 * defined for Box & Sphere
-	 * 
+	 *
 	 * @param shape
 	 * @return
 	 */

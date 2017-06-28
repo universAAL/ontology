@@ -53,7 +53,7 @@ public class FactoryTest extends TestCase {
 			Language l = (Language) Resource.getResource(uri, Resource.generateAnonURI());
 			new Locale(l.getIso639code());
 		}
-		System.out.println("that makes: " + allLang.size() + " languages compatible with uAAL.");
+		System.out.println("that makes: " + allLang.size() + " languages compatible with universAAL.");
 	}
 
 }

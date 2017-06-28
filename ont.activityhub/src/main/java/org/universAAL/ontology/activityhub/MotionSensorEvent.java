@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -26,15 +26,15 @@ import org.universAAL.ontology.ActivityHubOntology;
  * Ontological enumeration of motion sensor events according to ISO 11073 - Part
  * 10471 (Independent living activity hub), edition 2010-05-01 Methods included
  * in this class are the mandatory ones for representing an ontological
- * enumeration in Java classes for uAAL.
- * 
+ * enumeration in Java classes for universAAL.
+ *
  * Specific sensor events (from standard specification): - motion detected -
  * motion detected delayed (optional) - tamper detected (optional) - no
  * condition detected (optional)
- * 
+ *
  * TODO: the standard says: "the tamper flag may be additionally set at any
  * time" means together with a motion-detected or motion-detected-delayed event.
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class MotionSensorEvent extends ActivityHubSensorEvent {

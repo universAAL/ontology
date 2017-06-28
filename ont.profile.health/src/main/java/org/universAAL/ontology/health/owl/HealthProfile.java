@@ -3,13 +3,13 @@
  *
  * OCO Source Materials
  * � Copyright IBM Corp. 2011
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -61,7 +61,7 @@ public class HealthProfile extends SubProfile {
 	/*
 	 * public HealthProfile (AssistedPersonWithHealthProfile apwhp, Treatment
 	 * t){ this.setAssignedAssistedPerson(apwhp); this.addTreatment(t); }
-	 * 
+	 *
 	 * public HealthProfile (AssistedPersonWithHealthProfile apwhp, Treatment[]
 	 * ts){ this.setAssignedAssistedPerson(apwhp); this.setTreatments(ts); }
 	 */
@@ -142,10 +142,10 @@ public class HealthProfile extends SubProfile {
 
 	/**
 	 * Deletes a treatment with the given URI from the list.
-	 * 
+	 *
 	 * @param treatmentURI
 	 *            The URI of the treatment to be deleted
-	 * 
+	 *
 	 * @return True if the treatment was found and deleted from the list,
 	 *         otherwise returns False
 	 */
@@ -167,10 +167,10 @@ public class HealthProfile extends SubProfile {
 	/**
 	 * Replaces the given treatment with the treatment in the list with the same
 	 * URI.
-	 * 
+	 *
 	 * @param treatment
 	 *            The new treatment to be added to the list
-	 * 
+	 *
 	 * @return True if the treatment was found and replaced, otherwise returns
 	 *         False
 	 */
@@ -192,7 +192,7 @@ public class HealthProfile extends SubProfile {
 
 	/**
 	 * Update the last measurement taken for this AP.
-	 * 
+	 *
 	 * @param measurement
 	 *            the new measure taken.
 	 */
@@ -215,7 +215,7 @@ public class HealthProfile extends SubProfile {
 
 	/**
 	 * Get the last measurement.
-	 * 
+	 *
 	 * @param healthMeasurementURI
 	 *            filter the {@link HealthMeasurement} type.
 	 * @return the instance of {@link HealthMeasurement} or null if not found.

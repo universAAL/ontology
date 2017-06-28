@@ -18,7 +18,7 @@ package org.universAAL.ontology.language;
 
 /**
  * @author amedrano
- * 
+ *
  */
 public final class LanguageImpl extends Language {
 

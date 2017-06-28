@@ -1,12 +1,12 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-	 
+
      Copyright 2015 ITACA-SABIEN, http://www.tsb.upv.es
-     Instituto Tecnologico de Aplicaciones de Comunicacion 
-     Avanzadas - Grupo Tecnologias para la Salud y el 
+     Instituto Tecnologico de Aplicaciones de Comunicacion
+     Avanzadas - Grupo Tecnologias para la Salud y el
      Bienestar (SABIEN)
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -42,7 +42,7 @@ import org.universAAL.ontology.measurement.MeasurementOntology;
 /**
  * The ontology represents the person-related health devices (Continua certified
  * devices) e.g. blood pressure monitor, weighing scale,...
- * 
+ *
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
 public class PersonalHealthDeviceOntology extends Ontology {

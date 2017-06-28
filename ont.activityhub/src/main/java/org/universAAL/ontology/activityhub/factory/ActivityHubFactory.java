@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -29,7 +29,7 @@ import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
 /**
  * Factory for the ActivityHub ontology according to ISO 11073 - Part 10471
  * (Independent living activity hub), edition 2010-05-01
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class ActivityHubFactory implements ResourceFactory {

@@ -21,9 +21,9 @@ import org.universAAL.ontology.questionnaire.SingleChoiceQuestion;
 /**
  * The following test class will check that the conditional questions associated
  * to a multi- trigger answer work properly.
- * 
+ *
  * @author mdelafuente
- * 
+ *
  */
 
 public class QuestionnaireMultiTriggerTest extends OntTestCase {

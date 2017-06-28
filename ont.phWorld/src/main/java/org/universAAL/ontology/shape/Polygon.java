@@ -1,16 +1,16 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -30,11 +30,11 @@ import org.universAAL.ontology.location.position.Point;
 /**
  * Ontological representation of a polygon in a tri-dimensional space. Methods
  * included in this class are the mandatory ones for representing an ontological
- * concept in Java classes for uAAL. Usually it includes getters and setters for
+ * concept in Java classes for universAAL. Usually it includes getters and setters for
  * most of its properties.
- * 
+ *
  * @author chwirth
- * 
+ *
  */
 
 public class Polygon extends Shape3D {
@@ -45,7 +45,7 @@ public class Polygon extends Shape3D {
 
 	/**
 	 * Creates a Polygon object
-	 * 
+	 *
 	 * @param uri
 	 *            the object URI
 	 */
@@ -63,7 +63,7 @@ public class Polygon extends Shape3D {
 	/**
 	 * Creates a Polygon object. All vertices have to be in the same coordinate
 	 * system
-	 * 
+	 *
 	 * @param uri
 	 *            this value can also be a null object
 	 * @param verts
@@ -131,7 +131,7 @@ public class Polygon extends Shape3D {
 
 	/**
 	 * the center point of all vertices, assuming an even weights
-	 * 
+	 *
 	 * @return the midpoint
 	 */
 	public Point getMidpoint() {
@@ -193,7 +193,7 @@ public class Polygon extends Shape3D {
 
 	/**
 	 * accuracy limited to 4 digits after the dot
-	 * 
+	 *
 	 */
 	public boolean contains(Point p) {
 		if (!p.is2D())

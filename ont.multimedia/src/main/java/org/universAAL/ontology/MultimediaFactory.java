@@ -25,7 +25,7 @@ import org.universAAL.ontology.multimedia.Stereoset;
 
 /**
  * The factory for instantiating objects of the ontology classes.
- * 
+ *
  * @author Carsten Stockloew
  */
 

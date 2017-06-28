@@ -1,21 +1,21 @@
 /*
 	Copyright 2008-2014 Fraunhofer IGD, http://www.igd.fraunhofer.de
 	Fraunhofer-Gesellschaft - Institute for Computer Graphics Research
-	
+
 	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
-	Instituto Tecnologico de Aplicaciones de Comunicacion 
-	Avanzadas - Grupo Tecnologias para la Salud y el 
+	Instituto Tecnologico de Aplicaciones de Comunicacion
+	Avanzadas - Grupo Tecnologias para la Salud y el
 	Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,7 +26,7 @@
  * This is a modification of org.universAAL.middleware.context.ContextEvent
  * redefined as extension of ManagedIdividual so it can be registered and used
  * in a service definition and call (specially, or solely, for the context history).
- * It allows for defining all of its properties as null (after construction), 
+ * It allows for defining all of its properties as null (after construction),
  * for match wildcarding.
  */
 package org.universAAL.ontology.che;
@@ -49,14 +49,14 @@ import org.universAAL.middleware.rdf.Resource;
  * conversion from
  * <code>org.universAAL.platform.casf.che.ontology.ContextEvent</code> to
  * {@link org.universAAL.middleware.context.ContextEvent} in the casting.
- * 
+ *
  * @author <a href="mailto:alfiva@itaca.upv.es">Alvaro Fides Valero</a>
  * @author <a href="mailto:Saied.Tazari@igd.fraunhofer.de">Saied Tazari</a>
- * 
+ *
  */
 public class ContextEvent extends ManagedIndividual {
-	public static final String uAAL_CONTEXT_NAMESPACE = NAMESPACE_PREFIX + "Context.owl#";
-	public static final String MY_URI = uAAL_CONTEXT_NAMESPACE + "ContextEventCHE2";
+	public static final String CONTEXT_NAMESPACE = NAMESPACE_PREFIX + "Context.owl#";
+	public static final String MY_URI = CONTEXT_NAMESPACE + "ContextEventCHE2";
 	public static final String CONTEXT_EVENT_URI_PREFIX = "urn:org.universAAL.middleware.context.rdf:ContextEvent#";
 	public static final String LOCAL_NAME_SUBJECT = "subjectCHE2";
 	public static final String PROP_RDF_SUBJECT = RDF_NAMESPACE + LOCAL_NAME_SUBJECT;
@@ -65,17 +65,17 @@ public class ContextEvent extends ManagedIndividual {
 	public static final String LOCAL_NAME_OBJECT = "objectCHE2";
 	public static final String PROP_RDF_OBJECT = RDF_NAMESPACE + LOCAL_NAME_OBJECT;
 	public static final String LOCAL_NAME_CONFIDENCE = "hasConfidenceCHE2";
-	public static final String PROP_CONTEXT_CONFIDENCE = uAAL_CONTEXT_NAMESPACE + LOCAL_NAME_CONFIDENCE;
+	public static final String PROP_CONTEXT_CONFIDENCE = CONTEXT_NAMESPACE + LOCAL_NAME_CONFIDENCE;
 	public static final String LOCAL_NAME_PROVIDER = "hasProviderCHE2";
-	public static final String PROP_CONTEXT_PROVIDER = uAAL_CONTEXT_NAMESPACE + LOCAL_NAME_PROVIDER;
+	public static final String PROP_CONTEXT_PROVIDER = CONTEXT_NAMESPACE + LOCAL_NAME_PROVIDER;
 	public static final String LOCAL_NAME_EXPIRATION_TIME = "hasExpirationTimeCHE2";
-	public static final String PROP_CONTEXT_EXPIRATION_TIME = uAAL_CONTEXT_NAMESPACE + LOCAL_NAME_EXPIRATION_TIME;
+	public static final String PROP_CONTEXT_EXPIRATION_TIME = CONTEXT_NAMESPACE + LOCAL_NAME_EXPIRATION_TIME;
 	public static final String LOCAL_NAME_TIMESTAMP = "hasTimestampCHE2";
-	public static final String PROP_CONTEXT_TIMESTAMP = uAAL_CONTEXT_NAMESPACE + LOCAL_NAME_TIMESTAMP;
+	public static final String PROP_CONTEXT_TIMESTAMP = CONTEXT_NAMESPACE + LOCAL_NAME_TIMESTAMP;
 
 	/**
 	 * Constructs a CHe stub ContextEvent according to the parameters passed.
-	 * 
+	 *
 	 * @param subjectURI
 	 *            URI of the subject.
 	 * @param subjectTypeURI
@@ -117,7 +117,7 @@ public class ContextEvent extends ManagedIndividual {
 	 * construct one of these ContextEvents without properties, only with a URI.
 	 * Or without it. Because this is a ManagedIndividual. Does not check URI
 	 * well-formedness.
-	 * 
+	 *
 	 * @param uri
 	 *            URI of the event. Set it to null for an anonymous event,
 	 *            although this might give unexpected results.
@@ -135,7 +135,7 @@ public class ContextEvent extends ManagedIndividual {
 	 * to the event. If you need such an URI, but without subject, predicate or
 	 * object, you can use this constructor with stub parameters and then set
 	 * them to null with the right "set" methods.
-	 * 
+	 *
 	 * @param subject
 	 *            The Resource representing the subject of the event. Must
 	 *            include the property specified in the second parameter, and
@@ -165,7 +165,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the confidence of the event.
-	 * 
+	 *
 	 * @return The confidence represented as a percentage (0 to 100)
 	 */
 	public Integer getConfidence() {
@@ -174,7 +174,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the expiration time.
-	 * 
+	 *
 	 * @return The amount of milliseconds after reception from which the
 	 *         information in the event is no longer valid
 	 */
@@ -189,7 +189,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the object of the event.
-	 * 
+	 *
 	 * @return The object of the event (a Resource)
 	 */
 	public Object getRDFObject() {
@@ -198,7 +198,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the predicate of the event.
-	 * 
+	 *
 	 * @return The URI of the predicate of the event
 	 */
 	public String getRDFPredicate() {
@@ -208,7 +208,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the ContextProvider of the event.
-	 * 
+	 *
 	 * @return The {@link org.universAAL.middleware.context.owl.ContextProvider}
 	 *         representing the provider that originated the event
 	 */
@@ -218,7 +218,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the subject of the event.
-	 * 
+	 *
 	 * @return The {@link org.universAAL.middleware.rdf.Resource} that is the
 	 *         subject to the event
 	 */
@@ -228,7 +228,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the type of the subject of the event.
-	 * 
+	 *
 	 * @return The URI of the type of the subject to the event
 	 */
 	public String getSubjectTypeURI() {
@@ -238,7 +238,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the URI of the subject of the event.
-	 * 
+	 *
 	 * @return The URI of the individual that is the subject to the event
 	 */
 	public String getSubjectURI() {
@@ -248,7 +248,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Get the timestamp of the event.
-	 * 
+	 *
 	 * @return The timestamp, in UNIX format, associated to the event
 	 */
 	public Long getTimestamp() {
@@ -264,7 +264,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the confidence.
-	 * 
+	 *
 	 * @param confidence
 	 *            The confidence in percentage (0 to 100)
 	 */
@@ -283,7 +283,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the expiration time.
-	 * 
+	 *
 	 * @param expirationTime
 	 *            The amount of millisecond after which the event is not valid
 	 *            afer reception
@@ -303,7 +303,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the object.
-	 * 
+	 *
 	 * @param o
 	 */
 	public boolean setRDFObject(Object o) {
@@ -320,7 +320,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the predicate.
-	 * 
+	 *
 	 * @param propURI
 	 *            The URI of the predicate
 	 */
@@ -338,7 +338,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the Context Provider.
-	 * 
+	 *
 	 * @param src
 	 */
 	public boolean setProvider(ContextProvider src) {
@@ -355,7 +355,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the subject.
-	 * 
+	 *
 	 * @param subj
 	 */
 	public boolean setRDFSubject(Resource subj) {
@@ -372,7 +372,7 @@ public class ContextEvent extends ManagedIndividual {
 
 	/**
 	 * Set the timestamp.
-	 * 
+	 *
 	 * @param timestamp
 	 *            The timestamp in UNIX format
 	 */
@@ -390,7 +390,7 @@ public class ContextEvent extends ManagedIndividual {
 	/**
 	 * Overrides the ManagedIndividual implementation in order to avoid its
 	 * checks and allow null values for wildcarding.
-	 * 
+	 *
 	 * @see org.universAAL.middleware.owl.ManagedIndividual#setProperty(java.lang.String,
 	 *      java.lang.Object)
 	 */

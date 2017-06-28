@@ -1,12 +1,12 @@
 /*******************************************************************************
  * Copyright 2015 UPM - Universidad Politécnica de Madrid
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -22,7 +22,7 @@ import org.universAAL.ontology.phThing.Device;
 /**
  * HVAC stands for Heather,Ventilation and Air Conditioning, in this class are
  * defined the different properties that can find in any {@link Hvac} system.
- * 
+ *
  * @author Ricardo
  */
 public abstract class Hvac extends Device {

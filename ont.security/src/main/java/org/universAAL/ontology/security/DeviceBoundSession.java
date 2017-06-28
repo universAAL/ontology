@@ -19,7 +19,7 @@ package org.universAAL.ontology.security;
 
 /**
  * Device Bound Session, a session that is only valid for a specific device.
- * 
+ *
  * @author amedrano
  *
  */

@@ -23,7 +23,7 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Upper Session concept.
- * 
+ *
  * @author amedrano
  *
  */

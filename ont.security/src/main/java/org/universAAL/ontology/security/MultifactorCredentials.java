@@ -24,7 +24,7 @@ import java.util.List;
 
 /**
  * Multifactor type Credentials.
- * 
+ *
  * @author amedrano
  *
  */

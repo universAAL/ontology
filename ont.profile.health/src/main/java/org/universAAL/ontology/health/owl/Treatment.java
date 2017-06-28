@@ -1,12 +1,12 @@
 /*******************************************************************************
  * Copyright 2012 UPM, http://www.upm.es - Universidad Politécnica de Madrid
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -320,7 +320,7 @@ public abstract class Treatment extends ManagedIndividual {
 	/**
 	 * This method checks if the start date of the treatment has passed or not,
 	 * so as to establish the treatment status (planned or actived)
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */
@@ -351,7 +351,7 @@ public abstract class Treatment extends ManagedIndividual {
 	/**
 	 * This method checks if the start date of the treatment has passed or not,
 	 * so as to establish the treatment status (planned or actived)
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */
@@ -365,7 +365,7 @@ public abstract class Treatment extends ManagedIndividual {
 	/**
 	 * The following method checks if the treatment is planned, that is if the
 	 * current date is after the start date.
-	 * 
+	 *
 	 * @param void
 	 * @return isPlanned (boolean)
 	 */
@@ -378,7 +378,7 @@ public abstract class Treatment extends ManagedIndividual {
 
 	/**
 	 * The following method checks if the treatment has been cancelled
-	 * 
+	 *
 	 * @param void
 	 * @return isCancelled (boolean)
 	 */
@@ -392,7 +392,7 @@ public abstract class Treatment extends ManagedIndividual {
 	/**
 	 * The following method checks if the treatment is finished, that is if the
 	 * current date is after the end date.
-	 * 
+	 *
 	 * @param void
 	 * @return isFinished (boolean)
 	 */
@@ -405,7 +405,7 @@ public abstract class Treatment extends ManagedIndividual {
 
 	/**
 	 * The following method changes the treatment status to "cancelled".
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */
@@ -415,7 +415,7 @@ public abstract class Treatment extends ManagedIndividual {
 
 	/**
 	 * The following method changes the treatment status to "planned".
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */
@@ -425,7 +425,7 @@ public abstract class Treatment extends ManagedIndividual {
 
 	/**
 	 * The following method changes the treatment status to "actived".
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */
@@ -435,7 +435,7 @@ public abstract class Treatment extends ManagedIndividual {
 
 	/**
 	 * The following method changes the treatment status to "finished".
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */
@@ -445,7 +445,7 @@ public abstract class Treatment extends ManagedIndividual {
 
 	/**
 	 * The following method initializes the treatment planning
-	 * 
+	 *
 	 * @param void
 	 * @return void
 	 */

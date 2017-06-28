@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -27,16 +27,16 @@ import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
  * Ontological representation of a water sensor according to ISO 11073 - Part
  * 10471 (Independent living activity hub). Methods included in this class are
  * the mandatory ones for representing an ontological concept in Java classes
- * for uAAL. Usually it includes getters and setters for most of its properties.
- * 
+ * for universAAL. Usually it includes getters and setters for most of its properties.
+ *
  * Specific sensor events (from standard specification): - condition detected -
  * no condition detected (optional)
- * 
+ *
  * TODO: Implement generic sensor properties flags for activity hub sensors
- * 
+ *
  * NOTE: In the standard specification this sensor is a specialization of
  * "environmental sensor", besides smoke-, co- and gas sensor.
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class WaterSensor extends ActivityHubSensor {
@@ -46,7 +46,7 @@ public class WaterSensor extends ActivityHubSensor {
 	public static final int MY_SENSOR_TYPE = ActivityHubSensorType.WaterSensor;
 
 	/**
-	 * 
+	 *
 	 */
 	public WaterSensor() {
 		// super();
@@ -93,7 +93,7 @@ public class WaterSensor extends ActivityHubSensor {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * org.universAAL.ontology.activityhub.ActivityHubSensor#getSensorType()
 	 */

@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -27,15 +27,15 @@ import org.universAAL.ontology.activityhub.util.ActivityHubSensorType;
  * Ontological representation of a temperature sensor according to ISO 11073 -
  * Part 10471 (Independent living activity hub). Methods included in this class
  * are the mandatory ones for representing an ontological concept in Java
- * classes for uAAL. Usually it includes getters and setters for most of its
+ * classes for universAAL. Usually it includes getters and setters for most of its
  * properties.
- * 
+ *
  * Specific sensor events (from standard specification): - high temperature
  * detected - low temperature detected - rate of change too fast (optional) - no
  * condition detected (optional)
- * 
+ *
  * TODO: Implement generic sensor properties flags for activity hub sensors
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class TemperatureSensor extends ActivityHubSensor {
@@ -45,7 +45,7 @@ public class TemperatureSensor extends ActivityHubSensor {
 	public static final int MY_SENSOR_TYPE = ActivityHubSensorType.TemperatureSensor;
 
 	/**
-	 * 
+	 *
 	 */
 	public TemperatureSensor() {
 		// super();
@@ -92,7 +92,7 @@ public class TemperatureSensor extends ActivityHubSensor {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * org.universAAL.ontology.activityhub.ActivityHubSensor#getSensorType()
 	 */

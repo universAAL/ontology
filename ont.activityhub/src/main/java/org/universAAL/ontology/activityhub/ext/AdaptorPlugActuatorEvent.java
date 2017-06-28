@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -27,13 +27,13 @@ import org.universAAL.ontology.activityhub.ActivityHubSensorEvent;
  * Ontological enumeration of adaptor plug actuator events. This device is
  * currently not covered by the ISO 11073 standard in part 10471 (Independent
  * living activity hub). This class is an independent extension to the standard.
- * 
+ *
  * Methods included in this class are the mandatory ones for representing an
- * ontological concept in Java classes for uAAL. Usually it includes getters and
+ * ontological concept in Java classes for universAAL. Usually it includes getters and
  * setters for most of its properties.
- * 
+ *
  * Specific actuator actions: - power on - power off
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class AdaptorPlugActuatorEvent extends ActivityHubSensorEvent {

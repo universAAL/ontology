@@ -1,18 +1,18 @@
 /*
 	Copyright 2008-2014 ITACA-TSB, http://www.tsb.upv.es
-	Instituto Tecnologico de Aplicaciones de Comunicacion 
-	Avanzadas - Grupo Tecnologias para la Salud y el 
+	Instituto Tecnologico de Aplicaciones de Comunicacion
+	Avanzadas - Grupo Tecnologias para la Salud y el
 	Bienestar (TSB)
-	
-	See the NOTICE file distributed with this work for additional 
+
+	See the NOTICE file distributed with this work for additional
 	information regarding copyright ownership
-	
+
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
 	You may obtain a copy of the License at
-	
+
 	  http://www.apache.org/licenses/LICENSE-2.0
-	
+
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -21,9 +21,9 @@
  */
 package org.universAAL.ontology.profile;
 
-public class AALAppSubProfile extends SubProfile {
+public class AppSubProfile extends SubProfile {
 
-	public static final String MY_URI = ProfileOntology.NAMESPACE + "AALAppSubProfile";
+	public static final String MY_URI = ProfileOntology.NAMESPACE + "AppSubProfile";
 
 	public static final String PROP_ARTIFACT_FILE_URL = ProfileOntology.NAMESPACE + "hasArtifactFileID";
 	public static final String PROP_ARTIFACT_ID = ProfileOntology.NAMESPACE + "hasArtifactID";
@@ -39,11 +39,11 @@ public class AALAppSubProfile extends SubProfile {
 	public static final String PROP_APP_PROPERTIES = ProfileOntology.NAMESPACE + "hasAppProperties";
 	public static final String PROP_REALIZED_ONTOLOGIES = ProfileOntology.NAMESPACE + "hasRealizedOntologies";
 
-	protected AALAppSubProfile() {
+	protected AppSubProfile() {
 		super();
 	}
 
-	public AALAppSubProfile(String uri) {
+	public AppSubProfile(String uri) {
 		super(uri);
 	}
 

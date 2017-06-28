@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -26,15 +26,15 @@ import org.universAAL.ontology.ActivityHubOntology;
  * Ontological enumeration of usage sensor events according to ISO 11073 - Part
  * 10471 (Independent living activity hub), edition 2010-05-01 Methods included
  * in this class are the mandatory ones for representing an ontological
- * enumeration in Java classes for uAAL.
- * 
+ * enumeration in Java classes for universAAL.
+ *
  * Specific sensor events (from standard specification): - usage started //
  * bed/chair in - usage ended // bed/chair out - expected use start violation
  * (optional) // expected usage not started - expected use stop violation
  * (optional) // usage continued beyond expected usage end - absence violation
  * (optional) // absent for too long a period during expected usage - no
  * condition detected (optional)
- * 
+ *
  * @author Thomas Fuxreiter
  */
 public class UsageSensorEvent extends ActivityHubSensorEvent {

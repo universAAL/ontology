@@ -1,7 +1,7 @@
 /*
      Copyright 2010-2014 AIT Austrian Institute of Technology GmbH
 	 http://www.ait.ac.at
-     
+
      See the NOTICE file distributed with this work for additional
      information regarding copyright ownership
 
@@ -28,7 +28,7 @@ import org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology
 /**
  * OSGi bundle activator. Registers the PersonalHealthDevice Ontology in the
  * universAAL ontology manager.
- * 
+ *
  * @author Thomas Fuxreiter (foex@gmx.at)
  */
 public class PersonalHealthDeviceActivator implements ModuleActivator {

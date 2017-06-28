@@ -34,7 +34,7 @@ import org.universAAL.ontology.profile.User;
 /**
  * Service Description for checking validity of {@link Session}s. only the
  * session manager should implement profiles for this service.
- * 
+ *
  * @author amedrano
  *
  */
@@ -83,7 +83,7 @@ public class SessionManagementService extends Service {
 	 * Check whether the given {@link User} has a valid session in the given
 	 * {@link Device}. This check is only bound to the time it is call, session
 	 * may not be valid in near future.
-	 * 
+	 *
 	 * @param mc
 	 *            needed to make the Service call.
 	 * @param u
@@ -118,7 +118,7 @@ public class SessionManagementService extends Service {
 	 * Check whether the given {@link User} has a valid session in the given
 	 * {@link Location}. This check is only bound to the time it is call,
 	 * session may not be valid in near future.
-	 * 
+	 *
 	 * @param mc
 	 *            needed to make the Service call.
 	 * @param u

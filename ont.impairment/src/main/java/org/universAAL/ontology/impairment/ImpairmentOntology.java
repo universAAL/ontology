@@ -28,7 +28,7 @@ import org.universAAL.ontology.ImpairmentFactory;
 
 /**
  * The Ontology.
- * 
+ *
  * @author Carsten Stockloew
  */
 

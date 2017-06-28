@@ -20,9 +20,9 @@ import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
  * Enumerations of possible expressions of {@link Size}.
- * 
+ *
  * Possible options are:
- * 
+ *
  * <ul>
  * <li><b>absolute</b> Absolute size expressed in pixels.
  * <li><b>screenRelative</b> Size expressed in percentage over the overall
@@ -30,8 +30,8 @@ import org.universAAL.middleware.owl.ManagedIndividual;
  * <li><b>parentRelative</b> Size is expressed in percentage over the size of
  * the parent container.
  * </ul>
- * 
- * 
+ *
+ *
  * @author amedrano
  * @see Size
  * @see MinimumSize
@@ -69,7 +69,7 @@ public class SizeUnit extends ManagedIndividual {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see org.universAAL.middleware.owl.ManagedIndividual#isWellFormed()
 	 */
 	public boolean isWellFormed() {

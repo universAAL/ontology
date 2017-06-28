@@ -15,6 +15,13 @@ branches:
 env:
   global:
     secure: "aVj1y2CTlzpiL3dMmPN1G+7/zz0AdSHc1+M1QI8DQiaVfmbogCoAyg8uf37j3T11hTRQD67hGF93qGRsq7QCBILgjTEoi1JG6MAFvunBFCTa1posCv+qw4pKihrZCj+C1Nkl7SIlMGeI5xvyH/ZOON8XgEDv+YKwJht/7PH+xwU="
+  matrix:
+    - MAT=MAT_TEST
+    - MAT=MAT_REPORT
+    - MAT=MAT_DEPLOY
+
+matrix:
+  fast_finish: true
 
 addons:
   apt:
@@ -25,7 +32,7 @@ before_install:
  - cd ont.pom
  - (curl -s https://raw.githubusercontent.com/universAAL/platform/master/uAAL.pom/src/scripts/settings.xml) > settings.xml
  - cp settings.xml $HOME/.m2/settings.xml
- - (curl -s https://raw.githubusercontent.com/universAAL/platform/master/uAAL.pom/src/scripts/ci.sh) > ci.sh
+ - (curl -s https://raw.githubusercontent.com/universAAL/platform/master/uAAL.pom/src/scripts/ci_mat.sh) > ci.sh
  - chmod +x ci.sh
  - export MY_REPO="ontology"
 
