@@ -184,7 +184,7 @@ public final class DeviceOntology extends Ontology {
 		OntClassInfoSetup oci_ColorLightActuator = createNewOntClassInfo(
 				ColorLightActuator.MY_URI, factory, 51);
 		OntClassInfoSetup oci_ColorLightController = createNewOntClassInfo(
-				ColorLightActuator.MY_URI, factory, 52);
+				ColorLightController.MY_URI, factory, 52);
 
 		// ******* Add content to enumeration classes of the ontology ******* //
 
