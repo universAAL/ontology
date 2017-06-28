@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c258725" href="./ExternalFault.html" title="org.universAAL.ontology.dependability.ExternalFault" alt="" coords="15,209,113,234"/>
+<area shape="rect" id="c263559" href="./ExternalFault.html" title="org.universAAL.ontology.dependability.ExternalFault" alt="" coords="15,209,113,234"/>
 <area shape="rect" id="node1" href="./ExternalFault.html" title="&lt;TABLE&gt;" alt="" coords="5,197,123,245"/>
-<area shape="rect" id="c258737" href="./InteractionFault.html" title="org.universAAL.ontology.dependability.InteractionFault" alt="" coords="157,209,267,234"/>
+<area shape="rect" id="c263571" href="./InteractionFault.html" title="org.universAAL.ontology.dependability.InteractionFault" alt="" coords="157,209,267,234"/>
 <area shape="rect" id="node2" href="./InteractionFault.html" title="&lt;TABLE&gt;" alt="" coords="147,197,277,245"/>
-<area shape="rect" id="c258743" href="./OperationalFault.html" title="org.universAAL.ontology.dependability.OperationalFault" alt="" coords="79,113,195,138"/>
+<area shape="rect" id="c263577" href="./OperationalFault.html" title="org.universAAL.ontology.dependability.OperationalFault" alt="" coords="79,113,195,138"/>
 <area shape="rect" id="node3" href="./OperationalFault.html" title="&lt;TABLE&gt;" alt="" coords="69,101,205,149"/>
-<area shape="rect" id="c258748" href="./Fault.html" title="org.universAAL.ontology.dependability.Fault" alt="" coords="113,17,162,42"/>
+<area shape="rect" id="c263582" href="./Fault.html" title="org.universAAL.ontology.dependability.Fault" alt="" coords="113,17,162,42"/>
 <area shape="rect" id="node4" href="./Fault.html" title="&lt;TABLE&gt;" alt="" coords="101,5,173,53"/>
 </map>

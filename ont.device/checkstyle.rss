@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2017 universAAL Consortium</copyright>
     <item>
-      <title>File: 62,
-             Errors: 831,
-             Warnings: 131,
-             Infos: 2
+      <title>File: 64,
+             Errors: 842,
+             Warnings: 135,
+             Infos: 7
       </title>
             <link>http://ontology/ont.device//checkstyle.html</link>
       <description>
@@ -224,6 +224,20 @@ under the License.
                 </td>
                 <td>
                   10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ColorLightActuator.java">org/universAAL/ontology/device/ColorLightActuator.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  6
                 </td>
               </tr>
                           <tr>
@@ -511,10 +525,10 @@ under the License.
                   <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DeviceOntology.java">org/universAAL/ontology/device/DeviceOntology.java</a>
                 </td>
                 <td>
-                  1
+                  3
                 </td>
                 <td>
-                  59
+                  61
                 </td>
                 <td>
                   4
@@ -637,7 +651,7 @@ under the License.
                   <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.DeviceFactory.java">org/universAAL/ontology/DeviceFactory.java</a>
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   1
@@ -756,6 +770,20 @@ under the License.
                 </td>
                 <td>
                   14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.ColorLightController.java">org/universAAL/ontology/device/ColorLightController.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  5
                 </td>
               </tr>
                           <tr>

@@ -10,61 +10,61 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.disease.owl.DiseaseOntology
-	c24478 [label=<<table title="org.universAAL.ontology.disease.owl.DiseaseOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DiseaseOntology.html">
+	c25374 [label=<<table title="org.universAAL.ontology.disease.owl.DiseaseOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DiseaseOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DiseaseOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DiseaseOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.DiseaseTimeEvolvingStatus
-	c24479 [label=<<table title="org.universAAL.ontology.disease.owl.DiseaseTimeEvolvingStatus" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DiseaseTimeEvolvingStatus.html">
+	c25375 [label=<<table title="org.universAAL.ontology.disease.owl.DiseaseTimeEvolvingStatus" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DiseaseTimeEvolvingStatus.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DiseaseTimeEvolvingStatus </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DiseaseTimeEvolvingStatus.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Sympthom
-	c24480 [label=<<table title="org.universAAL.ontology.disease.owl.Sympthom" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sympthom.html">
+	c25376 [label=<<table title="org.universAAL.ontology.disease.owl.Sympthom" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sympthom.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Sympthom </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Sympthom.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Pronostic
-	c24481 [label=<<table title="org.universAAL.ontology.disease.owl.Pronostic" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Pronostic.html">
+	c25377 [label=<<table title="org.universAAL.ontology.disease.owl.Pronostic" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Pronostic.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Pronostic </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Pronostic.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Diagnostic
-	c24482 [label=<<table title="org.universAAL.ontology.disease.owl.Diagnostic" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Diagnostic.html">
+	c25378 [label=<<table title="org.universAAL.ontology.disease.owl.Diagnostic" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Diagnostic.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Diagnostic </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Diagnostic.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Epidemiology
-	c24483 [label=<<table title="org.universAAL.ontology.disease.owl.Epidemiology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Epidemiology.html">
+	c25379 [label=<<table title="org.universAAL.ontology.disease.owl.Epidemiology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Epidemiology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Epidemiology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Epidemiology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Patogeny
-	c24484 [label=<<table title="org.universAAL.ontology.disease.owl.Patogeny" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Patogeny.html">
+	c25380 [label=<<table title="org.universAAL.ontology.disease.owl.Patogeny" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Patogeny.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Patogeny </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Patogeny.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Etiology
-	c24485 [label=<<table title="org.universAAL.ontology.disease.owl.Etiology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Etiology.html">
+	c25381 [label=<<table title="org.universAAL.ontology.disease.owl.Etiology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Etiology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Etiology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Etiology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.DiseaseSeverityStatus
-	c24486 [label=<<table title="org.universAAL.ontology.disease.owl.DiseaseSeverityStatus" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DiseaseSeverityStatus.html">
+	c25382 [label=<<table title="org.universAAL.ontology.disease.owl.DiseaseSeverityStatus" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DiseaseSeverityStatus.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DiseaseSeverityStatus </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DiseaseSeverityStatus.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Disease
-	c24487 [label=<<table title="org.universAAL.ontology.disease.owl.Disease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Disease.html">
+	c25383 [label=<<table title="org.universAAL.ontology.disease.owl.Disease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Disease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Disease </td></tr>
 		</table></td></tr>

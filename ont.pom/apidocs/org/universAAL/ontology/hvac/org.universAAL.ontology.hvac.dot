@@ -10,78 +10,78 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.hvac.Ventilation
-	c26303 [label=<<table title="org.universAAL.ontology.hvac.Ventilation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Ventilation.html">
+	c27220 [label=<<table title="org.universAAL.ontology.hvac.Ventilation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Ventilation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Ventilation </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Ventilation.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Ventilation_Mode
-	c26304 [label=<<table title="org.universAAL.ontology.hvac.Ventilation_Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Ventilation_Mode.html">
+	c27221 [label=<<table title="org.universAAL.ontology.hvac.Ventilation_Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Ventilation_Mode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Ventilation_Mode </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Ventilation_Mode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.HvacOntology
-	c26305 [label=<<table title="org.universAAL.ontology.hvac.HvacOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HvacOntology.html">
+	c27222 [label=<<table title="org.universAAL.ontology.hvac.HvacOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HvacOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HvacOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HvacOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Heating_Mode
-	c26306 [label=<<table title="org.universAAL.ontology.hvac.Heating_Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Heating_Mode.html">
+	c27223 [label=<<table title="org.universAAL.ontology.hvac.Heating_Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Heating_Mode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Heating_Mode </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Heating_Mode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Heating
-	c26307 [label=<<table title="org.universAAL.ontology.hvac.Heating" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Heating.html">
+	c27224 [label=<<table title="org.universAAL.ontology.hvac.Heating" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Heating.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Heating </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Heating.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Mode
-	c26308 [label=<<table title="org.universAAL.ontology.hvac.Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Mode.html">
+	c27225 [label=<<table title="org.universAAL.ontology.hvac.Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Mode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Mode </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Mode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Air_Conditioning_Mode
-	c26309 [label=<<table title="org.universAAL.ontology.hvac.Air_Conditioning_Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Air_Conditioning_Mode.html">
+	c27226 [label=<<table title="org.universAAL.ontology.hvac.Air_Conditioning_Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Air_Conditioning_Mode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Air_Conditioning_Mode </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Air_Conditioning_Mode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Hvac
-	c26310 [label=<<table title="org.universAAL.ontology.hvac.Hvac" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hvac.html">
+	c27227 [label=<<table title="org.universAAL.ontology.hvac.Hvac" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hvac.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Hvac </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hvac.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Target_Temperature
-	c26311 [label=<<table title="org.universAAL.ontology.hvac.Target_Temperature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Target_Temperature.html">
+	c27228 [label=<<table title="org.universAAL.ontology.hvac.Target_Temperature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Target_Temperature.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Target_Temperature </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Target_Temperature.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Air_Conditioning
-	c26312 [label=<<table title="org.universAAL.ontology.hvac.Air_Conditioning" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Air_Conditioning.html">
+	c27229 [label=<<table title="org.universAAL.ontology.hvac.Air_Conditioning" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Air_Conditioning.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Air_Conditioning </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Air_Conditioning.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.hvac.Ventilation extends org.universAAL.ontology.hvac.Hvac
-	c26310:p -> c26303:p [dir=back,arrowtail=empty];
+	c27227:p -> c27220:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Ventilation_Mode extends org.universAAL.ontology.hvac.Mode
-	c26308:p -> c26304:p [dir=back,arrowtail=empty];
+	c27225:p -> c27221:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Heating_Mode extends org.universAAL.ontology.hvac.Mode
-	c26308:p -> c26306:p [dir=back,arrowtail=empty];
+	c27225:p -> c27223:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Heating extends org.universAAL.ontology.hvac.Target_Temperature
-	c26311:p -> c26307:p [dir=back,arrowtail=empty];
+	c27228:p -> c27224:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Air_Conditioning_Mode extends org.universAAL.ontology.hvac.Mode
-	c26308:p -> c26309:p [dir=back,arrowtail=empty];
+	c27225:p -> c27226:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Target_Temperature extends org.universAAL.ontology.hvac.Hvac
-	c26310:p -> c26311:p [dir=back,arrowtail=empty];
+	c27227:p -> c27228:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Air_Conditioning extends org.universAAL.ontology.hvac.Target_Temperature
-	c26311:p -> c26312:p [dir=back,arrowtail=empty];
+	c27228:p -> c27229:p [dir=back,arrowtail=empty];
 }
 

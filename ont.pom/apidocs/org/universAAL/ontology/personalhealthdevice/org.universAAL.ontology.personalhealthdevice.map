@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c29352" href="./WeighingScale.html" title="org.universAAL.ontology.personalhealthdevice.WeighingScale" alt="" coords="15,17,123,42"/>
+<area shape="rect" id="c30304" href="./WeighingScale.html" title="org.universAAL.ontology.personalhealthdevice.WeighingScale" alt="" coords="15,17,123,42"/>
 <area shape="rect" id="node1" href="./WeighingScale.html" title="&lt;TABLE&gt;" alt="" coords="5,5,133,53"/>
-<area shape="rect" id="c29353" href="./BloodOxygenSatSensor.html" title="org.universAAL.ontology.personalhealthdevice.BloodOxygenSatSensor" alt="" coords="168,17,328,42"/>
+<area shape="rect" id="c30305" href="./BloodOxygenSatSensor.html" title="org.universAAL.ontology.personalhealthdevice.BloodOxygenSatSensor" alt="" coords="168,17,328,42"/>
 <area shape="rect" id="node2" href="./BloodOxygenSatSensor.html" title="&lt;TABLE&gt;" alt="" coords="157,5,339,53"/>
-<area shape="rect" id="c29354" href="./PersonalHealthDeviceOntology.html" title="org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology" alt="" coords="373,17,576,42"/>
+<area shape="rect" id="c30306" href="./PersonalHealthDeviceOntology.html" title="org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology" alt="" coords="373,17,576,42"/>
 <area shape="rect" id="node3" href="./PersonalHealthDeviceOntology.html" title="&lt;TABLE&gt;" alt="" coords="363,5,587,53"/>
-<area shape="rect" id="c29355" href="./BloodPressureSensor.html" title="org.universAAL.ontology.personalhealthdevice.BloodPressureSensor" alt="" coords="621,17,768,42"/>
+<area shape="rect" id="c30307" href="./BloodPressureSensor.html" title="org.universAAL.ontology.personalhealthdevice.BloodPressureSensor" alt="" coords="621,17,768,42"/>
 <area shape="rect" id="node4" href="./BloodPressureSensor.html" title="&lt;TABLE&gt;" alt="" coords="611,5,779,53"/>
-<area shape="rect" id="c29356" href="./HeartRateSensor.html" title="org.universAAL.ontology.personalhealthdevice.HeartRateSensor" alt="" coords="813,17,934,42"/>
+<area shape="rect" id="c30308" href="./HeartRateSensor.html" title="org.universAAL.ontology.personalhealthdevice.HeartRateSensor" alt="" coords="813,17,934,42"/>
 <area shape="rect" id="node5" href="./HeartRateSensor.html" title="&lt;TABLE&gt;" alt="" coords="803,5,944,53"/>
 </map>

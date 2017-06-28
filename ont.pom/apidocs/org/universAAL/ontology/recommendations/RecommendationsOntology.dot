@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.recommendations.RecommendationsOntology
-	c305385 [label=<<table title="org.universAAL.ontology.recommendations.RecommendationsOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RecommendationsOntology.html">
+	c313807 [label=<<table title="org.universAAL.ontology.recommendations.RecommendationsOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RecommendationsOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RecommendationsOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RecommendationsOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.recommendations.RecommendationsOntology extends org.universAAL.middleware.owl.Ontology
-	c305423:p -> c305385:p [dir=back,arrowtail=empty];
+	c313845:p -> c313807:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.Ontology
-	c305423 [label=<<table title="org.universAAL.middleware.owl.Ontology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/Ontology.html">
+	c313845 [label=<<table title="org.universAAL.middleware.owl.Ontology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/Ontology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Ontology </font></td></tr>
 		</table></td></tr>

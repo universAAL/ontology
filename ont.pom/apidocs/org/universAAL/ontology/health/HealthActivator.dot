@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.health.HealthActivator
-	c184798 [label=<<table title="org.universAAL.ontology.health.HealthActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HealthActivator.html">
+	c188771 [label=<<table title="org.universAAL.ontology.health.HealthActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HealthActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HealthActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HealthActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.health.HealthActivator implements org.universAAL.middleware.container.ModuleActivator
-	c184936:p -> c184798:p [dir=back,arrowtail=empty,style=dashed];
+	c188909:p -> c188771:p [dir=back,arrowtail=empty,style=dashed];
 	// org.universAAL.middleware.container.ModuleActivator
-	c184936 [label=<<table title="org.universAAL.middleware.container.ModuleActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html">
+	c188909 [label=<<table title="org.universAAL.middleware.container.ModuleActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ModuleActivator </td></tr>

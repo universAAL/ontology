@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.ui.preferences.AlertPreferences
-	c54110 [label=<<table title="org.universAAL.ontology.ui.preferences.AlertPreferences" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AlertPreferences.html">
+	c55349 [label=<<table title="org.universAAL.ontology.ui.preferences.AlertPreferences" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AlertPreferences.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AlertPreferences </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AlertPreferences.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.ui.preferences.AlertPreferences extends org.universAAL.middleware.ui.owl.Preference
-	c54203:p -> c54110:p [dir=back,arrowtail=empty];
+	c55442:p -> c55349:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.ui.owl.Preference
-	c54203 [label=<<table title="org.universAAL.middleware.ui.owl.Preference" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/Preference.html">
+	c55442 [label=<<table title="org.universAAL.middleware.ui.owl.Preference" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/Preference.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Preference </font></td></tr>
 		</table></td></tr>

@@ -10,31 +10,31 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.av.streaming.AudioCompression
-	c100823 [label=<<table title="org.universAAL.ontology.av.streaming.AudioCompression" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AudioCompression.html">
+	c103214 [label=<<table title="org.universAAL.ontology.av.streaming.AudioCompression" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AudioCompression.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AudioCompression </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AudioCompression.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.av.streaming.Compression
-	c100830 [label=<<table title="org.universAAL.ontology.av.streaming.Compression" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Compression.html">
+	c103221 [label=<<table title="org.universAAL.ontology.av.streaming.Compression" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Compression.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Compression </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Compression.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.av.streaming.VideoCompression
-	c100831 [label=<<table title="org.universAAL.ontology.av.streaming.VideoCompression" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VideoCompression.html">
+	c103222 [label=<<table title="org.universAAL.ontology.av.streaming.VideoCompression" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VideoCompression.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VideoCompression </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VideoCompression.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.av.streaming.AudioCompression extends org.universAAL.ontology.av.streaming.Compression
-	c100830:p -> c100823:p [dir=back,arrowtail=empty];
+	c103221:p -> c103214:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.av.streaming.Compression extends org.universAAL.middleware.owl.ManagedIndividual
-	c101179:p -> c100830:p [dir=back,arrowtail=empty];
+	c103570:p -> c103221:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.av.streaming.VideoCompression extends org.universAAL.ontology.av.streaming.Compression
-	c100830:p -> c100831:p [dir=back,arrowtail=empty];
+	c103221:p -> c103222:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c101179 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c103570 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

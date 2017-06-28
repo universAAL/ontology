@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c222120" href="./NaturalLight.html" title="org.universAAL.ontology.lighting.NaturalLight" alt="" coords="16,209,107,234"/>
+<area shape="rect" id="c226527" href="./NaturalLight.html" title="org.universAAL.ontology.lighting.NaturalLight" alt="" coords="16,209,107,234"/>
 <area shape="rect" id="node1" href="./NaturalLight.html" title="&lt;TABLE&gt;" alt="" coords="5,197,117,245"/>
-<area shape="rect" id="c222123" href="./ElectricLight.html" title="org.universAAL.ontology.lighting.ElectricLight" alt="" coords="152,209,245,234"/>
+<area shape="rect" id="c226530" href="./ElectricLight.html" title="org.universAAL.ontology.lighting.ElectricLight" alt="" coords="152,209,245,234"/>
 <area shape="rect" id="node2" href="./ElectricLight.html" title="&lt;TABLE&gt;" alt="" coords="141,197,256,245"/>
-<area shape="rect" id="c222128" href="./FlamingLight.html" title="org.universAAL.ontology.lighting.FlamingLight" alt="" coords="290,209,385,234"/>
+<area shape="rect" id="c226535" href="./FlamingLight.html" title="org.universAAL.ontology.lighting.FlamingLight" alt="" coords="290,209,385,234"/>
 <area shape="rect" id="node3" href="./FlamingLight.html" title="&lt;TABLE&gt;" alt="" coords="280,197,395,245"/>
-<area shape="rect" id="c222129" href="./LightType.html" title="org.universAAL.ontology.lighting.LightType" alt="" coords="160,113,237,138"/>
+<area shape="rect" id="c226536" href="./LightType.html" title="org.universAAL.ontology.lighting.LightType" alt="" coords="160,113,237,138"/>
 <area shape="rect" id="node4" href="./LightType.html" title="&lt;TABLE&gt;" alt="" coords="149,101,248,149"/>
-<area shape="rect" id="c222281" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="134,17,263,42"/>
+<area shape="rect" id="c226688" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="134,17,263,42"/>
 <area shape="rect" id="node8" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="124,5,273,53"/>
 </map>

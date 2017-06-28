@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c3706" href="./DeviceService.html" title="org.universAAL.ontology.phThing.DeviceService" alt="" coords="15,17,121,42"/>
+<area shape="rect" id="c3748" href="./DeviceService.html" title="org.universAAL.ontology.phThing.DeviceService" alt="" coords="15,17,121,42"/>
 <area shape="rect" id="node1" href="./DeviceService.html" title="&lt;TABLE&gt;" alt="" coords="5,5,131,53"/>
-<area shape="rect" id="c3707" href="./PhThingOntology.html" title="org.universAAL.ontology.phThing.PhThingOntology" alt="" coords="165,17,286,42"/>
+<area shape="rect" id="c3749" href="./PhThingOntology.html" title="org.universAAL.ontology.phThing.PhThingOntology" alt="" coords="165,17,286,42"/>
 <area shape="rect" id="node2" href="./PhThingOntology.html" title="&lt;TABLE&gt;" alt="" coords="155,5,296,53"/>
-<area shape="rect" id="c3708" href="./PhysicalContainer.html" title="org.universAAL.ontology.phThing.PhysicalContainer" alt="" coords="249,113,375,138"/>
+<area shape="rect" id="c3750" href="./PhysicalContainer.html" title="org.universAAL.ontology.phThing.PhysicalContainer" alt="" coords="249,113,375,138"/>
 <area shape="rect" id="node3" href="./PhysicalContainer.html" title="&lt;TABLE&gt;" alt="" coords="239,101,385,149"/>
-<area shape="rect" id="c3709" href="./Device.html" title="org.universAAL.ontology.phThing.Device" alt="" coords="420,113,481,138"/>
+<area shape="rect" id="c3751" href="./Device.html" title="org.universAAL.ontology.phThing.Device" alt="" coords="420,113,481,138"/>
 <area shape="rect" id="node4" href="./Device.html" title="&lt;TABLE&gt;" alt="" coords="409,101,492,149"/>
-<area shape="rect" id="c3710" href="./PhysicalThing.html" title="org.universAAL.ontology.phThing.PhysicalThing" alt="" coords="330,17,433,42"/>
+<area shape="rect" id="c3752" href="./PhysicalThing.html" title="org.universAAL.ontology.phThing.PhysicalThing" alt="" coords="330,17,433,42"/>
 <area shape="rect" id="node5" href="./PhysicalThing.html" title="&lt;TABLE&gt;" alt="" coords="320,5,443,53"/>
 </map>

@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.device.COMeter
-	c86906 [label=<<table title="org.universAAL.ontology.device.COMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./COMeter.html">
+	c86696 [label=<<table title="org.universAAL.ontology.device.COMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./COMeter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> COMeter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./COMeter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.EnvironmentMeter
-	c86911 [label=<<table title="org.universAAL.ontology.device.EnvironmentMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnvironmentMeter.html">
+	c86701 [label=<<table title="org.universAAL.ontology.device.EnvironmentMeter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnvironmentMeter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EnvironmentMeter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EnvironmentMeter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.device.COMeter extends org.universAAL.ontology.device.EnvironmentMeter
-	c86911:p -> c86906:p [dir=back,arrowtail=empty];
+	c86701:p -> c86696:p [dir=back,arrowtail=empty];
 }
 

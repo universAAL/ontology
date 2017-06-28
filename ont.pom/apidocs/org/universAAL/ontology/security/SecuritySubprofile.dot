@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.profile.SubProfile
-	c316023 [label=<<table title="org.universAAL.ontology.profile.SubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../profile/SubProfile.html">
+	c324571 [label=<<table title="org.universAAL.ontology.profile.SubProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../profile/SubProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SubProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="../profile/SubProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.SecuritySubprofile
-	c316255 [label=<<table title="org.universAAL.ontology.security.SecuritySubprofile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SecuritySubprofile.html">
+	c324803 [label=<<table title="org.universAAL.ontology.security.SecuritySubprofile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SecuritySubprofile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SecuritySubprofile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SecuritySubprofile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.security.SecuritySubprofile extends org.universAAL.ontology.profile.SubProfile
-	c316023:p -> c316255:p [dir=back,arrowtail=empty];
+	c324571:p -> c324803:p [dir=back,arrowtail=empty];
 }
 

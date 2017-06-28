@@ -1,24 +1,24 @@
 <map id="G" name="G">
-<area shape="rect" id="c34231" href="./QuestionnaireService.html" title="org.universAAL.ontology.questionnaire.QuestionnaireService" alt="" coords="15,17,161,42"/>
+<area shape="rect" id="c35239" href="./QuestionnaireService.html" title="org.universAAL.ontology.questionnaire.QuestionnaireService" alt="" coords="15,17,161,42"/>
 <area shape="rect" id="node1" href="./QuestionnaireService.html" title="&lt;TABLE&gt;" alt="" coords="5,5,171,53"/>
-<area shape="rect" id="c34232" href="./Answer.html" title="org.universAAL.ontology.questionnaire.Answer" alt="" coords="205,17,270,42"/>
+<area shape="rect" id="c35240" href="./Answer.html" title="org.universAAL.ontology.questionnaire.Answer" alt="" coords="205,17,270,42"/>
 <area shape="rect" id="node2" href="./Answer.html" title="&lt;TABLE&gt;" alt="" coords="195,5,280,53"/>
-<area shape="rect" id="c34233" href="./AnsweredQuestionnaire.html" title="org.universAAL.ontology.questionnaire.AnsweredQuestionnaire" alt="" coords="314,17,473,42"/>
+<area shape="rect" id="c35241" href="./AnsweredQuestionnaire.html" title="org.universAAL.ontology.questionnaire.AnsweredQuestionnaire" alt="" coords="314,17,473,42"/>
 <area shape="rect" id="node3" href="./AnsweredQuestionnaire.html" title="&lt;TABLE&gt;" alt="" coords="304,5,483,53"/>
-<area shape="rect" id="c34234" href="./QuestionnaireOntology.html" title="org.universAAL.ontology.questionnaire.QuestionnaireOntology" alt="" coords="517,17,670,42"/>
+<area shape="rect" id="c35242" href="./QuestionnaireOntology.html" title="org.universAAL.ontology.questionnaire.QuestionnaireOntology" alt="" coords="517,17,670,42"/>
 <area shape="rect" id="node4" href="./QuestionnaireOntology.html" title="&lt;TABLE&gt;" alt="" coords="507,5,680,53"/>
-<area shape="rect" id="c34235" href="./ChoiceLabel.html" title="org.universAAL.ontology.questionnaire.ChoiceLabel" alt="" coords="715,17,808,42"/>
+<area shape="rect" id="c35243" href="./ChoiceLabel.html" title="org.universAAL.ontology.questionnaire.ChoiceLabel" alt="" coords="715,17,808,42"/>
 <area shape="rect" id="node5" href="./ChoiceLabel.html" title="&lt;TABLE&gt;" alt="" coords="704,5,819,53"/>
-<area shape="rect" id="c34236" href="./QuestionWithMedia.html" title="org.universAAL.ontology.questionnaire.QuestionWithMedia" alt="" coords="539,113,674,138"/>
+<area shape="rect" id="c35244" href="./QuestionWithMedia.html" title="org.universAAL.ontology.questionnaire.QuestionWithMedia" alt="" coords="539,113,674,138"/>
 <area shape="rect" id="node6" href="./QuestionWithMedia.html" title="&lt;TABLE&gt;" alt="" coords="529,101,684,149"/>
-<area shape="rect" id="c34237" href="./SingleChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.SingleChoiceQuestion" alt="" coords="719,113,868,138"/>
+<area shape="rect" id="c35245" href="./SingleChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.SingleChoiceQuestion" alt="" coords="719,113,868,138"/>
 <area shape="rect" id="node7" href="./SingleChoiceQuestion.html" title="&lt;TABLE&gt;" alt="" coords="708,101,879,149"/>
-<area shape="rect" id="c34238" href="./MultiChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.MultiChoiceQuestion" alt="" coords="913,113,1055,138"/>
+<area shape="rect" id="c35246" href="./MultiChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.MultiChoiceQuestion" alt="" coords="913,113,1055,138"/>
 <area shape="rect" id="node8" href="./MultiChoiceQuestion.html" title="&lt;TABLE&gt;" alt="" coords="903,101,1065,149"/>
-<area shape="rect" id="c34239" href="./ConditionalQuestion.html" title="org.universAAL.ontology.questionnaire.ConditionalQuestion" alt="" coords="1099,113,1237,138"/>
+<area shape="rect" id="c35247" href="./ConditionalQuestion.html" title="org.universAAL.ontology.questionnaire.ConditionalQuestion" alt="" coords="1099,113,1237,138"/>
 <area shape="rect" id="node9" href="./ConditionalQuestion.html" title="&lt;TABLE&gt;" alt="" coords="1089,101,1247,149"/>
-<area shape="rect" id="c34240" href="./Question.html" title="org.universAAL.ontology.questionnaire.Question" alt="" coords="853,17,926,42"/>
+<area shape="rect" id="c35248" href="./Question.html" title="org.universAAL.ontology.questionnaire.Question" alt="" coords="853,17,926,42"/>
 <area shape="rect" id="node10" href="./Question.html" title="&lt;TABLE&gt;" alt="" coords="843,5,936,53"/>
-<area shape="rect" id="c34241" href="./Questionnaire.html" title="org.universAAL.ontology.questionnaire.Questionnaire" alt="" coords="971,17,1072,42"/>
+<area shape="rect" id="c35249" href="./Questionnaire.html" title="org.universAAL.ontology.questionnaire.Questionnaire" alt="" coords="971,17,1072,42"/>
 <area shape="rect" id="node11" href="./Questionnaire.html" title="&lt;TABLE&gt;" alt="" coords="960,5,1083,53"/>
 </map>

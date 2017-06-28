@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c230655" href="./BloodPressureSys.html" title="org.universAAL.ontology.X73.BloodPressureSys" alt="" coords="15,209,145,234"/>
+<area shape="rect" id="c235160" href="./BloodPressureSys.html" title="org.universAAL.ontology.X73.BloodPressureSys" alt="" coords="15,209,145,234"/>
 <area shape="rect" id="node1" href="./BloodPressureSys.html" title="&lt;TABLE&gt;" alt="" coords="5,197,155,245"/>
-<area shape="rect" id="c230658" href="./BloodPressureDia.html" title="org.universAAL.ontology.X73.BloodPressureDia" alt="" coords="189,209,315,234"/>
+<area shape="rect" id="c235163" href="./BloodPressureDia.html" title="org.universAAL.ontology.X73.BloodPressureDia" alt="" coords="189,209,315,234"/>
 <area shape="rect" id="node2" href="./BloodPressureDia.html" title="&lt;TABLE&gt;" alt="" coords="179,197,325,245"/>
-<area shape="rect" id="c230662" href="./BodyWeight.html" title="org.universAAL.ontology.X73.BodyWeight" alt="" coords="359,209,451,234"/>
+<area shape="rect" id="c235167" href="./BodyWeight.html" title="org.universAAL.ontology.X73.BodyWeight" alt="" coords="359,209,451,234"/>
 <area shape="rect" id="node3" href="./BodyWeight.html" title="&lt;TABLE&gt;" alt="" coords="349,197,461,245"/>
-<area shape="rect" id="c230665" href="./MDSAttribute.html" title="org.universAAL.ontology.X73.MDSAttribute" alt="" coords="278,113,378,138"/>
+<area shape="rect" id="c235170" href="./MDSAttribute.html" title="org.universAAL.ontology.X73.MDSAttribute" alt="" coords="278,113,378,138"/>
 <area shape="rect" id="node4" href="./MDSAttribute.html" title="&lt;TABLE&gt;" alt="" coords="268,101,388,149"/>
-<area shape="rect" id="c230666" href="./Pulse.html" title="org.universAAL.ontology.X73.Pulse" alt="" coords="496,209,549,234"/>
+<area shape="rect" id="c235171" href="./Pulse.html" title="org.universAAL.ontology.X73.Pulse" alt="" coords="496,209,549,234"/>
 <area shape="rect" id="node5" href="./Pulse.html" title="&lt;TABLE&gt;" alt="" coords="485,197,560,245"/>
-<area shape="rect" id="c230719" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="263,17,393,42"/>
+<area shape="rect" id="c235224" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="263,17,393,42"/>
 <area shape="rect" id="node9" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="253,5,403,53"/>
 </map>

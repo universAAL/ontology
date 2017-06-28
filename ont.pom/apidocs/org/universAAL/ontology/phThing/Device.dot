@@ -10,106 +10,106 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.phThing.Device
-	c129601 [label=<<table title="org.universAAL.ontology.phThing.Device" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Device.html">
+	c132321 [label=<<table title="org.universAAL.ontology.phThing.Device" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Device.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Device </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Device.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.phThing.PhysicalThing
-	c129602 [label=<<table title="org.universAAL.ontology.phThing.PhysicalThing" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhysicalThing.html">
+	c132322 [label=<<table title="org.universAAL.ontology.phThing.PhysicalThing" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhysicalThing.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PhysicalThing </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhysicalThing.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.ValueDevice
-	c129698 [label=<<table title="org.universAAL.ontology.device.ValueDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../device/ValueDevice.html">
+	c132424 [label=<<table title="org.universAAL.ontology.device.ValueDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../device/ValueDevice.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ValueDevice </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../device/ValueDevice.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.av.device.VideoCamera
-	c129742 [label=<<table title="org.universAAL.ontology.av.device.VideoCamera" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../av/device/VideoCamera.html">
+	c132469 [label=<<table title="org.universAAL.ontology.av.device.VideoCamera" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../av/device/VideoCamera.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VideoCamera </td></tr>
 		</table></td></tr>
 		</table>>, URL="../av/device/VideoCamera.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.av.device.Microphone
-	c129743 [label=<<table title="org.universAAL.ontology.av.device.Microphone" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../av/device/Microphone.html">
+	c132470 [label=<<table title="org.universAAL.ontology.av.device.Microphone" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../av/device/Microphone.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Microphone </td></tr>
 		</table></td></tr>
 		</table>>, URL="../av/device/Microphone.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.av.device.LoudSpeaker
-	c129744 [label=<<table title="org.universAAL.ontology.av.device.LoudSpeaker" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../av/device/LoudSpeaker.html">
+	c132471 [label=<<table title="org.universAAL.ontology.av.device.LoudSpeaker" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../av/device/LoudSpeaker.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LoudSpeaker </td></tr>
 		</table></td></tr>
 		</table>>, URL="../av/device/LoudSpeaker.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.dependability.Sensor
-	c129825 [label=<<table title="org.universAAL.ontology.dependability.Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../dependability/Sensor.html">
+	c132552 [label=<<table title="org.universAAL.ontology.dependability.Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../dependability/Sensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Sensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="../dependability/Sensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Hvac
-	c129928 [label=<<table title="org.universAAL.ontology.hvac.Hvac" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../hvac/Hvac.html">
+	c132655 [label=<<table title="org.universAAL.ontology.hvac.Hvac" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../hvac/Hvac.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Hvac </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../hvac/Hvac.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.LightSource
-	c129955 [label=<<table title="org.universAAL.ontology.lighting.LightSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../lighting/LightSource.html">
+	c132682 [label=<<table title="org.universAAL.ontology.lighting.LightSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../lighting/LightSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LightSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="../lighting/LightSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.multimedia.Stereoset
-	c129957 [label=<<table title="org.universAAL.ontology.multimedia.Stereoset" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../multimedia/Stereoset.html">
+	c132684 [label=<<table title="org.universAAL.ontology.multimedia.Stereoset" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../multimedia/Stereoset.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Stereoset </td></tr>
 		</table></td></tr>
 		</table>>, URL="../multimedia/Stereoset.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.multimedia.TV
-	c129959 [label=<<table title="org.universAAL.ontology.multimedia.TV" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../multimedia/TV.html">
+	c132686 [label=<<table title="org.universAAL.ontology.multimedia.TV" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../multimedia/TV.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> TV </td></tr>
 		</table></td></tr>
 		</table>>, URL="../multimedia/TV.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.X73.MDS
-	c130047 [label=<<table title="org.universAAL.ontology.X73.MDS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../X73/MDS.html">
+	c132774 [label=<<table title="org.universAAL.ontology.X73.MDS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../X73/MDS.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> MDS </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../X73/MDS.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.home.Strap
-	c130057 [label=<<table title="org.universAAL.ontology.device.home.Strap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../device/home/Strap.html">
+	c132784 [label=<<table title="org.universAAL.ontology.device.home.Strap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../device/home/Strap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Strap </td></tr>
 		</table></td></tr>
 		</table>>, URL="../device/home/Strap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.phThing.Device extends org.universAAL.ontology.phThing.PhysicalThing
-	c129602:p -> c129601:p [dir=back,arrowtail=empty];
+	c132322:p -> c132321:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.ValueDevice extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129698:p [dir=back,arrowtail=empty];
+	c132321:p -> c132424:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.av.device.VideoCamera extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129742:p [dir=back,arrowtail=empty];
+	c132321:p -> c132469:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.av.device.Microphone extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129743:p [dir=back,arrowtail=empty];
+	c132321:p -> c132470:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.av.device.LoudSpeaker extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129744:p [dir=back,arrowtail=empty];
+	c132321:p -> c132471:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.dependability.Sensor extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129825:p [dir=back,arrowtail=empty];
+	c132321:p -> c132552:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Hvac extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129928:p [dir=back,arrowtail=empty];
+	c132321:p -> c132655:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.LightSource extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129955:p [dir=back,arrowtail=empty];
+	c132321:p -> c132682:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.multimedia.Stereoset extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129957:p [dir=back,arrowtail=empty];
+	c132321:p -> c132684:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.multimedia.TV extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c129959:p [dir=back,arrowtail=empty];
+	c132321:p -> c132686:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.X73.MDS extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c130047:p [dir=back,arrowtail=empty];
+	c132321:p -> c132774:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.home.Strap extends org.universAAL.ontology.phThing.Device
-	c129601:p -> c130057:p [dir=back,arrowtail=empty];
+	c132321:p -> c132784:p [dir=back,arrowtail=empty];
 }
 

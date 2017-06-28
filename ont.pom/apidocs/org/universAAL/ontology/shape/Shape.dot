@@ -10,39 +10,39 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.shape.BooleanShape
-	c318190 [label=<<table title="org.universAAL.ontology.shape.BooleanShape" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanShape.html">
+	c326759 [label=<<table title="org.universAAL.ontology.shape.BooleanShape" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanShape.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> BooleanShape </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./BooleanShape.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Shape2D
-	c318192 [label=<<table title="org.universAAL.ontology.shape.Shape2D" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shape2D.html">
+	c326761 [label=<<table title="org.universAAL.ontology.shape.Shape2D" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shape2D.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Shape2D </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Shape2D.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Shape3D
-	c318194 [label=<<table title="org.universAAL.ontology.shape.Shape3D" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shape3D.html">
+	c326763 [label=<<table title="org.universAAL.ontology.shape.Shape3D" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Shape3D.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Shape3D </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Shape3D.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.shape.Shape
-	c318196 [label=<<table title="org.universAAL.ontology.shape.Shape" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Shape.html">
+	c326765 [label=<<table title="org.universAAL.ontology.shape.Shape" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Shape.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Shape </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Shape.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.shape.BooleanShape extends org.universAAL.ontology.shape.Shape
-	c318196:p -> c318190:p [dir=back,arrowtail=empty];
+	c326765:p -> c326759:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Shape2D extends org.universAAL.ontology.shape.Shape
-	c318196:p -> c318192:p [dir=back,arrowtail=empty];
+	c326765:p -> c326761:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Shape3D extends org.universAAL.ontology.shape.Shape
-	c318196:p -> c318194:p [dir=back,arrowtail=empty];
+	c326765:p -> c326763:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.shape.Shape extends org.universAAL.middleware.owl.ManagedIndividual
-	c318682:p -> c318196:p [dir=back,arrowtail=empty];
+	c327258:p -> c326765:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c318682 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c327258 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

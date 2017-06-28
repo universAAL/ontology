@@ -1,16 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="c25694" href="./HeartRateSignal.html" title="org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal" alt="" coords="56,17,173,42"/>
+<area shape="rect" id="c26604" href="./HeartRateSignal.html" title="org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal" alt="" coords="56,17,173,42"/>
 <area shape="rect" id="node1" href="./HeartRateSignal.html" title="&lt;TABLE&gt;" alt="" coords="45,5,184,53"/>
-<area shape="rect" id="c25695" href="./BloodPressure.html" title="org.universAAL.ontology.healthmeasurement.owl.BloodPressure" alt="" coords="15,113,121,138"/>
+<area shape="rect" id="c26605" href="./BloodPressure.html" title="org.universAAL.ontology.healthmeasurement.owl.BloodPressure" alt="" coords="15,113,121,138"/>
 <area shape="rect" id="node2" href="./BloodPressure.html" title="&lt;TABLE&gt;" alt="" coords="5,101,131,149"/>
-<area shape="rect" id="c25696" href="./HealthMeasurementOntology.html" title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology" alt="" coords="400,17,589,42"/>
+<area shape="rect" id="c26606" href="./HealthMeasurementOntology.html" title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology" alt="" coords="400,17,589,42"/>
 <area shape="rect" id="node3" href="./HealthMeasurementOntology.html" title="&lt;TABLE&gt;" alt="" coords="389,5,600,53"/>
-<area shape="rect" id="c25697" href="./HeartRate.html" title="org.universAAL.ontology.healthmeasurement.owl.HeartRate" alt="" coords="165,113,246,138"/>
+<area shape="rect" id="c26607" href="./HeartRate.html" title="org.universAAL.ontology.healthmeasurement.owl.HeartRate" alt="" coords="165,113,246,138"/>
 <area shape="rect" id="node4" href="./HeartRate.html" title="&lt;TABLE&gt;" alt="" coords="155,101,256,149"/>
-<area shape="rect" id="c25698" href="./BloodOxygenSaturation.html" title="org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation" alt="" coords="291,113,448,138"/>
+<area shape="rect" id="c26608" href="./BloodOxygenSaturation.html" title="org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation" alt="" coords="291,113,448,138"/>
 <area shape="rect" id="node5" href="./BloodOxygenSaturation.html" title="&lt;TABLE&gt;" alt="" coords="280,101,459,149"/>
-<area shape="rect" id="c25699" href="./HealthMeasurement.html" title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement" alt="" coords="218,17,355,42"/>
+<area shape="rect" id="c26609" href="./HealthMeasurement.html" title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement" alt="" coords="218,17,355,42"/>
 <area shape="rect" id="node6" href="./HealthMeasurement.html" title="&lt;TABLE&gt;" alt="" coords="208,5,365,53"/>
-<area shape="rect" id="c25700" href="./PersonWeight.html" title="org.universAAL.ontology.healthmeasurement.owl.PersonWeight" alt="" coords="493,113,595,138"/>
+<area shape="rect" id="c26610" href="./PersonWeight.html" title="org.universAAL.ontology.healthmeasurement.owl.PersonWeight" alt="" coords="493,113,595,138"/>
 <area shape="rect" id="node7" href="./PersonWeight.html" title="&lt;TABLE&gt;" alt="" coords="483,101,605,149"/>
 </map>

@@ -10,53 +10,53 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.unit.Prefix
-	c234457 [label=<<table title="org.universAAL.ontology.unit.Prefix" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../unit/Prefix.html">
+	c239004 [label=<<table title="org.universAAL.ontology.unit.Prefix" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../unit/Prefix.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Prefix </td></tr>
 		</table></td></tr>
 		</table>>, URL="../unit/Prefix.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.unit.Unit
-	c234458 [label=<<table title="org.universAAL.ontology.unit.Unit" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../unit/Unit.html">
+	c239005 [label=<<table title="org.universAAL.ontology.unit.Unit" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../unit/Unit.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Unit </td></tr>
 		</table></td></tr>
 		</table>>, URL="../unit/Unit.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.measurement.Signal
-	c234467 [label=<<table title="org.universAAL.ontology.measurement.Signal" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Signal.html">
+	c239019 [label=<<table title="org.universAAL.ontology.measurement.Signal" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Signal.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Signal </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Signal.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.measurement.MeasurementError
-	c234470 [label=<<table title="org.universAAL.ontology.measurement.MeasurementError" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MeasurementError.html">
+	c239022 [label=<<table title="org.universAAL.ontology.measurement.MeasurementError" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MeasurementError.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> MeasurementError </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./MeasurementError.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.measurement.Measurement
-	c234471 [label=<<table title="org.universAAL.ontology.measurement.Measurement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Measurement.html">
+	c239023 [label=<<table title="org.universAAL.ontology.measurement.Measurement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Measurement.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Measurement </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Measurement.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.unit.Prefix extends org.universAAL.middleware.owl.ManagedIndividual
-	c234936:p -> c234457:p [dir=back,arrowtail=empty];
+	c239490:p -> c239004:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.unit.Unit extends org.universAAL.middleware.owl.ManagedIndividual
-	c234936:p -> c234458:p [dir=back,arrowtail=empty];
+	c239490:p -> c239005:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.measurement.Signal extends org.universAAL.ontology.measurement.Measurement
-	c234471:p -> c234467:p [dir=back,arrowtail=empty];
+	c239023:p -> c239019:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.measurement.MeasurementError extends org.universAAL.ontology.measurement.Measurement
-	c234471:p -> c234470:p [dir=back,arrowtail=empty];
+	c239023:p -> c239022:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.measurement.Measurement extends org.universAAL.middleware.owl.ManagedIndividual
-	c234936:p -> c234471:p [dir=back,arrowtail=empty];
+	c239490:p -> c239023:p [dir=back,arrowtail=empty];
 	// org.universAAL.ontology.measurement.Measurement NAVASSOC org.universAAL.ontology.unit.Prefix
-	c234471:p -> c234457:p [taillabel="", label="hasPrefix", headlabel="[0..1]", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c239023:p -> c239004:p [taillabel="", label="hasPrefix", headlabel="[0..1]", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// org.universAAL.ontology.measurement.Measurement NAVASSOC org.universAAL.ontology.unit.Unit
-	c234471:p -> c234458:p [taillabel="", label="hasUnit", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c239023:p -> c239005:p [taillabel="", label="hasUnit", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// org.universAAL.ontology.measurement.Measurement NAVASSOC org.universAAL.ontology.measurement.MeasurementError
-	c234471:p -> c234470:p [taillabel="", label="hasError", headlabel="[0..1]", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c239023:p -> c239022:p [taillabel="", label="hasError", headlabel="[0..1]", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c234936 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c239490 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

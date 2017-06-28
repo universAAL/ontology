@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c296905" href="./QuestionWithMedia.html" title="org.universAAL.ontology.questionnaire.QuestionWithMedia" alt="" coords="15,209,150,234"/>
+<area shape="rect" id="c304620" href="./QuestionWithMedia.html" title="org.universAAL.ontology.questionnaire.QuestionWithMedia" alt="" coords="15,209,150,234"/>
 <area shape="rect" id="node1" href="./QuestionWithMedia.html" title="&lt;TABLE&gt;" alt="" coords="5,197,160,245"/>
-<area shape="rect" id="c296906" href="./SingleChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.SingleChoiceQuestion" alt="" coords="195,209,344,234"/>
+<area shape="rect" id="c304621" href="./SingleChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.SingleChoiceQuestion" alt="" coords="195,209,344,234"/>
 <area shape="rect" id="node2" href="./SingleChoiceQuestion.html" title="&lt;TABLE&gt;" alt="" coords="184,197,355,245"/>
-<area shape="rect" id="c296907" href="./MultiChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.MultiChoiceQuestion" alt="" coords="389,209,531,234"/>
+<area shape="rect" id="c304622" href="./MultiChoiceQuestion.html" title="org.universAAL.ontology.questionnaire.MultiChoiceQuestion" alt="" coords="389,209,531,234"/>
 <area shape="rect" id="node3" href="./MultiChoiceQuestion.html" title="&lt;TABLE&gt;" alt="" coords="379,197,541,245"/>
-<area shape="rect" id="c296908" href="./ConditionalQuestion.html" title="org.universAAL.ontology.questionnaire.ConditionalQuestion" alt="" coords="575,209,713,234"/>
+<area shape="rect" id="c304623" href="./ConditionalQuestion.html" title="org.universAAL.ontology.questionnaire.ConditionalQuestion" alt="" coords="575,209,713,234"/>
 <area shape="rect" id="node4" href="./ConditionalQuestion.html" title="&lt;TABLE&gt;" alt="" coords="565,197,723,245"/>
-<area shape="rect" id="c296909" href="./Question.html" title="org.universAAL.ontology.questionnaire.Question" alt="" coords="327,113,401,138"/>
+<area shape="rect" id="c304624" href="./Question.html" title="org.universAAL.ontology.questionnaire.Question" alt="" coords="327,113,401,138"/>
 <area shape="rect" id="node5" href="./Question.html" title="&lt;TABLE&gt;" alt="" coords="317,101,411,149"/>
-<area shape="rect" id="c296983" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="299,17,429,42"/>
+<area shape="rect" id="c304698" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="299,17,429,42"/>
 <area shape="rect" id="node10" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="289,5,439,53"/>
 </map>

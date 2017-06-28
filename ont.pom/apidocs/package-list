@@ -6,7 +6,6 @@ org.universAAL.ontology.activityhub
 org.universAAL.ontology.activityhub.ext
 org.universAAL.ontology.activityhub.factory
 org.universAAL.ontology.activityhub.util
-org.universAAL.ontology.asor
 org.universAAL.ontology.av
 org.universAAL.ontology.av.device
 org.universAAL.ontology.av.service
@@ -42,6 +41,7 @@ org.universAAL.ontology.location.outdoor
 org.universAAL.ontology.location.position
 org.universAAL.ontology.measurement
 org.universAAL.ontology.multimedia
+org.universAAL.ontology.orchestration
 org.universAAL.ontology.personalhealthdevice
 org.universAAL.ontology.phThing
 org.universAAL.ontology.profile
@@ -59,6 +59,7 @@ org.universAAL.ontology.sysinfo
 org.universAAL.ontology.ui.preferences
 org.universAAL.ontology.ui.preferences.service
 org.universAAL.ontology.unit
+org.universAAL.ontology.unit.color
 org.universAAL.ontology.unit.services
 org.universAAL.ontology.unit.system
 org.universAAL.ontology.vcard

@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="c150305" href="./TimingFault.html" title="org.universAAL.ontology.dependability.TimingFault" alt="" coords="30,17,119,42"/>
+<area shape="rect" id="c153270" href="./TimingFault.html" title="org.universAAL.ontology.dependability.TimingFault" alt="" coords="30,17,119,42"/>
 <area shape="rect" id="node1" href="./TimingFault.html" title="&lt;TABLE&gt;" alt="" coords="20,5,129,53"/>
-<area shape="rect" id="c150306" href="./EarlyTimingFault.html" title="org.universAAL.ontology.dependability.EarlyTimingFault" alt="" coords="15,113,134,138"/>
+<area shape="rect" id="c153271" href="./EarlyTimingFault.html" title="org.universAAL.ontology.dependability.EarlyTimingFault" alt="" coords="15,113,134,138"/>
 <area shape="rect" id="node2" href="./EarlyTimingFault.html" title="&lt;TABLE&gt;" alt="" coords="5,101,144,149"/>
 </map>

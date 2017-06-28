@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c128294" href="./PeerCardDescriptor.html" title="org.universAAL.ontology.sysinfo.PeerCardDescriptor" alt="" coords="16,209,152,234"/>
+<area shape="rect" id="c131000" href="./PeerCardDescriptor.html" title="org.universAAL.ontology.sysinfo.PeerCardDescriptor" alt="" coords="16,209,152,234"/>
 <area shape="rect" id="node1" href="./PeerCardDescriptor.html" title="&lt;TABLE&gt;" alt="" coords="5,197,163,245"/>
-<area shape="rect" id="c128295" href="./SpaceDescriptor.html" title="org.universAAL.ontology.sysinfo.SpaceDescriptor" alt="" coords="197,209,315,234"/>
+<area shape="rect" id="c131001" href="./SpaceDescriptor.html" title="org.universAAL.ontology.sysinfo.SpaceDescriptor" alt="" coords="197,209,315,234"/>
 <area shape="rect" id="node2" href="./SpaceDescriptor.html" title="&lt;TABLE&gt;" alt="" coords="187,197,325,245"/>
-<area shape="rect" id="c128297" href="./Descriptor.html" title="org.universAAL.ontology.sysinfo.Descriptor" alt="" coords="215,113,297,138"/>
+<area shape="rect" id="c131003" href="./Descriptor.html" title="org.universAAL.ontology.sysinfo.Descriptor" alt="" coords="215,113,297,138"/>
 <area shape="rect" id="node3" href="./Descriptor.html" title="&lt;TABLE&gt;" alt="" coords="205,101,307,149"/>
-<area shape="rect" id="c128298" href="./SpaceStatusDescriptor.html" title="org.universAAL.ontology.sysinfo.SpaceStatusDescriptor" alt="" coords="359,209,515,234"/>
+<area shape="rect" id="c131004" href="./SpaceStatusDescriptor.html" title="org.universAAL.ontology.sysinfo.SpaceStatusDescriptor" alt="" coords="359,209,515,234"/>
 <area shape="rect" id="node4" href="./SpaceStatusDescriptor.html" title="&lt;TABLE&gt;" alt="" coords="349,197,525,245"/>
-<area shape="rect" id="c128299" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="191,17,321,42"/>
+<area shape="rect" id="c131005" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="191,17,321,42"/>
 <area shape="rect" id="node7" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="181,5,331,53"/>
 </map>

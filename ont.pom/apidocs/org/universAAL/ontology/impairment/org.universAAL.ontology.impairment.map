@@ -1,22 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="c26915" href="./LightSensitivity.html" title="org.universAAL.ontology.impairment.LightSensitivity" alt="" coords="16,113,125,138"/>
+<area shape="rect" id="c27839" href="./LightSensitivity.html" title="org.universAAL.ontology.impairment.LightSensitivity" alt="" coords="16,113,125,138"/>
 <area shape="rect" id="node1" href="./LightSensitivity.html" title="&lt;TABLE&gt;" alt="" coords="5,101,136,149"/>
-<area shape="rect" id="c26916" href="./HearingImpairment.html" title="org.universAAL.ontology.impairment.HearingImpairment" alt="" coords="477,17,608,42"/>
+<area shape="rect" id="c27840" href="./HearingImpairment.html" title="org.universAAL.ontology.impairment.HearingImpairment" alt="" coords="477,17,608,42"/>
 <area shape="rect" id="node2" href="./HearingImpairment.html" title="&lt;TABLE&gt;" alt="" coords="467,5,619,53"/>
-<area shape="rect" id="c26917" href="./FarSightedness.html" title="org.universAAL.ontology.impairment.FarSightedness" alt="" coords="171,113,283,138"/>
+<area shape="rect" id="c27841" href="./FarSightedness.html" title="org.universAAL.ontology.impairment.FarSightedness" alt="" coords="171,113,283,138"/>
 <area shape="rect" id="node3" href="./FarSightedness.html" title="&lt;TABLE&gt;" alt="" coords="160,101,293,149"/>
-<area shape="rect" id="c26918" href="./ImpairmentOntology.html" title="org.universAAL.ontology.impairment.ImpairmentOntology" alt="" coords="653,17,790,42"/>
+<area shape="rect" id="c27842" href="./ImpairmentOntology.html" title="org.universAAL.ontology.impairment.ImpairmentOntology" alt="" coords="653,17,790,42"/>
 <area shape="rect" id="node4" href="./ImpairmentOntology.html" title="&lt;TABLE&gt;" alt="" coords="643,5,800,53"/>
-<area shape="rect" id="c26919" href="./Astigmatism.html" title="org.universAAL.ontology.impairment.Astigmatism" alt="" coords="328,113,421,138"/>
+<area shape="rect" id="c27843" href="./Astigmatism.html" title="org.universAAL.ontology.impairment.Astigmatism" alt="" coords="328,113,421,138"/>
 <area shape="rect" id="node5" href="./Astigmatism.html" title="&lt;TABLE&gt;" alt="" coords="317,101,432,149"/>
-<area shape="rect" id="c26920" href="./ColorBlindness.html" title="org.universAAL.ontology.impairment.ColorBlindness" alt="" coords="467,113,576,138"/>
+<area shape="rect" id="c27844" href="./ColorBlindness.html" title="org.universAAL.ontology.impairment.ColorBlindness" alt="" coords="467,113,576,138"/>
 <area shape="rect" id="node6" href="./ColorBlindness.html" title="&lt;TABLE&gt;" alt="" coords="456,101,587,149"/>
-<area shape="rect" id="c26921" href="./SpeakingImpairment.html" title="org.universAAL.ontology.impairment.SpeakingImpairment" alt="" coords="834,17,974,42"/>
+<area shape="rect" id="c27845" href="./SpeakingImpairment.html" title="org.universAAL.ontology.impairment.SpeakingImpairment" alt="" coords="834,17,974,42"/>
 <area shape="rect" id="node7" href="./SpeakingImpairment.html" title="&lt;TABLE&gt;" alt="" coords="824,5,984,53"/>
-<area shape="rect" id="c26922" href="./SightImpairment.html" title="org.universAAL.ontology.impairment.SightImpairment" alt="" coords="317,17,433,42"/>
+<area shape="rect" id="c27846" href="./SightImpairment.html" title="org.universAAL.ontology.impairment.SightImpairment" alt="" coords="317,17,433,42"/>
 <area shape="rect" id="node8" href="./SightImpairment.html" title="&lt;TABLE&gt;" alt="" coords="307,5,443,53"/>
-<area shape="rect" id="c26923" href="./NearSightedness.html" title="org.universAAL.ontology.impairment.NearSightedness" alt="" coords="621,113,742,138"/>
+<area shape="rect" id="c27847" href="./NearSightedness.html" title="org.universAAL.ontology.impairment.NearSightedness" alt="" coords="621,113,742,138"/>
 <area shape="rect" id="node9" href="./NearSightedness.html" title="&lt;TABLE&gt;" alt="" coords="611,101,752,149"/>
-<area shape="rect" id="c26924" href="./PhysicalImpairment.html" title="org.universAAL.ontology.impairment.PhysicalImpairment" alt="" coords="1019,17,1155,42"/>
+<area shape="rect" id="c27848" href="./PhysicalImpairment.html" title="org.universAAL.ontology.impairment.PhysicalImpairment" alt="" coords="1019,17,1155,42"/>
 <area shape="rect" id="node10" href="./PhysicalImpairment.html" title="&lt;TABLE&gt;" alt="" coords="1008,5,1165,53"/>
 </map>

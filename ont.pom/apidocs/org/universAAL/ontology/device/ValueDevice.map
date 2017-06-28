@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c373605" href="../phThing/Device.html" title="org.universAAL.ontology.phThing.Device" alt="" coords="71,17,132,42"/>
+<area shape="rect" id="c382818" href="../phThing/Device.html" title="org.universAAL.ontology.phThing.Device" alt="" coords="71,17,132,42"/>
 <area shape="rect" id="node1" href="../phThing/Device.html" title="&lt;TABLE&gt;" alt="" coords="60,5,143,53"/>
-<area shape="rect" id="c373702" href="./ValueDevice.html" title="org.universAAL.ontology.device.ValueDevice" alt="" coords="54,113,149,138"/>
+<area shape="rect" id="c382921" href="./ValueDevice.html" title="org.universAAL.ontology.device.ValueDevice" alt="" coords="54,113,149,138"/>
 <area shape="rect" id="node3" href="./ValueDevice.html" title="&lt;TABLE&gt;" alt="" coords="44,101,159,149"/>
-<area shape="rect" id="c373698" href="./Sensor.html" title="org.universAAL.ontology.device.Sensor" alt="" coords="16,209,77,234"/>
+<area shape="rect" id="c382915" href="./Sensor.html" title="org.universAAL.ontology.device.Sensor" alt="" coords="16,209,77,234"/>
 <area shape="rect" id="node2" href="./Sensor.html" title="&lt;TABLE&gt;" alt="" coords="5,197,88,245"/>
-<area shape="rect" id="c373703" href="./Actuator.html" title="org.universAAL.ontology.device.Actuator" alt="" coords="123,209,192,234"/>
+<area shape="rect" id="c382922" href="./Actuator.html" title="org.universAAL.ontology.device.Actuator" alt="" coords="123,209,192,234"/>
 <area shape="rect" id="node4" href="./Actuator.html" title="&lt;TABLE&gt;" alt="" coords="112,197,203,245"/>
 </map>

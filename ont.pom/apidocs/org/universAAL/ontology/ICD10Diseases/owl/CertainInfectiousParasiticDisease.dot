@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease
-	c92539 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CertainInfectiousParasiticDisease.html">
+	c92395 [label=<<table title="org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CertainInfectiousParasiticDisease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CertainInfectiousParasiticDisease </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CertainInfectiousParasiticDisease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.disease.owl.Disease
-	c92553 [label=<<table title="org.universAAL.ontology.disease.owl.Disease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../disease/owl/Disease.html">
+	c92409 [label=<<table title="org.universAAL.ontology.disease.owl.Disease" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../disease/owl/Disease.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Disease </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../disease/owl/Disease.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease extends org.universAAL.ontology.disease.owl.Disease
-	c92553:p -> c92539:p [dir=back,arrowtail=empty];
+	c92409:p -> c92395:p [dir=back,arrowtail=empty];
 }
 

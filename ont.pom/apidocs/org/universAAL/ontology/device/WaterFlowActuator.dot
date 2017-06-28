@@ -9,27 +9,27 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.device.Actuator
-	c383941 [label=<<table title="org.universAAL.ontology.device.Actuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Actuator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Actuator </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./Actuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.WaterFlowActuator
-	c383942 [label=<<table title="org.universAAL.ontology.device.WaterFlowActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WaterFlowActuator.html">
+	c393275 [label=<<table title="org.universAAL.ontology.device.WaterFlowActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WaterFlowActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WaterFlowActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WaterFlowActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.WaterFlowController
-	c383943 [label=<<table title="org.universAAL.ontology.device.WaterFlowController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WaterFlowController.html">
+	c393276 [label=<<table title="org.universAAL.ontology.device.WaterFlowController" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WaterFlowController.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WaterFlowController </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WaterFlowController.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.device.Actuator
+	c393279 [label=<<table title="org.universAAL.ontology.device.Actuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Actuator.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Actuator </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="./Actuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.device.WaterFlowActuator extends org.universAAL.ontology.device.Actuator
-	c383941:p -> c383942:p [dir=back,arrowtail=empty];
+	c393279:p -> c393275:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.WaterFlowController extends org.universAAL.ontology.device.WaterFlowActuator
-	c383942:p -> c383943:p [dir=back,arrowtail=empty];
+	c393275:p -> c393276:p [dir=back,arrowtail=empty];
 }
 

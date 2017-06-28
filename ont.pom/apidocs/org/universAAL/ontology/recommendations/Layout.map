@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c218626" href="./HorizontalLayout.html" title="org.universAAL.ontology.recommendations.HorizontalLayout" alt="" coords="15,209,134,234"/>
+<area shape="rect" id="c222991" href="./HorizontalLayout.html" title="org.universAAL.ontology.recommendations.HorizontalLayout" alt="" coords="15,209,134,234"/>
 <area shape="rect" id="node1" href="./HorizontalLayout.html" title="&lt;TABLE&gt;" alt="" coords="5,197,144,245"/>
-<area shape="rect" id="c218627" href="./GridLayout.html" title="org.universAAL.ontology.recommendations.GridLayout" alt="" coords="178,209,262,234"/>
+<area shape="rect" id="c222992" href="./GridLayout.html" title="org.universAAL.ontology.recommendations.GridLayout" alt="" coords="178,209,262,234"/>
 <area shape="rect" id="node2" href="./GridLayout.html" title="&lt;TABLE&gt;" alt="" coords="168,197,272,245"/>
-<area shape="rect" id="c218629" href="./Layout.html" title="org.universAAL.ontology.recommendations.Layout" alt="" coords="190,113,250,138"/>
+<area shape="rect" id="c222994" href="./Layout.html" title="org.universAAL.ontology.recommendations.Layout" alt="" coords="190,113,250,138"/>
 <area shape="rect" id="node3" href="./Layout.html" title="&lt;TABLE&gt;" alt="" coords="180,101,260,149"/>
-<area shape="rect" id="c218630" href="./VerticalLayout.html" title="org.universAAL.ontology.recommendations.VerticalLayout" alt="" coords="307,209,411,234"/>
+<area shape="rect" id="c222995" href="./VerticalLayout.html" title="org.universAAL.ontology.recommendations.VerticalLayout" alt="" coords="307,209,411,234"/>
 <area shape="rect" id="node4" href="./VerticalLayout.html" title="&lt;TABLE&gt;" alt="" coords="296,197,421,245"/>
-<area shape="rect" id="c218635" href="./VisualRecommendation.html" title="org.universAAL.ontology.recommendations.VisualRecommendation" alt="" coords="141,17,299,42"/>
+<area shape="rect" id="c223000" href="./VisualRecommendation.html" title="org.universAAL.ontology.recommendations.VisualRecommendation" alt="" coords="141,17,299,42"/>
 <area shape="rect" id="node5" href="./VisualRecommendation.html" title="&lt;TABLE&gt;" alt="" coords="131,5,309,53"/>
 </map>

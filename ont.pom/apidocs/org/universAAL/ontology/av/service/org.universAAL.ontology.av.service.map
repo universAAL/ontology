@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c12883" href="./CameraService.html" title="org.universAAL.ontology.av.service.CameraService" alt="" coords="15,17,126,42"/>
+<area shape="rect" id="c13646" href="./CameraService.html" title="org.universAAL.ontology.av.service.CameraService" alt="" coords="15,17,126,42"/>
 <area shape="rect" id="node1" href="./CameraService.html" title="&lt;TABLE&gt;" alt="" coords="5,5,136,53"/>
-<area shape="rect" id="c12884" href="./LoudSpeakerService.html" title="org.universAAL.ontology.av.service.LoudSpeakerService" alt="" coords="171,17,312,42"/>
+<area shape="rect" id="c13647" href="./LoudSpeakerService.html" title="org.universAAL.ontology.av.service.LoudSpeakerService" alt="" coords="171,17,312,42"/>
 <area shape="rect" id="node2" href="./LoudSpeakerService.html" title="&lt;TABLE&gt;" alt="" coords="160,5,323,53"/>
-<area shape="rect" id="c12885" href="./MicrophoneService.html" title="org.universAAL.ontology.av.service.MicrophoneService" alt="" coords="357,17,489,42"/>
+<area shape="rect" id="c13648" href="./MicrophoneService.html" title="org.universAAL.ontology.av.service.MicrophoneService" alt="" coords="357,17,489,42"/>
 <area shape="rect" id="node3" href="./MicrophoneService.html" title="&lt;TABLE&gt;" alt="" coords="347,5,499,53"/>
 </map>

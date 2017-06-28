@@ -1,16 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="c23265" href="./RespiratorySystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease" alt="" coords="16,17,197,42"/>
+<area shape="rect" id="c24147" href="./RespiratorySystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.RespiratorySystemDisease" alt="" coords="16,17,197,42"/>
 <area shape="rect" id="node1" href="./RespiratorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="5,5,208,53"/>
-<area shape="rect" id="c23266" href="./DigestiveSystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease" alt="" coords="242,17,411,42"/>
+<area shape="rect" id="c24148" href="./DigestiveSystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.DigestiveSystemDisease" alt="" coords="242,17,411,42"/>
 <area shape="rect" id="node2" href="./DigestiveSystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="232,5,421,53"/>
-<area shape="rect" id="c23267" href="./NervousSystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease" alt="" coords="456,17,619,42"/>
+<area shape="rect" id="c24149" href="./NervousSystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.NervousSystemDisease" alt="" coords="456,17,619,42"/>
 <area shape="rect" id="node3" href="./NervousSystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="445,5,629,53"/>
-<area shape="rect" id="c23268" href="./CirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease" alt="" coords="663,17,841,42"/>
+<area shape="rect" id="c24150" href="./CirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease" alt="" coords="663,17,841,42"/>
 <area shape="rect" id="node4" href="./CirculatorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="653,5,851,53"/>
-<area shape="rect" id="c23269" href="./CertainInfectiousParasiticDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease" alt="" coords="885,17,1104,42"/>
+<area shape="rect" id="c24151" href="./CertainInfectiousParasiticDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.CertainInfectiousParasiticDisease" alt="" coords="885,17,1104,42"/>
 <area shape="rect" id="node5" href="./CertainInfectiousParasiticDisease.html" title="&lt;TABLE&gt;" alt="" coords="875,5,1115,53"/>
-<area shape="rect" id="c23270" href="./Neoplasms.html" title="org.universAAL.ontology.ICD10Diseases.owl.Neoplasms" alt="" coords="1149,17,1235,42"/>
+<area shape="rect" id="c24152" href="./Neoplasms.html" title="org.universAAL.ontology.ICD10Diseases.owl.Neoplasms" alt="" coords="1149,17,1235,42"/>
 <area shape="rect" id="node6" href="./Neoplasms.html" title="&lt;TABLE&gt;" alt="" coords="1139,5,1245,53"/>
-<area shape="rect" id="c23271" href="./MentalDisorder.html" title="org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder" alt="" coords="1280,17,1389,42"/>
+<area shape="rect" id="c24153" href="./MentalDisorder.html" title="org.universAAL.ontology.ICD10Diseases.owl.MentalDisorder" alt="" coords="1280,17,1389,42"/>
 <area shape="rect" id="node7" href="./MentalDisorder.html" title="&lt;TABLE&gt;" alt="" coords="1269,5,1400,53"/>
 </map>
