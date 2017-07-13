@@ -19,6 +19,7 @@ import org.universAAL.middleware.owl.AllValuesFromRestriction;
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.HasValueRestriction;
 import org.universAAL.middleware.owl.IntRestriction;
+import org.universAAL.middleware.owl.Intersection;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
 import org.universAAL.middleware.owl.OntClassInfoSetup;
@@ -346,16 +347,18 @@ public final class UnitOntology extends Ontology {
 
 		MergedRestriction crest = new MergedRestriction(
 				ColorModel.PROP_COLOR_UNIT);
+		Intersection colorUnit = new Intersection();
 		// it is a unit
+		colorUnit.addType(new TypeURI(Unit.MY_URI, false));
+		// which measured dimension is Color
+		colorUnit.addType(new AllValuesFromRestriction(
+				ColorModel.PROP_COLOR_UNIT, new HasValueRestriction(
+						Unit.PROP_DIMENSION, MeasurableDimension.Color)));
 		crest.addRestriction(new AllValuesFromRestriction(
-				ColorModel.PROP_COLOR_UNIT, new TypeURI(Unit.MY_URI, false)));
+				ColorModel.PROP_COLOR_UNIT, colorUnit));
 		// mandatory, 1
 		crest.addRestriction(MergedRestriction.getCardinalityRestriction(
 				ColorModel.PROP_COLOR_UNIT, 1, 1));
-		// which measured dimension is Color
-		crest.addRestriction(new AllValuesFromRestriction(
-				ColorModel.PROP_COLOR_UNIT, new HasValueRestriction(
-						Unit.PROP_DIMENSION, MeasurableDimension.Color)));
 
 		oci_ColorModel.addRestriction(crest);
 
@@ -378,7 +381,7 @@ public final class UnitOntology extends Ontology {
 				.getAllValuesRestrictionWithCardinality(
 						RGBColorModel.PROP_GREEN, new IntRestriction(0, true,
 								255, true), 1, 1));
-		oci_RGBColorModel.addInstance(RGBColorModel.IND_UNIT_RGB);
+		oci_Unit.addInstance(RGBColorModel.IND_UNIT_RGB);
 		oci_RGBColorModel.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
 						RGBColorModel.IND_UNIT_RGB));
@@ -392,18 +395,18 @@ public final class UnitOntology extends Ontology {
 		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_HUE);
 		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_SATURATION);
 		oci_HSVColorModel.addDatatypeProperty(HSVColorModel.PROP_VALUE);
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_HSVColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(HSVColorModel.PROP_HUE,
 						new IntRestriction(0, true, 255, true), 1, 1));
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_HSVColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						HSVColorModel.PROP_SATURATION, new IntRestriction(0,
 								true, 255, true), 1, 1));
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_HSVColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						HSVColorModel.PROP_VALUE, new IntRestriction(0, true,
 								255, true), 1, 1));
-		oci_HSVColorModel.addInstance(HSVColorModel.IND_UNIT_HSV);
+		oci_Unit.addInstance(HSVColorModel.IND_UNIT_HSV);
 		oci_HSVColorModel.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
 						HSVColorModel.IND_UNIT_HSV));
@@ -417,23 +420,23 @@ public final class UnitOntology extends Ontology {
 		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_MAGENTA);
 		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_YELLOW);
 		oci_CMYKColorModel.addDatatypeProperty(CMYKColorModel.PROP_BLACK);
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_CMYKColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						CMYKColorModel.PROP_CYAN, new IntRestriction(0, true,
 								255, true), 1, 1));
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_CMYKColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						CMYKColorModel.PROP_MAGENTA, new IntRestriction(0,
 								true, 255, true), 1, 1));
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_CMYKColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						CMYKColorModel.PROP_YELLOW, new IntRestriction(0, true,
 								255, true), 1, 1));
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_CMYKColorModel.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						CMYKColorModel.PROP_BLACK, new IntRestriction(0, true,
 								255, true), 1, 1));
-		oci_CMYKColorModel.addInstance(CMYKColorModel.IND_UNIT_CMYK);
+		oci_Unit.addInstance(CMYKColorModel.IND_UNIT_CMYK);
 		oci_CMYKColorModel.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
 						CMYKColorModel.IND_UNIT_CMYK));
@@ -445,11 +448,11 @@ public final class UnitOntology extends Ontology {
 						+ "radiates light of a color comparable to that of the light source.");
 		oci_ColorTemp.addSuperClass(ColorModel.MY_URI);
 		oci_ColorTemp.addDatatypeProperty(ColorTemperature.PROP_DEGREES);
-		oci_RGBColorModel.addRestriction(MergedRestriction
+		oci_ColorTemp.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(
 						ColorTemperature.PROP_DEGREES,
 						TypeMapper.getDatatypeURI(Integer.class), 1, 1));
-		oci_ColorTemp.addInstance(ColorTemperature.IND_UNIT_COLOR_TEMPERATURE);
+		oci_Unit.addInstance(ColorTemperature.IND_UNIT_COLOR_TEMPERATURE);
 		oci_ColorTemp.addRestriction(MergedRestriction
 				.getFixedValueRestriction(ColorModel.PROP_COLOR_UNIT,
 						ColorTemperature.IND_UNIT_COLOR_TEMPERATURE));
