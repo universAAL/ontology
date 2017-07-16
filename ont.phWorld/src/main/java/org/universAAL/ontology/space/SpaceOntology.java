@@ -43,31 +43,34 @@ public class SpaceOntology extends Ontology {
 
 	public SpaceOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
-		r.setResourceComment(
-				"Ontology for Space Configuration. " + "It is part of the Physical World upper ontology concept, "
-						+ "which defines the most general concepts from the physical "
-						+ "world as opposed to the virtual realm.");
+		r.setResourceComment("Ontology for Space Configuration. "
+				+ "It is part of the Physical World upper ontology concept, "
+				+ "which defines the most general concepts from the physical "
+				+ "world as opposed to the virtual realm.");
 		r.setResourceLabel("Space Configuration");
 
 		addImport(LocationOntology.NAMESPACE);
 		addImport(PhThingOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		OntClassInfoSetup oci;
 
 		// load SpaceConfigurationService
-		oci = createNewOntClassInfo(SpaceConfigurationService.MY_URI, factory, 0);
+		oci = createNewOntClassInfo(SpaceConfigurationService.MY_URI, factory,
+				0);
 		oci.setResourceComment("The class of services controlling locations.");
 		oci.setResourceLabel("SpaceConfigurationService");
 		oci.addSuperClass(Service.MY_URI);
 		oci.addObjectProperty(SpaceConfigurationService.PROP_MANAGED_LOCATIONS);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(SpaceConfigurationService.PROP_MANAGED_LOCATIONS,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				SpaceConfigurationService.PROP_MANAGED_LOCATIONS,
 				Location.MY_URI));
 		oci.addObjectProperty(SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS);
-		oci.addRestriction(MergedRestriction
-				.getAllValuesRestriction(SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS, PhysicalThing.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				SpaceConfigurationService.PROP_MANAGED_PHYSICAL_THINGS,
+				PhysicalThing.MY_URI));
 	}
 }

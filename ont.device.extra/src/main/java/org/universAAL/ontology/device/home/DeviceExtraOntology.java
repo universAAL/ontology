@@ -46,17 +46,21 @@ public class DeviceExtraOntology extends Ontology {
 
 	public DeviceExtraOntology(String ontURI) {
 		super(ontURI);
-	}
-
-	public DeviceExtraOntology() {
-		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("Ontology for extra devices");
 		r.setResourceLabel("Device extra");
 		addImport(DeviceOntology.NAMESPACE);
+	}
+
+	public DeviceExtraOntology() {
+		super(NAMESPACE);
+		Resource r = getInfo();
+		r.setResourceComment("Ontology for extra devices");
+		r.setResourceLabel("Device extra");
+		addImport(DeviceOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		OntClassInfoSetup oci;
 
@@ -70,8 +74,9 @@ public class DeviceExtraOntology extends Ontology {
 		oci.setResourceLabel("Carpet Presence Detector");
 		oci.addSuperClass(Sensor.MY_URI);
 		oci.addObjectProperty(CarpetSensor.PROP_HAS_VALUE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(CarpetSensor.PROP_HAS_VALUE,
-				StatusValue.MY_URI, 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						CarpetSensor.PROP_HAS_VALUE, StatusValue.MY_URI, 1, 1));
 
 		// Oven
 		oci = createNewOntClassInfo(Oven.MY_URI, factory, 1);
@@ -79,8 +84,9 @@ public class DeviceExtraOntology extends Ontology {
 		oci.setResourceLabel("Oven");
 		oci.addSuperClass(Actuator.MY_URI);
 		oci.addObjectProperty(Oven.PROP_HAS_VALUE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Oven.PROP_HAS_VALUE,
-				StatusValue.MY_URI, 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Oven.PROP_HAS_VALUE,
+						StatusValue.MY_URI, 1, 1));
 
 		// SirenActuator
 		oci = createNewOntClassInfo(SirenActuator.MY_URI, factory, 2);
@@ -88,8 +94,9 @@ public class DeviceExtraOntology extends Ontology {
 		oci.setResourceLabel("Siren Actuator");
 		oci.addSuperClass(Actuator.MY_URI);
 		oci.addObjectProperty(SirenActuator.PROP_HAS_VALUE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SirenActuator.PROP_HAS_VALUE,
-				StatusValue.MY_URI, 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						SirenActuator.PROP_HAS_VALUE, StatusValue.MY_URI, 1, 1));
 
 		// Strap
 		oci = createNewOntClassInfo(Strap.MY_URI, factory, 3);

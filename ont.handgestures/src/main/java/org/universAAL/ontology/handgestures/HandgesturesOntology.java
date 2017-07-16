@@ -42,57 +42,78 @@ public final class HandgesturesOntology extends Ontology {
 
 	public HandgesturesOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("Ontology that describes different hand gestures");
 		r.setResourceLabel("handgestures");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(LocationOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		// ******* Declaration of enumeration classes of the ontology ******* //
 
 		OntClassInfoSetup oci_HandGestureType = createNewAbstractOntClassInfo(HandGestureType.MY_URI);
 
 		// ******* Declaration of regular classes of the ontology ******* //
-		OntClassInfoSetup oci_HandGestures = createNewOntClassInfo(HandGestures.MY_URI, factory, 0);
-		OntClassInfoSetup oci_HandGestureService = createNewOntClassInfo(HandGestureService.MY_URI, factory, 1);
+		OntClassInfoSetup oci_HandGestures = createNewOntClassInfo(
+				HandGestures.MY_URI, factory, 0);
+		OntClassInfoSetup oci_HandGestureService = createNewOntClassInfo(
+				HandGestureService.MY_URI, factory, 1);
 
 		// ******* Add content to enumeration classes of the ontology ******* //
 
 		oci_HandGestureType.setResourceComment("");
 		oci_HandGestureType.setResourceLabel("HandGestureType");
-		oci_HandGestureType.toEnumeration(new ManagedIndividual[] { HandGestureType.rightHandSwipeRight,
-				HandGestureType.rightHandSwipeLeft, HandGestureType.leftHandSwipeRight,
-				HandGestureType.leftHandSwipeLeft, HandGestureType.twoHandsZoomIn, HandGestureType.twoHandsZoomOut,
-				HandGestureType.rightHandWave, HandGestureType.leftHandWave, HandGestureType.rightHandPullDown,
-				HandGestureType.rightHandPushUp, HandGestureType.leftHandPullDown, HandGestureType.leftHandPushUp,
-				HandGestureType.bothHandsPullDown, HandGestureType.bothHandsPushUp });
+		oci_HandGestureType.toEnumeration(new ManagedIndividual[] {
+				HandGestureType.rightHandSwipeRight,
+				HandGestureType.rightHandSwipeLeft,
+				HandGestureType.leftHandSwipeRight,
+				HandGestureType.leftHandSwipeLeft,
+				HandGestureType.twoHandsZoomIn,
+				HandGestureType.twoHandsZoomOut, HandGestureType.rightHandWave,
+				HandGestureType.leftHandWave,
+				HandGestureType.rightHandPullDown,
+				HandGestureType.rightHandPushUp,
+				HandGestureType.leftHandPullDown,
+				HandGestureType.leftHandPushUp,
+				HandGestureType.bothHandsPullDown,
+				HandGestureType.bothHandsPushUp });
 
 		// ******* Add content to regular classes of the ontology ******* //
 		oci_HandGestures.setResourceComment("");
 		oci_HandGestures.setResourceLabel("HandGestures");
 		oci_HandGestures.addSuperClass(ManagedIndividual.MY_URI);
-		oci_HandGestures.addDatatypeProperty(HandGestures.PROP_USER).setFunctional();
-		oci_HandGestures.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(HandGestures.PROP_USER,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
-
-		oci_HandGestures.addDatatypeProperty(HandGestures.PROP_TIMESTAMP).setFunctional();
-		oci_HandGestures.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				HandGestures.PROP_TIMESTAMP, TypeMapper.getDatatypeURI(String.class), 1, 1));
-
-		oci_HandGestures.addObjectProperty(HandGestures.PROP_GESTURE_TYPE).setFunctional();
+		oci_HandGestures.addDatatypeProperty(HandGestures.PROP_USER)
+				.setFunctional();
 		oci_HandGestures.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(HandGestures.PROP_GESTURE_TYPE, HandGestureType.MY_URI, 1, 1));
+				.getAllValuesRestrictionWithCardinality(HandGestures.PROP_USER,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
+
+		oci_HandGestures.addDatatypeProperty(HandGestures.PROP_TIMESTAMP)
+				.setFunctional();
+		oci_HandGestures.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						HandGestures.PROP_TIMESTAMP,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
+
+		oci_HandGestures.addObjectProperty(HandGestures.PROP_GESTURE_TYPE)
+				.setFunctional();
+		oci_HandGestures.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						HandGestures.PROP_GESTURE_TYPE, HandGestureType.MY_URI,
+						1, 1));
 
 		oci_HandGestureService.setResourceComment("");
 		oci_HandGestureService.setResourceLabel("HandGestureService");
 		oci_HandGestureService.addSuperClass(Service.MY_URI);
-		oci_HandGestureService.addDatatypeProperty(HandGestureService.PROP_PROP_CONTROLS).setFunctional();
-		oci_HandGestureService.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				HandGestureService.PROP_PROP_CONTROLS, TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_HandGestureService.addDatatypeProperty(
+				HandGestureService.PROP_PROP_CONTROLS).setFunctional();
+		oci_HandGestureService.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						HandGestureService.PROP_PROP_CONTROLS,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 	}
 }

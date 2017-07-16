@@ -50,9 +50,6 @@ public final class DeviceOntology extends Ontology {
 
 	public DeviceOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("The Collection of Devices Ontology");
 		r.setResourceLabel("device");
@@ -61,6 +58,9 @@ public final class DeviceOntology extends Ontology {
 		addImport(LocationOntology.NAMESPACE);
 		addImport(MeasurementOntology.NAMESPACE);
 		addImport(PhThingOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		// ******* Declaration of enumeration classes of the ontology ******* //
 

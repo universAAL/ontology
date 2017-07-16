@@ -52,14 +52,14 @@ public final class UnitOntology extends Ontology {
 
 	public UnitOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("The Unit Ontology");
 		r.setResourceLabel("Unit");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		// ******* Declaration of enumeration classes of the ontology ******* //
 

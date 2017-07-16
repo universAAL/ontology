@@ -46,22 +46,27 @@ public final class SysinfoOntology extends Ontology {
 
 	public SysinfoOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("");
 		r.setResourceLabel("sysinfo");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(LocationOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		// ******* Declaration of regular classes of the ontology ******* //
-		OntClassInfoSetup oci_SpaceDescriptor = createNewOntClassInfo(SpaceDescriptor.MY_URI, factory, 0);
-		OntClassInfoSetup oci_SpaceStatus = createNewOntClassInfo(SpaceStatusDescriptor.MY_URI, factory, 1);
-		OntClassInfoSetup oci_Descriptor = createNewOntClassInfo(Descriptor.MY_URI, factory, 2);
-		OntClassInfoSetup oci_PeerCard = createNewOntClassInfo(PeerCardDescriptor.MY_URI, factory, 3);
-		OntClassInfoSetup oci_System = createNewOntClassInfo(SystemInfo.MY_URI, factory, 4);
+		OntClassInfoSetup oci_SpaceDescriptor = createNewOntClassInfo(
+				SpaceDescriptor.MY_URI, factory, 0);
+		OntClassInfoSetup oci_SpaceStatus = createNewOntClassInfo(
+				SpaceStatusDescriptor.MY_URI, factory, 1);
+		OntClassInfoSetup oci_Descriptor = createNewOntClassInfo(
+				Descriptor.MY_URI, factory, 2);
+		OntClassInfoSetup oci_PeerCard = createNewOntClassInfo(
+				PeerCardDescriptor.MY_URI, factory, 3);
+		OntClassInfoSetup oci_System = createNewOntClassInfo(SystemInfo.MY_URI,
+				factory, 4);
 
 		// ******* Add content to regular classes of the ontology ******* //
 		oci_SpaceDescriptor.setResourceComment("");
@@ -75,9 +80,12 @@ public final class SysinfoOntology extends Ontology {
 		oci_Descriptor.setResourceComment("");
 		oci_Descriptor.setResourceLabel("Descriptor");
 		oci_Descriptor.addSuperClass(ManagedIndividual.MY_URI);
-		oci_Descriptor.addDatatypeProperty(Descriptor.PROP__SERIALIZED_VALUE).setFunctional();
-		oci_Descriptor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				Descriptor.PROP__SERIALIZED_VALUE, TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Descriptor.addDatatypeProperty(Descriptor.PROP__SERIALIZED_VALUE)
+				.setFunctional();
+		oci_Descriptor.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Descriptor.PROP__SERIALIZED_VALUE,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci_PeerCard.setResourceComment("");
 		oci_PeerCard.setResourceLabel("PeerCardDescriptor");
@@ -86,24 +94,39 @@ public final class SysinfoOntology extends Ontology {
 		oci_System.setResourceComment("");
 		oci_System.setResourceLabel("SystemInfo");
 		oci_System.addSuperClass(ManagedIndividual.MY_URI);
-		oci_System.addObjectProperty(SystemInfo.PROP_SPACE_CHANGED).setFunctional();
-		oci_System.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				SystemInfo.PROP_SPACE_CHANGED, SpaceStatusDescriptor.MY_URI, 1, 1));
-		oci_System.addObjectProperty(SystemInfo.PROP_SPACE_JOINED).setFunctional();
-		oci_System.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SystemInfo.PROP_SPACE_JOINED,
-				SpaceDescriptor.MY_URI, 1, 1));
-		oci_System.addObjectProperty(SystemInfo.PROP_PEER_JOINED).setFunctional();
-		oci_System.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SystemInfo.PROP_PEER_JOINED,
-				PeerCardDescriptor.MY_URI, 1, 1));
-		oci_System.addObjectProperty(SystemInfo.PROP_SPACE_LOST).setFunctional();
-		oci_System.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SystemInfo.PROP_SPACE_LOST,
-				SpaceDescriptor.MY_URI, 1, 1));
+		oci_System.addObjectProperty(SystemInfo.PROP_SPACE_CHANGED)
+				.setFunctional();
+		oci_System.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						SystemInfo.PROP_SPACE_CHANGED,
+						SpaceStatusDescriptor.MY_URI, 1, 1));
+		oci_System.addObjectProperty(SystemInfo.PROP_SPACE_JOINED)
+				.setFunctional();
+		oci_System.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						SystemInfo.PROP_SPACE_JOINED, SpaceDescriptor.MY_URI,
+						1, 1));
+		oci_System.addObjectProperty(SystemInfo.PROP_PEER_JOINED)
+				.setFunctional();
+		oci_System.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						SystemInfo.PROP_PEER_JOINED, PeerCardDescriptor.MY_URI,
+						1, 1));
+		oci_System.addObjectProperty(SystemInfo.PROP_SPACE_LOST)
+				.setFunctional();
+		oci_System.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						SystemInfo.PROP_SPACE_LOST, SpaceDescriptor.MY_URI, 1,
+						1));
 		oci_System.addObjectProperty(SystemInfo.PROP_PEER_LOST).setFunctional();
-		oci_System.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SystemInfo.PROP_PEER_LOST,
-				PeerCardDescriptor.MY_URI, 1, 1));
+		oci_System.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						SystemInfo.PROP_PEER_LOST, PeerCardDescriptor.MY_URI,
+						1, 1));
 		oci_System.addDatatypeProperty(SystemInfo.PROP_ALIVE);
-		oci_System.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(SystemInfo.PROP_ALIVE,
-				TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
+		oci_System.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(SystemInfo.PROP_ALIVE,
+						TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
 
 	}
 }

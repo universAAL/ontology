@@ -25,11 +25,11 @@ import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
+//import the factory for this ontology
+import org.universAAL.ontology.DependabilityFactory;
 import org.universAAL.ontology.location.LocationOntology;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.PhThingOntology;
-//import the factory for this ontology
-import org.universAAL.ontology.DependabilityFactory;
 
 /**
  * Dependability Ontology for platform reliability and fault tolerance
@@ -41,9 +41,6 @@ public final class DependabilityOntology extends Ontology {
 
 	public DependabilityOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("");
 		r.setResourceLabel("dependability");
@@ -51,45 +48,81 @@ public final class DependabilityOntology extends Ontology {
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(LocationOntology.NAMESPACE);
 		addImport(PhThingOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		// ******* Declaration of regular classes of the ontology ******* //
-		OntClassInfoSetup oci_Symptom = createNewOntClassInfo(Symptom.MY_URI, factory, 0);
-		OntClassInfoSetup oci_DirectFault = createNewOntClassInfo(DirectFault.MY_URI, factory, 1);
-		OntClassInfoSetup oci_ErrorDetector = createNewOntClassInfo(ErrorDetector.MY_URI, factory, 2);
-		OntClassInfoSetup oci_NonParametricFault = createNewOntClassInfo(NonParametricFault.MY_URI, factory, 3);
-		OntClassInfoSetup oci_SoftwareFault = createNewOntClassInfo(SoftwareFault.MY_URI, factory, 4);
-		OntClassInfoSetup oci_InteractionFault = createNewOntClassInfo(InteractionFault.MY_URI, factory, 5);
-		OntClassInfoSetup oci_StructuralFault = createNewOntClassInfo(StructuralFault.MY_URI, factory, 6);
-		OntClassInfoSetup oci_InternalCauseFault = createNewOntClassInfo(InternalCauseFault.MY_URI, factory, 7);
-		OntClassInfoSetup oci_PermanentFault = createNewOntClassInfo(PermanentFault.MY_URI, factory, 8);
-		OntClassInfoSetup oci_IntermittentFault = createNewOntClassInfo(IntermittentFault.MY_URI, factory, 9);
-		OntClassInfoSetup oci_EarlyTimingFault = createNewOntClassInfo(EarlyTimingFault.MY_URI, factory, 10);
-		OntClassInfoSetup oci_ContinuedFault = createNewOntClassInfo(ContinuedFault.MY_URI, factory, 11);
-		OntClassInfoSetup oci_RecoveryAction = createNewOntClassInfo(RecoveryAction.MY_URI, factory, 12);
-		OntClassInfoSetup oci_Fault = createNewOntClassInfo(Fault.MY_URI, factory, 13);
-		OntClassInfoSetup oci_ShapeFault = createNewOntClassInfo(ShapeFault.MY_URI, factory, 14);
-		OntClassInfoSetup oci_ExternalFault = createNewOntClassInfo(ExternalFault.MY_URI, factory, 15);
-		OntClassInfoSetup oci_Sensor = createNewOntClassInfo(Sensor.MY_URI, factory, 16);
-		OntClassInfoSetup oci_ParametricFault = createNewOntClassInfo(ParametricFault.MY_URI, factory, 17);
-		OntClassInfoSetup oci_ValueFault = createNewOntClassInfo(ValueFault.MY_URI, factory, 18);
-		OntClassInfoSetup oci_OperationalFault = createNewOntClassInfo(OperationalFault.MY_URI, factory, 19);
-		OntClassInfoSetup oci_PhysicalFault = createNewOntClassInfo(PhysicalFault.MY_URI, factory, 20);
-		OntClassInfoSetup oci_FCR = createNewOntClassInfo(FCR.MY_URI, factory, 21);
-		OntClassInfoSetup oci_TimingFault = createNewOntClassInfo(TimingFault.MY_URI, factory, 22);
-		OntClassInfoSetup oci_IndirectFault = createNewOntClassInfo(IndirectFault.MY_URI, factory, 23);
-		OntClassInfoSetup oci_LateTimingFault = createNewOntClassInfo(LateTimingFault.MY_URI, factory, 24);
-		OntClassInfoSetup oci_PropertyFault = createNewOntClassInfo(PropertyFault.MY_URI, factory, 25);
-		OntClassInfoSetup oci_DevelopmentFault = createNewOntClassInfo(DevelopmentFault.MY_URI, factory, 26);
-		OntClassInfoSetup oci_TransientFault = createNewOntClassInfo(TransientFault.MY_URI, factory, 27);
-		OntClassInfoSetup oci_NonMaliciousFault = createNewOntClassInfo(NonMaliciousFault.MY_URI, factory, 28);
+		OntClassInfoSetup oci_Symptom = createNewOntClassInfo(Symptom.MY_URI,
+				factory, 0);
+		OntClassInfoSetup oci_DirectFault = createNewOntClassInfo(
+				DirectFault.MY_URI, factory, 1);
+		OntClassInfoSetup oci_ErrorDetector = createNewOntClassInfo(
+				ErrorDetector.MY_URI, factory, 2);
+		OntClassInfoSetup oci_NonParametricFault = createNewOntClassInfo(
+				NonParametricFault.MY_URI, factory, 3);
+		OntClassInfoSetup oci_SoftwareFault = createNewOntClassInfo(
+				SoftwareFault.MY_URI, factory, 4);
+		OntClassInfoSetup oci_InteractionFault = createNewOntClassInfo(
+				InteractionFault.MY_URI, factory, 5);
+		OntClassInfoSetup oci_StructuralFault = createNewOntClassInfo(
+				StructuralFault.MY_URI, factory, 6);
+		OntClassInfoSetup oci_InternalCauseFault = createNewOntClassInfo(
+				InternalCauseFault.MY_URI, factory, 7);
+		OntClassInfoSetup oci_PermanentFault = createNewOntClassInfo(
+				PermanentFault.MY_URI, factory, 8);
+		OntClassInfoSetup oci_IntermittentFault = createNewOntClassInfo(
+				IntermittentFault.MY_URI, factory, 9);
+		OntClassInfoSetup oci_EarlyTimingFault = createNewOntClassInfo(
+				EarlyTimingFault.MY_URI, factory, 10);
+		OntClassInfoSetup oci_ContinuedFault = createNewOntClassInfo(
+				ContinuedFault.MY_URI, factory, 11);
+		OntClassInfoSetup oci_RecoveryAction = createNewOntClassInfo(
+				RecoveryAction.MY_URI, factory, 12);
+		OntClassInfoSetup oci_Fault = createNewOntClassInfo(Fault.MY_URI,
+				factory, 13);
+		OntClassInfoSetup oci_ShapeFault = createNewOntClassInfo(
+				ShapeFault.MY_URI, factory, 14);
+		OntClassInfoSetup oci_ExternalFault = createNewOntClassInfo(
+				ExternalFault.MY_URI, factory, 15);
+		OntClassInfoSetup oci_Sensor = createNewOntClassInfo(Sensor.MY_URI,
+				factory, 16);
+		OntClassInfoSetup oci_ParametricFault = createNewOntClassInfo(
+				ParametricFault.MY_URI, factory, 17);
+		OntClassInfoSetup oci_ValueFault = createNewOntClassInfo(
+				ValueFault.MY_URI, factory, 18);
+		OntClassInfoSetup oci_OperationalFault = createNewOntClassInfo(
+				OperationalFault.MY_URI, factory, 19);
+		OntClassInfoSetup oci_PhysicalFault = createNewOntClassInfo(
+				PhysicalFault.MY_URI, factory, 20);
+		OntClassInfoSetup oci_FCR = createNewOntClassInfo(FCR.MY_URI, factory,
+				21);
+		OntClassInfoSetup oci_TimingFault = createNewOntClassInfo(
+				TimingFault.MY_URI, factory, 22);
+		OntClassInfoSetup oci_IndirectFault = createNewOntClassInfo(
+				IndirectFault.MY_URI, factory, 23);
+		OntClassInfoSetup oci_LateTimingFault = createNewOntClassInfo(
+				LateTimingFault.MY_URI, factory, 24);
+		OntClassInfoSetup oci_PropertyFault = createNewOntClassInfo(
+				PropertyFault.MY_URI, factory, 25);
+		OntClassInfoSetup oci_DevelopmentFault = createNewOntClassInfo(
+				DevelopmentFault.MY_URI, factory, 26);
+		OntClassInfoSetup oci_TransientFault = createNewOntClassInfo(
+				TransientFault.MY_URI, factory, 27);
+		OntClassInfoSetup oci_NonMaliciousFault = createNewOntClassInfo(
+				NonMaliciousFault.MY_URI, factory, 28);
 
 		// ******* Add content to regular classes of the ontology ******* //
 		oci_Symptom.setResourceComment("");
 		oci_Symptom.setResourceLabel("Symptom");
 		oci_Symptom.addSuperClass(ManagedIndividual.MY_URI);
-		oci_Symptom.addObjectProperty(Symptom.PROP_ERROR_DETECTOR).setFunctional();
-		oci_Symptom.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Symptom.PROP_ERROR_DETECTOR,
-				ErrorDetector.MY_URI, 1, 1));
+		oci_Symptom.addObjectProperty(Symptom.PROP_ERROR_DETECTOR)
+				.setFunctional();
+		oci_Symptom
+				.addRestriction(MergedRestriction
+						.getAllValuesRestrictionWithCardinality(
+								Symptom.PROP_ERROR_DETECTOR,
+								ErrorDetector.MY_URI, 1, 1));
 
 		oci_DirectFault.setResourceComment("");
 		oci_DirectFault.setResourceLabel("DirectFault");
@@ -97,13 +130,17 @@ public final class DependabilityOntology extends Ontology {
 		oci_ErrorDetector.setResourceComment("");
 		oci_ErrorDetector.setResourceLabel("ErrorDetector");
 		oci_ErrorDetector.addSuperClass(ManagedIndividual.MY_URI);
-		oci_ErrorDetector.addObjectProperty(ErrorDetector.PROP_FAULT).setFunctional();
-		oci_ErrorDetector.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(ErrorDetector.PROP_FAULT, Fault.MY_URI, 1, 1));
-
-		oci_ErrorDetector.addObjectProperty(ErrorDetector.PROP_SYMPTOM).setFunctional();
+		oci_ErrorDetector.addObjectProperty(ErrorDetector.PROP_FAULT)
+				.setFunctional();
 		oci_ErrorDetector.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(ErrorDetector.PROP_SYMPTOM, Symptom.MY_URI, 1, 1));
+				.getAllValuesRestrictionWithCardinality(
+						ErrorDetector.PROP_FAULT, Fault.MY_URI, 1, 1));
+
+		oci_ErrorDetector.addObjectProperty(ErrorDetector.PROP_SYMPTOM)
+				.setFunctional();
+		oci_ErrorDetector.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ErrorDetector.PROP_SYMPTOM, Symptom.MY_URI, 1, 1));
 
 		oci_NonParametricFault.setResourceComment("");
 		oci_NonParametricFault.setResourceLabel("NonParametricFault");
@@ -139,16 +176,21 @@ public final class DependabilityOntology extends Ontology {
 		oci_Fault.setResourceLabel("Fault");
 		oci_Fault.addSuperClass(ManagedIndividual.MY_URI);
 		oci_Fault.addDatatypeProperty(Fault.PROP_LOCATION).setFunctional();
-		oci_Fault.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Fault.PROP_LOCATION,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Fault.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Fault.PROP_LOCATION,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-		oci_Fault.addDatatypeProperty(Fault.PROP_FAULT_DECISION).setFunctional();
-		oci_Fault.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Fault.PROP_FAULT_DECISION,
-				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci_Fault.addDatatypeProperty(Fault.PROP_FAULT_DECISION)
+				.setFunctional();
+		oci_Fault.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Fault.PROP_FAULT_DECISION,
+						TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
 
 		oci_Fault.addDatatypeProperty(Fault.PROP_TIMESTAMP).setFunctional();
-		oci_Fault.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Fault.PROP_TIMESTAMP,
-				TypeMapper.getDatatypeURI(Long.class), 1, 1));
+		oci_Fault.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Fault.PROP_TIMESTAMP,
+						TypeMapper.getDatatypeURI(Long.class), 1, 1));
 
 		oci_ShapeFault.setResourceComment("");
 		oci_ShapeFault.setResourceLabel("ShapeFault");
@@ -160,8 +202,9 @@ public final class DependabilityOntology extends Ontology {
 		oci_Sensor.setResourceLabel("Sensor");
 		oci_Sensor.addSuperClass(Device.MY_URI);
 		oci_Sensor.addObjectProperty(Sensor.PROP_SYMPTOM).setFunctional();
-		oci_Sensor.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(Sensor.PROP_SYMPTOM, Symptom.MY_URI, 1, 1));
+		oci_Sensor.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Sensor.PROP_SYMPTOM,
+						Symptom.MY_URI, 1, 1));
 
 		oci_ParametricFault.setResourceComment("");
 		oci_ParametricFault.setResourceLabel("ParametricFault");
@@ -170,9 +213,11 @@ public final class DependabilityOntology extends Ontology {
 		oci_ValueFault.setResourceLabel("ValueFault");
 		oci_ValueFault.addSuperClass(Fault.MY_URI);
 		oci_ValueFault.addSuperClass(SoftwareFault.MY_URI);
-		oci_ValueFault.addDatatypeProperty(ValueFault.PROP_VALUE).setFunctional();
-		oci_ValueFault.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ValueFault.PROP_VALUE,
-				TypeMapper.getDatatypeURI(Double.class), 1, 1));
+		oci_ValueFault.addDatatypeProperty(ValueFault.PROP_VALUE)
+				.setFunctional();
+		oci_ValueFault.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(ValueFault.PROP_VALUE,
+						TypeMapper.getDatatypeURI(Double.class), 1, 1));
 
 		oci_OperationalFault.setResourceComment("");
 		oci_OperationalFault.setResourceLabel("OperationalFault");
@@ -184,20 +229,25 @@ public final class DependabilityOntology extends Ontology {
 		oci_FCR.setResourceLabel("FCR");
 		oci_FCR.addSuperClass(ManagedIndividual.MY_URI);
 		oci_FCR.addDatatypeProperty(FCR.PROP_LOCATION).setFunctional();
-		oci_FCR.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(FCR.PROP_LOCATION,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_FCR.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(FCR.PROP_LOCATION,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci_FCR.addObjectProperty(FCR.PROP_FAULT).setFunctional();
-		oci_FCR.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(FCR.PROP_FAULT, Fault.MY_URI, 1, 1));
+		oci_FCR.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(FCR.PROP_FAULT,
+						Fault.MY_URI, 1, 1));
 
 		oci_TimingFault.setResourceComment("");
 		oci_TimingFault.setResourceLabel("TimingFault");
 		oci_TimingFault.addSuperClass(Fault.MY_URI);
 		oci_TimingFault.addSuperClass(SoftwareFault.MY_URI);
-		oci_TimingFault.addDatatypeProperty(TimingFault.PROP_TIME_THRESHOLD).setFunctional();
-		oci_TimingFault.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				TimingFault.PROP_TIME_THRESHOLD, TypeMapper.getDatatypeURI(Double.class), 1, 1));
+		oci_TimingFault.addDatatypeProperty(TimingFault.PROP_TIME_THRESHOLD)
+				.setFunctional();
+		oci_TimingFault.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						TimingFault.PROP_TIME_THRESHOLD,
+						TypeMapper.getDatatypeURI(Double.class), 1, 1));
 
 		oci_IndirectFault.setResourceComment("");
 		oci_IndirectFault.setResourceLabel("IndirectFault");

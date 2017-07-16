@@ -36,19 +36,20 @@ public final class ImpairmentOntology extends Ontology {
 
 	private static ImpairmentFactory factory = new ImpairmentFactory();
 
-	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX + "Impairment.owl#";
+	public static final String NAMESPACE = Resource.NAMESPACE_PREFIX
+			+ "Impairment.owl#";
 
 	public ImpairmentOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("The ontology describing Impairment a user may have.");
 		r.setResourceLabel("Impairment");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ImpairmentOntology.NAMESPACE);
 		addImport(UIBusOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		OntClassInfoSetup oci;
 
@@ -96,8 +97,7 @@ public final class ImpairmentOntology extends Ontology {
 
 		// load PhysicalImpairment
 		oci = createNewOntClassInfo(PhysicalImpairment.MY_URI, factory, 7);
-		oci.setResourceComment(
-				"Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.");
+		oci.setResourceComment("Represents the level of the user's difficulty in providing input by the hands, e.g. in using maus and keyboard.");
 		oci.setResourceLabel("Physical Impairment");
 		oci.addSuperClass(AccessImpairment.MY_URI);
 

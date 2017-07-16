@@ -37,20 +37,21 @@ public final class MenuProfileOntology extends Ontology {
 	private static UIMainMenuProfileFactory factory = new UIMainMenuProfileFactory();
 	public static final String NAMESPACE = "http://ontology.universAAL.org/UIMainMenuProfile.owl#";
 
-	public static final String PROP_UI_MAINMENU_PROFILE = Profile.PROP_HAS_SUB_PROFILE + "hasUIMainMenu";
+	public static final String PROP_UI_MAINMENU_PROFILE = Profile.PROP_HAS_SUB_PROFILE
+			+ "hasUIMainMenu";
 
 	public static User defaultUser;
 
 	public MenuProfileOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("A profile describing the main menu shown by the user interaction framework.");
 		r.setResourceLabel("UI Main Menu Profile");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ProfileOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		defaultUser = new User(NAMESPACE + "defaultUser");
 
@@ -64,21 +65,26 @@ public final class MenuProfileOntology extends Ontology {
 		oci.addObjectProperty(MenuEntry.PROP_VENDOR).setFunctional();
 		oci.addObjectProperty(MenuEntry.PROP_SERVICE_CLASS).setFunctional();
 		oci.addObjectProperty(MenuEntry.PROP_PATH);
-		oci.addRestriction(MergedRestriction.getCardinalityRestriction(MenuEntry.PROP_VENDOR, 1, 1));
-		oci.addRestriction(MergedRestriction.getCardinalityRestriction(MenuEntry.PROP_SERVICE_CLASS, 1, 1));
+		oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+				MenuEntry.PROP_VENDOR, 1, 1));
+		oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+				MenuEntry.PROP_SERVICE_CLASS, 1, 1));
 
 		oci = createNewOntClassInfo(MenuProfile.MY_URI, factory, 0);
 		oci.setResourceComment("");
 		oci.setResourceLabel("Main Menu");
 		oci.addSuperClass(SubProfile.MY_URI);
 		oci.addObjectProperty(MenuProfile.PROP_ENTRY);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(MenuProfile.PROP_ENTRY, MenuEntry.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				MenuProfile.PROP_ENTRY, MenuEntry.MY_URI));
 
 		// Extend UserProfile
 		oci = extendExistingOntClassInfo(UserProfile.MY_URI);
-		oci.addObjectProperty(PROP_UI_MAINMENU_PROFILE).addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PROP_UI_MAINMENU_PROFILE,
-				MenuProfile.MY_URI, 0, 1));
+		oci.addObjectProperty(PROP_UI_MAINMENU_PROFILE).addSuperProperty(
+				Profile.PROP_HAS_SUB_PROFILE);
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						PROP_UI_MAINMENU_PROFILE, MenuProfile.MY_URI, 0, 1));
 
 		// extend User
 		oci = extendExistingOntClassInfo(User.MY_URI);

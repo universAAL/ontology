@@ -43,9 +43,6 @@ public final class QuestionnaireOntology extends Ontology {
 
 	public QuestionnaireOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("The ontology defining the most general concepts dealing with questionnaires.");
 		r.setResourceLabel("Questionnaire");
@@ -53,6 +50,9 @@ public final class QuestionnaireOntology extends Ontology {
 		addImport(PhThingOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(ProfileOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		OntClassInfoSetup oci;
 
@@ -65,11 +65,13 @@ public final class QuestionnaireOntology extends Ontology {
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 
 		oci.addObjectProperty(ChoiceLabel.PROP_CHOICE).setFunctional();
-		oci.addRestriction(MergedRestriction.getCardinalityRestriction(ChoiceLabel.PROP_CHOICE, 1, 1));
+		oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+				ChoiceLabel.PROP_CHOICE, 1, 1));
 
 		oci.addDatatypeProperty(ChoiceLabel.PROP_LABEL).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ChoiceLabel.PROP_LABEL,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(ChoiceLabel.PROP_LABEL,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		// -------------------------------------------------------------------------------------------
 
@@ -81,62 +83,71 @@ public final class QuestionnaireOntology extends Ontology {
 
 		oci.addObjectProperty(Question.PROP_CORRECT_ANSWER);
 
-		oci.addDatatypeProperty(Question.PROP_HAS_CORRECT_ANSWER).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Question.PROP_HAS_CORRECT_ANSWER,
-				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci.addDatatypeProperty(Question.PROP_HAS_CORRECT_ANSWER)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Question.PROP_HAS_CORRECT_ANSWER,
+						TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
 
 		oci.addObjectProperty(Question.PROP_HAS_CHOICE_LABEL);
-		oci.addRestriction(
-				MergedRestriction.getAllValuesRestriction(Question.PROP_HAS_CHOICE_LABEL, ChoiceLabel.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Question.PROP_HAS_CHOICE_LABEL, ChoiceLabel.MY_URI));
 
-		oci.addDatatypeProperty(Question.PROP_ANSWER_TYPE_U_R_I).setFunctional();
+		oci.addDatatypeProperty(Question.PROP_ANSWER_TYPE_U_R_I)
+				.setFunctional();
 		oci.addObjectProperty(Question.PROP_ANSWER_TYPE_U_R_I);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Question.PROP_ANSWER_TYPE_U_R_I,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Question.PROP_ANSWER_TYPE_U_R_I,
 				TypeMapper.getDatatypeURI(String.class)));
 
 		oci.addDatatypeProperty(Question.PROP_QUESTION_WORDING).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Question.PROP_QUESTION_WORDING,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Question.PROP_QUESTION_WORDING,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		// -------------------------------------------------------------------------------------------
 
 		// load MultiChoiceQuestion
 		oci = createNewOntClassInfo(MultiChoiceQuestion.MY_URI, factory, 2);
-		oci.setResourceComment(
-				"A multi-choice question is a question that enables to select several choices as an answer.");
+		oci.setResourceComment("A multi-choice question is a question that enables to select several choices as an answer.");
 		oci.setResourceLabel("MultiChoiceQuestion");
 		oci.addSuperClass(Question.MY_URI);
 
 		// load SingleChoiceQuestion
 		oci = createNewOntClassInfo(SingleChoiceQuestion.MY_URI, factory, 3);
-		oci.setResourceComment(
-				"A single-choice question is the kind of question that only has one choice as an answer.");
+		oci.setResourceComment("A single-choice question is the kind of question that only has one choice as an answer.");
 		oci.setResourceLabel("SingleChoiceQuestion");
 		oci.addSuperClass(Question.MY_URI);
 
 		// load QuestionWithMedia
 		oci = createNewOntClassInfo(QuestionWithMedia.MY_URI, factory, 1);
-		oci.setResourceComment(
-				"A question with media is a question that has some media associated to it (video, images...).");
+		oci.setResourceComment("A question with media is a question that has some media associated to it (video, images...).");
 		oci.setResourceLabel("QuestionWithMedia");
 		oci.addSuperClass(Question.MY_URI);
 
 		oci.addObjectProperty(QuestionWithMedia.PROP_MEDIA);
-		oci.addRestriction(MergedRestriction.getCardinalityRestriction(QuestionWithMedia.PROP_MEDIA, 1, 1));
+		oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+				QuestionWithMedia.PROP_MEDIA, 1, 1));
 
 		// load ConditionalQuestion
 		oci = createNewOntClassInfo(ConditionalQuestion.MY_URI, factory, 5);
-		oci.setResourceComment(
-				"A conditional question is a question that only is shown to the user when he/she has given a specific answer (trigger answer) to a specific  previous question.");
+		oci.setResourceComment("A conditional question is a question that only is shown to the user when he/she has given a specific answer (trigger answer) to a specific  previous question.");
 		oci.setResourceLabel("ConditionalQuestion");
 		oci.addSuperClass(Question.MY_URI);
 
-		oci.addObjectProperty(ConditionalQuestion.PROP_TRIGGER_ANSWER).setFunctional();
-		oci.addRestriction(MergedRestriction.getCardinalityRestriction(ConditionalQuestion.PROP_TRIGGER_ANSWER, 1, 1));// cambiado
+		oci.addObjectProperty(ConditionalQuestion.PROP_TRIGGER_ANSWER)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+				ConditionalQuestion.PROP_TRIGGER_ANSWER, 1, 1));// cambiado
 
-		oci.addObjectProperty(ConditionalQuestion.PROP_DEPENDS_ON).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ConditionalQuestion.PROP_DEPENDS_ON,
-				Question.MY_URI, 1, 1));
+		oci.addObjectProperty(ConditionalQuestion.PROP_DEPENDS_ON)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ConditionalQuestion.PROP_DEPENDS_ON, Question.MY_URI,
+						1, 1));
 
 		// -------------------------------------------------------------------------------------------
 
@@ -146,20 +157,27 @@ public final class QuestionnaireOntology extends Ontology {
 		oci.setResourceLabel("Questionnaire");
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 		oci.addDatatypeProperty(Questionnaire.PROP_NAME);
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Questionnaire.PROP_NAME,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Questionnaire.PROP_NAME,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci.addDatatypeProperty(Questionnaire.PROP_DESCRIPTION);
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Questionnaire.PROP_DESCRIPTION,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Questionnaire.PROP_DESCRIPTION,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		oci.addObjectProperty(Questionnaire.PROP_HAS_QUESTION).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Questionnaire.PROP_HAS_QUESTION,
-				Question.MY_URI, 1, -1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Questionnaire.PROP_HAS_QUESTION, Question.MY_URI, 1, -1));
 
 		oci.addDatatypeProperty(Questionnaire.PROP_ORDERED_QUESTIONS);
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				Questionnaire.PROP_ORDERED_QUESTIONS, TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Questionnaire.PROP_ORDERED_QUESTIONS,
+						TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
 
 		// -------------------------------------------------------------------------------------------
 
@@ -171,9 +189,12 @@ public final class QuestionnaireOntology extends Ontology {
 
 		oci.addObjectProperty(Answer.PROP_ANSWER_CONTENT);
 
-		oci.addObjectProperty(Answer.PROP_IS_ASSOCIATED_TO_A_QUESTION).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				Answer.PROP_IS_ASSOCIATED_TO_A_QUESTION, Question.MY_URI, 1, 1));
+		oci.addObjectProperty(Answer.PROP_IS_ASSOCIATED_TO_A_QUESTION)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Answer.PROP_IS_ASSOCIATED_TO_A_QUESTION,
+						Question.MY_URI, 1, 1));
 
 		// -------------------------------------------------------------------------------------------
 
@@ -183,20 +204,31 @@ public final class QuestionnaireOntology extends Ontology {
 		oci.setResourceLabel("AnsweredQuestionnaire");
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 
-		oci.addObjectProperty(AnsweredQuestionnaire.PROP_IS_ASSOCIATED_TO).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				AnsweredQuestionnaire.PROP_IS_ASSOCIATED_TO, Questionnaire.MY_URI, 1, 1));
-
-		oci.addObjectProperty(AnsweredQuestionnaire.PROP_IS_ANSWERED_BY).setFunctional();
+		oci.addObjectProperty(AnsweredQuestionnaire.PROP_IS_ASSOCIATED_TO)
+				.setFunctional();
 		oci.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(AnsweredQuestionnaire.PROP_IS_ANSWERED_BY, User.MY_URI, 1, 1));
+				.getAllValuesRestrictionWithCardinality(
+						AnsweredQuestionnaire.PROP_IS_ASSOCIATED_TO,
+						Questionnaire.MY_URI, 1, 1));
 
-		oci.addObjectProperty(AnsweredQuestionnaire.PROP_IS_COMPOSED_BY).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				AnsweredQuestionnaire.PROP_IS_COMPOSED_BY, Answer.MY_URI, 1, -1));
+		oci.addObjectProperty(AnsweredQuestionnaire.PROP_IS_ANSWERED_BY)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						AnsweredQuestionnaire.PROP_IS_ANSWERED_BY, User.MY_URI,
+						1, 1));
+
+		oci.addObjectProperty(AnsweredQuestionnaire.PROP_IS_COMPOSED_BY)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						AnsweredQuestionnaire.PROP_IS_COMPOSED_BY,
+						Answer.MY_URI, 1, -1));
 		oci.addDatatypeProperty(AnsweredQuestionnaire.PROP_COMPLETENESS);
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				AnsweredQuestionnaire.PROP_COMPLETENESS, TypeMapper.getDatatypeURI(Double.class), 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						AnsweredQuestionnaire.PROP_COMPLETENESS,
+						TypeMapper.getDatatypeURI(Double.class), 1, 1));
 
 		// load QuestionnaireService
 
@@ -207,16 +239,18 @@ public final class QuestionnaireOntology extends Ontology {
 		oci.addSuperClass(Service.MY_URI);
 
 		oci.addObjectProperty(QuestionnaireService.PROP_PROPOSED_QUESTIONNAIRE);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(QuestionnaireService.PROP_PROPOSED_QUESTIONNAIRE,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				QuestionnaireService.PROP_PROPOSED_QUESTIONNAIRE,
 				Questionnaire.MY_URI));
 
 		oci.addObjectProperty(QuestionnaireService.PROP_TARGET_USER);
-		oci.addRestriction(
-				MergedRestriction.getAllValuesRestriction(QuestionnaireService.PROP_TARGET_USER, User.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				QuestionnaireService.PROP_TARGET_USER, User.MY_URI));
 
 		oci.addObjectProperty(QuestionnaireService.PROP_GENERATES_ANSWERED_QUESTIONNAIRE);
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
-				QuestionnaireService.PROP_GENERATES_ANSWERED_QUESTIONNAIRE, AnsweredQuestionnaire.MY_URI));
+				QuestionnaireService.PROP_GENERATES_ANSWERED_QUESTIONNAIRE,
+				AnsweredQuestionnaire.MY_URI));
 
 	}
 

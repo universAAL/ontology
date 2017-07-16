@@ -28,9 +28,8 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.TypeMapper;
-import org.universAAL.middleware.service.owl.ServiceBusOntology;
-
 import org.universAAL.middleware.service.owl.Service;
+import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.ontology.ReasoningFactory;
 
 /**
@@ -43,89 +42,123 @@ public final class ReasoningOntology extends Ontology {
 
 	public ReasoningOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("Ontology for the generic situation reasoner");
 		r.setResourceLabel("ont");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(ContextBusOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		// ******* Declaration of regular classes of the ontology ******* //
 		OntClassInfoSetup oci_Persistent = createNewAbstractOntClassInfo(Persistent.MY_URI);
-		OntClassInfoSetup oci_Situation = createNewOntClassInfo(Situation.MY_URI, factory, 0);
-		OntClassInfoSetup oci_Query = createNewOntClassInfo(Query.MY_URI, factory, 1);
-		OntClassInfoSetup oci_Rule = createNewOntClassInfo(Rule.MY_URI, factory, 2);
-		OntClassInfoSetup oci_SituationService = createNewOntClassInfo(ReasoningService.MY_URI, factory, 3);
+		OntClassInfoSetup oci_Situation = createNewOntClassInfo(
+				Situation.MY_URI, factory, 0);
+		OntClassInfoSetup oci_Query = createNewOntClassInfo(Query.MY_URI,
+				factory, 1);
+		OntClassInfoSetup oci_Rule = createNewOntClassInfo(Rule.MY_URI,
+				factory, 2);
+		OntClassInfoSetup oci_SituationService = createNewOntClassInfo(
+				ReasoningService.MY_URI, factory, 3);
 
 		// ******* Add content to regular classes of the ontology ******* //
 		// Persistent
-		oci_Persistent.setResourceComment("Determines if an object is persistent");
+		oci_Persistent
+				.setResourceComment("Determines if an object is persistent");
 		oci_Persistent.setResourceLabel("Persistent");
 		oci_Persistent.addSuperClass(ManagedIndividual.MY_URI);
-		oci_Persistent.addDatatypeProperty(Persistent.PROP_PERSISTENT).setFunctional();
-		oci_Persistent.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				Persistent.PROP_PERSISTENT, TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci_Persistent.addDatatypeProperty(Persistent.PROP_PERSISTENT)
+				.setFunctional();
+		oci_Persistent.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Persistent.PROP_PERSISTENT,
+						TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
 
 		// Situation
 		oci_Situation.setResourceComment("");
 		oci_Situation.setResourceLabel("Situation");
 		oci_Situation.addSuperClass(Persistent.MY_URI);
-		oci_Situation.addDatatypeProperty(Situation.PROP_RDF_PREDICATE).setFunctional();
-		oci_Situation.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				Situation.PROP_RDF_PREDICATE, TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Situation.addDatatypeProperty(Situation.PROP_RDF_PREDICATE)
+				.setFunctional();
+		oci_Situation.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Situation.PROP_RDF_PREDICATE,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-		oci_Situation.addDatatypeProperty(Situation.PROP_RDF_SUBJECT).setFunctional();
-		oci_Situation.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				Situation.PROP_RDF_SUBJECT, TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Situation.addDatatypeProperty(Situation.PROP_RDF_SUBJECT)
+				.setFunctional();
+		oci_Situation.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Situation.PROP_RDF_SUBJECT,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
-		oci_Situation.addDatatypeProperty(Situation.PROP_RDF_OBJECT).setFunctional();
-		oci_Situation.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Situation.PROP_RDF_OBJECT,
-				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci_Situation.addDatatypeProperty(Situation.PROP_RDF_OBJECT)
+				.setFunctional();
+		oci_Situation.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Situation.PROP_RDF_OBJECT,
+						TypeMapper.getDatatypeURI(String.class), 1, 1));
 
 		// Query
 		oci_Query.setResourceComment("");
 		oci_Query.setResourceLabel("Query");
 		oci_Query.addSuperClass(Persistent.MY_URI);
 
-		oci_Query.addDatatypeProperty(Query.PROP_FULL_TEXT_QUERY).setFunctional();
-		oci_Query.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Query.PROP_FULL_TEXT_QUERY,
-				TypeMapper.getDatatypeURI(String.class), 0, 1));
+		oci_Query.addDatatypeProperty(Query.PROP_FULL_TEXT_QUERY)
+				.setFunctional();
+		oci_Query.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Query.PROP_FULL_TEXT_QUERY,
+						TypeMapper.getDatatypeURI(String.class), 0, 1));
 
 		oci_Query.addDatatypeProperty(Query.PROP_SEARCH_STRING).setFunctional();
-		oci_Query.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Query.PROP_SEARCH_STRING,
-				TypeMapper.getDatatypeURI(String.class), 0, 1));
+		oci_Query.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Query.PROP_SEARCH_STRING,
+						TypeMapper.getDatatypeURI(String.class), 0, 1));
 
-		oci_Query.addDatatypeProperty(Query.PROP_RESULTING_EVENT).setFunctional();
-		oci_Query.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Query.PROP_RESULTING_EVENT,
-				TypeMapper.getDatatypeURI(ContextEvent.class), 0, 1));
+		oci_Query.addDatatypeProperty(Query.PROP_RESULTING_EVENT)
+				.setFunctional();
+		oci_Query.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						Query.PROP_RESULTING_EVENT,
+						TypeMapper.getDatatypeURI(ContextEvent.class), 0, 1));
 
 		// Rule
 		oci_Rule.setResourceComment("");
 		oci_Rule.setResourceLabel("Rule");
 		oci_Rule.addSuperClass(Persistent.MY_URI);
 		oci_Rule.addObjectProperty(Rule.PROP_SITUATION).setFunctional();
-		oci_Rule.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(Rule.PROP_SITUATION, Situation.MY_URI, 1, 1));
+		oci_Rule.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Rule.PROP_SITUATION,
+						Situation.MY_URI, 1, 1));
 
 		oci_Rule.addObjectProperty(Rule.PROP_QUERY).setFunctional();
-		oci_Rule.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(Rule.PROP_QUERY, Query.MY_URI, 1, 1));
+		oci_Rule.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(Rule.PROP_QUERY,
+						Query.MY_URI, 1, 1));
 
 		// SituationService
 		oci_SituationService.setResourceComment("");
 		oci_SituationService.setResourceLabel("ReasoningService");
 		oci_SituationService.addSuperClass(Service.MY_URI);
-		oci_SituationService.addObjectProperty(ReasoningService.PROP_SITUATIONS).setFunctional();
-		oci_SituationService.addObjectProperty(ReasoningService.PROP_QUERIES).setFunctional();
-		oci_SituationService.addObjectProperty(ReasoningService.PROP_RULES).setFunctional();
-		oci_SituationService.addRestriction(
-				MergedRestriction.getAllValuesRestriction(ReasoningService.PROP_SITUATIONS, Situation.MY_URI));
 		oci_SituationService
-				.addRestriction(MergedRestriction.getAllValuesRestriction(ReasoningService.PROP_QUERIES, Query.MY_URI));
-		oci_SituationService
-				.addRestriction(MergedRestriction.getAllValuesRestriction(ReasoningService.PROP_RULES, Rule.MY_URI));
+				.addObjectProperty(ReasoningService.PROP_SITUATIONS)
+				.setFunctional();
+		oci_SituationService.addObjectProperty(ReasoningService.PROP_QUERIES)
+				.setFunctional();
+		oci_SituationService.addObjectProperty(ReasoningService.PROP_RULES)
+				.setFunctional();
+		oci_SituationService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(ReasoningService.PROP_SITUATIONS,
+						Situation.MY_URI));
+		oci_SituationService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(ReasoningService.PROP_QUERIES,
+						Query.MY_URI));
+		oci_SituationService.addRestriction(MergedRestriction
+				.getAllValuesRestriction(ReasoningService.PROP_RULES,
+						Rule.MY_URI));
 	}
 }

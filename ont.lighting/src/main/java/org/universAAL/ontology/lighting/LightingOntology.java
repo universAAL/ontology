@@ -48,17 +48,16 @@ public final class LightingOntology extends Ontology {
 
 	public LightingOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
-		r.setResourceComment(
-				"The ontology defining the most general concepts dealing with light sources and their control.");
+		r.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
 		r.setResourceLabel("Lighting");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ServiceBusOntology.NAMESPACE);
 		addImport(LocationOntology.NAMESPACE);
 		addImport(PhThingOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		OntClassInfoSetup oci;
 
@@ -73,62 +72,82 @@ public final class LightingOntology extends Ontology {
 		oci.setResourceLabel("Natural Light");
 		oci.addSuperClass(LightType.MY_URI);
 		// NaturalLight.init();
-		oci.toEnumeration(new ManagedIndividual[] { NaturalLight.moonShine, NaturalLight.sunShine });
+		oci.toEnumeration(new ManagedIndividual[] { NaturalLight.moonShine,
+				NaturalLight.sunShine });
 
 		// load FlamingLight
 		oci = createNewAbstractOntClassInfo(FlamingLight.MY_URI);
 		oci.setResourceComment("The type of faming light sources");
 		oci.setResourceLabel("Flaming Light");
 		oci.addSuperClass(LightType.MY_URI);
-		oci.toEnumeration(
-				new ManagedIndividual[] { FlamingLight.candleLight, FlamingLight.gasLamp, FlamingLight.oilLamp });
+		oci.toEnumeration(new ManagedIndividual[] { FlamingLight.candleLight,
+				FlamingLight.gasLamp, FlamingLight.oilLamp });
 
 		// load ElectricLight
 		oci = createNewAbstractOntClassInfo(ElectricLight.MY_URI);
 		oci.setResourceComment("The type of electric light sources");
 		oci.setResourceLabel("Electric Light");
 		oci.addSuperClass(LightType.MY_URI);
-		oci.toEnumeration(new ManagedIndividual[] { ElectricLight.carbonArcLamp, ElectricLight.dischargeLamp,
-				ElectricLight.fluorescentLamp, ElectricLight.halogenLamp, ElectricLight.ledLamp,
-				ElectricLight.lightBulb });
+		oci.toEnumeration(new ManagedIndividual[] {
+				ElectricLight.carbonArcLamp, ElectricLight.dischargeLamp,
+				ElectricLight.fluorescentLamp, ElectricLight.halogenLamp,
+				ElectricLight.ledLamp, ElectricLight.lightBulb });
 
 		// load LightSource
 		oci = createNewOntClassInfo(LightSource.MY_URI, factory, 0);
 		oci.setResourceComment("The class of all light sources");
 		oci.setResourceLabel("Light Source");
 		oci.addSuperClass(Device.MY_URI);
-		oci.addObjectProperty(LightSource.PROP_AMBIENT_COVERAGE).setFunctional();
+		oci.addObjectProperty(LightSource.PROP_AMBIENT_COVERAGE)
+				.setFunctional();
 		oci.addObjectProperty(LightSource.PROP_HAS_TYPE).setFunctional();
-		oci.addDatatypeProperty(LightSource.PROP_SOURCE_BRIGHTNESS).setFunctional();
+		oci.addDatatypeProperty(LightSource.PROP_SOURCE_BRIGHTNESS)
+				.setFunctional();
 		oci.addObjectProperty(LightSource.PROP_SOURCE_COLOR).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(LightSource.PROP_AMBIENT_COVERAGE,
-				Location.MY_URI, 0, 1));
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(LightSource.PROP_HAS_TYPE,
-				LightType.MY_URI, 1, 1));
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(LightSource.PROP_SOURCE_BRIGHTNESS,
-				new IntRestriction(new Integer(0), true, new Integer(100), true), 1, 1));
-		oci.addRestriction(MergedRestriction.getCardinalityRestriction(LightSource.PROP_SOURCE_COLOR, 0, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						LightSource.PROP_AMBIENT_COVERAGE, Location.MY_URI, 0,
+						1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						LightSource.PROP_HAS_TYPE, LightType.MY_URI, 1, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						LightSource.PROP_SOURCE_BRIGHTNESS, new IntRestriction(
+								new Integer(0), true, new Integer(100), true),
+						1, 1));
+		oci.addRestriction(MergedRestriction.getCardinalityRestriction(
+				LightSource.PROP_SOURCE_COLOR, 0, 1));
 
 		// load BeamingSource
 		oci = createNewOntClassInfo(BeamingSource.MY_URI, factory, 1);
 		oci.setResourceComment("The class of beaming light sources");
 		oci.setResourceLabel("Beaming Source");
 		oci.addSuperClass(LightSource.MY_URI);
-		oci.addObjectProperty(BeamingSource.PROP_BEAMING_DIRECTION).setFunctional();
-		oci.addObjectProperty(BeamingSource.PROP_TARGET_SURFACE).setFunctional();
+		oci.addObjectProperty(BeamingSource.PROP_BEAMING_DIRECTION)
+				.setFunctional();
+		oci.addObjectProperty(BeamingSource.PROP_TARGET_SURFACE)
+				.setFunctional();
 		oci.addRestriction(MergedRestriction
-				.getAllValuesRestrictionWithCardinality(BeamingSource.PROP_BEAMING_DIRECTION, Location.MY_URI, 0, 1));
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(BeamingSource.PROP_TARGET_SURFACE,
-				Location.MY_URI, 0, 1));
+				.getAllValuesRestrictionWithCardinality(
+						BeamingSource.PROP_BEAMING_DIRECTION, Location.MY_URI,
+						0, 1));
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						BeamingSource.PROP_TARGET_SURFACE, Location.MY_URI, 0,
+						1));
 
 		// load BlinkableLightSource
 		oci = createNewOntClassInfo(BlinkableLightSource.MY_URI, factory, 2);
 		oci.setResourceComment("The class of blinkable light sources");
 		oci.setResourceLabel("Blinkable Light Source");
 		oci.addSuperClass(LightSource.MY_URI);
-		oci.addDatatypeProperty(BlinkableLightSource.PROP_BLINKING_STATE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				BlinkableLightSource.PROP_BLINKING_STATE, TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+		oci.addDatatypeProperty(BlinkableLightSource.PROP_BLINKING_STATE)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						BlinkableLightSource.PROP_BLINKING_STATE,
+						TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
 
 		// load BlinkableBeamingSource
 		oci = createNewOntClassInfo(BlinkableBeamingSource.MY_URI, factory, 3);
@@ -143,22 +162,24 @@ public final class LightingOntology extends Ontology {
 		oci.setResourceLabel("Lighting");
 		oci.addSuperClass(Service.MY_URI);
 		oci.addObjectProperty(Lighting.PROP_CONTROLS);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Lighting.PROP_CONTROLS, LightSource.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Lighting.PROP_CONTROLS, LightSource.MY_URI));
 
 		// load Beaming
 		oci = createNewOntClassInfo(Beaming.MY_URI, factory, 5);
 		oci.setResourceComment("The class of services controling beaming sources");
 		oci.setResourceLabel("Beaming");
 		oci.addSuperClass(Lighting.MY_URI);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Lighting.PROP_CONTROLS, BeamingSource.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Lighting.PROP_CONTROLS, BeamingSource.MY_URI));
 
 		// load BlinkableLighting
 		oci = createNewOntClassInfo(BlinkableLighting.MY_URI, factory, 6);
 		oci.setResourceComment("The class of services controling blinkable light sources");
 		oci.setResourceLabel("Blinkable Lighting"); // see
 		oci.addSuperClass(Lighting.MY_URI);
-		oci.addRestriction(
-				MergedRestriction.getAllValuesRestriction(Lighting.PROP_CONTROLS, BlinkableLightSource.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Lighting.PROP_CONTROLS, BlinkableLightSource.MY_URI));
 
 		// load BlinkableBeaming
 		oci = createNewOntClassInfo(BlinkableBeaming.MY_URI, factory, 7);
@@ -166,7 +187,7 @@ public final class LightingOntology extends Ontology {
 		oci.setResourceLabel("Blinkable Beaming");
 		oci.addSuperClass(Beaming.MY_URI);
 		oci.addSuperClass(BlinkableLighting.MY_URI);
-		oci.addRestriction(
-				MergedRestriction.getAllValuesRestriction(Lighting.PROP_CONTROLS, BlinkableBeamingSource.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				Lighting.PROP_CONTROLS, BlinkableBeamingSource.MY_URI));
 	}
 }

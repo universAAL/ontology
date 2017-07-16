@@ -61,6 +61,10 @@ public class ContextHistoryOntology extends Ontology {
 	 */
 	public ContextHistoryOntology(String ontURI) {
 		super(ontURI);
+		Resource r = getInfo();
+		r.setResourceComment("The ontology defining the CHE concepts and services");
+		r.setResourceLabel("CHE");
+		addImport(DataRepOntology.NAMESPACE);
 	}
 
 	/**
@@ -68,18 +72,18 @@ public class ContextHistoryOntology extends Ontology {
 	 */
 	public ContextHistoryOntology() {
 		super(NAMESPACE);
-	}
-
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see org.universAAL.middleware.owl.Ontology#create()
-	 */
-	public void create() {
 		Resource r = getInfo();
 		r.setResourceComment("The ontology defining the CHE concepts and services");
 		r.setResourceLabel("CHE");
 		addImport(DataRepOntology.NAMESPACE);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.universAAL.middleware.owl.Ontology#create()
+	 */
+	public void create() {
 
 		OntClassInfoSetup oci;
 
@@ -104,22 +108,34 @@ public class ContextHistoryOntology extends Ontology {
 		// .getAllValuesRestrictionWithCardinality(
 		// ContextEvent.PROP_RDF_OBJECT, Resource.MY_URI, 0, 1));
 
-		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_TIMESTAMP).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ContextEvent.PROP_CONTEXT_TIMESTAMP,
-				TypeMapper.getDatatypeURI(Long.class), 0, 1));
+		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_TIMESTAMP)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ContextEvent.PROP_CONTEXT_TIMESTAMP,
+						TypeMapper.getDatatypeURI(Long.class), 0, 1));
 
-		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_EXPIRATION_TIME).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
-				ContextEvent.PROP_CONTEXT_EXPIRATION_TIME, TypeMapper.getDatatypeURI(Long.class), 0, 1));
+		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_EXPIRATION_TIME)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ContextEvent.PROP_CONTEXT_EXPIRATION_TIME,
+						TypeMapper.getDatatypeURI(Long.class), 0, 1));
 
-		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_CONFIDENCE).setFunctional();
-		oci.addRestriction(
-				MergedRestriction.getAllValuesRestrictionWithCardinality(ContextEvent.PROP_CONTEXT_CONFIDENCE,
-						new LongRestriction(Long.valueOf(0), true, Long.valueOf(100), true), 0, 1));
+		oci.addDatatypeProperty(ContextEvent.PROP_CONTEXT_CONFIDENCE)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ContextEvent.PROP_CONTEXT_CONFIDENCE,
+						new LongRestriction(Long.valueOf(0), true, Long
+								.valueOf(100), true), 0, 1));
 
-		oci.addObjectProperty(ContextEvent.PROP_CONTEXT_PROVIDER).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(ContextEvent.PROP_CONTEXT_PROVIDER,
-				ContextProvider.MY_URI, 0, 1));
+		oci.addObjectProperty(ContextEvent.PROP_CONTEXT_PROVIDER)
+				.setFunctional();
+		oci.addRestriction(MergedRestriction
+				.getAllValuesRestrictionWithCardinality(
+						ContextEvent.PROP_CONTEXT_PROVIDER,
+						ContextProvider.MY_URI, 0, 1));
 
 		// load ContextHistoryService_________
 		oci = createNewOntClassInfo(ContextHistoryService.MY_URI, factory, 1);
@@ -128,31 +144,37 @@ public class ContextHistoryOntology extends Ontology {
 		oci.addSuperClass(Service.MY_URI);
 
 		oci.addObjectProperty(ContextHistoryService.PROP_MANAGES);
-		oci.addRestriction(
-				MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_MANAGES, ContextEvent.MY_URI));
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_MANAGES, ContextEvent.MY_URI));
 
 		oci.addDatatypeProperty(ContextHistoryService.PROP_PROCESSES);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_PROCESSES,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_PROCESSES,
 				TypeMapper.getDatatypeURI(String.class)));
 
 		oci.addDatatypeProperty(ContextHistoryService.PROP_TIMESTAMP_FROM);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_TIMESTAMP_FROM,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_TIMESTAMP_FROM,
 				TypeMapper.getDatatypeURI(Long.class)));
 
 		oci.addDatatypeProperty(ContextHistoryService.PROP_TIMESTAMP_TO);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_TIMESTAMP_TO,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_TIMESTAMP_TO,
 				TypeMapper.getDatatypeURI(Long.class)));
 
 		oci.addDatatypeProperty(ContextHistoryService.PROP_DURATION_FROM);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_DURATION_FROM,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_DURATION_FROM,
 				TypeMapper.getDatatypeURI(Duration.class)));
 
 		oci.addDatatypeProperty(ContextHistoryService.PROP_DURATION_TO);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_DURATION_TO,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_DURATION_TO,
 				TypeMapper.getDatatypeURI(Duration.class)));
 
 		oci.addDatatypeProperty(ContextHistoryService.PROP_RETURNS);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(ContextHistoryService.PROP_RETURNS,
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+				ContextHistoryService.PROP_RETURNS,
 				TypeMapper.getDatatypeURI(String.class)));
 		//
 		// // Load ProvidedServices

@@ -32,15 +32,14 @@ public class QuestionnaireEnnumerationsOntology extends Ontology {
 
 	public QuestionnaireEnnumerationsOntology() {
 		super(NAMESPACE);
-	}
-
-	public void create() {
 		Resource r = getInfo();
-		r.setResourceComment(
-				"The ontology defining the most general concepts dealing with light sources and their control.");
+		r.setResourceComment("The ontology defining the most general concepts dealing with light sources and their control.");
 		r.setResourceLabel("Lighting");
 		addImport(DataRepOntology.NAMESPACE);
 		addImport(ProfileOntology.NAMESPACE);
+	}
+
+	public void create() {
 
 		OntClassInfoSetup oci;
 
@@ -50,8 +49,8 @@ public class QuestionnaireEnnumerationsOntology extends Ontology {
 		oci = createNewAbstractOntClassInfo(PartsOfDay.MY_URI);
 		oci.setResourceComment("");
 		oci.setResourceLabel("PartsOfDay");
-		oci.toEnumeration(new ManagedIndividual[] { PartsOfDay.inTheMorning, PartsOfDay.inTheAfternoon,
-				PartsOfDay.inTheAfternoon });
+		oci.toEnumeration(new ManagedIndividual[] { PartsOfDay.inTheMorning,
+				PartsOfDay.inTheAfternoon, PartsOfDay.inTheAfternoon });
 
 	}
 }
