@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c37706" href="./SirenActuator.html" title="org.universAAL.ontology.device.home.SirenActuator" alt="" coords="15,17,115,42"/>
-<area shape="rect" id="node1" href="./SirenActuator.html" title="&lt;TABLE&gt;" alt="" coords="5,5,125,53"/>
-<area shape="rect" id="c37707" href="./CarpetSensor.html" title="org.universAAL.ontology.device.home.CarpetSensor" alt="" coords="160,17,261,42"/>
-<area shape="rect" id="node2" href="./CarpetSensor.html" title="&lt;TABLE&gt;" alt="" coords="149,5,272,53"/>
-<area shape="rect" id="c37708" href="./DeviceExtraOntology.html" title="org.universAAL.ontology.device.home.DeviceExtraOntology" alt="" coords="306,17,451,42"/>
-<area shape="rect" id="node3" href="./DeviceExtraOntology.html" title="&lt;TABLE&gt;" alt="" coords="296,5,461,53"/>
-<area shape="rect" id="c37709" href="./Strap.html" title="org.universAAL.ontology.device.home.Strap" alt="" coords="495,17,547,42"/>
-<area shape="rect" id="node4" href="./Strap.html" title="&lt;TABLE&gt;" alt="" coords="485,5,557,53"/>
-<area shape="rect" id="c37710" href="./Oven.html" title="org.universAAL.ontology.device.home.Oven" alt="" coords="591,17,643,42"/>
-<area shape="rect" id="node5" href="./Oven.html" title="&lt;TABLE&gt;" alt="" coords="581,5,653,53"/>
+<area shape="rect" id="node1_0" href="./SirenActuator.html" title="org.universAAL.ontology.device.home.SirenActuator" alt="" coords="15,16,115,43"/>
+<area shape="rect" id="node1" href="./SirenActuator.html" title="&lt;TABLE&gt;" alt="" coords="5,5,126,53"/>
+<area shape="rect" id="node2_1" href="./CarpetSensor.html" title="org.universAAL.ontology.device.home.CarpetSensor" alt="" coords="161,16,263,43"/>
+<area shape="rect" id="node2" href="./CarpetSensor.html" title="&lt;TABLE&gt;" alt="" coords="151,5,273,53"/>
+<area shape="rect" id="node3_2" href="./DeviceExtraOntology.html" title="org.universAAL.ontology.device.home.DeviceExtraOntology" alt="" coords="309,16,454,43"/>
+<area shape="rect" id="node3" href="./DeviceExtraOntology.html" title="&lt;TABLE&gt;" alt="" coords="298,5,465,53"/>
+<area shape="rect" id="node4_3" href="./Strap.html" title="org.universAAL.ontology.device.home.Strap" alt="" coords="499,16,551,43"/>
+<area shape="rect" id="node4" href="./Strap.html" title="&lt;TABLE&gt;" alt="" coords="489,5,562,53"/>
+<area shape="rect" id="node5_4" href="./Oven.html" title="org.universAAL.ontology.device.home.Oven" alt="" coords="597,16,649,43"/>
+<area shape="rect" id="node5" href="./Oven.html" title="&lt;TABLE&gt;" alt="" coords="586,5,659,53"/>
 </map>

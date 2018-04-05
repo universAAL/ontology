@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c8055" href="./Signal.html" title="org.universAAL.ontology.measurement.Signal" alt="" coords="15,131,73,157"/>
-<area shape="rect" id="node1" href="./Signal.html" title="&lt;TABLE&gt;" alt="" coords="5,120,83,168"/>
-<area shape="rect" id="c8056" href="./MeanSquareError.html" title="org.universAAL.ontology.measurement.MeanSquareError" alt="" coords="121,230,242,255"/>
-<area shape="rect" id="node2" href="./MeanSquareError.html" title="&lt;TABLE&gt;" alt="" coords="111,219,252,267"/>
-<area shape="rect" id="c8057" href="./MeasurementOntology.html" title="org.universAAL.ontology.measurement.MeasurementOntology" alt="" coords="232,17,384,42"/>
-<area shape="rect" id="node3" href="./MeasurementOntology.html" title="&lt;TABLE&gt;" alt="" coords="221,5,395,53"/>
-<area shape="rect" id="c8058" href="./MeasurementError.html" title="org.universAAL.ontology.measurement.MeasurementError" alt="" coords="117,131,245,157"/>
-<area shape="rect" id="node4" href="./MeasurementError.html" title="&lt;TABLE&gt;" alt="" coords="107,120,256,168"/>
-<area shape="rect" id="c8059" href="./Measurement.html" title="org.universAAL.ontology.measurement.Measurement" alt="" coords="87,17,187,42"/>
-<area shape="rect" id="node5" href="./Measurement.html" title="&lt;TABLE&gt;" alt="" coords="77,5,197,53"/>
+<area shape="rect" id="node1_0" href="./Signal.html" title="org.universAAL.ontology.measurement.Signal" alt="" coords="15,128,73,155"/>
+<area shape="rect" id="node1" href="./Signal.html" title="&lt;TABLE&gt;" alt="" coords="5,117,83,165"/>
+<area shape="rect" id="node2_1" href="./MeanSquareError.html" title="org.universAAL.ontology.measurement.MeanSquareError" alt="" coords="122,227,243,253"/>
+<area shape="rect" id="node2" href="./MeanSquareError.html" title="&lt;TABLE&gt;" alt="" coords="111,216,254,264"/>
+<area shape="rect" id="node3_2" href="./MeasurementOntology.html" title="org.universAAL.ontology.measurement.MeasurementOntology" alt="" coords="235,16,387,43"/>
+<area shape="rect" id="node3" href="./MeasurementOntology.html" title="&lt;TABLE&gt;" alt="" coords="224,5,397,53"/>
+<area shape="rect" id="node4_3" href="./MeasurementError.html" title="org.universAAL.ontology.measurement.MeasurementError" alt="" coords="119,128,247,155"/>
+<area shape="rect" id="node4" href="./MeasurementError.html" title="&lt;TABLE&gt;" alt="" coords="108,117,257,165"/>
+<area shape="rect" id="node5_4" href="./Measurement.html" title="org.universAAL.ontology.measurement.Measurement" alt="" coords="89,16,189,43"/>
+<area shape="rect" id="node5" href="./Measurement.html" title="&lt;TABLE&gt;" alt="" coords="78,5,199,53"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c365354" href="./LateTimingFault.html" title="org.universAAL.ontology.dependability.LateTimingFault" alt="" coords="15,209,129,234"/>
+<area shape="rect" id="node1_0" href="./LateTimingFault.html" title="org.universAAL.ontology.dependability.LateTimingFault" alt="" coords="15,208,129,235"/>
 <area shape="rect" id="node1" href="./LateTimingFault.html" title="&lt;TABLE&gt;" alt="" coords="5,197,139,245"/>
-<area shape="rect" id="c365363" href="./TimingFault.html" title="org.universAAL.ontology.dependability.TimingFault" alt="" coords="107,113,197,138"/>
+<area shape="rect" id="node2_1" href="./TimingFault.html" title="org.universAAL.ontology.dependability.TimingFault" alt="" coords="107,112,197,139"/>
 <area shape="rect" id="node2" href="./TimingFault.html" title="&lt;TABLE&gt;" alt="" coords="97,101,207,149"/>
-<area shape="rect" id="c365364" href="./EarlyTimingFault.html" title="org.universAAL.ontology.dependability.EarlyTimingFault" alt="" coords="173,209,291,234"/>
-<area shape="rect" id="node3" href="./EarlyTimingFault.html" title="&lt;TABLE&gt;" alt="" coords="163,197,301,245"/>
-<area shape="rect" id="c365367" href="./Fault.html" title="org.universAAL.ontology.dependability.Fault" alt="" coords="127,17,177,42"/>
+<area shape="rect" id="node3_2" href="./EarlyTimingFault.html" title="org.universAAL.ontology.dependability.EarlyTimingFault" alt="" coords="174,208,293,235"/>
+<area shape="rect" id="node3" href="./EarlyTimingFault.html" title="&lt;TABLE&gt;" alt="" coords="163,197,303,245"/>
+<area shape="rect" id="node4_3" href="./Fault.html" title="org.universAAL.ontology.dependability.Fault" alt="" coords="127,16,177,43"/>
 <area shape="rect" id="node4" href="./Fault.html" title="&lt;TABLE&gt;" alt="" coords="116,5,188,53"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="c369932" href="./UIPreferencesProfileActivator.html" title="org.universAAL.ontology.UIPreferencesProfileActivator" alt="" coords="15,118,209,143"/>
-<area shape="rect" id="node1" href="./UIPreferencesProfileActivator.html" title="&lt;TABLE&gt;" alt="" coords="5,107,219,155"/>
-<area shape="rect" id="c370527" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="org.universAAL.middleware.container.ModuleActivator" alt="" coords="55,11,169,53"/>
-<area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="&lt;TABLE&gt;" alt="" coords="44,6,180,58"/>
+<area shape="rect" id="node1_0" href="./UIPreferencesProfileActivator.html" title="org.universAAL.ontology.UIPreferencesProfileActivator" alt="" coords="15,120,209,147"/>
+<area shape="rect" id="node1" href="./UIPreferencesProfileActivator.html" title="&lt;TABLE&gt;" alt="" coords="5,109,219,157"/>
+<area shape="rect" id="node2_1" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="org.universAAL.middleware.container.ModuleActivator" alt="" coords="55,11,169,55"/>
+<area shape="rect" id="node2" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html" title="&lt;TABLE&gt;" alt="" coords="44,6,180,61"/>
 </map>

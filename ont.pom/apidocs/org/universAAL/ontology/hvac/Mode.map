@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c249667" href="./Ventilation_Mode.html" title="org.universAAL.ontology.hvac.Ventilation_Mode" alt="" coords="15,209,137,234"/>
+<area shape="rect" id="node1_0" href="./Ventilation_Mode.html" title="org.universAAL.ontology.hvac.Ventilation_Mode" alt="" coords="15,208,137,235"/>
 <area shape="rect" id="node1" href="./Ventilation_Mode.html" title="&lt;TABLE&gt;" alt="" coords="5,197,147,245"/>
-<area shape="rect" id="c249669" href="./Heating_Mode.html" title="org.universAAL.ontology.hvac.Heating_Mode" alt="" coords="181,209,286,234"/>
-<area shape="rect" id="node2" href="./Heating_Mode.html" title="&lt;TABLE&gt;" alt="" coords="171,197,296,245"/>
-<area shape="rect" id="c249671" href="./Mode.html" title="org.universAAL.ontology.hvac.Mode" alt="" coords="207,113,260,138"/>
-<area shape="rect" id="node3" href="./Mode.html" title="&lt;TABLE&gt;" alt="" coords="196,101,271,149"/>
-<area shape="rect" id="c249672" href="./Air_Conditioning_Mode.html" title="org.universAAL.ontology.hvac.Air_Conditioning_Mode" alt="" coords="331,209,485,234"/>
-<area shape="rect" id="node4" href="./Air_Conditioning_Mode.html" title="&lt;TABLE&gt;" alt="" coords="320,197,496,245"/>
-<area shape="rect" id="c249851" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="169,17,298,42"/>
-<area shape="rect" id="node7" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="159,5,308,53"/>
+<area shape="rect" id="node2_1" href="./Heating_Mode.html" title="org.universAAL.ontology.hvac.Heating_Mode" alt="" coords="182,208,287,235"/>
+<area shape="rect" id="node2" href="./Heating_Mode.html" title="&lt;TABLE&gt;" alt="" coords="171,197,298,245"/>
+<area shape="rect" id="node3_2" href="./Mode.html" title="org.universAAL.ontology.hvac.Mode" alt="" coords="208,112,261,139"/>
+<area shape="rect" id="node3" href="./Mode.html" title="&lt;TABLE&gt;" alt="" coords="197,101,272,149"/>
+<area shape="rect" id="node4_3" href="./Air_Conditioning_Mode.html" title="org.universAAL.ontology.hvac.Air_Conditioning_Mode" alt="" coords="333,208,488,235"/>
+<area shape="rect" id="node4" href="./Air_Conditioning_Mode.html" title="&lt;TABLE&gt;" alt="" coords="323,197,499,245"/>
+<area shape="rect" id="node5_4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="170,16,299,43"/>
+<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="159,5,310,53"/>
 </map>

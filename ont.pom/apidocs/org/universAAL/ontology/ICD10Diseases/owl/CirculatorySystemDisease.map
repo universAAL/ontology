@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c96043" href="../../ICD10CirculatorySystemDiseases/owl/HypertensiveDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HypertensiveDisease" alt="" coords="15,209,161,234"/>
+<area shape="rect" id="node1_0" href="../../ICD10CirculatorySystemDiseases/owl/HypertensiveDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HypertensiveDisease" alt="" coords="15,208,161,235"/>
 <area shape="rect" id="node1" href="../../ICD10CirculatorySystemDiseases/owl/HypertensiveDisease.html" title="&lt;TABLE&gt;" alt="" coords="5,197,171,245"/>
-<area shape="rect" id="c96044" href="../../ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.AcuteRheumaticFever" alt="" coords="205,209,355,234"/>
-<area shape="rect" id="node2" href="../../ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.html" title="&lt;TABLE&gt;" alt="" coords="195,197,365,245"/>
-<area shape="rect" id="c96045" href="../../ICD10CirculatorySystemDiseases/owl/OtherCirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.OtherCirculatorySystemDisease" alt="" coords="399,209,609,234"/>
-<area shape="rect" id="node3" href="../../ICD10CirculatorySystemDiseases/owl/OtherCirculatorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="389,197,619,245"/>
-<area shape="rect" id="c96046" href="../../ICD10CirculatorySystemDiseases/owl/IschemicHeartDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.IschemicHeartDisease" alt="" coords="653,209,806,234"/>
-<area shape="rect" id="node4" href="../../ICD10CirculatorySystemDiseases/owl/IschemicHeartDisease.html" title="&lt;TABLE&gt;" alt="" coords="643,197,816,245"/>
-<area shape="rect" id="c96050" href="./CirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease" alt="" coords="303,113,481,138"/>
-<area shape="rect" id="node5" href="./CirculatorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="293,101,491,149"/>
-<area shape="rect" id="c96065" href="../../disease/owl/Disease.html" title="org.universAAL.ontology.disease.owl.Disease" alt="" coords="357,17,427,42"/>
-<area shape="rect" id="node6" href="../../disease/owl/Disease.html" title="&lt;TABLE&gt;" alt="" coords="347,5,437,53"/>
+<area shape="rect" id="node2_1" href="../../ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.AcuteRheumaticFever" alt="" coords="206,208,357,235"/>
+<area shape="rect" id="node2" href="../../ICD10CirculatorySystemDiseases/owl/AcuteRheumaticFever.html" title="&lt;TABLE&gt;" alt="" coords="195,197,367,245"/>
+<area shape="rect" id="node3_2" href="../../ICD10CirculatorySystemDiseases/owl/OtherCirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.OtherCirculatorySystemDisease" alt="" coords="402,208,611,235"/>
+<area shape="rect" id="node3" href="../../ICD10CirculatorySystemDiseases/owl/OtherCirculatorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="391,197,622,245"/>
+<area shape="rect" id="node4_3" href="../../ICD10CirculatorySystemDiseases/owl/IschemicHeartDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.IschemicHeartDisease" alt="" coords="657,208,810,235"/>
+<area shape="rect" id="node4" href="../../ICD10CirculatorySystemDiseases/owl/IschemicHeartDisease.html" title="&lt;TABLE&gt;" alt="" coords="646,197,821,245"/>
+<area shape="rect" id="node5_4" href="./CirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10Diseases.owl.CirculatorySystemDisease" alt="" coords="305,112,482,139"/>
+<area shape="rect" id="node5" href="./CirculatorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="294,101,493,149"/>
+<area shape="rect" id="node6_5" href="../../disease/owl/Disease.html" title="org.universAAL.ontology.disease.owl.Disease" alt="" coords="359,16,428,43"/>
+<area shape="rect" id="node6" href="../../disease/owl/Disease.html" title="&lt;TABLE&gt;" alt="" coords="348,5,439,53"/>
 </map>

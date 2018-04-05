@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c23533" href="./HeartFailure.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HeartFailure" alt="" coords="74,113,166,138"/>
-<area shape="rect" id="node1" href="./HeartFailure.html" title="&lt;TABLE&gt;" alt="" coords="64,101,176,149"/>
-<area shape="rect" id="c23534" href="./HypertensiveDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HypertensiveDisease" alt="" coords="269,17,414,42"/>
-<area shape="rect" id="node2" href="./HypertensiveDisease.html" title="&lt;TABLE&gt;" alt="" coords="259,5,424,53"/>
-<area shape="rect" id="c23535" href="./AcuteRheumaticFever.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.AcuteRheumaticFever" alt="" coords="458,17,609,42"/>
-<area shape="rect" id="node3" href="./AcuteRheumaticFever.html" title="&lt;TABLE&gt;" alt="" coords="448,5,619,53"/>
-<area shape="rect" id="c23536" href="./OtherCirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.OtherCirculatorySystemDisease" alt="" coords="15,17,225,42"/>
+<area shape="rect" id="node1_0" href="./HeartFailure.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HeartFailure" alt="" coords="74,112,166,139"/>
+<area shape="rect" id="node1" href="./HeartFailure.html" title="&lt;TABLE&gt;" alt="" coords="63,101,177,149"/>
+<area shape="rect" id="node2_1" href="./HypertensiveDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.HypertensiveDisease" alt="" coords="270,16,415,43"/>
+<area shape="rect" id="node2" href="./HypertensiveDisease.html" title="&lt;TABLE&gt;" alt="" coords="259,5,426,53"/>
+<area shape="rect" id="node3_2" href="./AcuteRheumaticFever.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.AcuteRheumaticFever" alt="" coords="461,16,611,43"/>
+<area shape="rect" id="node3" href="./AcuteRheumaticFever.html" title="&lt;TABLE&gt;" alt="" coords="450,5,622,53"/>
+<area shape="rect" id="node4_3" href="./OtherCirculatorySystemDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.OtherCirculatorySystemDisease" alt="" coords="15,16,225,43"/>
 <area shape="rect" id="node4" href="./OtherCirculatorySystemDisease.html" title="&lt;TABLE&gt;" alt="" coords="5,5,235,53"/>
-<area shape="rect" id="c23537" href="./IschemicHeartDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.IschemicHeartDisease" alt="" coords="653,17,806,42"/>
-<area shape="rect" id="node5" href="./IschemicHeartDisease.html" title="&lt;TABLE&gt;" alt="" coords="643,5,816,53"/>
+<area shape="rect" id="node5_4" href="./IschemicHeartDisease.html" title="org.universAAL.ontology.ICD10CirculatorySystemDiseases.owl.IschemicHeartDisease" alt="" coords="657,16,810,43"/>
+<area shape="rect" id="node5" href="./IschemicHeartDisease.html" title="&lt;TABLE&gt;" alt="" coords="646,5,821,53"/>
 </map>

@@ -1,18 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="c5600" href="./DividedUnit.html" title="org.universAAL.ontology.unit.DividedUnit" alt="" coords="15,209,105,234"/>
+<area shape="rect" id="node1_0" href="./DividedUnit.html" title="org.universAAL.ontology.unit.DividedUnit" alt="" coords="15,208,105,235"/>
 <area shape="rect" id="node1" href="./DividedUnit.html" title="&lt;TABLE&gt;" alt="" coords="5,197,115,245"/>
-<area shape="rect" id="c5601" href="./UnitOntology.html" title="org.universAAL.ontology.unit.UnitOntology" alt="" coords="199,17,297,42"/>
-<area shape="rect" id="node2" href="./UnitOntology.html" title="&lt;TABLE&gt;" alt="" coords="189,5,307,53"/>
-<area shape="rect" id="c5602" href="./UnitSystem.html" title="org.universAAL.ontology.unit.UnitSystem" alt="" coords="341,17,430,42"/>
-<area shape="rect" id="node3" href="./UnitSystem.html" title="&lt;TABLE&gt;" alt="" coords="331,5,440,53"/>
-<area shape="rect" id="c5603" href="./MeasurableDimension.html" title="org.universAAL.ontology.unit.MeasurableDimension" alt="" coords="475,17,624,42"/>
-<area shape="rect" id="node4" href="./MeasurableDimension.html" title="&lt;TABLE&gt;" alt="" coords="464,5,635,53"/>
-<area shape="rect" id="c5604" href="./Prefix.html" title="org.universAAL.ontology.unit.Prefix" alt="" coords="669,17,723,42"/>
-<area shape="rect" id="node5" href="./Prefix.html" title="&lt;TABLE&gt;" alt="" coords="659,5,733,53"/>
-<area shape="rect" id="c5605" href="./Unit.html" title="org.universAAL.ontology.unit.Unit" alt="" coords="107,17,152,42"/>
+<area shape="rect" id="node2_1" href="./UnitOntology.html" title="org.universAAL.ontology.unit.UnitOntology" alt="" coords="201,16,298,43"/>
+<area shape="rect" id="node2" href="./UnitOntology.html" title="&lt;TABLE&gt;" alt="" coords="190,5,309,53"/>
+<area shape="rect" id="node3_2" href="./UnitSystem.html" title="org.universAAL.ontology.unit.UnitSystem" alt="" coords="343,16,433,43"/>
+<area shape="rect" id="node3" href="./UnitSystem.html" title="&lt;TABLE&gt;" alt="" coords="333,5,443,53"/>
+<area shape="rect" id="node4_3" href="./MeasurableDimension.html" title="org.universAAL.ontology.unit.MeasurableDimension" alt="" coords="479,16,628,43"/>
+<area shape="rect" id="node4" href="./MeasurableDimension.html" title="&lt;TABLE&gt;" alt="" coords="468,5,639,53"/>
+<area shape="rect" id="node5_4" href="./Prefix.html" title="org.universAAL.ontology.unit.Prefix" alt="" coords="674,16,729,43"/>
+<area shape="rect" id="node5" href="./Prefix.html" title="&lt;TABLE&gt;" alt="" coords="663,5,739,53"/>
+<area shape="rect" id="node6_5" href="./Unit.html" title="org.universAAL.ontology.unit.Unit" alt="" coords="107,16,152,43"/>
 <area shape="rect" id="node6" href="./Unit.html" title="&lt;TABLE&gt;" alt="" coords="93,5,165,53"/>
-<area shape="rect" id="c5606" href="./DerivedUnit.html" title="org.universAAL.ontology.unit.DerivedUnit" alt="" coords="85,113,174,138"/>
-<area shape="rect" id="node7" href="./DerivedUnit.html" title="&lt;TABLE&gt;" alt="" coords="75,101,184,149"/>
-<area shape="rect" id="c5607" href="./MultipliedUnit.html" title="org.universAAL.ontology.unit.MultipliedUnit" alt="" coords="149,209,249,234"/>
-<area shape="rect" id="node8" href="./MultipliedUnit.html" title="&lt;TABLE&gt;" alt="" coords="139,197,259,245"/>
+<area shape="rect" id="node7_6" href="./DerivedUnit.html" title="org.universAAL.ontology.unit.DerivedUnit" alt="" coords="85,112,174,139"/>
+<area shape="rect" id="node7" href="./DerivedUnit.html" title="&lt;TABLE&gt;" alt="" coords="74,101,185,149"/>
+<area shape="rect" id="node8_7" href="./MultipliedUnit.html" title="org.universAAL.ontology.unit.MultipliedUnit" alt="" coords="150,208,250,235"/>
+<area shape="rect" id="node8" href="./MultipliedUnit.html" title="&lt;TABLE&gt;" alt="" coords="139,197,261,245"/>
 </map>

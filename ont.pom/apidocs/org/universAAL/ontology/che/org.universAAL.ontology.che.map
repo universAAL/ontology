@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c14878" href="./ContextHistoryOntology.html" title="org.universAAL.ontology.che.ContextHistoryOntology" alt="" coords="15,17,177,42"/>
+<area shape="rect" id="node1_0" href="./ContextHistoryOntology.html" title="org.universAAL.ontology.che.ContextHistoryOntology" alt="" coords="15,16,177,43"/>
 <area shape="rect" id="node1" href="./ContextHistoryOntology.html" title="&lt;TABLE&gt;" alt="" coords="5,5,187,53"/>
-<area shape="rect" id="c14879" href="./ContextEvent.html" title="org.universAAL.ontology.che.ContextEvent" alt="" coords="221,17,323,42"/>
-<area shape="rect" id="node2" href="./ContextEvent.html" title="&lt;TABLE&gt;" alt="" coords="211,5,333,53"/>
-<area shape="rect" id="c14880" href="./ContextHistoryService.html" title="org.universAAL.ontology.che.ContextHistoryService" alt="" coords="367,17,521,42"/>
-<area shape="rect" id="node3" href="./ContextHistoryService.html" title="&lt;TABLE&gt;" alt="" coords="357,5,531,53"/>
+<area shape="rect" id="node2_1" href="./ContextEvent.html" title="org.universAAL.ontology.che.ContextEvent" alt="" coords="223,16,324,43"/>
+<area shape="rect" id="node2" href="./ContextEvent.html" title="&lt;TABLE&gt;" alt="" coords="212,5,335,53"/>
+<area shape="rect" id="node3_2" href="./ContextHistoryService.html" title="org.universAAL.ontology.che.ContextHistoryService" alt="" coords="370,16,523,43"/>
+<area shape="rect" id="node3" href="./ContextHistoryService.html" title="&lt;TABLE&gt;" alt="" coords="359,5,534,53"/>
 </map>

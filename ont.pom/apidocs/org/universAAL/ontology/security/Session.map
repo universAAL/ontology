@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c326012" href="./LocationBoundSession.html" title="org.universAAL.ontology.security.LocationBoundSession" alt="" coords="15,209,169,234"/>
+<area shape="rect" id="node1_0" href="./LocationBoundSession.html" title="org.universAAL.ontology.security.LocationBoundSession" alt="" coords="15,208,169,235"/>
 <area shape="rect" id="node1" href="./LocationBoundSession.html" title="&lt;TABLE&gt;" alt="" coords="5,197,179,245"/>
-<area shape="rect" id="c326022" href="./Session.html" title="org.universAAL.ontology.security.Session" alt="" coords="154,113,222,138"/>
-<area shape="rect" id="node2" href="./Session.html" title="&lt;TABLE&gt;" alt="" coords="144,101,232,149"/>
-<area shape="rect" id="c326023" href="./DeviceBoundSession.html" title="org.universAAL.ontology.security.DeviceBoundSession" alt="" coords="213,209,358,234"/>
-<area shape="rect" id="node3" href="./DeviceBoundSession.html" title="&lt;TABLE&gt;" alt="" coords="203,197,368,245"/>
-<area shape="rect" id="c326038" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="123,17,253,42"/>
-<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="113,5,263,53"/>
+<area shape="rect" id="node2_1" href="./Session.html" title="org.universAAL.ontology.security.Session" alt="" coords="155,112,223,139"/>
+<area shape="rect" id="node2" href="./Session.html" title="&lt;TABLE&gt;" alt="" coords="145,101,234,149"/>
+<area shape="rect" id="node3_2" href="./DeviceBoundSession.html" title="org.universAAL.ontology.security.DeviceBoundSession" alt="" coords="214,208,359,235"/>
+<area shape="rect" id="node3" href="./DeviceBoundSession.html" title="&lt;TABLE&gt;" alt="" coords="203,197,370,245"/>
+<area shape="rect" id="node4_3" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="125,16,254,43"/>
+<area shape="rect" id="node4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="114,5,265,53"/>
 </map>

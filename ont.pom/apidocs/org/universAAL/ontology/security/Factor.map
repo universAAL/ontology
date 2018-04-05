@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c168773" href="./InherenceFactor.html" title="org.universAAL.ontology.security.InherenceFactor" alt="" coords="16,209,131,234"/>
+<area shape="rect" id="node1_0" href="./InherenceFactor.html" title="org.universAAL.ontology.security.InherenceFactor" alt="" coords="16,208,131,235"/>
 <area shape="rect" id="node1" href="./InherenceFactor.html" title="&lt;TABLE&gt;" alt="" coords="5,197,141,245"/>
-<area shape="rect" id="c168781" href="./PossessionFactor.html" title="org.universAAL.ontology.security.PossessionFactor" alt="" coords="176,209,301,234"/>
+<area shape="rect" id="node2_1" href="./PossessionFactor.html" title="org.universAAL.ontology.security.PossessionFactor" alt="" coords="176,208,301,235"/>
 <area shape="rect" id="node2" href="./PossessionFactor.html" title="&lt;TABLE&gt;" alt="" coords="165,197,312,245"/>
-<area shape="rect" id="c168783" href="./Factor.html" title="org.universAAL.ontology.security.Factor" alt="" coords="210,113,267,138"/>
-<area shape="rect" id="node3" href="./Factor.html" title="&lt;TABLE&gt;" alt="" coords="200,101,277,149"/>
-<area shape="rect" id="c168784" href="./KnowledgeFactor.html" title="org.universAAL.ontology.security.KnowledgeFactor" alt="" coords="346,209,467,234"/>
-<area shape="rect" id="node4" href="./KnowledgeFactor.html" title="&lt;TABLE&gt;" alt="" coords="336,197,477,245"/>
-<area shape="rect" id="c168794" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="174,17,303,42"/>
-<area shape="rect" id="node7" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="164,5,313,53"/>
+<area shape="rect" id="node3_2" href="./Factor.html" title="org.universAAL.ontology.security.Factor" alt="" coords="210,112,267,139"/>
+<area shape="rect" id="node3" href="./Factor.html" title="&lt;TABLE&gt;" alt="" coords="199,101,278,149"/>
+<area shape="rect" id="node4_3" href="./KnowledgeFactor.html" title="org.universAAL.ontology.security.KnowledgeFactor" alt="" coords="347,208,469,235"/>
+<area shape="rect" id="node4" href="./KnowledgeFactor.html" title="&lt;TABLE&gt;" alt="" coords="337,197,479,245"/>
+<area shape="rect" id="node5_4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="174,16,303,43"/>
+<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="163,5,314,53"/>
 </map>

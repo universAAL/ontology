@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c17957" href="./AES.html" title="org.universAAL.ontology.cryptographic.symmetric.AES" alt="" coords="17,17,65,42"/>
+<area shape="rect" id="node1_0" href="./AES.html" title="org.universAAL.ontology.cryptographic.symmetric.AES" alt="" coords="17,16,65,43"/>
 <area shape="rect" id="node1" href="./AES.html" title="&lt;TABLE&gt;" alt="" coords="5,5,77,53"/>
-<area shape="rect" id="c17958" href="./Blowfish.html" title="org.universAAL.ontology.cryptographic.symmetric.Blowfish" alt="" coords="111,17,182,42"/>
-<area shape="rect" id="node2" href="./Blowfish.html" title="&lt;TABLE&gt;" alt="" coords="101,5,192,53"/>
-<area shape="rect" id="c17959" href="./DES.html" title="org.universAAL.ontology.cryptographic.symmetric.DES" alt="" coords="227,17,277,42"/>
-<area shape="rect" id="node3" href="./DES.html" title="&lt;TABLE&gt;" alt="" coords="216,5,288,53"/>
+<area shape="rect" id="node2_1" href="./Blowfish.html" title="org.universAAL.ontology.cryptographic.symmetric.Blowfish" alt="" coords="113,16,183,43"/>
+<area shape="rect" id="node2" href="./Blowfish.html" title="&lt;TABLE&gt;" alt="" coords="102,5,194,53"/>
+<area shape="rect" id="node3_2" href="./DES.html" title="org.universAAL.ontology.cryptographic.symmetric.DES" alt="" coords="230,16,279,43"/>
+<area shape="rect" id="node3" href="./DES.html" title="&lt;TABLE&gt;" alt="" coords="219,5,291,53"/>
 </map>

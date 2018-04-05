@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c235160" href="./BloodPressureSys.html" title="org.universAAL.ontology.X73.BloodPressureSys" alt="" coords="15,209,145,234"/>
+<area shape="rect" id="node1_0" href="./BloodPressureSys.html" title="org.universAAL.ontology.X73.BloodPressureSys" alt="" coords="15,208,145,235"/>
 <area shape="rect" id="node1" href="./BloodPressureSys.html" title="&lt;TABLE&gt;" alt="" coords="5,197,155,245"/>
-<area shape="rect" id="c235163" href="./BloodPressureDia.html" title="org.universAAL.ontology.X73.BloodPressureDia" alt="" coords="189,209,315,234"/>
-<area shape="rect" id="node2" href="./BloodPressureDia.html" title="&lt;TABLE&gt;" alt="" coords="179,197,325,245"/>
-<area shape="rect" id="c235167" href="./BodyWeight.html" title="org.universAAL.ontology.X73.BodyWeight" alt="" coords="359,209,451,234"/>
-<area shape="rect" id="node3" href="./BodyWeight.html" title="&lt;TABLE&gt;" alt="" coords="349,197,461,245"/>
-<area shape="rect" id="c235170" href="./MDSAttribute.html" title="org.universAAL.ontology.X73.MDSAttribute" alt="" coords="278,113,378,138"/>
-<area shape="rect" id="node4" href="./MDSAttribute.html" title="&lt;TABLE&gt;" alt="" coords="268,101,388,149"/>
-<area shape="rect" id="c235171" href="./Pulse.html" title="org.universAAL.ontology.X73.Pulse" alt="" coords="496,209,549,234"/>
-<area shape="rect" id="node5" href="./Pulse.html" title="&lt;TABLE&gt;" alt="" coords="485,197,560,245"/>
-<area shape="rect" id="c235224" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="263,17,393,42"/>
-<area shape="rect" id="node9" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="253,5,403,53"/>
+<area shape="rect" id="node2_1" href="./BloodPressureDia.html" title="org.universAAL.ontology.X73.BloodPressureDia" alt="" coords="191,208,316,235"/>
+<area shape="rect" id="node2" href="./BloodPressureDia.html" title="&lt;TABLE&gt;" alt="" coords="180,197,327,245"/>
+<area shape="rect" id="node3_2" href="./BodyWeight.html" title="org.universAAL.ontology.X73.BodyWeight" alt="" coords="362,208,454,235"/>
+<area shape="rect" id="node3" href="./BodyWeight.html" title="&lt;TABLE&gt;" alt="" coords="351,197,465,245"/>
+<area shape="rect" id="node4_3" href="./MDSAttribute.html" title="org.universAAL.ontology.X73.MDSAttribute" alt="" coords="281,112,381,139"/>
+<area shape="rect" id="node4" href="./MDSAttribute.html" title="&lt;TABLE&gt;" alt="" coords="270,101,391,149"/>
+<area shape="rect" id="node5_4" href="./Pulse.html" title="org.universAAL.ontology.X73.Pulse" alt="" coords="500,208,553,235"/>
+<area shape="rect" id="node5" href="./Pulse.html" title="&lt;TABLE&gt;" alt="" coords="489,197,564,245"/>
+<area shape="rect" id="node6_5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="266,16,395,43"/>
+<area shape="rect" id="node6" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="255,5,406,53"/>
 </map>

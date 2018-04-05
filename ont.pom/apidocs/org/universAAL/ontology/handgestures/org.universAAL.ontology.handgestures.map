@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="c22920" href="./HandGestures.html" title="org.universAAL.ontology.handgestures.HandGestures" alt="" coords="15,17,121,42"/>
+<area shape="rect" id="node1_0" href="./HandGestures.html" title="org.universAAL.ontology.handgestures.HandGestures" alt="" coords="15,16,121,43"/>
 <area shape="rect" id="node1" href="./HandGestures.html" title="&lt;TABLE&gt;" alt="" coords="5,5,131,53"/>
-<area shape="rect" id="c22921" href="./HandGestureService.html" title="org.universAAL.ontology.handgestures.HandGestureService" alt="" coords="165,17,307,42"/>
-<area shape="rect" id="node2" href="./HandGestureService.html" title="&lt;TABLE&gt;" alt="" coords="155,5,317,53"/>
-<area shape="rect" id="c22922" href="./HandgesturesOntology.html" title="org.universAAL.ontology.handgestures.HandgesturesOntology" alt="" coords="351,17,505,42"/>
-<area shape="rect" id="node3" href="./HandgesturesOntology.html" title="&lt;TABLE&gt;" alt="" coords="341,5,515,53"/>
-<area shape="rect" id="c22923" href="./HandGestureType.html" title="org.universAAL.ontology.handgestures.HandGestureType" alt="" coords="549,17,675,42"/>
-<area shape="rect" id="node4" href="./HandGestureType.html" title="&lt;TABLE&gt;" alt="" coords="539,5,685,53"/>
+<area shape="rect" id="node2_1" href="./HandGestureService.html" title="org.universAAL.ontology.handgestures.HandGestureService" alt="" coords="167,16,308,43"/>
+<area shape="rect" id="node2" href="./HandGestureService.html" title="&lt;TABLE&gt;" alt="" coords="156,5,319,53"/>
+<area shape="rect" id="node3_2" href="./HandgesturesOntology.html" title="org.universAAL.ontology.handgestures.HandgesturesOntology" alt="" coords="354,16,507,43"/>
+<area shape="rect" id="node3" href="./HandgesturesOntology.html" title="&lt;TABLE&gt;" alt="" coords="343,5,518,53"/>
+<area shape="rect" id="node4_3" href="./HandGestureType.html" title="org.universAAL.ontology.handgestures.HandGestureType" alt="" coords="553,16,679,43"/>
+<area shape="rect" id="node4" href="./HandGestureType.html" title="&lt;TABLE&gt;" alt="" coords="542,5,690,53"/>
 </map>
