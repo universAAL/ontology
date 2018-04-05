@@ -40,7 +40,7 @@ install:
  -
 
 before_script:
- - cat /etc/mavenrc
+ - cat /etc/mavenrc || true
  - echo "MAVEN_OPTS='-Xmx2g'" > ~/.mavenrc
 
 script:
