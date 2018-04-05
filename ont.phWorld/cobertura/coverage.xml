@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.27855382087099423" branch-rate="0.1713325867861142" lines-covered="678" lines-valid="2434" branches-covered="153" branches-valid="893" complexity="2.167883211678832" version="2.1.1" timestamp="1503065689173">
+<coverage line-rate="0.27855382087099423" branch-rate="0.1713325867861142" lines-covered="678" lines-valid="2434" branches-covered="153" branches-valid="893" complexity="2.167883211678832" version="2.1.1" timestamp="1522966912213">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.phWorld/src/main/java</source>
@@ -10486,7 +10486,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="55" hits="10" branch="true" condition-coverage="100% (4/4)">
+								<line number="55" hits="20" branch="true" condition-coverage="100% (4/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 										<condition number="1" type="jump" coverage="100%"/>
@@ -10507,7 +10507,7 @@
 						<line number="40" hits="4" branch="false"/>
 						<line number="41" hits="4" branch="false"/>
 						<line number="44" hits="12" branch="false"/>
-						<line number="55" hits="10" branch="true" condition-coverage="100% (4/4)">
+						<line number="55" hits="20" branch="true" condition-coverage="100% (4/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 								<condition number="1" type="jump" coverage="100%"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5587188612099644" branch-rate="0.1588785046728972" lines-covered="157" lines-valid="281" branches-covered="17" branches-valid="107" complexity="2.050632911392405" version="2.1.1" timestamp="1503065777620">
+<coverage line-rate="0.5587188612099644" branch-rate="0.1588785046728972" lines-covered="157" lines-valid="281" branches-covered="17" branches-valid="107" complexity="2.050632911392405" version="2.1.1" timestamp="1522967030198">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.lighting/src/main/java</source>
 		<source>--source</source>
@@ -160,7 +160,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.5" branch-rate="0.75" complexity="0">
 							<lines>
-								<line number="67" hits="2" branch="true" condition-coverage="75% (3/4)">
+								<line number="67" hits="4" branch="true" condition-coverage="75% (3/4)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 										<condition number="1" type="jump" coverage="50%"/>
@@ -240,7 +240,7 @@
 						<line number="59" hits="0" branch="false"/>
 						<line number="60" hits="0" branch="false"/>
 						<line number="63" hits="0" branch="false"/>
-						<line number="67" hits="2" branch="true" condition-coverage="75% (3/4)">
+						<line number="67" hits="4" branch="true" condition-coverage="75% (3/4)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 								<condition number="1" type="jump" coverage="50%"/>
@@ -784,7 +784,7 @@
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="1.0" branch-rate="0.75" complexity="0">
 							<lines>
-								<line number="98" hits="5" branch="true" condition-coverage="100% (2/2)">
+								<line number="98" hits="10" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
@@ -896,7 +896,7 @@
 						</line>
 						<line number="90" hits="0" branch="false"/>
 						<line number="91" hits="0" branch="false"/>
-						<line number="98" hits="5" branch="true" condition-coverage="100% (2/2)">
+						<line number="98" hits="10" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
