@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="87" branches-covered="0" branches-valid="58" complexity="2.6538461538461537" version="2.1.1" timestamp="1522966995249">
+<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="87" branches-covered="0" branches-valid="58" complexity="2.6538461538461537" version="2.1.1" timestamp="1524042172398">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.gesture.pointing/src/main/java</source>
 		<source>--source</source>
