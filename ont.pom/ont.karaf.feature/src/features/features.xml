@@ -177,7 +177,7 @@
 		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.furniture/${ont.furniture.version}</bundle>
 	</feature>
 	
-	<feature name="uAAL-Ont.Lightning" version="${pom.version}" resolver='(obr)'>
+	<feature name="uAAL-Ont.Lighting" version="${pom.version}" resolver='(obr)'>
 		<feature>uAAL-Ont.PhWorld</feature>
 		<bundle start-level='61' start='true'>mvn:org.universAAL.ontology/ont.lighting/${ont.lighting.version}</bundle>
 	</feature>
