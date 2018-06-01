@@ -1,4 +1,4 @@
-universAAL ontology Unit
+universAAL ontology LDDIDatapoint
 
 Copyright Fraunhofer IGD http://www.igd.fraunhofer.de
 
@@ -21,7 +21,7 @@ The OPS4J (http://www.ops4j.org)
 Licensed under the Apache License 2.0.
 
 This product uses software developed at
-UniversAAL (http://www.universaal.org)
+universAAL IoT (http://www.universaal-iot.org)
 Licensed under the Apache License 2.0.
 
 

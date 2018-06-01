@@ -16,24 +16,6 @@ public class Datapoint extends ManagedIndividual {
 
 	public static final String MY_URI = LDDIDatapointsOntology.NAMESPACE + "Datapoint";
 	
-	// class properties
-	/**
-	 * The sequence number starting with zero, used in configuration files as ID for easier reference
-	 * when in {@link Component component views} data-points are mapped to their ontological
-	 * counterparts in terms of properties. I.e., the first data-point defined in the
-	 * configuration file should have id=0, the second one id=1, .., and the nth one id=n-1.
-	 * Therefore the value set for this property must be a non-negative integer number.
-	 */
-	public static final String PROP_DP_ID = LDDIDatapointsOntology.NAMESPACE + "datapointID";
-	
-	/**
-	 * This property must refer to the sequence number of a {@link DatapointValueType value-type}
-	 * specified in the same configuration file. The {@link DatapointValueType value-type} set through
-	 * this property for a data-point indicates the type of the values that may be pulled / pushed / set
-	 * from / to / for the data-point at hand.
-	 */
-	public static final String PROP_VALUE_TYPE = LDDIDatapointsOntology.NAMESPACE + "valueType";
-	
 	/**
 	 * Configuration files of {@link CommunicationGateway}s have to provide a mapping between the external
 	 * world to which they provide a gateway and the ontological model used internally in the universAAL world.
@@ -73,16 +55,6 @@ public class Datapoint extends ManagedIndividual {
 	 * the URI of the color property as defined in the used ontology.
 	 */
 	public static final String PROP_RELATED_ONT_PROPERTY = LDDIDatapointsOntology.NAMESPACE + "relatedOntProperty";
-	
-	/**
-	 * This property can be used to indicate the frequency of value changes for the data-point at hand
-	 * in the external system, in terms of an estimation of the number of changes per second (e.g., the
-	 * number of measurements by an external sensor per second). Therefore, valid values for this property
-	 * can be any positive float number; e.g., a value of 0.001 would mean that the expected time to elapse
-	 * between two subsequent events is ca. 1000 seconds.
-	 * 
-	 */
-	public static final String PROP_VALUE_CHANGE_FREQUENCY_PER_SECOND = LDDIDatapointsOntology.NAMESPACE + "valueChangeFrequencyPerSecond";
 	
 	/**
 	 * Property for storing the get / pull / read address of the data-point at hand in the external system.
@@ -150,9 +122,7 @@ public class Datapoint extends ManagedIndividual {
 	}
 
 	public boolean isWellFormed() {
-		return getID()>-1
-				&&  getTypeID()>-1
-				&&  getComponentID()>-1
+		return getComponentID()>-1
 				&&  getProperty()!= null
 				&&  (getPullAddress()!= null
 						||  getPushAddress()!= null
@@ -160,25 +130,10 @@ public class Datapoint extends ManagedIndividual {
 	}
 
 	// getter / setters
-
-	public int getID() {
-		Integer i = (Integer) props.get(PROP_DP_ID);
-		return (i == null) ? -1 : i.intValue();
-	}
-	
-	public int getTypeID() {
-		Integer i = (Integer) props.get(PROP_VALUE_TYPE);
-		return (i == null) ? -1 : i.intValue();
-	}
 	
 	public int getComponentID() {
 		Integer i = (Integer) props.get(PROP_BELONGS_TO);
 		return (i == null) ? -1 : i.intValue();
-	}
-	
-	public float getChangeFrequencyPerSecond() {
-		Float f = (Float) props.get(PROP_VALUE_CHANGE_FREQUENCY_PER_SECOND);
-		return (f == null) ? Float.NaN : f.floatValue();
 	}
 	
 	public String getPullAddress() {

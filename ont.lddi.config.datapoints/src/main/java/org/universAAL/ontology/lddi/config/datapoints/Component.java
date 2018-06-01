@@ -33,6 +33,9 @@ public class Component extends ManagedIndividual {
   
   public static final String PROP_DESCRIPTION = LDDIDatapointsOntology.NAMESPACE
     + "description";
+  
+  public static final String PROP_EXTERNAL_TYPE_SYSTEM = LDDIDatapointsOntology.NAMESPACE
+    + "externalTypeSystem";
 
 	public Component() {
 		super();
@@ -51,7 +54,7 @@ public class Component extends ManagedIndividual {
 	}
 
 	public boolean isWellFormed() {
-		return getSeqNoInConfig()>-1  &&  getTypeURI()!=null;
+		return getSeqNoInConfig()>-1  &&  getTypeURI()!=null  &&  getExternalTypeSystem() != null;
 	}
 
 	// getter / setters
@@ -75,5 +78,10 @@ public class Component extends ManagedIndividual {
 	public ManagedIndividual getOntDescription() {
 		Object o = props.get(PROP_DESCRIPTION);
 		return (o instanceof ManagedIndividual)? (ManagedIndividual) o : null;
+	}
+	
+	public ExternalTypeSystem getExternalTypeSystem() {
+		Object o = props.get(PROP_EXTERNAL_TYPE_SYSTEM);
+		return (o instanceof ExternalTypeSystem)? (ExternalTypeSystem) o : null;
 	}
 }
