@@ -1,8 +1,10 @@
 package org.universAAL.ontology.lddi.config.datapoints;
 
+import java.util.Enumeration;
+import java.util.Hashtable;
+
 import org.universAAL.middleware.container.utils.StringUtils;
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.middleware.rdf.Resource;
 
 /**
  * Using this class, the set of logical / physical components connected via a
@@ -21,46 +23,39 @@ import org.universAAL.middleware.rdf.Resource;
  */
 public class ExternalTypeSystem extends ManagedIndividual {
 	public static final String MY_URI = LDDIDatapointsOntology.NAMESPACE + "ExternalTypeSystem";
+	private static Hashtable localOccurrences = new Hashtable();
 
-	public static ExternalTypeSystem getLocalDataConverter(String externalTypeSystem) {
-		Object o = LDDIDatapointsOntology.typeSystemInfo.getInfo().getInstanceByURI(externalTypeSystem);
-		return (o instanceof ExternalTypeSystem)?  (ExternalTypeSystem) o : null;
+	public static ExternalTypeSystem getLocallyRegisteredInstanceByURI(String externalTypeSystem) {
+		return (ExternalTypeSystem) localOccurrences.get(externalTypeSystem);
 	}
 
-	public static ExternalTypeSystem[] getAllLocalDataConverters() {
-		Resource[] arr = LDDIDatapointsOntology.typeSystemInfo.getInfo().getInstances();
-		if (arr == null)
-			return new ExternalTypeSystem[0];
-		
-		ExternalTypeSystem[] result = new ExternalTypeSystem[arr.length];
-		for (int i=0;  i<arr.length;  i++)
-			if (arr[i] instanceof ExternalTypeSystem)
-				result[i] = (ExternalTypeSystem) arr[i];
+	public static ExternalTypeSystem[] getAllLocallyRegisteredInstances() {
+		ExternalTypeSystem[] result = new ExternalTypeSystem[localOccurrences.size()];
+		int i = 0;
+		for (Enumeration e = localOccurrences.elements();  e.hasMoreElements(); i++)
+			result[i] = (ExternalTypeSystem) e.nextElement();
 		
 		return result;
 	}
 
 	private ExternalDataConverter converter;
 
-	public ExternalTypeSystem(String uri) {
-		super(uri);
-	}
-
 	public ExternalTypeSystem(String uri, String label, String comment, ExternalDataConverter edc) {
 		super(uri);
 		
-		if (LDDIDatapointsOntology.typeSystemInfo.getInfo().getInstanceByURI(uri) != null
+		if (localOccurrences.get(uri) != null
 				||  StringUtils.isNullOrEmpty(label)
 				||  StringUtils.isNullOrEmpty(comment)
 				||  edc == null)
 			throw new IllegalArgumentException();
-		
+
+		addType(MY_URI, true);
 		setResourceLabel(label);
 		setResourceComment(comment);
 		
 		converter = edc;
 		
-		LDDIDatapointsOntology.typeSystemInfo.addInstance(this);
+		localOccurrences.put(uri, this);
 	}
 
 	public String getClassURI() {

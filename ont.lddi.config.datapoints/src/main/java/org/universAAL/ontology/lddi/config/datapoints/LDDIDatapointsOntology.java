@@ -29,7 +29,6 @@ public final class LDDIDatapointsOntology extends Ontology {
 
   private static DatapointConfigFactory factory = new DatapointConfigFactory();
   public static final String NAMESPACE ="http://ontology.universAAL.org/LDDIDataConfigOntology.owl#";
-  static OntClassInfoSetup typeSystemInfo = null;
 	
   public LDDIDatapointsOntology() {
     super(NAMESPACE);
@@ -51,10 +50,10 @@ public final class LDDIDatapointsOntology extends Ontology {
 		ObjectPropertySetup ops;
 
 		// adding class for external type systems
-		typeSystemInfo = createNewOntClassInfo(ExternalTypeSystem.MY_URI, factory, 0);
-		typeSystemInfo.setResourceComment("This class only helps to identify certain named resources as an external type system; the name (URI) of the resource refers to a concrete external system whose data is going to be used in a uSpace and hence needs to be converted to the ontological data usable within the uSpace.");
-		typeSystemInfo.setResourceLabel("External Type System");
-		typeSystemInfo.addSuperClass(ManagedIndividual.MY_URI);
+		oci = createNewOntClassInfo(ExternalTypeSystem.MY_URI, factory, 0);
+		oci.setResourceComment("This class only helps to identify certain named resources as an external type system; the name (URI) of the resource refers to a concrete external system whose data is going to be used in a uSpace and hence needs to be converted to the ontological data usable within the uSpace.");
+		oci.setResourceLabel("External Type System");
+		oci.addSuperClass(ManagedIndividual.MY_URI);
 
 		// adding class "component"
 		oci = createNewOntClassInfo(Component.MY_URI, factory, 1);

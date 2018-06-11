@@ -4,6 +4,7 @@
 package org.universAAL.ontology.lddi.config.datapoints;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.middleware.xsd.NonNegativeInteger;
 
 /**
  * This class helps in the configuration files of {@link CommunicationGateway}s to specify
@@ -107,10 +108,12 @@ public class Datapoint extends ManagedIndividual {
 
 	public Datapoint() {
 		super();
+		addType(MY_URI, true);
 	}
 
 	public Datapoint(String uri) {
 		super(uri);
+		addType(MY_URI, true);
 	}
 
 	public String getClassURI() {
@@ -132,7 +135,7 @@ public class Datapoint extends ManagedIndividual {
 	// getter / setters
 	
 	public int getComponentID() {
-		Integer i = (Integer) props.get(PROP_BELONGS_TO);
+		NonNegativeInteger i = (NonNegativeInteger) props.get(PROP_BELONGS_TO);
 		return (i == null) ? -1 : i.intValue();
 	}
 	
@@ -149,7 +152,8 @@ public class Datapoint extends ManagedIndividual {
 	}
 
 	public String getProperty() {
-		return (String) props.get(PROP_RELATED_ONT_PROPERTY);
+		Object o = props.get(PROP_RELATED_ONT_PROPERTY);
+		return (o == null)? null : o.toString();
 	}
 
 }

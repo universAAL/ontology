@@ -13,8 +13,8 @@ public class DatapointConfigFactory implements ResourceFactory {
   public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
 		switch (factoryIndex) {
 		case 0:
-			if (ExternalTypeSystem.MY_URI.equals(classURI)) 
-				return new ExternalTypeSystem(instanceURI);
+			if (ExternalTypeSystem.MY_URI.equals(classURI)  &&  instanceURI != null) 
+				return ExternalTypeSystem.getLocallyRegisteredInstanceByURI(instanceURI);
 			return null;
 		case 1:
 			if (Component.MY_URI.equals(classURI)) 

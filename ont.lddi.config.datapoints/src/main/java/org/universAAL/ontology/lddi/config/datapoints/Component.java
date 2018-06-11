@@ -2,6 +2,7 @@ package org.universAAL.ontology.lddi.config.datapoints;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.xsd.NonNegativeInteger;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
 
@@ -39,10 +40,12 @@ public class Component extends ManagedIndividual {
 
 	public Component() {
 		super();
+		addType(MY_URI, true);
 	}
 
 	public Component(String uri) {
 		super(uri);
+		addType(MY_URI, true);
 	}
 
 	public String getClassURI() {
@@ -60,7 +63,7 @@ public class Component extends ManagedIndividual {
 	// getter / setters
 
 	public int getSeqNoInConfig() {
-		Integer i = (Integer) props.get(PROP_CONFIG_SEQ_NO);
+		NonNegativeInteger i = (NonNegativeInteger) props.get(PROP_CONFIG_SEQ_NO);
 		return (i == null) ? -1 : i.intValue();
 	}
 	
