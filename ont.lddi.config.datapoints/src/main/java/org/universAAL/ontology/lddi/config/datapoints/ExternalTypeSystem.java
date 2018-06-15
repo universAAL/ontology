@@ -26,7 +26,8 @@ public class ExternalTypeSystem extends ManagedIndividual {
 	private static Hashtable localOccurrences = new Hashtable();
 
 	public static ExternalTypeSystem getLocallyRegisteredInstanceByURI(String externalTypeSystem) {
-		return (ExternalTypeSystem) localOccurrences.get(externalTypeSystem);
+		ExternalTypeSystem result = (ExternalTypeSystem) localOccurrences.get(externalTypeSystem);
+		return (result == null)? new ExternalTypeSystem()  :  result;
 	}
 
 	public static ExternalTypeSystem[] getAllLocallyRegisteredInstances() {
@@ -39,6 +40,10 @@ public class ExternalTypeSystem extends ManagedIndividual {
 	}
 
 	private ExternalDataConverter converter;
+	
+	private ExternalTypeSystem() {
+		super("urn:org.universAAL-IoT:externalTypeSystem:DummyTypeSystems#NonExistingTypeSystem");
+	}
 
 	public ExternalTypeSystem(String uri, String label, String comment, ExternalDataConverter edc) {
 		super(uri);
