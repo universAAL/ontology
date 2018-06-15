@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5245901639344263" branch-rate="0.14583333333333334" lines-covered="64" lines-valid="122" branches-covered="7" branches-valid="48" complexity="2.5161290322580645" version="2.1.1" timestamp="1528740275585">
+<coverage line-rate="0.5245901639344263" branch-rate="0.14583333333333334" lines-covered="64" lines-valid="122" branches-covered="7" branches-valid="48" complexity="2.5161290322580645" version="2.1.1" timestamp="1529097604382">
 	<sources>
 		<source>/home/travis/build/universAAL/ontology/ont.handgestures/src/main/java</source>
 		<source>--source</source>
