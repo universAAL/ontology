@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>3.4.2-SNAPSHOT</version>
   </parent>
   <artifactId>ont.lddi.config.datapoints</artifactId>
   <packaging>bundle</packaging>
