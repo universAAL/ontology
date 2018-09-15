@@ -43,6 +43,7 @@
     <module>../ont.hvac</module>
     <module>../ont.impairment</module>
     <module>../ont.languages</module>
+    <module>../ont.lddi.config.datapoints</module>
     <module>../ont.lighting</module>
     <module>../ont.measurement</module>
     <module>../ont.multimedia</module>
@@ -277,6 +278,11 @@
       <dependency>
         <groupId>org.universAAL.ontology</groupId>
         <artifactId>ont.cryptographic</artifactId>
+        <version>3.4.2-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.universAAL.ontology</groupId>
+        <artifactId>ont.lddi.config.datapoints</artifactId>
         <version>3.4.2-SNAPSHOT</version>
       </dependency>
     </dependencies>
