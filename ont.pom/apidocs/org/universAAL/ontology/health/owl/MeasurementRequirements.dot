@@ -10,39 +10,39 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.health.owl.BloodPressureRequirement
-	c242406 [label=<<table title="org.universAAL.ontology.health.owl.BloodPressureRequirement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BloodPressureRequirement.html">
+	c250742 [label=<<table title="org.universAAL.ontology.health.owl.BloodPressureRequirement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BloodPressureRequirement.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BloodPressureRequirement </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BloodPressureRequirement.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.health.owl.WeightRequirement
-	c242408 [label=<<table title="org.universAAL.ontology.health.owl.WeightRequirement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WeightRequirement.html">
+	c250744 [label=<<table title="org.universAAL.ontology.health.owl.WeightRequirement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WeightRequirement.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WeightRequirement </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WeightRequirement.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.health.owl.HeartRateRequirement
-	c242416 [label=<<table title="org.universAAL.ontology.health.owl.HeartRateRequirement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HeartRateRequirement.html">
+	c250752 [label=<<table title="org.universAAL.ontology.health.owl.HeartRateRequirement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HeartRateRequirement.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HeartRateRequirement </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HeartRateRequirement.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.health.owl.MeasurementRequirements
-	c242419 [label=<<table title="org.universAAL.ontology.health.owl.MeasurementRequirements" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MeasurementRequirements.html">
+	c250755 [label=<<table title="org.universAAL.ontology.health.owl.MeasurementRequirements" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MeasurementRequirements.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MeasurementRequirements </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MeasurementRequirements.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.health.owl.BloodPressureRequirement extends org.universAAL.ontology.health.owl.MeasurementRequirements
-	c242419:p -> c242406:p [dir=back,arrowtail=empty];
+	c250755:p -> c250742:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.health.owl.WeightRequirement extends org.universAAL.ontology.health.owl.MeasurementRequirements
-	c242419:p -> c242408:p [dir=back,arrowtail=empty];
+	c250755:p -> c250744:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.health.owl.HeartRateRequirement extends org.universAAL.ontology.health.owl.MeasurementRequirements
-	c242419:p -> c242416:p [dir=back,arrowtail=empty];
+	c250755:p -> c250752:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.health.owl.MeasurementRequirements extends org.universAAL.middleware.owl.ManagedIndividual
-	c242539:p -> c242419:p [dir=back,arrowtail=empty];
+	c250875:p -> c250755:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c242539 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c250875 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

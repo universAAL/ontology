@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Component.html" title="org.universAAL.ontology.lddi.config.datapoints.Component" alt="" coords="16,20,104,47"/>
+<area shape="rect" id="node1" href="./Component.html" title="&lt;TABLE&gt;" alt="" coords="5,9,115,57"/>
+<area shape="rect" id="node2_1" href="./Datapoint.html" title="org.universAAL.ontology.lddi.config.datapoints.Datapoint" alt="" coords="149,20,227,47"/>
+<area shape="rect" id="node2" href="./Datapoint.html" title="&lt;TABLE&gt;" alt="" coords="139,9,237,57"/>
+<area shape="rect" id="node3_2" href="./ExternalDataConverter.html" title="org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter" alt="" coords="273,11,426,55"/>
+<area shape="rect" id="node3" href="./ExternalDataConverter.html" title="&lt;TABLE&gt;" alt="" coords="262,6,437,61"/>
+<area shape="rect" id="node4_3" href="./ExternalTypeSystem.html" title="org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem" alt="" coords="471,20,614,47"/>
+<area shape="rect" id="node4" href="./ExternalTypeSystem.html" title="&lt;TABLE&gt;" alt="" coords="461,9,625,57"/>
+<area shape="rect" id="node5_4" href="./LDDIDatapointsOntology.html" title="org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology" alt="" coords="659,20,826,47"/>
+<area shape="rect" id="node5" href="./LDDIDatapointsOntology.html" title="&lt;TABLE&gt;" alt="" coords="649,9,837,57"/>
+</map>

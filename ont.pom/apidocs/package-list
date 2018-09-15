@@ -33,6 +33,8 @@ org.universAAL.ontology.healthmeasurement.owl
 org.universAAL.ontology.hvac
 org.universAAL.ontology.impairment
 org.universAAL.ontology.language
+org.universAAL.ontology.lddi.config
+org.universAAL.ontology.lddi.config.datapoints
 org.universAAL.ontology.lighting
 org.universAAL.ontology.location
 org.universAAL.ontology.location.address

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>LDDI Datapoints Ontology - Checkstyle report</title>
+    <link>http://ontology/ont.lddi.config.datapoints/</link>
+    <description>LDDI Datapoints Ontology - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2018 universAAL Consortium</copyright>
+    <item>
+      <title>File: 7,
+             Errors: 71,
+             Warnings: 4,
+             Infos: 70
+      </title>
+            <link>http://ontology/ont.lddi.config.datapoints//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.DatapointConfigFactory.java">org/universAAL/ontology/lddi/config/DatapointConfigFactory.java</a>
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.DatapointConfigActivator.java">org/universAAL/ontology/lddi/config/DatapointConfigActivator.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Component.java">org/universAAL/ontology/lddi/config/datapoints/Component.java</a>
+                </td>
+                <td>
+                  18
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Datapoint.java">org/universAAL/ontology/lddi/config/datapoints/Datapoint.java</a>
+                </td>
+                <td>
+                  27
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter.java">org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem.java">org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology.java">org/universAAL/ontology/lddi/config/datapoints/LDDIDatapointsOntology.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

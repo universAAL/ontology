@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
-      <title>File: 609,
-             Errors: 8920,
-             Warnings: 852,
-             Infos: 187
+      <title>File: 616,
+             Errors: 8991,
+             Warnings: 856,
+             Infos: 257
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -746,6 +746,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.DatapointConfigFactory.java">org/universAAL/ontology/lddi/config/DatapointConfigFactory.java</a>
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.address.MailBox.java">org/universAAL/ontology/location/address/MailBox.java</a>
                 </td>
                 <td>
@@ -1148,6 +1162,20 @@ under the License.
                 </td>
                 <td>
                   10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem.java">org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.java</a>
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
                 </td>
               </tr>
                           <tr>
@@ -3476,6 +3504,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Datapoint.java">org/universAAL/ontology/lddi/config/datapoints/Datapoint.java</a>
+                </td>
+                <td>
+                  27
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.dependability.IntermittentFault.java">org/universAAL/ontology/dependability/IntermittentFault.java</a>
                 </td>
                 <td>
@@ -5170,6 +5212,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter.java">org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.recommendations.HorizontalLayout.java">org/universAAL/ontology/recommendations/HorizontalLayout.java</a>
                 </td>
                 <td>
@@ -5814,6 +5870,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.DatapointConfigActivator.java">org/universAAL/ontology/lddi/config/DatapointConfigActivator.java</a>
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.CryptographicActivator.java">org/universAAL/ontology/CryptographicActivator.java</a>
                 </td>
                 <td>
@@ -6146,6 +6216,20 @@ under the License.
                 </td>
                 <td>
                   32
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Component.java">org/universAAL/ontology/lddi/config/datapoints/Component.java</a>
+                </td>
+                <td>
+                  18
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  21
                 </td>
               </tr>
                           <tr>
@@ -7182,6 +7266,20 @@ under the License.
                 </td>
                 <td>
                   17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology.java">org/universAAL/ontology/lddi/config/datapoints/LDDIDatapointsOntology.java</a>
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
                 </td>
               </tr>
                           <tr>

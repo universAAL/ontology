@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.sysinfo.Descriptor
-	c343100 [label=<<table title="org.universAAL.ontology.sysinfo.Descriptor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Descriptor.html">
+	c352591 [label=<<table title="org.universAAL.ontology.sysinfo.Descriptor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Descriptor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Descriptor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Descriptor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.sysinfo.SpaceStatusDescriptor
-	c343101 [label=<<table title="org.universAAL.ontology.sysinfo.SpaceStatusDescriptor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SpaceStatusDescriptor.html">
+	c352592 [label=<<table title="org.universAAL.ontology.sysinfo.SpaceStatusDescriptor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SpaceStatusDescriptor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SpaceStatusDescriptor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SpaceStatusDescriptor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.sysinfo.SpaceStatusDescriptor extends org.universAAL.ontology.sysinfo.Descriptor
-	c343100:p -> c343101:p [dir=back,arrowtail=empty];
+	c352591:p -> c352592:p [dir=back,arrowtail=empty];
 }
 

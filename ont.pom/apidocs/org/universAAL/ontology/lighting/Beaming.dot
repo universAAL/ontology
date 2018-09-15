@@ -10,26 +10,26 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.lighting.Beaming
-	c69304 [label=<<table title="org.universAAL.ontology.lighting.Beaming" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Beaming.html">
+	c71334 [label=<<table title="org.universAAL.ontology.lighting.Beaming" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Beaming.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Beaming </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Beaming.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.BlinkableBeaming
-	c69305 [label=<<table title="org.universAAL.ontology.lighting.BlinkableBeaming" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BlinkableBeaming.html">
+	c71335 [label=<<table title="org.universAAL.ontology.lighting.BlinkableBeaming" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BlinkableBeaming.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BlinkableBeaming </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BlinkableBeaming.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.Lighting
-	c69306 [label=<<table title="org.universAAL.ontology.lighting.Lighting" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Lighting.html">
+	c71336 [label=<<table title="org.universAAL.ontology.lighting.Lighting" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Lighting.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Lighting </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Lighting.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.lighting.Beaming extends org.universAAL.ontology.lighting.Lighting
-	c69306:p -> c69304:p [dir=back,arrowtail=empty];
+	c71336:p -> c71334:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.BlinkableBeaming extends org.universAAL.ontology.lighting.Beaming
-	c69304:p -> c69305:p [dir=back,arrowtail=empty];
+	c71334:p -> c71335:p [dir=back,arrowtail=empty];
 }
 

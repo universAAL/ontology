@@ -10,31 +10,31 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.vcard.X400
-	c155753 [label=<<table title="org.universAAL.ontology.vcard.X400" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./X400.html">
+	c161238 [label=<<table title="org.universAAL.ontology.vcard.X400" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./X400.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> X400 </td></tr>
 		</table></td></tr>
 		</table>>, URL="./X400.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Email
-	c155762 [label=<<table title="org.universAAL.ontology.vcard.Email" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Email.html">
+	c161247 [label=<<table title="org.universAAL.ontology.vcard.Email" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Email.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Email </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Email.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Internet
-	c155763 [label=<<table title="org.universAAL.ontology.vcard.Internet" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Internet.html">
+	c161248 [label=<<table title="org.universAAL.ontology.vcard.Internet" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Internet.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Internet </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Internet.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.vcard.X400 extends org.universAAL.ontology.vcard.Email
-	c155762:p -> c155753:p [dir=back,arrowtail=empty];
+	c161247:p -> c161238:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Email extends org.universAAL.middleware.owl.ManagedIndividual
-	c155994:p -> c155762:p [dir=back,arrowtail=empty];
+	c161486:p -> c161247:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Internet extends org.universAAL.ontology.vcard.Email
-	c155762:p -> c155763:p [dir=back,arrowtail=empty];
+	c161247:p -> c161248:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c155994 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c161486 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

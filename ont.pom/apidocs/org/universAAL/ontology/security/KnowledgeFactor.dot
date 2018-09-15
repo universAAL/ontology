@@ -10,26 +10,26 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.security.Factor
-	c218146 [label=<<table title="org.universAAL.ontology.security.Factor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Factor.html">
+	c225585 [label=<<table title="org.universAAL.ontology.security.Factor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Factor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Factor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Factor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.KnowledgeFactor
-	c218147 [label=<<table title="org.universAAL.ontology.security.KnowledgeFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KnowledgeFactor.html">
+	c225586 [label=<<table title="org.universAAL.ontology.security.KnowledgeFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./KnowledgeFactor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> KnowledgeFactor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./KnowledgeFactor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Password
-	c218148 [label=<<table title="org.universAAL.ontology.security.Password" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Password.html">
+	c225587 [label=<<table title="org.universAAL.ontology.security.Password" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Password.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Password </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Password.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.security.KnowledgeFactor extends org.universAAL.ontology.security.Factor
-	c218146:p -> c218147:p [dir=back,arrowtail=empty];
+	c225585:p -> c225586:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.Password extends org.universAAL.ontology.security.KnowledgeFactor
-	c218147:p -> c218148:p [dir=back,arrowtail=empty];
+	c225586:p -> c225587:p [dir=back,arrowtail=empty];
 }
 

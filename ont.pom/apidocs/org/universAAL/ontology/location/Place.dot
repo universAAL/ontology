@@ -10,50 +10,50 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.location.Way
-	c287699 [label=<<table title="org.universAAL.ontology.location.Way" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Way.html">
+	c296553 [label=<<table title="org.universAAL.ontology.location.Way" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Way.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Way </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Way.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.Location
-	c287701 [label=<<table title="org.universAAL.ontology.location.Location" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Location.html">
+	c296555 [label=<<table title="org.universAAL.ontology.location.Location" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Location.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Location </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Location.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.Place
-	c287702 [label=<<table title="org.universAAL.ontology.location.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Place.html">
+	c296556 [label=<<table title="org.universAAL.ontology.location.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Place.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Place </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Place.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.indoor.IndoorPlace
-	c287716 [label=<<table title="org.universAAL.ontology.location.indoor.IndoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./indoor/IndoorPlace.html">
+	c296570 [label=<<table title="org.universAAL.ontology.location.indoor.IndoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./indoor/IndoorPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> IndoorPlace </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./indoor/IndoorPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c287724 [label=<<table title="org.universAAL.ontology.location.outdoor.OutdoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./outdoor/OutdoorPlace.html">
+	c296578 [label=<<table title="org.universAAL.ontology.location.outdoor.OutdoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./outdoor/OutdoorPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OutdoorPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./outdoor/OutdoorPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.Space
-	c287994 [label=<<table title="org.universAAL.ontology.profile.Space" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../profile/Space.html">
+	c296848 [label=<<table title="org.universAAL.ontology.profile.Space" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../profile/Space.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Space </td></tr>
 		</table></td></tr>
 		</table>>, URL="../profile/Space.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.location.Way extends org.universAAL.ontology.location.Place
-	c287702:p -> c287699:p [dir=back,arrowtail=empty];
+	c296556:p -> c296553:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.Place extends org.universAAL.ontology.location.Location
-	c287701:p -> c287702:p [dir=back,arrowtail=empty];
+	c296555:p -> c296556:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.indoor.IndoorPlace extends org.universAAL.ontology.location.Place
-	c287702:p -> c287716:p [dir=back,arrowtail=empty];
+	c296556:p -> c296570:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.outdoor.OutdoorPlace extends org.universAAL.ontology.location.Place
-	c287702:p -> c287724:p [dir=back,arrowtail=empty];
+	c296556:p -> c296578:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.Space extends org.universAAL.ontology.location.Place
-	c287702:p -> c287994:p [dir=back,arrowtail=empty];
+	c296556:p -> c296848:p [dir=back,arrowtail=empty];
 }
 

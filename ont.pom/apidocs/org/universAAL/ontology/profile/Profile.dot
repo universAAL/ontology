@@ -10,39 +10,39 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.profile.AppServiceProfile
-	c295297 [label=<<table title="org.universAAL.ontology.profile.AppServiceProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AppServiceProfile.html">
+	c304235 [label=<<table title="org.universAAL.ontology.profile.AppServiceProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AppServiceProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AppServiceProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AppServiceProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.SpaceProfile
-	c295304 [label=<<table title="org.universAAL.ontology.profile.SpaceProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SpaceProfile.html">
+	c304242 [label=<<table title="org.universAAL.ontology.profile.SpaceProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SpaceProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SpaceProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SpaceProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.Profile
-	c295307 [label=<<table title="org.universAAL.ontology.profile.Profile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Profile.html">
+	c304245 [label=<<table title="org.universAAL.ontology.profile.Profile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Profile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Profile </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Profile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.UserProfile
-	c295308 [label=<<table title="org.universAAL.ontology.profile.UserProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UserProfile.html">
+	c304246 [label=<<table title="org.universAAL.ontology.profile.UserProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UserProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UserProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UserProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.AppServiceProfile extends org.universAAL.ontology.profile.Profile
-	c295307:p -> c295297:p [dir=back,arrowtail=empty];
+	c304245:p -> c304235:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.SpaceProfile extends org.universAAL.ontology.profile.Profile
-	c295307:p -> c295304:p [dir=back,arrowtail=empty];
+	c304245:p -> c304242:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.Profile extends org.universAAL.middleware.owl.ManagedIndividual
-	c295555:p -> c295307:p [dir=back,arrowtail=empty];
+	c304500:p -> c304245:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.UserProfile extends org.universAAL.ontology.profile.Profile
-	c295307:p -> c295308:p [dir=back,arrowtail=empty];
+	c304245:p -> c304246:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c295555 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c304500 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

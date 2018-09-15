@@ -10,34 +10,34 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.hvac.Heating
-	c361205 [label=<<table title="org.universAAL.ontology.hvac.Heating" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Heating.html">
+	c370899 [label=<<table title="org.universAAL.ontology.hvac.Heating" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Heating.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Heating </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Heating.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Hvac
-	c361208 [label=<<table title="org.universAAL.ontology.hvac.Hvac" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hvac.html">
+	c370902 [label=<<table title="org.universAAL.ontology.hvac.Hvac" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hvac.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Hvac </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hvac.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Target_Temperature
-	c361209 [label=<<table title="org.universAAL.ontology.hvac.Target_Temperature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Target_Temperature.html">
+	c370903 [label=<<table title="org.universAAL.ontology.hvac.Target_Temperature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Target_Temperature.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Target_Temperature </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Target_Temperature.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.hvac.Air_Conditioning
-	c361210 [label=<<table title="org.universAAL.ontology.hvac.Air_Conditioning" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Air_Conditioning.html">
+	c370904 [label=<<table title="org.universAAL.ontology.hvac.Air_Conditioning" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Air_Conditioning.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Air_Conditioning </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Air_Conditioning.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.hvac.Heating extends org.universAAL.ontology.hvac.Target_Temperature
-	c361209:p -> c361205:p [dir=back,arrowtail=empty];
+	c370903:p -> c370899:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Target_Temperature extends org.universAAL.ontology.hvac.Hvac
-	c361208:p -> c361209:p [dir=back,arrowtail=empty];
+	c370902:p -> c370903:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.hvac.Air_Conditioning extends org.universAAL.ontology.hvac.Target_Temperature
-	c361209:p -> c361210:p [dir=back,arrowtail=empty];
+	c370903:p -> c370904:p [dir=back,arrowtail=empty];
 }
 

@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.impairment.PhysicalImpairment
-	c286858 [label=<<table title="org.universAAL.ontology.impairment.PhysicalImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PhysicalImpairment.html">
+	c295698 [label=<<table title="org.universAAL.ontology.impairment.PhysicalImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PhysicalImpairment.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PhysicalImpairment </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhysicalImpairment.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.impairment.PhysicalImpairment extends org.universAAL.middleware.ui.owl.AccessImpairment
-	c287024:p -> c286858:p [dir=back,arrowtail=empty];
+	c295871:p -> c295698:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.ui.owl.AccessImpairment
-	c287024 [label=<<table title="org.universAAL.middleware.ui.owl.AccessImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/AccessImpairment.html">
+	c295871 [label=<<table title="org.universAAL.middleware.ui.owl.AccessImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/AccessImpairment.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AccessImpairment </td></tr>
 		</table></td></tr>
