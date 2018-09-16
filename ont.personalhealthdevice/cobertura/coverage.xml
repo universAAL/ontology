@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.625" branch-rate="0.8" lines-covered="50" lines-valid="80" branches-covered="4" branches-valid="5" complexity="1.2758620689655173" version="2.1.1" timestamp="1529097654304">
+<coverage line-rate="0.625" branch-rate="0.8" lines-covered="50" lines-valid="80" branches-covered="4" branches-valid="5" complexity="1.2758620689655173" version="2.1.1" timestamp="1537100285256">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.personalhealthdevice/src/main/java</source>
