@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
-      <title>File: 60,
-             Errors: 1089,
-             Warnings: 38,
-             Infos: 26
+      <title>File: 62,
+             Errors: 1109,
+             Warnings: 40,
+             Infos: 30
       </title>
             <link>/checkstyle.html</link>
       <description>
@@ -47,6 +47,20 @@ under the License.
                           <tr>
                 <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Hall.java">org/universAAL/ontology/location/indoor/Hall.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Terrace.java">org/universAAL/ontology/location/indoor/Terrace.java</a>
                 </td>
                 <td>
                   0
@@ -91,7 +105,7 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.location.LocationOntology.java">org/universAAL/ontology/location/LocationOntology.java</a>
                 </td>
                 <td>
-                  6
+                  9
                 </td>
                 <td>
                   0
@@ -150,7 +164,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   8
@@ -294,6 +308,20 @@ under the License.
                 </td>
                 <td>
                   41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Balcony.java">org/universAAL/ontology/location/indoor/Balcony.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  8
                 </td>
               </tr>
                           <tr>
@@ -483,13 +511,13 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.RoomFunction.java">org/universAAL/ontology/location/indoor/RoomFunction.java</a>
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
-                  13
+                  15
                 </td>
                 <td>
-                  43
+                  47
                 </td>
               </tr>
                           <tr>

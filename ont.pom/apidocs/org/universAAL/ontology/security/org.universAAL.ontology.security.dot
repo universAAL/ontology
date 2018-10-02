@@ -10,172 +10,172 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.security.MultifactorCredentials
-	c40625 [label=<<table title="org.universAAL.ontology.security.MultifactorCredentials" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultifactorCredentials.html">
+	c40757 [label=<<table title="org.universAAL.ontology.security.MultifactorCredentials" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultifactorCredentials.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MultifactorCredentials </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MultifactorCredentials.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.DelegationForm
-	c40626 [label=<<table title="org.universAAL.ontology.security.DelegationForm" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DelegationForm.html">
+	c40758 [label=<<table title="org.universAAL.ontology.security.DelegationForm" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DelegationForm.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DelegationForm </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DelegationForm.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.SessionManagementService
-	c40627 [label=<<table title="org.universAAL.ontology.security.SessionManagementService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SessionManagementService.html">
+	c40759 [label=<<table title="org.universAAL.ontology.security.SessionManagementService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SessionManagementService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SessionManagementService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SessionManagementService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Anonymizable
-	c40628 [label=<<table title="org.universAAL.ontology.security.Anonymizable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Anonymizable.html">
+	c40760 [label=<<table title="org.universAAL.ontology.security.Anonymizable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Anonymizable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Anonymizable </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Anonymizable.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.AuthenticationService
-	c40629 [label=<<table title="org.universAAL.ontology.security.AuthenticationService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AuthenticationService.html">
+	c40761 [label=<<table title="org.universAAL.ontology.security.AuthenticationService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AuthenticationService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AuthenticationService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AuthenticationService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.LocationBoundSession
-	c40630 [label=<<table title="org.universAAL.ontology.security.LocationBoundSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LocationBoundSession.html">
+	c40762 [label=<<table title="org.universAAL.ontology.security.LocationBoundSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LocationBoundSession.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LocationBoundSession </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LocationBoundSession.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.AuthorizationService
-	c40631 [label=<<table title="org.universAAL.ontology.security.AuthorizationService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AuthorizationService.html">
+	c40763 [label=<<table title="org.universAAL.ontology.security.AuthorizationService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AuthorizationService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AuthorizationService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AuthorizationService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.RoleManagementService
-	c40632 [label=<<table title="org.universAAL.ontology.security.RoleManagementService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RoleManagementService.html">
+	c40764 [label=<<table title="org.universAAL.ontology.security.RoleManagementService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RoleManagementService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RoleManagementService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RoleManagementService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.UserPasswordCredentials
-	c40633 [label=<<table title="org.universAAL.ontology.security.UserPasswordCredentials" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UserPasswordCredentials.html">
+	c40765 [label=<<table title="org.universAAL.ontology.security.UserPasswordCredentials" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UserPasswordCredentials.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UserPasswordCredentials </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UserPasswordCredentials.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.SecurityOntology
-	c40634 [label=<<table title="org.universAAL.ontology.security.SecurityOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SecurityOntology.html">
+	c40766 [label=<<table title="org.universAAL.ontology.security.SecurityOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SecurityOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SecurityOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SecurityOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.InherenceFactor
-	c40635 [label=<<table title="org.universAAL.ontology.security.InherenceFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InherenceFactor.html">
+	c40767 [label=<<table title="org.universAAL.ontology.security.InherenceFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InherenceFactor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> InherenceFactor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./InherenceFactor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Asset
-	c40636 [label=<<table title="org.universAAL.ontology.security.Asset" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Asset.html">
+	c40768 [label=<<table title="org.universAAL.ontology.security.Asset" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Asset.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Asset </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Asset.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.AccessRight
-	c40637 [label=<<table title="org.universAAL.ontology.security.AccessRight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AccessRight.html">
+	c40769 [label=<<table title="org.universAAL.ontology.security.AccessRight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AccessRight.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AccessRight </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AccessRight.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Role
-	c40638 [label=<<table title="org.universAAL.ontology.security.Role" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Role.html">
+	c40770 [label=<<table title="org.universAAL.ontology.security.Role" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Role.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Role </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Role.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.SecuritySubprofile
-	c40639 [label=<<table title="org.universAAL.ontology.security.SecuritySubprofile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SecuritySubprofile.html">
+	c40771 [label=<<table title="org.universAAL.ontology.security.SecuritySubprofile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SecuritySubprofile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SecuritySubprofile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SecuritySubprofile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Session
-	c40640 [label=<<table title="org.universAAL.ontology.security.Session" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Session.html">
+	c40772 [label=<<table title="org.universAAL.ontology.security.Session" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Session.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Session </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Session.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.DeviceBoundSession
-	c40641 [label=<<table title="org.universAAL.ontology.security.DeviceBoundSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceBoundSession.html">
+	c40773 [label=<<table title="org.universAAL.ontology.security.DeviceBoundSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceBoundSession.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DeviceBoundSession </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DeviceBoundSession.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.AccessType
-	c40642 [label=<<table title="org.universAAL.ontology.security.AccessType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AccessType.html">
+	c40774 [label=<<table title="org.universAAL.ontology.security.AccessType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AccessType.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AccessType </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AccessType.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.PossessionFactor
-	c40643 [label=<<table title="org.universAAL.ontology.security.PossessionFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PossessionFactor.html">
+	c40775 [label=<<table title="org.universAAL.ontology.security.PossessionFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PossessionFactor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> PossessionFactor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./PossessionFactor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.AnonymizationService
-	c40644 [label=<<table title="org.universAAL.ontology.security.AnonymizationService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AnonymizationService.html">
+	c40776 [label=<<table title="org.universAAL.ontology.security.AnonymizationService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AnonymizationService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AnonymizationService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AnonymizationService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Factor
-	c40645 [label=<<table title="org.universAAL.ontology.security.Factor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Factor.html">
+	c40777 [label=<<table title="org.universAAL.ontology.security.Factor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Factor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Factor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Factor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.KnowledgeFactor
-	c40646 [label=<<table title="org.universAAL.ontology.security.KnowledgeFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KnowledgeFactor.html">
+	c40778 [label=<<table title="org.universAAL.ontology.security.KnowledgeFactor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./KnowledgeFactor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> KnowledgeFactor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./KnowledgeFactor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Password
-	c40647 [label=<<table title="org.universAAL.ontology.security.Password" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Password.html">
+	c40779 [label=<<table title="org.universAAL.ontology.security.Password" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Password.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Password </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Password.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.OneTimePassword
-	c40648 [label=<<table title="org.universAAL.ontology.security.OneTimePassword" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OneTimePassword.html">
+	c40780 [label=<<table title="org.universAAL.ontology.security.OneTimePassword" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OneTimePassword.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OneTimePassword </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OneTimePassword.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.security.Credentials
-	c40649 [label=<<table title="org.universAAL.ontology.security.Credentials" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Credentials.html">
+	c40781 [label=<<table title="org.universAAL.ontology.security.Credentials" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Credentials.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Credentials </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Credentials.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.security.MultifactorCredentials extends org.universAAL.ontology.security.Credentials
-	c40649:p -> c40625:p [dir=back,arrowtail=empty];
+	c40781:p -> c40757:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.LocationBoundSession extends org.universAAL.ontology.security.Session
-	c40640:p -> c40630:p [dir=back,arrowtail=empty];
+	c40772:p -> c40762:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.UserPasswordCredentials extends org.universAAL.ontology.security.Password
-	c40647:p -> c40633:p [dir=back,arrowtail=empty];
+	c40779:p -> c40765:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.InherenceFactor extends org.universAAL.ontology.security.Factor
-	c40645:p -> c40635:p [dir=back,arrowtail=empty];
+	c40777:p -> c40767:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.DeviceBoundSession extends org.universAAL.ontology.security.Session
-	c40640:p -> c40641:p [dir=back,arrowtail=empty];
+	c40772:p -> c40773:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.PossessionFactor extends org.universAAL.ontology.security.Factor
-	c40645:p -> c40643:p [dir=back,arrowtail=empty];
+	c40777:p -> c40775:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.KnowledgeFactor extends org.universAAL.ontology.security.Factor
-	c40645:p -> c40646:p [dir=back,arrowtail=empty];
+	c40777:p -> c40778:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.Password extends org.universAAL.ontology.security.KnowledgeFactor
-	c40646:p -> c40647:p [dir=back,arrowtail=empty];
+	c40778:p -> c40779:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.security.OneTimePassword extends org.universAAL.ontology.security.Password
-	c40647:p -> c40648:p [dir=back,arrowtail=empty];
+	c40779:p -> c40780:p [dir=back,arrowtail=empty];
 }
 

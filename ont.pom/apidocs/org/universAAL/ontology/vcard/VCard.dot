@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.vcard.VCard
-	c391187 [label=<<table title="org.universAAL.ontology.vcard.VCard" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VCard.html">
+	c393693 [label=<<table title="org.universAAL.ontology.vcard.VCard" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VCard.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VCard </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VCard.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.vcard.VCard extends org.universAAL.middleware.owl.ManagedIndividual
-	c391432:p -> c391187:p [dir=back,arrowtail=empty];
+	c393938:p -> c393693:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c391432 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c393938 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

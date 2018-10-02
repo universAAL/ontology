@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.orchestration.Script
-	c329408 [label=<<table title="org.universAAL.ontology.orchestration.Script" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Script.html">
+	c331096 [label=<<table title="org.universAAL.ontology.orchestration.Script" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Script.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Script </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Script.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.orchestration.Script extends org.universAAL.middleware.owl.ManagedIndividual
-	c329783:p -> c329408:p [dir=back,arrowtail=empty];
+	c331471:p -> c331096:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c329783 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c331471 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

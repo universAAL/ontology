@@ -10,50 +10,50 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.device.GasSensor
-	c167179 [label=<<table title="org.universAAL.ontology.device.GasSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GasSensor.html">
+	c168341 [label=<<table title="org.universAAL.ontology.device.GasSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GasSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GasSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GasSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.SmokeSensor
-	c167208 [label=<<table title="org.universAAL.ontology.device.SmokeSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SmokeSensor.html">
+	c168370 [label=<<table title="org.universAAL.ontology.device.SmokeSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SmokeSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SmokeSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SmokeSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.COSensor
-	c167218 [label=<<table title="org.universAAL.ontology.device.COSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./COSensor.html">
+	c168380 [label=<<table title="org.universAAL.ontology.device.COSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./COSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> COSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./COSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.EnvironmentSensor
-	c167226 [label=<<table title="org.universAAL.ontology.device.EnvironmentSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EnvironmentSensor.html">
+	c168388 [label=<<table title="org.universAAL.ontology.device.EnvironmentSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EnvironmentSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EnvironmentSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EnvironmentSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.CO2Sensor
-	c167227 [label=<<table title="org.universAAL.ontology.device.CO2Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CO2Sensor.html">
+	c168389 [label=<<table title="org.universAAL.ontology.device.CO2Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CO2Sensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CO2Sensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CO2Sensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.Sensor
-	c167228 [label=<<table title="org.universAAL.ontology.device.Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sensor.html">
+	c168390 [label=<<table title="org.universAAL.ontology.device.Sensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Sensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Sensor </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Sensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.device.GasSensor extends org.universAAL.ontology.device.EnvironmentSensor
-	c167226:p -> c167179:p [dir=back,arrowtail=empty];
+	c168388:p -> c168341:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.SmokeSensor extends org.universAAL.ontology.device.EnvironmentSensor
-	c167226:p -> c167208:p [dir=back,arrowtail=empty];
+	c168388:p -> c168370:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.COSensor extends org.universAAL.ontology.device.EnvironmentSensor
-	c167226:p -> c167218:p [dir=back,arrowtail=empty];
+	c168388:p -> c168380:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.EnvironmentSensor extends org.universAAL.ontology.device.Sensor
-	c167228:p -> c167226:p [dir=back,arrowtail=empty];
+	c168390:p -> c168388:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.CO2Sensor extends org.universAAL.ontology.device.EnvironmentSensor
-	c167226:p -> c167227:p [dir=back,arrowtail=empty];
+	c168388:p -> c168389:p [dir=back,arrowtail=empty];
 }
 

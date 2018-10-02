@@ -10,34 +10,34 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.dependability.ExternalFault
-	c272133 [label=<<table title="org.universAAL.ontology.dependability.ExternalFault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ExternalFault.html">
+	c273635 [label=<<table title="org.universAAL.ontology.dependability.ExternalFault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ExternalFault.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ExternalFault </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ExternalFault.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.dependability.InteractionFault
-	c272145 [label=<<table title="org.universAAL.ontology.dependability.InteractionFault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InteractionFault.html">
+	c273647 [label=<<table title="org.universAAL.ontology.dependability.InteractionFault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InteractionFault.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> InteractionFault </td></tr>
 		</table></td></tr>
 		</table>>, URL="./InteractionFault.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.dependability.OperationalFault
-	c272151 [label=<<table title="org.universAAL.ontology.dependability.OperationalFault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OperationalFault.html">
+	c273653 [label=<<table title="org.universAAL.ontology.dependability.OperationalFault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OperationalFault.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OperationalFault </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OperationalFault.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.dependability.Fault
-	c272156 [label=<<table title="org.universAAL.ontology.dependability.Fault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Fault.html">
+	c273658 [label=<<table title="org.universAAL.ontology.dependability.Fault" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Fault.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Fault </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Fault.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.dependability.ExternalFault extends org.universAAL.ontology.dependability.OperationalFault
-	c272151:p -> c272133:p [dir=back,arrowtail=empty];
+	c273653:p -> c273635:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.dependability.InteractionFault extends org.universAAL.ontology.dependability.OperationalFault
-	c272151:p -> c272145:p [dir=back,arrowtail=empty];
+	c273653:p -> c273647:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.dependability.OperationalFault extends org.universAAL.ontology.dependability.Fault
-	c272156:p -> c272151:p [dir=back,arrowtail=empty];
+	c273658:p -> c273653:p [dir=back,arrowtail=empty];
 }
 

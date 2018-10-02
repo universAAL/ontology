@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.location.Place
-	c348345 [label=<<table title="org.universAAL.ontology.location.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../location/Place.html">
+	c350093 [label=<<table title="org.universAAL.ontology.location.Place" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../location/Place.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Place </td></tr>
 		</table></td></tr>
 		</table>>, URL="../location/Place.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.Space
-	c348637 [label=<<table title="org.universAAL.ontology.profile.Space" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Space.html">
+	c350387 [label=<<table title="org.universAAL.ontology.profile.Space" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Space.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Space </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Space.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.Space extends org.universAAL.ontology.location.Place
-	c348345:p -> c348637:p [dir=back,arrowtail=empty];
+	c350093:p -> c350387:p [dir=back,arrowtail=empty];
 }
 

@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.SecurityFactory
-	c332254 [label=<<table title="org.universAAL.ontology.SecurityFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SecurityFactory.html">
+	c333950 [label=<<table title="org.universAAL.ontology.SecurityFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SecurityFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SecurityFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SecurityFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.SecurityFactory implements org.universAAL.middleware.rdf.ResourceFactory
-	c332867:p -> c332254:p [dir=back,arrowtail=empty,style=dashed];
+	c334565:p -> c333950:p [dir=back,arrowtail=empty,style=dashed];
 	// org.universAAL.middleware.rdf.ResourceFactory
-	c332867 [label=<<table title="org.universAAL.middleware.rdf.ResourceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/rdf/ResourceFactory.html">
+	c334565 [label=<<table title="org.universAAL.middleware.rdf.ResourceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/rdf/ResourceFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ResourceFactory </td></tr>

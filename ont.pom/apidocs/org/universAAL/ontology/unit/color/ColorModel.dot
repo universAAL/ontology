@@ -10,47 +10,47 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.unit.color.CMYKColorModel
-	c103653 [label=<<table title="org.universAAL.ontology.unit.color.CMYKColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CMYKColorModel.html">
+	c104609 [label=<<table title="org.universAAL.ontology.unit.color.CMYKColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CMYKColorModel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CMYKColorModel </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CMYKColorModel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.unit.color.ColorTemperature
-	c103654 [label=<<table title="org.universAAL.ontology.unit.color.ColorTemperature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ColorTemperature.html">
+	c104610 [label=<<table title="org.universAAL.ontology.unit.color.ColorTemperature" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ColorTemperature.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ColorTemperature </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ColorTemperature.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.unit.color.RGBColorModel
-	c103655 [label=<<table title="org.universAAL.ontology.unit.color.RGBColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RGBColorModel.html">
+	c104611 [label=<<table title="org.universAAL.ontology.unit.color.RGBColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RGBColorModel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RGBColorModel </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RGBColorModel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.unit.color.HSVColorModel
-	c103656 [label=<<table title="org.universAAL.ontology.unit.color.HSVColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSVColorModel.html">
+	c104612 [label=<<table title="org.universAAL.ontology.unit.color.HSVColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSVColorModel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HSVColorModel </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HSVColorModel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.unit.color.ColorModel
-	c103657 [label=<<table title="org.universAAL.ontology.unit.color.ColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ColorModel.html">
+	c104613 [label=<<table title="org.universAAL.ontology.unit.color.ColorModel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ColorModel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ColorModel </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ColorModel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.unit.color.CMYKColorModel extends org.universAAL.ontology.unit.color.ColorModel
-	c103657:p -> c103653:p [dir=back,arrowtail=empty];
+	c104613:p -> c104609:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.unit.color.ColorTemperature extends org.universAAL.ontology.unit.color.ColorModel
-	c103657:p -> c103654:p [dir=back,arrowtail=empty];
+	c104613:p -> c104610:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.unit.color.RGBColorModel extends org.universAAL.ontology.unit.color.ColorModel
-	c103657:p -> c103655:p [dir=back,arrowtail=empty];
+	c104613:p -> c104611:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.unit.color.HSVColorModel extends org.universAAL.ontology.unit.color.ColorModel
-	c103657:p -> c103656:p [dir=back,arrowtail=empty];
+	c104613:p -> c104612:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.unit.color.ColorModel extends org.universAAL.middleware.owl.ManagedIndividual
-	c104142:p -> c103657:p [dir=back,arrowtail=empty];
+	c105098:p -> c104613:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c104142 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c105098 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

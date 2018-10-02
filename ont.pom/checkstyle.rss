@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
-      <title>File: 616,
-             Errors: 8993,
-             Warnings: 856,
-             Infos: 257
+      <title>File: 618,
+             Errors: 9013,
+             Warnings: 858,
+             Infos: 261
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -2583,7 +2583,7 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.LocationOntology.java">org/universAAL/ontology/location/LocationOntology.java</a>
                 </td>
                 <td>
-                  6
+                  9
                 </td>
                 <td>
                   0
@@ -3017,13 +3017,13 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.indoor.RoomFunction.java">org/universAAL/ontology/location/indoor/RoomFunction.java</a>
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
-                  13
+                  15
                 </td>
                 <td>
-                  43
+                  47
                 </td>
               </tr>
                           <tr>
@@ -4942,6 +4942,20 @@ under the License.
                 </td>
                 <td>
                   36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.indoor.Balcony.java">org/universAAL/ontology/location/indoor/Balcony.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  8
                 </td>
               </tr>
                           <tr>
@@ -7578,6 +7592,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.indoor.Terrace.java">org/universAAL/ontology/location/indoor/Terrace.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.location.position.OriginedMetric.java">org/universAAL/ontology/location/position/OriginedMetric.java</a>
                 </td>
                 <td>
@@ -7640,7 +7668,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   8
