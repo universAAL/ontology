@@ -36,28 +36,32 @@ public class RoomFunction extends ManagedIndividual {
 
 	public static final int BATHROOM = 0;
 	public static final int CELLAR = 1;
-	public static final int GUESTROOM = 2;
-	public static final int GUESTWC = 3;
-	public static final int HOBBYROOM = 4;
-	public static final int KITCHEN = 5;
-	public static final int LIVINGROOM = 6;
-	public static final int SLEEPINGROOM = 7;
-	public static final int STORAGEROOM = 8;
-	public static final int STUDIO = 9;
-	public static final int WORKROOM = 10;
-	public static final int WARDROBE = 11;
+	public static final int DININGROOM = 2;
+	public static final int GUESTROOM = 3;
+	public static final int GUESTWC = 4;
+	public static final int HOBBYROOM = 5;
+	public static final int KITCHEN = 6;
+	public static final int LAUNDRY = 7;
+	public static final int LIVINGROOM = 8;
+	public static final int SLEEPINGROOM = 9;
+	public static final int STORAGEROOM = 10;
+	public static final int STUDIO = 11;
+	public static final int WORKROOM = 12;
+	public static final int WARDROBE = 13;
 
 	private int order;
 
-	private static final String[] names = { "BathRoom", "Cellar", "GuestRoom", "GuestWC", "HobbyRoom", "Kitchen",
-			"LivingRoom", "SleepingRoom", "StorageRoom", "Studio", "WorkRoom", "Wardrobe" };
+	private static final String[] names = { "BathRoom", "Cellar", "DiningRoom", "GuestRoom", "GuestWC", "HobbyRoom", "Kitchen",
+			"Laundry", "LivingRoom", "SleepingRoom", "StorageRoom", "Studio", "WorkRoom", "Wardrobe" };
 
 	public static final RoomFunction BathRoom = new RoomFunction(BATHROOM);
 	public static final RoomFunction Cellar = new RoomFunction(CELLAR);
+	public static final RoomFunction DiningRoom = new RoomFunction(DININGROOM);
 	public static final RoomFunction GuestRoom = new RoomFunction(GUESTROOM);
 	public static final RoomFunction GuestWC = new RoomFunction(GUESTWC);
 	public static final RoomFunction HobbyRoom = new RoomFunction(HOBBYROOM);
 	public static final RoomFunction Kitchen = new RoomFunction(KITCHEN);
+	public static final RoomFunction Laundry = new RoomFunction(LAUNDRY);
 	public static final RoomFunction LivingRoom = new RoomFunction(LIVINGROOM);
 	public static final RoomFunction SleepingRoom = new RoomFunction(SLEEPINGROOM);
 	public static final RoomFunction StorageRoom = new RoomFunction(STORAGEROOM);
@@ -86,6 +90,8 @@ public class RoomFunction extends ManagedIndividual {
 			return BathRoom;
 		case CELLAR:
 			return Cellar;
+		case DININGROOM:
+			return DiningRoom;
 		case GUESTROOM:
 			return GuestRoom;
 		case GUESTWC:
@@ -94,6 +100,8 @@ public class RoomFunction extends ManagedIndividual {
 			return HobbyRoom;
 		case KITCHEN:
 			return Kitchen;
+		case LAUNDRY:
+			return Laundry;
 		case LIVINGROOM:
 			return LivingRoom;
 		case SLEEPINGROOM:

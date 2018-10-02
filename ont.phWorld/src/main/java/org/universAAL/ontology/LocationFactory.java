@@ -27,6 +27,7 @@ import org.universAAL.ontology.location.Way;
 import org.universAAL.ontology.location.address.Address;
 import org.universAAL.ontology.location.address.MailBox;
 import org.universAAL.ontology.location.address.PhysicalAddress;
+import org.universAAL.ontology.location.indoor.Balcony;
 import org.universAAL.ontology.location.indoor.BuildingLevel;
 import org.universAAL.ontology.location.indoor.Corridor;
 import org.universAAL.ontology.location.indoor.EntranceHall;
@@ -36,6 +37,7 @@ import org.universAAL.ontology.location.indoor.HomeArea;
 import org.universAAL.ontology.location.indoor.Room;
 import org.universAAL.ontology.location.indoor.StairCase;
 import org.universAAL.ontology.location.indoor.StairWay;
+import org.universAAL.ontology.location.indoor.Terrace;
 import org.universAAL.ontology.location.outdoor.Building;
 import org.universAAL.ontology.location.outdoor.City;
 import org.universAAL.ontology.location.outdoor.CityPlace;
@@ -108,6 +110,10 @@ public class LocationFactory implements ResourceFactory {
 			return new OriginedMetric(instanceURI);
 		case 26:
 			return new Point(instanceURI);
+		case 27:
+			return new Balcony(instanceURI);
+		case 28:
+			return new Terrace(instanceURI);
 		}
 
 		return null;

@@ -30,6 +30,7 @@ import org.universAAL.ontology.LocationFactory;
 import org.universAAL.ontology.location.address.Address;
 import org.universAAL.ontology.location.address.MailBox;
 import org.universAAL.ontology.location.address.PhysicalAddress;
+import org.universAAL.ontology.location.indoor.Balcony;
 import org.universAAL.ontology.location.indoor.BuildingLevel;
 import org.universAAL.ontology.location.indoor.Corridor;
 import org.universAAL.ontology.location.indoor.EntranceHall;
@@ -41,6 +42,7 @@ import org.universAAL.ontology.location.indoor.Room;
 import org.universAAL.ontology.location.indoor.RoomFunction;
 import org.universAAL.ontology.location.indoor.StairCase;
 import org.universAAL.ontology.location.indoor.StairWay;
+import org.universAAL.ontology.location.indoor.Terrace;
 import org.universAAL.ontology.location.outdoor.Building;
 import org.universAAL.ontology.location.outdoor.City;
 import org.universAAL.ontology.location.outdoor.CityPlace;
@@ -333,8 +335,8 @@ public class LocationOntology extends Ontology {
 		oci.setResourceComment("Describes the function of a room.");
 		oci.setResourceLabel("RoomFunction");
 		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.toEnumeration(new ManagedIndividual[] { RoomFunction.BathRoom, RoomFunction.Cellar, RoomFunction.GuestRoom,
-				RoomFunction.GuestWC, RoomFunction.HobbyRoom, RoomFunction.Kitchen, RoomFunction.LivingRoom,
+		oci.toEnumeration(new ManagedIndividual[] { RoomFunction.BathRoom, RoomFunction.Cellar, RoomFunction.DiningRoom, RoomFunction.GuestRoom,
+				RoomFunction.GuestWC, RoomFunction.HobbyRoom, RoomFunction.Kitchen, RoomFunction.Laundry, RoomFunction.LivingRoom,
 				RoomFunction.SleepingRoom, RoomFunction.StorageRoom, RoomFunction.Studio, RoomFunction.WorkRoom,
 				RoomFunction.Wardrobe });
 
@@ -404,5 +406,19 @@ public class LocationOntology extends Ontology {
 		oci.addDatatypeProperty(OriginedMetric.PROP_ROTATE_Z).setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(OriginedMetric.PROP_ROTATE_Z,
 				TypeMapper.getDatatypeURI(Float.class), 0, 1));
+		
+		// load outdoors that are actually indoor locations because they belong to the interiors of a building
+
+		// load Balcony
+		oci = createNewOntClassInfo(Balcony.MY_URI, factory, 27);
+		oci.setResourceComment("A balcony as an element of a building.");
+		oci.setResourceLabel("Balcony");
+		oci.addSuperClass(IndoorPlace.MY_URI);
+
+		// load Terrace
+		oci = createNewOntClassInfo(Terrace.MY_URI, factory, 28);
+		oci.setResourceComment("A terrace as an element of a building.");
+		oci.setResourceLabel("Terrace");
+		oci.addSuperClass(IndoorPlace.MY_URI);
 	}
 }
