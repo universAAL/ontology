@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
       <title>File: 618,
-             Errors: 9013,
+             Errors: 9014,
              Warnings: 858,
-             Infos: 261
+             Infos: 264
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -6237,13 +6237,13 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Component.java">org/universAAL/ontology/lddi/config/datapoints/Component.java</a>
                 </td>
                 <td>
-                  18
+                  21
                 </td>
                 <td>
                   1
                 </td>
                 <td>
-                  21
+                  22
                 </td>
               </tr>
                           <tr>

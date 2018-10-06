@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
       <title>File: 7,
-             Errors: 73,
+             Errors: 74,
              Warnings: 4,
-             Infos: 70
+             Infos: 73
       </title>
             <link>http://ontology/ont.lddi.config.datapoints//checkstyle.html</link>
       <description>
@@ -77,13 +77,13 @@ under the License.
                   <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Component.java">org/universAAL/ontology/lddi/config/datapoints/Component.java</a>
                 </td>
                 <td>
-                  18
+                  21
                 </td>
                 <td>
                   1
                 </td>
                 <td>
-                  21
+                  22
                 </td>
               </tr>
                           <tr>
