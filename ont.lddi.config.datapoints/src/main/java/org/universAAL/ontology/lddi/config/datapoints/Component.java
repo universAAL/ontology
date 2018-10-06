@@ -22,6 +22,12 @@ import org.universAAL.ontology.phThing.PhysicalThing;
 public class Component extends ManagedIndividual {
   public static final String MY_URI = LDDIDatapointsOntology.NAMESPACE
     + "Component";
+	
+	/**
+	 * A property URI that can be used to mark ontological representations of resources to be corresponding to an external component
+	 * existing in an external network that has been bound to the universAAL environment trough a communication gateway
+	 */
+	public static final String PROP_IS_EXTERNAL_COMPONENT = "universAAL:lddi.abstraction/ExternalComponent#isExternalComponent";
   
   /**
 	 * The sequence number starting with zero, used in configuration files as ID for easier reference
