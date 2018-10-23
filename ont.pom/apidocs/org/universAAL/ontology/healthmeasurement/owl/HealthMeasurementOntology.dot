@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology
-	c199545 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HealthMeasurementOntology.html">
+	c198606 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HealthMeasurementOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HealthMeasurementOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HealthMeasurementOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology extends org.universAAL.middleware.owl.Ontology
-	c199742:p -> c199545:p [dir=back,arrowtail=empty];
+	c198802:p -> c198606:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.Ontology
-	c199742 [label=<<table title="org.universAAL.middleware.owl.Ontology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/Ontology.html">
+	c198802 [label=<<table title="org.universAAL.middleware.owl.Ontology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/Ontology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Ontology </font></td></tr>
 		</table></td></tr>

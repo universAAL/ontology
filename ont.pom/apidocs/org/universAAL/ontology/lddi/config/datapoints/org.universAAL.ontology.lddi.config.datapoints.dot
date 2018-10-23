@@ -10,32 +10,25 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.lddi.config.datapoints.Component
-	c30115 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.Component" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Component.html">
+	c30067 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.Component" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Component.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Component </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Component.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lddi.config.datapoints.Datapoint
-	c30116 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.Datapoint" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Datapoint.html">
+	c30068 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.Datapoint" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Datapoint.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Datapoint </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Datapoint.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter
-	c30117 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ExternalDataConverter.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ExternalDataConverter </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ExternalDataConverter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem
-	c30118 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ExternalTypeSystem.html">
+	c30069 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ExternalTypeSystem.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ExternalTypeSystem </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ExternalTypeSystem.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology
-	c30119 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LDDIDatapointsOntology.html">
+	c30070 [label=<<table title="org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LDDIDatapointsOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LDDIDatapointsOntology </td></tr>
 		</table></td></tr>

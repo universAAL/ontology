@@ -10,103 +10,103 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.vcard.Msg
-	c373278 [label=<<table title="org.universAAL.ontology.vcard.Msg" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Msg.html">
+	c372058 [label=<<table title="org.universAAL.ontology.vcard.Msg" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Msg.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Msg </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Msg.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.ISDN
-	c373280 [label=<<table title="org.universAAL.ontology.vcard.ISDN" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ISDN.html">
+	c372060 [label=<<table title="org.universAAL.ontology.vcard.ISDN" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ISDN.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ISDN </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ISDN.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Car
-	c373283 [label=<<table title="org.universAAL.ontology.vcard.Car" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Car.html">
+	c372063 [label=<<table title="org.universAAL.ontology.vcard.Car" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Car.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Car </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Car.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Modem
-	c373285 [label=<<table title="org.universAAL.ontology.vcard.Modem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Modem.html">
+	c372065 [label=<<table title="org.universAAL.ontology.vcard.Modem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Modem.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Modem </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Modem.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Fax
-	c373286 [label=<<table title="org.universAAL.ontology.vcard.Fax" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Fax.html">
+	c372066 [label=<<table title="org.universAAL.ontology.vcard.Fax" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Fax.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Fax </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Fax.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Pager
-	c373287 [label=<<table title="org.universAAL.ontology.vcard.Pager" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Pager.html">
+	c372067 [label=<<table title="org.universAAL.ontology.vcard.Pager" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Pager.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Pager </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Pager.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Voice
-	c373290 [label=<<table title="org.universAAL.ontology.vcard.Voice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Voice.html">
+	c372070 [label=<<table title="org.universAAL.ontology.vcard.Voice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Voice.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Voice </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Voice.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.PCS
-	c373291 [label=<<table title="org.universAAL.ontology.vcard.PCS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PCS.html">
+	c372071 [label=<<table title="org.universAAL.ontology.vcard.PCS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PCS.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PCS </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PCS.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Cell
-	c373292 [label=<<table title="org.universAAL.ontology.vcard.Cell" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cell.html">
+	c372072 [label=<<table title="org.universAAL.ontology.vcard.Cell" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cell.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Cell </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cell.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.BBS
-	c373293 [label=<<table title="org.universAAL.ontology.vcard.BBS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BBS.html">
+	c372073 [label=<<table title="org.universAAL.ontology.vcard.BBS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BBS.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BBS </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BBS.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Tel
-	c373294 [label=<<table title="org.universAAL.ontology.vcard.Tel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Tel.html">
+	c372074 [label=<<table title="org.universAAL.ontology.vcard.Tel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Tel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Tel </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Tel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.vcard.Video
-	c373295 [label=<<table title="org.universAAL.ontology.vcard.Video" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Video.html">
+	c372075 [label=<<table title="org.universAAL.ontology.vcard.Video" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Video.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Video </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Video.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.vcard.Msg extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373278:p [dir=back,arrowtail=empty];
+	c372074:p -> c372058:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.ISDN extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373280:p [dir=back,arrowtail=empty];
+	c372074:p -> c372060:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Car extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373283:p [dir=back,arrowtail=empty];
+	c372074:p -> c372063:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Modem extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373285:p [dir=back,arrowtail=empty];
+	c372074:p -> c372065:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Fax extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373286:p [dir=back,arrowtail=empty];
+	c372074:p -> c372066:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Pager extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373287:p [dir=back,arrowtail=empty];
+	c372074:p -> c372067:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Voice extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373290:p [dir=back,arrowtail=empty];
+	c372074:p -> c372070:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.PCS extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373291:p [dir=back,arrowtail=empty];
+	c372074:p -> c372071:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Cell extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373292:p [dir=back,arrowtail=empty];
+	c372074:p -> c372072:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.BBS extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373293:p [dir=back,arrowtail=empty];
+	c372074:p -> c372073:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Tel extends org.universAAL.middleware.owl.ManagedIndividual
-	c373527:p -> c373294:p [dir=back,arrowtail=empty];
+	c372306:p -> c372074:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.vcard.Video extends org.universAAL.ontology.vcard.Tel
-	c373294:p -> c373295:p [dir=back,arrowtail=empty];
+	c372074:p -> c372075:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c373527 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c372306 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

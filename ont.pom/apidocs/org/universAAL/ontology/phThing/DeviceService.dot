@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.phThing.DeviceService
-	c143553 [label=<<table title="org.universAAL.ontology.phThing.DeviceService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DeviceService.html">
+	c143321 [label=<<table title="org.universAAL.ontology.phThing.DeviceService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DeviceService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DeviceService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DeviceService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.phThing.DeviceService extends org.universAAL.middleware.service.owl.Service
-	c144075:p -> c143553:p [dir=back,arrowtail=empty];
+	c143842:p -> c143321:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.service.owl.Service
-	c144075 [label=<<table title="org.universAAL.middleware.service.owl.Service" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/service/owl/Service.html">
+	c143842 [label=<<table title="org.universAAL.middleware.service.owl.Service" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/service/owl/Service.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Service </font></td></tr>
 		</table></td></tr>

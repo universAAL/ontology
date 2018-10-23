@@ -10,74 +10,74 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.impairment.LightSensitivity
-	c28246 [label=<<table title="org.universAAL.ontology.impairment.LightSensitivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightSensitivity.html">
+	c28201 [label=<<table title="org.universAAL.ontology.impairment.LightSensitivity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightSensitivity.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LightSensitivity </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LightSensitivity.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.HearingImpairment
-	c28247 [label=<<table title="org.universAAL.ontology.impairment.HearingImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HearingImpairment.html">
+	c28202 [label=<<table title="org.universAAL.ontology.impairment.HearingImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HearingImpairment.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HearingImpairment </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HearingImpairment.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.FarSightedness
-	c28248 [label=<<table title="org.universAAL.ontology.impairment.FarSightedness" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FarSightedness.html">
+	c28203 [label=<<table title="org.universAAL.ontology.impairment.FarSightedness" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FarSightedness.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FarSightedness </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FarSightedness.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.ImpairmentOntology
-	c28249 [label=<<table title="org.universAAL.ontology.impairment.ImpairmentOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ImpairmentOntology.html">
+	c28204 [label=<<table title="org.universAAL.ontology.impairment.ImpairmentOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ImpairmentOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ImpairmentOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ImpairmentOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.Astigmatism
-	c28250 [label=<<table title="org.universAAL.ontology.impairment.Astigmatism" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Astigmatism.html">
+	c28205 [label=<<table title="org.universAAL.ontology.impairment.Astigmatism" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Astigmatism.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Astigmatism </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Astigmatism.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.ColorBlindness
-	c28251 [label=<<table title="org.universAAL.ontology.impairment.ColorBlindness" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ColorBlindness.html">
+	c28206 [label=<<table title="org.universAAL.ontology.impairment.ColorBlindness" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ColorBlindness.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ColorBlindness </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ColorBlindness.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.SpeakingImpairment
-	c28252 [label=<<table title="org.universAAL.ontology.impairment.SpeakingImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SpeakingImpairment.html">
+	c28207 [label=<<table title="org.universAAL.ontology.impairment.SpeakingImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SpeakingImpairment.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SpeakingImpairment </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SpeakingImpairment.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.SightImpairment
-	c28253 [label=<<table title="org.universAAL.ontology.impairment.SightImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SightImpairment.html">
+	c28208 [label=<<table title="org.universAAL.ontology.impairment.SightImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SightImpairment.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SightImpairment </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SightImpairment.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.NearSightedness
-	c28254 [label=<<table title="org.universAAL.ontology.impairment.NearSightedness" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NearSightedness.html">
+	c28209 [label=<<table title="org.universAAL.ontology.impairment.NearSightedness" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NearSightedness.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NearSightedness </td></tr>
 		</table></td></tr>
 		</table>>, URL="./NearSightedness.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.impairment.PhysicalImpairment
-	c28255 [label=<<table title="org.universAAL.ontology.impairment.PhysicalImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhysicalImpairment.html">
+	c28210 [label=<<table title="org.universAAL.ontology.impairment.PhysicalImpairment" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhysicalImpairment.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PhysicalImpairment </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhysicalImpairment.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.impairment.LightSensitivity extends org.universAAL.ontology.impairment.SightImpairment
-	c28253:p -> c28246:p [dir=back,arrowtail=empty];
+	c28208:p -> c28201:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.impairment.FarSightedness extends org.universAAL.ontology.impairment.SightImpairment
-	c28253:p -> c28248:p [dir=back,arrowtail=empty];
+	c28208:p -> c28203:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.impairment.Astigmatism extends org.universAAL.ontology.impairment.SightImpairment
-	c28253:p -> c28250:p [dir=back,arrowtail=empty];
+	c28208:p -> c28205:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.impairment.ColorBlindness extends org.universAAL.ontology.impairment.SightImpairment
-	c28253:p -> c28251:p [dir=back,arrowtail=empty];
+	c28208:p -> c28206:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.impairment.NearSightedness extends org.universAAL.ontology.impairment.SightImpairment
-	c28253:p -> c28254:p [dir=back,arrowtail=empty];
+	c28208:p -> c28209:p [dir=back,arrowtail=empty];
 }
 

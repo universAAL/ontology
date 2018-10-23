@@ -10,23 +10,23 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.language.Language
-	c228011 [label=<<table title="org.universAAL.ontology.language.Language" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Language.html">
+	c227026 [label=<<table title="org.universAAL.ontology.language.Language" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Language.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Language </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Language.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.language.LanguageImpl
-	c228012 [label=<<table title="org.universAAL.ontology.language.LanguageImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LanguageImpl.html">
+	c227027 [label=<<table title="org.universAAL.ontology.language.LanguageImpl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LanguageImpl.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LanguageImpl </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LanguageImpl.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.language.Language extends org.universAAL.middleware.owl.ManagedIndividual
-	c228183:p -> c228011:p [dir=back,arrowtail=empty];
+	c227197:p -> c227026:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.language.LanguageImpl extends org.universAAL.ontology.language.Language
-	c228011:p -> c228012:p [dir=back,arrowtail=empty];
+	c227026:p -> c227027:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c228183 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c227197 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

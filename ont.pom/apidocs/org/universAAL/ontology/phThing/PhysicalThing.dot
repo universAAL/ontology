@@ -10,47 +10,47 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.phThing.PhysicalContainer
-	c297548 [label=<<table title="org.universAAL.ontology.phThing.PhysicalContainer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhysicalContainer.html">
+	c296450 [label=<<table title="org.universAAL.ontology.phThing.PhysicalContainer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhysicalContainer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PhysicalContainer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhysicalContainer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.phThing.Device
-	c297549 [label=<<table title="org.universAAL.ontology.phThing.Device" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Device.html">
+	c296451 [label=<<table title="org.universAAL.ontology.phThing.Device" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Device.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Device </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Device.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.phThing.PhysicalThing
-	c297550 [label=<<table title="org.universAAL.ontology.phThing.PhysicalThing" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PhysicalThing.html">
+	c296452 [label=<<table title="org.universAAL.ontology.phThing.PhysicalThing" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PhysicalThing.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PhysicalThing </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhysicalThing.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.furniture.Furniture
-	c297789 [label=<<table title="org.universAAL.ontology.furniture.Furniture" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../furniture/Furniture.html">
+	c296691 [label=<<table title="org.universAAL.ontology.furniture.Furniture" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../furniture/Furniture.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Furniture </td></tr>
 		</table></td></tr>
 		</table>>, URL="../furniture/Furniture.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.User
-	c297800 [label=<<table title="org.universAAL.ontology.profile.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../profile/User.html">
+	c296702 [label=<<table title="org.universAAL.ontology.profile.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../profile/User.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> User </td></tr>
 		</table></td></tr>
 		</table>>, URL="../profile/User.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.phThing.PhysicalContainer extends org.universAAL.ontology.phThing.PhysicalThing
-	c297550:p -> c297548:p [dir=back,arrowtail=empty];
+	c296452:p -> c296450:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.phThing.Device extends org.universAAL.ontology.phThing.PhysicalThing
-	c297550:p -> c297549:p [dir=back,arrowtail=empty];
+	c296452:p -> c296451:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.phThing.PhysicalThing extends org.universAAL.middleware.owl.ManagedIndividual
-	c298068:p -> c297550:p [dir=back,arrowtail=empty];
+	c296969:p -> c296452:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.furniture.Furniture extends org.universAAL.ontology.phThing.PhysicalThing
-	c297550:p -> c297789:p [dir=back,arrowtail=empty];
+	c296452:p -> c296691:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.User extends org.universAAL.ontology.phThing.PhysicalThing
-	c297550:p -> c297800:p [dir=back,arrowtail=empty];
+	c296452:p -> c296702:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c298068 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c296969 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

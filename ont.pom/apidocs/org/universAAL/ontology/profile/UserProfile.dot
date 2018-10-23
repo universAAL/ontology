@@ -10,34 +10,34 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.profile.AssistedPersonProfile
-	c392431 [label=<<table title="org.universAAL.ontology.profile.AssistedPersonProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssistedPersonProfile.html">
+	c391180 [label=<<table title="org.universAAL.ontology.profile.AssistedPersonProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssistedPersonProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AssistedPersonProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AssistedPersonProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.Profile
-	c392447 [label=<<table title="org.universAAL.ontology.profile.Profile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Profile.html">
+	c391196 [label=<<table title="org.universAAL.ontology.profile.Profile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Profile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Profile </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Profile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.UserProfile
-	c392448 [label=<<table title="org.universAAL.ontology.profile.UserProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./UserProfile.html">
+	c391197 [label=<<table title="org.universAAL.ontology.profile.UserProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./UserProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UserProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UserProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.CaregiverProfile
-	c392449 [label=<<table title="org.universAAL.ontology.profile.CaregiverProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CaregiverProfile.html">
+	c391198 [label=<<table title="org.universAAL.ontology.profile.CaregiverProfile" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CaregiverProfile.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CaregiverProfile </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CaregiverProfile.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.AssistedPersonProfile extends org.universAAL.ontology.profile.UserProfile
-	c392448:p -> c392431:p [dir=back,arrowtail=empty];
+	c391197:p -> c391180:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.UserProfile extends org.universAAL.ontology.profile.Profile
-	c392447:p -> c392448:p [dir=back,arrowtail=empty];
+	c391196:p -> c391197:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.profile.CaregiverProfile extends org.universAAL.ontology.profile.UserProfile
-	c392448:p -> c392449:p [dir=back,arrowtail=empty];
+	c391197:p -> c391198:p [dir=back,arrowtail=empty];
 }
 

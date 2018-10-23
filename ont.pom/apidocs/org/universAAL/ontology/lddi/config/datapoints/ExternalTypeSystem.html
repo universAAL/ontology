@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10};
+var methods = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.html" title="interface in org.universAAL.ontology.lddi.config.datapoints"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/Datapoint.html" title="class in org.universAAL.ontology.lddi.config.datapoints"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/LDDIDatapointsOntology.html" title="class in org.universAAL.ontology.lddi.config.datapoints"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -134,16 +134,6 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">ExternalTypeSystem</span>
 extends org.universAAL.middleware.owl.ManagedIndividual</pre>
-<div class="block">Using this class, the set of logical / physical components connected via a
- <code>CommunicationGateway</code> can be specified in the configuration file of
- that <code>CommunicationGateway</code>. <a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/Datapoint.html" title="class in org.universAAL.ontology.lddi.config.datapoints"><code>Datapoint</code></a>s have to be linked to
- components by referring to the sequence number defined in this class. Each
- component must have a type defined in an ontology. If the component
- corresponds to some physical object, also its location can be specified.
- 
- As an example, with an instance of this class you may specify that the
- component with the sequence id 0 is a dimmable multi-color lamp (type) that
- is in the middle of ceiling of the living room (location).</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>mtazari</dd>
@@ -169,6 +159,18 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#MY_URI">MY_URI</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../org/universAAL/ontology/unit/Unit.html" title="class in org.universAAL.ontology.unit">Unit</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#UNIT_CELSIUS">UNIT_CELSIUS</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../org/universAAL/ontology/unit/Unit.html" title="class in org.universAAL.ontology.unit">Unit</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#UNIT_LITRES">UNIT_LITRES</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../org/universAAL/ontology/unit/Unit.html" title="class in org.universAAL.ontology.unit">Unit</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#UNIT_PPM">UNIT_PPM</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -199,10 +201,7 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#ExternalTypeSystem-java.lang.String-java.lang.String-java.lang.String-org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter-">ExternalTypeSystem</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                  <a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;label,
-                  <a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment,
-                  <a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.html" title="interface in org.universAAL.ontology.lddi.config.datapoints">ExternalDataConverter</a>&nbsp;edc)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#ExternalTypeSystem-java.lang.String-">ExternalTypeSystem</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -228,18 +227,14 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#getClassURI--">getClassURI</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.html" title="interface in org.universAAL.ontology.lddi.config.datapoints">ExternalDataConverter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#getExternalDataConverter--">getExternalDataConverter</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html" title="class in org.universAAL.ontology.lddi.config.datapoints">ExternalTypeSystem</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#getLocallyRegisteredInstanceByURI-java.lang.String-">getLocallyRegisteredInstanceByURI</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html" title="class in org.universAAL.ontology.lddi.config.datapoints">ExternalTypeSystem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#getLocallyRegisteredInstanceByURI-java.lang.String-">getLocallyRegisteredInstanceByURI</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;externalTypeSystem)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#getPropSerializationType-java.lang.String-">getPropSerializationType</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propURI)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html#isWellFormed--">isWellFormed</a></span>()</code>&nbsp;</td>
 </tr>
@@ -286,6 +281,33 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="UNIT_CELSIUS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNIT_CELSIUS</h4>
+<pre>public static final&nbsp;<a href="../../../../../../org/universAAL/ontology/unit/Unit.html" title="class in org.universAAL.ontology.unit">Unit</a> UNIT_CELSIUS</pre>
+</li>
+</ul>
+<a name="UNIT_LITRES">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNIT_LITRES</h4>
+<pre>public static final&nbsp;<a href="../../../../../../org/universAAL/ontology/unit/Unit.html" title="class in org.universAAL.ontology.unit">Unit</a> UNIT_LITRES</pre>
+</li>
+</ul>
+<a name="UNIT_PPM">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNIT_PPM</h4>
+<pre>public static final&nbsp;<a href="../../../../../../org/universAAL/ontology/unit/Unit.html" title="class in org.universAAL.ontology.unit">Unit</a> UNIT_PPM</pre>
+</li>
+</ul>
 <a name="MY_URI">
 <!--   -->
 </a>
@@ -307,16 +329,13 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ExternalTypeSystem-java.lang.String-java.lang.String-java.lang.String-org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter-">
+<a name="ExternalTypeSystem-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ExternalTypeSystem</h4>
-<pre>public&nbsp;ExternalTypeSystem(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                          <a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;label,
-                          <a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment,
-                          <a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.html" title="interface in org.universAAL.ontology.lddi.config.datapoints">ExternalDataConverter</a>&nbsp;edc)</pre>
+<pre>public&nbsp;ExternalTypeSystem(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
 </li>
 </ul>
 </li>
@@ -333,7 +352,7 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getLocallyRegisteredInstanceByURI</h4>
-<pre>public static&nbsp;<a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html" title="class in org.universAAL.ontology.lddi.config.datapoints">ExternalTypeSystem</a>&nbsp;getLocallyRegisteredInstanceByURI(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;externalTypeSystem)</pre>
+<pre>public static&nbsp;<a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.html" title="class in org.universAAL.ontology.lddi.config.datapoints">ExternalTypeSystem</a>&nbsp;getLocallyRegisteredInstanceByURI(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
 </li>
 </ul>
 <a name="getAllLocallyRegisteredInstances--">
@@ -356,15 +375,6 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>getClassURI</code>&nbsp;in class&nbsp;<code>org.universAAL.middleware.owl.ManagedIndividual</code></dd>
 </dl>
-</li>
-</ul>
-<a name="getExternalDataConverter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getExternalDataConverter</h4>
-<pre>public&nbsp;<a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.html" title="interface in org.universAAL.ontology.lddi.config.datapoints">ExternalDataConverter</a>&nbsp;getExternalDataConverter()</pre>
 </li>
 </ul>
 <a name="getPropSerializationType-java.lang.String-">
@@ -421,7 +431,7 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.html" title="interface in org.universAAL.ontology.lddi.config.datapoints"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/Datapoint.html" title="class in org.universAAL.ontology.lddi.config.datapoints"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../org/universAAL/ontology/lddi/config/datapoints/LDDIDatapointsOntology.html" title="class in org.universAAL.ontology.lddi.config.datapoints"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

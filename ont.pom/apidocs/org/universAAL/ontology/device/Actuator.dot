@@ -10,114 +10,114 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.device.HeaterActuator
-	c52723 [label=<<table title="org.universAAL.ontology.device.HeaterActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HeaterActuator.html">
+	c52638 [label=<<table title="org.universAAL.ontology.device.HeaterActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HeaterActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HeaterActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HeaterActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.BlindActuator
-	c52724 [label=<<table title="org.universAAL.ontology.device.BlindActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BlindActuator.html">
+	c52639 [label=<<table title="org.universAAL.ontology.device.BlindActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BlindActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BlindActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BlindActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.SwitchActuator
-	c52726 [label=<<table title="org.universAAL.ontology.device.SwitchActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwitchActuator.html">
+	c52641 [label=<<table title="org.universAAL.ontology.device.SwitchActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwitchActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SwitchActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SwitchActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.DimmerActuator
-	c52729 [label=<<table title="org.universAAL.ontology.device.DimmerActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DimmerActuator.html">
+	c52644 [label=<<table title="org.universAAL.ontology.device.DimmerActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DimmerActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DimmerActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DimmerActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.WindowActuator
-	c52731 [label=<<table title="org.universAAL.ontology.device.WindowActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WindowActuator.html">
+	c52646 [label=<<table title="org.universAAL.ontology.device.WindowActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WindowActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WindowActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WindowActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.CurtainActuator
-	c52734 [label=<<table title="org.universAAL.ontology.device.CurtainActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CurtainActuator.html">
+	c52649 [label=<<table title="org.universAAL.ontology.device.CurtainActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CurtainActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CurtainActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CurtainActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.DoorActuator
-	c52745 [label=<<table title="org.universAAL.ontology.device.DoorActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoorActuator.html">
+	c52660 [label=<<table title="org.universAAL.ontology.device.DoorActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoorActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DoorActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DoorActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.WaterFlowActuator
-	c52751 [label=<<table title="org.universAAL.ontology.device.WaterFlowActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WaterFlowActuator.html">
+	c52666 [label=<<table title="org.universAAL.ontology.device.WaterFlowActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WaterFlowActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WaterFlowActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WaterFlowActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.ValueDevice
-	c52754 [label=<<table title="org.universAAL.ontology.device.ValueDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ValueDevice.html">
+	c52669 [label=<<table title="org.universAAL.ontology.device.ValueDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ValueDevice.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ValueDevice </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ValueDevice.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.Actuator
-	c52755 [label=<<table title="org.universAAL.ontology.device.Actuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Actuator.html">
+	c52670 [label=<<table title="org.universAAL.ontology.device.Actuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Actuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Actuator </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Actuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.LightActuator
-	c52756 [label=<<table title="org.universAAL.ontology.device.LightActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightActuator.html">
+	c52671 [label=<<table title="org.universAAL.ontology.device.LightActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LightActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LightActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator
-	c52788 [label=<<table title="org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../activityhub/ext/AdaptorPlugActuator.html">
+	c52703 [label=<<table title="org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../activityhub/ext/AdaptorPlugActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AdaptorPlugActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="../activityhub/ext/AdaptorPlugActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.home.SirenActuator
-	c53118 [label=<<table title="org.universAAL.ontology.device.home.SirenActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./home/SirenActuator.html">
+	c53032 [label=<<table title="org.universAAL.ontology.device.home.SirenActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./home/SirenActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SirenActuator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./home/SirenActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.home.Oven
-	c53122 [label=<<table title="org.universAAL.ontology.device.home.Oven" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./home/Oven.html">
+	c53036 [label=<<table title="org.universAAL.ontology.device.home.Oven" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./home/Oven.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Oven </td></tr>
 		</table></td></tr>
 		</table>>, URL="./home/Oven.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.device.HeaterActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52723:p [dir=back,arrowtail=empty];
+	c52670:p -> c52638:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.BlindActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52724:p [dir=back,arrowtail=empty];
+	c52670:p -> c52639:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.SwitchActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52726:p [dir=back,arrowtail=empty];
+	c52670:p -> c52641:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.DimmerActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52729:p [dir=back,arrowtail=empty];
+	c52670:p -> c52644:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.WindowActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52731:p [dir=back,arrowtail=empty];
+	c52670:p -> c52646:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.CurtainActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52734:p [dir=back,arrowtail=empty];
+	c52670:p -> c52649:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.DoorActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52745:p [dir=back,arrowtail=empty];
+	c52670:p -> c52660:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.WaterFlowActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52751:p [dir=back,arrowtail=empty];
+	c52670:p -> c52666:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.Actuator extends org.universAAL.ontology.device.ValueDevice
-	c52754:p -> c52755:p [dir=back,arrowtail=empty];
+	c52669:p -> c52670:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.LightActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52756:p [dir=back,arrowtail=empty];
+	c52670:p -> c52671:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.activityhub.ext.AdaptorPlugActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c52788:p [dir=back,arrowtail=empty];
+	c52670:p -> c52703:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.home.SirenActuator extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c53118:p [dir=back,arrowtail=empty];
+	c52670:p -> c53032:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.device.home.Oven extends org.universAAL.ontology.device.Actuator
-	c52755:p -> c53122:p [dir=back,arrowtail=empty];
+	c52670:p -> c53036:p [dir=back,arrowtail=empty];
 }
 

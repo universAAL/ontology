@@ -10,39 +10,39 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.lighting.NaturalLight
-	c236061 [label=<<table title="org.universAAL.ontology.lighting.NaturalLight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NaturalLight.html">
+	c235062 [label=<<table title="org.universAAL.ontology.lighting.NaturalLight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NaturalLight.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NaturalLight </td></tr>
 		</table></td></tr>
 		</table>>, URL="./NaturalLight.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.ElectricLight
-	c236064 [label=<<table title="org.universAAL.ontology.lighting.ElectricLight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ElectricLight.html">
+	c235065 [label=<<table title="org.universAAL.ontology.lighting.ElectricLight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ElectricLight.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ElectricLight </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ElectricLight.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.FlamingLight
-	c236069 [label=<<table title="org.universAAL.ontology.lighting.FlamingLight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FlamingLight.html">
+	c235070 [label=<<table title="org.universAAL.ontology.lighting.FlamingLight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FlamingLight.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FlamingLight </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FlamingLight.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.LightType
-	c236070 [label=<<table title="org.universAAL.ontology.lighting.LightType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LightType.html">
+	c235071 [label=<<table title="org.universAAL.ontology.lighting.LightType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LightType.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> LightType </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./LightType.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.lighting.NaturalLight extends org.universAAL.ontology.lighting.LightType
-	c236070:p -> c236061:p [dir=back,arrowtail=empty];
+	c235071:p -> c235062:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.ElectricLight extends org.universAAL.ontology.lighting.LightType
-	c236070:p -> c236064:p [dir=back,arrowtail=empty];
+	c235071:p -> c235065:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.FlamingLight extends org.universAAL.ontology.lighting.LightType
-	c236070:p -> c236069:p [dir=back,arrowtail=empty];
+	c235071:p -> c235070:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.LightType extends org.universAAL.middleware.owl.ManagedIndividual
-	c236222:p -> c236070:p [dir=back,arrowtail=empty];
+	c235223:p -> c235071:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c236222 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c235223 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

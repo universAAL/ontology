@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
-      <title>File: 618,
-             Errors: 9014,
+      <title>File: 617,
+             Errors: 9009,
              Warnings: 858,
-             Infos: 264
+             Infos: 258
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -1169,13 +1169,13 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem.java">org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.java</a>
                 </td>
                 <td>
-                  9
+                  5
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  15
+                  14
                 </td>
               </tr>
                           <tr>
@@ -5222,20 +5222,6 @@ under the License.
                 </td>
                 <td>
                   6
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter.java">org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.java</a>
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
                 </td>
               </tr>
                           <tr>

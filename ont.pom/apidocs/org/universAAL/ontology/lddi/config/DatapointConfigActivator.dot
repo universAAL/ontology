@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.lddi.config.DatapointConfigActivator
-	c132771 [label=<<table title="org.universAAL.ontology.lddi.config.DatapointConfigActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatapointConfigActivator.html">
+	c132557 [label=<<table title="org.universAAL.ontology.lddi.config.DatapointConfigActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DatapointConfigActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DatapointConfigActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DatapointConfigActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.lddi.config.DatapointConfigActivator implements org.universAAL.middleware.container.ModuleActivator
-	c132939:p -> c132771:p [dir=back,arrowtail=empty,style=dashed];
+	c132724:p -> c132557:p [dir=back,arrowtail=empty,style=dashed];
 	// org.universAAL.middleware.container.ModuleActivator
-	c132939 [label=<<table title="org.universAAL.middleware.container.ModuleActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html">
+	c132724 [label=<<table title="org.universAAL.middleware.container.ModuleActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ModuleActivator </td></tr>

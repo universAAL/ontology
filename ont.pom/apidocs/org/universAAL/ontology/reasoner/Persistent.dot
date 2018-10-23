@@ -10,39 +10,39 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.reasoner.Situation
-	c289954 [label=<<table title="org.universAAL.ontology.reasoner.Situation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Situation.html">
+	c288868 [label=<<table title="org.universAAL.ontology.reasoner.Situation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Situation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Situation </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Situation.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.reasoner.Rule
-	c289955 [label=<<table title="org.universAAL.ontology.reasoner.Rule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Rule.html">
+	c288869 [label=<<table title="org.universAAL.ontology.reasoner.Rule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Rule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Rule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Rule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.reasoner.Persistent
-	c289956 [label=<<table title="org.universAAL.ontology.reasoner.Persistent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Persistent.html">
+	c288870 [label=<<table title="org.universAAL.ontology.reasoner.Persistent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Persistent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Persistent </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Persistent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.reasoner.Query
-	c289957 [label=<<table title="org.universAAL.ontology.reasoner.Query" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Query.html">
+	c288871 [label=<<table title="org.universAAL.ontology.reasoner.Query" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Query.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Query </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Query.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.reasoner.Situation extends org.universAAL.ontology.reasoner.Persistent
-	c289956:p -> c289954:p [dir=back,arrowtail=empty];
+	c288870:p -> c288868:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.reasoner.Rule extends org.universAAL.ontology.reasoner.Persistent
-	c289956:p -> c289955:p [dir=back,arrowtail=empty];
+	c288870:p -> c288869:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.reasoner.Persistent extends org.universAAL.middleware.owl.ManagedIndividual
-	c290026:p -> c289956:p [dir=back,arrowtail=empty];
+	c288940:p -> c288870:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.reasoner.Query extends org.universAAL.ontology.reasoner.Persistent
-	c289956:p -> c289957:p [dir=back,arrowtail=empty];
+	c288870:p -> c288871:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
-	c290026 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
+	c288940 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ManagedIndividual </font></td></tr>
 		</table></td></tr>

@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018 universAAL Consortium</copyright>
     <item>
-      <title>File: 7,
-             Errors: 74,
+      <title>File: 6,
+             Errors: 69,
              Warnings: 4,
-             Infos: 73
+             Infos: 67
       </title>
             <link>http://ontology/ont.lddi.config.datapoints//checkstyle.html</link>
       <description>
@@ -102,30 +102,16 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter.java">org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.java</a>
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem.java">org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.java</a>
                 </td>
                 <td>
-                  9
+                  5
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  15
+                  14
                 </td>
               </tr>
                           <tr>

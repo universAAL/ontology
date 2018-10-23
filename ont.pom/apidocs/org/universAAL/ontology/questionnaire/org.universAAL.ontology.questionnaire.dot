@@ -10,78 +10,78 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.questionnaire.QuestionnaireService
-	c36997 [label=<<table title="org.universAAL.ontology.questionnaire.QuestionnaireService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuestionnaireService.html">
+	c36937 [label=<<table title="org.universAAL.ontology.questionnaire.QuestionnaireService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuestionnaireService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> QuestionnaireService </td></tr>
 		</table></td></tr>
 		</table>>, URL="./QuestionnaireService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.Answer
-	c36998 [label=<<table title="org.universAAL.ontology.questionnaire.Answer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Answer.html">
+	c36938 [label=<<table title="org.universAAL.ontology.questionnaire.Answer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Answer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Answer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Answer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.AnsweredQuestionnaire
-	c36999 [label=<<table title="org.universAAL.ontology.questionnaire.AnsweredQuestionnaire" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AnsweredQuestionnaire.html">
+	c36939 [label=<<table title="org.universAAL.ontology.questionnaire.AnsweredQuestionnaire" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AnsweredQuestionnaire.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AnsweredQuestionnaire </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AnsweredQuestionnaire.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.QuestionnaireOntology
-	c37000 [label=<<table title="org.universAAL.ontology.questionnaire.QuestionnaireOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuestionnaireOntology.html">
+	c36940 [label=<<table title="org.universAAL.ontology.questionnaire.QuestionnaireOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuestionnaireOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> QuestionnaireOntology </td></tr>
 		</table></td></tr>
 		</table>>, URL="./QuestionnaireOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.ChoiceLabel
-	c37001 [label=<<table title="org.universAAL.ontology.questionnaire.ChoiceLabel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ChoiceLabel.html">
+	c36941 [label=<<table title="org.universAAL.ontology.questionnaire.ChoiceLabel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ChoiceLabel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ChoiceLabel </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ChoiceLabel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.QuestionWithMedia
-	c37002 [label=<<table title="org.universAAL.ontology.questionnaire.QuestionWithMedia" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuestionWithMedia.html">
+	c36942 [label=<<table title="org.universAAL.ontology.questionnaire.QuestionWithMedia" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QuestionWithMedia.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> QuestionWithMedia </td></tr>
 		</table></td></tr>
 		</table>>, URL="./QuestionWithMedia.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.SingleChoiceQuestion
-	c37003 [label=<<table title="org.universAAL.ontology.questionnaire.SingleChoiceQuestion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SingleChoiceQuestion.html">
+	c36943 [label=<<table title="org.universAAL.ontology.questionnaire.SingleChoiceQuestion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SingleChoiceQuestion.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SingleChoiceQuestion </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SingleChoiceQuestion.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.MultiChoiceQuestion
-	c37004 [label=<<table title="org.universAAL.ontology.questionnaire.MultiChoiceQuestion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultiChoiceQuestion.html">
+	c36944 [label=<<table title="org.universAAL.ontology.questionnaire.MultiChoiceQuestion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultiChoiceQuestion.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MultiChoiceQuestion </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MultiChoiceQuestion.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.ConditionalQuestion
-	c37005 [label=<<table title="org.universAAL.ontology.questionnaire.ConditionalQuestion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConditionalQuestion.html">
+	c36945 [label=<<table title="org.universAAL.ontology.questionnaire.ConditionalQuestion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConditionalQuestion.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ConditionalQuestion </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ConditionalQuestion.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.Question
-	c37006 [label=<<table title="org.universAAL.ontology.questionnaire.Question" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Question.html">
+	c36946 [label=<<table title="org.universAAL.ontology.questionnaire.Question" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Question.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Question </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Question.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.questionnaire.Questionnaire
-	c37007 [label=<<table title="org.universAAL.ontology.questionnaire.Questionnaire" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Questionnaire.html">
+	c36947 [label=<<table title="org.universAAL.ontology.questionnaire.Questionnaire" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Questionnaire.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Questionnaire </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Questionnaire.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.questionnaire.QuestionWithMedia extends org.universAAL.ontology.questionnaire.Question
-	c37006:p -> c37002:p [dir=back,arrowtail=empty];
+	c36946:p -> c36942:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.questionnaire.SingleChoiceQuestion extends org.universAAL.ontology.questionnaire.Question
-	c37006:p -> c37003:p [dir=back,arrowtail=empty];
+	c36946:p -> c36943:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.questionnaire.MultiChoiceQuestion extends org.universAAL.ontology.questionnaire.Question
-	c37006:p -> c37004:p [dir=back,arrowtail=empty];
+	c36946:p -> c36944:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.questionnaire.ConditionalQuestion extends org.universAAL.ontology.questionnaire.Question
-	c37006:p -> c37005:p [dir=back,arrowtail=empty];
+	c36946:p -> c36945:p [dir=back,arrowtail=empty];
 }
 
