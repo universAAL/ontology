@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.6220789685737309" branch-rate="0.2716049382716049" lines-covered="772" lines-valid="1241" branches-covered="66" branches-valid="243" complexity="1.642512077294686" version="2.1.1" timestamp="1538833956169">
+<coverage line-rate="0.6220789685737309" branch-rate="0.2716049382716049" lines-covered="772" lines-valid="1241" branches-covered="66" branches-valid="243" complexity="1.642512077294686" version="2.1.1" timestamp="1540328494958">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.device/src/main/java</source>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5894039735099338" branch-rate="0.2" lines-covered="89" lines-valid="151" branches-covered="14" branches-valid="70" complexity="1.9189189189189189" version="2.1.1" timestamp="1538834072230">
+<coverage line-rate="0.6577181208053692" branch-rate="0.25757575757575757" lines-covered="98" lines-valid="149" branches-covered="17" branches-valid="66" complexity="2.032258064516129" version="2.1.1" timestamp="1540328596873">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.lddi.config.datapoints/src/main/java</source>
@@ -113,7 +113,7 @@
 				</class>
 			</classes>
 		</package>
-		<package name="org.universAAL.ontology.lddi.config.datapoints" line-rate="0.6090225563909775" branch-rate="0.1206896551724138" complexity="1.6176470588235294">
+		<package name="org.universAAL.ontology.lddi.config.datapoints" line-rate="0.6870229007633588" branch-rate="0.18518518518518517" complexity="1.6785714285714286">
 			<classes>
 				<class name="org.universAAL.ontology.lddi.config.datapoints.Component" filename="org/universAAL/ontology/lddi/config/datapoints/Component.java" line-rate="0.25" branch-rate="0.0" complexity="1.8">
 					<methods>
@@ -403,51 +403,29 @@
 						</line>
 					</lines>
 				</class>
-				<class name="org.universAAL.ontology.lddi.config.datapoints.ExternalDataConverter" filename="org/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
-					<methods>
-					</methods>
-					<lines>
-					</lines>
-				</class>
-				<class name="org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem" filename="org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.java" line-rate="0.24" branch-rate="0.07142857142857142" complexity="1.875">
+				<class name="org.universAAL.ontology.lddi.config.datapoints.ExternalTypeSystem" filename="org/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem.java" line-rate="0.6521739130434783" branch-rate="0.4" complexity="1.8333333333333333">
 					<methods>
 						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="26" hits="1" branch="false"/>
+								<line number="17" hits="1" branch="false"/>
+								<line number="18" hits="1" branch="false"/>
+								<line number="19" hits="1" branch="false"/>
+								<line number="22" hits="1" branch="false"/>
 							</lines>
 						</method>
-						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+						<method name="&lt;init&gt;" signature="(Ljava/lang/String;)V" line-rate="0.8333333333333334" branch-rate="0.5" complexity="0">
 							<lines>
-								<line number="45" hits="2" branch="false"/>
-								<line number="46" hits="2" branch="false"/>
-							</lines>
-						</method>
-						<method name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
-							<lines>
-								<line number="49" hits="0" branch="false"/>
-								<line number="51" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="43" hits="1" branch="false"/>
+								<line number="45" hits="1" branch="true" condition-coverage="50% (2/4)">
 									<conditions>
-										<condition number="0" type="jump" coverage="0%"/>
+										<condition number="0" type="jump" coverage="50%"/>
+										<condition number="1" type="jump" coverage="50%"/>
 									</conditions>
 								</line>
-								<line number="52" hits="0" branch="true" condition-coverage="0% (0/2)">
-									<conditions>
-										<condition number="0" type="jump" coverage="0%"/>
-									</conditions>
-								</line>
-								<line number="53" hits="0" branch="true" condition-coverage="0% (0/4)">
-									<conditions>
-										<condition number="0" type="jump" coverage="0%"/>
-										<condition number="1" type="jump" coverage="0%"/>
-									</conditions>
-								</line>
-								<line number="55" hits="0" branch="false"/>
-								<line number="57" hits="0" branch="false"/>
-								<line number="58" hits="0" branch="false"/>
-								<line number="59" hits="0" branch="false"/>
-								<line number="61" hits="0" branch="false"/>
-								<line number="63" hits="0" branch="false"/>
-								<line number="64" hits="0" branch="false"/>
+								<line number="46" hits="0" branch="false"/>
+								<line number="48" hits="1" branch="false"/>
+								<line number="49" hits="1" branch="false"/>
+								<line number="50" hits="1" branch="false"/>
 							</lines>
 						</method>
 						<method name="getAllLocallyRegisteredInstances" signature="()[Lorg/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem;" line-rate="0.0" branch-rate="0.0" complexity="0">
@@ -465,32 +443,30 @@
 						</method>
 						<method name="getClassURI" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="67" hits="4" branch="false"/>
+								<line number="53" hits="3" branch="false"/>
 							</lines>
 						</method>
-						<method name="getExternalDataConverter" signature="()Lorg/universAAL/ontology/lddi/config/datapoints/ExternalDataConverter;" line-rate="0.0" branch-rate="1.0" complexity="0">
+						<method name="getLocallyRegisteredInstanceByURI" signature="(Ljava/lang/String;)Lorg/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem;" line-rate="1.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="71" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="getLocallyRegisteredInstanceByURI" signature="(Ljava/lang/String;)Lorg/universAAL/ontology/lddi/config/datapoints/ExternalTypeSystem;" line-rate="1.0" branch-rate="0.5" complexity="0">
-							<lines>
-								<line number="29" hits="2" branch="false"/>
-								<line number="30" hits="2" branch="true" condition-coverage="50% (1/2)">
+								<line number="25" hits="2" branch="false"/>
+								<line number="26" hits="2" branch="true" condition-coverage="100% (2/2)">
 									<conditions>
-										<condition number="0" type="jump" coverage="50%"/>
+										<condition number="0" type="jump" coverage="100%"/>
 									</conditions>
 								</line>
+								<line number="27" hits="1" branch="false"/>
+								<line number="28" hits="1" branch="false"/>
+								<line number="30" hits="2" branch="false"/>
 							</lines>
 						</method>
 						<method name="getPropSerializationType" signature="(Ljava/lang/String;)I" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
-								<line number="75" hits="0" branch="false"/>
+								<line number="57" hits="0" branch="false"/>
 							</lines>
 						</method>
 						<method name="isWellFormed" signature="()Z" line-rate="0.0" branch-rate="0.0" complexity="0">
 							<lines>
-								<line number="79" hits="0" branch="true" condition-coverage="0% (0/2)">
+								<line number="61" hits="0" branch="true" condition-coverage="0% (0/2)">
 									<conditions>
 										<condition number="0" type="jump" coverage="0%"/>
 									</conditions>
@@ -499,13 +475,19 @@
 						</method>
 					</methods>
 					<lines>
-						<line number="26" hits="1" branch="false"/>
-						<line number="29" hits="2" branch="false"/>
-						<line number="30" hits="2" branch="true" condition-coverage="50% (1/2)">
+						<line number="17" hits="1" branch="false"/>
+						<line number="18" hits="1" branch="false"/>
+						<line number="19" hits="1" branch="false"/>
+						<line number="22" hits="1" branch="false"/>
+						<line number="25" hits="2" branch="false"/>
+						<line number="26" hits="2" branch="true" condition-coverage="100% (2/2)">
 							<conditions>
-								<condition number="0" type="jump" coverage="50%"/>
+								<condition number="0" type="jump" coverage="100%"/>
 							</conditions>
 						</line>
+						<line number="27" hits="1" branch="false"/>
+						<line number="28" hits="1" branch="false"/>
+						<line number="30" hits="2" branch="false"/>
 						<line number="34" hits="0" branch="false"/>
 						<line number="35" hits="0" branch="false"/>
 						<line number="36" hits="0" branch="true" condition-coverage="0% (0/2)">
@@ -515,36 +497,20 @@
 						</line>
 						<line number="37" hits="0" branch="false"/>
 						<line number="39" hits="0" branch="false"/>
-						<line number="45" hits="2" branch="false"/>
-						<line number="46" hits="2" branch="false"/>
-						<line number="49" hits="0" branch="false"/>
-						<line number="51" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="43" hits="1" branch="false"/>
+						<line number="45" hits="1" branch="true" condition-coverage="50% (2/4)">
 							<conditions>
-								<condition number="0" type="jump" coverage="0%"/>
+								<condition number="0" type="jump" coverage="50%"/>
+								<condition number="1" type="jump" coverage="50%"/>
 							</conditions>
 						</line>
-						<line number="52" hits="0" branch="true" condition-coverage="0% (0/2)">
-							<conditions>
-								<condition number="0" type="jump" coverage="0%"/>
-							</conditions>
-						</line>
-						<line number="53" hits="0" branch="true" condition-coverage="0% (0/4)">
-							<conditions>
-								<condition number="0" type="jump" coverage="0%"/>
-								<condition number="1" type="jump" coverage="0%"/>
-							</conditions>
-						</line>
-						<line number="55" hits="0" branch="false"/>
+						<line number="46" hits="0" branch="false"/>
+						<line number="48" hits="1" branch="false"/>
+						<line number="49" hits="1" branch="false"/>
+						<line number="50" hits="1" branch="false"/>
+						<line number="53" hits="3" branch="false"/>
 						<line number="57" hits="0" branch="false"/>
-						<line number="58" hits="0" branch="false"/>
-						<line number="59" hits="0" branch="false"/>
-						<line number="61" hits="0" branch="false"/>
-						<line number="63" hits="0" branch="false"/>
-						<line number="64" hits="0" branch="false"/>
-						<line number="67" hits="4" branch="false"/>
-						<line number="71" hits="0" branch="false"/>
-						<line number="75" hits="0" branch="false"/>
-						<line number="79" hits="0" branch="true" condition-coverage="0% (0/2)">
+						<line number="61" hits="0" branch="true" condition-coverage="0% (0/2)">
 							<conditions>
 								<condition number="0" type="jump" coverage="0%"/>
 							</conditions>

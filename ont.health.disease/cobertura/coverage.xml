@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.5535714285714286" branch-rate="0.25252525252525254" lines-covered="217" lines-valid="392" branches-covered="25" branches-valid="99" complexity="1.6204379562043796" version="2.1.1" timestamp="1538834036160">
+<coverage line-rate="0.5535714285714286" branch-rate="0.25252525252525254" lines-covered="217" lines-valid="392" branches-covered="25" branches-valid="99" complexity="1.6204379562043796" version="2.1.1" timestamp="1540328568565">
 	<sources>
 		<source>--source</source>
 		<source>/home/travis/build/universAAL/ontology/ont.health.disease/src/main/java</source>
