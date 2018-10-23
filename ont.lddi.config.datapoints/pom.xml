@@ -4,6 +4,7 @@
     <groupId>org.universAAL.ontology</groupId>
     <artifactId>ont.pom</artifactId>
     <version>3.4.2-SNAPSHOT</version>
+    <relativePath>../ont.pom/pom.xml</relativePath>
   </parent>
   <artifactId>ont.lddi.config.datapoints</artifactId>
   <packaging>bundle</packaging>
@@ -14,6 +15,10 @@
       <groupId>org.universAAL.middleware</groupId>
       <artifactId>mw.data.representation.core</artifactId>
     </dependency>
+		<dependency>
+			<groupId>org.universAAL.ontology</groupId>
+			<artifactId>ont.measurement</artifactId>
+		</dependency>
     <dependency>
       <groupId>org.universAAL.ontology</groupId>
       <artifactId>ont.phWorld</artifactId>

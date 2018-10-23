@@ -3,31 +3,31 @@ package org.universAAL.ontology.lddi.config.datapoints;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import org.universAAL.middleware.container.utils.StringUtils;
 import org.universAAL.middleware.owl.ManagedIndividual;
+import org.universAAL.ontology.unit.MeasurableDimension;
+import org.universAAL.ontology.unit.Unit;
 
 /**
- * Using this class, the set of logical / physical components connected via a
- * {@link CommunicationGateway} can be specified in the configuration file of
- * that {@link CommunicationGateway}. {@link Datapoint}s have to be linked to
- * components by referring to the sequence number defined in this class. Each
- * component must have a type defined in an ontology. If the component
- * corresponds to some physical object, also its location can be specified.
  * 
- * As an example, with an instance of this class you may specify that the
- * component with the sequence id 0 is a dimmable multi-color lamp (type) that
- * is in the middle of ceiling of the living room (location).
  * 
  * @author mtazari
  *
  */
 public class ExternalTypeSystem extends ManagedIndividual {
+	public static final Unit UNIT_CELSIUS = new Unit("celsius", "Celsius", "°C", MeasurableDimension.Temperature);
+	public static final Unit UNIT_LITRES = new Unit("litre", "Litre", "l", MeasurableDimension.Adiemnsional);
+	public static final Unit UNIT_PPM = new Unit("ppm", "PPM", "ppm", MeasurableDimension.Adiemnsional);
+	
 	public static final String MY_URI = LDDIDatapointsOntology.NAMESPACE + "ExternalTypeSystem";
 	private static Hashtable localOccurrences = new Hashtable();
 
-	public static ExternalTypeSystem getLocallyRegisteredInstanceByURI(String externalTypeSystem) {
-		ExternalTypeSystem result = (ExternalTypeSystem) localOccurrences.get(externalTypeSystem);
-		return (result == null)? new ExternalTypeSystem()  :  result;
+	public static ExternalTypeSystem getLocallyRegisteredInstanceByURI(String uri) {
+		ExternalTypeSystem result = (ExternalTypeSystem) localOccurrences.get(uri);
+		if (result == null) {
+			result = new ExternalTypeSystem(uri);
+			localOccurrences.put(uri, result);
+		}
+		return result;
 	}
 
 	public static ExternalTypeSystem[] getAllLocallyRegisteredInstances() {
@@ -39,36 +39,18 @@ public class ExternalTypeSystem extends ManagedIndividual {
 		return result;
 	}
 
-	private ExternalDataConverter converter;
-	
-	private ExternalTypeSystem() {
-		super("urn:org.universAAL-IoT:externalTypeSystem:DummyTypeSystems#NonExistingTypeSystem");
-	}
-
-	public ExternalTypeSystem(String uri, String label, String comment, ExternalDataConverter edc) {
+	public ExternalTypeSystem(String uri) {
 		super(uri);
 		
-		if (localOccurrences.get(uri) != null
-				||  StringUtils.isNullOrEmpty(label)
-				||  StringUtils.isNullOrEmpty(comment)
-				||  edc == null)
+		if (localOccurrences.get(uri) != null  ||  isAnon())
 			throw new IllegalArgumentException();
 
 		addType(MY_URI, true);
-		setResourceLabel(label);
-		setResourceComment(comment);
-		
-		converter = edc;
-		
 		localOccurrences.put(uri, this);
 	}
 
 	public String getClassURI() {
 		return MY_URI;
-	}
-	
-	public ExternalDataConverter getExternalDataConverter() {
-		return converter;
 	}
 
 	public int getPropSerializationType(String propURI) {
