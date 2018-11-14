@@ -6,11 +6,11 @@
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<relativePath>../ont.pom</relativePath>
-		<version>3.4.2-SNAPSHOT</version>
+		<version>3.4.0</version>
 	</parent>
 
 	<artifactId>ont.echonetontology</artifactId>
-	<version>3.4.2-SNAPSHOT</version>
+	<version>3.4.0</version>
 	<packaging>bundle</packaging>
 	<name>EchonetOntology</name>
 	<dependencies>
@@ -52,11 +52,6 @@
 		<dependency>
 			<groupId>org.universAAL.ontology</groupId>
 			<artifactId>ont.measurement</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.coode.owlapi</groupId>
-			<artifactId>owlapi</artifactId>
-			<version>3.3</version>
 		</dependency>
 	</dependencies>
 	<repositories>

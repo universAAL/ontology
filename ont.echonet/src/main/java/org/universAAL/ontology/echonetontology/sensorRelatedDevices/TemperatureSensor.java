@@ -14,24 +14,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  ******************************************************************************/
-package org.universAAL.ontology;
+package org.universAAL.ontology.echonetontology.sensorRelatedDevices;
 
-import org.universAAL.middleware.container.ModuleContext;
-import org.universAAL.middleware.container.ModuleActivator;
-import org.universAAL.middleware.owl.OntologyManagement;
 import org.universAAL.ontology.echonetontology.EchonetOntology;
+import org.universAAL.ontology.echonetontology.EchonetSuperDevice;
 
-public class EchonetActivator implements ModuleActivator {
-	 public static ModuleContext mc;
 
-	private EchonetOntology echonetOntology = new EchonetOntology();
-
-	public void start(ModuleContext mc) throws Exception {
-		EchonetActivator.mc = mc;
-		OntologyManagement.getInstance().register(mc, echonetOntology);
+public class TemperatureSensor extends EchonetSuperDevice{
+	public static final String MY_URI = EchonetOntology.NAMESPACE + "TemperatureSensor";
+	public static final String PROPERTY_HAS_MEASURED_TEMPERATURE_VALUE = EchonetOntology.NAMESPACE + "hasMeasuredTemperatureValue";
+	public TemperatureSensor() {
+		super();
 	}
 
-	public void stop(ModuleContext mc) throws Exception {
-		OntologyManagement.getInstance().unregister(mc, echonetOntology);
+	public TemperatureSensor(String uri) {
+		super(uri);
 	}
+	public String getClassURI() {
+		return MY_URI;
+	}
+
+	public int getPropSerializationType(String arg0) {
+		return PROP_SERIALIZATION_OPTIONAL;
+	}
+
+	public boolean isWellFormed() {
+		return true;
+	}
+	
+	public Float getMeasuredTemperatureValue() {
+		return (Float) getProperty(PROPERTY_HAS_MEASURED_TEMPERATURE_VALUE);	
+	}
+	public void setMeasuredTemperatureValue(Float msg) {
+		if(msg !=null)
+			changeProperty(PROPERTY_HAS_MEASURED_TEMPERATURE_VALUE,msg);	
+	}
+
 }
