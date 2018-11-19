@@ -17,7 +17,6 @@
 package org.universAAL.ontology.echonetontology;
 
 
-
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -89,6 +88,7 @@ import org.universAAL.ontology.echonetontology.housingFacilitiesRelatedDevices.W
 import org.universAAL.ontology.echonetontology.housingFacilitiesRelatedDevices.WaterHeater;
 import org.universAAL.ontology.echonetontology.housingFacilitiesRelatedDevices.WattHourMeter;
 import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.Controller;
+import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.DREventController;
 import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.ParallelProcessingCombinationTypePowerControl;
 import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.Switch;
 import org.universAAL.ontology.echonetontology.sensorRelatedDevices.ActivityMountSensor;
@@ -162,7 +162,6 @@ import org.universAAL.ontology.echonetontology.values.PowerConsumptionRange;
 import org.universAAL.ontology.echonetontology.values.RadiationMethodValue;
 import org.universAAL.ontology.echonetontology.values.RemoteControlSettingValue;
 import org.universAAL.ontology.echonetontology.values.SelectiveOpeningOperationSettingValue;
-import org.universAAL.ontology.echonetontology.values.ShapeValue;
 import org.universAAL.ontology.echonetontology.values.ThresholdLevelValue;
 import org.universAAL.ontology.echonetontology.values.TransferingMethods;
 import org.universAAL.ontology.echonetontology.values.TypeClassificationValue;
@@ -218,7 +217,6 @@ public final class EchonetOntology extends Ontology {
 		OntClassInfoSetup oci_TypeClassificationValue = createNewAbstractOntClassInfo(TypeClassificationValue.MY_URI);
 		OntClassInfoSetup oci_ColorValue = createNewAbstractOntClassInfo(ColorValue.MY_URI);
 		OntClassInfoSetup oci_AutomaticHeatingMenu = createNewAbstractOntClassInfo(AutomaticHeatingMenu.MY_URI);
-		OntClassInfoSetup oci_ShapeValue = createNewAbstractOntClassInfo(ShapeValue.MY_URI);
 		OntClassInfoSetup oci_CharacterCodes = createNewAbstractOntClassInfo(CharacterCodes.MY_URI);
 		OntClassInfoSetup oci_InputSourceSettingValue = createNewAbstractOntClassInfo(InputSourceSettingValue.MY_URI);
 		OntClassInfoSetup oci_TransferingMethods = createNewAbstractOntClassInfo(TransferingMethods.MY_URI);
@@ -334,6 +332,7 @@ public final class EchonetOntology extends Ontology {
 		OntClassInfoSetup oci_WeighingMachine = createNewOntClassInfo(WeighingMachine.MY_URI,factory, EchonetFactory.WEIGHING_MACHINE);
 		
 		OntClassInfoSetup oci_Controller = createNewOntClassInfo(Controller.MY_URI,factory, EchonetFactory.CONTROLLER);
+		OntClassInfoSetup oci_DR_EventController = createNewOntClassInfo(DREventController.MY_URI,factory, EchonetFactory.DR_CONTROLLER);
 		OntClassInfoSetup oci_ParallelProcessingCombinationTypePowerControl = createNewOntClassInfo(ParallelProcessingCombinationTypePowerControl.MY_URI,factory, EchonetFactory.PARALLEL_PROCESSING_COMBINATION_TYPE_POWER_CONTROL);
 		OntClassInfoSetup oci_Switch = createNewOntClassInfo(Switch.MY_URI,factory, EchonetFactory.SWITCH);
 		
@@ -629,14 +628,6 @@ public final class EchonetOntology extends Ontology {
 				AutomaticHeatingMenu.UserDefine,AutomaticHeatingMenu.NotSpecified
 		});
 		
-		oci_ShapeValue.setResourceComment("");
-		oci_ShapeValue.setResourceLabel("ShapeValue");
-		oci_ShapeValue.addSuperClass(ManagedIndividual.MY_URI);
-		oci_ShapeValue.toEnumeration(new ManagedIndividual[] { 
-				ShapeValue.BoxType,ShapeValue.DesktopType,ShapeValue.TripleGlassType,ShapeValue.QuadrupleGlassType,
-				ShapeValue.ReachIn,ShapeValue.GlassTopType,ShapeValue.MultiStageOpenCeilingBlowoffType,
-				ShapeValue.MultiStageOpenBacksideBlowoffType,ShapeValue.FlatType,ShapeValue.WalkInType,ShapeValue.Other
-		});
 		
 		oci_CharacterCodes.setResourceComment("");
 		oci_CharacterCodes.setResourceLabel("CharacterCodes");
@@ -680,7 +671,7 @@ public final class EchonetOntology extends Ontology {
 		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_NODE_IP_ADDRESS).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_NODE_IP_ADDRESS, TypeMapper.getDatatypeURI(String.class), 1, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_GROUP_CODE).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_GROUP_CODE).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_GROUP_CODE, TypeMapper.getDatatypeURI(String.class), 1, 1));
 		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_CLASS_CODE).setFunctional();
@@ -701,16 +692,16 @@ public final class EchonetOntology extends Ontology {
 		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_IDENTIFICATION_NUMBER).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_IDENTIFICATION_NUMBER, IdentificationNumberValue.MY_URI, 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION, TypeMapper.getDatatypeURI(Integer.class), 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION, TypeMapper.getDatatypeURI(Float.class), 0, 1));
 		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_MANUFACTURER_FAULT_CODE).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_MANUFACTURER_FAULT_CODE, TypeMapper.getDatatypeURI(String.class), 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_CURRENT_LIMIT_SETTING).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_CURRENT_LIMIT_SETTING).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_CURRENT_LIMIT_SETTING, TypeMapper.getDatatypeURI(Integer.class), 0, 1));
 		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_FAULT_STATUS).setFunctional();
@@ -731,7 +722,7 @@ public final class EchonetOntology extends Ontology {
 		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_PRODUCTION_NUMBER).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_PRODUCTION_NUMBER, TypeMapper.getDatatypeURI(String.class), 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_PRODUCTION_DATE).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_PRODUCTION_DATE).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_PRODUCTION_DATE, TypeMapper.getDatatypeURI(String.class), 0, 1));
 		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_POWER_SAVING_OPERATION_SETTING).setFunctional();
@@ -740,16 +731,16 @@ public final class EchonetOntology extends Ontology {
 		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_REMOTE_CONTROL_SETTING).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_REMOTE_CONTROL_SETTING, RemoteControlSettingValue.MY_URI, 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_CURRENT_TIME_SETTING).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_CURRENT_TIME_SETTING).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_CURRENT_TIME_SETTING, TypeMapper.getDatatypeURI(String.class), 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_CURRENT_DATE_SETTING).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_CURRENT_DATE_SETTING).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_CURRENT_DATE_SETTING, TypeMapper.getDatatypeURI(String.class), 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_POWER_LIMIT_SETTING).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_POWER_LIMIT_SETTING).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_POWER_LIMIT_SETTING, TypeMapper.getDatatypeURI(Integer.class), 0, 1));
-		oci_EchonetSuperDevice.addObjectProperty(EchonetSuperDevice.PROPERTY_HAS_CUMULATIVE_OPERATING_TIME).setFunctional();
+		oci_EchonetSuperDevice.addDatatypeProperty(EchonetSuperDevice.PROPERTY_HAS_CUMULATIVE_OPERATING_TIME).setFunctional();
 		oci_EchonetSuperDevice.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EchonetSuperDevice.PROPERTY_HAS_CUMULATIVE_OPERATING_TIME, TypeMapper.getDatatypeURI(String.class), 0, 1));
 		
@@ -810,7 +801,7 @@ public final class EchonetOntology extends Ontology {
 		oci_EarthquakeSensor.addObjectProperty(EarthquakeSensor.PROPERTY_RESETTING_EARTHQUAKE_OCCURENCE_STATUS).setFunctional();
 		oci_EarthquakeSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EarthquakeSensor.PROPERTY_RESETTING_EARTHQUAKE_OCCURENCE_STATUS,EarthquakeSensor.MY_URI,1,1));
-		oci_EarthquakeSensor.addObjectProperty(EarthquakeSensor.PROPERTY_HAS_SI_VALUE).setFunctional();
+		oci_EarthquakeSensor.addDatatypeProperty(EarthquakeSensor.PROPERTY_HAS_SI_VALUE).setFunctional();
 		oci_EarthquakeSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EarthquakeSensor.PROPERTY_HAS_SI_VALUE,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_EarthquakeSensor.addObjectProperty(EarthquakeSensor.PROPERTY_RESETTING_SI_VALUE).setFunctional();
@@ -852,7 +843,7 @@ public final class EchonetOntology extends Ontology {
 		oci_VisitorSensor.addObjectProperty(VisitorSensor.PROPERTY_HAS_VISITOR_DETECTION_STATUS).setFunctional();
 		oci_VisitorSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VisitorSensor.PROPERTY_HAS_VISITOR_DETECTION_STATUS,OccurenceStatusValue.MY_URI,1,1));
-		oci_VisitorSensor.addObjectProperty(VisitorSensor.PROPERTY_HAS_VISITOR_DETECTION_HOLDING_TIME).setFunctional();
+		oci_VisitorSensor.addDatatypeProperty(VisitorSensor.PROPERTY_HAS_VISITOR_DETECTION_HOLDING_TIME).setFunctional();
 		oci_VisitorSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VisitorSensor.PROPERTY_HAS_VISITOR_DETECTION_HOLDING_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_CallSensor.setResourceComment("");
@@ -864,7 +855,7 @@ public final class EchonetOntology extends Ontology {
 		oci_CallSensor.addObjectProperty(CallSensor.PROPERTY_HAS_CALL_STATUS).setFunctional();
 		oci_CallSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CallSensor.PROPERTY_HAS_CALL_STATUS,OccurenceStatusValue.MY_URI,1,1));
-		oci_CallSensor.addObjectProperty(CallSensor.PROPERTY_HAS_CALL_HOLDING_TIME).setFunctional();
+		oci_CallSensor.addDatatypeProperty(CallSensor.PROPERTY_HAS_CALL_HOLDING_TIME).setFunctional();
 		oci_CallSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CallSensor.PROPERTY_HAS_CALL_HOLDING_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));		
 		oci_CondensationSensor.setResourceComment("");
@@ -888,16 +879,16 @@ public final class EchonetOntology extends Ontology {
 		oci_OxygenSensor.setResourceComment("");
 		oci_OxygenSensor.setResourceLabel("OxygenSensor");
 		oci_OxygenSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_OxygenSensor.addObjectProperty(OxygenSensor.PROPERTY_HAS_MEASURED_VALUE_OF_OXYGEN_CONCENTRATION).setFunctional();
+		oci_OxygenSensor.addDatatypeProperty(OxygenSensor.PROPERTY_HAS_MEASURED_VALUE_OF_OXYGEN_CONCENTRATION).setFunctional();
 		oci_OxygenSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(OxygenSensor.PROPERTY_HAS_MEASURED_VALUE_OF_OXYGEN_CONCENTRATION,TypeMapper.getDatatypeURI(Float.class),1,1));	
 		oci_IlluminanceSensor.setResourceComment("");
 		oci_IlluminanceSensor.setResourceLabel("IlluminanceSensor");
 		oci_IlluminanceSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_IlluminanceSensor.addObjectProperty(IlluminanceSensor.PROPERTY_HAS_MEASURED_ILLUMINANCE_VALUE_1).setFunctional();
+		oci_IlluminanceSensor.addDatatypeProperty(IlluminanceSensor.PROPERTY_HAS_MEASURED_ILLUMINANCE_VALUE_1).setFunctional();
 		oci_IlluminanceSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(IlluminanceSensor.PROPERTY_HAS_MEASURED_ILLUMINANCE_VALUE_1,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_IlluminanceSensor.addObjectProperty(IlluminanceSensor.PROPERTY_HAS_MEASURED_ILLUMINANCE_VALUE_2).setFunctional();
+		oci_IlluminanceSensor.addDatatypeProperty(IlluminanceSensor.PROPERTY_HAS_MEASURED_ILLUMINANCE_VALUE_2).setFunctional();
 		oci_IlluminanceSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(IlluminanceSensor.PROPERTY_HAS_MEASURED_ILLUMINANCE_VALUE_2,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_SoundSensor.setResourceComment("");
@@ -909,7 +900,7 @@ public final class EchonetOntology extends Ontology {
 		oci_SoundSensor.addObjectProperty(SoundSensor.PROPERTY_HAS_SOUND_DETECTION_STATUS).setFunctional();
 		oci_SoundSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SoundSensor.PROPERTY_HAS_SOUND_DETECTION_STATUS,OccurenceStatusValue.MY_URI,1,1));
-		oci_SoundSensor.addObjectProperty(SoundSensor.PROPERTY_HAS_SOUND_DETECTION_HOLDING_TIME).setFunctional();
+		oci_SoundSensor.addDatatypeProperty(SoundSensor.PROPERTY_HAS_SOUND_DETECTION_HOLDING_TIME).setFunctional();
 		oci_SoundSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SoundSensor.PROPERTY_HAS_SOUND_DETECTION_HOLDING_TIME,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_MailingSensor.setResourceComment("");
@@ -939,7 +930,7 @@ public final class EchonetOntology extends Ontology {
 		oci_HumiditySensor.setResourceComment("");
 		oci_HumiditySensor.setResourceLabel("HumiditySensor");
 		oci_HumiditySensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_HumiditySensor.addObjectProperty(HumiditySensor.PROPERTY_HAS_MEASURED_RELATIVE_HUMIDITY_VALUE).setFunctional();
+		oci_HumiditySensor.addDatatypeProperty(HumiditySensor.PROPERTY_HAS_MEASURED_RELATIVE_HUMIDITY_VALUE).setFunctional();
 		oci_HumiditySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HumiditySensor.PROPERTY_HAS_MEASURED_RELATIVE_HUMIDITY_VALUE,TypeMapper.getDatatypeURI(Integer.class),1,1));		
 		oci_RainSensor.setResourceComment("");
@@ -954,25 +945,25 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterLevelSensor.setResourceComment("");
 		oci_WaterLevelSensor.setResourceLabel("WaterLevelSensor");
 		oci_WaterLevelSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_WaterLevelSensor.addObjectProperty(WaterLevelSensor.PROPERTY_HAS_WATER_LEVEL_OVER_DETECTION_THRESHOLD_LEVEL).setFunctional();
+		oci_WaterLevelSensor.addDatatypeProperty(WaterLevelSensor.PROPERTY_HAS_WATER_LEVEL_OVER_DETECTION_THRESHOLD_LEVEL).setFunctional();
 		oci_WaterLevelSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterLevelSensor.PROPERTY_HAS_WATER_LEVEL_OVER_DETECTION_THRESHOLD_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterLevelSensor.addObjectProperty(WaterLevelSensor.PROPERTY_HAS_WATER_LEVEL_OVER_DETECTION_STATUS).setFunctional();
 		oci_WaterLevelSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterLevelSensor.PROPERTY_HAS_WATER_LEVEL_OVER_DETECTION_STATUS,OccurenceStatusValue.MY_URI,0,1));
-		oci_WaterLevelSensor.addObjectProperty(WaterLevelSensor.PROPERTY_HAS_MEASURED_WATER_LEVEL_VALUE).setFunctional();
+		oci_WaterLevelSensor.addDatatypeProperty(WaterLevelSensor.PROPERTY_HAS_MEASURED_WATER_LEVEL_VALUE).setFunctional();
 		oci_WaterLevelSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterLevelSensor.PROPERTY_HAS_MEASURED_WATER_LEVEL_VALUE,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_BathWaterLevelSensor.setResourceComment("");
 		oci_BathWaterLevelSensor.setResourceLabel("BathWaterLevelSensor");
 		oci_BathWaterLevelSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_BathWaterLevelSensor.addObjectProperty(BathWaterLevelSensor.PROPERTY_HAS_BATH_WATER_LEVEL_OVER_DETECTION_THRESHOLD_LEVEL).setFunctional();
+		oci_BathWaterLevelSensor.addDatatypeProperty(BathWaterLevelSensor.PROPERTY_HAS_BATH_WATER_LEVEL_OVER_DETECTION_THRESHOLD_LEVEL).setFunctional();
 		oci_BathWaterLevelSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathWaterLevelSensor.PROPERTY_HAS_BATH_WATER_LEVEL_OVER_DETECTION_THRESHOLD_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_BathWaterLevelSensor.addObjectProperty(BathWaterLevelSensor.PROPERTY_HAS_BATH_WATER_LEVEL_OVER_DETECTION_STATUS).setFunctional();
 		oci_BathWaterLevelSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathWaterLevelSensor.PROPERTY_HAS_BATH_WATER_LEVEL_OVER_DETECTION_STATUS,OccurenceStatusValue.MY_URI,0,1));
-		oci_BathWaterLevelSensor.addObjectProperty(BathWaterLevelSensor.PROPERTY_HAS_MEASURED_BATH_WATER_LEVEL_VALUE).setFunctional();
+		oci_BathWaterLevelSensor.addDatatypeProperty(BathWaterLevelSensor.PROPERTY_HAS_MEASURED_BATH_WATER_LEVEL_VALUE).setFunctional();
 		oci_BathWaterLevelSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathWaterLevelSensor.PROPERTY_HAS_MEASURED_BATH_WATER_LEVEL_VALUE,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_BathHeatingStatusSensor.setResourceComment("");
@@ -1026,7 +1017,7 @@ public final class EchonetOntology extends Ontology {
 		oci_CO2Sensor.setResourceComment("");
 		oci_CO2Sensor.setResourceLabel("CO2Sensor");
 		oci_CO2Sensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_CO2Sensor.addObjectProperty(CO2Sensor.PROPERTY_HAS_MEASURED_VALUE_OF_CO2_CONCENTRATION).setFunctional();
+		oci_CO2Sensor.addDatatypeProperty(CO2Sensor.PROPERTY_HAS_MEASURED_VALUE_OF_CO2_CONCENTRATION).setFunctional();
 		oci_CO2Sensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CO2Sensor.PROPERTY_HAS_MEASURED_VALUE_OF_CO2_CONCENTRATION,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_GasSensor.setResourceComment("");
@@ -1038,7 +1029,7 @@ public final class EchonetOntology extends Ontology {
 		oci_GasSensor.addObjectProperty(GasSensor.PROPERTY_HAS_GAS_DETECTION_STATUS).setFunctional();
 		oci_GasSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GasSensor.PROPERTY_HAS_GAS_DETECTION_STATUS,OccurenceStatusValue.MY_URI,0,1));
-		oci_GasSensor.addObjectProperty(GasSensor.PROPERTY_HAS_MEASURED_VALUE_OF_GAS_CONCENTRATION).setFunctional();
+		oci_GasSensor.addDatatypeProperty(GasSensor.PROPERTY_HAS_MEASURED_VALUE_OF_GAS_CONCENTRATION).setFunctional();
 		oci_GasSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GasSensor.PROPERTY_HAS_MEASURED_VALUE_OF_GAS_CONCENTRATION,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_VOCSensor.setResourceComment("");
@@ -1050,22 +1041,22 @@ public final class EchonetOntology extends Ontology {
 		oci_VOCSensor.addObjectProperty(VOCSensor.PROPERTY_HAS_VOC_DETECTION_STATUS).setFunctional();
 		oci_VOCSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VOCSensor.PROPERTY_HAS_VOC_DETECTION_STATUS,OccurenceStatusValue.MY_URI,0,1));
-		oci_VOCSensor.addObjectProperty(VOCSensor.PROPERTY_HAS_MEASURED_VALUE_OF_VOC_CONCENTRATION).setFunctional();
+		oci_VOCSensor.addDatatypeProperty(VOCSensor.PROPERTY_HAS_MEASURED_VALUE_OF_VOC_CONCENTRATION).setFunctional();
 		oci_VOCSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VOCSensor.PROPERTY_HAS_MEASURED_VALUE_OF_VOC_CONCENTRATION,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_PressureSensor.setResourceComment("");
 		oci_PressureSensor.setResourceLabel("PressureSensor");
 		oci_PressureSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_PressureSensor.addObjectProperty(PressureSensor.PROPERTY_HAS_MEASURED_DIFFIRENTIAL_PRESSURE_VALUE).setFunctional();
+		oci_PressureSensor.addDatatypeProperty(PressureSensor.PROPERTY_HAS_MEASURED_DIFFIRENTIAL_PRESSURE_VALUE).setFunctional();
 		oci_PressureSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PressureSensor.PROPERTY_HAS_MEASURED_DIFFIRENTIAL_PRESSURE_VALUE,TypeMapper.getDatatypeURI(Integer.class),1,1));		
 		oci_AirSpeedSensor.setResourceComment("");
 		oci_AirSpeedSensor.setResourceLabel("AirSpeedSensor");
 		oci_AirSpeedSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_AirSpeedSensor.addObjectProperty(AirSpeedSensor.PROPERTY_HAS_MEASURED_VALUE_OF_AIR_SPEED).setFunctional();
+		oci_AirSpeedSensor.addDatatypeProperty(AirSpeedSensor.PROPERTY_HAS_MEASURED_VALUE_OF_AIR_SPEED).setFunctional();
 		oci_AirSpeedSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirSpeedSensor.PROPERTY_HAS_MEASURED_VALUE_OF_AIR_SPEED,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_AirSpeedSensor.addObjectProperty(AirSpeedSensor.PROPERTY_HAS_AIR_FLOW_DIRECTION).setFunctional();
+		oci_AirSpeedSensor.addDatatypeProperty(AirSpeedSensor.PROPERTY_HAS_AIR_FLOW_DIRECTION).setFunctional();
 		oci_AirSpeedSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirSpeedSensor.PROPERTY_HAS_AIR_FLOW_DIRECTION,TypeMapper.getDatatypeURI(Integer.class),0,1));		
 		oci_OdorSensor.setResourceComment("");
@@ -1077,7 +1068,7 @@ public final class EchonetOntology extends Ontology {
 		oci_OdorSensor.addObjectProperty(OdorSensor.PROPERTY_HAS_ODOR_DETECTION_STATUS).setFunctional();
 		oci_OdorSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(OdorSensor.PROPERTY_HAS_ODOR_DETECTION_STATUS,OccurenceStatusValue.MY_URI,0,1));
-		oci_OdorSensor.addObjectProperty(OdorSensor.PROPERTY_HAS_MEASURED_ODOR_VALUE).setFunctional();
+		oci_OdorSensor.addDatatypeProperty(OdorSensor.PROPERTY_HAS_MEASURED_ODOR_VALUE).setFunctional();
 		oci_OdorSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(OdorSensor.PROPERTY_HAS_MEASURED_ODOR_VALUE,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_FlameSensor.setResourceComment("");
@@ -1095,43 +1086,43 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricEnergySensor.setResourceComment("");
 		oci_ElectricEnergySensor.setResourceLabel("ElectricEnergySensor");
 		oci_ElectricEnergySensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_ElectricEnergySensor.addObjectProperty(ElectricEnergySensor.PROPERTY_HAS_CUMULATIVE_AMOUNT_OF_ELECTRIC_ENERGY).setFunctional();
+		oci_ElectricEnergySensor.addDatatypeProperty(ElectricEnergySensor.PROPERTY_HAS_CUMULATIVE_AMOUNT_OF_ELECTRIC_ENERGY).setFunctional();
 		oci_ElectricEnergySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricEnergySensor.PROPERTY_HAS_CUMULATIVE_AMOUNT_OF_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ElectricEnergySensor.addObjectProperty(ElectricEnergySensor.PROPERTY_HAS_MEDIUM_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY).setFunctional();
+		oci_ElectricEnergySensor.addDatatypeProperty(ElectricEnergySensor.PROPERTY_HAS_MEDIUM_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY).setFunctional();
 		oci_ElectricEnergySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricEnergySensor.PROPERTY_HAS_MEDIUM_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricEnergySensor.addObjectProperty(ElectricEnergySensor.PROPERTY_HAS_SMALL_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY).setFunctional();
+		oci_ElectricEnergySensor.addDatatypeProperty(ElectricEnergySensor.PROPERTY_HAS_SMALL_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY).setFunctional();
 		oci_ElectricEnergySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricEnergySensor.PROPERTY_HAS_SMALL_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricEnergySensor.addObjectProperty(ElectricEnergySensor.PROPERTY_HAS_LARGE_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY).setFunctional();
+		oci_ElectricEnergySensor.addDatatypeProperty(ElectricEnergySensor.PROPERTY_HAS_LARGE_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY).setFunctional();
 		oci_ElectricEnergySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricEnergySensor.PROPERTY_HAS_LARGE_CAPACITY_SENSOR_INSTANTANEOUS_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricEnergySensor.addObjectProperty(ElectricEnergySensor.PROPERTY_HAS_CUMULATIVE_AMOUNT_OF_ELECTRIC_ENERGY_MEASUREMENT_LOG).setFunctional();
+		oci_ElectricEnergySensor.addDatatypeProperty(ElectricEnergySensor.PROPERTY_HAS_CUMULATIVE_AMOUNT_OF_ELECTRIC_ENERGY_MEASUREMENT_LOG).setFunctional();
 		oci_ElectricEnergySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricEnergySensor.PROPERTY_HAS_CUMULATIVE_AMOUNT_OF_ELECTRIC_ENERGY_MEASUREMENT_LOG,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricEnergySensor.addObjectProperty(ElectricEnergySensor.PROPERTY_HAS_EFFECTIVE_VOLTAGE_VALUE).setFunctional();
+		oci_ElectricEnergySensor.addDatatypeProperty(ElectricEnergySensor.PROPERTY_HAS_EFFECTIVE_VOLTAGE_VALUE).setFunctional();
 		oci_ElectricEnergySensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricEnergySensor.PROPERTY_HAS_EFFECTIVE_VOLTAGE_VALUE,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_CurrentValueSensor.setResourceComment("");
 		oci_CurrentValueSensor.setResourceLabel("CurrentValueSensor");
 		oci_CurrentValueSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_CurrentValueSensor.addObjectProperty(CurrentValueSensor.PROPERTY_HAS_MEASURED_CURRENT_VALUE_1).setFunctional();
+		oci_CurrentValueSensor.addDatatypeProperty(CurrentValueSensor.PROPERTY_HAS_MEASURED_CURRENT_VALUE_1).setFunctional();
 		oci_CurrentValueSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CurrentValueSensor.PROPERTY_HAS_MEASURED_CURRENT_VALUE_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_CurrentValueSensor.addObjectProperty(CurrentValueSensor.PROPERTY_HAS_RATED_VOLTAGE_TO_BE_MEASURED).setFunctional();
+		oci_CurrentValueSensor.addDatatypeProperty(CurrentValueSensor.PROPERTY_HAS_RATED_VOLTAGE_TO_BE_MEASURED).setFunctional();
 		oci_CurrentValueSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CurrentValueSensor.PROPERTY_HAS_RATED_VOLTAGE_TO_BE_MEASURED,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_CurrentValueSensor.addObjectProperty(CurrentValueSensor.PROPERTY_HAS_MEASURED_CURRENT_VALUE_2).setFunctional();
+		oci_CurrentValueSensor.addDatatypeProperty(CurrentValueSensor.PROPERTY_HAS_MEASURED_CURRENT_VALUE_2).setFunctional();
 		oci_CurrentValueSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CurrentValueSensor.PROPERTY_HAS_MEASURED_CURRENT_VALUE_2,TypeMapper.getDatatypeURI(Float.class),1,1));		
 		oci_WaterFlowRateSensor.setResourceComment("");
 		oci_WaterFlowRateSensor.setResourceLabel("WaterFlowRateSensor");
 		oci_WaterFlowRateSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_WaterFlowRateSensor.addObjectProperty(WaterFlowRateSensor.PROPERTY_HAS_CUMULATIVE_FLOW_RATE).setFunctional();
+		oci_WaterFlowRateSensor.addDatatypeProperty(WaterFlowRateSensor.PROPERTY_HAS_CUMULATIVE_FLOW_RATE).setFunctional();
 		oci_WaterFlowRateSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowRateSensor.PROPERTY_HAS_CUMULATIVE_FLOW_RATE,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterFlowRateSensor.addObjectProperty(WaterFlowRateSensor.PROPERTY_HAS_FLOW_RATE).setFunctional();
+		oci_WaterFlowRateSensor.addDatatypeProperty(WaterFlowRateSensor.PROPERTY_HAS_FLOW_RATE).setFunctional();
 		oci_WaterFlowRateSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowRateSensor.PROPERTY_HAS_FLOW_RATE,TypeMapper.getDatatypeURI(Integer.class),1,1));	
 		oci_MicromotionsSensor.setResourceComment("");
@@ -1143,13 +1134,13 @@ public final class EchonetOntology extends Ontology {
 		oci_MicromotionsSensor.addObjectProperty(MicromotionSensor.PROPERTY_HAS_MICROMOTION_DETECTION_STATUS).setFunctional();
 		oci_MicromotionsSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(MicromotionSensor.PROPERTY_HAS_MICROMOTION_DETECTION_STATUS,OccurenceStatusValue.MY_URI,1,1));
-		oci_MicromotionsSensor.addObjectProperty(MicromotionSensor.PROPERTY_HAS_DETECTION_COUNTER).setFunctional();
+		oci_MicromotionsSensor.addDatatypeProperty(MicromotionSensor.PROPERTY_HAS_DETECTION_COUNTER).setFunctional();
 		oci_MicromotionsSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(MicromotionSensor.PROPERTY_HAS_DETECTION_COUNTER,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_MicromotionsSensor.addObjectProperty(MicromotionSensor.PROPERTY_HAS_MICROMOTION_SAMPLING_COUNT).setFunctional();
+		oci_MicromotionsSensor.addDatatypeProperty(MicromotionSensor.PROPERTY_HAS_MICROMOTION_SAMPLING_COUNT).setFunctional();
 		oci_MicromotionsSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(MicromotionSensor.PROPERTY_HAS_MICROMOTION_SAMPLING_COUNT,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_MicromotionsSensor.addObjectProperty(MicromotionSensor.PROPERTY_HAS_MICROMOTION_SAMPLING_CYCLE).setFunctional();
+		oci_MicromotionsSensor.addDatatypeProperty(MicromotionSensor.PROPERTY_HAS_MICROMOTION_SAMPLING_CYCLE).setFunctional();
 		oci_MicromotionsSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(MicromotionSensor.PROPERTY_HAS_MICROMOTION_SAMPLING_CYCLE,TypeMapper.getDatatypeURI(Integer.class),0,1));	
 		oci_PassageSensor.setResourceComment("");
@@ -1158,7 +1149,7 @@ public final class EchonetOntology extends Ontology {
 		oci_PassageSensor.addObjectProperty(PassageSensor.PROPERTY_HAS_DETECTION_THRESHOLD_LEVEL).setFunctional();
 		oci_PassageSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PassageSensor.PROPERTY_HAS_DETECTION_THRESHOLD_LEVEL,ThresholdLevelValue.MY_URI,0,1));
-		oci_PassageSensor.addObjectProperty(PassageSensor.PROPERTY_HAS_DETECTION_HOLD_TIME).setFunctional();
+		oci_PassageSensor.addDatatypeProperty(PassageSensor.PROPERTY_HAS_DETECTION_HOLD_TIME).setFunctional();
 		oci_PassageSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PassageSensor.PROPERTY_HAS_DETECTION_HOLD_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_PassageSensor.addObjectProperty(PassageSensor.PROPERTY_HAS_DETECTION_DIRECTION).setFunctional();
@@ -1191,7 +1182,7 @@ public final class EchonetOntology extends Ontology {
 		oci_ActivityMountSensor.addObjectProperty(ActivityMountSensor.PROPERTY_HAS_ACTIVITY_MOUNT_LEVEL_1).setFunctional();
 		oci_ActivityMountSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ActivityMountSensor.PROPERTY_HAS_ACTIVITY_MOUNT_LEVEL_1,ThresholdLevelValue.MY_URI,1,1));
-		oci_ActivityMountSensor.addObjectProperty(ActivityMountSensor.PROPERTY_HAS_MAX_NUMBER_OF_HUMAN_BODY_ID).setFunctional();
+		oci_ActivityMountSensor.addDatatypeProperty(ActivityMountSensor.PROPERTY_HAS_MAX_NUMBER_OF_HUMAN_BODY_ID).setFunctional();
 		oci_ActivityMountSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ActivityMountSensor.PROPERTY_HAS_MAX_NUMBER_OF_HUMAN_BODY_ID,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ActivityMountSensor.addObjectProperty(ActivityMountSensor.PROPERTY_HAS_ACTIVITY_MOUNT_LEVEL_2).setFunctional();
@@ -1203,13 +1194,13 @@ public final class EchonetOntology extends Ontology {
 		oci_HumanBodyLocationSensor.setResourceComment("");
 		oci_HumanBodyLocationSensor.setResourceLabel("HumanBodyLocationSensor");
 		oci_HumanBodyLocationSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_HumanBodyLocationSensor.addObjectProperty(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_DETECTION_LOCATION_1).setFunctional();
+		oci_HumanBodyLocationSensor.addDatatypeProperty(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_DETECTION_LOCATION_1).setFunctional();
 		oci_HumanBodyLocationSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_DETECTION_LOCATION_1,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_HumanBodyLocationSensor.addObjectProperty(HumanBodyLocationSensor.PROPERTY_HAS_MAX_NUMBER_OF_HUMAN_BODY_ID).setFunctional();
+		oci_HumanBodyLocationSensor.addDatatypeProperty(HumanBodyLocationSensor.PROPERTY_HAS_MAX_NUMBER_OF_HUMAN_BODY_ID).setFunctional();
 		oci_HumanBodyLocationSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HumanBodyLocationSensor.PROPERTY_HAS_MAX_NUMBER_OF_HUMAN_BODY_ID,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HumanBodyLocationSensor.addObjectProperty(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_DETECTION_LOCATION_2).setFunctional();
+		oci_HumanBodyLocationSensor.addDatatypeProperty(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_DETECTION_LOCATION_2).setFunctional();
 		oci_HumanBodyLocationSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_DETECTION_LOCATION_2,TypeMapper.getDatatypeURI(String.class),1,1));
 		oci_HumanBodyLocationSensor.addDatatypeProperty(HumanBodyLocationSensor.PROPERTY_HAS_HUMAN_BODY_EXISTENCE_INFORMATION).setFunctional();
@@ -1227,7 +1218,7 @@ public final class EchonetOntology extends Ontology {
 		oci_AirPressureSensor.setResourceComment("");
 		oci_AirPressureSensor.setResourceLabel("AirPressureSensor");
 		oci_AirPressureSensor.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_AirPressureSensor.addObjectProperty(AirPressureSensor.PROPERTY_HAS_MEASURED_AIR_PRESSURE).setFunctional();
+		oci_AirPressureSensor.addDatatypeProperty(AirPressureSensor.PROPERTY_HAS_MEASURED_AIR_PRESSURE).setFunctional();
 		oci_AirPressureSensor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirPressureSensor.PROPERTY_HAS_MEASURED_AIR_PRESSURE,TypeMapper.getDatatypeURI(Float.class),1,1));
 		
@@ -1246,43 +1237,43 @@ public final class EchonetOntology extends Ontology {
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_TYPE_OF_OPERATION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_TYPE_OF_OPERATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_CURRENT_SETTING_OF_TEMPERATURE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_CURRENT_SETTING_OF_TEMPERATURE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_CURRENT_SETTING_OF_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_RELATIVE_HUMIDITY_IN_DEHUMIDIFICATION_MODE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_RELATIVE_HUMIDITY_IN_DEHUMIDIFICATION_MODE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_RELATIVE_HUMIDITY_IN_DEHUMIDIFICATION_MODE,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_COOLING_MODE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_COOLING_MODE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_COOLING_MODE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_HEATING_MODE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_HEATING_MODE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_HEATING_MODE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_DEHUMIDICATION_MODE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_DEHUMIDICATION_MODE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_SETTING_TEMPERATURE_IN_DEHUMIDICATION_MODE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_RATED_POWER_CONSUMPTION_IN_MODES).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_RATED_POWER_CONSUMPTION_IN_MODES).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_RATED_POWER_CONSUMPTION_IN_MODES,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_CURRENT_CONSUMPTION).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_CURRENT_CONSUMPTION).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MEASURED_CURRENT_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_CURRENT_TEMPERATER_SETTING_OF_REMOTE_CONTROL).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_CURRENT_TEMPERATER_SETTING_OF_REMOTE_CONTROL).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_CURRENT_TEMPERATER_SETTING_OF_REMOTE_CONTROL,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_COOLED_AIR_TEMPERATURE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_COOLED_AIR_TEMPERATURE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MEASURED_COOLED_AIR_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_OUTDOOR_AIR_TEMPERATURE).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MEASURED_OUTDOOR_AIR_TEMPERATURE).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MEASURED_OUTDOOR_AIR_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_RELATIVE_TEMPERATURE_SETTING).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_RELATIVE_TEMPERATURE_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_RELATIVE_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_AIR_FLOW_RATE_SETTING).setFunctional();
@@ -1318,31 +1309,31 @@ public final class EchonetOntology extends Ontology {
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_DEGREE_OF_HUMIDIFICATION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_DEGREE_OF_HUMIDIFICATION_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_CLEANING_METHOD).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_CLEANING_METHOD).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_CLEANING_METHOD,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_PURIFIER_FUNCTION_SETTING).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_PURIFIER_FUNCTION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_PURIFIER_FUNCTION_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_REFRESHER_FUNCTION_SETTING).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_REFRESHER_FUNCTION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_REFRESHER_FUNCTION_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_REFRESH_METHOD).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_REFRESH_METHOD).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MOUNTED_AIR_REFRESH_METHOD,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_SELF_CLEANING_METHOD).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_SELF_CLEANING_METHOD).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MOUNTED_SELF_CLEANING_METHOD,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_SELF_CLEANING_FUNCTION_SETTING).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_MOUNTED_SELF_CLEANING_FUNCTION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_MOUNTED_SELF_CLEANING_FUNCTION_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_SPECIAL_FUNCTION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_SPECIAL_FUNCTION_SETTING,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_OPERATION_STATUS_OF_COMPONENTS).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_OPERATION_STATUS_OF_COMPONENTS).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_OPERATION_STATUS_OF_COMPONENTS,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_THERMOSTAT_SETTING_OVERRIDE_FUNCTION).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_THERMOSTAT_SETTING_OVERRIDE_FUNCTION).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_THERMOSTAT_SETTING_OVERRIDE_FUNCTION,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_AIR_PURIFICATION_MODE_SETTING).setFunctional();
@@ -1354,19 +1345,19 @@ public final class EchonetOntology extends Ontology {
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));	
 		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HomeAirConditioner.addObjectProperty(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_HomeAirConditioner.addDatatypeProperty(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_HomeAirConditioner.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HomeAirConditioner.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		 
@@ -1383,13 +1374,13 @@ public final class EchonetOntology extends Ontology {
 		oci_AirConditionerVentilationFan.setResourceComment("");
 		oci_AirConditionerVentilationFan.setResourceLabel("AirConditionerVentilationFan");
 		oci_AirConditionerVentilationFan.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_SETTING_ROOM_RELATIVE_HUMIDITY).setFunctional();
+		oci_AirConditionerVentilationFan.addDatatypeProperty(AirConditionerVentilationFan.PROPERTY_HAS_SETTING_ROOM_RELATIVE_HUMIDITY).setFunctional();
 		oci_AirConditionerVentilationFan.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirConditionerVentilationFan.PROPERTY_HAS_SETTING_ROOM_RELATIVE_HUMIDITY,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_VENTILATION_AUTO_SETTING).setFunctional();
 		oci_AirConditionerVentilationFan.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirConditionerVentilationFan.PROPERTY_HAS_VENTILATION_AUTO_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY).setFunctional();
+		oci_AirConditionerVentilationFan.addDatatypeProperty(AirConditionerVentilationFan.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY).setFunctional();
 		oci_AirConditionerVentilationFan.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirConditionerVentilationFan.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_VALUE_OF_VENTILATION_AIR_FLOW_RATE).setFunctional();
@@ -1398,7 +1389,7 @@ public final class EchonetOntology extends Ontology {
 		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_HEAT_EXCHANGER_OPERATION_SETTING).setFunctional();
 		oci_AirConditionerVentilationFan.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirConditionerVentilationFan.PROPERTY_HAS_HEAT_EXCHANGER_OPERATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_MEASURED_VALUE_OF_CO2_CONCENTRATION).setFunctional();
+		oci_AirConditionerVentilationFan.addDatatypeProperty(AirConditionerVentilationFan.PROPERTY_HAS_MEASURED_VALUE_OF_CO2_CONCENTRATION).setFunctional();
 		oci_AirConditionerVentilationFan.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(AirConditionerVentilationFan.PROPERTY_HAS_MEASURED_VALUE_OF_CO2_CONCENTRATION,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_AirConditionerVentilationFan.addObjectProperty(AirConditionerVentilationFan.PROPERTY_HAS_SMOKE_DETECTION_STATUS).setFunctional();
@@ -1436,13 +1427,13 @@ public final class EchonetOntology extends Ontology {
 		oci_Humidifier.addObjectProperty(Humidifier.PROPERTY_HAS_HUMIDIFYING_LEVEL_SETTING).setFunctional();
 		oci_Humidifier.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Humidifier.PROPERTY_HAS_HUMIDIFYING_LEVEL_SETTING,HumidifyingLevelValue.MY_URI,1,1));
-		oci_Humidifier.addObjectProperty(Humidifier.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY).setFunctional();
+		oci_Humidifier.addDatatypeProperty(Humidifier.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY).setFunctional();
 		oci_Humidifier.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Humidifier.PROPERTY_HAS_MEASURED_ROOM_RELATIVE_HUMIDITY,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_Humidifier.addObjectProperty(Humidifier.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_Humidifier.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Humidifier.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_Humidifier.addObjectProperty(Humidifier.PROPERTY_HAS_OFF_TIMER_RESERVATION_RELATIVE_TIME_VALUE).setFunctional();
+		oci_Humidifier.addDatatypeProperty(Humidifier.PROPERTY_HAS_OFF_TIMER_RESERVATION_RELATIVE_TIME_VALUE).setFunctional();
 		oci_Humidifier.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Humidifier.PROPERTY_HAS_OFF_TIMER_RESERVATION_RELATIVE_TIME_VALUE,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_Humidifier.addObjectProperty(Humidifier.PROPERTY_HAS_ION_EMISSION_SETTING).setFunctional();
@@ -1464,13 +1455,13 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_AUTOMATIC_TEMPERATURE_CONTROL_SETTING).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_AUTOMATIC_TEMPERATURE_CONTROL_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_TEMPERATURE_SETTING).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_TEMPERATURE_SETTING).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_REMOTELY_SET_TEMPERATURE).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_REMOTELY_SET_TEMPERATURE).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_REMOTELY_SET_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_AIR_FLOW_RATE_SETTING).setFunctional();
@@ -1479,19 +1470,19 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ElectricHeater.addObjectProperty(ElectricHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_ElectricHeater.addDatatypeProperty(ElectricHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_ElectricHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		
@@ -1499,10 +1490,10 @@ public final class EchonetOntology extends Ontology {
 		oci_FanHeater.setResourceComment("");
 		oci_FanHeater.setResourceLabel("FanHeater");
 		oci_FanHeater.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_TEMPERATURE_SETTING).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_TEMPERATURE_SETTING).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_MEASURED_ROOM_TEMPERATURE).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_AUTOMATIC_TEMPERATURE_CONTROL_SETTING).setFunctional();
@@ -1511,25 +1502,25 @@ public final class EchonetOntology extends Ontology {
 		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_EXTENSIONAL_OPERATION_SETTING).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_EXTENSIONAL_OPERATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_EXTENSIONAL_OPERATION_TIMER_SETTING_TIME).setFunctional();
+		oci_FanHeater.addDatatypeProperty(FanHeater.PROPERTY_HAS_EXTENSIONAL_OPERATION_TIMER_SETTING_TIME).setFunctional();
 		oci_FanHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FanHeater.PROPERTY_HAS_EXTENSIONAL_OPERATION_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_FanHeater.addObjectProperty(FanHeater.PROPERTY_HAS_ION_EMISSION_SETTING).setFunctional();
@@ -1545,16 +1536,16 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricStorageHeater.setResourceComment("");
 		oci_ElectricStorageHeater.setResourceLabel("ElectricStorageHeater");
 		oci_ElectricStorageHeater.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_TEMPERATURE_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_TEMPERATURE_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_MEASURED_INDOOR_TEMPERATURE).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_MEASURED_INDOOR_TEMPERATURE).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_MEASURED_INDOOR_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_MEASURED_OUTDOOR_TEMPERATURE).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_MEASURED_OUTDOOR_TEMPERATURE).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_MEASURED_OUTDOOR_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_AIR_FLOW_RATE_SETTING).setFunctional();
@@ -1566,10 +1557,10 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_HEAT_STORAGE_OPERATION_STATUS).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_HEAT_STORAGE_OPERATION_STATUS,OperationStatusValue.MY_URI,1,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_HEAT_STORAGE_TEMPERATURE_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_HEAT_STORAGE_TEMPERATURE_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_HEAT_STORAGE_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_MEASURED_STORED_HEAT_TEMPERATURE).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_MEASURED_STORED_HEAT_TEMPERATURE).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_MEASURED_STORED_HEAT_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_DAYTIME_HEAT_STORAGE_SETTING).setFunctional();
@@ -1578,10 +1569,10 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_DAYTIME_HEAT_STORAGE_ABILITY).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_DAYTIME_HEAT_STORAGE_ABILITY,OperationStatusValue.MY_URI,0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_MIDNIGHT_POWER_DURATION_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_MIDNIGHT_POWER_DURATION_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_MIDNIGHT_POWER_DURATION_SETTING,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_MIDNIGHT_POWER_START_TIME_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_MIDNIGHT_POWER_START_TIME_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_MIDNIGHT_POWER_START_TIME_SETTING,TypeMapper.getDatatypeURI(Integer.class),1,1));
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_RADIATION_METHOD).setFunctional();
@@ -1593,19 +1584,19 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_ON_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_ON_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_ON_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_OFF_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_OFF_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_1_OFF_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_ON_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_ON_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_ON_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ElectricStorageHeater.addObjectProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_OFF_SETTING).setFunctional();
+		oci_ElectricStorageHeater.addDatatypeProperty(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_OFF_SETTING).setFunctional();
 		oci_ElectricStorageHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricStorageHeater.PROPERTY_HAS_FAN_TIMER_2_OFF_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		
@@ -1615,16 +1606,16 @@ public final class EchonetOntology extends Ontology {
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_OPERATION_MODE_SETTING).setFunctional();
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_OPERATION_MODE_SETTING,OperationModeSettingValue.MY_URI,1,1));
-		oci_PackageTypeCommercialAirconditionerIndoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_MEASURED_INDOOR_UNIT_TEMPERATURE).setFunctional();
+		oci_PackageTypeCommercialAirconditionerIndoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_MEASURED_INDOOR_UNIT_TEMPERATURE).setFunctional();
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_MEASURED_INDOOR_UNIT_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_THERMOSTAT_STATE).setFunctional();
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_THERMOSTAT_STATE,OperationStatusValue.MY_URI,1,1));
-		oci_PackageTypeCommercialAirconditionerIndoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_CURRENT_FUNCTION).setFunctional();
+		oci_PackageTypeCommercialAirconditionerIndoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_CURRENT_FUNCTION).setFunctional();
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_CURRENT_FUNCTION,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_PackageTypeCommercialAirconditionerIndoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_GROUP_INFOMRATION).setFunctional();
+		oci_PackageTypeCommercialAirconditionerIndoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_GROUP_INFOMRATION).setFunctional();
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_GROUP_INFOMRATION,TypeMapper.getDatatypeURI(String.class),1,1));
 		oci_PackageTypeCommercialAirconditionerIndoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerIndoorUnit.PROPERTY_HAS_POWER_CONSUMPTION_RANGE_INDOOR_UNIT).setFunctional();
@@ -1634,13 +1625,13 @@ public final class EchonetOntology extends Ontology {
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.setResourceComment("");
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.setResourceLabel("PackageTypeCommercialAirconditionerOutdoorUnit");
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_UNIT_TEMPERATURE).setFunctional();
+		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_UNIT_TEMPERATURE).setFunctional();
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_UNIT_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_OUTDOOR_UNIT_RATED_POWER_CONSUMPTION).setFunctional();
+		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_OUTDOOR_UNIT_RATED_POWER_CONSUMPTION).setFunctional();
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_OUTDOOR_UNIT_RATED_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_UNIT_POWER_CONSUMPTION).setFunctional();
+		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_UNIT_POWER_CONSUMPTION).setFunctional();
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_UNIT_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_SPECIAL_STATE).setFunctional();
@@ -1649,13 +1640,13 @@ public final class EchonetOntology extends Ontology {
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_GROUP_INFOMRATION).setFunctional();
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_GROUP_INFOMRATION,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_POSSIBLE_POWER_SAVING_FOR_OUTDOOR_UNIT).setFunctional();
+		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_POSSIBLE_POWER_SAVING_FOR_OUTDOOR_UNIT).setFunctional();
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_POSSIBLE_POWER_SAVING_FOR_OUTDOOR_UNIT,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_SETTING_RESTRICTING_POWER_CONSUMPTION_FOR_OUTDOOR_UNIT).setFunctional();
+		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_SETTING_RESTRICTING_POWER_CONSUMPTION_FOR_OUTDOOR_UNIT).setFunctional();
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_SETTING_RESTRICTING_POWER_CONSUMPTION_FOR_OUTDOOR_UNIT,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addObjectProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MINUMUM_POWER_CONSUMPTION_FOR_RESTRICTED_OUTDOOR_UNIT).setFunctional();	
+		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addDatatypeProperty(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MINUMUM_POWER_CONSUMPTION_FOR_RESTRICTED_OUTDOOR_UNIT).setFunctional();	
 		oci_PackageTypeCommercialAirconditionerOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PackageTypeCommercialAirConditionerOutdoorUnit.PROPERTY_HAS_MINUMUM_POWER_CONSUMPTION_FOR_RESTRICTED_OUTDOOR_UNIT,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		
@@ -1681,7 +1672,7 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_CLOSING_SPEED_SETTING).setFunctional();
 		oci_ElectricBlind.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricBlind.PROPERTY_HAS_CLOSING_SPEED_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_OPERATION_TIME).setFunctional();
+		oci_ElectricBlind.addDatatypeProperty(ElectricBlind.PROPERTY_HAS_OPERATION_TIME).setFunctional();
 		oci_ElectricBlind.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricBlind.PROPERTY_HAS_OPERATION_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_AUTOMATIC_OPERATION_SETTING).setFunctional();
@@ -1690,10 +1681,10 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_OPEN_CLOSE_SETTING).setFunctional();
 		oci_ElectricBlind.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricBlind.PROPERTY_HAS_OPEN_CLOSE_SETTING,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
+		oci_ElectricBlind.addDatatypeProperty(ElectricBlind.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
 		oci_ElectricBlind.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricBlind.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_SHADE_ANGLE_SETTING).setFunctional();
+		oci_ElectricBlind.addDatatypeProperty(ElectricBlind.PROPERTY_HAS_SHADE_ANGLE_SETTING).setFunctional();
 		oci_ElectricBlind.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricBlind.PROPERTY_HAS_SHADE_ANGLE_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricBlind.addObjectProperty(ElectricBlind.PROPERTY_HAS_OPEN_CLOSE_SPEED).setFunctional();
@@ -1733,16 +1724,16 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricShuttler.addObjectProperty(ElectricShutter.PROPERTY_HAS_CLOSING_SPEED_SETTING).setFunctional();
 		oci_ElectricShuttler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricShutter.PROPERTY_HAS_CLOSING_SPEED_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_ElectricShuttler.addObjectProperty(ElectricShutter.PROPERTY_HAS_OPERATION_TIME).setFunctional();
+		oci_ElectricShuttler.addDatatypeProperty(ElectricShutter.PROPERTY_HAS_OPERATION_TIME).setFunctional();
 		oci_ElectricShuttler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricShutter.PROPERTY_HAS_OPERATION_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricShuttler.addObjectProperty(ElectricShutter.PROPERTY_HAS_OPEN_CLOSE_SETTING).setFunctional();
 		oci_ElectricShuttler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricShutter.PROPERTY_HAS_OPEN_CLOSE_SETTING,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_ElectricShuttler.addObjectProperty(ElectricShutter.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
+		oci_ElectricShuttler.addDatatypeProperty(ElectricShutter.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
 		oci_ElectricShuttler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricShutter.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_ElectricShuttler.addObjectProperty(ElectricShutter.PROPERTY_HAS_BLIND_ANGLE_SETTING).setFunctional();
+		oci_ElectricShuttler.addDatatypeProperty(ElectricShutter.PROPERTY_HAS_BLIND_ANGLE_SETTING).setFunctional();
 		oci_ElectricShuttler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricShutter.PROPERTY_HAS_BLIND_ANGLE_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricShuttler.addObjectProperty(ElectricShutter.PROPERTY_HAS_OPEN_CLOSE_SPEED).setFunctional();
@@ -1786,16 +1777,16 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricRainSlidingShutter.addObjectProperty(ElectricRainSlidingShutter.PROPERTY_HAS_CLOSING_SPEED_SETTING).setFunctional();
 		oci_ElectricRainSlidingShutter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricRainSlidingShutter.PROPERTY_HAS_CLOSING_SPEED_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_ElectricRainSlidingShutter.addObjectProperty(ElectricRainSlidingShutter.PROPERTY_HAS_OPERATION_TIME).setFunctional();
+		oci_ElectricRainSlidingShutter.addDatatypeProperty(ElectricRainSlidingShutter.PROPERTY_HAS_OPERATION_TIME).setFunctional();
 		oci_ElectricRainSlidingShutter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricRainSlidingShutter.PROPERTY_HAS_OPERATION_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricRainSlidingShutter.addObjectProperty(ElectricRainSlidingShutter.PROPERTY_HAS_OPEN_CLOSE_SETTING).setFunctional();
 		oci_ElectricRainSlidingShutter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricRainSlidingShutter.PROPERTY_HAS_OPEN_CLOSE_SETTING,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_ElectricRainSlidingShutter.addObjectProperty(ElectricRainSlidingShutter.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
+		oci_ElectricRainSlidingShutter.addDatatypeProperty(ElectricRainSlidingShutter.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
 		oci_ElectricRainSlidingShutter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricRainSlidingShutter.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_ElectricRainSlidingShutter.addObjectProperty(ElectricRainSlidingShutter.PROPERTY_HAS_BLIND_ANGLE_SETTING).setFunctional();
+		oci_ElectricRainSlidingShutter.addDatatypeProperty(ElectricRainSlidingShutter.PROPERTY_HAS_BLIND_ANGLE_SETTING).setFunctional();
 		oci_ElectricRainSlidingShutter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricRainSlidingShutter.PROPERTY_HAS_BLIND_ANGLE_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricRainSlidingShutter.addObjectProperty(ElectricRainSlidingShutter.PROPERTY_HAS_OPENING_CLOSING_SPEED_SETTING).setFunctional();
@@ -1835,13 +1826,13 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricGate.addObjectProperty(ElectricGate.PROPERTY_HAS_CLOSING_SPEED_SETTING).setFunctional();
 		oci_ElectricGate.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricGate.PROPERTY_HAS_CLOSING_SPEED_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_ElectricGate.addObjectProperty(ElectricGate.PROPERTY_HAS_OPERATION_TIME_SETTING_VALUE).setFunctional();
+		oci_ElectricGate.addDatatypeProperty(ElectricGate.PROPERTY_HAS_OPERATION_TIME_SETTING_VALUE).setFunctional();
 		oci_ElectricGate.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricGate.PROPERTY_HAS_OPERATION_TIME_SETTING_VALUE,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricGate.addObjectProperty(ElectricGate.PROPERTY_HAS_OPENING_CLOSING_OPERATION_SETTING).setFunctional();
 		oci_ElectricGate.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricGate.PROPERTY_HAS_OPENING_CLOSING_OPERATION_SETTING,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_ElectricGate.addObjectProperty(ElectricGate.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
+		oci_ElectricGate.addDatatypeProperty(ElectricGate.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
 		oci_ElectricGate.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricGate.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricGate.addObjectProperty(ElectricGate.PROPERTY_HAS_OPENING_CLOSING_SPEED_SETTING).setFunctional();
@@ -1887,7 +1878,7 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricWindow.addObjectProperty(ElectricWindow.PROPERTY_HAS_CLOSING_SPEED_SETTING).setFunctional();
 		oci_ElectricWindow.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricWindow.PROPERTY_HAS_CLOSING_SPEED_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_ElectricWindow.addObjectProperty(ElectricWindow.PROPERTY_HAS_OPERATION_TIME).setFunctional();
+		oci_ElectricWindow.addDatatypeProperty(ElectricWindow.PROPERTY_HAS_OPERATION_TIME).setFunctional();
 		oci_ElectricWindow.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricWindow.PROPERTY_HAS_OPERATION_TIME,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricWindow.addObjectProperty(ElectricWindow.PROPERTY_HAS_AUTOMATIC_OPERATION_SETTING).setFunctional();
@@ -1896,7 +1887,7 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricWindow.addObjectProperty(ElectricWindow.PROPERTY_HAS_OPEN_CLOSE_SETTING).setFunctional();
 		oci_ElectricWindow.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricWindow.PROPERTY_HAS_OPEN_CLOSE_SETTING,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_ElectricWindow.addObjectProperty(ElectricWindow.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
+		oci_ElectricWindow.addDatatypeProperty(ElectricWindow.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL).setFunctional();
 		oci_ElectricWindow.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricWindow.PROPERTY_HAS_DEGREE_OF_OPENING_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_ElectricWindow.addObjectProperty(ElectricWindow.PROPERTY_HAS_OPENING_CLOSING_SPEED_SETTING).setFunctional();
@@ -1933,16 +1924,16 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricSlidingDoor.addObjectProperty(ElectricSlidingDoor.PROPERTY_HAS_CLOSING_SPEED_SETTING).setFunctional();
 		oci_ElectricSlidingDoor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricSlidingDoor.PROPERTY_HAS_CLOSING_SPEED_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_ElectricSlidingDoor.addObjectProperty(ElectricSlidingDoor.PROPERTY_HAS_OPERATION_TIME_SETTING_VALUE).setFunctional();
+		oci_ElectricSlidingDoor.addDatatypeProperty(ElectricSlidingDoor.PROPERTY_HAS_OPERATION_TIME_SETTING_VALUE).setFunctional();
 		oci_ElectricSlidingDoor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricSlidingDoor.PROPERTY_HAS_OPERATION_TIME_SETTING_VALUE,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_ElectricSlidingDoor.addObjectProperty(ElectricSlidingDoor.PROPERTY_HAS_OPENING_TIME_SETTING).setFunctional();
+		oci_ElectricSlidingDoor.addDatatypeProperty(ElectricSlidingDoor.PROPERTY_HAS_OPENING_TIME_SETTING).setFunctional();
 		oci_ElectricSlidingDoor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricSlidingDoor.PROPERTY_HAS_OPENING_TIME_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ElectricSlidingDoor.addObjectProperty(ElectricSlidingDoor.PROPERTY_HAS_OPENING_CLOSING_OPERATION_SETTING).setFunctional();
 		oci_ElectricSlidingDoor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricSlidingDoor.PROPERTY_HAS_OPENING_CLOSING_OPERATION_SETTING,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_ElectricSlidingDoor.addObjectProperty(ElectricSlidingDoor.PROPERTY_HAS_DEGREE_OF_OPENING_SETTING).setFunctional();
+		oci_ElectricSlidingDoor.addDatatypeProperty(ElectricSlidingDoor.PROPERTY_HAS_DEGREE_OF_OPENING_SETTING).setFunctional();
 		oci_ElectricSlidingDoor.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricSlidingDoor.PROPERTY_HAS_DEGREE_OF_OPENING_SETTING,TypeMapper.getDatatypeURI(Integer.class),1,1));
 		oci_ElectricSlidingDoor.addObjectProperty(ElectricSlidingDoor.PROPERTY_HAS_OPENING_CLOSING_SPEED_SETTING).setFunctional();
@@ -1976,13 +1967,13 @@ public final class EchonetOntology extends Ontology {
 		oci_GardenSprinkler.addObjectProperty(GardenSprinkler.PROPERTY_HAS_NUMBER_OF_SPRINKLES_SETTING).setFunctional();
 		oci_GardenSprinkler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GardenSprinkler.PROPERTY_HAS_NUMBER_OF_SPRINKLES_SETTING,NumberOfSprinkleSettingValue.MY_URI,0,1));
-		oci_GardenSprinkler.addObjectProperty(GardenSprinkler.PROPERTY_HAS_SPRINKLE_TIME_SETTING_1).setFunctional();
+		oci_GardenSprinkler.addDatatypeProperty(GardenSprinkler.PROPERTY_HAS_SPRINKLE_TIME_SETTING_1).setFunctional();
 		oci_GardenSprinkler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GardenSprinkler.PROPERTY_HAS_SPRINKLE_TIME_SETTING_1,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_GardenSprinkler.addObjectProperty(GardenSprinkler.PROPERTY_HAS_SPRINKLE_TIME_SETTING_2).setFunctional();
+		oci_GardenSprinkler.addDatatypeProperty(GardenSprinkler.PROPERTY_HAS_SPRINKLE_TIME_SETTING_2).setFunctional();
 		oci_GardenSprinkler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GardenSprinkler.PROPERTY_HAS_SPRINKLE_TIME_SETTING_2,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_GardenSprinkler.addObjectProperty(GardenSprinkler.PROPERTY_HAS_SPRINKLE_DURATION_SETTING).setFunctional();
+		oci_GardenSprinkler.addDatatypeProperty(GardenSprinkler.PROPERTY_HAS_SPRINKLE_DURATION_SETTING).setFunctional();
 		oci_GardenSprinkler.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GardenSprinkler.PROPERTY_HAS_SPRINKLE_DURATION_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 	
@@ -1998,13 +1989,13 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_WATER_HEATER_STATUS).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_WATER_HEATER_STATUS,OperationStatusValue.MY_URI,1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_WATER_HEATING_TEMPERATURE_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_WATER_HEATING_TEMPERATURE_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_WATER_HEATING_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_MANUAL_WATER_HEATING_STOP_DAY_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_MANUAL_WATER_HEATING_STOP_DAY_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_MANUAL_WATER_HEATING_STOP_DAY_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_RELATIVE_TIME_FOR_MANUAL_WATER_HEATING_OFF_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_RELATIVE_TIME_FOR_MANUAL_WATER_HEATING_OFF_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_RELATIVE_TIME_FOR_MANUAL_WATER_HEATING_OFF_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_TANK_OPERATION_MODE_SETTING).setFunctional();
@@ -2013,7 +2004,7 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_DAYTIME_REHEATING_PERMISSION_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_DAYTIME_REHEATING_PERMISSION_SETTING,OperationStatusValue.MY_URI,1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_MEASURED_WATER_TEMPERATURE_OF_WATER_HEATER).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_MEASURED_WATER_TEMPERATURE_OF_WATER_HEATER).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_MEASURED_WATER_TEMPERATURE_OF_WATER_HEATER,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_ALARM_STATUS).setFunctional();
@@ -2022,19 +2013,19 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_HOT_WATER_SUPPLY_STATUS).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_HOT_WATER_SUPPLY_STATUS,OperationStatusValue.MY_URI,1,1));	
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_RELATIVE_TIME_SETTING_FOR_KEEPING_BATH_TEMPERATURE).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_RELATIVE_TIME_SETTING_FOR_KEEPING_BATH_TEMPERATURE).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_RELATIVE_TIME_SETTING_FOR_KEEPING_BATH_TEMPERATURE,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_TEMPERATURE_OF_SUPPLIED_WATER_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_TEMPERATURE_OF_SUPPLIED_WATER_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_TEMPERATURE_OF_SUPPLIED_WATER_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_MEASURED_AMOUNT_OF_REMAINING_WATER_IN_TANK).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_MEASURED_AMOUNT_OF_REMAINING_WATER_IN_TANK).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_MEASURED_AMOUNT_OF_REMAINING_WATER_IN_TANK,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_TANK_CAPACITY).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_TANK_CAPACITY).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_TANK_CAPACITY,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_AUTOMATIC_BATH_WATER_HEATING_MODE_SETTING).setFunctional();
@@ -2052,73 +2043,73 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_MANUAL_LUKEWARM_WATER_TEMPERATURE_LOWERING_FUNCTION_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_MANUAL_LUKEWARM_WATER_TEMPERATURE_LOWERING_FUNCTION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_1).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_1).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_1,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_2).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_2,ThresholdLevelValue.MY_URI,0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_3).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_3).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_3,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4_MAXIMUM_SETABLE_LEVEL).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4_MAXIMUM_SETABLE_LEVEL).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4_MAXIMUM_SETABLE_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_ON_TIMER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_VOLUME_SETTING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_VOLUME_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_VOLUME_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_MUTE_SETTING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_MUTE_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_REMAINING_HOT_WATER_VOLUME).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_REMAINING_HOT_WATER_VOLUME).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_REMAINING_HOT_WATER_VOLUME,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_SURPLUS_ELECTRIC_ENERGY_POWER_PREDICTION_VALUE).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_SURPLUS_ELECTRIC_ENERGY_POWER_PREDICTION_VALUE).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_SURPLUS_ELECTRIC_ENERGY_POWER_PREDICTION_VALUE,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_WINTER).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_WINTER).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_WINTER,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_BETWEEN_SEASON).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_BETWEEN_SEASON).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_BETWEEN_SEASON,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_SUMMER).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_SUMMER).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION_OF_HP_UNIT_IN_SUMMER,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_PARTICIPATION_IN_ENERGY_SHIFT).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_PARTICIPATION_IN_ENERGY_SHIFT,OperationStatusValue.MY_URI,1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_STANDARD_TIME_TO_START_HEATING).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_STANDARD_TIME_TO_START_HEATING).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_STANDARD_TIME_TO_START_HEATING,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_NUMBER_OF_ENERGY_SHIFTS).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_NUMBER_OF_ENERGY_SHIFTS).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_NUMBER_OF_ENERGY_SHIFTS,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_DATETIME_HEATING_SHIFT_TIME_1).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_DATETIME_HEATING_SHIFT_TIME_1).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_DATETIME_HEATING_SHIFT_TIME_1,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_EXPECTED_ENERYGY_OF_DATETIME_HEATING_SHIFT_TIME_1).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_EXPECTED_ENERYGY_OF_DATETIME_HEATING_SHIFT_TIME_1).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_EXPECTED_ENERYGY_OF_DATETIME_HEATING_SHIFT_TIME_1,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_ENERGY_CONSUMPTION_PER_HOUR_1).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_ENERGY_CONSUMPTION_PER_HOUR_1).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_ENERGY_CONSUMPTION_PER_HOUR_1,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_DATETIME_HEATING_SHIFT_TIME_2).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_DATETIME_HEATING_SHIFT_TIME_2).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_DATETIME_HEATING_SHIFT_TIME_2,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_EXPECTED_ENERYGY_OF_DATETIME_HEATING_SHIFT_TIME_2).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_EXPECTED_ENERYGY_OF_DATETIME_HEATING_SHIFT_TIME_2).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_EXPECTED_ENERYGY_OF_DATETIME_HEATING_SHIFT_TIME_2,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_WaterHeater.addObjectProperty(WaterHeater.PROPERTY_HAS_ENERGY_CONSUMPTION_PER_HOUR_2).setFunctional();
+		oci_WaterHeater.addDatatypeProperty(WaterHeater.PROPERTY_HAS_ENERGY_CONSUMPTION_PER_HOUR_2).setFunctional();
 		oci_WaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterHeater.PROPERTY_HAS_ENERGY_CONSUMPTION_PER_HOUR_2,TypeMapper.getDatatypeURI(Integer.class),1,1));
 		
@@ -2135,10 +2126,10 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_SETTING).setFunctional();
 		oci_ElectricToiletSeat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_SETTING,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_START_TIME).setFunctional();
+		oci_ElectricToiletSeat.addDatatypeProperty(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_START_TIME).setFunctional();
 		oci_ElectricToiletSeat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_START_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_DURATION).setFunctional();
+		oci_ElectricToiletSeat.addDatatypeProperty(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_DURATION).setFunctional();
 		oci_ElectricToiletSeat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricToiletSeat.PROPERTY_HAS_TOILET_SEAT_TEMPORAL_HALT_DURATION,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_TEMPERATURE_LEVEL_SETTING).setFunctional();
@@ -2150,10 +2141,10 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_STATUS).setFunctional();
 		oci_ElectricToiletSeat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_STATUS,OperationStatusValue.MY_URI,0,1));
-		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_START_TIME).setFunctional();
+		oci_ElectricToiletSeat.addDatatypeProperty(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_START_TIME).setFunctional();
 		oci_ElectricToiletSeat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_START_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_DURATION).setFunctional();
+		oci_ElectricToiletSeat.addDatatypeProperty(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_DURATION).setFunctional();
 		oci_ElectricToiletSeat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricToiletSeat.PROPERTY_HAS_ROOM_HEATING_DURATION,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ElectricToiletSeat.addObjectProperty(ElectricToiletSeat.PROPERTY_HAS_SPECIAL_OPERATION_MODE_SETTING).setFunctional();
@@ -2200,19 +2191,19 @@ public final class EchonetOntology extends Ontology {
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_HEATING_STATUS).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_HEATING_STATUS,OperationStatusValue.MY_URI,1,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_TEMPERATURE_SETTING).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_TEMPERATURE_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_WARMER_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_HOT_WATER_WARMER_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_DURATION_OF_AUTOMATIC_OPERATION_SETTING).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_DURATION_OF_AUTOMATIC_OPERATION_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_DURATION_OF_AUTOMATIC_OPERATION_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_REMAINING_AUTOMATIC_OPERATION_TIME).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_REMAINING_AUTOMATIC_OPERATION_TIME).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_REMAINING_AUTOMATIC_OPERATION_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_TEMPERATURE_SETTING).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_TEMPERATURE_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_HEATER_STATUS).setFunctional();
@@ -2230,19 +2221,19 @@ public final class EchonetOntology extends Ontology {
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_LOWERING_OPERATION_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_LOWERING_OPERATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_1).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_1).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_1,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_2).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_2,ThresholdLevelValue.MY_URI,0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_3).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_3).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_3,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4_MAXIMUM_SETTABLE_LEVEL).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4_MAXIMUM_SETTABLE_LEVEL).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_BATH_WATER_VOLUME_SETTING_4_MAXIMUM_SETTABLE_LEVEL,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATHROOM_PRIORITY_SETTING).setFunctional();
@@ -2257,7 +2248,7 @@ public final class EchonetOntology extends Ontology {
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_WATER_WARMER_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_WATER_WARMER_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_WATER_WARMER_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_WATER_WARMER_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_WATER_WARMER_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_BATH_OPERATION_STATUS_MONITOR).setFunctional();
@@ -2266,13 +2257,13 @@ public final class EchonetOntology extends Ontology {
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_VOLUME_SETTING).setFunctional();
+		oci_InstantaneousWaterHeater.addDatatypeProperty(InstantaneousWaterHeater.PROPERTY_HAS_VOLUME_SETTING).setFunctional();
 		oci_InstantaneousWaterHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(InstantaneousWaterHeater.PROPERTY_HAS_VOLUME_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_InstantaneousWaterHeater.addObjectProperty(InstantaneousWaterHeater.PROPERTY_HAS_MUTE_SETTING).setFunctional();
@@ -2301,10 +2292,10 @@ public final class EchonetOntology extends Ontology {
 		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_BATHROOM_AIR_CICURLATOR_OPERATION_SETTING).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_BATHROOM_AIR_CICURLATOR_OPERATION_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_MEASURED_BATHROOM_RELATIVE_HUMIDITY).setFunctional();
+		oci_BathRoomHeaterDryer.addDatatypeProperty(BathRoomHeaterDryer.PROPERTY_HAS_MEASURED_BATHROOM_RELATIVE_HUMIDITY).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_MEASURED_BATHROOM_RELATIVE_HUMIDITY,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_MEASURED_BATHROOM_TEMPERATURE).setFunctional();
+		oci_BathRoomHeaterDryer.addDatatypeProperty(BathRoomHeaterDryer.PROPERTY_HAS_MEASURED_BATHROOM_TEMPERATURE).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_MEASURED_BATHROOM_TEMPERATURE,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_VENTILATION_AIR_FLOW_RATE_SETTING).setFunctional();
@@ -2322,19 +2313,19 @@ public final class EchonetOntology extends Ontology {
 		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING_2).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_BASED_RESERVATION_SETTING_2,OperationModeSettingValue.MY_URI,0,1));
-		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_BathRoomHeaterDryer.addDatatypeProperty(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_BathRoomHeaterDryer.addDatatypeProperty(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_BASED_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
+		oci_BathRoomHeaterDryer.addDatatypeProperty(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_BathRoomHeaterDryer.addObjectProperty(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_BathRoomHeaterDryer.addDatatypeProperty(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_BathRoomHeaterDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(BathRoomHeaterDryer.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		
@@ -2344,34 +2335,34 @@ public final class EchonetOntology extends Ontology {
 		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_ELECTRIC_ENERGY_GENERATED_AMOUNT).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_ELECTRIC_ENERGY_GENERATED_AMOUNT).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_ELECTRIC_ENERGY_GENERATED_AMOUNT,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_GENERATED_AMOUNT).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_GENERATED_AMOUNT).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_GENERATED_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_RESETTING_CUMMULATIVE_ELECTRIC_ENERGY_GENERATED_AMOUNT).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_RESETTING_CUMMULATIVE_ELECTRIC_ENERGY_GENERATED_AMOUNT,HouseHoldSolarPowerGeneration.MY_URI,1,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_SOLD_AMOUNT).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_SOLD_AMOUNT).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_SOLD_AMOUNT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_RESETTING_CUMMULATIVE_ELECTRIC_ENERGY_SOLD_AMOUNT).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_RESETTING_CUMMULATIVE_ELECTRIC_ENERGY_SOLD_AMOUNT,HouseHoldSolarPowerGeneration.MY_URI,0,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_1).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_1).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_1,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_2).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_2).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_2,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_AMOUNT_OF_ELECTRICITY_SOLD_LIMIT_SETTING).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_AMOUNT_OF_ELECTRICITY_SOLD_LIMIT_SETTING).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_AMOUNT_OF_ELECTRICITY_SOLD_LIMIT_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT_SYSTEM_INTERCONNECTED).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT_SYSTEM_INTERCONNECTED).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT_SYSTEM_INTERCONNECTED,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_HouseHoldSolarPowerGeneration.addObjectProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT_INDEPENDENT).setFunctional();
+		oci_HouseHoldSolarPowerGeneration.addDatatypeProperty(HouseHoldSolarPowerGeneration.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT_INDEPENDENT).setFunctional();
 		oci_HouseHoldSolarPowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSolarPowerGeneration.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT_INDEPENDENT,TypeMapper.getDatatypeURI(Integer.class),0,1));
 		
@@ -2381,16 +2372,16 @@ public final class EchonetOntology extends Ontology {
 		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OPERATION_MODE_SETTING).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OPERATION_MODE_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_WATER_TEMPERATURE_SETTING_1).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_WATER_TEMPERATURE_SETTING_1).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_WATER_TEMPERATURE_SETTING_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_WATER_TEMPERATURE_SETTING_2).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_WATER_TEMPERATURE_SETTING_2).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_WATER_TEMPERATURE_SETTING_2,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_OUTWARD_WATER_TEMPERATURE).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_OUTWARD_WATER_TEMPERATURE).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_OUTWARD_WATER_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_INWARD_WATER_TEMPERATURE).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_INWARD_WATER_TEMPERATURE).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_INWARD_WATER_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_SPECIAL_OPERATION_SETTING).setFunctional();
@@ -2408,34 +2399,34 @@ public final class EchonetOntology extends Ontology {
 		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_RATED_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_ColdHotWaterHeatSourceEquipment.addObjectProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_POWER_CONSUMPTION_MEASUREMENT_METHOD).setFunctional();
+		oci_ColdHotWaterHeatSourceEquipment.addDatatypeProperty(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_POWER_CONSUMPTION_MEASUREMENT_METHOD).setFunctional();
 		oci_ColdHotWaterHeatSourceEquipment.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ColdHotWaterHeatSourceEquipment.PROPERTY_HAS_POWER_CONSUMPTION_MEASUREMENT_METHOD,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_FloorHeater.setResourceComment("");
 		oci_FloorHeater.setResourceLabel("FloorHeater");
 		oci_FloorHeater.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_TEMPERATURE_SETTING_1).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_TEMPERATURE_SETTING_1).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_TEMPERATURE_SETTING_1,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_TEMPERATURE_SETTING_2).setFunctional();
@@ -2465,28 +2456,28 @@ public final class EchonetOntology extends Ontology {
 		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_ON_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_OFF_TIMER_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Integer.class),0,1));
-		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
+		oci_FloorHeater.addDatatypeProperty(FloorHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
 		oci_FloorHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FloorHeater.PROPERTY_HAS_RATED_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_FloorHeater.addObjectProperty(FloorHeater.PROPERTY_HAS_POWER_CONSUMPTION_MEASUREMENT_METHOD).setFunctional();
@@ -2496,28 +2487,28 @@ public final class EchonetOntology extends Ontology {
 		oci_FuelCell.setResourceComment("");
 		oci_FuelCell.setResourceLabel("FuelCell");
 		oci_FuelCell.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_WATER_TEMPERATURE_IN_WATER_HEATER_MODE).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_WATER_TEMPERATURE_IN_WATER_HEATER_MODE).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_WATER_TEMPERATURE_IN_WATER_HEATER_MODE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_REATED_POWER_GENERATION_OUTPUT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_HEATING_VALUE_OF_HOT_WATER_STORAGE_TANK).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_HEATING_VALUE_OF_HOT_WATER_STORAGE_TANK).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_HEATING_VALUE_OF_HOT_WATER_STORAGE_TANK,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_GENERATION_OUTPUT).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_GENERATION_OUTPUT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_CUMMULATIVE_POWER_GENERATION_OUTPUT).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_CUMMULATIVE_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_CUMMULATIVE_POWER_GENERATION_OUTPUT,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_RESET_MEASURED_CUMMULATIVE_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_RESET_MEASURED_CUMMULATIVE_POWER_GENERATION_OUTPUT,FuelCell.MY_URI,1,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GAS_CONSUMPTION).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GAS_CONSUMPTION).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GAS_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_RESET_MEASURED_CUMMULATIVE_GAS_CONSUMPTION).setFunctional();
@@ -2529,10 +2520,10 @@ public final class EchonetOntology extends Ontology {
 		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_POWER_GENERATION_STATE).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_POWER_GENERATION_STATE,OperationStateSettingValue.MY_URI,0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_IN_HOUSE_INSTANTANEOUS_POWER_POWER_CONSUMPTION).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_IN_HOUSE_INSTANTANEOUS_POWER_POWER_CONSUMPTION).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_IN_HOUSE_INSTANTANEOUS_POWER_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_IN_HOUSE_CUMMULATIVE_POWER_CONSUMPTION).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_IN_HOUSE_CUMMULATIVE_POWER_CONSUMPTION).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_IN_HOUSE_CUMMULATIVE_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_RESET_MEASURED_IN_HOUSE_CUMMULATIVE_POWER_CONSUMPTION).setFunctional();
@@ -2541,10 +2532,10 @@ public final class EchonetOntology extends Ontology {
 		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_MEASURED_REMAINING_HOT_WATER_AMOUNT).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_MEASURED_REMAINING_HOT_WATER_AMOUNT).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_MEASURED_REMAINING_HOT_WATER_AMOUNT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_FuelCell.addObjectProperty(FuelCell.PROPERTY_HAS_TANK_CAPACITY).setFunctional();
+		oci_FuelCell.addDatatypeProperty(FuelCell.PROPERTY_HAS_TANK_CAPACITY).setFunctional();
 		oci_FuelCell.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(FuelCell.PROPERTY_HAS_TANK_CAPACITY,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -2554,58 +2545,58 @@ public final class EchonetOntology extends Ontology {
 		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_IDENTIFICATION_NUMBER).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_IDENTIFICATION_NUMBER,IdentificationNumberValue.MY_URI,1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CURRENT_DATE_SETTING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CURRENT_DATE_SETTING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CURRENT_DATE_SETTING,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CURRENT_TIME_SETTING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CURRENT_TIME_SETTING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CURRENT_TIME_SETTING,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_EFFECTIVE_CAPACITY_CHARGING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_EFFECTIVE_CAPACITY_CHARGING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_EFFECTIVE_CAPACITY_CHARGING,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_EFFECTIVE_CAPACITY_DISCHARGING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_EFFECTIVE_CAPACITY_DISCHARGING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_EFFECTIVE_CAPACITY_DISCHARGING,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_CHARGEABLE_CAPACITY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_CHARGEABLE_CAPACITY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_CHARGEABLE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGEABLE_CAPACITY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGEABLE_CAPACITY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_DISCHARGEABLE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_CHARGEABLE_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_CHARGEABLE_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_CHARGEABLE_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGEABLE_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGEABLE_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_DISCHARGEABLE_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_CHARGE_UPPER_LIMIT_SETTING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_CHARGE_UPPER_LIMIT_SETTING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_CHARGE_UPPER_LIMIT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGE_LOWER_LIMIT_SETTING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGE_LOWER_LIMIT_SETTING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_DISCHARGE_LOWER_LIMIT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_CHARGE_AMOUNT_SETTING_VALUE).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_CHARGE_AMOUNT_SETTING_VALUE).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_CHARGE_AMOUNT_SETTING_VALUE,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGE_AMOUNT_SETTING_VALUE).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_DISCHARGE_AMOUNT_SETTING_VALUE).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_DISCHARGE_AMOUNT_SETTING_VALUE,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_POWER).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_POWER).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_POWER,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_POWER).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_POWER).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_POWER,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_CURRENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_CURRENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_CURRENT,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_RE_INTERCONNECTION_PERMISSION_SETTING).setFunctional();
@@ -2620,31 +2611,31 @@ public final class EchonetOntology extends Ontology {
 		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_WORKING_OPERATION_STATUS).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_WORKING_OPERATION_STATUS,OperationModeSettingValue.MY_URI,1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_RATED_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_RATED_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_RATED_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_RATED_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_RATED_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_RATED_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_RATED_CAPACITY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_RATED_CAPACITY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_RATED_CAPACITY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_RATED_VOLTAGE).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_RATED_VOLTAGE).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_RATED_VOLTAGE,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_POWER).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_POWER).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_POWER,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_CURRENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_CURRENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_CURRENT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_VOLTAGE).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_VOLTAGE).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_VOLTAGE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_RESET_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_RESET_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY,StorageBattery.MY_URI,1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_AC_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_AC_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_AC_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_RESET_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
@@ -2656,98 +2647,98 @@ public final class EchonetOntology extends Ontology {
 		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_POWER_INDEPENDENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_POWER_INDEPENDENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_POWER_INDEPENDENT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_POWER_INDEPENDENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_POWER_INDEPENDENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_POWER_INDEPENDENT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_CURRENT_INDEPENDENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_CURRENT_INDEPENDENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_CURRENT_INDEPENDENT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_CURRENT_INDEPENDENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_CURRENT_INDEPENDENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_CURRENT_INDEPENDENT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CHARGING_DISCHARGING_AMOUNT_SETTING_1).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CHARGING_DISCHARGING_AMOUNT_SETTING_1).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CHARGING_DISCHARGING_AMOUNT_SETTING_1,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CHARGING_DISCHARGING_AMOUNT_SETTING_2).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CHARGING_DISCHARGING_AMOUNT_SETTING_2).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CHARGING_DISCHARGING_AMOUNT_SETTING_2,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_2).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_2).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_2,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_BATTERY_STATE_OF_HEALTH).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_BATTERY_STATE_OF_HEALTH).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_BATTERY_STATE_OF_HEALTH,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_BATTERY_TYPE).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_BATTERY_TYPE,TypeMapper.getDatatypeURI(String.class),1,1));		
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_1).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_1).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING_1).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING_1).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_2).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_2).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING_2).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING_2).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_DISCHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_DISCHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_DISCHARGING_ELECTRIC_CURRENT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_StorageBattery.addObjectProperty(StorageBattery.PROPERTY_HAS_RATED_VOLTAGE_INDEPENDENT).setFunctional();
+		oci_StorageBattery.addDatatypeProperty(StorageBattery.PROPERTY_HAS_RATED_VOLTAGE_INDEPENDENT).setFunctional();
 		oci_StorageBattery.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(StorageBattery.PROPERTY_HAS_RATED_VOLTAGE_INDEPENDENT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
 		oci_VehicleChargerDischarger.setResourceComment("");
 		oci_VehicleChargerDischarger.setResourceLabel("VehicleCharger");
 		oci_VehicleChargerDischarger.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_DISCHARGEABLE_CAPACITY_1).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_DISCHARGEABLE_CAPACITY_1).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_DISCHARGEABLE_CAPACITY_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_DISCHARGEABLE_CAPACITY_2).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_DISCHARGEABLE_CAPACITY_2).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_DISCHARGEABLE_CAPACITY_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_1).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_1).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_1,TypeMapper.getDatatypeURI(Float.class),1,1));	
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_2).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_2).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_3).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_3).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_REMANING_DISCHARGEABLE_CAPACITY_3,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_CHARGE_CAPACITY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_CHARGE_CAPACITY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_CHARGE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_DISCHARGE_CAPACITY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_DISCHARGE_CAPACITY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_DISCHARGE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_CONNECTION_CHARGEABLE_STATUS).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_CONNECTION_CHARGEABLE_STATUS,OperationStateSettingValue.MY_URI,1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_CURRENT).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_CURRENT).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MINIMUM_MAXIMUM_DISCHARGING_CURRENT,TypeMapper.getDatatypeURI(String.class),1,1));
 		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGER_TYPE).setFunctional();
@@ -2756,37 +2747,37 @@ public final class EchonetOntology extends Ontology {
 		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_SET_VEHICLE_CONNECTION_CONFIRMATION).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_SET_VEHICLE_CONNECTION_CONFIRMATION,ElectricVehicleChargerDischager.MY_URI,1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_CAPACITY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_CAPACITY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_VEHICLE_MOUNTED_BATTERY_REMAINING_CHARGEABLE_CAPACITY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_VEHICLE_MOUNTED_BATTERY_REMAINING_CHARGEABLE_CAPACITY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_VEHICLE_MOUNTED_BATTERY_REMAINING_CHARGEABLE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_USED_CAPACITY_OF_VEHICLE_MOUNTED_BATTERY_1).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_USED_CAPACITY_OF_VEHICLE_MOUNTED_BATTERY_1).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_USED_CAPACITY_OF_VEHICLE_MOUNTED_BATTERY_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_USED_CAPACITY_OF_VEHICLE_MOUNTED_BATTERY_2).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_USED_CAPACITY_OF_VEHICLE_MOUNTED_BATTERY_2).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_USED_CAPACITY_OF_VEHICLE_MOUNTED_BATTERY_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_VOLTAGE).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_VOLTAGE).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_VOLTAGE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_CURRENT).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_CURRENT).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_CURRENT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_VOLTAGE).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_VOLTAGE).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_DISCHARGING_VOLTAGE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_RESET_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_RESET_MEASURED_CUMULATIVE_DISCHARGING_ELECTRIC_ENERGY,ElectricVehicleChargerDischager.MY_URI,1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_RESET_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
@@ -2798,68 +2789,68 @@ public final class EchonetOntology extends Ontology {
 		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_SYSTEM_INTERCONNECTED_TYPE).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_SYSTEM_INTERCONNECTED_TYPE,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_2).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_2).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_ID).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_VEHICLE_ID,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_1).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_1).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_2).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_2).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_AMOUNT_SETTING_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_AMOUNT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_ELECTRIC_ENERGY_SETTING).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_ELECTRIC_ENERGY_SETTING).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_ELECTRIC_ENERGY_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_ELECTRIC_ENERGY_SETTING).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_ELECTRIC_ENERGY_SETTING).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_ELECTRIC_ENERGY_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_DISCHARGING_ELECTRIC_CURRENT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleChargerDischarger.addObjectProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_VOLTAGE_INDEPENDENT).setFunctional();
+		oci_VehicleChargerDischarger.addDatatypeProperty(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_VOLTAGE_INDEPENDENT).setFunctional();
 		oci_VehicleChargerDischarger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricVehicleChargerDischager.PROPERTY_HAS_RATED_VOLTAGE_INDEPENDENT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
 		oci_EngineCogeneration.setResourceComment("");
 		oci_EngineCogeneration.setResourceLabel("EngineCogeneration");
 		oci_EngineCogeneration.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_WATER_TEMPERATURE_IN_WATER_HEATER).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_WATER_TEMPERATURE_IN_WATER_HEATER).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_WATER_TEMPERATURE_IN_WATER_HEATER,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_RATED_POWER_GENERATION_OUTPUT).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_RATED_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_RATED_POWER_GENERATION_OUTPUT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_HEATING_VALUE_OF_HOT_WATER_STORAGE_TANK).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_HEATING_VALUE_OF_HOT_WATER_STORAGE_TANK).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_HEATING_VALUE_OF_HOT_WATER_STORAGE_TANK,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_GENERATION_OUTPUT).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_GENERATION_OUTPUT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_GENERATION_OUTPUT).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_POWER_GENERATION_OUTPUT,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_POWER_GENERATION_OUTPUT).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_POWER_GENERATION_OUTPUT,EngineCogeneration.MY_URI,0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GAS_CONSUMPTION).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GAS_CONSUMPTION).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GAS_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_GAS_CONSUMPTION).setFunctional();
@@ -2871,10 +2862,10 @@ public final class EchonetOntology extends Ontology {
 		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_POWER_GENERATION_STATUS).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_POWER_GENERATION_STATUS,OperationStateSettingValue.MY_URI,0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_IN_HOUSE_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_IN_HOUSE_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_IN_HOUSE_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_IN_HOUSE_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_IN_HOUSE_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_IN_HOUSE_MEASURED_CUMULATIVE_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_RESET_IN_HOUSE_MEASURED_CUMULATIVE_POWER_CONSUMPTION).setFunctional();
@@ -2883,26 +2874,26 @@ public final class EchonetOntology extends Ontology {
 		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_SYSTEM_INTERCONNECT_TYPE,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_REMAINING_HOT_WATER_AMOUNT).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_MEASURED_REMAINING_HOT_WATER_AMOUNT).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_MEASURED_REMAINING_HOT_WATER_AMOUNT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_EngineCogeneration.addObjectProperty(EngineCogeneration.PROPERTY_HAS_TANK_CAPACITY).setFunctional();
+		oci_EngineCogeneration.addDatatypeProperty(EngineCogeneration.PROPERTY_HAS_TANK_CAPACITY).setFunctional();
 		oci_EngineCogeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(EngineCogeneration.PROPERTY_HAS_TANK_CAPACITY,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
 		oci_WattHourMeter.setResourceComment("");
 		oci_WattHourMeter.setResourceLabel("WattHourMeter");
 		oci_WattHourMeter.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_WattHourMeter.addObjectProperty(WattHourMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT).setFunctional();
+		oci_WattHourMeter.addDatatypeProperty(WattHourMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT).setFunctional();
 		oci_WattHourMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WattHourMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_WattHourMeter.addDatatypeProperty(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_UNIT).setFunctional();
 		oci_WattHourMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_WattHourMeter.addObjectProperty(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_MEASUREMENT_LOG_1).setFunctional();
+		oci_WattHourMeter.addDatatypeProperty(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_MEASUREMENT_LOG_1).setFunctional();
 		oci_WattHourMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_MEASUREMENT_LOG_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_WattHourMeter.addObjectProperty(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_MEASUREMENT_LOG_2).setFunctional();
+		oci_WattHourMeter.addDatatypeProperty(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_MEASUREMENT_LOG_2).setFunctional();
 		oci_WattHourMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WattHourMeter.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_MEASUREMENT_LOG_2,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -2915,13 +2906,13 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterFlowMeter.addObjectProperty(WaterFlowMeter.PROPERTY_HAS_OWNER_CLASSIFICATION).setFunctional();
 		oci_WaterFlowMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowMeter.PROPERTY_HAS_OWNER_CLASSIFICATION,TypeClassificationValue.MY_URI,0,1));
-		oci_WaterFlowMeter.addObjectProperty(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT).setFunctional();
+		oci_WaterFlowMeter.addDatatypeProperty(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT).setFunctional();
 		oci_WaterFlowMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_WaterFlowMeter.addDatatypeProperty(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT_UNIT).setFunctional();
 		oci_WaterFlowMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_WaterFlowMeter.addObjectProperty(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT_HISTORICAL_DATA).setFunctional();
+		oci_WaterFlowMeter.addDatatypeProperty(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT_HISTORICAL_DATA).setFunctional();
 		oci_WaterFlowMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_FLOWING_WATER_AMOUNT_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_WaterFlowMeter.addObjectProperty(WaterFlowMeter.PROPERTY_HAS_DETECTION_OF_ABNORMAL_VALUE_IN_METERING_DATA).setFunctional();
@@ -2933,27 +2924,27 @@ public final class EchonetOntology extends Ontology {
 		oci_WaterFlowMeter.addDatatypeProperty(WaterFlowMeter.PROPERTY_HAS_ID_NUMBER_SETTING).setFunctional();
 		oci_WaterFlowMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowMeter.PROPERTY_HAS_ID_NUMBER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_WaterFlowMeter.addObjectProperty(WaterFlowMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION).setFunctional();
+		oci_WaterFlowMeter.addDatatypeProperty(WaterFlowMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION).setFunctional();
 		oci_WaterFlowMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WaterFlowMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION,TypeMapper.getDatatypeURI(String.class),0,1));
 	
 		oci_GasMeter.setResourceComment("");
 		oci_GasMeter.setResourceLabel("GasMetter");
 		oci_GasMeter.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_GasMeter.addObjectProperty(GasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_AMOUNT).setFunctional();
+		oci_GasMeter.addDatatypeProperty(GasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_AMOUNT).setFunctional();
 		oci_GasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_GasMeter.addObjectProperty(GasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_LOG).setFunctional();
+		oci_GasMeter.addDatatypeProperty(GasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_LOG).setFunctional();
 		oci_GasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_LOG,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
 		oci_LPGasMeter.setResourceComment("");
 		oci_LPGasMeter.setResourceLabel("LPGasMeter");
 		oci_LPGasMeter.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_METERING_DATA_1).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_METERING_DATA_1).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_METERING_DATA_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_METERING_DATA_2).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_METERING_DATA_2).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_GAS_CONSUMPTION_METERING_DATA_2,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_ERROR_DETECTION_OF_METERING_DATA).setFunctional();
@@ -2980,40 +2971,40 @@ public final class EchonetOntology extends Ontology {
 		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING,ThresholdLevelValue.MY_URI,0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_1_VALUE).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_1_VALUE).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_1_VALUE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_2_VALUE).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_2_VALUE).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_2_VALUE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_3_VALUE).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_3_VALUE).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_3_VALUE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE_GAS_FLOW_CONTINUATION).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE_GAS_FLOW_CONTINUATION).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE_GAS_FLOW_CONTINUATION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE_WITHOUT_PRESSURE_INCREASE).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE_WITHOUT_PRESSURE_INCREASE).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE_WITHOUT_PRESSURE_INCREASE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_SHUTOFF_REASON_LOG).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_SHUTOFF_REASON_LOG,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_MAXIMUM_VALUE_OF_SUPPLY_PRESSURE_DATA).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_MAXIMUM_VALUE_OF_SUPPLY_PRESSURE_DATA).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_MAXIMUM_VALUE_OF_SUPPLY_PRESSURE_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_MINIMUM_VALUE_OF_SUPPLY_PRESSURE_DATA).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_MINIMUM_VALUE_OF_SUPPLY_PRESSURE_DATA).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_MINIMUM_VALUE_OF_SUPPLY_PRESSURE_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_CURRENT_VALUE_OF_SUPPLY_PRESSURE_DATA).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_CURRENT_VALUE_OF_SUPPLY_PRESSURE_DATA).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_CURRENT_VALUE_OF_SUPPLY_PRESSURE_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_MAXIMUM_VALUE_OF_BLOCK_PRESSURE_DATA).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_MAXIMUM_VALUE_OF_BLOCK_PRESSURE_DATA).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_MAXIMUM_VALUE_OF_BLOCK_PRESSURE_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_MINIMUM_VALUE_OF_BLOCK_PRESSURE_DATA).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_MINIMUM_VALUE_OF_BLOCK_PRESSURE_DATA).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_MINIMUM_VALUE_OF_BLOCK_PRESSURE_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LPGasMeter.addObjectProperty(LPGasMeter.PROPERTY_HAS_CURRENT_VALUE_OF_BLOCK_PRESSURE_DATA).setFunctional();
+		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_CURRENT_VALUE_OF_BLOCK_PRESSURE_DATA).setFunctional();
 		oci_LPGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LPGasMeter.PROPERTY_HAS_CURRENT_VALUE_OF_BLOCK_PRESSURE_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_LPGasMeter.addDatatypeProperty(LPGasMeter.PROPERTY_HAS_NUMBER_OF_BLOCK_SUPPLY_PRESSURE_ERROR_DAYS_TIMES).setFunctional();
@@ -3026,218 +3017,218 @@ public final class EchonetOntology extends Ontology {
 		oci_PowerDistributionBoardMetering.setResourceComment("");
 		oci_PowerDistributionBoardMetering.setResourceLabel("PowerDistributionBoardMetering");
 		oci_PowerDistributionBoardMetering.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_NORMAL_DIRECTION).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_NORMAL_DIRECTION).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_NORMAL_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_REVERSE_DIRECTION).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_REVERSE_DIRECTION).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_REVERSE_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION_LIST_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION_LIST_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION_LIST_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_UNIT).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_NORMAL_DIRECTION).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_NORMAL_DIRECTION).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_NORMAL_DIRECTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_REVERSE_DIRECTION).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_REVERSE_DIRECTION).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_REVERSE_DIRECTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMMULATIVE_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_AMOUNT_OF_ELECTRIC_ENERGY).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_AMOUNT_OF_ELECTRIC_ENERGY).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_AMOUNT_OF_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_VOLTAGE).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_VOLTAGE).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_VOLTAGE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_1).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_1).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_2).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_2).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_3).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_3).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_3,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_4).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_4).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_4,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_5).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_5).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_5,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_6).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_6).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_6,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_7).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_7).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_7,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_8).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_8).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_8,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_9).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_9).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_9,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_10).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_10).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_10,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_11).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_11).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_11,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_12).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_12).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_12,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_13).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_13).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_13,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_14).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_14).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_14,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_15).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_15).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_15,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_16).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_16).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_16,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_17).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_17).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_17,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_18).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_18).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_18,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_19).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_19).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_19,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_20).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_20).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_20,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_21).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_21).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_21,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_22).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_22).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_22,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_23).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_23).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_23,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_24).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_24).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_24,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_25).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_25).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_25,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_26).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_26).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_26,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_27).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_27).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_27,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_28).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_28).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_28,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_29).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_29).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_29,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_30).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_30).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_30,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_31).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_31).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_31,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_32).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_32).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASUREMENT_CHANNEL_32,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MASTER_RATED_CAPACITY).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MASTER_RATED_CAPACITY).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MASTER_RATED_CAPACITY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_NUMBER_OF_MEASUREMENT_CHANELS_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_NUMBER_OF_MEASUREMENT_CHANELS_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_NUMBER_OF_MEASUREMENT_CHANELS_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_MEASUREMENT_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_MEASUREMENT_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_MEASUREMENT_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_LIST_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_LIST_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_LIST_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_CURRENT_MEASUREMENT_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_CURRENT_MEASUREMENT_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_CURRENT_MEASUREMENT_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT_LIST_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT_LIST_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT_LIST_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_POWER_CONSUMPTION_MEASUREMENT_SIMPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_POWER_CONSUMPTION_MEASUREMENT_SIMPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_POWER_CONSUMPTION_MEASUREMENT_SIMPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_NUMBER_OF_MEASUREMENT_CHANELS_DUPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_NUMBER_OF_MEASUREMENT_CHANELS_DUPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_NUMBER_OF_MEASUREMENT_CHANELS_DUPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_MEASUREMENT_DUPPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_MEASUREMENT_DUPPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_MEASUREMENT_DUPPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_LIST_DUPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_LIST_DUPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_CUMMULATIVE_AMOUNT_OF_ELECTRIC_POWER_CONSUMPTION_LIST_DUPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_CURRENT_MEASUREMENT_DUPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_CURRENT_MEASUREMENT_DUPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_CURRENT_MEASUREMENT_DUPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT_LIST_DUPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT_LIST_DUPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT_LIST_DUPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_POWER_CONSUMPTION_MEASUREMENT_DUPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_POWER_CONSUMPTION_MEASUREMENT_DUPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_CHANNEL_RANGE_FOR_INSTANTANEOUS_POWER_CONSUMPTION_MEASUREMENT_DUPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_PowerDistributionBoardMetering.addObjectProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION_LIST_DUPLEX).setFunctional();
+		oci_PowerDistributionBoardMetering.addDatatypeProperty(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION_LIST_DUPLEX).setFunctional();
 		oci_PowerDistributionBoardMetering.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(PowerDistributionBoardMetering.PROPERTY_HAS_MEASURED_INSTANTANEOUS_POWER_CONSUMPTION_LIST_DUPLEX,TypeMapper.getDatatypeURI(Float.class),0,1));
 	
 		oci_LowVoltageSmartElectricEnergy.setResourceComment("");
 		oci_LowVoltageSmartElectricEnergy.setResourceLabel("LowVoltageSmartElectricEnergy");
 		oci_LowVoltageSmartElectricEnergy.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_COEFFICIENT).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_COEFFICIENT).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_COEFFICIENT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_NUMBER_OF_EFFECTIVE_DIGITS_FOR_CUMULATIVE_ELECTRIC_ENERGY).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_NUMBER_OF_EFFECTIVE_DIGITS_FOR_CUMULATIVE_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Integer.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_NORMAL_DIRECTION).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_NORMAL_DIRECTION).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_NORMAL_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_UNIT).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_NORMAL_DIRECTION).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_NORMAL_DIRECTION).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_NORMAL_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_REVERSE_DIRECTION).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_REVERSE_DIRECTION).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_REVERSE_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_REVERSE_DIRECTION).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_REVERSE_DIRECTION).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_REVERSE_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_INSTANTANEOUS_AMOUNT_OF_ELECTRIC_ENERGY).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_INSTANTANEOUS_AMOUNT_OF_ELECTRIC_ENERGY).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_INSTANTANEOUS_AMOUNT_OF_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CURRENT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME_NORMAL_DIRECTION).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME_NORMAL_DIRECTION).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME_NORMAL_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME_REVERSED_DIRECTION).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME_REVERSED_DIRECTION).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME_REVERSED_DIRECTION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_2).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_2).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LowVoltageSmartElectricEnergy.addObjectProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_2).setFunctional();
+		oci_LowVoltageSmartElectricEnergy.addDatatypeProperty(LowVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_2).setFunctional();
 		oci_LowVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LowVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_2,TypeMapper.getDatatypeURI(String.class),0,1));
 	
@@ -3250,16 +3241,16 @@ public final class EchonetOntology extends Ontology {
 		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_OWNER_CLASSIFICATION).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_OWNER_CLASSIFICATION,TypeClassificationValue.MY_URI,0,1));
-		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION).setFunctional();
+		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_UNIT).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_DATA).setFunctional();
+		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_DATA).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_DAY_TO_RETRIEVE_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_DATA).setFunctional();
+		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_DAY_TO_RETRIEVE_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_DATA).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_DAY_TO_RETRIEVE_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_DATA,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_DETECTION_OF_ABNORMAL_VALUE_IN_METERING_DATA).setFunctional();
@@ -3283,38 +3274,38 @@ public final class EchonetOntology extends Ontology {
 		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_ID_NUMBER_SETTING).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_ID_NUMBER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION).setFunctional();
+		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
+		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_INFORMATION_DATE_TIME_INCLUDED,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmartGasMeter.addObjectProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
+		oci_SmartGasMeter.addDatatypeProperty(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
 		oci_SmartGasMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartGasMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_GAS_CONSUMPTION_HISTORICAL_INFORMATION_DATE_TIME_INCLUDED,TypeMapper.getDatatypeURI(Float.class),0,1));
 	
 		oci_HighVoltageSmartElectricEnergy.setResourceComment("");
 		oci_HighVoltageSmartElectricEnergy.setResourceLabel("HighVoltageSmartElectricEnergy");
 		oci_HighVoltageSmartElectricEnergy.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_COEFFICIENT).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_COEFFICIENT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_COEFFICIENT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MULTIPLYING_FACTOR_FOR_COEFFICIENT).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MULTIPLYING_FACTOR_FOR_COEFFICIENT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MULTIPLYING_FACTOR_FOR_COEFFICIENT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_FIXED_DAY).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_FIXED_DAY).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_FIXED_DAY,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_HISTORICAL_DATA).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_HISTORICAL_DATA).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_DAY_TO_RETRIVE_MEASURED_CUMULATIVE_ELECTRIC_ENERGY_HISTORICAL_DATA,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_MEASURED_AT_FIXED_TIME,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_FOR_POWER_FACTOR_MEASUREMENT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_NUMBER_OF_EFFECTIVE_DIGITS_FOR_CUMULATIVE_ELECTRIC_ENERGY).setFunctional();
@@ -3323,16 +3314,16 @@ public final class EchonetOntology extends Ontology {
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_UNIT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_ACTIVE_ELECTRIC_ENERGY_AMOUNT_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MONTHLY_MAXIMUM_ELECTRIC_POWER_DEMAND).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MONTHLY_MAXIMUM_ELECTRIC_POWER_DEMAND).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MONTHLY_MAXIMUM_ELECTRIC_POWER_DEMAND,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_MAXIMUM_ELECTRIC_POWER_DEMAND).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_MAXIMUM_ELECTRIC_POWER_DEMAND).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_MAXIMUM_ELECTRIC_POWER_DEMAND,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_ELECTRIC_POWER_DEMAND_AT_FIXED_TIME).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_ELECTRIC_POWER_DEMAND_AT_FIXED_TIME).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_ELECTRIC_POWER_DEMAND_AT_FIXED_TIME,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_NUMBER_OF_EFFECTIVE_DIGITS_FOR_ELECTRIC_POWER_DEMAND).setFunctional();
@@ -3341,16 +3332,16 @@ public final class EchonetOntology extends Ontology {
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_ELECTRIC_POWER_DEMAND_UNIT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_ELECTRIC_POWER_DEMAND_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_ELECTRIC_POWER_DEMAND_HISTORICAL_DATA).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_ELECTRIC_POWER_DEMAND_HISTORICAL_DATA).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_ELECTRIC_POWER_DEMAND_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_MAXIMUM_ELECTRIC_POWER_DEMAND_UNIT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_CUMULATIVE_MAXIMUM_ELECTRIC_POWER_DEMAND_UNIT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_AT_FIXED_TIME_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_AT_FIXED_TIME_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_AT_FIXED_TIME_FOR_POWER_FACTOR_MEASUREMENT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_NUMBER_OF_EFFECTIVE_DIGITS_FOR_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT).setFunctional();
@@ -3359,17 +3350,17 @@ public final class EchonetOntology extends Ontology {
 		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_AMOUNT_UNIT).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_AMOUNT_UNIT,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_HighVoltageSmartElectricEnergy.addObjectProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT_HISTORICAL_DATA).setFunctional();
+		oci_HighVoltageSmartElectricEnergy.addDatatypeProperty(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT_HISTORICAL_DATA).setFunctional();
 		oci_HighVoltageSmartElectricEnergy.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HighVoltageSmartElectricEnergy.PROPERTY_HAS_MEASURED_CUMULATIVE_REACTIVE_ELECTRIC_POWER_CONSUMPTION_FOR_POWER_FACTOR_MEASUREMENT_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
 		oci_KeroseneMeter.setResourceComment("");
 		oci_KeroseneMeter.setResourceLabel("KeroseneMeter");
 		oci_KeroseneMeter.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_KeroseneMeter.addObjectProperty(KeroseneMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_KEROSENE_CONSUMPTION_AMOUNT).setFunctional();
+		oci_KeroseneMeter.addDatatypeProperty(KeroseneMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_KEROSENE_CONSUMPTION_AMOUNT).setFunctional();
 		oci_KeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(KeroseneMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_KEROSENE_CONSUMPTION_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_KeroseneMeter.addObjectProperty(KeroseneMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_DATA).setFunctional();
+		oci_KeroseneMeter.addDatatypeProperty(KeroseneMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_DATA).setFunctional();
 		oci_KeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(KeroseneMeter.PROPERTY_HAS_MEASURED_CUMMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -3379,16 +3370,16 @@ public final class EchonetOntology extends Ontology {
 		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_OWNER_CLASSIFICATION).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_OWNER_CLASSIFICATION,TypeClassificationValue.MY_URI,0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_UNIT).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_UNIT,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_DATA).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_DATA).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_DATA,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_COLLECTION_DATE_SETTING_FOR_HISTORY_CUMULATIVE_KEROSENE_CONSUMPTION).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_COLLECTION_DATE_SETTING_FOR_HISTORY_CUMULATIVE_KEROSENE_CONSUMPTION).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_COLLECTION_DATE_SETTING_FOR_HISTORY_CUMULATIVE_KEROSENE_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_DETECTION_OF_ABNORMAL_VALUE_IN_METERING_DATA).setFunctional();
@@ -3400,35 +3391,35 @@ public final class EchonetOntology extends Ontology {
 		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL,ThresholdLevelValue.MY_URI,0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_1).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_1).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_2).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_2).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_3).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_3).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_RESIDUAL_VOLUME_CONTROL_WARNING_LEVEL_3,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_SLIGHT_LEAK_TIMER_VALUE,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_ID_NUMBER_SETTING).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_ID_NUMBER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_VERIFICATION_EXPIRATION_INFORMATION,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_INFORMATION_DATE_TIME_INCLUDED,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_SmartKeroseneMeter.addObjectProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
+		oci_SmartKeroseneMeter.addDatatypeProperty(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_INFORMATION_DATE_TIME_INCLUDED).setFunctional();
 		oci_SmartKeroseneMeter.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(SmartKeroseneMeter.PROPERTY_HAS_MEASURED_CUMULATIVE_KEROSENE_CONSUMPTION_HISTORICAL_INFORMATION_DATE_TIME_INCLUDED,TypeMapper.getDatatypeURI(Float.class),0,1));
 	
 		oci_GeneralLight.setResourceComment("");
 		oci_GeneralLight.setResourceLabel("GeneralLight");
 		oci_GeneralLight.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_LIGHTING_COLOR_SETTING).setFunctional();
@@ -3440,16 +3431,16 @@ public final class EchonetOntology extends Ontology {
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_LIGHT_COLOR_STEP_SETTING).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_LIGHT_COLOR_STEP_SETTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_MAXIMUM_SPECIFIABLE_VALUES).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_MAXIMUM_SPECIFIABLE_VALUES).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_MAXIMUM_SPECIFIABLE_VALUES,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_MAXIMUM_SETABLE_LEVEL_FOR_NIGHT_LIGHTING_VALUES).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_MAXIMUM_SETABLE_LEVEL_FOR_NIGHT_LIGHTING_VALUES).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_MAXIMUM_SETABLE_LEVEL_FOR_NIGHT_LIGHTING_VALUES,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_LIGHTING_MODE_SETTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_LIGHTING_MODE_SETTING,OperationModeSettingValue.MY_URI,1,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_FOR_MAIN_LIGHTING ).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_FOR_MAIN_LIGHTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_FOR_MAIN_LIGHTING,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_STEP_SETTING_FOR_MAIN_LIGHTING ).setFunctional();
@@ -3458,7 +3449,7 @@ public final class EchonetOntology extends Ontology {
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_STEP_SETTING_FOR_NIGHT_LIGHTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_STEP_SETTING_FOR_NIGHT_LIGHTING,ThresholdLevelValue.MY_URI,0,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_FOR_NIGHT_LIGHTING ).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_FOR_NIGHT_LIGHTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL_FOR_NIGHT_LIGHTING,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_LIGHT_COLOR_SETTING_FOR_MAIN_LIGHTING ).setFunctional();
@@ -3476,26 +3467,26 @@ public final class EchonetOntology extends Ontology {
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_LIGHTING_MODE_STATUS_IN_AUTO_MODE ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_LIGHTING_MODE_STATUS_IN_AUTO_MODE,OperationModeSettingValue.MY_URI,0,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_RGB_SETTING_FOR_COLOR_LIGHTING ).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_RGB_SETTING_FOR_COLOR_LIGHTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_RGB_SETTING_FOR_COLOR_LIGHTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_ON_TIMER_SETTING ).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_ON_TIMER_SETTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_ON_TIMER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_OFF_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_GeneralLight.addObjectProperty(GeneralLighting.PROPERTY_HAS_OFF_TIMER_SETTING ).setFunctional();
+		oci_GeneralLight.addDatatypeProperty(GeneralLighting.PROPERTY_HAS_OFF_TIMER_SETTING ).setFunctional();
 		oci_GeneralLight.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(GeneralLighting.PROPERTY_HAS_OFF_TIMER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
 		
 		oci_MonoFunctionLighting.setResourceComment("");
 		oci_MonoFunctionLighting.setResourceLabel("MonoFunctionLighting");
 		oci_MonoFunctionLighting.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_MonoFunctionLighting.addObjectProperty(MonoFunctionLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
+		oci_MonoFunctionLighting.addDatatypeProperty(MonoFunctionLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
 		oci_MonoFunctionLighting.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(MonoFunctionLighting.PROPERTY_HAS_ILLUMINANCE_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -3512,16 +3503,16 @@ public final class EchonetOntology extends Ontology {
 		oci_VehicleCharger.setResourceComment("");
 		oci_VehicleCharger.setResourceLabel("VehicleCharger");
 		oci_VehicleCharger.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_RATED_CHARGE_CAPACITY).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_RATED_CHARGE_CAPACITY).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_RATED_CHARGE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_CONNECTION_CHARGEABLE_STATUS).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_VEHICLE_CONNECTION_CHARGEABLE_STATUS,OperationStateSettingValue.MY_URI,1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_MINIMUM_MAXIMUM_CHARGING_CURRENT,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_CHARGER_TYPE).setFunctional();
@@ -3530,22 +3521,22 @@ public final class EchonetOntology extends Ontology {
 		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_SET_VEHICLE_CONNECTION_CONFIRMATION).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_SET_VEHICLE_CONNECTION_CONFIRMATION,VehicleCharger.MY_URI,1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_CAPACITY).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_CAPACITY).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_REMAINING_CAPACITY).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_REMAINING_CAPACITY).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_CHARGEABLE_REMAINING_CAPACITY,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_USED_CAPACITY_1).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_USED_CAPACITY_1).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_VEHICLE_MOUNTED_BATTERY_USED_CAPACITY_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_RATED_VOLTAGE).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_RATED_VOLTAGE).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_RATED_VOLTAGE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_MEASURED_INSTANTANEOUS_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_RESET_MEASURED_CUMULATIVE_CHARGING_ELECTRIC_ENERGY).setFunctional();
@@ -3554,22 +3545,22 @@ public final class EchonetOntology extends Ontology {
 		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_OPERATION_MODE_SETTING).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_OPERATION_MODE_SETTING,OperationModeSettingValue.MY_URI,1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_1,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_REMAINING_STORED_ELECTRIC_3,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_VEHICLE_ID).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_VEHICLE_ID,TypeMapper.getDatatypeURI(String.class),1,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_CHARGING_AMOUNT_SETTING).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_CHARGING_AMOUNT_SETTING).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_CHARGING_AMOUNT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_CHARGING_ELECTRIC_ENERGY_SETTING).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_CHARGING_ELECTRIC_ENERGY_SETTING).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_CHARGING_ELECTRIC_ENERGY_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_VehicleCharger.addObjectProperty(VehicleCharger.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
+		oci_VehicleCharger.addDatatypeProperty(VehicleCharger.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING).setFunctional();
 		oci_VehicleCharger.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(VehicleCharger.PROPERTY_HAS_CHARGING_ELECTRIC_CURRENT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -3579,46 +3570,46 @@ public final class EchonetOntology extends Ontology {
 		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_SYSTEM_INTERCONNECTION_STATUS).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_SYSTEM_INTERCONNECTION_STATUS,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_GENERATED_ELECTRICITY_AMOUNT).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_GENERATED_ELECTRICITY_AMOUNT).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_GENERATED_ELECTRICITY_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GENERATED_ELECTRICITY_AMOUNT).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GENERATED_ELECTRICITY_AMOUNT).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_INSTANTANEOUS_GENERATED_ELECTRICITY_AMOUNT,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_GENERATED_ELECTRICITY_AMOUNT).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_GENERATED_ELECTRICITY_AMOUNT,HouseHoldSmallWindTurbinePowerGeneration.MY_URI,1,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_SOLD_ELECTRICITY_AMOUNT).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_SOLD_ELECTRICITY_AMOUNT).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_CUMULATIVE_SOLD_ELECTRICITY_AMOUNT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_SOLD_ELECTRICITY_AMOUNT).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_RESET_MEASURED_CUMULATIVE_SOLD_ELECTRICITY_AMOUNT,HouseHoldSmallWindTurbinePowerGeneration.MY_URI,1,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_1).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_1).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_1,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_2).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_2).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_POWER_GENERATION_OUTPUT_LIMIT_SETTING_2,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_AMOUNT_OF_ELECTRICITY_SOLD_LIMIT_SETTING).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_AMOUNT_OF_ELECTRICITY_SOLD_LIMIT_SETTING).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_AMOUNT_OF_ELECTRICITY_SOLD_LIMIT_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_RATED_POWER).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_RATED_POWER).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_RATED_POWER,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_WIND_SPEED).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_WIND_SPEED).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_MEASURED_WIND_SPEED,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_RATED_WIND_SPEED).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_RATED_WIND_SPEED).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_RATED_WIND_SPEED,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_CUT_IN_WIND_SPEED).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_CUT_IN_WIND_SPEED).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_CUT_IN_WIND_SPEED,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_CUT_OUT_WIND_SPEED).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_CUT_OUT_WIND_SPEED).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_CUT_OUT_WIND_SPEED,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_EXTREME_WIND_SPEED).setFunctional();
+		oci_SmallWindTurbinePowerGeneration.addDatatypeProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_EXTREME_WIND_SPEED).setFunctional();
 		oci_SmallWindTurbinePowerGeneration.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_EXTREME_WIND_SPEED,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_SmallWindTurbinePowerGeneration.addObjectProperty(HouseHoldSmallWindTurbinePowerGeneration.PROPERTY_HAS_BARKING_STATUS).setFunctional();
@@ -3628,38 +3619,38 @@ public final class EchonetOntology extends Ontology {
 		oci_LightingSystem.setResourceComment("");
 		oci_LightingSystem.setResourceLabel("LightingSystem");
 		oci_LightingSystem.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_LightingSystem.addObjectProperty(LightingSystem.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
+		oci_LightingSystem.addDatatypeProperty(LightingSystem.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
 		oci_LightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LightingSystem.PROPERTY_HAS_ILLUMINANCE_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_LightingSystem.addObjectProperty(LightingSystem.PROPERTY_HAS_SCENE_CONTROL_SETTING).setFunctional();
+		oci_LightingSystem.addDatatypeProperty(LightingSystem.PROPERTY_HAS_SCENE_CONTROL_SETTING).setFunctional();
 		oci_LightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LightingSystem.PROPERTY_HAS_SCENE_CONTROL_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_LightingSystem.addObjectProperty(LightingSystem.PROPERTY_HAS_NUMBER_FOR_ASSIGNING_SCENE_CONTROL_SETTING).setFunctional();
+		oci_LightingSystem.addDatatypeProperty(LightingSystem.PROPERTY_HAS_NUMBER_FOR_ASSIGNING_SCENE_CONTROL_SETTING).setFunctional();
 		oci_LightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(LightingSystem.PROPERTY_HAS_NUMBER_FOR_ASSIGNING_SCENE_CONTROL_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
 		
 		oci_ExtendedLightingSystem.setResourceComment("");
 		oci_ExtendedLightingSystem.setResourceLabel("ExtendedLightingSystem");
 		oci_ExtendedLightingSystem.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_ILLUMINANCE_LEVEL).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_ILLUMINANCE_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_SCENE_CONTROL_SETTING).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_SCENE_CONTROL_SETTING).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_SCENE_CONTROL_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_NUMBER_FOR_ASSIGNING_SCENE_CONTROL_SETTING).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_NUMBER_FOR_ASSIGNING_SCENE_CONTROL_SETTING).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_NUMBER_FOR_ASSIGNING_SCENE_CONTROL_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_RATE_LIST).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_RATE_LIST).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_RATE_LIST,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_WHEN_FULLY_LIGHTED).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_WHEN_FULLY_LIGHTED).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_WHEN_FULLY_LIGHTED,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_POSISSLBE_POWER_SAVING).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_POSISSLBE_POWER_SAVING).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_POSISSLBE_POWER_SAVING,TypeMapper.getDatatypeURI(Float.class),1,1));	
-		oci_ExtendedLightingSystem.addObjectProperty(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_LIMIT_SETTING).setFunctional();
+		oci_ExtendedLightingSystem.addDatatypeProperty(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_LIMIT_SETTING).setFunctional();
 		oci_ExtendedLightingSystem.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ExtendedLightingSystem.PROPERTY_HAS_POWER_CONSUMPTION_LIMIT_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
 		
@@ -3678,7 +3669,7 @@ public final class EchonetOntology extends Ontology {
 		oci_ElectricHotWaterPot.addObjectProperty(ElectricHotWaterPot.PROPERTY_HAS_BOIL_UP_WARMER_MODE_SETTING).setFunctional();
 		oci_ElectricHotWaterPot.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHotWaterPot.PROPERTY_HAS_BOIL_UP_WARMER_MODE_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_ElectricHotWaterPot.addObjectProperty(ElectricHotWaterPot.PROPERTY_HAS_WARMER_TEMPERATURE_SETTING_VALUE).setFunctional();
+		oci_ElectricHotWaterPot.addDatatypeProperty(ElectricHotWaterPot.PROPERTY_HAS_WARMER_TEMPERATURE_SETTING_VALUE).setFunctional();
 		oci_ElectricHotWaterPot.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ElectricHotWaterPot.PROPERTY_HAS_WARMER_TEMPERATURE_SETTING_VALUE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_ElectricHotWaterPot.addObjectProperty(ElectricHotWaterPot.PROPERTY_HAS_HOT_WATER_DISCHARGE_STATUS).setFunctional();
@@ -3712,58 +3703,58 @@ public final class EchonetOntology extends Ontology {
 		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATING_MODE_COMPARTMENT_DOOR_STATUS).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATING_MODE_COMPARTMENT_DOOR_STATUS,OperationStateSettingValue.MY_URI,0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MAXIMUM_ALLOWABLE_TEMEPRATURE_SETTING_LEVEL).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MAXIMUM_ALLOWABLE_TEMEPRATURE_SETTING_LEVEL).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MAXIMUM_ALLOWABLE_TEMEPRATURE_SETTING_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_REFRIGERATOR_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_REFRIGERATOR_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_REFRIGERATOR_COMPARTMENT_TEMPERATURER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_FREEZER_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_FREEZER_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_FREEZER_COMPARTMENT_TEMPERATURER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_ICE_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_ICE_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_ICE_COMPARTMENT_TEMPERATURER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));		
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_VEGETABLE_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_VEGETABLE_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_VEGETABLE_COMPARTMENT_TEMPERATURER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_REFRIGERATOR_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_REFRIGERATOR_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_REFRIGERATOR_COMPARTMENT_TEMPERATURER_LEVEL_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_FREEZER_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_FREEZER_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_FREEZER_COMPARTMENT_TEMPERATURER_LEVEL_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_ICE_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_ICE_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_ICE_COMPARTMENT_TEMPERATURER_LEVEL_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));		
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_VEGETABLE_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_VEGETABLE_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_VEGETABLE_COMPARTMENT_TEMPERATURER_LEVEL_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER_LEVEL_SETTING).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER_LEVEL_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MEASURED_REFRIGERATOR_COMPARTMENT_TEMPERATURER).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MEASURED_REFRIGERATOR_COMPARTMENT_TEMPERATURER).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MEASURED_REFRIGERATOR_COMPARTMENT_TEMPERATURER,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MEASURED_FREEZER_COMPARTMENT_TEMPERATURER).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MEASURED_FREEZER_COMPARTMENT_TEMPERATURER).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MEASURED_FREEZER_COMPARTMENT_TEMPERATURER,TypeMapper.getDatatypeURI(Float.class),0,1));	
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MEASURED_SUB_ZERO_FRESH_COMPARTMENT_TEMPERATURER).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MEASURED_SUB_ZERO_FRESH_COMPARTMENT_TEMPERATURER).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MEASURED_SUB_ZERO_FRESH_COMPARTMENT_TEMPERATURER,TypeMapper.getDatatypeURI(Float.class),0,1));		
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MEASURED_VEGETABLE_COMPARTMENT_TEMPERATURER).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MEASURED_VEGETABLE_COMPARTMENT_TEMPERATURER).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MEASURED_VEGETABLE_COMPARTMENT_TEMPERATURER,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_MEASURED_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_MEASURED_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_MEASURED_MULTI_REFRIGERATOR_COMPARTMENT_TEMPERATURER,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_COMPRESSOR_ROTATION_SPEED).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_COMPRESSOR_ROTATION_SPEED).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_COMPRESSOR_ROTATION_SPEED,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
+		oci_Refrigerator.addDatatypeProperty(Refrigerator.PROPERTY_HAS_RATED_POWER_CONSUMPTION).setFunctional();
 		oci_Refrigerator.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Refrigerator.PROPERTY_HAS_RATED_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_Refrigerator.addObjectProperty(Refrigerator.PROPERTY_HAS_QUICK_FREEZE_FUNCTION_SETTING).setFunctional();
@@ -3824,19 +3815,19 @@ public final class EchonetOntology extends Ontology {
 		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_FERMENTING_MODE_SETTING).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_FERMENTING_MODE_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_CHAMPER_TEMPERATURE_SETTING).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_CHAMPER_TEMPERATURE_SETTING).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_CHAMPER_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_FOOD_TEMPERATURE_SETTING).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_FOOD_TEMPERATURE_SETTING).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_FOOD_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_HEATING_SETTING_TIME).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_HEATING_SETTING_TIME).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_HEATING_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));	
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_REMAINING_HEATING_TIME).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_REMAINING_HEATING_TIME).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_REMAINING_HEATING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_MICROWAVE_HEATING_POWER_SETTING).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_MICROWAVE_HEATING_POWER_SETTING).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_MICROWAVE_HEATING_POWER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_PROMPT_MESSAGE_SETTING).setFunctional();
@@ -3848,10 +3839,10 @@ public final class EchonetOntology extends Ontology {
 		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_DISPLAY_CHARACTER_STRING_SETTING).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_DISPLAY_CHARACTER_STRING_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_TWO_STAGE_MICROWAVE_HEATING_DURATION).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_TWO_STAGE_MICROWAVE_HEATING_DURATION).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_TWO_STAGE_MICROWAVE_HEATING_DURATION,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_CombinationMicrowaveOven.addObjectProperty(CombinationMicrowaveOven.PROPERTY_HAS_TWO_STAGE_MICROWAVE_HEATING_POWER).setFunctional();
+		oci_CombinationMicrowaveOven.addDatatypeProperty(CombinationMicrowaveOven.PROPERTY_HAS_TWO_STAGE_MICROWAVE_HEATING_POWER).setFunctional();
 		oci_CombinationMicrowaveOven.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CombinationMicrowaveOven.PROPERTY_HAS_TWO_STAGE_MICROWAVE_HEATING_POWER,TypeMapper.getDatatypeURI(String.class),0,1));
 	
@@ -3868,16 +3859,16 @@ public final class EchonetOntology extends Ontology {
 		oci_CookingHeater.addObjectProperty(CookingHeater.PROPERTY_SETTING_ALL_STOP).setFunctional();
 		oci_CookingHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CookingHeater.PROPERTY_SETTING_ALL_STOP,CookingHeater.MY_URI,1,1));
-		oci_CookingHeater.addObjectProperty(CookingHeater.PROPERTY_HAS_HEATING_POWER_SETTING).setFunctional();
+		oci_CookingHeater.addDatatypeProperty(CookingHeater.PROPERTY_HAS_HEATING_POWER_SETTING).setFunctional();
 		oci_CookingHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CookingHeater.PROPERTY_HAS_HEATING_POWER_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CookingHeater.addObjectProperty(CookingHeater.PROPERTY_HAS_HEATING_TEMPERATURE_SETTING).setFunctional();
+		oci_CookingHeater.addDatatypeProperty(CookingHeater.PROPERTY_HAS_HEATING_TEMPERATURE_SETTING).setFunctional();
 		oci_CookingHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CookingHeater.PROPERTY_HAS_HEATING_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_CookingHeater.addObjectProperty(CookingHeater.PROPERTY_HAS_STOVE_HEATING_MODES_SETTING).setFunctional();
 		oci_CookingHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CookingHeater.PROPERTY_HAS_STOVE_HEATING_MODES_SETTING,OperationModeSettingValue.MY_URI,0,1));
-		oci_CookingHeater.addObjectProperty(CookingHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_CookingHeater.addDatatypeProperty(CookingHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_CookingHeater.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CookingHeater.PROPERTY_HAS_OFF_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));	
 		oci_CookingHeater.addObjectProperty(CookingHeater.PROPERTY_HAS_CHILD_LOCK_SETTING).setFunctional();
@@ -3911,10 +3902,10 @@ public final class EchonetOntology extends Ontology {
 		oci_RiceCooker.addObjectProperty(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING).setFunctional();
 		oci_RiceCooker.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
-		oci_RiceCooker.addObjectProperty(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING_RELATIVE_TIME).setFunctional();
+		oci_RiceCooker.addDatatypeProperty(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING_RELATIVE_TIME).setFunctional();
 		oci_RiceCooker.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_RiceCooker.addObjectProperty(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING_TIME).setFunctional();
+		oci_RiceCooker.addDatatypeProperty(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING_TIME).setFunctional();
 		oci_RiceCooker.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(RiceCooker.PROPERTY_HAS_RICE_COOKING_RESERVATION_SETTING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		
@@ -3930,16 +3921,16 @@ public final class EchonetOntology extends Ontology {
 		oci_WashingMachine.addObjectProperty(WashingMachine.PROPERTY_HAS_CURRENT_STAGE_OF_WASHING_CYCLE).setFunctional();
 		oci_WashingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WashingMachine.PROPERTY_HAS_CURRENT_STAGE_OF_WASHING_CYCLE,OperationModeSettingValue.MY_URI,0,1));	
-		oci_WashingMachine.addObjectProperty(WashingMachine.PROPERTY_HAS_REMAINING_TIME_TO_COMPLETE_WASHING_CYCLE).setFunctional();
+		oci_WashingMachine.addDatatypeProperty(WashingMachine.PROPERTY_HAS_REMAINING_TIME_TO_COMPLETE_WASHING_CYCLE).setFunctional();
 		oci_WashingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WashingMachine.PROPERTY_HAS_REMAINING_TIME_TO_COMPLETE_WASHING_CYCLE,TypeMapper.getDatatypeURI(String.class),0,1));	
 		oci_WashingMachine.addObjectProperty(WashingMachine.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_WashingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WashingMachine.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));	
-		oci_WashingMachine.addObjectProperty(WashingMachine.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
+		oci_WashingMachine.addDatatypeProperty(WashingMachine.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
 		oci_WashingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WashingMachine.PROPERTY_HAS_ON_TIMER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_WashingMachine.addObjectProperty(WashingMachine.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_WashingMachine.addDatatypeProperty(WashingMachine.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_WashingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WashingMachine.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		
@@ -3950,7 +3941,7 @@ public final class EchonetOntology extends Ontology {
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_OPERATION_MODE_SETTING).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_OPERATION_MODE_SETTING,OperationModeSettingValue.MY_URI,1,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_MEASURED_DISCHARGE_TEMPERATURE).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_MEASURED_DISCHARGE_TEMPERATURE).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_MEASURED_DISCHARGE_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_GROUP_INFORMATION).setFunctional();
@@ -3965,16 +3956,16 @@ public final class EchonetOntology extends Ontology {
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_EXTERNAL_LIGHTING_OPERATION_STATUS).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_EXTERNAL_LIGHTING_OPERATION_STATUS,OperationStatusValue.MY_URI,0,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_MEASURED_INTERNAL_TEMPERATURE).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_MEASURED_INTERNAL_TEMPERATURE).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_MEASURED_INTERNAL_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_FREEZING_CAPABILITY_VALUE).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_FREEZING_CAPABILITY_VALUE).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_FREEZING_CAPABILITY_VALUE,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_DEFROSTING_HEATER_POWER_CONSUMPTION).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_DEFROSTING_HEATER_POWER_CONSUMPTION).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_DEFROSTING_HEATER_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_FAN_MOTER_POWER_CONSUMPTION).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_FAN_MOTER_POWER_CONSUMPTION).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_FAN_MOTER_POWER_CONSUMPTION,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_OUTSIDE_THE_CASE_LIGHTING_TYPE).setFunctional();
@@ -3986,13 +3977,13 @@ public final class EchonetOntology extends Ontology {
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_SHOWCASE_LIGHTING_TYPE).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_SHOWCASE_LIGHTING_TYPE,OperationFunctionSettingValue.MY_URI,0,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_SHOWCASE_LIGHTING_ILLUMINANCE_LEVEL).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_SHOWCASE_LIGHTING_ILLUMINANCE_LEVEL).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_SHOWCASE_LIGHTING_ILLUMINANCE_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_OUTSIDE_THE_CASE_LIGHTING_ILLUMINANCE_LEVEL).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_OUTSIDE_THE_CASE_LIGHTING_ILLUMINANCE_LEVEL).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_OUTSIDE_THE_CASE_LIGHTING_ILLUMINANCE_LEVEL,TypeMapper.getDatatypeURI(Float.class),0,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_CASE_TEMPERATURE_SETTING).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_CASE_TEMPERATURE_SETTING).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_CASE_TEMPERATURE_SETTING,TypeMapper.getDatatypeURI(Float.class),1,1));
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_SHOWCASE_TYPE_INFORMATION).setFunctional();
@@ -4004,9 +3995,9 @@ public final class EchonetOntology extends Ontology {
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_SHOWCASE_CONFIGURATION_INFORMATION).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_SHOWCASE_CONFIGURATION_INFORMATION,OperationFunctionSettingValue.MY_URI,1,1));
-		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION).setFunctional();
+		oci_CommercialShowcase.addDatatypeProperty(CommercialShowcase.PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
-				(CommercialShowcase.PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION,ShapeValue.MY_URI,1,1));
+				(CommercialShowcase.PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION,TypeMapper.getDatatypeURI(String.class),1,1));
 		oci_CommercialShowcase.addObjectProperty(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_CASE_TEMPERATURE_RANGE_INFORMATION).setFunctional();
 		oci_CommercialShowcase.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcase.PROPERTY_HAS_INSIDE_THE_CASE_TEMPERATURE_RANGE_INFORMATION,OperationStatusValue.MY_URI,1,1));
@@ -4023,16 +4014,16 @@ public final class EchonetOntology extends Ontology {
 		oci_ClothesDryer.addObjectProperty(ClothesDryer.PROPERTY_HAS_DRYING_STATUS).setFunctional();
 		oci_ClothesDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ClothesDryer.PROPERTY_HAS_DRYING_STATUS,OperationModeSettingValue.MY_URI,0,1));
-		oci_ClothesDryer.addObjectProperty(ClothesDryer.PROPERTY_HAS_DRYING_REMAINING_TIME).setFunctional();
+		oci_ClothesDryer.addDatatypeProperty(ClothesDryer.PROPERTY_HAS_DRYING_REMAINING_TIME).setFunctional();
 		oci_ClothesDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ClothesDryer.PROPERTY_HAS_DRYING_REMAINING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_ClothesDryer.addObjectProperty(ClothesDryer.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
 		oci_ClothesDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ClothesDryer.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));	
-		oci_ClothesDryer.addObjectProperty(ClothesDryer.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
+		oci_ClothesDryer.addDatatypeProperty(ClothesDryer.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
 		oci_ClothesDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ClothesDryer.PROPERTY_HAS_ON_TIMER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));		
-		oci_ClothesDryer.addObjectProperty(ClothesDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_ClothesDryer.addDatatypeProperty(ClothesDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
 		oci_ClothesDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ClothesDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
 		
@@ -4045,7 +4036,96 @@ public final class EchonetOntology extends Ontology {
 		oci_WasherDryer.addObjectProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_SETTING).setFunctional();
 		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_SETTING,OperationStateSettingValue.MY_URI,0,1));
-		//TODO : Implement other functions later
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_SETTING_1).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_SETTING_1,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_SETTING_2).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_SETTING_2,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_DRYING_CYCLE_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_DRYING_CYCLE_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_OPTION_LIST_1).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_OPTION_LIST_1,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_OPTION_LIST_2).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_OPTION_LIST_2,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_OPTION_LIST_3).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE_OPTION_LIST_3,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WATER_FLOW_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WATER_FLOW_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_ROTATION_SPEED_FOR_SPIN_DRYING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_ROTATION_SPEED_FOR_SPIN_DRYING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_DEGREE_OF_DRYING_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_DEGREE_OF_DRYING_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_REMAINING_WASHING_TIME).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_REMAINING_WASHING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_REMAINING_DRYING_TIME).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_REMAINING_DRYING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_ELAPSED_TIME_ON_THE_ON_TIMER).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_ELAPSED_TIME_ON_THE_ON_TIMER,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_PRESOAKING_TIME).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_PRESOAKING_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_CURRENT_STAGE_OF_WASHER_DRYER_CYCLE).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_CURRENT_STAGE_OF_WASHER_DRYER_CYCLE,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WATER_VOLUME_SETTING_1).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WATER_VOLUME_SETTING_1,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WATER_VOLUME_SETTING_2).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WATER_VOLUME_SETTING_2,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WATSHING_TIME_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WATSHING_TIME_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_NUMBER_OF_RINSING_TIMES).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_NUMBER_OF_RINSING_TIMES,TypeMapper.getDatatypeURI(Integer.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_RINSING_PROCESS_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_RINSING_PROCESS_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_SPIN_DRYING_TIME_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_SPIN_DRYING_TIME_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_DRYING_TIME_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_DRYING_TIME_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WARM_WATER_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WARM_WATER_SETTING,TypeMapper.getDatatypeURI(Integer.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_BATHTUB_WATER_RECYCLE_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_BATHTUB_WATER_RECYCLE_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addObjectProperty(WasherDryer.PROPERTY_HAS_WRINKLING_MINIMIZATION_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WRINKLING_MINIMIZATION_SETTING,OperationStatusValue.MY_URI,0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_TIME_TO_COMPLETE_WASHER_AND_DRYER_CYCLE).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_TIME_TO_COMPLETE_WASHER_AND_DRYER_CYCLE,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_WASHER_DRYER_CYCLE,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addObjectProperty(WasherDryer.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_ON_TIMER_RESERVATION_SETTING,OperationStatusValue.MY_URI,0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_ON_TIMER_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_ON_TIMER_SETTING,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addDatatypeProperty(WasherDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_ON_TIMER_SETTING_RELATIVE_TIME,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_WasherDryer.addObjectProperty(WasherDryer.PROPERTY_HAS_DOOR_COVER_LOCK_SETTING).setFunctional();
+		oci_WasherDryer.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(WasherDryer.PROPERTY_HAS_DOOR_COVER_LOCK_SETTING,OperationStateSettingValue.MY_URI,0,1));
 		
 		oci_CommercialShowcaseOutdoorUnit.setResourceComment("");
 		oci_CommercialShowcaseOutdoorUnit.setResourceLabel("CommercialShowcaseOutdoorUnit");
@@ -4056,7 +4136,7 @@ public final class EchonetOntology extends Ontology {
 		oci_CommercialShowcaseOutdoorUnit.addObjectProperty(CommercialShowcaseOutdoorUnit.PROPERTY_HAS_OPERATION_MODE_SETTING).setFunctional();
 		oci_CommercialShowcaseOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcaseOutdoorUnit.PROPERTY_HAS_OPERATION_MODE_SETTING,OperationModeSettingValue.MY_URI,1,1));
-		oci_CommercialShowcaseOutdoorUnit.addObjectProperty(CommercialShowcaseOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_AIR_TEMPERATURE).setFunctional();
+		oci_CommercialShowcaseOutdoorUnit.addDatatypeProperty(CommercialShowcaseOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_AIR_TEMPERATURE).setFunctional();
 		oci_CommercialShowcaseOutdoorUnit.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(CommercialShowcaseOutdoorUnit.PROPERTY_HAS_MEASURED_OUTDOOR_AIR_TEMPERATURE,TypeMapper.getDatatypeURI(Float.class),0,1));
 		oci_CommercialShowcaseOutdoorUnit.addObjectProperty(CommercialShowcaseOutdoorUnit.PROPERTY_HAS_COMPRESSOR_OPERATION_STATUS).setFunctional();
@@ -4069,10 +4149,10 @@ public final class EchonetOntology extends Ontology {
 		oci_WeighingMachine.setResourceComment("");
 		oci_WeighingMachine.setResourceLabel("WeighingMachine");
 		oci_WeighingMachine.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_WeighingMachine.addObjectProperty(WeighingMachine.PROPERTY_HAS_MEASURED_BODY_WEIGHT).setFunctional();
+		oci_WeighingMachine.addDatatypeProperty(WeighingMachine.PROPERTY_HAS_MEASURED_BODY_WEIGHT).setFunctional();
 		oci_WeighingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WeighingMachine.PROPERTY_HAS_MEASURED_BODY_WEIGHT,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_WeighingMachine.addObjectProperty(WeighingMachine.PROPERTY_HAS_MEASURED_BODY_FAT).setFunctional();
+		oci_WeighingMachine.addDatatypeProperty(WeighingMachine.PROPERTY_HAS_MEASURED_BODY_FAT).setFunctional();
 		oci_WeighingMachine.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(WeighingMachine.PROPERTY_HAS_MEASURED_BODY_FAT,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -4110,10 +4190,10 @@ public final class EchonetOntology extends Ontology {
 		oci_Controller.addDatatypeProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_BUSINESS_CODE).setFunctional();
 		oci_Controller.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_BUSINESS_CODE,TypeMapper.getDatatypeURI(String.class),0,1));	
-		oci_Controller.addObjectProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_MANUFACTURER_DATE).setFunctional();
+		oci_Controller.addDatatypeProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_MANUFACTURER_DATE).setFunctional();
 		oci_Controller.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_MANUFACTURER_DATE,TypeMapper.getDatatypeURI(String.class),0,1));
-		oci_Controller.addObjectProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_REGISTERED_INFORMATION_RENEWAL_DATE).setFunctional();
+		oci_Controller.addDatatypeProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_REGISTERED_INFORMATION_RENEWAL_DATE).setFunctional();
 		oci_Controller.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_REGISTERED_INFORMATION_RENEWAL_DATE,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_Controller.addDatatypeProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_REGISTERED_INFORMATION_RENEWAL_VERSION_INFORMATION).setFunctional();
@@ -4125,7 +4205,7 @@ public final class EchonetOntology extends Ontology {
 		oci_Controller.addObjectProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_FAULT_STATUS).setFunctional();
 		oci_Controller.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_FAULT_STATUS,OccurenceStatusValue.MY_URI,0,1));
-		oci_Controller.addObjectProperty(Controller.PROPERTY_HAS_INSTALLATION_LOCATION_ADDRESS).setFunctional();
+		oci_Controller.addDatatypeProperty(Controller.PROPERTY_HAS_INSTALLATION_LOCATION_ADDRESS).setFunctional();
 		oci_Controller.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Controller.PROPERTY_HAS_INSTALLATION_LOCATION_ADDRESS,TypeMapper.getDatatypeURI(String.class),0,1));
 		oci_Controller.addDatatypeProperty(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_GET_PROPERTY_MAP).setFunctional();
@@ -4135,19 +4215,70 @@ public final class EchonetOntology extends Ontology {
 		oci_Controller.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Controller.PROPERTY_HAS_CONTROLLED_DEVICE_SET_PROPERTY_MAP,TypeMapper.getDatatypeURI(String.class),0,1));
 		
+		oci_DR_EventController.setResourceComment("Demand Reponse Event Controller");
+		oci_DR_EventController.setResourceLabel("DR_Event_Controller");
+		oci_DR_EventController.addSuperClass(EchonetSuperDevice.MY_URI);
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_BUSINESS_ID).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_BUSINESS_ID,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_DR_PROGRAM_TYPE).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_DR_PROGRAM_TYPE,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_DR_PROGRAM_ID).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_DR_PROGRAM_ID,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_CURRENT_VALID_EVENT_INFO).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_CURRENT_VALID_EVENT_INFO,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_NEXT_VALID_EVENT_INFO).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_NEXT_VALID_EVENT_INFO,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_FUTURE_EVENT_INFO_NOTIFICATION_ID_LIST).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_FUTURE_EVENT_INFO_NOTIFICATION_ID_LIST,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_PAST_EVENT_INFO_NOTIFICATION_ID_LIST).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_PAST_EVENT_INFO_NOTIFICATION_ID_LIST,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_NEWEST_RECEIVED_EVENT_NOTIFICATION_ID).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_NEWEST_RECEIVED_EVENT_NOTIFICATION_ID,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_OLDEST_RECEIVED_EVENT_NOTIFICATION_ID).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_OLDEST_RECEIVED_EVENT_NOTIFICATION_ID,TypeMapper.getDatatypeURI(String.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_NOTIFICATION_ID_DESIGNATION).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_NOTIFICATION_ID_DESIGNATION,TypeMapper.getDatatypeURI(Integer.class),1,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_EVENT_INFO_ID_DESIGNATION).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_EVENT_INFO_ID_DESIGNATION,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_TARGET_DEVICE_INFO_LIST).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_TARGET_DEVICE_INFO_LIST,TypeMapper.getDatatypeURI(String.class),0,1));
+		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_EVENT_INFO).setFunctional();
+		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+				(DREventController.PROPERTY_HAS_EVENT_INFO,TypeMapper.getDatatypeURI(String.class),1,1));
+//		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_CONFIRM_OPT_INFO).setFunctional();
+//		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+//				(DREventController.PROPERTY_HAS_CONFIRM_OPT_INFO,TypeMapper.getDatatypeURI(String.class),0,1));
+//		oci_DR_EventController.addDatatypeProperty(DREventController.PROPERTY_HAS_CONFIRM_OPT_INFO_STATUS).setFunctional();
+//		oci_DR_EventController.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
+//				(DREventController.PROPERTY_HAS_CONFIRM_OPT_INFO_STATUS,TypeMapper.getDatatypeURI(String.class),0,1));
+
+
+		
 		oci_ParallelProcessingCombinationTypePowerControl.setResourceComment("");
 		oci_ParallelProcessingCombinationTypePowerControl.setResourceLabel("ParallelProcessingCombinationTypePowerControl");
 		oci_ParallelProcessingCombinationTypePowerControl.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_ParallelProcessingCombinationTypePowerControl.addObjectProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_POWER_DEVIATION_INFORMATION).setFunctional();
+		oci_ParallelProcessingCombinationTypePowerControl.addDatatypeProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_POWER_DEVIATION_INFORMATION).setFunctional();
 		oci_ParallelProcessingCombinationTypePowerControl.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_POWER_DEVIATION_INFORMATION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ParallelProcessingCombinationTypePowerControl.addObjectProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_POWER_REDUCTION_INFORMATION).setFunctional();
+		oci_ParallelProcessingCombinationTypePowerControl.addDatatypeProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_POWER_REDUCTION_INFORMATION).setFunctional();
 		oci_ParallelProcessingCombinationTypePowerControl.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_POWER_REDUCTION_INFORMATION,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ParallelProcessingCombinationTypePowerControl.addObjectProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_TRANSMISSION_INTERVAL).setFunctional();
+		oci_ParallelProcessingCombinationTypePowerControl.addDatatypeProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_TRANSMISSION_INTERVAL).setFunctional();
 		oci_ParallelProcessingCombinationTypePowerControl.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_TRANSMISSION_INTERVAL,TypeMapper.getDatatypeURI(Float.class),1,1));
-		oci_ParallelProcessingCombinationTypePowerControl.addObjectProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_RATED_POWER_CONSUMPTION_THRESHOLD).setFunctional();
+		oci_ParallelProcessingCombinationTypePowerControl.addDatatypeProperty(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_RATED_POWER_CONSUMPTION_THRESHOLD).setFunctional();
 		oci_ParallelProcessingCombinationTypePowerControl.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(ParallelProcessingCombinationTypePowerControl.PROPERTY_SET_RATED_POWER_CONSUMPTION_THRESHOLD,TypeMapper.getDatatypeURI(Float.class),0,1));
 		
@@ -4160,13 +4291,13 @@ public final class EchonetOntology extends Ontology {
 		oci_Display.addObjectProperty(Display.PROPERTY_HAS_CHARACTER_STRING_SETTING_ACCEPTANCE_STATUS).setFunctional();
 		oci_Display.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Display.PROPERTY_HAS_CHARACTER_STRING_SETTING_ACCEPTANCE_STATUS,OperationStateSettingValue.MY_URI,1,1));
-		oci_Display.addObjectProperty(Display.PROPERTY_HAS_SUPPORTED_CHARACTER_CODES).setFunctional();
+		oci_Display.addDatatypeProperty(Display.PROPERTY_HAS_SUPPORTED_CHARACTER_CODES).setFunctional();
 		oci_Display.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Display.PROPERTY_HAS_SUPPORTED_CHARACTER_CODES,TypeMapper.getDatatypeURI(String.class),1,1));
 		oci_Display.addObjectProperty(Display.PROPERTY_HAS_CHARACTER_STRING_TO_PRESENT_TO_USER).setFunctional();
 		oci_Display.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Display.PROPERTY_HAS_CHARACTER_STRING_TO_PRESENT_TO_USER,CharacterCodes.MY_URI,1,1));
-		oci_Display.addObjectProperty(Display.PROPERTY_ACCEPTED_CHARACTER_STRING_LENGTH).setFunctional();
+		oci_Display.addDatatypeProperty(Display.PROPERTY_ACCEPTED_CHARACTER_STRING_LENGTH).setFunctional();
 		oci_Display.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Display.PROPERTY_ACCEPTED_CHARACTER_STRING_LENGTH,TypeMapper.getDatatypeURI(Float.class),1,1));
 		
@@ -4179,20 +4310,20 @@ public final class EchonetOntology extends Ontology {
 		oci_Television.addObjectProperty(Television.PROPERTY_HAS_CHARACTER_STRING_SETTING_ACCEPTANCE_STATUS).setFunctional();
 		oci_Television.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Television.PROPERTY_HAS_CHARACTER_STRING_SETTING_ACCEPTANCE_STATUS,OperationStateSettingValue.MY_URI,1,1));
-		oci_Television.addObjectProperty(Television.PROPERTY_HAS_SUPPORTED_CHARACTER_CODES).setFunctional();
+		oci_Television.addDatatypeProperty(Television.PROPERTY_HAS_SUPPORTED_CHARACTER_CODES).setFunctional();
 		oci_Television.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Television.PROPERTY_HAS_SUPPORTED_CHARACTER_CODES,TypeMapper.getDatatypeURI(String.class),1,1));
 		oci_Television.addObjectProperty(Television.PROPERTY_HAS_CHARACTER_STRING_TO_PRESENT_TO_USER).setFunctional();
 		oci_Television.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Television.PROPERTY_HAS_CHARACTER_STRING_TO_PRESENT_TO_USER,CharacterCodes.MY_URI,1,1));
-		oci_Television.addObjectProperty(Television.PROPERTY_ACCEPTED_CHARACTER_STRING_LENGTH).setFunctional();
+		oci_Television.addDatatypeProperty(Television.PROPERTY_ACCEPTED_CHARACTER_STRING_LENGTH).setFunctional();
 		oci_Television.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Television.PROPERTY_ACCEPTED_CHARACTER_STRING_LENGTH,TypeMapper.getDatatypeURI(Float.class),1,1));
 		
 		oci_Audio.setResourceComment("");
 		oci_Audio.setResourceLabel("Audio");
 		oci_Audio.addSuperClass(EchonetSuperDevice.MY_URI);
-		oci_Audio.addObjectProperty(Audio.PROPERTY_HAS_VOLUME_SETTING).setFunctional();
+		oci_Audio.addDatatypeProperty(Audio.PROPERTY_HAS_VOLUME_SETTING).setFunctional();
 		oci_Audio.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(Audio.PROPERTY_HAS_VOLUME_SETTING,TypeMapper.getDatatypeURI(Float.class),0,1));	
 		oci_Audio.addObjectProperty(Audio.PROPERTY_HAS_MUTE_SETTING).setFunctional();
@@ -4208,7 +4339,7 @@ public final class EchonetOntology extends Ontology {
 		oci_NetworkCamera.addObjectProperty(NetworkCamera.PROPERTY_HAS_STILL_IMAGE_PHOTOGRAPHY_SETTING_ACCEPTANCE_STATUS).setFunctional();
 		oci_NetworkCamera.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(NetworkCamera.PROPERTY_HAS_STILL_IMAGE_PHOTOGRAPHY_SETTING_ACCEPTANCE_STATUS,OperationStateSettingValue.MY_URI,1,1));	
-		oci_NetworkCamera.addObjectProperty(NetworkCamera.PROPERTY_SET_STILL_IMAGE_PHOTOGRAPHY_SETTING).setFunctional();
+		oci_NetworkCamera.addDatatypeProperty(NetworkCamera.PROPERTY_SET_STILL_IMAGE_PHOTOGRAPHY_SETTING).setFunctional();
 		oci_NetworkCamera.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality
 				(NetworkCamera.PROPERTY_SET_STILL_IMAGE_PHOTOGRAPHY_SETTING,TypeMapper.getDatatypeURI(Boolean.class),1,1));	
 		oci_NetworkCamera.addObjectProperty(NetworkCamera.PROPERTY_HAS_TRANSFER_SETTING).setFunctional();

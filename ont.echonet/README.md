@@ -23,10 +23,9 @@ Simply running "Maven-install" the project to generate ontology files.
 The ontology files are located at $target/ontologies folder.
 
 ### Remaining problems
-1. The DR controller is not yet supported in this version 
-2. The WasherDryer's functions and attributes are partly supported (mandatory properties only)
-3. Enum values for measurement units are planning to support in the next version
-4. The class naming (semantic meaning) is not so clear :-S
+
+1. Enum values for properties are going to support in the next version (hoever, it works without the enums)
+2. The class naming is following the english specification of the ECHONET Lite protocol (not so easy to understand without the specification)
 
 ## Contributing
 

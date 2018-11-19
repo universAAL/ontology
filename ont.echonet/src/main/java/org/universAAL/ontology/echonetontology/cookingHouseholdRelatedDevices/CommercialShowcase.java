@@ -24,7 +24,6 @@ import org.universAAL.ontology.echonetontology.values.OperationFunctionSettingVa
 import org.universAAL.ontology.echonetontology.values.OperationModeSettingValue;
 import org.universAAL.ontology.echonetontology.values.OperationStateSettingValue;
 import org.universAAL.ontology.echonetontology.values.OperationStatusValue;
-import org.universAAL.ontology.echonetontology.values.ShapeValue;
 
 public class CommercialShowcase extends EchonetSuperDevice{
 	public static final String MY_URI = EchonetOntology.NAMESPACE + "CommercialShowcase";
@@ -57,10 +56,10 @@ public class CommercialShowcase extends EchonetSuperDevice{
 		if(msg !=null) 
 			changeProperty(PROPERTY_HAS_INSIDE_THE_CASE_TEMPERATURE_RANGE_INFORMATION, msg);	
 	}
-	public ShapeValue getShowcaseShapeInformation() {
-		return (ShapeValue) getProperty(PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION);	
+	public String getShowcaseShapeInformation() {
+		return getProperty(PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION).toString();	
 	}
-	public void setShowcaseShapeInformation(ShapeValue msg) {
+	public void setShowcaseShapeInformation(String msg) {
 		if(msg !=null) 
 			changeProperty(PROPERTY_HAS_SHOWCASE_SHAPE_INFORMATION, msg);	
 	}

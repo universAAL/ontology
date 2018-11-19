@@ -81,6 +81,7 @@ import org.universAAL.ontology.echonetontology.housingFacilitiesRelatedDevices.W
 import org.universAAL.ontology.echonetontology.housingFacilitiesRelatedDevices.WaterHeater;
 import org.universAAL.ontology.echonetontology.housingFacilitiesRelatedDevices.WattHourMeter;
 import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.Controller;
+import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.DREventController;
 import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.ParallelProcessingCombinationTypePowerControl;
 import org.universAAL.ontology.echonetontology.managementOperationRelatedDevices.Switch;
 import org.universAAL.ontology.echonetontology.sensorRelatedDevices.ActivityMountSensor;
@@ -245,6 +246,7 @@ public class EchonetFactory implements ResourceFactory {
 	public static final int TELEVISION = 106;
 	public static final int EXTENDED_LIGHTING_SYSTEM = 107;
 	public static final int ECHONET_SUPER_DEVICE = 108;
+	public static final int DR_CONTROLLER = 109;
 	
 
 	
@@ -479,6 +481,8 @@ public class EchonetFactory implements ResourceFactory {
 				return new NetworkCamera(instanceURI);
 			case TELEVISION:
 				return new Television(instanceURI);
+			case DR_CONTROLLER:
+				return new DREventController(instanceURI);
 		}
 
 		return null;

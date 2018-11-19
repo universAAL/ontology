@@ -6,7 +6,7 @@
 		<groupId>org.universAAL.ontology</groupId>
 		<artifactId>ont.pom</artifactId>
 		<relativePath>../ont.pom</relativePath>
-		<version>3.4.0</version>
+		<version>3.4.2-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>ont.echonetontology</artifactId>
