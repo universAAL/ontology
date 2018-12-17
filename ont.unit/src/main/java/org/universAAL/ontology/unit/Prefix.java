@@ -32,8 +32,8 @@ public class Prefix extends ManagedIndividual {
 		super(uri);
 	}
 
-	public Prefix(String uri, String name, String symbol, int base, int power) {
-		super(uri);
+	public Prefix(String uriPostfix, String name, String symbol, int base, int power) {
+		super(UnitOntology.NAMESPACE + uriPostfix);
 		setName(name);
 		setSymbol(symbol);
 		setBase(Integer.valueOf(base));
