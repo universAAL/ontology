@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./VerticalAlignment.html" title="org.universAAL.ontology.recommendations.VerticalAlignment" alt="" coords="16,208,139,235"/>
-<area shape="rect" id="node1" href="./VerticalAlignment.html" title="&lt;TABLE&gt;" alt="" coords="5,197,149,245"/>
-<area shape="rect" id="node2_1" href="./HorizontalAlignment.html" title="org.universAAL.ontology.recommendations.HorizontalAlignment" alt="" coords="185,208,322,235"/>
-<area shape="rect" id="node2" href="./HorizontalAlignment.html" title="&lt;TABLE&gt;" alt="" coords="174,197,333,245"/>
-<area shape="rect" id="node3_2" href="./Alignment.html" title="org.universAAL.ontology.recommendations.Alignment" alt="" coords="126,112,205,139"/>
-<area shape="rect" id="node3" href="./Alignment.html" title="&lt;TABLE&gt;" alt="" coords="115,101,215,149"/>
-<area shape="rect" id="node4_3" href="./VisualRecommendation.html" title="org.universAAL.ontology.recommendations.VisualRecommendation" alt="" coords="86,16,245,43"/>
-<area shape="rect" id="node4" href="./VisualRecommendation.html" title="&lt;TABLE&gt;" alt="" coords="75,5,255,53"/>
+<area shape="rect" id="node1_0" href="./HorizontalAlignment.html" title="org.universAAL.ontology.recommendations.HorizontalAlignment" alt="" coords="15,208,153,235"/>
+<area shape="rect" id="node1" href="./HorizontalAlignment.html" title="&lt;TABLE&gt;" alt="" coords="5,197,163,245"/>
+<area shape="rect" id="node2_1" href="./VisualRecommendation.html" title="org.universAAL.ontology.recommendations.VisualRecommendation" alt="" coords="93,16,251,43"/>
+<area shape="rect" id="node2" href="./VisualRecommendation.html" title="&lt;TABLE&gt;" alt="" coords="82,5,262,53"/>
+<area shape="rect" id="node3_2" href="./Alignment.html" title="org.universAAL.ontology.recommendations.Alignment" alt="" coords="133,112,211,139"/>
+<area shape="rect" id="node3" href="./Alignment.html" title="&lt;TABLE&gt;" alt="" coords="122,101,222,149"/>
+<area shape="rect" id="node4_3" href="./VerticalAlignment.html" title="org.universAAL.ontology.recommendations.VerticalAlignment" alt="" coords="199,208,321,235"/>
+<area shape="rect" id="node4" href="./VerticalAlignment.html" title="&lt;TABLE&gt;" alt="" coords="188,197,332,245"/>
 </map>

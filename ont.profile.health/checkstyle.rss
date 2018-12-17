@@ -178,7 +178,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   15
@@ -187,6 +187,20 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.services.PlannedSessionManagementService.java">org/universAAL/ontology/health/owl/services/PlannedSessionManagementService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.services.DisplayTreatmentService.java">org/universAAL/ontology/health/owl/services/DisplayTreatmentService.java</a>
                 </td>
                 <td>
                   0
@@ -214,27 +228,13 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.services.DisplayTreatmentService.java">org/universAAL/ontology/health/owl/services/DisplayTreatmentService.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.services.HealthService.java">org/universAAL/ontology/health/owl/services/HealthService.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   9
@@ -340,20 +340,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.PlannedSession.java">org/universAAL/ontology/health/owl/PlannedSession.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  36
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.services.PerformedSessionManagementService.java">org/universAAL/ontology/health/owl/services/PerformedSessionManagementService.java</a>
                 </td>
                 <td>
@@ -364,6 +350,20 @@ under the License.
                 </td>
                 <td>
                   13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.health//checkstyle.html#org.universAAL.ontology.health.owl.PlannedSession.java">org/universAAL/ontology/health/owl/PlannedSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  36
                 </td>
               </tr>
                           <tr>
@@ -444,7 +444,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   10

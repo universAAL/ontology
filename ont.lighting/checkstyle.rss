@@ -94,7 +94,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   4
@@ -108,7 +108,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   4
@@ -214,6 +214,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.lighting.Lighting.java">org/universAAL/ontology/lighting/Lighting.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.LightingActivator.java">org/universAAL/ontology/LightingActivator.java</a>
                 </td>
                 <td>
@@ -238,20 +252,6 @@ under the License.
                 </td>
                 <td>
                   3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.lighting.Lighting.java">org/universAAL/ontology/lighting/Lighting.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
                 </td>
               </tr>
                       </tbody>

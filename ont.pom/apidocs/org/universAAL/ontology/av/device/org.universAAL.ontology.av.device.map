@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./VideoCamera.html" title="org.universAAL.ontology.av.device.VideoCamera" alt="" coords="15,16,115,43"/>
-<area shape="rect" id="node1" href="./VideoCamera.html" title="&lt;TABLE&gt;" alt="" coords="5,5,126,53"/>
-<area shape="rect" id="node2_1" href="./Microphone.html" title="org.universAAL.ontology.av.device.Microphone" alt="" coords="161,16,249,43"/>
-<area shape="rect" id="node2" href="./Microphone.html" title="&lt;TABLE&gt;" alt="" coords="151,5,260,53"/>
-<area shape="rect" id="node3_2" href="./LoudSpeaker.html" title="org.universAAL.ontology.av.device.LoudSpeaker" alt="" coords="295,16,393,43"/>
-<area shape="rect" id="node3" href="./LoudSpeaker.html" title="&lt;TABLE&gt;" alt="" coords="285,5,403,53"/>
+<area shape="rect" id="node1_0" href="./LoudSpeaker.html" title="org.universAAL.ontology.av.device.LoudSpeaker" alt="" coords="15,16,113,43"/>
+<area shape="rect" id="node1" href="./LoudSpeaker.html" title="&lt;TABLE&gt;" alt="" coords="5,5,123,53"/>
+<area shape="rect" id="node2_1" href="./VideoCamera.html" title="org.universAAL.ontology.av.device.VideoCamera" alt="" coords="158,16,258,43"/>
+<area shape="rect" id="node2" href="./VideoCamera.html" title="&lt;TABLE&gt;" alt="" coords="147,5,269,53"/>
+<area shape="rect" id="node3_2" href="./Microphone.html" title="org.universAAL.ontology.av.device.Microphone" alt="" coords="304,16,392,43"/>
+<area shape="rect" id="node3" href="./Microphone.html" title="&lt;TABLE&gt;" alt="" coords="293,5,403,53"/>
 </map>

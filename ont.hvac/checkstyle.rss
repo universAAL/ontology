@@ -80,10 +80,24 @@ under the License.
                   1
                 </td>
                 <td>
-                  5
+                  4
                 </td>
                 <td>
                   14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Mode.java">org/universAAL/ontology/hvac/Mode.java</a>
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  9
                 </td>
               </tr>
                           <tr>
@@ -98,20 +112,6 @@ under the License.
                 </td>
                 <td>
                   14
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.hvac//checkstyle.html#org.universAAL.ontology.hvac.Mode.java">org/universAAL/ontology/hvac/Mode.java</a>
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  9
                 </td>
               </tr>
                           <tr>

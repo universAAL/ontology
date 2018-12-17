@@ -10,21 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.health.owl.PerformedMeasurementSession
-	c285728 [label=<<table title="org.universAAL.ontology.health.owl.PerformedMeasurementSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PerformedMeasurementSession.html">
+	c285732 [label=<<table title="org.universAAL.ontology.health.owl.PerformedMeasurementSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PerformedMeasurementSession.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PerformedMeasurementSession </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PerformedMeasurementSession.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.health.owl.PerformedSession
-	c285739 [label=<<table title="org.universAAL.ontology.health.owl.PerformedSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PerformedSession.html">
+	c285738 [label=<<table title="org.universAAL.ontology.health.owl.PerformedSession" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PerformedSession.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PerformedSession </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PerformedSession.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.health.owl.PerformedMeasurementSession extends org.universAAL.ontology.health.owl.PerformedSession
-	c285739:p -> c285728:p [dir=back,arrowtail=empty];
+	c285738:p -> c285732:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.health.owl.PerformedSession extends org.universAAL.middleware.owl.ManagedIndividual
-	c285854:p -> c285739:p [dir=back,arrowtail=empty];
+	c285854:p -> c285738:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
 	c285854 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

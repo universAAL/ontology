@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.cryptographic.EncryptionKey
-	c343575 [label=<<table title="org.universAAL.ontology.cryptographic.EncryptionKey" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EncryptionKey.html">
+	c343563 [label=<<table title="org.universAAL.ontology.cryptographic.EncryptionKey" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EncryptionKey.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> EncryptionKey </font></td></tr>
 		</table></td></tr>
@@ -22,6 +22,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SimpleKey.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.cryptographic.SimpleKey extends org.universAAL.ontology.cryptographic.EncryptionKey
-	c343575:p -> c343576:p [dir=back,arrowtail=empty];
+	c343563:p -> c343576:p [dir=back,arrowtail=empty];
 }
 

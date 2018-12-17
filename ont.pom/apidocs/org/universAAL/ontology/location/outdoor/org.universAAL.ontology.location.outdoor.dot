@@ -9,75 +9,75 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
+	// org.universAAL.ontology.location.outdoor.OutdoorPlace
+	c3178 [label=<<table title="org.universAAL.ontology.location.outdoor.OutdoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OutdoorPlace.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> OutdoorPlace </td></tr>
+		</table></td></tr>
+		</table>>, URL="./OutdoorPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.Building
-	c2552 [label=<<table title="org.universAAL.ontology.location.outdoor.Building" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Building.html">
+	c3179 [label=<<table title="org.universAAL.ontology.location.outdoor.Building" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Building.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Building </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Building.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.CityPlace
-	c2553 [label=<<table title="org.universAAL.ontology.location.outdoor.CityPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CityPlace.html">
+	c3180 [label=<<table title="org.universAAL.ontology.location.outdoor.CityPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CityPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CityPlace </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CityPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.CityRegion
-	c2554 [label=<<table title="org.universAAL.ontology.location.outdoor.CityRegion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CityRegion.html">
+	c3181 [label=<<table title="org.universAAL.ontology.location.outdoor.CityRegion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CityRegion.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CityRegion </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CityRegion.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.outdoor.CityQuarter
-	c2555 [label=<<table title="org.universAAL.ontology.location.outdoor.CityQuarter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CityQuarter.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> CityQuarter </td></tr>
-		</table></td></tr>
-		</table>>, URL="./CityQuarter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.outdoor.City
-	c2556 [label=<<table title="org.universAAL.ontology.location.outdoor.City" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./City.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> City </td></tr>
-		</table></td></tr>
-		</table>>, URL="./City.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.State
-	c2557 [label=<<table title="org.universAAL.ontology.location.outdoor.State" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./State.html">
+	c3182 [label=<<table title="org.universAAL.ontology.location.outdoor.State" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./State.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> State </td></tr>
 		</table></td></tr>
 		</table>>, URL="./State.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.Country
-	c2558 [label=<<table title="org.universAAL.ontology.location.outdoor.Country" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Country.html">
+	c3183 [label=<<table title="org.universAAL.ontology.location.outdoor.Country" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Country.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Country </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Country.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559 [label=<<table title="org.universAAL.ontology.location.outdoor.OutdoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OutdoorPlace.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> OutdoorPlace </td></tr>
-		</table></td></tr>
-		</table>>, URL="./OutdoorPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.outdoor.Region
-	c2560 [label=<<table title="org.universAAL.ontology.location.outdoor.Region" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Region.html">
+	c3184 [label=<<table title="org.universAAL.ontology.location.outdoor.Region" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Region.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Region </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Region.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.outdoor.CityQuarter
+	c3185 [label=<<table title="org.universAAL.ontology.location.outdoor.CityQuarter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CityQuarter.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> CityQuarter </td></tr>
+		</table></td></tr>
+		</table>>, URL="./CityQuarter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.outdoor.City
+	c3186 [label=<<table title="org.universAAL.ontology.location.outdoor.City" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./City.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> City </td></tr>
+		</table></td></tr>
+		</table>>, URL="./City.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.location.outdoor.Building extends org.universAAL.ontology.location.outdoor.CityPlace
-	c2553:p -> c2552:p [dir=back,arrowtail=empty];
+	c3180:p -> c3179:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.outdoor.CityPlace extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2553:p [dir=back,arrowtail=empty];
+	c3178:p -> c3180:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.outdoor.CityRegion extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2554:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.outdoor.CityQuarter extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2555:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.outdoor.City extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2556:p [dir=back,arrowtail=empty];
+	c3178:p -> c3181:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.outdoor.State extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2557:p [dir=back,arrowtail=empty];
+	c3178:p -> c3182:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.outdoor.Country extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2558:p [dir=back,arrowtail=empty];
+	c3178:p -> c3183:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.outdoor.Region extends org.universAAL.ontology.location.outdoor.OutdoorPlace
-	c2559:p -> c2560:p [dir=back,arrowtail=empty];
+	c3178:p -> c3184:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.outdoor.CityQuarter extends org.universAAL.ontology.location.outdoor.OutdoorPlace
+	c3178:p -> c3185:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.outdoor.City extends org.universAAL.ontology.location.outdoor.OutdoorPlace
+	c3178:p -> c3186:p [dir=back,arrowtail=empty];
 }
 

@@ -60,20 +60,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.ColorType.java">org/universAAL/ontology/ui/preferences/ColorType.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  17
-                </td>
-                <td>
-                  45
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.SystemMenuPreferences.java">org/universAAL/ontology/ui/preferences/SystemMenuPreferences.java</a>
                 </td>
                 <td>
@@ -84,6 +70,20 @@ under the License.
                 </td>
                 <td>
                   36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.ColorType.java">org/universAAL/ontology/ui/preferences/ColorType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+                <td>
+                  45
                 </td>
               </tr>
                           <tr>
@@ -102,20 +102,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.GeneralInteractionPreferences.java">org/universAAL/ontology/ui/preferences/GeneralInteractionPreferences.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  36
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.PendingDialogsBuilderType.java">org/universAAL/ontology/ui/preferences/PendingDialogsBuilderType.java</a>
                 </td>
                 <td>
@@ -126,6 +112,20 @@ under the License.
                 </td>
                 <td>
                   18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.GeneralInteractionPreferences.java">org/universAAL/ontology/ui/preferences/GeneralInteractionPreferences.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  36
                 </td>
               </tr>
                           <tr>
@@ -200,6 +200,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Intensity.java">org/universAAL/ontology/ui/preferences/Intensity.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.AuditoryPreferences.java">org/universAAL/ontology/ui/preferences/AuditoryPreferences.java</a>
                 </td>
                 <td>
@@ -210,20 +224,6 @@ under the License.
                 </td>
                 <td>
                   24
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.profile.ui.preferences//checkstyle.html#org.universAAL.ontology.ui.preferences.Intensity.java">org/universAAL/ontology/ui/preferences/Intensity.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  4
-                </td>
-                <td>
-                  20
                 </td>
               </tr>
                           <tr>
@@ -290,7 +290,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   36

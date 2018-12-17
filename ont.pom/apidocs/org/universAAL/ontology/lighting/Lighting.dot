@@ -9,30 +9,30 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.lighting.Beaming
-	c235684 [label=<<table title="org.universAAL.ontology.lighting.Beaming" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Beaming.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Beaming </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Beaming.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.Lighting
-	c235686 [label=<<table title="org.universAAL.ontology.lighting.Lighting" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Lighting.html">
+	c235681 [label=<<table title="org.universAAL.ontology.lighting.Lighting" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Lighting.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Lighting </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Lighting.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.lighting.Beaming
+	c235685 [label=<<table title="org.universAAL.ontology.lighting.Beaming" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Beaming.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Beaming </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Beaming.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.BlinkableLighting
-	c235687 [label=<<table title="org.universAAL.ontology.lighting.BlinkableLighting" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BlinkableLighting.html">
+	c235686 [label=<<table title="org.universAAL.ontology.lighting.BlinkableLighting" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BlinkableLighting.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BlinkableLighting </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BlinkableLighting.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//org.universAAL.ontology.lighting.Beaming extends org.universAAL.ontology.lighting.Lighting
-	c235686:p -> c235684:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.Lighting extends org.universAAL.middleware.service.owl.Service
-	c235841:p -> c235686:p [dir=back,arrowtail=empty];
+	c235841:p -> c235681:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.lighting.Beaming extends org.universAAL.ontology.lighting.Lighting
+	c235681:p -> c235685:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.lighting.BlinkableLighting extends org.universAAL.ontology.lighting.Lighting
-	c235686:p -> c235687:p [dir=back,arrowtail=empty];
+	c235681:p -> c235686:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.service.owl.Service
 	c235841 [label=<<table title="org.universAAL.middleware.service.owl.Service" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/service/owl/Service.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

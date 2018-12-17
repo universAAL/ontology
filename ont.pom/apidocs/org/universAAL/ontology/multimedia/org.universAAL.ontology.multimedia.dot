@@ -15,17 +15,17 @@ digraph G {
 <tr><td align="center" balign="center"> Stereoset </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Stereoset.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.multimedia.MultimediaOntology
-	c31319 [label=<<table title="org.universAAL.ontology.multimedia.MultimediaOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultimediaOntology.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MultimediaOntology </td></tr>
-		</table></td></tr>
-		</table>>, URL="./MultimediaOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.multimedia.TV
-	c31320 [label=<<table title="org.universAAL.ontology.multimedia.TV" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TV.html">
+	c31319 [label=<<table title="org.universAAL.ontology.multimedia.TV" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TV.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> TV </td></tr>
 		</table></td></tr>
 		</table>>, URL="./TV.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.multimedia.MultimediaOntology
+	c31320 [label=<<table title="org.universAAL.ontology.multimedia.MultimediaOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultimediaOntology.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> MultimediaOntology </td></tr>
+		</table></td></tr>
+		</table>>, URL="./MultimediaOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

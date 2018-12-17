@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./PersonalInformationSubprofile.html" title="org.universAAL.ontology.profile.PersonalInformationSubprofile" alt="" coords="16,208,211,235"/>
-<area shape="rect" id="node1" href="./PersonalInformationSubprofile.html" title="&lt;TABLE&gt;" alt="" coords="5,197,221,245"/>
-<area shape="rect" id="node2_1" href="./HWSubProfile.html" title="org.universAAL.ontology.profile.HWSubProfile" alt="" coords="256,208,360,235"/>
-<area shape="rect" id="node2" href="./HWSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="245,197,371,245"/>
-<area shape="rect" id="node3_2" href="./HRSubProfile.html" title="org.universAAL.ontology.profile.HRSubProfile" alt="" coords="405,208,507,235"/>
-<area shape="rect" id="node3" href="./HRSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="395,197,517,245"/>
-<area shape="rect" id="node4_3" href="./AppSubProfile.html" title="org.universAAL.ontology.profile.AppSubProfile" alt="" coords="552,208,656,235"/>
-<area shape="rect" id="node4" href="./AppSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="541,197,667,245"/>
-<area shape="rect" id="node5_4" href="./SubProfile.html" title="org.universAAL.ontology.profile.SubProfile" alt="" coords="635,112,717,139"/>
-<area shape="rect" id="node5" href="./SubProfile.html" title="&lt;TABLE&gt;" alt="" coords="625,101,727,149"/>
+<area shape="rect" id="node1_0" href="./AppSubProfile.html" title="org.universAAL.ontology.profile.AppSubProfile" alt="" coords="16,208,120,235"/>
+<area shape="rect" id="node1" href="./AppSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="5,197,131,245"/>
+<area shape="rect" id="node2_1" href="./HRSubProfile.html" title="org.universAAL.ontology.profile.HRSubProfile" alt="" coords="165,208,267,235"/>
+<area shape="rect" id="node2" href="./HRSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="155,197,277,245"/>
+<area shape="rect" id="node3_2" href="./SubProfile.html" title="org.universAAL.ontology.profile.SubProfile" alt="" coords="613,112,694,139"/>
+<area shape="rect" id="node3" href="./SubProfile.html" title="&lt;TABLE&gt;" alt="" coords="602,101,705,149"/>
+<area shape="rect" id="node4_3" href="./HWSubProfile.html" title="org.universAAL.ontology.profile.HWSubProfile" alt="" coords="312,208,416,235"/>
+<area shape="rect" id="node4" href="./HWSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="301,197,427,245"/>
+<area shape="rect" id="node5_4" href="./PersonalInformationSubprofile.html" title="org.universAAL.ontology.profile.PersonalInformationSubprofile" alt="" coords="461,208,656,235"/>
+<area shape="rect" id="node5" href="./PersonalInformationSubprofile.html" title="&lt;TABLE&gt;" alt="" coords="451,197,667,245"/>
 <area shape="rect" id="node6_5" href="../health/owl/HealthProfile.html" title="org.universAAL.ontology.health.owl.HealthProfile" alt="" coords="701,208,797,235"/>
 <area shape="rect" id="node6" href="../health/owl/HealthProfile.html" title="&lt;TABLE&gt;" alt="" coords="691,197,808,245"/>
 <area shape="rect" id="node7_6" href="./ui/mainmenu/MenuProfile.html" title="org.universAAL.ontology.profile.ui.mainmenu.MenuProfile" alt="" coords="843,208,933,235"/>
@@ -17,6 +17,6 @@
 <area shape="rect" id="node8" href="../ui/preferences/UIPreferencesSubProfile.html" title="&lt;TABLE&gt;" alt="" coords="968,197,1155,245"/>
 <area shape="rect" id="node9_8" href="../security/SecuritySubprofile.html" title="org.universAAL.ontology.security.SecuritySubprofile" alt="" coords="1190,208,1317,235"/>
 <area shape="rect" id="node9" href="../security/SecuritySubprofile.html" title="&lt;TABLE&gt;" alt="" coords="1179,197,1327,245"/>
-<area shape="rect" id="node10_9" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="611,16,741,43"/>
-<area shape="rect" id="node10" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="601,5,751,53"/>
+<area shape="rect" id="node10_9" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="589,16,718,43"/>
+<area shape="rect" id="node10" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="578,5,729,53"/>
 </map>

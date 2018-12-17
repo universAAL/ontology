@@ -1,16 +1,16 @@
 <map id="G" name="G">
 <area shape="rect" id="node1_0" href="./DroolsReasoning.html" title="org.universAAL.ontology.drools.DroolsReasoning" alt="" coords="15,16,137,43"/>
 <area shape="rect" id="node1" href="./DroolsReasoning.html" title="&lt;TABLE&gt;" alt="" coords="5,5,147,53"/>
-<area shape="rect" id="node2_1" href="./Rule.html" title="org.universAAL.ontology.drools.Rule" alt="" coords="184,16,232,43"/>
-<area shape="rect" id="node2" href="./Rule.html" title="&lt;TABLE&gt;" alt="" coords="172,5,244,53"/>
-<area shape="rect" id="node3_2" href="./Fact.html" title="org.universAAL.ontology.drools.Fact" alt="" coords="281,16,327,43"/>
-<area shape="rect" id="node3" href="./Fact.html" title="&lt;TABLE&gt;" alt="" coords="268,5,340,53"/>
-<area shape="rect" id="node4_3" href="./ConsequenceProperty.html" title="org.universAAL.ontology.drools.ConsequenceProperty" alt="" coords="375,16,524,43"/>
-<area shape="rect" id="node4" href="./ConsequenceProperty.html" title="&lt;TABLE&gt;" alt="" coords="364,5,535,53"/>
-<area shape="rect" id="node5_4" href="./Consequence.html" title="org.universAAL.ontology.drools.Consequence" alt="" coords="569,16,671,43"/>
-<area shape="rect" id="node5" href="./Consequence.html" title="&lt;TABLE&gt;" alt="" coords="559,5,681,53"/>
-<area shape="rect" id="node6_5" href="./DroolsReasoningOntology.html" title="org.universAAL.ontology.drools.DroolsReasoningOntology" alt="" coords="716,16,889,43"/>
-<area shape="rect" id="node6" href="./DroolsReasoningOntology.html" title="&lt;TABLE&gt;" alt="" coords="705,5,900,53"/>
-<area shape="rect" id="node7_6" href="./FactProperty.html" title="org.universAAL.ontology.drools.FactProperty" alt="" coords="935,16,1031,43"/>
-<area shape="rect" id="node7" href="./FactProperty.html" title="&lt;TABLE&gt;" alt="" coords="924,5,1041,53"/>
+<area shape="rect" id="node2_1" href="./ConsequenceProperty.html" title="org.universAAL.ontology.drools.ConsequenceProperty" alt="" coords="183,16,332,43"/>
+<area shape="rect" id="node2" href="./ConsequenceProperty.html" title="&lt;TABLE&gt;" alt="" coords="172,5,343,53"/>
+<area shape="rect" id="node3_2" href="./Rule.html" title="org.universAAL.ontology.drools.Rule" alt="" coords="379,16,427,43"/>
+<area shape="rect" id="node3" href="./Rule.html" title="&lt;TABLE&gt;" alt="" coords="367,5,439,53"/>
+<area shape="rect" id="node4_3" href="./Consequence.html" title="org.universAAL.ontology.drools.Consequence" alt="" coords="473,16,575,43"/>
+<area shape="rect" id="node4" href="./Consequence.html" title="&lt;TABLE&gt;" alt="" coords="463,5,585,53"/>
+<area shape="rect" id="node5_4" href="./FactProperty.html" title="org.universAAL.ontology.drools.FactProperty" alt="" coords="620,16,716,43"/>
+<area shape="rect" id="node5" href="./FactProperty.html" title="&lt;TABLE&gt;" alt="" coords="609,5,727,53"/>
+<area shape="rect" id="node6_5" href="./Fact.html" title="org.universAAL.ontology.drools.Fact" alt="" coords="763,16,810,43"/>
+<area shape="rect" id="node6" href="./Fact.html" title="&lt;TABLE&gt;" alt="" coords="751,5,823,53"/>
+<area shape="rect" id="node7_6" href="./DroolsReasoningOntology.html" title="org.universAAL.ontology.drools.DroolsReasoningOntology" alt="" coords="857,16,1031,43"/>
+<area shape="rect" id="node7" href="./DroolsReasoningOntology.html" title="&lt;TABLE&gt;" alt="" coords="847,5,1041,53"/>
 </map>

@@ -52,7 +52,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   29
@@ -108,7 +108,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   6
@@ -130,20 +130,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.av.streaming.AudioCompression.java">org/universAAL/ontology/av/streaming/AudioCompression.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  6
-                </td>
-                <td>
-                  18
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.av.streaming.AudioStream.java">org/universAAL/ontology/av/streaming/AudioStream.java</a>
                 </td>
                 <td>
@@ -158,6 +144,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.av.streaming.AudioCompression.java">org/universAAL/ontology/av/streaming/AudioCompression.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.av.streaming.Format.java">org/universAAL/ontology/av/streaming/Format.java</a>
                 </td>
                 <td>
@@ -168,34 +168,6 @@ under the License.
                 </td>
                 <td>
                   11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.AVFactory.java">org/universAAL/ontology/AVFactory.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.av.device.VideoCamera.java">org/universAAL/ontology/av/device/VideoCamera.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  37
                 </td>
               </tr>
                           <tr>
@@ -224,6 +196,34 @@ under the License.
                 </td>
                 <td>
                   14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.av.device.VideoCamera.java">org/universAAL/ontology/av/device/VideoCamera.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  37
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.av//checkstyle.html#org.universAAL.ontology.AVFactory.java">org/universAAL/ontology/AVFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -262,7 +262,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   16

@@ -66,7 +66,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   6
@@ -108,7 +108,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   6
@@ -116,16 +116,16 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.ImpairmentActivator.java">org/universAAL/ontology/ImpairmentActivator.java</a>
+                  <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.NearSightedness.java">org/universAAL/ontology/impairment/NearSightedness.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
-                  5
+                  6
                 </td>
               </tr>
                           <tr>
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.impairment.NearSightedness.java">org/universAAL/ontology/impairment/NearSightedness.java</a>
+                  <a href="http://ontology/ont.impairment//checkstyle.html#org.universAAL.ontology.ImpairmentActivator.java">org/universAAL/ontology/ImpairmentActivator.java</a>
                 </td>
                 <td>
                   0
@@ -153,7 +153,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  5
                 </td>
               </tr>
                           <tr>
@@ -206,7 +206,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   2

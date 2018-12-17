@@ -52,7 +52,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   3
@@ -88,30 +88,30 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.MeanSquareError.java">org/universAAL/ontology/measurement/MeanSquareError.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  7
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.Signal.java">org/universAAL/ontology/measurement/Signal.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.measurement//checkstyle.html#org.universAAL.ontology.measurement.MeanSquareError.java">org/universAAL/ontology/measurement/MeanSquareError.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
               </tr>
                           <tr>
@@ -122,7 +122,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   6

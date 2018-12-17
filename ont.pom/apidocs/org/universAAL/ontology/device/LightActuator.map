@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./LightController.html" title="org.universAAL.ontology.device.LightController" alt="" coords="15,208,121,235"/>
-<area shape="rect" id="node1" href="./LightController.html" title="&lt;TABLE&gt;" alt="" coords="5,197,131,245"/>
-<area shape="rect" id="node2_1" href="./Actuator.html" title="org.universAAL.ontology.device.Actuator" alt="" coords="115,16,184,43"/>
-<area shape="rect" id="node2" href="./Actuator.html" title="&lt;TABLE&gt;" alt="" coords="104,5,195,53"/>
-<area shape="rect" id="node3_2" href="./LightActuator.html" title="org.universAAL.ontology.device.LightActuator" alt="" coords="101,112,198,139"/>
-<area shape="rect" id="node3" href="./LightActuator.html" title="&lt;TABLE&gt;" alt="" coords="90,101,209,149"/>
-<area shape="rect" id="node4_3" href="./ColorLightActuator.html" title="org.universAAL.ontology.device.ColorLightActuator" alt="" coords="166,208,295,235"/>
-<area shape="rect" id="node4" href="./ColorLightActuator.html" title="&lt;TABLE&gt;" alt="" coords="155,197,306,245"/>
+<area shape="rect" id="node1_0" href="./LightActuator.html" title="org.universAAL.ontology.device.LightActuator" alt="" coords="113,112,210,139"/>
+<area shape="rect" id="node1" href="./LightActuator.html" title="&lt;TABLE&gt;" alt="" coords="102,101,221,149"/>
+<area shape="rect" id="node2_1" href="./ColorLightActuator.html" title="org.universAAL.ontology.device.ColorLightActuator" alt="" coords="15,208,145,235"/>
+<area shape="rect" id="node2" href="./ColorLightActuator.html" title="&lt;TABLE&gt;" alt="" coords="5,197,155,245"/>
+<area shape="rect" id="node3_2" href="./LightController.html" title="org.universAAL.ontology.device.LightController" alt="" coords="190,208,295,235"/>
+<area shape="rect" id="node3" href="./LightController.html" title="&lt;TABLE&gt;" alt="" coords="179,197,306,245"/>
+<area shape="rect" id="node4_3" href="./Actuator.html" title="org.universAAL.ontology.device.Actuator" alt="" coords="127,16,196,43"/>
+<area shape="rect" id="node4" href="./Actuator.html" title="&lt;TABLE&gt;" alt="" coords="116,5,207,53"/>
 </map>

@@ -9,229 +9,229 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.activityhub.MotionSensor
-	c9462 [label=<<table title="org.universAAL.ontology.activityhub.MotionSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotionSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MotionSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./MotionSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.WaterSensor
-	c9463 [label=<<table title="org.universAAL.ontology.activityhub.WaterSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WaterSensor.html">
+	c9462 [label=<<table title="org.universAAL.ontology.activityhub.WaterSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WaterSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WaterSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WaterSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.ContactClosureSensor
-	c9464 [label=<<table title="org.universAAL.ontology.activityhub.ContactClosureSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContactClosureSensor.html">
+	// org.universAAL.ontology.activityhub.EnuresisSensorEvent
+	c9463 [label=<<table title="org.universAAL.ontology.activityhub.EnuresisSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnuresisSensorEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ContactClosureSensor </td></tr>
+<tr><td align="center" balign="center"> EnuresisSensorEvent </td></tr>
 		</table></td></tr>
-		</table>>, URL="./ContactClosureSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.UsageSensor
-	c9465 [label=<<table title="org.universAAL.ontology.activityhub.UsageSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UsageSensor.html">
+		</table>>, URL="./EnuresisSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.GasSensor
+	c9464 [label=<<table title="org.universAAL.ontology.activityhub.GasSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GasSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> UsageSensor </td></tr>
+<tr><td align="center" balign="center"> GasSensor </td></tr>
 		</table></td></tr>
-		</table>>, URL="./UsageSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./GasSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.Activator
+	c9465 [label=<<table title="org.universAAL.ontology.activityhub.Activator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Activator.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Activator </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Activator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.MotionSensor
+	c9466 [label=<<table title="org.universAAL.ontology.activityhub.MotionSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotionSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> MotionSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./MotionSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.SwitchSensorEvent
+	c9467 [label=<<table title="org.universAAL.ontology.activityhub.SwitchSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwitchSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SwitchSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SwitchSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.SmokeSensor
+	c9468 [label=<<table title="org.universAAL.ontology.activityhub.SmokeSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SmokeSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SmokeSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SmokeSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.FallSensorEvent
+	c9469 [label=<<table title="org.universAAL.ontology.activityhub.FallSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FallSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> FallSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./FallSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.TemperatureSensor
+	c9470 [label=<<table title="org.universAAL.ontology.activityhub.TemperatureSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemperatureSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> TemperatureSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./TemperatureSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471 [label=<<table title="org.universAAL.ontology.activityhub.ActivityHubSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHubSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ActivityHubSensor </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="./ActivityHubSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.CoSensor
+	c9472 [label=<<table title="org.universAAL.ontology.activityhub.CoSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CoSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> CoSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./CoSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.PropertyExitSensorEvent
+	c9473 [label=<<table title="org.universAAL.ontology.activityhub.PropertyExitSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyExitSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> PropertyExitSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PropertyExitSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.PropertyExitSensor
-	c9466 [label=<<table title="org.universAAL.ontology.activityhub.PropertyExitSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyExitSensor.html">
+	c9474 [label=<<table title="org.universAAL.ontology.activityhub.PropertyExitSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyExitSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PropertyExitSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PropertyExitSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.MedicationDosageSensorEvent
+	c9475 [label=<<table title="org.universAAL.ontology.activityhub.MedicationDosageSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MedicationDosageSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> MedicationDosageSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./MedicationDosageSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.UsageSensor
+	c9476 [label=<<table title="org.universAAL.ontology.activityhub.UsageSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UsageSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> UsageSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./UsageSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.ActivityHub
+	c9477 [label=<<table title="org.universAAL.ontology.activityhub.ActivityHub" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHub.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ActivityHub </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ActivityHub.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.ContactClosureSensorEvent
+	c9478 [label=<<table title="org.universAAL.ontology.activityhub.ContactClosureSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContactClosureSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ContactClosureSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ContactClosureSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.MotionSensorEvent
-	c9467 [label=<<table title="org.universAAL.ontology.activityhub.MotionSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotionSensorEvent.html">
+	c9479 [label=<<table title="org.universAAL.ontology.activityhub.MotionSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotionSensorEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MotionSensorEvent </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MotionSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.PersSensorEvent
+	c9480 [label=<<table title="org.universAAL.ontology.activityhub.PersSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> PersSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PersSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.UsageSensorEvent
+	c9481 [label=<<table title="org.universAAL.ontology.activityhub.UsageSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UsageSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> UsageSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./UsageSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482 [label=<<table title="org.universAAL.ontology.activityhub.ActivityHubSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHubSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ActivityHubSensorEvent </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="./ActivityHubSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.EnuresisSensor
+	c9483 [label=<<table title="org.universAAL.ontology.activityhub.EnuresisSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnuresisSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> EnuresisSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./EnuresisSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.ContactClosureSensor
+	c9484 [label=<<table title="org.universAAL.ontology.activityhub.ContactClosureSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContactClosureSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ContactClosureSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ContactClosureSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.EnvironmentalSensorEvent
+	c9485 [label=<<table title="org.universAAL.ontology.activityhub.EnvironmentalSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnvironmentalSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> EnvironmentalSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./EnvironmentalSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.SwitchSensor
+	c9486 [label=<<table title="org.universAAL.ontology.activityhub.SwitchSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwitchSensor.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SwitchSensor </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SwitchSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.activityhub.TemperatureSensorEvent
+	c9487 [label=<<table title="org.universAAL.ontology.activityhub.TemperatureSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemperatureSensorEvent.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> TemperatureSensorEvent </td></tr>
+		</table></td></tr>
+		</table>>, URL="./TemperatureSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.PersSensor
-	c9468 [label=<<table title="org.universAAL.ontology.activityhub.PersSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersSensor.html">
+	c9488 [label=<<table title="org.universAAL.ontology.activityhub.PersSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PersSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PersSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.MedicationDosageSensor
-	c9469 [label=<<table title="org.universAAL.ontology.activityhub.MedicationDosageSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MedicationDosageSensor.html">
+	c9489 [label=<<table title="org.universAAL.ontology.activityhub.MedicationDosageSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MedicationDosageSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MedicationDosageSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MedicationDosageSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.CoSensor
-	c9470 [label=<<table title="org.universAAL.ontology.activityhub.CoSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CoSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> CoSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./CoSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.UsageSensorEvent
-	c9471 [label=<<table title="org.universAAL.ontology.activityhub.UsageSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UsageSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> UsageSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./UsageSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.SwitchSensorEvent
-	c9472 [label=<<table title="org.universAAL.ontology.activityhub.SwitchSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwitchSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SwitchSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./SwitchSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.SwitchSensor
-	c9473 [label=<<table title="org.universAAL.ontology.activityhub.SwitchSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SwitchSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SwitchSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./SwitchSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.SmokeSensor
-	c9474 [label=<<table title="org.universAAL.ontology.activityhub.SmokeSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SmokeSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SmokeSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./SmokeSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.GasSensor
-	c9475 [label=<<table title="org.universAAL.ontology.activityhub.GasSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GasSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> GasSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./GasSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.EnvironmentalSensorEvent
-	c9476 [label=<<table title="org.universAAL.ontology.activityhub.EnvironmentalSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnvironmentalSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> EnvironmentalSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./EnvironmentalSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.TemperatureSensorEvent
-	c9477 [label=<<table title="org.universAAL.ontology.activityhub.TemperatureSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemperatureSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> TemperatureSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./TemperatureSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.TemperatureSensor
-	c9478 [label=<<table title="org.universAAL.ontology.activityhub.TemperatureSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemperatureSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> TemperatureSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./TemperatureSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.EnuresisSensorEvent
-	c9479 [label=<<table title="org.universAAL.ontology.activityhub.EnuresisSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnuresisSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> EnuresisSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./EnuresisSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.EnuresisSensor
-	c9480 [label=<<table title="org.universAAL.ontology.activityhub.EnuresisSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EnuresisSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> EnuresisSensor </td></tr>
-		</table></td></tr>
-		</table>>, URL="./EnuresisSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.Activator
-	c9481 [label=<<table title="org.universAAL.ontology.activityhub.Activator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Activator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Activator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Activator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.PersSensorEvent
-	c9482 [label=<<table title="org.universAAL.ontology.activityhub.PersSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PersSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./PersSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.ContactClosureSensorEvent
-	c9483 [label=<<table title="org.universAAL.ontology.activityhub.ContactClosureSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContactClosureSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ContactClosureSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ContactClosureSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.ActivityHub
-	c9484 [label=<<table title="org.universAAL.ontology.activityhub.ActivityHub" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHub.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ActivityHub </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ActivityHub.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.MedicationDosageSensorEvent
-	c9485 [label=<<table title="org.universAAL.ontology.activityhub.MedicationDosageSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MedicationDosageSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MedicationDosageSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./MedicationDosageSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.PropertyExitSensorEvent
-	c9486 [label=<<table title="org.universAAL.ontology.activityhub.PropertyExitSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PropertyExitSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PropertyExitSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./PropertyExitSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487 [label=<<table title="org.universAAL.ontology.activityhub.ActivityHubSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHubSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ActivityHubSensorEvent </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./ActivityHubSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.FallSensorEvent
-	c9488 [label=<<table title="org.universAAL.ontology.activityhub.FallSensorEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FallSensorEvent.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> FallSensorEvent </td></tr>
-		</table></td></tr>
-		</table>>, URL="./FallSensorEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489 [label=<<table title="org.universAAL.ontology.activityhub.ActivityHubSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHubSensor.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ActivityHubSensor </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./ActivityHubSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.activityhub.FallSensor
 	c9490 [label=<<table title="org.universAAL.ontology.activityhub.FallSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FallSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> FallSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FallSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//org.universAAL.ontology.activityhub.MotionSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9462:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.activityhub.WaterSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9463:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.ContactClosureSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9464:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.UsageSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9465:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.PropertyExitSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9466:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.MotionSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9467:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.PersSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9468:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.MedicationDosageSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9469:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.CoSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9470:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.UsageSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9471:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.SwitchSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9472:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.SwitchSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9473:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.SmokeSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9474:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.GasSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9475:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.EnvironmentalSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9476:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.TemperatureSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9477:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.TemperatureSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9478:p [dir=back,arrowtail=empty];
+	c9471:p -> c9462:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.activityhub.EnuresisSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9479:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.EnuresisSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9480:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.PersSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9482:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.ContactClosureSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9483:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.MedicationDosageSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9485:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.activityhub.PropertyExitSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9486:p [dir=back,arrowtail=empty];
+	c9482:p -> c9463:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.GasSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9464:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.MotionSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9466:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.SwitchSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9467:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.SmokeSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9468:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.activityhub.FallSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
-	c9487:p -> c9488:p [dir=back,arrowtail=empty];
+	c9482:p -> c9469:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.TemperatureSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9470:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.CoSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9472:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.PropertyExitSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9473:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.PropertyExitSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9474:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.MedicationDosageSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9475:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.UsageSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9476:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.ContactClosureSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9478:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.MotionSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9479:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.PersSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9480:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.UsageSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9481:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.EnuresisSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9483:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.ContactClosureSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9484:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.EnvironmentalSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9485:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.SwitchSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9486:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.TemperatureSensorEvent extends org.universAAL.ontology.activityhub.ActivityHubSensorEvent
+	c9482:p -> c9487:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.PersSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9488:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.activityhub.MedicationDosageSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
+	c9471:p -> c9489:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.activityhub.FallSensor extends org.universAAL.ontology.activityhub.ActivityHubSensor
-	c9489:p -> c9490:p [dir=back,arrowtail=empty];
+	c9471:p -> c9490:p [dir=back,arrowtail=empty];
 }
 

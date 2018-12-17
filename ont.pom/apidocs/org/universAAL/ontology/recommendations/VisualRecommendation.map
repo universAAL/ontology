@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Alignment.html" title="org.universAAL.ontology.recommendations.Alignment" alt="" coords="15,208,94,235"/>
-<area shape="rect" id="node1" href="./Alignment.html" title="&lt;TABLE&gt;" alt="" coords="5,197,105,245"/>
-<area shape="rect" id="node2_1" href="./Layout.html" title="org.universAAL.ontology.recommendations.Layout" alt="" coords="139,208,199,235"/>
-<area shape="rect" id="node2" href="./Layout.html" title="&lt;TABLE&gt;" alt="" coords="129,197,210,245"/>
-<area shape="rect" id="node3_2" href="./VisualRecommendation.html" title="org.universAAL.ontology.recommendations.VisualRecommendation" alt="" coords="90,112,249,139"/>
-<area shape="rect" id="node3" href="./VisualRecommendation.html" title="&lt;TABLE&gt;" alt="" coords="79,101,259,149"/>
-<area shape="rect" id="node4_3" href="./Size.html" title="org.universAAL.ontology.recommendations.Size" alt="" coords="247,208,294,235"/>
-<area shape="rect" id="node4" href="./Size.html" title="&lt;TABLE&gt;" alt="" coords="235,197,307,245"/>
-<area shape="rect" id="node5_4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/Recommendation.html" title="org.universAAL.middleware.ui.owl.Recommendation" alt="" coords="108,16,231,43"/>
-<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/Recommendation.html" title="&lt;TABLE&gt;" alt="" coords="97,5,241,53"/>
+<area shape="rect" id="node1_0" href="./Layout.html" title="org.universAAL.ontology.recommendations.Layout" alt="" coords="15,208,75,235"/>
+<area shape="rect" id="node1" href="./Layout.html" title="&lt;TABLE&gt;" alt="" coords="5,197,86,245"/>
+<area shape="rect" id="node2_1" href="./VisualRecommendation.html" title="org.universAAL.ontology.recommendations.VisualRecommendation" alt="" coords="67,112,226,139"/>
+<area shape="rect" id="node2" href="./VisualRecommendation.html" title="&lt;TABLE&gt;" alt="" coords="57,101,237,149"/>
+<area shape="rect" id="node3_2" href="./Size.html" title="org.universAAL.ontology.recommendations.Size" alt="" coords="123,208,170,235"/>
+<area shape="rect" id="node3" href="./Size.html" title="&lt;TABLE&gt;" alt="" coords="111,197,183,245"/>
+<area shape="rect" id="node4_3" href="./Alignment.html" title="org.universAAL.ontology.recommendations.Alignment" alt="" coords="218,208,297,235"/>
+<area shape="rect" id="node4" href="./Alignment.html" title="&lt;TABLE&gt;" alt="" coords="207,197,307,245"/>
+<area shape="rect" id="node5_4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/Recommendation.html" title="org.universAAL.middleware.ui.owl.Recommendation" alt="" coords="85,16,208,43"/>
+<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/ui/owl/Recommendation.html" title="&lt;TABLE&gt;" alt="" coords="75,5,219,53"/>
 </map>

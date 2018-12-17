@@ -10,13 +10,13 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.ContinuaHealthManagerActivator
-	c120417 [label=<<table title="org.universAAL.ontology.ContinuaHealthManagerActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContinuaHealthManagerActivator.html">
+	c120418 [label=<<table title="org.universAAL.ontology.ContinuaHealthManagerActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContinuaHealthManagerActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ContinuaHealthManagerActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContinuaHealthManagerActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.ContinuaHealthManagerActivator implements org.universAAL.middleware.container.ModuleActivator
-	c120990:p -> c120417:p [dir=back,arrowtail=empty,style=dashed];
+	c120990:p -> c120418:p [dir=back,arrowtail=empty,style=dashed];
 	// org.universAAL.middleware.container.ModuleActivator
 	c120990 [label=<<table title="org.universAAL.middleware.container.ModuleActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

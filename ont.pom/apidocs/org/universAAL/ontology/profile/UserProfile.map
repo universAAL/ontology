@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./AssistedPersonProfile.html" title="org.universAAL.ontology.profile.AssistedPersonProfile" alt="" coords="16,208,165,235"/>
-<area shape="rect" id="node1" href="./AssistedPersonProfile.html" title="&lt;TABLE&gt;" alt="" coords="5,197,176,245"/>
-<area shape="rect" id="node2_1" href="./Profile.html" title="org.universAAL.ontology.profile.Profile" alt="" coords="150,16,207,43"/>
-<area shape="rect" id="node2" href="./Profile.html" title="&lt;TABLE&gt;" alt="" coords="139,5,218,53"/>
-<area shape="rect" id="node3_2" href="./UserProfile.html" title="org.universAAL.ontology.profile.UserProfile" alt="" coords="136,112,221,139"/>
+<area shape="rect" id="node1_0" href="./Profile.html" title="org.universAAL.ontology.profile.Profile" alt="" coords="150,16,207,43"/>
+<area shape="rect" id="node1" href="./Profile.html" title="&lt;TABLE&gt;" alt="" coords="139,5,218,53"/>
+<area shape="rect" id="node3_1" href="./UserProfile.html" title="org.universAAL.ontology.profile.UserProfile" alt="" coords="136,112,221,139"/>
 <area shape="rect" id="node3" href="./UserProfile.html" title="&lt;TABLE&gt;" alt="" coords="125,101,232,149"/>
+<area shape="rect" id="node2_2" href="./AssistedPersonProfile.html" title="org.universAAL.ontology.profile.AssistedPersonProfile" alt="" coords="16,208,165,235"/>
+<area shape="rect" id="node2" href="./AssistedPersonProfile.html" title="&lt;TABLE&gt;" alt="" coords="5,197,176,245"/>
 <area shape="rect" id="node4_3" href="./CaregiverProfile.html" title="org.universAAL.ontology.profile.CaregiverProfile" alt="" coords="211,208,325,235"/>
 <area shape="rect" id="node4" href="./CaregiverProfile.html" title="&lt;TABLE&gt;" alt="" coords="201,197,335,245"/>
 </map>

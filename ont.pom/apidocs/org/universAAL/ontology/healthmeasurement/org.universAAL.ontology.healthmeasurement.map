@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./HealthMeasurementActivator.html" title="org.universAAL.ontology.healthmeasurement.HealthMeasurementActivator" alt="" coords="15,16,204,43"/>
-<area shape="rect" id="node1" href="./HealthMeasurementActivator.html" title="&lt;TABLE&gt;" alt="" coords="4,5,215,53"/>
-<area shape="rect" id="node2_1" href="./HealthMeasurementFactory.html" title="org.universAAL.ontology.healthmeasurement.HealthMeasurementFactory" alt="" coords="249,16,431,43"/>
-<area shape="rect" id="node2" href="./HealthMeasurementFactory.html" title="&lt;TABLE&gt;" alt="" coords="239,5,441,53"/>
+<area shape="rect" id="node1_0" href="./HealthMeasurementFactory.html" title="org.universAAL.ontology.healthmeasurement.HealthMeasurementFactory" alt="" coords="16,16,197,43"/>
+<area shape="rect" id="node1" href="./HealthMeasurementFactory.html" title="&lt;TABLE&gt;" alt="" coords="5,5,208,53"/>
+<area shape="rect" id="node2_1" href="./HealthMeasurementActivator.html" title="org.universAAL.ontology.healthmeasurement.HealthMeasurementActivator" alt="" coords="243,16,432,43"/>
+<area shape="rect" id="node2" href="./HealthMeasurementActivator.html" title="&lt;TABLE&gt;" alt="" coords="232,5,443,53"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./BloodPressureRequirement.html" title="org.universAAL.ontology.health.owl.BloodPressureRequirement" alt="" coords="15,208,195,235"/>
-<area shape="rect" id="node1" href="./BloodPressureRequirement.html" title="&lt;TABLE&gt;" alt="" coords="5,197,206,245"/>
-<area shape="rect" id="node2_1" href="./WeightRequirement.html" title="org.universAAL.ontology.health.owl.WeightRequirement" alt="" coords="241,208,377,235"/>
-<area shape="rect" id="node2" href="./WeightRequirement.html" title="&lt;TABLE&gt;" alt="" coords="231,197,388,245"/>
-<area shape="rect" id="node3_2" href="./HeartRateRequirement.html" title="org.universAAL.ontology.health.owl.HeartRateRequirement" alt="" coords="423,208,577,235"/>
-<area shape="rect" id="node3" href="./HeartRateRequirement.html" title="&lt;TABLE&gt;" alt="" coords="412,197,588,245"/>
-<area shape="rect" id="node4_3" href="./MeasurementRequirements.html" title="org.universAAL.ontology.health.owl.MeasurementRequirements" alt="" coords="219,112,400,139"/>
-<area shape="rect" id="node4" href="./MeasurementRequirements.html" title="&lt;TABLE&gt;" alt="" coords="208,101,411,149"/>
-<area shape="rect" id="node5_4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="245,16,374,43"/>
-<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="234,5,385,53"/>
+<area shape="rect" id="node1_0" href="./WeightRequirement.html" title="org.universAAL.ontology.health.owl.WeightRequirement" alt="" coords="16,208,152,235"/>
+<area shape="rect" id="node1" href="./WeightRequirement.html" title="&lt;TABLE&gt;" alt="" coords="5,197,163,245"/>
+<area shape="rect" id="node2_1" href="./MeasurementRequirements.html" title="org.universAAL.ontology.health.owl.MeasurementRequirements" alt="" coords="184,112,365,139"/>
+<area shape="rect" id="node2" href="./MeasurementRequirements.html" title="&lt;TABLE&gt;" alt="" coords="173,101,376,149"/>
+<area shape="rect" id="node3_2" href="./HeartRateRequirement.html" title="org.universAAL.ontology.health.owl.HeartRateRequirement" alt="" coords="197,208,352,235"/>
+<area shape="rect" id="node3" href="./HeartRateRequirement.html" title="&lt;TABLE&gt;" alt="" coords="187,197,363,245"/>
+<area shape="rect" id="node4_3" href="./BloodPressureRequirement.html" title="org.universAAL.ontology.health.owl.BloodPressureRequirement" alt="" coords="398,208,578,235"/>
+<area shape="rect" id="node4" href="./BloodPressureRequirement.html" title="&lt;TABLE&gt;" alt="" coords="387,197,589,245"/>
+<area shape="rect" id="node5_4" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="org.universAAL.middleware.owl.ManagedIndividual" alt="" coords="210,16,339,43"/>
+<area shape="rect" id="node5" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html" title="&lt;TABLE&gt;" alt="" coords="199,5,350,53"/>
 </map>

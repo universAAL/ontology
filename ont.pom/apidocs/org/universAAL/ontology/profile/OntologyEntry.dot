@@ -10,13 +10,13 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.profile.OntologyEntry
-	c272009 [label=<<table title="org.universAAL.ontology.profile.OntologyEntry" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OntologyEntry.html">
+	c272025 [label=<<table title="org.universAAL.ontology.profile.OntologyEntry" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./OntologyEntry.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OntologyEntry </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OntologyEntry.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.OntologyEntry extends org.universAAL.middleware.owl.ManagedIndividual
-	c272271:p -> c272009:p [dir=back,arrowtail=empty];
+	c272271:p -> c272025:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
 	c272271 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

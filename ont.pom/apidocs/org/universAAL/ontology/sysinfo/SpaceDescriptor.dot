@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.sysinfo.SpaceDescriptor
-	c350691 [label=<<table title="org.universAAL.ontology.sysinfo.SpaceDescriptor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SpaceDescriptor.html">
+	c350689 [label=<<table title="org.universAAL.ontology.sysinfo.SpaceDescriptor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SpaceDescriptor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SpaceDescriptor </td></tr>
 		</table></td></tr>
@@ -22,6 +22,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Descriptor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.sysinfo.SpaceDescriptor extends org.universAAL.ontology.sysinfo.Descriptor
-	c350693:p -> c350691:p [dir=back,arrowtail=empty];
+	c350693:p -> c350689:p [dir=back,arrowtail=empty];
 }
 

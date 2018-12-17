@@ -60,6 +60,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73Factory.java">org/universAAL/ontology/X73Factory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.MDS.java">org/universAAL/ontology/X73/MDS.java</a>
                 </td>
                 <td>
@@ -70,20 +84,6 @@ under the License.
                 </td>
                 <td>
                   25
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73Factory.java">org/universAAL/ontology/X73Factory.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  3
                 </td>
               </tr>
                           <tr>
@@ -164,7 +164,7 @@ under the License.
                   3
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   20
@@ -178,24 +178,10 @@ under the License.
                   3
                 </td>
                 <td>
-                  2
-                </td>
-                <td>
-                  50
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureMonitor.java">org/universAAL/ontology/X73/BloodPressureMonitor.java</a>
-                </td>
-                <td>
-                  4
-                </td>
-                <td>
                   1
                 </td>
                 <td>
-                  25
+                  50
                 </td>
               </tr>
                           <tr>
@@ -210,6 +196,20 @@ under the License.
                 </td>
                 <td>
                   30
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.X73//checkstyle.html#org.universAAL.ontology.X73.BloodPressureMonitor.java">org/universAAL/ontology/X73/BloodPressureMonitor.java</a>
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  25
                 </td>
               </tr>
                           <tr>
@@ -248,7 +248,7 @@ under the License.
                   2
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   7

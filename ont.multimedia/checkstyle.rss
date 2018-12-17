@@ -52,24 +52,10 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.multimedia.MultimediaOntology.java">org/universAAL/ontology/multimedia/MultimediaOntology.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  4
                 </td>
               </tr>
                           <tr>
@@ -80,10 +66,24 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.multimedia//checkstyle.html#org.universAAL.ontology.multimedia.MultimediaOntology.java">org/universAAL/ontology/multimedia/MultimediaOntology.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
                 </td>
               </tr>
                           <tr>
@@ -108,7 +108,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   6

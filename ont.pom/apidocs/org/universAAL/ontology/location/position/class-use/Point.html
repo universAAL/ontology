@@ -194,22 +194,22 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ConeSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/ConeSegment.html#getEnd--">getEnd</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LineSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/LineSegment.html#getEnd--">getEnd</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LineSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/LineSegment.html#getEnd--">getEnd</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ConeSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/ConeSegment.html#getEnd--">getEnd</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Polygon.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polygon.html#getMidpoint--">getMidpoint</a></span>()</code>
-<div class="block">the center point of all vertices, assuming an even weights</div>
+<td class="colLast"><span class="typeNameLabel">QuasiCylinder.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/QuasiCylinder.html#getMidpoint--">getMidpoint</a></span>()</code>
+<div class="block">returns the midpoint of the object</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a></code></td>
-<td class="colLast"><span class="typeNameLabel">QuasiCylinder.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/QuasiCylinder.html#getMidpoint--">getMidpoint</a></span>()</code>
-<div class="block">returns the midpoint of the object</div>
+<td class="colLast"><span class="typeNameLabel">Polygon.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polygon.html#getMidpoint--">getMidpoint</a></span>()</code>
+<div class="block">the center point of all vertices, assuming an even weights</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -228,11 +228,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ConeSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/ConeSegment.html#getStart--">getStart</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LineSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/LineSegment.html#getStart--">getStart</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LineSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/LineSegment.html#getStart--">getStart</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ConeSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/ConeSegment.html#getStart--">getStart</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>[]</code></td>
@@ -249,7 +249,27 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Box.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Box.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">MergedShape.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/MergedShape.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Polyhedron.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polyhedron.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Shape.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Shape.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>
+<div class="block">returns if the given point is within the shape</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">QuasiCylinder.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/QuasiCylinder.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>
+<div class="block">NOT IMPLEMENTED</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -257,69 +277,17 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Polyhedron.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polyhedron.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Polygon.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polygon.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>
-<div class="block">accuracy limited to 4 digits after the dot</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Path.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Path.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Box.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Box.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">Ellipse.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Ellipse.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">QuasiCylinder.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/QuasiCylinder.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>
-<div class="block">NOT IMPLEMENTED</div>
+<td class="colLast"><span class="typeNameLabel">Path.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Path.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Polygon.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polygon.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>
+<div class="block">accuracy limited to 4 digits after the dot</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Shape.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Shape.html#contains-org.universAAL.ontology.location.position.Point-">contains</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;p)</code>
-<div class="block">returns if the given point is within the shape</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">ConeSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/ConeSegment.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">MergedShape.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/MergedShape.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">Circle.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Circle.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">Sphere.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Sphere.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">Polyhedron.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polyhedron.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">Polygon.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polygon.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">Line.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Line.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">LineSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/LineSegment.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
@@ -327,13 +295,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">Ellipse.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Ellipse.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">MergedShape.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/MergedShape.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><span class="typeNameLabel">QuasiCylinder.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/QuasiCylinder.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>
-<div class="block">NOT IMPLEMENTED</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">Polyhedron.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polyhedron.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>abstract float</code></td>
@@ -342,6 +308,40 @@
  coordinate system via CoordinateSystem.findCommonCoordinateSystem and
  getInHigherCoordinateSystem(commonSystem)</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">QuasiCylinder.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/QuasiCylinder.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>
+<div class="block">NOT IMPLEMENTED</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">Sphere.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Sphere.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">Ellipse.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Ellipse.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">Circle.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Circle.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">LineSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/LineSegment.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">Polygon.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Polygon.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">ConeSegment.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/ConeSegment.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;point)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><span class="typeNameLabel">Line.</span><code><span class="memberNameLink"><a href="../../../../../../org/universAAL/ontology/shape/Line.html#getDistanceTo-org.universAAL.ontology.location.position.Point-">getDistanceTo</a></span>(<a href="../../../../../../org/universAAL/ontology/location/position/Point.html" title="class in org.universAAL.ontology.location.position">Point</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>jp.go.ipa.jgcl.JgclPoint3D[]</code></td>

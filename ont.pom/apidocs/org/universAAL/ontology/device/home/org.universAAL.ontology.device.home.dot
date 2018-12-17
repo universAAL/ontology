@@ -9,30 +9,30 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.device.home.SirenActuator
-	c39436 [label=<<table title="org.universAAL.ontology.device.home.SirenActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SirenActuator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SirenActuator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./SirenActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.home.CarpetSensor
-	c39437 [label=<<table title="org.universAAL.ontology.device.home.CarpetSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CarpetSensor.html">
+	c39436 [label=<<table title="org.universAAL.ontology.device.home.CarpetSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CarpetSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CarpetSensor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CarpetSensor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.device.home.DeviceExtraOntology
-	c39438 [label=<<table title="org.universAAL.ontology.device.home.DeviceExtraOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceExtraOntology.html">
+	// org.universAAL.ontology.device.home.SirenActuator
+	c39437 [label=<<table title="org.universAAL.ontology.device.home.SirenActuator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SirenActuator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> DeviceExtraOntology </td></tr>
+<tr><td align="center" balign="center"> SirenActuator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DeviceExtraOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./SirenActuator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.home.Strap
-	c39439 [label=<<table title="org.universAAL.ontology.device.home.Strap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Strap.html">
+	c39438 [label=<<table title="org.universAAL.ontology.device.home.Strap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Strap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Strap </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Strap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.device.home.DeviceExtraOntology
+	c39439 [label=<<table title="org.universAAL.ontology.device.home.DeviceExtraOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceExtraOntology.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> DeviceExtraOntology </td></tr>
+		</table></td></tr>
+		</table>>, URL="./DeviceExtraOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.device.home.Oven
 	c39440 [label=<<table title="org.universAAL.ontology.device.home.Oven" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Oven.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

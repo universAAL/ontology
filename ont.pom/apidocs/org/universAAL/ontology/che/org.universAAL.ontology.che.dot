@@ -9,23 +9,23 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.che.ContextHistoryOntology
-	c15072 [label=<<table title="org.universAAL.ontology.che.ContextHistoryOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryOntology.html">
+	// org.universAAL.ontology.che.ContextHistoryService
+	c15072 [label=<<table title="org.universAAL.ontology.che.ContextHistoryService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryService.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ContextHistoryOntology </td></tr>
+<tr><td align="center" balign="center"> ContextHistoryService </td></tr>
 		</table></td></tr>
-		</table>>, URL="./ContextHistoryOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./ContextHistoryService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.che.ContextEvent
 	c15073 [label=<<table title="org.universAAL.ontology.che.ContextEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ContextEvent </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContextEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.che.ContextHistoryService
-	c15074 [label=<<table title="org.universAAL.ontology.che.ContextHistoryService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryService.html">
+	// org.universAAL.ontology.che.ContextHistoryOntology
+	c15074 [label=<<table title="org.universAAL.ontology.che.ContextHistoryOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ContextHistoryService </td></tr>
+<tr><td align="center" balign="center"> ContextHistoryOntology </td></tr>
 		</table></td></tr>
-		</table>>, URL="./ContextHistoryService.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./ContextHistoryOntology.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

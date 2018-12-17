@@ -46,27 +46,13 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.profile.ui.mainmenu.MenuEntry.java">org/universAAL/ontology/profile/ui/mainmenu/MenuEntry.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  25
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.profile.ui.mainmenu.MenuProfile.java">org/universAAL/ontology/profile/ui/mainmenu/MenuProfile.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   15
@@ -74,16 +60,16 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.UIMainMenuProfileActivator.java">org/universAAL/ontology/UIMainMenuProfileActivator.java</a>
+                  <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.profile.ui.mainmenu.MenuEntry.java">org/universAAL/ontology/profile/ui/mainmenu/MenuEntry.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
-                  8
+                  25
                 </td>
               </tr>
                           <tr>
@@ -94,10 +80,24 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.profile.ui.mainmenu//checkstyle.html#org.universAAL.ontology.UIMainMenuProfileActivator.java">org/universAAL/ontology/UIMainMenuProfileActivator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
                 </td>
               </tr>
                           <tr>

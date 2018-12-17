@@ -9,35 +9,35 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.cryptographic.ChainedBlockEncryption
-	c78062 [label=<<table title="org.universAAL.ontology.cryptographic.ChainedBlockEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ChainedBlockEncryption.html">
+	// org.universAAL.ontology.cryptographic.SimpleBlockEncryption
+	c78049 [label=<<table title="org.universAAL.ontology.cryptographic.SimpleBlockEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SimpleBlockEncryption.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ChainedBlockEncryption </font></td></tr>
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> SimpleBlockEncryption </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="./ChainedBlockEncryption.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./SimpleBlockEncryption.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.cryptographic.SymmetricEncryption
-	c78068 [label=<<table title="org.universAAL.ontology.cryptographic.SymmetricEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SymmetricEncryption.html">
+	c78059 [label=<<table title="org.universAAL.ontology.cryptographic.SymmetricEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SymmetricEncryption.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> SymmetricEncryption </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./SymmetricEncryption.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.cryptographic.BlockEncryption
-	c78069 [label=<<table title="org.universAAL.ontology.cryptographic.BlockEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BlockEncryption.html">
+	c78064 [label=<<table title="org.universAAL.ontology.cryptographic.BlockEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BlockEncryption.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> BlockEncryption </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./BlockEncryption.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.cryptographic.SimpleBlockEncryption
-	c78070 [label=<<table title="org.universAAL.ontology.cryptographic.SimpleBlockEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SimpleBlockEncryption.html">
+	// org.universAAL.ontology.cryptographic.ChainedBlockEncryption
+	c78069 [label=<<table title="org.universAAL.ontology.cryptographic.ChainedBlockEncryption" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ChainedBlockEncryption.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> SimpleBlockEncryption </font></td></tr>
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ChainedBlockEncryption </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="./SimpleBlockEncryption.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//org.universAAL.ontology.cryptographic.ChainedBlockEncryption extends org.universAAL.ontology.cryptographic.BlockEncryption
-	c78069:p -> c78062:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.cryptographic.BlockEncryption extends org.universAAL.ontology.cryptographic.SymmetricEncryption
-	c78068:p -> c78069:p [dir=back,arrowtail=empty];
+		</table>>, URL="./ChainedBlockEncryption.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.cryptographic.SimpleBlockEncryption extends org.universAAL.ontology.cryptographic.BlockEncryption
-	c78069:p -> c78070:p [dir=back,arrowtail=empty];
+	c78064:p -> c78049:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.cryptographic.BlockEncryption extends org.universAAL.ontology.cryptographic.SymmetricEncryption
+	c78059:p -> c78064:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.cryptographic.ChainedBlockEncryption extends org.universAAL.ontology.cryptographic.BlockEncryption
+	c78064:p -> c78069:p [dir=back,arrowtail=empty];
 }
 

@@ -116,20 +116,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.dependability.ExternalFault.java">org/universAAL/ontology/dependability/ExternalFault.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  9
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.dependability.RecoveryAction.java">org/universAAL/ontology/dependability/RecoveryAction.java</a>
                 </td>
                 <td>
@@ -140,6 +126,20 @@ under the License.
                 </td>
                 <td>
                   10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.dependability.ExternalFault.java">org/universAAL/ontology/dependability/ExternalFault.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
                 </td>
               </tr>
                           <tr>
@@ -178,7 +178,7 @@ under the License.
                   1
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   9
@@ -192,7 +192,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   9
@@ -228,20 +228,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.dependability.Fault.java">org/universAAL/ontology/dependability/Fault.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  25
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.dependability.IndirectFault.java">org/universAAL/ontology/dependability/IndirectFault.java</a>
                 </td>
                 <td>
@@ -252,6 +238,20 @@ under the License.
                 </td>
                 <td>
                   9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.dependability.Fault.java">org/universAAL/ontology/dependability/Fault.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  25
                 </td>
               </tr>
                           <tr>
@@ -318,7 +318,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   9
@@ -374,7 +374,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   3

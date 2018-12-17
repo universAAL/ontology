@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Digest.html" title="org.universAAL.ontology.cryptographic.Digest" alt="" coords="131,112,189,139"/>
-<area shape="rect" id="node1" href="./Digest.html" title="&lt;TABLE&gt;" alt="" coords="120,101,200,149"/>
-<area shape="rect" id="node3_1" href="./digest/MessageDigest.html" title="org.universAAL.ontology.cryptographic.digest.MessageDigest" alt="" coords="16,208,128,235"/>
+<area shape="rect" id="node1_0" href="./CryptographicTechnique.html" title="org.universAAL.ontology.cryptographic.CryptographicTechnique" alt="" coords="79,16,241,43"/>
+<area shape="rect" id="node1" href="./CryptographicTechnique.html" title="&lt;TABLE&gt;" alt="" coords="69,5,251,53"/>
+<area shape="rect" id="node2_1" href="./Digest.html" title="org.universAAL.ontology.cryptographic.Digest" alt="" coords="131,112,189,139"/>
+<area shape="rect" id="node2" href="./Digest.html" title="&lt;TABLE&gt;" alt="" coords="120,101,200,149"/>
+<area shape="rect" id="node3_2" href="./digest/MessageDigest.html" title="org.universAAL.ontology.cryptographic.digest.MessageDigest" alt="" coords="16,208,128,235"/>
 <area shape="rect" id="node3" href="./digest/MessageDigest.html" title="&lt;TABLE&gt;" alt="" coords="5,197,139,245"/>
-<area shape="rect" id="node4_2" href="./digest/SecureHashAlgorithm.html" title="org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm" alt="" coords="174,208,322,235"/>
+<area shape="rect" id="node4_3" href="./digest/SecureHashAlgorithm.html" title="org.universAAL.ontology.cryptographic.digest.SecureHashAlgorithm" alt="" coords="174,208,322,235"/>
 <area shape="rect" id="node4" href="./digest/SecureHashAlgorithm.html" title="&lt;TABLE&gt;" alt="" coords="163,197,333,245"/>
-<area shape="rect" id="node2_3" href="./CryptographicTechnique.html" title="org.universAAL.ontology.cryptographic.CryptographicTechnique" alt="" coords="79,16,241,43"/>
-<area shape="rect" id="node2" href="./CryptographicTechnique.html" title="&lt;TABLE&gt;" alt="" coords="69,5,251,53"/>
 </map>

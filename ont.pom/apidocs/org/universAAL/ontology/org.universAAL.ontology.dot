@@ -9,18 +9,18 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.SysinfoFactory
-	c0 [label=<<table title="org.universAAL.ontology.SysinfoFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SysinfoFactory.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SysinfoFactory </td></tr>
-		</table></td></tr>
-		</table>>, URL="./SysinfoFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.SysinfoActivator
-	c1 [label=<<table title="org.universAAL.ontology.SysinfoActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SysinfoActivator.html">
+	c0 [label=<<table title="org.universAAL.ontology.SysinfoActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SysinfoActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SysinfoActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SysinfoActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.SysinfoFactory
+	c1 [label=<<table title="org.universAAL.ontology.SysinfoFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SysinfoFactory.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SysinfoFactory </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SysinfoFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.SecurityActivator
 	c2 [label=<<table title="org.universAAL.ontology.SecurityActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SecurityActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -33,42 +33,42 @@ digraph G {
 <tr><td align="center" balign="center"> SecurityFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SecurityFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.RecommendationsActivator
-	c4 [label=<<table title="org.universAAL.ontology.RecommendationsActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RecommendationsActivator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> RecommendationsActivator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./RecommendationsActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.RecommendationsFactory
-	c5 [label=<<table title="org.universAAL.ontology.RecommendationsFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RecommendationsFactory.html">
+	c4 [label=<<table title="org.universAAL.ontology.RecommendationsFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RecommendationsFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RecommendationsFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RecommendationsFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.DeviceExtraFactory
-	c6 [label=<<table title="org.universAAL.ontology.DeviceExtraFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceExtraFactory.html">
+	// org.universAAL.ontology.RecommendationsActivator
+	c5 [label=<<table title="org.universAAL.ontology.RecommendationsActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RecommendationsActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> DeviceExtraFactory </td></tr>
+<tr><td align="center" balign="center"> RecommendationsActivator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DeviceExtraFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./RecommendationsActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.DeviceExtraActivator
-	c7 [label=<<table title="org.universAAL.ontology.DeviceExtraActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceExtraActivator.html">
+	c6 [label=<<table title="org.universAAL.ontology.DeviceExtraActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceExtraActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DeviceExtraActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DeviceExtraActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.X73Factory
-	c8 [label=<<table title="org.universAAL.ontology.X73Factory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./X73Factory.html">
+	// org.universAAL.ontology.DeviceExtraFactory
+	c7 [label=<<table title="org.universAAL.ontology.DeviceExtraFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeviceExtraFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> X73Factory </td></tr>
+<tr><td align="center" balign="center"> DeviceExtraFactory </td></tr>
 		</table></td></tr>
-		</table>>, URL="./X73Factory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./DeviceExtraFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.X73Activator
-	c9 [label=<<table title="org.universAAL.ontology.X73Activator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./X73Activator.html">
+	c8 [label=<<table title="org.universAAL.ontology.X73Activator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./X73Activator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> X73Activator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./X73Activator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.X73Factory
+	c9 [label=<<table title="org.universAAL.ontology.X73Factory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./X73Factory.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> X73Factory </td></tr>
+		</table></td></tr>
+		</table>>, URL="./X73Factory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ReasoningFactory
 	c10 [label=<<table title="org.universAAL.ontology.ReasoningFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReasoningFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -105,30 +105,30 @@ digraph G {
 <tr><td align="center" balign="center"> UIPreferencesProfileFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UIPreferencesProfileFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.UIMainMenuProfileActivator
-	c16 [label=<<table title="org.universAAL.ontology.UIMainMenuProfileActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UIMainMenuProfileActivator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> UIMainMenuProfileActivator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./UIMainMenuProfileActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.UIMainMenuProfileFactory
-	c17 [label=<<table title="org.universAAL.ontology.UIMainMenuProfileFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UIMainMenuProfileFactory.html">
+	c16 [label=<<table title="org.universAAL.ontology.UIMainMenuProfileFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UIMainMenuProfileFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UIMainMenuProfileFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UIMainMenuProfileFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.PersonalHealthDeviceActivator
-	c18 [label=<<table title="org.universAAL.ontology.PersonalHealthDeviceActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersonalHealthDeviceActivator.html">
+	// org.universAAL.ontology.UIMainMenuProfileActivator
+	c17 [label=<<table title="org.universAAL.ontology.UIMainMenuProfileActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UIMainMenuProfileActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PersonalHealthDeviceActivator </td></tr>
+<tr><td align="center" balign="center"> UIMainMenuProfileActivator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./PersonalHealthDeviceActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./UIMainMenuProfileActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.PersonalHealthDeviceFactory
-	c19 [label=<<table title="org.universAAL.ontology.PersonalHealthDeviceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersonalHealthDeviceFactory.html">
+	c18 [label=<<table title="org.universAAL.ontology.PersonalHealthDeviceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersonalHealthDeviceFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PersonalHealthDeviceFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PersonalHealthDeviceFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.PersonalHealthDeviceActivator
+	c19 [label=<<table title="org.universAAL.ontology.PersonalHealthDeviceActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersonalHealthDeviceActivator.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> PersonalHealthDeviceActivator </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PersonalHealthDeviceActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.MultimediaActivator
 	c20 [label=<<table title="org.universAAL.ontology.MultimediaActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultimediaActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -141,30 +141,30 @@ digraph G {
 <tr><td align="center" balign="center"> MultimediaFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MultimediaFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.LightingActivator
-	c22 [label=<<table title="org.universAAL.ontology.LightingActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightingActivator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> LightingActivator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./LightingActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.LightingFactory
-	c23 [label=<<table title="org.universAAL.ontology.LightingFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightingFactory.html">
+	c22 [label=<<table title="org.universAAL.ontology.LightingFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightingFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LightingFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LightingFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.LanguageFactory
-	c24 [label=<<table title="org.universAAL.ontology.LanguageFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LanguageFactory.html">
+	// org.universAAL.ontology.LightingActivator
+	c23 [label=<<table title="org.universAAL.ontology.LightingActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LightingActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> LanguageFactory </td></tr>
+<tr><td align="center" balign="center"> LightingActivator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./LanguageFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./LightingActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.LanguageActivator
-	c25 [label=<<table title="org.universAAL.ontology.LanguageActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LanguageActivator.html">
+	c24 [label=<<table title="org.universAAL.ontology.LanguageActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LanguageActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LanguageActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LanguageActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.LanguageFactory
+	c25 [label=<<table title="org.universAAL.ontology.LanguageFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LanguageFactory.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> LanguageFactory </td></tr>
+		</table></td></tr>
+		</table>>, URL="./LanguageFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ImpairmentFactory
 	c26 [label=<<table title="org.universAAL.ontology.ImpairmentFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ImpairmentFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -189,42 +189,42 @@ digraph G {
 <tr><td align="center" balign="center"> HvacFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HvacFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.HandGesturesActivator
-	c30 [label=<<table title="org.universAAL.ontology.HandGesturesActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HandGesturesActivator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> HandGesturesActivator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./HandGesturesActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.HandgesturesFactory
-	c31 [label=<<table title="org.universAAL.ontology.HandgesturesFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HandgesturesFactory.html">
+	c30 [label=<<table title="org.universAAL.ontology.HandgesturesFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HandgesturesFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HandgesturesFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HandgesturesFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.HandGesturesActivator
+	c31 [label=<<table title="org.universAAL.ontology.HandGesturesActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HandGesturesActivator.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> HandGesturesActivator </td></tr>
+		</table></td></tr>
+		</table>>, URL="./HandGesturesActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.GesturePointingActivator
 	c32 [label=<<table title="org.universAAL.ontology.GesturePointingActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./GesturePointingActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> GesturePointingActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./GesturePointingActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.VCardFactory
-	c33 [label=<<table title="org.universAAL.ontology.VCardFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VCardFactory.html">
+	// org.universAAL.ontology.ProfileFactory
+	c33 [label=<<table title="org.universAAL.ontology.ProfileFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProfileFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> VCardFactory </td></tr>
+<tr><td align="center" balign="center"> ProfileFactory </td></tr>
 		</table></td></tr>
-		</table>>, URL="./VCardFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./ProfileFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ProfileActivator
 	c34 [label=<<table title="org.universAAL.ontology.ProfileActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProfileActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ProfileActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ProfileActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.ProfileFactory
-	c35 [label=<<table title="org.universAAL.ontology.ProfileFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProfileFactory.html">
+	// org.universAAL.ontology.VCardFactory
+	c35 [label=<<table title="org.universAAL.ontology.VCardFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VCardFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ProfileFactory </td></tr>
+<tr><td align="center" balign="center"> VCardFactory </td></tr>
 		</table></td></tr>
-		</table>>, URL="./ProfileFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./VCardFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.FurnitureFactory
 	c36 [label=<<table title="org.universAAL.ontology.FurnitureFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FurnitureFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -237,30 +237,30 @@ digraph G {
 <tr><td align="center" balign="center"> FurnitureActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FurnitureActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.Activator
-	c38 [label=<<table title="org.universAAL.ontology.Activator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Activator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Activator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Activator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.DroolsReasoningFactory
-	c39 [label=<<table title="org.universAAL.ontology.DroolsReasoningFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DroolsReasoningFactory.html">
+	c38 [label=<<table title="org.universAAL.ontology.DroolsReasoningFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DroolsReasoningFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DroolsReasoningFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DroolsReasoningFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.DependabilityFactory
-	c40 [label=<<table title="org.universAAL.ontology.DependabilityFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DependabilityFactory.html">
+	// org.universAAL.ontology.Activator
+	c39 [label=<<table title="org.universAAL.ontology.Activator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Activator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> DependabilityFactory </td></tr>
+<tr><td align="center" balign="center"> Activator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./DependabilityFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./Activator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.DependabilityActivator
-	c41 [label=<<table title="org.universAAL.ontology.DependabilityActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DependabilityActivator.html">
+	c40 [label=<<table title="org.universAAL.ontology.DependabilityActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DependabilityActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DependabilityActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DependabilityActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.DependabilityFactory
+	c41 [label=<<table title="org.universAAL.ontology.DependabilityFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DependabilityFactory.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> DependabilityFactory </td></tr>
+		</table></td></tr>
+		</table>>, URL="./DependabilityFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.CryptographicFactory
 	c42 [label=<<table title="org.universAAL.ontology.CryptographicFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CryptographicFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -273,54 +273,54 @@ digraph G {
 <tr><td align="center" balign="center"> CryptographicActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CryptographicActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.ContinuaHealthManagerActivator
-	c44 [label=<<table title="org.universAAL.ontology.ContinuaHealthManagerActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContinuaHealthManagerActivator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ContinuaHealthManagerActivator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./ContinuaHealthManagerActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ContinuaHealthManagerFactory
-	c45 [label=<<table title="org.universAAL.ontology.ContinuaHealthManagerFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContinuaHealthManagerFactory.html">
+	c44 [label=<<table title="org.universAAL.ontology.ContinuaHealthManagerFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContinuaHealthManagerFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ContinuaHealthManagerFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContinuaHealthManagerFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.ContextHistoryActivator
-	c46 [label=<<table title="org.universAAL.ontology.ContextHistoryActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryActivator.html">
+	// org.universAAL.ontology.ContinuaHealthManagerActivator
+	c45 [label=<<table title="org.universAAL.ontology.ContinuaHealthManagerActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContinuaHealthManagerActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> ContextHistoryActivator </td></tr>
+<tr><td align="center" balign="center"> ContinuaHealthManagerActivator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./ContextHistoryActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./ContinuaHealthManagerActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ContextHistoryFactory
-	c47 [label=<<table title="org.universAAL.ontology.ContextHistoryFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryFactory.html">
+	c46 [label=<<table title="org.universAAL.ontology.ContextHistoryFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ContextHistoryFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContextHistoryFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.AVActivator
-	c48 [label=<<table title="org.universAAL.ontology.AVActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AVActivator.html">
+	// org.universAAL.ontology.ContextHistoryActivator
+	c47 [label=<<table title="org.universAAL.ontology.ContextHistoryActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContextHistoryActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> AVActivator </td></tr>
+<tr><td align="center" balign="center"> ContextHistoryActivator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./AVActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./ContextHistoryActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.AVFactory
-	c49 [label=<<table title="org.universAAL.ontology.AVFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AVFactory.html">
+	c48 [label=<<table title="org.universAAL.ontology.AVFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AVFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AVFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AVFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.OrchestrationActivator
-	c50 [label=<<table title="org.universAAL.ontology.OrchestrationActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrchestrationActivator.html">
+	// org.universAAL.ontology.AVActivator
+	c49 [label=<<table title="org.universAAL.ontology.AVActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AVActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> OrchestrationActivator </td></tr>
+<tr><td align="center" balign="center"> AVActivator </td></tr>
 		</table></td></tr>
-		</table>>, URL="./OrchestrationActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./AVActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.OrchestrationFactory
-	c51 [label=<<table title="org.universAAL.ontology.OrchestrationFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrchestrationFactory.html">
+	c50 [label=<<table title="org.universAAL.ontology.OrchestrationFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrchestrationFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> OrchestrationFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OrchestrationFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.OrchestrationActivator
+	c51 [label=<<table title="org.universAAL.ontology.OrchestrationActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OrchestrationActivator.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> OrchestrationActivator </td></tr>
+		</table></td></tr>
+		</table>>, URL="./OrchestrationActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ActivityHubOntology
 	c52 [label=<<table title="org.universAAL.ontology.ActivityHubOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivityHubOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -339,18 +339,18 @@ digraph G {
 <tr><td align="center" balign="center"> DeviceActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DeviceActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.MeasurementFactory
-	c55 [label=<<table title="org.universAAL.ontology.MeasurementFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MeasurementFactory.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MeasurementFactory </td></tr>
-		</table></td></tr>
-		</table>>, URL="./MeasurementFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.MeasurementActivator
-	c56 [label=<<table title="org.universAAL.ontology.MeasurementActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MeasurementActivator.html">
+	c55 [label=<<table title="org.universAAL.ontology.MeasurementActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MeasurementActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MeasurementActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MeasurementActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.MeasurementFactory
+	c56 [label=<<table title="org.universAAL.ontology.MeasurementFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MeasurementFactory.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> MeasurementFactory </td></tr>
+		</table></td></tr>
+		</table>>, URL="./MeasurementFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.UnitFactory
 	c57 [label=<<table title="org.universAAL.ontology.UnitFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UnitFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -363,35 +363,35 @@ digraph G {
 <tr><td align="center" balign="center"> UnitActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UnitActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.SpaceFactory
-	c59 [label=<<table title="org.universAAL.ontology.SpaceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SpaceFactory.html">
+	// org.universAAL.ontology.PhThingFactory
+	c59 [label=<<table title="org.universAAL.ontology.PhThingFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhThingFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SpaceFactory </td></tr>
+<tr><td align="center" balign="center"> PhThingFactory </td></tr>
 		</table></td></tr>
-		</table>>, URL="./SpaceFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./PhThingFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.ShapeFactory
 	c60 [label=<<table title="org.universAAL.ontology.ShapeFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ShapeFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ShapeFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ShapeFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.PhThingFactory
-	c61 [label=<<table title="org.universAAL.ontology.PhThingFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhThingFactory.html">
+	// org.universAAL.ontology.SpaceFactory
+	c61 [label=<<table title="org.universAAL.ontology.SpaceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SpaceFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PhThingFactory </td></tr>
+<tr><td align="center" balign="center"> SpaceFactory </td></tr>
 		</table></td></tr>
-		</table>>, URL="./PhThingFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.PhWorldActivator
-	c62 [label=<<table title="org.universAAL.ontology.PhWorldActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhWorldActivator.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PhWorldActivator </td></tr>
-		</table></td></tr>
-		</table>>, URL="./PhWorldActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./SpaceFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.LocationFactory
-	c63 [label=<<table title="org.universAAL.ontology.LocationFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LocationFactory.html">
+	c62 [label=<<table title="org.universAAL.ontology.LocationFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LocationFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LocationFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LocationFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.PhWorldActivator
+	c63 [label=<<table title="org.universAAL.ontology.PhWorldActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhWorldActivator.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> PhWorldActivator </td></tr>
+		</table></td></tr>
+		</table>>, URL="./PhWorldActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 }
 

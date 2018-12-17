@@ -74,6 +74,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Alignment.java">org/universAAL/ontology/recommendations/Alignment.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsFactory.java">org/universAAL/ontology/RecommendationsFactory.java</a>
                 </td>
                 <td>
@@ -84,20 +98,6 @@ under the License.
                 </td>
                 <td>
                   3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.Alignment.java">org/universAAL/ontology/recommendations/Alignment.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  9
                 </td>
               </tr>
                           <tr>
@@ -192,7 +192,7 @@ under the License.
                   1
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   18
@@ -228,20 +228,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsActivator.java">org/universAAL/ontology/RecommendationsActivator.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-                <td>
-                  7
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.recommendations.MaximumSize.java">org/universAAL/ontology/recommendations/MaximumSize.java</a>
                 </td>
                 <td>
@@ -249,6 +235,20 @@ under the License.
                 </td>
                 <td>
                   0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.recommendations//checkstyle.html#org.universAAL.ontology.RecommendationsActivator.java">org/universAAL/ontology/RecommendationsActivator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
                 <td>
                   7

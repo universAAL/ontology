@@ -9,18 +9,18 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal
-	c26950 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HeartRateSignal.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> HeartRateSignal </td></tr>
-		</table></td></tr>
-		</table>>, URL="./HeartRateSignal.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.healthmeasurement.owl.BloodPressure
-	c26951 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.BloodPressure" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BloodPressure.html">
+	c26950 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.BloodPressure" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BloodPressure.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BloodPressure </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BloodPressure.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement
+	c26951 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HealthMeasurement.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> HealthMeasurement </td></tr>
+		</table></td></tr>
+		</table>>, URL="./HealthMeasurement.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology
 	c26952 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurementOntology" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HealthMeasurementOntology.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
@@ -39,25 +39,25 @@ digraph G {
 <tr><td align="center" balign="center"> BloodOxygenSaturation </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BloodOxygenSaturation.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement
-	c26955 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HealthMeasurement.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> HealthMeasurement </td></tr>
-		</table></td></tr>
-		</table>>, URL="./HealthMeasurement.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.healthmeasurement.owl.PersonWeight
-	c26956 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.PersonWeight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersonWeight.html">
+	c26955 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.PersonWeight" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PersonWeight.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PersonWeight </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PersonWeight.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal
+	c26956 [label=<<table title="org.universAAL.ontology.healthmeasurement.owl.HeartRateSignal" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HeartRateSignal.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> HeartRateSignal </td></tr>
+		</table></td></tr>
+		</table>>, URL="./HeartRateSignal.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.healthmeasurement.owl.BloodPressure extends org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement
-	c26955:p -> c26951:p [dir=back,arrowtail=empty];
+	c26951:p -> c26950:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.healthmeasurement.owl.HeartRate extends org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement
-	c26955:p -> c26953:p [dir=back,arrowtail=empty];
+	c26951:p -> c26953:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.healthmeasurement.owl.BloodOxygenSaturation extends org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement
-	c26955:p -> c26954:p [dir=back,arrowtail=empty];
+	c26951:p -> c26954:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.healthmeasurement.owl.PersonWeight extends org.universAAL.ontology.healthmeasurement.owl.HealthMeasurement
-	c26955:p -> c26956:p [dir=back,arrowtail=empty];
+	c26951:p -> c26955:p [dir=back,arrowtail=empty];
 }
 

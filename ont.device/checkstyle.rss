@@ -108,7 +108,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   10
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DimmerSensor.java">org/universAAL/ontology/device/DimmerSensor.java</a>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.HumiditySensor.java">org/universAAL/ontology/device/HumiditySensor.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.HumiditySensor.java">org/universAAL/ontology/device/HumiditySensor.java</a>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DimmerSensor.java">org/universAAL/ontology/device/DimmerSensor.java</a>
                 </td>
                 <td>
                   0
@@ -500,7 +500,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   14
@@ -509,34 +509,6 @@ under the License.
                           <tr>
                 <td>
                   <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.CurtainActuator.java">org/universAAL/ontology/device/CurtainActuator.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DeviceOntology.java">org/universAAL/ontology/device/DeviceOntology.java</a>
-                </td>
-                <td>
-                  3
-                </td>
-                <td>
-                  61
-                </td>
-                <td>
-                  4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DoorActuator.java">org/universAAL/ontology/device/DoorActuator.java</a>
                 </td>
                 <td>
                   0
@@ -560,6 +532,34 @@ under the License.
                 </td>
                 <td>
                   10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DoorActuator.java">org/universAAL/ontology/device/DoorActuator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.DeviceOntology.java">org/universAAL/ontology/device/DeviceOntology.java</a>
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  61
+                </td>
+                <td>
+                  4
                 </td>
               </tr>
                           <tr>
@@ -788,7 +788,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.MotionSensor.java">org/universAAL/ontology/device/MotionSensor.java</a>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SwitchSensor.java">org/universAAL/ontology/device/SwitchSensor.java</a>
                 </td>
                 <td>
                   0
@@ -802,7 +802,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.SwitchSensor.java">org/universAAL/ontology/device/SwitchSensor.java</a>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.MotionSensor.java">org/universAAL/ontology/device/MotionSensor.java</a>
                 </td>
                 <td>
                   0
@@ -830,7 +830,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.LightSensor.java">org/universAAL/ontology/device/LightSensor.java</a>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.PanicButtonSensor.java">org/universAAL/ontology/device/PanicButtonSensor.java</a>
                 </td>
                 <td>
                   0
@@ -844,7 +844,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.PanicButtonSensor.java">org/universAAL/ontology/device/PanicButtonSensor.java</a>
+                  <a href="http://ontology/ont.device//checkstyle.html#org.universAAL.ontology.device.LightSensor.java">org/universAAL/ontology/device/LightSensor.java</a>
                 </td>
                 <td>
                   0

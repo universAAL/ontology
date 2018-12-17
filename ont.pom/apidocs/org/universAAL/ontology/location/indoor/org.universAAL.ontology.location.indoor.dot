@@ -9,105 +9,105 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.location.indoor.Terrace
-	c1922 [label=<<table title="org.universAAL.ontology.location.indoor.Terrace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Terrace.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Terrace </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Terrace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.Balcony
-	c1923 [label=<<table title="org.universAAL.ontology.location.indoor.Balcony" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Balcony.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Balcony </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Balcony.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.Room
-	c1924 [label=<<table title="org.universAAL.ontology.location.indoor.Room" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Room.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Room </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Room.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.Hall
-	c1925 [label=<<table title="org.universAAL.ontology.location.indoor.Hall" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hall.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Hall </td></tr>
-		</table></td></tr>
-		</table>>, URL="./Hall.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.StairCase
-	c1926 [label=<<table title="org.universAAL.ontology.location.indoor.StairCase" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StairCase.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> StairCase </td></tr>
-		</table></td></tr>
-		</table>>, URL="./StairCase.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.indoor.BuildingLevel
-	c1927 [label=<<table title="org.universAAL.ontology.location.indoor.BuildingLevel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BuildingLevel.html">
+	c4424 [label=<<table title="org.universAAL.ontology.location.indoor.BuildingLevel" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BuildingLevel.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BuildingLevel </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BuildingLevel.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.indoor.StairWay
-	c1928 [label=<<table title="org.universAAL.ontology.location.indoor.StairWay" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StairWay.html">
+	c4425 [label=<<table title="org.universAAL.ontology.location.indoor.StairWay" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StairWay.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StairWay </td></tr>
 		</table></td></tr>
 		</table>>, URL="./StairWay.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.EntranceHall
-	c1929 [label=<<table title="org.universAAL.ontology.location.indoor.EntranceHall" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EntranceHall.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> EntranceHall </td></tr>
-		</table></td></tr>
-		</table>>, URL="./EntranceHall.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.RoomFunction
-	c1930 [label=<<table title="org.universAAL.ontology.location.indoor.RoomFunction" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RoomFunction.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> RoomFunction </td></tr>
-		</table></td></tr>
-		</table>>, URL="./RoomFunction.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.HomeArea
-	c1931 [label=<<table title="org.universAAL.ontology.location.indoor.HomeArea" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HomeArea.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> HomeArea </td></tr>
-		</table></td></tr>
-		</table>>, URL="./HomeArea.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.indoor.Corridor
-	c1932 [label=<<table title="org.universAAL.ontology.location.indoor.Corridor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Corridor.html">
+	c4426 [label=<<table title="org.universAAL.ontology.location.indoor.Corridor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Corridor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Corridor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Corridor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// org.universAAL.ontology.location.indoor.Home
-	c1933 [label=<<table title="org.universAAL.ontology.location.indoor.Home" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Home.html">
+	// org.universAAL.ontology.location.indoor.Terrace
+	c4427 [label=<<table title="org.universAAL.ontology.location.indoor.Terrace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Terrace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Home </td></tr>
+<tr><td align="center" balign="center"> Terrace </td></tr>
 		</table></td></tr>
-		</table>>, URL="./Home.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+		</table>>, URL="./Terrace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.StairCase
+	c4428 [label=<<table title="org.universAAL.ontology.location.indoor.StairCase" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StairCase.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> StairCase </td></tr>
+		</table></td></tr>
+		</table>>, URL="./StairCase.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934 [label=<<table title="org.universAAL.ontology.location.indoor.IndoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IndoorPlace.html">
+	c4429 [label=<<table title="org.universAAL.ontology.location.indoor.IndoorPlace" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IndoorPlace.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> IndoorPlace </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./IndoorPlace.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//org.universAAL.ontology.location.indoor.Terrace extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1922:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.indoor.Balcony extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1923:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.indoor.Room extends org.universAAL.ontology.location.indoor.HomeArea
-	c1931:p -> c1924:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.indoor.Hall extends org.universAAL.ontology.location.indoor.HomeArea
-	c1931:p -> c1925:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.indoor.StairCase extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1926:p [dir=back,arrowtail=empty];
+	// org.universAAL.ontology.location.indoor.Hall
+	c4430 [label=<<table title="org.universAAL.ontology.location.indoor.Hall" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hall.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Hall </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Hall.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.HomeArea
+	c4431 [label=<<table title="org.universAAL.ontology.location.indoor.HomeArea" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HomeArea.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> HomeArea </td></tr>
+		</table></td></tr>
+		</table>>, URL="./HomeArea.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.RoomFunction
+	c4432 [label=<<table title="org.universAAL.ontology.location.indoor.RoomFunction" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RoomFunction.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> RoomFunction </td></tr>
+		</table></td></tr>
+		</table>>, URL="./RoomFunction.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.EntranceHall
+	c4433 [label=<<table title="org.universAAL.ontology.location.indoor.EntranceHall" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EntranceHall.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> EntranceHall </td></tr>
+		</table></td></tr>
+		</table>>, URL="./EntranceHall.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.Balcony
+	c4434 [label=<<table title="org.universAAL.ontology.location.indoor.Balcony" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Balcony.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Balcony </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Balcony.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.Room
+	c4435 [label=<<table title="org.universAAL.ontology.location.indoor.Room" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Room.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Room </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Room.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.location.indoor.Home
+	c4436 [label=<<table title="org.universAAL.ontology.location.indoor.Home" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Home.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Home </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Home.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.location.indoor.BuildingLevel extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1927:p [dir=back,arrowtail=empty];
+	c4429:p -> c4424:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.indoor.StairWay extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1928:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.indoor.EntranceHall extends org.universAAL.ontology.location.indoor.HomeArea
-	c1931:p -> c1929:p [dir=back,arrowtail=empty];
-	//org.universAAL.ontology.location.indoor.HomeArea extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1931:p [dir=back,arrowtail=empty];
+	c4429:p -> c4425:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.indoor.Corridor extends org.universAAL.ontology.location.indoor.HomeArea
-	c1931:p -> c1932:p [dir=back,arrowtail=empty];
+	c4431:p -> c4426:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.Terrace extends org.universAAL.ontology.location.indoor.IndoorPlace
+	c4429:p -> c4427:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.StairCase extends org.universAAL.ontology.location.indoor.IndoorPlace
+	c4429:p -> c4428:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.Hall extends org.universAAL.ontology.location.indoor.HomeArea
+	c4431:p -> c4430:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.HomeArea extends org.universAAL.ontology.location.indoor.IndoorPlace
+	c4429:p -> c4431:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.EntranceHall extends org.universAAL.ontology.location.indoor.HomeArea
+	c4431:p -> c4433:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.Balcony extends org.universAAL.ontology.location.indoor.IndoorPlace
+	c4429:p -> c4434:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.indoor.Room extends org.universAAL.ontology.location.indoor.HomeArea
+	c4431:p -> c4435:p [dir=back,arrowtail=empty];
 	//org.universAAL.ontology.location.indoor.Home extends org.universAAL.ontology.location.indoor.IndoorPlace
-	c1934:p -> c1933:p [dir=back,arrowtail=empty];
+	c4429:p -> c4436:p [dir=back,arrowtail=empty];
 }
 

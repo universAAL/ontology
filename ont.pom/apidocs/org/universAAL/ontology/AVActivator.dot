@@ -10,13 +10,13 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.AVActivator
-	c42630 [label=<<table title="org.universAAL.ontology.AVActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AVActivator.html">
+	c42631 [label=<<table title="org.universAAL.ontology.AVActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AVActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AVActivator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AVActivator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.AVActivator implements org.universAAL.middleware.container.ModuleActivator
-	c43199:p -> c42630:p [dir=back,arrowtail=empty,style=dashed];
+	c43199:p -> c42631:p [dir=back,arrowtail=empty,style=dashed];
 	// org.universAAL.middleware.container.ModuleActivator
 	c43199 [label=<<table title="org.universAAL.middleware.container.ModuleActivator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/container/ModuleActivator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

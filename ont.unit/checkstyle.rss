@@ -52,24 +52,10 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
-                </td>
-                <td>
-                  21
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.unit.Prefix.java">org/universAAL/ontology/unit/Prefix.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
                   1
                 </td>
                 <td>
-                  27
+                  21
                 </td>
               </tr>
                           <tr>
@@ -88,6 +74,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.unit.Prefix.java">org/universAAL/ontology/unit/Prefix.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  27
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.UnitFactory.java">org/universAAL/ontology/UnitFactory.java</a>
                 </td>
                 <td>
@@ -102,6 +102,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.unit.UnitSystem.java">org/universAAL/ontology/unit/UnitSystem.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  31
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.unit.UnitOntology.java">org/universAAL/ontology/unit/UnitOntology.java</a>
                 </td>
                 <td>
@@ -112,20 +126,6 @@ under the License.
                 </td>
                 <td>
                   4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.unit//checkstyle.html#org.universAAL.ontology.unit.UnitSystem.java">org/universAAL/ontology/unit/UnitSystem.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  31
                 </td>
               </tr>
                           <tr>
@@ -150,7 +150,7 @@ under the License.
                   2
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   14
@@ -178,7 +178,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   14
@@ -248,7 +248,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   31
@@ -290,7 +290,7 @@ under the License.
                   2
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   9

@@ -9,19 +9,19 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.lighting.BlinkableBeamingSource
-	c76384 [label=<<table title="org.universAAL.ontology.lighting.BlinkableBeamingSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BlinkableBeamingSource.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> BlinkableBeamingSource </td></tr>
-		</table></td></tr>
-		</table>>, URL="./BlinkableBeamingSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.lighting.BeamingSource
-	c76393 [label=<<table title="org.universAAL.ontology.lighting.BeamingSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BeamingSource.html">
+	c76386 [label=<<table title="org.universAAL.ontology.lighting.BeamingSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BeamingSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BeamingSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BeamingSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.lighting.BlinkableBeamingSource
+	c76390 [label=<<table title="org.universAAL.ontology.lighting.BlinkableBeamingSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./BlinkableBeamingSource.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> BlinkableBeamingSource </td></tr>
+		</table></td></tr>
+		</table>>, URL="./BlinkableBeamingSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.lighting.BlinkableBeamingSource extends org.universAAL.ontology.lighting.BeamingSource
-	c76393:p -> c76384:p [dir=back,arrowtail=empty];
+	c76386:p -> c76390:p [dir=back,arrowtail=empty];
 }
 

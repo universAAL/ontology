@@ -52,7 +52,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   12
@@ -61,6 +61,34 @@ under the License.
                           <tr>
                 <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.WeighingScale.java">org/universAAL/ontology/personalhealthdevice/WeighingScale.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology.java">org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.BloodPressureSensor.java">org/universAAL/ontology/personalhealthdevice/BloodPressureSensor.java</a>
                 </td>
                 <td>
                   0
@@ -80,38 +108,10 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.BloodPressureSensor.java">org/universAAL/ontology/personalhealthdevice/BloodPressureSensor.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.personalhealthdevice.PersonalHealthDeviceOntology.java">org/universAAL/ontology/personalhealthdevice/PersonalHealthDeviceOntology.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
                 </td>
               </tr>
                           <tr>
@@ -136,7 +136,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   6

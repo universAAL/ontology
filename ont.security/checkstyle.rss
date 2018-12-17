@@ -108,7 +108,7 @@ under the License.
                   3
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   15
@@ -130,20 +130,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.security//checkstyle.html#org.universAAL.ontology.security.DelegationForm.java">org/universAAL/ontology/security/DelegationForm.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  10
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.security//checkstyle.html#org.universAAL.ontology.security.PossessionFactor.java">org/universAAL/ontology/security/PossessionFactor.java</a>
                 </td>
                 <td>
@@ -154,6 +140,20 @@ under the License.
                 </td>
                 <td>
                   12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.security//checkstyle.html#org.universAAL.ontology.security.DelegationForm.java">org/universAAL/ontology/security/DelegationForm.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
                 </td>
               </tr>
                           <tr>
@@ -206,7 +206,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   14
@@ -228,20 +228,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://ontology/ont.security//checkstyle.html#org.universAAL.ontology.security.AuthorizationService.java">org/universAAL/ontology/security/AuthorizationService.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  14
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://ontology/ont.security//checkstyle.html#org.universAAL.ontology.security.MultifactorCredentials.java">org/universAAL/ontology/security/MultifactorCredentials.java</a>
                 </td>
                 <td>
@@ -252,6 +238,20 @@ under the License.
                 </td>
                 <td>
                   17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.security//checkstyle.html#org.universAAL.ontology.security.AuthorizationService.java">org/universAAL/ontology/security/AuthorizationService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
                 </td>
               </tr>
                           <tr>

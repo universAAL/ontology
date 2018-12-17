@@ -74,20 +74,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.location.position.OriginedMetric.java">org/universAAL/ontology/location/position/OriginedMetric.java</a>
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  22
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.shape.ConeSegment.java">org/universAAL/ontology/shape/ConeSegment.java</a>
                 </td>
                 <td>
@@ -98,6 +84,20 @@ under the License.
                 </td>
                 <td>
                   31
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.location.position.OriginedMetric.java">org/universAAL/ontology/location/position/OriginedMetric.java</a>
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  22
                 </td>
               </tr>
                           <tr>
@@ -186,20 +186,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.SpaceFactory.java">org/universAAL/ontology/SpaceFactory.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  3
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.location.Way.java">org/universAAL/ontology/location/Way.java</a>
                 </td>
                 <td>
@@ -220,10 +206,24 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   71
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.SpaceFactory.java">org/universAAL/ontology/SpaceFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -248,7 +248,7 @@ under the License.
                   7
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   48
@@ -312,20 +312,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Balcony.java">org/universAAL/ontology/location/indoor/Balcony.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  8
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="/checkstyle.html#org.universAAL.ontology.shape.ShapeOntology.java">org/universAAL/ontology/shape/ShapeOntology.java</a>
                 </td>
                 <td>
@@ -336,6 +322,20 @@ under the License.
                 </td>
                 <td>
                   5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Balcony.java">org/universAAL/ontology/location/indoor/Balcony.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  8
                 </td>
               </tr>
                           <tr>
@@ -472,7 +472,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   13
@@ -528,7 +528,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   11
@@ -598,7 +598,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   8
@@ -626,7 +626,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   19
@@ -648,7 +648,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Room.java">org/universAAL/ontology/location/indoor/Room.java</a>
+                  <a href="/checkstyle.html#org.universAAL.ontology.shape.Ellipse.java">org/universAAL/ontology/shape/Ellipse.java</a>
                 </td>
                 <td>
                   0
@@ -657,7 +657,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  18
+                  33
                 </td>
               </tr>
                           <tr>
@@ -676,7 +676,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.shape.Ellipse.java">org/universAAL/ontology/shape/Ellipse.java</a>
+                  <a href="/checkstyle.html#org.universAAL.ontology.location.indoor.Room.java">org/universAAL/ontology/location/indoor/Room.java</a>
                 </td>
                 <td>
                   0
@@ -685,7 +685,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  33
+                  18
                 </td>
               </tr>
                           <tr>
@@ -704,16 +704,16 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.location.outdoor.Building.java">org/universAAL/ontology/location/outdoor/Building.java</a>
+                  <a href="/checkstyle.html#org.universAAL.ontology.shape.Shape2D.java">org/universAAL/ontology/shape/Shape2D.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
-                  8
+                  9
                 </td>
               </tr>
                           <tr>
@@ -732,7 +732,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="/checkstyle.html#org.universAAL.ontology.shape.Shape2D.java">org/universAAL/ontology/shape/Shape2D.java</a>
+                  <a href="/checkstyle.html#org.universAAL.ontology.location.outdoor.Building.java">org/universAAL/ontology/location/outdoor/Building.java</a>
                 </td>
                 <td>
                   0
@@ -741,7 +741,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  8
                 </td>
               </tr>
                           <tr>
@@ -822,7 +822,7 @@ under the License.
                   1
                 </td>
                 <td>
-                  1
+                  0
                 </td>
                 <td>
                   13
@@ -836,7 +836,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  1
                 </td>
                 <td>
                   10

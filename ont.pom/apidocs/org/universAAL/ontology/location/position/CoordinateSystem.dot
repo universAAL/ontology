@@ -9,22 +9,22 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.location.position.OriginedMetric
-	c122937 [label=<<table title="org.universAAL.ontology.location.position.OriginedMetric" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OriginedMetric.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> OriginedMetric </td></tr>
-		</table></td></tr>
-		</table>>, URL="./OriginedMetric.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.location.position.CoordinateSystem
-	c122938 [label=<<table title="org.universAAL.ontology.location.position.CoordinateSystem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CoordinateSystem.html">
+	c122946 [label=<<table title="org.universAAL.ontology.location.position.CoordinateSystem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CoordinateSystem.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CoordinateSystem </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CoordinateSystem.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//org.universAAL.ontology.location.position.OriginedMetric extends org.universAAL.ontology.location.position.CoordinateSystem
-	c122938:p -> c122937:p [dir=back,arrowtail=empty];
+	// org.universAAL.ontology.location.position.OriginedMetric
+	c122947 [label=<<table title="org.universAAL.ontology.location.position.OriginedMetric" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OriginedMetric.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> OriginedMetric </td></tr>
+		</table></td></tr>
+		</table>>, URL="./OriginedMetric.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.location.position.CoordinateSystem extends org.universAAL.middleware.owl.ManagedIndividual
-	c123461:p -> c122938:p [dir=back,arrowtail=empty];
+	c123461:p -> c122946:p [dir=back,arrowtail=empty];
+	//org.universAAL.ontology.location.position.OriginedMetric extends org.universAAL.ontology.location.position.CoordinateSystem
+	c122946:p -> c122947:p [dir=back,arrowtail=empty];
 	// org.universAAL.middleware.owl.ManagedIndividual
 	c123461 [label=<<table title="org.universAAL.middleware.owl.ManagedIndividual" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/owl/ManagedIndividual.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

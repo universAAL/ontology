@@ -10,13 +10,13 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// org.universAAL.ontology.LightingFactory
-	c236483 [label=<<table title="org.universAAL.ontology.LightingFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LightingFactory.html">
+	c236482 [label=<<table title="org.universAAL.ontology.LightingFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LightingFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LightingFactory </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LightingFactory.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.LightingFactory implements org.universAAL.middleware.rdf.ResourceFactory
-	c237077:p -> c236483:p [dir=back,arrowtail=empty,style=dashed];
+	c237077:p -> c236482:p [dir=back,arrowtail=empty,style=dashed];
 	// org.universAAL.middleware.rdf.ResourceFactory
 	c237077 [label=<<table title="org.universAAL.middleware.rdf.ResourceFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://java.sun.com/j2se/1.4.2/docs/api/org/universAAL/middleware/rdf/ResourceFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

@@ -9,19 +9,19 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// org.universAAL.ontology.profile.AssistedPerson
-	c63928 [label=<<table title="org.universAAL.ontology.profile.AssistedPerson" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AssistedPerson.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> AssistedPerson </td></tr>
-		</table></td></tr>
-		</table>>, URL="./AssistedPerson.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.universAAL.ontology.profile.User
-	c63932 [label=<<table title="org.universAAL.ontology.profile.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./User.html">
+	c63962 [label=<<table title="org.universAAL.ontology.profile.User" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./User.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> User </td></tr>
 		</table></td></tr>
 		</table>>, URL="./User.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// org.universAAL.ontology.profile.AssistedPerson
+	c63965 [label=<<table title="org.universAAL.ontology.profile.AssistedPerson" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AssistedPerson.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> AssistedPerson </td></tr>
+		</table></td></tr>
+		</table>>, URL="./AssistedPerson.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//org.universAAL.ontology.profile.AssistedPerson extends org.universAAL.ontology.profile.User
-	c63932:p -> c63928:p [dir=back,arrowtail=empty];
+	c63962:p -> c63965:p [dir=back,arrowtail=empty];
 }
 

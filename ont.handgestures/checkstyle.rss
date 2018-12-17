@@ -52,7 +52,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   6
@@ -66,24 +66,10 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  2
                 </td>
                 <td>
                   25
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.handgestures//checkstyle.html#org.universAAL.ontology.HandgesturesFactory.java">org/universAAL/ontology/HandgesturesFactory.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  1
-                </td>
-                <td>
-                  3
                 </td>
               </tr>
                           <tr>
@@ -94,10 +80,24 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://ontology/ont.handgestures//checkstyle.html#org.universAAL.ontology.HandgesturesFactory.java">org/universAAL/ontology/HandgesturesFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>

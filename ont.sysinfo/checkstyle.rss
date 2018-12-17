@@ -46,6 +46,20 @@ under the License.
           <tbody>
                           <tr>
                 <td>
+                  <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SystemInfo.java">org/universAAL/ontology/sysinfo/SystemInfo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  39
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SysinfoOntology.java">org/universAAL/ontology/sysinfo/SysinfoOntology.java</a>
                 </td>
                 <td>
@@ -56,20 +70,6 @@ under the License.
                 </td>
                 <td>
                   4
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://ontology/ont.sysinfo//checkstyle.html#org.universAAL.ontology.sysinfo.SystemInfo.java">org/universAAL/ontology/sysinfo/SystemInfo.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  39
                 </td>
               </tr>
                           <tr>
@@ -150,7 +150,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
                 <td>
                   14

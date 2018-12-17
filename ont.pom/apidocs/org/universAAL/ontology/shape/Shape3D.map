@@ -1,18 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Sphere.html" title="org.universAAL.ontology.shape.Sphere" alt="" coords="16,208,77,235"/>
-<area shape="rect" id="node1" href="./Sphere.html" title="&lt;TABLE&gt;" alt="" coords="5,197,88,245"/>
-<area shape="rect" id="node2_1" href="./Polyhedron.html" title="org.universAAL.ontology.shape.Polyhedron" alt="" coords="123,208,208,235"/>
-<area shape="rect" id="node2" href="./Polyhedron.html" title="&lt;TABLE&gt;" alt="" coords="112,197,219,245"/>
-<area shape="rect" id="node3_2" href="./Polygon.html" title="org.universAAL.ontology.shape.Polygon" alt="" coords="254,208,322,235"/>
-<area shape="rect" id="node3" href="./Polygon.html" title="&lt;TABLE&gt;" alt="" coords="243,197,333,245"/>
-<area shape="rect" id="node4_3" href="./Path.html" title="org.universAAL.ontology.shape.Path" alt="" coords="369,208,417,235"/>
-<area shape="rect" id="node4" href="./Path.html" title="&lt;TABLE&gt;" alt="" coords="357,197,429,245"/>
-<area shape="rect" id="node5_4" href="./Box.html" title="org.universAAL.ontology.shape.Box" alt="" coords="467,208,511,235"/>
-<area shape="rect" id="node5" href="./Box.html" title="&lt;TABLE&gt;" alt="" coords="453,197,525,245"/>
-<area shape="rect" id="node6_5" href="./Shape3D.html" title="org.universAAL.ontology.shape.Shape3D" alt="" coords="303,112,377,139"/>
-<area shape="rect" id="node6" href="./Shape3D.html" title="&lt;TABLE&gt;" alt="" coords="292,101,388,149"/>
-<area shape="rect" id="node7_6" href="./QuasiCylinder.html" title="org.universAAL.ontology.shape.QuasiCylinder" alt="" coords="561,208,663,235"/>
-<area shape="rect" id="node7" href="./QuasiCylinder.html" title="&lt;TABLE&gt;" alt="" coords="550,197,674,245"/>
-<area shape="rect" id="node8_7" href="./Shape.html" title="org.universAAL.ontology.shape.Shape" alt="" coords="311,16,369,43"/>
-<area shape="rect" id="node8" href="./Shape.html" title="&lt;TABLE&gt;" alt="" coords="301,5,379,53"/>
+<area shape="rect" id="node1_0" href="./Box.html" title="org.universAAL.ontology.shape.Box" alt="" coords="19,208,63,235"/>
+<area shape="rect" id="node1" href="./Box.html" title="&lt;TABLE&gt;" alt="" coords="5,197,77,245"/>
+<area shape="rect" id="node2_1" href="./Polyhedron.html" title="org.universAAL.ontology.shape.Polyhedron" alt="" coords="112,208,197,235"/>
+<area shape="rect" id="node2" href="./Polyhedron.html" title="&lt;TABLE&gt;" alt="" coords="101,197,208,245"/>
+<area shape="rect" id="node3_2" href="./Shape3D.html" title="org.universAAL.ontology.shape.Shape3D" alt="" coords="320,112,395,139"/>
+<area shape="rect" id="node3" href="./Shape3D.html" title="&lt;TABLE&gt;" alt="" coords="309,101,405,149"/>
+<area shape="rect" id="node5_3" href="./QuasiCylinder.html" title="org.universAAL.ontology.shape.QuasiCylinder" alt="" coords="243,208,346,235"/>
+<area shape="rect" id="node5" href="./QuasiCylinder.html" title="&lt;TABLE&gt;" alt="" coords="233,197,357,245"/>
+<area shape="rect" id="node6_4" href="./Sphere.html" title="org.universAAL.ontology.shape.Sphere" alt="" coords="391,208,452,235"/>
+<area shape="rect" id="node6" href="./Sphere.html" title="&lt;TABLE&gt;" alt="" coords="380,197,463,245"/>
+<area shape="rect" id="node7_5" href="./Path.html" title="org.universAAL.ontology.shape.Path" alt="" coords="499,208,547,235"/>
+<area shape="rect" id="node7" href="./Path.html" title="&lt;TABLE&gt;" alt="" coords="487,197,559,245"/>
+<area shape="rect" id="node8_6" href="./Polygon.html" title="org.universAAL.ontology.shape.Polygon" alt="" coords="594,208,662,235"/>
+<area shape="rect" id="node8" href="./Polygon.html" title="&lt;TABLE&gt;" alt="" coords="583,197,673,245"/>
+<area shape="rect" id="node4_7" href="./Shape.html" title="org.universAAL.ontology.shape.Shape" alt="" coords="329,16,386,43"/>
+<area shape="rect" id="node4" href="./Shape.html" title="&lt;TABLE&gt;" alt="" coords="318,5,397,53"/>
 </map>

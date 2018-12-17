@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Room.html" title="org.universAAL.ontology.location.indoor.Room" alt="" coords="16,208,72,235"/>
-<area shape="rect" id="node1" href="./Room.html" title="&lt;TABLE&gt;" alt="" coords="5,197,83,245"/>
-<area shape="rect" id="node2_1" href="./Hall.html" title="org.universAAL.ontology.location.indoor.Hall" alt="" coords="121,208,165,235"/>
-<area shape="rect" id="node2" href="./Hall.html" title="&lt;TABLE&gt;" alt="" coords="107,197,179,245"/>
-<area shape="rect" id="node3_2" href="./EntranceHall.html" title="org.universAAL.ontology.location.indoor.EntranceHall" alt="" coords="213,208,309,235"/>
-<area shape="rect" id="node3" href="./EntranceHall.html" title="&lt;TABLE&gt;" alt="" coords="203,197,320,245"/>
-<area shape="rect" id="node4_3" href="./HomeArea.html" title="org.universAAL.ontology.location.indoor.HomeArea" alt="" coords="160,112,243,139"/>
-<area shape="rect" id="node4" href="./HomeArea.html" title="&lt;TABLE&gt;" alt="" coords="149,101,253,149"/>
-<area shape="rect" id="node5_4" href="./Corridor.html" title="org.universAAL.ontology.location.indoor.Corridor" alt="" coords="355,208,421,235"/>
-<area shape="rect" id="node5" href="./Corridor.html" title="&lt;TABLE&gt;" alt="" coords="344,197,432,245"/>
-<area shape="rect" id="node6_5" href="./IndoorPlace.html" title="org.universAAL.ontology.location.indoor.IndoorPlace" alt="" coords="157,16,246,43"/>
-<area shape="rect" id="node6" href="./IndoorPlace.html" title="&lt;TABLE&gt;" alt="" coords="146,5,257,53"/>
+<area shape="rect" id="node1_0" href="./Corridor.html" title="org.universAAL.ontology.location.indoor.Corridor" alt="" coords="16,208,83,235"/>
+<area shape="rect" id="node1" href="./Corridor.html" title="&lt;TABLE&gt;" alt="" coords="5,197,93,245"/>
+<area shape="rect" id="node2_1" href="./IndoorPlace.html" title="org.universAAL.ontology.location.indoor.IndoorPlace" alt="" coords="167,16,257,43"/>
+<area shape="rect" id="node2" href="./IndoorPlace.html" title="&lt;TABLE&gt;" alt="" coords="157,5,267,53"/>
+<area shape="rect" id="node4_2" href="./HomeArea.html" title="org.universAAL.ontology.location.indoor.HomeArea" alt="" coords="171,112,253,139"/>
+<area shape="rect" id="node4" href="./HomeArea.html" title="&lt;TABLE&gt;" alt="" coords="160,101,264,149"/>
+<area shape="rect" id="node3_3" href="./Hall.html" title="org.universAAL.ontology.location.indoor.Hall" alt="" coords="131,208,175,235"/>
+<area shape="rect" id="node3" href="./Hall.html" title="&lt;TABLE&gt;" alt="" coords="117,197,189,245"/>
+<area shape="rect" id="node5_4" href="./EntranceHall.html" title="org.universAAL.ontology.location.indoor.EntranceHall" alt="" coords="224,208,320,235"/>
+<area shape="rect" id="node5" href="./EntranceHall.html" title="&lt;TABLE&gt;" alt="" coords="213,197,331,245"/>
+<area shape="rect" id="node6_5" href="./Room.html" title="org.universAAL.ontology.location.indoor.Room" alt="" coords="365,208,421,235"/>
+<area shape="rect" id="node6" href="./Room.html" title="&lt;TABLE&gt;" alt="" coords="355,197,432,245"/>
 </map>
