@@ -4,8 +4,6 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 
 import org.universAAL.middleware.owl.ManagedIndividual;
-import org.universAAL.ontology.unit.MeasurableDimension;
-import org.universAAL.ontology.unit.Unit;
 
 /**
  * 
@@ -13,11 +11,7 @@ import org.universAAL.ontology.unit.Unit;
  * @author mtazari
  *
  */
-public class ExternalTypeSystem extends ManagedIndividual {
-	public static final Unit UNIT_CELSIUS = new Unit("celsius", "Celsius", "°C", MeasurableDimension.Temperature);
-	public static final Unit UNIT_LITRES = new Unit("litre", "Litre", "l", MeasurableDimension.Adiemnsional);
-	public static final Unit UNIT_PPM = new Unit("ppm", "PPM", "ppm", MeasurableDimension.Adiemnsional);
-	
+public class ExternalTypeSystem extends ManagedIndividual {	
 	public static final String MY_URI = LDDIDatapointsOntology.NAMESPACE + "ExternalTypeSystem";
 	private static Hashtable localOccurrences = new Hashtable();
 
