@@ -29,6 +29,7 @@ public final class LDDIDatapointsOntology extends Ontology {
 
   private static DatapointConfigFactory factory = new DatapointConfigFactory();
   public static final String NAMESPACE ="http://ontology.universAAL.org/LDDIDataConfigOntology.owl#";
+  public static final String PROP_IS_REFLECTED_EVENT = NAMESPACE + "isReflectedEvent";
 	
   public LDDIDatapointsOntology() {
     super(NAMESPACE);
@@ -62,22 +63,16 @@ public final class LDDIDatapointsOntology extends Ontology {
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 		// adding prop "id"
 		dps = oci.addDatatypeProperty(Component.PROP_CONFIG_SEQ_NO);
-		dps.getProperty().setResourceComment("");
-		dps.getProperty().setResourceLabel("");
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Component.PROP_CONFIG_SEQ_NO,
 				TypeMapper.getDatatypeURI(NonNegativeInteger.class), 1, 1));
 		// adding prop "ontological description"
 		ops = oci.addObjectProperty(Component.PROP_DESCRIPTION);
-		ops.getProperty().setResourceComment("");
-		ops.getProperty().setResourceLabel("");
 		ops.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Component.PROP_DESCRIPTION,
 				MergedRestriction.getCardinalityRestriction(Resource.PROP_RDF_TYPE, 1, 1), 1, 1));
 		// adding prop "external type system"
 		ops = oci.addObjectProperty(Component.PROP_EXTERNAL_TYPE_SYSTEM);
-		ops.getProperty().setResourceComment("");
-		ops.getProperty().setResourceLabel("");
 		ops.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Component.PROP_EXTERNAL_TYPE_SYSTEM,
 				ExternalTypeSystem.MY_URI, 1, 1));
@@ -89,36 +84,26 @@ public final class LDDIDatapointsOntology extends Ontology {
 		oci.addSuperClass(ManagedIndividual.MY_URI);
 		// adding prop "component id"
 		dps = oci.addDatatypeProperty(Datapoint.PROP_BELONGS_TO);
-		dps.getProperty().setResourceComment("");
-		dps.getProperty().setResourceLabel("");
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_BELONGS_TO,
 				TypeMapper.getDatatypeURI(NonNegativeInteger.class), 1, 1));
 		// adding prop "related ont property"
 		dps = oci.addDatatypeProperty(Datapoint.PROP_RELATED_ONT_PROPERTY);
-		dps.getProperty().setResourceComment("");
-		dps.getProperty().setResourceLabel("");
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_RELATED_ONT_PROPERTY,
 				TypeMapper.getDatatypeURI(Resource.class), 1, 1));
 		// adding prop "pull address"
 		dps = oci.addDatatypeProperty(Datapoint.PROP_PULL_ADDRESS);
-		dps.getProperty().setResourceComment("");
-		dps.getProperty().setResourceLabel("");
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Datapoint.PROP_PULL_ADDRESS,
 				TypeMapper.getDatatypeURI(String.class)));
 		// adding prop "push address"
 		dps = oci.addDatatypeProperty(Datapoint.PROP_PUSH_ADDRESS);
-		dps.getProperty().setResourceComment("");
-		dps.getProperty().setResourceLabel("");
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Datapoint.PROP_PUSH_ADDRESS,
 				TypeMapper.getDatatypeURI(String.class)));
 		// adding prop "set address"
 		dps = oci.addDatatypeProperty(Datapoint.PROP_SET_ADDRESS);
-		dps.getProperty().setResourceComment("");
-		dps.getProperty().setResourceLabel("");
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Datapoint.PROP_SET_ADDRESS,
 				TypeMapper.getDatatypeURI(String.class)));
