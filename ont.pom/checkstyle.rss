@@ -23,12 +23,12 @@ under the License.
     <link>http://ontology/ont.pom/</link>
     <description>universAAL Ontology Suite - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2018 universAAL Consortium</copyright>
+    <copyright>&#169;2019 universAAL Consortium</copyright>
     <item>
       <title>File: 617,
-             Errors: 9009,
+             Errors: 9007,
              Warnings: 858,
-             Infos: 258
+             Infos: 257
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -1175,7 +1175,7 @@ under the License.
                   1
                 </td>
                 <td>
-                  14
+                  11
                 </td>
               </tr>
                           <tr>
@@ -6223,7 +6223,7 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Component.java">org/universAAL/ontology/lddi/config/datapoints/Component.java</a>
                 </td>
                 <td>
-                  21
+                  20
                 </td>
                 <td>
                   0
@@ -7279,7 +7279,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  5
                 </td>
               </tr>
                           <tr>

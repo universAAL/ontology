@@ -23,12 +23,12 @@ under the License.
     <link>http://ontology/ont.lddi.config.datapoints/</link>
     <description>LDDI Datapoints Ontology - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2018 universAAL Consortium</copyright>
+    <copyright>&#169;2019 universAAL Consortium</copyright>
     <item>
       <title>File: 6,
-             Errors: 69,
+             Errors: 67,
              Warnings: 4,
-             Infos: 67
+             Infos: 66
       </title>
             <link>http://ontology/ont.lddi.config.datapoints//checkstyle.html</link>
       <description>
@@ -77,7 +77,7 @@ under the License.
                   <a href="http://ontology/ont.lddi.config.datapoints//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Component.java">org/universAAL/ontology/lddi/config/datapoints/Component.java</a>
                 </td>
                 <td>
-                  21
+                  20
                 </td>
                 <td>
                   0
@@ -111,7 +111,7 @@ under the License.
                   1
                 </td>
                 <td>
-                  14
+                  11
                 </td>
               </tr>
                           <tr>
@@ -125,7 +125,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  5
                 </td>
               </tr>
                       </tbody>
