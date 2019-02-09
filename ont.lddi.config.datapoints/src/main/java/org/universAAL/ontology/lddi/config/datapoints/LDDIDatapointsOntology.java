@@ -29,7 +29,6 @@ public final class LDDIDatapointsOntology extends Ontology {
 
   private static DatapointConfigFactory factory = new DatapointConfigFactory();
   public static final String NAMESPACE ="http://ontology.universAAL.org/LDDIDataConfigOntology.owl#";
-  public static final String PROP_IS_REFLECTED_EVENT = NAMESPACE + "isReflectedEvent";
 	
   public LDDIDatapointsOntology() {
     super(NAMESPACE);
