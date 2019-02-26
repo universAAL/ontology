@@ -82,6 +82,8 @@ public class Datapoint extends ManagedIndividual {
 	 * if the "pull address" is set for the data-point.
 	 */
 	public static final String PROP_PUSH_ADDRESS = LDDIDatapointsOntology.NAMESPACE + "pushAddress";
+	public static final String PROP_AUTO_PULL_WAIT_SECONDS = LDDIDatapointsOntology.NAMESPACE + "autoPullWaitSeconds";
+	public static final String PROP_PUSH_DEAD_SECONDS = LDDIDatapointsOntology.NAMESPACE + "pushDeadSeconds";
 	
 	/**
 	 * Property for storing the set / change address of the data-point at hand in the external system.
@@ -154,6 +156,16 @@ public class Datapoint extends ManagedIndividual {
 	public String getProperty() {
 		Object o = props.get(PROP_RELATED_ONT_PROPERTY);
 		return (o == null)? null : o.toString();
+	}
+	
+	public int getAutoPullWaitSeconds() {
+		Object o = props.get(PROP_AUTO_PULL_WAIT_SECONDS);
+		return (o instanceof NonNegativeInteger)? ((NonNegativeInteger) o).intValue() : 0;
+	}
+	
+	public int getPushDeadSeconds() {
+		Object o = props.get(PROP_PUSH_DEAD_SECONDS);
+		return (o instanceof NonNegativeInteger)? ((NonNegativeInteger) o).intValue() : 0;
 	}
 
 }

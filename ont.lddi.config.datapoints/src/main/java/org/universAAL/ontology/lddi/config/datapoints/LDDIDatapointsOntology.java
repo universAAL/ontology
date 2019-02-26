@@ -101,6 +101,16 @@ public final class LDDIDatapointsOntology extends Ontology {
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Datapoint.PROP_PUSH_ADDRESS,
 				TypeMapper.getDatatypeURI(String.class)));
+		// adding prop "wait seconds between two subsequent auto pulls"
+		dps = oci.addDatatypeProperty(Datapoint.PROP_AUTO_PULL_WAIT_SECONDS);
+		dps.setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_AUTO_PULL_WAIT_SECONDS,
+				TypeMapper.getDatatypeURI(NonNegativeInteger.class), 0, 1));
+		// adding prop "dead seconds" for periodic push
+		dps = oci.addDatatypeProperty(Datapoint.PROP_PUSH_DEAD_SECONDS);
+		dps.setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_PUSH_DEAD_SECONDS,
+				TypeMapper.getDatatypeURI(NonNegativeInteger.class), 0, 1));
 		// adding prop "set address"
 		dps = oci.addDatatypeProperty(Datapoint.PROP_SET_ADDRESS);
 		dps.setFunctional();
