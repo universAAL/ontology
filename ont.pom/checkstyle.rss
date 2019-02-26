@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2019 universAAL Consortium</copyright>
     <item>
       <title>File: 617,
-             Errors: 9006,
+             Errors: 9012,
              Warnings: 858,
-             Infos: 257
+             Infos: 262
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -3507,13 +3507,13 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.Datapoint.java">org/universAAL/ontology/lddi/config/datapoints/Datapoint.java</a>
                 </td>
                 <td>
-                  27
+                  31
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  19
+                  25
                 </td>
               </tr>
                           <tr>
@@ -7273,7 +7273,7 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.lddi.config.datapoints.LDDIDatapointsOntology.java">org/universAAL/ontology/lddi/config/datapoints/LDDIDatapointsOntology.java</a>
                 </td>
                 <td>
-                  8
+                  9
                 </td>
                 <td>
                   0
