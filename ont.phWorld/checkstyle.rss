@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2019 universAAL Consortium</copyright>
     <item>
       <title>File: 62,
-             Errors: 1109,
+             Errors: 1111,
              Warnings: 40,
-             Infos: 30
+             Infos: 36
       </title>
             <link>/checkstyle.html</link>
       <description>
@@ -301,13 +301,13 @@ under the License.
                   <a href="/checkstyle.html#org.universAAL.ontology.phThing.PhysicalThing.java">org/universAAL/ontology/phThing/PhysicalThing.java</a>
                 </td>
                 <td>
-                  0
+                  6
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  41
+                  43
                 </td>
               </tr>
                           <tr>

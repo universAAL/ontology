@@ -88,9 +88,9 @@
 <th><img src="images/icon_error_sml.gif" alt="" />&#160;Errors</th></tr>
 <tr class="b">
 <td>7</td>
-<td>0</td>
+<td>3</td>
 <td>10</td>
-<td>84</td></tr></table></div>
+<td>86</td></tr></table></div>
 <div class="section">
 <h2><a name="Files"></a>Files</h2>
 <table border="0" class="bodyTable">
@@ -116,9 +116,9 @@
 <td>7</td></tr>
 <tr class="a">
 <td><a href="#org.universAAL.ontology.measurement.Measurement.java">org/universAAL/ontology/measurement/Measurement.java</a></td>
-<td>0</td>
+<td>3</td>
 <td>1</td>
-<td>32</td></tr>
+<td>34</td></tr>
 <tr class="b">
 <td><a href="#org.universAAL.ontology.measurement.MeasurementError.java">org/universAAL/ontology/measurement/MeasurementError.java</a></td>
 <td>0</td>
@@ -155,12 +155,12 @@
 <tr class="b">
 <td>design</td>
 <td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_design.html#DesignForExtension">DesignForExtension</a></td>
-<td>27</td>
+<td>28</td>
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td></tr>
 <tr class="a">
 <td>javadoc</td>
 <td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_javadoc.html#JavadocMethod">JavadocMethod</a></td>
-<td>37</td>
+<td>38</td>
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td></tr>
 <tr class="b">
 <td></td>
@@ -188,7 +188,20 @@
 <td></td>
 <td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_naming.html#MemberName">MemberName</a></td>
 <td>1</td>
-<td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td></tr></table></div>
+<td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td></tr>
+<tr class="a">
+<td>regexp</td>
+<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_regexp.html#RegexpSingleline">RegexpSingleline</a>
+<ul>
+<li>format: <tt>&quot;\s+$&quot;</tt></li>
+<li>message: <tt>&quot;Line has trailing spaces.&quot;</tt></li></ul></td>
+<td>1</td>
+<td><img src="images/icon_info_sml.gif" alt="" />&#160;Info</td></tr>
+<tr class="b">
+<td>whitespace</td>
+<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_whitespace.html#WhitespaceAround">WhitespaceAround</a></td>
+<td>2</td>
+<td><img src="images/icon_info_sml.gif" alt="" />&#160;Info</td></tr></table></div>
 <div class="section">
 <h2><a name="Details"></a>Details</h2>
 <div class="section">
@@ -444,165 +457,195 @@
 <td>Expression can be simplified.</td>
 <td>56</td></tr>
 <tr class="a">
+<td><img src="images/icon_info_sml.gif" alt="" />&#160;Info</td>
+<td>regexp</td>
+<td>RegexpSingleline</td>
+<td>Line has trailing spaces.</td>
+<td>58</td></tr>
+<tr class="b">
+<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
+<td>design</td>
+<td>DesignForExtension</td>
+<td>Method 'getCompactRepresentationAsString' is not designed for extension - needs to be abstract, final or empty.</td>
+<td>59</td></tr>
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
+<td>javadoc</td>
+<td>JavadocMethod</td>
+<td>Missing a Javadoc comment.</td>
+<td>59</td></tr>
+<tr class="b">
+<td><img src="images/icon_info_sml.gif" alt="" />&#160;Info</td>
+<td>whitespace</td>
+<td>WhitespaceAround</td>
+<td>'?' is not preceded with whitespace.</td>
+<td>61</td></tr>
+<tr class="a">
+<td><img src="images/icon_info_sml.gif" alt="" />&#160;Info</td>
+<td>whitespace</td>
+<td>WhitespaceAround</td>
+<td>'?' is not preceded with whitespace.</td>
+<td>63</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getValue' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>59</td></tr>
-<tr class="b">
+<td>70</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>59</td></tr>
-<tr class="a">
+<td>70</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'setValue' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>63</td></tr>
-<tr class="b">
+<td>74</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>63</td></tr>
-<tr class="a">
+<td>74</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getHasError' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>68</td></tr>
-<tr class="b">
+<td>79</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>68</td></tr>
-<tr class="a">
+<td>79</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'setHasError' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>72</td></tr>
-<tr class="b">
+<td>83</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>72</td></tr>
-<tr class="a">
+<td>83</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getHasUnit' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>77</td></tr>
-<tr class="b">
+<td>88</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>77</td></tr>
-<tr class="a">
+<td>88</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'setHasUnit' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>81</td></tr>
-<tr class="b">
+<td>92</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>81</td></tr>
-<tr class="a">
+<td>92</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getHasPrefix' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>86</td></tr>
-<tr class="b">
+<td>97</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>86</td></tr>
-<tr class="a">
+<td>97</td></tr>
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'setHasPrefix' is not designed for extension - needs to be abstract, final or empty.</td>
-<td>90</td></tr>
-<tr class="b">
+<td>101</td></tr>
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
-<td>90</td></tr></table></div>
+<td>101</td></tr></table></div>
 <div class="section">
 <h3 id="org.universAAL.ontology.measurement.MeasurementError.java">org/universAAL/ontology/measurement/MeasurementError.java</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Severity</th>
 <th>Category</th>
 <th>Rule</th>
 <th>Message</th>
 <th>Line</th></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocType</td>
 <td>Missing a Javadoc comment.</td>
 <td>18</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocVariable</td>
 <td>Missing a Javadoc comment.</td>
 <td>19</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>21</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>25</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getClassURI' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>29</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>29</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getPropSerializationType' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>33</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>33</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'isWellFormed' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>38</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
@@ -611,55 +654,55 @@
 <div class="section">
 <h3 id="org.universAAL.ontology.measurement.MeasurementOntology.java">org/universAAL/ontology/measurement/MeasurementOntology.java</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Severity</th>
 <th>Category</th>
 <th>Rule</th>
 <th>Message</th>
 <th>Line</th></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocVariable</td>
 <td>Missing a Javadoc comment.</td>
 <td>34</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocVariable</td>
 <td>Missing a Javadoc comment.</td>
 <td>35</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>37</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>41</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
 <td>naming</td>
 <td>LocalVariableName</td>
 <td>Name 'oci_MeanSquareError' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
 <td>49</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
 <td>naming</td>
 <td>LocalVariableName</td>
 <td>Name 'oci_MeasurementError' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
 <td>50</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
 <td>naming</td>
 <td>LocalVariableName</td>
 <td>Name 'oci_Measurement' must match pattern '^[a-z][a-zA-Z0-9]*$'.</td>
 <td>51</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
 <td>naming</td>
 <td>LocalVariableName</td>
@@ -668,151 +711,151 @@
 <div class="section">
 <h3 id="org.universAAL.ontology.measurement.Signal.java">org/universAAL/ontology/measurement/Signal.java</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Severity</th>
 <th>Category</th>
 <th>Rule</th>
 <th>Message</th>
 <th>Line</th></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
 <td>javadoc</td>
 <td>JavadocPackage</td>
 <td>Missing package-info.java file.</td>
 <td></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocType</td>
 <td>Missing a Javadoc comment.</td>
 <td>23</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocVariable</td>
 <td>Missing a Javadoc comment.</td>
 <td>24</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocVariable</td>
 <td>Missing a Javadoc comment.</td>
 <td>25</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocVariable</td>
 <td>Missing a Javadoc comment.</td>
 <td>26</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>28</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>32</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getClassURI' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>36</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>36</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getPropSerializationType' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>40</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>40</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'isWellFormed' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>44</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>44</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
 <td>coding</td>
 <td>SimplifyBooleanExpression</td>
 <td>Expression can be simplified.</td>
 <td>45</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getMeasurementInterval' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>50</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>50</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'setMeasurementInterval' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>54</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>54</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'getArray' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>59</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>59</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'setArray' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>72</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Missing a Javadoc comment.</td>
 <td>72</td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>design</td>
 <td>DesignForExtension</td>
 <td>Method 'addValue' is not designed for extension - needs to be abstract, final or empty.</td>
 <td>80</td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_error_sml.gif" alt="" />&#160;Error</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>

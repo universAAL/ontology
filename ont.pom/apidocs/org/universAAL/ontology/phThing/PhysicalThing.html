@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -263,25 +263,29 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#getClassURI--">getClassURI</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#getCompactRepresentationAsString--">getCompactRepresentationAsString</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/universAAL/ontology/location/Location.html" title="class in org.universAAL.ontology.location">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#getLocation--">getLocation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#getPropSerializationType-java.lang.String-">getPropSerializationType</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propURI)</code>
 <div class="block">From the point of view of this top most class of things with a location,
  the location can be represented in its reduced form.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/universAAL/ontology/shape/Shape.html" title="class in org.universAAL.ontology.shape">Shape</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#getShape--">getShape</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#setLocation-org.universAAL.ontology.location.Location-">setLocation</a></span>(<a href="../../../../org/universAAL/ontology/location/Location.html" title="class in org.universAAL.ontology.location">Location</a>&nbsp;loc)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#setLocation-org.universAAL.ontology.location.Place-float-float-float-">setLocation</a></span>(<a href="../../../../org/universAAL/ontology/location/Place.html" title="class in org.universAAL.ontology.location">Place</a>&nbsp;o,
            float&nbsp;x,
@@ -294,7 +298,7 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
  center of the containing location</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#setLocationCornerRelativeToCorner-org.universAAL.ontology.location.Location-float-float-float-">setLocationCornerRelativeToCorner</a></span>(<a href="../../../../org/universAAL/ontology/location/Location.html" title="class in org.universAAL.ontology.location">Location</a>&nbsp;o,
                                  float&nbsp;x,
@@ -307,7 +311,7 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
  lower, left corner of the containing location, assuming its a box</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#setLocationRelativeToCorner-org.universAAL.ontology.location.Location-float-float-float-">setLocationRelativeToCorner</a></span>(<a href="../../../../org/universAAL/ontology/location/Location.html" title="class in org.universAAL.ontology.location">Location</a>&nbsp;o,
                            float&nbsp;x,
@@ -320,12 +324,12 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
  lower, left corner of the containing location, assuming its a box</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#setProperty-java.lang.String-java.lang.Object-">setProperty</a></span>(<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propURI,
            <a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/universAAL/ontology/phThing/PhysicalThing.html#setShape-org.universAAL.ontology.shape.Shape-">setShape</a></span>(<a href="../../../../org/universAAL/ontology/shape/Shape.html" title="class in org.universAAL.ontology.shape">Shape</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
@@ -530,6 +534,19 @@ extends org.universAAL.middleware.owl.ManagedIndividual</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>getClassURI</code>&nbsp;in class&nbsp;<code>org.universAAL.middleware.owl.ManagedIndividual</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCompactRepresentationAsString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCompactRepresentationAsString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getCompactRepresentationAsString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>getCompactRepresentationAsString</code>&nbsp;in class&nbsp;<code>org.universAAL.middleware.rdf.Resource</code></dd>
 </dl>
 </li>
 </ul>

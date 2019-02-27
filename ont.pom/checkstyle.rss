@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2019 universAAL Consortium</copyright>
     <item>
       <title>File: 617,
-             Errors: 9012,
+             Errors: 9016,
              Warnings: 858,
-             Infos: 262
+             Infos: 271
       </title>
             <link>http://ontology/ont.pom//checkstyle.html</link>
       <description>
@@ -2681,13 +2681,13 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.measurement.Measurement.java">org/universAAL/ontology/measurement/Measurement.java</a>
                 </td>
                 <td>
-                  0
+                  3
                 </td>
                 <td>
                   1
                 </td>
                 <td>
-                  32
+                  34
                 </td>
               </tr>
                           <tr>
@@ -7847,13 +7847,13 @@ under the License.
                   <a href="http://ontology/ont.pom//checkstyle.html#org.universAAL.ontology.phThing.PhysicalThing.java">org/universAAL/ontology/phThing/PhysicalThing.java</a>
                 </td>
                 <td>
-                  0
+                  6
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  41
+                  43
                 </td>
               </tr>
                           <tr>
