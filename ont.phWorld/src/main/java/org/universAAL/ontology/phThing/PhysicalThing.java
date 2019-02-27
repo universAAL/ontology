@@ -57,6 +57,13 @@ public class PhysicalThing extends ManagedIndividual {
 	public String getClassURI() {
 		return MY_URI;
 	}
+	
+	public String getCompactRepresentationAsString() {
+		Location l = getLocation();
+		return super.getCompactRepresentationAsString()
+				+ ((l != null  &&  l.hasQualifiedName())? 
+						"@"+l.getLocalName() : "");
+	}
 
 	public Location getLocation() {
 		return (Location) props.get(PROP_PHYSICAL_LOCATION);

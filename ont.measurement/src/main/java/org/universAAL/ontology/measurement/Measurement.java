@@ -55,6 +55,17 @@ public class Measurement extends ManagedIndividual {
 	public boolean isWellFormed() {
 		return true && hasProperty(PROP_VALUE);
 	}
+	
+	public String getCompactRepresentationAsString() {
+		Unit u = getHasUnit();
+		String symbol = (u == null)? "" : u.getSymbol();
+		return "[@"
+				+ (hasQualifiedName()? getLocalName() : "anon")
+				+ " value = "
+				+ String.valueOf(getValue())
+				+ symbol
+				+ "]";
+	}
 
 	public Object getValue() {
 		return getProperty(PROP_VALUE);
