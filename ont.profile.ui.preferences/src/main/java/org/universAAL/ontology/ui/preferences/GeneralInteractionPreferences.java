@@ -18,6 +18,10 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
+
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.ui.owl.Modality;
 import org.universAAL.middleware.ui.owl.Preference;
@@ -30,6 +34,7 @@ public class GeneralInteractionPreferences extends Preference {
 	public static final String PROP_CONTENT_DENSITY = UIPreferencesProfileOntology.NAMESPACE + "contentDensity";
 	public static final String PROP_SECONDARY_MODALITY = UIPreferencesProfileOntology.NAMESPACE + "secondaryModality";
 	public static final String PROP_PREFERRED_LANGUAGE = UIPreferencesProfileOntology.NAMESPACE + "preferredLanguage";
+	public static final String PROP_ORDERED_LIST_OF_PREFERRED_LANGUAGES = UIPreferencesProfileOntology.NAMESPACE + "listOfPreferredLangs";
 
 	public GeneralInteractionPreferences() {
 		super();
@@ -106,5 +111,35 @@ public class GeneralInteractionPreferences extends Preference {
 	public void setContentDensity(ContentDensityType newPropValue) {
 		if (newPropValue != null)
 			changeProperty(PROP_CONTENT_DENSITY, newPropValue);
+	}
+	
+	public void setOrderedListOfPreferredLanguages(Locale[] langs) {
+		if (langs != null &&  langs.length > 0)
+			props.put(PROP_ORDERED_LIST_OF_PREFERRED_LANGUAGES, Arrays.asList(langs));
+	}
+	
+	public Locale[] getOrderedListOfPreferredLanguages() {
+		Object o = props.get(PROP_ORDERED_LIST_OF_PREFERRED_LANGUAGES);
+		if (o instanceof Locale) 
+			return new Locale[] { (Locale) o };
+		
+		if (o instanceof List) {
+			int n = ((List) o).size();
+			Locale[] result = new Locale[n];
+			
+			for (int i = 0;  i < n;  i++) {
+				Object l = ((List) o).get(i);
+				if (l instanceof Locale)
+					result[i] = (Locale) l;
+				else {
+					((List) o).remove(i);
+					return getOrderedListOfPreferredLanguages();
+				}
+			}
+			
+			return result;
+		}
+		
+		return null;
 	}
 }

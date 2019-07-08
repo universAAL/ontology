@@ -18,6 +18,8 @@
  ******************************************************************************/
 package org.universAAL.ontology.ui.preferences;
 
+import java.util.Locale;
+
 import org.universAAL.middleware.owl.DataRepOntology;
 import org.universAAL.middleware.owl.ManagedIndividual;
 import org.universAAL.middleware.owl.MergedRestriction;
@@ -25,6 +27,7 @@ import org.universAAL.middleware.owl.OntClassInfoSetup;
 import org.universAAL.middleware.owl.Ontology;
 import org.universAAL.middleware.owl.PrivateResource;
 import org.universAAL.middleware.rdf.Resource;
+import org.universAAL.middleware.rdf.TypeMapper;
 import org.universAAL.middleware.service.owl.Service;
 import org.universAAL.middleware.service.owl.ServiceBusOntology;
 import org.universAAL.middleware.ui.owl.Modality;
@@ -308,6 +311,11 @@ public final class UIPreferencesProfileOntology extends Ontology {
 				.setFunctional();
 		oci_GeneralInteractionPreferences.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
 				GeneralInteractionPreferences.PROP_PREFERRED_LANGUAGE, Language.MY_URI, 1, 1));
+
+		oci_GeneralInteractionPreferences.addDatatypeProperty(
+				GeneralInteractionPreferences.PROP_ORDERED_LIST_OF_PREFERRED_LANGUAGES);
+		oci_GeneralInteractionPreferences.addRestriction(MergedRestriction.getAllValuesRestriction(
+				GeneralInteractionPreferences.PROP_ORDERED_LIST_OF_PREFERRED_LANGUAGES, TypeMapper.getDatatypeURI(Locale.class)));
 
 		oci_AuditoryPreferences.setResourceComment("");
 		oci_AuditoryPreferences.setResourceLabel("AuditoryPreferences");
