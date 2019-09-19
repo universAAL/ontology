@@ -116,6 +116,12 @@ public final class LDDIDatapointsOntology extends Ontology {
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Datapoint.PROP_SET_ADDRESS,
 				TypeMapper.getDatatypeURI(String.class)));
-
+		// adding prop "auto-reset value" with no restrictions
+		dps = oci.addDatatypeProperty(Datapoint.PROP_AUTO_RESET_VALUE);
+		// adding prop "wait seconds after a change of value and before reseting it to the auto-reset value"
+		dps = oci.addDatatypeProperty(Datapoint.PROP_AUTO_RESET_WAIT_SECONDS);
+		dps.setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_AUTO_RESET_WAIT_SECONDS,
+				TypeMapper.getDatatypeURI(NonNegativeInteger.class), 0, 1));
   }
 }
