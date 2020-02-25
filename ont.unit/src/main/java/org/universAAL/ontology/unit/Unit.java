@@ -56,8 +56,8 @@ public class Unit extends ManagedIndividual {
 	}
 
 	public int getPropSerializationType(String arg0) {
-		if (arg0.equals(PROP_UNIT_SYSTEM) || arg0.equals(PROP_DIMENSION)) {
-			return PROP_SERIALIZATION_REDUCED;
+		if (arg0.contentEquals(PROP_UNIT_SYSTEM) || arg0.contentEquals(PROP_DIMENSION)) {
+			return PROP_SERIALIZATION_OPTIONAL;
 		}
 		return PROP_SERIALIZATION_FULL;
 	}
@@ -100,6 +100,6 @@ public class Unit extends ManagedIndividual {
 
 	private void setUnitSystem(UnitSystem newPropValue) {
 		if (newPropValue != null)
-			props.put(PROP_DIMENSION, newPropValue);
+			props.put(PROP_UNIT_SYSTEM, newPropValue);
 	}
 }

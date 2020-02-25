@@ -21,7 +21,7 @@ import org.universAAL.ontology.unit.Unit;
 import org.universAAL.ontology.unit.UnitOntology;
 import org.universAAL.ontology.unit.UnitSystem;
 
-public class InternationalSystem {
+public class InternationalSystem extends UnitSystem{
 
 	/*
 	 * STATIC resources
