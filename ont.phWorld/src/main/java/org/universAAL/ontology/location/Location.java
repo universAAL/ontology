@@ -52,6 +52,16 @@ public class Location extends AbsLocation {
 
 	private static List multiValProps = Arrays
 			.asList(new String[] { PROP_IS_ADJACENT_TO, PROP_IS_CONNECTED_TO, PROP_CONTAINS });
+	
+	public static boolean isIn(Location l, String locURI) {
+		return (l == null)? false : l.isIn(locURI);
+	}
+	
+	public boolean isIn(String locURI) {
+		if (!isAnon()  &&  getURI().equals(locURI))
+			return true;
+		return Location.isIn(getContainingLocation(), locURI);
+	}
 
 	/**
 	 * Constructor just for usage by de-serializers. Do not use this constructor

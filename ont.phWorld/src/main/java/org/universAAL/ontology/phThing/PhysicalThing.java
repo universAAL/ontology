@@ -58,6 +58,25 @@ public class PhysicalThing extends ManagedIndividual {
 		return MY_URI;
 	}
 	
+	public boolean isIn(String locURI) {
+		if (Location.isIn(getLocation(), locURI))
+			return true;
+		
+		Object o = props.get(PROP_CARRIED_BY);
+		if (o instanceof PhysicalThing  &&  ((PhysicalThing) o).isIn(locURI))
+			return true;
+		
+		o = props.get(PROP_IS_IN);
+		if (o instanceof PhysicalThing  &&  ((PhysicalThing) o).isIn(locURI))
+			return true;
+		
+		o = props.get(PROP_PART_OF);
+		if (o instanceof PhysicalThing  &&  ((PhysicalThing) o).isIn(locURI))
+			return true;
+		
+		return false;
+	}
+	
 	public String getCompactRepresentationAsString() {
 		Location l = getLocation();
 		return super.getCompactRepresentationAsString()
