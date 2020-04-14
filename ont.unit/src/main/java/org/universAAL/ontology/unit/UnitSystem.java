@@ -44,6 +44,8 @@ public class UnitSystem extends ManagedIndividual {
 	}
 
 	public int getPropSerializationType(String arg0) {
+		if (arg0.contentEquals(PROP_PREFIXES) || arg0.contentEquals(PROP_UNITS))
+			return PROP_SERIALIZATION_OPTIONAL;
 		return PROP_SERIALIZATION_FULL;
 	}
 
