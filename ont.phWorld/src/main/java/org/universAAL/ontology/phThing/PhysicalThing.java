@@ -58,6 +58,14 @@ public class PhysicalThing extends ManagedIndividual {
 		return MY_URI;
 	}
 	
+	/**
+	 * Checks if this physical thing is in a location with the given URI.
+	 * To decide on this, it makes use of {@link Location#isIn(Location,String)}
+	 * on own location and the location of any other physical thing to which
+	 * this physical thing might be "attached" based on the values for the
+	 * properties {@link #PROP_CARRIED_BY}, {@link #ROP_IS_IN} and {@link
+	 * #PROP_PART_OF}.
+	 */
 	public boolean isIn(String locURI) {
 		if (Location.isIn(getLocation(), locURI))
 			return true;
