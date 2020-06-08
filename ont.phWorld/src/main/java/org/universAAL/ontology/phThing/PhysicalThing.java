@@ -93,7 +93,32 @@ public class PhysicalThing extends ManagedIndividual {
 	}
 
 	public Location getLocation() {
-		return (Location) props.get(PROP_PHYSICAL_LOCATION);
+		Object o = props.get(PROP_PHYSICAL_LOCATION);
+		if (o instanceof Location)
+			return (Location) o;
+		
+		o = props.get(PROP_PART_OF);
+		if (o instanceof PhysicalThing) {
+			o = ((PhysicalThing) o).getLocation();
+			if (o instanceof Location)
+				return (Location) o;
+		}
+		
+		o = props.get(PROP_CARRIED_BY);
+		if (o instanceof PhysicalThing) {
+			o = ((PhysicalThing) o).getLocation();
+			if (o instanceof Location)
+				return (Location) o;
+		}
+		
+		o = props.get(PROP_IS_IN);
+		if (o instanceof PhysicalThing) {
+			o = ((PhysicalThing) o).getLocation();
+			if (o instanceof Location)
+				return (Location) o;
+		}
+		
+		return null;
 	}
 
 	public Shape getShape() {
