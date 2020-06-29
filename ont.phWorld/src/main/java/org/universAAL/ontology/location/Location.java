@@ -52,6 +52,27 @@ public class Location extends AbsLocation {
 
 	private static List multiValProps = Arrays
 			.asList(new String[] { PROP_IS_ADJACENT_TO, PROP_IS_CONNECTED_TO, PROP_CONTAINS });
+	
+	/**
+	 * A convenient way for calling <code>l.isIn(locURI)</code>, in cases
+	 * where you are not sure if l is null or not.
+	 */
+	public static boolean isIn(Location l, String locURI) {
+		return (l == null)? false : l.isIn(locURI);
+	}
+	
+	/**
+	 * Checks if this instance of Location is in the location with the given locURI.
+	 * Please note that each location is in 'itself', similar to the set theory in which
+	 * each set is a subset of itself.
+	 * The comparison is based on equality of locURI with the URI of this or any 'parent location'
+	 * of this location.
+	 */
+	public boolean isIn(String locURI) {
+		if (!isAnon()  &&  getURI().equals(locURI))
+			return true;
+		return Location.isIn(getContainingLocation(), locURI);
+	}
 
 	/**
 	 * Constructor just for usage by de-serializers. Do not use this constructor

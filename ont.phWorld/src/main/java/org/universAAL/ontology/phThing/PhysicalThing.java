@@ -58,6 +58,33 @@ public class PhysicalThing extends ManagedIndividual {
 		return MY_URI;
 	}
 	
+	/**
+	 * Checks if this physical thing is in a location with the given URI.
+	 * To decide on this, it makes use of {@link Location#isIn(Location,String)}
+	 * on own location and the location of any other physical thing to which
+	 * this physical thing might be "attached" based on the values for the
+	 * properties {@link #PROP_CARRIED_BY}, {@link #ROP_IS_IN} and {@link
+	 * #PROP_PART_OF}.
+	 */
+	public boolean isIn(String locURI) {
+		if (Location.isIn(getLocation(), locURI))
+			return true;
+		
+		Object o = props.get(PROP_CARRIED_BY);
+		if (o instanceof PhysicalThing  &&  ((PhysicalThing) o).isIn(locURI))
+			return true;
+		
+		o = props.get(PROP_IS_IN);
+		if (o instanceof PhysicalThing  &&  ((PhysicalThing) o).isIn(locURI))
+			return true;
+		
+		o = props.get(PROP_PART_OF);
+		if (o instanceof PhysicalThing  &&  ((PhysicalThing) o).isIn(locURI))
+			return true;
+		
+		return false;
+	}
+	
 	public String getCompactRepresentationAsString() {
 		Location l = getLocation();
 		return super.getCompactRepresentationAsString()
@@ -66,7 +93,32 @@ public class PhysicalThing extends ManagedIndividual {
 	}
 
 	public Location getLocation() {
-		return (Location) props.get(PROP_PHYSICAL_LOCATION);
+		Object o = props.get(PROP_PHYSICAL_LOCATION);
+		if (o instanceof Location)
+			return (Location) o;
+		
+		o = props.get(PROP_PART_OF);
+		if (o instanceof PhysicalThing) {
+			o = ((PhysicalThing) o).getLocation();
+			if (o instanceof Location)
+				return (Location) o;
+		}
+		
+		o = props.get(PROP_CARRIED_BY);
+		if (o instanceof PhysicalThing) {
+			o = ((PhysicalThing) o).getLocation();
+			if (o instanceof Location)
+				return (Location) o;
+		}
+		
+		o = props.get(PROP_IS_IN);
+		if (o instanceof PhysicalThing) {
+			o = ((PhysicalThing) o).getLocation();
+			if (o instanceof Location)
+				return (Location) o;
+		}
+		
+		return null;
 	}
 
 	public Shape getShape() {
