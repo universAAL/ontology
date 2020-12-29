@@ -75,6 +75,32 @@ public final class LanguageOntology extends Ontology {
 		oci_Language.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Language.PROP_NATIVE_LABEL,
 				TypeMapper.getDatatypeURI(String.class), 1, 1));
 
+		// adding class for Google TTS language
+		OntClassInfoSetup oci = createNewOntClassInfo(GoogleTTSLang.MY_URI, factory, 0);
+		oci.setResourceComment("The representation of a language as used by Google Text-To-Speech Could Service.");
+		oci.setResourceLabel("Google TTS Language");
+		oci.addSuperClass(ManagedIndividual.MY_URI);
+		oci.addDatatypeProperty(GoogleTTSLang.PROP_NAME).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+        GoogleTTSLang.PROP_NAME,
+				TypeMapper.getDatatypeURI(String.class), 1, 1));
+		oci.addObjectProperty(GoogleTTSLang.PROP_TTS_SUPPORT_MALE);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+        GoogleTTSLang.PROP_TTS_SUPPORT_MALE, GoogleTTSVoiceVariant.MY_URI));
+    oci.addObjectProperty(GoogleTTSLang.PROP_TTS_SUPPORT_FEMALE);
+		oci.addRestriction(MergedRestriction.getAllValuesRestriction(
+        GoogleTTSLang.PROP_TTS_SUPPORT_FEMALE, GoogleTTSVoiceVariant.MY_URI));
+
+		// adding class for a Google TTS voice variant
+		oci = createNewOntClassInfo(GoogleTTSVoiceVariant.MY_URI, factory, 1);
+		oci.setResourceComment("The representation of a voice variant as used by Google Text-To-Speech Could Service.");
+		oci.setResourceLabel("Google TTS Voice Variant");
+		oci.addSuperClass(ManagedIndividual.MY_URI);
+    oci.addDatatypeProperty(GoogleTTSVoiceVariant.PROP_IS_MALE_VOICE).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+        GoogleTTSVoiceVariant.PROP_IS_MALE_VOICE,
+				TypeMapper.getDatatypeURI(Boolean.class), 0, 1));
+
 		// ******* LOAD ALL Languages ******** //
 
 		URL tableURL = getClass().getClassLoader().getResource(LANG_TABLE);
@@ -83,7 +109,7 @@ public final class LanguageOntology extends Ontology {
 			try {
 				BufferedReader br = new BufferedReader(
 						new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
-				int line = 0;
+				int line = 2;
 				String ll;
 				while ((ll = br.readLine()) != null) {
 					if (line != 0) {

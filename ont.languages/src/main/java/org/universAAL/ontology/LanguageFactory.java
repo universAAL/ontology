@@ -26,7 +26,10 @@ import java.nio.charset.Charset;
 import org.universAAL.middleware.container.utils.LogUtils;
 import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
+import org.universAAL.ontology.language.GoogleTTSLang;
+import org.universAAL.ontology.language.GoogleTTSVoiceVariant;
 import org.universAAL.ontology.language.LanguageImpl;
+import org.universAAL.ontology.language.LanguageOntology;
 
 /**
  * @author amedrano
@@ -42,10 +45,25 @@ public class LanguageFactory implements ResourceFactory {
 	private URL tableURL;
 
 	public Resource createInstance(String classURI, String instanceURI, int factoryIndex) {
+    switch (factoryIndex) {
+    case 0:
+      GoogleTTSLang gtl = null;
+      if (GoogleTTSLang.MY_URI.equals(classURI)) {
+        if (instanceURI == null)
+          gtl = new GoogleTTSLang();
+        else if (instanceURI.startsWith(LanguageOntology.NAMESPACE))
+          gtl = GoogleTTSLang.getLanguage(instanceURI.substring(LanguageOntology.NAMESPACE.length()));
+        if (gtl == null)
+          gtl = new GoogleTTSLang(instanceURI);
+      }
+      return gtl;
+    case 1:
+      return GoogleTTSVoiceVariant.MY_URI.equals(classURI)? new GoogleTTSVoiceVariant(instanceURI) : null;
+    default:
 		try {
 			BufferedReader br = new BufferedReader(
 					new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
-			int line = 0;
+			int line = 2;
 			String ll = "";
 			while (line != factoryIndex + 1 && (ll = br.readLine()) != null) {
 				line++;
@@ -73,6 +91,7 @@ public class LanguageFactory implements ResourceFactory {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
 		}
 		return null;
 	}
