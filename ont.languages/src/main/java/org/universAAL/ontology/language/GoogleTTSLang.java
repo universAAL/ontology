@@ -44,7 +44,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 	}
 
 	static {
-		new GoogleTTSLang("Arabic", new GoogleTTSVoiceVariant[] { 
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] { 
 				new GoogleTTSVoiceVariant("ar-XA-Standard-A", false),
 				new GoogleTTSVoiceVariant("ar-XA-Standard-B", true),
 				new GoogleTTSVoiceVariant("ar-XA-Standard-C", true),
@@ -53,11 +53,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("ar-XA-Wavenet-B", true),
 				new GoogleTTSVoiceVariant("ar-XA-Wavenet-C", true) 
 				});
-		new GoogleTTSLang("Bengali (India)", new GoogleTTSVoiceVariant[] { 
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] { 
 				new GoogleTTSVoiceVariant("bn-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("bn-IN-Standard-B", true)
 				});
-		new GoogleTTSLang("Mandarin Chinese (CN)", new GoogleTTSVoiceVariant[] { 
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] { 
 				new GoogleTTSVoiceVariant("cmn-CN-Standard-A", false),
 				new GoogleTTSVoiceVariant("cmn-CN-Standard-B", true),
 				new GoogleTTSVoiceVariant("cmn-CN-Standard-C", true),
@@ -67,7 +67,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("cmn-CN-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("cmn-CN-Wavenet-D", false)
 				});
-		new GoogleTTSLang("Mandarin Chinese (TW)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("cmn-TW-Standard-A", false),
 				new GoogleTTSVoiceVariant("cmn-TW-Standard-B", true),
 				new GoogleTTSVoiceVariant("cmn-TW-Standard-C", true),
@@ -75,11 +75,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("cmn-TW-Wavenet-B", true),
 				new GoogleTTSVoiceVariant("cmn-TW-Wavenet-C", true)
 				});
-		new GoogleTTSLang("Czech (Czech Republic)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("cs-CZ-Standard-A", false),
 				new GoogleTTSVoiceVariant("cs-CZ-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Danish (Denmark)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("da-DK-Standard-A", false),
 				new GoogleTTSVoiceVariant("da-DK-Standard-C", true),
 				new GoogleTTSVoiceVariant("da-DK-Standard-D", false),
@@ -88,7 +88,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("da-DK-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("da-DK-Wavenet-D", false),
 				new GoogleTTSVoiceVariant("da-DK-Wavenet-E", false) });
-		new GoogleTTSLang("German (Germany)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("de-DE-Standard-A", false),
 				new GoogleTTSVoiceVariant("de-DE-Standard-B", true),
 				new GoogleTTSVoiceVariant("de-DE-Standard-E", true),
@@ -100,11 +100,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("de-DE-Wavenet-E", true),
 				new GoogleTTSVoiceVariant("de-DE-Wavenet-F", false)
 				});
-		new GoogleTTSLang("Greek (Greece)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("el-GR-Standard-A", false),
 				new GoogleTTSVoiceVariant("el-GR-Wavenet-A", false)
 				});
-		new GoogleTTSLang("English (Australia)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("en-AU-Standard-A", false),
 				new GoogleTTSVoiceVariant("en-AU-Standard-B", true),
 				new GoogleTTSVoiceVariant("en-AU-Standard-C", false),
@@ -114,7 +114,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("en-AU-Wavenet-C", false),
 				new GoogleTTSVoiceVariant("en-AU-Wavenet-D", true)
 				});
-		new GoogleTTSLang("English (UK)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("en-GB-Standard-A", false),
 				new GoogleTTSVoiceVariant("en-GB-Standard-B", true),
 				new GoogleTTSVoiceVariant("en-GB-Standard-C", false),
@@ -126,7 +126,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("en-GB-Wavenet-D", true),
 				new GoogleTTSVoiceVariant("en-GB-Wavenet-F", false)
 				});
-		new GoogleTTSLang("English (India)", new GoogleTTSVoiceVariant[] { 
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] { 
 				new GoogleTTSVoiceVariant("en-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("en-IN-Standard-B", true),
 				new GoogleTTSVoiceVariant("en-IN-Standard-C", false),
@@ -136,7 +136,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("en-IN-Wavenet-C", false),
 				new GoogleTTSVoiceVariant("en-IN-Wavenet-D", true)
 				});
-		new GoogleTTSLang("English (US)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("en-US-Standard-B", false),
 				new GoogleTTSVoiceVariant("en-US-Standard-C", true),
 				new GoogleTTSVoiceVariant("en-US-Standard-D", false),
@@ -156,16 +156,16 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("en-US-Wavenet-I", false),
 				new GoogleTTSVoiceVariant("en-US-Wavenet-J", false)
 				});
-		new GoogleTTSLang("Spanish (Spain)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("es-ES-Standard-A", false),
 				new GoogleTTSVoiceVariant("es-ES-Standard-B", true),
 				new GoogleTTSVoiceVariant("es-ES-Wavenet-B", true)
 				});
-		new GoogleTTSLang("Finnish (Finland)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("fi-FI-Standard-A", false),
 				new GoogleTTSVoiceVariant("fi-FI-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Filipino (Philippines)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("fil-PH-Standard-A", false),
 				new GoogleTTSVoiceVariant("fil-PH-Standard-B", false),
 				new GoogleTTSVoiceVariant("fil-PH-Standard-C", true),
@@ -175,7 +175,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("fil-PH-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("fil-PH-Wavenet-D", true)
 				});
-		new GoogleTTSLang("French (Canada)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("fr-CA-Standard-A", false),
 				new GoogleTTSVoiceVariant("fr-CA-Standard-B", true),
 				new GoogleTTSVoiceVariant("fr-CA-Standard-C", false),
@@ -185,7 +185,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("fr-CA-Wavenet-C", false),
 				new GoogleTTSVoiceVariant("fr-CA-Wavenet-D", true)
 				});
-		new GoogleTTSLang("French (France)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("fr-FR-Standard-A", false),
 				new GoogleTTSVoiceVariant("fr-FR-Standard-B", true),
 				new GoogleTTSVoiceVariant("fr-FR-Standard-C", false),
@@ -197,11 +197,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("fr-FR-Wavenet-D", true),
 				new GoogleTTSVoiceVariant("fr-FR-Wavenet-E", false)
 				});
-		new GoogleTTSLang("Gujarati (India)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("gu-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("gu-IN-Standard-B", true)
 				});
-		new GoogleTTSLang("Hindi (India)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("hi-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("hi-IN-Standard-B", true),
 				new GoogleTTSVoiceVariant("hi-IN-Standard-C", true),
@@ -211,11 +211,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("hi-IN-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("hi-IN-Wavenet-D", false)
 				});
-		new GoogleTTSLang("Hungarian (Hungary)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("hu-HU-Standard-A", false),
 				new GoogleTTSVoiceVariant("hu-HU-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Indonesian (Indonesia)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("id-ID-Standard-A", false),
 				new GoogleTTSVoiceVariant("id-ID-Standard-B", true),
 				new GoogleTTSVoiceVariant("id-ID-Standard-C", true),
@@ -225,7 +225,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("id-ID-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("id-ID-Wavenet-D", false)
 				});
-		new GoogleTTSLang("Italian (Italy)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("it-IT-Standard-A", false),
 				new GoogleTTSVoiceVariant("it-IT-Standard-B", true),
 				new GoogleTTSVoiceVariant("it-IT-Standard-C", false),
@@ -235,7 +235,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("it-IT-Wavenet-C", false),
 				new GoogleTTSVoiceVariant("it-IT-Wavenet-D", true)
 				});
-		new GoogleTTSLang("Japanese (japan)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("jp-JP-Standard-A", false),
 				new GoogleTTSVoiceVariant("jp-JP-Standard-B", false),
 				new GoogleTTSVoiceVariant("jp-JP-Standard-C", true),
@@ -245,11 +245,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("jp-JP-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("jp-JP-Wavenet-D", true)
 				});
-		new GoogleTTSLang("Kannada (India)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("kn-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("kn-IN-Standard-B", true)
 				});
-		new GoogleTTSLang("Korean (South Korea)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("ko-KR-Standard-A", false),
 				new GoogleTTSVoiceVariant("ko-KR-Standard-B", false),
 				new GoogleTTSVoiceVariant("ko-KR-Standard-C", true),
@@ -259,11 +259,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("ko-KR-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("ko-KR-Wavenet-D", true)
 				});
-		new GoogleTTSLang("Malayalam (India)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("ml-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("ml-IN-Standard-B", true)
 				});
-		new GoogleTTSLang("Norwegian (Norway)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("nb-no-Standard-A", false),
 				new GoogleTTSVoiceVariant("nb-no-Standard-B", true),
 				new GoogleTTSVoiceVariant("nb-no-Standard-C", false),
@@ -275,7 +275,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("nb-no-Wavenet-D", true),
 				new GoogleTTSVoiceVariant("nb-no-Wavenet-E", false)
 				});
-		new GoogleTTSLang("Dutch (Netherlands)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("nl-NL-Standard-A", false),
 				new GoogleTTSVoiceVariant("nl-NL-Standard-B", true),
 				new GoogleTTSVoiceVariant("nl-NL-Standard-C", true),
@@ -287,7 +287,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("nl-NL-Wavenet-D", false),
 				new GoogleTTSVoiceVariant("nl-NL-Wavenet-E", false)
 				});
-		new GoogleTTSLang("Polish (Poland)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("pl-PL-Standard-A", false),
 				new GoogleTTSVoiceVariant("pl-PL-Standard-B", true),
 				new GoogleTTSVoiceVariant("pl-PL-Standard-C", true),
@@ -299,11 +299,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("pl-PL-Wavenet-D", false),
 				new GoogleTTSVoiceVariant("pl-PL-Wavenet-E", false)
 				});
-		new GoogleTTSLang("Portuguese (Brazil)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("pt-BR-Standard-A", false),
 				new GoogleTTSVoiceVariant("pt-BR-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Portuguese (Portugal)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("pt-PT-Standard-A", false),
 				new GoogleTTSVoiceVariant("pt-PT-Standard-B", true),
 				new GoogleTTSVoiceVariant("pt-PT-Standard-C", true),
@@ -313,7 +313,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("pt-PT-Wavenet-C", true),
 				new GoogleTTSVoiceVariant("pt-PT-Wavenet-D", false)
 				});
-		new GoogleTTSLang("Russian (Russia)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("ru-RU-Standard-A", false),
 				new GoogleTTSVoiceVariant("ru-RU-Standard-B", true),
 				new GoogleTTSVoiceVariant("ru-RU-Standard-C", false),
@@ -325,26 +325,26 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("ru-RU-Wavenet-D", true),
 				new GoogleTTSVoiceVariant("ru-RU-Wavenet-E", false)
 				});
-		new GoogleTTSLang("Slovak (Slovakia)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("sk-SK-Standard-A", false),
 				new GoogleTTSVoiceVariant("sk-SK-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Swedish (Sweden)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("sv-SE-Standard-A", false),
 				new GoogleTTSVoiceVariant("sv-SE-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Tamil (India)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("ta-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("ta-IN-Standard-B", true)
 				});
-		new GoogleTTSLang("Telugu (India)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("te-IN-Standard-A", false),
 				new GoogleTTSVoiceVariant("te-IN-Standard-B", true)
 				});
-		new GoogleTTSLang("Thai (Thailand)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("th-TH-Standard-A", false)
 				});
-		new GoogleTTSLang("Turkish (Turkey)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("tr-TR-Standard-A", false),
 				new GoogleTTSVoiceVariant("tr-TR-Standard-B", true),
 				new GoogleTTSVoiceVariant("tr-TR-Standard-C", false),
@@ -356,11 +356,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("tr-TR-Wavenet-D", false),
 				new GoogleTTSVoiceVariant("tr-TR-Wavenet-E", true)
 				});
-		new GoogleTTSLang("Ukrainian (Ukraine)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("uk-UA-Standard-A", false),
 				new GoogleTTSVoiceVariant("uk-UA-Wavenet-A", false)
 				});
-		new GoogleTTSLang("Vietnamese (Vietnam)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("vi-VN-Standard-A", false),
 				new GoogleTTSVoiceVariant("vi-VN-Standard-B", true),
 				new GoogleTTSVoiceVariant("vi-VN-Standard-C", false),
@@ -370,7 +370,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 				new GoogleTTSVoiceVariant("vi-VN-Wavenet-C", false),
 				new GoogleTTSVoiceVariant("vi-VN-Wavenet-D", true)
 				});
-		new GoogleTTSLang("Chinese (Hong Kong)", new GoogleTTSVoiceVariant[] {
+		new GoogleTTSLang(new GoogleTTSVoiceVariant[] {
 				new GoogleTTSVoiceVariant("yue-HK-Standard-A", false),
 				new GoogleTTSVoiceVariant("yue-HK-Standard-B", true),
 				new GoogleTTSVoiceVariant("yue-HK-Standard-C", false),
@@ -386,10 +386,11 @@ public class GoogleTTSLang extends ManagedIndividual {
 		super(uri);
 	}
 
-	public GoogleTTSLang(String langName, GoogleTTSVoiceVariant[] voices) {
+	public GoogleTTSLang(GoogleTTSVoiceVariant[] voices) {
 		super(LanguageOntology.NAMESPACE + voices[0].getTheLangCode());
 		String langCode = getLocalName();
-		if (individuals.containsKey(langCode))
+		Locale l = Locale.forLanguageTag(langCode);
+		if (l == null  ||  individuals.containsKey(langCode))
 			throw new RuntimeException("Duplicate lang code!");
 
 		int n = voices.length;
@@ -403,7 +404,7 @@ public class GoogleTTSLang extends ManagedIndividual {
 			else
 				females.add(voices[i]);
 
-		props.put(PROP_NAME, langName);
+		props.put(PROP_NAME, l.getDisplayName(l));
 		props.put(PROP_TTS_SUPPORT_MALE, males);
 		props.put(PROP_TTS_SUPPORT_FEMALE, females);
 
