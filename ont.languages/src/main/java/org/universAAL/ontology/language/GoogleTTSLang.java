@@ -439,6 +439,10 @@ public class GoogleTTSLang extends ManagedIndividual {
 				? (GoogleTTSVoiceVariant[]) ((List) o).toArray(new GoogleTTSVoiceVariant[((List) o).size()])
 				: new GoogleTTSVoiceVariant[0];
 	}
+	
+	public Locale toLocale() {
+		return Locale.forLanguageTag(getLocalName());
+	}
 
 	public String toString() {
 		return getLocalName() + " - " + getName();
