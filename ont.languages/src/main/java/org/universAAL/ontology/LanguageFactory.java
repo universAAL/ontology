@@ -60,38 +60,37 @@ public class LanguageFactory implements ResourceFactory {
     case 1:
       return GoogleTTSVoiceVariant.MY_URI.equals(classURI)? new GoogleTTSVoiceVariant(instanceURI) : null;
     default:
-		try {
-			BufferedReader br = new BufferedReader(
-					new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
-			int line = 2;
-			String ll = "";
-			while (line != factoryIndex + 1 && (ll = br.readLine()) != null) {
-				line++;
-			}
-			br.close();
-			if (ll != null) {
-				String[] props = ll.split("\\|");
-				if (props.length >= 4) {
-					/*
-					 * FIXME DIRTY TRICK to get over the init() in
-					 * ManagedIndividual
-					 */
-					LanguageImpl.tempURI = classURI;
-					return new LanguageImpl(instanceURI, props[1], props[2], props[3]);
-				} else {
-					LogUtils.logError(LanguageActivator.context, LanguageFactory.class, "createInstance",
-							"No element found for classURI " + classURI + ", instanceURI " + instanceURI
-									+ ", factoryIndex: " + factoryIndex + ": props.length too small.");
-				}
-			} else {
-				LogUtils.logError(LanguageActivator.context, LanguageFactory.class, "createInstance",
-						"No element found for classURI " + classURI + ", instanceURI " + instanceURI
-								+ ", factoryIndex: " + factoryIndex + ": index too big, line not found.");
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+      try {
+        BufferedReader br = new BufferedReader(
+            new InputStreamReader(tableURL.openStream(), Charset.forName("UTF-8")));
+        int line = 2;
+        String ll = "";
+        while (line != factoryIndex + 1 && (ll = br.readLine()) != null) {
+          line++;
+        }
+        br.close();
+        if (ll != null) {
+          String[] props = ll.split("\\|");
+          if (props.length >= 4) {
+            /*
+             * FIXME DIRTY TRICK to get over the init() in
+					   * ManagedIndividual
+					   */
+            LanguageImpl.tempURI = classURI;
+            return new LanguageImpl(instanceURI, props[1], props[2], props[3]);
+          } else {
+            LogUtils.logError(LanguageActivator.context, LanguageFactory.class, "createInstance",
+                "No element found for classURI " + classURI + ", instanceURI " + instanceURI
+                    + ", factoryIndex: " + factoryIndex + ": props.length too small.");
+          }
+        } else {
+          LogUtils.logError(LanguageActivator.context, LanguageFactory.class, "createInstance",
+              "No element found for classURI " + classURI + ", instanceURI " + instanceURI
+                  + ", factoryIndex: " + factoryIndex + ": index too big, line not found.");
+        }
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
 		}
 		return null;
 	}

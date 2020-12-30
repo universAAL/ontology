@@ -3,7 +3,8 @@ package org.universAAL.ontology.language;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * Represents a Google TTs voice variant. The IDs of these voice variants are built according to the following pattern:
+ * Represents a Google TTs voice variant. 
+ * The IDs of these voice variants are built according to the following pattern:
  * <code>            langCode-voiceQuality-variantSuffix</code>
  * where 'voiceQuality' is either 'Standard' or 'Wavenet' and 'variantSuffix' is a letter starting from 'A', which endoces
  * info items, such as voice gender, accent and stressing manner. 

@@ -9,7 +9,7 @@ import java.util.Locale;
 import org.universAAL.middleware.owl.ManagedIndividual;
 
 /**
- * Designed to capture info available under https://cloud.google.com/text-to-speech/docs/voices
+ * Captures info available under https://cloud.google.com/text-to-speech/docs/voices
  * The lang code in the above reference is supposed to be used as the local name in the URI of each instance.
  * This implementation already provides all instances of languages with Google TTS support as of Dec 29, 2020.
  */
