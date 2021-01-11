@@ -42,6 +42,11 @@ public class UserProfile extends Profile {
 	public static final String MY_URI = ProfileOntology.NAMESPACE + "UserProfile";
 	public static final String PROP_HAS_PERSONAL_INFO_SUBPROFILE = ProfileOntology.NAMESPACE
 			+ "hasPersonalInfoSubprofile";
+	
+	/**
+	 * Profiles of new users may be created by an already existing user
+	 */
+	public static final String PROP_CREATED_BY = ProfileOntology.NAMESPACE + "createdBy";
 
 	protected UserProfile() {
 		super();
@@ -60,7 +65,19 @@ public class UserProfile extends Profile {
 	}
 
 	public int getPropSerializationType(String propURI) {
-		return PROP_SERIALIZATION_FULL;
+		return PROP_CREATED_BY.equals(propURI)? PROP_SERIALIZATION_REDUCED : PROP_SERIALIZATION_FULL;
 	}
 
+	public boolean setCreator(User u) {
+		if (u != null  &&  props.get(PROP_CREATED_BY) == null) {
+			props.put(PROP_CREATED_BY, u);
+			return true;
+		}
+		return false;
+	}
+	
+	public User getCreator() {
+		Object o = props.get(PROP_CREATED_BY);
+		return (o instanceof User)? (User) o : null;
+	}
 }

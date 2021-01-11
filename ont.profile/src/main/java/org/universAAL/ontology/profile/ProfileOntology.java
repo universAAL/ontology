@@ -247,6 +247,7 @@ public final class ProfileOntology extends Ontology {
 		oci.addObjectProperty(VCard.PROP_URL);
 
 		// UserProfile
+		OntClassInfoSetup userOCI = createNewOntClassInfo(User.MY_URI, factory, USER);
 		oci = createNewOntClassInfo(UserProfile.MY_URI, factory, USERPROF);
 		oci.setResourceComment("Profile of a user");
 		oci.setResourceLabel("User Profile");
@@ -255,6 +256,9 @@ public final class ProfileOntology extends Ontology {
 				.addSuperProperty(Profile.PROP_HAS_SUB_PROFILE);
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
 				UserProfile.PROP_HAS_PERSONAL_INFO_SUBPROFILE, PersonalInformationSubprofile.MY_URI, 0, 1));
+		oci.addObjectProperty(UserProfile.PROP_CREATED_BY).setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(
+				UserProfile.PROP_CREATED_BY, User.MY_URI, 0, 1));
 
 		// Profilable
 		oci = createNewAbstractOntClassInfo(Profilable.MY_URI);
@@ -266,7 +270,7 @@ public final class ProfileOntology extends Ontology {
 		oci.addRestriction(MergedRestriction.getAllValuesRestriction(Profilable.PROP_HAS_PROFILE, Profile.MY_URI));
 
 		// User
-		oci = createNewOntClassInfo(User.MY_URI, factory, USER);
+		oci = userOCI;
 		oci.setResourceComment("A human user");
 		oci.setResourceLabel("User");
 		oci.addSuperClass(PhysicalThing.MY_URI);
