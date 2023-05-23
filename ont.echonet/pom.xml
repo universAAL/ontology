@@ -81,7 +81,7 @@
 			</snapshots>
 			<id>uaal</id>
 			<name>universAAL Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/releases/</url>
+			<url>https://depot.universaal.org/maven-repo/releases/</url>
 		</repository>
 		<repository>
 			<releases>
@@ -89,7 +89,7 @@
 			</releases>
 			<id>uaal-snapshots</id>
 			<name>universAAL Snapshot Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/snapshots/</url>
+			<url>https://depot.universaal.org/maven-repo/snapshots/</url>
 		</repository>
 		<repository>
 			<snapshots>
@@ -97,7 +97,7 @@
 			</snapshots>
 			<id>uaal-thirdparty</id>
 			<name>universAAL Third Party Repositories</name>
-			<url>http://depot.universaal.org/maven-repo/thirdparty/</url>
+			<url>https://depot.universaal.org/maven-repo/thirdparty/</url>
 		</repository>
 	</repositories>
 	<build>
