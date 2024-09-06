@@ -1,4 +1,3 @@
-
 package org.universAAL.ontology.lddi.config;
 
 import org.universAAL.middleware.container.ModuleContext;
@@ -19,4 +18,4 @@ public class DatapointConfigActivator implements ModuleActivator {
   public void stop(ModuleContext mc) throws Exception {
     OntologyManagement.getInstance().unregister(mc, _dataOntology);
   }
-}	
+}

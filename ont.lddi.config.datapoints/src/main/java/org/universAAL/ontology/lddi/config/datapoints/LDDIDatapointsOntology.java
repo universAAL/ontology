@@ -123,5 +123,10 @@ public final class LDDIDatapointsOntology extends Ontology {
 		dps.setFunctional();
 		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_AUTO_RESET_WAIT_SECONDS,
 				TypeMapper.getDatatypeURI(NonNegativeInteger.class), 0, 1));
+		// adding prop "invert of"
+		ops = oci.addObjectProperty(Datapoint.PROP_INVERT_OF);
+		ops.setFunctional();
+		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Datapoint.PROP_INVERT_OF,
+				Datapoint.MY_URI, 0, 1));
   }
 }

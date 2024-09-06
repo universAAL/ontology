@@ -86,6 +86,7 @@ public class Datapoint extends ManagedIndividual {
 	public static final String PROP_PUSH_DEAD_SECONDS = LDDIDatapointsOntology.NAMESPACE + "pushDeadSeconds";
 	public static final String PROP_AUTO_RESET_VALUE = LDDIDatapointsOntology.NAMESPACE + "autoResetValue";
 	public static final String PROP_AUTO_RESET_WAIT_SECONDS = LDDIDatapointsOntology.NAMESPACE + "autoResetWaitSeconds";
+	public static final String PROP_INVERT_OF = LDDIDatapointsOntology.NAMESPACE + "invertOf";
 	
 	/**
 	 * Property for storing the set / change address of the data-point at hand in the external system.
@@ -172,7 +173,7 @@ public class Datapoint extends ManagedIndividual {
 
 	public boolean needsAutoReset() {
 		return props.containsKey(PROP_AUTO_RESET_VALUE)
-				&& props.containsKey(PROP_AUTO_RESET_WAIT_SECONDS);
+				&& (props.containsKey(PROP_AUTO_RESET_WAIT_SECONDS)  ||  props.containsKey(PROP_INVERT_OF));
 	}
 	
 	public Object getAutoResetValue() {
@@ -182,5 +183,10 @@ public class Datapoint extends ManagedIndividual {
 	public int getAutoResetWaitSeconds() {
 		Object o = props.get(PROP_AUTO_RESET_WAIT_SECONDS);
 		return (o instanceof NonNegativeInteger)? ((NonNegativeInteger) o).intValue() : 0;
+	}
+	
+	public Datapoint getInversion() {
+		Object o = props.get(PROP_INVERT_OF);
+		return (o instanceof Datapoint)?  (Datapoint) o : null;
 	}
 }

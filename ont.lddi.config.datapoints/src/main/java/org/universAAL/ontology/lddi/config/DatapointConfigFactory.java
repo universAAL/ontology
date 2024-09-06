@@ -1,4 +1,3 @@
-
 package org.universAAL.ontology.lddi.config;
 
 import org.universAAL.middleware.rdf.Resource;
