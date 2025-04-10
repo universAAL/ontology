@@ -1,0 +1,69 @@
+IndoorPlace
+    Balcony
+    BuildingLevel
+    Corridor
+    Garage
+    HomeArea
+        EntranceHall
+        Hall
+        HomeFloor
+        HomeGarden
+        HomeStairs
+        Room
+    Home
+    Staircase
+    StairWay
+    Terrace
+
+OutdoorPlace
+    Country
+    Locality
+        City
+        Town
+        Village
+    LocalityPlace
+        Alley (subclass of Road)
+        Building
+        BuildingSurrounding
+            BuildingGarden
+            BuildingParking (subclass of OutdoorParking)
+        Quarter
+        OutdoorParking
+        Park
+        Pathway (subclass of Road)
+        PostalZone
+        Square
+        Street / Avenue / Boulevard (subclass of Road)
+    Premises (contains buildings and building surroundings)
+        Venue
+    Region
+    Road
+    State
+    Way (contains roads)
+    
+---------------------------------------------------------------------
+
+The model as it is now
+
+IndoorPlace
+    Balcony
+    BuildingLevel
+    HomeArea
+        Corridor
+        EntranceHall
+        Hall
+        Room
+    Home
+    Staircase
+    StairWay
+    Terrace
+
+OutdoorPlace
+    City
+    CityPlace
+        Building
+        CityQuarter
+        CityRegion
+    Country
+    Region
+    State

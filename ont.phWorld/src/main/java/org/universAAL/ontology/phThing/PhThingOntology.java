@@ -58,58 +58,79 @@ public class PhThingOntology extends Ontology {
 		addImport(LocationOntology.NAMESPACE);
 		addImport(ShapeOntology.NAMESPACE);
 
-		OntClassInfoSetup oci;
-
-		// load PhysicalContainer
-		oci = createNewOntClassInfo(PhysicalContainer.MY_URI, factory, 4);
-		oci.setResourceComment("A Physical thing that contains other Physical things");
-		oci.setResourceLabel("Physical Container");
-		oci.addSuperClass(PhysicalThing.MY_URI);
+		OntClassInfoSetup oci_phth, oci_dstat, oci_dev, oci_dserv, oci_phc;
 
 		// load PhysicalThing
-		oci = createNewOntClassInfo(PhysicalThing.MY_URI, factory, 0);
-		oci.setResourceComment(
+		oci_phth = createNewOntClassInfo(PhysicalThing.MY_URI, factory, 0);
+		oci_dstat = createNewOntClassInfo(DeviceState.MY_URI, factory, 1);
+		oci_dev = createNewOntClassInfo(Device.MY_URI, factory, 2);
+		oci_dserv = createNewOntClassInfo(DeviceService.MY_URI, factory, 3);
+		oci_phc = createNewOntClassInfo(PhysicalContainer.MY_URI, factory, 4);
+		
+		oci_phth.setResourceComment(
 				"The root class for all physical things in the universAAL ontology. Physical things have a location");
-		oci.setResourceLabel("Physical Thing");
-		oci.addSuperClass(ManagedIndividual.MY_URI);
-		oci.addObjectProperty(PhysicalThing.PROP_CARRIED_BY).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_CARRIED_BY,
+		oci_phth.setResourceLabel("Physical Thing");
+		oci_phth.addSuperClass(ManagedIndividual.MY_URI);
+		oci_phth.addObjectProperty(PhysicalThing.PROP_CARRIED_BY).setFunctional();
+		oci_phth.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_CARRIED_BY,
 				PhysicalThing.MY_URI, 0, 1));
-		oci.addObjectProperty(PhysicalThing.PROP_PART_OF).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_PART_OF,
+		oci_phth.addObjectProperty(PhysicalThing.PROP_PART_OF).setFunctional();
+		oci_phth.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_PART_OF,
 				PhysicalThing.MY_URI, 0, 1));
-		oci.addObjectProperty(PhysicalThing.PROP_IS_IN).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_IS_IN,
+		oci_phth.addObjectProperty(PhysicalThing.PROP_IS_IN).setFunctional();
+		oci_phth.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_IS_IN,
 				PhysicalContainer.MY_URI, 0, 1));
-		oci.addObjectProperty(PhysicalThing.PROP_PHYSICAL_LOCATION).setFunctional();
-		oci.addRestriction(MergedRestriction
+		oci_phth.addObjectProperty(PhysicalThing.PROP_PHYSICAL_LOCATION).setFunctional();
+		oci_phth.addRestriction(MergedRestriction
 				.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_PHYSICAL_LOCATION, Location.MY_URI, 0, 1));
-		oci.addObjectProperty(PhysicalThing.PROP_HAS_SHAPE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_HAS_SHAPE,
+		oci_phth.addObjectProperty(PhysicalThing.PROP_HAS_SHAPE).setFunctional();
+		oci_phth.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_HAS_SHAPE,
 				Shape.MY_URI, 0, 1));
-		oci.addDatatypeProperty(PhysicalThing.PROP_IS_PORTABLE).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_IS_PORTABLE,
+		oci_phth.addDatatypeProperty(PhysicalThing.PROP_IS_PORTABLE).setFunctional();
+		oci_phth.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_IS_PORTABLE,
 				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
-		oci.addDatatypeProperty(PhysicalThing.PROP_IS_STATIONARY).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_IS_STATIONARY,
+		oci_phth.addDatatypeProperty(PhysicalThing.PROP_IS_STATIONARY).setFunctional();
+		oci_phth.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(PhysicalThing.PROP_IS_STATIONARY,
 				TypeMapper.getDatatypeURI(Boolean.class), 1, 1));
+
+		// load DeviceState
+		oci_dstat.setResourceComment("The class to represent possible error and status messages of a device.");
+		oci_dstat.setResourceLabel("Device State");
+		oci_dstat.addSuperClass(ManagedIndividual.MY_URI);
+		oci_dstat.addDatatypeProperty(DeviceState.PROP_CODE).setFunctional();
+		oci_dstat.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(DeviceState.PROP_CODE,
+				TypeMapper.getDatatypeURI(String.class), 0, 1));
+		// the other two props rdfs:label and rdfs:comment are generally applicable properties
+		// and do not need an explicit definition
 
 		// load Device
-		oci = createNewOntClassInfo(Device.MY_URI, factory, 1);
-		oci.setResourceComment("The root class for all devices in the universAAL ontology.");
-		oci.setResourceLabel("Device");
-		oci.addSuperClass(PhysicalThing.MY_URI);
-		oci.addObjectProperty(Device.PROP_BATTERY_LEVEL).setFunctional();
-		oci.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Device.PROP_BATTERY_LEVEL,
+		oci_dev.setResourceComment("The root class for all devices in the universAAL ontology.");
+		oci_dev.setResourceLabel("Device");
+		oci_dev.addSuperClass(PhysicalThing.MY_URI);
+		oci_dev.addObjectProperty(Device.PROP_BATTERY_LEVEL).setFunctional();
+		oci_dev.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Device.PROP_BATTERY_LEVEL,
 				LevelRating.MY_URI, 0, 1));
+		oci_dev.addObjectProperty(Device.PROP_CONNECTION_LEVEL).setFunctional();
+		oci_dev.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Device.PROP_CONNECTION_LEVEL,
+				LevelRating.MY_URI, 0, 1));
+		oci_dev.addObjectProperty(Device.PROP_ERROR_MESSAGE).setFunctional();
+		oci_dev.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Device.PROP_ERROR_MESSAGE,
+				DeviceState.MY_URI, 0, 1));
+		oci_dev.addObjectProperty(Device.PROP_STATUS_MESSAGE).setFunctional();
+		oci_dev.addRestriction(MergedRestriction.getAllValuesRestrictionWithCardinality(Device.PROP_STATUS_MESSAGE,
+				DeviceState.MY_URI, 0, 1));
 
 		// load DeviceService
-		oci = createNewOntClassInfo(DeviceService.MY_URI, factory, 3);
-		oci.setResourceComment("The class of services controling devices.");
-		oci.setResourceLabel("DeviceService");
-		oci.addSuperClass(Service.MY_URI);
-		oci.addObjectProperty(DeviceService.PROP_CONTROLS);
-		oci.addRestriction(MergedRestriction.getAllValuesRestriction(DeviceService.PROP_CONTROLS, Device.MY_URI));
+		oci_dserv.setResourceComment("The class of services controling devices.");
+		oci_dserv.setResourceLabel("DeviceService");
+		oci_dserv.addSuperClass(Service.MY_URI);
+		oci_dserv.addObjectProperty(DeviceService.PROP_CONTROLS);
+		oci_dserv.addRestriction(MergedRestriction.getAllValuesRestriction(DeviceService.PROP_CONTROLS, Device.MY_URI));
+
+		// load PhysicalContainer
+		oci_phc.setResourceComment("A Physical thing that contains other Physical things");
+		oci_phc.setResourceLabel("Physical Container");
+		oci_phc.addSuperClass(PhysicalThing.MY_URI);
 
 	}
 }

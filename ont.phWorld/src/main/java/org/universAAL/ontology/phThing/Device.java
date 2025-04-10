@@ -35,6 +35,9 @@ public class Device extends PhysicalThing {
 	public static final String MY_URI = PhThingOntology.NAMESPACE + "Device";
 
 	public static final String PROP_BATTERY_LEVEL = PhThingOntology.NAMESPACE + "batteryLevel";
+	public static final String PROP_CONNECTION_LEVEL = PhThingOntology.NAMESPACE + "connectionLevel";
+	public static final String PROP_ERROR_MESSAGE = PhThingOntology.NAMESPACE + "errorMsg";
+	public static final String PROP_STATUS_MESSAGE = PhThingOntology.NAMESPACE + "statusMsg";
 
 	public Device() {
 		super();
@@ -57,10 +60,42 @@ public class Device extends PhysicalThing {
 	}
 
 	public LevelRating getBatteryLevel() {
-		return (LevelRating) props.get(PROP_BATTERY_LEVEL);
+		Object o = props.get(PROP_BATTERY_LEVEL);
+		return (o instanceof LevelRating)?  (LevelRating) o : null;
+	}
+
+	public LevelRating getConnectionLevel() {
+		Object o = props.get(PROP_CONNECTION_LEVEL);
+		return (o instanceof LevelRating)?  (LevelRating) o : null;
+	}
+	
+	public DeviceState getErrorMsg() {
+		Object o = props.get(PROP_ERROR_MESSAGE);
+		return (o instanceof DeviceState)?  (DeviceState) o : null;
+	}
+	
+	public DeviceState getStatusMsg() {
+		Object o = props.get(PROP_STATUS_MESSAGE);
+		return (o instanceof DeviceState)?  (DeviceState) o : null;
 	}
 
 	public void setBatteryLevel(LevelRating value) {
-		props.put(PROP_BATTERY_LEVEL, value);
+		if (value != null)
+			props.put(PROP_BATTERY_LEVEL, value);
+	}
+
+	public void setConnectionLevel(LevelRating value) {
+		if (value != null)
+			props.put(PROP_CONNECTION_LEVEL, value);
+	}
+
+	public void setErrorMsg(DeviceState value) {
+		if (value != null)
+			props.put(PROP_ERROR_MESSAGE, value);
+	}
+
+	public void setStatusMsg(DeviceState value) {
+		if (value != null)
+			props.put(PROP_STATUS_MESSAGE, value);
 	}
 }

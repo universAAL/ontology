@@ -23,6 +23,7 @@ import org.universAAL.middleware.rdf.Resource;
 import org.universAAL.middleware.rdf.ResourceFactory;
 import org.universAAL.ontology.phThing.Device;
 import org.universAAL.ontology.phThing.DeviceService;
+import org.universAAL.ontology.phThing.DeviceState;
 import org.universAAL.ontology.phThing.PhysicalContainer;
 import org.universAAL.ontology.phThing.PhysicalThing;
 
@@ -34,6 +35,8 @@ public class PhThingFactory implements ResourceFactory {
 		case 0:
 			return new PhysicalThing(instanceURI);
 		case 1:
+			return new DeviceState(instanceURI);
+		case 2:
 			return new Device(instanceURI);
 		case 3:
 			return new DeviceService(instanceURI);
